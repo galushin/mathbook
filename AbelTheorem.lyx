@@ -2374,7 +2374,7 @@ name "prob:squate-rotations"
 \end_inset
 
  — поворот на 
-\begin_inset Formula $90\textdegree$
+\begin_inset Formula $180\textdegree$
 \end_inset
 
 , 
@@ -2382,7 +2382,7 @@ name "prob:squate-rotations"
 \end_inset
 
  — поворот на 
-\begin_inset Formula $180\text{°}$
+\begin_inset Formula $90\text{°}$
 \end_inset
 
 , 
@@ -2565,7 +2565,7 @@ name "prob:squate-rotations"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $b$
+\begin_inset Formula $e$
 \end_inset
 
 
@@ -2589,7 +2589,7 @@ name "prob:squate-rotations"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $e$
+\begin_inset Formula $b$
 \end_inset
 
 
@@ -2639,7 +2639,7 @@ name "prob:squate-rotations"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $e$
+\begin_inset Formula $a$
 \end_inset
 
 
@@ -2651,7 +2651,7 @@ name "prob:squate-rotations"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $a$
+\begin_inset Formula $e$
 \end_inset
 
 
@@ -2689,7 +2689,7 @@ name "prob:squate-rotations"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $e$
+\begin_inset Formula $b$
 \end_inset
 
 
@@ -2701,7 +2701,7 @@ name "prob:squate-rotations"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $a$
+\begin_inset Formula $e$
 \end_inset
 
 
@@ -2713,7 +2713,7 @@ name "prob:squate-rotations"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $b$
+\begin_inset Formula $a$
 \end_inset
 
 
@@ -2744,48 +2744,30 @@ noprefix "false"
 
 \end_inset
 
-), у квадрата имеются осевые симметрии — относительно двух диагоналей (обозначим
- их 
-\begin_inset Formula $l_{0}$
-\end_inset
-
- и 
-\begin_inset Formula $l_{2}$
-\end_inset
-
-) и относительно двух прямых, проходящих через середины противоположных
- сторон квадрата (обозначим их 
-\begin_inset Formula $l_{1}$
-\end_inset
-
- и 
-\begin_inset Formula $l_{3}$
-\end_inset
-
-).
+), у квадрата имеются осевые симметрии — относительно двух диагоналей и
+ относительно двух прямых, проходящих через середины противоположных сторон
+ квадрата.
  Таким образом, всего у квадрата 8 симметрий.
 \end_layout
 
 \begin_layout Solution
-Повторное отражение относительно той же оси приводит квадрат в исходное
- состояние, поэтому 
-\begin_inset Formula $l_{0}l_{0}=l_{1}l_{1}=l_{2}l_{2}=l_{3}l_{3}=e$
+\begin_inset Formula $e=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & B & C & D
+\end{array}\right)$
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Solution
+, 
 \begin_inset Formula $a=\left(\begin{array}{cccc}
 A & B & C & D\\
-B & C & D & A
+C & D & A & B
 \end{array}\right)$
 \end_inset
 
 , 
 \begin_inset Formula $b=\left(\begin{array}{cccc}
 A & B & C & D\\
-C & D & A & B
+B & C & D & A
 \end{array}\right)$
 \end_inset
 
@@ -2797,240 +2779,49 @@ D & A & B & C
 \end_inset
 
 , 
-\begin_inset Formula $l_{0}=\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)$
-\end_inset
-
-, 
-\begin_inset Formula $l_{1}=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)$
-\end_inset
-
-, 
-\begin_inset Formula $l_{2}=\left(\begin{array}{cccc}
+\begin_inset Formula $d=\left(\begin{array}{cccc}
 A & B & C & D\\
 C & B & A & D
 \end{array}\right)$
 \end_inset
 
 , 
-\begin_inset Formula $l_{3}=\left(\begin{array}{cccc}
+\begin_inset Formula $f=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g=\left(\begin{array}{cccc}
 A & B & C & D\\
 D & C & B & A
 \end{array}\right)$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-al_{0}=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & C & D & A
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)=\left(\begin{array}{cccc}
+, 
+\begin_inset Formula $h=\left(\begin{array}{cccc}
 A & B & C & D\\
 B & A & D & C
-\end{array}\right)=l_{1}
-\]
-
+\end{array}\right)$
 \end_inset
 
+ .
+\end_layout
 
+\begin_layout Solution
+Повторное отражение относительно той же оси приводит квадрат в исходное
+ состояние, поэтому 
+\begin_inset Formula $dd=ff=gg=hh=e$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
 \begin_inset Formula 
 \[
-al_{1}=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & C & D & A
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)=l_{2}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-al_{2}=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & C & D & A
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)=l_{3}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-al_{3}=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & C & D & A
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)=l_{0}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{0}a=\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-B & C & D & A
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)=l_{3}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{1}a=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-B & C & D & A
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)=l_{0}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{2}a=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-B & C & D & A
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)=l_{1}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{3}a=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-B & C & D & A
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)=l_{2}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-bl_{0}=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & D & A & B
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)=l_{2}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-bl_{1}=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & D & A & B
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)=l_{3}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-bl_{2}=\left(\begin{array}{cccc}
+ad=\left(\begin{array}{cccc}
 A & B & C & D\\
 C & D & A & B
 \end{array}\right)\left(\begin{array}{cccc}
@@ -3039,7 +2830,7 @@ C & B & A & D
 \end{array}\right)=\left(\begin{array}{cccc}
 A & B & C & D\\
 A & D & C & B
-\end{array}\right)=l_{0}
+\end{array}\right)=f
 \]
 
 \end_inset
@@ -3050,7 +2841,47 @@ A & D & C & B
 \begin_layout Solution
 \begin_inset Formula 
 \[
-bl_{3}=\left(\begin{array}{cccc}
+af=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ag=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ah=\left(\begin{array}{cccc}
 A & B & C & D\\
 C & D & A & B
 \end{array}\right)\left(\begin{array}{cccc}
@@ -3059,7 +2890,7 @@ D & C & B & A
 \end{array}\right)=\left(\begin{array}{cccc}
 A & B & C & D\\
 B & A & D & C
-\end{array}\right)=l_{1}
+\end{array}\right)=g
 \]
 
 \end_inset
@@ -3070,47 +2901,7 @@ B & A & D & C
 \begin_layout Solution
 \begin_inset Formula 
 \[
-l_{0}b=\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-C & D & A & B
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)=l_{2}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{1}b=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-C & D & A & B
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)=l_{3}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{2}b=\left(\begin{array}{cccc}
+da=\left(\begin{array}{cccc}
 A & B & C & D\\
 C & B & A & D
 \end{array}\right)\left(\begin{array}{cccc}
@@ -3119,7 +2910,7 @@ C & D & A & B
 \end{array}\right)=\left(\begin{array}{cccc}
 A & B & C & D\\
 A & D & C & B
-\end{array}\right)=l_{0}
+\end{array}\right)=f
 \]
 
 \end_inset
@@ -3130,7 +2921,47 @@ A & D & C & B
 \begin_layout Solution
 \begin_inset Formula 
 \[
-l_{3}b=\left(\begin{array}{cccc}
+fa=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ga=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ha=\left(\begin{array}{cccc}
 A & B & C & D\\
 D & C & B & A
 \end{array}\right)\left(\begin{array}{cccc}
@@ -3139,7 +2970,7 @@ C & D & A & B
 \end{array}\right)=\left(\begin{array}{cccc}
 A & B & C & D\\
 B & A & D & C
-\end{array}\right)=l_{1}
+\end{array}\right)=g
 \]
 
 \end_inset
@@ -3150,215 +2981,335 @@ B & A & D & C
 \begin_layout Solution
 \begin_inset Formula 
 \[
-cl_{0}=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & A & B & C
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)=l_{3}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-cl_{1}=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & A & B & C
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)=l_{0}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-cl_{2}=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & A & B & C
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)=l_{1}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-cl_{3}=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & A & B & C
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)=l_{2}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{0}c=\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-D & A & B & C
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)=l_{1}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{1}c=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-D & A & B & C
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)=l_{2}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{2}c=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-D & A & B & C
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)=l_{3}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{3}c=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-D & A & B & C
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)=l_{0}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{0}l_{1}=\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & A & B & C
-\end{array}\right)=c
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{0}l_{2}=\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & D & A & B
-\end{array}\right)=b
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{0}l_{3}=\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)=\left(\begin{array}{cccc}
+bd=\left(\begin{array}{cccc}
 A & B & C & D\\
 B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bf=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bg=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bh=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+db=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+fb=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+gb=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+hb=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+cd=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+cf=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+cg=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ch=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+dc=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+fc=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+gc=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+hc=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+df=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
 \end{array}\right)=a
 \]
 
@@ -3370,15 +3321,55 @@ B & C & D & A
 \begin_layout Solution
 \begin_inset Formula 
 \[
-l_{1}l_{0}=\left(\begin{array}{cccc}
+dg=\left(\begin{array}{cccc}
 A & B & C & D\\
-B & A & D & C
+C & B & A & D
 \end{array}\right)\left(\begin{array}{cccc}
 A & B & C & D\\
-A & D & C & B
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+dh=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
 \end{array}\right)=\left(\begin{array}{cccc}
 A & B & C & D\\
 B & C & D & A
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+fd=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
 \end{array}\right)=a
 \]
 
@@ -3390,95 +3381,135 @@ B & C & D & A
 \begin_layout Solution
 \begin_inset Formula 
 \[
-l_{2}l_{0}=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-A & D & C & B
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & D & A & B
-\end{array}\right)=b
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{3}l_{0}=\left(\begin{array}{cccc}
+gd=\left(\begin{array}{cccc}
 A & B & C & D\\
 D & C & B & A
 \end{array}\right)\left(\begin{array}{cccc}
 A & B & C & D\\
-A & D & C & B
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & A & B & C
-\end{array}\right)=c
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{1}l_{2}=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
 C & B & A & D
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & A & B & C
-\end{array}\right)=c
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{1}l_{3}=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & D & A & B
-\end{array}\right)=b
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{2}l_{1}=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-B & A & D & C
 \end{array}\right)=\left(\begin{array}{cccc}
 A & B & C & D\\
 B & C & D & A
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+hd=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+fg=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+fh=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+gf=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+hf=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+gh=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
 \end{array}\right)=a
 \]
 
@@ -3490,7 +3521,7 @@ B & C & D & A
 \begin_layout Solution
 \begin_inset Formula 
 \[
-l_{3}l_{1}=\left(\begin{array}{cccc}
+hg=\left(\begin{array}{cccc}
 A & B & C & D\\
 D & C & B & A
 \end{array}\right)\left(\begin{array}{cccc}
@@ -3499,46 +3530,6 @@ B & A & D & C
 \end{array}\right)=\left(\begin{array}{cccc}
 A & B & C & D\\
 C & D & A & B
-\end{array}\right)=b
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{2}l_{3}=\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & A & B & C
-\end{array}\right)=c
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
-l_{3}l_{2}=\left(\begin{array}{cccc}
-A & B & C & D\\
-D & C & B & A
-\end{array}\right)\left(\begin{array}{cccc}
-A & B & C & D\\
-C & B & A & D
-\end{array}\right)=\left(\begin{array}{cccc}
-A & B & C & D\\
-B & C & D & A
 \end{array}\right)=a
 \]
 
@@ -3626,7 +3617,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{0}$
+\begin_inset Formula $d$
 \end_inset
 
 
@@ -3638,7 +3629,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{1}$
+\begin_inset Formula $f$
 \end_inset
 
 
@@ -3650,7 +3641,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{2}$
+\begin_inset Formula $g$
 \end_inset
 
 
@@ -3662,7 +3653,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{3}$
+\begin_inset Formula $h$
 \end_inset
 
 
@@ -3736,7 +3727,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{0}$
+\begin_inset Formula $d$
 \end_inset
 
 
@@ -3748,7 +3739,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{1}$
+\begin_inset Formula $f$
 \end_inset
 
 
@@ -3760,7 +3751,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{2}$
+\begin_inset Formula $g$
 \end_inset
 
 
@@ -3772,7 +3763,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{3}$
+\begin_inset Formula $h$
 \end_inset
 
 
@@ -3799,372 +3790,6 @@ B & C & D & A
 
 \begin_layout Plain Layout
 \begin_inset Formula $a$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $b$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $c$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $e$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{1}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{2}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{3}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{0}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $b$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $b$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $c$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $e$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $a$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{2}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{3}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{0}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{1}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $c$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $c$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $e$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $a$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $b$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{3}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{0}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{1}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{2}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{0}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{0}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{3}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{2}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{1}$
 \end_inset
 
 
@@ -4208,11 +3833,47 @@ B & C & D & A
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $a$
+\begin_inset Formula $g$
 \end_inset
 
 
@@ -4226,7 +3887,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{1}$
+\begin_inset Formula $b$
 \end_inset
 
 
@@ -4238,7 +3899,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{1}$
+\begin_inset Formula $b$
 \end_inset
 
 
@@ -4250,31 +3911,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{0}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{3}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $l_{2}$
+\begin_inset Formula $c$
 \end_inset
 
 
@@ -4299,6 +3936,250 @@ B & C & D & A
 
 \begin_layout Plain Layout
 \begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
 \end_inset
 
 
@@ -4336,7 +4217,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{2}$
+\begin_inset Formula $f$
 \end_inset
 
 
@@ -4348,7 +4229,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{2}$
+\begin_inset Formula $f$
 \end_inset
 
 
@@ -4360,7 +4241,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{1}$
+\begin_inset Formula $d$
 \end_inset
 
 
@@ -4372,7 +4253,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{0}$
+\begin_inset Formula $g$
 \end_inset
 
 
@@ -4384,19 +4265,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{3}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $b$
+\begin_inset Formula $h$
 \end_inset
 
 
@@ -4428,11 +4297,133 @@ B & C & D & A
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
 \end_inset
 
 
@@ -4446,7 +4437,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{3}$
+\begin_inset Formula $h$
 \end_inset
 
 
@@ -4458,7 +4449,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{3}$
+\begin_inset Formula $h$
 \end_inset
 
 
@@ -4470,7 +4461,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{2}$
+\begin_inset Formula $g$
 \end_inset
 
 
@@ -4482,7 +4473,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{1}$
+\begin_inset Formula $f$
 \end_inset
 
 
@@ -4494,7 +4485,7 @@ B & C & D & A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $l_{0}$
+\begin_inset Formula $d$
 \end_inset
 
 
