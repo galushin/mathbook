@@ -1,0 +1,5650 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\begin_modules
+theorems-bytype
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style russian
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sloppy}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Теорема Абеля
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Введение
+\end_layout
+
+\begin_layout Section
+Определение алгебраического уравнения и решение линейного уравнения
+\end_layout
+
+\begin_layout Definition
+Общим алгебраическим уравнением степени 
+\begin_inset Formula $n$
+\end_inset
+
+ называется уравнение вида 
+\begin_inset Formula 
+\[
+a_{0}x^{n}+a_{1}x^{n-1}+...+a_{n-1}x+a_{n}=0,
+\]
+
+\end_inset
+
+в котором 
+\begin_inset Formula $a_{0}\neq0$
+\end_inset
+
+ (коэффициенты 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+, ...
+ 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ пока можно считать вещественными числами)
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Может быть обратная порядок следования коэффициентов?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+При 
+\begin_inset Formula $n=1$
+\end_inset
+
+ получаем линейное уравнение (с одной переменной)
+\begin_inset Formula 
+\[
+a_{0}x+a_{1}=0,a_{0}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Для любых значений коэффициентов, это уравнение имеет единственное решение
+ 
+\begin_inset Formula 
+\[
+x=-\frac{a_{1}}{a_{0}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Квадратное уравнение
+\end_layout
+
+\begin_layout Definition
+При 
+\begin_inset Formula $n=2$
+\end_inset
+
+ получаем квадратное уравнение (обозначим 
+\begin_inset Formula $a_{0}=a$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1}=b$
+\end_inset
+
+, 
+\begin_inset Formula $a_{2}=c$
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+ax^{2}+bx+c=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Разделив левую и правую части уравнения на 
+\begin_inset Formula $a$
+\end_inset
+
+ и обозначив 
+\begin_inset Formula $p=\frac{b}{a}$
+\end_inset
+
+ и 
+\begin_inset Formula $q=\frac{c}{a}$
+\end_inset
+
+, получим приведённое квадратное уравнение 
+\begin_inset Formula 
+\begin{equation}
+x^{2}+px+q=0.\label{eq:reduced-quadratic-equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Выделим полный квадрат
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+x^{2}+2\cdot x\cdot\frac{p}{2}+\left(\frac{p}{2}\right)^{2}=\left(\frac{p}{2}\right)^{2}-q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\begin{equation}
+\left(x+\frac{p}{2}\right)^{2}=\frac{p^{2}}{4}-q\label{eq:completing-square-in-quadratic-equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Если 
+\begin_inset Formula $\frac{p^{2}}{4}-q\ge0$
+\end_inset
+
+ то исходное уравнение имеет решения в вещественных числах:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\begin{equation}
+x_{1,2}=-\frac{p}{2}\pm\sqrt{\frac{p^{2}}{4}-q}.\label{eq:requced-quadratic-equation-solutions}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Если же 
+\begin_inset Formula $\frac{p^{2}}{4}-q<0$
+\end_inset
+
+, то вещественных решений у уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:reduced-quadratic-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ нет.
+\end_layout
+
+\begin_layout Definition
+Оказывается, можно избежать подобных исключений, если рассматривать алгебраическ
+ие уравнения не в области вещественных чисел, а в более широкой области
+ комплексных чисел.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ввести (неформально) комплексные числа
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Переходя к исходным коэффициентам, получим
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\begin{equation}
+x_{1,2}=\frac{-b+\sqrt{b^{2}-4ac}}{2a}\label{eq:quadratic-equation-solutions}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выражение 
+\begin_inset Formula $D=b^{2}-4ac$
+\end_inset
+
+ называется 
+\emph on
+дискриминантом
+\emph default
+.
+ Квадратный трёхчлен 
+\begin_inset Formula $ax^{2}+bx+c$
+\end_inset
+
+ является полным квадратом тогда и только тогда, когда его дискриминант
+ равняется нулю.
+\end_layout
+
+\begin_layout Claim
+(Теорема Виета) Комлексные числа 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ являются корнями уравнения 
+\begin_inset Formula $x^{2}+px+q=0$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $x_{1}+x_{2}=-p$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{1}x_{2}=q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Действительно, если 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ — корни уравнения, то по формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:requced-quadratic-equation-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+x_{1}+x_{2}=-\frac{p}{2}-\sqrt{\frac{p^{2}}{4}-q}-\frac{p}{2}+\sqrt{\frac{p^{2}}{4}-q}=-p,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+x_{1}x_{2}=\left(-\frac{p}{2}-\sqrt{\frac{p^{2}}{4}-q}\right)\left(-\frac{p}{2}+\sqrt{\frac{p^{2}}{4}-q}\right)=\frac{p^{2}}{4}-\frac{p^{2}}{4}+q=q.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Наоборот, пусть 
+\begin_inset Formula $x_{1}+x_{2}=-p$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{1}x_{2}=q$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\begin{multline*}
+x^{2}+px+q=x^{2}-\left(x_{1}+x_{2}\right)x+x_{1}x_{2}=\\
+=x\left(x-x_{1}\right)-x_{2}\left(x-x_{1}\right)=\left(x-x_{1}\right)\left(x-x_{2}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Подставляя в уравнение 
+\begin_inset Formula $\left(x-x_{1}\right)\left(x-x_{2}\right)=0$
+\end_inset
+
+ значения 
+\begin_inset Formula $x=x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x=x_{2}$
+\end_inset
+
+, убеждаемся, что оно обращается в тождество, значит, 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ — корни уравнения 
+\begin_inset Formula $x^{2}+px+q=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Кубические уравнения
+\end_layout
+
+\begin_layout Standard
+Рассмотрим теперь приведённое уравнение третьей степени 
+\begin_inset Formula 
+\begin{equation}
+x^{3}+ax^{2}+bx+c=0.\label{eq:reduced-qubic-equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выполним замену 
+\begin_inset Formula $x=y+d$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y^{3}+3y^{2}d+3yd^{2}+d^{3}+a\left(y^{2}+2yd+d^{2}\right)+b\left(y+d\right)+c=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Приведём подобные слагаемые по 
+\begin_inset Formula $y$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y^{3}+\left(3d+a\right)y^{2}+\left(3d^{2}+2ad+b\right)y+\left(d^{3}+ad^{2}+bd+c\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если положить 
+\begin_inset Formula $3d+a=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $d=-\frac{a}{3}$
+\end_inset
+
+, то получим уравнение вида 
+\begin_inset Formula 
+\begin{equation}
+y^{3}+py+q=0.\label{eq:special-qubic-equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ — корень уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:special-qubic-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Представим его в виде 
+\begin_inset Formula $y_{0}=\alpha+\beta$
+\end_inset
+
+, где 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ — неопределённые пока величины:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha^{3}+3\alpha^{2}\beta+3\alpha\beta^{2}+\beta^{3}+p\left(\alpha+\beta\right)+q=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha^{3}+\beta^{3}+3\alpha\beta\left(\alpha+\beta\right)+p\left(\alpha+\beta\right)+q=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha^{3}+\beta^{3}+\left(3\alpha\beta+p\right)\left(\alpha+\beta\right)+q=0\label{eq:qubic-equation-alpha-beta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выясним, можно ли выбраит 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ таким образом, чтобы выполнялось дополнительное условие 
+\begin_inset Formula $3\alpha\beta+p=0$
+\end_inset
+
+.
+ Если это окажется возможным, то получим для 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ систему уравнений 
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\alpha+\beta=y_{0}\\
+\alpha\beta=-\frac{p}{3}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При таким выборе 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:qubic-equation-alpha-beta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ принимает вид 
+\begin_inset Formula 
+\[
+\alpha^{3}+\beta^{3}=-q.
+\]
+
+\end_inset
+
+.
+ Возведя уравнение 
+\begin_inset Formula $\alpha\beta=-\frac{p}{3}$
+\end_inset
+
+ в третью степень и объединив его с предыдущим уравнением, получим систему:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\alpha^{3}+\beta^{3}=-q\\
+\alpha^{3}\beta^{3}=-\frac{p^{3}}{27}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+По теореме Виета, 
+\begin_inset Formula $\alpha^{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta^{3}$
+\end_inset
+
+ являются корнями уравнения 
+\begin_inset Formula 
+\[
+w^{2}+qw-\frac{p^{3}}{27}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+По формуле корней квадратного уравнения: 
+\begin_inset Formula 
+\[
+\alpha^{3}=-\frac{q}{2}+\sqrt{\frac{q^{2}}{4}+\frac{p^{3}}{27}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\beta^{3}=-\frac{q}{2}-\sqrt{\frac{q^{2}}{4}+\frac{p^{3}}{27}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Отсюда получается формула Кардано:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{1,2,3}=\sqrt[3]{-\frac{q}{2}+\sqrt{\frac{q^{2}}{4}+\frac{p^{3}}{27}}}+\sqrt[3]{-\frac{q}{2}-\sqrt{\frac{q^{2}}{4}+\frac{p^{3}}{27}}},
+\]
+
+\end_inset
+
+где для каждого из трёх возможных значений первого кубического корня выбирается
+ такое значение второго кубического корня выбирается таким, чтобы выполнялось
+ условие 
+\begin_inset Formula $\alpha\beta=-\frac{p}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Уравнения четвёртой степени
+\end_layout
+
+\begin_layout Standard
+Рассмотрим приведённое уравнение четвёртой степени 
+\begin_inset Formula 
+\[
+x^{4}+ax^{3}+bx^{2}+cx+d=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Произведя замену 
+\begin_inset Formula $y=x-\frac{a}{4}$
+\end_inset
+
+, получим уравнение вида
+\begin_inset Formula 
+\[
+y^{4}+py^{2}+qy+r=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y^{2}+2y^{2}\frac{p}{2}+\left(\frac{p}{2}\right)^{2}+qy+r-\left(\frac{p}{2}\right)^{2}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(y^{2}+\frac{p}{2}\right)^{2}+qy+r-\left(\frac{p}{2}\right)^{2}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — произвольное число, тогда
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(y^{2}+\frac{p}{2}+\alpha\right)^{2}=\left(y^{2}+\frac{p}{2}\right)^{2}+2\alpha\left(y^{2}+\frac{p}{2}\right)+\alpha^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(y^{2}+\frac{p}{2}+\alpha\right)^{2}-\left[2\alpha\left(y^{2}+\frac{p}{2}\right)+\alpha^{2}-qy-r+\left(\frac{p}{2}\right)^{2}\right]=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В квадратных скобках сгруппируем слагаемые по степеням 
+\begin_inset Formula $y$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(y^{2}+\frac{p}{2}+\alpha\right)^{2}-\left[2\alpha y^{2}-qy+\alpha p+\alpha^{2}-r+\left(\frac{p}{2}\right)^{2}\right]=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выберем число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ таким образом, чтобы выражение в квадратных скобках было полным квадратом
+ по 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Для этого, как было сказано выше, его дискриминант должен быть равен нулю:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q^{2}-8\alpha\left(\alpha p+\alpha^{2}-r+\left(\frac{p}{2}\right)^{2}\right)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, мы получаем для 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ квадратной уравнение, которое мы уже умеем решать в общем виде.
+ Выбрав таким образом 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, мы представим уравнение четвёртой степени как разность двух квадратов,
+ которая может быть представлена в виде произведения двух многочленов второй
+ степени.
+ После этого для нахождения всех корней останется решить два квадратных
+ уравнения.
+\end_layout
+
+\begin_layout Chapter
+Группы
+\end_layout
+
+\begin_layout Section
+Примеры
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $M$
+\end_inset
+
+ — некоторое множество элементов произвольной природы.
+ Если каждой упорядоченной паре элементов 
+\begin_inset Formula $M$
+\end_inset
+
+ поставлен в соответствие определённый элемент также из 
+\begin_inset Formula $M$
+\end_inset
+
+, то говорят, что на 
+\begin_inset Formula $M$
+\end_inset
+
+ задана 
+\emph on
+бинарная операция
+\emph default
+.
+\end_layout
+
+\begin_layout Problem
+На множествах 1) всех чётных натуральных чисел, 2) всех нечётных натуральных
+ чисел, 3) всех отрицательных целых чисел рассмотрим операций
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Может быть другой термин, так как мы ещё не определили, являются ли данные
+ отображения операциями?
+\end_layout
+
+\end_inset
+
+ а) сложения, б) вычитания, в) умножения.
+ В каких случаях на указанных множествах получится бинарная операция?
+\end_layout
+
+\begin_layout Solution
+1) Сумма двух чётных чисел натуральных чисел — чётное натуральное число.
+ Разность двух чётных натуральных чисел — чётное число, но не обязательно
+ натуральное, разность может оказаться отрицательной.
+ Произведение двух чётных натуральных чисел — чётное натуральное число.
+\end_layout
+
+\begin_layout Solution
+2) Сумма и разность двух нечётных натуральных чисел — чётное число.
+ Произведение двух нечётных натуральных — нечётное число.
+\end_layout
+
+\begin_layout Solution
+3) Сумма двух отрицательных чисел — отрицательное число.
+ Разность двух отрицательных чисел может быть как отрицательной, так и не
+ отрицательной.
+ Произведение двух отрицательных целых чисел — положительное число.
+\end_layout
+
+\begin_layout Solution
+Таким образом, бинарная операция определена в следующих случаях: 1а, 1в,
+ 2в, 3а.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Добавить задачу про чётность суммы, разности, произведения
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Добавить задачу про знак суммы, разности, произведения, частного
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:equilateral-triangle-rotations"
+
+\end_inset
+
+Заполните полностью таблицу умножения для поворотов равностороннего треугольника.
+\end_layout
+
+\begin_layout Solution
+Введём следующие обозначения: 
+\begin_inset Formula $e$
+\end_inset
+
+ — поворот на 
+\begin_inset Formula $0\textdegree$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ — поворот на 
+\begin_inset Formula $120\textdegree$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ — поворот на 
+\begin_inset Formula $240\text{°}$
+\end_inset
+
+.
+ Умножению поворотов соответствует сложение величин углов.
+ При этом нужно учитывать, что углы, отличающиеся на 
+\begin_inset Formula $360\text{°}$
+\end_inset
+
+, считают идентичными.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Составьте таблицу умножения для всех симметрий правильного треугольника.
+\end_layout
+
+\begin_layout Solution
+Помимо поворотов на 
+\begin_inset Formula $0\textdegree$
+\end_inset
+
+, 
+\begin_inset Formula $120\textdegree$
+\end_inset
+
+ и 
+\begin_inset Formula $240\text{°}$
+\end_inset
+
+ (как в предыдущей задаче
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triangle-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), у правильного треугольника имеются ещё три осевые симметрии относительно
+ прямых, каждая из которых проходит через одну из вершин и середину противополож
+ной стороны.
+ Обозначим эти симметрии как 
+\begin_inset Formula $l_{A}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{B}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{C}$
+\end_inset
+
+.
+ Повторное отражение относительно той же оси приводит треугольник в исходное
+ состояние, поэтому 
+\begin_inset Formula $l_{A}l_{A}=l_{B}l_{B}=l_{C}l_{C}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Описанные симметрии могут быть записаны следующим образом 
+\begin_inset Formula $e=\left(\begin{array}{ccc}
+A & B & C\\
+A & B & C
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a=\left(\begin{array}{ccc}
+A & B & C\\
+B & C & A
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $b=\left(\begin{array}{ccc}
+A & B & C\\
+C & A & B
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $l_{A}=\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $l_{B}=\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $l_{C}=\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+al_{A}=\left(\begin{array}{ccc}
+A & B & C\\
+B & C & A
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)=l_{C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+al_{B}=\left(\begin{array}{ccc}
+A & B & C\\
+B & C & A
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)=l_{A}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+al_{C}=\left(\begin{array}{ccc}
+A & B & C\\
+B & C & A
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)=l_{B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{A}a=\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+B & C & A
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)=l_{B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{B}a=\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+B & C & A
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)=l_{C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{C}a=\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+B & C & A
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)=l_{A}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bl_{A}=\left(\begin{array}{ccc}
+A & B & C\\
+C & A & B
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)=l_{B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bl_{B}=\left(\begin{array}{ccc}
+A & B & C\\
+C & A & B
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)=l_{C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bl_{C}=\left(\begin{array}{ccc}
+A & B & C\\
+C & A & B
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)=l_{A}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{A}b=\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+C & A & B
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)=l_{C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{B}b=\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+C & A & B
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)=l_{A}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{C}b=\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+C & A & B
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)=l_{B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{A}l_{B}=\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+B & C & A
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{A}l_{C}=\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+C & A & B
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{B}l_{C}=\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+B & C & A
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{B}l_{A}=\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+C & A & B
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{C}l_{A}=\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+B & C & A
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{C}l_{B}=\left(\begin{array}{ccc}
+A & B & C\\
+B & A & C
+\end{array}\right)\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)=\left(\begin{array}{ccc}
+A & B & C\\
+C & A & B
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, искомая таблица умножения имеет вид
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:squate-rotations"
+
+\end_inset
+
+Составить таблицу умножения для вращений квадрата.
+\end_layout
+
+\begin_layout Solution
+Введём следующие обозначения: 
+\begin_inset Formula $e$
+\end_inset
+
+ — поворот на 
+\begin_inset Formula $0\textdegree$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ — поворот на 
+\begin_inset Formula $180\textdegree$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ — поворот на 
+\begin_inset Formula $90\text{°}$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+ — поворот на 
+\begin_inset Formula $270\text{°}$
+\end_inset
+
+.
+ Снова воспользуемся тем, что умножению поворотов соответствует сложение
+ величин углов, а углы большие 
+\begin_inset Formula $360\text{°}$
+\end_inset
+
+ можно уменьшить на 
+\begin_inset Formula $360\text{°}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Составить таблицу умножения для всех симметрий квадрата.
+\end_layout
+
+\begin_layout Solution
+Помимо поворотов (рассмотренных в предыдущей задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:squate-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), у квадрата имеются осевые симметрии — относительно двух диагоналей и
+ относительно двух прямых, проходящих через середины противоположных сторон
+ квадрата.
+ Таким образом, всего у квадрата 8 симметрий.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $e=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & B & C & D
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $b=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $c=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $d=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Solution
+Повторное отражение относительно той же оси приводит квадрат в исходное
+ состояние, поэтому 
+\begin_inset Formula $dd=ff=gg=hh=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ad=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+af=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ag=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ah=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+da=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+fa=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ga=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ha=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bd=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bf=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bg=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bh=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+db=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+fb=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+gb=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+hb=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+cd=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+cf=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+cg=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ch=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+dc=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+fc=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=h
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+gc=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+hc=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+df=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+dg=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+dh=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+fd=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+gd=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+hd=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+fg=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+fh=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+gf=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+hf=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+gh=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+hg=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, таблица умножения всех симметрий квадрата имеет вид:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти все симметрии ромба, не являющегося квадратом, и составить для них
+ таблицу умножения.
+\end_layout
+
+\begin_layout Solution
+Симметриями ромба, который не является квадратом, служат повороты на 
+\begin_inset Formula $0\text{°}$
+\end_inset
+
+ (обозначим его как 
+\begin_inset Formula $e$
+\end_inset
+
+) и 
+\begin_inset Formula $180\textdegree$
+\end_inset
+
+ (
+\begin_inset Formula $a$
+\end_inset
+
+), а также отражения относительно диагоналей (обозначим их как 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+b=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+c=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Повторное применение каждой из описанных операций даёт исходный ромб, поэтому
+ 
+\begin_inset Formula $ee=aa=bb=cc=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ab=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ba=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ac=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ca=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bc=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+cb=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, искомая таблица умножения приобретатет вид
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти все симметрии прямоугольника, не являющегося квадратом, и составить
+ для них таблицу умножения.
+\end_layout
+
+\begin_layout Solution
+Симметриями прямоугольника, который не является квадратом, служат повороты
+ на 
+\begin_inset Formula $0\text{°}$
+\end_inset
+
+ (обозначим его как 
+\begin_inset Formula $e$
+\end_inset
+
+) и 
+\begin_inset Formula $180\textdegree$
+\end_inset
+
+ (
+\begin_inset Formula $a$
+\end_inset
+
+), а также отражения относительно прямых, проходящих через середины противополож
+ных сторон прямоугольника (обозначим их как 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Повторное применение каждой из описанных операций даёт исходный прямоугольник,
+ поэтому 
+\begin_inset Formula $ee=aa=bb=cc=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+b=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+c=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ab=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ba=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ac=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ca=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bc=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+cb=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, искомая таблица умножения приобретатет вид
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Группы преобразований
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Выполнить этот раздел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sloppy}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
