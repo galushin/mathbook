@@ -1017,6 +1017,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:equilateral-triangle-rotations"
+
+\end_inset
+
 Заполните полностью таблицу умножения для поворотов равностороннего треугольника.
 \end_layout
 
@@ -1042,13 +1048,13 @@ status open
 \end_inset
 
  — поворот на 
-\begin_inset Formula $240\text{\textdegree}$
+\begin_inset Formula $240\text{°}$
 \end_inset
 
 .
  Умножению поворотов соответствует сложение величин углов.
  При этом нужно учитывать, что углы, отличающиеся на 
-\begin_inset Formula $360\text{\textdegree}$
+\begin_inset Formula $360\text{°}$
 \end_inset
 
 , считают идентичными.
@@ -1271,7 +1277,7 @@ status open
 \end_layout
 
 \begin_layout Solution
-Помиом поворотов на 
+Помимо поворотов на 
 \begin_inset Formula $0\textdegree$
 \end_inset
 
@@ -1280,16 +1286,16 @@ status open
 \end_inset
 
  и 
-\begin_inset Formula $240\text{\textdegree}$
+\begin_inset Formula $240\text{°}$
 \end_inset
 
  (как в предыдущей задаче
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triangle-rotations"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -2345,6 +2351,12 @@ C & A & B
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:squate-rotations"
+
+\end_inset
+
 Составить таблицу умножения для вращений квадрата.
 \end_layout
 
@@ -2370,7 +2382,7 @@ C & A & B
 \end_inset
 
  — поворот на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
 , 
@@ -2378,17 +2390,17 @@ C & A & B
 \end_inset
 
  — поворот на 
-\begin_inset Formula $270\text{\textdegree}$
+\begin_inset Formula $270\text{°}$
 \end_inset
 
 .
  Снова воспользуемся тем, что умножению поворотов соответствует сложение
  величин углов, а углы большие 
-\begin_inset Formula $360\text{\textdegree}$
+\begin_inset Formula $360\text{°}$
 \end_inset
 
  можно уменьшить на 
-\begin_inset Formula $360\text{\textdegree}$
+\begin_inset Formula $360\text{°}$
 \end_inset
 
 :
@@ -2722,22 +2734,13 @@ C & A & B
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
-\end_inset
-
 Помимо поворотов (рассмотренных в предыдущей задаче 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:squate-rotations"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -2770,6 +2773,782 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $a=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $b=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $c=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $l_{0}=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $l_{1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $l_{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $l_{3}=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+al_{0}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=l_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+al_{1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=l_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+al_{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=l_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+al_{3}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=l_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{0}a=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=l_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{1}a=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=l_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{2}a=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=l_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{3}a=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=l_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bl_{0}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=l_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bl_{1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=l_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bl_{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=l_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+bl_{3}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=l_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{0}b=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=l_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{1}b=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=l_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{2}b=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=l_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{3}b=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=l_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+cl_{0}=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=l_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+cl_{1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=l_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+cl_{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=l_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+cl_{3}=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=l_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{0}c=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=l_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{1}c=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=l_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{2}c=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=l_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{3}c=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=l_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{0}l_{1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{0}l_{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{0}l_{3}=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{1}l_{0}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{2}l_{0}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{3}l_{0}=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & C & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{1}l_{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{1}l_{3}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{2}l_{1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{3}l_{1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{2}l_{3}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+l_{3}l_{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, таблица умножения всех симметрий квадрата имеет вид:
 \end_layout
 
 \begin_layout Solution
@@ -3067,6 +3846,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{1}$
+\end_inset
+
 
 \end_layout
 
@@ -3076,6 +3858,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{2}$
+\end_inset
+
 
 \end_layout
 
@@ -3085,6 +3870,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{3}$
+\end_inset
+
 
 \end_layout
 
@@ -3094,6 +3882,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{0}$
+\end_inset
+
 
 \end_layout
 
@@ -3165,6 +3956,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{2}$
+\end_inset
+
 
 \end_layout
 
@@ -3174,6 +3968,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{3}$
+\end_inset
+
 
 \end_layout
 
@@ -3183,6 +3980,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{0}$
+\end_inset
+
 
 \end_layout
 
@@ -3192,6 +3992,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{1}$
+\end_inset
+
 
 \end_layout
 
@@ -3263,6 +4066,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{3}$
+\end_inset
+
 
 \end_layout
 
@@ -3272,6 +4078,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{0}$
+\end_inset
+
 
 \end_layout
 
@@ -3281,6 +4090,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{1}$
+\end_inset
+
 
 \end_layout
 
@@ -3290,6 +4102,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{2}$
+\end_inset
+
 
 \end_layout
 
@@ -3325,6 +4140,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{3}$
+\end_inset
+
 
 \end_layout
 
@@ -3334,6 +4152,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{2}$
+\end_inset
+
 
 \end_layout
 
@@ -3343,6 +4164,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{1}$
+\end_inset
+
 
 \end_layout
 
@@ -3364,6 +4188,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
 
 \end_layout
 
@@ -3373,6 +4200,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
 
 \end_layout
 
@@ -3382,6 +4212,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
 
 \end_layout
 
@@ -3417,6 +4250,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{0}$
+\end_inset
+
 
 \end_layout
 
@@ -3426,6 +4262,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{3}$
+\end_inset
+
 
 \end_layout
 
@@ -3435,6 +4274,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{2}$
+\end_inset
+
 
 \end_layout
 
@@ -3444,6 +4286,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
 
 \end_layout
 
@@ -3465,6 +4310,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
 
 \end_layout
 
@@ -3474,6 +4322,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
 
 \end_layout
 
@@ -3509,6 +4360,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{1}$
+\end_inset
+
 
 \end_layout
 
@@ -3518,6 +4372,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{0}$
+\end_inset
+
 
 \end_layout
 
@@ -3527,6 +4384,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{3}$
+\end_inset
+
 
 \end_layout
 
@@ -3536,6 +4396,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
 
 \end_layout
 
@@ -3545,6 +4408,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
 
 \end_layout
 
@@ -3566,6 +4432,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
 
 \end_layout
 
@@ -3601,6 +4470,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{2}$
+\end_inset
+
 
 \end_layout
 
@@ -3610,6 +4482,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{1}$
+\end_inset
+
 
 \end_layout
 
@@ -3619,6 +4494,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $l_{0}$
+\end_inset
+
 
 \end_layout
 
@@ -3628,6 +4506,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
 
 \end_layout
 
@@ -3637,6 +4518,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
 
 \end_layout
 
@@ -3646,6 +4530,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
 
 \end_layout
 
@@ -3678,7 +4565,7 @@ status open
 
 \begin_layout Solution
 Симметриями ромба, который не является квадратом, служат повороты на 
-\begin_inset Formula $0\text{\textdegree}$
+\begin_inset Formula $0\text{°}$
 \end_inset
 
  (обозначим его как 
@@ -4210,7 +5097,7 @@ C & D & A & B
 \begin_layout Solution
 Симметриями прямоугольника, который не является квадратом, служат повороты
  на 
-\begin_inset Formula $0\text{\textdegree}$
+\begin_inset Formula $0\text{°}$
 \end_inset
 
  (обозначим его как 
