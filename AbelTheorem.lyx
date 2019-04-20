@@ -368,7 +368,7 @@ x_{1,2}=\frac{-b+\sqrt{b^{2}-4ac}}{2a}\label{eq:quadratic-equation-solutions}
 \end_layout
 
 \begin_layout Claim
-(Теорема Виета) Комлексные числа 
+(Теорема Виета) Комплексные числа 
 \begin_inset Formula $x_{1}$
 \end_inset
 
@@ -623,7 +623,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Выясним, можно ли выбраит 
+Выясним, можно ли выбрать 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -1273,6 +1273,12 @@ name "prob:equilateral-triangle-rotations"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:equilateral-triange-symmetries"
+
+\end_inset
+
 Составьте таблицу умножения для всех симметрий правильного треугольника.
 \end_layout
 
@@ -4754,7 +4760,7 @@ C & D & A & B
 \end_layout
 
 \begin_layout Solution
-Таким образом, искомая таблица умножения приобретатет вид
+Таким образом, искомая таблица умножения приобретает вид
 \end_layout
 
 \begin_layout Solution
@@ -5287,7 +5293,7 @@ C & D & A & B
 \end_layout
 
 \begin_layout Solution
-Таким образом, искомая таблица умножения приобретатет вид
+Таким образом, искомая таблица умножения приобретает вид
 \end_layout
 
 \begin_layout Solution
@@ -5618,16 +5624,734 @@ C & D & A & B
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+Пусть 
+\begin_inset Formula $X$
+\end_inset
 
-\begin_layout Plain Layout
-Выполнить этот раздел
+ и 
+\begin_inset Formula $Y$
+\end_inset
+
+ — два множества элементов произвольной природы, и пусть каждому элементу
+ 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ поставлен в соответствие однозначно определённый элемент 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+.
+ Тогда говорят, что задано некоторое 
+\emph on
+отображение
+\emph default
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ множества 
+\begin_inset Formula $X$
+\end_inset
+
+ в множество 
+\begin_inset Formula $Y$
+\end_inset
+
+ (
+\begin_inset Formula $\varphi:X\to Y$
+\end_inset
+
+).
+ Элемент 
+\begin_inset Formula $y$
+\end_inset
+
+ называется 
+\emph on
+образом 
+\emph default
+элемента 
+\begin_inset Formula $x$
+\end_inset
+
+, а 
+\begin_inset Formula $x$
+\end_inset
+
+ — 
+\emph on
+прообразом 
+\emph default
+элемента 
+\begin_inset Formula $y$
+\end_inset
+
+, и записывают 
+\begin_inset Formula $\varphi\left(x\right)=y$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Definition
+Отображение 
+\begin_inset Formula $\varphi:X\to Y$
+\end_inset
+
+ называют отображением множества 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\series bold
+на 
+\series default
+множество 
+\begin_inset Formula $Y$
+\end_inset
+
+, если для каждого элемента 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ существует элемент 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(x\right)=y$
+\end_inset
+
+, то есть у каждого 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ есть прообраз в 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ставит в соответствие каждому городу Советского Союза первую букву его
+ названия на русском языке.
+ Будет ли 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ отображением всех городов Советского союза 
+\series bold
+на
+\series default
+ весь русский алфавит?
+\end_layout
+
+\begin_layout Solution
+Так как названия города не могут начинаться на твёрдый или мягкий знак,
+ то рассматриваемое отображение не является отображением на весь русский
+ алфавит.
+\end_layout
+
+\begin_layout Definition
+Отображение 
+\begin_inset Formula $\varphi:X\to Y$
+\end_inset
+
+ называют 
+\emph on
+взаимно однозначным отображением 
+\emph default
+множества 
+\begin_inset Formula $X$
+\end_inset
+
+ на множество 
+\begin_inset Formula $Y$
+\end_inset
+
+, если для каждого 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ существует, и притом единственный, прообраз в 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Рассмотрим следующие отображения множества всех целых чисел в множество
+ неотрицательных целых чисел:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\varphi_{1}\left(n\right)=n^{2}
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\varphi_{2}\left(n\right)=\left|n\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\varphi_{3}\left(n\right)=\begin{cases}
+2n, & n\ge0\\
+2\left|n\right|-1, & n<0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Какие из этих отображений являются отображениями на, взаимно однозначными
+ отображениями?
+\end_layout
+
+\begin_layout Solution
+Первое отображение не является отображением на всё множество неотрицательных
+ чисел, так как прообраз существует только для чисел, являющихся полными
+ квадратами.
+\end_layout
+
+\begin_layout Solution
+Второе отображение является отображением на множество всех неотрицательных
+ целых чисел, так как для любого 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $\left|n\right|=n$
+\end_inset
+
+, то есть для любого неотрицательного целого числа имеется прообраз — само
+ это число.
+ Однако это отображение не является взаимно однозначным, так как для любого
+ положительного целого числа 
+\begin_inset Formula $n$
+\end_inset
+
+ имеется два прообраза, так как 
+\begin_inset Formula $\left|n\right|=\left|-n\right|=n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Третье отображение является отображением на всё множество неотрицательных
+ целых чисел.
+ Действительно, если целое число 
+\begin_inset Formula $m\ge0$
+\end_inset
+
+ является чётным, то его прообраз определяется из условия 
+\begin_inset Formula $2n=m$
+\end_inset
+
+ и равен 
+\begin_inset Formula $n=\frac{m}{2}$
+\end_inset
+
+.
+ Если же число 
+\begin_inset Formula $m\ge0$
+\end_inset
+
+ является нечётным, то его прообраз определяется из условия 
+\begin_inset Formula $m=2\left|n\right|-1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|n\right|=\frac{m+1}{2}$
+\end_inset
+
+ и, так как 
+\begin_inset Formula $n$
+\end_inset
+
+ должно быть отрицательным, 
+\begin_inset Formula $n=-\frac{m+1}{2}$
+\end_inset
+
+.
+ Тем самым мы нашли обратное отображение:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi_{3}^{-1}\left(n\right)=\begin{cases}
+\frac{n}{2}, & n=0\mod2\\
+-\frac{n+1}{2}, & n=1\mod2
+\end{cases},
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $\varphi_{3}$
+\end_inset
+
+ — взаимно однозначное отображение.
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $M$
+\end_inset
+
+ — произвольное множество.
+ Произвольное взаимно однозначное отображение множества 
+\begin_inset Formula $M$
+\end_inset
+
+ на себя 
+\begin_inset Formula $g:M\to M$
+\end_inset
+
+, мы будем для краткости называть 
+\emph on
+преобразованием 
+\emph default
+множества 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Два преобразования 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ будут считаться равными, если 
+\begin_inset Formula $g_{1}\left(a\right)=g_{2}\left(a\right)$
+\end_inset
+
+ для любого 
+\begin_inset Formula $a\in M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Вместо термина преобразование часто используют термин 
+\emph on
+подстановка
+\emph default
+.
+ Мы будем использовать этот термин лишь в тех случаях, когда преобразование
+ задано на конечном множестве.
+\end_layout
+
+\begin_layout Definition
+Так как преобразование — это взаимно однозначное отображение, то для каждого
+ преобразования 
+\begin_inset Formula $g$
+\end_inset
+
+ существует обратное преобразование 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+, которое определяется следующим образом: если 
+\begin_inset Formula $g\left(a\right)=b$
+\end_inset
+
+, то 
+\begin_inset Formula $g^{-1}\left(b\right)=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти обратные преобразования ко всем симметриям равностороннего треугольника
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся таблицей умножения для симметрий равностороннего треугольника
+ построенного в указанной задаче.
+ Для каждой симметрии найдём ту, произведение с которой даёт тождественное
+ преобразование (поворот на 
+\begin_inset Formula $0\text{\textdegree}$
+\end_inset
+
+).
+ Получаем
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $e^{-1}=e$
+\end_inset
+
+, 
+\begin_inset Formula $a^{-1}=b$
+\end_inset
+
+, 
+\begin_inset Formula $b^{-1}=a$
+\end_inset
+
+, 
+\begin_inset Formula $l_{A}^{-1}=l_{A}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{B}^{-1}=l_{B}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{C}^{-1}=l_{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $g\left(x\right)=2x$
+\end_inset
+
+ — преобразование всех действительных чисел.
+ Найти обратное преобразование.
+\end_layout
+
+\begin_layout Solution
+Для нахождения обратного преобразования достаточно решить линейное уравнение
+ 
+\begin_inset Formula $y=2x$
+\end_inset
+
+ относительно 
+\begin_inset Formula $x$
+\end_inset
+
+: 
+\begin_inset Formula $x=\frac{y}{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g^{-1}\left(x\right)=\frac{x}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Произведение преобразований 
+\emph default
+
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ определяется следующим образом: 
+\begin_inset Formula $\left(g_{1}g_{2}\right)\left(x\right)=g_{1}\left(g_{2}\left(x\right)\right)$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ — преобразования множества 
+\begin_inset Formula $M$
+\end_inset
+
+, то 
+\begin_inset Formula $g_{1}g_{2}$
+\end_inset
+
+ — также преобразование множества 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Пусть некоторое множество преобразований 
+\begin_inset Formula $G$
+\end_inset
+
+ обладает следующими свойствами: 1) если преобразования 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ содержатся в 
+\begin_inset Formula $G$
+\end_inset
+
+, то и их произведение 
+\begin_inset Formula $g_{1}g_{2}$
+\end_inset
+
+ содержится в 
+\begin_inset Formula $G$
+\end_inset
+
+; 2) если преобразование 
+\begin_inset Formula $g$
+\end_inset
+
+ содержится в 
+\begin_inset Formula $G$
+\end_inset
+
+, то и обратное ему преобразование 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+ содержится в 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Тогда такое множество преобразований 
+\begin_inset Formula $G$
+\end_inset
+
+ будем называть 
+\emph on
+группой преобразований
+\emph default
+.
+\end_layout
+
+\begin_layout Definition
+Нетрудно проверить, что множества преобразований, рассмотренных в примерах
+ 1–6
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки?
+\end_layout
+
+\end_inset
+
+, являются группами преобразований.
+\end_layout
+
+\begin_layout Problem
+Доказать, что любая группа преобразований множества 
+\begin_inset Formula $M$
+\end_inset
+
+ содержит тождественное преобразование 
+\begin_inset Formula $e$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $e\left(x\right)=x$
+\end_inset
+
+ для любого 
+\begin_inset Formula $x\in M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению группы преобразований, вместе с любым преобразованием 
+\begin_inset Formula $g$
+\end_inset
+
+ в группе преобразований содержится и обратное преобразование 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+.
+ Рассмотрим преобразование 
+\begin_inset Formula $g^{-1}g$
+\end_inset
+
+, которое, по определению группы преобразований, также принадлежит ей.
+ По определению произведения преобразования и обратного преобразования:
+ 
+\begin_inset Formula $\left(g^{-1}g\right)\left(x\right)=g^{-1}\left(g\left(x\right)\right)=x$
+\end_inset
+
+ для любого 
+\begin_inset Formula $x\in M$
+\end_inset
+
+.
+ Тогда, по определению равенства преобразований, 
+\begin_inset Formula $g^{-1}g=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что 
+\begin_inset Formula $eg=ge=g$
+\end_inset
+
+ для любого преобразования 
+\begin_inset Formula $g\in G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Нужно доказать, что для любого 
+\begin_inset Formula $x\in M$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\left(eg\right)\left(x\right)=g\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(ge\right)\left(x\right)=g\left(x\right)$
+\end_inset
+
+.
+ Действительно, по определению произведения преобразований и тождественного
+ преобразования:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(eg\right)\left(x\right)=e\left(g\left(x\right)\right)=g\left(x\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(ge\right)\left(x\right)=g\left(e\left(x\right)\right)=g\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что для любых трёх преобразований 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{3}$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\left(g_{1}g_{2}\right)g_{3}=g_{1}\left(g_{2}g_{3}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Нужно доказать, что для любого 
+\begin_inset Formula $x\in M$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\left(\left(g_{1}g_{2}\right)g_{3}\right)\left(x\right)=\left(g_{1}\left(g_{2}g_{3}\right)\right)\left(x\right)$
+\end_inset
+
+.
+ Воспользуемся определением произведения преобразования, чтобы преобразовать
+ левую и правую части этого равенства:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\left(g_{1}g_{2}\right)g_{3}\right)\left(x\right)=\left(g_{1}g_{2}\right)\left(g_{3}\left(x\right)\right)=g_{1}\left(g_{2}\left(g_{3}\left(x\right)\right)\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(g_{1}\left(g_{2}g_{3}\right)\right)\left(x\right)=g_{1}\left(\left(g_{2}g_{3}\right)\left(x\right)\right)=g_{1}\left(g_{2}\left(g_{3}\left(x\right)\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как правые части этих равенств равны, то равны и левые, откуда следует
+ требуемое равенство.
 \end_layout
 
 \begin_layout Standard
