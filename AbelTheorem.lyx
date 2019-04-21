@@ -925,6 +925,12 @@ q^{2}-8\alpha\left(\alpha p+\alpha^{2}-r+\left(\frac{p}{2}\right)^{2}\right)=0.
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:binary-operation"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $M$
 \end_inset
@@ -2736,6 +2742,12 @@ name "prob:squate-rotations"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:square-symmetries"
+
+\end_inset
+
 Составить таблицу умножения для всех симметрий квадрата.
 \end_layout
 
@@ -4556,6 +4568,12 @@ C & D & A & B
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rhombos-symmetries"
+
+\end_inset
+
 Найти все симметрии ромба, не являющегося квадратом, и составить для них
  таблицу умножения.
 \end_layout
@@ -5087,8 +5105,24 @@ C & D & A & B
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rectangle-symmetries"
+
+\end_inset
+
 Найти все симметрии прямоугольника, не являющегося квадратом, и составить
  для них таблицу умножения.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на то, что ромб и квадрат являются дуальными многоугольниками
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -6190,6 +6224,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:transformations-group-contains-identity-transformation"
+
+\end_inset
+
 Доказать, что любая группа преобразований множества 
 \begin_inset Formula $M$
 \end_inset
@@ -6242,6 +6282,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:identity-transformation-is-identity-of-transformation-group"
+
+\end_inset
+
 Доказать, что 
 \begin_inset Formula $eg=ge=g$
 \end_inset
@@ -6294,6 +6340,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:composition-of-transformations-is-assiciative"
+
+\end_inset
+
 Доказать, что для любых трёх преобразований 
 \begin_inset Formula $g_{1}$
 \end_inset
@@ -6445,13 +6497,33 @@ status open
 \end_layout
 
 \begin_layout Definition
-Из результатов задач 12-14 
-\begin_inset Note Note
-status open
+Из результатов задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:transformations-group-contains-identity-transformation"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-добавить ссылки
-\end_layout
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:identity-transformation-is-identity-of-transformation-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:composition-of-transformations-is-assiciative"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -6484,16 +6556,26 @@ status open
 \end_layout
 
 \begin_layout Definition
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить пример: группа целых чисел по сложению
-\end_layout
-
+Рассмотрим множество всех целых чисел с бинарной операцией сложения.
+ Ассоциативность операции следует из законов арифметики.
+ Роль единицы выполняет число 
+\begin_inset Formula $0$
 \end_inset
 
+, так как для любого целого 
+\begin_inset Formula $n$
+\end_inset
 
+ имеют место равенства 
+\begin_inset Formula $0+n=n+0=n$
+\end_inset
+
+.
+ Обратным элементом является противоположное число, так как 
+\begin_inset Formula $n+\left(-n\right)=\left(-n\right)+n=0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -6856,6 +6938,12 @@ b_{1}\left(ab_{2}\right)=b_{1}e=b_{1},
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:double-inservse-and-inverse-of-unit"
+
+\end_inset
+
 Доказать, что: 1) 
 \begin_inset Formula $e^{-1}=e$
 \end_inset
@@ -6889,16 +6977,11 @@ b_{1}\left(ab_{2}\right)=b_{1}e=b_{1},
 \end_layout
 
 \begin_layout Definition
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Правильно построенное произведение
-\end_layout
-
-\end_inset
-
-
+Произведение, в котором скобки расставлены таким образом, что на каждом
+ шаге понятно, какое произведение нужно вычислять следующим, называется
+ 
+\emph on
+правильно построенным произведением.
 \end_layout
 
 \begin_layout Problem
@@ -6954,16 +7037,124 @@ name "prob:group-need-no-parens"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Доказывать будем по индукции (по количеству элементов в произведении).
+ Для одного и двух элементов утверждение тривиально, так как имеется только
+ один способ расстановки скобок.
+ Для произведения трёх элементов утверждение совпадает с ассоциативностью
+ операции.
+ Таким образом, утверждение нужно доказать для 
+\begin_inset Formula $n\ge4$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+.
 \end_layout
+
+\begin_layout Solution
+Сделаем предположение индукции: пусть утверждение задачи доказано для всех
+ 
+\begin_inset Formula $n=1,2,\dots n_{0}$
+\end_inset
+
+, докажем утверждение для 
+\begin_inset Formula $n=n_{0}+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим некоторое правильно составленное произведение 
+\begin_inset Formula $P$
+\end_inset
+
+ из элементов 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+,...,
+\begin_inset Formula $a_{n_{0}+1}$
+\end_inset
+
+ (именно в таком порядке), оно может быть записано в виде 
+\begin_inset Formula $A\cdot B$
+\end_inset
+
+, где 
+\begin_inset Formula $A=a_{1}\cdot\dots\cdot a_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $B=a_{k+1}\cdot\dots\cdot a_{n_{0}+1}$
+\end_inset
+
+, так как каждое из выражений 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — это произведение не более 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ множителей.
+ Если 
+\begin_inset Formula $k=n_{0}$
+\end_inset
+
+, то утверждение доказано, так как мы получаем выражение:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+P=\left(a_{1}\cdot\dots\cdot a_{n_{0}}\right)\cdot a_{n_{0}+1},
+\]
+
+\end_inset
+
+ где в выражении в скобках, по предположению индукции, умножение можно выполнять
+ в любом порядке, в том числе в том, который требуется по условиям задачи.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $k<n_{0}$
+\end_inset
+
+.
+ Перепишем выражение 
+\begin_inset Formula $P$
+\end_inset
+
+ в виде:
+\begin_inset Formula 
+\[
+P=\left(a_{1}\cdot\dots\cdot a_{k}\right)\cdot\left(a_{k+1}\cdot\left(a_{k+2}\cdot\dots\cdot a_{n_{0}+1}\right)\right),
+\]
+
+\end_inset
+
+ в силу ассоциативности, мы можем написать 
+\begin_inset Formula 
+\[
+P=\left(\left(a_{1}\cdot\dots\cdot a_{k}\right)\cdot a_{k+1}\right)\cdot\left(a_{k+2}\cdot\dots\cdot a_{n_{0}+1}\right).
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Повторяя описанную процедуру нужное число раз, получим выражение, в котором
+ произведение выполняется слева на право.
 \end_layout
 
 \begin_layout Standard
@@ -7001,17 +7192,10 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать, что умножение действительных чисел не меняется при перестановке
- сомножителей
-\end_layout
-
-\end_inset
-
-
+Для умножения действительных числе, помимо ассоциативности, выполняется
+ ещё одно важное свойство: произведение не изменяется при перестановке сомножите
+лей.
+ Однако в произвольной группе это свойство может не выполняться.
 \end_layout
 
 \begin_layout Definition
@@ -7047,46 +7231,83 @@ status open
 \end_layout
 
 \begin_layout Definition
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на некоммутативную группу, например группу всех симметрий
- равностороннего треугольника
-\end_layout
+Существуют некоммутативные группы, например, группа всех симметрий правильного
+ треугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Problem
-Выяснить, являются ли коммутативными следующие группы 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылки на примеры
-\end_layout
+Выяснить, являются ли коммутативными следующие группы: 1) группа вращений
+ треугольника (задача 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triangle-rotations"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-: 1) группа вращений треугольника, 2) группа вращений квадрата, 3) группа
- симметрий квадрата, 4) группа симметрий ромба, 5) группа симметрий прямоугольни
-ка.
+), 2) группа вращений квадрата (задача 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:squate-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), 3) группа симметрий квадрата (задача 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), 4) группа симметрий ромба (задача 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rhombos-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), 5) группа симметрий прямоугольника (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rectangle-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Рассматривая таблицы умножения соответствующих операций, видим, что коммутативны
+ми являются группы: 1, 2, 4, 5.
+ Не коммутативной являются группа 3 (например, 
+\begin_inset Formula $gd\neq dg$
 \end_inset
 
-
+).
 \end_layout
 
 \begin_layout Problem
@@ -7244,17 +7465,8 @@ status open
 .
 \end_layout
 
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить примечание про то, что рубашку надевают до пиджака, а снимают после?
-\end_layout
-
-\end_inset
-
-
+\begin_layout Remark
+Рубашку надевают до пиджака, а снимают — после.
 \end_layout
 
 \begin_layout Problem
@@ -7374,17 +7586,18 @@ noprefix "false"
 
 \end_inset
 
-, а произведение определено однозначно
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
+, а произведение определено однозначно (как результат бинарной операции
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:binary-operation"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-, то решение является единственным.
+), то решение является единственным.
 \end_layout
 
 \begin_layout Problem
@@ -7517,6 +7730,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:natural-powers-over-group"
+
+\end_inset
+
 Под 
 \begin_inset Formula $a^{m}$
 \end_inset
@@ -7545,6 +7764,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:inverse-of-power-is-power-of-inverse"
+
+\end_inset
+
 Доказать, что 
 \begin_inset Formula $\left(a^{m}\right)^{-1}=\left(a^{-1}\right)^{m}$
 \end_inset
@@ -7557,12 +7782,45 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+По определению степени 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:natural-powers-over-group"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+\end_inset
+
+, 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ есть произведение 
+\begin_inset Formula $m$
+\end_inset
+
+ одинаковых множителей, каждый из которых равен 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Как было доказано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:inverse-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, обратный элемент для произведения, равен произведению обратных элементов
+ в обратном порядке:
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{-1}=\left(\prod_{k=1}^{m}a\right)^{-1}=\prod_{k=1}^{m}a^{-1}=\left(a^{-1}\right)^{m}.
+\]
 
 \end_inset
 
@@ -7570,6 +7828,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:non-positive-power-over-group"
+
+\end_inset
+
 Таким образом, 
 \begin_inset Formula $\left(a^{m}\right)^{-1}$
 \end_inset
@@ -7615,16 +7879,267 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Это решение явно нужно упростить, разбив на более мелкие задачи
 \end_layout
 
 \end_inset
 
+Начнём со случая, когда по меньшей мере один из показателей степени равен
+ нулю.
+ Если 
+\begin_inset Formula $n=0$
+\end_inset
 
+, то 
+\begin_inset Formula $a^{n}=e$
+\end_inset
+
+, 
+\begin_inset Formula $m+n=m$
+\end_inset
+
+ и, по определениям целой степени и единичного элемента группы: 
+\begin_inset Formula $a^{m}\cdot a^{n}=a^{m}\cdot e=a^{m}=a^{m+n}.$
+\end_inset
+
+ Аналогично, если 
+\begin_inset Formula $m=0$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{m}\cdot a^{n}=e\cdot a^{n}=a^{n}=a^{m+n}$
+\end_inset
+
+.
+ В дальнейшем можно считать, что 
+\begin_inset Formula $m\neq0$
+\end_inset
+
+ и 
+\begin_inset Formula $n\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем сначала вспомогательное равенство 
+\begin_inset Formula $a^{m}a=a^{m+1}$
+\end_inset
+
+ для любого целого 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $m>0$
+\end_inset
+
+, то слева имеет произведение 
+\begin_inset Formula $m+1$
+\end_inset
+
+ множителя, каждый из которых равен 
+\begin_inset Formula $a$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a^{m+1}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $m=-1$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+a^{m}a=a^{-1}a=e=a^{-1+1}=a^{m+1}.
+\]
+
+\end_inset
+
+Если же 
+\begin_inset Formula $m<-1$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{m}=\left(a^{-1}\right)^{\left(-m\right)}$
+\end_inset
+
+ и, поскольку 
+\begin_inset Formula $m+1<0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+a^{m}a=\left(a^{-1}\right)^{\left(-m\right)-1}a^{-1}a=\left(a^{-1}\right)^{\left(-m\right)-1}e=a^{m+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Аналогично доказывается равенство 
+\begin_inset Formula $a\cdot a^{m}=a^{m+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Теперь требуемое утверждение для 
+\begin_inset Formula $n>0$
+\end_inset
+
+ можно доказать по индукции.
+ Для 
+\begin_inset Formula $n=1$
+\end_inset
+
+ мы его доказали выше.
+ Пусть теперь равенство 
+\begin_inset Formula $a^{m}a^{n}=a^{m+n}$
+\end_inset
+
+ доказано для всех 
+\begin_inset Formula $n=1,2,\dots,n_{0}$
+\end_inset
+
+, докажем его для 
+\begin_inset Formula $n=n_{0}+1$
+\end_inset
+
+.
+ Действительно, по предположению индукции и ассоциативности:
+\begin_inset Formula 
+\begin{multline*}
+a^{m}a^{n_{0}+1}=a^{m}\cdot\left(a\cdot a^{n_{0}}\right)=\left(a^{m}\cdot a\right)\cdot a^{n_{0}}=\\
+=a^{m+1}\cdot a^{n_{0}}=a^{m+1+n_{0}}=a^{m+n_{0}+1}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, индукционный переход также доказан, следовательно, утверждение
+ задачи выполняется для всех 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Остаётся доказать утверждение при 
+\begin_inset Formula $n<0$
+\end_inset
+
+.
+ Воспользуемся определением степени с отрицательным показателем:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m}a^{n}=a^{m}\left(a^{-1}\right)^{\left(-n\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, нужно доказать утверждение для любого натурального 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $a^{m}a^{-n}=a^{m-n}$
+\end_inset
+
+.
+ Снова воспользуемся методом математической индукции.
+ База индукции — случай 
+\begin_inset Formula $n=1$
+\end_inset
+
+, тогда 
+\begin_inset Formula $a^{m}a^{-n}=a^{m}a^{-1}.$
+\end_inset
+
+ Если 
+\begin_inset Formula $m>0$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{m}a^{-n}=a^{m-1}aa^{-1}=a^{m-1}e=a^{m-1}=a^{m-n}$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $m<0$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+a^{m}a^{n}=\left(a^{-1}\right)^{\left(-m\right)}\left(a^{-1}\right)=\left(a^{-1}\right)^{\left(-m+1\right)}=a^{m-1}=a^{m-n}.
+\]
+
+\end_inset
+
+ База индукции доказана.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь утверждение доказано для всех 
+\begin_inset Formula $n=1,2,\dots,n_{0}-1$
+\end_inset
+
+, докажем утверждение для 
+\begin_inset Formula $n=n_{0}>1$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{multline*}
+a^{m}a^{-n_{0}}=a^{m}\left(a^{-1}a^{-n_{0}+1}\right)=\left(a^{m}a^{-1}\right)a^{-n_{0}+1}=\\
+=a^{m-1}a^{-\left(n_{0}-1\right)}=a^{m-1-n_{0}+1}=a^{m-n_{0}}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Индукционный переход доказан.
+ А значит доказано и требуемое утверждение для любых 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -7641,15 +8156,238 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
+ 
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Это решение явно нужно упростить, разбив на более мелкие задачи
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $n=0$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(a^{m}\right)^{n}=\left(a^{m}\right)^{0}=e$
+\end_inset
+
+, 
+\begin_inset Formula $a^{mn}=a^{m\cdot0}=a^{0}=e$
+\end_inset
+
+, то есть утверждение доказано.
+ Аналогично, если 
+\begin_inset Formula $m=0$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(a^{m}\right)^{n}=\left(a^{0}\right)^{n}=e^{n}=e$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{mn}=a^{0\cdot n}=a^{0}=e$
+\end_inset
+
+, то есть требуемое утверждение тоже доказано.
+ Далее можно предполагать, что 
+\begin_inset Formula $m\neq0$
+\end_inset
+
+ и 
+\begin_inset Formula $n\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $n>0$
+\end_inset
+
+ и 
+\begin_inset Formula $m>0$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(a^{m}\right)^{n}$
+\end_inset
+
+ — это произведение 
+\begin_inset Formula $n$
+\end_inset
+
+ скобок, каждая из которых представляет собой произведение 
+\begin_inset Formula $m$
+\end_inset
+
+ множителей, каждый из которых равен 
+\begin_inset Formula $a$
+\end_inset
+
+, то есть произведение 
+\begin_inset Formula $mn$
+\end_inset
+
+ множителей, каждый из которых равен 
+\begin_inset Formula $a$
+\end_inset
+
+, что, по определению степени, есть 
+\begin_inset Formula $a^{mn}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Остальные случаи будем доказать, приводя их к случаю положительных степеней.
+ Если 
+\begin_inset Formula $n>0$
+\end_inset
+
+ и 
+\begin_inset Formula $m<0$
+\end_inset
+
+, то
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{n}=\left(\left(a^{-1}\right)^{-m}\right)^{n}
+\]
+
+\end_inset
+
+ и по доказанному для натуральных показателей степени: 
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{n}=\left(\left(a^{-1}\right)^{-m}\right)^{n}=\left(a^{-1}\right)^{\left(-m\right)n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{mn}=a^{-\left(\left(-m\right)n\right)}=\left(a^{-1}\right)^{\left(-m\right)n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как в последних двух равенствах равны правые части, то должны быть равны
+ и левые:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{n}=a^{mn}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $n<0$
+\end_inset
+
+ и 
+\begin_inset Formula $m>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{n}=\left(\left(a^{m}\right)^{-1}\right)^{\left(-n\right)}=\left(\left(a^{-1}\right)^{m}\right)^{\left(-n\right)}=\left(a^{-1}\right)^{m\left(-n\right)},
+\]
+
+\end_inset
+
+ с другой стороны:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{mn}=a^{-\left(m\left(-n\right)\right)}=\left(a^{-1}\right)^{m\left(-n\right)},
+\]
+
+\end_inset
+
+то есть утверждение выполняется и в этом случае.
+\end_layout
+
+\begin_layout Solution
+Остаётся рассмотреть случай 
+\begin_inset Formula $m<0$
+\end_inset
+
+ и 
+\begin_inset Formula $n<0$
+\end_inset
+
+, когда 
+\begin_inset Formula $mn=\left(-m\right)\left(-n\right)$
+\end_inset
+
+.
+ По определению степени с отрицательным показателем и доказанному в задачах
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:inverse-of-power-is-power-of-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:double-inservse-and-inverse-of-unit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\left(a^{m}\right)^{n}=\left(\left(\left(a^{-1}\right)^{\left(-m\right)}\right)^{-1}\right)^{\left(-n\right)}=\left(\left(\left(a^{\left(-m\right)}\right)^{-1}\right)^{-1}\right)^{\left(-n\right)}=\\
+=\left(a^{\left(-m\right)}\right)^{\left(-n\right)}=a^{\left(-m\right)\left(-n\right)}=a^{mn}.
+\end{multline*}
 
 \end_inset
 
