@@ -7863,6 +7863,12 @@ name "def:non-positive-power-over-group"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:power-of-sum-is-product-of-powers"
+
+\end_inset
+
 Доказать, что 
 \begin_inset Formula $a^{m}\cdot a^{n}=a^{m+n}$
 \end_inset
@@ -8143,6 +8149,12 @@ a^{m}a^{-n_{0}}=a^{m}\left(a^{-1}a^{-n_{0}+1}\right)=\left(a^{m}a^{-1}\right)a^{
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:double-power-is-power-of-product"
+
+\end_inset
+
 Доказать, что 
 \begin_inset Formula $\left(a^{m}\right)^{n}=a^{mn}$
 \end_inset
@@ -8388,6 +8400,971 @@ noprefix "false"
 \left(a^{m}\right)^{n}=\left(\left(\left(a^{-1}\right)^{\left(-m\right)}\right)^{-1}\right)^{\left(-n\right)}=\left(\left(\left(a^{\left(-m\right)}\right)^{-1}\right)^{-1}\right)^{\left(-n\right)}=\\
 =\left(a^{\left(-m\right)}\right)^{\left(-n\right)}=a^{\left(-m\right)\left(-n\right)}=a^{mn}.
 \end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Циклические группы
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:period-of-element"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент некоторой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Наименьшее натуральное число 
+\begin_inset Formula $n$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $a^{n}=e$
+\end_inset
+
+, называют 
+\emph on
+порядком элемента 
+\emph default
+
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Если такого 
+\begin_inset Formula $n$
+\end_inset
+
+ не существует, то говорят, что 
+\begin_inset Formula $a$
+\end_inset
+
+ — 
+\emph on
+элемент бесконечного порядка.
+\end_layout
+
+\begin_layout Problem
+Найти порядки всех элементов в группах симметрий правильного треугольника,
+ квадрата и ромба
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Доказать, что элементы 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a^{n-1}$
+\end_inset
+
+ все различны, а для любого целого 
+\begin_inset Formula $m$
+\end_inset
+
+ элемент 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ совпадает с одним из этих элементов.
+\end_layout
+
+\begin_layout Solution
+Доказывать будем от противного.
+ Пусть существуют некоторые целые числа 
+\begin_inset Formula $k$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+, такие что 
+\begin_inset Formula $0\le k<m<n$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{m}=a^{k}$
+\end_inset
+
+.
+ Умножив последнее равенство на 
+\begin_inset Formula $a^{-k}=\left(a^{k}\right)^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+a^{m-k}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+, то 
+\begin_inset Formula $m-k\le m<n$
+\end_inset
+
+, но, по определению порядка элемента
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:period-of-element"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $n$
+\end_inset
+
+ — это наименьшее натуральное число такое, что 
+\begin_inset Formula $a^{n}=e$
+\end_inset
+
+.
+ Данное противоречие означает, что предположение о равенстве 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{k}$
+\end_inset
+
+ является ложным, то есть все 
+\begin_inset Formula $a^{k}$
+\end_inset
+
+ при 
+\begin_inset Formula $k=0,1,\dots,n-1$
+\end_inset
+
+ различны.
+\end_layout
+
+\begin_layout Solution
+Произвольное целое число 
+\begin_inset Formula $m$
+\end_inset
+
+ может быть единственным образом представлено в виде 
+\begin_inset Formula $m=nq+r$
+\end_inset
+
+, где 
+\begin_inset Formula $q$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+ — целые числа, причём 
+\begin_inset Formula $0\le r<n$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Доказать этот факт?
+\end_layout
+
+\end_inset
+
+.
+ Поэтому, в силу свойств суммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:power-of-sum-is-product-of-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и произведения показателей степени 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:double-power-is-power-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а также свойств единичного элемента: 
+\begin_inset Formula 
+\[
+a^{m}=a^{nq+r}=a^{nq}\cdot a^{r}=\left(a^{n}\right)^{q}\cdot a^{r}=e^{q}\cdot a^{r}=a^{r}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $0\le r<n$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ совпадает с одним из элементов 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a^{n-1}$
+\end_inset
+
+, что и требовалось доказать.
+\end_layout
+
+\begin_layout Definition
+Если элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $n$
+\end_inset
+
+ и кроме элементов 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a^{n-1}$
+\end_inset
+
+ в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ нет других элементов, то группа 
+\begin_inset Formula $G$
+\end_inset
+
+ называется 
+\emph on
+циклической группой порядка 
+\begin_inset Formula $n$
+\end_inset
+
+, порождённой элементом 
+\begin_inset Formula $a$
+\end_inset
+
+
+\emph default
+, а элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ называется 
+\emph on
+образующим 
+\emph default
+этой группы.
+\end_layout
+
+\begin_layout Problem
+Пусть на плоскости дан правильный 
+\begin_inset Formula $n$
+\end_inset
+
+-угольник.
+ Рассмотрим все вращения плоскости (без переворачивания), переводящие правильный
+ 
+\begin_inset Formula $n$
+\end_inset
+
+-угольник в себя.
+ Доказать, что эти вращения образуют циклическую группу порядка 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти все образующие элементы в группах вращений треугольника и квадрата
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылки
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:criterion-when-power-of-element-is-identity"
+
+\end_inset
+
+Пусть элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $a^{m}=e$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $m=nd$
+\end_inset
+
+, где 
+\begin_inset Formula $d$
+\end_inset
+
+ — произвольное целое число.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $m=nd$
+\end_inset
+
+, тогда, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:double-power-is-power-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и определению порядка элемента 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:period-of-element"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+a^{m}=a^{nd}=\left(a^{n}\right)^{d}=e^{d}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть не существует такого целого 
+\begin_inset Formula $d$
+\end_inset
+
+, что 
+\begin_inset Formula $m=nd$
+\end_inset
+
+, то есть 
+\begin_inset Formula $m$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $n$
+\end_inset
+
+ без остатка, тогда 
+\begin_inset Formula $m=nd+r$
+\end_inset
+
+, где 
+\begin_inset Formula $r$
+\end_inset
+
+ — целое число 
+\begin_inset Formula $0<r<n$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+a^{m}=a^{nd+r}=\left(a^{n}\right)^{d}\cdot a^{r}=e^{d}\cdot a^{r}=a^{r},
+\]
+
+\end_inset
+
+ так как 
+\begin_inset Formula $r<n$
+\end_inset
+
+ и 
+\begin_inset Formula $r\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{r}\neq e$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $a^{m}\neq e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет простой порядок 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ — произвольное целое число.
+ Доказать, что либо 
+\begin_inset Formula $a^{m}=e$
+\end_inset
+
+, либо элемент 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По свойствам степеней:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{p}=a^{mp}=a^{pm}=\left(a^{p}\right)^{m}=e^{m}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Для того, чтобы доказать, что порядок 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ равен 
+\begin_inset Formula $p$
+\end_inset
+
+, остаётся показать, что для целого числа 
+\begin_inset Formula $k$
+\end_inset
+
+ такого, что 
+\begin_inset Formula $0<k<p$
+\end_inset
+
+, и 
+\begin_inset Formula $a^{m}\neq e$
+\end_inset
+
+ равенство 
+\begin_inset Formula $\left(a^{m}\right)^{k}=a^{mk}=e$
+\end_inset
+
+ не выполняется.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:criterion-when-power-of-element-is-identity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $a^{mk}=e$
+\end_inset
+
+ выполняется тогда и только тогда, когда 
+\begin_inset Formula $mk=pd$
+\end_inset
+
+, где 
+\begin_inset Formula $d$
+\end_inset
+
+ — целое число.
+ Так как 
+\begin_inset Formula $a^{m}\neq p$
+\end_inset
+
+, то 
+\begin_inset Formula $m$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ без остатка, если 
+\begin_inset Formula $k<p$
+\end_inset
+
+, то 
+\begin_inset Formula $k$
+\end_inset
+
+ также не может делиться на 
+\begin_inset Formula $p$
+\end_inset
+
+ без остатка.
+ Таким образом, в левой части равенства 
+\begin_inset Formula $mk=pd$
+\end_inset
+
+ стоит число, не кратное 
+\begin_inset Formula $p$
+\end_inset
+
+, а в правой — кратное 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Данное противоречие означает, что 
+\begin_inset Formula $k\ge p$
+\end_inset
+
+ или 
+\begin_inset Formula $a^{m}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $a^{m}=e$
+\end_inset
+
+ или 
+\begin_inset Formula $p$
+\end_inset
+
+ — период элемента 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть наибольший общий делитель натуральных чисел 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ равен 
+\begin_inset Formula $d$
+\end_inset
+
+, а элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Доказать, что элемент 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $\frac{n}{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+Найдём период элемента 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ непосредственно.
+ Нам нужно найти наименьшее положительное целое 
+\begin_inset Formula $k$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $\left(a^{m}\right)^{k}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Найти все образующие в группе вращений правильного 12-угольника.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент бесконечного порядка.
+ Доказать, что для любых двух различных целых чисел 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ элементы 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{n}$
+\end_inset
+
+ различны.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Если 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент бесконечного порядка и кроме элементов вида 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+ — целое число, в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ больше нет элементов, то 
+\begin_inset Formula $G$
+\end_inset
+
+ называют 
+\emph on
+бесконечной циклической группой
+\emph default
+, а элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ — её 
+\emph on
+образующим
+\emph default
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что группа целых чисел по сложению 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ является бесконечной циклической группой.
+ Найти все её образующие.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пример про группу остатков по сложению
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Составить таблицы сложению по модулям 2, 3 и 4.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что остатки с операций сложения по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ образуют группу, причём эта группа циклическая порядка 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Рассмотрим произвольную циклическую группу 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $a^{m}\cdot a^{r}=a^{k}$
+\end_inset
+
+ тогда и только тогда, когда по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $m+r=k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать переход к понятию изоморфизма (в том числе ссылка на задачу 27
+ как пример бесконечной циклической группы).
+\end_layout
 
 \end_inset
 
