@@ -10778,6 +10778,474 @@ noprefix "false"
 Изоморфизм
 \end_layout
 
+\begin_layout Definition
+Пусть даны две группы 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+, и пусть имеется взаимно однозначное отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ элементов группы 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ на элементы группы 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, причём такое, что умножению в 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ соответствует умножение в 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ называют 
+\emph on
+изоморфизмом 
+\emph default
+группы 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ на группу 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+, а группы, между которыми можно установить изоморфизм, называют 
+\emph on
+изоморфными
+\emph default
+.
+\end_layout
+
+\begin_layout Problem
+Какие из следующих групп изоморфны: 1) группа вращений квадрата, 2) группа
+ вращений ромба, 3) группа симметрий прямоугольника, 4) группа остатков
+ с операцией сложения по модулю 4?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi:G_{1}\to G_{2}$
+\end_inset
+
+ — изоморфизм.
+ Доказать, что обратное отображение 
+\begin_inset Formula $\varphi^{-1}:G_{2}\to G_{1}$
+\end_inset
+
+ также изоморфизм.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi_{1}:G_{1}\to G_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{2}:G_{2}\to G_{3}$
+\end_inset
+
+ — изоморфизмы.
+ Доказать, что 
+\begin_inset Formula $\varphi_{2}\varphi_{1}:G_{1}\to G_{3}$
+\end_inset
+
+ также изоморфизм.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Замечание про то, что отношение изоморфизма транзитивно
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что любая циклическая группа порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ изоморфна группе остатков при делении на 
+\begin_inset Formula $n$
+\end_inset
+
+ с операцией сложения по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что любая бесконечная циклическая группа изоморфна группе целых
+ чисел по сложению.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — изоморфизм.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+, где 
+\begin_inset Formula $e_{G}$
+\end_inset
+
+ и 
+\begin_inset Formula $e_{F}$
+\end_inset
+
+ — единицы групп 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ соответственно.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — изоморфизм.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}$
+\end_inset
+
+ для всех элементов 
+\begin_inset Formula $g\in G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — изоморфизм и 
+\begin_inset Formula $\varphi\left(g\right)=h$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+ имеют одинаковые порядки.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Замечание про то, что изоморфные группы можно не различать
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти все (с точностью до изоморфизма) группы, содержащие а) 2 элемента,
+ б) 3 элемента.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Привести пример двух групп с одинаковым числом элементов, но не изоморфных.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что группа всех действительных чисел по сложению изоморфна группе
+ положительных действительных чисел по умножению.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольный элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Рассмотрим отображение 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ множества элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ в себя, определённое следующим образом: 
+\begin_inset Formula $\varphi_{a}\left(x\right)=ax$
+\end_inset
+
+ для любого 
+\begin_inset Formula $x\in G$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ является преобразованием множества элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ (то есть взаимно однозначным отображением множества элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на себя).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть для каждого элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ построено преобразование 
+\begin_inset Formula $\varphi_{a}\left(x\right)=ax$
+\end_inset
+
+.
+ Доказать, что множество всех этих преобразований 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ образует группу с обычной операцией произведения преобразований (композиция).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ изоморфна построенной в предыдущей задаче группе преобразований 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
