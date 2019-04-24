@@ -4570,7 +4570,7 @@ C & D & A & B
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:rhombos-symmetries"
+name "prob:rhombus-symmetries"
 
 \end_inset
 
@@ -6413,6 +6413,12 @@ name "prob:composition-of-transformations-is-assiciative"
 \begin_layout Definition
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "def:group"
+
+\end_inset
+
 Группой 
 \emph default
 называется множество 
@@ -6496,7 +6502,7 @@ name "prob:composition-of-transformations-is-assiciative"
 .
 \end_layout
 
-\begin_layout Definition
+\begin_layout Standard
 Из результатов задач 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6555,7 +6561,13 @@ status open
 группами.
 \end_layout
 
-\begin_layout Definition
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "exa:group-of-integer-numbers-with-addition"
+
+\end_inset
+
 Рассмотрим множество всех целых чисел с бинарной операцией сложения.
  Ассоциативность операции следует из законов арифметики.
  Роль единицы выполняет число 
@@ -7280,7 +7292,7 @@ noprefix "false"
 ), 4) группа симметрий ромба (задача 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:rhombos-symmetries"
+reference "prob:rhombus-symmetries"
 plural "false"
 caps "false"
 noprefix "false"
@@ -8458,13 +8470,36 @@ name "def:period-of-element"
 
 \begin_layout Problem
 Найти порядки всех элементов в группах симметрий правильного треугольника,
- квадрата и ромба
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылки
+ квадрата и ромба.
 \end_layout
+
+\begin_layout Solution
+Для каждого элемента группы будем рассматривать степени всё большего показателя,
+ пока не получим единичный элемент.
+ Период единичного элемента 
+\begin_inset Formula $e$
+\end_inset
+
+ в любой группе равен 
+\begin_inset Formula $1$
+\end_inset
+
+, так как 
+\begin_inset Formula $e^{1}=e$
+\end_inset
+
+, а натуральных чисел меньше единицы не существует.
+\end_layout
+
+\begin_layout Solution
+Для определения порядков элементов группы симметрий правильного треугольника
+ воспользуемся результатами задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -8472,16 +8507,170 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+\begin_inset Formula $a^{2}=b$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+, 
+\begin_inset Formula $a^{3}=a^{2}a=ba=e$
+\end_inset
+
+, то есть порядок 
+\begin_inset Formula $a$
+\end_inset
+
+ равен 
+\begin_inset Formula $3$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+\begin_inset Formula $b^{2}=a$
+\end_inset
+
+, 
+\begin_inset Formula $b^{3}=b^{2}b=ab=e$
+\end_inset
+
+, то есть порядок 
+\begin_inset Formula $b$
+\end_inset
+
+ равен 3.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $l_{A}^{2}=l_{B}^{2}=l_{C}^{2}=e$
+\end_inset
+
+, то есть порядок элементов 
+\begin_inset Formula $l_{A}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{B}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{C}$
+\end_inset
+
+ равен 2.
+\end_layout
+
+\begin_layout Solution
+Для определения порядков элементов группы симметрий квадрата воспользуемся
+ результатами задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Solution
+\begin_inset Formula $a^{2}=d^{2}=f^{2}=g^{2}=h^{2}=e$
+\end_inset
+
+, то есть порядок элементов 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $d$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+ равен 2.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $b^{2}=a$
+\end_inset
+
+, 
+\begin_inset Formula $b^{3}=b^{2}b=ab=c$
+\end_inset
+
+, 
+\begin_inset Formula $b^{4}=\left(b^{2}\right)^{2}=a^{2}=e$
+\end_inset
+
+, то есть порядок элемента 
+\begin_inset Formula $b$
+\end_inset
+
+ равен 4.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $c^{2}=a$
+\end_inset
+
+, 
+\begin_inset Formula $c^{3}=c^{2}c=ac=b$
+\end_inset
+
+, 
+\begin_inset Formula $c^{4}=\left(c^{2}\right)^{2}=a^{2}=e$
+\end_inset
+
+, то есть порядок элемента 
+\begin_inset Formula $c$
+\end_inset
+
+ равен 4.
+\end_layout
+
+\begin_layout Solution
+Для определения порядка элементов группы симметрий ромба воспользуемся результат
+ами задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rhombus-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $a^{2}=b^{2}=c^{2}=e$
+\end_inset
+
+, то есть период элементов 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ равен 2.
 \end_layout
 
 \begin_layout Problem
@@ -8769,27 +8958,141 @@ a^{m}=a^{nq+r}=a^{nq}\cdot a^{r}=\left(a^{n}\right)^{q}\cdot a^{r}=e^{q}\cdot a^
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Данную группу составляют повороты угловые величины вида 
+\begin_inset Formula $\frac{2\pi}{n}k$
 \end_inset
 
+, где 
+\begin_inset Formula $k=0,1,\dots n-1$
+\end_inset
 
+.
+ Операцией группы является композиция поворотов, которой соответствует сложение
+ угловых величин, с учётом того, что углы, отличающиеся на величину, кратную
+ 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, тождественны.
+ Единичным элементом является поворот на 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $a=\frac{2\pi}{n}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $a^{k}=\frac{2\pi}{n}k$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{n}=\frac{2\pi}{n}n=2\pi=0=e$
+\end_inset
+
+.
+ Таким образом, все элементы группы являются степенями 
+\begin_inset Formula $a$
+\end_inset
+
+ и существует 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов.
 \end_layout
 
 \begin_layout Problem
-Найти все образующие элементы в группах вращений треугольника и квадрата
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылки
+Найти все образующие элементы в группах вращений треугольника и квадрата.
 \end_layout
+
+\begin_layout Solution
+Единичный элемент может быть образующим только для группы, состоящей из
+ одного элемента, так как для любого целого 
+\begin_inset Formula $k$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $e^{k}=e$
+\end_inset
+
+.
+ Будем рассматривать последовательно степени каждого элемента (начиная с
+ нулевого показателя), пока не перечислим все элементы группы (значит рассматрив
+аемый элемент является образующим) или не получим элемент, который получали
+ при меньшем показателе степени (тогда данный элемент не является образующим)
+\end_layout
+
+\begin_layout Solution
+Для поиска образующих элементов группы вращений треугольника воспользуемся
+ решением задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triangle-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $a^{0}=e$
+\end_inset
+
+, 
+\begin_inset Formula $a^{1}=a$
+\end_inset
+
+,
+\begin_inset Formula $a^{2}=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $b^{0}=e$
+\end_inset
+
+, 
+\begin_inset Formula $b^{1}=b$
+\end_inset
+
+,
+\begin_inset Formula $b^{2}=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ являются образующими данной группы.
+\end_layout
+
+\begin_layout Solution
+Для поиска образующих элементов группы вращений квадрата воспользуемся решением
+ задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:squate-rotations"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -8797,16 +9100,73 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+\begin_inset Formula $a^{0}=e$
 \end_inset
 
+, 
+\begin_inset Formula $a^{1}=a$
+\end_inset
 
+, 
+\begin_inset Formula $a^{2}=e$
+\end_inset
+
+, значит 
+\begin_inset Formula $a$
+\end_inset
+
+ не является образующим элементом группы.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $b^{0}=e$
+\end_inset
+
+, 
+\begin_inset Formula $b^{1}=b$
+\end_inset
+
+, 
+\begin_inset Formula $b^{2}=a$
+\end_inset
+
+, 
+\begin_inset Formula $b^{3}=b^{2}b=ab=c$
+\end_inset
+
+, значит 
+\begin_inset Formula $b$
+\end_inset
+
+ является образующим элементом группы.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $c^{0}=e$
+\end_inset
+
+, 
+\begin_inset Formula $c^{1}=c$
+\end_inset
+
+, 
+\begin_inset Formula $c^{2}=a$
+\end_inset
+
+, 
+\begin_inset Formula $c^{3}=c^{2}c=ac=b$
+\end_inset
+
+, значит 
+\begin_inset Formula $c$
+\end_inset
+
+ является образующим элементом группы.
+\end_layout
+
+\begin_layout Solution
+Также можно было бы воспользоваться тем фактом, что образующими элементами
+ являются элементы группы, порядок которых равен количеству элементов группы.
 \end_layout
 
 \begin_layout Problem
@@ -9091,6 +9451,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:period-of-power-of-element"
+
+\end_inset
+
 Пусть наибольший общий делитель натуральных чисел 
 \begin_inset Formula $m$
 \end_inset
@@ -9294,16 +9660,146 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+Количество элементов в этой группе равно 12, её составляют повороты на 
+\begin_inset Formula $\frac{2\pi}{12}k=\frac{\pi}{6}k$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1,\dots11$
+\end_inset
+
+.
+ Одним из образующих этой группы является поворот на 
+\begin_inset Formula $\frac{\pi}{6}$
+\end_inset
+
+.
+ Обозначим его как 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Все элементы этой группы имеют вид 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+.
+ Образующими являются элементы, период которых равен 12.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:period-of-power-of-element"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, элемент 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $\frac{n}{d}$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — порядок элемента 
+\begin_inset Formula $a$
+\end_inset
+
+, а 
+\begin_inset Formula $d$
+\end_inset
+
+ — наибольший общий делитель 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\frac{n}{d}=n$
+\end_inset
+
+, то 
+\begin_inset Formula $d=1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ должны быть взаимно просты 
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+ссылки на этот материал из теории чисел
 \end_layout
 
 \end_inset
 
+.
+ Таким образом, нам нужно найти натуральные числа, меньшие 
+\begin_inset Formula $12$
+\end_inset
 
+ и взаимно простые с 
+\begin_inset Formula $12$
+\end_inset
+
+.
+ Такими числами являются 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $5$
+\end_inset
+
+, 
+\begin_inset Formula $7$
+\end_inset
+
+ и 
+\begin_inset Formula $11$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+То есть образующими данной группы являются повороты на 
+\begin_inset Formula $\frac{\pi}{6}$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{5\pi}{6}$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{7\pi}{6}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{11\pi}{6}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -9405,12 +9901,12 @@ status open
 
 \begin_layout Problem
 Доказать, что группа целых чисел по сложению 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:group-of-integer-numbers-with-addition"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -9419,29 +9915,102 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+В качестве 
+\begin_inset Formula $a$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Пример про группу остатков по сложению
-\end_layout
-
+ можно взять число 
+\begin_inset Formula $1$
 \end_inset
 
+.
+ Тогда 
+\begin_inset Formula $a^{k}=k$
+\end_inset
 
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — произвольное целое число.
+ Ещё одним образующим является элемент 
+\begin_inset Formula $b=-1$
+\end_inset
+
+, 
+\begin_inset Formula $b^{k}=-k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — снова произвольное целое число.
+\end_layout
+
+\begin_layout Solution
+Других образующих в данной группе нет.
+ Действительно, степени (в данной группе) элемента соответствующего числу
+ 
+\begin_inset Formula $c$
+\end_inset
+
+ представляют собой числа, кратные данному элементу: 
+\begin_inset Formula $c^{k}=ck$
+\end_inset
+
+ Если 
+\begin_inset Formula $\left|c\right|\neq1$
+\end_inset
+
+, то не существует такого 
+\begin_inset Formula $k$
+\end_inset
+
+, что 
+\begin_inset Formula $ck=1$
+\end_inset
+
+, то есть по меньшей мере один элемент не может быть получен как степень
+ любого элемента, кроме 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ — положительное целое число.
+ Рассмотрим всевозможные остатки, которые могут получится при деление целых
+ чисел на 
+\begin_inset Formula $n$
+\end_inset
+
+, это будут числа 
+\begin_inset Formula $0,1,2,\dots,n-1$
+\end_inset
+
+.
+ Зададим на множестве этих чисел следующую бинарную операцию: будем складывать
+ остатки как обычно, а затем за результат брать остаток от деления полученного
+ числа 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Эту операцию будем называть сложением по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -9980,19 +10549,92 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Проверим соответствие рассматриваемых множества и операции определению группы
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Написать решение
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+Сложение по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ является бинарной операцией, так как сумма двух целых числе из интервала
+ 
+\begin_inset Formula $\left[0,n-1\right]$
+\end_inset
+
+ после взятия остатка снова является целым числом из интервала 
+\begin_inset Formula $\left[0,n-1\right]$
+\end_inset
+
+.
+ Ассоциативность сложения известна из элементарной арифметики и сохраняется
+ после взятия остатка.
+\end_layout
+
+\begin_layout Solution
+Единицей группы является ноль, обратным элементом для нуля будет он сам,
+ а обратным для любого числа 
+\begin_inset Formula $m$
+\end_inset
+
+ из отрезка 
+\begin_inset Formula $\left[0;n-1\right]$
+\end_inset
+
+ является число 
+\begin_inset Formula $n-m$
+\end_inset
+
+, так как 
+\begin_inset Formula 
+\[
+\left(n-m\right)+n=m+\left(n-m\right)=n=0\mod n.
+\]
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Solution
+Положив 
+\begin_inset Formula $a=1$
+\end_inset
+
+ , получим 
+\begin_inset Formula $a^{k}=k$
+\end_inset
+
+, таким образом, все 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов группы остатков могут быть получены как степени элемента, соответству
+ющего числу 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:cyclic-group-is-related-to-modular-addition"
+
+\end_inset
+
 Рассмотрим произвольную циклическую группу 
 \begin_inset Formula $n$
 \end_inset
@@ -10014,30 +10656,126 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Умножим равенство 
+\begin_inset Formula $a^{m}\cdot a^{r}=a^{k}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ слева на 
+\begin_inset Formula $a^{-k}$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+a^{m}\cdot a^{r}\cdot a^{-k}=e,
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m+r-k}=e
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:criterion-when-power-of-element-is-identity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, последнее равенство возможно тогда и только тогда, когда показатель степени
+ кратен 
+\begin_inset Formula $n$
+\end_inset
+
+: 
+\begin_inset Formula $m+r-k=nq$
+\end_inset
+
+, где 
+\begin_inset Formula $q$
+\end_inset
+
+ — некоторое целое число, то есть 
+\begin_inset Formula $m+r=k+nq$
+\end_inset
+
+ иными словами, 
+\begin_inset Formula $m+r$
+\end_inset
+
+ отличаются от 
+\begin_inset Formula $k$
+\end_inset
+
+ на число, кратное 
+\begin_inset Formula $n$
+\end_inset
+
+, а это и есть равенство по модулю 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на этот материал из теории чисел
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать переход к понятию изоморфизма (в том числе ссылка на задачу 27
- как пример бесконечной циклической группы).
-\end_layout
+Из результатов задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cyclic-group-is-related-to-modular-addition"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+ следует умножению элементов в произвольной циклической группе порядка 
+\begin_inset Formula $n$
+\end_inset
 
+ соответствует сложение остатков по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Аналогично, умножению элементов бесконечной циклической группы соответствует
+ сложение целых чисел (задача 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:power-of-sum-is-product-of-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Это приводит нас к понятию изоморфизма между группами.
+\end_layout
+
+\begin_layout Section
+Изоморфизм
 \end_layout
 
 \begin_layout Standard
