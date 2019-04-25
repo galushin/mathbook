@@ -5657,7 +5657,7 @@ C & D & A & B
 Группы преобразований
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 Пусть 
 \begin_inset Formula $X$
 \end_inset
@@ -5728,6 +5728,13 @@ C & D & A & B
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \begin_layout Definition
 Отображение 
 \begin_inset Formula $\varphi:X\to Y$
@@ -5754,7 +5761,7 @@ C & D & A & B
 \end_inset
 
  такой, что 
-\begin_inset Formula $\varphi\left(x\right)=y$
+\begin_inset Formula $\varphi\left(\right)=y$
 \end_inset
 
 , то есть у каждого 
@@ -5793,6 +5800,12 @@ C & D & A & B
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:one-to-one-mapping"
+
+\end_inset
+
 Отображение 
 \begin_inset Formula $\varphi:X\to Y$
 \end_inset
@@ -6782,7 +6795,13 @@ status open
 \end_layout
 
 \begin_layout Problem
-Доказать, что в любой группе существует единственный элемент.
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:unity-is-unique"
+
+\end_inset
+
+Доказать, что в любой группе существует единственный единичный элемент.
 \end_layout
 
 \begin_layout Solution
@@ -10788,6 +10807,16 @@ noprefix "false"
 \end_inset
 
 , и пусть имеется взаимно однозначное отображение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:one-to-one-mapping"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
 \begin_inset Formula $\varphi$
 \end_inset
 
@@ -10797,16 +10826,6 @@ noprefix "false"
 
  на элементы группы 
 \begin_inset Formula $G_{2}$
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
-
 \end_inset
 
 , причём такое, что умножению в 
@@ -10968,6 +10987,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:isomorphism-maps-unity-to-unity"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
@@ -10997,16 +11022,98 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Обозначим 
+\begin_inset Formula $\varphi\left(e_{G}\right)=f_{0}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ и рассмотрим произвольный элементы 
+\begin_inset Formula $f$
+\end_inset
+
+ группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — изоморфизм, то у любого 
+\begin_inset Formula $f$
+\end_inset
+
+ существует прообраз 
+\begin_inset Formula $g$
+\end_inset
+
+ в группе 
+\begin_inset Formula $G$
+\end_inset
+
+: 
+\begin_inset Formula $\varphi\left(g\right)=f$
+\end_inset
+
+.
+ Тогда, в силу определений единицы группы и изоморфизма:
 \end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+f=\varphi\left(g\right)=\varphi\left(ge_{G}\right)=\varphi\left(g\right)\varphi\left(e_{G}\right)=ff_{0},
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+f=\varphi\left(g\right)=\varphi\left(e_{G}g\right)=\varphi\left(e_{G}\right)\varphi\left(g\right)=f_{0}f.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, для любого 
+\begin_inset Formula $f\in F$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $ff_{0}=f_{0}f=f$
+\end_inset
+
+, то есть 
+\begin_inset Formula $f_{0}$
+\end_inset
+
+ удовлетворяет определению единицы группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Так как единица группы единственна 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:unity-is-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $f_{0}=\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -11027,12 +11134,86 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+По определению обратного элемента 
+\begin_inset Formula $gg^{-1}=g^{-1}g=e_{G}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+.
+ Поэтому, в силу определения изоморфизма:
 \end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(e_{G}\right)=\varphi\left(g\right)\varphi\left(g^{-1}\right)=\varphi\left(g^{-1}\right)\varphi\left(g\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $\varphi\left(g\right)=f$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=h$
+\end_inset
+
+.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphism-maps-unity-to-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+fh=hf=e_{F}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $h=\varphi\left(g^{-1}\right)$
+\end_inset
+
+ удовлетворяет требованиям к 
+\begin_inset Formula $f^{-1}=\left[\varphi\left(g\right)\right]^{-1}$
+\end_inset
+
+.
+ Так как у каждого элемента в группе существует единственный обратный элемент
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:inverse-element-is-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}.
+\]
 
 \end_inset
 
