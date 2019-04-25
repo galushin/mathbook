@@ -8902,6 +8902,12 @@ a^{m}=a^{nq+r}=a^{nq}\cdot a^{r}=\left(a^{n}\right)^{q}\cdot a^{r}=e^{q}\cdot a^
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:cyclic-group"
+
+\end_inset
+
 Если элемент 
 \begin_inset Formula $a$
 \end_inset
@@ -11260,16 +11266,613 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Любая группа должна содержать единичный элемент 
+\begin_inset Formula $e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если группа содержит два элемента, то их можно обозначить 
+\begin_inset Formula $e$
+\end_inset
+
+ и 
+\begin_inset Formula $a\neq e$
+\end_inset
+
+.
+ Для каждого элемента группы должен быть определён обратный элемент.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:double-inservse-and-inverse-of-unit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $e^{-1}=e$
+\end_inset
+
+.
+ Остаётся определить 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+, так как 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ должен быть элементом группы, поэтому он может быть равен либо 
+\begin_inset Formula $e$
+\end_inset
+
+, либо 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $a^{-1}=e$
+\end_inset
+
+, то, снова по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:double-inservse-and-inverse-of-unit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left(a^{-1}\right)^{-1}=a=e^{-1}=e$
+\end_inset
+
+, что противоречит 
+\begin_inset Formula $a\neq e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким обарзом, остаётся только одна возможность: 
+\begin_inset Formula $a^{-1}=a$
+\end_inset
+
+, то есть имеется лишь одна группа, содержащая 2 элемента.
+ Таблица умножения для этой группы содержит лишь одно приозведение, значение
+ которого не следует прямо из аксиом группы: 
+\begin_inset Formula $aa=aa^{-1}=e$
+\end_inset
+
+, то есть эта таблица имеет вид:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-Написать решение
+
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Попробуем построить теперь группу, содержащую три элемента.
+ Обозначим эти элементы 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Так же как и в случае двух элементов, не может быть 
+\begin_inset Formula $a^{-1}=e$
+\end_inset
+
+ или 
+\begin_inset Formula $b^{-1}=e$
+\end_inset
+
+, так как в таких случаях будет 
+\begin_inset Formula $a=e$
+\end_inset
+
+ или 
+\begin_inset Formula $b=e$
+\end_inset
+
+, что противоречит наличию в группе трёх различных элементов.
+ Таким образом, 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ равен либо 
+\begin_inset Formula $a$
+\end_inset
+
+, либо 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $a^{-1}=a$
+\end_inset
+
+, то не может быть 
+\begin_inset Formula $b^{-1}=a$
+\end_inset
+
+, так как в этом случае 
+\begin_inset Formula $b=\left(b^{-1}\right)^{-1}=a^{-1}=a$
+\end_inset
+
+, что противоречит наличию в группе трёх разных элементов.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $a^{-1}=b$
+\end_inset
+
+, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:double-inservse-and-inverse-of-unit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $b^{-1}=\left(a^{-1}\right)^{-1}=a$
+\end_inset
+
+.
+ Из определения обратного элемента сразу следуют следующие равенства 
+\begin_inset Formula $ab=ba=e$
+\end_inset
+
+.
+ Для заполнения таблицы умножения остаётся определить только два произведения
+ 
+\begin_inset Formula $aa$
+\end_inset
+
+ и 
+\begin_inset Formula $bb$
+\end_inset
+
+.
+ Причём, так как 
+\begin_inset Formula $b^{-1}=a$
+\end_inset
+
+, то определив 
+\begin_inset Formula $aa$
+\end_inset
+
+ мы определим 
+\begin_inset Formula $b^{-1}b^{-1}=\left(bb\right)^{-1}$
+\end_inset
+
+ и, следовательно, определим 
+\begin_inset Formula $bb$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для значения 
+\begin_inset Formula $aa$
+\end_inset
+
+ есть три возможности 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $aa=e$
+\end_inset
+
+, то 
+\begin_inset Formula $a=a^{-1}=b$
+\end_inset
+
+, что противоречит 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $aa=a$
+\end_inset
+
+, то 
+\begin_inset Formula $a=e$
+\end_inset
+
+, что также противоречит наличию в группе трёх разных элементов.
+ Таким образом, остаётся только 
+\begin_inset Formula $aa=b$
+\end_inset
+
+.
+ Теперь однозначно определяется и произведение 
+\begin_inset Formula $bb$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+bb=\left(\left(bb\right)^{-1}\right)^{-1}=\left(b^{-1}b^{-1}\right)^{-1}=\left(aa\right)^{-1}=b^{-1}=a.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, имеется лишь по одной (с точностью до изоморфизма) групп,
+ состоящих из двух или трёх элементов.
+ Это циклические группы порядка два и три соответственно.
 \end_layout
 
 \begin_layout Problem
