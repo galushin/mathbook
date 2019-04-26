@@ -11253,17 +11253,195 @@ noprefix "false"
  имеют одинаковые порядки.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_layout Solution
+По индукции можно доказать, что для любого 
+\begin_inset Formula $a\in G$
+\end_inset
 
-\begin_layout Plain Layout
-Замечание про то, что изоморфные группы можно не различать
-\end_layout
+ и любого неотрицательного целого 
+\begin_inset Formula $n$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $\varphi\left(a^{n}\right)=\left[\varphi\left(a\right)\right]^{n}$
+\end_inset
+
+.
+ Для 
+\begin_inset Formula $n=0$
+\end_inset
+
+ это равенство вырождается в равенство 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{H}$
+\end_inset
+
+, которое было доказано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphism-maps-unity-to-unity"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Для 
+\begin_inset Formula $n=1$
+\end_inset
 
+ это равенство тривиально: 
+\begin_inset Formula $\varphi\left(a\right)=\varphi\left(a\right)$
+\end_inset
+
+.
+ Это утверждение образуют базу индукции.
+ Пусть утверждение 
+\begin_inset Formula $\varphi\left(a^{k}\right)=\left[\varphi\left(a\right)\right]^{k}$
+\end_inset
+
+ доказано для 
+\begin_inset Formula $0\le k\le n$
+\end_inset
+
+, докажем его для 
+\begin_inset Formula $k=n+1$
+\end_inset
+
+.
+ По определению неотрицательной целочисленной степени 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:natural-powers-over-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеют место равенства 
+\begin_inset Formula $a^{n+1}=a^{n}a$
+\end_inset
+
+ и 
+\begin_inset Formula $\left[\varphi\left(a\right)\right]^{n+1}=\left[\varphi\left(a\right)\right]^{n}\varphi\left(a\right)$
+\end_inset
+
+, а так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — изоморфизм, то 
+\begin_inset Formula $\varphi\left(a^{n+1}\right)=\varphi\left(a^{n}a\right)=\varphi\left(a^{n}\right)\varphi\left(a\right)$
+\end_inset
+
+.
+ В силу предположения индукции 
+\begin_inset Formula $\varphi\left(a^{n}\right)=\left[\varphi\left(a\right)\right]^{n}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(a^{n+1}\right)=\varphi\left(a^{n}\right)\varphi\left(a\right)=\left[\varphi\left(a\right)\right]^{n}\varphi\left(a\right)=\left[\varphi\left(a\right)\right]^{n+1}$
+\end_inset
+
+.
+ Индуктивный переход доказан, таким образом, равенство 
+\begin_inset Formula $\varphi\left(a^{n}\right)=\left[\varphi\left(a\right)\right]^{n}$
+\end_inset
+
+ выполняется для любого неотрицательного целого 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть порядок элемента 
+\begin_inset Formula $g$
+\end_inset
+
+ равен 
+\begin_inset Formula $n$
+\end_inset
+
+, тогда 
+\begin_inset Formula $g^{n}=e_{G}$
+\end_inset
+
+ и для любого положительного целого 
+\begin_inset Formula $k<n$
+\end_inset
+
+ имеет место неравенство 
+\begin_inset Formula $g^{k}\neq e_{G}$
+\end_inset
+
+.
+ По доказанному выше: 
+\begin_inset Formula $\varphi\left(g^{n}\right)=\left[\varphi\left(g\right)\right]^{n}=h^{n}=\varphi\left(e_{G}\right)=e_{H}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(g^{k}\right)=\left[\varphi\left(g\right)\right]^{k}=h^{k}\neq\varphi\left(e_{G}\right)=e_{H}$
+\end_inset
+
+, то есть, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:period-of-element"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, порядок элемента 
+\begin_inset Formula $h$
+\end_inset
+
+ равен 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если же 
+\begin_inset Formula $g$
+\end_inset
+
+ — элемент бесконечного порядка, то для любого положительного целого 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $g^{n}\neq e_{G}$
+\end_inset
+
+, но тогда 
+\begin_inset Formula $\varphi\left(g^{n}\right)=\left[\varphi\left(g\right)\right]^{n}=h^{n}\neq\varphi\left(e_{G}\right)=e_{H}$
+\end_inset
+
+, то есть не существует положительного целого 
+\begin_inset Formula $n$
+\end_inset
+
+ такого, что 
+\begin_inset Formula $h^{n}=e_{H}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $h$
+\end_inset
+
+ — также элемент бесконечного порядка.
+\end_layout
+
+\begin_layout Remark
+Таким образом, если природа элементов не представляет интереса при решении
+ задачи, то изоморфные группы можно не различать.
 \end_layout
 
 \begin_layout Problem
