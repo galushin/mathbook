@@ -6547,13 +6547,13 @@ noprefix "false"
 \end_inset
 
  следует, что всякая группа преобразований является группой (в некотором
- смысле верно и обратное утверждение 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку на задачу 55
-\end_layout
+ смысле верно и обратное утверждение, как будет показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-is-isomorphic-to-group-of-multiplications-by-given-element"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -7501,6 +7501,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:equations-in-group-always-has-unique-solution"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $a,b$
 \end_inset
@@ -11898,16 +11904,47 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Рассмотрим отображение 
+\begin_inset Formula $\varphi\left(x\right)=e^{x}$
 \end_inset
 
+.
+ Это отображение определено для любого вещественного 
+\begin_inset Formula $x$
+\end_inset
 
+ и 
+\begin_inset Formula $e^{x}>0$
+\end_inset
+
+, кроме того, для любого 
+\begin_inset Formula $y>0$
+\end_inset
+
+ существует такой 
+\begin_inset Formula $x$
+\end_inset
+
+, что 
+\begin_inset Formula $e^{x}=y$
+\end_inset
+
+, а именно 
+\begin_inset Formula $y=\ln x$
+\end_inset
+
+.
+ По свойствам показательной функции 
+\begin_inset Formula $\varphi\left(x+y\right)=e^{x+y}=e^{x}e^{y}=\varphi\left(x\right)\varphi\left(y\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\varphi\left(x\right)=e^{x}$
+\end_inset
+
+ удовлетворяет определению изоморфизма, а значит группа действительных чисел
+ по сложению изоморфна группе положительных вещественных чисел по умножению.
 \end_layout
 
 \begin_layout Problem
@@ -11953,19 +11990,59 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как 
+\begin_inset Formula $a$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ и 
+\begin_inset Formula $x$
+\end_inset
+
+ — элементы группы 
+\begin_inset Formula $G$
+\end_inset
+
+, то 
+\begin_inset Formula $ax\in G$
+\end_inset
+
+.
+ Остаётся доказать, что для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ существует такой 
+\begin_inset Formula $x\in G$
+\end_inset
+
+, что 
+\begin_inset Formula $ax=g$
+\end_inset
+
+, как было показано, в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equations-in-group-always-has-unique-solution"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, у такого уравения есть единственное решение: 
+\begin_inset Formula $x=a^{-1}g$
+\end_inset
 
+.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:set-of-multiplications-by-given-element-is-group"
+
+\end_inset
+
 Пусть для каждого элемента 
 \begin_inset Formula $a$
 \end_inset
@@ -11987,30 +12064,72 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Последовательно проверим выполнение всех аксиом группы для множества отображений
+ вида 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+.
+ Обозначим это множество 
+\begin_inset Formula $\Phi$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+По определению композиции отображений и в силу ассоциативности групповой
+ операции, для любого 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ выполняется равенство:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\varphi_{a}\varphi_{b}\right)\left(x\right)=\varphi_{a}\left(\varphi_{b}\left(x\right)\right)=a\left(bx\right)=\left(ab\right)\left(x\right)=\varphi_{ab}\left(x\right),
+\]
+
+\end_inset
+
+тогда, в силу определения равенства отображений, произведение отображений
+ рассматриваемого вида может быть записано следующим образом:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi_{a}\varphi_{b}=\varphi_{ab}.
+\]
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Problem
-Доказать, что группа 
-\begin_inset Formula $G$
+\begin_layout Solution
+Таким образом, произведение отображений из множества 
+\begin_inset Formula $\Phi$
 \end_inset
 
- изоморфна построенной в предыдущей задаче группе преобразований 
-\begin_inset Note Note
-status open
+ есть отображение из множества 
+\begin_inset Formula $\Phi$
+\end_inset
 
-\begin_layout Plain Layout
-Добавить ссылку
+, то есть композиция является бинарной операцией на данном множестве.
 \end_layout
+
+\begin_layout Solution
+Ассоциативность операции следует из ассоциативности композиции отображений
+ в общем случае, доказанной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:composition-of-transformations-is-assiciative"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -12018,16 +12137,108 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Отображение 
+\begin_inset Formula $\varphi_{e}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ играет роль единичного элемента относительно операции композиции, действительно
+, как было показано, выше, для любого 
+\begin_inset Formula $a\in G$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\varphi_{e}\varphi_{a}=\varphi_{ea}=\varphi_{a}
+\]
+
+\end_inset
+
+ и
+\begin_inset Formula 
+\[
+\varphi_{a}\varphi_{e}=\varphi_{ae}=\varphi_{a}.
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Обратным элементом для 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ является 
+\begin_inset Formula $\varphi_{a^{-1}}$
+\end_inset
+
+, так как справедливы следующие равенства: 
+\begin_inset Formula 
+\[
+\varphi_{a}\varphi_{a^{-1}}=\varphi_{aa^{-1}}=\varphi_{e},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{a^{-1}}\varphi_{a}=\varphi_{a^{-1}a}=\varphi_{e}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:group-is-isomorphic-to-group-of-multiplications-by-given-element"
+
+\end_inset
+
+Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ изоморфна построенной в предыдущей задаче группе преобразований 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:set-of-multiplications-by-given-element-is-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Изоморфизм задаётся следующим отображением 
+\begin_inset Formula $a\to\varphi_{a}$
+\end_inset
+
+.
+ Это отображение взаимно-однозначно по построению, а по доказанному в задаче
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:set-of-multiplications-by-given-element-is-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, это отображение переводит произведение в произведение 
+\begin_inset Formula $ab\to\varphi_{ab}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
