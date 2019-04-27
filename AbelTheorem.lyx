@@ -5657,7 +5657,7 @@ C & D & A & B
 Группы преобразований
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 Пусть 
 \begin_inset Formula $X$
 \end_inset
@@ -5728,6 +5728,13 @@ C & D & A & B
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \begin_layout Definition
 Отображение 
 \begin_inset Formula $\varphi:X\to Y$
@@ -5754,7 +5761,7 @@ C & D & A & B
 \end_inset
 
  такой, что 
-\begin_inset Formula $\varphi\left(x\right)=y$
+\begin_inset Formula $\varphi\left(\right)=y$
 \end_inset
 
 , то есть у каждого 
@@ -5793,6 +5800,12 @@ C & D & A & B
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:one-to-one-mapping"
+
+\end_inset
+
 Отображение 
 \begin_inset Formula $\varphi:X\to Y$
 \end_inset
@@ -6534,13 +6547,13 @@ noprefix "false"
 \end_inset
 
  следует, что всякая группа преобразований является группой (в некотором
- смысле верно и обратное утверждение 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку на задачу 55
-\end_layout
+ смысле верно и обратное утверждение, как будет показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-is-isomorphic-to-group-of-multiplications-by-given-element"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -6782,7 +6795,13 @@ status open
 \end_layout
 
 \begin_layout Problem
-Доказать, что в любой группе существует единственный элемент.
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:unity-is-unique"
+
+\end_inset
+
+Доказать, что в любой группе существует единственный единичный элемент.
 \end_layout
 
 \begin_layout Solution
@@ -7482,6 +7501,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:equations-in-group-always-has-unique-solution"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $a,b$
 \end_inset
@@ -8883,6 +8908,12 @@ a^{m}=a^{nq+r}=a^{nq}\cdot a^{r}=\left(a^{n}\right)^{q}\cdot a^{r}=e^{q}\cdot a^
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:cyclic-group-of-order-n"
+
+\end_inset
+
 Если элемент 
 \begin_inset Formula $a$
 \end_inset
@@ -9864,6 +9895,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:infinite-cyclic-group"
+
+\end_inset
+
 Если 
 \begin_inset Formula $a$
 \end_inset
@@ -10014,6 +10051,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:multiplication-tables-for-group-of-integers-modulo-2-3-4"
+
+\end_inset
+
 Составить таблицы сложению по модулям 2, 3 и 4.
 \end_layout
 
@@ -10776,6 +10819,1859 @@ noprefix "false"
 
 \begin_layout Section
 Изоморфизм
+\end_layout
+
+\begin_layout Definition
+Пусть даны две группы 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+, и пусть имеется взаимно однозначное отображение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:one-to-one-mapping"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ элементов группы 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ на элементы группы 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+, причём такое, что умножению в 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ соответствует умножение в 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ называют 
+\emph on
+изоморфизмом 
+\emph default
+группы 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ на группу 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+, а группы, между которыми можно установить изоморфизм, называют 
+\emph on
+изоморфными
+\emph default
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-on-isomorphism"
+
+\end_inset
+
+Какие из следующих групп изоморфны: 1) группа вращений квадрата, 2) группа
+ симметрий ромба, 3) группа симметрий прямоугольника, 4) группа остатков
+ с операцией сложения по модулю 4?
+\end_layout
+
+\begin_layout Solution
+Из результатов задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rhombus-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rectangle-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что группы 2) и 3) изоморфны.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:squate-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:multiplication-tables-for-group-of-integers-modulo-2-3-4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в группах 1) и 4) вторая степень двух элементов равна единице группы,
+ а в группах 2) и 3) вторая степень всех элементов совпадает с единицей.
+ Таким образом, группа 1) и 4) не изоморфны остальным группам.
+\end_layout
+
+\begin_layout Solution
+Остаётся решить вопрос о изоморфизме групп 1) и 4).
+ Изоморфизм устанавливается, например, следующим отображением 
+\begin_inset Formula $\varphi\left(0\right)=e$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(1\right)=b$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(2\right)=a$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(3\right)=c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi:G_{1}\to G_{2}$
+\end_inset
+
+ — изоморфизм.
+ Доказать, что обратное отображение 
+\begin_inset Formula $\varphi^{-1}:G_{2}\to G_{1}$
+\end_inset
+
+ также изоморфизм.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — взаимно однозначное отображение, то обратное к нему всегда существует,
+ а для любых 
+\begin_inset Formula $x,y\in G_{2}$
+\end_inset
+
+ существуют 
+\begin_inset Formula $a,b\in G_{1}$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $x=\varphi\left(a\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y=\varphi\left(b\right)$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:one-to-one-mapping"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Нужно доказать, что для любых 
+\begin_inset Formula $x,y\in G_{2}$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $\varphi^{-1}\left(xy\right)=\varphi^{-1}\left(x\right)\varphi^{-1}\left(y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению изоморфизма, для любых 
+\begin_inset Formula $a,b\in G_{1}$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)$
+\end_inset
+
+.
+ Применим к левой и правой части отображение 
+\begin_inset Formula $\varphi^{-1}$
+\end_inset
+
+: 
+\begin_inset Formula $ab=\varphi^{-1}\left(\varphi\left(a\right)\varphi\left(b\right)\right)$
+\end_inset
+
+, а с учётом введённых нами обозначений 
+\begin_inset Formula $a=\varphi^{-1}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $b=\varphi^{-1}\left(y\right)$
+\end_inset
+
+, получаем требуемое равенство: 
+\begin_inset Formula 
+\[
+\varphi^{-1}\left(x\right)\varphi^{-1}\left(y\right)=\varphi^{-1}\left(xy\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi_{1}:G_{1}\to G_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{2}:G_{2}\to G_{3}$
+\end_inset
+
+ — изоморфизмы.
+ Доказать, что 
+\begin_inset Formula $\varphi_{2}\varphi_{1}:G_{1}\to G_{3}$
+\end_inset
+
+ также изоморфизм.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольные элементы 
+\begin_inset Formula $a,b\in G_{1}$
+\end_inset
+
+ и докажем, что 
+\begin_inset Formula $\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)=\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)$
+\end_inset
+
+.
+ По определению композиции отображений 
+\begin_inset Formula $\left(\varphi_{2}\varphi_{1}\right)\left(x\right)=\varphi_{2}\left(\varphi_{1}\left(x\right)\right)$
+\end_inset
+
+.
+ Поэтому: 
+\begin_inset Formula $\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)=\varphi_{2}\left(\varphi_{1}\left(ab\right)\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ — изоморфизм, то 
+\begin_inset Formula $\varphi_{1}\left(ab\right)=\varphi_{1}\left(a\right)\varphi_{1}\left(b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)=\varphi_{2}\left(\varphi_{1}\left(ab\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\varphi_{1}\left(b\right)\right),
+\]
+
+\end_inset
+
+ а так как 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ — также изоморфизм, то 
+\begin_inset Formula 
+\[
+\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\varphi_{1}\left(b\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\right)\varphi_{2}\left(\varphi_{1}\left(b\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Снова применив определение композиции отображений, получим требуемое равенство:
+ 
+\begin_inset Formula 
+\[
+\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\right)\varphi_{2}\left(\varphi_{1}\left(b\right)\right)=\left(\varphi_{2}\varphi_{1}\right)\left(a\right)\left(\varphi_{2}\varphi_{1}\right)\left(b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Отношение изоморфизма между группами транзитивно.
+\end_layout
+
+\begin_layout Problem
+Доказать, что любая циклическая группа порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ изоморфна группе остатков при делении на 
+\begin_inset Formula $n$
+\end_inset
+
+ с операцией сложения по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению, циклическая группа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ содержит только элементы 
+\begin_inset Formula $e,a,a^{2},\dots a^{n-1}$
+\end_inset
+
+.
+ Требуемое отображение из множества остатков по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ в произвольную циклическую группу порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ задаётся, например, следующим образом: 
+\begin_inset Formula 
+\[
+\varphi\left(k\right)=a^{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Это отображение является изоморфизмом по доказанному в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cyclic-group-is-related-to-modular-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что любая бесконечная циклическая группа изоморфна группе целых
+ чисел по сложению.
+\end_layout
+
+\begin_layout Solution
+Требуемое отображение из множества целых чисел в произвольную циклическую
+ группу задаётся, например, следующим образом: 
+\begin_inset Formula 
+\[
+\varphi\left(k\right)=a^{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Это отображение является изоморфизмом по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:power-of-sum-is-product-of-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:isomorphism-maps-unity-to-unity"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — изоморфизм.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+, где 
+\begin_inset Formula $e_{G}$
+\end_inset
+
+ и 
+\begin_inset Formula $e_{F}$
+\end_inset
+
+ — единицы групп 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ соответственно.
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $\varphi\left(e_{G}\right)=f_{0}$
+\end_inset
+
+ и рассмотрим произвольный элементы 
+\begin_inset Formula $f$
+\end_inset
+
+ группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — изоморфизм, то у любого 
+\begin_inset Formula $f$
+\end_inset
+
+ существует прообраз 
+\begin_inset Formula $g$
+\end_inset
+
+ в группе 
+\begin_inset Formula $G$
+\end_inset
+
+: 
+\begin_inset Formula $\varphi\left(g\right)=f$
+\end_inset
+
+.
+ Тогда, в силу определений единицы группы и изоморфизма:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+f=\varphi\left(g\right)=\varphi\left(ge_{G}\right)=\varphi\left(g\right)\varphi\left(e_{G}\right)=ff_{0},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+f=\varphi\left(g\right)=\varphi\left(e_{G}g\right)=\varphi\left(e_{G}\right)\varphi\left(g\right)=f_{0}f.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, для любого 
+\begin_inset Formula $f\in F$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $ff_{0}=f_{0}f=f$
+\end_inset
+
+, то есть 
+\begin_inset Formula $f_{0}$
+\end_inset
+
+ удовлетворяет определению единицы группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Так как единица группы единственна 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:unity-is-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $f_{0}=\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — изоморфизм.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}$
+\end_inset
+
+ для всех элементов 
+\begin_inset Formula $g\in G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению обратного элемента 
+\begin_inset Formula $gg^{-1}=g^{-1}g=e_{G}$
+\end_inset
+
+.
+ Поэтому, в силу определения изоморфизма:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(e_{G}\right)=\varphi\left(g\right)\varphi\left(g^{-1}\right)=\varphi\left(g^{-1}\right)\varphi\left(g\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $\varphi\left(g\right)=f$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=h$
+\end_inset
+
+.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphism-maps-unity-to-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+fh=hf=e_{F}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $h=\varphi\left(g^{-1}\right)$
+\end_inset
+
+ удовлетворяет требованиям к 
+\begin_inset Formula $f^{-1}=\left[\varphi\left(g\right)\right]^{-1}$
+\end_inset
+
+.
+ Так как у каждого элемента в группе существует единственный обратный элемент
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:inverse-element-is-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — изоморфизм и 
+\begin_inset Formula $\varphi\left(g\right)=h$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+ имеют одинаковые порядки.
+\end_layout
+
+\begin_layout Solution
+По индукции можно доказать, что для любого 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ и любого неотрицательного целого 
+\begin_inset Formula $n$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $\varphi\left(a^{n}\right)=\left[\varphi\left(a\right)\right]^{n}$
+\end_inset
+
+.
+ Для 
+\begin_inset Formula $n=0$
+\end_inset
+
+ это равенство вырождается в равенство 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{H}$
+\end_inset
+
+, которое было доказано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphism-maps-unity-to-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Для 
+\begin_inset Formula $n=1$
+\end_inset
+
+ это равенство тривиально: 
+\begin_inset Formula $\varphi\left(a\right)=\varphi\left(a\right)$
+\end_inset
+
+.
+ Это утверждение образуют базу индукции.
+ Пусть утверждение 
+\begin_inset Formula $\varphi\left(a^{k}\right)=\left[\varphi\left(a\right)\right]^{k}$
+\end_inset
+
+ доказано для 
+\begin_inset Formula $0\le k\le n$
+\end_inset
+
+, докажем его для 
+\begin_inset Formula $k=n+1$
+\end_inset
+
+.
+ По определению неотрицательной целочисленной степени 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:natural-powers-over-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеют место равенства 
+\begin_inset Formula $a^{n+1}=a^{n}a$
+\end_inset
+
+ и 
+\begin_inset Formula $\left[\varphi\left(a\right)\right]^{n+1}=\left[\varphi\left(a\right)\right]^{n}\varphi\left(a\right)$
+\end_inset
+
+, а так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — изоморфизм, то 
+\begin_inset Formula $\varphi\left(a^{n+1}\right)=\varphi\left(a^{n}a\right)=\varphi\left(a^{n}\right)\varphi\left(a\right)$
+\end_inset
+
+.
+ В силу предположения индукции 
+\begin_inset Formula $\varphi\left(a^{n}\right)=\left[\varphi\left(a\right)\right]^{n}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(a^{n+1}\right)=\varphi\left(a^{n}\right)\varphi\left(a\right)=\left[\varphi\left(a\right)\right]^{n}\varphi\left(a\right)=\left[\varphi\left(a\right)\right]^{n+1}$
+\end_inset
+
+.
+ Индуктивный переход доказан, таким образом, равенство 
+\begin_inset Formula $\varphi\left(a^{n}\right)=\left[\varphi\left(a\right)\right]^{n}$
+\end_inset
+
+ выполняется для любого неотрицательного целого 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть порядок элемента 
+\begin_inset Formula $g$
+\end_inset
+
+ равен 
+\begin_inset Formula $n$
+\end_inset
+
+, тогда 
+\begin_inset Formula $g^{n}=e_{G}$
+\end_inset
+
+ и для любого положительного целого 
+\begin_inset Formula $k<n$
+\end_inset
+
+ имеет место неравенство 
+\begin_inset Formula $g^{k}\neq e_{G}$
+\end_inset
+
+.
+ По доказанному выше: 
+\begin_inset Formula $\varphi\left(g^{n}\right)=\left[\varphi\left(g\right)\right]^{n}=h^{n}=\varphi\left(e_{G}\right)=e_{H}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(g^{k}\right)=\left[\varphi\left(g\right)\right]^{k}=h^{k}\neq\varphi\left(e_{G}\right)=e_{H}$
+\end_inset
+
+, то есть, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:period-of-element"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, порядок элемента 
+\begin_inset Formula $h$
+\end_inset
+
+ равен 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если же 
+\begin_inset Formula $g$
+\end_inset
+
+ — элемент бесконечного порядка, то для любого положительного целого 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $g^{n}\neq e_{G}$
+\end_inset
+
+, но тогда 
+\begin_inset Formula $\varphi\left(g^{n}\right)=\left[\varphi\left(g\right)\right]^{n}=h^{n}\neq\varphi\left(e_{G}\right)=e_{H}$
+\end_inset
+
+, то есть не существует положительного целого 
+\begin_inset Formula $n$
+\end_inset
+
+ такого, что 
+\begin_inset Formula $h^{n}=e_{H}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $h$
+\end_inset
+
+ — также элемент бесконечного порядка.
+\end_layout
+
+\begin_layout Remark
+Таким образом, если природа элементов не представляет интереса при решении
+ задачи, то изоморфные группы можно не различать.
+\end_layout
+
+\begin_layout Problem
+Найти все (с точностью до изоморфизма) группы, содержащие а) 2 элемента,
+ б) 3 элемента.
+\end_layout
+
+\begin_layout Solution
+Любая группа должна содержать единичный элемент 
+\begin_inset Formula $e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если группа содержит два элемента, то их можно обозначить 
+\begin_inset Formula $e$
+\end_inset
+
+ и 
+\begin_inset Formula $a\neq e$
+\end_inset
+
+.
+ Для каждого элемента группы должен быть определён обратный элемент.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:double-inservse-and-inverse-of-unit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $e^{-1}=e$
+\end_inset
+
+.
+ Остаётся определить 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+, так как 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ должен быть элементом группы, поэтому он может быть равен либо 
+\begin_inset Formula $e$
+\end_inset
+
+, либо 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $a^{-1}=e$
+\end_inset
+
+, то, снова по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:double-inservse-and-inverse-of-unit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left(a^{-1}\right)^{-1}=a=e^{-1}=e$
+\end_inset
+
+, что противоречит 
+\begin_inset Formula $a\neq e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким обарзом, остаётся только одна возможность: 
+\begin_inset Formula $a^{-1}=a$
+\end_inset
+
+, то есть имеется лишь одна группа, содержащая 2 элемента.
+ Таблица умножения для этой группы содержит лишь одно приозведение, значение
+ которого не следует прямо из аксиом группы: 
+\begin_inset Formula $aa=aa^{-1}=e$
+\end_inset
+
+, то есть эта таблица имеет вид:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Попробуем построить теперь группу, содержащую три элемента.
+ Обозначим эти элементы 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Так же как и в случае двух элементов, не может быть 
+\begin_inset Formula $a^{-1}=e$
+\end_inset
+
+ или 
+\begin_inset Formula $b^{-1}=e$
+\end_inset
+
+, так как в таких случаях будет 
+\begin_inset Formula $a=e$
+\end_inset
+
+ или 
+\begin_inset Formula $b=e$
+\end_inset
+
+, что противоречит наличию в группе трёх различных элементов.
+ Таким образом, 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ равен либо 
+\begin_inset Formula $a$
+\end_inset
+
+, либо 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $a^{-1}=a$
+\end_inset
+
+, то не может быть 
+\begin_inset Formula $b^{-1}=a$
+\end_inset
+
+, так как в этом случае 
+\begin_inset Formula $b=\left(b^{-1}\right)^{-1}=a^{-1}=a$
+\end_inset
+
+, что противоречит наличию в группе трёх разных элементов.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $a^{-1}=b$
+\end_inset
+
+, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:double-inservse-and-inverse-of-unit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $b^{-1}=\left(a^{-1}\right)^{-1}=a$
+\end_inset
+
+.
+ Из определения обратного элемента сразу следуют следующие равенства 
+\begin_inset Formula $ab=ba=e$
+\end_inset
+
+.
+ Для заполнения таблицы умножения остаётся определить только два произведения
+ 
+\begin_inset Formula $aa$
+\end_inset
+
+ и 
+\begin_inset Formula $bb$
+\end_inset
+
+.
+ Причём, так как 
+\begin_inset Formula $b^{-1}=a$
+\end_inset
+
+, то определив 
+\begin_inset Formula $aa$
+\end_inset
+
+ мы определим 
+\begin_inset Formula $b^{-1}b^{-1}=\left(bb\right)^{-1}$
+\end_inset
+
+ и, следовательно, определим 
+\begin_inset Formula $bb$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для значения 
+\begin_inset Formula $aa$
+\end_inset
+
+ есть три возможности 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $aa=e$
+\end_inset
+
+, то 
+\begin_inset Formula $a=a^{-1}=b$
+\end_inset
+
+, что противоречит 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $aa=a$
+\end_inset
+
+, то 
+\begin_inset Formula $a=e$
+\end_inset
+
+, что также противоречит наличию в группе трёх разных элементов.
+ Таким образом, остаётся только 
+\begin_inset Formula $aa=b$
+\end_inset
+
+.
+ Теперь однозначно определяется и произведение 
+\begin_inset Formula $bb$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+bb=\left(\left(bb\right)^{-1}\right)^{-1}=\left(b^{-1}b^{-1}\right)^{-1}=\left(aa\right)^{-1}=b^{-1}=a.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, имеется лишь по одной (с точностью до изоморфизма) групп,
+ состоящих из двух или трёх элементов.
+ Это циклические группы порядка два и три соответственно.
+\end_layout
+
+\begin_layout Problem
+Привести пример двух групп с одинаковым числом элементов, но не изоморфных.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-on-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, группа вращений квадрата не изоморфна группе симметрий ромба, не являющегося
+ квадратом.
+\end_layout
+
+\begin_layout Problem
+Доказать, что группа всех действительных чисел по сложению изоморфна группе
+ положительных действительных чисел по умножению.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим отображение 
+\begin_inset Formula $\varphi\left(x\right)=e^{x}$
+\end_inset
+
+.
+ Это отображение определено для любого вещественного 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $e^{x}>0$
+\end_inset
+
+, кроме того, для любого 
+\begin_inset Formula $y>0$
+\end_inset
+
+ существует такой 
+\begin_inset Formula $x$
+\end_inset
+
+, что 
+\begin_inset Formula $e^{x}=y$
+\end_inset
+
+, а именно 
+\begin_inset Formula $y=\ln x$
+\end_inset
+
+.
+ По свойствам показательной функции 
+\begin_inset Formula $\varphi\left(x+y\right)=e^{x+y}=e^{x}e^{y}=\varphi\left(x\right)\varphi\left(y\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\varphi\left(x\right)=e^{x}$
+\end_inset
+
+ удовлетворяет определению изоморфизма, а значит группа действительных чисел
+ по сложению изоморфна группе положительных вещественных чисел по умножению.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольный элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Рассмотрим отображение 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ множества элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ в себя, определённое следующим образом: 
+\begin_inset Formula $\varphi_{a}\left(x\right)=ax$
+\end_inset
+
+ для любого 
+\begin_inset Formula $x\in G$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ является преобразованием множества элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ (то есть взаимно однозначным отображением множества элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на себя).
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $x$
+\end_inset
+
+ — элементы группы 
+\begin_inset Formula $G$
+\end_inset
+
+, то 
+\begin_inset Formula $ax\in G$
+\end_inset
+
+.
+ Остаётся доказать, что для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ существует единственный элемент 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $ax=g$
+\end_inset
+
+, как было показано, в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equations-in-group-always-has-unique-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у такого уравнения есть единственное решение: 
+\begin_inset Formula $x=a^{-1}g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:set-of-multiplications-by-given-element-is-group"
+
+\end_inset
+
+Пусть для каждого элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ построено преобразование 
+\begin_inset Formula $\varphi_{a}\left(x\right)=ax$
+\end_inset
+
+.
+ Доказать, что множество всех этих преобразований 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ образует группу с обычной операцией произведения преобразований (композиция).
+\end_layout
+
+\begin_layout Solution
+Последовательно проверим выполнение всех аксиом группы для множества отображений
+ вида 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+.
+ Обозначим это множество 
+\begin_inset Formula $\Phi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению композиции отображений и в силу ассоциативности групповой
+ операции, для любого 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ выполняется равенство:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\varphi_{a}\varphi_{b}\right)\left(x\right)=\varphi_{a}\left(\varphi_{b}\left(x\right)\right)=a\left(bx\right)=\left(ab\right)\left(x\right)=\varphi_{ab}\left(x\right),
+\]
+
+\end_inset
+
+тогда, в силу определения равенства отображений, произведение отображений
+ рассматриваемого вида может быть записано следующим образом:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi_{a}\varphi_{b}=\varphi_{ab}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, произведение отображений из множества 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ есть отображение из множества 
+\begin_inset Formula $\Phi$
+\end_inset
+
+, то есть композиция является бинарной операцией на данном множестве.
+\end_layout
+
+\begin_layout Solution
+Ассоциативность операции следует из ассоциативности композиции отображений
+ в общем случае, доказанной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:composition-of-transformations-is-assiciative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Отображение 
+\begin_inset Formula $\varphi_{e}$
+\end_inset
+
+ играет роль единичного элемента относительно операции композиции, действительно
+, как было показано, выше, для любого 
+\begin_inset Formula $a\in G$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\varphi_{e}\varphi_{a}=\varphi_{ea}=\varphi_{a}
+\]
+
+\end_inset
+
+ и
+\begin_inset Formula 
+\[
+\varphi_{a}\varphi_{e}=\varphi_{ae}=\varphi_{a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обратным элементом для 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ является 
+\begin_inset Formula $\varphi_{a^{-1}}$
+\end_inset
+
+, так как справедливы следующие равенства: 
+\begin_inset Formula 
+\[
+\varphi_{a}\varphi_{a^{-1}}=\varphi_{aa^{-1}}=\varphi_{e},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{a^{-1}}\varphi_{a}=\varphi_{a^{-1}a}=\varphi_{e}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:group-is-isomorphic-to-group-of-multiplications-by-given-element"
+
+\end_inset
+
+Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ изоморфна построенной в предыдущей задаче группе преобразований 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:set-of-multiplications-by-given-element-is-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Изоморфизм задаётся следующим отображением 
+\begin_inset Formula $a\to\varphi_{a}$
+\end_inset
+
+.
+ Это отображение взаимно-однозначно по построению, а по доказанному в задаче
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:set-of-multiplications-by-given-element-is-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, это отображение переводит произведение в произведение 
+\begin_inset Formula $ab\to\varphi_{ab}$
+\end_inset
+
+, то есть является изоморфизмом.
 \end_layout
 
 \begin_layout Standard
