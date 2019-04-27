@@ -8910,7 +8910,7 @@ a^{m}=a^{nq+r}=a^{nq}\cdot a^{r}=\left(a^{n}\right)^{q}\cdot a^{r}=e^{q}\cdot a^
 \begin_layout Definition
 \begin_inset CommandInset label
 LatexCommand label
-name "def:cyclic-group"
+name "def:cyclic-group-of-order-n"
 
 \end_inset
 
@@ -9895,6 +9895,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:infinite-cyclic-group"
+
+\end_inset
+
 Если 
 \begin_inset Formula $a$
 \end_inset
@@ -10045,6 +10051,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:multiplication-tables-for-group-of-integers-modulo-2-3-4"
+
+\end_inset
+
 Составить таблицы сложению по модулям 2, 3 и 4.
 \end_layout
 
@@ -10877,22 +10889,86 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-on-isomorphism"
+
+\end_inset
+
 Какие из следующих групп изоморфны: 1) группа вращений квадрата, 2) группа
- вращений ромба, 3) группа симметрий прямоугольника, 4) группа остатков
+ симметрий ромба, 3) группа симметрий прямоугольника, 4) группа остатков
  с операцией сложения по модулю 4?
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Из результатов задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rhombus-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rectangle-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+ следует, что группы 2) и 3) изоморфны.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:squate-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:multiplication-tables-for-group-of-integers-modulo-2-3-4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в группах 1) и 4) вторая степень двух элементов равна единице группы,
+ а в группах 2) и 3) вторая степень всех элементов совпадает с единицей.
+ Таким образом, группа 1) и 4) не изоморфны остальным группам.
+\end_layout
+
+\begin_layout Solution
+Остаётся решить вопрос о изоморфизме групп 1) и 4).
+ Изоморфизм устанавливается, например, следующим отображением 
+\begin_inset Formula $\varphi\left(0\right)=e$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(1\right)=b$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(2\right)=a$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(3\right)=c$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -10909,12 +10985,80 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как 
+\begin_inset Formula $\varphi$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ — взаимно однозначное отображение, то обратное к нему всегда существует,
+ а для любых 
+\begin_inset Formula $x,y\in G_{2}$
+\end_inset
+
+ существуют 
+\begin_inset Formula $a,b\in G_{1}$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $x=\varphi\left(a\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y=\varphi\left(b\right)$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:one-to-one-mapping"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Нужно доказать, что для любых 
+\begin_inset Formula $x,y\in G_{2}$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $\varphi^{-1}\left(xy\right)=\varphi^{-1}\left(x\right)\varphi^{-1}\left(y\right)$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+По определению изоморфизма, для любых 
+\begin_inset Formula $a,b\in G_{1}$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)$
+\end_inset
+
+.
+ Применим к левой и правой части отображение 
+\begin_inset Formula $\varphi^{-1}$
+\end_inset
+
+: 
+\begin_inset Formula $ab=\varphi^{-1}\left(\varphi\left(a\right)\varphi\left(b\right)\right)$
+\end_inset
+
+, а с учётом введённых нами обозначений 
+\begin_inset Formula $a=\varphi^{-1}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $b=\varphi^{-1}\left(y\right)$
+\end_inset
+
+, получаем требуемое равенство: 
+\begin_inset Formula 
+\[
+\varphi^{-1}\left(x\right)\varphi^{-1}\left(y\right)=\varphi^{-1}\left(xy\right).
+\]
 
 \end_inset
 
@@ -10938,17 +11082,72 @@ status open
  также изоморфизм.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_layout Solution
+Рассмотрим произвольные элементы 
+\begin_inset Formula $a,b\in G_{1}$
+\end_inset
 
-\begin_layout Plain Layout
-Замечание про то, что отношение изоморфизма транзитивно
-\end_layout
+ и докажем, что 
+\begin_inset Formula $\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)=\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)$
+\end_inset
+
+.
+ По определению композиции отображений 
+\begin_inset Formula $\left(\varphi_{2}\varphi_{1}\right)\left(x\right)=\varphi_{2}\left(\varphi_{1}\left(x\right)\right)$
+\end_inset
+
+.
+ Поэтому: 
+\begin_inset Formula $\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)=\varphi_{2}\left(\varphi_{1}\left(ab\right)\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ — изоморфизм, то 
+\begin_inset Formula $\varphi_{1}\left(ab\right)=\varphi_{1}\left(a\right)\varphi_{1}\left(b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)=\varphi_{2}\left(\varphi_{1}\left(ab\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\varphi_{1}\left(b\right)\right),
+\]
+
+\end_inset
+
+ а так как 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ — также изоморфизм, то 
+\begin_inset Formula 
+\[
+\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\varphi_{1}\left(b\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\right)\varphi_{2}\left(\varphi_{1}\left(b\right)\right).
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Снова применив определение композиции отображений, получим требуемое равенство:
+ 
+\begin_inset Formula 
+\[
+\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\right)\varphi_{2}\left(\varphi_{1}\left(b\right)\right)=\left(\varphi_{2}\varphi_{1}\right)\left(a\right)\left(\varphi_{2}\varphi_{1}\right)\left(b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Отношение изоморфизма между группами транзитивно.
 \end_layout
 
 \begin_layout Problem
@@ -10968,16 +11167,56 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+По определению, циклическая группа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+\end_inset
+
+порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ содержит только элементы 
+\begin_inset Formula $e,a,a^{2},\dots a^{n-1}$
+\end_inset
+
+.
+ Требуемое отображение из множества остатков по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ в произвольную циклическую группу порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ задаётся, например, следующим образом: 
+\begin_inset Formula 
+\[
+\varphi\left(k\right)=a^{k}.
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Это отображение является изоморфизмом по доказанному в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cyclic-group-is-related-to-modular-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -10986,16 +11225,30 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Требуемое отображение из множества целых чисел в произвольную циклическую
+ группу задаётся, например, следующим образом: 
+\begin_inset Formula 
+\[
+\varphi\left(k\right)=a^{k}.
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Это отображение является изоморфизмом по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:power-of-sum-is-product-of-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -12064,16 +12317,18 @@ bb=\left(\left(bb\right)^{-1}\right)^{-1}=\left(b^{-1}b^{-1}\right)^{-1}=\left(a
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-on-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
+, группа вращений квадрата не изоморфна группе симметрий ромба, не являющегося
+ квадратом.
 \end_layout
 
 \begin_layout Problem
@@ -12189,11 +12444,11 @@ status open
 \begin_inset Formula $g\in G$
 \end_inset
 
- существует такой 
+ существует единственный элемент 
 \begin_inset Formula $x\in G$
 \end_inset
 
-, что 
+ такой, что 
 \begin_inset Formula $ax=g$
 \end_inset
 
@@ -12207,7 +12462,7 @@ noprefix "false"
 
 \end_inset
 
-, у такого уравения есть единственное решение: 
+, у такого уравнения есть единственное решение: 
 \begin_inset Formula $x=a^{-1}g$
 \end_inset
 
@@ -12416,7 +12671,7 @@ noprefix "false"
 \begin_inset Formula $ab\to\varphi_{ab}$
 \end_inset
 
-.
+, то есть является изоморфизмом.
 \end_layout
 
 \begin_layout Standard
