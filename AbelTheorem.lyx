@@ -12735,7 +12735,13 @@ noprefix "false"
 -угольника.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:powers-of-element-form-subgroup"
+
+\end_inset
+
 Если 
 \begin_inset Formula $a$
 \end_inset
@@ -17179,16 +17185,253 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+Любой элементы 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ можно представить в виде 
+\begin_inset Formula $a^{j}$
+\end_inset
+
+.
+ Рассмотрим подгруппу 
+\begin_inset Formula $H$
+\end_inset
+
+ группы 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+, содержащую элементы 
+\begin_inset Formula $a^{r_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $a^{r_{2}}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a^{r_{m}}$
+\end_inset
+
+, тогда она содержит произвольные степени этих элементов, а значит и произвольны
+е элементы вида 
+\begin_inset Formula $a^{j_{1}r_{1}+j_{2}r_{2}+...+j_{m}r_{m}}$
+\end_inset
+
+, из теории чисел известно
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Доказать этот факт
 \end_layout
 
 \end_inset
 
+, что наибольший общий делитель 
+\begin_inset Formula $r$
+\end_inset
 
+ чисел 
+\begin_inset Formula $r_{1},r_{2},...,r_{m}$
+\end_inset
+
+ может быть записан в виде 
+\begin_inset Formula $r=j_{1}r_{1}+j_{2}r_{2}+...+j_{m}r_{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $j_{1},j_{2},...,j_{m}$
+\end_inset
+
+ — некоторые целые числа.
+ Таким образом, рассматриваемая подгруппа 
+\begin_inset Formula $H$
+\end_inset
+
+ содержит элемент 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+, любой из элементов 
+\begin_inset Formula $a^{r_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $a^{r_{2}}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a^{r_{m}}$
+\end_inset
+
+ является степенью 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+.
+ Степени элементы 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+ образуют подгруппу группы 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:powers-of-element-form-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, рассматриваемая подгруппа 
+\begin_inset Formula $H$
+\end_inset
+
+ совпадает с подгруппой степеней 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Порядок элемента 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+ равен 
+\begin_inset Formula $\frac{n}{\mathrm{gcd}\left(n,r\right)}$
+\end_inset
+
+.
+ Если числа 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+ взаимно-просты, то подгруппа степеней 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+ совпадает с 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+.
+ Снова воспользуемся фактом, что 
+\begin_inset Formula $d=\mathrm{gcd}\left(n,r\right)$
+\end_inset
+
+ может быть представлен в виде 
+\begin_inset Formula $\mathrm{d}=rs+nq$
+\end_inset
+
+, где 
+\begin_inset Formula $s,q$
+\end_inset
+
+ — некоторые целые числа, то есть наибольший общий делитель 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+ равен 
+\begin_inset Formula $rs$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+, значит среди степеней элемента 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+ присутствует элемент 
+\begin_inset Formula $a^{d}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $d$
+\end_inset
+
+ является делителем 
+\begin_inset Formula $r$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+ является некоторой степенью 
+\begin_inset Formula $a^{d}$
+\end_inset
+
+, а порядок элемента 
+\begin_inset Formula $a^{d}$
+\end_inset
+
+ равен 
+\begin_inset Formula $\frac{n}{d}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:period-of-power-of-element"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, так как 
+\begin_inset Formula $\mathrm{gcd}\left(d,n\right)=d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Итак, мы показали, что произвольная подгруппа, содержащая элементы 
+\begin_inset Formula $a^{r_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $a^{r_{2}}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a^{r_{m}}$
+\end_inset
+
+, может быть представлена как подгруппа степеней элемента 
+\begin_inset Formula $a^{d}$
+\end_inset
+
+, где 
+\begin_inset Formula $d=\mathrm{gcd}\left(n,r_{1},r_{2},...,r_{m}\right)$
+\end_inset
+
+, причём её порядок равен 
+\begin_inset Formula $\frac{n}{d}$
+\end_inset
+
+, что и требовалось.
 \end_layout
 
 \begin_layout Problem
