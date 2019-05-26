@@ -11232,6 +11232,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:infinite-cyclic-group-is-isomorphic-to-integers-with-addition"
+
+\end_inset
+
 Доказать, что любая бесконечная циклическая группа изоморфна группе целых
  чисел по сложению.
 \end_layout
@@ -13051,16 +13057,400 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+1) Воспользуемся решением задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Подмножество элементов 
+\begin_inset Formula $\left\{ e,a,b\right\} $
+\end_inset
 
+ является подгруппой, так как произведение любых двух элементов из этого
+ подмножества снова является элементом этого подмножества, а обратными элементам
+и к элементам этого подмножества являются, соответственно, 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+.Отметим, что отсюда следует, что элементы 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ должны входить или не входить в подгруппу одновременно.
+ Таким образом, группа вращений правильного треугольника является подгруппой
+ всех симметрий правильного треугольника.
+\end_layout
+
+\begin_layout Solution
+Добавление любого из оставшихся элементов 
+\begin_inset Formula $l_{A}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{B}$
+\end_inset
+
+ или 
+\begin_inset Formula $l_{C}$
+\end_inset
+
+ к этому подмножеству приводит к необходимости добавить все эти три элемента,
+ так как, например, 
+\begin_inset Formula $l_{A}a=l_{B}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{A}b=l_{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $l_{A}l_{A}=l_{B}l_{B}=l_{C}l_{C}=e$
+\end_inset
+
+, поэтому подмножества 
+\begin_inset Formula $\left\{ e,l_{A}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,l_{B}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ e,l_{C}\right\} $
+\end_inset
+
+ являются подгруппами.
+\end_layout
+
+\begin_layout Solution
+Других подгрупп в группе симметрий правильно треугольника нет.
+ Рассмотрим, например, подгруппу, включающую 
+\begin_inset Formula $l_{A}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{B}$
+\end_inset
+
+.
+ Она также должна содержать 
+\begin_inset Formula $a=l_{A}l_{B}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{C}=l_{B}a$
+\end_inset
+
+ и 
+\begin_inset Formula $b=l_{B}l_{A}$
+\end_inset
+
+, то есть совпадать со всей группой.
+\end_layout
+
+\begin_layout Solution
+2) Воспользуемся решением задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $aa=dd=ff=gg=hh=e$
+\end_inset
+
+, то подмножества 
+\begin_inset Formula $\left\{ e,a\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,d\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,f\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,g\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ e,h\right\} $
+\end_inset
+
+ являются подгруппами.
+ Других элементов второго порядка нет, поэтому нет и других подгрупп из
+ двух элементов.
+\end_layout
+
+\begin_layout Solution
+Подмножество 
+\begin_inset Formula $\left\{ e,a,b,c\right\} $
+\end_inset
+
+ совпадает с группой вращений квадрата 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:squate-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а значит является подгруппой.
+\end_layout
+
+\begin_layout Solution
+Если, помимо 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+, подгруппа содержит какие-либо ещё элементы, то она совпадает со всей группой
+ симметрий квадрата.
+ Например, 
+\begin_inset Formula $da=f$
+\end_inset
+
+, 
+\begin_inset Formula $db=g$
+\end_inset
+
+ и 
+\begin_inset Formula $dc=h$
+\end_inset
+
+, поэтому, если подгруппа, содержит 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+ и 
+\begin_inset Formula $d$
+\end_inset
+
+, то она содержит также 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+, то есть совпадает со всей рассматриваемой группой.
+ Так как 
+\begin_inset Formula $bb=cc=a$
+\end_inset
+
+, а 
+\begin_inset Formula $ab=c$
+\end_inset
+
+ и 
+\begin_inset Formula $ac=b$
+\end_inset
+
+, то любая подгруппа, содержащая 
+\begin_inset Formula $b$
+\end_inset
+
+ или 
+\begin_inset Formula $c$
+\end_inset
+
+, содержит 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Таким образом, других подгрупп, содержащих 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ или 
+\begin_inset Formula $c$
+\end_inset
+
+, нет.
+\end_layout
+
+\begin_layout Solution
+Пусть подгруппа содержит 
+\begin_inset Formula $d$
+\end_inset
+
+ и 
+\begin_inset Formula $f$
+\end_inset
+
+, тогда она должна содержать 
+\begin_inset Formula $a=df=fd$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a^{-1}=a$
+\end_inset
+
+, 
+\begin_inset Formula $da=ad=f$
+\end_inset
+
+ и 
+\begin_inset Formula $af=fa=d$
+\end_inset
+
+, то подмножество 
+\begin_inset Formula $\left\{ e,a,d,f\right\} $
+\end_inset
+
+ является подгруппой.
+ Аналогично, подгруппой является и подмножество 
+\begin_inset Formula $\left\{ e,a,g,h\right\} $
+\end_inset
+
+.
+ Таким образом, подгруппами группы симметрий квадрата являются также группы
+ симметрий ромба
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rhombus-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и прямоугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rectangle-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если же подгруппа содержит одновременно 
+\begin_inset Formula $d$
+\end_inset
+
+ и 
+\begin_inset Formula $g$
+\end_inset
+
+, то она содержит 
+\begin_inset Formula $c=dg$
+\end_inset
+
+ и 
+\begin_inset Formula $b=gd$
+\end_inset
+
+, а также 
+\begin_inset Formula $a=bb$
+\end_inset
+
+, 
+\begin_inset Formula $f=gc$
+\end_inset
+
+ и 
+\begin_inset Formula $h=fc$
+\end_inset
+
+, то совпадает со всей группой симметрий квадрата.
+ Аналогично, подгруппа, содержащая любую другую пару элементов из 
+\begin_inset Formula $d$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+, совпадает со всей группой вращений квадрата.
 \end_layout
 
 \begin_layout Problem
@@ -17436,10 +17826,18 @@ noprefix "false"
 
 \begin_layout Problem
 Доказать, что все подгруппы бесконечной циклической группы имеют вид 
-\begin_inset Formula $a^{rk}$
+\begin_inset Formula $\left\{ b^{k}\right\} $
 \end_inset
 
 , где 
+\begin_inset Formula $k$
+\end_inset
+
+ — произвольное целое число, а 
+\begin_inset Formula $b=a^{r},$
+\end_inset
+
+где 
 \begin_inset Formula $r$
 \end_inset
 
@@ -17447,24 +17845,128 @@ noprefix "false"
 \begin_inset Formula $a$
 \end_inset
 
- — образующий, а 
-\begin_inset Formula $k$
-\end_inset
-
- — произвольное целое число.
+ — образующий.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+Так как произвольная бесконечная циклическая изоморфна группе целых чисел
+ по сложению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:infinite-cyclic-group-is-isomorphic-to-integers-with-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то мы доказать утверждение достаточно для этой группы.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольную подгруппу 
+\begin_inset Formula $H$
+\end_inset
+
+ группы целых чисел по сложению, пусть она состоит из элементов 
+\begin_inset Formula $\left\{ r_{1},r_{2},\dots,r_{m},\dots\right\} $
+\end_inset
+
+, тогда, по определению подгруппы, она должна содержать элементы вида 
+\begin_inset Formula $j_{1}r_{1}+j_{2}r_{2}+\dots+j_{m}r_{m}\dots$
+\end_inset
+
+, где 
+\begin_inset Formula $j_{k}$
+\end_inset
+
+ — произвольные целые числа, а значит и наибольший общий делитель этих элементов
+ 
+\begin_inset Formula $r$
+\end_inset
+
+, так как он может быть записан в таком виде 
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Добавить ссылку на этот факт
 \end_layout
 
 \end_inset
 
+.
+ Так как 
+\begin_inset Formula $r$
+\end_inset
 
+ является наибольшим делителем 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+..., 
+\begin_inset Formula $r_{m}$
+\end_inset
+
+,..., то все элементы рассматриваемой подгруппы могут быть записаны в виде
+ 
+\begin_inset Formula $r_{i}=q_{i}r$
+\end_inset
+
+, где 
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ — некоторые целые числа, то есть все элементы подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+ могут быть представлены как степени одного элемента 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+С другой стороны, если подгруппа 
+\begin_inset Formula $H$
+\end_inset
+
+ содержит некоторый элемент 
+\begin_inset Formula $r$
+\end_inset
+
+, то она содержит и все его степени, то есть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа всевозможных целых степеней элемента 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как изоморфизм между группой целых чисел по сложению и произвольной
+ бесконечной циклической группой задаётся отображением 
+\begin_inset Formula $\varphi\left(k\right)=a^{k}$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий, то 
+\begin_inset Formula $b=a^{r}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
