@@ -12992,6 +12992,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:subgroup-criterion"
+
+\end_inset
+
 Доказать следующее утверждение.
  Для того, чтобы 
 \begin_inset Formula $H$
@@ -17825,6 +17831,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:subgroups-of-infinite-cyclic-group"
+
+\end_inset
+
 Доказать, что все подгруппы бесконечной циклической группы имеют вид 
 \begin_inset Formula $\left\{ b^{k}\right\} $
 \end_inset
@@ -17974,11 +17986,70 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+Для каждого элемента группы рассмотрим подгруппу его степеней 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:powers-of-element-form-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Некоторые из этих подгрупп могут совпадать (например, для любого элемента
+ 
+\begin_inset Formula $a$
+\end_inset
+
+, подгруппы степеней 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ совпадают), поэтому разных подгрупп может быть бесконечное или конечное
+ число.
+ В первом случае, мы сразу же получаем желаемый результат.
+\end_layout
+
+\begin_layout Solution
+Во втором случае (число подгрупп — конечное) среди полученных подгрупп должна
+ быть бесконечная.
+ Действительно, так как любой элемент входит в одну из рассматриваемых подгрупп
+ (в частности — в подгруппу своих степеней), поэтому объединение рассматриваемых
+ подгрупп совпадает со всей группой, а объединение конечного числа конечных
+ подгрупп не может быть бесконечным.
+ Таким образом, у исходной группы есть подгруппа, являющаяся бесконечной
+ циклической подгруппой, а как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroups-of-infinite-cyclic-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у бесконечной циклической группы бесконечно много подгрупп.
+ Каждая из этих подгрупп является подгруппой и исходной группы, то есть
+ и в этом случае подгрупп бесконечного много.
+ 
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Написать про транзитивность отношения 
+\begin_inset Quotes rld
+\end_inset
+
+является подгруппой
+\begin_inset Quotes rrd
+\end_inset
+
+?
 \end_layout
 
 \end_inset
@@ -17992,7 +18063,9 @@ status open
 status open
 
 \begin_layout Plain Layout
-Добавить ссылку на элементы теории множеств
+Добавить ссылку на элементы теории множеств.
+ Также можно написать про ассоциативность операции пересечения множеств
+ в соответствующем разделе
 \end_layout
 
 \end_inset
@@ -18008,7 +18081,189 @@ status open
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Solution
+Докажем это утверждение сначала для случая пересечения двух групп.
+ Рассмотрим две подгруппы 
+\begin_inset Formula $A,B\subset G$
+\end_inset
+
+ и их пересечение (как множеств) 
+\begin_inset Formula $H=A\cap B$
+\end_inset
+
+.
+ Для того, чтобы доказать, что 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, нужно убедиться, что выполняются требования 1) и 3) задачи
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+1) Пусть 
+\begin_inset Formula $a,b\in H$
+\end_inset
+
+, тогда, по определению пересечения множеств, 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ и 
+\begin_inset Formula $a,b\in B$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — группы, то 
+\begin_inset Formula $ab\in A$
+\end_inset
+
+ и 
+\begin_inset Formula $ab\in B$
+\end_inset
+
+, а значит, снова по определению пересечения множеств, 
+\begin_inset Formula $ab\in A\cap B=H$
+\end_inset
+
+.
+ Первое условие выполнено.
+\end_layout
+
+\begin_layout Solution
+3) Пусть 
+\begin_inset Formula $a\in H$
+\end_inset
+
+, тогда, по определению пересечения множеств, 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ и 
+\begin_inset Formula $a\in B$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — группы, то 
+\begin_inset Formula $a^{-1}\in A$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{-1}\in B$
+\end_inset
+
+, а значит, снова по определению пересечения множеств, 
+\begin_inset Formula $a^{-1}\in A\cap B=H$
+\end_inset
+
+.
+ Это условие так же выполнено.
+\end_layout
+
+\begin_layout Solution
+Для общего случая это утверждение доказывается по индукции.
+ Базу индукции образует случай пересечения двух групп, рассмотренный выше.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь индукционный переход.
+ Пусть для любых 
+\begin_inset Formula $m$
+\end_inset
+
+ подгрупп 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+,...,
+\begin_inset Formula $A_{m}$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ пересечение 
+\begin_inset Formula $A_{1}\cap A_{2}\cap\dots\cap A_{m}$
+\end_inset
+
+ является подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Докажем, что пересечение любых 
+\begin_inset Formula $m+1$
+\end_inset
+
+ подгрупп 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+,...,
+\begin_inset Formula $A_{m+1}$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ также подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Действительно, 
+\begin_inset Formula $B_{m}=A_{1}\cap A_{2}\cap\dots\cap A_{m}$
+\end_inset
+
+ — подгруппа по предположению индукции.
+ Тогда 
+\begin_inset Formula $B_{m+1}=A_{1}\cap A_{2}\cap\dots\cap A_{m}\cap A_{m+1}=B_{m}\cap A_{m+1}$
+\end_inset
+
+, а значит 
+\begin_inset Formula $B_{m+1}$
+\end_inset
+
+ является пересечением двух подгрупп группы 
+\begin_inset Formula $G$
+\end_inset
+
+, то есть также является подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+ в силу утверждения, составляющего базу индукции.
+\end_layout
+
+\begin_layout Example
 Рассмотрим правильный тетраэдр с вершинами 
 \begin_inset Formula $A$
 \end_inset
@@ -18048,19 +18303,6 @@ status open
 
  могут идти по часовой стрелке или против.
  Соответственно этому будем различать две ориентации тетраэдра.
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Problem
