@@ -12788,6 +12788,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:identity-and-inverse-in-subgroup-are-in-group"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $H$
 \end_inset
@@ -13045,16 +13051,209 @@ name "prob:subgroup-criterion"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+\series bold
+Необходимость
+\series default
+.
+ Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+, то есть 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа и подмножество 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Тогда, условие 1) выполняется, так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа, а произведение двух элементов группу принадлежит той же группы
+ по определению группы.
+ Условие 2) выполняется, так как 
+\begin_inset Formula $H$
+\end_inset
+
+ содержит некоторый единичный элемент (как группа), а по доказанному в задаче
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:identity-and-inverse-in-subgroup-are-in-group"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, он совпадает с единичным элементом группы 
+\begin_inset Formula $G$
+\end_inset
 
+.
+ Условие 3) выполняется, так как для любого 
+\begin_inset Formula $a\in H$
+\end_inset
+
+ существует обратный элемент как в группе 
+\begin_inset Formula $G$
+\end_inset
+
+, так и в группе 
+\begin_inset Formula $H$
+\end_inset
+
+, а по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:identity-and-inverse-in-subgroup-are-in-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, эти элементы совпадают.
+\end_layout
+
+\begin_layout Solution
+
+\series bold
+Достаточность.
+ 
+\series default
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подмножество группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и выполняются условия 1) и 3), докажем, что 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа 
+\begin_inset Formula $G$
+\end_inset
+
+ (фактически, нужно доказать, что 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа).
+\end_layout
+
+\begin_layout Solution
+Докажем сначала, что из условий 1) и 3) следует условие 2).
+ Рассмотрим произвольный элемент 
+\begin_inset Formula $a\in H$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $a\neq e$
+\end_inset
+
+ (если таких элементов нет, то 
+\begin_inset Formula $H$
+\end_inset
+
+ состоит только из единичного элемента и является группой).
+ Так как 
+\begin_inset Formula $H\subset G$
+\end_inset
+
+, то 
+\begin_inset Formula $a\in G$
+\end_inset
+
+, а значит, по определению группы, существует 
+\begin_inset Formula $a^{-1}\in G$
+\end_inset
+
+.
+ По условию 3) 
+\begin_inset Formula $a^{-1}\in H$
+\end_inset
+
+, а по условию 1), 
+\begin_inset Formula $aa^{-1}=e\in H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Замкнутость операции на 
+\begin_inset Formula $H$
+\end_inset
+
+ — это условие 1).
+\end_layout
+
+\begin_layout Solution
+Ассоциативность операции на 
+\begin_inset Formula $H$
+\end_inset
+
+ следует из ассоциативности на 
+\begin_inset Formula $G$
+\end_inset
+
+ и того, что любой элемент 
+\begin_inset Formula $H$
+\end_inset
+
+ является также элементом 
+\begin_inset Formula $G$
+\end_inset
+
+, так как 
+\begin_inset Formula $H\subset G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Существование единичного элемента 
+\begin_inset Formula $H$
+\end_inset
+
+ — это условие 2).
+\end_layout
+
+\begin_layout Solution
+Существование обратного элемента — это условие 3).
+\end_layout
+
+\begin_layout Solution
+Так как все требования к группе выполнены, то 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа и подмножество 
+\begin_inset Formula $G$
+\end_inset
+
+ (по условию задачи), то есть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа 
+\begin_inset Formula $G$
+\end_inset
+
+ по определению подгруппы.
 \end_layout
 
 \begin_layout Problem
@@ -18305,13 +18504,35 @@ noprefix "false"
  Соответственно этому будем различать две ориентации тетраэдра.
 \end_layout
 
+\begin_layout Example
+\begin_inset Graphics
+	filename pictures/tetrahedron.png
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Problem
-Сохраняют ли ориентацию тетраэдра следующие преобразования: а) вращение
- на 
+Сохраняют ли ориентацию тетраэдра следующие преобразования: а) 
+\begin_inset Formula $a=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & A & D
+\end{array}\right)$
+\end_inset
+
+ — вращение на 
 \begin_inset Formula $120\text{°}$
 \end_inset
 
- вокруг высоты; б) вращение на 
+ вокруг высоты; б) 
+\begin_inset Formula $b=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)$
+\end_inset
+
+ — вращение на 
 \begin_inset Formula $180\text{°}$
 \end_inset
 
@@ -18323,7 +18544,14 @@ noprefix "false"
 \begin_inset Formula $BC$
 \end_inset
 
-; в) отражение относительно плоскости, проходящей через ребро 
+; в) 
+\begin_inset Formula $c=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & B & D
+\end{array}\right)$
+\end_inset
+
+ — отражение относительно плоскости, проходящей через ребро 
 \begin_inset Formula $AD$
 \end_inset
 
@@ -18342,16 +18570,79 @@ B & C & D & A
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
+а) сохраняет, так как порядок вершин не меняется при повороте.
 \end_layout
 
+\begin_layout Solution
+б) если смотреть из 
+\begin_inset Formula $A$
 \end_inset
 
+, то точки 
+\begin_inset Formula $D$
+\end_inset
 
+, 
+\begin_inset Formula $C$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ следуют по часовой стрелке, поэтому ориентация сохраняется.
+\end_layout
+
+\begin_layout Solution
+в) так как вершина 
+\begin_inset Formula $D$
+\end_inset
+
+ останется на месте, а вершины 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+ поменяются местами, то из точки 
+\begin_inset Formula $D$
+\end_inset
+
+ точки 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+ будут видны против часовой стрелки, то есть ориентация поменяется.
+\end_layout
+
+\begin_layout Solution
+г) если смотреть из точки 
+\begin_inset Formula $C$
+\end_inset
+
+, то точки 
+\begin_inset Formula $D$
+\end_inset
+
+, 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ следуют против часовой стрелки, значит ориентация меняется.
 \end_layout
 
 \begin_layout Definition
@@ -18363,20 +18654,15 @@ status open
 \end_layout
 
 \begin_layout Problem
-Сколько симметрий в группе вращений тетраэдра?
+Сколько элементов в группе симметрий тетраэдра?
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Всего возможны 
+\begin_inset Formula $4!=24$
 \end_inset
 
-
+ перестановки вершин тетраэдра, столько же существует симметрий тетраэдра.
 \end_layout
 
 \begin_layout Problem
@@ -18389,16 +18675,81 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+а) Рассмотрим вращения вокруг высоты, проходящей через точку 
+\begin_inset Formula $D$
 \end_inset
 
+, переводящие тетраэдр в себя.
+ Они образуют группу из трёх элементов: вращений на 
+\begin_inset Formula $0\text{\textdegree}$
+\end_inset
 
+, 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+и 
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Рассмотрим циклическую перестановку вершин 
+\begin_inset Formula $d=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $d^{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $d^{3}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $d^{4}=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & B & C & D
+\end{array}\right)=e$
+\end_inset
+
+.
+ Таким образом, примером подгруппы порядка 4 является подгруппа степеней
+ данного элемента 
+\begin_inset Formula $d$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
