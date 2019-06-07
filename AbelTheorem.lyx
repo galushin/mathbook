@@ -10580,6 +10580,12 @@ name "prob:multiplication-tables-for-group-of-integers-modulo-2-3-4"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:residuals-modulo-n-is-cyclic-group-of-order-n"
+
+\end_inset
+
 Доказать, что остатки с операций сложения по модулю 
 \begin_inset Formula $n$
 \end_inset
@@ -11151,6 +11157,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:cyclic-group-of-order-n-is-isomorphic-to-addition-modulo-n"
+
+\end_inset
+
 Доказать, что любая циклическая группа порядка 
 \begin_inset Formula $n$
 \end_inset
@@ -11220,6 +11232,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:infinite-cyclic-group-is-isomorphic-to-integers-with-addition"
+
+\end_inset
+
 Доказать, что любая бесконечная циклическая группа изоморфна группе целых
  чисел по сложению.
 \end_layout
@@ -11698,6 +11716,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:all-groups-of-order-2-or-3-are-isomorphic"
+
+\end_inset
+
 Найти все (с точностью до изоморфизма) группы, содержащие а) 2 элемента,
  б) 3 элемента.
 \end_layout
@@ -11779,12 +11803,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-Таким обарзом, остаётся только одна возможность: 
+Таким образом, остаётся только одна возможность: 
 \begin_inset Formula $a^{-1}=a$
 \end_inset
 
 , то есть имеется лишь одна группа, содержащая 2 элемента.
- Таблица умножения для этой группы содержит лишь одно приозведение, значение
+ Таблица умножения для этой группы содержит лишь одно произведение, значение
  которого не следует прямо из аксиом группы: 
 \begin_inset Formula $aa=aa^{-1}=e$
 \end_inset
@@ -12672,6 +12696,6208 @@ noprefix "false"
 \end_inset
 
 , то есть является изоморфизмом.
+\end_layout
+
+\begin_layout Section
+Подгруппы
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подмножество группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $H$
+\end_inset
+
+ является группой относительно той же бинарной операции, что и 
+\begin_inset Formula $G$
+\end_inset
+
+, то 
+\begin_inset Formula $H$
+\end_inset
+
+ называют 
+\emph on
+подгруппой 
+\emph default
+группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Например, группа вращений правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника является подгруппой группы всех симметрий правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:powers-of-element-form-subgroup"
+
+\end_inset
+
+Если 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+, то множество всех элементов вида 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ является подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+, это циклическая группа (бесконечная 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:infinite-cyclic-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ или конечная 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:identity-and-inverse-in-subgroup-are-in-group"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что а) единичные элементы 
+\begin_inset Formula $H$
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+ совпадают; б) если 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+, то элементы, обратные к 
+\begin_inset Formula $a$
+\end_inset
+
+ в 
+\begin_inset Formula $H$
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+, совпадают.
+\end_layout
+
+\begin_layout Solution
+а) Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ группа, то она содержит единичный элемент 
+\begin_inset Formula $e_{H}$
+\end_inset
+
+ и в группе 
+\begin_inset Formula $H$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $e_{H}e_{H}=e_{H}$
+\end_inset
+
+, так как 
+\begin_inset Formula $e_{H}\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $e_{H}$
+\end_inset
+
+ является элементом группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Равенство 
+\begin_inset Formula $e_{H}e_{H}=e_{H}$
+\end_inset
+
+ должно выполняться также и в группе 
+\begin_inset Formula $G$
+\end_inset
+
+, так как бинарная операция в группе и подгруппе совпадают.
+ В группе 
+\begin_inset Formula $G$
+\end_inset
+
+ должен существовать элемент 
+\begin_inset Formula $e_{H}^{-1}$
+\end_inset
+
+, обратный к 
+\begin_inset Formula $e_{H}$
+\end_inset
+
+, умножая равенство 
+\begin_inset Formula $e_{H}e_{H}=e_{H}$
+\end_inset
+
+ (в группе 
+\begin_inset Formula $G$
+\end_inset
+
+) на 
+\begin_inset Formula $e_{H}^{-1}$
+\end_inset
+
+, получим равенство 
+\begin_inset Formula $e_{H}=e_{G}$
+\end_inset
+
+, где 
+\begin_inset Formula $e_{G}$
+\end_inset
+
+ — единичный элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Обозначим элементы, обратные к 
+\begin_inset Formula $a$
+\end_inset
+
+ в 
+\begin_inset Formula $H$
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+ как 
+\begin_inset Formula $a_{H}^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{G}^{-1}$
+\end_inset
+
+ соответственно.
+ В группе 
+\begin_inset Formula $H$
+\end_inset
+
+, по определению обратного элемента, имеет место равенство 
+\begin_inset Formula $a\cdot a_{H}^{-1}=a_{H}^{-1}\cdot a=e_{H}=e_{G}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгрупп 
+\begin_inset Formula $G$
+\end_inset
+
+, то 
+\begin_inset Formula $a_{H}^{-1}$
+\end_inset
+
+ входит в группу 
+\begin_inset Formula $G$
+\end_inset
+
+ и равенство 
+\begin_inset Formula $a\cdot a_{H}^{-1}=a_{H}^{-1}a=e_{G}$
+\end_inset
+
+ выполняется и в группе 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $a_{H}^{-1}$
+\end_inset
+
+ удовлетворяет определению обратного элемента к 
+\begin_inset Formula $a$
+\end_inset
+
+ в 
+\begin_inset Formula $G$
+\end_inset
+
+, а так как обратный элемент в группе является единственным 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:inverse-element-is-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $a_{H}^{-1}=a_{G}^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:subgroup-criterion"
+
+\end_inset
+
+Доказать следующее утверждение.
+ Для того, чтобы 
+\begin_inset Formula $H$
+\end_inset
+
+ было подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+ (относительно той же бинарной операции), необходимо и достаточно, чтобы
+ выполнялись следующие условия: 1) если 
+\begin_inset Formula $a,b\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $ab\in H$
+\end_inset
+
+ (произведение в группе 
+\begin_inset Formula $G$
+\end_inset
+
+); 2) 
+\begin_inset Formula $e$
+\end_inset
+
+ (единичный элемент 
+\begin_inset Formula $G$
+\end_inset
+
+) содержится в 
+\begin_inset Formula $H$
+\end_inset
+
+; 3) если 
+\begin_inset Formula $a\in H$
+\end_inset
+
+, то и 
+\begin_inset Formula $a^{-1}\in H$
+\end_inset
+
+.
+ Замечание: из условий 1) и 3) вытекает условие 2).
+\end_layout
+
+\begin_layout Solution
+
+\series bold
+Необходимость
+\series default
+.
+ Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+, то есть 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа и подмножество 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Тогда, условие 1) выполняется, так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа, а произведение двух элементов группу принадлежит той же группы
+ по определению группы.
+ Условие 2) выполняется, так как 
+\begin_inset Formula $H$
+\end_inset
+
+ содержит некоторый единичный элемент (как группа), а по доказанному в задаче
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:identity-and-inverse-in-subgroup-are-in-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, он совпадает с единичным элементом группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Условие 3) выполняется, так как для любого 
+\begin_inset Formula $a\in H$
+\end_inset
+
+ существует обратный элемент как в группе 
+\begin_inset Formula $G$
+\end_inset
+
+, так и в группе 
+\begin_inset Formula $H$
+\end_inset
+
+, а по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:identity-and-inverse-in-subgroup-are-in-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, эти элементы совпадают.
+\end_layout
+
+\begin_layout Solution
+
+\series bold
+Достаточность.
+ 
+\series default
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подмножество группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и выполняются условия 1) и 3), докажем, что 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа 
+\begin_inset Formula $G$
+\end_inset
+
+ (фактически, нужно доказать, что 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа).
+\end_layout
+
+\begin_layout Solution
+Докажем сначала, что из условий 1) и 3) следует условие 2).
+ Рассмотрим произвольный элемент 
+\begin_inset Formula $a\in H$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $a\neq e$
+\end_inset
+
+ (если таких элементов нет, то 
+\begin_inset Formula $H$
+\end_inset
+
+ состоит только из единичного элемента и является группой).
+ Так как 
+\begin_inset Formula $H\subset G$
+\end_inset
+
+, то 
+\begin_inset Formula $a\in G$
+\end_inset
+
+, а значит, по определению группы, существует 
+\begin_inset Formula $a^{-1}\in G$
+\end_inset
+
+.
+ По условию 3) 
+\begin_inset Formula $a^{-1}\in H$
+\end_inset
+
+, а по условию 1), 
+\begin_inset Formula $aa^{-1}=e\in H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Замкнутость операции на 
+\begin_inset Formula $H$
+\end_inset
+
+ — это условие 1).
+\end_layout
+
+\begin_layout Solution
+Ассоциативность операции на 
+\begin_inset Formula $H$
+\end_inset
+
+ следует из ассоциативности на 
+\begin_inset Formula $G$
+\end_inset
+
+ и того, что любой элемент 
+\begin_inset Formula $H$
+\end_inset
+
+ является также элементом 
+\begin_inset Formula $G$
+\end_inset
+
+, так как 
+\begin_inset Formula $H\subset G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Существование единичного элемента 
+\begin_inset Formula $H$
+\end_inset
+
+ — это условие 2).
+\end_layout
+
+\begin_layout Solution
+Существование обратного элемента — это условие 3).
+\end_layout
+
+\begin_layout Solution
+Так как все требования к группе выполнены, то 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа и подмножество 
+\begin_inset Formula $G$
+\end_inset
+
+ (по условию задачи), то есть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа 
+\begin_inset Formula $G$
+\end_inset
+
+ по определению подгруппы.
+\end_layout
+
+\begin_layout Problem
+Найти все подгруппы в группах: 1) симметрий правильного треугольника, 2)
+ симметрий квадрата.
+\end_layout
+
+\begin_layout Solution
+1) Воспользуемся решением задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Подмножество элементов 
+\begin_inset Formula $\left\{ e,a,b\right\} $
+\end_inset
+
+ является подгруппой, так как произведение любых двух элементов из этого
+ подмножества снова является элементом этого подмножества, а обратными элементам
+и к элементам этого подмножества являются, соответственно, 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+.Отметим, что отсюда следует, что элементы 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ должны входить или не входить в подгруппу одновременно.
+ Таким образом, группа вращений правильного треугольника является подгруппой
+ всех симметрий правильного треугольника.
+\end_layout
+
+\begin_layout Solution
+Добавление любого из оставшихся элементов 
+\begin_inset Formula $l_{A}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{B}$
+\end_inset
+
+ или 
+\begin_inset Formula $l_{C}$
+\end_inset
+
+ к этому подмножеству приводит к необходимости добавить все эти три элемента,
+ так как, например, 
+\begin_inset Formula $l_{A}a=l_{B}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{A}b=l_{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $l_{A}l_{A}=l_{B}l_{B}=l_{C}l_{C}=e$
+\end_inset
+
+, поэтому подмножества 
+\begin_inset Formula $\left\{ e,l_{A}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,l_{B}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ e,l_{C}\right\} $
+\end_inset
+
+ являются подгруппами.
+\end_layout
+
+\begin_layout Solution
+Других подгрупп в группе симметрий правильно треугольника нет.
+ Рассмотрим, например, подгруппу, включающую 
+\begin_inset Formula $l_{A}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{B}$
+\end_inset
+
+.
+ Она также должна содержать 
+\begin_inset Formula $a=l_{A}l_{B}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{C}=l_{B}a$
+\end_inset
+
+ и 
+\begin_inset Formula $b=l_{B}l_{A}$
+\end_inset
+
+, то есть совпадать со всей группой.
+\end_layout
+
+\begin_layout Solution
+2) Воспользуемся решением задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $aa=dd=ff=gg=hh=e$
+\end_inset
+
+, то подмножества 
+\begin_inset Formula $\left\{ e,a\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,d\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,f\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,g\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ e,h\right\} $
+\end_inset
+
+ являются подгруппами.
+ Других элементов второго порядка нет, поэтому нет и других подгрупп из
+ двух элементов.
+\end_layout
+
+\begin_layout Solution
+Подмножество 
+\begin_inset Formula $\left\{ e,a,b,c\right\} $
+\end_inset
+
+ совпадает с группой вращений квадрата 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:squate-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а значит является подгруппой.
+\end_layout
+
+\begin_layout Solution
+Если, помимо 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+, подгруппа содержит какие-либо ещё элементы, то она совпадает со всей группой
+ симметрий квадрата.
+ Например, 
+\begin_inset Formula $da=f$
+\end_inset
+
+, 
+\begin_inset Formula $db=g$
+\end_inset
+
+ и 
+\begin_inset Formula $dc=h$
+\end_inset
+
+, поэтому, если подгруппа, содержит 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+ и 
+\begin_inset Formula $d$
+\end_inset
+
+, то она содержит также 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+, то есть совпадает со всей рассматриваемой группой.
+ Так как 
+\begin_inset Formula $bb=cc=a$
+\end_inset
+
+, а 
+\begin_inset Formula $ab=c$
+\end_inset
+
+ и 
+\begin_inset Formula $ac=b$
+\end_inset
+
+, то любая подгруппа, содержащая 
+\begin_inset Formula $b$
+\end_inset
+
+ или 
+\begin_inset Formula $c$
+\end_inset
+
+, содержит 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Таким образом, других подгрупп, содержащих 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ или 
+\begin_inset Formula $c$
+\end_inset
+
+, нет.
+\end_layout
+
+\begin_layout Solution
+Пусть подгруппа содержит 
+\begin_inset Formula $d$
+\end_inset
+
+ и 
+\begin_inset Formula $f$
+\end_inset
+
+, тогда она должна содержать 
+\begin_inset Formula $a=df=fd$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a^{-1}=a$
+\end_inset
+
+, 
+\begin_inset Formula $da=ad=f$
+\end_inset
+
+ и 
+\begin_inset Formula $af=fa=d$
+\end_inset
+
+, то подмножество 
+\begin_inset Formula $\left\{ e,a,d,f\right\} $
+\end_inset
+
+ является подгруппой.
+ Аналогично, подгруппой является и подмножество 
+\begin_inset Formula $\left\{ e,a,g,h\right\} $
+\end_inset
+
+.
+ Таким образом, подгруппами группы симметрий квадрата являются также группы
+ симметрий ромба
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rhombus-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и прямоугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rectangle-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если же подгруппа содержит одновременно 
+\begin_inset Formula $d$
+\end_inset
+
+ и 
+\begin_inset Formula $g$
+\end_inset
+
+, то она содержит 
+\begin_inset Formula $c=dg$
+\end_inset
+
+ и 
+\begin_inset Formula $b=gd$
+\end_inset
+
+, а также 
+\begin_inset Formula $a=bb$
+\end_inset
+
+, 
+\begin_inset Formula $f=gc$
+\end_inset
+
+ и 
+\begin_inset Formula $h=fc$
+\end_inset
+
+, то совпадает со всей группой симметрий квадрата.
+ Аналогично, подгруппа, содержащая любую другую пару элементов из 
+\begin_inset Formula $d$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+, совпадает со всей группой вращений квадрата.
+\end_layout
+
+\begin_layout Problem
+Найти все подгруппы в следующих циклических группах: а) 
+\begin_inset Formula $Z_{5}$
+\end_inset
+
+, б) 
+\begin_inset Formula $Z_{8}$
+\end_inset
+
+, в) 
+\begin_inset Formula $Z_{15}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Прежде всего заметим, что единичный элемент принадлежит любой подгруппе.
+ Поэтому у любой группы есть тривиальная подгруппа, состоящая из единственного
+ единичного элемента.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cyclic-group-of-order-n-is-isomorphic-to-addition-modulo-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, вместо обобщённой циклической группы порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ можно рассматривать остатки от деления на 
+\begin_inset Formula $n$
+\end_inset
+
+ с операцией сложения.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:residuals-modulo-n-is-cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ является циклической группой порядка 
+\begin_inset Formula $n$
+\end_inset
+
+, причём её образующим является элемент 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Таким образом, если подгруппа содержит элемент 
+\begin_inset Formula $1$
+\end_inset
+
+, то она совпадает с исходной группой.
+\end_layout
+
+\begin_layout Solution
+а) Для группы 
+\begin_inset Formula $Z_{5}$
+\end_inset
+
+ таблица умножения (сложения по модулю 5) имеет вид:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим, подгруппу, содержащую элементы 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $2$
+\end_inset
+
+, то мы снова придём к необходимости включения в подгруппу всех остальных
+ элементов исходной группы: 
+\begin_inset Formula $2+2=4$
+\end_inset
+
+, 
+\begin_inset Formula $4+2=1\mod5$
+\end_inset
+
+.
+ Если взять элементы 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $3$
+\end_inset
+
+, то аналогичная цепочка имеет вид 
+\begin_inset Formula $3+3=1\mod5$
+\end_inset
+
+.
+ Если взять 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $4$
+\end_inset
+
+, то 
+\begin_inset Formula $4+4=3\mod5$
+\end_inset
+
+ и 
+\begin_inset Formula $3+3=1\mod5$
+\end_inset
+
+.
+ Таким образом, если подгруппа группы 
+\begin_inset Formula $Z_{5}$
+\end_inset
+
+ содержит какой-либо элемент, кроме 
+\begin_inset Formula $0$
+\end_inset
+
+, то эта подгруппа совпадает с 
+\begin_inset Formula $Z_{5}$
+\end_inset
+
+, то есть у 
+\begin_inset Formula $Z_{5}$
+\end_inset
+
+ есть только две подгруппы: 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $Z_{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для группы 
+\begin_inset Formula $Z_{8}$
+\end_inset
+
+ таблица умножения (сложения по модулю 8) имеет вид:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим группу, содержащую 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $2$
+\end_inset
+
+, она должна содержать также 
+\begin_inset Formula $2+2=4$
+\end_inset
+
+ и 
+\begin_inset Formula $2+4=6$
+\end_inset
+
+.
+ 
+\begin_inset Formula $2+6=4+4=0$
+\end_inset
+
+, поэтому подгруппа может не содержать никаких элементов.
+ Таким образом, у 
+\begin_inset Formula $Z_{8}$
+\end_inset
+
+ есть подгруппа 
+\begin_inset Formula $\left\{ 0,2,4,6\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если же подгруппа содержит нечётное число, то можно построить следующие
+ цепочки степеней, приводящие к 
+\begin_inset Formula $1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $3+3=6$
+\end_inset
+
+ и 
+\begin_inset Formula $6+3=1\mod8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $5+5=2$
+\end_inset
+
+, 
+\begin_inset Formula $2+5=7$
+\end_inset
+
+, 
+\begin_inset Formula $7+5=4\mod8$
+\end_inset
+
+ и 
+\begin_inset Formula $4+5=1\mod8$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $7+7=6\mod8$
+\end_inset
+
+, 
+\begin_inset Formula $6+7=5\mod8$
+\end_inset
+
+, 
+\begin_inset Formula $5+7=4\mod8$
+\end_inset
+
+ и
+\begin_inset Formula $4+5=1\mod8$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, добавлением к 
+\begin_inset Formula $\left\{ 0,2,4,6\right\} $
+\end_inset
+
+ новых элементов можно получить только всю группу 
+\begin_inset Formula $Z_{8}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим группу, содержащую 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $4$
+\end_inset
+
+, 
+\begin_inset Formula $4+4=0\mod8$
+\end_inset
+
+, поэтому мы получаем группу из двух элементов.
+ Остаётся рассмотреть группу, содержащую 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $6$
+\end_inset
+
+.
+ 
+\begin_inset Formula $6+6=2\mod8$
+\end_inset
+
+, поэтому мы снова получаем подгруппу 
+\begin_inset Formula $\left\{ 0,2,4,6\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Итак, у группы 
+\begin_inset Formula $Z_{8}$
+\end_inset
+
+ есть следующие подгруппы 
+\begin_inset Formula $\left\{ 0\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ 0,4\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ 0,2,4,6\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Для группы 
+\begin_inset Formula $Z_{15}$
+\end_inset
+
+ таблица умножения (сложения по модулю 15) имеет вид:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="16" columns="16">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+14
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если подгруппа содержит образующий элемент, то эта подгруппа совпадает со
+ всей группой.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:period-of-element"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в циклической группе порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ порядок элемента 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ (
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий) равен 
+\begin_inset Formula $n/d$
+\end_inset
+
+, где 
+\begin_inset Formula $d$
+\end_inset
+
+ — наибольший общий делитель 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Таким образом, образующими группы являются элементы, взаимно-простые с
+ 
+\begin_inset Formula $15$
+\end_inset
+
+.
+ Это 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $4$
+\end_inset
+
+, 
+\begin_inset Formula $7$
+\end_inset
+
+, 
+\begin_inset Formula $8$
+\end_inset
+
+, 
+\begin_inset Formula $11$
+\end_inset
+
+, 
+\begin_inset Formula $13$
+\end_inset
+
+ и 
+\begin_inset Formula $14$
+\end_inset
+
+.
+ Таким образом, в подгруппах, отличных от всей группы, эти элементы содержаться
+ не могут.
+ Таким образом, остаётся исследовать подгруппы, содержащие 
+\begin_inset Formula $3$
+\end_inset
+
+, 
+\begin_inset Formula $5$
+\end_inset
+
+, 
+\begin_inset Formula $6$
+\end_inset
+
+, 
+\begin_inset Formula $9$
+\end_inset
+
+, 
+\begin_inset Formula $10$
+\end_inset
+
+ и 
+\begin_inset Formula $12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Первый ненулевой элемент, не входящий в этот список, равен 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Вместе с элементом, подгруппа должна содержать все его степени, таким образом
+ мы получаем подгруппы 
+\begin_inset Formula $\left\{ 0;3;6;9;12\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Аналогично, можно показать, что подгруппой является подмножество 
+\begin_inset Formula $\left\{ 0;5;10\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Остаётся проверить, может ли подгруппа содержать 
+\begin_inset Formula $3$
+\end_inset
+
+ и 
+\begin_inset Formula $5$
+\end_inset
+
+, но не совпадать, со всей 
+\begin_inset Formula $Z_{15}$
+\end_inset
+
+.
+ Ответ на этот вопрос является отрицательным, так как 
+\begin_inset Formula $3+5=8$
+\end_inset
+
+, а 
+\begin_inset Formula $8$
+\end_inset
+
+ — образующий элемент 
+\begin_inset Formula $Z_{15}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что все подгруппы в 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $\left\{ a^{kd}\right\} ,$
+\end_inset
+
+где 
+\begin_inset Formula $d$
+\end_inset
+
+ — делитель 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий группы 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $k=0,1,...,\frac{n}{d}-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Любой элементы 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ можно представить в виде 
+\begin_inset Formula $a^{j}$
+\end_inset
+
+.
+ Рассмотрим подгруппу 
+\begin_inset Formula $H$
+\end_inset
+
+ группы 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+, содержащую элементы 
+\begin_inset Formula $a^{r_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $a^{r_{2}}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a^{r_{m}}$
+\end_inset
+
+, тогда она содержит произвольные степени этих элементов, а значит и произвольны
+е элементы вида 
+\begin_inset Formula $a^{j_{1}r_{1}+j_{2}r_{2}+...+j_{m}r_{m}}$
+\end_inset
+
+, из теории чисел известно
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Доказать этот факт
+\end_layout
+
+\end_inset
+
+, что наибольший общий делитель 
+\begin_inset Formula $r$
+\end_inset
+
+ чисел 
+\begin_inset Formula $r_{1},r_{2},...,r_{m}$
+\end_inset
+
+ может быть записан в виде 
+\begin_inset Formula $r=j_{1}r_{1}+j_{2}r_{2}+...+j_{m}r_{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $j_{1},j_{2},...,j_{m}$
+\end_inset
+
+ — некоторые целые числа.
+ Таким образом, рассматриваемая подгруппа 
+\begin_inset Formula $H$
+\end_inset
+
+ содержит элемент 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+, любой из элементов 
+\begin_inset Formula $a^{r_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $a^{r_{2}}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a^{r_{m}}$
+\end_inset
+
+ является степенью 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+.
+ Степени элементы 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+ образуют подгруппу группы 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:powers-of-element-form-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, рассматриваемая подгруппа 
+\begin_inset Formula $H$
+\end_inset
+
+ совпадает с подгруппой степеней 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Порядок элемента 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+ равен 
+\begin_inset Formula $\frac{n}{\mathrm{gcd}\left(n,r\right)}$
+\end_inset
+
+.
+ Если числа 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+ взаимно-просты, то подгруппа степеней 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+ совпадает с 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+.
+ Снова воспользуемся фактом, что 
+\begin_inset Formula $d=\mathrm{gcd}\left(n,r\right)$
+\end_inset
+
+ может быть представлен в виде 
+\begin_inset Formula $\mathrm{d}=rs+nq$
+\end_inset
+
+, где 
+\begin_inset Formula $s,q$
+\end_inset
+
+ — некоторые целые числа, то есть наибольший общий делитель 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+ равен 
+\begin_inset Formula $rs$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+, значит среди степеней элемента 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+ присутствует элемент 
+\begin_inset Formula $a^{d}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $d$
+\end_inset
+
+ является делителем 
+\begin_inset Formula $r$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{r}$
+\end_inset
+
+ является некоторой степенью 
+\begin_inset Formula $a^{d}$
+\end_inset
+
+, а порядок элемента 
+\begin_inset Formula $a^{d}$
+\end_inset
+
+ равен 
+\begin_inset Formula $\frac{n}{d}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:period-of-power-of-element"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, так как 
+\begin_inset Formula $\mathrm{gcd}\left(d,n\right)=d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Итак, мы показали, что произвольная подгруппа, содержащая элементы 
+\begin_inset Formula $a^{r_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $a^{r_{2}}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a^{r_{m}}$
+\end_inset
+
+, может быть представлена как подгруппа степеней элемента 
+\begin_inset Formula $a^{d}$
+\end_inset
+
+, где 
+\begin_inset Formula $d=\mathrm{gcd}\left(n,r_{1},r_{2},...,r_{m}\right)$
+\end_inset
+
+, причём её порядок равен 
+\begin_inset Formula $\frac{n}{d}$
+\end_inset
+
+, что и требовалось.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:subgroups-of-infinite-cyclic-group"
+
+\end_inset
+
+Доказать, что все подгруппы бесконечной циклической группы имеют вид 
+\begin_inset Formula $\left\{ b^{k}\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — произвольное целое число, а 
+\begin_inset Formula $b=a^{r},$
+\end_inset
+
+где 
+\begin_inset Formula $r$
+\end_inset
+
+ — произвольное целое положительное число, 
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий.
+\end_layout
+
+\begin_layout Solution
+Так как произвольная бесконечная циклическая изоморфна группе целых чисел
+ по сложению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:infinite-cyclic-group-is-isomorphic-to-integers-with-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то мы доказать утверждение достаточно для этой группы.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольную подгруппу 
+\begin_inset Formula $H$
+\end_inset
+
+ группы целых чисел по сложению, пусть она состоит из элементов 
+\begin_inset Formula $\left\{ r_{1},r_{2},\dots,r_{m},\dots\right\} $
+\end_inset
+
+, тогда, по определению подгруппы, она должна содержать элементы вида 
+\begin_inset Formula $j_{1}r_{1}+j_{2}r_{2}+\dots+j_{m}r_{m}\dots$
+\end_inset
+
+, где 
+\begin_inset Formula $j_{k}$
+\end_inset
+
+ — произвольные целые числа, а значит и наибольший общий делитель этих элементов
+ 
+\begin_inset Formula $r$
+\end_inset
+
+, так как он может быть записан в таком виде 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на этот факт
+\end_layout
+
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $r$
+\end_inset
+
+ является наибольшим делителем 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+..., 
+\begin_inset Formula $r_{m}$
+\end_inset
+
+,..., то все элементы рассматриваемой подгруппы могут быть записаны в виде
+ 
+\begin_inset Formula $r_{i}=q_{i}r$
+\end_inset
+
+, где 
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ — некоторые целые числа, то есть все элементы подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+ могут быть представлены как степени одного элемента 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+С другой стороны, если подгруппа 
+\begin_inset Formula $H$
+\end_inset
+
+ содержит некоторый элемент 
+\begin_inset Formula $r$
+\end_inset
+
+, то она содержит и все его степени, то есть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа всевозможных целых степеней элемента 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как изоморфизм между группой целых чисел по сложению и произвольной
+ бесконечной циклической группой задаётся отображением 
+\begin_inset Formula $\varphi\left(k\right)=a^{k}$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий, то 
+\begin_inset Formula $b=a^{r}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что в любой бесконечной группе бесконечно много подгрупп.
+\end_layout
+
+\begin_layout Solution
+Для каждого элемента группы рассмотрим подгруппу его степеней 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:powers-of-element-form-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Некоторые из этих подгрупп могут совпадать (например, для любого элемента
+ 
+\begin_inset Formula $a$
+\end_inset
+
+, подгруппы степеней 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ совпадают), поэтому разных подгрупп может быть бесконечное или конечное
+ число.
+ В первом случае, мы сразу же получаем желаемый результат.
+\end_layout
+
+\begin_layout Solution
+Во втором случае (число подгрупп — конечное) среди полученных подгрупп должна
+ быть бесконечная.
+ Действительно, так как любой элемент входит в одну из рассматриваемых подгрупп
+ (в частности — в подгруппу своих степеней), поэтому объединение рассматриваемых
+ подгрупп совпадает со всей группой, а объединение конечного числа конечных
+ подгрупп не может быть бесконечным.
+ Таким образом, у исходной группы есть подгруппа, являющаяся бесконечной
+ циклической подгруппой, а как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroups-of-infinite-cyclic-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у бесконечной циклической группы бесконечно много подгрупп.
+ Каждая из этих подгрупп является подгруппой и исходной группы, то есть
+ и в этом случае подгрупп бесконечного много.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Написать про транзитивность отношения 
+\begin_inset Quotes rld
+\end_inset
+
+является подгруппой
+\begin_inset Quotes rrd
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что пересечение любого числа подгрупп 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на элементы теории множеств.
+ Также можно написать про ассоциативность операции пересечения множеств
+ в соответствующем разделе
+\end_layout
+
+\end_inset
+
+ некоторой группы 
+\begin_inset Formula $G$
+\end_inset
+
+ также является подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем это утверждение сначала для случая пересечения двух групп.
+ Рассмотрим две подгруппы 
+\begin_inset Formula $A,B\subset G$
+\end_inset
+
+ и их пересечение (как множеств) 
+\begin_inset Formula $H=A\cap B$
+\end_inset
+
+.
+ Для того, чтобы доказать, что 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, нужно убедиться, что выполняются требования 1) и 3) задачи
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+1) Пусть 
+\begin_inset Formula $a,b\in H$
+\end_inset
+
+, тогда, по определению пересечения множеств, 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ и 
+\begin_inset Formula $a,b\in B$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — группы, то 
+\begin_inset Formula $ab\in A$
+\end_inset
+
+ и 
+\begin_inset Formula $ab\in B$
+\end_inset
+
+, а значит, снова по определению пересечения множеств, 
+\begin_inset Formula $ab\in A\cap B=H$
+\end_inset
+
+.
+ Первое условие выполнено.
+\end_layout
+
+\begin_layout Solution
+3) Пусть 
+\begin_inset Formula $a\in H$
+\end_inset
+
+, тогда, по определению пересечения множеств, 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ и 
+\begin_inset Formula $a\in B$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — группы, то 
+\begin_inset Formula $a^{-1}\in A$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{-1}\in B$
+\end_inset
+
+, а значит, снова по определению пересечения множеств, 
+\begin_inset Formula $a^{-1}\in A\cap B=H$
+\end_inset
+
+.
+ Это условие так же выполнено.
+\end_layout
+
+\begin_layout Solution
+Для общего случая это утверждение доказывается по индукции.
+ Базу индукции образует случай пересечения двух групп, рассмотренный выше.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь индукционный переход.
+ Пусть для любых 
+\begin_inset Formula $m$
+\end_inset
+
+ подгрупп 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+,...,
+\begin_inset Formula $A_{m}$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ пересечение 
+\begin_inset Formula $A_{1}\cap A_{2}\cap\dots\cap A_{m}$
+\end_inset
+
+ является подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Докажем, что пересечение любых 
+\begin_inset Formula $m+1$
+\end_inset
+
+ подгрупп 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+,...,
+\begin_inset Formula $A_{m+1}$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ также подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Действительно, 
+\begin_inset Formula $B_{m}=A_{1}\cap A_{2}\cap\dots\cap A_{m}$
+\end_inset
+
+ — подгруппа по предположению индукции.
+ Тогда 
+\begin_inset Formula $B_{m+1}=A_{1}\cap A_{2}\cap\dots\cap A_{m}\cap A_{m+1}=B_{m}\cap A_{m+1}$
+\end_inset
+
+, а значит 
+\begin_inset Formula $B_{m+1}$
+\end_inset
+
+ является пересечением двух подгрупп группы 
+\begin_inset Formula $G$
+\end_inset
+
+, то есть также является подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+ в силу утверждения, составляющего базу индукции.
+\end_layout
+
+\begin_layout Example
+Рассмотрим правильный тетраэдр с вершинами 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+ и 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ Если посмотреть со стороны точки 
+\begin_inset Formula $D$
+\end_inset
+
+ на треугольник 
+\begin_inset Formula $ABC$
+\end_inset
+
+, то точки 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+ могут идти по часовой стрелке или против.
+ Соответственно этому будем различать две ориентации тетраэдра.
+\end_layout
+
+\begin_layout Example
+\begin_inset Graphics
+	filename pictures/tetrahedron.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Сохраняют ли ориентацию тетраэдра следующие преобразования: а) 
+\begin_inset Formula $a=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & A & D
+\end{array}\right)$
+\end_inset
+
+ — вращение на 
+\begin_inset Formula $120\text{°}$
+\end_inset
+
+ вокруг высоты; б) 
+\begin_inset Formula $b=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & C & B & A
+\end{array}\right)$
+\end_inset
+
+ — вращение на 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+ вокруг оси, проходящей через середины ребер 
+\begin_inset Formula $AD$
+\end_inset
+
+ и 
+\begin_inset Formula $BC$
+\end_inset
+
+; в) 
+\begin_inset Formula $c=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & B & D
+\end{array}\right)$
+\end_inset
+
+ — отражение относительно плоскости, проходящей через ребро 
+\begin_inset Formula $AD$
+\end_inset
+
+ и середину ребра 
+\begin_inset Formula $BC$
+\end_inset
+
+; г) преобразование, порождающее циклическую подстановку вершин 
+\begin_inset Formula $d=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) сохраняет, так как порядок вершин не меняется при повороте.
+\end_layout
+
+\begin_layout Solution
+б) если смотреть из 
+\begin_inset Formula $A$
+\end_inset
+
+, то точки 
+\begin_inset Formula $D$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ следуют по часовой стрелке, поэтому ориентация сохраняется.
+\end_layout
+
+\begin_layout Solution
+в) так как вершина 
+\begin_inset Formula $D$
+\end_inset
+
+ останется на месте, а вершины 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+ поменяются местами, то из точки 
+\begin_inset Formula $D$
+\end_inset
+
+ точки 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+ будут видны против часовой стрелки, то есть ориентация поменяется.
+\end_layout
+
+\begin_layout Solution
+г) если смотреть из точки 
+\begin_inset Formula $C$
+\end_inset
+
+, то точки 
+\begin_inset Formula $D$
+\end_inset
+
+, 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ следуют против часовой стрелки, значит ориентация меняется.
+\end_layout
+
+\begin_layout Definition
+Все симметрии тетраэдра, очевидно, образуют группу, которой называется 
+\emph on
+группой симметрий тетраэдра
+\emph default
+.
+\end_layout
+
+\begin_layout Problem
+Сколько элементов в группе симметрий тетраэдра?
+\end_layout
+
+\begin_layout Solution
+Всего возможны 
+\begin_inset Formula $4!=24$
+\end_inset
+
+ перестановки вершин тетраэдра, столько же существует симметрий тетраэдра.
+\end_layout
+
+\begin_layout Problem
+В группе симметрий тетраэдра найти подгруппы, изоморфные: а) группе симметрий
+ правильного треугольника, б) циклической группе 
+\begin_inset Formula $Z_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Рассмотрим все симметрии тетраэдра, сохраняющие положение вершины 
+\begin_inset Formula $D$
+\end_inset
+
+, каждой из них можно поставить в соответствие симметрию правильного треугольник
+а 
+\begin_inset Formula $ABC$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Рассмотрим циклическую перестановку вершин 
+\begin_inset Formula $d=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $d^{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $d^{3}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $d^{4}=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & A & B & C
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & B & C & D
+\end{array}\right)=e$
+\end_inset
+
+.
+ Таким образом, примером подгруппы порядка 4 является подгруппа степеней
+ данного элемента 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что все симметрии тетраэдра, сохраняющие ориентацию, образуют
+ группу.
+ Сколько в ней элементов?
+\end_layout
+
+\begin_layout Solution
+Очевидно, что симметрии тетраэдра, сохраняющие ориентацию, являются подмножество
+м всех симметрий тетраэдра.
+\end_layout
+
+\begin_layout Solution
+Композиция двух симметрий, сохраняющих ориентацию, также является симметрией,
+ сохраняющей ориентацию, так как отношение 
+\begin_inset Quotes rld
+\end_inset
+
+имеют одинаковую ориентацию
+\begin_inset Quotes rrd
+\end_inset
+
+ является отношением эквивалентности.
+\end_layout
+
+\begin_layout Solution
+Ассоциативность композиции на множестве симметрией, сохраняющих ориентацию,
+ следует из ассоциативности композиции симметрии.
+\end_layout
+
+\begin_layout Solution
+Тождественное преобразование, очевидно, сохраняет ориентацию, поэтому единица
+ группы симметрий входит в число симметрий, сохраняющих ориентацию.
+\end_layout
+
+\begin_layout Solution
+Наконец, так как отношение 
+\begin_inset Quotes rld
+\end_inset
+
+имеет одинаковую ориентацию
+\begin_inset Quotes rrd
+\end_inset
+
+ является отношением эквивалентности, то преобразование, обратное, к преобразова
+нию, сохраняющему ориентацию, снова является преобразованием, сохраняющим
+ ориентацию.
+\end_layout
+
+\begin_layout Solution
+Таким образом, множество симметрий симметрий, сохраняющих ориентацию, с
+ обычной операцией композиции является подмножеством и группой, а значит
+ является подгруппой группы симметрий тетраэдра.
+\end_layout
+
+\begin_layout Solution
+В эту подгруппу входит тождественное преобразование, повороты на 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+ и 
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+ вокруг высот, проходящих через каждую из четырёх вершин, и повороты на
+ 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей, проходящих через середины несмежных рёбер (таких пар 3).
+ Таким образом, всего получаем 
+\begin_inset Formula $1+4\cdot2+3=12$
+\end_inset
+
+ симметрий, сохраняющих ориентацию.
+\end_layout
+
+\begin_layout Definition
+Группа симметрий тетраэдра, сохраняющих ориентацию, называют 
+\emph on
+группой вращений тетраэдра
+\emph default
+.
+\end_layout
+
+\begin_layout Problem
+В группе вращений тетраэдра найти подгруппы, изоморфные циклическим группам:
+ а) 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+, б) 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Подгруппа, состоящая из тождественного преобразования и поворота на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей, проходящих через середины несмежных рёбер (два последовательных
+ поворота на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг одной и той же оси возвращают тетраэдр в исходное состояние).
+ Все группы из двух элементов изоморфны 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Рассмотрим вращения вокруг высоты, проходящей через любую вершину, переводящи
+е тетраэдр в себя.
+ Они образуют группу из трёх элементов: вращений на 
+\begin_inset Formula $0\text{\textdegree}$
+\end_inset
+
+, 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+и 
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+.
+ Все группы из трёх элементов изоморфны 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
