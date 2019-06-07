@@ -11716,6 +11716,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:all-groups-of-order-2-or-3-are-isomorphic"
+
+\end_inset
+
 Найти все (с точностью до изоморфизма) группы, содержащие а) 2 элемента,
  б) 3 элемента.
 \end_layout
@@ -11797,12 +11803,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-Таким обарзом, остаётся только одна возможность: 
+Таким образом, остаётся только одна возможность: 
 \begin_inset Formula $a^{-1}=a$
 \end_inset
 
 , то есть имеется лишь одна группа, содержащая 2 элемента.
- Таблица умножения для этой группы содержит лишь одно приозведение, значение
+ Таблица умножения для этой группы содержит лишь одно произведение, значение
  которого не следует прямо из аксиом группы: 
 \begin_inset Formula $aa=aa^{-1}=e$
 \end_inset
@@ -18675,21 +18681,13 @@ B & C & D & A
 \end_layout
 
 \begin_layout Solution
-а) Рассмотрим вращения вокруг высоты, проходящей через точку 
+а) Рассмотрим все симметрии тетраэдра, сохраняющие положение вершины 
 \begin_inset Formula $D$
 \end_inset
 
-, переводящие тетраэдр в себя.
- Они образуют группу из трёх элементов: вращений на 
-\begin_inset Formula $0\text{\textdegree}$
-\end_inset
-
-, 
-\begin_inset Formula $120\text{\textdegree}$
-\end_inset
-
-и 
-\begin_inset Formula $240\text{\textdegree}$
+, каждой из них можно поставить в соответствие симметрию правильного треугольник
+а 
+\begin_inset Formula $ABC$
 \end_inset
 
 .
@@ -18759,16 +18757,73 @@ A & B & C & D
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
+Очевидно, что симметрии тетраэдра, сохраняющие ориентацию, являются подмножество
+м всех симметрий тетраэдра.
 \end_layout
 
+\begin_layout Solution
+Композиция двух симметрий, сохраняющих ориентацию, также является симметрией,
+ сохраняющей ориентацию, так как отношение 
+\begin_inset Quotes rld
 \end_inset
 
+имеют одинаковую ориентацию
+\begin_inset Quotes rrd
+\end_inset
 
+ является отношением эквивалентности.
+\end_layout
+
+\begin_layout Solution
+Ассоциативность композиции на множестве симметрией, сохраняющих ориентацию,
+ следует из ассоциативности композиции симметрии.
+\end_layout
+
+\begin_layout Solution
+Тождественное преобразование, очевидно, сохраняет ориентацию, поэтому единица
+ группы симметрий входит в число симметрий, сохраняющих ориентацию.
+\end_layout
+
+\begin_layout Solution
+Наконец, так как отношение 
+\begin_inset Quotes rld
+\end_inset
+
+имеет одинаковую ориентацию
+\begin_inset Quotes rrd
+\end_inset
+
+ является отношением эквивалентности, то преобразование, обратное, к преобразова
+нию, сохраняющему ориентацию, снова является преобразованием, сохраняющим
+ ориентацию.
+\end_layout
+
+\begin_layout Solution
+Таким образом, множество симметрий симметрий, сохраняющих ориентацию, с
+ обычной операцией композиции является подмножеством и группой, а значит
+ является подгруппой группы симметрий тетраэдра.
+\end_layout
+
+\begin_layout Solution
+В эту подгруппу входит тождественное преобразование, повороты на 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+ и 
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+ вокруг высот, проходящих через каждую из четырёх вершин, и повороты на
+ 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей, проходящих через середины несмежных рёбер (таких пар 3).
+ Таким образом, всего получаем 
+\begin_inset Formula $1+4\cdot2+3=12$
+\end_inset
+
+ симметрий, сохраняющих ориентацию.
 \end_layout
 
 \begin_layout Definition
@@ -18793,16 +18848,56 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+а) Подгруппа, состоящая из тождественного преобразования и поворота на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ вокруг осей, проходящих через середины несмежных рёбер (два последовательных
+ поворота на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг одной и той же оси возвращают тетраэдр в исходное состояние).
+ Все группы из двух элементов изоморфны 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Solution
+б) Рассмотрим вращения вокруг высоты, проходящей через любую вершину, переводящи
+е тетраэдр в себя.
+ Они образуют группу из трёх элементов: вращений на 
+\begin_inset Formula $0\text{\textdegree}$
+\end_inset
+
+, 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+и 
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+.
+ Все группы из трёх элементов изоморфны 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
