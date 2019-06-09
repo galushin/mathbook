@@ -10828,6 +10828,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:isomorphism"
+
+\end_inset
+
 Пусть даны две группы 
 \begin_inset Formula $G_{1}$
 \end_inset
@@ -11504,6 +11510,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:isomorphic-elements-have-equal-orders"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
@@ -18806,16 +18818,16 @@ A & B & C & D
 
 \begin_layout Solution
 В эту подгруппу входит тождественное преобразование, повороты на 
-\begin_inset Formula $120\text{\textdegree}$
+\begin_inset Formula $120\text{°}$
 \end_inset
 
  и 
-\begin_inset Formula $240\text{\textdegree}$
+\begin_inset Formula $240\text{°}$
 \end_inset
 
  вокруг высот, проходящих через каждую из четырёх вершин, и повороты на
  
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг осей, проходящих через середины несмежных рёбер (таких пар 3).
@@ -18849,12 +18861,12 @@ A & B & C & D
 
 \begin_layout Solution
 а) Подгруппа, состоящая из тождественного преобразования и поворота на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг осей, проходящих через середины несмежных рёбер (два последовательных
  поворота на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг одной и той же оси возвращают тетраэдр в исходное состояние).
@@ -18875,15 +18887,15 @@ noprefix "false"
 б) Рассмотрим вращения вокруг высоты, проходящей через любую вершину, переводящи
 е тетраэдр в себя.
  Они образуют группу из трёх элементов: вращений на 
-\begin_inset Formula $0\text{\textdegree}$
+\begin_inset Formula $0\text{°}$
 \end_inset
 
 , 
-\begin_inset Formula $120\text{\textdegree}$
+\begin_inset Formula $120\text{°}$
 \end_inset
 
 и 
-\begin_inset Formula $240\text{\textdegree}$
+\begin_inset Formula $240\text{°}$
 \end_inset
 
 .
@@ -18891,6 +18903,1348 @@ noprefix "false"
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Прямое произведение
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Прямым произведением 
+\emph default
+двух групп 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ (обозначается 
+\begin_inset Formula $G\times H$
+\end_inset
+
+) называется множество всевозможных упорядоченных пар 
+\begin_inset Formula $\left(g,h\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $g$
+\end_inset
+
+ — произвольный элемент 
+\begin_inset Formula $G$
+\end_inset
+
+, а 
+\begin_inset Formula $h$
+\end_inset
+
+ — произвольный элемент 
+\begin_inset Formula $H$
+\end_inset
+
+, со следующей бинарной операцией: 
+\begin_inset Formula $\left(g_{1},h_{1}\right)\left(g_{2},h_{2}\right)=\left(g_{1}g_{2},h_{1}h_{2}\right)$
+\end_inset
+
+, где произведение 
+\begin_inset Formula $g_{1}g_{2}$
+\end_inset
+
+ берётся в группе 
+\begin_inset Formula $G$
+\end_inset
+
+, а 
+\begin_inset Formula $h_{1}h_{2}$
+\end_inset
+
+ — в группе 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ — группа.
+\end_layout
+
+\begin_layout Solution
+
+\series bold
+Бинарная операция.
+ 
+\series default
+Если 
+\begin_inset Formula $\left(g_{1},h_{1}\right),\left(g_{2},h_{2}\right)\in G\times H$
+\end_inset
+
+, то 
+\begin_inset Formula $g_{1}g_{2}\in G$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{1}h_{2}\in H$
+\end_inset
+
+, а тогда, по определению прямого произведения, 
+\begin_inset Formula $\left(g_{1}g_{2},h_{1}h_{2}\right)\in G\times H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+
+\series bold
+Ассоциативность.
+
+\series default
+ Рассмотрим два возможных способа расставить скобки в произведении трёх
+ элементов группы 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\text{\left(\left(g_{1},h_{1}\right)\left(g_{2},h_{2}\right)\right)\left(g_{3},h_{3}\right)=\left(g_{1}g_{2},h_{1}h_{2}\right)\left(g_{3},h_{3}\right)=\left(g_{1}g_{2}g_{3},h_{1}h_{2}h_{3}\right) },
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(g_{1},h_{1}\right)\left(\left(g_{2},h_{2}\right)\left(g_{3},h_{3}\right)\right)=\left(g_{1},h_{1}\right)\left(g_{2}g_{3},h_{2}h_{3}\right)=\left(g_{1}g_{2}g_{3},h_{1}h_{2}h_{3}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+
+\series bold
+Единичный элемент.
+ 
+\series default
+Единицей в прямом произведении служит элемент 
+\begin_inset Formula $e_{G\times H}=\left(e_{G},e_{H}\right),$
+\end_inset
+
+действительно: 
+\begin_inset Formula 
+\[
+\left(g,h\right)\left(e_{G},e_{H}\right)=\left(ge_{G},he_{H}\right)=\left(g,h\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(e_{G},e_{H}\right)\left(g,h\right)=\left(e_{G}g,e_{H}h\right)=\left(g,h\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+
+\series bold
+Обратный элемент.
+ 
+\series default
+Обратным элементом для элемента 
+\begin_inset Formula $\left(g,h\right)$
+\end_inset
+
+ является 
+\begin_inset Formula $\left(g^{-1},h^{-1}\right)$
+\end_inset
+
+, действительно: 
+\begin_inset Formula 
+\[
+\left(g,h\right)\left(g^{-1},h^{-1}\right)=\left(gg^{-1},hh^{-1}\right)=\left(e_{G},e_{H}\right)=e_{G\times H},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(g^{-1},h^{-1}\right)\left(g,h\right)=\left(g^{-1}g,h^{-1}h\right)=\left(e_{G},e_{H}\right)=e_{G\times H}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:order-of-cartesian-product"
+
+\end_inset
+
+Пусть в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов, а в группе 
+\begin_inset Formula $H$
+\end_inset
+
+ — 
+\begin_inset Formula $k$
+\end_inset
+
+ элементов.
+ Сколько элементов в группе 
+\begin_inset Formula $G\times H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Элементы 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ представляют собой всевозможные упорядоченные пары элементов 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+, а всего таких пар имеется 
+\begin_inset Formula $n\cdot k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что группы 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ и 
+\begin_inset Formula $H\times G$
+\end_inset
+
+ изоморфны 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Изоморфизм задаётся отображением 
+\begin_inset Formula $\varphi\left(\left(g,h\right)\right)=\left(h,g\right)$
+\end_inset
+
+.
+ Это отображение, очевидно, взаимно-однозначно.
+ Докажем, что оно удовлетворяет определению изоморфизма: 
+\begin_inset Formula 
+\[
+\varphi\left(\left(g_{1},h_{1}\right)\left(g_{2},h_{2}\right)\right)=\varphi\left(\left(g_{1}g_{2},h_{1}h_{2}\right)\right)=\left(h_{1}h_{2},g_{1}g_{2}\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(\left(g_{1},h_{1}\right)\right)\varphi\left(\left(g_{2},h_{2}\right)\right)=\left(h_{1},g_{1}\right)\left(h_{2},g_{2}\right)=\left(h_{1}h_{2},g_{1}g_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Правые части совпадают, значит совпадают и левые, поэтому 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ действительно задаёт изоморфизм, а 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ и 
+\begin_inset Formula $H\times G$
+\end_inset
+
+ — изоморфные группы.
+\end_layout
+
+\begin_layout Problem
+Найти подгруппы 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ изоморфные группам 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим подгруппу, содержащую элементы вида 
+\begin_inset Formula $\left(g,e_{H}\right)$
+\end_inset
+
+, и отображение 
+\begin_inset Formula $\varphi_{G}\left(\left(g,h\right)\right)=g$
+\end_inset
+
+.
+ На подгруппе 
+\begin_inset Formula $\left(g,e_{H}\right)$
+\end_inset
+
+ данное отображение является взаимно-однозначным.
+ При этом выполняется определение изоморфизма: 
+\begin_inset Formula 
+\[
+\varphi_{G}\left(\left(g_{1},e_{H}\right)\left(g_{2},e_{H}\right)\right)=\varphi_{G}\left(\left(g_{1}g_{2},e_{H}e_{H}\right)\right)=g_{1}g_{2},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi_{G}\left(\left(g_{1},e_{H}\right)\right)\varphi_{G}\left(\left(g_{2},e_{H}\right)\right)=g_{1}g_{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Аналогично, отображение 
+\begin_inset Formula $\varphi_{H}\left(\left(g,h\right)\right)=h$
+\end_inset
+
+, задаёт изоморфизм между 
+\begin_inset Formula $H$
+\end_inset
+
+ и подгруппой элементов вида 
+\begin_inset Formula $\left(e_{G},h\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ коммутативные.
+ Доказать, что группа 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ также коммутативна.
+\end_layout
+
+\begin_layout Solution
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Рассмотрим два элемента 
+\begin_inset Formula $\ensuremath{G\times H}$
+\end_inset
+
+ и два возможных их
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ произведения:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(g_{1},h_{1}\right)\left(g_{2},h_{2}\right)=\left(g_{1}g_{2},h_{1}h_{2}\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(g_{2},h_{2}\right)\left(g_{1},h_{1}\right)=\left(g_{2}g_{1},h_{2}h_{1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ коммутативны, то 
+\begin_inset Formula $g_{1}g_{2}=g_{2}g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{1}h_{2}=h_{2}h_{1}$
+\end_inset
+
+, а значит 
+\begin_inset Formula $\left(g_{1}g_{2},h_{1}h_{2}\right)=\left(g_{2}g_{1},h_{2}h_{1}\right)$
+\end_inset
+
+, отсюда следует 
+\begin_inset Formula $\left(g_{1},h_{1}\right)\left(g_{2},h_{2}\right)=\left(g_{2},h_{2}\right)\left(g_{1},h_{1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $G_{1}\times H_{1}$
+\end_inset
+
+ — подгруппа в 
+\begin_inset Formula $G\times H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ — подмножество 
+\begin_inset Formula $G$
+\end_inset
+
+, а 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ — подмножество 
+\begin_inset Formula $H$
+\end_inset
+
+, то 
+\begin_inset Formula $G_{1}\times H_{1}$
+\end_inset
+
+ является подмножеством 
+\begin_inset Formula $G\times H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ — группы, то 
+\begin_inset Formula $G_{1}\times H_{1}$
+\end_inset
+
+ также является группой.
+ Итак, 
+\begin_inset Formula $G_{1}\times H_{1}$
+\end_inset
+
+ — группа и подмножество 
+\begin_inset Formula $G\times H$
+\end_inset
+
+, то есть является подгруппой 
+\begin_inset Formula $G\times H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ — произвольные группы.
+ Верно ли, что любую подгруппу в группе 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ можно представить в виде 
+\begin_inset Formula $G_{1}\times H_{1}$
+\end_inset
+
+ , где 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+, а 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Эту задачу можно было бы расположить ниже, чтобы её было легче решить
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим группу 
+\begin_inset Formula $Z_{2}\times Z_{4}$
+\end_inset
+
+ и одну из её подгрупп — подгруппу степеней элемента 
+\begin_inset Formula $a=\left(1,1\right)$
+\end_inset
+
+, эта группа состоит из следующих элементов: 
+\begin_inset Formula $a^{1}=\left(1;1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a^{2}=\left(0;2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a^{3}=\left(1;3\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{4}=\left(0;0\right)=e$
+\end_inset
+
+.
+ Данная подгруппа не может быть представлена в виде прямого произведения,
+ так как каждый из компонентов пары может принимать все возможные для него
+ значения, но некоторые комбинации значений не встречаются (например, 
+\begin_inset Formula $\left(1;2\right)$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Problem
+Доказать, что группа симметрий ромба изоморфна группе 
+\begin_inset Formula $Z_{2}\times Z_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Составим таблицу умножения для группы 
+\begin_inset Formula $Z_{2}\times Z_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0;0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0;1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1;0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1;1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0;0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0;0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0;1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1;0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1;1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0;1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0;1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0;0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1;1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1;0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1;0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1;0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1;1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0;0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0;1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1;1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1;1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1;0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0;1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(0;0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Сравним эту таблицу с таблицей умножения для группы симметрий ромба 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rhombus-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Отображение 
+\begin_inset Formula $\varphi\left(e\right)=\left(0;0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(a\right)=\left(1;0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(b\right)=\left(0;1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(c\right)=\left(1;1\right)$
+\end_inset
+
+, которое, очевидно, является взаимно-однозначным, переводит таблицу умножения
+ группы ромба в таблицу умножения 
+\begin_inset Formula $Z_{2}\times Z_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Верны ли равенства: 1) 
+\begin_inset Formula $Z_{2}\times Z_{3}\cong Z_{6}$
+\end_inset
+
+, 2) 
+\begin_inset Formula $Z_{2}\times Z_{4}\cong Z_{8}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+1) По определению прямого произведения 
+\begin_inset Formula $Z_{2}\times Z_{3}=\left\{ \left(0;0\right),\left(0;1\right),\left(0;2\right),\left(1;0\right),\left(1;1\right),\left(1;2\right)\right\} $
+\end_inset
+
+.
+ Рассмотрим степени элемента 
+\begin_inset Formula $a=\left(1;1\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a^{0}=\left(0;0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a^{2}=\left(2;2\right)=\left(0;2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a^{3}=\left(1;3\right)=\left(1;0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a^{4}=\left(2;1\right)=\left(0;1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a^{5}=\left(1;2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a^{6}=\left(2;3\right)=\left(0;0\right)$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:order-of-cartesian-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ группа 
+\begin_inset Formula $Z_{2}\times Z_{3}$
+\end_inset
+
+ содержит 6 элементов, поэтому все они являются степенями элемента 
+\begin_inset Formula $\left(1;1\right)$
+\end_inset
+
+, то есть действительно 
+\begin_inset Formula $Z_{2}\times Z_{3}\cong Z_{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2) По определению прямого произведения: 
+\begin_inset Formula $Z_{2}\times Z_{4}=\left\{ \left(0;0\right),\left(0;1\right),\left(0;2\right),\left(0;3\right),\left(1;0\right),\left(1;1\right),\left(1;2\right),\left(1;3\right)\right\} $
+\end_inset
+
+.
+ Попытаемся найти образующий элемент.
+ Пары, хотя бы один из компонентов которых равен нулю рассматривать смысла
+ не имеет, так как единичный элемент в любой степени останется единичным.
+ Рассмотрим степени элемента 
+\begin_inset Formula $a=\left(1;1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a^{2}=\left(2;2\right)=\left(0;2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a^{3}=\left(1;3\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a^{4}=\left(2;4\right)=\left(0;0\right)$
+\end_inset
+
+.
+ Таким образом, порядок элемента 
+\begin_inset Formula $\left(1;1\right)$
+\end_inset
+
+ равен 4.
+ Аналогично: 
+\begin_inset Formula $\left(1;2\right)^{2}=\left(2;4\right)=\left(0;0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(1;3\right)^{4}=\left(4;12\right)=\left(0;0\right)$
+\end_inset
+
+.
+ Таким образом, в группе 
+\begin_inset Formula $Z_{2}\times Z_{4}$
+\end_inset
+
+ нет ни одного элемента порядка 8, а значит она не может быть изоморфной
+ 
+\begin_inset Formula $Z_{8}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphic-elements-have-equal-orders"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что 
+\begin_inset Formula $Z_{m}\times Z_{n}\cong Z_{mn}$
+\end_inset
+
+ тогда и только тогда, когда числа 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ взаимно просты.
+\end_layout
+
+\begin_layout Solution
+
+\series bold
+Достаточность.
+ 
+\series default
+Пусть 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ взаимно просты, обозначим образующий 
+\begin_inset Formula $Z_{m}$
+\end_inset
+
+ как 
+\begin_inset Formula $a$
+\end_inset
+
+, а образующий 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ — как 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Докажем, что 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $mn$
+\end_inset
+
+.
+ Действительно, 
+\begin_inset Formula $\left(a,b\right)^{j}=\left(a^{j},b^{j}\right)$
+\end_inset
+
+ и равенство 
+\begin_inset Formula $\left(a,b\right)^{j}=e$
+\end_inset
+
+ выполняется, тогда и только тогда, когда 
+\begin_inset Formula $j$
+\end_inset
+
+ является общим кратным чисел 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:criterion-when-power-of-element-is-identity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Наименьшее такое 
+\begin_inset Formula $j$
+\end_inset
+
+, очевидно, — это наименьшее общее кратное 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Таким образом, так как 
+\begin_inset Formula $\mathrm{gcd}\left(m,n\right)=1$
+\end_inset
+
+, то
+\begin_inset Formula 
+\[
+\mathrm{lcm}\left(m,n\right)=\frac{mn}{\mathrm{gcd\left(m,n\right)}}=mn.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+
+\series bold
+Необходимость.
+
+\series default
+ Рассмотрим произвольный элемент 
+\begin_inset Formula $\left(g,h\right)\in Z_{m}\times Z_{n}$
+\end_inset
+
+ и его степень 
+\begin_inset Formula $\left(g,h\right)^{\mathrm{lcm}\left(m,n\right)}=\left(g^{\mathrm{lcm}\left(m,n\right)},h^{\mathrm{lcm}\left(m,n\right)}\right)=\left(e_{Z_{m}},e_{Z_{n}}\right)=e$
+\end_inset
+
+, таким образом, порядок элемента 
+\begin_inset Formula $\left(g,h\right)$
+\end_inset
+
+ не может быть больше 
+\begin_inset Formula $\mathrm{lcm}\left(m,n\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $Z_{mn}$
+\end_inset
+
+ содержит элемент (образующий) порядка 
+\begin_inset Formula $mn$
+\end_inset
+
+, таким образом, если числа 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ имеют общие множители, то 
+\begin_inset Formula $\mathrm{lcm}\left(m,n\right)=\frac{mn}{\mathrm{gcd\left(m,n\right)}}<mn$
+\end_inset
+
+ и группы 
+\begin_inset Formula $Z_{m}\times Z_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $Z_{mn}$
+\end_inset
+
+ не могут быть изоморфны
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphic-elements-have-equal-orders"
 plural "false"
 caps "false"
 noprefix "false"
