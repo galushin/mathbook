@@ -20254,6 +20254,529 @@ noprefix "false"
 .
 \end_layout
 
+\begin_layout Section
+Смежные классы.
+ Теорема Лагранжа
+\end_layout
+
+\begin_layout Definition
+С каждой подгруппой 
+\begin_inset Formula $H$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ связано следующее разбиение элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на подмножества.
+ Для любого элемента 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ рассмотрим множество всех элементов вида 
+\begin_inset Formula $xh$
+\end_inset
+
+ , где 
+\begin_inset Formula $h$
+\end_inset
+
+ пробегает всевозможные значения из подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Полученное множество, обозначаемое 
+\begin_inset Formula $xH$
+\end_inset
+
+, называется 
+\emph on
+левым смежным классом по 
+\begin_inset Formula $H$
+\end_inset
+
+, порождённым элементом 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Найти все левые смежные классы группы симметрий треугольника по подгруппе:
+ а) вращений треугольника, б) отражение относительно одной оси 
+\begin_inset Formula $\left\{ e,c\right\} $
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки на примеры 1 и 2
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что каждый элемент группы входит в некоторый левый смежный класс
+ по подгруппе 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть элемент 
+\begin_inset Formula $y$
+\end_inset
+
+ входит в левый смежный класс по 
+\begin_inset Formula $H$
+\end_inset
+
+, порождённый элементом 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Доказать, что левые смежные классы по 
+\begin_inset Formula $H$
+\end_inset
+
+, порождённые элементами 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+, совпадают.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть левые смежные классы по 
+\begin_inset Formula $H$
+\end_inset
+
+, порождённые элементами 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+, содержат общий элемент.
+ Доказать, что эти смежные классы совпадают.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, левые смежные классы, порождённые любыми двумя элементами,
+ либо не пересекаются, либо совпадают, и мы получаем разбиение всех элементов
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на непересекающиеся классы.
+ Это разбиение называют 
+\emph on
+левым разложением группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по подгруппе 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+
+\emph on
+(Теорема Лагранжа).
+
+\emph default
+ Порядок подгруппы является делителем порядка группы.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что порядок любого элемента 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на определение
+\end_layout
+
+\end_inset
+
+ является делителем порядка группы.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что всякая группа простого порядка — циклическая и любой элемент
+ в ней, отличный от 
+\begin_inset Formula $e$
+\end_inset
+
+, является образующим.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Группа 
+\begin_inset Formula $G$
+\end_inset
+
+ содержит 31 элемент.
+ Сколько подгрупп может содержать группа 
+\begin_inset Formula $G$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что все группы простого порядка 
+\begin_inset Formula $p$
+\end_inset
+
+ изоморфны друг другу.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ делится на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Построить группу порядка 
+\begin_inset Formula $n$
+\end_inset
+
+, содержащую подгруппу, изоморфную данной группе 
+\begin_inset Formula $G$
+\end_inset
+
+ порядка 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ делится на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Может ли в группе порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ не быть подгруппы порядка 
+\begin_inset Formula $m$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Замечание про правые смежные классы
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Замечание про процесс построения разложения на классы
+\end_layout
+
+\end_inset
+
+ .
+ Так как 
+\begin_inset Formula $eH=He=H$
+\end_inset
+
+, то подгруппа, по которой строится разложение на классы, всегда образует
+ как правый, так и левый смежный класс.
+\end_layout
+
+\begin_layout Problem
+Построить левое и правое разложение группы симметрией треугольника по подгруппе
+ а) вращений 
+\begin_inset Formula $\left\{ e,a,b\right\} $
+\end_inset
+
+, б) отражений относительно одной оси 
+\begin_inset Formula $\left\{ e,c\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Построить левое и правое разложение группы симметрий квадрата по подгруппе:
+ а) отражений относительно центра 
+\begin_inset Formula $\left\{ e,a\right\} $
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+это точно правильная формулировка
+\end_layout
+
+\end_inset
+
+, б) отражений относительно диагонали 
+\begin_inset Formula $\left\{ e,d\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Построить разложение группы всех целых чисел по сложению по подгруппе чисел,
+ делящихся на 
+\begin_inset Formula $3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти все (с точностью до изоморфизма) группы порядка: а) 4, б) 6, в) 8.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
