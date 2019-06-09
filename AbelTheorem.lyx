@@ -12808,7 +12808,7 @@ noprefix "false"
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:identity-and-inverse-in-subgroup-are-in-group"
+name "prob:identity-and-inverse-in-subgroup-are-ones-in-group"
 
 \end_inset
 
@@ -13105,7 +13105,7 @@ name "prob:subgroup-criterion"
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:identity-and-inverse-in-subgroup-are-in-group"
+reference "prob:identity-and-inverse-in-subgroup-are-ones-in-group"
 plural "false"
 caps "false"
 noprefix "false"
@@ -13132,7 +13132,7 @@ noprefix "false"
 , а по доказанному в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:identity-and-inverse-in-subgroup-are-in-group"
+reference "prob:identity-and-inverse-in-subgroup-are-ones-in-group"
 plural "false"
 caps "false"
 noprefix "false"
@@ -20309,17 +20309,27 @@ noprefix "false"
 
 \begin_layout Problem
 Найти все левые смежные классы группы симметрий треугольника по подгруппе:
- а) вращений треугольника, б) отражение относительно одной оси 
-\begin_inset Formula $\left\{ e,c\right\} $
+ а) вращений треугольника 
+\begin_inset Formula $\left\{ e,a,b\right\} $
 \end_inset
 
 
-\begin_inset Note Note
-status open
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triangle-rotations"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Добавить ссылки на примеры 1 и 2
-\end_layout
+\end_inset
+
+, б) отражения относительно одной оси 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -20327,21 +20337,106 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+а) В этом случае 
+\begin_inset Formula $H=\left\{ e,a,b\right\} $
 \end_inset
 
+, рассмотрим левые смежные классы, порождённые каждым из элементов группы
+ симметрий равностороннего треугольника.
+\end_layout
 
+\begin_layout Solution
+\begin_inset Formula $eH=\left\{ e,a,b\right\} =H$
+\end_inset
+
+, 
+\begin_inset Formula $aH=\left\{ a,b,e\right\} =H$
+\end_inset
+
+, 
+\begin_inset Formula $bH=\left\{ b,e,a\right\} =H$
+\end_inset
+
+, 
+\begin_inset Formula $l_{A}H=\left\{ l_{A},l_{B},l_{C}\right\} =L$
+\end_inset
+
+, 
+\begin_inset Formula $l_{B}H=\left\{ l_{B},l_{C},l_{A}\right\} =L$
+\end_inset
+
+, 
+\begin_inset Formula $l_{C}H=\left\{ l_{C},l_{A},l_{B}\right\} =L$
+\end_inset
+
+.
+ Таким образом, имеется два левых смежных класса по подгруппе вращений:
+ 
+\begin_inset Formula $\left\{ e,a,b\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ l_{A},l_{B},l_{C}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) В этом случае 
+\begin_inset Formula $H=\left\{ e,l_{A}\right\} $
+\end_inset
+
+, рассмотрим левые смежные классы, порождённые каждым из элементов группы
+ симметрий равностороннего треугольника.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $eH=\left\{ e,l_{A}\right\} =H$
+\end_inset
+
+, 
+\begin_inset Formula $aH=\left\{ a,l_{C}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $bH=\left\{ b,l_{B}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $l_{A}H=\left\{ l_{A},e\right\} =H$
+\end_inset
+
+, 
+\begin_inset Formula $l_{B}H=\left\{ l_{B},b\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $l_{C}H=\left\{ l_{C},a\right\} $
+\end_inset
+
+.
+ Исключая дубликаты, получим следующие три класса: 
+\begin_inset Formula $H=\left\{ e,l_{A}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ a,l_{C}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ b,l_{B}\right\} $
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
-Доказать, что каждый элемент группы входит в некоторый левый смежный класс
- по подгруппе 
+Доказать, что каждый элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+ входит в некоторый левый смежный класс по подгруппе 
 \begin_inset Formula $H$
 \end_inset
 
@@ -20349,19 +20444,51 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как 
+\begin_inset Formula $H$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+ — подгруппа, то она содержит единичный элемент группы 
+\begin_inset Formula $G$
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:identity-and-inverse-in-subgroup-are-ones-in-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Для любого 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ , 
+\begin_inset Formula $xe=x$
+\end_inset
+
+, то есть 
+\begin_inset Formula $x$
+\end_inset
+
+ входит в левый смежный класс по элементу 
+\begin_inset Formula $x$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:cosets-of-element-of-given-coset-is-same-coset"
+
+\end_inset
+
 Пусть элемент 
 \begin_inset Formula $y$
 \end_inset
@@ -20391,16 +20518,78 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Так как 
+\begin_inset Formula $y\in xH$
 \end_inset
 
+ то существует 
+\begin_inset Formula $h_{0}\in H$
+\end_inset
 
+ такой, что 
+\begin_inset Formula $xh_{0}=y$
+\end_inset
+
+.
+ Рассмотрим теперь произведения вида 
+\begin_inset Formula $yh$
+\end_inset
+
+, где 
+\begin_inset Formula $h$
+\end_inset
+
+ пробегает всевозможные элементы 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ 
+\begin_inset Formula $yh=\left(xh_{0}\right)h=x\left(h_{0}h\right)$
+\end_inset
+
+, так как 
+\begin_inset Formula $h,h_{0}\in H$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то 
+\begin_inset Formula $h_{0}h\in H$
+\end_inset
+
+, поэтому любой элемент 
+\begin_inset Formula $yH$
+\end_inset
+
+ является также элементом 
+\begin_inset Formula $xH$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Аналогично, выражая 
+\begin_inset Formula $yh_{0}^{-1}=x$
+\end_inset
+
+, можно доказать, что любой элемент 
+\begin_inset Formula $xH$
+\end_inset
+
+ является также элементом 
+\begin_inset Formula $yH$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $yH=xH$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -20421,16 +20610,43 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Обозначим общий элемент 
+\begin_inset Formula $xH$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ и 
+\begin_inset Formula $yH$
+\end_inset
+
+ как 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Тогда, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cosets-of-element-of-given-coset-is-same-coset"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, 
+\begin_inset Formula $gH=xH$
+\end_inset
 
+ и 
+\begin_inset Formula $gH=yH$
+\end_inset
+
+, так как левые части этих равенств совпадают, то совпадают и правые, поэтому
+ 
+\begin_inset Formula $xH=yH$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
