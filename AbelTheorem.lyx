@@ -10984,6 +10984,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:reverse-of-isomorphism-is-isomorphism"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G_{1}\to G_{2}$
 \end_inset
@@ -11078,6 +11084,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:isomorphism-is-transitive"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi_{1}:G_{1}\to G_{2}$
 \end_inset
@@ -19229,6 +19241,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:cartesian-product-have-subgoups-isomorphic-to-multiples"
+
+\end_inset
+
 Найти подгруппы 
 \begin_inset Formula $G\times H$
 \end_inset
@@ -20432,6 +20450,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:every-element-belongs-to-some-coset"
+
+\end_inset
+
 Доказать, что каждый элемент группы 
 \begin_inset Formula $G$
 \end_inset
@@ -20593,6 +20617,12 @@ name "prob:cosets-of-element-of-given-coset-is-same-coset"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:two-cosets-with-common-element-are-equal"
+
+\end_inset
+
 Пусть левые смежные классы по 
 \begin_inset Formula $H$
 \end_inset
@@ -20656,7 +20686,7 @@ noprefix "false"
 \begin_inset Formula $G$
 \end_inset
 
- на непересекающиеся классы.
+ на не пересекающиеся классы.
  Это разбиение называют 
 \emph on
 левым разложением группы 
@@ -20673,6 +20703,12 @@ noprefix "false"
 \begin_layout Theorem
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Lagrange-theorem"
+
+\end_inset
+
 (Теорема Лагранжа).
 
 \emph default
@@ -20680,26 +20716,182 @@ noprefix "false"
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
+Рассмотрим произвольную группу 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать доказательство
-\end_layout
+, её подгруппу 
+\begin_inset Formula $H$
+\end_inset
+
+ и левое разложение группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по подгруппе 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Так как каждый элемент принадлежит одному из левых смежных классов по 
+\begin_inset Formula $H$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cosets-of-element-of-given-coset-is-same-coset"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, а сами смежные классы либо совпадают, либо не пересекаются 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:two-cosets-with-common-element-are-equal"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+, то порядок группы равен сумме количества элементов всех классов.
+ Отсюда же следует, что левое разложение конечной группы 
+\begin_inset Formula $G$
+\end_inset
+
+ состоит из конечного числа классов.
+\end_layout
+
+\begin_layout Proof
+Количество элементов в смежном классе по подмножеству 
+\begin_inset Formula $H$
+\end_inset
+
+ равно порядку 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Действительно, элементы левого смежного класса, порождённого элементом
+ 
+\begin_inset Formula $x\in G$
+\end_inset
+
+, имеют вид 
+\begin_inset Formula $xh$
+\end_inset
+
+, где 
+\begin_inset Formula $h$
+\end_inset
+
+ пробегают всевозможные элементы 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Рассмотрим два элемента левого смежного класса, порождённого 
+\begin_inset Formula $x$
+\end_inset
+
+: 
+\begin_inset Formula $xh_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $xh_{2}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $xh_{1}=xh_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $h_{1}=h_{2}$
+\end_inset
+
+, а значит при 
+\begin_inset Formula $h_{1}\neq h_{2}$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $xh_{1}\neq xh_{2}$
+\end_inset
+
+, таким образом, разные элементы 
+\begin_inset Formula $h$
+\end_inset
+
+ дают разные элементы левого смежного класса, порождённого элементом 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть левое разложение 
+\begin_inset Formula $G$
+\end_inset
+
+ по 
+\begin_inset Formula $H$
+\end_inset
+
+ состоит из 
+\begin_inset Formula $k$
+\end_inset
+
+ левых смежных классов, порядок группы 
+\begin_inset Formula $G$
+\end_inset
+
+ равен 
+\begin_inset Formula $n$
+\end_inset
+
+, а порядок группы 
+\begin_inset Formula $H$
+\end_inset
+
+ равен 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Тогда, по доказанному выше, 
+\begin_inset Formula $n=km$
+\end_inset
+
+, то есть действительно порядок группы 
+\begin_inset Formula $G$
+\end_inset
+
+ делится на порядок любой её подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+ без остатка.
 \end_layout
 
 \begin_layout Problem
-Доказать, что порядок любого элемента 
-\begin_inset Note Note
-status open
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:order-of-element-are-divisor-of-order-of-group"
 
-\begin_layout Plain Layout
-добавить ссылку на определение
-\end_layout
+\end_inset
+
+Доказать, что порядок любого элемента
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:period-of-element"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -20707,19 +20899,67 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим произвольную группу 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ порядка 
+\begin_inset Formula $n$
+\end_inset
 
+ и её элемент 
+\begin_inset Formula $g$
+\end_inset
+
+ порядка 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Группа степеней элемента 
+\begin_inset Formula $g$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $m$
+\end_inset
+
+ и является подгруппой группы 
+\begin_inset Formula $G$
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:powers-of-element-form-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ По теореме Лагранжа
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, порядок данной (как и любой другой) подгруппы является делителем порядка
+ группы.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:group-with-prime-order-is-cyclic"
+
+\end_inset
+
 Доказать, что всякая группа простого порядка — циклическая и любой элемент
  в ней, отличный от 
 \begin_inset Formula $e$
@@ -20729,16 +20969,123 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим произвольную группу 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ простого порядка 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:order-of-element-are-divisor-of-order-of-group"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, порядок элемента является делителем порядка группы.
+ Делителями простого числа 
+\begin_inset Formula $p$
+\end_inset
 
+ являются лишь 1 и само 
+\begin_inset Formula $p$
+\end_inset
+
+, а значит все элементы группы 
+\begin_inset Formula $G$
+\end_inset
+
+ имеют порядок 1 или 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольный элемент 
+\begin_inset Formula $g\in G$
+\end_inset
+
+.
+ Если его порядок равен единице, то 
+\begin_inset Formula $g=g^{1}=e$
+\end_inset
+
+, то есть он совпадает с единичным элементом группы.
+ Такой элемент может быть только один 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:unity-is-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь порядок элемента 
+\begin_inset Formula $g$
+\end_inset
+
+ равен 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Тогда у него имеется 
+\begin_inset Formula $p$
+\end_inset
+
+ различных степеней 
+\begin_inset Formula $e=g^{0}$
+\end_inset
+
+, 
+\begin_inset Formula $g^{1}$
+\end_inset
+
+,..., 
+\begin_inset Formula $g^{p-1}$
+\end_inset
+
+.
+ Все эти степени являются элементами группы 
+\begin_inset Formula $G$
+\end_inset
+
+, которая содержит 
+\begin_inset Formula $p$
+\end_inset
+
+ элементов, значит, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $G$
+\end_inset
+
+ — циклическая, 
+\begin_inset Formula $g$
+\end_inset
+
+ является образующим элементом этой группы.
 \end_layout
 
 \begin_layout Problem
@@ -20755,16 +21102,31 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как 
+\begin_inset Formula $31$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ — простое число, то подгруппы группы 
+\begin_inset Formula $G$
+\end_inset
+
+, по теореме Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, имеют порядок 1 или 31.
+ Подгруппа порядка 1 состоит из единственного (единичного) элемента.
+ Подгруппа порядка 31 совпадает с самой 
+\begin_inset Formula $G$
+\end_inset
 
+.
 \end_layout
 
 \begin_layout Problem
@@ -20776,16 +21138,74 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Любая группа простого порядка 
+\begin_inset Formula $p$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ является циклической группой порядка 
+\begin_inset Formula $p$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-with-prime-order-is-cyclic"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ А любая циклическая группа порядка 
+\begin_inset Formula $p$
+\end_inset
 
+ изоморфна группе остатков от деления на 
+\begin_inset Formula $p$
+\end_inset
+
+ по сложению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cyclic-group-of-order-n-is-isomorphic-to-addition-modulo-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, все группы простого порядка 
+\begin_inset Formula $p$
+\end_inset
+
+ изоморфны группе остатков от деления на 
+\begin_inset Formula $p$
+\end_inset
+
+ по сложению, а значит, изоморфны друг другу (как было показано в задачах
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:reverse-of-isomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphism-is-transitive"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Problem
@@ -20814,16 +21234,52 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Обозначим 
+\begin_inset Formula $d=\frac{n}{m}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ и рассмотрим группу 
+\begin_inset Formula $G\times Z_{d}$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-have-subgoups-isomorphic-to-multiples"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, 
+\begin_inset Formula $G\times Z_{d}$
+\end_inset
 
+ содержит подгруппу, изоморфную 
+\begin_inset Formula $G$
+\end_inset
+
+, а по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:order-of-cartesian-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, группа 
+\begin_inset Formula $G\times Z_{d}$
+\end_inset
+
+ содержит 
+\begin_inset Formula $m\cdot d=\frac{m\cdot n}{m}=n$
+\end_inset
+
+ элементов.
 \end_layout
 
 \begin_layout Problem
@@ -20861,16 +21317,8 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Замечание про правые смежные классы
-\end_layout
-
-\end_inset
-
-
+Аналогично левым смежным классам могут быть определены правые смежные классы
+ и правое разложение группы по подгруппе.
 \end_layout
 
 \begin_layout Remark
@@ -20883,7 +21331,7 @@ status open
 
 \end_inset
 
- .
+.
  Так как 
 \begin_inset Formula $eH=He=H$
 \end_inset
@@ -20929,7 +21377,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-это точно правильная формулировка
+это точно правильная формулировка?
 \end_layout
 
 \end_inset
