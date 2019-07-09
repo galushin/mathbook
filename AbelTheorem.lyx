@@ -21453,8 +21453,7 @@ noprefix "false"
 \end_inset
 
 .
- Построим правые разложения.
-<<<<<<< origin/section-Lagrange-theorem
+ Построим правые разложения.<<<<<<< origin/section-Lagrange-theorem
 \end_layout
 
 \begin_layout Solution
@@ -21540,8 +21539,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
->>>>>>> local
-б) Левое разложение состоит из трёх классов: 
+>>>>>>> localб) Левое разложение состоит из трёх классов: 
 \begin_inset Formula $H=\left\{ e,l_{A}\right\} $
 \end_inset
 
@@ -21606,9 +21604,8 @@ noprefix "false"
 , б) отражений относительно диагонали 
 \begin_inset Formula $\left\{ e,d\right\} $
 \end_inset
-<<<<<<< origin/section-Lagrange-theorem
 
-.
+<<<<<<< origin/section-Lagrange-theorem.
 \end_layout
 
 \begin_layout Solution
@@ -21617,9 +21614,7 @@ noprefix "false"
 \begin_inset Formula $H=\left\{ e,a\right\} $
 \end_inset
 
-=======
-
-.
+=======.
 \end_layout
 
 \begin_layout Solution
@@ -21628,8 +21623,7 @@ noprefix "false"
 \begin_inset Formula $H=\left\{ e,a\right\} $
 \end_inset
 
->>>>>>> local
-.
+>>>>>>> local.
  Возьмём произвольный элемент, который не входит в 
 \begin_inset Formula $H$
 \end_inset
@@ -21771,8 +21765,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
-Найти все (с точностью до изоморфизма) группы порядка: а) 4, б) 6, в) 8.
-<<<<<<< origin/section-Lagrange-theorem
+Найти все (с точностью до изоморфизма) группы порядка: а) 4, б) 6, в) 8.<<<<<<<
+ origin/section-Lagrange-theorem
 \end_layout
 
 \begin_layout Solution
@@ -27303,15 +27297,6 @@ noprefix "false"
 </row>
 </lyxtabular>
 
-=======
- 
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-Эту задачу явно нужно разбить на более мелкие
-\end_layout
-
 \end_inset
 
 
@@ -27320,8 +27305,8 @@ status open
 \begin_layout Solution
 Предварительно заметим, что в каждой группе может быть только один элемент
  порядка 1 — это единичный элемент 
-\begin_inset Formula $e$
->>>>>>> local
+\begin_inset Formula $e$ >>>>>>> local
+
 \end_inset
 
 , это следует из определения порядка элемента
