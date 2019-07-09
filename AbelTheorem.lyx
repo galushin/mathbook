@@ -34205,6 +34205,245 @@ noprefix "false"
  и группа квартернионов.
 \end_layout
 
+\begin_layout Section
+Внутренние автоморфизмы
+\end_layout
+
+\begin_layout Problem
+Рассмотрим элемент группы симметрий треугольника, которому при некотором
+ обозначении вершин соответствовала подстановка 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ Какая подстановка будет соответствовать этому же элементу группы симметрий
+ треугольника при переобозначении вершин 
+\begin_inset Formula $g$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим теперь, что 
+\begin_inset Quotes rld
+\end_inset
+
+переобозначение
+\begin_inset Quotes rrd
+\end_inset
+
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ превращает элемент 
+\begin_inset Formula $h$
+\end_inset
+
+ некоторой группы преобразований в 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ не только в рассмотренном примере группы симметрий треугольника, но и в
+ более общем случае.
+ Таким образом, исследование переобозначений приводит к следующему определению.
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа, 
+\begin_inset Formula $g$
+\end_inset
+
+ — её элемент.
+ Определим отображение 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ в себя формулой 
+\begin_inset Formula $\varphi_{g}\left(h\right)=ghg^{-1}$
+\end_inset
+
+ (где 
+\begin_inset Formula $h$
+\end_inset
+
+ — любой элемент группы).
+ Это отображение называется 
+\emph on
+внутренним автоморфизмом
+\emph default
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+, порождённым элементом 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Докажите, что внутренний автоморфизм группы является изоморфизмом группы
+ на себя.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Во что переходит отражение треугольника относительно его высоты при всевозможных
+ внутренних автоморфизмах группы симметрий треугольника?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Во что переходит вращение треугольника на 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+ при всевозможных внутренних автоморфизмах группы симметрий треугольника?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Какие 2 элемента группы симметрий тетраэдра можно перевести друг в друга
+ внутренним автоморфизом, а какие нельзя? Тот же вопрос для группы вращений
+ тетраэдра.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Докажите, что порядки элементов 
+\begin_inset Formula $ab$
+\end_inset
+
+ и 
+\begin_inset Formula $ba$
+\end_inset
+
+ в любой группе равны.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что при всяком внутреннем автоморфизме группы (как и при любом
+ изоморфизме) каждая её подгруппа переходит в подгруппу, вообще говоря,
+ другую (например, отражения относительно одной высоты треугольника переходят
+ в отражения относительно другой высоты 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+).
+ Однако некоторые 
+\begin_inset Quotes rld
+\end_inset
+
+особенно симметричные
+\begin_inset Quotes rrd
+\end_inset
+
+ подгруппы остаются на месте при всех внутренних автоморфизмах (например,
+ подгруппа вращений треугольника в группе симметрий треугольника 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+).
+ Такие подгруппы мы сейчас и рассмотрим.
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
