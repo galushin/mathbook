@@ -34225,16 +34225,44 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Пусть 
+\begin_inset Formula $h$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ подстановка задаёт преобразование 
+\begin_inset Formula $y=hx$
+\end_inset
+
+, введём обозначения 
+\begin_inset Formula $y^{\prime}=gy$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{\prime}=gx$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+y^{\prime}=gy=ghx=ghg^{-1}\left(gx\right)=ghg^{-1}x^{\prime}.
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Таким образом, подстановка 
+\begin_inset Formula $g$
+\end_inset
+
+ перейдёт в подстановку 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -34306,17 +34334,90 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:inner-automorphism-is-isomorphism"
+
+\end_inset
+
 Докажите, что внутренний автоморфизм группы является изоморфизмом группы
  на себя.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим произвольный внутренний автоморфизм 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+.
+ Так как 
+\begin_inset Formula $g,h,g^{-1}\in G$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi_{g}\left(h\right)=ghg^{-1}\in G$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ отображает элементы 
+\begin_inset Formula $G$
+\end_inset
+
+ в элементы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Для любого 
+\begin_inset Formula $y\in G$
+\end_inset
+
+ существует такой 
+\begin_inset Formula $h_{y}$
+\end_inset
+
+, что 
+\begin_inset Formula $\varphi_{g}\left(h_{y}\right)=y$
+\end_inset
+
+, а имеено 
+\begin_inset Formula $h_{y}=g^{-1}yg$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ отображает группу 
+\begin_inset Formula $G$
+\end_inset
+
+ на всю группу 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ является взаимно-однозначным отображением.
 \end_layout
+
+\begin_layout Solution
+Проверим теперь, что 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ удовлетворяет сохраняет произведение, то есть удовлетворяет определению
+ изоморфизма, действительно: 
+\begin_inset Formula 
+\[
+\varphi_{g}\left(xy\right)=gxyg^{-1}=gxeyg^{-1}=gxg^{-1}gyg^{-1}=\varphi_{g}\left(x\right)\varphi_{g}\left(y\right).
+\]
 
 \end_inset
 
@@ -34343,7 +34444,7 @@ status open
 
 \begin_layout Problem
 Во что переходит вращение треугольника на 
-\begin_inset Formula $120\text{\textdegree}$
+\begin_inset Formula $120\text{°}$
 \end_inset
 
  при всевозможных внутренних автоморфизмах группы симметрий треугольника?
@@ -34394,16 +34495,60 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим внутренний автоморфизм 
+\begin_inset Formula $\varphi_{b}\left(h\right)=bhb^{-1}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:inner-automorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi_{b}$
+\end_inset
+
+ — изоморфизм, причём на ту же самую группу.
 \end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi_{b}\left(ab\right)=b\left(ab\right)b^{-1}=ba\left(bb^{-1}\right)=bae=ba.
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphic-elements-have-equal-orders"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что при изоморфизме порядок элемента сохраняется, поэтому
+ 
+\begin_inset Formula $ab$
+\end_inset
+
+ и 
+\begin_inset Formula $ba=\varphi_{b}\left(ab\right)$
+\end_inset
+
+ имеют одинаковые порядки.
 \end_layout
 
 \begin_layout Standard
