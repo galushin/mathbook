@@ -29720,6 +29720,352 @@ noprefix "false"
  Такие подгруппы мы сейчас и рассмотрим.
 \end_layout
 
+\begin_layout Section
+Нормальные подгруппы
+\end_layout
+
+\begin_layout Definition
+Подгруппа некоторой группы называется 
+\emph on
+нормальной подгруппой
+\emph default
+, если она переходит в себя при всех внутренних автоморфизмах группы.
+\end_layout
+
+\begin_layout Definition
+Иными словами, подгруппа 
+\begin_inset Formula $N$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ называется нормальной подгруппой в 
+\begin_inset Formula $G$
+\end_inset
+
+, если для любого элемента 
+\begin_inset Formula $a\in N$
+\end_inset
+
+ и любого элемента 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ элемент 
+\begin_inset Formula $gag^{-1}$
+\end_inset
+
+ принадлежит в 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Таким образом, подгруппа вращений является нормальной подгруппой в группе
+ симметрий треугольника, а подгруппа отражений, относительно высоты, опущенной
+ из вершины 
+\begin_inset Formula $A$
+\end_inset
+
+ на сторону 
+\begin_inset Formula $BC$
+\end_inset
+
+ (состоящая из двух элементов), нормальной подгруппой группы симметрий треугольн
+ика не является.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Докажите, что в коммутативной группе всякая подгруппа является нормальной
+ подгруппой.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Является ли нормальной подгруппой группы симметрий квадрата подгруппа центральны
+х симметрий, состоящая из двух элементов 
+\begin_inset Formula $\left\{ e,a\right\} $
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на примеры 3-4
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Подгруппа 
+\begin_inset Formula $N$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ является нормальной подгруппой тогда и только тогда, когда левое и правое
+ разложения 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на параграф 8
+\end_layout
+
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по подгруппе 
+\begin_inset Formula $N$
+\end_inset
+
+ совпадают.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить сноску, что в таком случае получающиеся разложения можно называть
+ просто разложением по нормальной подгруппе
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать сформулированную теорему
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ — порядок группы 
+\begin_inset Formula $G$
+\end_inset
+
+, 
+\begin_inset Formula $m$
+\end_inset
+
+ — порядок подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+ и 
+\begin_inset Formula $m=\frac{n}{2}$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $H$
+\end_inset
+
+ является нормальной подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что пересечение 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ любого числа нормальных подгрупп некоторой группы 
+\begin_inset Formula $G$
+\end_inset
+
+ является нормальной подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Множество элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+, перестановочных со всеми элементами группы, называется 
+\emph on
+центром
+\emph default
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что центр — подгруппа и, более того, нормальная подгруппа группы
+ 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+ — нормальные подгруппы соответственно в группах 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $N_{1}\times N_{2}$
+\end_inset
+
+ — нормальная подгруппа в группе 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пример про то, какие подгруппы группу симметрий квадрата являются нормальным
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
