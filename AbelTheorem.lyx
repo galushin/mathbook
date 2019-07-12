@@ -18293,6 +18293,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:intersection-of-subgoups-is-subgroup"
+
+\end_inset
+
 Доказать, что пересечение любого числа подгрупп 
 \begin_inset Note Comment
 status open
@@ -18949,6 +18955,12 @@ noprefix "false"
 \begin_layout Definition
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "def:cartesian-product-of-group"
+
+\end_inset
+
 Прямым произведением 
 \emph default
 двух групп 
@@ -19007,6 +19019,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:cartesian-product-of-groups-is-group"
+
+\end_inset
+
 Доказать, что 
 \begin_inset Formula $G\times H$
 \end_inset
@@ -19435,6 +19453,12 @@ name "prob:cartesian-product-have-subgoups-isomorphic-to-multiples"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:cartesian-product-of-subgroups-is-subgroup-of-cartesian-product"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $G_{1}$
 \end_inset
@@ -19555,6 +19579,7 @@ name "prob:cartesian-product-have-subgoups-isomorphic-to-multiples"
 \end_inset
 
 .
+ 
 \begin_inset Note Comment
 status open
 
@@ -20703,7 +20728,13 @@ noprefix "false"
 .
 \end_layout
 
-\begin_layout Solution
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:left-coset-partition"
+
+\end_inset
+
 Таким образом, левые смежные классы, порождённые любыми двумя элементами,
  либо не пересекаются, либо совпадают, и мы получаем разбиение всех элементов
  группы 
@@ -21371,7 +21402,13 @@ status open
  нет подгруппы порядка 8?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:right-coset-and-right-coset-partition"
+
+\end_inset
+
 Аналогично левым смежным классам могут быть определены правые смежные классы
  
 \begin_inset Formula $Hx$
@@ -21386,7 +21423,10 @@ status open
 \end_inset
 
 .
- Если порядок группу 
+\end_layout
+
+\begin_layout Standard
+Если порядок группы 
 \begin_inset Formula $H$
 \end_inset
 
@@ -28832,6 +28872,12 @@ name "prob:inner-automorphism-is-isomorphism"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:reflection-of-triangle-after-all-automorphisms"
+
+\end_inset
+
 Во что переходит отражение треугольника относительно его высоты при всевозможных
  внутренних автоморфизмах группы симметрий треугольника?
 \end_layout
@@ -29226,6 +29272,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rotation-of-triangle-after-all-automorphisms"
+
+\end_inset
+
 Во что переходит вращение треугольника на 
 \begin_inset Formula $120\text{°}$
 \end_inset
@@ -29766,8 +29818,17 @@ noprefix "false"
 
 \begin_layout Definition
 Таким образом, подгруппа вращений является нормальной подгруппой в группе
- симметрий треугольника, а подгруппа отражений, относительно высоты, опущенной
- из вершины 
+ симметрий треугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rotation-of-triangle-after-all-automorphisms"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а подгруппа отражений, относительно высоты, опущенной из вершины 
 \begin_inset Formula $A$
 \end_inset
 
@@ -29776,17 +29837,17 @@ noprefix "false"
 \end_inset
 
  (состоящая из двух элементов), нормальной подгруппой группы симметрий треугольн
-ика не является.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылки
-\end_layout
+ика не является 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:reflection-of-triangle-after-all-automorphisms"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Problem
@@ -29795,16 +29856,35 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Если 
+\begin_inset Formula $G$
 \end_inset
 
+ — коммутативная группа, 
+\begin_inset Formula $N$
+\end_inset
 
+ — её произвольная подгруппа, а 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ и 
+\begin_inset Formula $a\in N$
+\end_inset
+
+, то 
+\begin_inset Formula $gag^{-1}=agg^{-1}=ae=a\in N$
+\end_inset
+
+, то есть 
+\begin_inset Formula $N$
+\end_inset
+
+ является нормальной подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -29814,12 +29894,12 @@ status open
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на примеры 3-4
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -29827,19 +29907,411 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Проверим, что для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ и любого 
+\begin_inset Formula $h\in H=\left\{ e,a\right\} $
+\end_inset
+
+ имеет место 
+\begin_inset Formula $ghg^{-1}\in H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $geg^{-1}=gg^{-1}=e\in H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-Написать решение
+\begin_inset Formula $g$
+\end_inset
+
+
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ga$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(ga\right)g^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $gag^{-1}\in H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению, 
+\begin_inset Formula $H$
+\end_inset
+
+ — нормальной подгруппы группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:criterion-of-normal-subgroup"
+
+\end_inset
+
 Подгруппа 
 \begin_inset Formula $N$
 \end_inset
@@ -29848,14 +30320,23 @@ status open
 \begin_inset Formula $G$
 \end_inset
 
- является нормальной подгруппой тогда и только тогда, когда левое и правое
- разложения 
-\begin_inset Note Note
-status open
+ является нормальной подгруппой тогда и только тогда, когда левое 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:left-coset-partition"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-добавить ссылку на параграф 8
-\end_layout
+\end_inset
+
+ и правое разложения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:right-coset-and-right-coset-partition"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -29868,27 +30349,25 @@ status open
 \end_inset
 
  совпадают.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить сноску, что в таком случае получающиеся разложения можно называть
- просто разложением по нормальной подгруппе
 \end_layout
 
-\end_inset
-
-
+\begin_layout Remark
+Если левое и правое разложение по подгруппе совпадают, то их называют просто
+ 
+\emph on
+разложением по нормальной подгруппе
+\emph default
+.
 \end_layout
 
 \begin_layout Problem
-Доказать сформулированную теорему
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+Доказать сформулированную теорему 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:criterion-of-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -29896,19 +30375,91 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+1) Пусть 
+\begin_inset Formula $N$
 \end_inset
 
+ — нормальная подгруппа.
+ Тогда, для любого 
+\begin_inset Formula $g\in G$
+\end_inset
 
+ и 
+\begin_inset Formula $a\in N$
+\end_inset
+
+ имеет место включение 
+\begin_inset Formula $gag^{-1}=b\in N$
+\end_inset
+
+.
+ Умножая это равенство справа на 
+\begin_inset Formula $g$
+\end_inset
+
+, получим 
+\begin_inset Formula $ga=bg$
+\end_inset
+
+.
+ Любой элемент левого смежного класса, порождённого элементом 
+\begin_inset Formula $g$
+\end_inset
+
+, входит также в правый смежный класс, порождённый этим элементом.
+\end_layout
+
+\begin_layout Solution
+2) Пусть теперь левое и правое разложения группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по подгруппе 
+\begin_inset Formula $N$
+\end_inset
+
+ совпадают, то есть для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $gN=Ng$
+\end_inset
+
+, иными словами, для любого 
+\begin_inset Formula $a\in N$
+\end_inset
+
+ существует 
+\begin_inset Formula $b\in N$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $ga=bg$
+\end_inset
+
+, умножая это равенство справа на 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+ получим 
+\begin_inset Formula $gag^{-1}=b\in N$
+\end_inset
+
+, то есть подгруппа 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная по определению.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:subgoup-half-of-group-is-normal"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $n$
 \end_inset
@@ -29942,30 +30493,62 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим левое и правое разложение группы 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ по подгруппе 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Оба разложения будут состоять из двух классов, одним из которых является
+ 
+\begin_inset Formula $H$
+\end_inset
+
+ (как и во всяком левом или правом разложении), а второй включает все остальные
+ элементы (мощности всех смежных классов равны друг другу, значит левое
+ и правое разложения состоят из двух классов, так как 
+\begin_inset Formula $m+m=n$
+\end_inset
+
+).
 \end_layout
+
+\begin_layout Solution
+Таким образом, левое и правое разложения 
+\begin_inset Formula $G$
+\end_inset
+
+ по 
+\begin_inset Formula $H$
+\end_inset
+
+ совпадают, а значит, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:criterion-of-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, 
+\begin_inset Formula $H$
+\end_inset
 
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
-Доказать, что пересечение 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
-
-\end_inset
-
- любого числа нормальных подгрупп некоторой группы 
+Доказать, что пересечение любого числа нормальных подгрупп некоторой группы
+ 
 \begin_inset Formula $G$
 \end_inset
 
@@ -29977,16 +30560,143 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+1) Рассмотрим сначала случай двух нормальных подгрупп 
+\begin_inset Formula $N_{1}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ и 
+\begin_inset Formula $N_{2}$
+\end_inset
 
+.
+ Пересечение 
+\begin_inset Formula $N=N_{1}\cap N_{2}$
+\end_inset
+
+ является подгруппой группы 
+\begin_inset Formula $G$
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:intersection-of-subgoups-is-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Рассмотрим произвольный элемент 
+\begin_inset Formula $a\in N$
+\end_inset
+
+, тогда, по определению пересечения, 
+\begin_inset Formula $a\in N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a\in N_{2}$
+\end_inset
+
+, а по определению нормальной подгруппы, для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ будут иметь место включения 
+\begin_inset Formula $gag^{-1}\in N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $gag^{-1}\in N_{2}$
+\end_inset
+
+.
+ Снова применив определение пересечения, получим, что 
+\begin_inset Formula $gag^{-1}\in N_{1}\cap N_{2}=N$
+\end_inset
+
+.
+ Таким образом, для любого 
+\begin_inset Formula $a\in N$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $gag^{-1}\in N$
+\end_inset
+
+, то есть 
+\begin_inset Formula $N$
+\end_inset
+
+ — является нормальной подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2) Для произвольного числа нормальных подгрупп 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+, ...
+ , 
+\begin_inset Formula $N_{m}$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ докажем утверждение по индукции.
+ Базу индукции образует утверждение для 
+\begin_inset Formula $m=2$
+\end_inset
+
+, которые было доказано выше.
+\end_layout
+
+\begin_layout Solution
+Пусть пересечение любых не более чем 
+\begin_inset Formula $m-1$
+\end_inset
+
+ нормальных подгрупп группы 
+\begin_inset Formula $G$
+\end_inset
+
+ является нормальной подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $N=\left(N_{1}\cap N_{2}\cap\dots\cap N_{m-1}\right)\cap N_{m}$
+\end_inset
+
+.
+ По предположению индукции выражение в скобках является нормальной подгруппой.
+ Обозначим её 
+\begin_inset Formula $H_{m-1}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $N=H_{m-1}\cap N_{m}$
+\end_inset
+
+ — пересечение двух нормальных подгрупп группы 
+\begin_inset Formula $G$
+\end_inset
+
+ , а значит, по доказанному в пункте 1).
+ Таким образом, индуктивный переход доказан.
 \end_layout
 
 \begin_layout Problem
@@ -30012,16 +30722,153 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Обозначим центр группы 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ как 
+\begin_inset Formula $Z\left(G\right)$
+\end_inset
+
+.
+ Последовательно докажем, что центр группы удовлетворяет требованиям к подгруппе
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
 \end_layout
+
+\begin_layout Solution
+1) Пусть 
+\begin_inset Formula $a,b\in Z\left(G\right)$
+\end_inset
+
+.
+ Тогда для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ будут иметь место равенства 
+\begin_inset Formula $ga=ag$
+\end_inset
+
+ и 
+\begin_inset Formula $gb=bg$
+\end_inset
+
+, тогда, учитывая ассоциативность групповой операции: 
+\begin_inset Formula $g\left(ab\right)=\left(ga\right)b=\left(ag\right)b=a\left(bg\right)=\left(ab\right)g$
+\end_inset
+
+, то есть 
+\begin_inset Formula $ab\in Z\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2) По определению единичного элемента 
+\begin_inset Formula $eg=ge=g$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $e\in Z\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+3) Пусть 
+\begin_inset Formula $a\in Z\left(G\right)$
+\end_inset
+
+, тогда для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $ga=ag$
+\end_inset
+
+.
+ Умножив это равенство слева и справа на 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+a^{-1}gaa^{-1}=a^{-1}aga^{-1},
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{-1}g=ga^{-1},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+то есть 
+\begin_inset Formula $a^{-1}\in Z\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь, что 
+\begin_inset Formula $Z\left(G\right)$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $a\in Z\left(G\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, рассмотрим элемент 
+\begin_inset Formula $gag^{-1}$
+\end_inset
+
+, так как 
+\begin_inset Formula $a\in Z\left(G\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $ga=ag$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $gag^{-1}=agg^{-1}=ae=a\in Z\left(G\right)$
+\end_inset
+
+, что и требовалось.
 \end_layout
 
 \begin_layout Problem
@@ -30053,17 +30900,214 @@ status open
 .
 \end_layout
 
-\begin_layout Problem
-\begin_inset Note Note
-status open
+\begin_layout Solution
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-of-subgroups-is-subgroup-of-cartesian-product"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Пример про то, какие подгруппы группу симметрий квадрата являются нормальным
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $N_{1}\times N_{2}$
+\end_inset
+
+ является подгруппой группы 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+По определению прямого произведения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cartesian-product-of-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, элементы 
+\begin_inset Formula $a\in N$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $a=\left(a_{1},a_{2}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $a_{1}\in N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{2}\in N_{2}$
+\end_inset
+
+.
+ Аналогично, элементы 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $\left(g_{1},g_{2}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $g_{1}\in G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in G_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-of-groups-is-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $g^{-1}=\left(g_{1}^{-1},g_{2}^{-1}\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению произведения в прямом произведении двух групп: 
+\begin_inset Formula 
+\[
+gag^{-1}=\left(g_{1}a_{1},g_{2}a_{2}\right)\left(g_{1}^{-1},g_{2}^{-1}\right)=\left(g_{1}a_{1}g_{1}^{-1},g_{2}a_{2}g_{2}^{-1}\right).
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+ — нормальные подгруппы в 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ соответственно, то 
+\begin_inset Formula $g_{1}a_{1}g_{1}^{-1}\in N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}a_{2}g_{2}^{-1}\in N_{2}$
+\end_inset
+
+.
+ По определению прямого произведения это означает, что 
+\begin_inset Formula $gag^{-1}\in N_{1}\times N_{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $N_{1}\times N_{2}$
+\end_inset
+
+ — нормальная подгруппа 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Рассмотрим подгруппу группы симметрий квадрата, состоящую из отражений относител
+ьно диагоналей и центра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ e,a,d,f\right\} $
+\end_inset
+
+.
+ Эта подгруппа содержит половину элементов группы симметрий квадрата и является
+ поэтому нормальной подгруппой в ней 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgoup-half-of-group-is-normal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Подгруппа 
+\begin_inset Formula $\left\{ e,d\right\} $
+\end_inset
+
+, состоящая из отражений относительно одной из диагоналей, содержит половину
+ элементов подгруппы 
+\begin_inset Formula $\left\{ e,a,d,f\right\} $
+\end_inset
+
+ и является, следовательно, нормальной подгруппой в ней.
+ С другой стороны, подгруппа 
+\begin_inset Formula $\left\{ e,d\right\} $
+\end_inset
+
+ не является нормальной подгруппой всей группы симметрий квадрата, так как
+ при внутренних автоморфизмах 
+\begin_inset Formula $d$
+\end_inset
+
+ переходит в отражение относительно другой диагонали: 
+\begin_inset Formula $bdb^{-1}=f$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь можно также сослаться на решение задачи, в которой показано, что левое
+ и правое разложения группы симметрий квадрата по 
+\begin_inset Formula $\left\{ e,d\right\} $
+\end_inset
+
+ не совпадают.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
