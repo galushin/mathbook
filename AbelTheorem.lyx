@@ -31110,6 +31110,380 @@ status open
 .
 \end_layout
 
+\begin_layout Section
+Факторгруппы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вводное замечание
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть есть разложение группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по нормальной подгруппе 
+\begin_inset Formula $N$
+\end_inset
+
+, и пусть элементы 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ лежат в одном смежном классе и элементы 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+и 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ также лежат в одном смежном классе.
+ Доказать, что элементы 
+\begin_inset Formula $x_{1}y_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}y_{2}$
+\end_inset
+
+ лежат в одном смежном классе.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Объяснение, что умножение смежных классов
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ — смежные классы.
+ Доказать, что 
+\begin_inset Formula $\left(T_{1}T_{2}\right)T_{3}=T_{1}\left(T_{2}T_{3}\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть нормальная подгруппа обозначена буквой 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $ET=TE=T$
+\end_inset
+
+ для любого смежного класса 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что для любого смежного класса 
+\begin_inset Formula $T$
+\end_inset
+
+ найдётся класс 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $TT^{-1}=T^{-1}T=E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из утверждений задач 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылки на 107-109
+\end_layout
+
+\end_inset
+
+ следует, что множество смежных классов с описанной выше бинарной операцией
+ образует группу.
+ Эта группа называется 
+\emph on
+факторгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по нормальной подгруппе 
+\begin_inset Formula $N$
+\end_inset
+
+ 
+\emph default
+и обозначается 
+\begin_inset Formula $G/N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Очевидно, что 
+\begin_inset Formula $G/\left\{ e\right\} \cong G$
+\end_inset
+
+ и 
+\begin_inset Formula $G/G\cong\left\{ e\right\} $
+\end_inset
+
+.
+ Очевидно также, что порядок факторгруппы равен натуральному числу 
+\begin_inset Formula $n/m$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — порядок группы 
+\begin_inset Formula $G$
+\end_inset
+
+, а 
+\begin_inset Formula $m$
+\end_inset
+
+ — порядок нормальной подгруппы 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Например, факторгруппа группы симметрий квадрата по подгруппе центральных
+ симметрий содержит 4 элемента.
+\end_layout
+
+\begin_layout Problem
+Выяснить, будет ли факторгруппа группы симметрий квадрата по подгруппе центральн
+ых симметрий изоморфна группа вращений квадрата или группе симметрий ромба.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти все нормальные подгруппы и факторгруппы
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+В дальнейшем найти факторгруппу означает указать какую-либо группу, рассмотренну
+ю ранее, которой искомая факторгруппа изоморфна.
+\end_layout
+
+\end_inset
+
+ по ним в следующих группах: а) группа симметрий треугольника, б) 
+\begin_inset Formula $Z_{2}\times Z_{2}$
+\end_inset
+
+, в) группа симметрий квадрата, г) группа кватернионов 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылки
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Описать все нормальные подгруппы и факторгруппы по ним для групп: а) 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+, б) 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти все нормальные подгруппы и фактор-группы по ним в группе вращений
+ тетраэдра.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+В прямом произведении групп 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+ рассмотрим подгруппу 
+\begin_inset Formula $G_{1}\times\left\{ e_{2}\right\} $
+\end_inset
+
+.
+ Доказать, что это нормальная подгруппа и что факторгруппа по ней изоморфна
+ группе 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
