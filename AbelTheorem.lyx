@@ -20321,6 +20321,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:left-coset"
+
+\end_inset
+
 С каждой подгруппой 
 \begin_inset Formula $H$
 \end_inset
@@ -21593,6 +21599,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:left-and-right-cosets-of-square-symmetries"
+
+\end_inset
+
 Построить левое и правое разложение группы симметрий квадрата по подгруппе:
  а) отражений относительно центра 
 \begin_inset Formula $\left\{ e,a\right\} $
@@ -31115,19 +31127,227 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+Начнём с пример.
+ Рассмотрим разложение группы симметрий квадрата 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ по нормальной подгруппе, состоящей из центральных симметрий 
+\begin_inset Formula $e$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Легко получить, что разложение этой группы на 4 смежных класса имеет вид,
+ указанный в следующей таблице:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-Вводное замечание
+\begin_inset Formula $E$
+\end_inset
+
+
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+Если умножить любой элемент из класса 
+\begin_inset Formula $A$
+\end_inset
+
+ на любой элемент из класса 
+\begin_inset Formula $B$
+\end_inset
+
+, то результат оказывается в одном и том же классе (а именно — в 
+\begin_inset Formula $C$
+\end_inset
+
+) независимо от того, какие именно элементы классов 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ взяты.
+ Из решения следующей задачи вытекает, что это не случайно.
+\end_layout
+
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:coset-product-is-well-defined"
+
+\end_inset
+
 Пусть есть разложение группы 
 \begin_inset Formula $G$
 \end_inset
@@ -31165,32 +31385,174 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Два элемента 
+\begin_inset Formula $a$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ лежат в одном смежном классе по 
+\begin_inset Formula $N$
+\end_inset
+
+, если существует 
+\begin_inset Formula $h\in N$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $b=ah$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:left-coset"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Докажем, что если 
+\begin_inset Formula $x_{2}=x_{1}h_{x}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{2}=y_{1}h_{y}$
+\end_inset
+
+, где 
+\begin_inset Formula $h_{x},h_{y}\in N$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+x_{2}y_{2}=x_{1}h_{x}y_{1}h_{y}=x_{1}\left(y_{1}y_{1}^{-1}\right)h_{x}y_{1}h_{y}=\left(x_{1}y_{1}\right)\left(y_{1}^{-1}h_{x}y_{1}h_{y}\right).
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $h_{x}\in N$
+\end_inset
+
+ и 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная группа, то 
+\begin_inset Formula $y_{1}^{-1}h_{x}y_{1}\in N$
+\end_inset
+
+.
+ А так как 
+\begin_inset Formula $N$
+\end_inset
+
+, как и любая группа, замкнута относительно групповой операции, то 
+\begin_inset Formula $y_{1}^{-1}h_{x}y_{1}h_{y}=\left(y_{1}^{-1}h_{x}y_{1}\right)h_{y}\in N.$
+\end_inset
+
+ Таким образом, существует элемент 
+\begin_inset Formula $h=y_{1}^{-1}h_{x}y_{1}h_{y}\in N$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\left(x_{2}y_{2}\right)=\left(x_{1}y_{1}\right)h$
+\end_inset
+
+, а значит 
+\begin_inset Formula $x_{1}y_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}y_{2}$
+\end_inset
+
+ лежат в одном смежном классе.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+Таким образом, взяв по представителю из двух смежных классов и перемножив
+ их в определенном порядке, мы попадём в смежный класс, который не будет
+ зависеть от того, каких именно представителей мы выбрали.
+ Следовательно, при разложении группы по нормальной подгруппе 
+\begin_inset Formula $N$
+\end_inset
 
-\begin_layout Plain Layout
-Объяснение, что умножение смежных классов
-\end_layout
+ на множестве смежных классов можно определить бинарную операцию следующим
+ образом: если 
+\begin_inset Formula $A=xN$
+\end_inset
+
+ и 
+\begin_inset Formula $B=yN$
+\end_inset
+
+, то 
+\begin_inset Formula $A\cdot B=\left(xy\right)N$
+\end_inset
+
+.
+ Результат задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:coset-product-is-well-defined"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+ показывает, что эта операции определена однозначно и не зависит от выбора
+ элементов 
+\begin_inset Formula $x$
+\end_inset
 
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+, порождающих смежные классы 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Так, в рассмотренном выше примере 
+\begin_inset Formula $A\cdot B=C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В следующих задачах речь идёт о разложениях по нормальной подгруппе.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:coset-product-is-associative"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $T_{1}$
 \end_inset
@@ -31212,12 +31574,43 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Обозначим нормальную подгруппу, по которой осуществляется разложение, как
+ 
+\begin_inset Formula $N$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+.
+ Выберем в каждом классе представителя: 
+\begin_inset Formula $t_{1}\in T_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $t_{2}\in T_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{3}\in T_{3}$
+\end_inset
+
+.
+ По определению произведения для смежных классов: 
+\begin_inset Formula $\left(T_{1}T_{2}\right)T_{3}=\left(\left(t_{1}t_{2}\right)t_{3}\right)N$
+\end_inset
+
+ и 
+\begin_inset Formula $T_{1}\left(T_{2}T_{3}\right)=\left(t_{1}\left(t_{2}t_{3}\right)\right)N$
+\end_inset
+
+.
+ Так как групповая операция является ассоциативной, то 
+\begin_inset Formula $\left(t_{1}t_{2}\right)t_{3}=t_{1}\left(t_{2}t_{3}\right)$
+\end_inset
+
+, таким образом 
+\begin_inset Formula 
+\[
+\left(T_{1}T_{2}\right)T_{3}=T_{1}\left(T_{2}T_{3}\right)=\left(t_{1}t_{2}t_{3}\right)N.
+\]
 
 \end_inset
 
@@ -31225,6 +31618,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:coset-product-has-unity"
+
+\end_inset
+
 Пусть нормальная подгруппа обозначена буквой 
 \begin_inset Formula $E$
 \end_inset
@@ -31242,19 +31641,47 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Так как 
+\begin_inset Formula $E$
 \end_inset
 
+ — подгруппа, то в качестве представителя 
+\begin_inset Formula $E$
+\end_inset
 
+ можно выбрать 
+\begin_inset Formula $e$
+\end_inset
+
+ — единичный элемент группы.
+ Выберем также произвольного представителя 
+\begin_inset Formula $t\in T$
+\end_inset
+
+.
+ По определению единичного элемента, имеет место равенство 
+\begin_inset Formula $et=te=t$
+\end_inset
+
+.
+ По определению произведения смежных классов 
+\begin_inset Formula $ET=\left(et\right)E=tE=T$
+\end_inset
+
+ и 
+\begin_inset Formula $TE=\left(te\right)E=tE=T$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:every-coset-has-inverse-coset"
+
+\end_inset
+
 Доказать, что для любого смежного класса 
 \begin_inset Formula $T$
 \end_inset
@@ -31271,26 +31698,62 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Выберем произвольного представителя 
+\begin_inset Formula $t\in T$
 \end_inset
 
+ и возьмём в качестве 
+\begin_inset Formula $T^{-1}$
+\end_inset
 
+ класс, порождённый обратным элементом к 
+\begin_inset Formula $t$
+\end_inset
+
+: 
+\begin_inset Formula $T^{-1}=\left(t^{-1}\right)E$
+\end_inset
+
+.
+ Тогда, по определению произведения смежных классов, 
+\begin_inset Formula $T\cdot T^{-1}=\left(tt^{-1}\right)E=eE=E$
+\end_inset
+
+ и 
+\begin_inset Formula $T^{-1}T=\left(t^{-1}t\right)E=eE=E$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 Из утверждений задач 
-\begin_inset Note Note
-status open
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:coset-product-is-associative"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-добавить ссылки на 107-109
-\end_layout
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:coset-product-has-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-coset-has-inverse-coset"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -31356,16 +31819,411 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Воспользуемся решением задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:left-and-right-cosets-of-square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Обозначим смежные классы следующим образом: 
+\begin_inset Formula $E=\left\{ e,a\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $A=\left\{ b,c\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left\{ d,f\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $C=\left\{ g,h\right\} $
+\end_inset
+
+.
+ Выбирая произвольно представителей каждого класса, составим таблицу умножения:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-Написать решение
+
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Сравнивая эту таблицу умножения с таблицами умножения, полученными в задачах
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:squate-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rhombus-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, приходим к выводу, что факторгруппа группы симметрий квадрата по подгруппе
+ центральных симметрий изоморфна группе симметрий ромба (Изоморфизм задаётся
+ отношением 
+\begin_inset Formula $\varphi\left(E\right)=e$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(A\right)=a$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(B\right)=b$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(C\right)=c$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Problem
