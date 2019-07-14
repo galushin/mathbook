@@ -13293,6 +13293,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:subgroups-of-symmetries-of-triangle-and-square"
+
+\end_inset
+
 Найти все подгруппы в группах: 1) симметрий правильного треугольника, 2)
  симметрий квадрата.
 \end_layout
@@ -17784,6 +17790,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:subgroups-of-finite-cyclic-group"
+
+\end_inset
+
 Доказать, что все подгруппы в 
 \begin_inset Formula $Z_{n}$
 \end_inset
@@ -18883,6 +18895,12 @@ name "def:group-of-tetrahedron-rotations"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:tetrahedron-rotations-subgroup-or-order-2-and-3"
+
+\end_inset
+
 В группе вращений тетраэдра найти подгруппы, изоморфные циклическим группам:
  а) 
 \begin_inset Formula $Z_{2}$
@@ -21759,6 +21777,12 @@ name "prob:left-and-right-cosets-of-square-symmetries"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:all-groups-of-orders-4-6-8"
+
+\end_inset
+
 Найти все (с точностью до изоморфизма) группы порядка: а) 4, б) 6, в) 8.
 \end_layout
 
@@ -29828,7 +29852,13 @@ noprefix "false"
 .
 \end_layout
 
-\begin_layout Definition
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "exa:normal-and-not-normal-subgroups-of-triangle-symmetries"
+
+\end_inset
+
 Таким образом, подгруппа вращений является нормальной подгруппой в группе
  симметрий треугольника 
 \begin_inset CommandInset ref
@@ -29863,6 +29893,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:subgroup-of-commutative-group-is-normal"
+
+\end_inset
+
 Докажите, что в коммутативной группе всякая подгруппа является нормальной
  подгруппой.
 \end_layout
@@ -29900,6 +29936,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:central-symmetries-is-normal-in-symmetries-of-square"
+
+\end_inset
+
 Является ли нормальной подгруппой группы симметрий квадрата подгруппа центральны
 х симметрий, состоящая из двух элементов 
 \begin_inset Formula $\left\{ e,a\right\} $
@@ -31104,7 +31146,8 @@ noprefix "false"
 \begin_inset Formula $bdb^{-1}=f$
 \end_inset
 
-
+.
+ 
 \begin_inset Note Comment
 status open
 
@@ -31119,7 +31162,7 @@ status open
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Section
@@ -31814,6 +31857,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:factorgroup-of-square-symmetries-by-central-symmetries"
+
+\end_inset
+
 Выяснить, будет ли факторгруппа группы симметрий квадрата по подгруппе центральн
 ых симметрий изоморфна группа вращений квадрата или группе симметрий ромба.
 \end_layout
@@ -32238,17 +32287,47 @@ status open
 
 \end_inset
 
- по ним в следующих группах: а) группа симметрий треугольника, б) 
+ по ним в следующих группах: а) группа симметрий треугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, б) 
 \begin_inset Formula $Z_{2}\times Z_{2}$
 \end_inset
 
-, в) группа симметрий квадрата, г) группа кватернионов 
-\begin_inset Note Note
-status open
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-добавить ссылки
-\end_layout
+\end_inset
+
+, в) группа симметрий квадрата 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, г) группа кватернионов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -32256,16 +32335,2278 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Сразу же исключим из рассмотрения тривиальные случаи 
+\begin_inset Formula $G/G=\left\{ e\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $G/\left\{ e\right\} =G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Группа симметрий треугольника содержит 6 элементов.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroups-of-symmetries-of-triangle-and-square"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ были найдены все нетривиальные подгруппы этой группы: 
+\begin_inset Formula $\left\{ e,a,b\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,l_{A}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,l_{B}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ e,l_{C}\right\} $
+\end_inset
+
+.
+ Группа 
+\begin_inset Formula $\left\{ e,a,b\right\} $
+\end_inset
+
+ является нормально, так как содержит половину элементов исходной группы
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgoup-half-of-group-is-normal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Остальные подгруппы нормальными не являются, для 
+\begin_inset Formula $\left\{ e,l_{A}\right\} $
+\end_inset
+
+ это было указано в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:normal-and-not-normal-subgroups-of-triangle-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, для остальных ситуация аналогична.
+\end_layout
+
+\begin_layout Solution
+б) Группа 
+\begin_inset Formula $Z_{2}\times Z_{2}$
+\end_inset
+
+ является группой порядка 4 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:order-of-cartesian-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ По теореме Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, нетривиальные подгруппы этой группы являются группами порядка 2.
+ Рассмотрим одну из этих подгрупп — 
+\begin_inset Formula $\left\{ e,a\right\} $
+\end_inset
+
+, для остальных ситуация аналогична.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgoup-half-of-group-is-normal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, эта подгруппа является нормальной.
+ Разложение состоит из двух классов 
+\begin_inset Formula $E=\left\{ e,a\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $A=\left\{ b,c\right\} $
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Все подгруппы порядка 2 изоморфны.
+ 
+\begin_inset Formula $\left(Z_{2}\times Z_{2}\right)/\left\{ e,a\right\} \cong Z_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в)Группа симметрий квадрата состоит из 8 элементов.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroups-of-symmetries-of-triangle-and-square"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ были найдены все нетривиальные подгруппы этой группы.
+ Подгруппы 
+\begin_inset Formula $\left\{ e,a,b,c\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,a,d,f\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ e,a,g,h\right\} $
+\end_inset
+
+ содержат каждая половину элементов исходной группы, а значит является нормально
+й 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgoup-half-of-group-is-normal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Факторгруппы по этим подгруппам содержат два класса, а значит изоморфны
+ 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Кроме того, в группе симметрий квадрата имеются подгруппы второго порядка:
+ 
+\begin_inset Formula $\left\{ e,a\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,d\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,f\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,g\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ e,h\right\} $
+\end_inset
+
+.
+ Проверим, являются ли эти группы нормальными.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:central-symmetries-is-normal-in-symmetries-of-square"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $\left\{ e,a\right\} $
+\end_inset
+
+ является нормальной подгруппой группы симметрий квадрата.
+ Для остальных групп для этого нужно показать, что для любых 
+\begin_inset Formula $y\in G$
+\end_inset
+
+ и 
+\begin_inset Formula $x\in H$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $yxy^{-1}\in H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $yey^{-1}=yy^{-1}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-Написать решение
+\begin_inset Formula $y$
+\end_inset
+
+
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $yd$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ydy^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $yf$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $yfy^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $yg$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ygy^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $yh$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $yhy^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, из подгрупп порядка 2 только 
+\begin_inset Formula $\left\{ e,a\right\} $
+\end_inset
+
+ является нормальной.
+ Разложение по этой группе было построено в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:central-symmetries-is-normal-in-symmetries-of-square"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Она изоморфна группе симметрий ромба.
+\end_layout
+
+\begin_layout Solution
+г)В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ была получена таблица умножения для этой группы порядка 8.
+ В этой группе, по теореме Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, могут быть нетривиальные подгруппы порядка 
+\begin_inset Formula $2$
+\end_inset
+
+ или 
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как только один элемент этой группы имеет порядок 
+\begin_inset Formula $2$
+\end_inset
+
+ (а именно — 
+\begin_inset Formula $-1$
+\end_inset
+
+), то единственная подгруппа порядка 
+\begin_inset Formula $2$
+\end_inset
+
+ — 
+\begin_inset Formula $\left\{ 1,-1\right\} $
+\end_inset
+
+.
+ Разложение по этой группе включает классы 
+\begin_inset Formula $E=\left\{ 1,-1\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $A=\left\{ i,-i\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $B=\left\{ j,-j\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $C=\left\{ k,-k\right\} $
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $1\cdot1=1$
+\end_inset
+
+ и 
+\begin_inset Formula $i^{2}=j^{2}=k^{2}=-1$
+\end_inset
+
+, то 
+\begin_inset Formula $E^{2}=A^{2}=B^{2}=C^{2}=1$
+\end_inset
+
+, поэтому факторгруппа по рассматриваемой подгруппе изоморфна 
+\begin_inset Formula $Z_{2}\times Z_{2}$
+\end_inset
+
+ (группа симметрий ромба).
+\end_layout
+
+\begin_layout Solution
+Рассмотрим подгруппу, включающую элементы 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $i^{2}=-1$
+\end_inset
+
+, 
+\begin_inset Formula $i^{3}=-i$
+\end_inset
+
+ и 
+\begin_inset Formula $i^{4}=1$
+\end_inset
+
+, то эта подгруппа имеет вид 
+\begin_inset Formula $\left\{ 1,-1,i,-i\right\} $
+\end_inset
+
+ (если подгруппа включает ещё какой-либо элемент, то она совпадает со всей
+ группой по теореме Лагранжа).
+ Аналогично, можно показать, что 
+\begin_inset Formula $\left\{ 1,-1,j,-j\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ 1,-1,k,-k\right\} $
+\end_inset
+
+ — также являются подгруппами.
+ Так как эти подгруппы включают половину элементов исходной группы, то они
+ являются нормальными 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgoup-half-of-group-is-normal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Так как соответствующие факторгруппы состоят из двух классов, то они изоморфны
+ 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -32281,16 +34622,141 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Группы 
+\begin_inset Formula $Z_{n}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ и 
+\begin_inset Formula $Z$
+\end_inset
+
+ являются коммутативными, а, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-of-commutative-group-is-normal"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, любая подгруппа коммутативной группы является нормальной подгруппой.
+\end_layout
 
+\begin_layout Solution
+а) Все подгруппы 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ были найдены в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroups-of-finite-cyclic-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Они имеют вид 
+\begin_inset Formula $\left\{ a^{kd}\right\} ,$
+\end_inset
+
+где 
+\begin_inset Formula $d$
+\end_inset
+
+ — делитель 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий группы 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $k=0,1,...,\frac{n}{d}-1$
+\end_inset
+
+.
+ Классы разложения имеют вид 
+\begin_inset Formula $A_{j}=\left\{ a^{j+kd}\right\} ,$
+\end_inset
+
+где 
+\begin_inset Formula $j$
+\end_inset
+
+ — целое число из интервала 
+\begin_inset Formula $\left[0;d-1\right]$
+\end_inset
+
+, то есть факторгруппа изоморфна 
+\begin_inset Formula $Z_{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Все подгруппы 
+\begin_inset Formula $Z$
+\end_inset
+
+ были найдены в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroups-of-infinite-cyclic-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Подмножества имеют вид 
+\begin_inset Formula $\left\{ b^{k}\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — произвольное целое число, а 
+\begin_inset Formula $b=a^{r},$
+\end_inset
+
+где 
+\begin_inset Formula $r$
+\end_inset
+
+ — произвольное целое положительное число, 
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий.
+ Смежные классы имеют вид 
+\begin_inset Formula $A_{j}=\left\{ a^{j+rk}\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $j$
+\end_inset
+
+ — целое число из интервала 
+\begin_inset Formula $\left[0;d-1\right]$
+\end_inset
+
+, то есть факторгруппа изоморфна 
+\begin_inset Formula $Z_{d}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -32303,12 +34769,53 @@ status open
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Написать решение: требуется решить задачи 88 и 97
 \end_layout
 
 \end_inset
 
+В группе вращений тетраэдра содержится 
+\begin_inset Formula $12$
+\end_inset
 
+ элементов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetradedron-rotations-forms-group-and-its-size"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В этой группе, по теореме Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, могут быть нетривиальные подгруппы порядка 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $3$
+\end_inset
+
+, 
+\begin_inset Formula $4$
+\end_inset
+
+ или 
+\begin_inset Formula $6$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -32330,12 +34837,153 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим произвольный элементы 
+\begin_inset Formula $g=\left(g_{1},g_{2}\right)\in G_{1}\times G_{2}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ и 
+\begin_inset Formula $a=\left(a_{1},e_{2}\right)\in G_{1}\times\left\{ e_{2}\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+ — единичный элемент 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+.
+ По определению обратного элемента в прямом произведении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-of-groups-is-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $g^{-1}=\left(g_{1}^{-1},g_{2}^{-1}\right)$
+\end_inset
+
+, поэтому, по определению произведения в прямом произведении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cartesian-product-of-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $gag^{-1}=\left(g_{1}a_{1}g_{1}^{-1},g_{2}e_{2}g_{2}^{-1}\right)=\left(g_{1}a_{1}g_{1}^{-1},g_{2}g_{2}^{-1}\right)=\left(g_{1}a_{1}g_{1}^{-1},e_{2}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}^{-1}$
+\end_inset
+
+ — элементы 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+, то 
+\begin_inset Formula $g_{1}a_{1}g_{1}^{-1}\in G_{1}$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $gag^{-1}\in G_{1}\times\left\{ e_{2}\right\} $
+\end_inset
+
+, то есть 
+\begin_inset Formula $G_{1}\times\left\{ e_{2}\right\} $
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+Опишем факторгруппу 
+\begin_inset Formula $\left(G_{1}\times G_{2}\right)/\left(G_{1}\times\left\{ e_{2}\right\} \right)$
+\end_inset
+
+.
+ Первым смежным классом в ней является сама группа 
+\begin_inset Formula $G_{1}\times\left\{ e_{2}\right\} $
+\end_inset
+
+.
+ Возьмём произвольный элемент, не принадлежащий 
+\begin_inset Formula $G_{1}\times\left\{ e_{2}\right\} $
+\end_inset
+
+, он имеет вид 
+\begin_inset Formula $\left(g_{1},g_{2}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $g_{1}\in G_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}\in G_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\neq e_{2}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $g\left(G_{1}\times\left\{ e_{2}\right\} \right)=\left(g_{1}G_{1}\right)\times\left(g_{2}\left\{ e_{2}\right\} \right)=G_{1}\times\left\{ g_{2}\right\} $
+\end_inset
+
+, то есть каждому элементу 
+\begin_inset Formula $g_{2}\in G_{2}$
+\end_inset
+
+ соответствует класс 
+\begin_inset Formula $G_{1}\times\left\{ g_{2}\right\} $
+\end_inset
+
+.
+ Таким образом, существует взаимно-однозначное отображение 
+\begin_inset Formula $\varphi:$
+\end_inset
+
+
+\begin_inset Formula $\left(G_{1}\times G_{2}\right)/\left(G_{1}\times\left\{ e_{2}\right\} \right)\to G_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(G_{1}\times\left\{ g_{2}\right\} \right)=g_{2}$
+\end_inset
+
+.
+ Докажем, что оно является изоморфизмом.
+ Действительно: 
+\begin_inset Formula 
+\begin{multline*}
+\varphi\left(xy\right)=\varphi\left(\left(G_{1}\times\left\{ x_{2}\right\} \right)\left(G_{1}\times\left\{ y_{2}\right\} \right)\right)=\\
+=\varphi\left(G_{1}\times\left\{ x_{2}y_{2}\right\} \right)=x_{2}y_{2}=\\
+=\varphi\left(G_{1}\times\left\{ x_{2}\right\} \right)\varphi\left(G_{1}\times\left\{ y_{2}\right\} \right).
+\end{multline*}
 
 \end_inset
 
