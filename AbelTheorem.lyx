@@ -34990,6 +34990,363 @@ noprefix "false"
 
 \end_layout
 
+\begin_layout Section
+Коммутант
+\end_layout
+
+\begin_layout Standard
+Напомним, что два элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ называются 
+\emph on
+перестановочными 
+\emph default
+(или 
+\emph on
+коммутирующими
+\emph default
+), если 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+.
+ Степень некоммутативности двух элементов группы можно измерять с помощью
+ произведения 
+\begin_inset Formula $aba^{-1}b^{-1}$
+\end_inset
+
+, которое равно единице тогда и только тогда, когда 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ перестановочны.
+\end_layout
+
+\begin_layout Standard
+Действительно, пусть 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+, умножая это равенство справа сначала на 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+, а затем на 
+\begin_inset Formula $b^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula $aba^{-1}b^{-1}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+С другой стороны, пусть имеет место равенство: 
+\begin_inset Formula $aba^{-1}b^{-1}=e$
+\end_inset
+
+.
+ Умножая это равенство справа сначала на 
+\begin_inset Formula $b$
+\end_inset
+
+, а затем на 
+\begin_inset Formula $a$
+\end_inset
+
+, получим 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Элемент 
+\begin_inset Formula $\left[a;b\right]=aba^{-1}b^{-1}$
+\end_inset
+
+ называют 
+\emph on
+коммутатором элементов 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+
+\emph default
+.
+
+\emph on
+ Коммутантом 
+\emph default
+
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ называется множество всевозможных произведений конечного числа коммутаторов
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что коммутант является подгруппой.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся результатом задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Последовательно проверим, что выполняются все требования.
+\end_layout
+
+\begin_layout Solution
+1) Пусть 
+\begin_inset Formula $x,y\in K\left(G\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ представляют собой произведение конечного числа коммутаторов.
+ Но тогда и 
+\begin_inset Formula $xy$
+\end_inset
+
+ представляет собой конечного числа коммутаторов, то есть 
+\begin_inset Formula $xy\in K\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2) Для любого 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ рассмотрим коммутатор с самим собой: 
+\begin_inset Formula $\left[a;a\right]=aaa^{-1}a^{-1}=e$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $e\in K\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+3) Рассмотрим произвольный элемент 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+, он имеет вид 
+\begin_inset Formula $x=\left[a_{1};b_{1}\right]\left[a_{2};b_{2}\right]\cdot\dots\cdot\left[a_{m-1};b_{m-1}\right]\left[a_{m};b_{m}\right]$
+\end_inset
+
+.
+ Найдём 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:inverse-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $x^{-1}=\left[a_{m};b_{m}\right]^{-1}\left[a_{m-1};b_{m-1}\right]^{-1}\cdot\dots\cdot\left[a_{2};b_{2}\right]^{-1}\left[a_{1};b_{1}\right]^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $\left[a;b\right]^{-1}=\left(aba^{-1}b^{-1}\right)^{-1}=\left(b^{-1}\right)^{-1}\left(a^{-1}\right)^{-1}b^{-1}a^{-1}=bab^{-1}a^{-1}=\left[b;a\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $x^{-1}=\left[b_{m};a_{m}\right]\left[b_{m-1};a_{m-1}\right]\cdot\dots\cdot\left[b_{2};a_{2}\right]\left[b_{1};a_{1}\right]$
+\end_inset
+
+, то есть 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+ представляет собой произведение конечного числа коммутаторов, то есть 
+\begin_inset Formula $x^{-1}\in K\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что коммутант 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ является нормальной подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ и 
+\begin_inset Formula $h\in K\left(G\right)$
+\end_inset
+
+, нужно доказать, что 
+\begin_inset Formula $ghg^{-1}\in K\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим сначала частный случай 
+\begin_inset Formula $h=\left[a;b\right]$
+\end_inset
+
+, тогда 
+\begin_inset Formula $ghg^{-1}=gaba^{-1}b^{-1}g^{-1}$
+\end_inset
+
+, так как 
+\begin_inset Formula $g^{-1}g=e$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+ghg^{-1}=gag^{-1}gbg^{-1}ga^{-1}g^{-1}gb^{-1}g^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $a^{\prime}=gag^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $b^{\prime}=gbg^{-1}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(a^{\prime}\right)^{-1}=\left(gag^{-1}\right)^{-1}=ga^{-1}g^{-1}$
+\end_inset
+
+ и, аналогично, 
+\begin_inset Formula $\left(b^{\prime}\right)^{-1}=gb^{-1}g^{-1}$
+\end_inset
+
+.
+ Поэтому будет иметь равенство 
+\begin_inset Formula $ghg^{-1}=\left[a^{\prime};b^{\prime}\right]\in K\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь общий случай 
+\begin_inset Formula $h=\left[a_{1};b_{1}\right]\cdot\dots\cdot\left[a_{m-1};b_{m-1}\right]\left[a_{m};b_{m}\right]$
+\end_inset
+
+.
+ В этом случае 
+\begin_inset Formula 
+\begin{multline*}
+ghg^{-1}=g\left(\left[a_{1};b_{1}\right]\left[a_{2};b_{2}\right]\cdot\dots\cdot\left[a_{m};b_{m}\right]\right)g^{-1}=\\
+=g\left[a_{1};b_{1}\right]g^{-1}g\left[a_{2};b_{2}\right]g^{-1}g\cdot\dots\cdot g^{-1}g\left[a_{m};b_{m}\right]g^{-1}=\\
+=\left[a_{1}^{\prime};b_{1}^{\prime}\right]\left[a_{2}^{\prime};b_{2}^{\prime}\right]\cdot\dots\cdot\left[a_{m}^{\prime};b_{m}^{\prime}\right].
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+То есть 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ представляет собой произведение конечного числа коммутаторов, то есть 
+\begin_inset Formula $ghg^{-1}\in K\left(G\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
