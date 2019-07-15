@@ -32282,6 +32282,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:all-normal-subgroups-of-some-groups"
+
+\end_inset
+
 Найти все нормальные подгруппы и факторгруппы
 \begin_inset Foot
 status open
@@ -32385,7 +32391,7 @@ noprefix "false"
 \begin_inset Formula $\left\{ e,a,b\right\} $
 \end_inset
 
- является нормально, так как содержит половину элементов исходной группы
+ является нормальной, так как содержит половину элементов исходной группы
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -35122,6 +35128,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-is-subgroup"
+
+\end_inset
+
 Доказать, что коммутант является подгруппой.
 \end_layout
 
@@ -35238,6 +35250,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-is-normal-subgroup"
+
+\end_inset
+
 Доказать, что коммутант 
 \begin_inset Formula $K\left(G\right)$
 \end_inset
@@ -35250,7 +35268,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-Пусть 
+Как было показано в задаче , коммутант является подгруппой.
+ Пусть 
 \begin_inset Formula $g\in G$
 \end_inset
 
@@ -35354,6 +35373,12 @@ ghg^{-1}=g\left(\left[a_{1};b_{1}\right]\left[a_{2};b_{2}\right]\cdot\dots\cdot\
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-is-unity-group-iff-group-is-commutative"
+
+\end_inset
+
 Доказать, что коммутант совпадает с единичной подгруппой 
 \begin_inset Formula $\left\{ e\right\} $
 \end_inset
@@ -35439,14 +35464,33 @@ ghg^{-1}=g\left(\left[a_{1};b_{1}\right]\left[a_{2};b_{2}\right]\cdot\dots\cdot\
 \end_layout
 
 \begin_layout Problem
-Найти коммутант в группах: а) симметрий треугольника, б) симметрий квадрата,
- в) в группе кватернионов
-\begin_inset Note Note
-status open
+Найти коммутант в группах: а) симметрий треугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Добавить ссылки
-\end_layout
+\end_inset
+
+, б) симметрий квадрата 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в) в группе кватернионов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -35454,16 +35498,339 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+а) Пусть 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ — группа всех симметрий треугольника.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-normal-subgroups-of-some-groups"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, нормальными подгруппами группу симметрий треугольника являются 
+\begin_inset Formula $e$
+\end_inset
 
+, 
+\begin_inset Formula $\left\{ e,a,b\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+, поэтому коммутант должен совпасть с одной из этих групп.
+ Группа симметрий треугольника не является коммутативной, поэтому 
+\begin_inset Formula $K\left(G\right)\neq\left\{ e\right\} $
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим факторгруппу по подгруппе 
+\begin_inset Formula $\left\{ e,a,b\right\} $
+\end_inset
+
+, она включает два класса: 
+\begin_inset Formula $E=\left\{ e,a,b\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $A=\left\{ l_{A},l_{B},l_{C}\right\} $
+\end_inset
+
+.
+ Так как все группу второго порядка изоморфны 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $EA=AE=A$
+\end_inset
+
+ и 
+\begin_inset Formula $EE=AA=E$
+\end_inset
+
+.
+ Из последнего равенства следует, что 
+\begin_inset Formula $E^{-1}=E$
+\end_inset
+
+ и 
+\begin_inset Formula $A^{-1}=A$
+\end_inset
+
+.
+ То есть любой элемент принадлежит тому же классу, что и обратный к нему.
+\end_layout
+
+\begin_layout Solution
+Возьмём два произвольных элемента 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+.
+ Если они принадлежат разным классам, то 
+\begin_inset Formula $xy\in A$
+\end_inset
+
+, 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $y^{-1}$
+\end_inset
+
+ принадлежат разным классам, 
+\begin_inset Formula $x^{-1}y^{-1}\in A$
+\end_inset
+
+, то есть 
+\begin_inset Formula $xyx^{-1}y^{-1}\in AA=E$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ принадлежат одному классу, то 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $y^{-1}$
+\end_inset
+
+ также принадлежат одному классу, 
+\begin_inset Formula $xy\in E$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{-1}y^{-1}\in E$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left(xy\right)\left(x^{-1}y^{-1}\right)\in EE=E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, произвольный коммутатор элементов 
+\begin_inset Formula $G$
+\end_inset
+
+ принадлежит 
+\begin_inset Formula $E=\left\{ e,a,b\right\} $
+\end_inset
+
+, так как 
+\begin_inset Formula $E$
+\end_inset
+
+ — подгруппа, а значит и группа, то произведение любого конечного числа
+ коммутаторов также принадлежит 
+\begin_inset Formula $E$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $K\left(G\right)=\left\{ e,a,b\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Пусть теперь 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа симметрий квадрата.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-normal-subgroups-of-some-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, группа 
+\begin_inset Formula $\left\{ e,a,b,c\right\} $
+\end_inset
+
+ является нормальной подгруппой этой группы.
+ Рассмотрим факторгруппу по этой нормальной подгруппе, она состоит из классов
+ 
+\begin_inset Formula $E=\left\{ e,a,b,c\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $A=\left\{ d,f,g,h\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $AE=EA=A$
+\end_inset
+
+ и 
+\begin_inset Formula $AA=EE=E$
+\end_inset
+
+ (
+\begin_inset Formula $A^{-1}=A$
+\end_inset
+
+ и 
+\begin_inset Formula $E^{-1}=E$
+\end_inset
+
+).
+ Рассуждая так же, как и в случае группы симметрий треугольника, получим,
+ что любой коммутатор группы 
+\begin_inset Formula $G$
+\end_inset
+
+ принадлежит подгруппе 
+\begin_inset Formula $E$
+\end_inset
+
+, а значит 
+\begin_inset Formula $K\left(G\right)\subseteq\left\{ e,a,b,c\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассуждая аналогично для нормальных подгрупп 
+\begin_inset Formula $\left\{ e,a,d,f\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ e,a,g,h\right\} $
+\end_inset
+
+, приходим к выводу, что 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ является подгруппой их пересечения, то есть 
+\begin_inset Formula $K\left(G\right)\subseteq\left\{ e,a\right\} $
+\end_inset
+
+.
+ Так как группа 
+\begin_inset Formula $G$
+\end_inset
+
+ — некоммутативна, то 
+\begin_inset Formula $K\left(G\right)\neq\left\{ e\right\} $
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula $K\left(G\right)=\left\{ e,a\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Пусть, наконец, 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа кватернионов.
+ Заметим, что в группе кватернионов, 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+ либо 
+\begin_inset Formula $ab=\left(-1\right)\cdot ba$
+\end_inset
+
+.
+ В первом случае получаем 
+\begin_inset Formula $aba^{-1}b^{-1}=1$
+\end_inset
+
+, а во втором — 
+\begin_inset Formula $abab^{-1}=-1$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $K\left(G\right)=\left\{ 1,-1\right\} $
+\end_inset
+
+.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-normal-subgroups-of-some-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что данная группа является нормальной, как и требуется 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
