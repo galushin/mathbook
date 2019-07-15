@@ -27661,8 +27661,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-Написать, что эта группа может быть получена как группа квартернионов с
- обычной (для квартернионов) операцией умножения:
+Написать, что эта группа может быть получена как группа кватернионов с обычной
+ (для кватернионов) операцией умножения:
 \end_layout
 
 \begin_layout Solution
@@ -28340,7 +28340,7 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $f$
+\begin_inset Formula $-k$
 \end_inset
 
 
@@ -28450,7 +28450,7 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $g$
+\begin_inset Formula $-j$
 \end_inset
 
 
@@ -28560,7 +28560,7 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $h$
+\begin_inset Formula $k$
 \end_inset
 
 
@@ -28685,7 +28685,7 @@ noprefix "false"
 \begin_inset Formula $Z_{2}\times Z_{2}\times Z_{2}$
 \end_inset
 
- и группа квартернионов.
+ и группа кватернионов.
 \end_layout
 
 \begin_layout Section
