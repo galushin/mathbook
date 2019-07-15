@@ -35347,6 +35347,413 @@ ghg^{-1}=g\left(\left[a_{1};b_{1}\right]\left[a_{2};b_{2}\right]\cdot\dots\cdot\
 .
 \end_layout
 
+\begin_layout Problem
+Доказать, что коммутант совпадает с единичной подгруппой 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ тогда и только тогда, когда группа коммутативна.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти коммутант в группах: а) симметрий треугольника, б) симметрий квадрата,
+ в) в группе кватернионов
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что коммутант в группе симметрий правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника изоморфен группе 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $n$
+\end_inset
+
+ нечётном и группе 
+\begin_inset Formula $Z_{\frac{n}{2}}$
+\end_inset
+
+ при 
+\begin_inset Formula $n$
+\end_inset
+
+ чётном.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти коммутант в группе вращений тетраэдра.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что если нормальная подгруппа в группе вращений или в группе симметрий
+ тетраэдра содержит хотя бы оно вращение вокруг оси, проходящей через вершину,
+ то она содержит всю группу вращений тетраэдра.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти коммутант в группе симметрий тетраэдра.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ещё 2 группы: 
+\emph on
+группу вращений куба 
+\emph default
+и 
+\emph on
+группу вращений правильного октаэдра 
+\emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить рисунок и ссылку на него
+\end_layout
+
+\end_inset
+
+
+\emph on
+.
+\end_layout
+
+\begin_layout Problem
+Сколько элементов в каждой из этих групп? Перечислить элементы группы вращений
+ куба.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что группы вращений куба и октаэдра изоморфны.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Сколькими различными способами можно закрасти грани куба 6 цветами (каждую
+ грань своим цветом), если различными считаются раскраски, которые нельзя
+ совместить друг с другом вращением куба.
+ Тот же вопрос для спичечного коробка.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Каким из изветсных вам групп изоморфна группа вращений спичечного коробка?
+\end_layout
+
+\begin_layout Standard
+Вычисление коммутанта группы вращений куба удобно провести, вписав в куб
+ тетраэдр, как это показано на рисунке 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить рисунок и ссылку на него
+\end_layout
+
+\end_inset
+
+.
+ При этом, если соединить оставшиеся вершины 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $D$
+\end_inset
+
+, 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+, то получится второй тетраэдр.
+ Любое вращение куба либо переводит каждый тетраэдр в себя, либо меняет
+ их местами.
+\end_layout
+
+\begin_layout Problem
+Доказать, что все вращения куба, переводящие оба тетраэдра в себя, образуют:
+ а) подгруппу, б) нормальную подгруппу группы вращений куба.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что коммутант группы вращений куба изоморфен группе вращений тетраэдра.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Докажем теперь следующие 3 свойства коммутанта, которые понадобятся нам
+ в дальнейшем.
+\end_layout
+
+\begin_layout Problem
+Доказать, что факторгруппа произвольной группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по её коммутанту коммутативна.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и факторгруппа 
+\begin_inset Formula $G/N$
+\end_inset
+
+ коммутативна.
+ Доказать, что 
+\begin_inset Formula $N$
+\end_inset
+
+ содержит коммутант группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $K\left(N\right)$
+\end_inset
+
+ — коммутант группы 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $K\left(N\right)$
+\end_inset
+
+ является нормальной подгруппой в 
+\begin_inset Formula $G$
+\end_inset
+
+ (сравните с примером 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
