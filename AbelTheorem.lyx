@@ -31095,6 +31095,12 @@ gag^{-1}=\left(g_{1}a_{1},g_{2}a_{2}\right)\left(g_{1}^{-1},g_{2}^{-1}\right)=\l
 \end_layout
 
 \begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "exa:normal-subgroup-of-normal-subgroup-may-be-not-normal-subgroup-of-whole-group"
+
+\end_inset
+
 Рассмотрим подгруппу группы симметрий квадрата, состоящую из отражений относител
 ьно диагоналей и центра 
 \begin_inset CommandInset ref
@@ -35356,16 +35362,80 @@ ghg^{-1}=g\left(\left[a_{1};b_{1}\right]\left[a_{2};b_{2}\right]\cdot\dots\cdot\
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+1) Пусть группа 
+\begin_inset Formula $G$
 \end_inset
 
+ — коммутативна.
+ Тогда для любых элементов 
+\begin_inset Formula $a,b\in G$
+\end_inset
 
+ имеет место равенство 
+\begin_inset Formula $\left[a;b\right]=aba^{-1}b^{-1}=aa^{-1}bb^{-1}=ee=e$
+\end_inset
+
+.
+ Таким образом, любой коммутатор в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ равен единичиному элементу.
+ Так как произведение единичного элемента на самого себя снова есть единичный
+ элемент, то любое произведение конечного числа коммутаторов также равно
+ 
+\begin_inset Formula $e$
+\end_inset
+
+.
+ Таким образом, коммутатор включает только один элемент — 
+\begin_inset Formula $e$
+\end_inset
+
+, то есть 
+\begin_inset Formula $K\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2) Пусть теперь 
+\begin_inset Formula $K\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+ Тогда, по определению коммутанта, для любых 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\left[a;b\right]=aba^{-1}b^{-1}=e$
+\end_inset
+
+.
+ Умножим последнее равенство справа на 
+\begin_inset Formula $b$
+\end_inset
+
+: 
+\begin_inset Formula $aba^{-1}=b$
+\end_inset
+
+.
+ Умножим теперь это равенство справа на 
+\begin_inset Formula $a$
+\end_inset
+
+: 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+, то есть любые элементы 
+\begin_inset Formula $G$
+\end_inset
+
+ являются коммутирующими.
 \end_layout
 
 \begin_layout Problem
@@ -35652,16 +35722,75 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Нужно доказать, что для любых двух смежных классов 
+\begin_inset Formula $T_{1},T_{2}\in G/K\left(G\right)$
 \end_inset
 
+ имеет место равенство 
+\begin_inset Formula $T_{1}T_{2}=T_{2}T_{1}$
+\end_inset
 
+.
+ Возьмём двух представителей 
+\begin_inset Formula $a\in T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $b\in T_{2}$
+\end_inset
+
+.
+ Для того, чтобы 
+\begin_inset Formula $ab$
+\end_inset
+
+ и 
+\begin_inset Formula $ba$
+\end_inset
+
+ принадлежали одному смежному классу по 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ необходимо, чтобы существовал 
+\begin_inset Formula $h\in K\left(G\right)$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $ab=h\left(ba\right)$
+\end_inset
+
+ или, иными словами, 
+\begin_inset Formula $aba^{-1}b^{-1}=h\in K\left(G\right)$
+\end_inset
+
+.
+ Но 
+\begin_inset Formula $aba^{-1}b^{-1}=\left[a;b\right]$
+\end_inset
+
+ — коммутатор элементов 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, а значит он, по определению, принадлежит коммутанту.
+ Таким образом, элементы 
+\begin_inset Formula $ab$
+\end_inset
+
+ и 
+\begin_inset Formula $ba$
+\end_inset
+
+ принадлежат одному смежному классу, а значит, 
+\begin_inset Formula $T_{1}T_{2}=T_{2}T_{1}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -35690,16 +35819,85 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Рассмотрим произвольные элементы 
+\begin_inset Formula $a,b\in G$
 \end_inset
 
+ и их коммутатор 
+\begin_inset Formula $\left[a;b\right]=aba^{-1}b^{-1}$
+\end_inset
 
+.
+ Пусть 
+\begin_inset Formula $T_{a}$
+\end_inset
+
+ — класс, которому принадлежит элемент 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $T_{b}$
+\end_inset
+
+ — класс, которому принадлежит элемент 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Так как, по условию, 
+\begin_inset Formula $G/N$
+\end_inset
+
+ коммутативна, то 
+\begin_inset Formula $T_{a}T_{b}=T_{b}T_{a}$
+\end_inset
+
+, а значит, существует 
+\begin_inset Formula $h\in N$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $ab=h\left(ba\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $aba^{-1}b^{-1}\in N$
+\end_inset
+
+.
+ Таким образом, любой коммутатор элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ принадлежит 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — подгруппа, то любое произведение конечного числа коммутантов также принадлежи
+т 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Таким образом, любой элемент 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ принадлежит 
+\begin_inset Formula $N$
+\end_inset
+
+, то есть 
+\begin_inset Formula $N\supset K\left(G\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -35729,12 +35927,12 @@ status open
 \end_inset
 
  (сравните с примером 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:normal-subgroup-of-normal-subgroup-may-be-not-normal-subgroup-of-whole-group"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -35742,16 +35940,119 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Нужно доказать, что для любого 
+\begin_inset Formula $h\in K\left(N\right)$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ и любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $ghg^{-1}\in K\left(N\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $h=h_{1}h_{2}\cdot\dots\cdot h_{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $h_{j}=a_{j}b_{j}a_{j}^{-1}b_{j}^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{j},b_{j}\in N$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $g^{-1}g=e$
+\end_inset
+
+, то имеет место равенство 
+\begin_inset Formula 
+\[
+ghg^{-1}=gh_{1}g^{-1}gh_{2}g^{-1}\cdot\dots\cdot gh_{m}g^{-1}.
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Далее, мы можем записать 
+\begin_inset Formula 
+\[
+gh_{j}g^{-1}=ga_{j}g^{-1}gb_{j}g^{-1}ga_{j}^{-1}g^{-1}gb_{j}^{-1}g_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $a_{j}^{\prime}=ga_{j}g^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{j}^{\prime}=gb_{j}g^{-1}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(a_{j}^{\prime}\right)^{-1}=ga_{j}^{-1}g^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(b_{j}^{\prime}\right)^{-1}=gb_{j}^{-1}g^{-1}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $gh_{j}g^{-1}=a_{j}^{\prime}b_{j}^{\prime}\left(a_{j}^{\prime}\right)\left(b_{j}^{\prime}\right)=\left[a_{j}^{\prime};b_{j}^{\prime}\right]$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа, то 
+\begin_inset Formula $a_{j}^{\prime},b_{j}^{\prime}\in N$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $gh_{j}g^{-1}$
+\end_inset
+
+ является коммутатором элементов 
+\begin_inset Formula $N$
+\end_inset
+
+, 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ является произведением конечного числа коммутаторов 
+\begin_inset Formula $N$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $ghg^{-1}\in K\left(N\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $K\left(N\right)$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
