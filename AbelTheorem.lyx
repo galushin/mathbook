@@ -21393,7 +21393,7 @@ noprefix "false"
 
 \end_inset
 
- (порядка 12
+ (порядка 12 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "prob:tetradedron-rotations-forms-group-and-its-size"
@@ -21404,26 +21404,222 @@ noprefix "false"
 \end_inset
 
 ) нет подгруппы порядка 6.
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Solution
+Действительно, пусть в группе вращений тетраэдра существует подгруппа порядка
+ 6.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetradedron-rotations-forms-group-and-its-size"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, она включает: тождественное преобразование, повороты на 
+\begin_inset Formula $120\text{°}$
+\end_inset
+
+ и 
+\begin_inset Formula $240\text{°}$
+\end_inset
+
+ вокруг высот, проходящих через каждую из четырёх вершин, и повороты на
+ 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+ вокруг осей, проходящих через середины несмежных рёбер (таких пар 3).
+\end_layout
+
+\begin_layout Solution
+Подгруппа порядка 6 должна содержать хотя бы одно вращение 
+\begin_inset Formula $a$
+\end_inset
+
+ на 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+ или 
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+ вокруг одной из высот (так как таких вращений 8, а остальных вращений —
+ всего 4).
+ Пусть, для определённости, 
+\begin_inset Formula $a$
+\end_inset
+
+ — вращение вокруг высоты, проходящей через вершину 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Если подгруппа содержит 
+\begin_inset Formula $a$
+\end_inset
+
+, то она должна содержать и 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+, то есть подгруппа порядка 6 должна содержать оба вращения вокруг данной
+ высоты.
+\end_layout
+
+\begin_layout Solution
+Так как имеется всего три вращения, оставляющих на месте вершину 
+\begin_inset Formula $A$
+\end_inset
+
+, то подгруппа порядка 6 должна содержать некоторое вращение 
+\begin_inset Formula $b$
+\end_inset
+
+, переводящее вершину 
+\begin_inset Formula $A$
+\end_inset
+
+ в другую вершину, например 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Подгруппа должна содержать наряду с 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ элемент 
+\begin_inset Formula $bab^{-1}$
+\end_inset
+
+, причём 
+\begin_inset Formula $b^{-1}$
+\end_inset
+
+ переводит 
+\begin_inset Formula $B$
+\end_inset
+
+ в 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ оставляет 
+\begin_inset Formula $A$
+\end_inset
+
+ на месте, а 
+\begin_inset Formula $b$
+\end_inset
+
+ переводит 
+\begin_inset Formula $A$
+\end_inset
+
+ в 
+\begin_inset Formula $B$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $bab^{-1}$
+\end_inset
+
+ оставляет 
+\begin_inset Formula $B$
+\end_inset
+
+ на месте.
+ Кроме того, 
+\begin_inset Formula $bab^{-1}\neq e$
+\end_inset
+
+, так как в противном случае 
+\begin_inset Formula $a=b^{-1}b=e$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $bab^{-1}$
+\end_inset
+
+ — это одно из вращений вокруг высоты, проходящей через вершину 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Наряду с 
+\begin_inset Formula $bab^{-1}$
+\end_inset
+
+искомая подгруппа должна содержать и его квадрат, то есть искомая подгруппа
+ будет содержать оба вращения вокруг высоты, проходящей через 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Эти вращения переводят 
+\begin_inset Formula $A$
+\end_inset
+
+ в 
+\begin_inset Formula $C$
+\end_inset
+
+ и 
+\begin_inset Formula $D$
+\end_inset
+
+, откуда, как и выше, можно получить, что подгруппа должна включать оба
+ вращения вокруг высот, проходящих через вершины 
+\begin_inset Formula $C$
+\end_inset
+
+ и 
+\begin_inset Formula $D$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Solution
+Итак, подгруппа порядка 6 группы вращений тетраэдра, которую мы пытаемся
+ построить, должна содержать все вращения вокруг всех 4 высот тетраэдра,
+ то есть 9 элементов.
+ Полученное противоречие означает, что подгруппы порядка 6 в группе вращений
+ тетраэдра нет.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Разобрать и написать решение
+Если эту задачу поместить позже, то можно было бы использовать результат
+ о том, что подгруппа половинного порядка должна быть нормальной.
+ Так что, возможно, эту задачу нужно перенести ниже.
+ Собственно, в решение содержится намёк на это в виде 
+\begin_inset Formula $bab^{-1}$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
 
-Возможно, в группе симметрий тетраэдра 
-\begin_inset Note Note
-status open
 
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
-
-\end_inset
-
- нет подгруппы порядка 8?
 \end_layout
 
 \begin_layout Remark
@@ -28690,6 +28886,128 @@ noprefix "false"
 
 \begin_layout Section
 Внутренние автоморфизмы
+\end_layout
+
+\begin_layout Standard
+Начнём с примера.
+ Рассмотрим группу симметрий правильного треугольника.
+ Если мы обозначим вершины треугольника буквами 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+, то каждый элемент этой группы однозначно определяется подстановкой трёх
+ букв 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Например, отражение треугольника относительно высоты, опущенной из вершины
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ на сторону 
+\begin_inset Formula $BC$
+\end_inset
+
+ записывается в виде 
+\begin_inset Formula $\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)$
+\end_inset
+
+.
+ Чтобы перемножить два элемента группы симметрий треугольника, достаточно
+ выполнить одну за другой соответствующие подстановки.
+ Таким образом, мы получаем изоморфизм группы симметрий треугольника и группы
+ подстановки трёх букв 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Заметим теперь, что этот изоморфизм определён неоднозначно: он зависит
+ от того, какую именно вершину треугольника мы обозначим через 
+\begin_inset Formula $A$
+\end_inset
+
+, какую — через 
+\begin_inset Formula $B$
+\end_inset
+
+, а какую — через 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Переобозначение вершин само может рассматриваться как подстановка трёх
+ букв 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ При новом обозначении вершин каждый элемент группы симметрий треугольника
+ получит новое обозначение в виду подстановки букв 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+, например 
+\begin_inset Formula $g=\left(\begin{array}{ccc}
+A & B & C\\
+B & C & A
+\end{array}\right)$
+\end_inset
+
+.
+ Например, отражение треугольника относительно вертикальной высоты в новых
+ обозначениях записывается как 
+\begin_inset Formula $\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
