@@ -21362,6 +21362,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:group-of-order-md-can-have-no-subgroup-of-order-d"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $n$
 \end_inset
@@ -21383,6 +21389,15 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Эту задачне сам решить не смог
+\end_layout
+
+\end_inset
+
 В группе вращений тетраэдра 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -21441,11 +21456,11 @@ noprefix "false"
 \end_inset
 
  на 
-\begin_inset Formula $120\text{\textdegree}$
+\begin_inset Formula $120\text{°}$
 \end_inset
 
  или 
-\begin_inset Formula $240\text{\textdegree}$
+\begin_inset Formula $240\text{°}$
 \end_inset
 
  вокруг одной из высот (так как таких вращений 8, а остальных вращений —
@@ -30029,16 +30044,387 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Разобрать и написать решение
+Эту задачу сам решить не смог
 \end_layout
 
 \end_inset
 
+Все симметрии тетраэдра можно разделить на следующие классы: 1) тождественное
+ преобразование 
+\begin_inset Formula $e$
+\end_inset
 
+; 2) вращения вокргу высот, проходящих через вершины; 3) вращения вокруг
+ осей, соединяющих серидны несмежных рёбер; 4) отражения относительно плоскостей
+, проходящих через ребро и середину противоположного ребра; 5) циклические
+ перестановки вершин.
+\end_layout
+
+\begin_layout Solution
+Преобразования из классов 1-3 сохраняют ориентацию тетраэдра, а из классов
+ 4 и 5 — меняют.
+\end_layout
+
+\begin_layout Solution
+Преобразование класса 1 имеет порядок 1 (как и всякое тождественное преобразован
+ие).
+ Преобразованя класса 2 имеют порядок 3 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-rotations-subgroup-or-order-2-and-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, преобразования класса 3 — порядок 2 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-rotations-subgroup-or-order-2-and-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, преобразования класса 4 — порядок 2, преобразования класса 5 — порядок
+ 4.
+\end_layout
+
+\begin_layout Solution
+Так как всякий внутренний автоморфизм является изоморфизмом 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:inner-automorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а изоморфизм сохраняет порядок элементов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphic-elements-have-equal-orders"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому внутренний автоморфизм не может преобразовывать друг в друга элементы,
+ имеющие разный порядок.
+ Кроме того, 
+\begin_inset Formula $h$
+\end_inset
+
+ и 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ либо оба сохраняют ориентацию, либо меняют её на противоположную (для доказател
+ьства этого факта можно просто перебрать все 4 возможных варианта).
+\end_layout
+
+\begin_layout Solution
+Так как элементы разных классов имеют либо разный порядок, либо ведут себя
+ по разному по отношению к сохранению ориентации (классы 3 и 4), то элементы
+ разных классов не могут быть преобразованы друг в друга внутренними автоморфизм
+ами.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим симметрии класса 3.
+ Пусть 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+ — любые вращения на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей, проходящих через середины противоположных рёбер, и пусть 
+\begin_inset Formula $g$
+\end_inset
+
+ — вращение, переводящее первую ось во вторую 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Почему это будет вращение?
+\end_layout
+
+\end_inset
+
+.
+ Тогда вращение 
+\begin_inset Formula $gh_{1}g^{-1}$
+\end_inset
+
+ переводит вторую ось в себя, не переворачивая её, причём 
+\begin_inset Formula $gh_{1}g^{-1}\neq e$
+\end_inset
+
+ (иначе 
+\begin_inset Formula $h_{1}=g^{-1}eg=e$
+\end_inset
+
+).
+ Поэтому 
+\begin_inset Formula $gh_{1}g^{-1}$
+\end_inset
+
+ совпадает с 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+.
+ Следовательно, любые два элемента класса 3 можно перевести друг в друга
+ внутренним автоморфизмом в группе вращений (а тем более в группе симметрий)
+ тетраэдра.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим класс 4.
+ Пусть 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+ любые отражения тетраэдра оносительно плоскостей симметрии, и пусть 
+\begin_inset Formula $g$
+\end_inset
+
+ — произвольное вращение, переводящее первую плоскость во вторую.
+ Тогда, так же, как и выше 
+\begin_inset Formula $gh_{1}g^{-1}=h_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $g_{1}hg_{1}^{-1}=h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}hg_{2}^{-1}=h_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $h=g_{1}^{-1}h_{1}g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\left(g_{1}^{-1}h_{1}g_{1}\right)g_{2}^{-1}=h_{2}$
+\end_inset
+
+, откуда 
+\begin_inset Formula $\left(g_{2}g_{1}^{-1}\right)h_{1}\left(g_{2}g_{1}^{-1}\right)=h_{2}$
+\end_inset
+
+ и, следовательно, если 
+\begin_inset Formula $h$
+\end_inset
+
+ может переходить в 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+ могут переходить друг в друга.
+ Поэтому достаточно показать, что какой-нибудь один элемент данного класса
+ может переходить во все остальные элементы данного класса.
+\end_layout
+
+\begin_layout Solution
+Возьмём 
+\begin_inset Formula $a=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)$
+\end_inset
+
+ — элемет класса 5, и пусть 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+ — вращения: 
+\begin_inset Formula $g_{1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & D & B
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & B & C
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g_{3}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & D & A
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g_{4}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & D & C & A
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{5}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)$
+\end_inset
+
+.
+ Тогда элементы 
+\begin_inset Formula $g_{i}ag_{i}^{-1}$
+\end_inset
+
+ (
+\begin_inset Formula $i=1,...,5$
+\end_inset
+
+) вместе с элементом 
+\begin_inset Formula $a$
+\end_inset
+
+ дают весь класс 5 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Проверить непосредственно
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим 
+\begin_inset Formula $b=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & D & B
+\end{array}\right)$
+\end_inset
+
+ — вращение тетраэдра на 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+ вокруг высоты, опущенной из вершины 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Покажем, что 
+\begin_inset Formula $b$
+\end_inset
+
+ может переходить при внутренних автоморфизмах в 
+\begin_inset Formula $b^{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & B & C
+\end{array}\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $g_{1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & B & D & C
+\end{array}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula $g_{1}bg_{1}^{-1}=b^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как внутренний автоморфизм сводится к изменению обозначений вершин тетраэдра
+, то 
+\begin_inset Formula $b$
+\end_inset
+
+ может быть преобразован внутренним автоморфизмом в любое вращение вокруг
+ любой другой высоты.
+\end_layout
+
+\begin_layout Solution
+Таким образом, в группе симметрий тетраэдра любые вращение вокруг высот
+ могут переходить при внутренних автоморфизмах друг в друга.
+\end_layout
+
+\begin_layout Solution
+Если же рассмотреть тот же класс в группе вращений тетраэдра, то нетрудно
+ проверить, что при внутреннем автоморфизме вращение на 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+ вокруг высоты не может перейти во вращение на 
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+ вокруг той же высоты.
+\end_layout
+
+\begin_layout Solution
+Итак, в группе симметрий тетраэдра элементы классов 1-5 могут переходить
+ в друг в друга при внутренних автоморфизмах тогда и только тогда, когда
+ они принадлежат одному классу.
+\end_layout
+
+\begin_layout Solution
+В группе вращений тетраэдра имеются следующие классы: 1, 2а, 2б и 3.
+ Гда 2а — вращения вокруг высот на 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+, а 2б — вращения вокруг высот на 
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+.
+ Элементы разных классов не могут переходить друг в друга при внутренних
+ автоморфизмах, а элементы одинаковых — могут.
 \end_layout
 
 \begin_layout Problem
@@ -35099,7 +35485,7 @@ noprefix "false"
 status open
 
 \begin_layout Plain Layout
-Написать решение: требуется решить задачи 88 и 97
+Написать решение: требуется решить задачи 97?
 \end_layout
 
 \end_inset
@@ -35143,6 +35529,56 @@ noprefix "false"
 
  или 
 \begin_inset Formula $6$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-of-order-md-can-have-no-subgroup-of-order-d"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в группе вращений коммутант нет подгрупп порядка 
+\begin_inset Formula $6$
+\end_inset
+
+, таким образом, остаётся возможность существования нетривиальных подгрупп
+ порядка 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $3$
+\end_inset
+
+ и 
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-rotations-subgroup-or-order-2-and-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, были найдены примеры подгрупп порядка 
+\begin_inset Formula $2$
+\end_inset
+
+ и 
+\begin_inset Formula $3$
 \end_inset
 
 .
