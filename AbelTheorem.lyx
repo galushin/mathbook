@@ -18801,7 +18801,7 @@ A & B & C & D
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:tetradedron-rotations-forms-group-and-its-size"
+name "prob:tetrahedron-rotations-forms-group-and-its-size"
 
 \end_inset
 
@@ -21411,7 +21411,7 @@ noprefix "false"
  (порядка 12 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:tetradedron-rotations-forms-group-and-its-size"
+reference "prob:tetrahedron-rotations-forms-group-and-its-size"
 plural "false"
 caps "false"
 noprefix "false"
@@ -21427,7 +21427,7 @@ noprefix "false"
  Как было показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:tetradedron-rotations-forms-group-and-its-size"
+reference "prob:tetrahedron-rotations-forms-group-and-its-size"
 plural "false"
 caps "false"
 noprefix "false"
@@ -30038,6 +30038,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:tetrahedron-symmetries-classes-closed-to-inner-automorphisms"
+
+\end_inset
+
 Какие 2 элемента группы симметрий тетраэдра можно перевести друг в друга
  внутренним автоморфизом, а какие нельзя? Тот же вопрос для группы вращений
  тетраэдра.
@@ -30149,7 +30155,7 @@ noprefix "false"
 \end_inset
 
  — любые вращения на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг осей, проходящих через середины противоположных рёбер, и пусть 
@@ -30344,7 +30350,7 @@ A & C & D & B
 \end_inset
 
  — вращение тетраэдра на 
-\begin_inset Formula $120\text{\textdegree}$
+\begin_inset Formula $120\text{°}$
 \end_inset
 
  вокруг высоты, опущенной из вершины 
@@ -30396,11 +30402,11 @@ A & B & D & C
 \begin_layout Solution
 Если же рассмотреть тот же класс в группе вращений тетраэдра, то нетрудно
  проверить, что при внутреннем автоморфизме вращение на 
-\begin_inset Formula $120\text{\textdegree}$
+\begin_inset Formula $120\text{°}$
 \end_inset
 
  вокруг высоты не может перейти во вращение на 
-\begin_inset Formula $240\text{\textdegree}$
+\begin_inset Formula $240\text{°}$
 \end_inset
 
  вокруг той же высоты.
@@ -30415,11 +30421,11 @@ A & B & D & C
 \begin_layout Solution
 В группе вращений тетраэдра имеются следующие классы: 1, 2а, 2б и 3.
  Гда 2а — вращения вокруг высот на 
-\begin_inset Formula $120\text{\textdegree}$
+\begin_inset Formula $120\text{°}$
 \end_inset
 
 , а 2б — вращения вокруг высот на 
-\begin_inset Formula $240\text{\textdegree}$
+\begin_inset Formula $240\text{°}$
 \end_inset
 
 .
@@ -32541,7 +32547,24 @@ noprefix "false"
 \end_inset
 
 .
- Очевидно также, что порядок факторгруппы равен натуральному числу 
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "order-of-factor-group"
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Преобразовать в задачу
+\end_layout
+
+\end_inset
+
+Очевидно также, что порядок факторгруппы равен натуральному числу 
 \begin_inset Formula $n/m$
 \end_inset
 
@@ -35481,15 +35504,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение: требуется решить задачи 97?
-\end_layout
-
-\end_inset
-
 В группе вращений тетраэдра содержится 
 \begin_inset Formula $12$
 \end_inset
@@ -35497,7 +35511,7 @@ status open
  элементов 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:tetradedron-rotations-forms-group-and-its-size"
+reference "prob:tetrahedron-rotations-forms-group-and-its-size"
 plural "false"
 caps "false"
 noprefix "false"
@@ -35542,7 +35556,7 @@ noprefix "false"
 
 \end_inset
 
-, в группе вращений коммутант нет подгрупп порядка 
+, в группе вращений тетраэдра нет подгрупп порядка 
 \begin_inset Formula $6$
 \end_inset
 
@@ -35563,22 +35577,93 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-В задаче 
+Нормальная подгруппа должна включать только единичный элемент и элементы
+ одного или нескольких классов, найденных в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:tetrahedron-rotations-subgroup-or-order-2-and-3"
+reference "prob:tetrahedron-symmetries-classes-closed-to-inner-automorphisms"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-, были найдены примеры подгрупп порядка 
-\begin_inset Formula $2$
+ (принадлежащих группе вращений).
+\end_layout
+
+\begin_layout Solution
+Если подгруппа содержит какое-либо вращение, вокруг некоторой высоты, то
+ она содержит все вращения вокруг всех высот, проходящих через вершину.
+ Так как вращения на 
+\begin_inset Formula $120\text{\textdegree}$
 \end_inset
 
  и 
-\begin_inset Formula $3$
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+ являются квадратами друг друга.
+ А враещния на определённый угол вокруг одной высоты могут быть преобразованы
+ внутренним автоморфизмом во вращение на тот же угол вокруг другой высоты
+ (так как переобозначение вершин тетраэдра является внутренним автоморфизмом).
+ Таким образом, нормальная подгруппа, содержащая вращения вокруг высоты
+ должна содержать 9 элементов, что невозможно в силу теореме Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь подгруппу, включающую поворот на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг оси, проходящей через середину двух несмежных рёбер.
+ Внутренним автоморфизмом этот поворот можно превратить в любой из других
+ двух аналогичных поворотов.
+ Таким образом, мы получаем нормальную подгруппу, состоящую из элементов
+ классов 1 и 3, найденных в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-symmetries-classes-closed-to-inner-automorphisms"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Данная подгруппа содержит 4 элемента, поэтому факторгруппа группы вращени
+ тетраэдра по ней будет иметь порядок 3 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "order-of-factor-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Как и всяка группа порядка 3 эта группа будет изоморфной группе 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
 .
