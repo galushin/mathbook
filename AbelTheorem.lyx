@@ -35499,6 +35499,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:normal-subgroup-of-tetrahedron-rotations"
+
+\end_inset
+
 Найти все нормальные подгруппы и фактор-группы по ним в группе вращений
  тетраэдра.
 \end_layout
@@ -35607,7 +35613,7 @@ noprefix "false"
  внутренним автоморфизмом во вращение на тот же угол вокруг другой высоты
  (так как переобозначение вершин тетраэдра является внутренним автоморфизмом).
  Таким образом, нормальная подгруппа, содержащая вращения вокруг высоты
- должна содержать 9 элементов, что невозможно в силу теореме Лагранжа 
+ должна содержать 9 элементов, что невозможно в силу теоремы Лагранжа 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "thm:Lagrange-theorem"
@@ -35640,6 +35646,7 @@ noprefix "false"
 \end_inset
 
 .
+ Это единственная нетривиальная нормальная подгруппа в группе вращений тетраэдра.
  Данная подгруппа содержит 4 элемента, поэтому факторгруппа группы вращений
  тетраэдра по ней будет иметь порядок 3 
 \begin_inset CommandInset ref
@@ -36714,16 +36721,215 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Обозначим группу вращений тетраэдра как 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+.
+ Коммутант является нормальной подгруппой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:normal-subgroup-of-tetrahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, группа вращений тетраэдра содержит следующие нормальные подгруппы: 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+, вся 
+\begin_inset Formula $G$
+\end_inset
+
+ и подгруппа вращений вокруг осей, проходящих через середины несмежных рёбер.
+ Обозначим последнюю подгруппу как 
+\begin_inset Formula $N$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+Коммутант группы совпадает с 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ тогда и только тогда, когда группа коммутативна 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Рассмотрим два вращения вокруг двух различных высот 
+\begin_inset Formula $a=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & A & D
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $b=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & D & B
+\end{array}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+ab=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & D & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right),
+\]
 
 \end_inset
 
 
+\begin_inset Formula 
+\[
+ba=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & D & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right),
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $ab\neq ba$
+\end_inset
+
+, а значит 
+\begin_inset Formula $K\left(G\right)\neq\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Покажем теперь, что коммутант 
+\begin_inset Formula $G$
+\end_inset
+
+ не совпадает со всей группой 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $G/N\cong Z_{3}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:normal-subgroup-of-tetrahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $G/N$
+\end_inset
+
+ коммутативна и её коммутант совпадает с единичной подгруппой (группы 
+\begin_inset Formula $G/N$
+\end_inset
+
+) 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Рассмотрим произвольный коммутатор элементов 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+: 
+\begin_inset Formula $aba^{-1}b^{-1}$
+\end_inset
+
+, рассматривая 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ как представителей классов 
+\begin_inset Formula $G/N$
+\end_inset
+
+, получим, что 
+\begin_inset Formula $aba^{-1}b^{-1}\in N$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — подгруппа, то и любое конечное произведение коммутаторов принадлежит
+ 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $K\left(G\right)\supseteq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, коммутантом группы вращений тетраэдра является подгруппа,
+ включающая тождественное преобразование и повороты на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей, соединяющих середины несмежных рёбер.
 \end_layout
 
 \begin_layout Problem
@@ -37022,6 +37228,18 @@ status open
 \end_inset
 
 .
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Этот результат можно было бы использовать для решении задачи 120, так что,
+ возможно, эти теоретические задачи стоило перенести выше практических
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
