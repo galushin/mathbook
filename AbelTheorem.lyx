@@ -36704,13 +36704,489 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Группа симметрий правильного 
+\begin_inset Formula $n$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+-угольника содержит повороты на углы 
+\begin_inset Formula $\frac{2\pi}{n}k$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1,\dots n-1$
+\end_inset
+
+ и отражения.
+ Если 
+\begin_inset Formula $n$
+\end_inset
+
+ — нечётное, то оси симметрии проходят через вершины и середины противоположных
+ рёбер.
+ Если же 
+\begin_inset Formula $n$
+\end_inset
+
+ — чётное, то оси симметрии проходят через противоположные вершины и середины
+ противоположных рёбер.
+ Таким образом, группа симметрий включает 
+\begin_inset Formula $n$
+\end_inset
+
+ вращений (в том числе — тождественное преобразование) и 
+\begin_inset Formula $n$
+\end_inset
+
+ отражений.
+ Повороты сохраняют ориентацию (следуют ли вершины по часовой стрелке или
+ против часовой), а отражения меняют ориентацию на противоположную.
 \end_layout
 
+\begin_layout Solution
+Рассмотрим произвольный коммутатор 
+\begin_inset Formula $aba^{-1}b^{-1}$
+\end_inset
+
+.
+ Преобразования 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ либо оба сохраняют, либо оба меняют ориентацию.
+ Тоже, очевидно, справедливо для 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $b^{-1}$
+\end_inset
+
+.
+ Таким образом, произведение 
+\begin_inset Formula $aba^{-1}b^{-1}$
+\end_inset
+
+ содержит либо 0, либо 2, либо 4 множителя, изменяющего ориентацию, а значит
+ любой коммутатор не меняет ориентацию, то есть любой коммутатор принадлежат
+ подгруппе вращений.
+ Так как повороты образуют подгруппу, то в неё входят и любые конечные произведе
+ния коммутаторов, то есть коммутант является подгруппой группы вращений
+ (либо совпадает с ней, так как порядок подгруппы вращений равен половине
+ порядка всей группы симметрий, а значит подгруппа вращений является нормальной
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgoup-half-of-group-is-normal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, как и требуется для коммутанта 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Выберем некоторую вершину правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника и обозначим её 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Положение 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника можно описать двумя величинами: углом поворота 
+\begin_inset Formula $A$
+\end_inset
+
+ относительно начального положения и ориентацией: следует ли вершины в исходном
+ порядке или в обратном.
+ Соответственно, будем описывать положение парой 
+\begin_inset Formula $\left(s,p\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $s$
+\end_inset
+
+ — угол поворота, 
+\begin_inset Formula $p$
+\end_inset
+
+ — ориентация (0 — исходная, 1 — обратная).
+\end_layout
+
+\begin_layout Solution
+Рассмотрим коммутант произвольного поворота и произвольного отражения из
+ группы симметрий правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника.
+ Пусть 
+\begin_inset Formula $f$
+\end_inset
+
+ — поворот на 
+\begin_inset Formula $\alpha=\frac{2\pi}{n}k$
+\end_inset
+
+ (
+\begin_inset Formula $k=0,\dots n-1$
+\end_inset
+
+), а 
+\begin_inset Formula $g$
+\end_inset
+
+ — отражение относительно оси, повёрнутой относительно оси симметрии, проходящей
+ через вершину 
+\begin_inset Formula $A$
+\end_inset
+
+, на угол 
+\begin_inset Formula $\beta=\frac{\pi}{n}j$
+\end_inset
+
+ (
+\begin_inset Formula $j=0,\dots n-1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $\left(s;p\right)$
+\end_inset
+
+ — начальное положение 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника.
+ Определим 
+\begin_inset Formula $\left(fgf^{-1}g^{-1}\right)\left(s,p\right)$
+\end_inset
+
+, заметим, что 
+\begin_inset Formula $g=g^{-1}$
+\end_inset
+
+, а 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ — поворот на 
+\begin_inset Formula $-\alpha$
+\end_inset
+
+.
+ Тогда: 
+\begin_inset Formula 
+\[
+g^{-1}\left(s,p\right)=\left(2\beta-s,1-p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(f^{-1}g^{-1}\right)\left(s,p\right)=f^{-1}\left(2\beta-s,1-p\right)=\left(2\beta-s-\alpha,1-p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(gf^{-1}g^{-1}\right)\left(s,p\right)=g\left(2\beta-s-\alpha,1-p\right)=\left(2\beta-\left(2\beta-s-\alpha\right),1-\left(1-p\right)\right)=\left(s+\alpha,p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(fgf^{-1}g^{-1}\right)\left(s;p\right)=f\left(s+\alpha,p\right)=\left(s+2\alpha,p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, коммутатор поворота на 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и отражения есть поворот на 
+\begin_inset Formula $2\alpha=\frac{2\pi}{n}\left(2k\right)$
+\end_inset
+
+, 
+\begin_inset Formula $k=0,\dots n-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ — нечётное, тогда можно выбрать 
+\begin_inset Formula $k$
+\end_inset
+
+ таким образом, чтобы 
+\begin_inset Formula $2\alpha=\frac{2\pi}{n}$
+\end_inset
+
+ (с учётом того, что повороты на углы, отличающиеся на 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, равны).
+ Действительно, при 
+\begin_inset Formula $k=\frac{n+1}{2}$
+\end_inset
+
+ (
+\begin_inset Formula $n$
+\end_inset
+
+ — нечётное, поэтому 
+\begin_inset Formula $k$
+\end_inset
+
+ — целое):
+\begin_inset Formula 
+\[
+\frac{2\pi}{n}\left(2k\right)=\frac{2\pi}{n}\left(n+1\right)=2\pi+\frac{2\pi}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Это означает, что существует коммутатор, равный повороту на угол 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+, а значит этот поворот принадлежит коммутатну.
+ Так как коммутант — подгруппа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то коммутанту принадлежат и все степени этого поворота, то есть вообще
+ все повороты, то есть коммутант группы симметрий правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника (при нечётном 
+\begin_inset Formula $n$
+\end_inset
+
+) совпадает с подгруппой вращений этого 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника.
+ Подгруппа вращений является группой степеней поворота на 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+ и содержит 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов, то есть является циклической группой порядка 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а значит — изоморфна 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cyclic-group-of-order-n-is-isomorphic-to-addition-modulo-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $n$
+\end_inset
+
+ — чётное, то никаким выбором 
+\begin_inset Formula $k$
+\end_inset
+
+ нельзя получить поворот 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+, но можно получить любой поворот на угол, кратный 
+\begin_inset Formula $\frac{4\pi}{n}$
+\end_inset
+
+, эти углы образуют циклическую подгруппу порядка 
+\begin_inset Formula $\frac{n}{2}$
+\end_inset
+
+ (изоморфную 
+\begin_inset Formula $Z_{\frac{n}{2}})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Два поворота всегда коммутируют, поэтому коммутатор двух поворотов всегда
+ равен тождественному преобразованию.
+ Остаётся рассмотреть коммутатор двух отражений.
+ Пусть 
+\begin_inset Formula $f$
+\end_inset
+
+ — отражение относительно оси, повёрнутой относительно оси симметрии, проходящей
+ через вершину 
+\begin_inset Formula $A$
+\end_inset
+
+, на угол 
+\begin_inset Formula $\alpha=\frac{\pi}{n}k$
+\end_inset
+
+ (
+\begin_inset Formula $k=0,\dots n-1$
+\end_inset
+
+), а 
+\begin_inset Formula $g$
+\end_inset
+
+ — отражение относительно оси, повёрнутой относительно оси симметрии, проходящей
+ через вершину 
+\begin_inset Formula $A$
+\end_inset
+
+, на угол 
+\begin_inset Formula $\beta=\frac{\pi}{n}j$
+\end_inset
+
+ (
+\begin_inset Formula $j=0,\dots n-1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+g^{-1}\left(s,p\right)=\left(2\beta-s,1-p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(f^{-1}g^{-1}\right)\left(s,p\right)=f^{-1}\left(2\beta-s,1-p\right)=\left(2\alpha-2\beta+s,p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(gf^{-1}g^{-1}\right)\left(s,p\right)=g\left(2\alpha-2\beta+s,p\right)=\left(2\beta-2\alpha+2\beta-s,1-p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(fgf^{-1}g^{-1}\right)\left(s,p\right)=f\left(4\beta-2\alpha-s,1-p\right)=\left(2\alpha-4\beta+2\alpha+s,p\right)=\left(4\alpha-4\beta+s,p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, коммутатор двух отражений сводится к повороту на угол, кратный
+ 
+\begin_inset Formula $4\cdot\frac{2\pi}{n}$
+\end_inset
+
+, эти повороты являются подгруппой группы вращений на углы, кратные 
+\begin_inset Formula $2\cdot\frac{2\pi}{n}$
+\end_inset
+
+.
+ Итак, коммутант группы симметрий правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника при чётном 
+\begin_inset Formula $n$
+\end_inset
+
+ изоморфен группе 
+\begin_inset Formula $Z_{\frac{n}{2}}.$
 \end_inset
 
 
@@ -36926,7 +37402,7 @@ noprefix "false"
 \begin_layout Solution
 Таким образом, коммутантом группы вращений тетраэдра является подгруппа,
  включающая тождественное преобразование и повороты на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг осей, соединяющих середины несмежных рёбер.
