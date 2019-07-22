@@ -18708,6 +18708,12 @@ B & C & D & A
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:group-of-tetrahedron-symmetries-order"
+
+\end_inset
+
 Сколько элементов в группе симметрий тетраэдра?
 \end_layout
 
@@ -18801,7 +18807,7 @@ A & B & C & D
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:tetradedron-rotations-forms-group-and-its-size"
+name "prob:tetrahedron-rotations-forms-group-and-its-size"
 
 \end_inset
 
@@ -21362,6 +21368,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:group-of-order-md-can-have-no-subgroup-of-order-d"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $n$
 \end_inset
@@ -21383,6 +21395,15 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Эту задачу сам решить не смог
+\end_layout
+
+\end_inset
+
 В группе вращений тетраэдра 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -21393,10 +21414,10 @@ noprefix "false"
 
 \end_inset
 
- (порядка 12
+ (порядка 12 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:tetradedron-rotations-forms-group-and-its-size"
+reference "prob:tetrahedron-rotations-forms-group-and-its-size"
 plural "false"
 caps "false"
 noprefix "false"
@@ -21404,26 +21425,222 @@ noprefix "false"
 \end_inset
 
 ) нет подгруппы порядка 6.
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Solution
+Действительно, пусть в группе вращений тетраэдра существует подгруппа порядка
+ 6.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-rotations-forms-group-and-its-size"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, она включает: тождественное преобразование, повороты на 
+\begin_inset Formula $120\text{°}$
+\end_inset
+
+ и 
+\begin_inset Formula $240\text{°}$
+\end_inset
+
+ вокруг высот, проходящих через каждую из четырёх вершин, и повороты на
+ 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+ вокруг осей, проходящих через середины несмежных рёбер (таких пар 3).
+\end_layout
+
+\begin_layout Solution
+Подгруппа порядка 6 должна содержать хотя бы одно вращение 
+\begin_inset Formula $a$
+\end_inset
+
+ на 
+\begin_inset Formula $120\text{°}$
+\end_inset
+
+ или 
+\begin_inset Formula $240\text{°}$
+\end_inset
+
+ вокруг одной из высот (так как таких вращений 8, а остальных вращений —
+ всего 4).
+ Пусть, для определённости, 
+\begin_inset Formula $a$
+\end_inset
+
+ — вращение вокруг высоты, проходящей через вершину 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Если подгруппа содержит 
+\begin_inset Formula $a$
+\end_inset
+
+, то она должна содержать и 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+, то есть подгруппа порядка 6 должна содержать оба вращения вокруг данной
+ высоты.
+\end_layout
+
+\begin_layout Solution
+Так как имеется всего три вращения, оставляющих на месте вершину 
+\begin_inset Formula $A$
+\end_inset
+
+, то подгруппа порядка 6 должна содержать некоторое вращение 
+\begin_inset Formula $b$
+\end_inset
+
+, переводящее вершину 
+\begin_inset Formula $A$
+\end_inset
+
+ в другую вершину, например 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Подгруппа должна содержать наряду с 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ элемент 
+\begin_inset Formula $bab^{-1}$
+\end_inset
+
+, причём 
+\begin_inset Formula $b^{-1}$
+\end_inset
+
+ переводит 
+\begin_inset Formula $B$
+\end_inset
+
+ в 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ оставляет 
+\begin_inset Formula $A$
+\end_inset
+
+ на месте, а 
+\begin_inset Formula $b$
+\end_inset
+
+ переводит 
+\begin_inset Formula $A$
+\end_inset
+
+ в 
+\begin_inset Formula $B$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $bab^{-1}$
+\end_inset
+
+ оставляет 
+\begin_inset Formula $B$
+\end_inset
+
+ на месте.
+ Кроме того, 
+\begin_inset Formula $bab^{-1}\neq e$
+\end_inset
+
+, так как в противном случае 
+\begin_inset Formula $a=b^{-1}b=e$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $bab^{-1}$
+\end_inset
+
+ — это одно из вращений вокруг высоты, проходящей через вершину 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Наряду с 
+\begin_inset Formula $bab^{-1}$
+\end_inset
+
+искомая подгруппа должна содержать и его квадрат, то есть искомая подгруппа
+ будет содержать оба вращения вокруг высоты, проходящей через 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Эти вращения переводят 
+\begin_inset Formula $A$
+\end_inset
+
+ в 
+\begin_inset Formula $C$
+\end_inset
+
+ и 
+\begin_inset Formula $D$
+\end_inset
+
+, откуда, как и выше, можно получить, что подгруппа должна включать оба
+ вращения вокруг высот, проходящих через вершины 
+\begin_inset Formula $C$
+\end_inset
+
+ и 
+\begin_inset Formula $D$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Solution
+Итак, подгруппа порядка 6 группы вращений тетраэдра, которую мы пытаемся
+ построить, должна содержать все вращения вокруг всех 4 высот тетраэдра,
+ то есть 9 элементов.
+ Полученное противоречие означает, что подгруппы порядка 6 в группе вращений
+ тетраэдра нет.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Разобрать и написать решение
+Если эту задачу поместить позже, то можно было бы использовать результат
+ о том, что подгруппа половинного порядка должна быть нормальной.
+ Так что, возможно, эту задачу нужно перенести ниже.
+ Собственно, в решение содержится намёк на это в виде 
+\begin_inset Formula $bab^{-1}$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
 
-Возможно, в группе симметрий тетраэдра 
-\begin_inset Note Note
-status open
 
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
-
-\end_inset
-
- нет подгруппы порядка 8?
 \end_layout
 
 \begin_layout Remark
@@ -27661,8 +27878,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-Написать, что эта группа может быть получена как группа квартернионов с
- обычной (для квартернионов) операцией умножения:
+Написать, что эта группа может быть получена как группа кватернионов с обычной
+ (для кватернионов) операцией умножения:
 \end_layout
 
 \begin_layout Solution
@@ -28340,7 +28557,7 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $f$
+\begin_inset Formula $-k$
 \end_inset
 
 
@@ -28450,7 +28667,7 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $g$
+\begin_inset Formula $-j$
 \end_inset
 
 
@@ -28560,7 +28777,7 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $h$
+\begin_inset Formula $k$
 \end_inset
 
 
@@ -28685,11 +28902,133 @@ noprefix "false"
 \begin_inset Formula $Z_{2}\times Z_{2}\times Z_{2}$
 \end_inset
 
- и группа квартернионов.
+ и группа кватернионов.
 \end_layout
 
 \begin_layout Section
 Внутренние автоморфизмы
+\end_layout
+
+\begin_layout Standard
+Начнём с примера.
+ Рассмотрим группу симметрий правильного треугольника.
+ Если мы обозначим вершины треугольника буквами 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+, то каждый элемент этой группы однозначно определяется подстановкой трёх
+ букв 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Например, отражение треугольника относительно высоты, опущенной из вершины
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ на сторону 
+\begin_inset Formula $BC$
+\end_inset
+
+ записывается в виде 
+\begin_inset Formula $\left(\begin{array}{ccc}
+A & B & C\\
+A & C & B
+\end{array}\right)$
+\end_inset
+
+.
+ Чтобы перемножить два элемента группы симметрий треугольника, достаточно
+ выполнить одну за другой соответствующие подстановки.
+ Таким образом, мы получаем изоморфизм группы симметрий треугольника и группы
+ подстановки трёх букв 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Заметим теперь, что этот изоморфизм определён неоднозначно: он зависит
+ от того, какую именно вершину треугольника мы обозначим через 
+\begin_inset Formula $A$
+\end_inset
+
+, какую — через 
+\begin_inset Formula $B$
+\end_inset
+
+, а какую — через 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Переобозначение вершин само может рассматриваться как подстановка трёх
+ букв 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ При новом обозначении вершин каждый элемент группы симметрий треугольника
+ получит новое обозначение в виду подстановки букв 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+, например 
+\begin_inset Formula $g=\left(\begin{array}{ccc}
+A & B & C\\
+B & C & A
+\end{array}\right)$
+\end_inset
+
+.
+ Например, отражение треугольника относительно вертикальной высоты в новых
+ обозначениях записывается как 
+\begin_inset Formula $\left(\begin{array}{ccc}
+A & B & C\\
+C & B & A
+\end{array}\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -29705,22 +30044,399 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:tetrahedron-symmetries-classes-closed-to-inner-automorphisms"
+
+\end_inset
+
 Какие 2 элемента группы симметрий тетраэдра можно перевести друг в друга
  внутренним автоморфизом, а какие нельзя? Тот же вопрос для группы вращений
  тетраэдра.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Разобрать и написать решение
+Эту задачу сам решить не смог
 \end_layout
 
 \end_inset
 
+Все симметрии тетраэдра можно разделить на следующие классы: 1) тождественное
+ преобразование 
+\begin_inset Formula $e$
+\end_inset
 
+; 2) вращения вокруг высот, проходящих через вершины; 3) вращения вокруг
+ осей, соединяющих середины несмежных рёбер; 4) отражения относительно плоскосте
+й, проходящих через ребро и середину противоположного ребра; 5) циклические
+ перестановки вершин.
+\end_layout
+
+\begin_layout Solution
+Преобразования из классов 1-3 сохраняют ориентацию тетраэдра, а из классов
+ 4 и 5 — меняют.
+\end_layout
+
+\begin_layout Solution
+Преобразование класса 1 имеет порядок 1 (как и всякое тождественное преобразован
+ие).
+ Преобразования класса 2 имеют порядок 3 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-rotations-subgroup-or-order-2-and-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, преобразования класса 3 — порядок 2 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-rotations-subgroup-or-order-2-and-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, преобразования класса 4 — порядок 2, преобразования класса 5 — порядок
+ 4.
+\end_layout
+
+\begin_layout Solution
+Так как всякий внутренний автоморфизм является изоморфизмом 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:inner-automorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а изоморфизм сохраняет порядок элементов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphic-elements-have-equal-orders"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому внутренний автоморфизм не может преобразовывать друг в друга элементы,
+ имеющие разный порядок.
+ Кроме того, 
+\begin_inset Formula $h$
+\end_inset
+
+ и 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ либо оба сохраняют ориентацию, либо меняют её на противоположную (для доказател
+ьства этого факта можно просто перебрать все 4 возможных варианта).
+\end_layout
+
+\begin_layout Solution
+Так как элементы разных классов имеют либо разный порядок, либо ведут себя
+ по разному по отношению к сохранению ориентации (классы 3 и 4), то элементы
+ разных классов не могут быть преобразованы друг в друга внутренними автоморфизм
+ами.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим симметрии класса 3.
+ Пусть 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+ — любые вращения на 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+ вокруг осей, проходящих через середины противоположных рёбер, и пусть 
+\begin_inset Formula $g$
+\end_inset
+
+ — вращение, переводящее первую ось во вторую 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Почему это будет вращение?
+\end_layout
+
+\end_inset
+
+.
+ Тогда вращение 
+\begin_inset Formula $gh_{1}g^{-1}$
+\end_inset
+
+ переводит вторую ось в себя, не переворачивая её, причём 
+\begin_inset Formula $gh_{1}g^{-1}\neq e$
+\end_inset
+
+ (иначе 
+\begin_inset Formula $h_{1}=g^{-1}eg=e$
+\end_inset
+
+).
+ Поэтому 
+\begin_inset Formula $gh_{1}g^{-1}$
+\end_inset
+
+ совпадает с 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+.
+ Следовательно, любые два элемента класса 3 можно перевести друг в друга
+ внутренним автоморфизмом в группе вращений (а тем более в группе симметрий)
+ тетраэдра.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим класс 4.
+ Пусть 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+ любые отражения тетраэдра относительно плоскостей симметрии, и пусть 
+\begin_inset Formula $g$
+\end_inset
+
+ — произвольное вращение, переводящее первую плоскость во вторую.
+ Тогда, так же, как и выше 
+\begin_inset Formula $gh_{1}g^{-1}=h_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $g_{1}hg_{1}^{-1}=h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}hg_{2}^{-1}=h_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $h=g_{1}^{-1}h_{1}g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\left(g_{1}^{-1}h_{1}g_{1}\right)g_{2}^{-1}=h_{2}$
+\end_inset
+
+, откуда 
+\begin_inset Formula $\left(g_{2}g_{1}^{-1}\right)h_{1}\left(g_{2}g_{1}^{-1}\right)=h_{2}$
+\end_inset
+
+ и, следовательно, если 
+\begin_inset Formula $h$
+\end_inset
+
+ может переходить в 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+ могут переходить друг в друга.
+ Поэтому достаточно показать, что какой-нибудь один элемент данного класса
+ может переходить во все остальные элементы данного класса.
+\end_layout
+
+\begin_layout Solution
+Возьмём 
+\begin_inset Formula $a=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & D & A
+\end{array}\right)$
+\end_inset
+
+ — элемент класса 5, и пусть 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+ — вращения: 
+\begin_inset Formula $g_{1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & D & B
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & B & C
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g_{3}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & D & A
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g_{4}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & D & C & A
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{5}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right)$
+\end_inset
+
+.
+ Тогда элементы 
+\begin_inset Formula $g_{i}ag_{i}^{-1}$
+\end_inset
+
+ (
+\begin_inset Formula $i=1,...,5$
+\end_inset
+
+) вместе с элементом 
+\begin_inset Formula $a$
+\end_inset
+
+ дают весь класс 5 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Проверить непосредственно
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим 
+\begin_inset Formula $b=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & D & B
+\end{array}\right)$
+\end_inset
+
+ — вращение тетраэдра на 
+\begin_inset Formula $120\text{°}$
+\end_inset
+
+ вокруг высоты, опущенной из вершины 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Покажем, что 
+\begin_inset Formula $b$
+\end_inset
+
+ может переходить при внутренних автоморфизмах в 
+\begin_inset Formula $b^{2}=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & D & B & C
+\end{array}\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $g_{1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & B & D & C
+\end{array}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula $g_{1}bg_{1}^{-1}=b^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как внутренний автоморфизм сводится к изменению обозначений вершин тетраэдра
+, то 
+\begin_inset Formula $b$
+\end_inset
+
+ может быть преобразован внутренним автоморфизмом в любое вращение вокруг
+ любой другой высоты.
+\end_layout
+
+\begin_layout Solution
+Таким образом, в группе симметрий тетраэдра любые вращение вокруг высот
+ могут переходить при внутренних автоморфизмах друг в друга.
+\end_layout
+
+\begin_layout Solution
+Если же рассмотреть тот же класс в группе вращений тетраэдра, то нетрудно
+ проверить, что при внутреннем автоморфизме вращение на 
+\begin_inset Formula $120\text{°}$
+\end_inset
+
+ вокруг высоты не может перейти во вращение на 
+\begin_inset Formula $240\text{°}$
+\end_inset
+
+ вокруг той же высоты.
+\end_layout
+
+\begin_layout Solution
+Итак, в группе симметрий тетраэдра элементы классов 1-5 могут переходить
+ в друг в друга при внутренних автоморфизмах тогда и только тогда, когда
+ они принадлежат одному классу.
+\end_layout
+
+\begin_layout Solution
+В группе вращений тетраэдра имеются следующие классы: 1, 2а, 2б и 3.
+ Где 2а — вращения вокруг высот на 
+\begin_inset Formula $120\text{°}$
+\end_inset
+
+, а 2б — вращения вокруг высот на 
+\begin_inset Formula $240\text{°}$
+\end_inset
+
+.
+ Элементы разных классов не могут переходить друг в друга при внутренних
+ автоморфизмах, а элементы одинаковых — могут.
 \end_layout
 
 \begin_layout Problem
@@ -31095,6 +31811,12 @@ gag^{-1}=\left(g_{1}a_{1},g_{2}a_{2}\right)\left(g_{1}^{-1},g_{2}^{-1}\right)=\l
 \end_layout
 
 \begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "exa:normal-subgroup-of-normal-subgroup-may-be-not-normal-subgroup-of-whole-group"
+
+\end_inset
+
 Рассмотрим подгруппу группы симметрий квадрата, состоящую из отражений относител
 ьно диагоналей и центра 
 \begin_inset CommandInset ref
@@ -31831,7 +32553,24 @@ noprefix "false"
 \end_inset
 
 .
- Очевидно также, что порядок факторгруппы равен натуральному числу 
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "order-of-factor-group"
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Преобразовать в задачу
+\end_layout
+
+\end_inset
+
+Очевидно также, что порядок факторгруппы равен натуральному числу 
 \begin_inset Formula $n/m$
 \end_inset
 
@@ -32276,6 +33015,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:all-normal-subgroups-of-some-groups"
+
+\end_inset
+
 Найти все нормальные подгруппы и факторгруппы
 \begin_inset Foot
 status open
@@ -32379,7 +33124,7 @@ noprefix "false"
 \begin_inset Formula $\left\{ e,a,b\right\} $
 \end_inset
 
- является нормально, так как содержит половину элементов исходной группы
+ является нормальной, так как содержит половину элементов исходной группы
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -34760,20 +35505,17 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:normal-subgroup-of-tetrahedron-rotations"
+
+\end_inset
+
 Найти все нормальные подгруппы и фактор-группы по ним в группе вращений
  тетраэдра.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение: требуется решить задачи 88 и 97
-\end_layout
-
-\end_inset
-
 В группе вращений тетраэдра содержится 
 \begin_inset Formula $12$
 \end_inset
@@ -34781,7 +35523,7 @@ status open
  элементов 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:tetradedron-rotations-forms-group-and-its-size"
+reference "prob:tetrahedron-rotations-forms-group-and-its-size"
 plural "false"
 caps "false"
 noprefix "false"
@@ -34813,6 +35555,128 @@ noprefix "false"
 
  или 
 \begin_inset Formula $6$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-of-order-md-can-have-no-subgroup-of-order-d"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в группе вращений тетраэдра нет подгрупп порядка 
+\begin_inset Formula $6$
+\end_inset
+
+, таким образом, остаётся возможность существования нетривиальных подгрупп
+ порядка 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $3$
+\end_inset
+
+ и 
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Нормальная подгруппа должна включать только единичный элемент и элементы
+ одного или нескольких классов, найденных в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-symmetries-classes-closed-to-inner-automorphisms"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (принадлежащих группе вращений).
+\end_layout
+
+\begin_layout Solution
+Если подгруппа содержит какое-либо вращение, вокруг некоторой высоты, то
+ она содержит все вращения вокруг всех высот, проходящих через вершину.
+ Так как вращения на 
+\begin_inset Formula $120\text{°}$
+\end_inset
+
+ и 
+\begin_inset Formula $240\text{°}$
+\end_inset
+
+ являются квадратами друг друга.
+ А вращения на определённый угол вокруг одной высоты могут быть преобразованы
+ внутренним автоморфизмом во вращение на тот же угол вокруг другой высоты
+ (так как переобозначение вершин тетраэдра является внутренним автоморфизмом).
+ Таким образом, нормальная подгруппа, содержащая вращения вокруг высоты
+ должна содержать 9 элементов, что невозможно в силу теоремы Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь подгруппу, включающую поворот на 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+ вокруг оси, проходящей через середину двух несмежных рёбер.
+ Внутренним автоморфизмом этот поворот можно превратить в любой из других
+ двух аналогичных поворотов.
+ Таким образом, мы получаем нормальную подгруппу, состоящую из элементов
+ классов 1 и 3, найденных в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-symmetries-classes-closed-to-inner-automorphisms"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Это единственная нетривиальная нормальная подгруппа в группе вращений тетраэдра.
+ Данная подгруппа содержит 4 элемента, поэтому факторгруппа группы вращений
+ тетраэдра по ней будет иметь порядок 3 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "order-of-factor-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Как и всякая группа порядка 3 эта группа будет изоморфной группе 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
 .
@@ -35116,6 +35980,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-is-subgroup"
+
+\end_inset
+
 Доказать, что коммутант является подгруппой.
 \end_layout
 
@@ -35232,6 +36102,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-is-normal-subgroup"
+
+\end_inset
+
 Доказать, что коммутант 
 \begin_inset Formula $K\left(G\right)$
 \end_inset
@@ -35244,7 +36120,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-Пусть 
+Как было показано в задаче, коммутант является подгруппой.
+ Пусть 
 \begin_inset Formula $g\in G$
 \end_inset
 
@@ -35338,6 +36215,2556 @@ ghg^{-1}=g\left(\left[a_{1};b_{1}\right]\left[a_{2};b_{2}\right]\cdot\dots\cdot\
 
  и 
 \begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-is-unity-group-iff-group-is-commutative"
+
+\end_inset
+
+Доказать, что коммутант совпадает с единичной подгруппой 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ тогда и только тогда, когда группа коммутативна.
+\end_layout
+
+\begin_layout Solution
+1) Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ — коммутативна.
+ Тогда для любых элементов 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\left[a;b\right]=aba^{-1}b^{-1}=aa^{-1}bb^{-1}=ee=e$
+\end_inset
+
+.
+ Таким образом, любой коммутатор в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ равен единичному элементу.
+ Так как произведение единичного элемента на самого себя снова есть единичный
+ элемент, то любое произведение конечного числа коммутаторов также равно
+ 
+\begin_inset Formula $e$
+\end_inset
+
+.
+ Таким образом, коммутатор включает только один элемент — 
+\begin_inset Formula $e$
+\end_inset
+
+, то есть 
+\begin_inset Formula $K\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2) Пусть теперь 
+\begin_inset Formula $K\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+ Тогда, по определению коммутанта, для любых 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\left[a;b\right]=aba^{-1}b^{-1}=e$
+\end_inset
+
+.
+ Умножим последнее равенство справа на 
+\begin_inset Formula $b$
+\end_inset
+
+: 
+\begin_inset Formula $aba^{-1}=b$
+\end_inset
+
+.
+ Умножим теперь это равенство справа на 
+\begin_inset Formula $a$
+\end_inset
+
+: 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+, то есть любые элементы 
+\begin_inset Formula $G$
+\end_inset
+
+ являются коммутирующими.
+\end_layout
+
+\begin_layout Problem
+Найти коммутант в группах: а) симметрий треугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, б) симметрий квадрата 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в) в группе кватернионов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа всех симметрий треугольника.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-normal-subgroups-of-some-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, нормальными подгруппами группу симметрий треугольника являются 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e,a,b\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+, поэтому коммутант должен совпасть с одной из этих групп.
+ Группа симметрий треугольника не является коммутативной, поэтому 
+\begin_inset Formula $K\left(G\right)\neq\left\{ e\right\} $
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим факторгруппу по подгруппе 
+\begin_inset Formula $\left\{ e,a,b\right\} $
+\end_inset
+
+, она включает два класса: 
+\begin_inset Formula $E=\left\{ e,a,b\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $A=\left\{ l_{A},l_{B},l_{C}\right\} $
+\end_inset
+
+.
+ Так как все группу второго порядка изоморфны 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $EA=AE=A$
+\end_inset
+
+ и 
+\begin_inset Formula $EE=AA=E$
+\end_inset
+
+.
+ Из последнего равенства следует, что 
+\begin_inset Formula $E^{-1}=E$
+\end_inset
+
+ и 
+\begin_inset Formula $A^{-1}=A$
+\end_inset
+
+.
+ То есть любой элемент принадлежит тому же классу, что и обратный к нему.
+\end_layout
+
+\begin_layout Solution
+Возьмём два произвольных элемента 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+.
+ Если они принадлежат разным классам, то 
+\begin_inset Formula $xy\in A$
+\end_inset
+
+, 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $y^{-1}$
+\end_inset
+
+ принадлежат разным классам, 
+\begin_inset Formula $x^{-1}y^{-1}\in A$
+\end_inset
+
+, то есть 
+\begin_inset Formula $xyx^{-1}y^{-1}\in AA=E$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ принадлежат одному классу, то 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $y^{-1}$
+\end_inset
+
+ также принадлежат одному классу, 
+\begin_inset Formula $xy\in E$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{-1}y^{-1}\in E$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left(xy\right)\left(x^{-1}y^{-1}\right)\in EE=E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, произвольный коммутатор элементов 
+\begin_inset Formula $G$
+\end_inset
+
+ принадлежит 
+\begin_inset Formula $E=\left\{ e,a,b\right\} $
+\end_inset
+
+, так как 
+\begin_inset Formula $E$
+\end_inset
+
+ — подгруппа, а значит и группа, то произведение любого конечного числа
+ коммутаторов также принадлежит 
+\begin_inset Formula $E$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $K\left(G\right)=\left\{ e,a,b\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Пусть теперь 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа симметрий квадрата.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-normal-subgroups-of-some-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, группа 
+\begin_inset Formula $\left\{ e,a,b,c\right\} $
+\end_inset
+
+ является нормальной подгруппой этой группы.
+ Рассмотрим факторгруппу по этой нормальной подгруппе, она состоит из классов
+ 
+\begin_inset Formula $E=\left\{ e,a,b,c\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $A=\left\{ d,f,g,h\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $AE=EA=A$
+\end_inset
+
+ и 
+\begin_inset Formula $AA=EE=E$
+\end_inset
+
+ (
+\begin_inset Formula $A^{-1}=A$
+\end_inset
+
+ и 
+\begin_inset Formula $E^{-1}=E$
+\end_inset
+
+).
+ Рассуждая так же, как и в случае группы симметрий треугольника, получим,
+ что любой коммутатор группы 
+\begin_inset Formula $G$
+\end_inset
+
+ принадлежит подгруппе 
+\begin_inset Formula $E$
+\end_inset
+
+, а значит 
+\begin_inset Formula $K\left(G\right)\subseteq\left\{ e,a,b,c\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассуждая аналогично для нормальных подгрупп 
+\begin_inset Formula $\left\{ e,a,d,f\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ e,a,g,h\right\} $
+\end_inset
+
+, приходим к выводу, что 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ является подгруппой их пересечения, то есть 
+\begin_inset Formula $K\left(G\right)\subseteq\left\{ e,a\right\} $
+\end_inset
+
+.
+ Так как группа 
+\begin_inset Formula $G$
+\end_inset
+
+ — некоммутативна, то 
+\begin_inset Formula $K\left(G\right)\neq\left\{ e\right\} $
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula $K\left(G\right)=\left\{ e,a\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Пусть, наконец, 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа кватернионов.
+ Заметим, что в группе кватернионов, 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+ либо 
+\begin_inset Formula $ab=\left(-1\right)\cdot ba$
+\end_inset
+
+.
+ В первом случае получаем 
+\begin_inset Formula $aba^{-1}b^{-1}=1$
+\end_inset
+
+, а во втором — 
+\begin_inset Formula $abab^{-1}=-1$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $K\left(G\right)=\left\{ 1,-1\right\} $
+\end_inset
+
+.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-normal-subgroups-of-some-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что данная группа является нормальной, как и требуется 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что коммутант в группе симметрий правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника изоморфен группе 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $n$
+\end_inset
+
+ нечётном и группе 
+\begin_inset Formula $Z_{\frac{n}{2}}$
+\end_inset
+
+ при 
+\begin_inset Formula $n$
+\end_inset
+
+ чётном.
+\end_layout
+
+\begin_layout Solution
+Группа симметрий правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника содержит повороты на углы 
+\begin_inset Formula $\frac{2\pi}{n}k$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1,\dots n-1$
+\end_inset
+
+ и отражения.
+ Если 
+\begin_inset Formula $n$
+\end_inset
+
+ — нечётное, то оси симметрии проходят через вершины и середины противоположных
+ рёбер.
+ Если же 
+\begin_inset Formula $n$
+\end_inset
+
+ — чётное, то оси симметрии проходят через противоположные вершины и середины
+ противоположных рёбер.
+ Таким образом, группа симметрий включает 
+\begin_inset Formula $n$
+\end_inset
+
+ вращений (в том числе — тождественное преобразование) и 
+\begin_inset Formula $n$
+\end_inset
+
+ отражений.
+ Повороты сохраняют ориентацию (следуют ли вершины по часовой стрелке или
+ против часовой), а отражения меняют ориентацию на противоположную.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольный коммутатор 
+\begin_inset Formula $aba^{-1}b^{-1}$
+\end_inset
+
+.
+ Преобразования 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ либо оба сохраняют, либо оба меняют ориентацию.
+ Тоже, очевидно, справедливо для 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $b^{-1}$
+\end_inset
+
+.
+ Таким образом, произведение 
+\begin_inset Formula $aba^{-1}b^{-1}$
+\end_inset
+
+ содержит либо 0, либо 2, либо 4 множителя, изменяющего ориентацию, а значит
+ любой коммутатор не меняет ориентацию, то есть любой коммутатор принадлежат
+ подгруппе вращений.
+ Так как повороты образуют подгруппу, то в неё входят и любые конечные произведе
+ния коммутаторов, то есть коммутант является подгруппой группы вращений
+ (либо совпадает с ней, так как порядок подгруппы вращений равен половине
+ порядка всей группы симметрий, а значит подгруппа вращений является нормальной
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgoup-half-of-group-is-normal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, как и требуется для коммутанта 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Выберем некоторую вершину правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника и обозначим её 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Положение 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника можно описать двумя величинами: углом поворота 
+\begin_inset Formula $A$
+\end_inset
+
+ относительно начального положения и ориентацией: следует ли вершины в исходном
+ порядке или в обратном.
+ Соответственно, будем описывать положение парой 
+\begin_inset Formula $\left(s,p\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $s$
+\end_inset
+
+ — угол поворота, 
+\begin_inset Formula $p$
+\end_inset
+
+ — ориентация (0 — исходная, 1 — обратная).
+\end_layout
+
+\begin_layout Solution
+Рассмотрим коммутатор произвольного поворота и произвольного отражения из
+ группы симметрий правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника.
+ Пусть 
+\begin_inset Formula $f$
+\end_inset
+
+ — поворот на 
+\begin_inset Formula $\alpha=\frac{2\pi}{n}k$
+\end_inset
+
+ (
+\begin_inset Formula $k=0,\dots n-1$
+\end_inset
+
+), а 
+\begin_inset Formula $g$
+\end_inset
+
+ — отражение относительно оси, повёрнутой относительно оси симметрии, проходящей
+ через вершину 
+\begin_inset Formula $A$
+\end_inset
+
+, на угол 
+\begin_inset Formula $\beta=\frac{\pi}{n}j$
+\end_inset
+
+ (
+\begin_inset Formula $j=0,\dots n-1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $\left(s;p\right)$
+\end_inset
+
+ — начальное положение 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника.
+ Определим 
+\begin_inset Formula $\left(fgf^{-1}g^{-1}\right)\left(s,p\right)$
+\end_inset
+
+, заметим, что 
+\begin_inset Formula $g=g^{-1}$
+\end_inset
+
+, а 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ — поворот на 
+\begin_inset Formula $-\alpha$
+\end_inset
+
+.
+ Тогда: 
+\begin_inset Formula 
+\[
+g^{-1}\left(s,p\right)=\left(2\beta-s,1-p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(f^{-1}g^{-1}\right)\left(s,p\right)=f^{-1}\left(2\beta-s,1-p\right)=\left(2\beta-s-\alpha,1-p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(gf^{-1}g^{-1}\right)\left(s,p\right)=g\left(2\beta-s-\alpha,1-p\right)=\left(2\beta-\left(2\beta-s-\alpha\right),1-\left(1-p\right)\right)=\left(s+\alpha,p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(fgf^{-1}g^{-1}\right)\left(s;p\right)=f\left(s+\alpha,p\right)=\left(s+2\alpha,p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, коммутатор поворота на 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и отражения есть поворот на 
+\begin_inset Formula $2\alpha=\frac{2\pi}{n}\left(2k\right)$
+\end_inset
+
+, 
+\begin_inset Formula $k=0,\dots n-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ — нечётное, тогда можно выбрать 
+\begin_inset Formula $k$
+\end_inset
+
+ таким образом, чтобы получился поворот на 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+ (с учётом того, что повороты на углы, отличающиеся на 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, равны).
+ Действительно, при 
+\begin_inset Formula $k=\frac{n+1}{2}$
+\end_inset
+
+ (
+\begin_inset Formula $n$
+\end_inset
+
+ — нечётное, поэтому 
+\begin_inset Formula $k$
+\end_inset
+
+ — целое):
+\begin_inset Formula 
+\[
+\frac{2\pi}{n}\left(2k\right)=\frac{2\pi}{n}\left(n+1\right)=2\pi+\frac{2\pi}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Это означает, что существует коммутатор, равный повороту на угол 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+, а значит этот поворот принадлежит коммутатну.
+ Так как коммутант — подгруппа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то коммутанту принадлежат и все степени этого поворота, то есть вообще
+ все повороты, то есть коммутант группы симметрий правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника (при нечётном 
+\begin_inset Formula $n$
+\end_inset
+
+) совпадает с подгруппой вращений этого 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника.
+ Подгруппа вращений является группой степеней поворота на 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+ и содержит 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов, то есть является циклической группой порядка 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а значит — изоморфна 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cyclic-group-of-order-n-is-isomorphic-to-addition-modulo-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $n$
+\end_inset
+
+ — чётное, то никаким выбором 
+\begin_inset Formula $k$
+\end_inset
+
+ нельзя получить поворот 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+, но можно получить любой поворот на угол, кратный 
+\begin_inset Formula $\frac{4\pi}{n}$
+\end_inset
+
+, эти углы образуют циклическую подгруппу порядка 
+\begin_inset Formula $\frac{n}{2}$
+\end_inset
+
+ (изоморфную 
+\begin_inset Formula $Z_{\frac{n}{2}})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Два поворота всегда коммутируют, поэтому коммутатор двух поворотов всегда
+ равен тождественному преобразованию.
+ Остаётся рассмотреть коммутатор двух отражений.
+ Пусть 
+\begin_inset Formula $f$
+\end_inset
+
+ — отражение относительно оси, повёрнутой относительно оси симметрии, проходящей
+ через вершину 
+\begin_inset Formula $A$
+\end_inset
+
+, на угол 
+\begin_inset Formula $\alpha=\frac{\pi}{n}k$
+\end_inset
+
+ (
+\begin_inset Formula $k=0,\dots n-1$
+\end_inset
+
+), а 
+\begin_inset Formula $g$
+\end_inset
+
+ — отражение относительно оси, повёрнутой относительно оси симметрии, проходящей
+ через вершину 
+\begin_inset Formula $A$
+\end_inset
+
+, на угол 
+\begin_inset Formula $\beta=\frac{\pi}{n}j$
+\end_inset
+
+ (
+\begin_inset Formula $j=0,\dots n-1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+g^{-1}\left(s,p\right)=\left(2\beta-s,1-p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(f^{-1}g^{-1}\right)\left(s,p\right)=f^{-1}\left(2\beta-s,1-p\right)=\left(2\alpha-2\beta+s,p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(gf^{-1}g^{-1}\right)\left(s,p\right)=g\left(2\alpha-2\beta+s,p\right)=\left(2\beta-2\alpha+2\beta-s,1-p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(fgf^{-1}g^{-1}\right)\left(s,p\right)=f\left(4\beta-2\alpha-s,1-p\right)=\left(2\alpha-4\beta+2\alpha+s,p\right)=\left(4\alpha-4\beta+s,p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, коммутатор двух отражений сводится к повороту на угол, кратный
+ 
+\begin_inset Formula $4\cdot\frac{2\pi}{n}$
+\end_inset
+
+, эти повороты являются подгруппой группы вращений на углы, кратные 
+\begin_inset Formula $2\cdot\frac{2\pi}{n}$
+\end_inset
+
+.
+ Итак, коммутант группы симметрий правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника при чётном 
+\begin_inset Formula $n$
+\end_inset
+
+ изоморфен группе 
+\begin_inset Formula $Z_{\frac{n}{2}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти коммутант в группе вращений тетраэдра.
+\end_layout
+
+\begin_layout Solution
+Обозначим группу вращений тетраэдра как 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Коммутант является нормальной подгруппой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:normal-subgroup-of-tetrahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, группа вращений тетраэдра содержит следующие нормальные подгруппы: 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+, вся 
+\begin_inset Formula $G$
+\end_inset
+
+ и подгруппа вращений вокруг осей, проходящих через середины несмежных рёбер.
+ Обозначим последнюю подгруппу как 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Коммутант группы совпадает с 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ тогда и только тогда, когда группа коммутативна 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Рассмотрим два вращения вокруг двух различных высот 
+\begin_inset Formula $a=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & A & D
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $b=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & D & B
+\end{array}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+ab=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & D & B
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & D & C
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+ba=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & D & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & D & A & B
+\end{array}\right),
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $ab\neq ba$
+\end_inset
+
+, а значит 
+\begin_inset Formula $K\left(G\right)\neq\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Покажем теперь, что коммутант 
+\begin_inset Formula $G$
+\end_inset
+
+ не совпадает со всей группой 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $G/N\cong Z_{3}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:normal-subgroup-of-tetrahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $G/N$
+\end_inset
+
+ коммутативна и её коммутант совпадает с единичной подгруппой (группы 
+\begin_inset Formula $G/N$
+\end_inset
+
+) 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Рассмотрим произвольный коммутатор элементов 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+: 
+\begin_inset Formula $aba^{-1}b^{-1}$
+\end_inset
+
+, рассматривая 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ как представителей классов 
+\begin_inset Formula $G/N$
+\end_inset
+
+, получим, что 
+\begin_inset Formula $aba^{-1}b^{-1}\in N$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — подгруппа, то и любое конечное произведение коммутаторов принадлежит
+ 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $K\left(G\right)\supseteq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, коммутантом группы вращений тетраэдра является подгруппа,
+ включающая тождественное преобразование и повороты на 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+ вокруг осей, соединяющих середины несмежных рёбер.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:normal-subgroup-of-tetrahedron-symmetries-or-rotations-contains-all-rotations-if-any"
+
+\end_inset
+
+Доказать, что если нормальная подгруппа в группе вращений или в группе симметрий
+ тетраэдра содержит хотя бы оно вращение вокруг оси, проходящей через вершину,
+ то она содержит всю группу вращений тетраэдра.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы вращений или группы симметрий тетраэдра,
+ причём в эту подгруппу входит некоторое вращение 
+\begin_inset Formula $a$
+\end_inset
+
+ вокруг высоты, проходящей через одну из вершин, например 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $a$
+\end_inset
+
+ — другое вращение вокруг той же оси, так как 
+\begin_inset Formula $120\text{°}+120\text{°}=240\text{°}$
+\end_inset
+
+ и 
+\begin_inset Formula $240\text{°}+240\text{°}=480\text{°}=120\text{°}\mod360\text{°}$
+\end_inset
+
+.
+ В силу соображений симметрии, то же имеет место для вращений вокруг высот,
+ проходящих через другие вершины.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь, для определённости, 
+\begin_inset Formula $a=\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & D & B
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g$
+\end_inset
+
+ — некоторое вращение, переводящее вершину 
+\begin_inset Formula $A$
+\end_inset
+
+ в некоторую другую, например, в 
+\begin_inset Formula $B$
+\end_inset
+
+ (такой выбор не ограничивает общности).
+ Например, можно взять 
+\begin_inset Formula $g=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & A & D
+\end{array}\right)$
+\end_inset
+
+.
+ Заметим, что 
+\begin_inset Formula $g^{-1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & A & B & D
+\end{array}\right)$
+\end_inset
+
+.
+ Вычислим произведение 
+\begin_inset Formula $gag^{-1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & A & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+A & C & D & B
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & A & B & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+D & B & A & C
+\end{array}\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $gag^{-1}$
+\end_inset
+
+ — поворот вокруг высоты, проходящей через вершину 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент нормальной подгруппы 
+\begin_inset Formula $N$
+\end_inset
+
+ группы симметрий или вращений тетраэдра и 
+\begin_inset Formula $g$
+\end_inset
+
+ — элемент группы вращений, то 
+\begin_inset Formula $gag^{-1}$
+\end_inset
+
+ — также элемент 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Таким образом, если 
+\begin_inset Formula $N$
+\end_inset
+
+ содержит вращений вокруг одной из высот, то 
+\begin_inset Formula $N$
+\end_inset
+
+ содержит некоторое вращение вокруг каждой из других высот.
+ Учитывая доказанное выше для вращений вокруг высот, если 
+\begin_inset Formula $N$
+\end_inset
+
+ содержит хотя бы одно вращение вокруг высоты, то оно содержит вообще все
+ вращений вокруг всех высот.
+ Всего таких вращений 9: тождественное преобразование и 2 нетривиальных
+ поворота вокруг каждой из 4 высот, проходящих через вершины тетраэдра.
+\end_layout
+
+\begin_layout Solution
+Итак, мы показали, что нормальная подгруппа группы вращений или группы симметрий
+ тетраэдра, содержащая хотя бы одно вращение, содержит не менее 9 элементов.
+ По теореме Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ порядок группы является делителем порядка подгруппы.
+ Порядок группы вращений тетраэдра равен 12
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-rotations-forms-group-and-its-size"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, значит если подгруппа группы вращений содержит не менее 9 элементов, то
+ она совпадает со всей группой вращений тетраэдра.
+\end_layout
+
+\begin_layout Solution
+Порядок группы симметрий тетраэдра равен 24
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-of-tetrahedron-symmetries-order"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ По теореме Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ если порядок подгруппы этой группы не меньше 9, то он может быть равен
+ 12 или 24.
+ Если порядок рассматриваемой подгруппы равен 24, то эта подгруппа совпадает
+ со всей группой симметрий тетраэдра, а значит содержит все вращения тетраэдра.
+ Если же порядок равен 12, то помимо тождественного преобразования и 8 нетривиал
+ьных поворотов, он должен включать ещё 3 элемента.
+ Причём эти элементы должны принадлежать одному из трёх оставшихся классов
+ элементов, которые могут быть преобразованы друг в друга внутренними автоморфиз
+мами 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-symmetries-classes-closed-to-inner-automorphisms"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Единственная возможность получить нормальную подгруппу порядка 12, это
+ добавить 3 вращения вокруг осей, соединяющих середины несмежных рёбер.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-of-tetrahedron-symmetries"
+
+\end_inset
+
+Найти коммутант в группе симметрий тетраэдра.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим группу вращений тетраэдра (обозначим её как 
+\begin_inset Formula $R$
+\end_inset
+
+) как подгруппу группы симметрий тетраэдра (обозначим её как 
+\begin_inset Formula $G$
+\end_inset
+
+).
+ Как и всякая подгруппа, порядок которой равен половине порядка всей группу,
+ группа вращений является нормальной подгруппой группы симметрий тетраэдра
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgoup-half-of-group-is-normal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Факторгруппа 
+\begin_inset Formula $G/R$
+\end_inset
+
+ является подгруппой порядка 2 и, следовательно, изоморфна 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Рассмотрим два произвольных элемента 
+\begin_inset Formula $G$
+\end_inset
+
+ как представителей классов фактогруппы 
+\begin_inset Formula $G/R$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ — коммутативная подгруппа, то 
+\begin_inset Formula $ab$
+\end_inset
+
+ и 
+\begin_inset Formula $ba$
+\end_inset
+
+ принадлежат одному классу, то есть существует 
+\begin_inset Formula $h\in R$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $ab=h\left(ba\right)$
+\end_inset
+
+.
+ Умножая это равенство слева сначала на 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+, а затем на 
+\begin_inset Formula $b^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula $aba^{-1}b^{-1}=h\in R$
+\end_inset
+
+.
+ Таким образом, произвольный коммутатор элементов группы симметрий тетраэдра
+ принадлежит подгруппе вращений тетраэдра.
+ Так как 
+\begin_inset Formula $R$
+\end_inset
+
+ — группа, то и любое конечное произведение коммутаторов принадлежит подгруппе
+ вращений.
+ Таким образом, коммутант группы симметрий тетраэдра является подмножеством
+ группы вращений тетраэдра.
+\end_layout
+
+\begin_layout Solution
+Покажем, что коммутант группы симметрий тетраэдра содержит вращение вокруг
+ одной из высот, проходящей через вершину.
+ Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — отражение относительно плоскости, проходящей через ребро 
+\begin_inset Formula $CD$
+\end_inset
+
+ и середину ребра 
+\begin_inset Formula $BA$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ — отражение относительно плоскости, проходящей через ребро 
+\begin_inset Formula $BD$
+\end_inset
+
+ и середину ребра 
+\begin_inset Formula $AC$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $a^{-1}=a$
+\end_inset
+
+ и 
+\begin_inset Formula $b^{-1}=b$
+\end_inset
+
+ и
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ab=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & A & C & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & B & A & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & A & B & D
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a^{-1}b^{-1}=ab=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & A & B & D
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+aba^{-1}b^{-1}=\left(\begin{array}{cccc}
+A & B & C & D\\
+C & A & B & D
+\end{array}\right)\left(\begin{array}{cccc}
+A & B & C & D\\
+C & A & B & D
+\end{array}\right)=\left(\begin{array}{cccc}
+A & B & C & D\\
+B & C & A & D
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, коммутант группы симметрий тетраэдра действительно содержит
+ вращение вокруг одной из высот, а именно вокруг высоты, проходящей через
+ вершину 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Коммутант группы — нормальная подгруппа этой группы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:normal-subgroup-of-tetrahedron-symmetries-or-rotations-contains-all-rotations-if-any"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если нормальная подгруппа содержит одно вращение вокруг высоты, то она
+ содержит и все вращения.
+ То есть группа вращений тетраэдра является подмножеством коммутанта группы
+ симметрий тетраэдра.
+\end_layout
+
+\begin_layout Solution
+Таким образом, коммутант группы симметрий тетраэдра и группа вращений тетраэдра
+ являются подгруппами друг друга.
+ Это возможно только в том случае, если эти группы совпадают, то есть коммутант
+ группы симметрий тетраэдра — группа вращений тетраэдра.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ещё 2 группы: 
+\emph on
+группу вращений куба 
+\emph default
+и 
+\emph on
+группу вращений правильного октаэдра 
+\emph default
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cube-and-octahedron"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\emph on
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/cube-and-octahedron.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cube-and-octahedron"
+
+\end_inset
+
+Куб и октаэдр
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:cube-and-octahedron-rotations"
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Решил неправильно, неправильно прочитал условия
+\end_layout
+
+\end_inset
+
+Сколько элементов в каждой из этих групп (группе вращений куба и группе
+ вращений октаэдра)? Перечислить элементы группы вращений куба.
+\end_layout
+
+\begin_layout Solution
+В группу вращений куба входят следующие вращения: 1) тождественное преобразовани
+е, 2) вращения вокруг осей, проходящих через центры противоположных граней
+ (3 оси, вокруг каждой — 3 поворота: на 
+\begin_inset Formula $90\text{\textdegree}$
+\end_inset
+
+, 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ и 
+\begin_inset Formula $270\text{\textdegree}$
+\end_inset
+
+, всего 9 вращений), 3) вращения вокруг осей, соединяющих середины противоположн
+ых рёбер (6 пар рёбер, каждой — один поворот на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+), 4) вращения вокруг осей, проходящих через противоположные вершины (4
+ пары вершин, для каждой — 2 поворота: на 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+ и 
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+, всего 8 поворотов).
+ Всего получаем 
+\begin_inset Formula $1+3\cdot3+6+4\cdot2=24$
+\end_inset
+
+ вращений.
+\end_layout
+
+\begin_layout Solution
+В группу вращений октаэдра входят следующие вращения: 1) тождественное преобразо
+вание, 2) вращения вокруг осей, проходящих через несмежные вершины (3 пары
+ вершин, для каждой — 3 поворота на 
+\begin_inset Formula $90\text{\textdegree}$
+\end_inset
+
+, 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ и 
+\begin_inset Formula $270\text{\textdegree}$
+\end_inset
+
+, всего 9 вращений), 3) вращения вокруг осей, проходящих через середины
+ противоположных рёбер (6 пар рёбер, для каждой — один поворот на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+), 4) вращения вокруг центров противоположных граней (4 пары граней, для
+ каждой — 2 поворота: на 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+ и 
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+, всего 8 поворотов).
+ Всего получаем 
+\begin_inset Formula $1+3\cdot3+6+4\cdot2=24$
+\end_inset
+
+ вращений.
+\end_layout
+
+\begin_layout Problem
+Доказать, что группы вращений куба и октаэдра изоморфны 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Впишем в куб октаэдр следующим образом: соединим середины смежных граней
+ куба.
+ Тогда каждому вращению или отражению куба соответствует преобразование
+ вписанного октаэдра и наоборот.
+ Композиции двух преобразований куба будет соответствовать композиция соответств
+ующих преобразований вписанного октаэдра и наоборот.
+ Таким образом, группы преобразований куба и октаэдра изоморфны.
+\end_layout
+
+\begin_layout Problem
+Сколькими различными способами можно закрасить грани куба 6 цветами (каждую
+ грань своим цветом), если различными считаются раскраски, которые нельзя
+ совместить друг с другом вращением куба.
+ Тот же вопрос для спичечного коробка.
+\end_layout
+
+\begin_layout Solution
+Всего существует 
+\begin_inset Formula $6!=720$
+\end_inset
+
+ раскрасок (для первой грани можно выбрать любой из 6 цветов, для второй
+ — любой из пяти оставшихся и так далее).
+ Так как группа вращений куба является группой порядка 24 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cube-and-octahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то раскраски можно разбить на классы по 24 раскраски такие, что раскраски
+ одного класса можно совместить друг с другом вращениями куба.
+ Всего таких классов будет 
+\begin_inset Formula $\frac{720}{24}=30$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Спичечный коробок представляет собой прямоугольный параллелепипед общего
+ вида (все три размерности разные), поэтому группа его вращений включает
+ тождественное преобразование и три вращения на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей, проходящих через середины противоположных граней.
+ Таким образом, его группа вращений содержит 4 элемента, поэтому для него
+ будут существовать 
+\begin_inset Formula $\frac{720}{4}=180$
+\end_inset
+
+ раскрасок.
+\end_layout
+
+\begin_layout Problem
+Каким из известных вам групп изоморфна группа вращений спичечного коробка?
+\end_layout
+
+\begin_layout Solution
+Спичечный коробок представляет собой прямоугольный параллелепипед общего
+ вида (все три размерности разные), поэтому группа его вращений включает
+ тождественное преобразование и три вращения на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей, проходящих через середины противоположных граней.
+ Квадрат любого вращения в этой группе есть тождественное преобразование,
+ значит эта группа изоморфна 
+\begin_inset Formula $Z_{2}\times Z_{2}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Вычисление коммутанта группы вращений куба удобно провести, вписав в куб
+ тетраэдр, как это показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tetrahedron-inscribed-in-cube"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ При этом, если соединить оставшиеся вершины 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $D$
+\end_inset
+
+, 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+, то получится второй тетраэдр.
+ Любое вращение куба либо переводит каждый тетраэдр в себя, либо меняет
+ их местами.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/tetrahedron-inscribed-in-cube.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tetrahedron-inscribed-in-cube"
+
+\end_inset
+
+Тетраэдр, вписанный в куб
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что все вращения куба, переводящие оба тетраэдра в себя, образуют:
+ а) подгруппу, б) нормальную подгруппу группы вращений куба.
+\end_layout
+
+\begin_layout Solution
+Вращения, переводящие тетраэдры в себя, изоморфны группе вращений тетраэдра,
+ то есть группе порядка 12 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-rotations-forms-group-and-its-size"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Так как порядок группы вращений куба равен 24 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cube-and-octahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, вращения, переводящие вписанные тетраэдры в себя, образуют
+ подгруппу порядка, равного половине порядка всей группы, а значит эта подгруппа
+ является нормальной подгруппой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgoup-half-of-group-is-normal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что коммутант группы вращений куба изоморфен группе вращений тетраэдра.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим два произвольных вращения куба 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Обратное преобразование 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ меняет вписанные в куб тетраэдры тогда и только тогда, когда 
+\begin_inset Formula $a$
+\end_inset
+
+ меняет эти тетраэдры местами.
+ Тоже имеет место для 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $b^{-1}$
+\end_inset
+
+.
+ Таким образом, произвольный коммутатор элементов группы вращений тетраэдра
+ 
+\begin_inset Formula $aba^{-1}b^{-1}$
+\end_inset
+
+ содержит чётное число множителей, меняющих вписанные тетраэдры местами,
+ а значит, сам коммутатор 
+\begin_inset Formula $aba^{-1}b^{-1}$
+\end_inset
+
+ переводит вписанные тетраэдры в себя.
+ Тоже имеет место для любого конечного произведения подобных коммутаторов.
+ Таким образом, любой элемент коммутанта группы вращений тетраэдра переводит
+ вписанные тетраэдры в себя.
+ Это означает, что коммутатор является подмножеством подгруппы вращений,
+ переводящей вписанные тетраэдры в себя.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим коммутатор двух вращений 
+\begin_inset Formula $a=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+B & C & D & A & B_{1} & C_{1} & D_{1} & A_{1}
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $b=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+A_{1} & B_{1} & B & A & D_{1} & C_{1} & C & D
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ab=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+B_{1} & C_{1} & C & B & A_{1} & D_{1} & D & A
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ba=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+B_{1} & B & A & A_{1} & C_{1} & C & D & D_{1}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{-1}b^{-1}=\left(ba\right)^{-1}=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+C & B & B_{1} & C_{1} & D & A & A_{1} & D_{1}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+aba^{-1}b^{-1}=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+B_{1} & C_{1} & C & B & A_{1} & D_{1} & D & A
+\end{array}\right)\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+C & B & B_{1} & C_{1} & D & A & A_{1} & D_{1}
+\end{array}\right)=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+C & C_{1} & D_{1} & D & B & B_{1} & A_{1} & A
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Мы получили вращение вокруг оси 
+\begin_inset Formula $DB_{1}$
+\end_inset
+
+, вращение вокруг одной из высот вписанного тетраэдра.
+ Теперь легко показать, по аналогии с задачей 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:normal-subgroup-of-tetrahedron-symmetries-or-rotations-contains-all-rotations-if-any"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что искомый коммутант содержит все вращения, переводящие вписанные тетраэдры
+ в себя и, учитывая доказанное выше, только их.
+ Каждому такому вращение можно поставить в соответствие вращение тетраэдра,
+ поэтому коммутант группы вращений куба изоморфен группе вращений тетраэдра.
+\end_layout
+
+\begin_layout Standard
+Докажем теперь следующие 3 свойства коммутанта, которые понадобятся нам
+ в дальнейшем.
+\end_layout
+
+\begin_layout Problem
+Доказать, что факторгруппа произвольной группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по её коммутанту коммутативна.
+\end_layout
+
+\begin_layout Solution
+Нужно доказать, что для любых двух смежных классов 
+\begin_inset Formula $T_{1},T_{2}\in G/K\left(G\right)$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $T_{1}T_{2}=T_{2}T_{1}$
+\end_inset
+
+.
+ Возьмём двух представителей 
+\begin_inset Formula $a\in T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $b\in T_{2}$
+\end_inset
+
+.
+ Для того, чтобы 
+\begin_inset Formula $ab$
+\end_inset
+
+ и 
+\begin_inset Formula $ba$
+\end_inset
+
+ принадлежали одному смежному классу по 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ необходимо, чтобы существовал 
+\begin_inset Formula $h\in K\left(G\right)$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $ab=h\left(ba\right)$
+\end_inset
+
+ или, иными словами, 
+\begin_inset Formula $aba^{-1}b^{-1}=h\in K\left(G\right)$
+\end_inset
+
+.
+ Но 
+\begin_inset Formula $aba^{-1}b^{-1}=\left[a;b\right]$
+\end_inset
+
+ — коммутатор элементов 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, а значит он, по определению, принадлежит коммутанту.
+ Таким образом, элементы 
+\begin_inset Formula $ab$
+\end_inset
+
+ и 
+\begin_inset Formula $ba$
+\end_inset
+
+ принадлежат одному смежному классу, а значит, 
+\begin_inset Formula $T_{1}T_{2}=T_{2}T_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и факторгруппа 
+\begin_inset Formula $G/N$
+\end_inset
+
+ коммутативна.
+ Доказать, что 
+\begin_inset Formula $N$
+\end_inset
+
+ содержит коммутант группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Этот результат можно было бы использовать для решении задачи 120, так что,
+ возможно, эти теоретические задачи стоило перенести выше практических
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольные элементы 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+ и их коммутатор 
+\begin_inset Formula $\left[a;b\right]=aba^{-1}b^{-1}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $T_{a}$
+\end_inset
+
+ — класс, которому принадлежит элемент 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $T_{b}$
+\end_inset
+
+ — класс, которому принадлежит элемент 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Так как, по условию, 
+\begin_inset Formula $G/N$
+\end_inset
+
+ коммутативна, то 
+\begin_inset Formula $T_{a}T_{b}=T_{b}T_{a}$
+\end_inset
+
+, а значит, существует 
+\begin_inset Formula $h\in N$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $ab=h\left(ba\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $aba^{-1}b^{-1}\in N$
+\end_inset
+
+.
+ Таким образом, любой коммутатор элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ принадлежит 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — подгруппа, то любое произведение конечного числа коммутантов также принадлежи
+т 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Таким образом, любой элемент 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ принадлежит 
+\begin_inset Formula $N$
+\end_inset
+
+, то есть 
+\begin_inset Formula $N\supset K\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $K\left(N\right)$
+\end_inset
+
+ — коммутант группы 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $K\left(N\right)$
+\end_inset
+
+ является нормальной подгруппой в 
+\begin_inset Formula $G$
+\end_inset
+
+ (сравните с примером 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:normal-subgroup-of-normal-subgroup-may-be-not-normal-subgroup-of-whole-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Нужно доказать, что для любого 
+\begin_inset Formula $h\in K\left(N\right)$
+\end_inset
+
+ и любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $ghg^{-1}\in K\left(N\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $h=h_{1}h_{2}\cdot\dots\cdot h_{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $h_{j}=a_{j}b_{j}a_{j}^{-1}b_{j}^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{j},b_{j}\in N$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $g^{-1}g=e$
+\end_inset
+
+, то имеет место равенство 
+\begin_inset Formula 
+\[
+ghg^{-1}=gh_{1}g^{-1}gh_{2}g^{-1}\cdot\dots\cdot gh_{m}g^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Далее, мы можем записать 
+\begin_inset Formula 
+\[
+gh_{j}g^{-1}=ga_{j}g^{-1}gb_{j}g^{-1}ga_{j}^{-1}g^{-1}gb_{j}^{-1}g_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $a_{j}^{\prime}=ga_{j}g^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{j}^{\prime}=gb_{j}g^{-1}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(a_{j}^{\prime}\right)^{-1}=ga_{j}^{-1}g^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(b_{j}^{\prime}\right)^{-1}=gb_{j}^{-1}g^{-1}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $gh_{j}g^{-1}=a_{j}^{\prime}b_{j}^{\prime}\left(a_{j}^{\prime}\right)\left(b_{j}^{\prime}\right)=\left[a_{j}^{\prime};b_{j}^{\prime}\right]$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа, то 
+\begin_inset Formula $a_{j}^{\prime},b_{j}^{\prime}\in N$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $gh_{j}g^{-1}$
+\end_inset
+
+ является коммутатором элементов 
+\begin_inset Formula $N$
+\end_inset
+
+, 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ является произведением конечного числа коммутаторов 
+\begin_inset Formula $N$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $ghg^{-1}\in K\left(N\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $K\left(N\right)$
 \end_inset
 
  — нормальная подгруппа группы 
