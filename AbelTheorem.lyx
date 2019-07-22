@@ -36842,7 +36842,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-Рассмотрим коммутант произвольного поворота и произвольного отражения из
+Рассмотрим коммутатор произвольного поворота и произвольного отражения из
  группы симметрий правильного 
 \begin_inset Formula $n$
 \end_inset
@@ -36967,8 +36967,8 @@ g^{-1}\left(s,p\right)=\left(2\beta-s,1-p\right),
 \begin_inset Formula $k$
 \end_inset
 
- таким образом, чтобы 
-\begin_inset Formula $2\alpha=\frac{2\pi}{n}$
+ таким образом, чтобы получился поворот на 
+\begin_inset Formula $\frac{2\pi}{n}$
 \end_inset
 
  (с учётом того, что повороты на углы, отличающиеся на 
@@ -37635,6 +37635,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-of-tetrahedron-symmetries"
+
+\end_inset
+
 Найти коммутант в группе симметрий тетраэдра.
 \end_layout
 
@@ -37643,7 +37649,7 @@ noprefix "false"
 \begin_inset Formula $R$
 \end_inset
 
-)как подгруппу группы симметрий тетраэдра (обозначим её как 
+) как подгруппу группы симметрий тетраэдра (обозначим её как 
 \begin_inset Formula $G$
 \end_inset
 
@@ -37731,7 +37737,7 @@ noprefix "false"
 
  — группа, то и любое конечное произведение коммутаторов принадлежит подгруппе
  вращений.
- Таким образом, коммутант группы симметрий тетрэдра является подмножеством
+ Таким образом, коммутант группы симметрий тетраэдра является подмножеством
  группы вращений тетраэдра.
 \end_layout
 
@@ -37939,6 +37945,13 @@ name "fig:cube-and-octahedron"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:cube-and-octahedron-rotations"
+
+\end_inset
+
+
 \begin_inset Note Comment
 status open
 
@@ -37948,8 +37961,8 @@ status open
 
 \end_inset
 
-Сколько элементов в каждой из этих групп? Перечислить элементы группы вращений
- куба.
+Сколько элементов в каждой из этих групп (группе вращений куба и группе
+ вращений октаэдра)? Перечислить элементы группы вращений куба.
 \end_layout
 
 \begin_layout Solution
@@ -38058,16 +38071,45 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Всего существует 
+\begin_inset Formula $6!=720$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ раскрасок (для первой грани можно выбрать любой из 6 цветов, для второй
+ — любой из пяти оставшихся и так далее).
+ Так как группа вращений куба является группой порядка 24 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cube-and-octahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, то раскраски можно разбить на классы по 24 раскраски такие, что раскраски
+ одного класса можно совместить друг с другом вращениями куба.
+ Всего таких классов будет 
+\begin_inset Formula $\frac{720}{24}=30$
+\end_inset
 
+.
+\end_layout
+
+\begin_layout Solution
+Спичечный коробок представляет собой прямоугольный параллелепипед общего
+ вида (все три размерности разные), поэтому группа его вращений включает
+ тождественное преобразование и три вращения на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей, проходящих через середины противоположных граней.
+ Таким образом, его группа вращений содержит 4 элемента, поэтому для него
+ будут существовать 
+\begin_inset Formula $\frac{720}{4}=180$
+\end_inset
+
+ раскрасок.
 \end_layout
 
 \begin_layout Problem
@@ -38075,27 +38117,40 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Спичечный коробок представляет собой прямоугольный параллелепипед общего
+ вида (все три размерности разные), поэтому группа его вращений включает
+ тождественное преобразование и три вращения на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+ вокруг осей, проходящих через середины противоположных граней.
+ Квадрат любого вращения в этой группе есть тождественное преобразование,
+ значит эта группа изоморфна 
+\begin_inset Formula $Z_{2}\times Z_{2}$
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 Вычисление коммутанта группы вращений куба удобно провести, вписав в куб
  тетраэдр, как это показано на рисунке 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить рисунок и ссылку на него
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tetrahedron-inscribed-in-cube"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -38121,22 +38176,91 @@ status open
  их местами.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/tetrahedron-inscribed-in-cube.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tetrahedron-inscribed-in-cube"
+
+\end_inset
+
+Тетраэдр, вписанный в куб
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Problem
 Доказать, что все вращения куба, переводящие оба тетраэдра в себя, образуют:
  а) подгруппу, б) нормальную подгруппу группы вращений куба.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Вращения, переводящие тетраэдры в себя, изоморфны группе вращений тетраэдра,
+ то есть группе порядка 12 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-rotations-forms-group-and-its-size"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Так как порядок группы вращений куба равен 24 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cube-and-octahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+.
+ Таким образом, вращения, переводящие вписанные тетраэдры в себя, образуют
+ подгруппу порядка, равного половине порядка всей группы, а значит эта подгруппа
+ является нормальной подгруппой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgoup-half-of-group-is-normal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -38144,16 +38268,151 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим два произвольных вращения куба 
+\begin_inset Formula $a$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Обратное преобразование 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ меняет вписанные в куб тетраэдры тогда и только тогда, когда 
+\begin_inset Formula $a$
+\end_inset
+
+ меняет эти тетраэдры местами.
+ Тоже имеет место для 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $b^{-1}$
+\end_inset
+
+.
+ Таким образом, произвольный коммутатор элементов группы вращений тетраэдра
+ 
+\begin_inset Formula $aba^{-1}b^{-1}$
+\end_inset
+
+ содержит чётное число множителей, меняющих вписанные тетраэдры местами,
+ а значит, сам коммутатор 
+\begin_inset Formula $aba^{-1}b^{-1}$
+\end_inset
+
+ переводит вписанные тетраэдры в себя.
+ Тоже имеет место для любого конечного произведения подобных коммутаторов.
+ Таким образом, любой элемент коммутанта группы вращений тетраэдра переводит
+ вписанные тетраэдры в себя.
+ Это означает, что коммутатор является подмножеством подгруппы вращений,
+ переводящей вписанные тетраэдры в себя.
 \end_layout
+
+\begin_layout Solution
+Рассмотрим коммутатор двух вращений 
+\begin_inset Formula $a=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+B & C & D & A & B_{1} & C_{1} & D_{1} & A_{1}
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $b=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+A_{1} & B_{1} & B & A & D_{1} & C_{1} & C & D
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ab=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+B_{1} & C_{1} & C & B & A_{1} & D_{1} & D & A
+\end{array}\right)
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ba=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+B_{1} & B & A & A_{1} & C_{1} & C & D & D_{1}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{-1}b^{-1}=\left(ba\right)^{-1}=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+C & B & B_{1} & C_{1} & D & A & A_{1} & D_{1}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+aba^{-1}b^{-1}=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+B_{1} & C_{1} & C & B & A_{1} & D_{1} & D & A
+\end{array}\right)\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+C & B & B_{1} & C_{1} & D & A & A_{1} & D_{1}
+\end{array}\right)=\left(\begin{array}{cccccccc}
+A & B & C & D & A_{1} & B_{1} & C_{1} & D_{1}\\
+C & C_{1} & D_{1} & D & B & B_{1} & A_{1} & A
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Мы получили вращение вокруг оси 
+\begin_inset Formula $DB_{1}$
+\end_inset
+
+, вращение вокруг одной из высот вписанного тетраэдра.
+ Теперь легко показать, по аналогии с задачей 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:normal-subgroup-of-tetrahedron-symmetries-or-rotations-contains-all-rotations-if-any"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что искомый коммутант содержит все вращения, переводящие вписанные тетраэдры
+ в себя и, учитывая доказанное выше, только их.
+ Каждому такому вращение можно поставить в соответствие вращение тетраэдра,
+ поэтому коммутант группы вращений куба изоморфен группе вращений тетраэдра.
 \end_layout
 
 \begin_layout Standard
@@ -38413,7 +38672,7 @@ noprefix "false"
 \end_inset
 
 .
- 
+ Пусть 
 \begin_inset Formula $h=h_{1}h_{2}\cdot\dots\cdot h_{m}$
 \end_inset
 
