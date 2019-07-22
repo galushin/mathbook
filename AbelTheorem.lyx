@@ -37446,11 +37446,11 @@ name "prob:normal-subgroup-of-tetrahedron-symmetries-or-rotations-contains-all-r
 \end_inset
 
  — другое вращение вокруг той же оси, так как 
-\begin_inset Formula $120\text{\textdegree}+120\text{\textdegree}=240\text{\textdegree}$
+\begin_inset Formula $120\text{°}+120\text{°}=240\text{°}$
 \end_inset
 
  и 
-\begin_inset Formula $240\text{°}+240\text{°}=480\text{\textdegree}=120\text{\textdegree}\mod360\text{°}$
+\begin_inset Formula $240\text{°}+240\text{°}=480\text{°}=120\text{°}\mod360\text{°}$
 \end_inset
 
 .
@@ -37880,12 +37880,12 @@ noprefix "false"
 группу вращений правильного октаэдра 
 \emph default
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить рисунок и ссылку на него
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cube-and-octahedron"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -37894,39 +37894,160 @@ status open
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/cube-and-octahedron.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cube-and-octahedron"
+
+\end_inset
+
+Куб и октаэдр
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Problem
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Решил неправильно, неправильно прочитал условия
+\end_layout
+
+\end_inset
+
 Сколько элементов в каждой из этих групп? Перечислить элементы группы вращений
  куба.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+В группу вращений куба входят следующие вращения: 1) тождественное преобразовани
+е, 2) вращения вокруг осей, проходящих через центры противоположных граней
+ (3 оси, вокруг каждой — 3 поворота: на 
+\begin_inset Formula $90\text{\textdegree}$
 \end_inset
 
+, 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
 
-\end_layout
+ и 
+\begin_inset Formula $270\text{\textdegree}$
+\end_inset
 
-\begin_layout Problem
-Доказать, что группы вращений куба и октаэдра изоморфны.
+, всего 9 вращений), 3) вращения вокруг осей, соединяющих середины противоположн
+ых рёбер (6 пар рёбер, каждой — один поворот на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+), 4) вращения вокруг осей, проходящих через противоположные вершины (4
+ пары вершин, для каждой — 2 поворота: на 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+ и 
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+, всего 8 поворотов).
+ Всего получаем 
+\begin_inset Formula $1+3\cdot3+6+4\cdot2=24$
+\end_inset
+
+ вращений.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+В группу вращений октаэдра входят следующие вращения: 1) тождественное преобразо
+вание, 2) вращения вокруг осей, проходящих через несмежные вершины (3 пары
+ вершин, для каждой — 3 поворота на 
+\begin_inset Formula $90\text{\textdegree}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+, 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ и 
+\begin_inset Formula $270\text{\textdegree}$
+\end_inset
+
+, всего 9 вращений), 3) вращения вокруг осей, проходящих через середины
+ противоположных рёбер (6 пар рёбер, для каждой — один поворот на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+), 4) вращения вокруг центров противоположных граней (4 пары граней, для
+ каждой — 2 поворота: на 
+\begin_inset Formula $120\text{\textdegree}$
+\end_inset
+
+ и 
+\begin_inset Formula $240\text{\textdegree}$
+\end_inset
+
+, всего 8 поворотов).
+ Всего получаем 
+\begin_inset Formula $1+3\cdot3+6+4\cdot2=24$
+\end_inset
+
+ вращений.
 \end_layout
+
+\begin_layout Problem
+Доказать, что группы вращений куба и октаэдра изоморфны 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Solution
+Впишем в куб октаэдр следующим образом: соединим середины смежных граней
+ куба.
+ Тогда каждому вращению или отражению куба соответствует преобразование
+ вписанного октаэдра и наоборот.
+ Композиции двух преобразований куба будет соответствовать композиция соответств
+ующих преобразований вписанного октаэдра и наоборот.
+ Таким образом, группы преобразований куба и октаэдра изоморфны.
 \end_layout
 
 \begin_layout Problem
@@ -37951,6 +38072,19 @@ status open
 
 \begin_layout Problem
 Каким из известных вам групп изоморфна группа вращений спичечного коробка?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
