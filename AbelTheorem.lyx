@@ -38178,6 +38178,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "on-commutant-of-cube-rotations"
+
+\end_inset
+
 Вычисление коммутанта группы вращений куба удобно провести, вписав в куб
  тетраэдр, как это показано на рисунке 
 \begin_inset CommandInset ref
@@ -38888,12 +38894,12 @@ name "def:homomorphism"
 \end_inset
 
  — группа подстановок двух тетраэдров, вписанных в него 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "on-commutant-of-cube-rotations"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -39975,7 +39981,7 @@ name "prob:homomorphism-maps-elements-of-coset-by-kernel-to-same-element"
 \begin_inset Formula $g_{2}$
 \end_inset
 
- лежат в одном смежном класса (по 
+ лежат в одном смежном классе (по 
 \begin_inset Formula $\mathrm{Ker}\varphi$
 \end_inset
 
@@ -40144,7 +40150,7 @@ e_{F}=\varphi\left(g_{1}^{-1}\right)\varphi\left(g_{2}\right)=\varphi\left(g_{1}
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
 
- — гомоморфизме группы 
+ — гомоморфизм группы 
 \begin_inset Formula $G$
 \end_inset
 
@@ -40170,7 +40176,7 @@ noprefix "false"
 
 \end_inset
 
-) его элемент 
+) его элементе 
 \begin_inset Formula $g$
 \end_inset
 
@@ -40197,6 +40203,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:natural-mapping-of-factorgroup-by-kernel-of-homomorphism-is-surjection"
+
+\end_inset
+
 Докажите, что 
 \begin_inset Formula $\psi$
 \end_inset
@@ -40209,19 +40221,114 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Нужно доказать, что для любого 
+\begin_inset Formula $x\in F$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ существует 
+\begin_inset Formula $T\in G/\mathrm{Ker}\varphi$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\psi\left(T\right)=x$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм 
+\begin_inset Formula $G$
+\end_inset
+
+ на 
+\begin_inset Formula $F$
+\end_inset
+
+, то, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, существует такой 
+\begin_inset Formula $g\in G$
+\end_inset
 
+, что 
+\begin_inset Formula $\varphi\left(g\right)=x$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+ — нормальная подгруппа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:kernel-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $g$
+\end_inset
+
+ принадлежит какому-либо классу разложения по 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-element-belongs-to-some-coset"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, этот класс и есть 
+\begin_inset Formula $T$
+\end_inset
+
+, так как для любого 
+\begin_inset Formula $y\in T$
+\end_inset
+
+ будет иметь место 
+\begin_inset Formula $\varphi\left(y\right)=\varphi\left(g\right)=x$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-elements-of-coset-by-kernel-to-same-element"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:natural-mapping-of-factorgroup-by-kernel-of-homomorphism-is-bijection"
+
+\end_inset
+
 Докажите, что 
 \begin_inset Formula $\psi$
 \end_inset
@@ -40230,16 +40337,81 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-elements-of-coset-by-kernel-to-same-element"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, если 
+\begin_inset Formula $\varphi\left(x\right)\neq\varphi\left(y\right)$
+\end_inset
 
+, то 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ принадлежат разным смежным классам по 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+.
+ Таким образом, если 
+\begin_inset Formula $T_{1},T_{2}\in T/\mathrm{Ker}\varphi$
+\end_inset
+
+ — два разных смежных класса, то для любых их представителей 
+\begin_inset Formula $g_{1}\in T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in T_{2}$
+\end_inset
+
+ будет иметь место 
+\begin_inset Formula $\varphi\left(g_{1}\right)\neq\varphi\left(g_{2}\right)$
+\end_inset
+
+, а значит 
+\begin_inset Formula $\psi\left(T_{1}\right)\neq\psi\left(T_{2}\right)$
+\end_inset
+
+.
+ С учётом того, что было доказано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:natural-mapping-of-factorgroup-by-kernel-of-homomorphism-is-surjection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем, что для любого 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ существует ровно один 
+\begin_inset Formula $T\in G/\mathrm{Ker}\varphi$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\psi\left(T\right)=x$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\psi$
+\end_inset
+
+ — взаимно-однозначное отображение.
 \end_layout
 
 \begin_layout Problem
@@ -40251,16 +40423,295 @@ status open
 \end_layout
 
 \begin_layout Solution
+По определению, изоморфизм — это взаимно однозначное отображение группы,
+ сохраняющие произведение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:natural-mapping-of-factorgroup-by-kernel-of-homomorphism-is-bijection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\psi$
+\end_inset
+
+ — изоморфизм, поэтому остаётся доказать, что 
+\begin_inset Formula $\psi$
+\end_inset
+
+ сохраняет произведение, то есть для любых двух смежных классов 
+\begin_inset Formula $T_{1},T_{2}\in G/\mathrm{Ker}\varphi$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\psi\left(T_{1}T_{2}\right)=\psi\left(T_{1}\right)\psi\left(T_{2}\right)$
+\end_inset
+
+.
+ Для доказательства возьмём произвольных представителей этих классов 
+\begin_inset Formula $g_{1}\in T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in T_{2}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\psi\left(T_{1}\right)=\varphi\left(g_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\psi\left(T_{2}\right)=\varphi\left(g_{2}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, то 
+\begin_inset Formula $\varphi\left(g_{1}\right)\varphi\left(g_{2}\right)=\varphi\left(g_{1}g_{2}\right)$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ По определению произведения смежных классов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "coset-product-definition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}g_{2}\in T_{1}T_{2}$
+\end_inset
+
+, поэтому, по определению 
+\begin_inset Formula $\psi$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g_{1}g_{2}\right)=\psi\left(T_{1}T_{2}\right)$
+\end_inset
+
+.
+ Окончательно получаем: 
+\begin_inset Formula 
+\[
+\psi\left(T_{1}\right)\psi\left(T_{2}\right)=\varphi\left(g_{1}\right)\varphi\left(g_{2}\right)=\varphi\left(g_{1}g_{2}\right)=\psi\left(T_{1}T_{2}\right),
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $\psi$
+\end_inset
+
+ является взаимно однозначным отображением и переводит произведение в произведен
+ие, то есть является изоморфизмом.
+\end_layout
+
+\begin_layout Standard
+Приведём пример применения теоремы 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Добавить ссылку на теорему 3
 \end_layout
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Example
+В задаче 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на задачу 110
+\end_layout
+
+\end_inset
+
+ требовалось выяснить, изоморфна ли фактогруппа группы симметрий квадрата
+ по нормальной подгруппе отражений относительно центра группе вращений квадрата
+ или группе симметрий ромба.
+ Каждому элементы группы симметрий квадрата соответствует некоторая подстановка
+ осей симметрии 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{4}$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вставить рисунок и добавить ссылку на него
+\end_layout
+
+\end_inset
+
+.
+ При этом диагонали могут переходить только друг в друга, а оси 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{4}$
+\end_inset
+
+ — также друг в друга.
+ Мы получаем таким образом отображение группы симметрий квадрата в группу
+ подстановок четырёх элементов: 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{4}$
+\end_inset
+
+.
+ Это отображение является гомоморфизмом на всю группы таких подстановок,
+ что 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{3}$
+\end_inset
+
+ переходят в 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{3}$
+\end_inset
+
+, а 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{4}$
+\end_inset
+
+ — в 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{4}$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+.
+ Эта группа состоит из четырёх подстановок и изоморфна группе симметрий
+ ромба 
+\begin_inset Formula $L_{1}L_{2}L_{3}L_{4}$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вставить рисунок и добавить ссылку на него
+\end_layout
+
+\end_inset
+
+.
+ Ядром построенного гомоморфизма являются все симметрии квадрата, переводящие
+ каждую из четырёх осей симметрии в себя.
+ Нетрудно проверить, что такими преобразованиями являются только 
+\begin_inset Formula $e$
+\end_inset
+
+ и центральная симметрия 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Следовательно, по теореме 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на теорему 3
+\end_layout
+
+\end_inset
+
+ подгруппа отражений относительно центра 
+\begin_inset Formula $\left\{ e,a\right\} $
+\end_inset
+
+ — нормальная подгруппа в группе симметрий квадрата, и соответствующая факторгру
+ппа изоморфна группе симметрий ромба.
+\end_layout
+
+\begin_layout Standard
+Подобным образом можно решить следующие задачи.
 \end_layout
 
 \begin_layout Standard
