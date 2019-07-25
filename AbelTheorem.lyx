@@ -31661,6 +31661,12 @@ a^{-1}g=ga^{-1},
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:cartesian-product-of-normal-subgroups-is-normal-subgroup-of-cartesian-product"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $N_{1}$
 \end_inset
@@ -40847,7 +40853,7 @@ name "fig:rhombus-from-homomorphism"
 \end_inset
 
  вокруг осей, проходящих через середины противоположных рёбер, вместе с
- тождественным преобразованием образуют нормальную подгруппу группе симметрий
+ тождественным преобразованием образуют нормальную подгруппу в группе симметрий
  тетраэдра, и найти соответствующую факторгруппу.
 \end_layout
 
@@ -40927,16 +40933,126 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим следующее отображение: если 
+\begin_inset Formula $g\in R$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ — поворот на угол 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi\left(g\right)$
+\end_inset
+
+ — поворот на угол 
+\begin_inset Formula $n\alpha$
+\end_inset
+
+, иными словами: 
+\begin_inset Formula $\varphi\left(g\right)=g^{n}$
+\end_inset
+
+.
+ Это отображение является гомоморфизмом.
+ Действительно, так как для поворота на угол 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в 
+\begin_inset Formula $R$
+\end_inset
+
+ существует поворот на 
+\begin_inset Formula $\frac{\alpha}{n}$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — отображение на 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ А так как повороты плоскости коммутируют друг с другом, то 
+\begin_inset Formula $\varphi\left(g_{1}g_{2}\right)=\left(g_{1}g_{2}\right)^{n}=g_{1}^{n}g_{2}^{n}=\varphi\left(g_{1}\right)\varphi\left(g_{2}\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ переводит произведение в произведение.
 \end_layout
+
+\begin_layout Solution
+Найдём ядро этого гомоморфизма.
+ Из 
+\begin_inset Formula $\varphi\left(g\right)=e$
+\end_inset
+
+, где 
+\begin_inset Formula $e$
+\end_inset
+
+ — единичный элемент 
+\begin_inset Formula $R$
+\end_inset
+
+, то есть поворот на угол, кратный 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, следует 
+\begin_inset Formula $g=\frac{2\pi}{n}k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — целое число от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $n-1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\mathrm{Ker}\varphi=Z_{n}$
+\end_inset
+
+.
+ Тогда, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, отображение 
+\begin_inset Formula $\psi:R/Z_{n}\to R$
+\end_inset
 
+, ставящее каждому классу в соответствие значение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ на его представителях, — изоморфизм, а группы 
+\begin_inset Formula $R/Z_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $R$
+\end_inset
+
+ — изоморфны.
 \end_layout
 
 \begin_layout Problem
@@ -40973,16 +41089,266 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-of-normal-subgroups-is-normal-subgroup-of-cartesian-product"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Написать решение
+\end_inset
+
+, было показано, что 
+\begin_inset Formula $N_{1}\times N_{2}$
+\end_inset
+
+ — нормальная подгруппа в 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+.
+ Таким образом, остаётся показать, что 
+\begin_inset Formula $\left(G_{1}\times G_{2}\right)/\left(N_{1}\times N_{2}\right)\cong\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+Рассмотрим отображение 
+\begin_inset Formula $\varphi:G_{1}\times G_{2}\to\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+, которое любому 
+\begin_inset Formula $\left(g_{1},g_{2}\right)\in G_{1}\times G_{2}$
+\end_inset
+
+ ставит в соответствие 
+\begin_inset Formula $T_{1}\times T_{2}$
+\end_inset
+
+, где 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ смежный класс 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ по 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+, которому принадлежит 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, а 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ — смежный класс 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ по 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+, которому принадлежит 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+, иными словами: 
+\begin_inset Formula $\varphi\left(\left(g_{1},g_{2}\right)\right)=\left(g_{1}N_{1},g_{2}N_{2}\right)$
+\end_inset
+
+.
+ Это отображение является отображением на 
+\begin_inset Formula $\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+, так как у каждого класса есть представитель.
+\end_layout
+
+\begin_layout Solution
+Кроме того, 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ переводит произведение в произведение.
+ Действительно, пусть 
+\begin_inset Formula $x_{1,}x_{2}\in G_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{1},y_{2}\in G_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $X_{1}=x_{1}N_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $X_{2}=x_{2}N_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $Y_{1}=x$
+\end_inset
+
+— смежный класс по 
+\begin_inset Formula $N_{1},$
+\end_inset
+
+которому принадлежит 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(\left(x_{1},y_{1}\right)\left(x_{2},y_{2}\right)\right)=\varphi\left(\left(x_{1}x_{2},y_{1}y_{2}\right)\right)=\left(\left(x_{1}x_{2}\right)N_{1},\left(y_{1}y_{2}\right)N_{2}\right)$
+\end_inset
+
+.
+ По определению произведения смежных классов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "coset-product-definition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $\left(x_{1}x_{2}\right)N_{1}=\left(x_{1}N_{1}\right)\left(x_{2}N_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(y_{1}y_{2}\right)N_{2}=\left(y_{1}N_{2}\right)\left(y_{2}N_{2}\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+\varphi\left(\left(x_{1},y_{1}\right)\left(x_{2},y_{2}\right)\right)=\left(\left(x_{1}x_{2}\right)N_{1},\left(y_{1}y_{2}\right)N_{2}\right)=\\
+=\left(\left(x_{1}N_{1}\right)\left(x_{2}N_{1}\right),\left(y_{1}N_{2}\right)\left(y_{2}N_{2}\right)\right)=\\
+=\left(x_{1}N_{1},y_{1}N_{2}\right)\left(x_{2}N_{1},y_{1}N_{2}\right)=\varphi\left(\left(x_{1},y_{1}\right)\right)\varphi\left(\left(x_{2},y_{2}\right)\right).
+\end{multline*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Ядром этого гомоморфизма является 
+\begin_inset Formula $N_{1}\times N_{2}$
+\end_inset
+
+, так как единицей 
+\begin_inset Formula $\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+ является пара, состоящая из единиц 
+\begin_inset Formula $G_{1}/N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}/N_{2}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-of-groups-is-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а единицами этих факторгрупп, в свою очередь, являются 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:coset-product-has-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а из 
+\begin_inset Formula $\varphi\left(\left(g_{1},g_{2}\right)\right)=\left(g_{1}N_{1},g_{2}N_{2}\right)=\left(N_{1},N_{2}\right)$
+\end_inset
+
+ следует 
+\begin_inset Formula $g_{1}\in N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in N_{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left(g_{1},g_{2}\right)\in N_{1}\times N_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, группы 
+\begin_inset Formula $\left(G_{1}\times G_{2}\right)/\mathrm{Ker}\varphi$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+ изоморфны, а так как 
+\begin_inset Formula $\mathrm{Ker}\varphi=N_{1}\times N_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(G_{1}\times G_{2}\right)/\left(N_{1}\times N_{2}\right)\cong\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
