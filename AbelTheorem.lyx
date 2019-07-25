@@ -40849,7 +40849,7 @@ name "fig:rhombus-from-homomorphism"
 
 \begin_layout Problem
 Доказать, что вращения тетраэдра на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг осей, проходящих через середины противоположных рёбер, вместе с
@@ -40872,7 +40872,7 @@ status open
 
 \begin_layout Problem
 Доказать, что вращения куба на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг осей, проходящих через центры противоположных граней, вместе с тождестве
@@ -41603,6 +41603,161 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм, 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+ — коммутанты групп 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ соответственно.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(K_{1}\right)$
+\end_inset
+
+ содержится в 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+ содержится в 
+\begin_inset Formula $\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(N\right)$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+ — коммутанты групп 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ соответственно и 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(K_{1}\right)=K_{2}$
+\end_inset
+
+.
+ Верно ли, что 
+\begin_inset Formula $K_{1}=\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+?
 \end_layout
 
 \begin_layout Solution
