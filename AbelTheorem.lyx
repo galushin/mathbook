@@ -40146,6 +40146,12 @@ e_{F}=\varphi\left(g_{1}^{-1}\right)\varphi\left(g_{2}\right)=\varphi\left(g_{1}
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
@@ -40185,6 +40191,36 @@ noprefix "false"
 
 \begin_layout Standard
 Доказательство этой теоремы содержится в решениях следующих задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:natural-mapping-of-factorgroup-by-kernel-of-homomorphism-is-surjection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:natural-mapping-of-factorgroup-by-kernel-of-homomorphism-is-bijection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \begin_inset Note Comment
 status open
 
@@ -40199,7 +40235,7 @@ status open
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Problem
@@ -40415,6 +40451,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+
+\end_inset
+
 Докажите, что 
 \begin_inset Formula $\psi$
 \end_inset
@@ -40540,12 +40582,12 @@ noprefix "false"
 
 \begin_layout Standard
 Приведём пример применения теоремы 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на теорему 3
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -40554,12 +40596,12 @@ status open
 
 \begin_layout Example
 В задаче 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на задачу 110
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorgroup-of-square-symmetries-by-central-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -40693,12 +40735,12 @@ status open
 
 .
  Следовательно, по теореме 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на теорему 3
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -40712,6 +40754,417 @@ status open
 
 \begin_layout Standard
 Подобным образом можно решить следующие задачи.
+\end_layout
+
+\begin_layout Problem
+Доказать, что вращения тетраэдра на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей, проходящих через середины противоположных рёбер, вместе с
+ тождественным преобразованием образуют нормальную подгруппу группе симметрий
+ тетраэдра, и найти соответствующую факторгруппу.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что вращения куба на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей, проходящих через центры противоположных граней, вместе с тождестве
+нным преобразованием образуют нормальную подгруппу в группе вращений куба,
+ и найти соответствующую факторгруппу.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть на плоскости дан правильный 
+\begin_inset Formula $n$
+\end_inset
+
+-угольник с центром 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $R$
+\end_inset
+
+ — группа всех вращений плоскости вокруг точки 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ Рассмотрим подгруппу 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ всех вращений плоскости, переводящих правильный 
+\begin_inset Formula $n$
+\end_inset
+
+-угольник в себя.
+ Доказать, что это нормальная подгруппа группы 
+\begin_inset Formula $R$
+\end_inset
+
+ и что 
+\begin_inset Formula $R/Z_{n}\cong R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+ — нормальные подгруппы соответственно в группах 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $N_{1}\times N_{2}$
+\end_inset
+
+ — нормальная подгруппа в 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(G_{1}\times G_{2}\right)/\left(N_{1}\times N_{2}\right)\cong\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Могут ли две неизоморфные группы иметь изоморфные нормальные подгруппы и
+ изоморфные факторгруппы по ним?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Может ли группа иметь две изоморфные нормальные подгруппы, факторгруппы
+ по которым неизоморфны?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Может ли группа иметь неизоморфные нормальные подгруппы, факторгруппы по
+ которым изоморфны?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Посмотрим теперь, что происходит при гомоморфизме с подгруппами, нормальными
+ подгруппами, коммутантами.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Преобразовать в определения
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм, и пусть в 
+\begin_inset Formula $G$
+\end_inset
+
+ выбрано некоторое подмножество 
+\begin_inset Formula $M$
+\end_inset
+
+, тогда 
+\emph on
+образом множества
+\emph default
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ при гомоморфизме 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ (обозначается 
+\begin_inset Formula $\varphi\left(M\right)$
+\end_inset
+
+) будет называться множество всех элементов из 
+\begin_inset Formula $F$
+\end_inset
+
+, имеющих хотя бы один прообраз в 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Обратно, пусть 
+\begin_inset Formula $P$
+\end_inset
+
+ — подмножество в 
+\begin_inset Formula $F$
+\end_inset
+
+, тогда 
+\emph on
+полным прообразом 
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\emph default
+(обозначается 
+\begin_inset Formula $\varphi^{-1}\left(P\right)$
+\end_inset
+
+) будет называться множество всех элементов из 
+\begin_inset Formula $G$
+\end_inset
+
+, образы которых попадают в 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ Заметим, что знак 
+\begin_inset Formula $\varphi^{-1}$
+\end_inset
+
+ отдельно от 
+\begin_inset Formula $P$
+\end_inset
+
+ не имеет смысла: для гомоморфизма, вообще говоря, не существует обратного
+ преобразования.
+ Заметим также, что если 
+\begin_inset Formula $\varphi\left(M\right)=P$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi^{-1}\left(P\right)$
+\end_inset
+
+ содержит 
+\begin_inset Formula $M$
+\end_inset
+
+, но не обязательно с ним совпадает.
+\end_layout
+
+\begin_layout Problem
+Доказать, что образ подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ при гомоморфизме 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ является подгруппой в группе 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа в 
+\begin_inset Formula $F$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм.
+ Доказать, что 
+\begin_inset Formula $\varphi^{-1}\left(H\right)$
+\end_inset
+
+ — подгруппа в 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $F$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм.
+ Доказать, что 
+\begin_inset Formula $\varphi^{-1}\left(N\right)$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
