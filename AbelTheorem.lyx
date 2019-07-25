@@ -40626,12 +40626,12 @@ noprefix "false"
 \end_inset
 
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Вставить рисунок и добавить ссылку на него
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:symmetry-axis-of-square"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -40697,11 +40697,11 @@ status open
 \end_inset
 
  
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Доказать
+Нужно ли это доказывать?
 \end_layout
 
 \end_inset
@@ -40713,12 +40713,12 @@ status open
 \end_inset
 
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Вставить рисунок и добавить ссылку на него
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rhombus-from-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -40750,6 +40750,91 @@ noprefix "false"
 
  — нормальная подгруппа в группе симметрий квадрата, и соответствующая факторгру
 ппа изоморфна группе симметрий ромба.
+\end_layout
+
+\begin_layout Example
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pictures/symmetry-axis-of-square.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:symmetry-axis-of-square"
+
+\end_inset
+
+Оси симметрии квадрата
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pictures/rhombus-from-homomorphism.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rhombus-from-homomorphism"
+
+\end_inset
+
+Ромб, симметрии которого изоморфны группе подстановок осей симметрии квадрата
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
