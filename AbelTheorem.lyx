@@ -35983,6 +35983,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:commutator-and-commutant"
+
+\end_inset
+
 Элемент 
 \begin_inset Formula $\left[a;b\right]=aba^{-1}b^{-1}$
 \end_inset
@@ -36357,6 +36363,12 @@ name "prob:commutant-is-unity-group-iff-group-is-commutative"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-of-symmetries-of-triangle-square-and-quaternions"
+
+\end_inset
+
 Найти коммутант в группах: а) симметрий треугольника 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -36377,7 +36389,7 @@ noprefix "false"
 
 \end_inset
 
-, в) в группе кватернионов 
+, в) в группе 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "prob:all-groups-of-orders-4-6-8"
@@ -41510,6 +41522,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:image-of-subgroup-is-subgroup-by-homomorphism"
+
+\end_inset
+
 Доказать, что образ подгруппы 
 \begin_inset Formula $H$
 \end_inset
@@ -41530,19 +41548,220 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Воспользуемся результатами решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Solution
+1) Пусть 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ — произвольные элементы 
+\begin_inset Formula $\varphi\left(H\right)$
+\end_inset
+
+, нужно доказать, что 
+\begin_inset Formula $xy\in\varphi\left(H\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $x,y\in\varphi\left(H\right)$
+\end_inset
+
+, то существуют 
+\begin_inset Formula $a,b\in H$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $\varphi\left(a\right)=x$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(b\right)=y$
+\end_inset
+
+.
+ А так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то есть переводит произведение в произведение, то 
+\begin_inset Formula $xy=\varphi\left(a\right)\varphi\left(b\right)=\varphi\left(ab\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа (по условию задачи), то 
+\begin_inset Formula $ab\in H$
+\end_inset
+
+.
+ То есть существует такой элемент 
+\begin_inset Formula $h=ab\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi\left(h\right)=xy$
+\end_inset
+
+, то есть 
+\begin_inset Formula $xy\in\varphi\left(H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2) Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то 
+\begin_inset Formula $e_{G}\in H$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ А как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-unity-to-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $e_{F}\in\varphi\left(H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+3) Пусть 
+\begin_inset Formula $x\in\varphi\left(H\right)$
+\end_inset
+
+, нужно доказать, что 
+\begin_inset Formula $x^{-1}\in\varphi\left(H\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $x\in\varphi\left(H\right)$
+\end_inset
+
+, то существует 
+\begin_inset Formula $a\in H$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(a\right)=x$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(a^{-1}\right)=\left[\varphi\left(a\right)\right]^{-1}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(a^{-1}\right)=x^{-1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то 
+\begin_inset Formula $a^{-1}\in H$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $x^{-1}\in\varphi\left(H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(H\right)$
+\end_inset
+
+ — подгруппа.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:preimage-of-subgroup-is-subgroup-by-homomorphism"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $H$
 \end_inset
@@ -41568,16 +41787,142 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Воспользуемся результатами решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Solution
+1) Пусть 
+\begin_inset Formula $a,b\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(a\right)\in H$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(b\right)\in H$
+\end_inset
+
+, тогда, так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, то 
+\begin_inset Formula $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то 
+\begin_inset Formula $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)\in H$
+\end_inset
+
+.
+ Тогда, по определению полного прообраза, 
+\begin_inset Formula $ab\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+, что и требуется.
+\end_layout
+
+\begin_layout Solution
+2) Нужно доказать, что 
+\begin_inset Formula $e_{G}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+.
+ Действительно, так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то 
+\begin_inset Formula $e_{F}\in H$
+\end_inset
+
+, а как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-unity-to-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}\in H$
+\end_inset
+
+, то есть 
+\begin_inset Formula $e_{G}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+3) Пусть 
+\begin_inset Formula $a\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+, нужно доказать, что 
+\begin_inset Formula $a^{-1}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+.
+ По определению полного прообраза, 
+\begin_inset Formula $a\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+ означает 
+\begin_inset Formula $\varphi\left(a\right)\in H$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(a^{-1}\right)=\left[\varphi\left(a\right)\right]^{-1}$
+\end_inset
+
+, а так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то 
+\begin_inset Formula $\left[\varphi\left(a\right)\right]^{-1}\in H.$
+\end_inset
+
+ Таким образом, 
+\begin_inset Formula $\varphi\left(a^{-1}\right)\in H$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a^{-1}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -41606,19 +41951,113 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:preimage-of-subgroup-is-subgroup-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+ было показано, что 
+\begin_inset Formula $\varphi^{-1}\left(N\right)$
+\end_inset
 
+ — подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Остаётся показать, что для любого 
+\begin_inset Formula $a\in\varphi^{-1}\left(N\right)$
+\end_inset
+
+ и любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $gag^{-1}\in\varphi^{-1}\left(N\right)$
+\end_inset
+
+, что, по определению полного прообраза, означает 
+\begin_inset Formula $\varphi\left(gag^{-1}\right)\in N$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, то 
+\begin_inset Formula $\varphi\left(gag^{-1}\right)=\varphi\left(g\right)\varphi\left(a\right)\varphi\left(g^{-1}\right)$
+\end_inset
+
+.
+ По предположению 
+\begin_inset Formula $a\in\varphi^{-1}\left(N\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $h=\varphi\left(a\right)\in N$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $\varphi\left(g\right)=f$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}=f^{-1}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(g\right)=\varphi\left(g\right)\varphi\left(a\right)\left[\varphi\left(g\right)\right]^{-1}=fhf^{-1}$
+\end_inset
+
+, так как 
+\begin_inset Formula $h\in N$
+\end_inset
+
+ и 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $F$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(gag^{-1}\right)=fhf^{-1}\in N$
+\end_inset
+
+, то есть 
+\begin_inset Formula $gag^{-1}\in\varphi^{-1}\left(N\right)$
+\end_inset
+
+, что и требовалось.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:by-homomorphism-image-of-commutant-is-subset-of-commutant-and-preimage-of-commutant-is-superset-of-commutant"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
@@ -41660,16 +42099,106 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+1) Нужно доказать, что из 
+\begin_inset Formula $f\in\varphi\left(K_{1}\right)$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ следует 
+\begin_inset Formula $f\in K_{2}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $f\in\varphi\left(K_{1}\right)$
+\end_inset
+
+, то существует элемент 
+\begin_inset Formula $k\in K_{1}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(k\right)=f$
+\end_inset
+
+.
+ По определению коммутанта 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:commutator-and-commutant"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, 
+\begin_inset Formula $k=\left[a_{1},b_{1}\right]\left[a_{2},b_{2}\right]\cdot\dots\cdot\left[a_{m},b_{m}\right]$
+\end_inset
 
+, где 
+\begin_inset Formula $a_{j},b_{j}\in G$
+\end_inset
+
+.
+ Тогда, так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, 
+\begin_inset Formula $\varphi\left(k\right)=\varphi\left(\left[a_{1},b_{1}\right]\right)\varphi\left(\left[a_{2},b_{2}\right]\right)\cdot\dots\cdot\varphi\left(\left[a_{m},b_{m}\right]\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(\left[a_{j},b_{j}\right]\right)=\varphi\left(a_{j}\right)\varphi\left(b_{j}\right)\varphi\left(a_{j}^{-1}\right)\varphi\left(b_{j}^{-1}\right)$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $\varphi\left(a_{j}\right)=x_{j}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(b_{j}\right)=y_{j}$
+\end_inset
+
+, тогда можем написать 
+\begin_inset Formula $\varphi\left(k\right)=\left[x_{1},y_{1}\right]\left[x_{2},y_{2}\right]\cdot\dots\cdot\left[x_{m},y_{m}\right]$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(k\right)$
+\end_inset
+
+ — произведение конечного числа коммутаторов из 
+\begin_inset Formula $F$
+\end_inset
+
+, то есть 
+\begin_inset Formula $f=\varphi\left(k\right)\in K_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2) Нужно доказать, что из 
+\begin_inset Formula $k\in K_{1}$
+\end_inset
+
+ следует 
+\begin_inset Formula $k\in\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+.
+ Как было показано, выше, 
+\begin_inset Formula $\varphi\left(k\right)\in K_{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $k\in\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -41706,16 +42235,117 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-subgroup-is-subgroup-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, было показано, что 
+\begin_inset Formula $\varphi\left(N\right)$
+\end_inset
 
+ — подгруппа группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Остаётся показать, что для любого 
+\begin_inset Formula $a\in\varphi\left(N\right)$
+\end_inset
+
+ и любого 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $xax^{-1}\in\varphi\left(N\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, а значит — отображение на группу 
+\begin_inset Formula $F$
+\end_inset
+
+, то существует 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(g\right)=x$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a\in\varphi\left(N\right)$
+\end_inset
+
+, то существует 
+\begin_inset Formula $h\in N$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(h\right)=a$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}=x^{-1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+, 
+\begin_inset Formula $h\in N$
+\end_inset
+
+ и 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, то 
+\begin_inset Formula $ghg^{-1}\in N$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — изоморфизм, то 
+\begin_inset Formula $\varphi\left(ghg^{-1}\right)=\varphi\left(g\right)\varphi\left(h\right)\varphi\left(g^{-1}\right)=xax^{-1}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $xax^{-1}\in\varphi\left(N\right)$
+\end_inset
+
+, что и требовалось.
 \end_layout
 
 \begin_layout Problem
@@ -41761,29 +42391,201 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+1) В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:by-homomorphism-image-of-commutant-is-subset-of-commutant-and-preimage-of-commutant-is-superset-of-commutant"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+\end_inset
+
+ было показано 
+\begin_inset Formula $\varphi\left(K_{1}\right)\subseteq K_{2}$
+\end_inset
+
+.
+ Остаётся доказать, что 
+\begin_inset Formula $K_{2}\subseteq\varphi\left(K_{1}\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $f\in K_{2}$
+\end_inset
+
+, докажем, что 
+\begin_inset Formula $f\in\varphi\left(K_{1}\right)$
+\end_inset
+
+, то есть существует 
+\begin_inset Formula $k\in K_{1}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(k\right)=f$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $f$
+\end_inset
+
+ — элемент коммутанта, то 
+\begin_inset Formula $f=\left[x_{1},y_{1}\right]\cdot\dots\cdot\left[x_{m},y_{m}\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $x_{j},y_{j}\in F$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, а следовательно — отображение 
+\begin_inset Formula $G$
+\end_inset
+
+ на 
+\begin_inset Formula $F$
+\end_inset
+
+, то существуют 
+\begin_inset Formula $a_{j},b_{j}\in G$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $\varphi\left(a_{j}\right)=x_{j}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(b_{j}\right)=y_{j}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ переводит произведение в произведение
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и обратный элемент в обратный 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{multline*}
+\varphi\left(\left[a_{j},b_{j}\right]\right)=\varphi\left(a_{j}b_{j}a_{j}^{-1}b_{j}^{-1}\right)=\\
+=\varphi\left(a_{j}\right)\varphi\left(b_{j}\right)\varphi\left(a_{j}^{-1}\right)\varphi\left(b_{j}^{-1}\right)=\\
+=x_{j}y_{j}x_{j}^{-1}y_{j}^{-1}=\left[x_{j},y_{j}\right].
+\end{multline*}
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_layout Solution
+Снова воспользуемся тем, что гомоморфизм переводит произведение в произведение:
+ 
+\begin_inset Formula $\varphi\left(\left[a_{1},b_{1}\right]\cdot\dots\cdot\left[a_{m},b_{m}\right]\right)=\left[x_{1},y_{1}\right]\cdot\dots\cdot\left[x_{m},y_{m}\right]=f$
+\end_inset
 
-\begin_layout Plain Layout
-Дописать этот раздел
+.
+ Тогда 
+\begin_inset Formula $k=\left[a_{1},b_{1}\right]\cdot\dots\cdot\left[a_{m},b_{m}\right]\in K_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(k\right)=f$
+\end_inset
+
+, что и требовалось.
 \end_layout
+
+\begin_layout Solution
+2) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — некоторая группа такая, что 
+\begin_inset Formula $K\left(G\right)\neq G$
+\end_inset
+
+ и 
+\begin_inset Formula $K\left(G\right)\neq\left\{ e_{G}\right\} $
+\end_inset
+
+, например, группа симметрий правильного треугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-symmetries-of-triangle-square-and-quaternions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Рассмотрим гомоморфизм 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
 
+, определённый следующим образом: 
+\begin_inset Formula $\varphi\left(g\right)=e_{G}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $F=\left\{ e_{G}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $K_{2}=F=\left\{ e_{G}\right\} $
+\end_inset
+
+.
+ Так как для всех 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $\varphi\left(g\right)\in K_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi^{-1}\left(K_{2}\right)=G$
+\end_inset
+
+, но при этом 
+\begin_inset Formula $K_{1}\neq\varphi^{-1}\left(K_{2}\right)=\left\{ e_{G}\right\} $
+\end_inset
+
+.
+ Таким образом, в общем случае, равенство 
+\begin_inset Formula $K_{1}=\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+ не выполняется.
 \end_layout
 
 \begin_layout Standard
