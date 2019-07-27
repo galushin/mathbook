@@ -8500,6 +8500,12 @@ name "def:period-of-element"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:orders-of-symmetries-of-triangle-and-square"
+
+\end_inset
+
 Найти порядки всех элементов в группах симметрий правильного треугольника,
  квадрата и ромба.
 \end_layout
@@ -35396,6 +35402,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:normal_subgroup-of-Z_n-and-Z"
+
+\end_inset
+
 Описать все нормальные подгруппы и факторгруппы по ним для групп: а) 
 \begin_inset Formula $Z_{n}$
 \end_inset
@@ -40879,7 +40891,7 @@ status open
 
 \end_inset
 
-
+Нужно построить
 \end_layout
 
 \begin_layout Problem
@@ -41369,16 +41381,50 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Могут.
+ Группы симметрий квадрата и группа кватернионов неизоморфны 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ В обоих группах есть нормальные подгруппы порядка 2 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-normal-subgroups-of-some-groups"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+ (а все группы порядка 2 изоморфны 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Факторгруппы по этим группам, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-normal-subgroups-of-some-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изоморфны группе симметрий ромба.
 \end_layout
 
 \begin_layout Problem
@@ -41387,16 +41433,133 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+Может.
+ Рассмотрим бесконечную циклическую группу 
+\begin_inset Formula $Z$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:infinite-cyclic-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:normal_subgroup-of-Z_n-and-Z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что группы целых чисел, кратных, например, 2 и 3 являются
+ нормальными подгруппами группы 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ Эти группы изоморфны 
+\begin_inset Formula $Z$
+\end_inset
+
+ 
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Добавить задачу, в которой доказать это.
 \end_layout
 
 \end_inset
 
+, а значит изоморфны друг другу (это следует из решения задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:reverse-of-isomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphism-is-transitive"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Факторгруппа 
+\begin_inset Formula $Z$
+\end_inset
+
+ по подгруппе целых чисел, кратных 
+\begin_inset Formula $2$
+\end_inset
+
+, изоморфна 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+, а факторгруппа 
+\begin_inset Formula $Z$
+\end_inset
+
+ по подгруппе целых чисел, кратных 
+\begin_inset Formula $3$
+\end_inset
+
+, изоморфна 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+.
+ В группе 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ есть элемент порядка 
+\begin_inset Formula $2$
+\end_inset
+
+, а в 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+ есть элемент порядка 
+\begin_inset Formula $3$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ не изоморфна 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphic-elements-have-equal-orders"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -41405,16 +41568,84 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Может.
+ Рассмотрим группу симметрий квадрата 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Нормальные подгруппы этой группы были найдены в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-normal-subgroups-of-some-groups"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+.
+ Нормальные подгруппы этой группы 
+\begin_inset Formula $\left\{ e,a,b,c\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ e,a,d,f\right\} $
+\end_inset
+
+ не изоморфны (это следует из того, что порядки элементов 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $d$
+\end_inset
+
+ и 
+\begin_inset Formula $f$
+\end_inset
+
+ равны 2, а элементов 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ — 4 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:orders-of-symmetries-of-triangle-and-square"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Факторгруппы по ним являются группами порядка 2, а значит они обе изоморфны
+ 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
