@@ -7277,6 +7277,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:is-particaular-groups-commutative"
+
+\end_inset
+
 Выяснить, являются ли коммутативными следующие группы: 1) группа вращений
  треугольника (задача 
 \begin_inset CommandInset ref
@@ -18706,6 +18712,12 @@ B & C & D & A
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:group-of-tetrahedron-symmetries"
+
+\end_inset
+
 Все симметрии тетраэдра, очевидно, образуют группу, которой называется 
 \emph on
 группой симметрий тетраэдра
@@ -27903,8 +27915,15 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-Написать, что эта группа может быть получена как группа кватернионов с обычной
- (для кватернионов) операцией умножения:
+Эта группа может быть получена как группа кватернионов с обычной (для кватернион
+ов) операцией умножения 
+\begin_inset CommandInset label
+LatexCommand label
+name "quaternion-group"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Solution
@@ -35342,6 +35361,16 @@ noprefix "false"
 \end_inset
 
  (группа симметрий ромба).
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать, является ли эта группа нормальной
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -35428,7 +35457,17 @@ name "prob:normal_subgroup-of-Z_n-and-Z"
 \begin_inset Formula $Z$
 \end_inset
 
- являются коммутативными, а, как было показано в задаче 
+ являются коммутативными 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:power-of-sum-is-product-of-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а, как было показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "prob:subgroup-of-commutative-group-is-normal"
@@ -36401,7 +36440,7 @@ noprefix "false"
 
 \end_inset
 
-, в) в группе 
+, в) в группе кватернионов
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "prob:all-groups-of-orders-4-6-8"
@@ -37264,6 +37303,12 @@ g^{-1}\left(s,p\right)=\left(2\beta-s,1-p\right),
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-of-tetrahedron-rotations"
+
+\end_inset
+
 Найти коммутант в группе вращений тетраэдра.
 \end_layout
 
@@ -38335,6 +38380,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-of-cube-rotations-is-isomorphic-to-tethrahedron-rotations"
+
+\end_inset
+
 Доказать, что коммутант группы вращений куба изоморфен группе вращений тетраэдра.
 \end_layout
 
@@ -40960,7 +41011,7 @@ name "fig:rhombus-from-homomorphism"
  симметрий тетраэдра на группу подстановок трёх элементов является гомоморфизмом.
  Ядром этого гомоморфизма является подгруппа симметрий, включающая тождественное
  преобразование и вращения на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг осей 
@@ -41132,7 +41183,7 @@ noprefix "false"
  вращений куба на группу подстановок трёх элементов является гомоморфизмом.
  Ядром этого гомоморфизма является подгруппа вращений куба, включающих тождестве
 нное преобразование и вращения на на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг осей 
@@ -43226,6 +43277,433 @@ status open
 \end_inset
 
  не выполняется.
+\end_layout
+
+\begin_layout Section
+Разрешимые группы
+\end_layout
+
+\begin_layout Standard
+Существует важный класс групп, близких к коммутативным, — так называемые
+ разрешимые группы.
+ Разрешимыми они называются потому, что возможность решить алгебраическое
+ уравнение в радикалах, как мы увидим, зависит от разрешимости некоторой
+ группы.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — некоторая группа и 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ — её коммутант.
+ Коммутант 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ сам является группой, и в нём также можно рассмотреть коммутант 
+\begin_inset Formula $K\left(K\left(G\right)\right)$
+\end_inset
+
+.
+ В полученной группе снова можно рассмотреть коммутант и так далее.
+ Обозначим 
+\begin_inset Formula $K_{1}\left(G\right)=K\left(G\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{r+1}\left(G\right)=K\left(K_{r}\left(G\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Группа 
+\begin_inset Formula $G$
+\end_inset
+
+ называется 
+\emph on
+разрешимой
+\emph default
+, если цепочка групп 
+\begin_inset Formula $G$
+\end_inset
+
+, 
+\begin_inset Formula $K_{1}\left(G\right)$
+\end_inset
+
+, 
+\begin_inset Formula $K_{2}\left(G\right)$
+\end_inset
+
+, 
+\begin_inset Formula $K_{3}\left(G\right)$
+\end_inset
+
+, ...
+ заканчивается при некотором конечном 
+\begin_inset Formula $n$
+\end_inset
+
+ единичной группой, то есть при некотором 
+\begin_inset Formula $n$
+\end_inset
+
+ получаем 
+\begin_inset Formula $K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Например, любая коммутативная группа разрешима, так как если 
+\begin_inset Formula $G$
+\end_inset
+
+ — коммутативная группа, то уже на первом шаге получаем 
+\begin_inset Formula $K\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Также группу 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима, если её коммутант коммутативен, так как тогда 
+\begin_inset Formula $K_{2}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Выяснить, разрешимы или нет следующие группы: а) циклическая группа 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, б) группа симметрий треугольника
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в) группа симметрий квадрата 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, г) группа кватернионов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "quaternion-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, д) группа вращений тетраэдра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group-of-tetrahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, е) группа симметрий тетраэдра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group-of-tetrahedron-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, ж) группа вращений куба 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cube-and-octahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Группа 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ является коммутативной 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:power-of-sum-is-product-of-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula $K_{1}\left(Z_{n}\right)=\left\{ e\right\} $
+\end_inset
+
+, а значит группа 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ — разрешима.
+\end_layout
+
+\begin_layout Solution
+б) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа симметрий треугольника, её коммутант изоморфен 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-symmetries-of-triangle-square-and-quaternions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+ — коммутативная группа, поэтому 
+\begin_inset Formula $K_{2}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+ и группа симметрий треугольника разрешима.
+\end_layout
+
+\begin_layout Solution
+в) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа симметрий квадрата, её коммутант изоморфен 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ — коммутативная группа, поэтому 
+\begin_inset Formula $K_{2}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+ и группа симметрий квадрата разрешима.
+\end_layout
+
+\begin_layout Solution
+г) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа кватернионов.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-symmetries-of-triangle-square-and-quaternions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что коммутант группы кватернионов 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ состоит из двух элементов, а значит 
+\begin_inset Formula $K\left(G\right)\cong Z_{2}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ — коммутативная группа, то 
+\begin_inset Formula $K_{2}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+, поэтому группа кватернионов разрешима.
+\end_layout
+
+\begin_layout Solution
+д) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа вращений тетраэдра.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-tetrahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, коммутант группы вращений тетраэдра — подгруппа, включающая тождественное
+ преобразование и повороты на 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+ вокруг осей, соединяющих середины несмежных рёбер.
+ Это группа порядка 
+\begin_inset Formula $4$
+\end_inset
+
+, изоморфная группе симметрий ромба 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Это где-то доказано
+\end_layout
+
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:is-particaular-groups-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, эта группа коммутативна.
+ Поэтому 
+\begin_inset Formula $K_{2}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+, а значит группа вращений тетраэдра разрешима.
+\end_layout
+
+\begin_layout Solution
+е) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа симметрий тетраэдра.
+ Коммутант этой группы — группа вращений тетраэдра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-tetrahedron-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Выше было показано, что группа вращений тетраэдра разрешима, поэтому разрешима
+ и группа симметрий тетраэдра.
+\end_layout
+
+\begin_layout Solution
+ж) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группу вращений куба.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-cube-rotations-is-isomorphic-to-tethrahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, коммутант группы вращений куба изоморфен группе вращений тетраэдра.
+ Выше было показано, что группа вращений тетраэдра разрешима, поэтому разрешима
+ и группа симметрий тетраэдра.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать этот раздел
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
