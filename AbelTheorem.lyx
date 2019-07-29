@@ -39067,6 +39067,20 @@ noprefix "false"
  — нет.
 \end_layout
 
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Ещё можно привести в качестве примера гомоморфизм, рассмотренный в примере
+ выше
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
@@ -39198,6 +39212,23 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге доказано через 
+\begin_inset Formula $\varphi\left(e_{G}\right)\varphi\left(e_{G}\right)=\varphi\left(e_{G}e_{G}\right)=\varphi\left(e_{G}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
@@ -40081,6 +40112,28 @@ noprefix "false"
 \end_inset
 
 .
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге исходят из того, что 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ лежат в классе 
+\begin_inset Formula $g\mathrm{Ker}\varphi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -41710,6 +41763,25 @@ noprefix "false"
 \end_inset
 
 , изоморфны группе симметрий ромба.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге рассматриваются 
+\begin_inset Formula $Z_{4}$
+\end_inset
+
+ и 
+\begin_inset Formula $Z_{2}\times Z_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
@@ -41845,6 +41917,21 @@ noprefix "false"
 \end_inset
 
 .
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге рассмотрен пример 
+\begin_inset Formula $Z_{4}\times Z_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
@@ -41927,6 +42014,25 @@ reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
 plural "false"
 caps "false"
 noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге приведён пример 
+\begin_inset Formula $R/Z_{n}\cong R$
+\end_inset
+
+ и 
+\begin_inset Formula $R/\left\{ e\right\} \cong R$
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -43043,18 +43149,14 @@ noprefix "false"
 \begin_inset Formula $G$
 \end_inset
 
- — некоторая группа такая, что 
-\begin_inset Formula $K\left(G\right)\neq G$
+ — некоторая коммутативная группа, то есть 
+\begin_inset Formula $K_{1}=K\left(G\right)=\left\{ e_{G}\right\} $
 \end_inset
 
- и 
-\begin_inset Formula $K\left(G\right)\neq\left\{ e_{G}\right\} $
-\end_inset
-
-, например, группа симметрий правильного треугольника 
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:commutant-of-symmetries-of-triangle-square-and-quaternions"
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
 plural "false"
 caps "false"
 noprefix "false"
@@ -43062,21 +43164,43 @@ noprefix "false"
 \end_inset
 
 .
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь была неточность, я сначала написал, что 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ не должен совпадать с 
+\begin_inset Formula $\left\{ e_{G}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
  Рассмотрим гомоморфизм 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
 
-, определённый следующим образом: 
-\begin_inset Formula $\varphi\left(g\right)=e_{G}$
+, определённый следующим образом для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+: 
+\begin_inset Formula $\varphi\left(g\right)=e_{F}$
 \end_inset
 
 .
  Тогда 
-\begin_inset Formula $F=\left\{ e_{G}\right\} $
+\begin_inset Formula $F=\left\{ e_{F}\right\} $
 \end_inset
 
  и 
-\begin_inset Formula $K_{2}=F=\left\{ e_{G}\right\} $
+\begin_inset Formula $K_{2}=F=\left\{ e_{F}\right\} $
 \end_inset
 
 .
@@ -43093,7 +43217,7 @@ noprefix "false"
 \end_inset
 
 , но при этом 
-\begin_inset Formula $K_{1}\neq\varphi^{-1}\left(K_{2}\right)=\left\{ e_{G}\right\} $
+\begin_inset Formula $K_{1}=\left\{ e_{G}\right\} \neq\varphi^{-1}\left(K_{2}\right)=G$
 \end_inset
 
 .
