@@ -43395,6 +43395,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-of-solvable-groups"
+
+\end_inset
+
 Выяснить, разрешимы или нет следующие группы: а) циклическая группа 
 \begin_inset Formula $Z_{n}$
 \end_inset
@@ -43691,6 +43697,567 @@ noprefix "false"
 , коммутант группы вращений куба изоморфен группе вращений тетраэдра.
  Выше было показано, что группа вращений тетраэдра разрешима, поэтому разрешима
  и группа симметрий тетраэдра.
+\end_layout
+
+\begin_layout Standard
+Все группы, рассмотренные в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-solvable-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, оказываются разрешимыми, поэтому естественно возникает вопрос, а бывают
+ ли вообще неразрешимые группы.
+ Ниже мы покажем, что группа вращений правильно додекаэдра 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить рисунок и ссылку на него
+\end_layout
+
+\end_inset
+
+ неразрешима.
+\end_layout
+
+\begin_layout Problem
+Сколько элементов в группе вращений додекаэдра?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Все вращения додекаэдра можно разбить на 4 класса: 1) тождественное преобразован
+ие; 2) вращения вокруг осей, проходящих через центры противоположных граней;
+ 3) вращения вокруг осей, проходящих через противоположные вершины; 4) вращения
+ вокруг осей, проходящих через середины противоположных рёбер.
+\end_layout
+
+\begin_layout Problem
+Сколько элементов содержится в каждом классе (в 2) -4) тождественное преобразова
+ние не входит)?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — произвольная нормальная подгруппа в группе вращений додекаэдра, и пусть
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ содержится хотя бы один элемент из некоторого класса 1) — 4).
+ Доказать, что тогда в 
+\begin_inset Formula $N$
+\end_inset
+
+ содержится весь соответствующий класс.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, каждый из классов 1) — 4) либо полностью не входит, либо
+ полностью не входит в 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что в группе вращений додекаэдра не существует других нормальных
+ подгрупп, кроме 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ и всей группы.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ некоммутативна и не имеет нормальных подгрупп, отличных от 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ неразрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ещё несколько задач, результаты которых потребуются нам в дальнейшем.
+\end_layout
+
+\begin_layout Problem
+Доказать, что всякая подгруппа разрешимой подгруппы разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+ и группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима; доказать, что и группа 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Привести пример, когда группа 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешима, а группа 
+\begin_inset Formula $G$
+\end_inset
+
+ неразрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима и 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа в 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что факторгруппа 
+\begin_inset Formula $G/N$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что если группы 
+\begin_inset Formula $N$
+\end_inset
+
+ и 
+\begin_inset Formula $G/N$
+\end_inset
+
+ разрешимы, то и группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешимы.
+ Доказать, что группа 
+\begin_inset Formula $G\times F$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+ Доказать, что тогда существует цепочка группа 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ такая, что: 1) 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+; 2) каждая группа 
+\begin_inset Formula $G_{i}$
+\end_inset
+
+ (
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+) является нормальной подгруппой в группе 
+\begin_inset Formula $G_{i-1}$
+\end_inset
+
+, и все факторгруппы 
+\begin_inset Formula $G_{i-1}/G_{i}$
+\end_inset
+
+ коммутативны; 3) группа 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ коммутативна.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть для группы 
+\begin_inset Formula $G$
+\end_inset
+
+ существует цепочка групп со свойствами, указанными в условии предыдущей
+ задачи 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+ Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Результаты задач 158 и 169 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки
+\end_layout
+
+\end_inset
+
+ показывают, что существование для группы 
+\begin_inset Formula $G$
+\end_inset
+
+ цепочки групп с указанными в условии задачи 168 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ свойствами равносильно понятию разрешимости и само может быть принято за
+ определение разрешимости.
+ Ещё одно эквивалентное определение разрешимости можно получить, используя
+ результаты двух следующих задач.
+\end_layout
+
+\begin_layout Problem
+Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+ Доказать, что тогда существует цепочка групп 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ такая, что 1) 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+; 2) каждая группа 
+\begin_inset Formula $G_{i}$
+\end_inset
+
+ (
+\begin_inset Formula $1\le i\le n-1$
+\end_inset
+
+) содержит некоторую коммутативную нормальную подгруппу 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ такую, что 
+\begin_inset Formula $G_{i}/N_{i}\cong G_{i+1}$
+\end_inset
+
+; 3) группа 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ коммутативна.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть для группы 
+\begin_inset Formula $G$
+\end_inset
+
+ существует цепочка групп со свойствами, указанными в предыдущей задаче
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+ Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
 \end_layout
 
 \begin_layout Standard
