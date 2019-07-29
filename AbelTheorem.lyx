@@ -38849,19 +38849,6 @@ gh_{j}g^{-1}=ga_{j}g^{-1}gb_{j}g^{-1}ga_{j}^{-1}g^{-1}gb_{j}^{-1}g_{j}.
 Гомоморфизм
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылки
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Definition
 
 \emph on
@@ -40882,16 +40869,165 @@ name "fig:rhombus-from-homomorphism"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Проведём прямые, соединяющие противоположные середины рёбер и обозначим
+ их 
+\begin_inset Formula $k$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Каждая симметрия тетраэдра либо переводит эти прямые в себя, либо переставляет
+ их друг с другом.
+ Таким образом, существует отображение группы симметрий тетраэдра на группу
+ подстановок трёх элементов 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Произведению двух симметрий тетраэдра соответствует композиция двух таких
+ подстановок, поэтому отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ симметрий тетраэдра на группу подстановок трёх элементов является гомоморфизмом.
+ Ядром этого гомоморфизма является подгруппа симметрий, включающая тождественное
+ преобразование и вращения на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Так как ядро гомоморфизма — нормальная подгруппа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:kernel-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-Нужно построить
+, то эта подгруппа действительно является нормальной.
+\end_layout
+
+\begin_layout Solution
+Остаётся выяснить структуру факторгруппы по этой подгруппе.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, факторгруппа по ядру гомоморфизма 
+\begin_inset Formula $G\to F$
+\end_inset
+
+ изоморфна 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ В нашем случае, 
+\begin_inset Formula $F$
+\end_inset
+
+ — группа подстановок трёх элементов 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Порядок группы симметрий тетраэдра — 24 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-rotations-forms-group-and-its-size"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, порядок рассматриваемой подгруппы — 4, значит порядок факторгруппы равен
+ 6 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "order-of-factor-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Имеется 2 неизоморфные группы порядка 6 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+ и группа симметрий треугольника, нужно определить, какой из них изоморфна
+ факторгруппа по рассматриваемой подгруппе.
+\end_layout
+
+\begin_layout Solution
+Рассматривая подстановку трёх элементов, можно отождествить каждый из элементов
+ с одной из вершин правильного треугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому факторгруппа по рассматриваемой подгруппе изоморфна группе симметрий
+ треугольника.
 \end_layout
 
 \begin_layout Problem
@@ -40905,16 +41041,165 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Проведём прямые, соединяющие центры противоположных граней и обозначим их
+ 
+\begin_inset Formula $k$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Каждое вращение куба либо переводит эти прямые в себя, либо переставляет
+ их друг с другом.
+ Таким образом, существует отображение группы симметрий куба на группу подстанов
+ок трёх элементов 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Произведению двух вращений куба соответствует композиция двух подстановок,
+ поэтому отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ вращений куба на группу подстановок трёх элементов является гомоморфизмом.
+ Ядром этого гомоморфизма является подгруппа вращений куба, включающих тождестве
+нное преобразование и вращения на на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Так как ядро гомоморфизма — нормальная подгруппа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:kernel-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, то эта подгруппа действительно является нормальной.
+\end_layout
 
+\begin_layout Solution
+Остаётся выяснить структуру фактогруппы по этой подгруппе.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, факторгруппа по ядру гомоморфизма 
+\begin_inset Formula $G\to F$
+\end_inset
+
+ изоморфна 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ В нашем случае, 
+\begin_inset Formula $F$
+\end_inset
+
+ — группа подстановок трёх элементов 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Порядок группы вращений куба — 24 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cube-and-octahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, порядок рассматриваемой группы — 4, значит порядок факторгруппы равен
+ 6 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "order-of-factor-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Имеется 2 неизоморфные группы порядка 6 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+ и группа симметрий треугольника, нужно определить, какой из них изоморфна
+ факторгруппа по рассматриваемой подгруппе.
+\end_layout
+
+\begin_layout Solution
+Рассматривая подстановку трёх элементов, можно отождествить каждый из элементов
+ с одной из вершин правильного треугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому факторгруппа по рассматриваемой подгруппе изоморфна группе симметрий
+ треугольника.
 \end_layout
 
 \begin_layout Problem
