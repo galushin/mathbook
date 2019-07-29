@@ -8500,6 +8500,12 @@ name "def:period-of-element"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:orders-of-symmetries-of-triangle-and-square"
+
+\end_inset
+
 Найти порядки всех элементов в группах симметрий правильного треугольника,
  квадрата и ромба.
 \end_layout
@@ -21650,8 +21656,27 @@ name "rem:right-coset-and-right-coset-partition"
 
 \end_inset
 
-Аналогично левым смежным классам могут быть определены правые смежные классы
- 
+Аналогично левым смежным классам 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:left-coset"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и левому разложению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:left-coset-partition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ группы по подгруппе могут быть определены правые смежные классы 
 \begin_inset Formula $Hx$
 \end_inset
 
@@ -31642,6 +31667,12 @@ a^{-1}g=ga^{-1},
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:cartesian-product-of-normal-subgroups-is-normal-subgroup-of-cartesian-product"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $N_{1}$
 \end_inset
@@ -31892,7 +31923,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Начнём с пример.
+Начнём с примера.
  Рассмотрим разложение группы симметрий квадрата 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -32251,6 +32282,15 @@ x_{2}y_{2}=x_{1}h_{x}y_{1}h_{y}=x_{1}\left(y_{1}y_{1}^{-1}\right)h_{x}y_{1}h_{y}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно, стоит выделить определение
+\end_layout
+
+\end_inset
+
 Таким образом, взяв по представителю из двух смежных классов и перемножив
  их в определенном порядке, мы попадём в смежный класс, который не будет
  зависеть от того, каких именно представителей мы выбрали.
@@ -32259,7 +32299,14 @@ x_{2}y_{2}=x_{1}h_{x}y_{1}h_{y}=x_{1}\left(y_{1}y_{1}^{-1}\right)h_{x}y_{1}h_{y}
 \end_inset
 
  на множестве смежных классов можно определить бинарную операцию следующим
- образом: если 
+ образом:
+\begin_inset CommandInset label
+LatexCommand label
+name "coset-product-definition"
+
+\end_inset
+
+ если 
 \begin_inset Formula $A=xN$
 \end_inset
 
@@ -35355,6 +35402,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:normal_subgroup-of-Z_n-and-Z"
+
+\end_inset
+
 Описать все нормальные подгруппы и факторгруппы по ним для групп: а) 
 \begin_inset Formula $Z_{n}$
 \end_inset
@@ -35942,6 +35995,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:commutator-and-commutant"
+
+\end_inset
+
 Элемент 
 \begin_inset Formula $\left[a;b\right]=aba^{-1}b^{-1}$
 \end_inset
@@ -36316,6 +36375,12 @@ name "prob:commutant-is-unity-group-iff-group-is-commutative"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-of-symmetries-of-triangle-square-and-quaternions"
+
+\end_inset
+
 Найти коммутант в группах: а) симметрий треугольника 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -36336,7 +36401,7 @@ noprefix "false"
 
 \end_inset
 
-, в) в группе кватернионов 
+, в) в группе 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "prob:all-groups-of-orders-4-6-8"
@@ -37969,29 +38034,29 @@ status open
 В группу вращений куба входят следующие вращения: 1) тождественное преобразовани
 е, 2) вращения вокруг осей, проходящих через центры противоположных граней
  (3 оси, вокруг каждой — 3 поворота: на 
-\begin_inset Formula $90\text{\textdegree}$
+\begin_inset Formula $90\text{°}$
 \end_inset
 
 , 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  и 
-\begin_inset Formula $270\text{\textdegree}$
+\begin_inset Formula $270\text{°}$
 \end_inset
 
 , всего 9 вращений), 3) вращения вокруг осей, соединяющих середины противоположн
 ых рёбер (6 пар рёбер, каждой — один поворот на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
 ), 4) вращения вокруг осей, проходящих через противоположные вершины (4
  пары вершин, для каждой — 2 поворота: на 
-\begin_inset Formula $120\text{\textdegree}$
+\begin_inset Formula $120\text{°}$
 \end_inset
 
  и 
-\begin_inset Formula $240\text{\textdegree}$
+\begin_inset Formula $240\text{°}$
 \end_inset
 
 , всего 8 поворотов).
@@ -38006,29 +38071,29 @@ status open
 В группу вращений октаэдра входят следующие вращения: 1) тождественное преобразо
 вание, 2) вращения вокруг осей, проходящих через несмежные вершины (3 пары
  вершин, для каждой — 3 поворота на 
-\begin_inset Formula $90\text{\textdegree}$
+\begin_inset Formula $90\text{°}$
 \end_inset
 
 , 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  и 
-\begin_inset Formula $270\text{\textdegree}$
+\begin_inset Formula $270\text{°}$
 \end_inset
 
 , всего 9 вращений), 3) вращения вокруг осей, проходящих через середины
  противоположных рёбер (6 пар рёбер, для каждой — один поворот на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
 ), 4) вращения вокруг центров противоположных граней (4 пары граней, для
  каждой — 2 поворота: на 
-\begin_inset Formula $120\text{\textdegree}$
+\begin_inset Formula $120\text{°}$
 \end_inset
 
  и 
-\begin_inset Formula $240\text{\textdegree}$
+\begin_inset Formula $240\text{°}$
 \end_inset
 
 , всего 8 поворотов).
@@ -38100,7 +38165,7 @@ noprefix "false"
 Спичечный коробок представляет собой прямоугольный параллелепипед общего
  вида (все три размерности разные), поэтому группа его вращений включает
  тождественное преобразование и три вращения на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг осей, проходящих через середины противоположных граней.
@@ -38120,7 +38185,7 @@ noprefix "false"
 Спичечный коробок представляет собой прямоугольный параллелепипед общего
  вида (все три размерности разные), поэтому группа его вращений включает
  тождественное преобразование и три вращения на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг осей, проходящих через середины противоположных граней.
@@ -38143,6 +38208,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "on-commutant-of-cube-rotations"
+
+\end_inset
+
 Вычисление коммутанта группы вращений куба удобно провести, вписав в куб
  тетраэдр, как это показано на рисунке 
 \begin_inset CommandInset ref
@@ -38772,6 +38843,4389 @@ gh_{j}g^{-1}=ga_{j}g^{-1}gb_{j}g^{-1}ga_{j}^{-1}g^{-1}gb_{j}^{-1}g_{j}.
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Гомоморфизм
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "def:homomorphism"
+
+\end_inset
+
+Гомоморфизмом
+\emph default
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ в группу 
+\begin_inset Formula $F$
+\end_inset
+
+ называется отображение 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $\varphi\left(ab\right)=\varphi\left(a\right)\cdot\varphi\left(b\right)$
+\end_inset
+
+ для любых 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+ (произведение 
+\begin_inset Formula $ab$
+\end_inset
+
+ берётся в группе 
+\begin_inset Formula $G$
+\end_inset
+
+, а 
+\begin_inset Formula $\varphi\left(a\right)\cdot\varphi\left(b\right)$
+\end_inset
+
+ — в группе 
+\begin_inset Formula $F$
+\end_inset
+
+).
+ Гомоморфизм отличается от изоморфизма тем, что при гомоморфизме не требуется
+ взаимной однозначности.
+\end_layout
+
+\begin_layout Example
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа вращений куба, а 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ — группа подстановок двух тетраэдров, вписанных в него 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "on-commutant-of-cube-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Каждому вращение куба соответствует определённая подстановка тетраэдров;
+ при последовательном выполнении двух вращений куба соответствующие подстановки
+ тетраэдров перемножаются.
+ Таким образом, отображение группы вращений куба на группу подстановок двух
+ тетраэдров — гомоморфизм.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Доказать, что если 
+\begin_inset Formula $G$
+\end_inset
+
+ коммутативна, то и 
+\begin_inset Formula $F$
+\end_inset
+
+ коммутативна.
+ Верно ли обратное утверждение?
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольные 
+\begin_inset Formula $x,y\in F$
+\end_inset
+
+.
+ Нужно доказать, что 
+\begin_inset Formula $xy=yx$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — отображение 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+, то существуют 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $\varphi\left(a\right)=x$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(b\right)=y$
+\end_inset
+
+.
+ Тогда, так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм и 
+\begin_inset Formula $G$
+\end_inset
+
+ — коммутативная, то 
+\begin_inset Formula 
+\[
+xy=\varphi\left(a\right)\varphi\left(b\right)=\varphi\left(ab\right)=\varphi\left(ba\right)=\varphi\left(b\right)\varphi\left(a\right)=yx,
+\]
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь, что обратное утверждение не верно.
+ Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — произвольная некоммутативная группа (например, группа вращений тетраэдра
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group-of-tetrahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), а 
+\begin_inset Formula $F=\left\{ e\right\} $
+\end_inset
+
+.
+ Отображение 
+\begin_inset Formula $\varphi\left(g\right)=e$
+\end_inset
+
+ является гомоморфизмом (отображает 
+\begin_inset Formula $G$
+\end_inset
+
+ на всё 
+\begin_inset Formula $F$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(a\right)\varphi\left(b\right)=ee=e=\varphi\left(ab\right)$
+\end_inset
+
+).
+ Мы построили гомоморфизм 
+\begin_inset Formula $G$
+\end_inset
+
+ на 
+\begin_inset Formula $F$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $F$
+\end_inset
+
+ — коммутативная, а 
+\begin_inset Formula $G$
+\end_inset
+
+ — нет.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Ещё можно привести в качестве примера гомоморфизм, рассмотренный в примере
+ выше
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:homomorphism-maps-unity-to-unity"
+
+\end_inset
+
+Доказать, что при гомоморфизме группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+ единица группы 
+\begin_inset Formula $G$
+\end_inset
+
+ переходит в единицу группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $e_{G}$
+\end_inset
+
+ — единица группы 
+\begin_inset Formula $G$
+\end_inset
+
+, 
+\begin_inset Formula $e_{F}$
+\end_inset
+
+ — единица группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Нужно доказать, что 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $\varphi\left(e_{G}\right)=x$
+\end_inset
+
+ и рассмотрим произвольный элемент 
+\begin_inset Formula $y$
+\end_inset
+
+ группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Так как гомоморфизм — это отображение на 
+\begin_inset Formula $F$
+\end_inset
+
+, то существует 
+\begin_inset Formula $b\in G$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(b\right)=y$
+\end_inset
+
+.
+ Тогда, по определению гомоморфизма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+xy=\varphi\left(e_{G}\right)\varphi\left(b\right)=\varphi\left(e_{G}b\right)=\varphi\left(b\right)=y,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+yx=\varphi\left(b\right)\varphi\left(e_{G}\right)=\varphi\left(be_{G}\right)=\varphi\left(b\right)=y.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, элемент 
+\begin_inset Formula $x=\varphi\left(e_{G}\right)$
+\end_inset
+
+ удовлетворяет требованиям к единичному элементу группы 
+\begin_inset Formula $F$
+\end_inset
+
+, а так как единичный элемент в группе единственен 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:unity-is-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $e_{F}=\varphi\left(e_{G}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге доказано через 
+\begin_inset Formula $\varphi\left(e_{G}\right)\varphi\left(e_{G}\right)=\varphi\left(e_{G}e_{G}\right)=\varphi\left(e_{G}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:homomorphism-maps-inverse-to-inverse"
+
+\end_inset
+
+Доказать, что для любого 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $\varphi\left(a^{-1}\right)=\left[\varphi\left(a\right)\right]^{-1}$
+\end_inset
+
+, где 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм, и в левой части равенство обратный элемент берётся в группе
+ 
+\begin_inset Formula $G$
+\end_inset
+
+, а в правой — в группе 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $\varphi\left(a\right)=x$
+\end_inset
+
+ и докажем, что 
+\begin_inset Formula $\varphi\left(a^{-1}\right)$
+\end_inset
+
+ удовлетворяет требованиям к обратному элементу 
+\begin_inset Formula $x$
+\end_inset
+
+ в группе 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Действительно, по определению гомоморфизма и по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-unity-to-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\varphi\left(a^{-1}\right)x=\varphi\left(a^{-1}\right)\varphi\left(a\right)=\varphi\left(a^{-1}a\right)=\varphi\left(e_{G}\right)=e_{F},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\varphi\left(a^{-1}\right)=\varphi\left(a\right)\varphi\left(a^{-1}\right)=\varphi\left(aa^{-1}\right)=\varphi\left(e_{G}\right)=e_{F}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $\varphi\left(a^{-1}\right)$
+\end_inset
+
+ удовлетворяет всем требованиям к обратному элементу для элемента 
+\begin_inset Formula $\varphi\left(a\right)$
+\end_inset
+
+ в группе 
+\begin_inset Formula $F$
+\end_inset
+
+, а так как обратный элемент к любому элементу группы единственен 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:inverse-element-is-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $\left[\varphi\left(a\right)\right]^{-1}=\varphi\left(a^{-1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi_{1}:G\to F$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{2}:F\to H$
+\end_inset
+
+ — гомоморфизмы.
+ Доказать, что 
+\begin_inset Formula $\varphi_{2}\varphi_{1}:G\to F$
+\end_inset
+
+ — тоже гомоморфизм.
+\end_layout
+
+\begin_layout Solution
+Покажем, сначала, что 
+\begin_inset Formula $\varphi_{2}\varphi_{1}$
+\end_inset
+
+ — отображение на всю группу 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Рассмотрим произвольный элемент 
+\begin_inset Formula $h\in H$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ — гомоморфизм, то существует 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi_{2}\left(x\right)=h$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ — гомоморфизм, то существует 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi_{1}\left(a\right)=x$
+\end_inset
+
+.
+ Тогда, по определению композиции отображений 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Нужно дать определение и сослаться на него, пока есть только определение
+ преобразования, а не произвольного отображения
+\end_layout
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(\varphi_{2}\varphi_{1}\right)\left(a\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\right)=\varphi_{2}\left(x\right)=h,
+\]
+
+\end_inset
+
+то есть для любого 
+\begin_inset Formula $h\in H$
+\end_inset
+
+ существует 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\left(\varphi_{2}\varphi_{1}\right)\left(a\right)=h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь, что 
+\begin_inset Formula $\varphi_{2}\varphi_{1}$
+\end_inset
+
+ сохраняет произведение.
+ Рассмотрим произвольные элементы 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)=\varphi_{2}\left(\varphi_{1}\left(ab\right)\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ — гомоморфизм 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\varphi_{1}\left(ab\right)=\varphi_{1}\left(a\right)\varphi_{1}\left(b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+А так как 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ — тоже гомоморфизм, то 
+\begin_inset Formula 
+\[
+\varphi_{2}\left(\varphi_{1}\left(ab\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\varphi_{1}\left(b\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\right)\varphi_{2}\left(\varphi_{1}\left(b\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению композиции отображений 
+\begin_inset Formula $\varphi_{2}\left(\varphi_{1}\left(a\right)\right)=\left(\varphi_{2}\varphi_{1}\right)\left(a\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{2}\left(\varphi_{1}\left(b\right)\right)=\left(\varphi_{2}\varphi_{1}\right)\left(b\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left(\varphi_{2}\varphi_{1}\right)\left(ab\right)=\left(\varphi_{2}\varphi_{1}\right)\left(a\right)\left(\varphi_{2}\varphi_{1}\right)\left(b\right),
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $\varphi_{2}\varphi_{1}$
+\end_inset
+
+ сохраняет произведение, то есть, учитывая доказанное выше, является гомоморфизм
+ом.
+\end_layout
+
+\begin_layout Standard
+Важные примеры гомоморфизмом получаются с помощью следующей конструкции
+ 
+\begin_inset Quotes rld
+\end_inset
+
+естественного гомоморфизма
+\begin_inset Quotes rrd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Рассмотрим следующее отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на факторгруппу 
+\begin_inset Formula $G/N$
+\end_inset
+
+: сопоставим каждому элементу 
+\begin_inset Formula $g$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ тот смежный класс 
+\begin_inset Formula $T$
+\end_inset
+
+, который содержит элемент 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что описанное выше отображение 
+\begin_inset Formula $\varphi:G\to G/N$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $G/N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Нужно показать, что 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — отображение на всё 
+\begin_inset Formula $G/N$
+\end_inset
+
+ и что 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ сохраняет произведение.
+\end_layout
+
+\begin_layout Solution
+Каждый элемент 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ принадлежит некоторому классу 
+\begin_inset Formula $G/N$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-element-belongs-to-some-coset"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Поэтому для любого 
+\begin_inset Formula $T\in G/N$
+\end_inset
+
+ существует 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(g\right)=T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь два произвольных элемента 
+\begin_inset Formula $g_{1},g_{2}\in G$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $\varphi\left(g_{1}\right)=T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(g_{2}\right)=T_{2}$
+\end_inset
+
+.
+ Тогда, по определению произведения смежных классов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "coset-product-definition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}g_{2}$
+\end_inset
+
+ принадлежит классу 
+\begin_inset Formula $T_{1}T_{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(g_{1}g_{2}\right)=T_{1}T_{2}=\varphi\left(g_{1}\right)\varphi\left(g_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Описанное отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ называют 
+\emph on
+естественным гомоморфизмом.
+\end_layout
+
+\begin_layout Standard
+Мы показали, что с каждой нормальной подгруппой связан некоторый гомоморфизм.
+ Покажем, что и, обратно, каждый гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+ можно рассматривать как естественный гомоморфизм 
+\begin_inset Formula $G$
+\end_inset
+
+ на факторгруппу 
+\begin_inset Formula $G/N$
+\end_inset
+
+ по подходящей нормальной подгруппе.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:kernel-of-homomorphism"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм, тогда множество элементом 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ таких, что 
+\begin_inset Formula $\varphi\left(g\right)=e_{F}$
+\end_inset
+
+, называют 
+\emph on
+ядром гомоморфизма 
+\emph default
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+ и обозначается 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:kernel-is-subgroup"
+
+\end_inset
+
+Доказать, что 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся результатом задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+1) Пусть 
+\begin_inset Formula $g_{1},g_{2}\in\mathrm{Ker}\varphi$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, то 
+\begin_inset Formula $\varphi\left(g_{1}g_{2}\right)=\varphi\left(g_{1}\right)\varphi\left(g_{2}\right)=e_{F}e_{F}=e_{F}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $g_{1}g_{2}\in\mathrm{Ker}\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2) Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-unity-to-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $e_{G}\in\mathrm{Ker}\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+3) Пусть 
+\begin_inset Formula $g\in\mathrm{Ker}\varphi$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(g\right)=e_{F}$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}=e_{F}^{-1}$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:double-inservse-and-inverse-of-unit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $e_{F}^{-1}=e_{F}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=e_{F}$
+\end_inset
+
+ и, следовательно, 
+\begin_inset Formula $g^{-1}\in\mathrm{Ker}\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:kernel-is-normal-subgroup"
+
+\end_inset
+
+Доказать, что 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $H=\mathrm{Ker}\varphi$
+\end_inset
+
+ — подгруппа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:kernel-is-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то остаётся показать, что для любого 
+\begin_inset Formula $h\in\mathrm{Ker}\varphi$
+\end_inset
+
+ и любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $ghg^{-1}\in\mathrm{Ker}\varphi$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(ghg^{-1}\right)=e_{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi\left(ghg^{-1}\right)=\varphi\left(g\right)\varphi\left(h\right)\varphi\left(g^{-1}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $h\in\mathrm{Ker}\varphi$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi\left(h\right)=e_{F}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\varphi\left(ghg^{-1}\right)=\varphi\left(g\right)e_{F}\varphi\left(g^{-1}\right)=\varphi\left(g\right)\varphi\left(g^{-1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\varphi\left(ghg^{-1}\right)=\varphi\left(g\right)\varphi\left(g^{-1}\right)=\varphi\left(g\right)\left[\varphi\left(g\right)\right]^{-1}=e_{F},
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $ghg^{-1}\in\mathrm{Ker}\varphi$
+\end_inset
+
+, а значит 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим разложение группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по ядру 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:right-coset-and-right-coset-partition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:homomorphism-maps-elements-of-coset-by-kernel-to-same-element"
+
+\end_inset
+
+Доказать, что 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ лежат в одном смежном классе (по 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+) тогда и только тогда, когда 
+\begin_inset Formula $\varphi\left(g_{1}\right)=\varphi\left(g_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как ядро — нормальная подгруппа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:kernel-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то левое и правое разложения по этой подгруппе совпадают 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:criterion-of-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Для определённости будет рассматривать левое разложение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:left-coset-partition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+1) Пусть 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ лежат в одном смежном классе, тогда существует элемент 
+\begin_inset Formula $h\in\mathrm{Ker}\varphi$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $g_{2}=g_{1}h$
+\end_inset
+
+.
+ Тогда, в силу того, что 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм и по определению ядра гомоморфизма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:kernel-of-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $\varphi\left(g_{2}\right)=\varphi\left(g_{1}h\right)=\varphi\left(g_{1}\right)\varphi\left(h\right)=\varphi\left(g_{1}\right)$
+\end_inset
+
+.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге исходят из того, что 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ лежат в классе 
+\begin_inset Formula $g\mathrm{Ker}\varphi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+2) Предположим теперь, что 
+\begin_inset Formula $\varphi\left(g_{1}\right)=\varphi\left(g_{2}\right)$
+\end_inset
+
+.
+ Умножим это равенство слева на 
+\begin_inset Formula $\left[\varphi\left(g_{1}\right)\right]^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula $e_{F}=\left[\varphi\left(g_{1}\right)\right]^{-1}\varphi\left(g_{2}\right)$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left[\varphi\left(g_{1}\right)\right]^{-1}=\varphi\left(g_{1}^{-1}\right)$
+\end_inset
+
+.
+ Поэтому, с учётом определения гомоморфизма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e_{F}=\varphi\left(g_{1}^{-1}\right)\varphi\left(g_{2}\right)=\varphi\left(g_{1}^{-1}g_{2}\right),
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $g_{1}^{-1}g_{2}\in\mathrm{Ker}\varphi$
+\end_inset
+
+, а значит, существует 
+\begin_inset Formula $h\in\mathrm{Ker}\varphi$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $g_{1}^{-1}g_{2}=h$
+\end_inset
+
+ или 
+\begin_inset Formula $g_{2}=g_{1}h$
+\end_inset
+
+.
+ Откуда следует, что 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ принадлежат одному смежному классу.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+, тогда отображение 
+\begin_inset Formula $\psi:G/\mathrm{Ker}\varphi\to F$
+\end_inset
+
+, сопоставляющее каждому смежному классу значение 
+\begin_inset Formula $\varphi\left(g\right)$
+\end_inset
+
+ на каком-нибудь (и тогда на любом 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-elements-of-coset-by-kernel-to-same-element"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) его элементе 
+\begin_inset Formula $g$
+\end_inset
+
+, является изоморфизмом.
+\end_layout
+
+\begin_layout Standard
+Доказательство этой теоремы содержится в решениях следующих задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:natural-mapping-of-factorgroup-by-kernel-of-homomorphism-is-surjection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:natural-mapping-of-factorgroup-by-kernel-of-homomorphism-is-bijection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Может быть построить изложение в обратном порядке: ввести определение 
+\begin_inset Formula $\psi$
+\end_inset
+
+, затем доказать его свойства (следующие три задачи), а затем сформулировать
+ теорему
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:natural-mapping-of-factorgroup-by-kernel-of-homomorphism-is-surjection"
+
+\end_inset
+
+Докажите, что 
+\begin_inset Formula $\psi$
+\end_inset
+
+ есть отображение на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Нужно доказать, что для любого 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ существует 
+\begin_inset Formula $T\in G/\mathrm{Ker}\varphi$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\psi\left(T\right)=x$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм 
+\begin_inset Formula $G$
+\end_inset
+
+ на 
+\begin_inset Formula $F$
+\end_inset
+
+, то, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует такой 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, что 
+\begin_inset Formula $\varphi\left(g\right)=x$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+ — нормальная подгруппа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:kernel-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $g$
+\end_inset
+
+ принадлежит какому-либо классу разложения по 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-element-belongs-to-some-coset"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, этот класс и есть 
+\begin_inset Formula $T$
+\end_inset
+
+, так как для любого 
+\begin_inset Formula $y\in T$
+\end_inset
+
+ будет иметь место 
+\begin_inset Formula $\varphi\left(y\right)=\varphi\left(g\right)=x$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-elements-of-coset-by-kernel-to-same-element"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:natural-mapping-of-factorgroup-by-kernel-of-homomorphism-is-bijection"
+
+\end_inset
+
+Докажите, что 
+\begin_inset Formula $\psi$
+\end_inset
+
+ — взаимно однозначное отображение.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-elements-of-coset-by-kernel-to-same-element"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
+\begin_inset Formula $\varphi\left(x\right)\neq\varphi\left(y\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ принадлежат разным смежным классам по 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+.
+ Таким образом, если 
+\begin_inset Formula $T_{1},T_{2}\in T/\mathrm{Ker}\varphi$
+\end_inset
+
+ — два разных смежных класса, то для любых их представителей 
+\begin_inset Formula $g_{1}\in T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in T_{2}$
+\end_inset
+
+ будет иметь место 
+\begin_inset Formula $\varphi\left(g_{1}\right)\neq\varphi\left(g_{2}\right)$
+\end_inset
+
+, а значит 
+\begin_inset Formula $\psi\left(T_{1}\right)\neq\psi\left(T_{2}\right)$
+\end_inset
+
+.
+ С учётом того, что было доказано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:natural-mapping-of-factorgroup-by-kernel-of-homomorphism-is-surjection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем, что для любого 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ существует ровно один 
+\begin_inset Formula $T\in G/\mathrm{Ker}\varphi$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\psi\left(T\right)=x$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\psi$
+\end_inset
+
+ — взаимно-однозначное отображение.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+
+\end_inset
+
+Докажите, что 
+\begin_inset Formula $\psi$
+\end_inset
+
+ — изоморфизм.
+\end_layout
+
+\begin_layout Solution
+По определению, изоморфизм — это взаимно однозначное отображение группы,
+ сохраняющие произведение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:natural-mapping-of-factorgroup-by-kernel-of-homomorphism-is-bijection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\psi$
+\end_inset
+
+ — изоморфизм, поэтому остаётся доказать, что 
+\begin_inset Formula $\psi$
+\end_inset
+
+ сохраняет произведение, то есть для любых двух смежных классов 
+\begin_inset Formula $T_{1},T_{2}\in G/\mathrm{Ker}\varphi$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\psi\left(T_{1}T_{2}\right)=\psi\left(T_{1}\right)\psi\left(T_{2}\right)$
+\end_inset
+
+.
+ Для доказательства возьмём произвольных представителей этих классов 
+\begin_inset Formula $g_{1}\in T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in T_{2}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\psi\left(T_{1}\right)=\varphi\left(g_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\psi\left(T_{2}\right)=\varphi\left(g_{2}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, то 
+\begin_inset Formula $\varphi\left(g_{1}\right)\varphi\left(g_{2}\right)=\varphi\left(g_{1}g_{2}\right)$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ По определению произведения смежных классов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "coset-product-definition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}g_{2}\in T_{1}T_{2}$
+\end_inset
+
+, поэтому, по определению 
+\begin_inset Formula $\psi$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g_{1}g_{2}\right)=\psi\left(T_{1}T_{2}\right)$
+\end_inset
+
+.
+ Окончательно получаем: 
+\begin_inset Formula 
+\[
+\psi\left(T_{1}\right)\psi\left(T_{2}\right)=\varphi\left(g_{1}\right)\varphi\left(g_{2}\right)=\varphi\left(g_{1}g_{2}\right)=\psi\left(T_{1}T_{2}\right),
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $\psi$
+\end_inset
+
+ является взаимно однозначным отображением и переводит произведение в произведен
+ие, то есть является изоморфизмом.
+\end_layout
+
+\begin_layout Standard
+Приведём пример применения теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorgroup-of-square-symmetries-by-central-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ требовалось выяснить, изоморфна ли фактогруппа группы симметрий квадрата
+ по нормальной подгруппе отражений относительно центра группе вращений квадрата
+ или группе симметрий ромба.
+ Каждому элементы группы симметрий квадрата соответствует некоторая подстановка
+ осей симметрии 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{4}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:symmetry-axis-of-square"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ При этом диагонали могут переходить только друг в друга, а оси 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{4}$
+\end_inset
+
+ — также друг в друга.
+ Мы получаем таким образом отображение группы симметрий квадрата в группу
+ подстановок четырёх элементов: 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $l_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{4}$
+\end_inset
+
+.
+ Это отображение является гомоморфизмом на всю группы таких подстановок,
+ что 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{3}$
+\end_inset
+
+ переходят в 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{3}$
+\end_inset
+
+, а 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{4}$
+\end_inset
+
+ — в 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{4}$
+\end_inset
+
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Нужно ли это доказывать?
+\end_layout
+
+\end_inset
+
+.
+ Эта группа состоит из четырёх подстановок и изоморфна группе симметрий
+ ромба 
+\begin_inset Formula $L_{1}L_{2}L_{3}L_{4}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rhombus-from-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Ядром построенного гомоморфизма являются все симметрии квадрата, переводящие
+ каждую из четырёх осей симметрии в себя.
+ Нетрудно проверить, что такими преобразованиями являются только 
+\begin_inset Formula $e$
+\end_inset
+
+ и центральная симметрия 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Следовательно, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ подгруппа отражений относительно центра 
+\begin_inset Formula $\left\{ e,a\right\} $
+\end_inset
+
+ — нормальная подгруппа в группе симметрий квадрата, и соответствующая факторгру
+ппа изоморфна группе симметрий ромба.
+\end_layout
+
+\begin_layout Example
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pictures/symmetry-axis-of-square.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:symmetry-axis-of-square"
+
+\end_inset
+
+Оси симметрии квадрата
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pictures/rhombus-from-homomorphism.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rhombus-from-homomorphism"
+
+\end_inset
+
+Ромб, симметрии которого изоморфны группе подстановок осей симметрии квадрата
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Подобным образом можно решить следующие задачи.
+\end_layout
+
+\begin_layout Problem
+Доказать, что вращения тетраэдра на 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+ вокруг осей, проходящих через середины противоположных рёбер, вместе с
+ тождественным преобразованием образуют нормальную подгруппу в группе симметрий
+ тетраэдра, и найти соответствующую факторгруппу.
+\end_layout
+
+\begin_layout Solution
+Проведём прямые, соединяющие противоположные середины рёбер и обозначим
+ их 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Каждая симметрия тетраэдра либо переводит эти прямые в себя, либо переставляет
+ их друг с другом.
+ Таким образом, существует отображение группы симметрий тетраэдра на группу
+ подстановок трёх элементов 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Произведению двух симметрий тетраэдра соответствует композиция двух таких
+ подстановок, поэтому отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ симметрий тетраэдра на группу подстановок трёх элементов является гомоморфизмом.
+ Ядром этого гомоморфизма является подгруппа симметрий, включающая тождественное
+ преобразование и вращения на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Так как ядро гомоморфизма — нормальная подгруппа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:kernel-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то эта подгруппа действительно является нормальной.
+\end_layout
+
+\begin_layout Solution
+Остаётся выяснить структуру факторгруппы по этой подгруппе.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, факторгруппа по ядру гомоморфизма 
+\begin_inset Formula $G\to F$
+\end_inset
+
+ изоморфна 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ В нашем случае, 
+\begin_inset Formula $F$
+\end_inset
+
+ — группа подстановок трёх элементов 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Порядок группы симметрий тетраэдра — 24 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:tetrahedron-rotations-forms-group-and-its-size"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, порядок рассматриваемой подгруппы — 4, значит порядок факторгруппы равен
+ 6 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "order-of-factor-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Имеется 2 неизоморфные группы порядка 6 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+ и группа симметрий треугольника, нужно определить, какой из них изоморфна
+ факторгруппа по рассматриваемой подгруппе.
+\end_layout
+
+\begin_layout Solution
+Рассматривая подстановку трёх элементов, можно отождествить каждый из элементов
+ с одной из вершин правильного треугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому факторгруппа по рассматриваемой подгруппе изоморфна группе симметрий
+ треугольника.
+\end_layout
+
+\begin_layout Problem
+Доказать, что вращения куба на 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+ вокруг осей, проходящих через центры противоположных граней, вместе с тождестве
+нным преобразованием образуют нормальную подгруппу в группе вращений куба,
+ и найти соответствующую факторгруппу.
+\end_layout
+
+\begin_layout Solution
+Проведём прямые, соединяющие центры противоположных граней и обозначим их
+ 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Каждое вращение куба либо переводит эти прямые в себя, либо переставляет
+ их друг с другом.
+ Таким образом, существует отображение группы симметрий куба на группу подстанов
+ок трёх элементов 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Произведению двух вращений куба соответствует композиция двух подстановок,
+ поэтому отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ вращений куба на группу подстановок трёх элементов является гомоморфизмом.
+ Ядром этого гомоморфизма является подгруппа вращений куба, включающих тождестве
+нное преобразование и вращения на на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+ вокруг осей 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Так как ядро гомоморфизма — нормальная подгруппа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:kernel-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то эта подгруппа действительно является нормальной.
+\end_layout
+
+\begin_layout Solution
+Остаётся выяснить структуру фактогруппы по этой подгруппе.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, факторгруппа по ядру гомоморфизма 
+\begin_inset Formula $G\to F$
+\end_inset
+
+ изоморфна 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ В нашем случае, 
+\begin_inset Formula $F$
+\end_inset
+
+ — группа подстановок трёх элементов 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Порядок группы вращений куба — 24 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cube-and-octahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, порядок рассматриваемой группы — 4, значит порядок факторгруппы равен
+ 6 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "order-of-factor-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Имеется 2 неизоморфные группы порядка 6 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+ и группа симметрий треугольника, нужно определить, какой из них изоморфна
+ факторгруппа по рассматриваемой подгруппе.
+\end_layout
+
+\begin_layout Solution
+Рассматривая подстановку трёх элементов, можно отождествить каждый из элементов
+ с одной из вершин правильного треугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому факторгруппа по рассматриваемой подгруппе изоморфна группе симметрий
+ треугольника.
+\end_layout
+
+\begin_layout Problem
+Пусть на плоскости дан правильный 
+\begin_inset Formula $n$
+\end_inset
+
+-угольник с центром 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $R$
+\end_inset
+
+ — группа всех вращений плоскости вокруг точки 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ Рассмотрим подгруппу 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ всех вращений плоскости, переводящих правильный 
+\begin_inset Formula $n$
+\end_inset
+
+-угольник в себя.
+ Доказать, что это нормальная подгруппа группы 
+\begin_inset Formula $R$
+\end_inset
+
+ и что 
+\begin_inset Formula $R/Z_{n}\cong R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим следующее отображение: если 
+\begin_inset Formula $g\in R$
+\end_inset
+
+ — поворот на угол 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi\left(g\right)$
+\end_inset
+
+ — поворот на угол 
+\begin_inset Formula $n\alpha$
+\end_inset
+
+, иными словами: 
+\begin_inset Formula $\varphi\left(g\right)=g^{n}$
+\end_inset
+
+.
+ Это отображение является гомоморфизмом.
+ Действительно, так как для поворота на угол 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в 
+\begin_inset Formula $R$
+\end_inset
+
+ существует поворот на 
+\begin_inset Formula $\frac{\alpha}{n}$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — отображение на 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ А так как повороты плоскости коммутируют друг с другом, то 
+\begin_inset Formula $\varphi\left(g_{1}g_{2}\right)=\left(g_{1}g_{2}\right)^{n}=g_{1}^{n}g_{2}^{n}=\varphi\left(g_{1}\right)\varphi\left(g_{2}\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ переводит произведение в произведение.
+\end_layout
+
+\begin_layout Solution
+Найдём ядро этого гомоморфизма.
+ Из 
+\begin_inset Formula $\varphi\left(g\right)=e$
+\end_inset
+
+, где 
+\begin_inset Formula $e$
+\end_inset
+
+ — единичный элемент 
+\begin_inset Formula $R$
+\end_inset
+
+, то есть поворот на угол, кратный 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, следует 
+\begin_inset Formula $g=\frac{2\pi}{n}k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — целое число от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $n-1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\mathrm{Ker}\varphi=Z_{n}$
+\end_inset
+
+.
+ Тогда, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, отображение 
+\begin_inset Formula $\psi:R/Z_{n}\to R$
+\end_inset
+
+, ставящее каждому классу в соответствие значение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ на его представителях, — изоморфизм, а группы 
+\begin_inset Formula $R/Z_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $R$
+\end_inset
+
+ — изоморфны.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+ — нормальные подгруппы соответственно в группах 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $N_{1}\times N_{2}$
+\end_inset
+
+ — нормальная подгруппа в 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(G_{1}\times G_{2}\right)/\left(N_{1}\times N_{2}\right)\cong\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-of-normal-subgroups-is-normal-subgroup-of-cartesian-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, было показано, что 
+\begin_inset Formula $N_{1}\times N_{2}$
+\end_inset
+
+ — нормальная подгруппа в 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+.
+ Таким образом, остаётся показать, что 
+\begin_inset Formula $\left(G_{1}\times G_{2}\right)/\left(N_{1}\times N_{2}\right)\cong\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим отображение 
+\begin_inset Formula $\varphi:G_{1}\times G_{2}\to\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+, которое любому 
+\begin_inset Formula $\left(g_{1},g_{2}\right)\in G_{1}\times G_{2}$
+\end_inset
+
+ ставит в соответствие 
+\begin_inset Formula $T_{1}\times T_{2}$
+\end_inset
+
+, где 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ смежный класс 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ по 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+, которому принадлежит 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, а 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ — смежный класс 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ по 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+, которому принадлежит 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+, иными словами: 
+\begin_inset Formula $\varphi\left(\left(g_{1},g_{2}\right)\right)=\left(g_{1}N_{1},g_{2}N_{2}\right)$
+\end_inset
+
+.
+ Это отображение является отображением на 
+\begin_inset Formula $\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+, так как у каждого класса есть представитель.
+\end_layout
+
+\begin_layout Solution
+Кроме того, 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ переводит произведение в произведение.
+ Действительно, пусть 
+\begin_inset Formula $x_{1,}x_{2}\in G_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{1},y_{2}\in G_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $X_{1}=x_{1}N_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $X_{2}=x_{2}N_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $Y_{1}=x$
+\end_inset
+
+— смежный класс по 
+\begin_inset Formula $N_{1},$
+\end_inset
+
+которому принадлежит 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(\left(x_{1},y_{1}\right)\left(x_{2},y_{2}\right)\right)=\varphi\left(\left(x_{1}x_{2},y_{1}y_{2}\right)\right)=\left(\left(x_{1}x_{2}\right)N_{1},\left(y_{1}y_{2}\right)N_{2}\right)$
+\end_inset
+
+.
+ По определению произведения смежных классов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "coset-product-definition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $\left(x_{1}x_{2}\right)N_{1}=\left(x_{1}N_{1}\right)\left(x_{2}N_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(y_{1}y_{2}\right)N_{2}=\left(y_{1}N_{2}\right)\left(y_{2}N_{2}\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+\varphi\left(\left(x_{1},y_{1}\right)\left(x_{2},y_{2}\right)\right)=\left(\left(x_{1}x_{2}\right)N_{1},\left(y_{1}y_{2}\right)N_{2}\right)=\\
+=\left(\left(x_{1}N_{1}\right)\left(x_{2}N_{1}\right),\left(y_{1}N_{2}\right)\left(y_{2}N_{2}\right)\right)=\\
+=\left(x_{1}N_{1},y_{1}N_{2}\right)\left(x_{2}N_{1},y_{1}N_{2}\right)=\varphi\left(\left(x_{1},y_{1}\right)\right)\varphi\left(\left(x_{2},y_{2}\right)\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Ядром этого гомоморфизма является 
+\begin_inset Formula $N_{1}\times N_{2}$
+\end_inset
+
+, так как единицей 
+\begin_inset Formula $\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+ является пара, состоящая из единиц 
+\begin_inset Formula $G_{1}/N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}/N_{2}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-of-groups-is-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а единицами этих факторгрупп, в свою очередь, являются 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:coset-product-has-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а из 
+\begin_inset Formula $\varphi\left(\left(g_{1},g_{2}\right)\right)=\left(g_{1}N_{1},g_{2}N_{2}\right)=\left(N_{1},N_{2}\right)$
+\end_inset
+
+ следует 
+\begin_inset Formula $g_{1}\in N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in N_{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left(g_{1},g_{2}\right)\in N_{1}\times N_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, группы 
+\begin_inset Formula $\left(G_{1}\times G_{2}\right)/\mathrm{Ker}\varphi$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+ изоморфны, а так как 
+\begin_inset Formula $\mathrm{Ker}\varphi=N_{1}\times N_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(G_{1}\times G_{2}\right)/\left(N_{1}\times N_{2}\right)\cong\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Могут ли две неизоморфные группы иметь изоморфные нормальные подгруппы и
+ изоморфные факторгруппы по ним?
+\end_layout
+
+\begin_layout Solution
+Могут.
+ Группы симметрий квадрата и группа кватернионов неизоморфны 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В обоих группах есть нормальные подгруппы порядка 2 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-normal-subgroups-of-some-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (а все группы порядка 2 изоморфны 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Факторгруппы по этим группам, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-normal-subgroups-of-some-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изоморфны группе симметрий ромба.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге рассматриваются 
+\begin_inset Formula $Z_{4}$
+\end_inset
+
+ и 
+\begin_inset Formula $Z_{2}\times Z_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Может ли группа иметь две изоморфные нормальные подгруппы, факторгруппы
+ по которым неизоморфны?
+\end_layout
+
+\begin_layout Solution
+Может.
+ Рассмотрим бесконечную циклическую группу 
+\begin_inset Formula $Z$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:infinite-cyclic-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:normal_subgroup-of-Z_n-and-Z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что группы целых чисел, кратных, например, 2 и 3 являются
+ нормальными подгруппами группы 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ Эти группы изоморфны 
+\begin_inset Formula $Z$
+\end_inset
+
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Добавить задачу, в которой доказать это.
+\end_layout
+
+\end_inset
+
+, а значит изоморфны друг другу (это следует из решения задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:reverse-of-isomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphism-is-transitive"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Факторгруппа 
+\begin_inset Formula $Z$
+\end_inset
+
+ по подгруппе целых чисел, кратных 
+\begin_inset Formula $2$
+\end_inset
+
+, изоморфна 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+, а факторгруппа 
+\begin_inset Formula $Z$
+\end_inset
+
+ по подгруппе целых чисел, кратных 
+\begin_inset Formula $3$
+\end_inset
+
+, изоморфна 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+.
+ В группе 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ есть элемент порядка 
+\begin_inset Formula $2$
+\end_inset
+
+, а в 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+ есть элемент порядка 
+\begin_inset Formula $3$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ не изоморфна 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:isomorphic-elements-have-equal-orders"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге рассмотрен пример 
+\begin_inset Formula $Z_{4}\times Z_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Может ли группа иметь неизоморфные нормальные подгруппы, факторгруппы по
+ которым изоморфны?
+\end_layout
+
+\begin_layout Solution
+Может.
+ Рассмотрим группу симметрий квадрата 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Нормальные подгруппы этой группы были найдены в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-normal-subgroups-of-some-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Нормальные подгруппы этой группы 
+\begin_inset Formula $\left\{ e,a,b,c\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ e,a,d,f\right\} $
+\end_inset
+
+ не изоморфны (это следует из того, что порядки элементов 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $d$
+\end_inset
+
+ и 
+\begin_inset Formula $f$
+\end_inset
+
+ равны 2, а элементов 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ — 4 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:orders-of-symmetries-of-triangle-and-square"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Факторгруппы по ним являются группами порядка 2, а значит они обе изоморфны
+ 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге приведён пример 
+\begin_inset Formula $R/Z_{n}\cong R$
+\end_inset
+
+ и 
+\begin_inset Formula $R/\left\{ e\right\} \cong R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Посмотрим теперь, что происходит при гомоморфизме с подгруппами, нормальными
+ подгруппами, коммутантами.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Преобразовать в определения
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм, и пусть в 
+\begin_inset Formula $G$
+\end_inset
+
+ выбрано некоторое подмножество 
+\begin_inset Formula $M$
+\end_inset
+
+, тогда 
+\emph on
+образом множества
+\emph default
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ при гомоморфизме 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ (обозначается 
+\begin_inset Formula $\varphi\left(M\right)$
+\end_inset
+
+) будет называться множество всех элементов из 
+\begin_inset Formula $F$
+\end_inset
+
+, имеющих хотя бы один прообраз в 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Обратно, пусть 
+\begin_inset Formula $P$
+\end_inset
+
+ — подмножество в 
+\begin_inset Formula $F$
+\end_inset
+
+, тогда 
+\emph on
+полным прообразом 
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\emph default
+(обозначается 
+\begin_inset Formula $\varphi^{-1}\left(P\right)$
+\end_inset
+
+) будет называться множество всех элементов из 
+\begin_inset Formula $G$
+\end_inset
+
+, образы которых попадают в 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ Заметим, что знак 
+\begin_inset Formula $\varphi^{-1}$
+\end_inset
+
+ отдельно от 
+\begin_inset Formula $P$
+\end_inset
+
+ не имеет смысла: для гомоморфизма, вообще говоря, не существует обратного
+ преобразования.
+ Заметим также, что если 
+\begin_inset Formula $\varphi\left(M\right)=P$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi^{-1}\left(P\right)$
+\end_inset
+
+ содержит 
+\begin_inset Formula $M$
+\end_inset
+
+, но не обязательно с ним совпадает.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:image-of-subgroup-is-subgroup-by-homomorphism"
+
+\end_inset
+
+Доказать, что образ подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ при гомоморфизме 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ является подгруппой в группе 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся результатами решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+1) Пусть 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ — произвольные элементы 
+\begin_inset Formula $\varphi\left(H\right)$
+\end_inset
+
+, нужно доказать, что 
+\begin_inset Formula $xy\in\varphi\left(H\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $x,y\in\varphi\left(H\right)$
+\end_inset
+
+, то существуют 
+\begin_inset Formula $a,b\in H$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $\varphi\left(a\right)=x$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(b\right)=y$
+\end_inset
+
+.
+ А так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то есть переводит произведение в произведение, то 
+\begin_inset Formula $xy=\varphi\left(a\right)\varphi\left(b\right)=\varphi\left(ab\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа (по условию задачи), то 
+\begin_inset Formula $ab\in H$
+\end_inset
+
+.
+ То есть существует такой элемент 
+\begin_inset Formula $h=ab\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi\left(h\right)=xy$
+\end_inset
+
+, то есть 
+\begin_inset Formula $xy\in\varphi\left(H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2) Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то 
+\begin_inset Formula $e_{G}\in H$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ А как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-unity-to-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $e_{F}\in\varphi\left(H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+3) Пусть 
+\begin_inset Formula $x\in\varphi\left(H\right)$
+\end_inset
+
+, нужно доказать, что 
+\begin_inset Formula $x^{-1}\in\varphi\left(H\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $x\in\varphi\left(H\right)$
+\end_inset
+
+, то существует 
+\begin_inset Formula $a\in H$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(a\right)=x$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(a^{-1}\right)=\left[\varphi\left(a\right)\right]^{-1}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(a^{-1}\right)=x^{-1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то 
+\begin_inset Formula $a^{-1}\in H$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $x^{-1}\in\varphi\left(H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(H\right)$
+\end_inset
+
+ — подгруппа.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:preimage-of-subgroup-is-subgroup-by-homomorphism"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа в 
+\begin_inset Formula $F$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм.
+ Доказать, что 
+\begin_inset Formula $\varphi^{-1}\left(H\right)$
+\end_inset
+
+ — подгруппа в 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся результатами решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+1) Пусть 
+\begin_inset Formula $a,b\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(a\right)\in H$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(b\right)\in H$
+\end_inset
+
+, тогда, так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, то 
+\begin_inset Formula $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то 
+\begin_inset Formula $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)\in H$
+\end_inset
+
+.
+ Тогда, по определению полного прообраза, 
+\begin_inset Formula $ab\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+, что и требуется.
+\end_layout
+
+\begin_layout Solution
+2) Нужно доказать, что 
+\begin_inset Formula $e_{G}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+.
+ Действительно, так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то 
+\begin_inset Formula $e_{F}\in H$
+\end_inset
+
+, а как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-unity-to-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}\in H$
+\end_inset
+
+, то есть 
+\begin_inset Formula $e_{G}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+3) Пусть 
+\begin_inset Formula $a\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+, нужно доказать, что 
+\begin_inset Formula $a^{-1}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+.
+ По определению полного прообраза, 
+\begin_inset Formula $a\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+ означает 
+\begin_inset Formula $\varphi\left(a\right)\in H$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(a^{-1}\right)=\left[\varphi\left(a\right)\right]^{-1}$
+\end_inset
+
+, а так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то 
+\begin_inset Formula $\left[\varphi\left(a\right)\right]^{-1}\in H.$
+\end_inset
+
+ Таким образом, 
+\begin_inset Formula $\varphi\left(a^{-1}\right)\in H$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a^{-1}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $F$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм.
+ Доказать, что 
+\begin_inset Formula $\varphi^{-1}\left(N\right)$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:preimage-of-subgroup-is-subgroup-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $\varphi^{-1}\left(N\right)$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Остаётся показать, что для любого 
+\begin_inset Formula $a\in\varphi^{-1}\left(N\right)$
+\end_inset
+
+ и любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $gag^{-1}\in\varphi^{-1}\left(N\right)$
+\end_inset
+
+, что, по определению полного прообраза, означает 
+\begin_inset Formula $\varphi\left(gag^{-1}\right)\in N$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, то 
+\begin_inset Formula $\varphi\left(gag^{-1}\right)=\varphi\left(g\right)\varphi\left(a\right)\varphi\left(g^{-1}\right)$
+\end_inset
+
+.
+ По предположению 
+\begin_inset Formula $a\in\varphi^{-1}\left(N\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $h=\varphi\left(a\right)\in N$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $\varphi\left(g\right)=f$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}=f^{-1}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(g\right)=\varphi\left(g\right)\varphi\left(a\right)\left[\varphi\left(g\right)\right]^{-1}=fhf^{-1}$
+\end_inset
+
+, так как 
+\begin_inset Formula $h\in N$
+\end_inset
+
+ и 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $F$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(gag^{-1}\right)=fhf^{-1}\in N$
+\end_inset
+
+, то есть 
+\begin_inset Formula $gag^{-1}\in\varphi^{-1}\left(N\right)$
+\end_inset
+
+, что и требовалось.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:by-homomorphism-image-of-commutant-is-subset-of-commutant-and-preimage-of-commutant-is-superset-of-commutant"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм, 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+ — коммутанты групп 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ соответственно.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(K_{1}\right)$
+\end_inset
+
+ содержится в 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+ содержится в 
+\begin_inset Formula $\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+1) Нужно доказать, что из 
+\begin_inset Formula $f\in\varphi\left(K_{1}\right)$
+\end_inset
+
+ следует 
+\begin_inset Formula $f\in K_{2}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $f\in\varphi\left(K_{1}\right)$
+\end_inset
+
+, то существует элемент 
+\begin_inset Formula $k\in K_{1}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(k\right)=f$
+\end_inset
+
+.
+ По определению коммутанта 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:commutator-and-commutant"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $k=\left[a_{1},b_{1}\right]\left[a_{2},b_{2}\right]\cdot\dots\cdot\left[a_{m},b_{m}\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $a_{j},b_{j}\in G$
+\end_inset
+
+.
+ Тогда, так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, 
+\begin_inset Formula $\varphi\left(k\right)=\varphi\left(\left[a_{1},b_{1}\right]\right)\varphi\left(\left[a_{2},b_{2}\right]\right)\cdot\dots\cdot\varphi\left(\left[a_{m},b_{m}\right]\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(\left[a_{j},b_{j}\right]\right)=\varphi\left(a_{j}\right)\varphi\left(b_{j}\right)\varphi\left(a_{j}^{-1}\right)\varphi\left(b_{j}^{-1}\right)$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $\varphi\left(a_{j}\right)=x_{j}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(b_{j}\right)=y_{j}$
+\end_inset
+
+, тогда можем написать 
+\begin_inset Formula $\varphi\left(k\right)=\left[x_{1},y_{1}\right]\left[x_{2},y_{2}\right]\cdot\dots\cdot\left[x_{m},y_{m}\right]$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(k\right)$
+\end_inset
+
+ — произведение конечного числа коммутаторов из 
+\begin_inset Formula $F$
+\end_inset
+
+, то есть 
+\begin_inset Formula $f=\varphi\left(k\right)\in K_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2) Нужно доказать, что из 
+\begin_inset Formula $k\in K_{1}$
+\end_inset
+
+ следует 
+\begin_inset Formula $k\in\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+.
+ Как было показано, выше, 
+\begin_inset Formula $\varphi\left(k\right)\in K_{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $k\in\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(N\right)$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-subgroup-is-subgroup-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, было показано, что 
+\begin_inset Formula $\varphi\left(N\right)$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Остаётся показать, что для любого 
+\begin_inset Formula $a\in\varphi\left(N\right)$
+\end_inset
+
+ и любого 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $xax^{-1}\in\varphi\left(N\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, а значит — отображение на группу 
+\begin_inset Formula $F$
+\end_inset
+
+, то существует 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(g\right)=x$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a\in\varphi\left(N\right)$
+\end_inset
+
+, то существует 
+\begin_inset Formula $h\in N$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(h\right)=a$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}=x^{-1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+, 
+\begin_inset Formula $h\in N$
+\end_inset
+
+ и 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, то 
+\begin_inset Formula $ghg^{-1}\in N$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — изоморфизм, то 
+\begin_inset Formula $\varphi\left(ghg^{-1}\right)=\varphi\left(g\right)\varphi\left(h\right)\varphi\left(g^{-1}\right)=xax^{-1}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $xax^{-1}\in\varphi\left(N\right)$
+\end_inset
+
+, что и требовалось.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+ — коммутанты групп 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ соответственно и 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(K_{1}\right)=K_{2}$
+\end_inset
+
+.
+ Верно ли, что 
+\begin_inset Formula $K_{1}=\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+1) В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:by-homomorphism-image-of-commutant-is-subset-of-commutant-and-preimage-of-commutant-is-superset-of-commutant"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано 
+\begin_inset Formula $\varphi\left(K_{1}\right)\subseteq K_{2}$
+\end_inset
+
+.
+ Остаётся доказать, что 
+\begin_inset Formula $K_{2}\subseteq\varphi\left(K_{1}\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $f\in K_{2}$
+\end_inset
+
+, докажем, что 
+\begin_inset Formula $f\in\varphi\left(K_{1}\right)$
+\end_inset
+
+, то есть существует 
+\begin_inset Formula $k\in K_{1}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(k\right)=f$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $f$
+\end_inset
+
+ — элемент коммутанта, то 
+\begin_inset Formula $f=\left[x_{1},y_{1}\right]\cdot\dots\cdot\left[x_{m},y_{m}\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $x_{j},y_{j}\in F$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, а следовательно — отображение 
+\begin_inset Formula $G$
+\end_inset
+
+ на 
+\begin_inset Formula $F$
+\end_inset
+
+, то существуют 
+\begin_inset Formula $a_{j},b_{j}\in G$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $\varphi\left(a_{j}\right)=x_{j}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(b_{j}\right)=y_{j}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ переводит произведение в произведение
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и обратный элемент в обратный 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-inverse-to-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{multline*}
+\varphi\left(\left[a_{j},b_{j}\right]\right)=\varphi\left(a_{j}b_{j}a_{j}^{-1}b_{j}^{-1}\right)=\\
+=\varphi\left(a_{j}\right)\varphi\left(b_{j}\right)\varphi\left(a_{j}^{-1}\right)\varphi\left(b_{j}^{-1}\right)=\\
+=x_{j}y_{j}x_{j}^{-1}y_{j}^{-1}=\left[x_{j},y_{j}\right].
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Снова воспользуемся тем, что гомоморфизм переводит произведение в произведение:
+ 
+\begin_inset Formula $\varphi\left(\left[a_{1},b_{1}\right]\cdot\dots\cdot\left[a_{m},b_{m}\right]\right)=\left[x_{1},y_{1}\right]\cdot\dots\cdot\left[x_{m},y_{m}\right]=f$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $k=\left[a_{1},b_{1}\right]\cdot\dots\cdot\left[a_{m},b_{m}\right]\in K_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(k\right)=f$
+\end_inset
+
+, что и требовалось.
+\end_layout
+
+\begin_layout Solution
+2) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — некоторая коммутативная группа, то есть 
+\begin_inset Formula $K_{1}=K\left(G\right)=\left\{ e_{G}\right\} $
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь была неточность, я сначала написал, что 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ не должен совпадать с 
+\begin_inset Formula $\left\{ e_{G}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Рассмотрим гомоморфизм 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+, определённый следующим образом для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+: 
+\begin_inset Formula $\varphi\left(g\right)=e_{F}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $F=\left\{ e_{F}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $K_{2}=F=\left\{ e_{F}\right\} $
+\end_inset
+
+.
+ Так как для всех 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $\varphi\left(g\right)\in K_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi^{-1}\left(K_{2}\right)=G$
+\end_inset
+
+, но при этом 
+\begin_inset Formula $K_{1}=\left\{ e_{G}\right\} \neq\varphi^{-1}\left(K_{2}\right)=G$
+\end_inset
+
+.
+ Таким образом, в общем случае, равенство 
+\begin_inset Formula $K_{1}=\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+ не выполняется.
 \end_layout
 
 \begin_layout Standard
