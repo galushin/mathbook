@@ -38720,8 +38720,8 @@ status open
 \begin_inset Formula $N$
 \end_inset
 
- — подгруппа, то любое произведение конечного числа коммутантов также принадлежи
-т 
+ — подгруппа, то любое произведение конечного числа коммутаторов также принадлеж
+ит 
 \begin_inset Formula $N$
 \end_inset
 
@@ -39725,6 +39725,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:natural-homomorphism-to-factorgroup"
+
+\end_inset
+
 Описанное отображение 
 \begin_inset Formula $\varphi$
 \end_inset
@@ -43022,6 +43028,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:image-of-commutant-is-commutatnt-of-image-by-homomorphism"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $K_{1}$
 \end_inset
@@ -43323,6 +43335,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:solvable-group"
+
+\end_inset
+
 Группа 
 \begin_inset Formula $G$
 \end_inset
@@ -43713,33 +43731,101 @@ noprefix "false"
 , оказываются разрешимыми, поэтому естественно возникает вопрос, а бывают
  ли вообще неразрешимые группы.
  Ниже мы покажем, что группа вращений правильно додекаэдра 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить рисунок и ссылку на него
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dodecahedron"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
  неразрешима.
 \end_layout
 
-\begin_layout Problem
-Сколько элементов в группе вращений додекаэдра?
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Написать решение
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/dodecahedron.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dodecahedron"
+
+\end_inset
+
+Додекаэдр
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:dodecahedron-rotations-group-order"
+
+\end_inset
+
+Сколько элементов в группе вращений додекаэдра?
+\end_layout
+
+\begin_layout Solution
+Воспользуемся решением задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:size-of-classes-of-dodecahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Это ссылка вперёд!
+\end_layout
+
+\end_inset
+
+, всего получаем 
+\begin_inset Formula $1+24+20+15=60$
+\end_inset
+
+ вращений.
 \end_layout
 
 \begin_layout Standard
@@ -43750,24 +43836,72 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:size-of-classes-of-dodecahedron-rotations"
+
+\end_inset
+
 Сколько элементов содержится в каждом классе (в 2) -4) тождественное преобразова
 ние не входит)?
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+2) У додекаэдра имеется 12 граней, представляющих собой правильный правильный
+ пятиугольник.
+ Эти грани образуют 6 пар противоположных граней.
+ Для каждой пары имеется 4 поворота (на углы кратные 
+\begin_inset Formula $\frac{2\pi}{5}$
 \end_inset
 
+) вокруг оси, проходящих через центры этих граней.
+ Таким образом, в этот классе 
+\begin_inset Formula $6\cdot4=24$
+\end_inset
 
+ вращения.
+\end_layout
+
+\begin_layout Solution
+3) У каждой из 12 граней — 5 вершин, но каждая вершина принадлежит трём
+ граням, поэтому всего имеется 20 вершин.
+ Которые образуют 10 пар противоположных вершин.
+ Для каждой пары противоположных вершин имеется ось симметрии.
+ Для каждой оси имеется два нетривальных поворота (на 
+\begin_inset Formula $\frac{\pi}{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+).
+ Таким образом, в этом классе всего 
+\begin_inset Formula $10\cdot2=20$
+\end_inset
+
+ вращений.
+\end_layout
+
+\begin_layout Solution
+4) У додекаэдра имеется 30 рёбер (у каждой из 12 грани — 5 рёбер, но каждое
+ ребро принадлежит двум граням), которые образуют 15 пар противоположных
+ рёбер.
+ Для каждой пары противоположных рёбер только поворот на 
+\begin_inset Formula $\pi$
+\end_inset
+
+ переводит додекаэдр в себя.
+ То есть в этом классе 15 вращений.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:normal-subgroup-of-dodecahedron-rotations-contains-whole-classes-of-rotations"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $N$
 \end_inset
@@ -43786,11 +43920,53 @@ status open
 \end_layout
 
 \begin_layout Solution
+Класс 1) содержит только один элемент (тождественное преобразование).
+ Кроме того, тождественное преобразование должно входить в любую подгруппу
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Написать про класс 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать про класс 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать про класс 4
 \end_layout
 
 \end_inset
@@ -43808,6 +43984,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:dodecahedron-rotations-has-no-proper-normal-subgroup"
+
+\end_inset
+
 Доказать, что в группе вращений додекаэдра не существует других нормальных
  подгрупп, кроме 
 \begin_inset Formula $\left\{ e\right\} $
@@ -43817,19 +43999,57 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+По теорема Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, порядок подгруппы является делителем порядка группы.
+ Так как группа вращений додекаэдр является группой порядка 60
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:dodecahedron-rotations-group-order"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+.
+ Классы 1) — 4) могут входить в нормальную подгруппу группы вращений додекаэдра
+ только целиком 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:normal-subgroup-of-dodecahedron-rotations-contains-whole-classes-of-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Комбинируя классы 2) — 4) с классом 1) можно получить подмножества, включающие
+ 1, 25, 21, 16, 45, 40, 36 или 60.
+ Из этих чисел только 1 и 60 являются делителем порядка группы, поэтому
+ в группе вращений додекаэдра нет нормальных кроме 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ и всей группы.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:group-without-proper-normal-subgroup-is-not-solvable"
+
+\end_inset
+
 Пусть группа 
 \begin_inset Formula $G$
 \end_inset
@@ -43851,16 +44071,92 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Коммутант группы — нормальная подгруппа этой группы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Если группа не коммутативна, то её коммутант не совпадает с 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
 
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, в предположениях задачи, коммутант 
+\begin_inset Formula $G$
+\end_inset
+
+ совпадает с самой группой 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Тогда, для любого натурального 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $K_{n}\left(G\right)=G$
+\end_inset
+
+, то есть цепочка коммутантов из определения разрешимой группы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:solvable-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ никогда не заканчивается подгруппой 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+, а значит группа 
+\begin_inset Formula $G$
+\end_inset
+
+ является неразрешимой.
+\end_layout
+
+\begin_layout Standard
+Из задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:dodecahedron-rotations-has-no-proper-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-without-proper-normal-subgroup-is-not-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что группа вращений додекаэдра неразрешима.
 \end_layout
 
 \begin_layout Standard
@@ -43872,19 +44168,144 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Пусть 
+\begin_inset Formula $G$
 \end_inset
 
+ — группа, а 
+\begin_inset Formula $H$
+\end_inset
 
+ — её подгруппа.
+ Докажем, что 
+\begin_inset Formula $K\left(H\right)$
+\end_inset
+
+ является подгруппой 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+.
+ Действительно, любой коммутатор элементов группы 
+\begin_inset Formula $H$
+\end_inset
+
+ является также коммутатором группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ А следовательно, и любое конечное произведение коммутаторов элементов группы
+ 
+\begin_inset Formula $H$
+\end_inset
+
+ (то есть любой элемент коммутатора 
+\begin_inset Formula $H$
+\end_inset
+
+) являются также элементом коммутатора группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь, что для любого целого 
+\begin_inset Formula $n>0$
+\end_inset
+
+ 
+\begin_inset Formula $K_{n}\left(H\right)$
+\end_inset
+
+ является подгруппой 
+\begin_inset Formula $K_{n}\left(G\right)$
+\end_inset
+
+.
+ База индукции получается из доказанного выше, так как для любой группы
+ 
+\begin_inset Formula $F$
+\end_inset
+
+, по определению, 
+\begin_inset Formula $K_{1}\left(F\right)=K\left(F\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь для всех 
+\begin_inset Formula $n\le m$
+\end_inset
+
+ утверждение доказано.
+ Докажем его для 
+\begin_inset Formula $n=m+1$
+\end_inset
+
+.
+ По определению 
+\begin_inset Formula $K_{m+1}\left(F\right)=K\left(K_{m}\left(F\right)\right)$
+\end_inset
+
+.
+ Тогда, по предположению индукции 
+\begin_inset Formula $K_{m}\left(H\right)$
+\end_inset
+
+ является подгруппой 
+\begin_inset Formula $K_{m}\left(G\right)$
+\end_inset
+
+.
+ А, как было показано выше, коммутатор подгруппы — это подгруппа коммутатора,
+ поэтому 
+\begin_inset Formula $K_{m+1}\left(H\right)=K\left(K_{m}\left(H\right)\right)\subseteq K\left(K_{m}\left(G\right)\right)=K_{m+1}\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима, то есть при некотором 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+ Так как группа должна включать единичный элемент, то из 
+\begin_inset Formula $K_{n}\left(H\right)\subseteq K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+ следует 
+\begin_inset Formula $K_{n}\left(H\right)=\left\{ e\right\} $
+\end_inset
+
+, то есть группа 
+\begin_inset Formula $H$
+\end_inset
+
+ — разрешима.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:image-of-solvable-group-is-solvable-by-homomorphism"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
@@ -43909,16 +44330,111 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Докажем, что для любого целого 
+\begin_inset Formula $n>0$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ имеет место 
+\begin_inset Formula $K_{n}\left(F\right)=\varphi\left(K_{n}\left(G\right)\right)$
+\end_inset
+
+.
+ База индукции 
+\begin_inset Formula $K_{1}\left(F\right)=\varphi\left(K_{1}\left(G\right)\right)$
+\end_inset
+
+ была доказана в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-commutant-is-commutatnt-of-image-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, так как 
+\begin_inset Formula $K_{1}\left(\cdot\right)=K\left(\cdot\right)$
+\end_inset
 
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $K_{n}\left(F\right)=\varphi\left(K_{n}\left(G\right)\right)$
+\end_inset
+
+ было доказано для 
+\begin_inset Formula $n\le m$
+\end_inset
+
+, докажем его для 
+\begin_inset Formula $n=m+1$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi\left(K_{m}\left(G\right)\right)=K_{m}\left(F\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ можно рассматривать как гомоморфизм группы 
+\begin_inset Formula $K_{m}\left(F\right)$
+\end_inset
+
+ на группу 
+\begin_inset Formula $K_{m}\left(G\right)$
+\end_inset
+
+.
+ Применяя к этому гомоморфизму базу индукции, получим, что 
+\begin_inset Formula $K_{m+1}\left(F\right)=\varphi\left(K_{m}\left(G\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G$
+\end_inset
+
+ — разрешимая группа, то для некоторого 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $K_{n}\left(G\right)=\left\{ e_{G}\right\} $
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-unity-to-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $K_{n}\left(F\right)=\varphi\left(K_{n}\left(G\right)\right)=\left\{ e_{F}\right\} $
+\end_inset
+
+, то есть группа 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешима.
 \end_layout
 
 \begin_layout Problem
@@ -43947,16 +44463,47 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Пусть 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ — произвольная неразрешимая группа, например группа вращений додекаэдра
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dodecahedron"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, а 
+\begin_inset Formula $F=\left\{ e\right\} $
+\end_inset
 
+ и 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ определён для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ следующим образом 
+\begin_inset Formula $\varphi\left(g\right)=e$
+\end_inset
+
+.
+ Группа 
+\begin_inset Formula $F$
+\end_inset
+
+ — разрешимая, так как 
+\begin_inset Formula $K_{1}\left(F\right)=\left\{ e\right\} $
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -43981,16 +44528,36 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Рассмотрим естественный гомоморфизм 
+\begin_inset Formula $\varphi:G\to G/N$
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:natural-homomorphism-to-factorgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Отсюда, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-solvable-group-is-solvable-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, группа 
+\begin_inset Formula $G/N$
+\end_inset
+
+ является разрешимой.
 \end_layout
 
 \begin_layout Problem
@@ -44148,7 +44715,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Результаты задач 158 и 169 
+Результаты задач 168 и 169 
 \begin_inset Note Note
 status open
 
