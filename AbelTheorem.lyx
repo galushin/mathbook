@@ -35775,6 +35775,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:factorgroup-of-cartesian-product-by-one-multiple-is-normal-and-equal-other"
+
+\end_inset
+
 В прямом произведении групп 
 \begin_inset Formula $G_{1}\times G_{2}$
 \end_inset
@@ -38543,6 +38549,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:factorgroup-by-commutant-is-commutative"
+
+\end_inset
+
 Доказать, что факторгруппа произвольной группы 
 \begin_inset Formula $G$
 \end_inset
@@ -38742,6 +38754,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-of-normal-subgroup-is-normal-in-whole-group"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $N$
 \end_inset
@@ -44164,6 +44182,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:subgroup-of-solvable-group-is-solvable"
+
+\end_inset
+
 Доказать, что всякая подгруппа разрешимой подгруппы разрешима.
 \end_layout
 
@@ -44262,7 +44286,7 @@ noprefix "false"
 \end_inset
 
 .
- А, как было показано выше, коммутатор подгруппы — это подгруппа коммутатора,
+ А, как было показано выше, коммутант подгруппы — это подгруппа коммутатора,
  поэтому 
 \begin_inset Formula $K_{m+1}\left(H\right)=K\left(K_{m}\left(H\right)\right)\subseteq K\left(K_{m}\left(G\right)\right)=K_{m+1}\left(G\right)$
 \end_inset
@@ -44507,6 +44531,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:factorgroup-of-solvable-group-is-solvable"
+
+\end_inset
+
 Пусть группа 
 \begin_inset Formula $G$
 \end_inset
@@ -44561,6 +44591,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:if-normal-subgroup-and-factorgroup-is-solvable-them-group-is-solvable"
+
+\end_inset
+
 Доказать, что если группы 
 \begin_inset Formula $N$
 \end_inset
@@ -44577,16 +44613,122 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Не смог решить сам эту задачу
 \end_layout
 
 \end_inset
 
+Пусть 
+\begin_inset Formula $\varphi$
+\end_inset
 
+ — естественный гомоморфизм 
+\begin_inset Formula $G$
+\end_inset
+
+ на 
+\begin_inset Formula $G/N$
+\end_inset
+
+.
+ Тогда, как было показано при решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-solvable-group-is-solvable-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, для любого целого 
+\begin_inset Formula $m>0$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\varphi\left(K_{m}\left(G\right)\right)=K_{m}\left(G/N\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G/N$
+\end_inset
+
+ — разрешимая группа, то для некоторого целого 
+\begin_inset Formula $n>0$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $\varphi\left(K_{n}\left(G\right)\right)=K_{n}\left(G/N\right)=\left\{ N\right\} $
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — естественный гомоморфизм, то 
+\begin_inset Formula $K_{n}\left(G\right)\subseteq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — разрешимая группа, то для некоторого 
+\begin_inset Formula $s>0$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $K_{s}\left(N\right)=\left\{ e\right\} $
+\end_inset
+
+.
+ Как было доказано при решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-of-solvable-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Так как фрагмент задачи используется без всей задачи, то логично было бы
+ вынести его в отдельную задачу
+\end_layout
+
+\end_inset
+
+, коммутант подгруппы – подгруппа коммутанта исходной группы, поэтому 
+\begin_inset Formula $K_{n+s}\left(G\right)\subseteq K_{s}\left(N\right)=\left\{ e\right\} $
+\end_inset
+
+, а так как группа обязательно содержит единичный элемент, то 
+\begin_inset Formula $K_{n+s}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+ и группа 
+\begin_inset Formula $G$
+\end_inset
+
+ — разрешимая.
 \end_layout
 
 \begin_layout Problem
@@ -44607,19 +44749,96 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим подгруппу 
+\begin_inset Formula $G\times\left\{ e_{F}\right\} $
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ группы 
+\begin_inset Formula $G\times F$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-of-subgroups-is-subgroup-of-cartesian-product"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorgroup-of-cartesian-product-by-one-multiple-is-normal-and-equal-other"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+, эта подгруппа является нормальной в 
+\begin_inset Formula $G\times F$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(G\times F\right)/\left(G\times\left\{ e_{F}\right\} \right)\cong F$
+\end_inset
+
+.
+ В свою очередь, 
+\begin_inset Formula $G\times\left\{ e_{F}\right\} $
+\end_inset
+
+ изоморфна 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-have-subgoups-isomorphic-to-multiples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, группы 
+\begin_inset Formula $G\times\left\{ e_{F}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left(G\times F\right)/\left(G\times\left\{ e_{F}\right\} \right)$
+\end_inset
+
+ являются разрешимыми.
+ Значит, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-them-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, разрешимой является и группа 
+\begin_inset Formula $G\times F$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:solvable_group-has-chain_1"
+
+\end_inset
+
 Пусть группа 
 \begin_inset Formula $G$
 \end_inset
@@ -44665,31 +44884,78 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ — разрешимая группа, существует такое 
+\begin_inset Formula $n>0$
+\end_inset
+
+, что 
+\begin_inset Formula $K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{i}=K\left(G_{i-1}\right)=K_{i}\left(G\right)$
+\end_inset
+
+ (при 
+\begin_inset Formula $i=1\dots n$
+\end_inset
+
+).
+ Тогда 1) очевидно выполняетя.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, коммутант группы 
+\begin_inset Formula $G_{i-1}$
+\end_inset
 
+ является нормальной подгруппой 
+\begin_inset Formula $G_{i-1}$
+\end_inset
+
+, поэтому 2) тоже выполняется.
+ Свойство 3) выполняется в силу того, что 
+\begin_inset Formula $G_{n}=K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+ — коммутативная группа.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:group-with-chain_1-is-solvable"
+
+\end_inset
+
 Пусть для группы 
 \begin_inset Formula $G$
 \end_inset
 
  существует цепочка групп со свойствами, указанными в условии предыдущей
  задачи 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:solvable_group-has-chain_1"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -44702,26 +44968,85 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как 
+\begin_inset Formula $G_{n}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+ — коммутативная, то 
+\begin_inset Formula $K\left(G_{n}\right)=\left\{ e\right\} $
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ — разрешимая группа по определению.
+\end_layout
+
+\begin_layout Solution
+Так как группы 
+\begin_inset Formula $G_{n-1}/G_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ являются разрешимыми, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-them-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, разрешима и 
+\begin_inset Formula $G_{n-1}$
+\end_inset
+
+.
+ Теперь тем же методом можно доказать, что разрешима 
+\begin_inset Formula $G_{n-2}$
+\end_inset
+
+ и так далее.
+ Таким образом, мы приходим к тому, что 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+ является разрешимой.
 \end_layout
 
 \begin_layout Standard
-Результаты задач 168 и 169 
-\begin_inset Note Note
-status open
+Результаты задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:solvable_group-has-chain_1"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Добавить ссылки
-\end_layout
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-with-chain_1-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -44729,13 +45054,13 @@ status open
 \begin_inset Formula $G$
 \end_inset
 
- цепочки групп с указанными в условии задачи 168 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ цепочки групп с указанными в условии задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:solvable_group-has-chain_1"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -44746,6 +45071,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:solvable_group_has_chain_2"
+
+\end_inset
+
 Пусть группа 
 \begin_inset Formula $G$
 \end_inset
@@ -44772,7 +45103,7 @@ status open
 \end_inset
 
  (
-\begin_inset Formula $1\le i\le n-1$
+\begin_inset Formula $0\le i\le n-1$
 \end_inset
 
 ) содержит некоторую коммутативную нормальную подгруппу 
@@ -44791,16 +45122,225 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Если 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ — коммутативна, то 
+\begin_inset Formula $n=0$
+\end_inset
+
+ и утверждение становится тривиальным.
+ В дальнейшем будем рассматривать случай, когда 
+\begin_inset Formula $G$
+\end_inset
+
+ — разрешима, но не коммутативна.
+ Тогда существует 
+\begin_inset Formula $n>0$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $K_{n+1}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:solvable-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset Formula $K_{n}\left(G\right)$
+\end_inset
+
+ — коммутативная группа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, коммутант — нормальная подгруппа, а в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-normal-subgroup-is-normal-in-whole-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что коммутант нормальной подгруппы является нормальной подгруппо
+й исходной группы, поэтому для любого целого 
+\begin_inset Formula $i>0$
+\end_inset
+
+ группа 
+\begin_inset Formula $K_{i}\left(G\right)$
+\end_inset
+
+ является нормальной подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $K_{n}\left(G\right)$
+\end_inset
+
+ — коммутативная нормальная подгруппа в 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula $N_{0}=K_{n}\left(G\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $G_{1}=G_{0}/K_{n}\left(G_{0}\right)$
+\end_inset
+
+ — разрешимая группа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorgroup-of-solvable-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим естественный гомоморфизм 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+ группы 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+ на факторгруппу 
+\begin_inset Formula $G_{0}/K_{n}\left(G_{0}\right)$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:natural-homomorphism-to-factorgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Как было показано при решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-solvable-group-is-solvable-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
 
+\begin_inset Formula $K_{n}\left(G_{1}\right)=\varphi_{0}\left(K_{n}\left(G_{0}\right)\right)$
+\end_inset
+
+, но так как, по определению естественного гомоморфизма, для любого 
+\begin_inset Formula $g\in K_{n}\left(G_{0}\right)$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $\varphi_{0}\left(g\right)=K_{n}\left(G_{0}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $K_{n}\left(G_{1}\right)=\varphi\left(K_{n}\left(G_{0}\right)\right)=\left\{ K_{n}\left(G_{0}\right)\right\} $
+\end_inset
+
+ — единичная подгруппа группы 
+\begin_inset Formula $G_{1}=G_{0}/K_{n}\left(G_{0}\right)$
+\end_inset
+
+.
+ То есть 
+\begin_inset Formula $K_{n-1}\left(G_{1}\right)$
+\end_inset
+
+ — коммутативная нормальная подгруппа 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+.
+ Таким образом, мы получили разрешимую подгруппу 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ с более короткой цепочкой коммутантов, чем у 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+.
+ Продолжим этот процесс, полагая 
+\begin_inset Formula $N_{i}=K_{n-i}\left(G_{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Тогда, при 
+\begin_inset Formula $i=n-1$
+\end_inset
+
+ получим 
+\begin_inset Formula $G_{n}=G_{n-1}/K_{1}\left(G_{n-1}\right)$
+\end_inset
+
+, но, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorgroup-by-commutant-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, факторгруппа группы по её коммутанту коммутативна, поэтому получим 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ — коммутативная подгруппа.
 \end_layout
 
 \begin_layout Problem
@@ -44810,12 +45350,12 @@ status open
 
  существует цепочка групп со свойствами, указанными в предыдущей задаче
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:solvable_group_has_chain_2"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -44827,17 +45367,75 @@ status open
  разрешима.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G_{n}$
+\end_inset
 
-\begin_layout Plain Layout
-Дописать этот раздел
-\end_layout
-
+ — коммутативная, то 
+\begin_inset Formula $K\left(G_{n}\right)=\left\{ e\right\} $
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ — разрешимая группа по определению.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $N_{n-1}$
+\end_inset
+
+ — коммутативная, то 
+\begin_inset Formula $N_{n-1}$
+\end_inset
+
+ — разрешимая группа.
+ Так как 
+\begin_inset Formula $G_{n-1}/N_{n-1}=G_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ — разрешимые группы, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-them-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, разрешимой является и группа 
+\begin_inset Formula $G_{n-1}$
+\end_inset
+
+.
+ Теперь тем же методом можно доказать, что разрешима 
+\begin_inset Formula $G_{n-2}$
+\end_inset
+
+ и так далее.
+ Таким образом, мы приходим к тому, что 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+ является разрешимой.
 \end_layout
 
 \begin_layout Standard
