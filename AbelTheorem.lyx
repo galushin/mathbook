@@ -44217,6 +44217,19 @@ name "prob:group-without-proper-normal-subgroup-is-not-solvable"
 \end_layout
 
 \begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно здесь нужно указать, что 
+\begin_inset Formula $G\neq\left\{ e\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 Коммутант группы — нормальная подгруппа этой группы 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -44243,7 +44256,19 @@ noprefix "false"
 \end_inset
 
 .
- Таким образом, в предположениях задачи, коммутант 
+ Так как по условии задачи, в 
+\begin_inset Formula $G$
+\end_inset
+
+ нет нормальных подгрупп кроме 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+, коммутант 
 \begin_inset Formula $G$
 \end_inset
 
@@ -44915,6 +44940,15 @@ noprefix "false"
 \end_inset
 
 .
+ Так как 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешима, то разрешима и 
+\begin_inset Formula $\left(G\times F\right)/\left(G\times\left\{ e_{F}\right\} \right)$
+\end_inset
+
+.
  В свою очередь, 
 \begin_inset Formula $G\times\left\{ e_{F}\right\} $
 \end_inset
@@ -45038,7 +45072,7 @@ name "prob:solvable_group-has-chain_1"
 \end_inset
 
 ).
- Тогда 1) очевидно выполняетя.
+ Тогда 1), очевидно, выполняется.
  Как было показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
