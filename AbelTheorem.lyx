@@ -44097,7 +44097,7 @@ noprefix "false"
 
  — вращение вокруг оси, проходящей через середины двух противоположных рёбер
  на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
 , а 
@@ -45598,6 +45598,237 @@ noprefix "false"
 \end_inset
 
  является разрешимой.
+\end_layout
+
+\begin_layout Section
+Подстановки
+\end_layout
+
+\begin_layout Standard
+Рассмотрим сейчас более подробно 
+\emph on
+подстановки 
+\emph default
+(то есть преобразования) на множестве первых 
+\begin_inset Formula $n$
+\end_inset
+
+ натуральных чисел 
+\begin_inset Formula $1$
+\end_inset
+
+, 2, ..., 
+\begin_inset Formula $n$
+\end_inset
+
+; эти подстановки мы будем называть 
+\emph on
+подстановками 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени.
+ 
+\emph default
+Заметим, что подстановки на произвольном множестве с 
+\begin_inset Formula $n$
+\end_inset
+
+ элементами можно свести к рассматриваемым подстановкам, для чего достаточно
+ занумеровать элементы множества натуральными числами 
+\begin_inset Formula $1$
+\end_inset
+
+, 2, ..., 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Произвольную подстановку 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени можно записать в виде 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & \dots & n\\
+i_{1} & i_{2} & \dots & i_{n}
+\end{array}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $i_{m}$
+\end_inset
+
+ — образ элемента 
+\begin_inset Formula $m$
+\end_inset
+
+ при данной подстановке.
+ Напомним, что подстановка — взаимно однозначное отображение, поэтому все
+ элементы в нижней строке различны.
+\end_layout
+
+\begin_layout Problem
+Сколько существует различных подстановок 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени?
+\end_layout
+
+\begin_layout Solution
+Так как все элементы во второй строке таблицы, задающей перестановки различны,
+ то первый элемент можно задать 
+\begin_inset Formula $n$
+\end_inset
+
+ способами, второй — 
+\begin_inset Formula $n-1$
+\end_inset
+
+, третий — 
+\begin_inset Formula $n-2$
+\end_inset
+
+ и так далее.
+ Всего получаем 
+\begin_inset Formula $n!$
+\end_inset
+
+ подстановок 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени.
+\end_layout
+
+\begin_layout Definition
+Группу всех подстановок 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени с обычной операцией умножения (то есть композиции) подстановок
+ называют 
+\emph on
+симметрической группой степени 
+\begin_inset Formula $n$
+\end_inset
+
+
+\emph default
+ и обозначают 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что при 
+\begin_inset Formula $n\ge3$
+\end_inset
+
+ группа 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ некоммутативна.
+\end_layout
+
+\begin_layout Solution
+Пусть сначала 
+\begin_inset Formula $n=3$
+\end_inset
+
+.
+ Рассмотрим Две подстановки 
+\begin_inset Formula $\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 3 & 1
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\begin{array}{ccc}
+1 & 2 & 3\\
+3 & 2 & 1
+\end{array}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 3 & 1
+\end{array}\right)\left(\begin{array}{ccc}
+1 & 2 & 3\\
+3 & 2 & 1
+\end{array}\right)=\left(\begin{array}{ccc}
+1 & 2 & 3\\
+1 & 3 & 2
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\begin{array}{ccc}
+1 & 2 & 3\\
+3 & 2 & 1
+\end{array}\right)\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 3 & 1
+\end{array}\right)=\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 1 & 3
+\end{array}\right)$
+\end_inset
+
+, то есть в 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ есть не перестановочные элементы, а значит 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ — некоммутативная.
+\end_layout
+
+\begin_layout Solution
+В 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $n>3$
+\end_inset
+
+ можно рассмотреть подстановки 
+\begin_inset Formula $\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & \dots & n\\
+2 & 3 & 1 & 4 & \dots & n
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & \dots & n\\
+3 & 2 & 1 & 4 & \dots & n
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать этот раздел
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
