@@ -7277,6 +7277,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:is-particaular-groups-commutative"
+
+\end_inset
+
 Выяснить, являются ли коммутативными следующие группы: 1) группа вращений
  треугольника (задача 
 \begin_inset CommandInset ref
@@ -18706,6 +18712,12 @@ B & C & D & A
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:group-of-tetrahedron-symmetries"
+
+\end_inset
+
 Все симметрии тетраэдра, очевидно, образуют группу, которой называется 
 \emph on
 группой симметрий тетраэдра
@@ -27903,8 +27915,15 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-Написать, что эта группа может быть получена как группа кватернионов с обычной
- (для кватернионов) операцией умножения:
+Эта группа может быть получена как группа кватернионов с обычной (для кватернион
+ов) операцией умножения 
+\begin_inset CommandInset label
+LatexCommand label
+name "quaternion-group"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Solution
@@ -35342,6 +35361,16 @@ noprefix "false"
 \end_inset
 
  (группа симметрий ромба).
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать, является ли эта группа нормальной
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -35428,7 +35457,17 @@ name "prob:normal_subgroup-of-Z_n-and-Z"
 \begin_inset Formula $Z$
 \end_inset
 
- являются коммутативными, а, как было показано в задаче 
+ являются коммутативными 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:power-of-sum-is-product-of-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а, как было показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "prob:subgroup-of-commutative-group-is-normal"
@@ -35736,6 +35775,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:factorgroup-of-cartesian-product-by-one-multiple-is-normal-and-equal-other"
+
+\end_inset
+
 В прямом произведении групп 
 \begin_inset Formula $G_{1}\times G_{2}$
 \end_inset
@@ -36401,7 +36446,7 @@ noprefix "false"
 
 \end_inset
 
-, в) в группе 
+, в) в группе кватернионов
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "prob:all-groups-of-orders-4-6-8"
@@ -37264,6 +37309,12 @@ g^{-1}\left(s,p\right)=\left(2\beta-s,1-p\right),
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-of-tetrahedron-rotations"
+
+\end_inset
+
 Найти коммутант в группе вращений тетраэдра.
 \end_layout
 
@@ -38335,6 +38386,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-of-cube-rotations-is-isomorphic-to-tethrahedron-rotations"
+
+\end_inset
+
 Доказать, что коммутант группы вращений куба изоморфен группе вращений тетраэдра.
 \end_layout
 
@@ -38492,6 +38549,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:factorgroup-by-commutant-is-commutative"
+
+\end_inset
+
 Доказать, что факторгруппа произвольной группы 
 \begin_inset Formula $G$
 \end_inset
@@ -38669,8 +38732,8 @@ status open
 \begin_inset Formula $N$
 \end_inset
 
- — подгруппа, то любое произведение конечного числа коммутантов также принадлежи
-т 
+ — подгруппа, то любое произведение конечного числа коммутаторов также принадлеж
+ит 
 \begin_inset Formula $N$
 \end_inset
 
@@ -38691,6 +38754,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:commutant-of-normal-subgroup-is-normal-in-whole-group"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $N$
 \end_inset
@@ -39674,6 +39743,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:natural-homomorphism-to-factorgroup"
+
+\end_inset
+
 Описанное отображение 
 \begin_inset Formula $\varphi$
 \end_inset
@@ -40960,7 +41035,7 @@ name "fig:rhombus-from-homomorphism"
  симметрий тетраэдра на группу подстановок трёх элементов является гомоморфизмом.
  Ядром этого гомоморфизма является подгруппа симметрий, включающая тождественное
  преобразование и вращения на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг осей 
@@ -41132,7 +41207,7 @@ noprefix "false"
  вращений куба на группу подстановок трёх элементов является гомоморфизмом.
  Ядром этого гомоморфизма является подгруппа вращений куба, включающих тождестве
 нное преобразование и вращения на на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
  вокруг осей 
@@ -42971,6 +43046,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:image-of-commutant-is-commutatnt-of-image-by-homomorphism"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $K_{1}$
 \end_inset
@@ -43226,6 +43307,2297 @@ status open
 \end_inset
 
  не выполняется.
+\end_layout
+
+\begin_layout Section
+Разрешимые группы
+\end_layout
+
+\begin_layout Standard
+Существует важный класс групп, близких к коммутативным, — так называемые
+ разрешимые группы.
+ Разрешимыми они называются потому, что возможность решить алгебраическое
+ уравнение в радикалах, как мы увидим, зависит от разрешимости некоторой
+ группы.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — некоторая группа и 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ — её коммутант.
+ Коммутант 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ сам является группой, и в нём также можно рассмотреть коммутант 
+\begin_inset Formula $K\left(K\left(G\right)\right)$
+\end_inset
+
+.
+ В полученной группе снова можно рассмотреть коммутант и так далее.
+ Обозначим 
+\begin_inset Formula $K_{1}\left(G\right)=K\left(G\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{r+1}\left(G\right)=K\left(K_{r}\left(G\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:solvable-group"
+
+\end_inset
+
+Группа 
+\begin_inset Formula $G$
+\end_inset
+
+ называется 
+\emph on
+разрешимой
+\emph default
+, если цепочка групп 
+\begin_inset Formula $G$
+\end_inset
+
+, 
+\begin_inset Formula $K_{1}\left(G\right)$
+\end_inset
+
+, 
+\begin_inset Formula $K_{2}\left(G\right)$
+\end_inset
+
+, 
+\begin_inset Formula $K_{3}\left(G\right)$
+\end_inset
+
+, ...
+ заканчивается при некотором конечном 
+\begin_inset Formula $n$
+\end_inset
+
+ единичной группой, то есть при некотором 
+\begin_inset Formula $n$
+\end_inset
+
+ получаем 
+\begin_inset Formula $K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Например, любая коммутативная группа разрешима, так как если 
+\begin_inset Formula $G$
+\end_inset
+
+ — коммутативная группа, то уже на первом шаге получаем 
+\begin_inset Formula $K\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Также группу 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима, если её коммутант коммутативен, так как тогда 
+\begin_inset Formula $K_{2}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-of-solvable-groups"
+
+\end_inset
+
+Выяснить, разрешимы или нет следующие группы: а) циклическая группа 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, б) группа симметрий треугольника
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equilateral-triange-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в) группа симметрий квадрата 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, г) группа кватернионов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "quaternion-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, д) группа вращений тетраэдра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group-of-tetrahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, е) группа симметрий тетраэдра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group-of-tetrahedron-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, ж) группа вращений куба 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cube-and-octahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Группа 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ является коммутативной 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:power-of-sum-is-product-of-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula $K_{1}\left(Z_{n}\right)=\left\{ e\right\} $
+\end_inset
+
+, а значит группа 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ — разрешима.
+\end_layout
+
+\begin_layout Solution
+б) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа симметрий треугольника, её коммутант изоморфен 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-symmetries-of-triangle-square-and-quaternions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+ — коммутативная группа, поэтому 
+\begin_inset Formula $K_{2}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+ и группа симметрий треугольника разрешима.
+\end_layout
+
+\begin_layout Solution
+в) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа симметрий квадрата, её коммутант изоморфен 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ — коммутативная группа, поэтому 
+\begin_inset Formula $K_{2}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+ и группа симметрий квадрата разрешима.
+\end_layout
+
+\begin_layout Solution
+г) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа кватернионов.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-symmetries-of-triangle-square-and-quaternions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что коммутант группы кватернионов 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ состоит из двух элементов, а значит 
+\begin_inset Formula $K\left(G\right)\cong Z_{2}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ — коммутативная группа, то 
+\begin_inset Formula $K_{2}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+, поэтому группа кватернионов разрешима.
+\end_layout
+
+\begin_layout Solution
+д) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа вращений тетраэдра.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-tetrahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, коммутант группы вращений тетраэдра — подгруппа, включающая тождественное
+ преобразование и повороты на 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+ вокруг осей, соединяющих середины несмежных рёбер.
+ Это группа порядка 
+\begin_inset Formula $4$
+\end_inset
+
+, изоморфная группе симметрий ромба 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Это где-то доказано
+\end_layout
+
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:is-particaular-groups-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, эта группа коммутативна.
+ Поэтому 
+\begin_inset Formula $K_{2}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+, а значит группа вращений тетраэдра разрешима.
+\end_layout
+
+\begin_layout Solution
+е) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа симметрий тетраэдра.
+ Коммутант этой группы — группа вращений тетраэдра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-tetrahedron-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Выше было показано, что группа вращений тетраэдра разрешима, поэтому разрешима
+ и группа симметрий тетраэдра.
+\end_layout
+
+\begin_layout Solution
+ж) Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группу вращений куба.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-cube-rotations-is-isomorphic-to-tethrahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, коммутант группы вращений куба изоморфен группе вращений тетраэдра.
+ Выше было показано, что группа вращений тетраэдра разрешима, поэтому разрешима
+ и группа симметрий тетраэдра.
+\end_layout
+
+\begin_layout Standard
+Все группы, рассмотренные в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-solvable-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, оказываются разрешимыми, поэтому естественно возникает вопрос, а бывают
+ ли вообще неразрешимые группы.
+ Ниже мы покажем, что группа вращений правильно додекаэдра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dodecahedron"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ неразрешима.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/dodecahedron.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dodecahedron"
+
+\end_inset
+
+Додекаэдр
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:dodecahedron-rotations-group-order"
+
+\end_inset
+
+Сколько элементов в группе вращений додекаэдра?
+\end_layout
+
+\begin_layout Solution
+Воспользуемся решением задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:size-of-classes-of-dodecahedron-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Это ссылка вперёд!
+\end_layout
+
+\end_inset
+
+, всего получаем 
+\begin_inset Formula $1+24+20+15=60$
+\end_inset
+
+ вращений.
+\end_layout
+
+\begin_layout Standard
+Все вращения додекаэдра можно разбить на 4 класса: 1) тождественное преобразован
+ие; 2) вращения вокруг осей, проходящих через центры противоположных граней;
+ 3) вращения вокруг осей, проходящих через противоположные вершины; 4) вращения
+ вокруг осей, проходящих через середины противоположных рёбер.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:size-of-classes-of-dodecahedron-rotations"
+
+\end_inset
+
+Сколько элементов содержится в каждом классе (в 2) -4) тождественное преобразова
+ние не входит)?
+\end_layout
+
+\begin_layout Solution
+2) У додекаэдра имеется 12 граней, представляющих собой правильный правильный
+ пятиугольник.
+ Эти грани образуют 6 пар противоположных граней.
+ Для каждой пары имеется 4 поворота (на углы кратные 
+\begin_inset Formula $\frac{2\pi}{5}$
+\end_inset
+
+) вокруг оси, проходящих через центры этих граней.
+ Таким образом, в этот классе 
+\begin_inset Formula $6\cdot4=24$
+\end_inset
+
+ вращения.
+\end_layout
+
+\begin_layout Solution
+3) У каждой из 12 граней — 5 вершин, но каждая вершина принадлежит трём
+ граням, поэтому всего имеется 20 вершин.
+ Которые образуют 10 пар противоположных вершин.
+ Для каждой пары противоположных вершин имеется ось симметрии.
+ Для каждой оси имеется два нетривальных поворота (на 
+\begin_inset Formula $\frac{\pi}{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+).
+ Таким образом, в этом классе всего 
+\begin_inset Formula $10\cdot2=20$
+\end_inset
+
+ вращений.
+\end_layout
+
+\begin_layout Solution
+4) У додекаэдра имеется 30 рёбер (у каждой из 12 грани — 5 рёбер, но каждое
+ ребро принадлежит двум граням), которые образуют 15 пар противоположных
+ рёбер.
+ Для каждой пары противоположных рёбер только поворот на 
+\begin_inset Formula $\pi$
+\end_inset
+
+ переводит додекаэдр в себя.
+ То есть в этом классе 15 вращений.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:normal-subgroup-of-dodecahedron-rotations-contains-whole-classes-of-rotations"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — произвольная нормальная подгруппа в группе вращений додекаэдра, и пусть
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ содержится хотя бы один элемент из некоторого класса 1) — 4).
+ Доказать, что тогда в 
+\begin_inset Formula $N$
+\end_inset
+
+ содержится весь соответствующий класс.
+\end_layout
+
+\begin_layout Solution
+Класс 1) содержит только один элемент (тождественное преобразование).
+ Кроме того, тождественное преобразование должно входить в любую подгруппу
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Вращениями можно перевести данную грань додекаэдра в любую другую.
+ Действительно, каждую грань можно перевести в любую из пяти соседних вращением
+ вокруг вершины, общей для двух граней.
+ Последовательно выполняя такие вращения, можно перевести заданную грань
+ в любую другую.
+\end_layout
+
+\begin_layout Solution
+Вращениями можно перевести данное ребро додекаэдра в любое другое.
+ Сначала переведём грань, которой принадлежит исходное ребро, в грань, которой
+ принадлежит конечное второе ребро.
+ Затем поворотом вокруг оси, проходящей через центр данной грани переведём
+ образ первого ребра во второе.
+ Аналогично, вращениями можно перевести данную вершину додекаэдра в любую
+ другую.
+\end_layout
+
+\begin_layout Solution
+Из соображений симметрии понятно, что при вращениях противоположные грани,
+ рёбра или вершины при вращениях переходят в противоположные.
+\end_layout
+
+\begin_layout Solution
+Перейдём теперь к классу 2).
+ Рассмотрим подгруппу вращений вокруг оси, проходящей через центры двух
+ противоположных граней.
+ Так как грань представляет собой правильный пятиугольник, то эта подгруппа
+ изоморфна 
+\begin_inset Formula $Z_{5}$
+\end_inset
+
+.
+ Это группа простого порядка, а значит любое вращение этой группы, кроме
+ тождественного преобразования, является образующим этой группы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-with-prime-order-is-cyclic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, если некоторая подгруппа вращений додекаэдра содержит одно
+ вращение вокруг какой-либо оси, проходящей через центры противоположных
+ граней, то она содержит и все вращения вокруг этой оси.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $h$
+\end_inset
+
+ — какое либо вращение вокруг оси, проходящей через центры двух противоположных
+ граней (кроме тождественного преобразования), и пусть 
+\begin_inset Formula $g$
+\end_inset
+
+ — вращение, переводящее одну из этих двух граней в какую-либо третью (выше
+ мы показали, что такое вращение всегда существует).
+ Тогда 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ — вращение вокруг оси, проходящей через центр третьей грани (и противоположной
+ ей).
+ Причём 
+\begin_inset Formula $ghg^{-1}\neq e$
+\end_inset
+
+, так как в противном случае 
+\begin_inset Formula $h=g^{-1}eg=g^{-1}g=e$
+\end_inset
+
+.
+ Так как рассматриваемая подгруппа — нормальная, то она должна содержать
+ вместе с 
+\begin_inset Formula $h$
+\end_inset
+
+ и 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+.
+ Мы приходим к тому, что вместе с вращением вокруг оси, проходящей через
+ центры пары противоположных граней, нормальная подгруппа должна содержать
+ и некоторое нетривиальное вращение вокруг всех других аналогичных осей,
+ а значит, как было показано выше, и вообще все вращения этого класса.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь вращения класса 3).
+ Пусть 
+\begin_inset Formula $h$
+\end_inset
+
+ — вращение, вокруг оси, проходящей через пару противоположных вершин, а
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ — вращение, переводящее одну из этих вершин в некоторую третью (такое вращение
+ всегда существует, как было показано выше).
+ Тогда 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ — вращение вокруг оси, проходящей через эту третью вершину, причём 
+\begin_inset Formula $ghg^{-1}\neq e$
+\end_inset
+
+.
+ Таким образом, вместе с любым вращением вокруг одной оси, проходящей через
+ две противоположных вершины, нормальная подгруппа должна содержать некоторое
+ вращение вокруг оси, проходящей через пару любых других противоположных
+ вершин.
+ Вокруг каждой из осей рассматриваемого класса возможно два нетривиальных
+ вращения: на 
+\begin_inset Formula $\text{\ensuremath{\frac{\pi}{3}}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+.
+ Но каждое из этих вращений может быть получено как вторая степень другого.
+ Поэтому, если подгруппа содержит одно из этих вращений, то она содержит
+ и другое.
+ Таким образом, если нормальная подгруппа содержит хотя бы одно вращение
+ класса 3), то она содержит и все остальные вращения этого класса.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим, наконец, вращения класса 4).
+ Пусть 
+\begin_inset Formula $h$
+\end_inset
+
+ — вращение вокруг оси, проходящей через середины двух противоположных рёбер
+ на 
+\begin_inset Formula $180\text{\textdegree}$
+\end_inset
+
+, а 
+\begin_inset Formula $g$
+\end_inset
+
+ — вращение, переводящее одно из этих двух рёбер в некоторое третье (выше
+ мы показали, что такое вращение всегда существует).
+ Тогда 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ — вращение вокруг оси, проходящей через центр третьего ребра (и противоположног
+о к нему).
+ Как и в случае предыдущих классов, 
+\begin_inset Formula $ghg^{-1}\neq e$
+\end_inset
+
+, поэтому нормальная подгруппа, содержащая одного вращения этого класса
+ будет содержать и все остальные вращения этого класса.
+\end_layout
+
+\begin_layout Standard
+Таким образом, каждый из классов 1) — 4) либо полностью не входит, либо
+ полностью не входит в 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:dodecahedron-rotations-has-no-proper-normal-subgroup"
+
+\end_inset
+
+Доказать, что в группе вращений додекаэдра не существует других нормальных
+ подгрупп, кроме 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ и всей группы.
+\end_layout
+
+\begin_layout Solution
+По теорема Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, порядок подгруппы является делителем порядка группы.
+ Так как группа вращений додекаэдр является группой порядка 60
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:dodecahedron-rotations-group-order"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Классы 1) — 4) могут входить в нормальную подгруппу группы вращений додекаэдра
+ только целиком 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:normal-subgroup-of-dodecahedron-rotations-contains-whole-classes-of-rotations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Комбинируя классы 2) — 4) с классом 1) можно получить подмножества, включающие
+ 1, 25, 21, 16, 45, 40, 36 или 60.
+ Из этих чисел только 1 и 60 являются делителем порядка группы, поэтому
+ в группе вращений додекаэдра нет нормальных кроме 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ и всей группы.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:group-without-proper-normal-subgroup-is-not-solvable"
+
+\end_inset
+
+Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ некоммутативна и не имеет нормальных подгрупп, отличных от 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ неразрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно здесь нужно указать, что 
+\begin_inset Formula $G\neq\left\{ e\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Коммутант группы — нормальная подгруппа этой группы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Если группа не коммутативна, то её коммутант не совпадает с 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Так как по условии задачи, в 
+\begin_inset Formula $G$
+\end_inset
+
+ нет нормальных подгрупп кроме 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+, коммутант 
+\begin_inset Formula $G$
+\end_inset
+
+ совпадает с самой группой 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Тогда, для любого натурального 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $K_{n}\left(G\right)=G$
+\end_inset
+
+, то есть цепочка коммутантов из определения разрешимой группы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:solvable-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ никогда не заканчивается подгруппой 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+, а значит группа 
+\begin_inset Formula $G$
+\end_inset
+
+ является неразрешимой.
+\end_layout
+
+\begin_layout Standard
+Из задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:dodecahedron-rotations-has-no-proper-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-without-proper-normal-subgroup-is-not-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что группа вращений додекаэдра неразрешима.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ещё несколько задач, результаты которых потребуются нам в дальнейшем.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:subgroup-of-solvable-group-is-solvable"
+
+\end_inset
+
+Доказать, что всякая подгруппа разрешимой подгруппы разрешима.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа, а 
+\begin_inset Formula $H$
+\end_inset
+
+ — её подгруппа.
+ Докажем, что 
+\begin_inset Formula $K\left(H\right)$
+\end_inset
+
+ является подгруппой 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+.
+ Действительно, любой коммутатор элементов группы 
+\begin_inset Formula $H$
+\end_inset
+
+ является также коммутатором группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ А следовательно, и любое конечное произведение коммутаторов элементов группы
+ 
+\begin_inset Formula $H$
+\end_inset
+
+ (то есть любой элемент коммутатора 
+\begin_inset Formula $H$
+\end_inset
+
+) являются также элементом коммутатора группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь, что для любого целого 
+\begin_inset Formula $n>0$
+\end_inset
+
+ 
+\begin_inset Formula $K_{n}\left(H\right)$
+\end_inset
+
+ является подгруппой 
+\begin_inset Formula $K_{n}\left(G\right)$
+\end_inset
+
+.
+ База индукции получается из доказанного выше, так как для любой группы
+ 
+\begin_inset Formula $F$
+\end_inset
+
+, по определению, 
+\begin_inset Formula $K_{1}\left(F\right)=K\left(F\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь для всех 
+\begin_inset Formula $n\le m$
+\end_inset
+
+ утверждение доказано.
+ Докажем его для 
+\begin_inset Formula $n=m+1$
+\end_inset
+
+.
+ По определению 
+\begin_inset Formula $K_{m+1}\left(F\right)=K\left(K_{m}\left(F\right)\right)$
+\end_inset
+
+.
+ Тогда, по предположению индукции 
+\begin_inset Formula $K_{m}\left(H\right)$
+\end_inset
+
+ является подгруппой 
+\begin_inset Formula $K_{m}\left(G\right)$
+\end_inset
+
+.
+ А, как было показано выше, коммутант подгруппы — это подгруппа коммутатора,
+ поэтому 
+\begin_inset Formula $K_{m+1}\left(H\right)=K\left(K_{m}\left(H\right)\right)\subseteq K\left(K_{m}\left(G\right)\right)=K_{m+1}\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима, то есть при некотором 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+ Так как группа должна включать единичный элемент, то из 
+\begin_inset Formula $K_{n}\left(H\right)\subseteq K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+ следует 
+\begin_inset Formula $K_{n}\left(H\right)=\left\{ e\right\} $
+\end_inset
+
+, то есть группа 
+\begin_inset Formula $H$
+\end_inset
+
+ — разрешима.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:image-of-solvable-group-is-solvable-by-homomorphism"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+ и группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима; доказать, что и группа 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+Докажем, что для любого целого 
+\begin_inset Formula $n>0$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $K_{n}\left(F\right)=\varphi\left(K_{n}\left(G\right)\right)$
+\end_inset
+
+.
+ База индукции 
+\begin_inset Formula $K_{1}\left(F\right)=\varphi\left(K_{1}\left(G\right)\right)$
+\end_inset
+
+ была доказана в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-commutant-is-commutatnt-of-image-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, так как 
+\begin_inset Formula $K_{1}\left(\cdot\right)=K\left(\cdot\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $K_{n}\left(F\right)=\varphi\left(K_{n}\left(G\right)\right)$
+\end_inset
+
+ было доказано для 
+\begin_inset Formula $n\le m$
+\end_inset
+
+, докажем его для 
+\begin_inset Formula $n=m+1$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi\left(K_{m}\left(G\right)\right)=K_{m}\left(F\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ можно рассматривать как гомоморфизм группы 
+\begin_inset Formula $K_{m}\left(F\right)$
+\end_inset
+
+ на группу 
+\begin_inset Formula $K_{m}\left(G\right)$
+\end_inset
+
+.
+ Применяя к этому гомоморфизму базу индукции, получим, что 
+\begin_inset Formula $K_{m+1}\left(F\right)=\varphi\left(K_{m}\left(G\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G$
+\end_inset
+
+ — разрешимая группа, то для некоторого 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $K_{n}\left(G\right)=\left\{ e_{G}\right\} $
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-maps-unity-to-unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $K_{n}\left(F\right)=\varphi\left(K_{n}\left(G\right)\right)=\left\{ e_{F}\right\} $
+\end_inset
+
+, то есть группа 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Привести пример, когда группа 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешима, а группа 
+\begin_inset Formula $G$
+\end_inset
+
+ неразрешима.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — произвольная неразрешимая группа, например группа вращений додекаэдра
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dodecahedron"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а 
+\begin_inset Formula $F=\left\{ e\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ определён для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ следующим образом 
+\begin_inset Formula $\varphi\left(g\right)=e$
+\end_inset
+
+.
+ Группа 
+\begin_inset Formula $F$
+\end_inset
+
+ — разрешимая, так как 
+\begin_inset Formula $K_{1}\left(F\right)=\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:factorgroup-of-solvable-group-is-solvable"
+
+\end_inset
+
+Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима и 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа в 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что факторгруппа 
+\begin_inset Formula $G/N$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим естественный гомоморфизм 
+\begin_inset Formula $\varphi:G\to G/N$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:natural-homomorphism-to-factorgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Отсюда, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-solvable-group-is-solvable-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, группа 
+\begin_inset Formula $G/N$
+\end_inset
+
+ является разрешимой.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:if-normal-subgroup-and-factorgroup-is-solvable-them-group-is-solvable"
+
+\end_inset
+
+Доказать, что если группы 
+\begin_inset Formula $N$
+\end_inset
+
+ и 
+\begin_inset Formula $G/N$
+\end_inset
+
+ разрешимы, то и группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог решить сам эту задачу
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — естественный гомоморфизм 
+\begin_inset Formula $G$
+\end_inset
+
+ на 
+\begin_inset Formula $G/N$
+\end_inset
+
+.
+ Тогда, как было показано при решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-solvable-group-is-solvable-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, для любого целого 
+\begin_inset Formula $m>0$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\varphi\left(K_{m}\left(G\right)\right)=K_{m}\left(G/N\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G/N$
+\end_inset
+
+ — разрешимая группа, то для некоторого целого 
+\begin_inset Formula $n>0$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $\varphi\left(K_{n}\left(G\right)\right)=K_{n}\left(G/N\right)=\left\{ N\right\} $
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — естественный гомоморфизм, то 
+\begin_inset Formula $K_{n}\left(G\right)\subseteq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — разрешимая группа, то для некоторого 
+\begin_inset Formula $s>0$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $K_{s}\left(N\right)=\left\{ e\right\} $
+\end_inset
+
+.
+ Как было доказано при решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-of-solvable-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Так как фрагмент задачи используется без всей задачи, то логично было бы
+ вынести его в отдельную задачу
+\end_layout
+
+\end_inset
+
+, коммутант подгруппы – подгруппа коммутанта исходной группы, поэтому 
+\begin_inset Formula $K_{n+s}\left(G\right)\subseteq K_{s}\left(N\right)=\left\{ e\right\} $
+\end_inset
+
+, а так как группа обязательно содержит единичный элемент, то 
+\begin_inset Formula $K_{n+s}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+ и группа 
+\begin_inset Formula $G$
+\end_inset
+
+ — разрешимая.
+\end_layout
+
+\begin_layout Problem
+Пусть группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешимы.
+ Доказать, что группа 
+\begin_inset Formula $G\times F$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим подгруппу 
+\begin_inset Formula $G\times\left\{ e_{F}\right\} $
+\end_inset
+
+ группы 
+\begin_inset Formula $G\times F$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-of-subgroups-is-subgroup-of-cartesian-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorgroup-of-cartesian-product-by-one-multiple-is-normal-and-equal-other"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, эта подгруппа является нормальной в 
+\begin_inset Formula $G\times F$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(G\times F\right)/\left(G\times\left\{ e_{F}\right\} \right)\cong F$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешима, то разрешима и 
+\begin_inset Formula $\left(G\times F\right)/\left(G\times\left\{ e_{F}\right\} \right)$
+\end_inset
+
+.
+ В свою очередь, 
+\begin_inset Formula $G\times\left\{ e_{F}\right\} $
+\end_inset
+
+ изоморфна 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-have-subgoups-isomorphic-to-multiples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, группы 
+\begin_inset Formula $G\times\left\{ e_{F}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left(G\times F\right)/\left(G\times\left\{ e_{F}\right\} \right)$
+\end_inset
+
+ являются разрешимыми.
+ Значит, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-them-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, разрешимой является и группа 
+\begin_inset Formula $G\times F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:solvable_group-has-chain_1"
+
+\end_inset
+
+Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+ Доказать, что тогда существует цепочка группа 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ такая, что: 1) 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+; 2) каждая группа 
+\begin_inset Formula $G_{i}$
+\end_inset
+
+ (
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+) является нормальной подгруппой в группе 
+\begin_inset Formula $G_{i-1}$
+\end_inset
+
+, и все факторгруппы 
+\begin_inset Formula $G_{i-1}/G_{i}$
+\end_inset
+
+ коммутативны; 3) группа 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ коммутативна.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G$
+\end_inset
+
+ — разрешимая группа, существует такое 
+\begin_inset Formula $n>0$
+\end_inset
+
+, что 
+\begin_inset Formula $K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{i}=K\left(G_{i-1}\right)=K_{i}\left(G\right)$
+\end_inset
+
+ (при 
+\begin_inset Formula $i=1\dots n$
+\end_inset
+
+).
+ Тогда 1), очевидно, выполняется.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, коммутант группы 
+\begin_inset Formula $G_{i-1}$
+\end_inset
+
+ является нормальной подгруппой 
+\begin_inset Formula $G_{i-1}$
+\end_inset
+
+, поэтому 2) тоже выполняется.
+ Свойство 3) выполняется в силу того, что 
+\begin_inset Formula $G_{n}=K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+ — коммутативная группа.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:group-with-chain_1-is-solvable"
+
+\end_inset
+
+Пусть для группы 
+\begin_inset Formula $G$
+\end_inset
+
+ существует цепочка групп со свойствами, указанными в условии предыдущей
+ задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:solvable_group-has-chain_1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ — коммутативная, то 
+\begin_inset Formula $K\left(G_{n}\right)=\left\{ e\right\} $
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ — разрешимая группа по определению.
+\end_layout
+
+\begin_layout Solution
+Так как группы 
+\begin_inset Formula $G_{n-1}/G_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ являются разрешимыми, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-them-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, разрешима и 
+\begin_inset Formula $G_{n-1}$
+\end_inset
+
+.
+ Теперь тем же методом можно доказать, что разрешима 
+\begin_inset Formula $G_{n-2}$
+\end_inset
+
+ и так далее.
+ Таким образом, мы приходим к тому, что 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+ является разрешимой.
+\end_layout
+
+\begin_layout Standard
+Результаты задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:solvable_group-has-chain_1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-with-chain_1-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ показывают, что существование для группы 
+\begin_inset Formula $G$
+\end_inset
+
+ цепочки групп с указанными в условии задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:solvable_group-has-chain_1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ свойствами равносильно понятию разрешимости и само может быть принято за
+ определение разрешимости.
+ Ещё одно эквивалентное определение разрешимости можно получить, используя
+ результаты двух следующих задач.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:solvable_group_has_chain_2"
+
+\end_inset
+
+Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+ Доказать, что тогда существует цепочка групп 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ такая, что 1) 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+; 2) каждая группа 
+\begin_inset Formula $G_{i}$
+\end_inset
+
+ (
+\begin_inset Formula $0\le i\le n-1$
+\end_inset
+
+) содержит некоторую коммутативную нормальную подгруппу 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ такую, что 
+\begin_inset Formula $G_{i}/N_{i}\cong G_{i+1}$
+\end_inset
+
+; 3) группа 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ коммутативна.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $G$
+\end_inset
+
+ — коммутативна, то 
+\begin_inset Formula $n=0$
+\end_inset
+
+ и утверждение становится тривиальным.
+ В дальнейшем будем рассматривать случай, когда 
+\begin_inset Formula $G$
+\end_inset
+
+ — разрешима, но не коммутативна.
+ Тогда существует 
+\begin_inset Formula $n>0$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $K_{n+1}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:solvable-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset Formula $K_{n}\left(G\right)$
+\end_inset
+
+ — коммутативная группа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, коммутант — нормальная подгруппа, а в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-of-normal-subgroup-is-normal-in-whole-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что коммутант нормальной подгруппы является нормальной подгруппо
+й исходной группы, поэтому для любого целого 
+\begin_inset Formula $i>0$
+\end_inset
+
+ группа 
+\begin_inset Formula $K_{i}\left(G\right)$
+\end_inset
+
+ является нормальной подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $K_{n}\left(G\right)$
+\end_inset
+
+ — коммутативная нормальная подгруппа в 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula $N_{0}=K_{n}\left(G\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $G_{1}=G_{0}/K_{n}\left(G_{0}\right)$
+\end_inset
+
+ — разрешимая группа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorgroup-of-solvable-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим естественный гомоморфизм 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+ группы 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+ на факторгруппу 
+\begin_inset Formula $G_{0}/K_{n}\left(G_{0}\right)$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:natural-homomorphism-to-factorgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Как было показано при решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-solvable-group-is-solvable-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Formula $K_{n}\left(G_{1}\right)=\varphi_{0}\left(K_{n}\left(G_{0}\right)\right)$
+\end_inset
+
+, но так как, по определению естественного гомоморфизма, для любого 
+\begin_inset Formula $g\in K_{n}\left(G_{0}\right)$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $\varphi_{0}\left(g\right)=K_{n}\left(G_{0}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $K_{n}\left(G_{1}\right)=\varphi\left(K_{n}\left(G_{0}\right)\right)=\left\{ K_{n}\left(G_{0}\right)\right\} $
+\end_inset
+
+ — единичная подгруппа группы 
+\begin_inset Formula $G_{1}=G_{0}/K_{n}\left(G_{0}\right)$
+\end_inset
+
+.
+ То есть 
+\begin_inset Formula $K_{n-1}\left(G_{1}\right)$
+\end_inset
+
+ — коммутативная нормальная подгруппа 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+.
+ Таким образом, мы получили разрешимую подгруппу 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ с более короткой цепочкой коммутантов, чем у 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+.
+ Продолжим этот процесс, полагая 
+\begin_inset Formula $N_{i}=K_{n-i}\left(G_{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Тогда, при 
+\begin_inset Formula $i=n-1$
+\end_inset
+
+ получим 
+\begin_inset Formula $G_{n}=G_{n-1}/K_{1}\left(G_{n-1}\right)$
+\end_inset
+
+, но, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorgroup-by-commutant-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, факторгруппа группы по её коммутанту коммутативна, поэтому получим 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ — коммутативная подгруппа.
+\end_layout
+
+\begin_layout Problem
+Пусть для группы 
+\begin_inset Formula $G$
+\end_inset
+
+ существует цепочка групп со свойствами, указанными в предыдущей задаче
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:solvable_group_has_chain_2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ — коммутативная, то 
+\begin_inset Formula $K\left(G_{n}\right)=\left\{ e\right\} $
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:commutant-is-unity-group-iff-group-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ — разрешимая группа по определению.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $N_{n-1}$
+\end_inset
+
+ — коммутативная, то 
+\begin_inset Formula $N_{n-1}$
+\end_inset
+
+ — разрешимая группа.
+ Так как 
+\begin_inset Formula $G_{n-1}/N_{n-1}=G_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ — разрешимые группы, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-them-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, разрешимой является и группа 
+\begin_inset Formula $G_{n-1}$
+\end_inset
+
+.
+ Теперь тем же методом можно доказать, что разрешима 
+\begin_inset Formula $G_{n-2}$
+\end_inset
+
+ и так далее.
+ Таким образом, мы приходим к тому, что 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+ является разрешимой.
 \end_layout
 
 \begin_layout Standard
