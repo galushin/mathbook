@@ -45819,16 +45819,922 @@ i_{1} & i_{2} & \dots & i_{n}
 \end_layout
 
 \begin_layout Standard
+Подстановка может некоторые элементы перемещать, а некоторые оставлять на
+ месте, при этом может оказаться, что перемещаемые элементы перемещаются
+ как бы по кругу.
+ Например подстановка 
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+4 & 2 & 6 & 3 & 5 & 1 & 7
+\end{array}\right)
+\]
+
+\end_inset
+
+ оставляет на месте элементы 2, 5 и 7, а остальные элементы перемещаются
+ по кругу: 
+\begin_inset Formula $1\to4$
+\end_inset
+
+, 
+\begin_inset Formula $4\to3$
+\end_inset
+
+, 
+\begin_inset Formula $3\to6$
+\end_inset
+
+, 
+\begin_inset Formula $6\to1$
+\end_inset
+
+.
+ Подстановки такого типа называются 
+\emph on
+циклическими подстановками
+\emph default
+ или просто 
+\emph on
+циклами.
+
+\emph default
+ Для циклических подстановок мы будет использовать ещё другую запись.
+ Например, выражение 
+\begin_inset Formula $\left(1\thinspace4\thinspace3\thinspace6\right)$
+\end_inset
+
+ будет обозначать подстановку, переводящую 
+\begin_inset Formula $1\to4$
+\end_inset
+
+, 
+\begin_inset Formula $4\to3$
+\end_inset
+
+, 
+\begin_inset Formula $3\to6$
+\end_inset
+
+, 
+\begin_inset Formula $6\to1$
+\end_inset
+
+ и оставляющую остальные элементы рассматриваемого множества на месте.
+ Так, ели эта подстановка 7-й степени, то она совпадает с подстановкой,
+ рассмотренной выше.
+\end_layout
+
+\begin_layout Standard
+Не всякая подстановка является циклической.
+ Например, подстановка 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+3 & 5 & 4 & 1 & 2 & 6
+\end{array}\right)
+\]
+
+\end_inset
+
+ циклической не является, но её можно представить как произведение двух
+ циклов: 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+3 & 5 & 4 & 1 & 2 & 6
+\end{array}\right)=\left(1\thinspace3\thinspace4\right)\cdot\left(2\thinspace5\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Полученные циклы перемещают разные элементы, такие циклы называются 
+\emph on
+независимыми
+\emph default
+.
+ Легко видеть, что произведение независимых циклов не зависит от порядка
+ их следования.
+ Если не различать произведение независимых циклов, отличающихся лишь порядком
+ следования, то будет верно следующее утверждение.
+\end_layout
+
+\begin_layout Problem
+Доказать, что любая подстановка единственным образом (с точностью до порядка
+ сомножителей) разлагается в произведение нескольких независимых циклов.
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Дописать этот раздел
+Написать решение
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Циклы вида 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ перемещающие только два элемента, называются 
+\emph on
+транспозициями
+\emph default
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что произвольный цикл можно разложить в произведение транспозиций
+ (не обязательно независимых).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Транспозиции 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(2,3\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $\left(n-1,n\right)$
+\end_inset
+
+ называются 
+\emph on
+элементарными транспозициями.
+\end_layout
+
+\begin_layout Problem
+Доказать, что произвольная транспозиция представляется в виде произведения
+ элементарных транспозиций.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из результатов задач 174-176
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки
+\end_layout
+
+\end_inset
+
+ вытекает, что произвольная подстановка 
+\begin_inset Formula $n$
+\end_inset
+
+-й степени может быть представлена как произведение элементарных транспозиций.
+ Иными словами, верна следующая теорема.
+\end_layout
+
+\begin_layout Theorem
+Если некоторая подгруппа симметрической группы 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ содержит все элементарные транспозиции, то эта подгруппа совпадает со всей
+ группой 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть числа 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+, ..., 
+\begin_inset Formula $n$
+\end_inset
+
+ записаны в строку в некотором произвольном порядке.
+ Скажем, что пара чисел 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $j$
+\end_inset
+
+ образуют инверсию в строке, если 
+\begin_inset Formula $i<j$
+\end_inset
+
+, но 
+\begin_inset Formula $j$
+\end_inset
+
+ встречается в строке раньше, чем 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Число инверсий характеризует беспорядок в данной строке по отношению к
+ обычному порядку чисел 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+, ..., 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Найти число инверсий в строке 3, 2, 5, 4, 1.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В дальнейшем нас будет интересовать не само число инверсий, а только чётность
+ этого числа.
+\end_layout
+
+\begin_layout Problem
+Доказать, что чётность числа инверсий в строке меняется, если поменять местами
+ два произвольных числа.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Подстановка 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & \dots & n\\
+i_{1} & i_{2} & \dots & i_{n}
+\end{array}\right)$
+\end_inset
+
+ называется 
+\emph on
+чётной 
+\emph default
+или 
+\emph on
+нечётной
+\emph default
+ в зависимости от того, чётное или нечётное число инверсий имеется в нижней
+ строке.
+\end_layout
+
+\begin_layout Standard
+Например, тождественная подстановка 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & \dots & n\\
+1 & 2 & \dots & n
+\end{array}\right)$
+\end_inset
+
+ является чётной подстановкой, так как число инверсий в нижней строке равно
+ нулю.
+\end_layout
+
+\begin_layout Problem
+Определить чётность подстановки 
+\begin_inset Formula $\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+2 & 5 & 4 & 1 & 3
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что при умножении чётной подстановки справа на произвольную транспозиц
+ию получается нечётная подстановка и, наоборот, при умножении нечётной подстанов
+ки справа на транспозицию получается чётная подстановка.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что чётная подстановка может быть разложена в произведение только
+ чётного числа транспозиций, а нечётная в произведение только нечётного
+ числа транспозиций.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Определить чётность произвольного числа длины: а) 3, б) 4, в) 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что при умножении двух подстановок одинаковой чётности получается
+ чётная подстановка, а при умножении двух подстановок разной чётности получается
+ нечётная подстановка.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что подстановки 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ имеют одинаковую чётность, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольная подстановка.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из результатов задач 183 и 184
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки
+\end_layout
+
+\end_inset
+
+ вытекает, что множество всех чётных подстановок образует подгруппы группы
+ 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Группа всех чётных подстановок 
+\begin_inset Formula $n$
+\end_inset
+
+-й степени называется 
+\emph on
+знакопеременной группой степени 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\emph default
+и обозначается 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что при 
+\begin_inset Formula $n\ge4$
+\end_inset
+
+ группа 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ некоммутативна.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что знакопеременная группа 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ являются нормальным делителем симметрической группы 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ и построить разложение группы 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ по подгруппе 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Определить число элементов в группе 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что группы 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $S_{4}$
+\end_inset
+
+ разрешимы.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Докажем теперь, что знакопеременная группа 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ неразрешима.
+ Один из способов доказательства этого состоит в следующем.
+ Необходимо в додекаэдр так вписать 5 тетраэдров, занумерованных числами
+ 1, 2, 3, 4 и 5, чтобы каждому вращению додекаэдра соответствовала четная
+ подстановка тетраэдров, причём чтобы разным вращениям соответствовали разные
+ подстановки.
+ Этим будет установлен изоморфизм между группой вращений додекаэдра и группой
+ чётных подстановок 5-й степени 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
+ Тогда неразрешимость группы 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ будет следовать из неразрешимости группы вращений додекаэдра.
+\end_layout
+
+\begin_layout Problem
+Вписать в додекаэдр 5 тетраэдров требуемым выше способом.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Другой способ доказательства неразрешимости группы 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ состоит в повторении идеи доказательства неразрешимости группы вращений
+ додекаэдра.
+ Для этого надо решить следующие задачи.
+\end_layout
+
+\begin_layout Problem
+Доказать, что любая чётная подстановка 5-й степени, отличная от тождественной
+ подстановки, разлагается на независимые циклы одним из следующих способов:
+ а) 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3},i_{4},i_{5}\right)$
+\end_inset
+
+, б) 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3}\right)$
+\end_inset
+
+, в) 
+\begin_inset Formula $\left(i_{1},i_{2}\right)\left(i_{3},i_{4}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
+ Доказать, что если в 
+\begin_inset Formula $N$
+\end_inset
+
+ содержится хотя бы одна подстановка, определённым образом разлагающаяся
+ на независимые циклы 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на задачу 190
+\end_layout
+
+\end_inset
+
+, то в 
+\begin_inset Formula $N$
+\end_inset
+
+ содержатся все подстановки, таким же образом разлагающиеся на независимые
+ циклы.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что группа 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ не содержит нормальных подгрупп, кроме единичной подгруппы и всей группы.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из утверждения задач 192, 161
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылки
+\end_layout
+
+\end_inset
+
+ и из того, что группа 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ некоммутативна, вытекает неразрешимость группы 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что симметрическая группу 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge5$
+\end_inset
+
+ содержит подгруппу, изоморфную группе 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из утверждения задач 193 и 162 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылки
+\end_layout
+
+\end_inset
+
+ получаем теорему.
+\end_layout
+
+\begin_layout Theorem
+При 
+\begin_inset Formula $n\ge5$
+\end_inset
+
+ симметрическая группа 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ неразрешима.
+\end_layout
+
+\begin_layout Standard
+Доказанная теорема, а также другие результаты первой главы потребуются нам
+ в следующей главе для доказательства неразрешимости в радикалах общих алгебраич
+еских уравнений степени выше четвёртой.
+\end_layout
+
+\begin_layout Standard
+Тем, что захочет изучить теорию групп более глубоко, можно рекомендовать
+ книги:
+\end_layout
+
+\begin_layout Standard
+Каргаполов
+\begin_inset space \thinspace{}
+\end_inset
+
+М.
+\begin_inset space \thinspace{}
+\end_inset
+
+И., Мерзляков
+\begin_inset space \thinspace{}
+\end_inset
+
+Ю.
+\begin_inset space \thinspace{}
+\end_inset
+
+И., Основы теории групп, 
+\begin_inset Quotes rld
+\end_inset
+
+Наука
+\begin_inset Quotes rrd
+\end_inset
+
+, 1972.
+\end_layout
+
+\begin_layout Standard
+Курош
+\begin_inset space \thinspace{}
+\end_inset
+
+А.
+\begin_inset space \thinspace{}
+\end_inset
+
+Г., Теория групп, изд.
+ 3-е, 
+\begin_inset Quotes rld
+\end_inset
+
+Наука
+\begin_inset Quotes rrd
+\end_inset
+
+, 1967.
+\end_layout
+
+\begin_layout Standard
+Холл
+\begin_inset space \thinspace{}
+\end_inset
+
+М., Теория групп, ИЛ, 1962.
 \end_layout
 
 \begin_layout Standard
