@@ -45927,21 +45927,127 @@ i_{1} & i_{2} & \dots & i_{n}
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:every-permutation-is-product-of-independent-cycles"
+
+\end_inset
+
 Доказать, что любая подстановка единственным образом (с точностью до порядка
  сомножителей) разлагается в произведение нескольких независимых циклов.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+Обозначим рассматриваемую подстановку как 
+\begin_inset Formula $f$
+\end_inset
+
+, а её действие на элемент 
+\begin_inset Formula $x$
+\end_inset
+
+ как 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ Возьмём произвольный элемент 
+\begin_inset Formula $x_{0}\in\left\{ 1,2,\dots,n\right\} $
+\end_inset
+
+ и рассмотрим его 
+\begin_inset Quotes rld
+\end_inset
+
+маршрут
+\begin_inset Quotes rrd
+\end_inset
+
+ при последовательных применениях подстановки 
+\begin_inset Formula $f$
+\end_inset
+
+, то есть рассмотрим последовательность 
+\begin_inset Formula $x_{j+1}=f\left(x_{j}\right)$
+\end_inset
+
+.
+ Так как подстановка 
+\begin_inset Formula $f$
+\end_inset
+
+ определена на конечном множестве, то при некотором 
+\begin_inset Formula $m$
+\end_inset
+
+ мы получим, что 
+\begin_inset Formula $f\left(x_{m}\right)$
+\end_inset
+
+ совпадает с одним из предыдущих элементов.
+ Это может быть только 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, так как в противном случае, мы получаем, что 
+\begin_inset Formula $f\left(x_{m}\right)=x_{j}=f\left(x_{j-1}\right)$
+\end_inset
+
+, а подстановка — это взаимно однозначное отображение.
+ Таким образом, мы получим некоторый цикл 
+\begin_inset Formula $\left(x_{0},x_{1},\dots,x_{m}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Отображение 
+\begin_inset Formula $f$
+\end_inset
+
+ является взаимно однозначным отображением на множестве ещё не посещённых
+ элементов, так как 
+\begin_inset Formula $f$
+\end_inset
+
+ взаимно однозначно отображает множество посещённых элементов в себя 
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Возможно, это идея для задачи: если 
+\begin_inset Formula $f$
+\end_inset
+
+ — биекция на 
+\begin_inset Formula $A$
+\end_inset
+
+ и на 
+\begin_inset Formula $B\subset A$
+\end_inset
+
+, то 
+\begin_inset Formula $f$
+\end_inset
+
+ — биекция на 
+\begin_inset Formula $A\setminus B$
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Solution
+Повторяя описанную выше процедуру для ещё не посещённых элементов, пока
+ все элементы не окажутся посещены, мы получим разложение произвольной подстанов
+ки в произведение независимых циклов.
 \end_layout
 
 \begin_layout Standard
@@ -45957,21 +46063,74 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:every-cycle-is-product-of-transpositions"
+
+\end_inset
+
 Доказать, что произвольный цикл можно разложить в произведение транспозиций
  (не обязательно независимых).
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
+Если цикл содержит два элемента, то он является транспозицией, и его разложение
+ в произведение транспозиций содержит только один множитель (сам этот цикл).
 \end_layout
 
+\begin_layout Solution
+Рассмотрим теперь произвольный цикл 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3},\dots,i_{m}\right)$
 \end_inset
 
+, где 
+\begin_inset Formula $m\ge3$
+\end_inset
 
+.
+ Рассмотрим также цикл, отличающийся отсутствием первого элемента: 
+\begin_inset Formula $\left(i_{2,}i_{3},\dots,i_{m}\right)$
+\end_inset
+
+.
+ Действие укороченного цикла, отличается от полного тем, что элемент 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+ остаётся на месте (а должен перейти в 
+\begin_inset Formula $i_{2}$
+\end_inset
+
+), а 
+\begin_inset Formula $i_{m}$
+\end_inset
+
+ переходит в 
+\begin_inset Formula $i_{2}$
+\end_inset
+
+ (а должен перейти в 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+).
+ Таким образом, для получения полного цикла укороченный нужно умножить на
+ 
+\begin_inset Formula $\left(i_{1},i_{m}\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3},\dots,i_{m}\right)=\left(i_{1},i_{m}\right)\left(i_{2,}i_{3},\dots,i_{m}\right)$
+\end_inset
+
+ и мы представили цикл длины 
+\begin_inset Formula $m\ge3$
+\end_inset
+
+ в виде произведения транспозиции и более короткого цикла.
+ Повторяя этот процесс необходимое число раз, получим разложение произвольного
+ цикла в виде произведения транспозиций.
 \end_layout
 
 \begin_layout Standard
@@ -45993,31 +46152,125 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:every-transposition-is-product-of-elementary-transpositions"
+
+\end_inset
+
 Доказать, что произвольная транспозиция представляется в виде произведения
  элементарных транспозиций.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим произвольную транспозицию 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+, для определённости будем считать, что 
+\begin_inset Formula $i<j$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $j=i+1$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ — элементарная транспозиция, поэтому в дальнейшем будем считать, что 
+\begin_inset Formula $j>i+1$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+Заметим, что элементарность транспозиции зависит от обозначения элементов
+ (неэлементарную транспозицию можно превратить в элементарную переупорядочив
+ элементы и наоборот).
+ Переобозначение элементов также является подстановкой.
+ Поэтому целесообразно рассмотреть подходящий внутренний автоморфизм.
+ Рассмотрим следующее произведение траспозиций:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\left(j-1,j\right)\left(i,j-1\right)\left(j-1,j\right)=\\
+=\left(\begin{array}{ccc}
+i & j-1 & j\\
+i & j & j-1
+\end{array}\right)\left(\begin{array}{ccc}
+i & j-1 & j\\
+j-1 & i & j
+\end{array}\right)\left(\begin{array}{ccc}
+i & j-1 & j\\
+i & j & j-1
+\end{array}\right)\\
+=\left(\begin{array}{ccc}
+i & j-1 & j\\
+j & j-1 & i
+\end{array}\right)=\left(i,j\right).
+\end{multline*}
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Из результатов задач 174-176
-\begin_inset Note Note
-status open
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
 
-\begin_layout Plain Layout
-Добавить ссылки
+ можно представить в виде произведения двух элементарных траспозиций и транспози
+ции 
+\begin_inset Formula $\left(i,j-1\right)$
+\end_inset
+
+, в которой элементы находятся ближе друг к другу.
+ Повторяя этот процесс, пока не получим 
+\begin_inset Formula $i+1=j$
+\end_inset
+
+, получим представление 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ в виде произведения элементарных траспозиций.
 \end_layout
+
+\begin_layout Standard
+Из результатов задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-permutation-is-product-of-independent-cycles"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-cycle-is-product-of-transpositions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-transposition-is-product-of-elementary-transpositions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -46098,16 +46351,16 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Число 3 встречается раньше, чем 2 и 1 — это даёт 2 инверсии.
+ Число 2 встречается раньше, чем 1 — ещё одна инверсия.
+ Число 5 встречается раньше, чем 4 и 1 — ещё 2 инверсии.
+ Число 4 встречается раньше, чем число 1 — ещё одна инверсия.
+ Число 1 не предшествует числам, меньшим его (так как их вообще нет).
+ Итого 
+\begin_inset Formula $2+1+2+1=6$
 \end_inset
 
-
+ инверсий.
 \end_layout
 
 \begin_layout Standard
@@ -46116,21 +46369,39 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:transposition-change-parity"
+
+\end_inset
+
 Доказать, что чётность числа инверсий в строке меняется, если поменять местами
  два произвольных числа.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
+Если меняются местами соседние числа, то число инверсий может стать больше
+ или меньше на единицу, так как положение других чисел не меняется.
+ Таким образом, перестановка двух соседних чисел меняет чётность числа инверсий.
 \end_layout
+
+\begin_layout Solution
+Рассмотрим теперь обмен местами двух произвольных чисел, то есть произвольную
+ транспозицию.
+ При решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-transposition-is-product-of-elementary-transpositions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
+ было получено представление произвольной транспозиции в виде произведения
+ нечётного числа элементарных транспозиций.
+ Так как каждая транспозиция меняет чётность числа инверсий, то нечётное
+ количество транспозиции также меняет чётность числа инверсий.
 \end_layout
 
 \begin_layout Definition
@@ -46177,35 +46448,40 @@ i_{1} & i_{2} & \dots & i_{n}
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
-\end_inset
-
-
+Число 2 предшествует числу 1; число 5 — 4, 1, 3; число 4 — 1, 3; число 1
+ не предшествует числам, меньшим его (так как их вообще нет); число 3 —
+ последнее.
+ Всего получаем 6 инверсий, то есть это чётная подстановка.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:righ-multiplication-by-transposition-changes-parity"
+
+\end_inset
+
 Доказать, что при умножении чётной подстановки справа на произвольную транспозиц
 ию получается нечётная подстановка и, наоборот, при умножении нечётной подстанов
 ки справа на транспозицию получается чётная подстановка.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Транспозиция — перестановка двух элементов.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:transposition-change-parity"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
+, перестановка двух чисел меняет чётность количества инверсий.
+ Умножив произвольную подстановку справа на транспозицию, получим подстановку,
+ в которой в нижней строке количество инверсий имеет противоположную чётность
+ по отношению к чётности исходной подстановки.
 \end_layout
 
 \begin_layout Problem
@@ -46215,16 +46491,36 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Транспозиция — нечётная подстановка 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:transposition-change-parity"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Умножение справа на транспозицию меняет чётность подстановки 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:righ-multiplication-by-transposition-changes-parity"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+.
+ Тогда произведение чётного числа транспозиций — это умножение нечётной
+ подстановки справа на транспозицию нечётное число раз, а в результате нечётного
+ числа изменений чётности на противоположную чётность изменяется на противополож
+ную, то есть получаем, что произведение чётного числа транспозиций — чётная
+ подстановка.
+ Аналогично, произведение нечётного числа транспозиций — это результат умножения
+ нечётной подстановки справа на транспозицию чётное число раз, то есть нечётная
+ подстановка.
 \end_layout
 
 \begin_layout Problem
