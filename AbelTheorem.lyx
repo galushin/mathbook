@@ -7914,7 +7914,7 @@ name "def:non-positive-power-over-group"
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:power-of-sum-is-product-of-powers"
+name "prob:power-to-sum-equals-to-product-of-powers"
 
 \end_inset
 
@@ -7931,6 +7931,20 @@ name "prob:power-of-sum-is-product-of-powers"
 \end_inset
 
 .
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Ввести задачу про то, что 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ — коммутативна? На неё можно было бы ссылать в нескольких местах
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -8869,7 +8883,7 @@ status open
  Поэтому, в силу свойств суммы 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:power-of-sum-is-product-of-powers"
+reference "prob:power-to-sum-equals-to-product-of-powers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -10830,7 +10844,7 @@ noprefix "false"
  сложение целых чисел (задача 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:power-of-sum-is-product-of-powers"
+reference "prob:power-to-sum-equals-to-product-of-powers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -11295,7 +11309,7 @@ name "prob:infinite-cyclic-group-is-isomorphic-to-integers-with-addition"
 Это отображение является изоморфизмом по доказанному в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:power-of-sum-is-product-of-powers"
+reference "prob:power-to-sum-equals-to-product-of-powers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -35460,7 +35474,7 @@ name "prob:normal_subgroup-of-Z_n-and-Z"
  являются коммутативными 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:power-of-sum-is-product-of-powers"
+reference "prob:power-to-sum-equals-to-product-of-powers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -43399,7 +43413,13 @@ name "def:solvable-group"
 .
 \end_layout
 
-\begin_layout Definition
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "commutative-group-is-solvable"
+
+\end_inset
+
 Например, любая коммутативная группа разрешима, так как если 
 \begin_inset Formula $G$
 \end_inset
@@ -43408,7 +43428,7 @@ name "def:solvable-group"
 \begin_inset Formula $K\left(G\right)=\left\{ e\right\} $
 \end_inset
 
-
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "prob:commutant-is-unity-group-iff-group-is-commutative"
@@ -43522,7 +43542,7 @@ noprefix "false"
  является коммутативной 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:power-of-sum-is-product-of-powers"
+reference "prob:power-to-sum-equals-to-product-of-powers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -45669,6 +45689,12 @@ i_{1} & i_{2} & \dots & i_{n}
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:number-of-permutations-of-order-n"
+
+\end_inset
+
 Сколько существует различных подстановок 
 \begin_inset Formula $n$
 \end_inset
@@ -45724,6 +45750,12 @@ i_{1} & i_{2} & \dots & i_{n}
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:S_n-is-not-commutative-when-n-greater-or-equal-then-3"
+
+\end_inset
+
 Доказать, что при 
 \begin_inset Formula $n\ge3$
 \end_inset
@@ -46722,24 +46754,96 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+При 
+\begin_inset Formula $n=4$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ рассмотрим подстановки 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 3 & 1 & 4
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 3 & 4 & 2
+\end{array}\right)$
+\end_inset
+
+.
+ Тогда
+\begin_inset Formula 
+\[
+\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 3 & 1 & 4
+\end{array}\right)\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 3 & 4 & 2
+\end{array}\right)=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 1 & 4 & 3
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 3 & 4 & 2
+\end{array}\right)\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 3 & 1 & 4
+\end{array}\right)=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 1 & 2
+\end{array}\right).
+\]
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Solution
+При 
+\begin_inset Formula $n>4$
+\end_inset
+
+ достаточно рассмотреть аналогичные циклы, не меняющие элементы 
+\begin_inset Formula $5,\dots,n$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:even-permutations-is-normal-subgroup-of-all-permutations"
+
+\end_inset
+
 Доказать, что знакопеременная группа 
 \begin_inset Formula $A_{n}$
 \end_inset
 
- являются нормальным делителем симметрической группы 
+ являются нормальным делителем
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+раньше этот термин не употреблялся
+\end_layout
+
+\end_inset
+
+ симметрической группы 
 \begin_inset Formula $S_{n}$
 \end_inset
 
@@ -46755,16 +46859,189 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Рассматривать ли отдельно случай 
+\begin_inset Formula $n=1$
+\end_inset
+
+?
 \end_layout
 
 \end_inset
 
+Пусть 
+\begin_inset Formula $h\in A_{n}$
+\end_inset
 
+ и 
+\begin_inset Formula $g\in S_{n}$
+\end_inset
+
+.
+ Рассмотрим произведение 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $h$
+\end_inset
+
+ — чётная подстановка, то 
+\begin_inset Formula $gh$
+\end_inset
+
+ имеет такую же чётность, как 
+\begin_inset Formula $g$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-product-is-sum-of-parities"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Подстановки 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+ имеют одинаковую чётность, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ является чётной подстановкой.
+ Таким образом, 
+\begin_inset Formula $ghg^{-1}\in A_{n}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Построим теперь разложение 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ по 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+ Одним из классов этого разложения будет само подмножество 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+ Рассмотрим теперь две произвольные нечётные подстановки 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ и докажем, что они принадлежат одному классу по 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+, то есть существует такая подстановка 
+\begin_inset Formula $h\in A_{n}$
+\end_inset
+
+, что 
+\begin_inset Formula $g_{2}=hg_{1}$
+\end_inset
+
+ или 
+\begin_inset Formula $g_{2}g_{1}^{-1}\in A_{n}$
+\end_inset
+
+.
+ Как было показано в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}^{-1}$
+\end_inset
+
+ имеет такую же чётность, как 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ — нечётная подстановка.
+ Тогда 
+\begin_inset Formula $g_{2}g_{1}^{-1}$
+\end_inset
+
+ — произведение двух подстановок одинаковой чётности, то есть чётная подстановка
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-product-is-sum-of-parities"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Итак, разложение 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ по 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ состоит из двух классов: группы чётных подстановок 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ и множества нечётных подстановок.
 \end_layout
 
 \begin_layout Problem
@@ -46776,16 +47053,83 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Рассматривать ли отдельно случай 
+\begin_inset Formula $n=1$
+\end_inset
+
+?
 \end_layout
 
 \end_inset
 
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:even-permutations-is-normal-subgroup-of-all-permutations"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+, разложение 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ по подгруппе 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ состоит из двух классов, поэтому порядок группы 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ равен удвоенному порядку группы 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ (как было показано при доказательстве теоремы Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:number-of-permutations-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что порядок 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ равен 
+\begin_inset Formula $n!$
+\end_inset
+
+, поэтому порядок 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ равен 
+\begin_inset Formula $\frac{n!}{2}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -46805,16 +47149,211 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+\begin_inset Formula $S_{2}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+ является группой порядка 
+\begin_inset Formula $2!=2$
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:number-of-permutations-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то есть изоморфна 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ — коммутативная группа, а значит и разрешимая 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "commutative-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ является группой порядка 
+\begin_inset Formula $3!=6$
+\end_inset
+
+ и это некоммутативная группа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:S_n-is-not-commutative-when-n-greater-or-equal-then-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Имеется две неизоморфные группы порядка 6: 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+ и группа симметрий правильного треугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ не может быть изоморфной 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+ , так как 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+ — коммутативная группа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:power-to-sum-equals-to-product-of-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ — нет.
+ Таким образом, 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ изоморфна группе вращений треугольника, которая является разрешимой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-solvable-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Группа 
+\begin_inset Formula $S_{4}$
+\end_inset
+
+ является группой порядка 
+\begin_inset Formula $4!=24$
+\end_inset
+
+ и это некоммутативная группа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:S_n-is-not-commutative-when-n-greater-or-equal-then-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Эту группа является изоморфной группе симметрий тетраэдра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group-of-tetrahedron-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: нужно занумеровать вершины тетраэдра 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+ и 
+\begin_inset Formula $D$
+\end_inset
+
+ как 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $3$
+\end_inset
+
+ и 
+\begin_inset Formula $4$
+\end_inset
+
+, тогда каждой симметрии тетраэдра соответствует подстановка номеров вершин,
+ а произведению симметрий соответствует композиция подстановок.
+ Так как группа вращений тетраэдра является разрешимой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-solvable-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то разрешима и 
+\begin_inset Formula $S_{4}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -46989,7 +47528,7 @@ status open
 \end_layout
 
 \begin_layout Problem
-Доказать, что симметрическая группу 
+Доказать, что симметрическая группа 
 \begin_inset Formula $S_{n}$
 \end_inset
 
