@@ -46485,6 +46485,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:parity-of-number-of-permutations-equals-parity-of-their-product"
+
+\end_inset
+
 Доказать, что чётная подстановка может быть разложена в произведение только
  чётного числа транспозиций, а нечётная в произведение только нечётного
  числа транспозиций.
@@ -46532,38 +46538,82 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+При решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-cycle-is-product-of-transpositions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+ было показано, что произвольный цикл длины 
+\begin_inset Formula $m$
+\end_inset
 
+ может быть представлен в виде произведения 
+\begin_inset Formula $m-1$
+\end_inset
+
+ транспозиции.
+ Чётность произведения транспозиций равна чётности их количества 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-number-of-permutations-equals-parity-of-their-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому чётность цикла равна чётности числа 
+\begin_inset Formula $m-1$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:parity-of-product-is-sum-of-parities"
+
+\end_inset
+
 Доказать, что при умножении двух подстановок одинаковой чётности получается
  чётная подстановка, а при умножении двух подстановок разной чётности получается
  нечётная подстановка.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-number-of-permutations-equals-parity-of-their-product"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
+, чётная подстановка может быть представлена как произведение чётного числа
+ транспозиций, а нечётная — как произведение нечётного числа транспозиций.
+ Так как сумма двух чётных чисел или двух нечётных чисел — чётное число,
+ а сумма чётного и нечётного числа — нечётное число, то произведение двух
+ подстановок одинаковой чётности — произведение чётного числа транспозиций
+ и, следовательно, чётная подстановка, а произведение двух подстановок разной
+ чётности — произведение нечётного числа транспозиций и, следовательно,
+ нечётная подстановка.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:parity-of-inverse"
+
+\end_inset
+
 Доказать, что подстановки 
 \begin_inset Formula $a$
 \end_inset
@@ -46580,26 +46630,54 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как 
+\begin_inset Formula $aa^{-1}=e$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ (по определению обратного элемента), то 
+\begin_inset Formula $aa^{-1}$
+\end_inset
+
+ — чётная подстановка.
+ Так как произведение подстановок разной чётности — нечётная подстановка
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-product-is-sum-of-parities"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, то 
+\begin_inset Formula $a^{-1}$
+\end_inset
 
+ должна быть той же чётности, что и 
+\begin_inset Formula $a$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Из результатов задач 183 и 184
-\begin_inset Note Note
-status open
+Из результатов задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-product-is-sum-of-parities"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Добавить ссылки
-\end_layout
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-inverse"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
