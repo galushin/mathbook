@@ -29172,6 +29172,12 @@ y^{\prime}=gy=ghx=ghg^{-1}\left(gx\right)=ghg^{-1}x^{\prime}.
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:inner-automorphism"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $G$
 \end_inset
@@ -46562,6 +46568,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:parity-of-cycle"
+
+\end_inset
+
 Определить чётность произвольного числа длины: а) 3, б) 4, в) 
 \begin_inset Formula $m$
 \end_inset
@@ -47408,6 +47420,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:possible-cycle-decompositions-of-elements-of-A_5"
+
+\end_inset
+
 Доказать, что любая чётная подстановка 5-й степени, отличная от тождественной
  подстановки, разлагается на независимые циклы одним из следующих способов:
  а) 
@@ -47426,19 +47444,100 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Произвольная подстановка разлагается в произведение независимых циклов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-permutation-is-product-of-independent-cycles"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Рассмотрим возможности разложения произвольной подстановки пятой степени
+ и выделим из них чётные.
+ Первая возможность — наличие цикла длины 5 (это вариант а).
+\end_layout
 
+\begin_layout Solution
+Пусть теперь в подстановке есть цикл длины 4, больше в этой подстановке
+ нетривиальных циклов быть не может (так как остаётся только один элемент).
+ Цикл длины 4 — нечётная подстановка 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-cycle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому подстановка с циклом длины 4 не может быть чётной.
+\end_layout
+
+\begin_layout Solution
+Пусть в подстановке есть цикл длины 3.
+ Два элемента, не входящие в этот цикл, могут либо остаться на месте, либо
+ образовывать цикл длины 2.
+ Любой цикл длины 3 — чётная подстановка, а любой цикл длины 2 — нечётная
+ подстановка 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-cycle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3}\right)$
+\end_inset
+
+ — чётная подстановка, а 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3}\right)\left(i_{4},i_{5}\right)$
+\end_inset
+
+ — нечётная подстановка.
+ Мы доказали, что вариант б) — одно из возможных разложений чётной подстановки
+ пятой степени.
+\end_layout
+
+\begin_layout Solution
+Пусть в подстановке есть цикл длины 2, но нет циклов большей длины.
+ Циклов длины 2 может быть 1 или 2.
+ Так как циклы длины 2 — нечётные подстановки 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-cycle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то подстановка, содержащая один цикл длины 2 и не содержащая других циклов
+ будет нечётной, а подстановка вида 
+\begin_inset Formula $\left(i_{1},i_{2}\right)\left(i_{3},i_{4}\right)$
+\end_inset
+
+ (вариант в) является чётной.
+\end_layout
+
+\begin_layout Solution
+Если в подстановке вообще нет циклов, то все элементы остаются на своих
+ местах и, следовательно, это тождественная подстановка.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:if-normal-subgroup-of-A_5-contains-some-permutation-it-contains-all-similar"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $N$
 \end_inset
@@ -47454,12 +47553,12 @@ status open
 
  содержится хотя бы одна подстановка, определённым образом разлагающаяся
  на независимые циклы 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку на задачу 190
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:possible-cycle-decompositions-of-elements-of-A_5"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -47472,19 +47571,431 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как 
+\begin_inset Formula $N$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ — нормальная подгруппа, то для любого 
+\begin_inset Formula $a\in N$
+\end_inset
+
+ и любого 
+\begin_inset Formula $g\in A_{5}$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $gag^{-1}\in A_{5}$
+\end_inset
+
+, то есть любой внутренний автоморфизм 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:inner-automorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ переводит 
+\begin_inset Formula $N$
+\end_inset
+
+ в 
+\begin_inset Formula $N$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+а) Попытаемся преобразовать цикл 
+\begin_inset Formula $a=\left(1,2,3,4,5\right)$
+\end_inset
+
+ в произвольный цикл длины 5 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3},i_{4},i_{5}\right)$
+\end_inset
+
+ внутренним автоморфизмом подгруппы 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произведение действие на 
+\begin_inset Formula $a$
+\end_inset
+
+ внутреннего автоморфизма, порождённого подстановкой 
+\begin_inset Formula $g_{1}=\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+2 & 3 & 4 & 5 & 1
+\end{array}\right)\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+1 & 2 & 3 & 4 & 5
+\end{array}\right)=\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{2} & i_{3} & i_{4} & i_{5} & i_{1}
+\end{array}\right)=\left(i_{1},i_{2},i_{3},i_{4},i_{5}\right).
+\]
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Solution
+Если оказалось, что подстановка 
+\begin_inset Formula $\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)$
+\end_inset
+
+ — чётная, то мы нашли нужный автоморфизм.
+ Пусть это не так.
+ Наряду с циклом 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3},i_{4},i_{5}\right)$
+\end_inset
+
+ произвольная подгруппа (а значит и произвольная нормальная подгруппа 
+\begin_inset Formula $N$
+\end_inset
+
+) должна содержать его квадрат.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(i_{1},i_{2},i_{3},i_{4},i_{5}\right)^{2}=\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{2} & i_{3} & i_{4} & i_{5} & i_{1}
+\end{array}\right)\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{2} & i_{3} & i_{4} & i_{5} & i_{1}
+\end{array}\right)=\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{3} & i_{4} & i_{5} & i_{1} & i_{2}
+\end{array}\right)=\left(i_{1},i_{3},i_{5},i_{2},i_{4}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим внутренний автоморфизм, переводящий 
+\begin_inset Formula $\left(1,2,3,4,5\right)$
+\end_inset
+
+ в 
+\begin_inset Formula $\left(i_{1},i_{3},i_{5},i_{2},i_{4}\right)$
+\end_inset
+
+, он соответствует подстановке 
+\begin_inset Formula $g_{2}=\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{3} & i_{5} & i_{2} & i_{4}
+\end{array}\right)$
+\end_inset
+
+.
+ Так как строка 
+\begin_inset Formula $\left(i_{1},i_{3},i_{5},i_{2},i_{4}\right)$
+\end_inset
+
+ может быть получена из 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3},i_{4},i_{5}\right)$
+\end_inset
+
+ тремя перестановками, то одна из подстановок 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ или 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ является чётной.
+ Таким образом, внутренним автоморфизмом из 
+\begin_inset Formula $a$
+\end_inset
+
+ может быть получен произвольный цикл длины пять, либо его квадрат.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — подгруппа, то она должна вместе с элементом содержать и все его степени.
+ Подгруппа степеней цикла длины 5 содержит пять элементов, то есть является
+ циклической группой простого порядка, в которой любой элемент (кроме единичного
+) является образующим (как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-with-prime-order-is-cyclic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Таким образом, если 
+\begin_inset Formula $N$
+\end_inset
+
+ содержит квадрат некоторого цикла длины 5, то она содержит и сам этот цикл.
+\end_layout
+
+\begin_layout Solution
+Таким образом, произвольная нормальная подгруппа 
+\begin_inset Formula $N$
+\end_inset
+
+ группы 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ должна содержать либо все циклы длины пять, либо ни одного из них.
+\end_layout
+
+\begin_layout Solution
+б) Пусть 
+\begin_inset Formula $a=\left(1,2,3\right)$
+\end_inset
+
+, покажем, что цикл 
+\begin_inset Formula $a=\left(1,2,3\right)$
+\end_inset
+
+ можно преобразовать внутренним автоморфизмом 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ в произвольный цикл 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3}\right)$
+\end_inset
+
+ длины 3.
+ Положим 
+\begin_inset Formula $g_{1}=\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)$
+\end_inset
+
+ и рассмотрим 
+\begin_inset Formula 
+\begin{multline*}
+g_{1}ag_{1}^{-1}=\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+2 & 3 & 1 & 4 & 5
+\end{array}\right)\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+1 & 2 & 3 & 4 & 5
+\end{array}\right)=\\
+=\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{2} & i_{3} & i_{1} & i_{4} & i_{5}
+\end{array}\right)=\left(i_{1},i_{2},i_{3}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Подстановка 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ может быть чётной или нечётной, если 
+\begin_inset Formula $g$
+\end_inset
+
+ — чётная, то мы нашли требуемую подстановку.
+ В противном случае рассмотрим 
+\begin_inset Formula $g_{2}=\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{5} & i_{4}
+\end{array}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\begin{multline*}
+g_{2}ag_{2}^{-1}=\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{5} & i_{4}
+\end{array}\right)\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+2 & 3 & 1 & 4 & 5
+\end{array}\right)\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+1 & 2 & 3 & 5 & 4
+\end{array}\right)=\\
+=\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{2} & i_{3} & i_{1} & i_{4} & i_{5}
+\end{array}\right)=\left(i_{1},i_{2},i_{3}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как нижние строки 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ отличаются перестановкой двух чисел, то они имеют разную чётность 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:transposition-change-parity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому одно из них принадлежит 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+, что и требовалось.
+\end_layout
+
+\begin_layout Solution
+в) Рассмотрим подстановку 
+\begin_inset Formula $a=\left(1,2\right)\left(3,4\right)$
+\end_inset
+
+ и два произведения:
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+2 & 1 & 4 & 3 & 5
+\end{array}\right)\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+1 & 2 & 3 & 4 & 5
+\end{array}\right)=\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{2} & i_{1} & i_{4} & i_{3} & i_{5}
+\end{array}\right)=\left(i_{1},i_{2}\right)\left(i_{3},i_{4}\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{3} & i_{4} & i_{2} & i_{1} & i_{5}
+\end{array}\right)\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+2 & 1 & 4 & 3 & 5
+\end{array}\right)\left(\begin{array}{ccccc}
+i_{3} & i_{4} & i_{2} & i_{1} & i_{5}\\
+1 & 2 & 3 & 4 & 5
+\end{array}\right)=\left(\begin{array}{ccccc}
+i_{3} & i_{4} & i_{2} & i_{1} & i_{5}\\
+i_{4} & i_{3} & i_{1} & i_{2} & i_{5}
+\end{array}\right)=\left(i_{3},i_{4}\right)\left(i_{1},i_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как подстановки 
+\begin_inset Formula $\left(i_{1},i_{2}\right)\left(i_{3},i_{4}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(i_{3},i_{4}\right)\left(i_{1},i_{2}\right)$
+\end_inset
+
+ тождественны, а подстановки 
+\begin_inset Formula $\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{3} & i_{4} & i_{2} & i_{1} & i_{5}
+\end{array}\right)$
+\end_inset
+
+ имеют разную чётность (строка 
+\begin_inset Formula $i_{1},i_{2},i_{3},i_{4}$
+\end_inset
+
+ может быть преобразована в строку 
+\begin_inset Formula $i_{3},i_{4},i_{2},i_{1}$
+\end_inset
+
+ путём перестановки трёх элементов), то одна из этих подстановок может быть
+ выбрана в качестве 
+\begin_inset Formula $g\in A_{5}$
+\end_inset
+
+ такого, что 
+\begin_inset Formula $gag^{-1}$
+\end_inset
+
+ — заданное произведение двух циклов длины 2.
+\end_layout
+
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:A_5-has-no-nontrivial-normal-subgroups"
+
+\end_inset
+
 Доказать, что группа 
 \begin_inset Formula $A_{5}$
 \end_inset
@@ -47493,26 +48004,162 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Группа 
+\begin_inset Formula $A_{5}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ является группой порядка 
+\begin_inset Formula $\frac{5!}{2}=60$
+\end_inset
+
+.
+ Подсчитаем, сколько элементов входит в каждый из классов подстановок, указанных
+ в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:possible-cycle-decompositions-of-elements-of-A_5"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Solution
+а) Каждой перестановке пяти чисел соответствует цикл длины 5, но каждому
+ такому циклу соответствует пять разных цепочек, так как начало цикла можно
+ выбрать пятью разными способами, поэтому общее число различных циклов длины
+ 5 равно 
+\begin_inset Formula $\frac{5!}{5}=4!=24$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Для определения количества циклов длины 3 нужно учесть, что существует
+ 
+\begin_inset Formula $\binom{5}{3}=\frac{5!}{3!2!}=\frac{5\cdot4}{2}=10$
+\end_inset
+
+ способов выбрать 3 элемента из 5.
+ После того, как мы отобрали 3 элемента, их можно расположить в циклы 
+\begin_inset Formula $\frac{3!}{3}=2!=2$
+\end_inset
+
+ способами, то есть количество различных циклов длины 3 равно 20.
+\end_layout
+
+\begin_layout Solution
+в) В этом случае мы сначала выбираем 2 элемента из 5, а затем 2 элемента
+ из трёх оставшихся, что можно сделать 
+\begin_inset Formula $\binom{5}{2}\binom{3}{2}=\frac{5!}{2!3!}\cdot\frac{3!}{2!1!}=10\cdot3=30$
+\end_inset
+
+ способами.
+ Так как подстановки 
+\begin_inset Formula $\left(i_{1},i_{2}\right)\left(i_{3},i_{4}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(i_{3},i_{4}\right)\left(i_{1},i_{2}\right)$
+\end_inset
+
+ тождественны, а два элемента можно расположить в цикл только одним способом,
+ то разложений этого типа насчитывается 
+\begin_inset Formula $\frac{30}{2}\cdot1=15$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:if-normal-subgroup-of-A_5-contains-some-permutation-it-contains-all-similar"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если в 
+\begin_inset Formula $N$
+\end_inset
+
+ содержится хотя бы одна подстановка, определённым образом разлагающаяся
+ на независимые циклы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:possible-cycle-decompositions-of-elements-of-A_5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то в 
+\begin_inset Formula $N$
+\end_inset
+
+ содержатся все подстановки, таким же образом разлагающиеся на независимые
+ циклы.
+ Таким образом, любая нормальная подгруппа 
+\begin_inset Formula $N$
+\end_inset
+
+, отличная от единичной, содержит тождественную подстановку и подстановки
+ одного или нескольких классов а)-в).
+ Таким образом, возможные порядки нормальных подгрупп 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ равны 1, 16, 21, 25, 36, 40, 45 или 60.
+ С другой стороны, по теореме Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, порядок подгруппы является делителем порядка группы.
+ Из перечисленных выше порядков, только 1 и 60 являются делителями числа
+ 60.
+ Таким образом, нормальными подгруппами 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ являются только единичная подгруппа и вся 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Из утверждения задач 192, 161
-\begin_inset Note Note
-status open
+Из утверждения задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:A_5-has-no-nontrivial-normal-subgroups"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-добавить ссылки
-\end_layout
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-without-proper-normal-subgroup-is-not-solvable"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -47528,6 +48175,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:S_n-has-subgroup-isomorpic-to-A_5"
+
+\end_inset
+
 Доказать, что симметрическая группа 
 \begin_inset Formula $S_{n}$
 \end_inset
@@ -47544,26 +48197,57 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Рассмотрим подгруппу 
+\begin_inset Formula $H_{5,n}$
 \end_inset
 
+ чётных перестановок, не меняющих элементы 
+\begin_inset Formula $6,\dots,n$
+\end_inset
 
+.
+ Между 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ и этой подгруппой существует взаимно однозначное соответствие.
+ Произведению элементов 
+\begin_inset Formula $H_{5,n}$
+\end_inset
+
+ соответствует произведение соответствующих элементов 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $H_{5,n}$
+\end_inset
+
+ — подгруппа, изоморфная 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Из утверждения задач 193 и 162 
-\begin_inset Note Note
-status open
+Из утверждения задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:S_n-has-subgroup-isomorpic-to-A_5"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-добавить ссылки
-\end_layout
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-of-solvable-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
