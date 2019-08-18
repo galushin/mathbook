@@ -46088,6 +46088,52 @@ status open
 ки в произведение независимых циклов.
 \end_layout
 
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Забыл доказать, что полученное разложение — единственное
+\end_layout
+
+\end_inset
+
+ Пусть теперь данная подстановка является произведением каких-либо независимых
+ циклов.
+ Если один из циклов переводит элементы 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+ в 
+\begin_inset Formula $i_{2}$
+\end_inset
+
+ и эти элементы не встречаются в других циклах, то все произведение будет
+ переводить 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+ в 
+\begin_inset Formula $i_{2}$
+\end_inset
+
+.
+ Поэтому элемент 
+\begin_inset Formula $i_{2}$
+\end_inset
+
+, следующий за 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+ в цикле, содержащем 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+, однозначно определяется данной подстановкой.
+ Таким образом, все циклы определяются однозначно.
+\end_layout
+
 \begin_layout Standard
 Циклы вида 
 \begin_inset Formula $\left(i,j\right)$
@@ -46154,7 +46200,21 @@ name "prob:every-cycle-is-product-of-transpositions"
 ).
  Таким образом, для получения полного цикла укороченный нужно умножить на
  
+\begin_inset Formula $\left(i_{1},i_{2}\right)$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь была ошибка: 
 \begin_inset Formula $\left(i_{1},i_{m}\right)$
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 .
@@ -46169,6 +46229,23 @@ name "prob:every-cycle-is-product-of-transpositions"
  в виде произведения транспозиции и более короткого цикла.
  Повторяя этот процесс необходимое число раз, получим разложение произвольного
  цикла в виде произведения транспозиций.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге приводится другое разложение: 
+\begin_inset Formula $\left(i_{1},i_{m}\right)\left(i_{1},i_{m-1}\right)\cdot\dots\cdot\left(i_{1},i_{3}\right)\left(i_{1},i_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -46565,6 +46642,27 @@ noprefix "false"
  Аналогично, произведение нечётного числа транспозиций — это результат умножения
  нечётной подстановки справа на транспозицию чётное число раз, то есть нечётная
  подстановка.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге используется тождество 
+\begin_inset Formula $a=e\cdot a$
+\end_inset
+
+ и то, что 
+\begin_inset Formula $e$
+\end_inset
+
+ — чётная подстановка
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
@@ -47271,7 +47369,7 @@ noprefix "false"
 
  — нет.
  Таким образом, 
-\begin_inset Formula $S_{n}$
+\begin_inset Formula $S_{3}$
 \end_inset
 
  изоморфна группе вращений треугольника, которая является разрешимой 
@@ -47992,6 +48090,23 @@ i_{3} & i_{4} & i_{2} & i_{1} & i_{5}\\
 i_{4} & i_{3} & i_{1} & i_{2} & i_{5}
 \end{array}\right)=\left(i_{3},i_{4}\right)\left(i_{1},i_{2}\right).
 \]
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге в качестве второй перестановки используется 
+\begin_inset Formula $\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{2} & i_{1} & i_{3} & i_{4} & i_{5}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
