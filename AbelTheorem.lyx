@@ -7914,7 +7914,7 @@ name "def:non-positive-power-over-group"
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:power-of-sum-is-product-of-powers"
+name "prob:power-to-sum-equals-to-product-of-powers"
 
 \end_inset
 
@@ -7931,6 +7931,20 @@ name "prob:power-of-sum-is-product-of-powers"
 \end_inset
 
 .
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Ввести задачу про то, что 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ — коммутативна? На неё можно было бы ссылать в нескольких местах
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -8869,7 +8883,7 @@ status open
  Поэтому, в силу свойств суммы 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:power-of-sum-is-product-of-powers"
+reference "prob:power-to-sum-equals-to-product-of-powers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -10830,7 +10844,7 @@ noprefix "false"
  сложение целых чисел (задача 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:power-of-sum-is-product-of-powers"
+reference "prob:power-to-sum-equals-to-product-of-powers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -11295,7 +11309,7 @@ name "prob:infinite-cyclic-group-is-isomorphic-to-integers-with-addition"
 Это отображение является изоморфизмом по доказанному в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:power-of-sum-is-product-of-powers"
+reference "prob:power-to-sum-equals-to-product-of-powers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -29158,6 +29172,12 @@ y^{\prime}=gy=ghx=ghg^{-1}\left(gx\right)=ghg^{-1}x^{\prime}.
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:inner-automorphism"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $G$
 \end_inset
@@ -35460,7 +35480,7 @@ name "prob:normal_subgroup-of-Z_n-and-Z"
  являются коммутативными 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:power-of-sum-is-product-of-powers"
+reference "prob:power-to-sum-equals-to-product-of-powers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -43399,7 +43419,13 @@ name "def:solvable-group"
 .
 \end_layout
 
-\begin_layout Definition
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "commutative-group-is-solvable"
+
+\end_inset
+
 Например, любая коммутативная группа разрешима, так как если 
 \begin_inset Formula $G$
 \end_inset
@@ -43408,7 +43434,7 @@ name "def:solvable-group"
 \begin_inset Formula $K\left(G\right)=\left\{ e\right\} $
 \end_inset
 
-
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "prob:commutant-is-unity-group-iff-group-is-commutative"
@@ -43522,7 +43548,7 @@ noprefix "false"
  является коммутативной 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:power-of-sum-is-product-of-powers"
+reference "prob:power-to-sum-equals-to-product-of-powers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -44097,7 +44123,7 @@ noprefix "false"
 
  — вращение вокруг оси, проходящей через середины двух противоположных рёбер
  на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
 , а 
@@ -45598,6 +45624,2881 @@ noprefix "false"
 \end_inset
 
  является разрешимой.
+\end_layout
+
+\begin_layout Section
+Подстановки
+\end_layout
+
+\begin_layout Standard
+Рассмотрим сейчас более подробно 
+\emph on
+подстановки 
+\emph default
+(то есть преобразования) на множестве первых 
+\begin_inset Formula $n$
+\end_inset
+
+ натуральных чисел 
+\begin_inset Formula $1$
+\end_inset
+
+, 2, ..., 
+\begin_inset Formula $n$
+\end_inset
+
+; эти подстановки мы будем называть 
+\emph on
+подстановками 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени.
+ 
+\emph default
+Заметим, что подстановки на произвольном множестве с 
+\begin_inset Formula $n$
+\end_inset
+
+ элементами можно свести к рассматриваемым подстановкам, для чего достаточно
+ занумеровать элементы множества натуральными числами 
+\begin_inset Formula $1$
+\end_inset
+
+, 2, ..., 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Произвольную подстановку 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени можно записать в виде 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & \dots & n\\
+i_{1} & i_{2} & \dots & i_{n}
+\end{array}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $i_{m}$
+\end_inset
+
+ — образ элемента 
+\begin_inset Formula $m$
+\end_inset
+
+ при данной подстановке.
+ Напомним, что подстановка — взаимно однозначное отображение, поэтому все
+ элементы в нижней строке различны.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:number-of-permutations-of-order-n"
+
+\end_inset
+
+Сколько существует различных подстановок 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени?
+\end_layout
+
+\begin_layout Solution
+Так как все элементы во второй строке таблицы, задающей перестановки различны,
+ то первый элемент можно задать 
+\begin_inset Formula $n$
+\end_inset
+
+ способами, второй — 
+\begin_inset Formula $n-1$
+\end_inset
+
+, третий — 
+\begin_inset Formula $n-2$
+\end_inset
+
+ и так далее.
+ Всего получаем 
+\begin_inset Formula $n!$
+\end_inset
+
+ подстановок 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени.
+\end_layout
+
+\begin_layout Definition
+Группу всех подстановок 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени с обычной операцией умножения (то есть композиции) подстановок
+ называют 
+\emph on
+симметрической группой степени 
+\begin_inset Formula $n$
+\end_inset
+
+
+\emph default
+ и обозначают 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:S_n-is-not-commutative-when-n-greater-or-equal-then-3"
+
+\end_inset
+
+Доказать, что при 
+\begin_inset Formula $n\ge3$
+\end_inset
+
+ группа 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ некоммутативна.
+\end_layout
+
+\begin_layout Solution
+Пусть сначала 
+\begin_inset Formula $n=3$
+\end_inset
+
+.
+ Рассмотрим Две подстановки 
+\begin_inset Formula $\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 3 & 1
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\begin{array}{ccc}
+1 & 2 & 3\\
+3 & 2 & 1
+\end{array}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 3 & 1
+\end{array}\right)\left(\begin{array}{ccc}
+1 & 2 & 3\\
+3 & 2 & 1
+\end{array}\right)=\left(\begin{array}{ccc}
+1 & 2 & 3\\
+1 & 3 & 2
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\begin{array}{ccc}
+1 & 2 & 3\\
+3 & 2 & 1
+\end{array}\right)\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 3 & 1
+\end{array}\right)=\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 1 & 3
+\end{array}\right)$
+\end_inset
+
+, то есть в 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ есть не перестановочные элементы, а значит 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ — некоммутативная.
+\end_layout
+
+\begin_layout Solution
+В 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $n>3$
+\end_inset
+
+ можно рассмотреть подстановки 
+\begin_inset Formula $\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & \dots & n\\
+2 & 3 & 1 & 4 & \dots & n
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & \dots & n\\
+3 & 2 & 1 & 4 & \dots & n
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Подстановка может некоторые элементы перемещать, а некоторые оставлять на
+ месте, при этом может оказаться, что перемещаемые элементы перемещаются
+ как бы по кругу.
+ Например подстановка 
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+4 & 2 & 6 & 3 & 5 & 1 & 7
+\end{array}\right)
+\]
+
+\end_inset
+
+ оставляет на месте элементы 2, 5 и 7, а остальные элементы перемещаются
+ по кругу: 
+\begin_inset Formula $1\to4$
+\end_inset
+
+, 
+\begin_inset Formula $4\to3$
+\end_inset
+
+, 
+\begin_inset Formula $3\to6$
+\end_inset
+
+, 
+\begin_inset Formula $6\to1$
+\end_inset
+
+.
+ Подстановки такого типа называются 
+\emph on
+циклическими подстановками
+\emph default
+ или просто 
+\emph on
+циклами.
+
+\emph default
+ Для циклических подстановок мы будет использовать ещё другую запись.
+ Например, выражение 
+\begin_inset Formula $\left(1\thinspace4\thinspace3\thinspace6\right)$
+\end_inset
+
+ будет обозначать подстановку, переводящую 
+\begin_inset Formula $1\to4$
+\end_inset
+
+, 
+\begin_inset Formula $4\to3$
+\end_inset
+
+, 
+\begin_inset Formula $3\to6$
+\end_inset
+
+, 
+\begin_inset Formula $6\to1$
+\end_inset
+
+ и оставляющую остальные элементы рассматриваемого множества на месте.
+ Так, ели эта подстановка 7-й степени, то она совпадает с подстановкой,
+ рассмотренной выше.
+\end_layout
+
+\begin_layout Standard
+Не всякая подстановка является циклической.
+ Например, подстановка 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+3 & 5 & 4 & 1 & 2 & 6
+\end{array}\right)
+\]
+
+\end_inset
+
+ циклической не является, но её можно представить как произведение двух
+ циклов: 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+3 & 5 & 4 & 1 & 2 & 6
+\end{array}\right)=\left(1\thinspace3\thinspace4\right)\cdot\left(2\thinspace5\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Полученные циклы перемещают разные элементы, такие циклы называются 
+\emph on
+независимыми
+\emph default
+.
+ Легко видеть, что произведение независимых циклов не зависит от порядка
+ их следования.
+ Если не различать произведение независимых циклов, отличающихся лишь порядком
+ следования, то будет верно следующее утверждение.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:every-permutation-is-product-of-independent-cycles"
+
+\end_inset
+
+Доказать, что любая подстановка единственным образом (с точностью до порядка
+ сомножителей) разлагается в произведение нескольких независимых циклов.
+\end_layout
+
+\begin_layout Solution
+Обозначим рассматриваемую подстановку как 
+\begin_inset Formula $f$
+\end_inset
+
+, а её действие на элемент 
+\begin_inset Formula $x$
+\end_inset
+
+ как 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ Возьмём произвольный элемент 
+\begin_inset Formula $x_{0}\in\left\{ 1,2,\dots,n\right\} $
+\end_inset
+
+ и рассмотрим его 
+\begin_inset Quotes rld
+\end_inset
+
+маршрут
+\begin_inset Quotes rrd
+\end_inset
+
+ при последовательных применениях подстановки 
+\begin_inset Formula $f$
+\end_inset
+
+, то есть рассмотрим последовательность 
+\begin_inset Formula $x_{j+1}=f\left(x_{j}\right)$
+\end_inset
+
+.
+ Так как подстановка 
+\begin_inset Formula $f$
+\end_inset
+
+ определена на конечном множестве, то при некотором 
+\begin_inset Formula $m$
+\end_inset
+
+ мы получим, что 
+\begin_inset Formula $f\left(x_{m}\right)$
+\end_inset
+
+ совпадает с одним из предыдущих элементов.
+ Это может быть только 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, так как в противном случае, мы получаем, что 
+\begin_inset Formula $f\left(x_{m}\right)=x_{j}=f\left(x_{j-1}\right)$
+\end_inset
+
+, а подстановка — это взаимно однозначное отображение.
+ Таким образом, мы получим некоторый цикл 
+\begin_inset Formula $\left(x_{0},x_{1},\dots,x_{m}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Отображение 
+\begin_inset Formula $f$
+\end_inset
+
+ является взаимно однозначным отображением на множестве ещё не посещённых
+ элементов, так как 
+\begin_inset Formula $f$
+\end_inset
+
+ взаимно однозначно отображает множество посещённых элементов в себя 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно, это идея для задачи: если 
+\begin_inset Formula $f$
+\end_inset
+
+ — биекция на 
+\begin_inset Formula $A$
+\end_inset
+
+ и на 
+\begin_inset Formula $B\subset A$
+\end_inset
+
+, то 
+\begin_inset Formula $f$
+\end_inset
+
+ — биекция на 
+\begin_inset Formula $A\setminus B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Повторяя описанную выше процедуру для ещё не посещённых элементов, пока
+ все элементы не окажутся посещены, мы получим разложение произвольной подстанов
+ки в произведение независимых циклов.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Забыл доказать, что полученное разложение — единственное
+\end_layout
+
+\end_inset
+
+ Пусть теперь данная подстановка является произведением каких-либо независимых
+ циклов.
+ Если один из циклов переводит элементы 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+ в 
+\begin_inset Formula $i_{2}$
+\end_inset
+
+ и эти элементы не встречаются в других циклах, то все произведение будет
+ переводить 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+ в 
+\begin_inset Formula $i_{2}$
+\end_inset
+
+.
+ Поэтому элемент 
+\begin_inset Formula $i_{2}$
+\end_inset
+
+, следующий за 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+ в цикле, содержащем 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+, однозначно определяется данной подстановкой.
+ Таким образом, все циклы определяются однозначно.
+\end_layout
+
+\begin_layout Standard
+Циклы вида 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ перемещающие только два элемента, называются 
+\emph on
+транспозициями
+\emph default
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:every-cycle-is-product-of-transpositions"
+
+\end_inset
+
+Доказать, что произвольный цикл можно разложить в произведение транспозиций
+ (не обязательно независимых).
+\end_layout
+
+\begin_layout Solution
+Если цикл содержит два элемента, то он является транспозицией, и его разложение
+ в произведение транспозиций содержит только один множитель (сам этот цикл).
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь произвольный цикл 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3},\dots,i_{m}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $m\ge3$
+\end_inset
+
+.
+ Рассмотрим также цикл, отличающийся отсутствием первого элемента: 
+\begin_inset Formula $\left(i_{2,}i_{3},\dots,i_{m}\right)$
+\end_inset
+
+.
+ Действие укороченного цикла, отличается от полного тем, что элемент 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+ остаётся на месте (а должен перейти в 
+\begin_inset Formula $i_{2}$
+\end_inset
+
+), а 
+\begin_inset Formula $i_{m}$
+\end_inset
+
+ переходит в 
+\begin_inset Formula $i_{2}$
+\end_inset
+
+ (а должен перейти в 
+\begin_inset Formula $i_{1}$
+\end_inset
+
+).
+ Таким образом, для получения полного цикла укороченный нужно умножить на
+ 
+\begin_inset Formula $\left(i_{1},i_{2}\right)$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь была ошибка: 
+\begin_inset Formula $\left(i_{1},i_{m}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3},\dots,i_{m}\right)=\left(i_{1},i_{m}\right)\left(i_{2,}i_{3},\dots,i_{m}\right)$
+\end_inset
+
+ и мы представили цикл длины 
+\begin_inset Formula $m\ge3$
+\end_inset
+
+ в виде произведения транспозиции и более короткого цикла.
+ Повторяя этот процесс необходимое число раз, получим разложение произвольного
+ цикла в виде произведения транспозиций.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге приводится другое разложение: 
+\begin_inset Formula $\left(i_{1},i_{m}\right)\left(i_{1},i_{m-1}\right)\cdot\dots\cdot\left(i_{1},i_{3}\right)\left(i_{1},i_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Транспозиции 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(2,3\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $\left(n-1,n\right)$
+\end_inset
+
+ называются 
+\emph on
+элементарными транспозициями.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:every-transposition-is-product-of-elementary-transpositions"
+
+\end_inset
+
+Доказать, что произвольная транспозиция представляется в виде произведения
+ элементарных транспозиций.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольную транспозицию 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+, для определённости будем считать, что 
+\begin_inset Formula $i<j$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $j=i+1$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ — элементарная транспозиция, поэтому в дальнейшем будем считать, что 
+\begin_inset Formula $j>i+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Заметим, что элементарность транспозиции зависит от обозначения элементов
+ (неэлементарную транспозицию можно превратить в элементарную переупорядочив
+ элементы и наоборот).
+ Переобозначение элементов также является подстановкой.
+ Поэтому целесообразно рассмотреть подходящий внутренний автоморфизм.
+ Рассмотрим следующее произведение траспозиций:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\left(j-1,j\right)\left(i,j-1\right)\left(j-1,j\right)=\\
+=\left(\begin{array}{ccc}
+i & j-1 & j\\
+i & j & j-1
+\end{array}\right)\left(\begin{array}{ccc}
+i & j-1 & j\\
+j-1 & i & j
+\end{array}\right)\left(\begin{array}{ccc}
+i & j-1 & j\\
+i & j & j-1
+\end{array}\right)\\
+=\left(\begin{array}{ccc}
+i & j-1 & j\\
+j & j-1 & i
+\end{array}\right)=\left(i,j\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ можно представить в виде произведения двух элементарных траспозиций и транспози
+ции 
+\begin_inset Formula $\left(i,j-1\right)$
+\end_inset
+
+, в которой элементы находятся ближе друг к другу.
+ Повторяя этот процесс, пока не получим 
+\begin_inset Formula $i+1=j$
+\end_inset
+
+, получим представление 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ в виде произведения элементарных траспозиций.
+\end_layout
+
+\begin_layout Standard
+Из результатов задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-permutation-is-product-of-independent-cycles"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-cycle-is-product-of-transpositions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-transposition-is-product-of-elementary-transpositions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что произвольная подстановка 
+\begin_inset Formula $n$
+\end_inset
+
+-й степени может быть представлена как произведение элементарных транспозиций.
+ Иными словами, верна следующая теорема.
+\end_layout
+
+\begin_layout Theorem
+Если некоторая подгруппа симметрической группы 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ содержит все элементарные транспозиции, то эта подгруппа совпадает со всей
+ группой 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть числа 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+, ..., 
+\begin_inset Formula $n$
+\end_inset
+
+ записаны в строку в некотором произвольном порядке.
+ Скажем, что пара чисел 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $j$
+\end_inset
+
+ образуют инверсию в строке, если 
+\begin_inset Formula $i<j$
+\end_inset
+
+, но 
+\begin_inset Formula $j$
+\end_inset
+
+ встречается в строке раньше, чем 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Число инверсий характеризует беспорядок в данной строке по отношению к
+ обычному порядку чисел 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+, ..., 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Найти число инверсий в строке 3, 2, 5, 4, 1.
+\end_layout
+
+\begin_layout Solution
+Число 3 встречается раньше, чем 2 и 1 — это даёт 2 инверсии.
+ Число 2 встречается раньше, чем 1 — ещё одна инверсия.
+ Число 5 встречается раньше, чем 4 и 1 — ещё 2 инверсии.
+ Число 4 встречается раньше, чем число 1 — ещё одна инверсия.
+ Число 1 не предшествует числам, меньшим его (так как их вообще нет).
+ Итого 
+\begin_inset Formula $2+1+2+1=6$
+\end_inset
+
+ инверсий.
+\end_layout
+
+\begin_layout Standard
+В дальнейшем нас будет интересовать не само число инверсий, а только чётность
+ этого числа.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:transposition-change-parity"
+
+\end_inset
+
+Доказать, что чётность числа инверсий в строке меняется, если поменять местами
+ два произвольных числа.
+\end_layout
+
+\begin_layout Solution
+Если меняются местами соседние числа, то число инверсий может стать больше
+ или меньше на единицу, так как положение других чисел не меняется.
+ Таким образом, перестановка двух соседних чисел меняет чётность числа инверсий.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь обмен местами двух произвольных чисел, то есть произвольную
+ транспозицию.
+ При решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-transposition-is-product-of-elementary-transpositions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было получено представление произвольной транспозиции в виде произведения
+ нечётного числа элементарных транспозиций.
+ Так как каждая транспозиция меняет чётность числа инверсий, то нечётное
+ количество транспозиции также меняет чётность числа инверсий.
+\end_layout
+
+\begin_layout Definition
+Подстановка 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & \dots & n\\
+i_{1} & i_{2} & \dots & i_{n}
+\end{array}\right)$
+\end_inset
+
+ называется 
+\emph on
+чётной 
+\emph default
+или 
+\emph on
+нечётной
+\emph default
+ в зависимости от того, чётное или нечётное число инверсий имеется в нижней
+ строке.
+\end_layout
+
+\begin_layout Standard
+Например, тождественная подстановка 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & \dots & n\\
+1 & 2 & \dots & n
+\end{array}\right)$
+\end_inset
+
+ является чётной подстановкой, так как число инверсий в нижней строке равно
+ нулю.
+\end_layout
+
+\begin_layout Problem
+Определить чётность подстановки 
+\begin_inset Formula $\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+2 & 5 & 4 & 1 & 3
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Число 2 предшествует числу 1; число 5 — 4, 1, 3; число 4 — 1, 3; число 1
+ не предшествует числам, меньшим его (так как их вообще нет); число 3 —
+ последнее.
+ Всего получаем 6 инверсий, то есть это чётная подстановка.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:righ-multiplication-by-transposition-changes-parity"
+
+\end_inset
+
+Доказать, что при умножении чётной подстановки справа на произвольную транспозиц
+ию получается нечётная подстановка и, наоборот, при умножении нечётной подстанов
+ки справа на транспозицию получается чётная подстановка.
+\end_layout
+
+\begin_layout Solution
+Транспозиция — перестановка двух элементов.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:transposition-change-parity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, перестановка двух чисел меняет чётность количества инверсий.
+ Умножив произвольную подстановку справа на транспозицию, получим подстановку,
+ в которой в нижней строке количество инверсий имеет противоположную чётность
+ по отношению к чётности исходной подстановки.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:parity-of-number-of-permutations-equals-parity-of-their-product"
+
+\end_inset
+
+Доказать, что чётная подстановка может быть разложена в произведение только
+ чётного числа транспозиций, а нечётная в произведение только нечётного
+ числа транспозиций.
+\end_layout
+
+\begin_layout Solution
+Транспозиция — нечётная подстановка 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:transposition-change-parity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Умножение справа на транспозицию меняет чётность подстановки 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:righ-multiplication-by-transposition-changes-parity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда произведение чётного числа транспозиций — это умножение нечётной
+ подстановки справа на транспозицию нечётное число раз, а в результате нечётного
+ числа изменений чётности на противоположную чётность изменяется на противополож
+ную, то есть получаем, что произведение чётного числа транспозиций — чётная
+ подстановка.
+ Аналогично, произведение нечётного числа транспозиций — это результат умножения
+ нечётной подстановки справа на транспозицию чётное число раз, то есть нечётная
+ подстановка.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге используется тождество 
+\begin_inset Formula $a=e\cdot a$
+\end_inset
+
+ и то, что 
+\begin_inset Formula $e$
+\end_inset
+
+ — чётная подстановка
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:parity-of-cycle"
+
+\end_inset
+
+Определить чётность произвольного числа длины: а) 3, б) 4, в) 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+При решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-cycle-is-product-of-transpositions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что произвольный цикл длины 
+\begin_inset Formula $m$
+\end_inset
+
+ может быть представлен в виде произведения 
+\begin_inset Formula $m-1$
+\end_inset
+
+ транспозиции.
+ Чётность произведения транспозиций равна чётности их количества 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-number-of-permutations-equals-parity-of-their-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому чётность цикла равна чётности числа 
+\begin_inset Formula $m-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:parity-of-product-is-sum-of-parities"
+
+\end_inset
+
+Доказать, что при умножении двух подстановок одинаковой чётности получается
+ чётная подстановка, а при умножении двух подстановок разной чётности получается
+ нечётная подстановка.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-number-of-permutations-equals-parity-of-their-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, чётная подстановка может быть представлена как произведение чётного числа
+ транспозиций, а нечётная — как произведение нечётного числа транспозиций.
+ Так как сумма двух чётных чисел или двух нечётных чисел — чётное число,
+ а сумма чётного и нечётного числа — нечётное число, то произведение двух
+ подстановок одинаковой чётности — произведение чётного числа транспозиций
+ и, следовательно, чётная подстановка, а произведение двух подстановок разной
+ чётности — произведение нечётного числа транспозиций и, следовательно,
+ нечётная подстановка.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:parity-of-inverse"
+
+\end_inset
+
+Доказать, что подстановки 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ имеют одинаковую чётность, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольная подстановка.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $aa^{-1}=e$
+\end_inset
+
+ (по определению обратного элемента), то 
+\begin_inset Formula $aa^{-1}$
+\end_inset
+
+ — чётная подстановка.
+ Так как произведение подстановок разной чётности — нечётная подстановка
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-product-is-sum-of-parities"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ должна быть той же чётности, что и 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из результатов задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-product-is-sum-of-parities"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что множество всех чётных подстановок образует подгруппы группы
+ 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Группа всех чётных подстановок 
+\begin_inset Formula $n$
+\end_inset
+
+-й степени называется 
+\emph on
+знакопеременной группой степени 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\emph default
+и обозначается 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что при 
+\begin_inset Formula $n\ge4$
+\end_inset
+
+ группа 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ некоммутативна.
+\end_layout
+
+\begin_layout Solution
+При 
+\begin_inset Formula $n=4$
+\end_inset
+
+ рассмотрим подстановки 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 3 & 1 & 4
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 3 & 4 & 2
+\end{array}\right)$
+\end_inset
+
+.
+ Тогда
+\begin_inset Formula 
+\[
+\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 3 & 1 & 4
+\end{array}\right)\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 3 & 4 & 2
+\end{array}\right)=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 1 & 4 & 3
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 3 & 4 & 2
+\end{array}\right)\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 3 & 1 & 4
+\end{array}\right)=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 1 & 2
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+При 
+\begin_inset Formula $n>4$
+\end_inset
+
+ достаточно рассмотреть аналогичные циклы, не меняющие элементы 
+\begin_inset Formula $5,\dots,n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:even-permutations-is-normal-subgroup-of-all-permutations"
+
+\end_inset
+
+Доказать, что знакопеременная группа 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ являются нормальным делителем
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+раньше этот термин не употреблялся
+\end_layout
+
+\end_inset
+
+ симметрической группы 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ и построить разложение группы 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ по подгруппе 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Рассматривать ли отдельно случай 
+\begin_inset Formula $n=1$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $h\in A_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $g\in S_{n}$
+\end_inset
+
+.
+ Рассмотрим произведение 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $h$
+\end_inset
+
+ — чётная подстановка, то 
+\begin_inset Formula $gh$
+\end_inset
+
+ имеет такую же чётность, как 
+\begin_inset Formula $g$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-product-is-sum-of-parities"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Подстановки 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+ имеют одинаковую чётность, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula $ghg^{-1}$
+\end_inset
+
+ является чётной подстановкой.
+ Таким образом, 
+\begin_inset Formula $ghg^{-1}\in A_{n}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Построим теперь разложение 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ по 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+ Одним из классов этого разложения будет само подмножество 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+ Рассмотрим теперь две произвольные нечётные подстановки 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ и докажем, что они принадлежат одному классу по 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+, то есть существует такая подстановка 
+\begin_inset Formula $h\in A_{n}$
+\end_inset
+
+, что 
+\begin_inset Formula $g_{2}=hg_{1}$
+\end_inset
+
+ или 
+\begin_inset Formula $g_{2}g_{1}^{-1}\in A_{n}$
+\end_inset
+
+.
+ Как было показано в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}^{-1}$
+\end_inset
+
+ имеет такую же чётность, как 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ — нечётная подстановка.
+ Тогда 
+\begin_inset Formula $g_{2}g_{1}^{-1}$
+\end_inset
+
+ — произведение двух подстановок одинаковой чётности, то есть чётная подстановка
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-product-is-sum-of-parities"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Итак, разложение 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ по 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ состоит из двух классов: группы чётных подстановок 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ и множества нечётных подстановок.
+\end_layout
+
+\begin_layout Problem
+Определить число элементов в группе 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Рассматривать ли отдельно случай 
+\begin_inset Formula $n=1$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:even-permutations-is-normal-subgroup-of-all-permutations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, разложение 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ по подгруппе 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ состоит из двух классов, поэтому порядок группы 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ равен удвоенному порядку группы 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ (как было показано при доказательстве теоремы Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:number-of-permutations-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что порядок 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ равен 
+\begin_inset Formula $n!$
+\end_inset
+
+, поэтому порядок 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ равен 
+\begin_inset Formula $\frac{n!}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что группы 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $S_{4}$
+\end_inset
+
+ разрешимы.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ является группой порядка 
+\begin_inset Formula $2!=2$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:number-of-permutations-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то есть изоморфна 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ — коммутативная группа, а значит и разрешимая 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "commutative-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ является группой порядка 
+\begin_inset Formula $3!=6$
+\end_inset
+
+ и это некоммутативная группа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:S_n-is-not-commutative-when-n-greater-or-equal-then-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Имеется две неизоморфные группы порядка 6: 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+ и группа симметрий правильного треугольника 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ не может быть изоморфной 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+ , так как 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+ — коммутативная группа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:power-to-sum-equals-to-product-of-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ — нет.
+ Таким образом, 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ изоморфна группе вращений треугольника, которая является разрешимой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-solvable-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Группа 
+\begin_inset Formula $S_{4}$
+\end_inset
+
+ является группой порядка 
+\begin_inset Formula $4!=24$
+\end_inset
+
+ и это некоммутативная группа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:S_n-is-not-commutative-when-n-greater-or-equal-then-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Эту группа является изоморфной группе симметрий тетраэдра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group-of-tetrahedron-symmetries"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: нужно занумеровать вершины тетраэдра 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+ и 
+\begin_inset Formula $D$
+\end_inset
+
+ как 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $3$
+\end_inset
+
+ и 
+\begin_inset Formula $4$
+\end_inset
+
+, тогда каждой симметрии тетраэдра соответствует подстановка номеров вершин,
+ а произведению симметрий соответствует композиция подстановок.
+ Так как группа вращений тетраэдра является разрешимой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-solvable-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то разрешима и 
+\begin_inset Formula $S_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Докажем теперь, что знакопеременная группа 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ неразрешима.
+ Один из способов доказательства этого состоит в следующем.
+ Необходимо в додекаэдр так вписать 5 тетраэдров, занумерованных числами
+ 1, 2, 3, 4 и 5, чтобы каждому вращению додекаэдра соответствовала четная
+ подстановка тетраэдров, причём чтобы разным вращениям соответствовали разные
+ подстановки.
+ Этим будет установлен изоморфизм между группой вращений додекаэдра и группой
+ чётных подстановок 5-й степени 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
+ Тогда неразрешимость группы 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ будет следовать из неразрешимости группы вращений додекаэдра.
+\end_layout
+
+\begin_layout Problem
+Вписать в додекаэдр 5 тетраэдров требуемым выше способом.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не решил эту задачу сам
+\end_layout
+
+\end_inset
+
+Занумеруем вершины додекаэдра, как это показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dodecahedron-marked"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Искомые тетраэдры будут образовывать, например, следующие наборы вершин:
+ (1, 8, 14, 16), (2, 9, 15, 17), (3, 10, 11, 18), (4, 6, 12, 19) и (5, 7,
+ 13, 20).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/dodecahedron_marked.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dodecahedron-marked"
+
+\end_inset
+
+Додекаэдр с нумерованными вершинами
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Другой способ доказательства неразрешимости группы 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ состоит в повторении идеи доказательства неразрешимости группы вращений
+ додекаэдра.
+ Для этого надо решить следующие задачи.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:possible-cycle-decompositions-of-elements-of-A_5"
+
+\end_inset
+
+Доказать, что любая чётная подстановка 5-й степени, отличная от тождественной
+ подстановки, разлагается на независимые циклы одним из следующих способов:
+ а) 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3},i_{4},i_{5}\right)$
+\end_inset
+
+, б) 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3}\right)$
+\end_inset
+
+, в) 
+\begin_inset Formula $\left(i_{1},i_{2}\right)\left(i_{3},i_{4}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Произвольная подстановка разлагается в произведение независимых циклов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-permutation-is-product-of-independent-cycles"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Рассмотрим возможности разложения произвольной подстановки пятой степени
+ и выделим из них чётные.
+ Первая возможность — наличие цикла длины 5 (это вариант а).
+\end_layout
+
+\begin_layout Solution
+Пусть теперь в подстановке есть цикл длины 4, больше в этой подстановке
+ нетривиальных циклов быть не может (так как остаётся только один элемент).
+ Цикл длины 4 — нечётная подстановка 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-cycle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому подстановка с циклом длины 4 не может быть чётной.
+\end_layout
+
+\begin_layout Solution
+Пусть в подстановке есть цикл длины 3.
+ Два элемента, не входящие в этот цикл, могут либо остаться на месте, либо
+ образовывать цикл длины 2.
+ Любой цикл длины 3 — чётная подстановка, а любой цикл длины 2 — нечётная
+ подстановка 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-cycle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3}\right)$
+\end_inset
+
+ — чётная подстановка, а 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3}\right)\left(i_{4},i_{5}\right)$
+\end_inset
+
+ — нечётная подстановка.
+ Мы доказали, что вариант б) — одно из возможных разложений чётной подстановки
+ пятой степени.
+\end_layout
+
+\begin_layout Solution
+Пусть в подстановке есть цикл длины 2, но нет циклов большей длины.
+ Циклов длины 2 может быть 1 или 2.
+ Так как циклы длины 2 — нечётные подстановки 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:parity-of-cycle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то подстановка, содержащая один цикл длины 2 и не содержащая других циклов
+ будет нечётной, а подстановка вида 
+\begin_inset Formula $\left(i_{1},i_{2}\right)\left(i_{3},i_{4}\right)$
+\end_inset
+
+ (вариант в) является чётной.
+\end_layout
+
+\begin_layout Solution
+Если в подстановке вообще нет циклов, то все элементы остаются на своих
+ местах и, следовательно, это тождественная подстановка.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:if-normal-subgroup-of-A_5-contains-some-permutation-it-contains-all-similar"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
+ Доказать, что если в 
+\begin_inset Formula $N$
+\end_inset
+
+ содержится хотя бы одна подстановка, определённым образом разлагающаяся
+ на независимые циклы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:possible-cycle-decompositions-of-elements-of-A_5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то в 
+\begin_inset Formula $N$
+\end_inset
+
+ содержатся все подстановки, таким же образом разлагающиеся на независимые
+ циклы.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа, то для любого 
+\begin_inset Formula $a\in N$
+\end_inset
+
+ и любого 
+\begin_inset Formula $g\in A_{5}$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $gag^{-1}\in A_{5}$
+\end_inset
+
+, то есть любой внутренний автоморфизм 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:inner-automorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ переводит 
+\begin_inset Formula $N$
+\end_inset
+
+ в 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Попытаемся преобразовать цикл 
+\begin_inset Formula $a=\left(1,2,3,4,5\right)$
+\end_inset
+
+ в произвольный цикл длины 5 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3},i_{4},i_{5}\right)$
+\end_inset
+
+ внутренним автоморфизмом подгруппы 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произведение действие на 
+\begin_inset Formula $a$
+\end_inset
+
+ внутреннего автоморфизма, порождённого подстановкой 
+\begin_inset Formula $g_{1}=\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+2 & 3 & 4 & 5 & 1
+\end{array}\right)\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+1 & 2 & 3 & 4 & 5
+\end{array}\right)=\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{2} & i_{3} & i_{4} & i_{5} & i_{1}
+\end{array}\right)=\left(i_{1},i_{2},i_{3},i_{4},i_{5}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если оказалось, что подстановка 
+\begin_inset Formula $\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)$
+\end_inset
+
+ — чётная, то мы нашли нужный автоморфизм.
+ Пусть это не так.
+ Наряду с циклом 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3},i_{4},i_{5}\right)$
+\end_inset
+
+ произвольная подгруппа (а значит и произвольная нормальная подгруппа 
+\begin_inset Formula $N$
+\end_inset
+
+) должна содержать его квадрат.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(i_{1},i_{2},i_{3},i_{4},i_{5}\right)^{2}=\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{2} & i_{3} & i_{4} & i_{5} & i_{1}
+\end{array}\right)\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{2} & i_{3} & i_{4} & i_{5} & i_{1}
+\end{array}\right)=\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{3} & i_{4} & i_{5} & i_{1} & i_{2}
+\end{array}\right)=\left(i_{1},i_{3},i_{5},i_{2},i_{4}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим внутренний автоморфизм, переводящий 
+\begin_inset Formula $\left(1,2,3,4,5\right)$
+\end_inset
+
+ в 
+\begin_inset Formula $\left(i_{1},i_{3},i_{5},i_{2},i_{4}\right)$
+\end_inset
+
+, он соответствует подстановке 
+\begin_inset Formula $g_{2}=\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{3} & i_{5} & i_{2} & i_{4}
+\end{array}\right)$
+\end_inset
+
+.
+ Так как строка 
+\begin_inset Formula $\left(i_{1},i_{3},i_{5},i_{2},i_{4}\right)$
+\end_inset
+
+ может быть получена из 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3},i_{4},i_{5}\right)$
+\end_inset
+
+ тремя перестановками, то одна из подстановок 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ или 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ является чётной.
+ Таким образом, внутренним автоморфизмом из 
+\begin_inset Formula $a$
+\end_inset
+
+ может быть получен произвольный цикл длины пять, либо его квадрат.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — подгруппа, то она должна вместе с элементом содержать и все его степени.
+ Подгруппа степеней цикла длины 5 содержит пять элементов, то есть является
+ циклической группой простого порядка, в которой любой элемент (кроме единичного
+) является образующим (как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-with-prime-order-is-cyclic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Таким образом, если 
+\begin_inset Formula $N$
+\end_inset
+
+ содержит квадрат некоторого цикла длины 5, то она содержит и сам этот цикл.
+\end_layout
+
+\begin_layout Solution
+Таким образом, произвольная нормальная подгруппа 
+\begin_inset Formula $N$
+\end_inset
+
+ группы 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ должна содержать либо все циклы длины пять, либо ни одного из них.
+\end_layout
+
+\begin_layout Solution
+б) Пусть 
+\begin_inset Formula $a=\left(1,2,3\right)$
+\end_inset
+
+, покажем, что цикл 
+\begin_inset Formula $a=\left(1,2,3\right)$
+\end_inset
+
+ можно преобразовать внутренним автоморфизмом 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ в произвольный цикл 
+\begin_inset Formula $\left(i_{1},i_{2},i_{3}\right)$
+\end_inset
+
+ длины 3.
+ Положим 
+\begin_inset Formula $g_{1}=\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)$
+\end_inset
+
+ и рассмотрим 
+\begin_inset Formula 
+\begin{multline*}
+g_{1}ag_{1}^{-1}=\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+2 & 3 & 1 & 4 & 5
+\end{array}\right)\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+1 & 2 & 3 & 4 & 5
+\end{array}\right)=\\
+=\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{2} & i_{3} & i_{1} & i_{4} & i_{5}
+\end{array}\right)=\left(i_{1},i_{2},i_{3}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Подстановка 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ может быть чётной или нечётной, если 
+\begin_inset Formula $g$
+\end_inset
+
+ — чётная, то мы нашли требуемую подстановку.
+ В противном случае рассмотрим 
+\begin_inset Formula $g_{2}=\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{5} & i_{4}
+\end{array}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\begin{multline*}
+g_{2}ag_{2}^{-1}=\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{5} & i_{4}
+\end{array}\right)\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+2 & 3 & 1 & 4 & 5
+\end{array}\right)\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+1 & 2 & 3 & 5 & 4
+\end{array}\right)=\\
+=\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{2} & i_{3} & i_{1} & i_{4} & i_{5}
+\end{array}\right)=\left(i_{1},i_{2},i_{3}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как нижние строки 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ отличаются перестановкой двух чисел, то они имеют разную чётность 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:transposition-change-parity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому одно из них принадлежит 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+, что и требовалось.
+\end_layout
+
+\begin_layout Solution
+в) Рассмотрим подстановку 
+\begin_inset Formula $a=\left(1,2\right)\left(3,4\right)$
+\end_inset
+
+ и два произведения:
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+2 & 1 & 4 & 3 & 5
+\end{array}\right)\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+1 & 2 & 3 & 4 & 5
+\end{array}\right)=\left(\begin{array}{ccccc}
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}\\
+i_{2} & i_{1} & i_{4} & i_{3} & i_{5}
+\end{array}\right)=\left(i_{1},i_{2}\right)\left(i_{3},i_{4}\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{3} & i_{4} & i_{2} & i_{1} & i_{5}
+\end{array}\right)\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+2 & 1 & 4 & 3 & 5
+\end{array}\right)\left(\begin{array}{ccccc}
+i_{3} & i_{4} & i_{2} & i_{1} & i_{5}\\
+1 & 2 & 3 & 4 & 5
+\end{array}\right)=\left(\begin{array}{ccccc}
+i_{3} & i_{4} & i_{2} & i_{1} & i_{5}\\
+i_{4} & i_{3} & i_{1} & i_{2} & i_{5}
+\end{array}\right)=\left(i_{3},i_{4}\right)\left(i_{1},i_{2}\right).
+\]
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге в качестве второй перестановки используется 
+\begin_inset Formula $\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{2} & i_{1} & i_{3} & i_{4} & i_{5}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как подстановки 
+\begin_inset Formula $\left(i_{1},i_{2}\right)\left(i_{3},i_{4}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(i_{3},i_{4}\right)\left(i_{1},i_{2}\right)$
+\end_inset
+
+ тождественны, а подстановки 
+\begin_inset Formula $\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{1} & i_{2} & i_{3} & i_{4} & i_{5}
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5\\
+i_{3} & i_{4} & i_{2} & i_{1} & i_{5}
+\end{array}\right)$
+\end_inset
+
+ имеют разную чётность (строка 
+\begin_inset Formula $i_{1},i_{2},i_{3},i_{4}$
+\end_inset
+
+ может быть преобразована в строку 
+\begin_inset Formula $i_{3},i_{4},i_{2},i_{1}$
+\end_inset
+
+ путём перестановки трёх элементов), то одна из этих подстановок может быть
+ выбрана в качестве 
+\begin_inset Formula $g\in A_{5}$
+\end_inset
+
+ такого, что 
+\begin_inset Formula $gag^{-1}$
+\end_inset
+
+ — заданное произведение двух циклов длины 2.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:A_5-has-no-nontrivial-normal-subgroups"
+
+\end_inset
+
+Доказать, что группа 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ не содержит нормальных подгрупп, кроме единичной подгруппы и всей группы.
+\end_layout
+
+\begin_layout Solution
+Группа 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ является группой порядка 
+\begin_inset Formula $\frac{5!}{2}=60$
+\end_inset
+
+.
+ Подсчитаем, сколько элементов входит в каждый из классов подстановок, указанных
+ в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:possible-cycle-decompositions-of-elements-of-A_5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Каждой перестановке пяти чисел соответствует цикл длины 5, но каждому
+ такому циклу соответствует пять разных цепочек, так как начало цикла можно
+ выбрать пятью разными способами, поэтому общее число различных циклов длины
+ 5 равно 
+\begin_inset Formula $\frac{5!}{5}=4!=24$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Для определения количества циклов длины 3 нужно учесть, что существует
+ 
+\begin_inset Formula $\binom{5}{3}=\frac{5!}{3!2!}=\frac{5\cdot4}{2}=10$
+\end_inset
+
+ способов выбрать 3 элемента из 5.
+ После того, как мы отобрали 3 элемента, их можно расположить в циклы 
+\begin_inset Formula $\frac{3!}{3}=2!=2$
+\end_inset
+
+ способами, то есть количество различных циклов длины 3 равно 20.
+\end_layout
+
+\begin_layout Solution
+в) В этом случае мы сначала выбираем 2 элемента из 5, а затем 2 элемента
+ из трёх оставшихся, что можно сделать 
+\begin_inset Formula $\binom{5}{2}\binom{3}{2}=\frac{5!}{2!3!}\cdot\frac{3!}{2!1!}=10\cdot3=30$
+\end_inset
+
+ способами.
+ Так как подстановки 
+\begin_inset Formula $\left(i_{1},i_{2}\right)\left(i_{3},i_{4}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(i_{3},i_{4}\right)\left(i_{1},i_{2}\right)$
+\end_inset
+
+ тождественны, а два элемента можно расположить в цикл только одним способом,
+ то разложений этого типа насчитывается 
+\begin_inset Formula $\frac{30}{2}\cdot1=15$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:if-normal-subgroup-of-A_5-contains-some-permutation-it-contains-all-similar"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если в 
+\begin_inset Formula $N$
+\end_inset
+
+ содержится хотя бы одна подстановка, определённым образом разлагающаяся
+ на независимые циклы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:possible-cycle-decompositions-of-elements-of-A_5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то в 
+\begin_inset Formula $N$
+\end_inset
+
+ содержатся все подстановки, таким же образом разлагающиеся на независимые
+ циклы.
+ Таким образом, любая нормальная подгруппа 
+\begin_inset Formula $N$
+\end_inset
+
+, отличная от единичной, содержит тождественную подстановку и подстановки
+ одного или нескольких классов а)-в).
+ Таким образом, возможные порядки нормальных подгрупп 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ равны 1, 16, 21, 25, 36, 40, 45 или 60.
+ С другой стороны, по теореме Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, порядок подгруппы является делителем порядка группы.
+ Из перечисленных выше порядков, только 1 и 60 являются делителями числа
+ 60.
+ Таким образом, нормальными подгруппами 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ являются только единичная подгруппа и вся 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из утверждения задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:A_5-has-no-nontrivial-normal-subgroups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:group-without-proper-normal-subgroup-is-not-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и из того, что группа 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ некоммутативна, вытекает неразрешимость группы 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:S_n-has-subgroup-isomorpic-to-A_5"
+
+\end_inset
+
+Доказать, что симметрическая группа 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge5$
+\end_inset
+
+ содержит подгруппу, изоморфную группе 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим подгруппу 
+\begin_inset Formula $H_{5,n}$
+\end_inset
+
+ чётных перестановок, не меняющих элементы 
+\begin_inset Formula $6,\dots,n$
+\end_inset
+
+.
+ Между 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+ и этой подгруппой существует взаимно однозначное соответствие.
+ Произведению элементов 
+\begin_inset Formula $H_{5,n}$
+\end_inset
+
+ соответствует произведение соответствующих элементов 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $H_{5,n}$
+\end_inset
+
+ — подгруппа, изоморфная 
+\begin_inset Formula $A_{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из утверждения задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:S_n-has-subgroup-isomorpic-to-A_5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-of-solvable-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем теорему.
+\end_layout
+
+\begin_layout Theorem
+При 
+\begin_inset Formula $n\ge5$
+\end_inset
+
+ симметрическая группа 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ неразрешима.
+\end_layout
+
+\begin_layout Standard
+Доказанная теорема, а также другие результаты первой главы потребуются нам
+ в следующей главе для доказательства неразрешимости в радикалах общих алгебраич
+еских уравнений степени выше четвёртой.
+\end_layout
+
+\begin_layout Standard
+Тем, что захочет изучить теорию групп более глубоко, можно рекомендовать
+ книги:
+\end_layout
+
+\begin_layout Standard
+Каргаполов
+\begin_inset space \thinspace{}
+\end_inset
+
+М.
+\begin_inset space \thinspace{}
+\end_inset
+
+И., Мерзляков
+\begin_inset space \thinspace{}
+\end_inset
+
+Ю.
+\begin_inset space \thinspace{}
+\end_inset
+
+И., Основы теории групп, 
+\begin_inset Quotes rld
+\end_inset
+
+Наука
+\begin_inset Quotes rrd
+\end_inset
+
+, 1972.
+\end_layout
+
+\begin_layout Standard
+Курош
+\begin_inset space \thinspace{}
+\end_inset
+
+А.
+\begin_inset space \thinspace{}
+\end_inset
+
+Г., Теория групп, изд.
+ 3-е, 
+\begin_inset Quotes rld
+\end_inset
+
+Наука
+\begin_inset Quotes rrd
+\end_inset
+
+, 1967.
+\end_layout
+
+\begin_layout Standard
+Холл
+\begin_inset space \thinspace{}
+\end_inset
+
+М., Теория групп, ИЛ, 1962.
 \end_layout
 
 \begin_layout Standard
