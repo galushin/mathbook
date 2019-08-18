@@ -47397,11 +47397,63 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Не решил эту задачу сам
+\end_layout
+
+\end_inset
+
+Занумеруем вершины додекаэдра, как это показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dodecahedron-marked"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Искомые тетраэдры будут образовывать, например, следующие наборы вершин:
+ (1, 8, 14, 16), (2, 9, 15, 17), (3, 10, 11, 18), (4, 6, 12, 19) и (5, 7,
+ 13, 20).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/dodecahedron_marked.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dodecahedron-marked"
+
+\end_inset
+
+Додекаэдр с нумерованными вершинами
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
