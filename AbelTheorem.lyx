@@ -50243,6 +50243,731 @@ noprefix "false"
 .
 \end_layout
 
+\begin_layout Solution
+Если 
+\begin_inset Formula $K$
+\end_inset
+
+ — некоторое поле, то можно, так же как для поля действительных чисел, рассматри
+вать многочлены с коэффициентами из поля 
+\begin_inset Formula $K$
+\end_inset
+
+ или, другими словами, многочлены над полем 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Многочленом степени 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\emph default
+(
+\begin_inset Formula $n$
+\end_inset
+
+ — натуральное число) 
+\emph on
+от одной переменной 
+\begin_inset Formula $x$
+\end_inset
+
+ над полем 
+\begin_inset Formula $K$
+\end_inset
+
+ 
+\emph default
+называется любое выражение вида 
+\begin_inset Formula 
+\begin{equation}
+a_{0}x^{n}+a_{1}x^{n-1}+\dots+a_{n-1}x+a_{n},\label{eq:polynomial-definition}
+\end{equation}
+
+\end_inset
+
+ где 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ — элементы поля 
+\begin_inset Formula $K$
+\end_inset
+
+, причём 
+\begin_inset Formula $a_{0}\neq0$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент поля 
+\begin_inset Formula $K$
+\end_inset
+
+, то выражение 
+\begin_inset Formula $a$
+\end_inset
+
+ также считается многочленом над полем 
+\begin_inset Formula $K$
+\end_inset
+
+, причём если 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+, то это многочлен нулевой степени, если же 
+\begin_inset Formula $a=0$
+\end_inset
+
+, то степень такого многочлена считается неопределённой.
+\end_layout
+
+\begin_layout Definition
+Элементы 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a_{n-1}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ называются 
+\emph on
+коэффициентами многочлена 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:polynomial-definition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ — старшим коэффициентом
+\emph default
+.
+\end_layout
+
+\begin_layout Definition
+Два многочлена от переменной 
+\begin_inset Formula $x$
+\end_inset
+
+ считаются равны в том и только в том случае, если все их соответствующие
+ коэффициенты попарно равны.
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $P\left(x\right)=\sum_{k=0}^{n}a_{k}x^{n-k}$
+\end_inset
+
+.
+ Если в правую часть этого равенства вместо 
+\begin_inset Formula $x$
+\end_inset
+
+ подставить некоторый элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ поля 
+\begin_inset Formula $K$
+\end_inset
+
+ и произвести указанные вычисления, понимая операции сложения и умножения
+ как операции в поле 
+\begin_inset Formula $K$
+\end_inset
+
+, то в результате получится некоторый элемент 
+\begin_inset Formula $b$
+\end_inset
+
+ поля 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ В этом случае записывают 
+\begin_inset Formula $P\left(a\right)=b$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $P\left(a\right)=0$
+\end_inset
+
+, где 
+\begin_inset Formula $0$
+\end_inset
+
+ — нулевой элемент поля 
+\begin_inset Formula $K$
+\end_inset
+
+, то говорят, что 
+\begin_inset Formula $a$
+\end_inset
+
+ — 
+\emph on
+корень уравнения
+\emph default
+ 
+\begin_inset Formula $P\left(x\right)=0$
+\end_inset
+
+; в этом случае говорят также, что 
+\begin_inset Formula $a$
+\end_inset
+
+ — 
+\emph on
+корень многочлена 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Многочлены над произвольным полем 
+\begin_inset Formula $K$
+\end_inset
+
+ можно складывать, вычитать и умножать.
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Суммой
+\emph default
+ многочленов 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ называется многочлен 
+\begin_inset Formula $R\left(x\right)$
+\end_inset
+
+, в котором коэффициент 
+\begin_inset Formula $x^{k}$
+\end_inset
+
+ (
+\begin_inset Formula $k=0,1,2,\dots$
+\end_inset
+
+) равен сумме (в поле 
+\begin_inset Formula $K$
+\end_inset
+
+) коэффициентов при 
+\begin_inset Formula $x^{k}$
+\end_inset
+
+ в многочленах 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+.
+ Аналогично определяется 
+\emph on
+разность
+\emph default
+ двух многочленов.
+ Очевидно, что степень суммы или разности двух многочленов не больше, чем
+ максимальная из степеней данных многочленов.
+\end_layout
+
+\begin_layout Definition
+Чтобы вычислить 
+\emph on
+произведение
+\emph default
+ многочленов 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+, нужно каждое слагаемое 
+\begin_inset Formula $ax^{k}$
+\end_inset
+
+ многочлена 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ умножить на каждое слагаемое 
+\begin_inset Formula $bx^{j}$
+\end_inset
+
+ многочлена 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ по правилу: 
+\begin_inset Formula $ax^{k}\cdot bx^{j}=abx^{k+j}$
+\end_inset
+
+, где 
+\begin_inset Formula $ab$
+\end_inset
+
+ — произведение в поле 
+\begin_inset Formula $K$
+\end_inset
+
+, а 
+\begin_inset Formula $k+j$
+\end_inset
+
+ — обычная сумма натуральных чисел.
+ После этого все полученные выражения нужно сложить, приводя подобные члены,
+ то есть собирая все слагаемые, содержащие одну и ту же степень 
+\begin_inset Formula $r$
+\end_inset
+
+ переменной 
+\begin_inset Formula $x$
+\end_inset
+
+, и заменяя сумму 
+\begin_inset Formula $d_{1}x^{r}+d_{2}x^{r}+\dots+d_{s}x^{r}$
+\end_inset
+
+ выражением 
+\begin_inset Formula $\left(d_{1}+d_{2}+\dots+d_{s}\right)x^{r}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula 
+\[
+P\left(x\right)=a_{0}x^{n}+a_{1}x^{n-1}+a_{2}x^{n-2}+\dots+a_{n},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q\left(x\right)=b_{0}x^{m}+b_{1}x^{m-1}+b_{2}x^{m-2}+\dots+b_{m},
+\]
+
+\end_inset
+
+ то 
+\begin_inset Formula 
+\begin{multline*}
+P\left(x\right)\cdot Q\left(x\right)=a_{0}b_{0}x^{n+m}+\left(a_{0}b_{1}+a_{1}b_{0}\right)x^{n+m-1}+\\
++\left(a_{0}b_{2}+a_{1}b_{1}+a_{2}b_{0}\right)x^{n+m-2}+\dots+a_{n}b_{m}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Коэффициент при 
+\begin_inset Formula $x^{n+m-k}$
+\end_inset
+
+ в произведении 
+\begin_inset Formula $P\left(x\right)\cdot Q\left(x\right)$
+\end_inset
+
+ равен 
+\begin_inset Formula $a_{0}b_{k}+a_{1}b_{k-1}+\dots+a_{k-1}b_{1}+a_{k}b_{0}$
+\end_inset
+
+, причём здесь нужно положить 
+\begin_inset Formula $a_{i}=0$
+\end_inset
+
+ при 
+\begin_inset Formula $i>n$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{j}=0$
+\end_inset
+
+ при 
+\begin_inset Formula $j>m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $a_{0}\neq0$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{0}\neq0$
+\end_inset
+
+, то и 
+\begin_inset Formula $a_{0}b_{0}\neq0$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:in-field-there-are-no-divisors-of-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому степень многочлена 
+\begin_inset Formula $P\left(x\right)\cdot Q\left(x\right)$
+\end_inset
+
+ равна 
+\begin_inset Formula $n+m$
+\end_inset
+
+, то есть степень произведения двух многочленов (отличных от нуля) равен
+ сумме степеней данных многочленов.
+\end_layout
+
+\begin_layout Standard
+Учитывая, что операции сложения и умножения элементов в поле 
+\begin_inset Formula $K$
+\end_inset
+
+ обладают свойствами коммутативности, ассоциативности и дистрибутивности,
+ нетрудно получить, что введенные нами операции сложения и умножения многочленов
+ над полем 
+\begin_inset Formula $K$
+\end_inset
+
+ также обладают свойствами коммутативности, ассоциативности и дистрибутивности.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $P\left(x\right)+Q\left(x\right)=R_{1}\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(x\right)-Q\left(x\right)=R_{2}\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(x\right)\cdot Q\left(x\right)=R_{3}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольный элемент поля 
+\begin_inset Formula $K$
+\end_inset
+
+, то легко получить, что 
+\begin_inset Formula $P\left(a\right)+Q\left(a\right)=R_{1}\left(a\right)$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(a\right)-Q\left(a\right)=R_{2}\left(a\right)$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(a\right)\cdot Q\left(a\right)=R_{3}\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Многочлены над произвольным полем 
+\begin_inset Formula $K$
+\end_inset
+
+ можно делить друг на друга с остатком.
+ Разделить многочлен 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ на многочлен 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ с остатком.
+ Разделить многочлен 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ на многочлен 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ с остатком — это значит найти многочлены 
+\begin_inset Formula $S\left(x\right)$
+\end_inset
+
+ (частное) и 
+\begin_inset Formula $R\left(x\right)$
+\end_inset
+
+ (остаток) такие, что 
+\begin_inset Formula $P\left(x\right)=S\left(x\right)\cdot Q\left(x\right)+R\left(x\right)$
+\end_inset
+
+, причём степень многочлена 
+\begin_inset Formula $R\left(x\right)$
+\end_inset
+
+ должна быть меньше, чем степень многочлена 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+, либо должно быть 
+\begin_inset Formula $R\left(x\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ — произвольные многочлены над полем 
+\begin_inset Formula $K$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(x\right)\neq0$
+\end_inset
+
+.
+ Покажем, что можно поделить многочлен 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ на многочлен 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ с остатком.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula 
+\[
+P\left(x\right)=a_{0}x^{n}+a_{1}x^{n-1}+a_{2}x^{n-2}+\dots+a_{n},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q\left(x\right)=b_{0}x^{m}+b_{1}x^{m-1}+b_{2}x^{m-2}+\dots+b_{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $n<m$
+\end_inset
+
+, то положим 
+\begin_inset Formula $S\left(x\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $R\left(x\right)=P\left(x\right)$
+\end_inset
+
+ и получаем требуемые частное и остаток.
+ Если 
+\begin_inset Formula $n\ge m$
+\end_inset
+
+, то рассмотрим многочлен 
+\begin_inset Formula 
+\[
+R_{1}\left(x\right)=P\left(x\right)-\frac{a_{0}}{b_{0}}x^{n-m}Q\left(x\right).
+\]
+
+\end_inset
+
+ Многочлен 
+\begin_inset Formula $R_{1}\left(x\right)$
+\end_inset
+
+ не содержит члена с 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+, поэтому его степень не более чем 
+\begin_inset Formula $n-1$
+\end_inset
+
+ или 
+\begin_inset Formula $R_{1}\left(x\right)=0$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $R_{1}\left(x\right)=c_{0}x^{k}+c_{1}x^{k-1}+\dots+c_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $k\ge m$
+\end_inset
+
+, то рассмотрим многочлен 
+\begin_inset Formula 
+\[
+R_{2}\left(x\right)=R_{1}\left(x\right)-\frac{c_{0}}{b_{0}}x^{k-m}Q\left(x\right)
+\]
+
+\end_inset
+
+ и так далее.
+ Так как степень получающегося многочлена строго меньше, чем степень предыдущего
+ многочлена, то этот процесс должен окончиться, то есть на некотором шаге
+ получим 
+\begin_inset Formula $R_{s}\left(x\right)=R_{s-1}\left(x\right)-\frac{d_{0}}{b_{0}}x^{l-m}Q\left(x\right)$
+\end_inset
+
+, и степень многочлена 
+\begin_inset Formula $R_{s}\left(x\right)$
+\end_inset
+
+ будет меньше, чем степень многочлена 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $R_{s}\left(x\right)=0$
+\end_inset
+
+.
+ Тогда получим 
+\begin_inset Formula 
+\begin{multline*}
+P\left(x\right)=\frac{a_{0}}{b_{0}}x^{n-m}Q\left(x\right)+R_{1}\left(x\right)=\\
+=\frac{a_{0}}{b_{0}}x^{n-m}Q\left(x\right)+\frac{c_{0}}{b_{0}}x^{k-m}Q\left(x\right)+R_{2}\left(x\right)=\\
+=\dots=\frac{a_{0}}{b_{0}}x^{n-m}Q\left(x\right)+\frac{c_{0}}{b_{0}}x^{k-m}Q\left(x\right)+\dots+\frac{d_{0}}{b_{0}}x^{l-m}Q\left(x\right)+R_{s}\left(x\right)=\\
+=\left(\frac{a_{0}}{b_{0}}x^{n-m}+\frac{c_{0}}{b_{0}}x^{k-m}+\dots+\frac{d_{0}}{b_{0}}x^{l-m}\right)Q\left(x\right)+R_{s}\left(x\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, выражение стоящее в скобках, является частным от деления
+ многочлена 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $R_{s}\left(x\right)$
+\end_inset
+
+ — остатком.
+ Описанный здесь процесс деления многочлена на многочлен представляет собой
+ процесс деления столбиком.
+\end_layout
+
+\begin_layout Standard
+Следующая задача показывает, что если 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ — два многочлена и 
+\begin_inset Formula $Q\left(x\right)\neq0$
+\end_inset
+
+, то каким бы способом мы не делили 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ с остатком, частное и остаток определяются однозначно.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
