@@ -5761,7 +5761,7 @@ C & D & A & B
 \end_inset
 
  такой, что 
-\begin_inset Formula $\varphi\left(\right)=y$
+\begin_inset Formula $\varphi\left(x\right)=y$
 \end_inset
 
 , то есть у каждого 
@@ -6713,6 +6713,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:natural-numbers-is-not-group-by-addition-or-multiplication"
+
+\end_inset
+
 Образуют ли все натуральные числа группу: а) по сложению, б) по умножению?
 \end_layout
 
@@ -10053,6 +10059,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "exa:addition-modulo-n"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $n$
 \end_inset
@@ -10614,7 +10626,7 @@ name "prob:multiplication-tables-for-group-of-integers-modulo-2-3-4"
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:residuals-modulo-n-is-cyclic-group-of-order-n"
+name "prob:residuals-modulo-n-with-addition-is-cyclic-group-of-order-n"
 
 \end_inset
 
@@ -13774,7 +13786,7 @@ noprefix "false"
 Как было показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:residuals-modulo-n-is-cyclic-group-of-order-n"
+reference "prob:residuals-modulo-n-with-addition-is-cyclic-group-of-order-n"
 plural "false"
 caps "false"
 noprefix "false"
@@ -48588,6 +48600,1660 @@ status open
 \begin_layout Standard
 Довольное глубокое знакомство с комплексными числами и функциями комплексного
  переменного и предстоит читателю в этой главе.
+\end_layout
+
+\begin_layout Section
+Поля и многочлены
+\end_layout
+
+\begin_layout Standard
+Действительные числа можно складывать и умножать, при этом возможны и обратные
+ операции — вычитание и деление.
+ В суммах можно произвольным образом переставлять слагаемые, произвольным
+ образом расставлять скобки.
+ Так же можно поступать с сомножителями в произведениях.
+ Все эти свойства, а также связь между сложением и умножением можно кратко
+ выразить следующим образом.
+\end_layout
+
+\begin_layout Standard
+Действительные числа обладают следующими тремя свойствами:
+\end_layout
+
+\begin_layout Enumerate
+Образуют коммутативную группу 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ по сложению (единичный элемент этой группы обозначает через 
+\begin_inset Formula $0$
+\end_inset
+
+ и называется нулём).
+\end_layout
+
+\begin_layout Enumerate
+Если отбросить 
+\begin_inset Formula $0$
+\end_inset
+
+, то оставшиеся числа образуют коммутативную группу по умножению.
+\end_layout
+
+\begin_layout Enumerate
+Сложение и умножение связаны законом дистрибутивности: для любых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ имеет место 
+\begin_inset Formula 
+\[
+a\left(b+c\right)=ab+ac.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Наличие этих трёх свойств очень важно, так как они позволяют упрощать арифметиче
+ские и алгебраические выражения, решать многие уравнения и так далее.
+ Действительные числа — не единственное множество, обладающее этими тремя
+ свойствами.
+ Для выделения всех таких множеств в математике введено специальное понятие.
+\end_layout
+
+\begin_layout Definition
+Если на некотором множестве определены две бинарные операции (сложение и
+ умножение), обладающие описанными выше тремя свойствами 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, то такое множество называется 
+\emph on
+полем
+\emph default
+.
+\end_layout
+
+\begin_layout Problem
+Выяснить, являются ли полями следующие подмножества действительных чисел
+ с обычными операциями сложения и умножения: а) все натуральные числа; б)
+ все целые числа; в) все рациональные числа; г) все числа вида 
+\begin_inset Formula $r_{1}+r_{2}\sqrt{2}$
+\end_inset
+
+, где 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+ — произвольные рациональные числа.
+\end_layout
+
+\begin_layout Solution
+а) Нет.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:natural-numbers-is-not-group-by-addition-or-multiplication"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, натуральные числа не образуют группу по сложению.
+\end_layout
+
+\begin_layout Solution
+б) Нет.
+ Целые числа (без нуля) не образуют группу по умножению, так как обратным
+ элементом относительно умножения для большинства целых чисел (кроме 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $-1$
+\end_inset
+
+) будут нецелые числа (например, обратный к 
+\begin_inset Formula $2$
+\end_inset
+
+ — 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+в) Да.
+ Рациональные числа — это дроби вида 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — целое число, а 
+\begin_inset Formula $b$
+\end_inset
+
+ — целое положительное число.
+ Операции сложения и умножения определяются следующим образом: 
+\begin_inset Formula 
+\[
+\frac{a_{1}}{b_{1}}+\frac{a_{2}}{b_{2}}=\frac{a_{1}b_{2}+b_{1}a_{2}}{b_{1}b_{2}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\frac{a_{1}}{b_{1}}\cdot\frac{a_{2}}{b_{2}}=\frac{a_{1}a_{2}}{b_{1}b_{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Коммутативность сложения и умножения следует из коммутативности сложения
+ и умножения целых чисел.
+\end_layout
+
+\begin_layout Solution
+Ассоциативность сложения и умножения следует из ассоциативности, коммутативности
+ и дистрибутивности сложения и умножения целых чисел.
+ В частности:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\frac{a_{1}}{b_{1}}+\frac{a_{2}}{b_{2}}\right)+\frac{a_{3}}{b_{3}}=\frac{a_{1}b_{2}+b_{1}a_{2}}{b_{1}b_{2}}+\frac{a_{3}}{b_{3}}=\frac{a_{1}b_{2}b_{3}+b_{1}a_{2}b_{3}+a_{3}b_{1}b_{2}}{b_{1}b_{2}b_{3}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\frac{a_{1}}{b_{1}}+\left(\frac{a_{2}}{b_{2}}+\frac{a_{3}}{b_{3}}\right)=\frac{a_{1}}{b_{1}}+\frac{a_{2}b_{3}+b_{2}a_{3}}{b_{2}b_{3}}=\frac{a_{1}b_{2}b_{3}+b_{1}a_{2}b_{3}+b_{1}b_{2}a_{3}}{b_{1}b_{2}b_{3}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обратным элементом относительно сложения будет 
+\begin_inset Formula $\frac{-a}{b}$
+\end_inset
+
+, а относительно умножения — 
+\begin_inset Formula $\frac{b}{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Дистрибутивность следует из дистрибутивности вещественных чисел.
+\end_layout
+
+\begin_layout Solution
+г) Да.
+ Во-первых, рассматриваемое множество замкнуто относительно сложения и умножения
+: 
+\begin_inset Formula 
+\[
+\left(r_{1}+r_{2}\sqrt{2}\right)+\left(s_{1}+s_{2}\sqrt{2}\right)=\left(r_{1}+s_{1}\right)+\left(r_{2}+s_{2}\right)\sqrt{2},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(r_{1}+r_{2}\sqrt{2}\right)\cdot\left(s_{1}+s_{2}\sqrt{2}\right)=\left(r_{1}s_{1}+2r_{2}s_{2}\right)+\left(r_{1}s_{2}+r_{2}s_{1}\right)\sqrt{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Коммутативность сложения и умножения следует из коммутативности сложения
+ и умножения целых чисел.
+\end_layout
+
+\begin_layout Solution
+Единичными элементами относительно сложения и умножения соответственно будут
+ 
+\begin_inset Formula $0+0\cdot\sqrt{2}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $1+0\sqrt{2}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обратный элемент относительно сложения есть 
+\begin_inset Formula $\left(-r_{1}\right)+\left(-r_{2}\right)\sqrt{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обратный элемент относительно умножения равен 
+\begin_inset Formula 
+\[
+\frac{1}{r_{1}+r_{2}\sqrt{2}}=\frac{r_{1}-r_{2}\sqrt{2}}{r_{1}^{2}+r_{2}^{2}\cdot2}=\left(\frac{r_{1}}{r_{1}^{2}+r_{2}^{2}\cdot2}\right)+\left(\frac{-r_{2}}{r_{1}^{2}+r_{2}^{2}\cdot2}\right)\sqrt{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Дистрибутивность для данного множества следует из дистрибутивности действительны
+х чисел.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:multiplication-by-zero-is-zero"
+
+\end_inset
+
+Доказать, что в любом поле 
+\begin_inset Formula $a\cdot0=0\cdot a=0$
+\end_inset
+
+ для любого элемента 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как ноль — нейтральный элемент относительно сложения, то 
+\begin_inset Formula $1+0=1$
+\end_inset
+
+.
+ Умножим это равенство слева на 
+\begin_inset Formula $a$
+\end_inset
+
+, получим 
+\begin_inset Formula $a\cdot1+a\cdot0=a\cdot1$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $1$
+\end_inset
+
+ — нейтральный элемент относительно умножения, то 
+\begin_inset Formula $a\cdot1=a$
+\end_inset
+
+, а значит равенство приобретает вид 
+\begin_inset Formula $a+a\cdot0=a$
+\end_inset
+
+.
+ Добавив к левой и правой части обратный элемент к 
+\begin_inset Formula $a$
+\end_inset
+
+ (относительно сложения), получим 
+\begin_inset Formula $a\cdot0=0$
+\end_inset
+
+.
+ Аналогично, умножая равенство 
+\begin_inset Formula $1+0=1$
+\end_inset
+
+ на 
+\begin_inset Formula $a$
+\end_inset
+
+ справа, получим 
+\begin_inset Formula $a+0\cdot a=a$
+\end_inset
+
+, откуда следует 
+\begin_inset Formula $0\cdot a=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:negation-of-product"
+
+\end_inset
+
+Доказать, что в любом поле 1) 
+\begin_inset Formula $\left(-a\right)\cdot b=a\cdot\left(-b\right)=-\left(a\cdot b\right)$
+\end_inset
+
+, 2) 
+\begin_inset Formula $\left(-a\right)\left(-b\right)=ab$
+\end_inset
+
+ для любых элементов 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+В 1) нужно доказать, что 
+\begin_inset Formula $\left(-a\right)\cdot b$
+\end_inset
+
+ и 
+\begin_inset Formula $a\cdot\left(-b\right)$
+\end_inset
+
+ являются обратными элементами для 
+\begin_inset Formula $a\cdot b$
+\end_inset
+
+.
+ Действительно, по свойству дистрибутивности и доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:multiplication-by-zero-is-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left(-a\right)\cdot b+a\cdot b=\left(\left(-a\right)+a\right)\cdot b=0\cdot b=0,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a\cdot b+\left(-a\right)\cdot b=\left(a+\left(-a\right)\right)\cdot b=0\cdot b=0,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a\cdot\left(-b\right)+a\cdot b=a\cdot\left(\left(-b\right)+b\right)=a\cdot0=0,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a\cdot b+a\cdot\left(-b\right)=a\cdot\left(b+\left(-b\right)\right)=a\cdot0=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+2) По доказанному в пункте 1): 
+\begin_inset Formula $\left(-a\right)\left(-b\right)=-\left(a\cdot\left(-b\right)\right)=-\left(-\left(a\cdot b\right)\right)$
+\end_inset
+
+.
+ А как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:double-inservse-and-inverse-of-unit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если применить операцию взятия обратного элемента дважды, то получим исходный
+ элемент, поэтому 
+\begin_inset Formula $-\left(-\left(a\cdot b\right)\right)=a\cdot b$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(-a\right)\cdot\left(-b\right)=a\cdot b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:in-field-there-are-no-divisors-of-zero"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — элементы произвольного поля и 
+\begin_inset Formula $a\cdot b=0$
+\end_inset
+
+.
+ Доказать, что либо 
+\begin_inset Formula $a=0$
+\end_inset
+
+, либо 
+\begin_inset Formula $b=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+, тогда в данном поле существует 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ — обратный элемент к 
+\begin_inset Formula $a$
+\end_inset
+
+ относительно умножения.
+ Умножив равенство 
+\begin_inset Formula $a\cdot b=0$
+\end_inset
+
+ слева на 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula $b=a^{-1}\cdot0$
+\end_inset
+
+, а как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:multiplication-by-zero-is-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $a^{-1}\cdot0=0$
+\end_inset
+
+, поэтому окончательно получаем, что 
+\begin_inset Formula $b=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, тогда в данном поле существует 
+\begin_inset Formula $b^{-1}$
+\end_inset
+
+ — обратный элемент к 
+\begin_inset Formula $b$
+\end_inset
+
+ относительно умножения.
+ Умножив равенство 
+\begin_inset Formula $a\cdot b=0$
+\end_inset
+
+ справа на 
+\begin_inset Formula $b^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula $a=0\cdot b^{-1}$
+\end_inset
+
+, а как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:multiplication-by-zero-is-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $0\cdot b^{-1}=0$
+\end_inset
+
+, поэтому окончательно получаем, что 
+\begin_inset Formula $a=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, из 
+\begin_inset Formula $a\cdot b=0$
+\end_inset
+
+ следует, что нулю равен по меньшей мере один элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ или 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Пусть на множестве 
+\begin_inset Formula $\left\{ 0,1,\dots,n-1\right\} $
+\end_inset
+
+ кроме операции сложения по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ (смотрите пример 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:addition-modulo-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), задано ещё 
+\emph on
+умножение по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+
+\emph default
+, при котором в качестве результата при умножении берётся остаток от деления
+ их обычного произведения на 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Построить таблицы умножения по модулю 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $3$
+\end_inset
+
+ и 
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что остатки с операциями сложения и умножения по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ образуют поле тогда и только тогда, когда 
+\begin_inset Formula $n$
+\end_inset
+
+ — простое число.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ — не является простым числом, тогда существуют два натуральных числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $n=ab$
+\end_inset
+
+ и 
+\begin_inset Formula $0<a,b<n$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $n\mod n=0$
+\end_inset
+
+, то при рассмотрении произведения по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ получим, что 
+\begin_inset Formula $ab=0$
+\end_inset
+
+, но 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ и 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, но в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:in-field-there-are-no-divisors-of-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что в поле из 
+\begin_inset Formula $ab=0$
+\end_inset
+
+ следует 
+\begin_inset Formula $a=0$
+\end_inset
+
+ или 
+\begin_inset Formula $b=0$
+\end_inset
+
+.
+ Полученное противоречие означает, что при 
+\begin_inset Formula $n$
+\end_inset
+
+ не являющимся остатки по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ не образуют поля.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь, что при простом 
+\begin_inset Formula $n$
+\end_inset
+
+ остатки по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ образуют поле.
+ Свойство 1 поля было доказано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:residuals-modulo-n-with-addition-is-cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Свойство 3 следует из дистрибутивности умножения целых чисел относительно
+ их сложения.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь свойство 2 поля, то есть то, что множество остатков от деления
+ на простое 
+\begin_inset Formula $n$
+\end_inset
+
+ (без нуля) образует коммутативную группу относительно умножения.
+\end_layout
+
+\begin_layout Solution
+Умножение по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ является бинарной операцией по определению (так как результат умножения
+ приводится к остаткам от деления на 
+\begin_inset Formula $n$
+\end_inset
+
+).
+ Данная операция является коммутативной, так как коммутативно умножение
+ целых чисел.
+\end_layout
+
+\begin_layout Solution
+Единичный элемент принадлежит рассматриваемому множеству, так как наименьшее
+ простое число — 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Остаётся показать, что для любого остатка 
+\begin_inset Formula $a$
+\end_inset
+
+ существует обратный элемент.
+ Докажем, что все произведения 
+\begin_inset Formula $ax$
+\end_inset
+
+ где 
+\begin_inset Formula $x=0,1,2,\dots,n-1$
+\end_inset
+
+ — различны, а значит среди них обязательно есть 
+\begin_inset Formula $1$
+\end_inset
+
+, соответствующий 
+\begin_inset Formula $x$
+\end_inset
+
+ и будет обратным элементом относительно умножения к 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $ai\mod n=aj\mod n$
+\end_inset
+
+, но 
+\begin_inset Formula $i<j$
+\end_inset
+
+, тогда 
+\begin_inset Formula $a\left(j-i\right)\mod n=0$
+\end_inset
+
+ или 
+\begin_inset Formula $a\left(j-i\right)=nk$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — некоторое целое число.
+ Но 
+\begin_inset Formula $a<n$
+\end_inset
+
+ и 
+\begin_inset Formula $j-i<n$
+\end_inset
+
+, а так как 
+\begin_inset Formula $n$
+\end_inset
+
+ простое, то 
+\begin_inset Formula $a\left(j-i\right)$
+\end_inset
+
+ не может быть кратным 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Полученное противоречие означает, что из 
+\begin_inset Formula $ai\mod n=aj\mod n$
+\end_inset
+
+ следует 
+\begin_inset Formula $i=j$
+\end_inset
+
+.
+ Итак, среди произведений 
+\begin_inset Formula $a$
+\end_inset
+
+ на остатки от деления на простое 
+\begin_inset Formula $n$
+\end_inset
+
+ обязательно есть 
+\begin_inset Formula $1$
+\end_inset
+
+, то есть для любого элемента рассматриваемого множества существует обратный.
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "def:difference-and-division-for-field"
+
+\end_inset
+
+Разностью 
+\emph default
+элементов 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+ в произвольном поле (обозначается 
+\begin_inset Formula $b-a$
+\end_inset
+
+) называется элемент, являющийся решением уравнения 
+\begin_inset Formula $x+a=b$
+\end_inset
+
+ (или 
+\begin_inset Formula $a+x=b$
+\end_inset
+
+).
+ 
+\emph on
+Частным 
+\emph default
+от деления элемента 
+\begin_inset Formula $b$
+\end_inset
+
+ на 
+\begin_inset Formula $a$
+\end_inset
+
+ при 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ (обозначается 
+\begin_inset Formula $\frac{b}{a}$
+\end_inset
+
+) называется элемент, являющийся решением уравнения 
+\begin_inset Formula $ya=b$
+\end_inset
+
+ (или 
+\begin_inset Formula $ay=b$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Из решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:equations-in-group-always-has-unique-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и того, что поле сложения и умножение коммутативны, вытекает, что элементы
+ 
+\begin_inset Formula $b-a$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{b}{a}$
+\end_inset
+
+ (при 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+) определяются в любом поле однозначно.
+\end_layout
+
+\begin_layout Standard
+Так как поле является группой по сложению, а без нуля и по умножению, то
+ равенство 
+\begin_inset Formula $x+a=b$
+\end_inset
+
+ равносильно равенству 
+\begin_inset Formula $x=b+\left(-a\right)$
+\end_inset
+
+, а равенство 
+\begin_inset Formula $ya=b$
+\end_inset
+
+ при 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ равносильно равенству 
+\begin_inset Formula $y=ba^{-1}$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $b-a=b+\left(-a\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{b}{a}=ba^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Читатель легко может доказать, что операции сложения, вычитания, умножения
+ и деления в любом поле обладают всеми основными свойствами этих операций
+ в поле действительных чисел.
+ В частности, в любом поле обе части любого равенства можно умножить или
+ разделить на любой элемент, отличный от нуля; любой член можно перенести
+ из одной части равенства в другую с противоположным знаком и так далее.
+ Для примера рассмотрим одно из свойств, связывающих вычитание и умножение.
+\end_layout
+
+\begin_layout Problem
+Доказать, что в любом поле 
+\begin_inset Formula $\left(a-b\right)c=ac-bc$
+\end_inset
+
+ для любых элементов 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению разности 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:difference-and-division-for-field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $a-b=a+\left(-b\right)$
+\end_inset
+
+.
+ Так как умножение дистрибутивно относительно сложения, то 
+\begin_inset Formula $\left(a-b\right)\cdot c=\left(a+\left(-b\right)\right)\cdot c=ac+\left(-b\right)c$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:negation-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left(-b\right)c=-\left(bc\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left(a-b\right)\cdot c=ac+\left(-\left(bc\right)\right)$
+\end_inset
+
+ и, снова по определению разности, 
+\begin_inset Formula $\left(a-b\right)c=ac-bc$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить этот раздел (многочлены)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
