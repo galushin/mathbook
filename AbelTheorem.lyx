@@ -51379,6 +51379,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:complex-numbers-is-commutative-group-by-addition"
+
+\end_inset
+
 Доказать, что комплексные числа образуют по сложению коммутативную группу.
  Какое комплексное число является единичным элементом (нулём этой группы)?
 \end_layout
@@ -51442,6 +51448,1068 @@ noprefix "false"
 \[
 \left(c,d\right)+\left(a,b\right)=\left(c+a,d+b\right)=\left(a+c,b+d\right)=\left(a,b\right)+\left(c,d\right).
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В дальнейшем комплексные числа удобно обозначать одной буквой, например
+ 
+\begin_inset Formula $z$
+\end_inset
+
+ (или 
+\begin_inset Formula $w$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:complex-multiplication-is-commutative-and-associative"
+
+\end_inset
+
+Доказать, что операция умножения комплексных чисел коммутативна и ассоциативна,
+ то есть 
+\begin_inset Formula $z_{1}\cdot z_{2}=z_{2}\cdot z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(z_{1}z_{2}\right)z_{3}=z_{1}\left(z_{2}z_{3}\right)$
+\end_inset
+
+ для любых комплексных чисел 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $z_{j}=\left(a_{j},b_{j}\right)$
+\end_inset
+
+ для 
+\begin_inset Formula $j=1,2,3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Проверим сначала, что операция умножения коммутативна.
+ По определению умножения комплексных чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-multiplication"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+z_{1}\cdot z_{2}=\left(a_{1},b_{1}\right)\cdot\left(a_{2},b_{2}\right)=\left(a_{1}a_{2}-b_{1}b_{2},a_{1}b_{2}+b_{1}a_{2}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z_{2}\cdot z_{1}=\left(a_{2},b_{2}\right)\cdot\left(a_{1},b_{1}\right)=\left(a_{2}a_{1}-b_{2}b_{1},a_{2}b_{1}+b_{2}a_{1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как умножение и сложение вещественных чисел коммутативны 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "properies-of-field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{multline*}
+z_{2}z_{1}=\left(a_{2}a_{1}-b_{2}b_{1},a_{2}b_{1}+b_{2}a_{1}\right)=\left(a_{1}a_{2}-b_{1}b_{2},b_{1}a_{2}+a_{1}b_{2}\right)=\\
+=\left(a_{1}a_{2}-b_{1}b_{2},a_{1}b_{2}+b_{1}a_{2}\right)=z_{1}\cdot z_{2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Проверим теперь выполнение свойства ассоциативности:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\left(z_{1}\cdot z_{2}\right)\cdot z_{3}=\left(a_{1}a_{2}-b_{1}b_{2},a_{1}b_{2}+b_{1}a_{2}\right)\cdot\left(a_{3},b_{3}\right)=\\
+=\left(\left(a_{1}a_{2}-b_{1}b_{2}\right)a_{3}-\left(a_{1}b_{2}+b_{1}a_{2}\right)b_{3},\left(a_{1}a_{2}-b_{1}b_{2}\right)b_{3}+\left(a_{1}b_{2}+b_{1}a_{2}\right)a_{3}\right)=\\
+=\left(a_{1}\left(a_{2}a_{3}-b_{2}b_{3}\right)-b_{1}\left(b_{2}a_{3}+a_{2}b_{3}\right),a_{1}\left(a_{2}b_{3}+b_{2}a_{3}\right)+b_{1}\left(-b_{2}b_{3}+a_{2}a_{3}\right)\right)=\\
+=\left(a_{1},b_{1}\right)\left(a_{2}a_{3}-b_{2}b_{3},b_{2}a_{3}+a_{2}b_{3}\right)=z_{1}\left(z_{2}\cdot z_{3}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Легко проверить, что 
+\begin_inset Formula $\left(a,b\right)\cdot\left(1,0\right)=\left(1,0\right)\cdot\left(a,b\right)=\left(a,b\right)$
+\end_inset
+
+ для любого комплексного числа 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ Таким образом, комплексное число 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+ является единичным элементом в множестве комплексных чисел относительно
+ умножения.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:complex-inverse"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $z$
+\end_inset
+
+ — произвольное комплексное число и 
+\begin_inset Formula $z\neq\left(0,0\right)$
+\end_inset
+
+.
+ Доказать, что существует комплексное число 
+\begin_inset Formula $z^{-1}$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $z\cdot z^{-1}=z^{-1}\cdot z=\left(1,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $z=\left(a,b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z^{-1}=\left(x,y\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ — вещественные числа, которые нужно выбрать так, чтобы 
+\begin_inset Formula $z\cdot z^{-1}=z^{-1}\cdot z=\left(1,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению умножения комплексных чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-multiplication"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $z\cdot z^{-1}=\left(a,b\right)\cdot\left(x,y\right)=\left(ax-by,ay+bx\right)$
+\end_inset
+
+, поэтому нужно решить систему уравнений 
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+ax-by=1\\
+bx+ay=0
+\end{array}.\label{eq:condition-for-complex-inverse}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Умножим первое уравнение на 
+\begin_inset Formula $a$
+\end_inset
+
+, а второе — на 
+\begin_inset Formula $b$
+\end_inset
+
+, а затем сложим полученные уравнения, в результате получим:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{2}x+b^{2}x=a,
+\]
+
+\end_inset
+
+ откуда следует 
+\begin_inset Formula 
+\[
+x=\frac{a}{a^{2}+b^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Заметим, что так как 
+\begin_inset Formula $z\neq\left(0,0\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{2}+b^{2}>0$
+\end_inset
+
+ и, следовательно, деление на ноль произойти не может.
+\end_layout
+
+\begin_layout Solution
+Теперь получим выражение для 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Для этого умножим первое уравнение системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:condition-for-complex-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ на 
+\begin_inset Formula $-b$
+\end_inset
+
+, а второе — на 
+\begin_inset Formula $a$
+\end_inset
+
+ и сложим полученные уравнения: 
+\begin_inset Formula 
+\[
+b^{2}y+a^{2}y=-b,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=\frac{-b}{a^{2}+b^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula 
+\[
+\left(a,b\right)^{-1}=\left(\frac{a}{a^{2}+b^{2}},\frac{-b}{a^{2}+b^{2}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Результаты задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-is-commutative-and-associative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ показывают, что комплексные числа образуют относительно операции умножения
+ коммутативную группу.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:complex-multiplication-distributive-over-addition"
+
+\end_inset
+
+Доказать, что для операций сложения и умножения комплексных чисел выполняется
+ закон дистрибутивности, то есть 
+\begin_inset Formula $\left(z_{1}+z_{2}\right)\cdot z_{3}=z_{1}\cdot z_{3}+z_{2}\cdot z_{3}$
+\end_inset
+
+ для любых комплексных чисел 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $z_{j}=\left(a_{j},b_{j}\right)$
+\end_inset
+
+ для 
+\begin_inset Formula $j=1,2,3$
+\end_inset
+
+.
+ Тогда, по определению сложения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и умножения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-multiplication"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ комплексных чисел:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\left(z_{1}+z_{2}\right)z_{3}=\left(a_{1}+a_{2},b_{1}+b_{2}\right)\left(a_{3},b_{3}\right)=\\
+=\left(\left(a_{1}+a_{2}\right)a_{3}-\left(b_{1}+b_{2}\right)b_{3},\left(a_{1}+a_{2}\right)b_{3}+\left(b_{1}+b_{2}\right)a_{3}\right)=\\
+=\left(\left(a_{1}a_{3}-b_{1}b_{3}\right)+\left(a_{2}a_{3}-b_{2}b_{3}\right),\left(a_{1}b_{3}+b_{1}a_{3}\right)+\left(a_{2}b_{3}+b_{2}a_{3}\right)\right)=\\
+=\left(a_{1}a_{3}-b_{1}b_{3},a_{1}b_{3}+b_{1}a_{3}\right)+\left(a_{2}a_{3}-b_{2}b_{3},a_{2}b_{3}+b_{2}a_{3}\right)=\\
+=\left(a_{1},b_{1}\right)\left(a_{3},b_{3}\right)+\left(a_{2},b_{2}\right)\left(a_{3},b_{3}\right)=z_{1}z_{3}+z_{2}z_{3}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из результатов задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-numbers-is-commutative-group-by-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-is-commutative-and-associative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-distributive-over-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что комплексные числа с операциями сложения и умножения, определённым
+ согласно 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-multiplication"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, образуют поле.
+ Это и есть 
+\emph on
+поле комплексных чисел
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Для комплексных чисел вида 
+\begin_inset Formula $\left(a,0\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольное действительное число, формулы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-multiplication"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ дают 
+\begin_inset Formula 
+\[
+\left(a,0\right)+\left(b,0\right)=\left(a+b,0\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(a,0\right)\cdot\left(b,0\right)=\left(a\cdot b,0\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, если сопоставить каждому комплексному числу вида 
+\begin_inset Formula $\left(a,0\right)$
+\end_inset
+
+ действительное число 
+\begin_inset Formula $a$
+\end_inset
+
+, то операциям над числами вида 
+\begin_inset Formula $\left(a,0\right)$
+\end_inset
+
+ будут соответствовать обычные операции над действительными числами.
+ Поэтому мы просто отождествляем комплексное число 
+\begin_inset Formula $\left(a,0\right)$
+\end_inset
+
+ и действительное число 
+\begin_inset Formula $a$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Точно так же, например, рациональное число 
+\begin_inset Formula $\frac{n}{1}$
+\end_inset
+
+ отождествляется с целым числом 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ и будем говорить, что поле комплексных чисел содержит в себе поле действительны
+х чисел.
+\end_layout
+
+\begin_layout Standard
+Комплексное число 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ не является действительным (при описанном выше отождествлении), и мы обозначим
+ его через 
+\begin_inset Formula $i$
+\end_inset
+
+, то есть 
+\begin_inset Formula $i=\left(0,1\right)$
+\end_inset
+
+.
+ Так как поле комплексных чисел содержит все действительные числа и число
+ 
+\begin_inset Formula $i$
+\end_inset
+
+, то оно содержит и все числа вида 
+\begin_inset Formula $b\cdot i$
+\end_inset
+
+ и 
+\begin_inset Formula $a+b\cdot i$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — произвольные действительные числа и операции сложения и умножения понимаются
+ как операции над комплексными числами.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:algebraic-form-of-complex-numbers"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ — комплексное число.
+ Доказать, что 
+\begin_inset Formula $\left(a,b\right)=a+b\cdot i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset Formula $a=\left(a,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $b=\left(b,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $i=\left(0,1\right)$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить метки выше и ссылки на них
+\end_layout
+
+\end_inset
+
+.
+ Тогда, по определению сложения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и умножения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-multiplication"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ комплексных чисел: 
+\begin_inset Formula 
+\[
+a+b\cdot i=\left(a,0\right)+\left(b,0\right)\cdot\left(0,1\right)=\left(a,0\right)+\left(0,b\right)=\left(a,b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:algebraic-form-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, очевидно, получаем, что 
+\begin_inset Formula $a+bi=c+di$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $a=c$
+\end_inset
+
+ и 
+\begin_inset Formula $b=d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом, любое комплексное число можно, и притом единственным образом,
+ представить в виде 
+\begin_inset Formula $a+bi$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — действительные числа.
+ Если 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+, то, следуя историческим традициям, принято 
+\begin_inset Formula $a$
+\end_inset
+
+ называть 
+\emph on
+действительной частью 
+\emph default
+комплексного числа 
+\begin_inset Formula $z$
+\end_inset
+
+, 
+\begin_inset Formula $bi$
+\end_inset
+
+ — 
+\emph on
+мнимой частью, 
+\begin_inset Formula $b$
+\end_inset
+
+ 
+\emph default
+—
+\emph on
+ коэффициентом при мнимой части
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Представление комплексного числа 
+\begin_inset Formula $z$
+\end_inset
+
+ в виде 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+ называют 
+\emph on
+алгебраической формой 
+\emph default
+комплексного числа 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для комплексных чисел в алгебраической форме формулы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-multiplication"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ перепишутся следующим образом: 
+\begin_inset Formula 
+\begin{equation}
+\left(a+bi\right)+\left(c+di\right)=\left(a+c\right)+\left(b+d\right)i,\label{eq:complex-numbers-sum-algrbraic}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left(a+bi\right)\cdot\left(c+di\right)=\left(ac-bd\right)+\left(ad+bc\right)i.\label{eq:complex-numbers-product-algebraic}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Решить уравнение (найти формул разности) 
+\begin_inset Formula $\left(a+bi\right)+\left(x+yi\right)=c+di.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Используя формулу суммы в алгебраической форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-sum-algrbraic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ в левой части уравнения, получим 
+\begin_inset Formula $\left(a+x\right)+\left(b+y\right)i=c+di$
+\end_inset
+
+.
+ Так как два комплексных числа равны, когда равны их действительные и мнимые
+ части 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, то получаем два уравнения 
+\begin_inset Formula $a+x=c$
+\end_inset
+
+ и 
+\begin_inset Formula $b+y=d$
+\end_inset
+
+, откуда 
+\begin_inset Formula 
+\[
+x=c-a,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y=d-b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Решить уравнение (найти формулу частного) 
+\begin_inset Formula $\left(a+bi\right)\cdot\left(x+yi\right)=c+di$
+\end_inset
+
+, где 
+\begin_inset Formula $a+bi\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Используем в левой части формулу произведения комплексных чисел в алгебраической
+ форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-product-algebraic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(ax-by\right)+\left(bx+ay\right)i=c+di.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как два комплексных числа равны, когда равны их действительные и мнимые
+ части 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, то получаем систему двух уравнений 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+ax-by=c\\
+bx+ay=d
+\end{array}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Чтобы найти 
+\begin_inset Formula $x$
+\end_inset
+
+, умножим первое уравнение на 
+\begin_inset Formula $a$
+\end_inset
+
+, второе — на 
+\begin_inset Formula $b$
+\end_inset
+
+, и сложим полученные равенства: 
+\begin_inset Formula 
+\[
+a^{2}x+b^{2}x=ca+db,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+x=\frac{ca+db}{a^{2}+b^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Для нахождения 
+\begin_inset Formula $y$
+\end_inset
+
+, умножим первое уравнение на 
+\begin_inset Formula $-b$
+\end_inset
+
+, второе на 
+\begin_inset Formula $a$
+\end_inset
+
+ и сложим полученные равенства:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+b^{2}y+a^{2}y=-bc+ad,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+y=\frac{-bc+ad}{a^{2}+b^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Легко проверить, что 
+\begin_inset Formula $i\cdot i=\left(0,1\right)\cdot\left(0,1\right)=\left(-1,0\right)=-1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $i^{2}=-1$
+\end_inset
+
+.
+ Таким образом, в поле комплексных чисел извлекаются квадратные корни и
+ из некоторых отрицательных действительных чисел.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задачи 209-212
+\end_layout
 
 \end_inset
 
