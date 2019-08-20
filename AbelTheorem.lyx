@@ -48767,6 +48767,25 @@ noprefix "false"
 
 \begin_layout Solution
 в) Да.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ это доказывается с использованием того факта, что вещественные числа образуют
+ поле.
+\end_layout
+
+\end_inset
+
  Рациональные числа — это дроби вида 
 \begin_inset Formula $\frac{a}{b}$
 \end_inset
@@ -48853,6 +48872,25 @@ noprefix "false"
 
 \begin_layout Solution
 г) Да.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ это доказывается с использованием того факта, что вещественные числа образуют
+ поле.
+\end_layout
+
+\end_inset
+
  Во-первых, рассматриваемое множество замкнуто относительно сложения и умножения
 : 
 \begin_inset Formula 
@@ -48971,20 +49009,8 @@ name "prob:multiplication-by-zero-is-zero"
 \end_inset
 
 .
- Аналогично, умножая равенство 
-\begin_inset Formula $1+0=1$
-\end_inset
-
- на 
-\begin_inset Formula $a$
-\end_inset
-
- справа, получим 
-\begin_inset Formula $a+0\cdot a=a$
-\end_inset
-
-, откуда следует 
-\begin_inset Formula $0\cdot a=0$
+ Так как умножение в поле коммутативно, то 
+\begin_inset Formula $0\cdot a=a\cdot0=0$
 \end_inset
 
 .
@@ -49307,7 +49333,10 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-*
+\begin_inset Formula $\cdot$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -49409,7 +49438,10 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-*
+\begin_inset Formula $\cdot$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -49577,7 +49609,10 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-*
+\begin_inset Formula $\cdot$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -51176,6 +51211,26 @@ noprefix "false"
 
 , 
 \begin_inset Formula $R\left(x\right)=-0=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом 
+\begin_inset Formula $R_{1}\left(x\right)-R_{2}\left(x\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $S_{1}\left(x\right)-S_{2}\left(x\right)=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $R_{1}\left(x\right)=R_{2}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $S_{1}\left(x\right)=S_{2}\left(x\right)$
 \end_inset
 
 .
