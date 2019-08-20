@@ -7236,6 +7236,12 @@ P=\left(\left(a_{1}\cdot\dots\cdot a_{k}\right)\cdot a_{k+1}\right)\cdot\left(a_
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:commutative-group"
+
+\end_inset
+
 Два элемента 
 \begin_inset Formula $a$
 \end_inset
@@ -48617,17 +48623,24 @@ status open
 \end_layout
 
 \begin_layout Standard
-Действительные числа обладают следующими тремя свойствами:
+Действительные числа обладают следующими тремя свойствами 
+\begin_inset CommandInset label
+LatexCommand label
+name "properies-of-field"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Enumerate
 Образуют коммутативную группу 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:commutative-group"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -48681,12 +48694,12 @@ a\left(b+c\right)=ab+ac.
 \begin_layout Definition
 Если на некотором множестве определены две бинарные операции (сложение и
  умножение), обладающие описанными выше тремя свойствами 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "properies-of-field"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -50263,6 +50276,12 @@ noprefix "false"
 \begin_layout Definition
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "def:polynomial"
+
+\end_inset
+
 Многочленом степени 
 \begin_inset Formula $n$
 \end_inset
@@ -50462,7 +50481,7 @@ noprefix "false"
 .
 \end_layout
 
-\begin_layout Definition
+\begin_layout Standard
 Многочлены над произвольным полем 
 \begin_inset Formula $K$
 \end_inset
@@ -50473,6 +50492,12 @@ noprefix "false"
 \begin_layout Definition
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "def:sum-and-difference-of-polynomials"
+
+\end_inset
+
 Суммой
 \emph default
  многочленов 
@@ -50968,17 +50993,192 @@ P\left(x\right)=\frac{a_{0}}{b_{0}}x^{n-m}Q\left(x\right)+R_{1}\left(x\right)=\\
  с остатком, частное и остаток определяются однозначно.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $P\left(x\right)=S_{1}\left(x\right)\cdot Q\left(x\right)+R_{1}\left(x\right)$
+\end_inset
 
-\begin_layout Plain Layout
-Закончить этот раздел (многочлены)
+ и 
+\begin_inset Formula $P\left(x\right)=S_{2}\left(x\right)\cdot Q\left(x\right)+R_{2}\left(x\right)$
+\end_inset
+
+, причём степени многочленов 
+\begin_inset Formula $R_{1}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $R_{2}\left(x\right)$
+\end_inset
+
+ меньше, чем степени многочлена 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ (может быть 
+\begin_inset Formula $R_{1}\left(x\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $R_{2}\left(x\right)=0$
+\end_inset
+
+).
+ Доказать, что 
+\begin_inset Formula $S_{1}\left(x\right)=S_{2}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $R_{1}\left(x\right)=R_{2}\left(x\right)$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+Вычтя из первого равенства второе, получим: 
+\begin_inset Formula $0=\left[S_{1}\left(x\right)-S_{2}\left(x\right)\right]Q\left(x\right)+\left[R_{1}\left(x\right)-R_{2}\left(x\right)\right]$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $S\left(x\right)=S_{1}\left(x\right)-S_{2}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $R\left(x\right)=R_{1}\left(x\right)-R_{2}\left(x\right)$
+\end_inset
+
+, тогда это равенство примет вид 
+\begin_inset Formula $0=S\left(x\right)Q\left(x\right)+R\left(x\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $S\left(x\right)Q\left(x\right)=-R\left(x\right)$
+\end_inset
+
+.
+ Теперь нужно показать, что 
+\begin_inset Formula $S\left(x\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $R\left(x\right)=0$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $S\left(x\right)\neq0$
+\end_inset
+
+.
+ Тогда степень многочлена 
+\begin_inset Formula $S\left(x\right)Q\left(x\right)$
+\end_inset
+
+ не меньше степени многочлена 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+.
+ Так как степени многочленов 
+\begin_inset Formula $R_{1}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $R_{2}\left(x\right)$
+\end_inset
+
+ меньше степени многочлена 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+, то степень многочлена 
+\begin_inset Formula $-R\left(x\right)=R_{2}\left(x\right)-R_{1}\left(x\right)$
+\end_inset
+
+, как указано в определении разности многочленов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:sum-and-difference-of-polynomials"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, не больше степеней многочленов 
+\begin_inset Formula $R_{1}\left(x\right)$
+\end_inset
 
+ и 
+\begin_inset Formula $R_{2}\left(x\right)$
+\end_inset
+
+, а значит — меньше степени многочлена 
+\begin_inset Formula $S\left(x\right)Q\left(x\right)$
+\end_inset
+
+.
+ Таким образом, в равенстве 
+\begin_inset Formula $S\left(x\right)Q\left(x\right)=-R\left(x\right)$
+\end_inset
+
+ в левой и правой частях стоят многочлены разной степени.
+ Полученное противоречие означает, что 
+\begin_inset Formula $S\left(x\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Теперь, если 
+\begin_inset Formula $S\left(x\right)=0$
+\end_inset
+
+, то 
+\begin_inset Formula $S\left(x\right)Q\left(x\right)=0$
+\end_inset
+
+ (это следует из результатов задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:multiplication-by-zero-is-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и определения многочлена 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:polynomial-definition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) и 
+\begin_inset Formula $-R\left(x\right)=S\left(x\right)Q\left(x\right)=0$
+\end_inset
+
+, откуда, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:double-inservse-and-inverse-of-unit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $R\left(x\right)=-0=0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
