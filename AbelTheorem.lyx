@@ -19031,7 +19031,7 @@ noprefix "false"
 \emph on
 \begin_inset CommandInset label
 LatexCommand label
-name "def:cartesian-product-of-group"
+name "def:cartesian-product-of-groups"
 
 \end_inset
 
@@ -31784,7 +31784,7 @@ noprefix "false"
 По определению прямого произведения 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "def:cartesian-product-of-group"
+reference "def:cartesian-product-of-groups"
 plural "false"
 caps "false"
 noprefix "false"
@@ -35871,7 +35871,7 @@ noprefix "false"
 , поэтому, по определению произведения в прямом произведении 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "def:cartesian-product-of-group"
+reference "def:cartesian-product-of-groups"
 plural "false"
 caps "false"
 noprefix "false"
@@ -51234,6 +51234,231 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Поле комплексных чисел
+\end_layout
+
+\begin_layout Standard
+Из решения задачи 194
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ вытекает, что существуют поля, более узкие, чем поле действительных чисел,
+ например, поле рациональных чисел.
+ Мы же сейчас построим поле более широкое, чем поле действительных чисел,
+ а именно, поле комплексных чисел.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим всевозможные упорядоченные пары действительных чисел, то есть
+ пары вида 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — произвольные действительные числа.
+ Будем считать, что 
+\begin_inset Formula $\left(a,b\right)=\left(c,d\right)$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $a=c$
+\end_inset
+
+ и 
+\begin_inset Formula $b=d$
+\end_inset
+
+.
+ На множестве всех таких пар определим две бинарные операции — сложение
+ и умножение — следующим образом: 
+\begin_inset Formula 
+\begin{equation}
+\left(a,b\right)+\left(c,d\right)=\left(a+c,b+d\right),\label{eq:complex-numbers-addition}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left(a,b\right)\cdot\left(c,d\right)=\left(ac-bd,ad+bc\right)\label{eq:complex-numbers-multiplication}
+\end{equation}
+
+\end_inset
+
+ (здесь в скобках в правых частях равенств используются обычные операции
+ над действительными числами).
+ Например, получаем 
+\begin_inset Formula $\left(\sqrt{2},3\right)+\left(\sqrt{2},-1\right)=\left(2\sqrt{2},2\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,1\right)\cdot\left(0,1\right)=\left(-1,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Множество всевозможных упорядоченных пар действительных чисел с операциями
+ сложения и умножения, определённым согласно формулам 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-multiplication"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, называется 
+\emph on
+множеством комплексных чисел
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Из этого определения видно, что в комплексных числах нет ничего 
+\begin_inset Quotes rld
+\end_inset
+
+сверхестественного
+\begin_inset Quotes rrd
+\end_inset
+
+: комплексные числа — это вполне реально существующие пары действительных
+ чисел.
+ Однако может возникнуть другой вопрос: правомерно ли называть эти объекты
+ числами? Этот вопрос мы обсудим в конце данного параграфа.
+ Другой вопрос, который может возникнуть у читателя, — почему именно так,
+ а не иначе определяются операция сложения и умножения комплексных чисел
+ (особенно странной выглядит операция умножения)? На этот вопрос мы ответим
+ в параграфе 3
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Выясним, какими хорошими свойствами обладает определённое выше множество
+ комплексных чисел.
+\end_layout
+
+\begin_layout Problem
+Доказать, что комплексные числа образуют по сложению коммутативную группу.
+ Какое комплексное число является единичным элементом (нулём этой группы)?
+\end_layout
+
+\begin_layout Solution
+Если рассматривать только операцию сложения, комплексные числа представляют
+ собой прямое произведение
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cartesian-product-of-groups"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ группы действительных чисел по сложению на саму себя, то есть сами являются
+ группой по сложению по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-of-groups-is-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В этой же задаче было показано, что единичным элементом по сложению (нулём)
+ этой группы является 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем, что данная группа коммутативна, то есть 
+\begin_inset Formula $\left(a,b\right)+\left(c,d\right)=\left(c,d\right)+\left(a,b\right)$
+\end_inset
+
+.
+ По определению сложения комплексных чисел 
+\begin_inset Formula $\left(a,b\right)+\left(c,d\right)=\left(a+c,b+d\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(c,d\right)+\left(a,b\right)=\left(c+a,d+b\right)$
+\end_inset
+
+, но так как вещественные числа — коммутативная группа по сложению, то 
+\begin_inset Formula $c+a=a+c$
+\end_inset
+
+ и 
+\begin_inset Formula $d+b=b+d$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left(c,d\right)+\left(a,b\right)=\left(c+a,d+b\right)=\left(a+c,b+d\right)=\left(a,b\right)+\left(c,d\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать этот раздел
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
