@@ -19426,6 +19426,12 @@ name "prob:cartesian-product-have-subgoups-isomorphic-to-multiples"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:cartesian-product-of-commutative-groups-is-commutative"
+
+\end_inset
+
 Пусть группы 
 \begin_inset Formula $G$
 \end_inset
@@ -48711,6 +48717,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-and-counterexamples-of-fields"
+
+\end_inset
+
 Выяснить, являются ли полями следующие подмножества действительных чисел
  с обычными операциями сложения и умножения: а) все натуральные числа; б)
  все целые числа; в) все рациональные числа; г) все числа вида 
@@ -51241,13 +51253,13 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Из решения задачи 194
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
+Из решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-and-counterexamples-of-fields"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -51360,13 +51372,13 @@ noprefix "false"
  Другой вопрос, который может возникнуть у читателя, — почему именно так,
  а не иначе определяются операция сложения и умножения комплексных чисел
  (особенно странной выглядит операция умножения)? На этот вопрос мы ответим
- в параграфе 3
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ в параграфе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:uniqueness-of-complex-numbers-field"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -51422,32 +51434,25 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-Докажем, что данная группа коммутативна, то есть 
-\begin_inset Formula $\left(a,b\right)+\left(c,d\right)=\left(c,d\right)+\left(a,b\right)$
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-of-commutative-groups-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
-.
- По определению сложения комплексных чисел 
-\begin_inset Formula $\left(a,b\right)+\left(c,d\right)=\left(a+c,b+d\right)$
-\end_inset
+ было показано, что прямое произведение коммутативных групп коммутативно,
+ а так как группа действительных чисел коммутативна по сложению, то коммутативна
+ по сложению и группа комплексных чисел.
+\begin_inset Note Comment
+status open
 
- и 
-\begin_inset Formula $\left(c,d\right)+\left(a,b\right)=\left(c+a,d+b\right)$
-\end_inset
-
-, но так как вещественные числа — коммутативная группа по сложению, то 
-\begin_inset Formula $c+a=a+c$
-\end_inset
-
- и 
-\begin_inset Formula $d+b=b+d$
-\end_inset
-
-, поэтому 
-\begin_inset Formula 
-\[
-\left(c,d\right)+\left(a,b\right)=\left(c+a,d+b\right)=\left(a+c,b+d\right)=\left(a,b\right)+\left(c,d\right).
-\]
+\begin_layout Plain Layout
+Забыл про эту задачу и доказал напрямую
+\end_layout
 
 \end_inset
 
@@ -51997,6 +52002,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "real-subset-of-complex-numbers"
+
+\end_inset
+
 Таким образом, если сопоставить каждому комплексному числу вида 
 \begin_inset Formula $\left(a,0\right)$
 \end_inset
@@ -52041,6 +52052,12 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "imaginary-unit"
+
+\end_inset
+
 Комплексное число 
 \begin_inset Formula $\left(0,1\right)$
 \end_inset
@@ -52108,17 +52125,27 @@ name "prob:algebraic-form-of-complex-numbers"
 \begin_inset Formula $b=\left(b,0\right)$
 \end_inset
 
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "real-subset-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
  и 
 \begin_inset Formula $i=\left(0,1\right)$
 \end_inset
 
- 
-\begin_inset Note Note
-status open
 
-\begin_layout Plain Layout
-Добавить метки выше и ссылки на них
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "imaginary-unit"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -52155,6 +52182,12 @@ a+b\cdot i=\left(a,0\right)+\left(b,0\right)\cdot\left(0,1\right)=\left(a,0\righ
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "equality-of-complex-numbers-in-algebraic-form"
+
+\end_inset
+
 Из результата задачи 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -52322,12 +52355,12 @@ noprefix "false"
 .
  Так как два комплексных числа равны, когда равны их действительные и мнимые
  части 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "equality-of-complex-numbers-in-algebraic-form"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -52405,12 +52438,12 @@ noprefix "false"
 \begin_layout Solution
 Так как два комплексных числа равны, когда равны их действительные и мнимые
  части 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "equality-of-complex-numbers-in-algebraic-form"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -52461,6 +52494,22 @@ x=\frac{ca+db}{a^{2}+b^{2}}.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $a+bi\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{2}+b^{2}\neq0$
+\end_inset
+
+, поэтому полученные формулы справедливы для всех требуемых 
+\begin_inset Formula $a+bi$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
@@ -53257,6 +53306,16 @@ status open
 \begin_layout Standard
 Таким образом, переход от действительных чисел к комплексным является таким
  же естественным, как, например, переход от целых чисел к рациональным.
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:uniqueness-of-complex-numbers-field"
+
+\end_inset
+
+Единственность поля комплексных чисел
 \end_layout
 
 \begin_layout Standard
