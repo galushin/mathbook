@@ -53319,6 +53319,1064 @@ name "sec:uniqueness-of-complex-numbers-field"
 \end_layout
 
 \begin_layout Standard
+Перейдём теперь к рассмотрению вопроса о том, почему именно так, а не иначе
+ определялись комплексные числа.
+ Ответ на этот вопрос таков: мы хотели, чтобы получилось поле, являющееся
+ расширением поля действительных чисел.
+ А нельзя ли построить другое поле, также являющееся расширением поля действител
+ьных чисел? На этот вопрос мы и ответим в этом разделе.
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Изоморфным отображением 
+\emph default
+(или просто 
+\emph on
+изоморфизмом
+\emph default
+) одного поля на другое называется взаимно однозначное отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, которое является изоморфизмом одновременно и относительно сложения и относител
+ьно умножения, то есть 
+\begin_inset Formula $\varphi\left(a+b\right)=\varphi\left(a\right)+\varphi\left(b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)$
+\end_inset
+
+.
+ Поля, между которыми можно установить изоморфизм, называются 
+\emph on
+изоморфными
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Если изучаются только сами операции сложения и умножения в поле, то у изоморфных
+ полей все свойства оказываются одинаковыми.
+ Поэтому, так же как в случае групп, изоморфные поля можно не различать.
+\end_layout
+
+\begin_layout Standard
+Как мы видели в предыдущем параграфе, в поле комплексных числе есть элемент
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $i^{2}=-1$
+\end_inset
+
+.
+ Следующая задача показывает, что добавление такого элемента к полю действительн
+ых чисел с необходимостью приводит к полю комплексных чисел.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $M$
+\end_inset
+
+ — некоторое поле, содержащее в себе поле действительных чисел и некоторый
+ элемент 
+\begin_inset Formula $i_{0}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $i_{0}^{2}=-1$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $M$
+\end_inset
+
+ содержит некоторые поле 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+, изоморфное полю комплексных чисел.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем говорить, что некоторые поле является 
+\emph on
+минимальным полем с данными свойствами
+\emph default
+, если оно обладает этими свойствами и не содержит в себе других полей с
+ теми же свойствами.
+\end_layout
+
+\begin_layout Standard
+В этом случае результат задачи 213
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ можно сформулировать так: минимальным полем, содержащим поле действительных
+ чисел и элемент 
+\begin_inset Formula $i_{0}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $i_{0}^{2}=-1$
+\end_inset
+
+, является поле комплексных чисел.
+ Этот результат доказывает в некотором смысле единственность поля комплексных
+ чисел.
+ Однако имеет место существенно более сильный результат.
+ А именно, откажемся от требования, чтобы поле 
+\begin_inset Formula $M$
+\end_inset
+
+ содержало элемент 
+\begin_inset Formula $i_{0}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $i_{0}^{2}=-1$
+\end_inset
+
+, и поставим задачу найти все поля, являющиеся минимальными расширениями
+ поля действительных чисел.
+ Оказывается, что таких расширений всего два (с точностью до изоморфизма),
+ одно из них — поле комплексных чисел.
+ Покажем это.
+\end_layout
+
+\begin_layout Standard
+Пусть поле 
+\begin_inset Formula $M$
+\end_inset
+
+ содержит поле действительных чисел, то есть 
+\begin_inset Formula $M$
+\end_inset
+
+ содержит все действительные числа и операции над ними в поле 
+\begin_inset Formula $M$
+\end_inset
+
+ совпадают с обычными операциями над действительными числами.
+ Пусть, кроме того, поле 
+\begin_inset Formula $M$
+\end_inset
+
+ содержит элемент 
+\begin_inset Formula $j$
+\end_inset
+
+, отличный от всех действительных чисел.
+ Тогда для любых действительных чисел 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ в 
+\begin_inset Formula $M$
+\end_inset
+
+ содержится элемент, равный 
+\begin_inset Formula 
+\begin{equation}
+j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+a_{n}.\label{eq:polynomial-of-j}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Будем называть 
+\begin_inset Formula $n$
+\end_inset
+
+ степенью выражения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:polynomial-of-j"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Может быть 2 случая:
+\end_layout
+
+\begin_layout Enumerate
+некоторое выражение вида 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:polynomial-of-j"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ задаёт элемент, равный 
+\begin_inset Formula $0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+никакое выражение вида 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:polynomial-of-j"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ не равно 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Предположим сначала, что имеет место случай 1.
+\end_layout
+
+\begin_layout Definition
+Многочлен с коэффициентами из некоторого поля 
+\begin_inset Formula $K$
+\end_inset
+
+ называется 
+\emph on
+приводимым над полем 
+\begin_inset Formula $K$
+\end_inset
+
+
+\emph default
+, если он может быть представлен как произведение двух многочленов меньшей
+ степени с коэффициентами из 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ В противном случае он называется 
+\emph on
+неприводимым над полем 
+\begin_inset Formula $K$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Многочлены, неприводимые над полем 
+\begin_inset Formula $K$
+\end_inset
+
+, являются аналогом простых чисел в множестве натуральных чисел.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Например, многочлены 
+\begin_inset Formula $x^{3}-1$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{2}-x-1$
+\end_inset
+
+ приводимы над полем действительных чисел, так как 
+\begin_inset Formula $x^{3}-1=\left(x-1\right)\left(x^{2}+x+1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{2}-x-1=\left(x-\frac{1+\sqrt{5}}{2}\right)\times\left(1-\frac{1-\sqrt{5}}{2}\right)$
+\end_inset
+
+, а многочлены 
+\begin_inset Formula $x^{2}+1$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{2}+x+1$
+\end_inset
+
+ неприводимы над полем действительных чисел.
+ Очевидно, что многочлены первой степени над любым полем являются неприводимыми.
+\end_layout
+
+\begin_layout Problem
+Выберем среди выражений вида 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:polynomial-of-j"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, равных 
+\begin_inset Formula $0$
+\end_inset
+
+, выражение наименьшей степени 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $\left(n\ge1\right)$
+\end_inset
+
+.
+ Пусть это будет выражение 
+\begin_inset Formula 
+\[
+j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+a_{n}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что многочлен 
+\begin_inset Formula 
+\[
+x^{n}+a_{1}x^{n-1}+a_{2}x^{n-2}+\dots+a_{n}
+\]
+
+\end_inset
+
+неприводим над полем действительных чисел.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В дальнейшем мы покажем (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на задачу 272
+\end_layout
+
+\end_inset
+
+), что любой многочлен с действительными коэффициентами степени выше второй
+ приводим над полем действительных чисел.
+ Поэтому 
+\begin_inset Formula $n$
+\end_inset
+
+ в задаче 214
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ должно быть не больше 2.
+ А так как 
+\begin_inset Formula $n\neq1$
+\end_inset
+
+ (иначе мы получили бы, что 
+\begin_inset Formula $j+a=0$
+\end_inset
+
+ и 
+\begin_inset Formula $j$
+\end_inset
+
+ равно действительному числу 
+\begin_inset Formula $-a$
+\end_inset
+
+), то 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом, в случае 1) 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ для некоторого действительных чисел 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+ в поле 
+\begin_inset Formula $M$
+\end_inset
+
+ должно выполняться равенство 
+\begin_inset Formula $j^{2}+pj+q=0$
+\end_inset
+
+, причём многочлен 
+\begin_inset Formula $x^{2}+px+q$
+\end_inset
+
+ должен быть неприводим над полем действительных чисел.
+\end_layout
+
+\begin_layout Problem
+Доказать, что в случае 1) 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ поле 
+\begin_inset Formula $M$
+\end_inset
+
+ содержит элемент 
+\begin_inset Formula $i_{0}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $i_{0}^{2}=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из результатов задач 215
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ и 213
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ вытекает, что в случае 1) поле 
+\begin_inset Formula $M$
+\end_inset
+
+ содержит поле 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+, изоморфное полю комплексных чисел.
+ Следовательно, если поле 
+\begin_inset Formula $M$
+\end_inset
+
+ — минимальное расширение поля действительных чисел, то поле 
+\begin_inset Formula $M$
+\end_inset
+
+ должно совпадать с 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+.
+ Таким образом, в случае 1) любое минимальное поле, являющееся расширением
+ поля действительных чисел, совпадает (с точностью до изоморфизма) с полем
+ комплексных чисел.
+ Итак, в случае 1) имеется единственное (с точностью до изоморфизма) поле,
+ являющееся минимальным расширением поля действительных чисел, а именно,
+ поле комплексных чисел.
+\end_layout
+
+\begin_layout Problem
+Найти все поля, являющиеся минимальными расширениями поля действительных
+ чисел в случае 2) 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Геометрические представления комплексных чисел
+\end_layout
+
+\begin_layout Standard
+Введём на плоскости прямоугольную систему координат 
+\begin_inset Formula $XOY$
+\end_inset
+
+ и поставим в соответствие каждому комплексному числу 
+\begin_inset Formula $a+bi$
+\end_inset
+
+ точку плоскости с координатами 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ Получим взаимно однозначное соответствие между всеми комплексными числами
+ и всеми точками плоскости.
+ Эта даёт нам 
+\emph on
+первое геометрическое представление
+\emph default
+ комплексных чисел.
+\end_layout
+
+\begin_layout Problem
+Какие комплексные числа соответствуют точкам, указанным на рисунке 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить рисунок 13 и ссылку на него
+\end_layout
+
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть комплексные числа изображаются точками плоскости.
+ Каков геометрический смысл преобразования 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, если для любого комплексного числа: а) 
+\begin_inset Formula $\varphi\left(z\right)=-z$
+\end_inset
+
+, б) 
+\begin_inset Formula $\varphi\left(z\right)=2z$
+\end_inset
+
+, в) 
+\begin_inset Formula $\varphi\left(z\right)=\bar{z}$
+\end_inset
+
+ (
+\begin_inset Formula $\bar{z}$
+\end_inset
+
+ — комплексно сопряжённое с 
+\begin_inset Formula $z$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A=\left(x_{A},y_{A}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $B=\left(x_{B},y_{B}\right)$
+\end_inset
+
+ — две точки плоскости 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить рисунок 14 и ссылку на него
+\end_layout
+
+\end_inset
+
+.
+ Отрезок 
+\begin_inset Formula $AB$
+\end_inset
+
+ с указанным на нём направлением от 
+\begin_inset Formula $A$
+\end_inset
+
+ к 
+\begin_inset Formula $B$
+\end_inset
+
+ называют 
+\emph on
+вектором 
+\begin_inset Formula $\overrightarrow{AB}$
+\end_inset
+
+
+\emph default
+.
+ Координаты вектора 
+\begin_inset Formula $\overrightarrow{AB}$
+\end_inset
+
+ по определению вычисляются следующим образом: 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+x_{\overrightarrow{AB}}=x_{B}-x_{A},\\
+y_{\overrightarrow{AB}}=y_{B}-y_{A}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Два вектора считаются равными, если они параллельны, одинаково направлены
+ и равны по длине.
+\end_layout
+
+\begin_layout Problem
+Доказать, что два вектора равны тогда и только тогда, когда равны их соответству
+ющие координаты.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Множество равных векторов рассматривается обычно как один и тот же вектор,
+ характеризуемый лишь своими координатами, — так называемый 
+\emph on
+свободный вектор
+\emph default
+.
+ Поставив в соответствие каждому комплексному числа 
+\begin_inset Formula $a+bi$
+\end_inset
+
+ свободный вектор с координатами 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, мы получим 
+\emph on
+второе геометрическое представление
+\emph default
+ комплексных чисел.
+\end_layout
+
+\begin_layout Problem
+Пусть комплексным числам 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{3}$
+\end_inset
+
+ соответствуют свободные векторы 
+\begin_inset Formula $u$
+\end_inset
+
+, 
+\begin_inset Formula $v$
+\end_inset
+
+ и 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $z_{1}+z_{2}=z_{3}$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $u+v=w$
+\end_inset
+
+ , где сумма векторов вычисляется по правилу параллелограмма.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать следующую взаимосвязь между двумя геометрическими представлениями
+ комплексных чисел: если 
+\begin_inset Formula $z_{A}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{B}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{\overrightarrow{AB}}$
+\end_inset
+
+ — комплексные числа, соответствующие точкам 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и вектору 
+\begin_inset Formula $\overrightarrow{AB}$
+\end_inset
+
+, то 
+\begin_inset Formula $z_{\overrightarrow{AB}}=z_{B}-z_{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из определения равных векторов получаем, что равные векторы имеют равную
+ длину.
+ Эта длина принимается также за длину свободного вектора, соответствующего
+ данному множеству равных векторов.
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Модулем
+\emph default
+ комплексного числа 
+\begin_inset Formula $z$
+\end_inset
+
+ (обозначается 
+\begin_inset Formula $\left|z\right|$
+\end_inset
+
+) называется длина соответствующего ему свободного вектора
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Для действительных чисел (как частного случая комплексных чисел) введённое
+ здесь понятие модуля совпадает с понятием 
+\emph on
+абсолютной величины
+\emph default
+.
+ В самом деле, действительному числу 
+\begin_inset Formula $a+0i$
+\end_inset
+
+ соответствует вектор с координатами 
+\begin_inset Formula $\left(a,0\right)$
+\end_inset
+
+, параллельный оси 
+\begin_inset Formula $x$
+\end_inset
+
+, и длина его равна 
+\begin_inset Formula $\left|a\right|$
+\end_inset
+
+ — абсолютной величине числа 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\left|z\right|^{2}=a^{2}+b^{2}=z\cdot\bar{z}$
+\end_inset
+
+, где 
+\begin_inset Formula $\bar{z}$
+\end_inset
+
+ — число, комплексно сопряжённое 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Докажите неравенства:
+\end_layout
+
+\begin_layout Problem
+а) 
+\begin_inset Formula $\left|z_{1}+z_{2}\right|\le\left|z\right|_{1}+\left|z_{2}\right|$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+б) 
+\begin_inset Formula $\left|z_{1}-z_{2}\right|\ge\left|\left|z_{1}\right|-\left|z_{2}\right|\right|$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+где 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — произвольные комплексные числа.
+ В каких случаях имеет место равенство?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Докажите с помощью комплексных чисел, что в произвольном параллелограмме
+ сумма квадратов длин диагоналей равна сумме квадратов длин всех сторон.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
