@@ -53379,6 +53379,12 @@ name "sec:uniqueness-of-complex-numbers-field"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:any-extension-of-reals-with-imaginary-unit-includes-complex-numbers"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $M$
 \end_inset
@@ -53405,16 +53411,175 @@ name "sec:uniqueness-of-complex-numbers-field"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как поле 
+\begin_inset Formula $M$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ содержит все действительные числа и 
+\begin_inset Formula $i_{0}$
+\end_inset
+
+, то оно также должно содержать все элементы вида 
+\begin_inset Formula $a+b\cdot i_{0}$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — произвольные комплексные числа.
+ Множество элементов такого вида и есть 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+ элемент 
+\begin_inset Formula $z=a+b\cdot i_{0}$
+\end_inset
+
+ не является вещественным числом, иначе 
+\begin_inset Formula $i_{0}=\frac{z-a}{b}$
+\end_inset
+
+ было бы вещественным числом, что противоречит 
+\begin_inset Formula $i_{0}^{2}=-1$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+Для доказательства того, что 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+ — поле, нужно заметить, что существует взаимно однозначное соответствие
+ между 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+ и прямым произведением поля действительных чисел на самого себя: элементу
+ 
+\begin_inset Formula $a+b\cdot i_{0}$
+\end_inset
+
+ ставится в соответствие пара 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Покажем, что 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+ замкнуто относительно операций сложения и умножения, а заодно получим формулы
+ суммы и произведения: 
+\begin_inset Formula 
+\[
+\left(a+bi_{0}\right)+\left(c+di_{0}\right)=\left(a+c\right)+\left(b+d\right)i_{0},
+\]
 
 \end_inset
 
 
+\begin_inset Formula 
+\[
+\left(a+bi_{0}\right)\cdot\left(c+di_{0}\right)=ac+adi_{0}+bci_{0}+bd\cdot i_{0}^{2}=\left(ac-bd\right)+\left(ad+bc\right)i_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Заметим, что правила сложения и умножения соответствуют правилам сложения
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и умножения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-multiplication"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ комплексных чисел.
+ Далее нужно повторить доказательство того, что множество комплексных чисел
+ — это поле, содержащееся в решении задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-numbers-is-commutative-group-by-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-is-commutative-and-associative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-distributive-over-addition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Поставив каждому элементу 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+ в соответствие комплексное число 
+\begin_inset Formula $\left(a,b\right)=a+b\cdot i$
+\end_inset
+
+, получим требуемый изоморфизм.
 \end_layout
 
 \begin_layout Standard
@@ -53427,13 +53592,13 @@ status open
 \end_layout
 
 \begin_layout Standard
-В этом случае результат задачи 213
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+В этом случае результат задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:any-extension-of-reals-with-imaginary-unit-includes-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -53538,7 +53703,14 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Может быть 2 случая:
+Может быть 2 случая
+\begin_inset CommandInset label
+LatexCommand label
+name "cases-of-mimimal-extensions-of-real-numbers-field"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Enumerate
@@ -53661,6 +53833,12 @@ status collapsed
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:minimal-degree-oplynomial-with-root-j-is-irreducible"
+
+\end_inset
+
 Выберем среди выражений вида 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -53708,16 +53886,63 @@ x^{n}+a_{1}x^{n-1}+a_{2}x^{n-2}+\dots+a_{n}
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Если многочлен 
+\begin_inset Formula 
+\[
+x^{n}+a_{1}x^{n-1}+a_{2}x^{n-2}+\dots+a_{n}
+\]
 
 \end_inset
 
+ приводим над множеством действительных чисел, то 
+\begin_inset Formula 
+\[
+x^{n}+a_{1}x^{n-1}+a_{2}x^{n-2}+\dots+a_{n}=P\left(x\right)\cdot Q\left(x\right),
+\]
 
+\end_inset
+
+где 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ — многочлены с вещественными коэффициентами, степень которых меньше 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Тогда, 
+\begin_inset Formula $j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+a_{n}=P\left(j\right)Q\left(j\right)=0$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:in-field-there-are-no-divisors-of-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, отсюда следует, что 
+\begin_inset Formula $P\left(j\right)=0$
+\end_inset
+
+ или 
+\begin_inset Formula $Q\left(j\right)=0$
+\end_inset
+
+, что противоречит утверждению о том, что 
+\begin_inset Formula $j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+a_{n}$
+\end_inset
+
+ — выражение наименьшей степени, обращающееся в нуль.
 \end_layout
 
 \begin_layout Standard
@@ -53737,13 +53962,13 @@ status open
 \begin_inset Formula $n$
 \end_inset
 
- в задаче 214
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:minimal-degree-oplynomial-with-root-j-is-irreducible"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -53773,12 +53998,12 @@ status open
 
 \begin_layout Standard
 Таким образом, в случае 1) 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cases-of-mimimal-extensions-of-real-numbers-field"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -53806,13 +54031,19 @@ status open
 \end_layout
 
 \begin_layout Problem
-Доказать, что в случае 1) 
-\begin_inset Note Note
-status open
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:case-1-minimal-extension-of-reals-contains-imaginary-unit"
 
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+\end_inset
+
+Доказать, что в случае 1) 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cases-of-mimimal-extensions-of-real-numbers-field"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -53832,36 +54063,109 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Выделим в выражении 
+\begin_inset Formula $x^{2}+px+q$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ полный квадрат: 
+\begin_inset Formula 
+\[
+x^{2}+px+q=x^{2}+2\cdot x\cdot\frac{p}{2}+\left(\frac{p}{2}\right)^{2}-\left(\frac{p}{2}\right)^{2}+q=\left(x+\frac{p}{2}\right)^{2}-\left(\left(\frac{p}{2}\right)^{2}-q\right).
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Так как многочлен 
+\begin_inset Formula $x^{2}+px+q$
+\end_inset
+
+ неприводим, то 
+\begin_inset Formula $\left(\frac{p}{2}\right)^{2}-q<0$
+\end_inset
+
+, иначе, обозначив 
+\begin_inset Formula $b^{2}=\left(\frac{p}{2}\right)^{2}-q$
+\end_inset
+
+, получим разложение 
+\begin_inset Formula $\left(x+\frac{p}{2}\right)^{2}-b^{2}=\left(x+\frac{p}{2}-b\right)\left(x+\frac{p}{2}+b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $y=j+\frac{p}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\frac{p}{2}\right)^{2}-q=-b^{2}$
+\end_inset
+
+.
+ Тогда равенство 
+\begin_inset Formula $j^{2}+pj+q=0$
+\end_inset
+
+ запишется в виде 
+\begin_inset Formula $y^{2}+b^{2}=0$
+\end_inset
+
+ или 
+\begin_inset Formula $y^{2}=-b^{2}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, то мы можем разделить левую и правую части последнего равенства на 
+\begin_inset Formula $b^{2}$
+\end_inset
+
+ и получим 
+\begin_inset Formula 
+\[
+\left(\frac{y}{b}\right)^{2}=-1.
+\]
+
+\end_inset
+
+ Тогда искомым элементом 
+\begin_inset Formula $i_{0}$
+\end_inset
+
+ является 
+\begin_inset Formula $\frac{y}{b}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Из результатов задач 215
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+Из результатов задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:case-1-minimal-extension-of-reals-contains-imaginary-unit"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
- и 213
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:any-extension-of-reals-with-imaginary-unit-includes-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -53898,12 +54202,12 @@ status open
 \begin_layout Problem
 Найти все поля, являющиеся минимальными расширениями поля действительных
  чисел в случае 2) 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cases-of-mimimal-extensions-of-real-numbers-field"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
