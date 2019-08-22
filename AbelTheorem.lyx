@@ -52907,6 +52907,12 @@ z^{2}=\left(x+yi\right)\cdot\left(x+yi\right)=x^{2}-y^{2}+2xyi
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:complex-conjugate"
+
+\end_inset
+
 Комплексное число 
 \begin_inset Formula $a-bi$
 \end_inset
@@ -54247,7 +54253,14 @@ status open
 .
  Получим взаимно однозначное соответствие между всеми комплексными числами
  и всеми точками плоскости.
- Эта даёт нам 
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "first-geometric-representation-of-complex-numbers"
+
+\end_inset
+
+Эта даёт нам 
 \emph on
 первое геометрическое представление
 \emph default
@@ -54255,30 +54268,100 @@ status open
 \end_layout
 
 \begin_layout Problem
-Какие комплексные числа соответствуют точкам, указанным на рисунке 
-\begin_inset Note Note
-status open
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-of-first-geometric-representations-of-complex-numbers"
 
-\begin_layout Plain Layout
-Добавить рисунок 13 и ссылку на него
-\end_layout
+\end_inset
+
+Какие комплексные числа соответствуют точкам, указанным на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:data-for-problem-217"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
 ?
 \end_layout
 
-\begin_layout Solution
-\begin_inset Note Note
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Написать решение
+\align center
+\begin_inset Graphics
+	filename pictures/problem-217.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:data-for-problem-217"
+
+\end_inset
+
+Исходные данные для задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-first-geometric-representations-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Точке 
+\begin_inset Formula $A$
+\end_inset
+
+ соответствует число 
+\begin_inset Formula $2+2i$
+\end_inset
+
+, точке 
+\begin_inset Formula $B$
+\end_inset
+
+ — число 
+\begin_inset Formula $-1+3i$
+\end_inset
+
+, точке 
+\begin_inset Formula $C$
+\end_inset
+
+ — число 
+\begin_inset Formula $-2-i$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -54311,16 +54394,43 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+а) Точка 
+\begin_inset Formula $\left(a,b\right)$
 \end_inset
 
+ переходит в 
+\begin_inset Formula $\left(-a,-b\right)$
+\end_inset
 
+, это отражение относительно начала координат.
+\end_layout
+
+\begin_layout Solution
+б) Точка 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ переходит в 
+\begin_inset Formula $\left(2a,2b\right)$
+\end_inset
+
+, это растяжение в два раза.
+\end_layout
+
+\begin_layout Solution
+в) Точка 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ переходит в 
+\begin_inset Formula $\left(a,-b\right)$
+\end_inset
+
+, это отражение относительно оси 
+\begin_inset Formula $Ox$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -54332,18 +54442,25 @@ status open
 \begin_inset Formula $B=\left(x_{B},y_{B}\right)$
 \end_inset
 
- — две точки плоскости 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить рисунок 14 и ссылку на него
-\end_layout
+ — две точки плоскости (смотрите рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:example-of-vector"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-.
- Отрезок 
+).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "vector-on-plane-definition"
+
+\end_inset
+
+Отрезок 
 \begin_inset Formula $AB$
 \end_inset
 
@@ -54387,6 +54504,49 @@ y_{\overrightarrow{AB}}=y_{B}-y_{A}.
  и равны по длине.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/example-of-vector.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:example-of-vector"
+
+\end_inset
+
+Пример вектора
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Problem
 Доказать, что два вектора равны тогда и только тогда, когда равны их соответству
 ющие координаты.
@@ -54424,7 +54584,14 @@ status open
 \emph on
 второе геометрическое представление
 \emph default
- комплексных чисел.
+ комплексных чисел
+\begin_inset CommandInset label
+LatexCommand label
+name "second-geometric-representation-of-complex-numbers"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -54511,12 +54678,87 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Пусть точка 
+\begin_inset Formula $A$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ имеет координаты 
+\begin_inset Formula $\left(x_{A},y_{A}\right)$
+\end_inset
+
+, а точка 
+\begin_inset Formula $B$
+\end_inset
+
+ — 
+\begin_inset Formula $\left(x_{B},y_{B}\right)$
+\end_inset
+
+.
+ В первом геометрическом представлении комплексных чисел получаем 
+\begin_inset Formula $z_{A}=x_{A}+y_{A}i$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{B}=x_{B}+y_{B}i$
+\end_inset
+
+, значит, по формуле разности 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-substraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z_{B}-z_{A}=\left(x_{B}-x_{A}\right)+\left(y_{B}-y_{A}\right)i$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "vector-on-plane-definition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, координаты вектора 
+\begin_inset Formula $\overrightarrow{AB}$
+\end_inset
+
+ есть 
+\begin_inset Formula $\left(x_{B}-x_{A},y_{B}-y_{A}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{\overrightarrow{AB}}=\left(x_{B}-x_{A},y_{B}-y_{A}\right)$
+\end_inset
+
+.
+ Тогда, по второму геометрическому представлению комплексных чисел
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "second-geometric-representation-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+z_{\overrightarrow{AB}}=\left(x_{B}-x_{A}\right)+\left(y_{B}-y_{A}\right)i=z_{A}+z_{B}.
+\]
 
 \end_inset
 
@@ -54533,6 +54775,12 @@ status open
 \begin_layout Definition
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "def:absolute-value-of-complex-number"
+
+\end_inset
+
 Модулем
 \emph default
  комплексного числа 
@@ -54583,6 +54831,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:absolute-value-of-complex-number-formula"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $z=a+bi$
 \end_inset
@@ -54604,16 +54858,72 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Длина вектора с координатами 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ равна 
+\begin_inset Formula $\sqrt{a^{2}+b^{2}}$
+\end_inset
+
+, поэтому, по определению модуля комплексного числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:absolute-value-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, 
+\begin_inset Formula $\left|z\right|=\sqrt{a^{2}+b^{2}}$
+\end_inset
 
+ и 
+\begin_inset Formula $\left|z\right|^{2}=a^{2}+b^{2}$
+\end_inset
+
+.
+ С другой стороны, по определению комплексно сопряжённого числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:complex-conjugate"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+, то 
+\begin_inset Formula $\bar{z}=a-bi$
+\end_inset
+
+.
+ По определению произведения комплексных чисел в алгебраической форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-product-algebraic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z\cdot\bar{z}=\left(a+bi\right)\left(a-bi\right)=a^{2}+b^{2}$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\left|z\right|^{2}=a^{2}+b^{2}=z\cdot\bar{z}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -54622,7 +54932,7 @@ status open
 
 \begin_layout Problem
 а) 
-\begin_inset Formula $\left|z_{1}+z_{2}\right|\le\left|z\right|_{1}+\left|z_{2}\right|$
+\begin_inset Formula $\left|z_{1}+z_{2}\right|\le\left|z_{1}\right|+\left|z_{2}\right|$
 \end_inset
 
 ,
@@ -54650,16 +54960,177 @@ status open
 \end_layout
 
 \begin_layout Solution
+Пусть 
+\begin_inset Formula $z_{1}=a_{1}+b_{1}i$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}=a_{2}+b_{2}i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Приведём сначала геометрическое доказательство.
+ Рассмотрим треугольник 
+\begin_inset Formula $ABC$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ соответствует вектору 
+\begin_inset Formula $\overrightarrow{AB}$
+\end_inset
+
+, а 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — вектору 
+\begin_inset Formula $\overrightarrow{BC}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $z_{1}+z_{2}$
+\end_inset
+
+ соответствует вектору 
+\begin_inset Formula $\overrightarrow{AC}$
+\end_inset
+
+.
+ Так как в треугольнике длина любой стороны меньше суммы длин других двух
+ сторон, то 
+\begin_inset Formula $\left|\overrightarrow{AC}\right|\le\left|\overrightarrow{AB}\right|+\left|\overrightarrow{BC}\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|z_{1}+z_{2}\right|\le\left|z_{1}\right|+\left|z_{2}\right|$
+\end_inset
+
+.
+ Равенство выполняется, когда векторы 
+\begin_inset Formula $\overrightarrow{AB}$
+\end_inset
+
+ и 
+\begin_inset Formula $\overrightarrow{BC}$
+\end_inset
+
+ параллельны, то есть числа 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ пропорциональны (с вещественным коэффициентом пропорциональности).
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Написать алгебраическое доказательство
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+б) Обозначим 
+\begin_inset Formula $z=z_{1}-z_{2}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $z_{1}=z+z_{2}$
+\end_inset
+
+.
+ Применим доказанное в пункте а) неравенство к комплексным числам 
+\begin_inset Formula $z$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+: 
+\begin_inset Formula $\left|z_{1}\right|=\left|z+z_{2}\right|\le\left|z\right|+\left|z_{2}\right|=\left|z_{1}-z_{2}\right|+\left|z_{2}\right|$
+\end_inset
+
+, откуда 
+\begin_inset Formula $\left|z_{1}-z_{2}\right|\ge\left|z_{1}\right|-\left|z_{2}\right|$
+\end_inset
+
+.
+ Проведя аналогичные рассуждения для 
+\begin_inset Formula $z=z_{2}-z_{1}$
+\end_inset
+
+, получим неравенство 
+\begin_inset Formula $\left|z_{2}-z_{1}\right|\ge\left|z_{2}\right|-\left|z_{1}\right|$
+\end_inset
+
+=
+\begin_inset Formula $-\left(\left|z_{1}\right|-\left|z_{2}\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $\left|-z\right|=\left|-a-bi\right|=\left(-a\right)^{2}+\left(-b\right)^{2}=a^{2}+b^{2}=\left|z\right|^{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|z_{2}-z_{1}\right|=\left|z_{1}-z_{2}\right|$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $\left|z_{1}-z_{2}\right|$
+\end_inset
+
+ не меньше, чем 
+\begin_inset Formula $\left|z_{1}\right|-\left|z_{2}\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $-\left(\left|z_{1}\right|-\left|z_{2}\right|\right)$
+\end_inset
+
+.
+ Последние два вещественные числа отличаются только знаком и 
+\begin_inset Formula $\left|z_{1}-z_{2}\right|$
+\end_inset
+
+ больше наибольшего из них (так как больше их обоих), то есть 
+\begin_inset Formula $\left|z_{1}-z_{2}\right|\ge\left|\left|z_{1}\right|-\left|z_{2}\right|\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как это неравенство — следствие неравенства a), то оно также справедливо,
+ когда 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ пропорциональны (с вещественным коэффициентом пропорциональности).
 \end_layout
 
 \begin_layout Problem
@@ -54668,12 +55139,85 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим параллелограмм 
+\begin_inset Formula $ABCD$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+, пусть комплексное число 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ соответствует вектору 
+\begin_inset Formula $\overrightarrow{AB}$
+\end_inset
+
+, а 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — вектору 
+\begin_inset Formula $\overrightarrow{BC}$
+\end_inset
+
+.
+ Тогда диагонали 
+\begin_inset Formula $\overrightarrow{AC}=\overrightarrow{AB}+\overrightarrow{BC}$
+\end_inset
+
+ и длина диагонали 
+\begin_inset Formula $AC$
+\end_inset
+
+ равна 
+\begin_inset Formula $\left|z_{1}+z_{2}\right|$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+Так как в параллелограмме противоположные стороны равны по длине и параллельны,
+ то 
+\begin_inset Formula $\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AD}=\overrightarrow{BC}$
+\end_inset
+
+ или 
+\begin_inset Formula $\overrightarrow{BD}=\overrightarrow{BC}-\overrightarrow{AB}$
+\end_inset
+
+, то есть длина диагонали 
+\begin_inset Formula $BD$
+\end_inset
+
+ равна 
+\begin_inset Formula $\left|z_{2}-z_{1}\right|=\left|z_{1}-z_{2}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\left|z_{1}+z_{2}\right|^{2}+\left|z_{1}-z_{2}\right|^{2}=\\
+=\left(z_{1}+z_{2}\right)\left(\bar{z}_{1}+\bar{z}_{2}\right)+\left(z_{1}-z_{2}\right)\left(\bar{z}_{1}-\bar{z}_{2}\right)=\\
+=z_{1}\bar{z}_{1}+z_{1}\bar{z}_{2}+\bar{z}_{2}z_{1}+z_{2}\bar{z}_{2}+z_{1}\bar{z}_{1}-z_{1}\bar{z}_{2}-\bar{z}_{2}z_{1}+z_{2}\bar{z}_{2}=\\
+=2z_{1}\bar{z}_{1}+2z_{2}\bar{z}_{2}=2\left|z_{1}\right|^{2}+2\left|z_{2}\right|^{2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Снова воспользуемся тем, что в параллелограмме противоположные стороны равны
+ по длине и параллельны, поэтому: 
+\begin_inset Formula 
+\begin{multline*}
+\left|AB\right|^{2}+\left|BC\right|^{2}+\left|CD\right|^{2}+\left|DA\right|^{2}=\\
+=\left|z_{1}\right|^{2}+\left|z_{2}\right|^{2}+\left|z_{1}\right|^{2}+\left|z_{2}\right|^{2}=2\left|z_{1}\right|^{2}+2\left|z_{2}\right|^{2}.
+\end{multline*}
 
 \end_inset
 
