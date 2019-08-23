@@ -54553,11 +54553,179 @@ name "fig:example-of-vector"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+В этой задаче непонятно, какие посылки можно использовать.
+ Возможно это решение нужно переработать
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим два равных вектора 
+\begin_inset Formula $\overrightarrow{A_{1}B_{1}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\overrightarrow{A_{2}B_{2}}$
+\end_inset
+
+.
+ Построим треугольники 
+\begin_inset Formula $A_{1}B_{1}C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $A_{2}B_{2}C_{2}$
+\end_inset
+
+, где точка 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ — пересечение перпендикуляра к оси 
+\begin_inset Formula $0y$
+\end_inset
+
+, проходящего через точку 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, и перпендикуляра к оси 
+\begin_inset Formula $0x$
+\end_inset
+
+, проходящего через точку 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+, а точку 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ — пересечение перпендикуляра к оси 
+\begin_inset Formula $0y$
+\end_inset
+
+, проходящего через точку 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, и перпендикуляра к оси 
+\begin_inset Formula $0x$
+\end_inset
+
+, проходящего через точку 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+.
+ Эти треугольники прямоугольные, так как оси 
+\begin_inset Formula $0x$
+\end_inset
+
+ и 
+\begin_inset Formula $0y$
+\end_inset
+
+ перпендикулярны, то перпендикулярны и 
+\begin_inset Formula $A_{1}C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $B_{1}C_{1}$
+\end_inset
+
+, а также 
+\begin_inset Formula $A_{2}C_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $B_{2}C_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как векторы 
+\begin_inset Formula $\overrightarrow{A_{1}B_{1}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\overrightarrow{A_{2}B_{2}}$
+\end_inset
+
+ равны, то в этих треугольниках гипотенузы равны, а так как эти векторы
+ параллельны, то они лежат на параллельных прямых.
+ Параллельные прямые образуют равные углы с любой прямой, в частностью,
+ с осью 
+\begin_inset Formula $0x$
+\end_inset
+
+.
+ Этому же углы равны углы 
+\begin_inset Formula $B_{1}A_{1}C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $B_{2}A_{2}C_{2}$
+\end_inset
+
+.
+ Таким образом, треугольники 
+\begin_inset Formula $A_{1}B_{1}C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $A_{2}B_{2}C_{2}$
+\end_inset
+
+ равны, а значит равны длины их соответствующих катетов, представляющих
+ собой проекции соответствующих векторов на координатные оси.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-219.bmp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-219"
+
+\end_inset
+
+Иллюстрация к доказательству равенства координат равных векторов
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -54632,16 +54800,182 @@ name "second-geometric-representation-of-complex-numbers"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+В этой задаче непонятно, какие посылки можно использовать.
+ Возможно это решение нужно переработать
 \end_layout
 
 \end_inset
 
+1) Пусть 
+\begin_inset Formula $z_{1}=a_{1}+b_{1}i$
+\end_inset
 
+, 
+\begin_inset Formula $z_{2}=a_{2}+b_{2}i$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{3}=z_{1}+z_{2}$
+\end_inset
+
+.
+ По правилу сложения комплексных чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-sum-algrbraic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем 
+\begin_inset Formula $z_{3}=\left(a_{1}+a_{2}\right)+\left(b_{1}+b_{2}\right)i$
+\end_inset
+
+.
+ По второму геометрическому представлению комплексных чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "second-geometric-representation-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, вектор 
+\begin_inset Formula $u$
+\end_inset
+
+ имеет координаты 
+\begin_inset Formula $\left(a_{1},b_{1}\right)$
+\end_inset
+
+, вектор 
+\begin_inset Formula $v$
+\end_inset
+
+ — 
+\begin_inset Formula $\left(a_{2},b_{2}\right)$
+\end_inset
+
+, а вектор 
+\begin_inset Formula $w$
+\end_inset
+
+ — 
+\begin_inset Formula $\left(a_{1}+a_{2},b_{1}+b_{2}\right)$
+\end_inset
+
+.
+ С другой стороны, при сложении по правилу параллелограмма координаты суммы
+ двух векторов равны сумма соответствующих координат векторов-слагаемых.
+ Таким образом, 
+\begin_inset Formula $w=u+v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2) Пусть теперь 
+\begin_inset Formula $w=u+v$
+\end_inset
+
+.
+ Пусть координаты 
+\begin_inset Formula $u$
+\end_inset
+
+ равны 
+\begin_inset Formula $\left(a_{1},b_{1}\right)$
+\end_inset
+
+, а координаты 
+\begin_inset Formula $v$
+\end_inset
+
+ — 
+\begin_inset Formula $\left(a_{2},b_{2}\right)$
+\end_inset
+
+.
+ Тогда, по правилу параллелограмма, координаты 
+\begin_inset Formula $w$
+\end_inset
+
+ равны 
+\begin_inset Formula $\left(a_{1}+a_{2},b_{1}+b_{2}\right)$
+\end_inset
+
+.
+ Если комплексное число 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ соответствует вектору 
+\begin_inset Formula $v$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — 
+\begin_inset Formula $u$
+\end_inset
+
+, а 
+\begin_inset Formula $z_{3}$
+\end_inset
+
+ — 
+\begin_inset Formula $w$
+\end_inset
+
+ в смысле второго геометрического представления комплексных чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "second-geometric-representation-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $z_{1}=a_{1}+b_{1}i$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}=a_{2}+b_{2}i$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{3}=\left(a_{1}+a_{2}\right)+\left(b_{1}+b_{2}\right)i$
+\end_inset
+
+.
+ С другой стороны, по правилу сложения комплексных чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-sum-algrbraic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $z_{1}+z_{2}=\left(a_{1}+a_{2}\right)+\left(b_{1}+b_{2}\right)i=z_{3}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -54866,7 +55200,8 @@ name "prob:absolute-value-of-complex-number-formula"
 \begin_inset Formula $\sqrt{a^{2}+b^{2}}$
 \end_inset
 
-, поэтому, по определению модуля комплексного числа 
+ (по теореме Пифагора), поэтому, по определению модуля комплексного числа
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "def:absolute-value-of-complex-number"
