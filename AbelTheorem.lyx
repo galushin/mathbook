@@ -54221,16 +54221,146 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Пусть поле 
+\begin_inset Formula $M$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ содержит все действительные числа и некоторый элемент 
+\begin_inset Formula $j$
+\end_inset
+
+, не являющийся действительным числом, причём любое выражение 
+\begin_inset Formula $j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+a_{n}$
+\end_inset
+
+ не равно нулю при любом натуральном 
+\begin_inset Formula $n$
+\end_inset
+
+ и любых действительных 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+, ...
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+ Это означает, что любая степень 
+\begin_inset Formula $j$
+\end_inset
+
+ не является действительным числом (в противном случае, если 
+\begin_inset Formula $j^{m}=b$
+\end_inset
+
+, где 
+\begin_inset Formula $b$
+\end_inset
+
+ — вещественное число, то получаем равенство 
+\begin_inset Formula $j^{m}-b=0$
+\end_inset
+
+.
+ Любое выражение вида 
+\begin_inset Formula $j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+a_{n}$
+\end_inset
+
+ также не является вещественным числом, иначе из 
+\begin_inset Formula $j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+a_{n}=b$
+\end_inset
+
+ следует 
+\begin_inset Formula $j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+\left(a_{n}-b\right)=0$
+\end_inset
+
+.
+ Итак, в рассматриваемом случае, поле 
+\begin_inset Formula $M$
+\end_inset
+
+ должно содержать всевозможные многочлены с действительными коэффициентами
+ от 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Для каждого такого многочлена должны существовать обратные элементы относительн
+о сложения и умножения.
+ Для операции сложения всё тривиально — нужно рассмотреть многочлен с противопол
+ожными коэффициентами.
+ Обратный элемент относительно умножения для многочлена 
+\begin_inset Formula $a_{0}j^{n}+a_{1}j^{n-1}+\dots+a_{n}$
+\end_inset
+
+ обозначим 
+\begin_inset Formula 
+\[
+\frac{1}{a_{0}j^{n}+a_{1}j^{n-1}+\dots+a_{n}}.
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Так как поле замкнуто относительно умножения, то наряду с элементами 
+\begin_inset Formula $a_{0}j^{n}+a_{1}j^{n-1}+\dots+a_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{1}{b_{0}j^{m}+b_{1}j^{m-1}+\dots+b_{m}}$
+\end_inset
+
+, оно должно содержать их произведение.
+ Поэтому 
+\begin_inset Formula $M$
+\end_inset
+
+ будет содержать всевозможные дроби вида 
+\begin_inset Formula 
+\[
+\frac{a_{0}j^{n}+a_{1}j^{n-1}+\dots+a_{n}}{b_{0}j^{m}+b_{1}j^{m-1}+\dots+b_{m}}=\left(a_{0}j^{n}+a_{1}j^{n-1}+\dots+a_{n}\right)\cdot\frac{1}{b_{0}j^{m}+b_{1}j^{m-1}+\dots+b_{m}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, в случае 2) 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cases-of-mimimal-extensions-of-real-numbers-field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, минимальным расширением поля действительных чисел будет поле дробей, числитель
+ и знаменатель которых являются многочленами от 
+\begin_inset Formula $j$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Может быть ввести термин дробно-рациональная функция?
+\end_layout
+
+\end_inset
+
+ с обычными операциями сложения и умножения дробей.
 \end_layout
 
 \begin_layout Section
