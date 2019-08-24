@@ -56327,12 +56327,506 @@ noprefix "false"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $z_{1}=r_{1}\left(\cos\varphi_{1}+i\sin\varphi_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}=r_{2}\left(\cos\varphi_{2}+i\sin\varphi_{2}\right)$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula 
+\[
+z_{1}\cdot z_{2}=r_{1}r_{2}\left(\cos\left(\varphi_{1}+\varphi_{2}\right)+i\sin\left(\varphi_{1}+\varphi_{2}\right)\right)
+\]
+
+\end_inset
+
+ и, если 
+\begin_inset Formula $z_{2}\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\frac{z_{1}}{z_{2}}=\frac{r_{1}}{r_{2}}\left(\cos\left(\varphi_{1}+\varphi_{2}\right)-i\sin\left(\varphi_{1}+\varphi_{2}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Дописать этот раздел
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, при умножении комплексных чисел их модули перемножаются,
+ аргументы складываются, а при делении — модули делятся, аргументы вычитаются.
+\end_layout
+
+\begin_layout Problem
+Доказать 
+\emph on
+формулу Муавра
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Муавр (1667—1754) — английский математик.
+\end_layout
+
+\end_inset
+
+
+\emph default
+: 
+\begin_inset Formula 
+\[
+\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n}=r^{n}\left(\cos n\varphi+i\sin n\varphi\right)
+\]
+
+\end_inset
+
+ для любого натурального числа 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Вычислить 
+\begin_inset Formula $\frac{\left(1-i\sqrt{3}\right)^{100}}{2^{100}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $z=r\left(\cos\varphi+i\sin\varphi\right)$
+\end_inset
+
+ — фиксированное комплексное число и 
+\begin_inset Formula $n$
+\end_inset
+
+ — натуральное число.
+ Найти все комплексные числа 
+\begin_inset Formula $w$
+\end_inset
+
+, удовлетворяющие равенству 
+\begin_inset Formula 
+\begin{equation}
+w^{n}=z.\label{eq:root-equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Запись 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ (корень степени 
+\begin_inset Formula $n$
+\end_inset
+
+ из 
+\begin_inset Formula $z$
+\end_inset
+
+) мы будем понимать как многозначную функцию, ставящую в соответствие каждому
+ комплексному числу 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+ все 
+\begin_inset Formula $n$
+\end_inset
+
+ решений уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:root-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ При 
+\begin_inset Formula $z=0$
+\end_inset
+
+ будет 
+\begin_inset Formula $\sqrt[n]{0}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Найти все значения корней: а) 
+\begin_inset Formula $\sqrt{-1}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt[3]{8},$
+\end_inset
+
+в) 
+\begin_inset Formula $\sqrt[4]{\cos100\text{\textdegree\ +i\ensuremath{\sin100\text{\textdegree}}}}$
+\end_inset
+
+, г) 
+\begin_inset Formula $\sqrt[3]{1+i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для дальнейшего удобно ввести следующее обозначение: 
+\begin_inset Formula 
+\[
+\varepsilon_{n}=\cos\frac{2\pi}{n}+i\sin\frac{2\pi}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что все значения 
+\begin_inset Formula $\sqrt[n]{1}$
+\end_inset
+
+ — это 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}^{3}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $\varepsilon_{n}^{n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Так как 
+\begin_inset Formula $\varepsilon_{n}^{n}=1$
+\end_inset
+
+, то множество элементов 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}^{3}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $\varepsilon_{n}^{n-1}$
+\end_inset
+
+ является циклической группой относительно умножения.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $\sqrt[n]{z_{0}}$
+\end_inset
+
+.
+ Найти все значения 
+\begin_inset Formula $\sqrt[n]{z_{0}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В дальнейшем мы будем в основном использовать представление комплексных
+ чисел точками плоскости, то есть комплексному числу 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+ будем ставить в соответствие точку с координатами 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ При этом вместо 
+\begin_inset Quotes rld
+\end_inset
+
+точка, соответствующая комплексному числу 
+\begin_inset Formula $z$
+\end_inset
+
+
+\begin_inset Quotes rrd
+\end_inset
+
+ мы будем говорить просто 
+\begin_inset Quotes rld
+\end_inset
+
+точка 
+\begin_inset Formula $z$
+\end_inset
+
+
+\begin_inset Quotes rrd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть комплексные числа изображаются точками плоскости.
+ Каков геометрический смысл выражений 
+\begin_inset Formula $\left|z\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z_{1}-z_{2}\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\frac{z_{1}}{z_{2}}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти геометрическое место точек 
+\begin_inset Formula $z$
+\end_inset
+
+, удовлетворяющих следующим условиям (
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — фиксированные комплексные числа, 
+\begin_inset Formula $r$
+\end_inset
+
+ — фиксированное действительное число): а) 
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+, б) 
+\begin_inset Formula $\left|z\right|=r$
+\end_inset
+
+, в) 
+\begin_inset Formula $\left|z-z_{0}\right|=r$
+\end_inset
+
+, г) 
+\begin_inset Formula $\left|z-z_{0}\right|\le r$
+\end_inset
+
+, д) 
+\begin_inset Formula $\left|z-z_{1}\right|=\left|z-z_{2}\right|$
+\end_inset
+
+, е) 
+\begin_inset Formula $\mathrm{Arg}z=\pi$
+\end_inset
+
+, ж) 
+\begin_inset Formula $\mathrm{Arg}z=\frac{9\pi}{4}$
+\end_inset
+
+, з) 
+\begin_inset Formula $\mathrm{Arg}z=\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Как располагаются на плоскости все значения 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+, где 
+\begin_inset Formula $z$
+\end_inset
+
+ — фиксированное комплексное число.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
 \end_layout
 
 \end_inset
