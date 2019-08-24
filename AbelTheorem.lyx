@@ -53417,6 +53417,15 @@ name "prob:any-extension-of-reals-with-imaginary-unit-includes-complex-numbers"
 \end_layout
 
 \begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Сам решил недостаточно строго
+\end_layout
+
+\end_inset
+
 Так как поле 
 \begin_inset Formula $M$
 \end_inset
@@ -53437,13 +53446,42 @@ name "prob:any-extension-of-reals-with-imaginary-unit-includes-complex-numbers"
 \begin_inset Formula $b$
 \end_inset
 
- — произвольные комплексные числа.
- Множество элементов такого вида и есть 
+ — произвольные действительные числа.
+ Обозначим множество элементов такого вида из поля 
+\begin_inset Formula $M$
+\end_inset
+
+ как 
 \begin_inset Formula $M^{\prime}$
 \end_inset
 
 .
- При 
+ Покажем, что 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+ замкнуто относительно операций сложения и умножения, а заодно получим формулы
+ суммы и произведения: 
+\begin_inset Formula 
+\begin{equation}
+\left(a+bi_{0}\right)+\left(c+di_{0}\right)=\left(a+c\right)+\left(b+d\right)i_{0},\label{eq:213-addition}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left(a+bi_{0}\right)\cdot\left(c+di_{0}\right)=ac+adi_{0}+bci_{0}+bd\cdot i_{0}^{2}=\left(ac-bd\right)+\left(ad+bc\right)i_{0}.\label{eq:213-multiplication}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+При 
 \begin_inset Formula $b\neq0$
 \end_inset
 
@@ -53463,100 +53501,32 @@ name "prob:any-extension-of-reals-with-imaginary-unit-includes-complex-numbers"
 \end_layout
 
 \begin_layout Solution
-Для доказательства того, что 
-\begin_inset Formula $M^{\prime}$
+Пусть 
+\begin_inset Formula $\mathbb{C}$
 \end_inset
 
- — поле, нужно заметить, что существует взаимно однозначное соответствие
- между 
-\begin_inset Formula $M^{\prime}$
+ — поле комплексных чисел.
+ Рассмотрим отображение 
+\begin_inset Formula $\varphi$
 \end_inset
 
- и прямым произведением поля действительных чисел на самого себя: элементу
- 
-\begin_inset Formula $a+b\cdot i_{0}$
+ поля 
+\begin_inset Formula $\mathbb{C}$
 \end_inset
 
- ставится в соответствие пара 
-\begin_inset Formula $\left(a,b\right)$
+ в поле 
+\begin_inset Formula $M$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $\varphi\left(a+bi\right)=a+bi_{0}$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Solution
-Покажем, что 
-\begin_inset Formula $M^{\prime}$
-\end_inset
-
- замкнуто относительно операций сложения и умножения, а заодно получим формулы
- суммы и произведения: 
-\begin_inset Formula 
-\[
-\left(a+bi_{0}\right)+\left(c+di_{0}\right)=\left(a+c\right)+\left(b+d\right)i_{0},
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\left(a+bi_{0}\right)\cdot\left(c+di_{0}\right)=ac+adi_{0}+bci_{0}+bd\cdot i_{0}^{2}=\left(ac-bd\right)+\left(ad+bc\right)i_{0}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-Заметим, что правила сложения и умножения соответствуют правилам сложения
- 
+ Сравнивая полученные формулы 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:complex-numbers-addition"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- и умножения 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:complex-numbers-multiplication"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- комплексных чисел.
- Далее нужно повторить доказательство того, что множество комплексных чисел
- — это поле, содержащееся в решении задач 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "prob:complex-numbers-is-commutative-group-by-addition"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "prob:complex-multiplication-is-commutative-and-associative"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "prob:complex-inverse"
+reference "eq:213-addition"
 plural "false"
 caps "false"
 noprefix "false"
@@ -53566,26 +53536,177 @@ noprefix "false"
  и 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:complex-multiplication-distributive-over-addition"
+reference "eq:213-multiplication"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-.
-\end_layout
+ с формулами сложения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-sum-algrbraic"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Solution
-Поставив каждому элементу 
+\end_inset
+
+ и умножения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-product-algebraic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ комплексных чисел, приходим к выводу, что 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+в 
+\begin_inset Formula $M$
+\end_inset
+
+ относительно и сложения, и умножения.
+ Так как при этом 
+\begin_inset Formula $\varphi\left(\mathbb{C}\right)=M^{\prime}$
+\end_inset
+
+, то, доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-subgroup-is-subgroup-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
 \begin_inset Formula $M^{\prime}$
 \end_inset
 
- в соответствие комплексное число 
-\begin_inset Formula $\left(a,b\right)=a+b\cdot i$
+ является подгруппой 
+\begin_inset Formula $M$
 \end_inset
 
-, получим требуемый изоморфизм.
+ и относительно сложения, и относительно умножения.
+ Так как в 
+\begin_inset Formula $M$
+\end_inset
+
+ операции сложения и умножения обладают свойствами ассоциативности, коммутативно
+сти и дистрибутивности, то эти же свойства имеют место и в 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+, таким образом 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+ — поле.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $a+bi_{0}=c+di_{0}$
+\end_inset
+
+, то 
+\begin_inset Formula $a-c=\left(d-b\right)i_{0}$
+\end_inset
+
+.
+ Если при этом 
+\begin_inset Formula $b\neq d$
+\end_inset
+
+, то 
+\begin_inset Formula $i_{0}=\frac{a-c}{d-b}$
+\end_inset
+
+ — действительное число, значит 
+\begin_inset Formula $d=b$
+\end_inset
+
+ и 
+\begin_inset Formula $d-b=0$
+\end_inset
+
+, а тогда и 
+\begin_inset Formula $a-c=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a=c$
+\end_inset
+
+.
+ Таким образом, элементы вида 
+\begin_inset Formula $a+bi_{0}$
+\end_inset
+
+ в поле 
+\begin_inset Formula $M$
+\end_inset
+
+ различны при различных парах 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ Отсюда вытекает, что построенное выше отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ является взаимно однозначным отображением 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ на 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+.
+ Так как при этом 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, то 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — изоморфное отображение 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ на 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+ изоморфно полю комплексных чисел.
 \end_layout
 
 \begin_layout Standard
@@ -53948,7 +54069,42 @@ noprefix "false"
 \begin_inset Formula $j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+a_{n}$
 \end_inset
 
- — выражение наименьшей степени, обращающееся в нуль.
+ — выражение наименьшей степени, обращающееся в нуль (таким выражением будет
+ 
+\begin_inset Formula $b_{0}^{-1}\cdot P\left(j\right)=0$
+\end_inset
+
+ или 
+\begin_inset Formula $c_{0}^{-1}\cdot Q\left(j\right)=0$
+\end_inset
+
+, где 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $c_{0}$
+\end_inset
+
+ — старшие коэффициенты многочленов 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ соответственно)
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+упустил это уточнение
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -54221,16 +54377,156 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+Пусть поле 
+\begin_inset Formula $M$
+\end_inset
+
+ содержит все действительные числа и некоторый элемент 
+\begin_inset Formula $j$
+\end_inset
+
+, не являющийся действительным числом, причём любое выражение 
+\begin_inset Formula $j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+a_{n}$
+\end_inset
+
+ не равно нулю при любом натуральном 
+\begin_inset Formula $n$
+\end_inset
+
+ и любых действительных 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+, ...
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+ Это означает, что любая степень 
+\begin_inset Formula $j$
+\end_inset
+
+ не является действительным числом (в противном случае, если 
+\begin_inset Formula $j^{m}=b$
+\end_inset
+
+, где 
+\begin_inset Formula $b$
+\end_inset
+
+ — вещественное число, то получаем равенство 
+\begin_inset Formula $j^{m}-b=0$
+\end_inset
+
+.
+ Любое выражение вида 
+\begin_inset Formula $j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+a_{n}$
+\end_inset
+
+ также не является вещественным числом, иначе из 
+\begin_inset Formula $j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+a_{n}=b$
+\end_inset
+
+ следует 
+\begin_inset Formula $j^{n}+a_{1}j^{n-1}+a_{2}j^{n-2}+\dots+\left(a_{n}-b\right)=0$
+\end_inset
+
+.
+ Итак, в рассматриваемом случае, поле 
+\begin_inset Formula $M$
+\end_inset
+
+ должно содержать всевозможные многочлены с действительными коэффициентами
+ от 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Не смог полностью решить сам, упустил, что для каждого многочлена должен
+ быть обратный элемент по умножению
 \end_layout
 
 \end_inset
 
+ Для каждого такого многочлена должны существовать обратные элементы относительн
+о сложения и умножения.
+ Для операции сложения всё тривиально — нужно рассмотреть многочлен с противопол
+ожными коэффициентами.
+ Обратный элемент относительно умножения для многочлена 
+\begin_inset Formula $a_{0}j^{n}+a_{1}j^{n-1}+\dots+a_{n}$
+\end_inset
 
+ обозначим 
+\begin_inset Formula 
+\[
+\frac{1}{a_{0}j^{n}+a_{1}j^{n-1}+\dots+a_{n}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как поле замкнуто относительно умножения, то наряду с элементами 
+\begin_inset Formula $a_{0}j^{n}+a_{1}j^{n-1}+\dots+a_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{1}{b_{0}j^{m}+b_{1}j^{m-1}+\dots+b_{m}}$
+\end_inset
+
+, оно должно содержать их произведение.
+ Поэтому 
+\begin_inset Formula $M$
+\end_inset
+
+ будет содержать всевозможные дроби вида 
+\begin_inset Formula 
+\[
+\frac{a_{0}j^{n}+a_{1}j^{n-1}+\dots+a_{n}}{b_{0}j^{m}+b_{1}j^{m-1}+\dots+b_{m}}=\left(a_{0}j^{n}+a_{1}j^{n-1}+\dots+a_{n}\right)\cdot\frac{1}{b_{0}j^{m}+b_{1}j^{m-1}+\dots+b_{m}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, в случае 2) 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cases-of-mimimal-extensions-of-real-numbers-field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, минимальным расширением поля действительных чисел будет поле дробей, числитель
+ и знаменатель которых являются многочленами от 
+\begin_inset Formula $j$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Может быть ввести термин дробно-рациональная функция?
+\end_layout
+
+\end_inset
+
+ с обычными операциями сложения и умножения дробей.
 \end_layout
 
 \begin_layout Section
