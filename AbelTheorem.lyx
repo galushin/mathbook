@@ -55855,6 +55855,491 @@ status open
 
 \end_layout
 
+\begin_layout Section
+Тригонометрическая форма комплексных чисел
+\end_layout
+
+\begin_layout Standard
+Напомним, что углом между лучами 
+\begin_inset Formula $OA$
+\end_inset
+
+ и 
+\begin_inset Formula $OB$
+\end_inset
+
+ называется угол, на который надо повернуть луч 
+\begin_inset Formula $OA$
+\end_inset
+
+ вокруг точки 
+\begin_inset Formula $O$
+\end_inset
+
+ против часовой стрелки, чтобы получить луч 
+\begin_inset Formula $OB$
+\end_inset
+
+ (если вращение происходит по часовой стрелке, то углу приписывается знак
+ 
+\begin_inset Quotes rld
+\end_inset
+
+минус
+\begin_inset Quotes rrd
+\end_inset
+
+).
+ При этом угол определяется не однозначно, а с точностью до слагаемого 
+\begin_inset Formula $2k\pi$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — любое целое число.
+\end_layout
+
+\begin_layout Definition
+Пусть точка 
+\begin_inset Formula $O$
+\end_inset
+
+ — начало координат, и пусть вектор 
+\begin_inset Formula $OA$
+\end_inset
+
+ с координатами 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ соответствует комплексному числу 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:trigonometric-representation-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\emph on
+Аргументом 
+\emph default
+комплексного числа 
+\begin_inset Formula $z$
+\end_inset
+
+ (обозначается 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+) называется угол между положительным направлением оси 
+\begin_inset Formula $OX$
+\end_inset
+
+ и лучом 
+\begin_inset Formula $OA$
+\end_inset
+
+ (если 
+\begin_inset Formula $z=0$
+\end_inset
+
+, то 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+ не определён.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/trigonometric-representation-of-complex-number.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:trigonometric-representation-of-complex-number"
+
+\end_inset
+
+Тригонометрическое представление комплексного числа
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как для данного числа 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+ указанный угол определяется неоднозначно, то под записью 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+ мы будем понимать многозначную функцию, принимающую для каждого 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+ бесконечное множество значений, разность которых кратна 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Записать 
+\begin_inset Formula $\mathrm{Arg}z=\varphi$
+\end_inset
+
+ будет означать, что одно из значений аргумента равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $z=a+bi\neq0$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|z\right|=r$
+\end_inset
+
+.
+ Вектор 
+\begin_inset Formula $\overrightarrow{OA}$
+\end_inset
+
+ с координатами 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ соответствует комплексному числу 
+\begin_inset Formula $a+bi$
+\end_inset
+
+, и поэтому его длина равна 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Пусть кроме того, 
+\begin_inset Formula $\mathrm{Arg}z=\varphi$
+\end_inset
+
+.
+ Тогда, по определению тригонометрических функций 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:trigonometric-representation-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\cos\varphi=\frac{a}{r},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin\varphi=\frac{b}{r}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Отсюда 
+\begin_inset Formula 
+\[
+z=a+bi=r\cos\varphi+i\cdot r\cdot\sin\varphi=r\left(\cos\varphi+i\sin\varphi\right),
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $r=\left|z\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi=\mathrm{Arg}z$
+\end_inset
+
+, и мы получаем 
+\emph on
+тригонометрическое представление 
+\emph default
+комплексного числа 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Например, если 
+\begin_inset Formula $z=-1+i\sqrt{3}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|z\right|=\sqrt{1+3}=2$
+\end_inset
+
+ (по формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:absolute-value-of-complex-number-formula"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) и 
+\begin_inset Formula $\cos\varphi=-\frac{1}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\sin\varphi=\frac{\sqrt{3}}{2}$
+\end_inset
+
+.
+ Можно взять 
+\begin_inset Formula $\varphi=\frac{2\pi}{3}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $z=-1+i\sqrt{3}=2\left(\cos\frac{2\pi}{3}+i\sin\frac{2\pi}{3}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Представить в тригонометрической форме следующие комплексные числа: а) 
+\begin_inset Formula $1+i$
+\end_inset
+
+, б) 
+\begin_inset Formula $-\sqrt{3}-i$
+\end_inset
+
+, в) 
+\begin_inset Formula $3i$
+\end_inset
+
+, г) 
+\begin_inset Formula $-5$
+\end_inset
+
+, д) 
+\begin_inset Formula $1+2i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Если 
+\begin_inset Formula $z=1+i$
+\end_inset
+
+, то 
+\begin_inset Formula $r=\sqrt{1^{2}+1^{2}}=\sqrt{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\cos\varphi=\sin\varphi=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi=\frac{\pi}{4}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z=1+i=\sqrt{2}\left(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Если 
+\begin_inset Formula $z=-\sqrt{3}-i$
+\end_inset
+
+, то 
+\begin_inset Formula $r=\sqrt{\left(-\sqrt{3}\right)^{2}+\left(-1\right)^{2}}=\sqrt{3+1}=\sqrt{4}=2$
+\end_inset
+
+, 
+\begin_inset Formula $\cos\varphi=-\frac{\sqrt{3}}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sin\varphi=-\frac{1}{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi=\pi+\frac{\pi}{6}=\frac{7\pi}{6}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $-\sqrt{3}-i=2\left(\cos\frac{7\pi}{6}+i\sin\frac{7\pi}{6}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Если 
+\begin_inset Formula $z=3i$
+\end_inset
+
+, то 
+\begin_inset Formula $r=\sqrt{0^{2}+3^{3}}=3$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\cos\varphi=\frac{0}{3}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\sin\varphi=\frac{3}{3}=1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi=\frac{\pi}{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z=3i=3\left(\cos\frac{\pi}{2}+i\sin\frac{\pi}{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) Если 
+\begin_inset Formula $z=-5$
+\end_inset
+
+, то 
+\begin_inset Formula $r=\sqrt{\left(-5\right)^{2}+0^{2}}=5$
+\end_inset
+
+, 
+\begin_inset Formula $\cos\varphi=\frac{-5}{5}=-1$
+\end_inset
+
+ и 
+\begin_inset Formula $\sin\varphi=\frac{0}{5}=0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi=\pi$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z=-5=5\left(\cos\pi+i\sin\pi\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+д) Если 
+\begin_inset Formula $z=1+2i$
+\end_inset
+
+, то 
+\begin_inset Formula $r=\sqrt{1^{2}+2^{2}}=\sqrt{5}$
+\end_inset
+
+, 
+\begin_inset Formula $\cos\varphi=\frac{1}{\sqrt{5}}=\frac{\sqrt{5}}{5}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sin\varphi=\frac{2}{\sqrt{5}}=\frac{2\sqrt{5}}{5}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi=\arccos\frac{\sqrt{5}}{5}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z=1+2i=\sqrt{5}\left(\cos\arccos\frac{\sqrt{5}}{5}+\sin\arccos\frac{\sqrt{5}}{5}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать этот раздел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
