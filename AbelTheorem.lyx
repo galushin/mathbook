@@ -52627,6 +52627,12 @@ i & n\mod4=1\\
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-on-complex-square-root"
+
+\end_inset
+
 Найти все комплексные числа 
 \begin_inset Formula $z=x+yi$
 \end_inset
@@ -56328,6 +56334,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:complex-multiplication-and-division-trigonometric"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $z_{1}=r_{1}\left(\cos\varphi_{1}+i\sin\varphi_{1}\right)$
 \end_inset
@@ -56352,7 +56364,7 @@ z_{1}\cdot z_{2}=r_{1}r_{2}\left(\cos\left(\varphi_{1}+\varphi_{2}\right)+i\sin\
 , то 
 \begin_inset Formula 
 \[
-\frac{z_{1}}{z_{2}}=\frac{r_{1}}{r_{2}}\left(\cos\left(\varphi_{1}+\varphi_{2}\right)-i\sin\left(\varphi_{1}+\varphi_{2}\right)\right).
+\frac{z_{1}}{z_{2}}=\frac{r_{1}}{r_{2}}\left(\cos\left(\varphi_{1}-\varphi_{2}\right)+i\sin\left(\varphi_{1}-\varphi_{2}\right)\right).
 \]
 
 \end_inset
@@ -56361,12 +56373,171 @@ z_{1}\cdot z_{2}=r_{1}r_{2}\left(\cos\left(\varphi_{1}+\varphi_{2}\right)+i\sin\
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+Умножим 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ на 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ по правилу умножения комплексных чисел в алгебраической форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-product-algebraic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+z_{1}\cdot z_{2}=r_{1}r_{2}\left[\left(\cos\varphi_{1}\cos\varphi_{2}-\sin\varphi_{1}\sin\varphi_{2}\right)+i\left(\cos\varphi_{1}\sin\varphi_{2}+\sin\varphi_{1}\cos\varphi_{2}\right)\right],
+\]
+
+\end_inset
+
+ тогда, по известным тригонометрическим формулам 
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Доказать этот факт? Раздел про тригонометрию?
 \end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+z_{1}\cdot z_{2}=r_{1}r_{2}\left(\cos\left(\varphi_{1}+\varphi_{2}\right)+i\sin\left(\varphi_{1}+\varphi_{2}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь выражение 
+\begin_inset Formula $\frac{z_{1}}{z_{2}}$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{2}\neq0$
+\end_inset
+
+.
+ Начнём с частного случая, когда 
+\begin_inset Formula $z_{2}=r_{2}$
+\end_inset
+
+ — вещественное число.
+ Тогда, по формуле частного 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-division"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\frac{z_{1}}{r_{2}}=\frac{r_{1}}{r_{2}}\left(\cos\varphi_{1}+i\sin\varphi_{1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Умножим числитель и знаменатель на комплексно сопряжённое
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:complex-conjugate"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ к 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{z_{1}}{z_{2}}=\frac{z_{1}\bar{z}_{2}}{z_{2}\bar{z}_{2}}=\frac{z_{1}\bar{z}_{2}}{\left|z_{2}\right|^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Во-первых, заметим, что 
+\begin_inset Formula $\left|z_{2}\right|^{2}=r_{2}^{2}\neq0$
+\end_inset
+
+.
+ Далее, по определению комплексно сопряжённого числа.
+\begin_inset Formula 
+\[
+\bar{z}_{2}=r_{2}\left(\cos\varphi_{2}-i\sin\varphi_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как косинус — чётная функция, а синус — нечётная, то мы можем написать
+\begin_inset Formula 
+\[
+\bar{z}_{2}=r_{2}\left(\cos\left(-\varphi_{2}\right)+i\sin\left(-\varphi_{2}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользуемся теперь правилом умножения в тригонометрической форме, полученной
+ в этой задаче выше: 
+\begin_inset Formula 
+\[
+z_{1}\bar{z}_{2}=r_{1}r_{2}\left(\cos\left(\varphi_{1}-\varphi_{2}\right)+i\sin\left(\varphi_{1}-\varphi_{2}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Окончательную формулу получим, выполнив деление комплексного числа 
+\begin_inset Formula $z_{1}\bar{z}_{2}$
+\end_inset
+
+ на вещественное 
+\begin_inset Formula $\left|z_{2}\right|^{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{z_{1}}{z_{2}}=\frac{z_{1}\bar{z}_{2}}{\left|z_{2}\right|^{2}}=\frac{r_{1}}{r_{2}}\left(\cos\left(\varphi_{1}-\varphi_{2}\right)+i\sin\left(\varphi_{1}-\varphi_{2}\right)\right).
+\]
 
 \end_inset
 
@@ -56379,6 +56550,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:complex-power-trigonometric"
+
+\end_inset
+
 Доказать 
 \emph on
 формулу Муавра
@@ -56409,12 +56586,87 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+Доказательство проведём по индукции.
+\end_layout
+
+\begin_layout Solution
+Для 
+\begin_inset Formula $n=1$
+\end_inset
+
+ утверждение тривиально: 
+\begin_inset Formula $\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{1}=r^{1}\left(\cos\left(1\cdot\varphi\right)+i\sin\left(1\cdot\varphi\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь мы доказали, что 
+\begin_inset Formula $\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n}=r^{n}\left(\cos n\varphi+i\sin n\varphi\right)$
+\end_inset
+
+.
+ Вычислим 
+\begin_inset Formula $\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n+1}$
+\end_inset
+
+.
+ По определению степени 
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Возможно, здесь нужна ссылка
 \end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n+1}=\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n}\cdot\left[r\left(\cos\varphi+i\sin\varphi\right)\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По предположению индукции 
+\begin_inset Formula $\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n}=r^{n}\left(\cos n\varphi+i\sin n\varphi\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n+1}=r^{n}\left(\cos n\varphi+i\sin n\varphi\right)\cdot\left[r\left(\cos\varphi+i\sin\varphi\right)\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользуемся теперь формулой умножения комплексных чисел в тригонометрической
+ форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n+1}=r^{n+1}\left(\cos\left(n\varphi+\varphi\right)+i\sin\left(n\varphi+\varphi\right)\right)=\\
+=r^{n+1}\left(\cos\left[\left(n+1\right)\varphi\right]+i\sin\left[\left(n+1\right)\varphi\right]\right).
+\end{multline*}
 
 \end_inset
 
@@ -56430,12 +56682,83 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Обозначим 
+\begin_inset Formula $z=\frac{1-i\sqrt{3}}{2}=\frac{1}{2}-i\frac{\sqrt{3}}{2}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+.
+ Нам необходимо вычислить 
+\begin_inset Formula $z^{100}$
+\end_inset
+
+.
+ Запишем 
+\begin_inset Formula $z$
+\end_inset
+
+ в тригонометрической форме: 
+\begin_inset Formula $\left|z\right|=\sqrt{\frac{1}{4}+\frac{3}{4}}=\sqrt{1}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\cos\varphi=\frac{1}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sin\varphi=-\frac{\sqrt{3}}{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi=-\frac{\pi}{3}=2\pi-\frac{\pi}{3}=\frac{5\pi}{3}$
+\end_inset
+
+.
+ Итак 
+\begin_inset Formula $z=1\cdot\left(\cos\frac{5\pi}{3}+\sin\frac{5\pi}{3}\right)$
+\end_inset
+
+.
+ По формуле Муавра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-power-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z^{100}=1^{100}\left(\cos\frac{500\pi}{3}+\sin\frac{500\pi}{3}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\frac{500}{3}=\frac{498+2}{3}=166+\frac{2}{3}$
+\end_inset
+
+.
+ Так как аргумент определён с точностью до слагаемого 
+\begin_inset Formula $2\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — произвольное целое число, то вместо 
+\begin_inset Formula $\frac{500\pi}{3}=166\pi+\frac{2\pi}{3}=2\pi\cdot83+\frac{2\pi}{3}$
+\end_inset
+
+ в качестве аргумента можно взять 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\frac{\left(1-i\sqrt{3}\right)^{100}}{2^{100}}=\cos\frac{2\pi}{3}+i\sin\frac{2\pi}{3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}.
+\]
 
 \end_inset
 
@@ -56443,6 +56766,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:complex-root-n"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $z=r\left(\cos\varphi+i\sin\varphi\right)$
 \end_inset
@@ -56468,16 +56797,209 @@ w^{n}=z.\label{eq:root-equation}
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Пусть 
+\begin_inset Formula $w=r_{0}\left(\cos\varphi_{0}+i\sin\varphi_{0}\right)$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+, тогда, по формуле Муавра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-power-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+w^{n}=r_{0}^{n}\left(\cos n\varphi_{0}+\sin n\varphi_{0}\right)=r\left(\cos\varphi+i\sin\varphi\right).
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Приравнивая модули комплексных чисел слева и справа, получаем 
+\begin_inset Formula $r_{0}=\sqrt[n]{r}$
+\end_inset
+
+, где берётся арифметическое (вещественное положительное) значение корня
+ (так как 
+\begin_inset Formula $r>0$
+\end_inset
+
+ — вещественное число, то этот корень существует).
+\end_layout
+
+\begin_layout Solution
+С аргументом ситуация является более сложной, так как аргумент определён
+ с точностью до слагаемого 
+\begin_inset Formula $2\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — произвольное целое число, то есть равенство аргументов записывается следующим
+ образом 
+\begin_inset Formula $n\varphi_{0}=\varphi+2\pi k$
+\end_inset
+
+, откуда 
+\begin_inset Formula 
+\[
+\varphi_{0}=\frac{\varphi}{n}+\frac{2\pi k}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Теперь нужно указать, какие значения 
+\begin_inset Formula $k$
+\end_inset
+
+ дают неэквивалентные значения 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+, а какие — эквивалентные.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь есть красивая скрытая аналогия с факторгруппами
+\end_layout
+
+\end_inset
+
+Рассмотрим разность двух 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+, соответствующих двум разным значениям 
+\begin_inset Formula $k$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\frac{\varphi}{n}+\frac{2\pi k_{2}}{n}\right)-\left(\frac{\varphi}{n}+\frac{2\pi k_{1}}{n}\right)=\frac{2\pi\left(k_{2}-k_{1}\right)}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, два аргумента эквивалентны, когда разность порождающих их
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ кратна 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Для каждого 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ существует 
+\begin_inset Formula $n-1$
+\end_inset
+
+ целых 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+ таких, что 
+\begin_inset Formula $k_{2}-k_{1}$
+\end_inset
+
+ не делятся на 
+\begin_inset Formula $n$
+\end_inset
+
+, а именно: 
+\begin_inset Formula $k_{1}+1$
+\end_inset
+
+, 
+\begin_inset Formula $k_{1}+2$
+\end_inset
+
+, ..., 
+\begin_inset Formula $k_{1}+\left(n-1\right)$
+\end_inset
+
+.
+ Вместе с 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ получаем 
+\begin_inset Formula $n$
+\end_inset
+
+ значений 
+\begin_inset Formula $k$
+\end_inset
+
+, дающих неэквивалентные значения аргумента.
+ Так как без ограничения общности можно взять 
+\begin_inset Formula $k_{1}=0$
+\end_inset
+
+, то
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi_{0}=\frac{\varphi}{n}+\frac{2\pi}{n}k,\thinspace k=0,1,\dots,n-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, корнями степени 
+\begin_inset Formula $n$
+\end_inset
+
+ из числа 
+\begin_inset Formula $r\left(\cos\varphi+i\sin\varphi\right)$
+\end_inset
+
+ являются числа 
+\begin_inset Formula 
+\[
+\sqrt[n]{r}\left(\cos\left(\frac{\varphi+2\pi k}{n}\right)+i\sin\left(\frac{\varphi+2\pi k}{n}\right)\right),
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $k=0,1,\dots,n-1$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Definition
@@ -56534,7 +57056,7 @@ noprefix "false"
 \end_inset
 
 в) 
-\begin_inset Formula $\sqrt[4]{\cos100\text{\textdegree\ +i\ensuremath{\sin100\text{\textdegree}}}}$
+\begin_inset Formula $\sqrt[4]{\cos100\text{\textdegree}+i\sin100\text{\textdegree}}$
 \end_inset
 
 , г) 
@@ -56545,16 +57067,135 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Каждое подкоренное выражение запишем в тригонометрической форме, а затем
+ воспользуемся результатом задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Solution
+а) 
+\begin_inset Formula $-1=1\cdot\left(\cos\pi+i\sin\pi\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\sqrt{-1}$
+\end_inset
+
+ включает 
+\begin_inset Formula $1\cdot\left(\cos\frac{\pi}{2}+i\sin\frac{\pi}{2}\right)=i$
+\end_inset
+
+ и 
+\begin_inset Formula $1\cdot\left(\cos\frac{3\pi}{2}+i\sin\frac{3\pi}{2}\right)=-i$
+\end_inset
+
+, что соответствует результату, полученному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-on-complex-square-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $8=8\cdot\left(\cos0+i\sin0\right)$
+\end_inset
+
+.
+ Арифметическое значение 
+\begin_inset Formula $\sqrt{8}$
+\end_inset
+
+ равно 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Значения аргумента 
+\begin_inset Formula $\sqrt{8}$
+\end_inset
+
+ в поле комплексных чисел есть 
+\begin_inset Formula $\frac{0}{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{0+2\pi}{3}=\frac{2\pi}{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{0+4\pi}{3}=\frac{4\pi}{3}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\sqrt{8}=\left\{ 2,2\left(-\frac{1}{2}+i\frac{\sqrt{3}}{2}\right),2\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) здесь подкоренное выражение уже дано в тригонометрической форме.
+ Поэтому 
+\begin_inset Formula $\sqrt[4]{\cos100\text{°}+i\sin100\text{°}}$
+\end_inset
+
+ имеет значения 
+\begin_inset Formula $\cos25\text{°}+i\sin25\text{°}$
+\end_inset
+
+, 
+\begin_inset Formula $\cos115\text{°}+i\sin115\text{°}$
+\end_inset
+
+, 
+\begin_inset Formula $\cos205\text{°}+i\sin205\text{°}$
+\end_inset
+
+ и 
+\begin_inset Formula $\cos295\text{°}+i\sin295\text{°}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) 
+\begin_inset Formula $1+i=\sqrt{2}\left(\frac{\sqrt{2}}{2}+i\frac{\sqrt{2}}{2}\right)=\sqrt{2}\left(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\sqrt[3]{1+i}$
+\end_inset
+
+ включает следующие значения 
+\begin_inset Formula $\sqrt[6]{2}\left(\cos\frac{\pi}{12}+i\sin\frac{\pi}{12}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\sqrt[6]{2}\left(\cos\frac{9\pi}{12}+i\sin\frac{9\pi}{12}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[6]{2}\left(\cos\frac{17\pi}{12}+i\sin\frac{17\pi}{12}\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -56598,16 +57239,65 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как 
+\begin_inset Formula $1=1\cdot\left(\cos0+i\sin0\right)$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, модуль любого из чисел, входящих в 
+\begin_inset Formula $\sqrt[n]{1}$
+\end_inset
 
+ равен 1, а возможные значения аргумента есть 
+\begin_inset Formula $\frac{2\pi k}{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $k=0,1,\dots,n-1$
+\end_inset
+
+.
+ То есть корни 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени из 
+\begin_inset Formula $1$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n}$
+\end_inset
+
+.
+ По формуле Муавра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-power-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n}=\left(\cos\frac{2\pi}{n}+i\sin\frac{2\pi}{n}\right)^{k}=\varepsilon_{n}^{k},
+\]
+
+\end_inset
+
+что и требовалось.
 \end_layout
 
 \begin_layout Remark
