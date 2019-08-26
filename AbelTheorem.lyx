@@ -54558,7 +54558,7 @@ status open
  
 \begin_inset CommandInset label
 LatexCommand label
-name "first-geometric-representation-of-complex-numbers"
+name "complex-numbers-as-poins-on-plane"
 
 \end_inset
 
@@ -55057,7 +55057,7 @@ name "fig:problem-219"
  комплексных чисел
 \begin_inset CommandInset label
 LatexCommand label
-name "second-geometric-representation-of-complex-numbers"
+name "complex-numbers-as-vectors-on-plane"
 
 \end_inset
 
@@ -55143,7 +55143,7 @@ noprefix "false"
  По второму геометрическому представлению комплексных чисел 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "second-geometric-representation-of-complex-numbers"
+reference "complex-numbers-as-vectors-on-plane"
 plural "false"
 caps "false"
 noprefix "false"
@@ -55243,7 +55243,7 @@ noprefix "false"
  в смысле второго геометрического представления комплексных чисел 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "second-geometric-representation-of-complex-numbers"
+reference "complex-numbers-as-vectors-on-plane"
 plural "false"
 caps "false"
 noprefix "false"
@@ -55383,7 +55383,7 @@ noprefix "false"
  Тогда, по второму геометрическому представлению комплексных чисел
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "second-geometric-representation-of-complex-numbers"
+reference "complex-numbers-as-vectors-on-plane"
 plural "false"
 caps "false"
 noprefix "false"
@@ -55908,6 +55908,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:argument-of-complex-number"
+
+\end_inset
+
 Пусть точка 
 \begin_inset Formula $O$
 \end_inset
@@ -57056,7 +57062,7 @@ noprefix "false"
 \end_inset
 
 в) 
-\begin_inset Formula $\sqrt[4]{\cos100\text{\textdegree}+i\sin100\text{\textdegree}}$
+\begin_inset Formula $\sqrt[4]{\cos100\text{°}+i\sin100\text{°}}$
 \end_inset
 
 , г) 
@@ -57346,12 +57352,44 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Запишем 
+\begin_inset Formula $z_{1}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ в тригонометрической форме: 
+\begin_inset Formula $z_{1}=r_{1}\left(\cos\varphi_{1}+i\sin\varphi_{1}\right)$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, значения корня степени 
+\begin_inset Formula $n$
+\end_inset
+
+ имеют одинаковое значение модуля, а их аргументы отличаются на величину,
+ кратную 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+.
+ Поэтому, значениями 
+\begin_inset Formula $\sqrt[n]{z_{0}}$
+\end_inset
+
+ будут 
+\begin_inset Formula 
+\[
+r_{1}\left(\cos\left(\varphi_{1}+\frac{2\pi k}{n}\right)+\sin\left(\varphi_{1}+\frac{2\pi k}{n}\right)\right),k=0,1,\dots n-1.
+\]
 
 \end_inset
 
@@ -57418,19 +57456,151 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Пусть 
+\begin_inset Formula $z=a+bi$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+, тогда числу 
+\begin_inset Formula $z$
+\end_inset
+
+, по первому геометрическому представлению комплексных чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "complex-numbers-as-poins-on-plane"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, соответствует точка 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
 
+, по определению модуля комплексного числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:absolute-value-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left|z\right|=\sqrt{a^{2}+b^{2}}$
+\end_inset
+
+ — расстояние от начала координат до точки 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, изображающей число 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Определение аргумента комплексного числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:argument-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ дано для случая, когда комплексное число интерпретируется как вектор на
+ плоскости.
+ Но так как каждому вектору можно взаимно однозначно поставить в соответствие
+ точку плоскости с теми же координатами, то получаем, что 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+ — это угол между положительным направлением оси 
+\begin_inset Formula $0x$
+\end_inset
+
+ и отрезком, соединяющим начало координат и точку 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $z_{1}=a_{1}+ib_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}=a_{2}+ib_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|z_{1}-z_{2}\right|=\sqrt{\left(a_{1}-a_{2}\right)^{2}+\left(b_{1}-b_{2}\right)^{2}}$
+\end_inset
+
+, что соответствует расстоянию между точками 
+\begin_inset Formula $\left(a_{1},b_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(a_{2},b_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, при делении комплексных чисел аргументы вычитаются, поэтому 
+\begin_inset Formula $\mathrm{Arg}\frac{z_{1}}{z_{2}}$
+\end_inset
+
+ — угол между отрезками, 
+\begin_inset Formula $OM_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $OM_{2}$
+\end_inset
+
+, где 
+\begin_inset Formula $M_{1}=\left(a_{1},b_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(a_{2},b_{2}\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $O$
+\end_inset
+
+ — начало координат.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:geometric-interpretations-of-some-complex-equations"
+
+\end_inset
+
 Найти геометрическое место точек 
 \begin_inset Formula $z$
 \end_inset
@@ -57451,7 +57621,20 @@ status open
 \begin_inset Formula $r$
 \end_inset
 
- — фиксированное действительное число): а) 
+ — фиксированное действительное число 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — произвольный угол?
+\end_layout
+
+\end_inset
+
+): а) 
 \begin_inset Formula $\left|z\right|=1$
 \end_inset
 
@@ -57487,16 +57670,173 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+а) 
+\begin_inset Formula $\left|z\right|=1$
 \end_inset
 
+ описывает точки, находящиеся на расстоянии 
+\begin_inset Formula $1$
+\end_inset
 
+ от начала координат, то есть окружность с центром в начале координат и
+ радиусом 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $\left|z\right|=r$
+\end_inset
+
+ описывает точки, находящиеся на расстоянии 
+\begin_inset Formula $r$
+\end_inset
+
+ от начала координат, то есть окружность с центром в начале координат и
+ радиусом 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) 
+\begin_inset Formula $\left|z-z_{0}\right|=r$
+\end_inset
+
+ описывает точки, находящиеся на расстоянии 
+\begin_inset Formula $r$
+\end_inset
+
+ от точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то есть окружность с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и радиусом 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) 
+\begin_inset Formula $\left|z-z_{0}\right|\le r$
+\end_inset
+
+ описывает точки, находящиеся на расстоянии не более 
+\begin_inset Formula $r$
+\end_inset
+
+ от точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то есть круг с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и радиусом 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+д) 
+\begin_inset Formula $\left|z-z_{1}\right|=\left|z-z_{2}\right|$
+\end_inset
+
+ описывает комплексные числа, находящиеся на равном расстоянии от точек
+ 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — это перпендикуляр, проходящий через середину отрезка, соединяющего точки
+ 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+е) 
+\begin_inset Formula $\mathrm{Arg}z=\pi$
+\end_inset
+
+ описывает комплексные числа с произвольным модулем и аргументом, равным
+ 
+\begin_inset Formula $\pi$
+\end_inset
+
+, то 
+\begin_inset Formula $z=\left|z\right|\left(\cos\pi+i\sin\pi\right)=-\left|z\right|$
+\end_inset
+
+ — произвольное отрицательное вещественное число.
+ Таким образом, 
+\begin_inset Formula $\mathrm{Arg}z=\pi$
+\end_inset
+
+ — отрицательная часть вещественной прямой.
+\end_layout
+
+\begin_layout Solution
+ж) 
+\begin_inset Formula $\mathrm{Arg}z=\frac{9\pi}{4}$
+\end_inset
+
+ — комплексные числа с произвольным модулем и фиксированным аргументом 
+\begin_inset Formula $\frac{9\pi}{4}$
+\end_inset
+
+, то есть луч, выходящий из начала координат и образующий угол 
+\begin_inset Formula $\frac{9\pi}{4}$
+\end_inset
+
+ с положительным направлением оси 
+\begin_inset Formula $0x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+з) 
+\begin_inset Formula $\mathrm{Arg}z=\varphi$
+\end_inset
+
+ — комплексные числа с произвольным модулем и фиксированным аргументом 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, то есть луч, выходящий из начала координат и образующий угол 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ с положительным направлением оси 
+\begin_inset Formula $0x$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -57512,16 +57852,83 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Воспользуемся геометрическими интерпретациями, найденными в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretations-of-some-complex-equations"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+, значения 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ имеют модуль 
+\begin_inset Formula $\sqrt[n]{\left|z\right|}$
+\end_inset
+
+ (используется арифметическое значение корня), то есть располагаются на
+ окружности радиуса 
+\begin_inset Formula $\sqrt[n]{\left|z\right|}$
+\end_inset
+
+.
+ Там же было показано, что аргумент 
+\begin_inset Quotes rld
+\end_inset
+
+соседних
+\begin_inset Quotes rrd
+\end_inset
+
+ значений 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ отличается на 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+, то есть значения 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ располагаются в вершинах правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника, вписанного в окружность радиуса 
+\begin_inset Formula $\sqrt[n]{\left|z\right|}$
+\end_inset
+
+ с центром в начале координат (для случая 
+\begin_inset Formula $n=2$
+\end_inset
+
+ многоугольник вырождается в диаметр окружности).
+ Радиус-вектор из вершин данного многоугольника образует угол 
+\begin_inset Formula $\frac{\mathrm{Arg}z}{n}$
+\end_inset
+
+ с положительным направлением оси 
+\begin_inset Formula $0x$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
