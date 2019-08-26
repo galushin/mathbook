@@ -58381,12 +58381,75 @@ status open
 .
 \end_layout
 
-\begin_layout Example
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — фиксированное комплексное (или, в частности, действительное число).
+ Доказать, что функция комплексного (или действительного) аргумента 
+\begin_inset Formula $f\left(z\right)=a$
+\end_inset
+
+ непрерывна при всех значениях аргумента.
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Добавить задачи 236-238
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что функция комплексного аргумента 
+\begin_inset Formula $f\left(z\right)=z$
+\end_inset
+
+ и функция действительного аргумента 
+\begin_inset Formula $f\left(x\right)=x$
+\end_inset
+
+ непрерывны при всех значениях аргумента.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что функция комплексного аргумента 
+\begin_inset Formula $f\left(z\right)=z^{2}$
+\end_inset
+
+ непрерывна при всех значениях аргумента 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
 \end_layout
 
 \end_inset
@@ -58457,6 +58520,457 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Problem
+Пусть функции комплексного или действительного аргумента 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ непрерывны в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Доказать, что в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ непрерывны функции: а) 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+, б) 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)-g\left(z\right)$
+\end_inset
+
+, в) 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)\cdot g\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из результата задачи 239в
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ получаем, в частности, что если функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ — натуральное число, то функция 
+\begin_inset Formula $\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+ также непрерывна в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть функции комплексного или действительного аргумента 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ непрерывны в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)\neq0$
+\end_inset
+
+.
+ Доказать, что в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ непрерывны функции 
+\begin_inset Formula $\frac{1}{g\left(z\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{f\left(z\right)}{g\left(z\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — две функции комплексного или действительного аргумента.
+ Функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ называется 
+\emph on
+суперпозицей
+\emph default
+ функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+, если в каждой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $h\left(z_{0}\right)=f\left(g\left(z_{0}\right)\right)$
+\end_inset
+
+.
+ При этом, если 
+\begin_inset Formula $g\left(z_{0}\right)$
+\end_inset
+
+ не определено или функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $g\left(z_{0}\right)$
+\end_inset
+
+ не определена, то и 
+\begin_inset Formula $h\left(z_{0}\right)$
+\end_inset
+
+ не определено.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — функции комплексного или действительного аргумента.
+ Пусть 
+\begin_inset Formula $g\left(z_{0}\right)=z_{1}$
+\end_inset
+
+ и пусть функция 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, а функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ доказать, что функция 
+\begin_inset Formula $h\left(z\right)=f\left(g\left(z\right)\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из результатов задач 239-241
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки
+\end_layout
+
+\end_inset
+
+ вытекает, в частности, что если из нескольких функций комплексного (или
+ действительного) аргумента, непрерывных при всех значениях аргумента, построено
+ некоторое выражение с помощью операций сложения, вычитания, умножения,
+ деления, возведения в натуральную степень и суперпозиции, то полученное
+ выражение будет задавать функцию, непрерывную всюду, где ни один из знаменателе
+й не обращался в 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Например, учитывая результаты задач 236
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ и 237
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, получаем, что функции 
+\begin_inset Formula $f\left(z\right)=z^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(z\right)=az^{n}$
+\end_inset
+
+ и вообще 
+\begin_inset Formula $f\left(z\right)=a_{0}z^{n}+a_{1}z^{n-1}+\dots+a_{n}$
+\end_inset
+
+ является непрерывными функциями аргумента 
+\begin_inset Formula $z$
+\end_inset
+
+ при любых комплексных числах 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что функции действительного аргумента 
+\begin_inset Formula $f\left(x\right)=\sin x$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x\right)=\cos x$
+\end_inset
+
+ непрерывны при всех значениях аргумента 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Рассмотрим при всех действительных значениях 
+\begin_inset Formula $x\ge0$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+, похоже, здесь опечатка
+\end_layout
+
+\end_inset
+
+ функцию 
+\begin_inset Formula $f\left(x\right)=\sqrt[n]{x}$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — некоторое натуральное число и 
+\begin_inset Formula $\sqrt[n]{x}$
+\end_inset
+
+ берётся неотрицательным.
+ Доказать, что эта функция непрерывна при всех 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При изучении непрерывности приходится сталкиваться с некоторыми утверждениями,
+ которые сталкиваться с некоторыми утверждениями, которые интуитивно кажутся
+ совершенно очевидными, но строго доказательство которых сопряжено с большими
+ техническими трудностями и требует более строго, чем это делается в школе,
+ определения действительных чисел, а также изучения основ теории множеств
+ и топологии.
+ Примером такого утверждения может служить следующее утверждение: если функция
+ действительного аргумента 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ непрерывна на некотором отрезке и принимает на этом отрезке только целочисленны
+е значения, то она принимает на всём отрезке одно и то же значение.
+ Действительно, интуитивно кажется очевидным, что при движении точки 
+\begin_inset Formula $x$
+\end_inset
+
+ по отрезку значение функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ должно изменяться непрерывно и не может перескочить из одного целочисленного
+ значения в другое.
+ Однако доказать это утверждение строго довольно тяжело.
+\end_layout
+
+\begin_layout Standard
+В дальнейшем изложении мы будем больше ориентироваться на интуицию читателя
+ и примем несколько 
+\begin_inset Quotes rld
+\end_inset
+
+интуитивно ясных
+\begin_inset Quotes rrd
+\end_inset
+
+ утверждений, связанных с непрерывностью, без доказательства.
+ В частности, без доказательства мы примем утверждение, сформулированное
+ выше в качестве примера.
+ Строго доказательство этого утверждения в популярном изложении можно найти,
+ например, в книге Стинрод Н.
+ и Чинн У., Первые понятия топологии, 
+\begin_inset Quotes rld
+\end_inset
+
+Мир
+\begin_inset Quotes rrd
+\end_inset
+
+, 1967.
 \end_layout
 
 \begin_layout Standard
