@@ -57205,7 +57205,7 @@ noprefix "false"
 \end_inset
 
 , поэтому 
-\begin_inset Formula $\sqrt{8}=\left\{ 2,2\left(-\frac{1}{2}+i\frac{\sqrt{3}}{2}\right),2\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)\right\} =\text{\left\{ 2,-1+i\sqrt{3},-1-i\sqrt{3}\right\} }$
+\begin_inset Formula $\sqrt{8}=\left\{ 2,2\left(-\frac{1}{2}+i\frac{\sqrt{3}}{2}\right),2\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)\right\} =\text{\left\{  2,-1+i\sqrt{3},-1-i\sqrt{3}\right\}  }$
 \end_inset
 
 , где 
@@ -58135,6 +58135,325 @@ noprefix "false"
 
  с положительным направлением оси 
 \begin_inset Formula $0x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Непрерывность
+\end_layout
+
+\begin_layout Standard
+В дальнейшем важную роль для нас будет играть понятие непрерывности и, в
+ частности, понятие непрерывной кривой.
+ Если читатель не знает строгого определения этих понятий, то он по-видимому,
+ все же интуитивно понимает, что такое непрерывная кривая, а также непрерывная
+ функция действительного переменного (на интуитивном уровне можно сказать,
+ что это такая функция, у которой график — непрерывная кривая).
+ Однако если функция действительного переменного является достаточно сложной,
+ например, 
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{x^{3}-2x}{x^{2}-\sin x+1},
+\]
+
+\end_inset
+
+то установить, непрерывна ли она, используя лишь интуитивное понятие непрерывнос
+ти, довольно тяжело.
+ Поэтому мы дадим строгое определение непрерывности и с помощью него докажем
+ несколько основных исходных утверждений о непрерывных функциях.
+ При этом мы дадим определение непрерывности как для функций действительного
+ аргумента, так и для функций комплексного аргумента.
+\end_layout
+
+\begin_layout Standard
+Если мы рассмотрим график некоторой функции действительного аргумента, то
+ этот график в некоторых точках может быть непрерывным, а в некоторых точках
+ иметь разрывы.
+ Поэтому естественно ввести сначала определение не вообще непрерывности
+ функции, а непрерывности функции в данной точке.
+\end_layout
+
+\begin_layout Standard
+Если мы попытаемся более точно определить наше интуитивное представление
+ о непрерывности функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ в данной точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, то получим, что непрерывность означает следующее: при малых изменениях
+ аргумента вблизи точки 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ функция тоже изменяется мало относительно значения 
+\begin_inset Formula $f\left(x_{0}\right)$
+\end_inset
+
+.
+ Причём можно добиться сколь угодно малого изменения функции, выбирая достаточно
+ малый интервал изменения аргумента.
+ Более строго это можно сформулировать следующим образом.
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ — функция действительного или комплексного аргумента 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Говорят, что функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ 
+\emph on
+непрерывна в точке
+\emph default
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, если для любого действительного числа 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ можно подобрать такое действительное число 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ (зависящее от 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и от 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+), что для всех чисел, удовлетворяющих условию 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+, будет выполняться неравенство 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Геометрический смысл неравенств 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|<\varepsilon$
+\end_inset
+
+ разъясняется в задачах 233в 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ и 234г 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Докажем, что функция комплексного аргумента 
+\begin_inset Formula $f\left(z\right)=2z$
+\end_inset
+
+ непрерывна в любой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Пусть заданы точка 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и произвольное действительное число 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ Нужно подобрать такое действительное число 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, чтобы для всех чисел 
+\begin_inset Formula $z$
+\end_inset
+
+, удовлетворяющих условию 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+, выполнялось неравенство 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|=\left|2z-2z_{0}\right|<\varepsilon$
+\end_inset
+
+.
+ Нетрудно видеть, что можно выбрать 
+\begin_inset Formula $\delta=\frac{\varepsilon}{2}$
+\end_inset
+
+ (независимо от точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+).
+ Действительно, тогда из условия 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta=\frac{\varepsilon}{2}$
+\end_inset
+
+ будет вытекать 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на задачу 226
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|2z-2z_{0}\right|=\left|2\left(z-z_{0}\right)\right|=\left|2\right|\cdot\left|z-z_{0}\right|<2\delta=\varepsilon,
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $\left|2z-2z_{0}\right|<\varepsilon$
+\end_inset
+
+.
+ Таким образом, функция 
+\begin_inset Formula $f\left(z\right)=2z$
+\end_inset
+
+ непрерывна в любой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ В частности, она непрерывна при всех действительных значениях аргумента
+ 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Поэтому, если мы ограничимся только действительными значениями аргумента,
+ то получим, что функция действительного аргумента 
+\begin_inset Formula $f\left(x\right)=2x$
+\end_inset
+
+ непрерывна при всех действительных значениях 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить задачи 236-238
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — две функции комплексного (или действительного) аргумента.
+ Функция комплексного (или действительного ) аргумента 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ называется 
+\emph on
+суммой 
+\emph default
+функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+, если в каждой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $h\left(z_{0}\right)=f\left(z_{0}\right)+g\left(z_{0}\right)$
+\end_inset
+
+.
+ При этом, если значение 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $g\left(z_{0}\right)$
+\end_inset
+
+ не определено, то значение 
+\begin_inset Formula $h\left(z_{0}\right)$
+\end_inset
+
+ также не определено.
+ Аналогично определяются 
+\emph on
+разность, произведение и частное
+\emph default
+ двух функций 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Может быть написать более подробно?
+\end_layout
+
 \end_inset
 
 .
