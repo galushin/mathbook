@@ -56337,6 +56337,21 @@ noprefix "false"
 \end_inset
 
 .
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Можно было выразить 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ как арктангенс
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
@@ -56763,7 +56778,7 @@ noprefix "false"
 , поэтому 
 \begin_inset Formula 
 \[
-\frac{\left(1-i\sqrt{3}\right)^{100}}{2^{100}}=\cos\frac{2\pi}{3}+i\sin\frac{2\pi}{3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}.
+\frac{\left(1-i\sqrt{3}\right)^{100}}{2^{100}}=\cos\frac{2\pi}{3}+i\sin\frac{2\pi}{3}=-\frac{1}{2}+i\frac{\sqrt{3}}{2}.
 \]
 
 \end_inset
@@ -56796,6 +56811,23 @@ name "prob:complex-root-n"
 \begin{equation}
 w^{n}=z.\label{eq:root-equation}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не рассмотрел отдельно случай 
+\begin_inset Formula $z=0$
+\end_inset
+
+, забыл, что аргумент определён не всегда
+\end_layout
 
 \end_inset
 
@@ -56842,8 +56874,32 @@ w^{n}=r_{0}^{n}\left(\cos n\varphi_{0}+\sin n\varphi_{0}\right)=r\left(\cos\varp
 \end_layout
 
 \begin_layout Solution
-С аргументом ситуация является более сложной, так как аргумент определён
- с точностью до слагаемого 
+Если 
+\begin_inset Formula $z=0$
+\end_inset
+
+, то 
+\begin_inset Formula $r=0$
+\end_inset
+
+ и, следовательно, 
+\begin_inset Formula $r_{0}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $w=0$
+\end_inset
+
+.
+ Далее будем считать, что 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как аргумент определён с точностью до слагаемого 
 \begin_inset Formula $2\pi k$
 \end_inset
 
@@ -57149,10 +57205,14 @@ noprefix "false"
 \end_inset
 
 , поэтому 
-\begin_inset Formula $\sqrt{8}=\left\{ 2,2\left(-\frac{1}{2}+i\frac{\sqrt{3}}{2}\right),2\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)\right\} $
+\begin_inset Formula $\sqrt{8}=\left\{ 2,2\left(-\frac{1}{2}+i\frac{\sqrt{3}}{2}\right),2\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)\right\} =\text{\left\{ 2,-1+i\sqrt{3},-1-i\sqrt{3}\right\} }$
 \end_inset
 
-.
+, где 
+\begin_inset Formula $\sqrt{3}$
+\end_inset
+
+ — арифметическое значение корня.
 \end_layout
 
 \begin_layout Solution
@@ -57201,10 +57261,20 @@ noprefix "false"
 \begin_inset Formula $\sqrt[6]{2}\left(\cos\frac{17\pi}{12}+i\sin\frac{17\pi}{12}\right)$
 \end_inset
 
-.
+, где 
+\begin_inset Formula $\sqrt[6]{2}$
+\end_inset
+
+ — арифметическое значение корня.
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "roots-n-from-1"
+
+\end_inset
+
 Для дальнейшего удобно ввести следующее обозначение: 
 \begin_inset Formula 
 \[
@@ -57217,6 +57287,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:values-of-root-n-from-1"
+
+\end_inset
+
 Доказать, что все значения 
 \begin_inset Formula $\sqrt[n]{1}$
 \end_inset
@@ -57352,7 +57428,16 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-Запишем 
+Начнём с 
+\begin_inset Quotes rld
+\end_inset
+
+геометрического
+\begin_inset Quotes rrd
+\end_inset
+
+ решения.
+ Запишем 
 \begin_inset Formula $z_{1}$
 \end_inset
 
@@ -57429,6 +57514,112 @@ r_{1}\left(\cos\left(\varphi_{1}+\frac{2\pi k}{n}\right)+\sin\left(\varphi_{1}+\
 
 
 \begin_inset Quotes rrd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Я написал геометрическое решение, нужно ещё написать алгебраическое.
+ Возможно нужно прояснить формулировку задачи
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Получим теперь 
+\begin_inset Quotes rld
+\end_inset
+
+алгебраическое
+\begin_inset Quotes rrd
+\end_inset
+
+ решение.
+ Пусть 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — ещё какое-либо значение 
+\begin_inset Formula $\sqrt[n]{z_{0}}$
+\end_inset
+
+, тогда, по определению, 
+\begin_inset Formula $z_{2}^{n}=z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\frac{z_{2}}{z_{1}}\right)^{n}=1$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:values-of-root-n-from-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, значениями 
+\begin_inset Formula $\sqrt[n]{1}$
+\end_inset
+
+ являются 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}^{3}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $\varepsilon_{n}^{n-1}$
+\end_inset
+
+, поэтому они же будут возможными значениями 
+\begin_inset Formula $\frac{z_{2}}{z_{1}}$
+\end_inset
+
+, то есть все значения 
+\begin_inset Formula $\sqrt[n]{z_{0}}$
+\end_inset
+
+ равны 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{1}\varepsilon_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{1}\varepsilon_{n}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{1}\varepsilon_{n}^{3}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $z_{1}\varepsilon_{n}^{n-1}$
 \end_inset
 
 .
@@ -57748,7 +57939,7 @@ status open
 \begin_inset Formula $r$
 \end_inset
 
-.
+ (включая окружность).
 \end_layout
 
 \begin_layout Solution
@@ -57805,18 +57996,36 @@ status open
 \end_inset
 
  — комплексные числа с произвольным модулем и фиксированным аргументом 
-\begin_inset Formula $\frac{9\pi}{4}$
+\begin_inset Formula $\frac{9\pi}{4}=2\pi+\frac{\pi}{4}$
 \end_inset
 
 , то есть луч, выходящий из начала координат и образующий угол 
-\begin_inset Formula $\frac{9\pi}{4}$
+\begin_inset Formula $\frac{\pi}{4}$
 \end_inset
 
  с положительным направлением оси 
 \begin_inset Formula $0x$
 \end_inset
 
-.
+, иными словами — биссектриса первого координатного угла.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+не заметил, что углы 
+\begin_inset Formula $\frac{9\pi}{4}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{\pi}{4}$
+\end_inset
+
+ эквивалентны
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
