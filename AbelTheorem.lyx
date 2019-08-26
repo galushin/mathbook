@@ -52627,6 +52627,12 @@ i & n\mod4=1\\
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-on-complex-square-root"
+
+\end_inset
+
 Найти все комплексные числа 
 \begin_inset Formula $z=x+yi$
 \end_inset
@@ -54552,7 +54558,7 @@ status open
  
 \begin_inset CommandInset label
 LatexCommand label
-name "first-geometric-representation-of-complex-numbers"
+name "complex-numbers-as-poins-on-plane"
 
 \end_inset
 
@@ -55051,7 +55057,7 @@ name "fig:problem-219"
  комплексных чисел
 \begin_inset CommandInset label
 LatexCommand label
-name "second-geometric-representation-of-complex-numbers"
+name "complex-numbers-as-vectors-on-plane"
 
 \end_inset
 
@@ -55137,7 +55143,7 @@ noprefix "false"
  По второму геометрическому представлению комплексных чисел 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "second-geometric-representation-of-complex-numbers"
+reference "complex-numbers-as-vectors-on-plane"
 plural "false"
 caps "false"
 noprefix "false"
@@ -55237,7 +55243,7 @@ noprefix "false"
  в смысле второго геометрического представления комплексных чисел 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "second-geometric-representation-of-complex-numbers"
+reference "complex-numbers-as-vectors-on-plane"
 plural "false"
 caps "false"
 noprefix "false"
@@ -55377,7 +55383,7 @@ noprefix "false"
  Тогда, по второму геометрическому представлению комплексных чисел
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "second-geometric-representation-of-complex-numbers"
+reference "complex-numbers-as-vectors-on-plane"
 plural "false"
 caps "false"
 noprefix "false"
@@ -55853,6 +55859,2285 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Тригонометрическая форма комплексных чисел
+\end_layout
+
+\begin_layout Standard
+Напомним, что углом между лучами 
+\begin_inset Formula $OA$
+\end_inset
+
+ и 
+\begin_inset Formula $OB$
+\end_inset
+
+ называется угол, на который надо повернуть луч 
+\begin_inset Formula $OA$
+\end_inset
+
+ вокруг точки 
+\begin_inset Formula $O$
+\end_inset
+
+ против часовой стрелки, чтобы получить луч 
+\begin_inset Formula $OB$
+\end_inset
+
+ (если вращение происходит по часовой стрелке, то углу приписывается знак
+ 
+\begin_inset Quotes rld
+\end_inset
+
+минус
+\begin_inset Quotes rrd
+\end_inset
+
+).
+ При этом угол определяется не однозначно, а с точностью до слагаемого 
+\begin_inset Formula $2k\pi$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — любое целое число.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:argument-of-complex-number"
+
+\end_inset
+
+Пусть точка 
+\begin_inset Formula $O$
+\end_inset
+
+ — начало координат, и пусть вектор 
+\begin_inset Formula $OA$
+\end_inset
+
+ с координатами 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ соответствует комплексному числу 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:trigonometric-representation-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\emph on
+Аргументом 
+\emph default
+комплексного числа 
+\begin_inset Formula $z$
+\end_inset
+
+ (обозначается 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+) называется угол между положительным направлением оси 
+\begin_inset Formula $OX$
+\end_inset
+
+ и лучом 
+\begin_inset Formula $OA$
+\end_inset
+
+ (если 
+\begin_inset Formula $z=0$
+\end_inset
+
+, то 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+ не определён.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/trigonometric-representation-of-complex-number.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:trigonometric-representation-of-complex-number"
+
+\end_inset
+
+Тригонометрическое представление комплексного числа
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как для данного числа 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+ указанный угол определяется неоднозначно, то под записью 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+ мы будем понимать многозначную функцию, принимающую для каждого 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+ бесконечное множество значений, разность которых кратна 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Записать 
+\begin_inset Formula $\mathrm{Arg}z=\varphi$
+\end_inset
+
+ будет означать, что одно из значений аргумента равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $z=a+bi\neq0$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|z\right|=r$
+\end_inset
+
+.
+ Вектор 
+\begin_inset Formula $\overrightarrow{OA}$
+\end_inset
+
+ с координатами 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ соответствует комплексному числу 
+\begin_inset Formula $a+bi$
+\end_inset
+
+, и поэтому его длина равна 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Пусть кроме того, 
+\begin_inset Formula $\mathrm{Arg}z=\varphi$
+\end_inset
+
+.
+ Тогда, по определению тригонометрических функций 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:trigonometric-representation-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\cos\varphi=\frac{a}{r},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin\varphi=\frac{b}{r}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Отсюда 
+\begin_inset Formula 
+\[
+z=a+bi=r\cos\varphi+i\cdot r\cdot\sin\varphi=r\left(\cos\varphi+i\sin\varphi\right),
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $r=\left|z\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi=\mathrm{Arg}z$
+\end_inset
+
+, и мы получаем 
+\emph on
+тригонометрическое представление 
+\emph default
+комплексного числа 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Например, если 
+\begin_inset Formula $z=-1+i\sqrt{3}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|z\right|=\sqrt{1+3}=2$
+\end_inset
+
+ (по формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:absolute-value-of-complex-number-formula"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) и 
+\begin_inset Formula $\cos\varphi=-\frac{1}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\sin\varphi=\frac{\sqrt{3}}{2}$
+\end_inset
+
+.
+ Можно взять 
+\begin_inset Formula $\varphi=\frac{2\pi}{3}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $z=-1+i\sqrt{3}=2\left(\cos\frac{2\pi}{3}+i\sin\frac{2\pi}{3}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Представить в тригонометрической форме следующие комплексные числа: а) 
+\begin_inset Formula $1+i$
+\end_inset
+
+, б) 
+\begin_inset Formula $-\sqrt{3}-i$
+\end_inset
+
+, в) 
+\begin_inset Formula $3i$
+\end_inset
+
+, г) 
+\begin_inset Formula $-5$
+\end_inset
+
+, д) 
+\begin_inset Formula $1+2i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Если 
+\begin_inset Formula $z=1+i$
+\end_inset
+
+, то 
+\begin_inset Formula $r=\sqrt{1^{2}+1^{2}}=\sqrt{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\cos\varphi=\sin\varphi=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi=\frac{\pi}{4}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z=1+i=\sqrt{2}\left(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Если 
+\begin_inset Formula $z=-\sqrt{3}-i$
+\end_inset
+
+, то 
+\begin_inset Formula $r=\sqrt{\left(-\sqrt{3}\right)^{2}+\left(-1\right)^{2}}=\sqrt{3+1}=\sqrt{4}=2$
+\end_inset
+
+, 
+\begin_inset Formula $\cos\varphi=-\frac{\sqrt{3}}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sin\varphi=-\frac{1}{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi=\pi+\frac{\pi}{6}=\frac{7\pi}{6}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $-\sqrt{3}-i=2\left(\cos\frac{7\pi}{6}+i\sin\frac{7\pi}{6}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Если 
+\begin_inset Formula $z=3i$
+\end_inset
+
+, то 
+\begin_inset Formula $r=\sqrt{0^{2}+3^{3}}=3$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\cos\varphi=\frac{0}{3}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\sin\varphi=\frac{3}{3}=1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi=\frac{\pi}{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z=3i=3\left(\cos\frac{\pi}{2}+i\sin\frac{\pi}{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) Если 
+\begin_inset Formula $z=-5$
+\end_inset
+
+, то 
+\begin_inset Formula $r=\sqrt{\left(-5\right)^{2}+0^{2}}=5$
+\end_inset
+
+, 
+\begin_inset Formula $\cos\varphi=\frac{-5}{5}=-1$
+\end_inset
+
+ и 
+\begin_inset Formula $\sin\varphi=\frac{0}{5}=0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi=\pi$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z=-5=5\left(\cos\pi+i\sin\pi\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+д) Если 
+\begin_inset Formula $z=1+2i$
+\end_inset
+
+, то 
+\begin_inset Formula $r=\sqrt{1^{2}+2^{2}}=\sqrt{5}$
+\end_inset
+
+, 
+\begin_inset Formula $\cos\varphi=\frac{1}{\sqrt{5}}=\frac{\sqrt{5}}{5}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sin\varphi=\frac{2}{\sqrt{5}}=\frac{2\sqrt{5}}{5}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi=\arccos\frac{\sqrt{5}}{5}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z=1+2i=\sqrt{5}\left(\cos\arccos\frac{\sqrt{5}}{5}+\sin\arccos\frac{\sqrt{5}}{5}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Можно было выразить 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ как арктангенс
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:complex-multiplication-and-division-trigonometric"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $z_{1}=r_{1}\left(\cos\varphi_{1}+i\sin\varphi_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}=r_{2}\left(\cos\varphi_{2}+i\sin\varphi_{2}\right)$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula 
+\[
+z_{1}\cdot z_{2}=r_{1}r_{2}\left(\cos\left(\varphi_{1}+\varphi_{2}\right)+i\sin\left(\varphi_{1}+\varphi_{2}\right)\right)
+\]
+
+\end_inset
+
+ и, если 
+\begin_inset Formula $z_{2}\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\frac{z_{1}}{z_{2}}=\frac{r_{1}}{r_{2}}\left(\cos\left(\varphi_{1}-\varphi_{2}\right)+i\sin\left(\varphi_{1}-\varphi_{2}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Умножим 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ на 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ по правилу умножения комплексных чисел в алгебраической форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:complex-numbers-product-algebraic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+z_{1}\cdot z_{2}=r_{1}r_{2}\left[\left(\cos\varphi_{1}\cos\varphi_{2}-\sin\varphi_{1}\sin\varphi_{2}\right)+i\left(\cos\varphi_{1}\sin\varphi_{2}+\sin\varphi_{1}\cos\varphi_{2}\right)\right],
+\]
+
+\end_inset
+
+ тогда, по известным тригонометрическим формулам 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Доказать этот факт? Раздел про тригонометрию?
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+z_{1}\cdot z_{2}=r_{1}r_{2}\left(\cos\left(\varphi_{1}+\varphi_{2}\right)+i\sin\left(\varphi_{1}+\varphi_{2}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь выражение 
+\begin_inset Formula $\frac{z_{1}}{z_{2}}$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{2}\neq0$
+\end_inset
+
+.
+ Начнём с частного случая, когда 
+\begin_inset Formula $z_{2}=r_{2}$
+\end_inset
+
+ — вещественное число.
+ Тогда, по формуле частного 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-division"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\frac{z_{1}}{r_{2}}=\frac{r_{1}}{r_{2}}\left(\cos\varphi_{1}+i\sin\varphi_{1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Умножим числитель и знаменатель на комплексно сопряжённое
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:complex-conjugate"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ к 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{z_{1}}{z_{2}}=\frac{z_{1}\bar{z}_{2}}{z_{2}\bar{z}_{2}}=\frac{z_{1}\bar{z}_{2}}{\left|z_{2}\right|^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Во-первых, заметим, что 
+\begin_inset Formula $\left|z_{2}\right|^{2}=r_{2}^{2}\neq0$
+\end_inset
+
+.
+ Далее, по определению комплексно сопряжённого числа.
+\begin_inset Formula 
+\[
+\bar{z}_{2}=r_{2}\left(\cos\varphi_{2}-i\sin\varphi_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как косинус — чётная функция, а синус — нечётная, то мы можем написать
+\begin_inset Formula 
+\[
+\bar{z}_{2}=r_{2}\left(\cos\left(-\varphi_{2}\right)+i\sin\left(-\varphi_{2}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользуемся теперь правилом умножения в тригонометрической форме, полученной
+ в этой задаче выше: 
+\begin_inset Formula 
+\[
+z_{1}\bar{z}_{2}=r_{1}r_{2}\left(\cos\left(\varphi_{1}-\varphi_{2}\right)+i\sin\left(\varphi_{1}-\varphi_{2}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Окончательную формулу получим, выполнив деление комплексного числа 
+\begin_inset Formula $z_{1}\bar{z}_{2}$
+\end_inset
+
+ на вещественное 
+\begin_inset Formula $\left|z_{2}\right|^{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{z_{1}}{z_{2}}=\frac{z_{1}\bar{z}_{2}}{\left|z_{2}\right|^{2}}=\frac{r_{1}}{r_{2}}\left(\cos\left(\varphi_{1}-\varphi_{2}\right)+i\sin\left(\varphi_{1}-\varphi_{2}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, при умножении комплексных чисел их модули перемножаются,
+ аргументы складываются, а при делении — модули делятся, аргументы вычитаются.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:complex-power-trigonometric"
+
+\end_inset
+
+Доказать 
+\emph on
+формулу Муавра
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Муавр (1667—1754) — английский математик.
+\end_layout
+
+\end_inset
+
+
+\emph default
+: 
+\begin_inset Formula 
+\[
+\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n}=r^{n}\left(\cos n\varphi+i\sin n\varphi\right)
+\]
+
+\end_inset
+
+ для любого натурального числа 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Доказательство проведём по индукции.
+\end_layout
+
+\begin_layout Solution
+Для 
+\begin_inset Formula $n=1$
+\end_inset
+
+ утверждение тривиально: 
+\begin_inset Formula $\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{1}=r^{1}\left(\cos\left(1\cdot\varphi\right)+i\sin\left(1\cdot\varphi\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь мы доказали, что 
+\begin_inset Formula $\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n}=r^{n}\left(\cos n\varphi+i\sin n\varphi\right)$
+\end_inset
+
+.
+ Вычислим 
+\begin_inset Formula $\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n+1}$
+\end_inset
+
+.
+ По определению степени 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно, здесь нужна ссылка
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n+1}=\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n}\cdot\left[r\left(\cos\varphi+i\sin\varphi\right)\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По предположению индукции 
+\begin_inset Formula $\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n}=r^{n}\left(\cos n\varphi+i\sin n\varphi\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n+1}=r^{n}\left(\cos n\varphi+i\sin n\varphi\right)\cdot\left[r\left(\cos\varphi+i\sin\varphi\right)\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользуемся теперь формулой умножения комплексных чисел в тригонометрической
+ форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n+1}=r^{n+1}\left(\cos\left(n\varphi+\varphi\right)+i\sin\left(n\varphi+\varphi\right)\right)=\\
+=r^{n+1}\left(\cos\left[\left(n+1\right)\varphi\right]+i\sin\left[\left(n+1\right)\varphi\right]\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Вычислить 
+\begin_inset Formula $\frac{\left(1-i\sqrt{3}\right)^{100}}{2^{100}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $z=\frac{1-i\sqrt{3}}{2}=\frac{1}{2}-i\frac{\sqrt{3}}{2}$
+\end_inset
+
+.
+ Нам необходимо вычислить 
+\begin_inset Formula $z^{100}$
+\end_inset
+
+.
+ Запишем 
+\begin_inset Formula $z$
+\end_inset
+
+ в тригонометрической форме: 
+\begin_inset Formula $\left|z\right|=\sqrt{\frac{1}{4}+\frac{3}{4}}=\sqrt{1}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\cos\varphi=\frac{1}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sin\varphi=-\frac{\sqrt{3}}{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi=-\frac{\pi}{3}=2\pi-\frac{\pi}{3}=\frac{5\pi}{3}$
+\end_inset
+
+.
+ Итак 
+\begin_inset Formula $z=1\cdot\left(\cos\frac{5\pi}{3}+\sin\frac{5\pi}{3}\right)$
+\end_inset
+
+.
+ По формуле Муавра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-power-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z^{100}=1^{100}\left(\cos\frac{500\pi}{3}+\sin\frac{500\pi}{3}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\frac{500}{3}=\frac{498+2}{3}=166+\frac{2}{3}$
+\end_inset
+
+.
+ Так как аргумент определён с точностью до слагаемого 
+\begin_inset Formula $2\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — произвольное целое число, то вместо 
+\begin_inset Formula $\frac{500\pi}{3}=166\pi+\frac{2\pi}{3}=2\pi\cdot83+\frac{2\pi}{3}$
+\end_inset
+
+ в качестве аргумента можно взять 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\frac{\left(1-i\sqrt{3}\right)^{100}}{2^{100}}=\cos\frac{2\pi}{3}+i\sin\frac{2\pi}{3}=-\frac{1}{2}+i\frac{\sqrt{3}}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:complex-root-n"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $z=r\left(\cos\varphi+i\sin\varphi\right)$
+\end_inset
+
+ — фиксированное комплексное число и 
+\begin_inset Formula $n$
+\end_inset
+
+ — натуральное число.
+ Найти все комплексные числа 
+\begin_inset Formula $w$
+\end_inset
+
+, удовлетворяющие равенству 
+\begin_inset Formula 
+\begin{equation}
+w^{n}=z.\label{eq:root-equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не рассмотрел отдельно случай 
+\begin_inset Formula $z=0$
+\end_inset
+
+, забыл, что аргумент определён не всегда
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $w=r_{0}\left(\cos\varphi_{0}+i\sin\varphi_{0}\right)$
+\end_inset
+
+, тогда, по формуле Муавра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-power-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+w^{n}=r_{0}^{n}\left(\cos n\varphi_{0}+\sin n\varphi_{0}\right)=r\left(\cos\varphi+i\sin\varphi\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Приравнивая модули комплексных чисел слева и справа, получаем 
+\begin_inset Formula $r_{0}=\sqrt[n]{r}$
+\end_inset
+
+, где берётся арифметическое (вещественное положительное) значение корня
+ (так как 
+\begin_inset Formula $r>0$
+\end_inset
+
+ — вещественное число, то этот корень существует).
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $z=0$
+\end_inset
+
+, то 
+\begin_inset Formula $r=0$
+\end_inset
+
+ и, следовательно, 
+\begin_inset Formula $r_{0}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $w=0$
+\end_inset
+
+.
+ Далее будем считать, что 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как аргумент определён с точностью до слагаемого 
+\begin_inset Formula $2\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — произвольное целое число, то есть равенство аргументов записывается следующим
+ образом 
+\begin_inset Formula $n\varphi_{0}=\varphi+2\pi k$
+\end_inset
+
+, откуда 
+\begin_inset Formula 
+\[
+\varphi_{0}=\frac{\varphi}{n}+\frac{2\pi k}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Теперь нужно указать, какие значения 
+\begin_inset Formula $k$
+\end_inset
+
+ дают неэквивалентные значения 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+, а какие — эквивалентные.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь есть красивая скрытая аналогия с факторгруппами
+\end_layout
+
+\end_inset
+
+Рассмотрим разность двух 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+, соответствующих двум разным значениям 
+\begin_inset Formula $k$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\frac{\varphi}{n}+\frac{2\pi k_{2}}{n}\right)-\left(\frac{\varphi}{n}+\frac{2\pi k_{1}}{n}\right)=\frac{2\pi\left(k_{2}-k_{1}\right)}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, два аргумента эквивалентны, когда разность порождающих их
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ кратна 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Для каждого 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ существует 
+\begin_inset Formula $n-1$
+\end_inset
+
+ целых 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+ таких, что 
+\begin_inset Formula $k_{2}-k_{1}$
+\end_inset
+
+ не делятся на 
+\begin_inset Formula $n$
+\end_inset
+
+, а именно: 
+\begin_inset Formula $k_{1}+1$
+\end_inset
+
+, 
+\begin_inset Formula $k_{1}+2$
+\end_inset
+
+, ..., 
+\begin_inset Formula $k_{1}+\left(n-1\right)$
+\end_inset
+
+.
+ Вместе с 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ получаем 
+\begin_inset Formula $n$
+\end_inset
+
+ значений 
+\begin_inset Formula $k$
+\end_inset
+
+, дающих неэквивалентные значения аргумента.
+ Так как без ограничения общности можно взять 
+\begin_inset Formula $k_{1}=0$
+\end_inset
+
+, то
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi_{0}=\frac{\varphi}{n}+\frac{2\pi}{n}k,\thinspace k=0,1,\dots,n-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, корнями степени 
+\begin_inset Formula $n$
+\end_inset
+
+ из числа 
+\begin_inset Formula $r\left(\cos\varphi+i\sin\varphi\right)$
+\end_inset
+
+ являются числа 
+\begin_inset Formula 
+\[
+\sqrt[n]{r}\left(\cos\left(\frac{\varphi+2\pi k}{n}\right)+i\sin\left(\frac{\varphi+2\pi k}{n}\right)\right),
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $k=0,1,\dots,n-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Запись 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ (корень степени 
+\begin_inset Formula $n$
+\end_inset
+
+ из 
+\begin_inset Formula $z$
+\end_inset
+
+) мы будем понимать как многозначную функцию, ставящую в соответствие каждому
+ комплексному числу 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+ все 
+\begin_inset Formula $n$
+\end_inset
+
+ решений уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:root-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ При 
+\begin_inset Formula $z=0$
+\end_inset
+
+ будет 
+\begin_inset Formula $\sqrt[n]{0}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Найти все значения корней: а) 
+\begin_inset Formula $\sqrt{-1}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt[3]{8},$
+\end_inset
+
+в) 
+\begin_inset Formula $\sqrt[4]{\cos100\text{°}+i\sin100\text{°}}$
+\end_inset
+
+, г) 
+\begin_inset Formula $\sqrt[3]{1+i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Каждое подкоренное выражение запишем в тригонометрической форме, а затем
+ воспользуемся результатом задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) 
+\begin_inset Formula $-1=1\cdot\left(\cos\pi+i\sin\pi\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\sqrt{-1}$
+\end_inset
+
+ включает 
+\begin_inset Formula $1\cdot\left(\cos\frac{\pi}{2}+i\sin\frac{\pi}{2}\right)=i$
+\end_inset
+
+ и 
+\begin_inset Formula $1\cdot\left(\cos\frac{3\pi}{2}+i\sin\frac{3\pi}{2}\right)=-i$
+\end_inset
+
+, что соответствует результату, полученному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-on-complex-square-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $8=8\cdot\left(\cos0+i\sin0\right)$
+\end_inset
+
+.
+ Арифметическое значение 
+\begin_inset Formula $\sqrt{8}$
+\end_inset
+
+ равно 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Значения аргумента 
+\begin_inset Formula $\sqrt{8}$
+\end_inset
+
+ в поле комплексных чисел есть 
+\begin_inset Formula $\frac{0}{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{0+2\pi}{3}=\frac{2\pi}{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{0+4\pi}{3}=\frac{4\pi}{3}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\sqrt{8}=\left\{ 2,2\left(-\frac{1}{2}+i\frac{\sqrt{3}}{2}\right),2\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)\right\} =\text{\left\{ 2,-1+i\sqrt{3},-1-i\sqrt{3}\right\} }$
+\end_inset
+
+, где 
+\begin_inset Formula $\sqrt{3}$
+\end_inset
+
+ — арифметическое значение корня.
+\end_layout
+
+\begin_layout Solution
+в) здесь подкоренное выражение уже дано в тригонометрической форме.
+ Поэтому 
+\begin_inset Formula $\sqrt[4]{\cos100\text{°}+i\sin100\text{°}}$
+\end_inset
+
+ имеет значения 
+\begin_inset Formula $\cos25\text{°}+i\sin25\text{°}$
+\end_inset
+
+, 
+\begin_inset Formula $\cos115\text{°}+i\sin115\text{°}$
+\end_inset
+
+, 
+\begin_inset Formula $\cos205\text{°}+i\sin205\text{°}$
+\end_inset
+
+ и 
+\begin_inset Formula $\cos295\text{°}+i\sin295\text{°}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) 
+\begin_inset Formula $1+i=\sqrt{2}\left(\frac{\sqrt{2}}{2}+i\frac{\sqrt{2}}{2}\right)=\sqrt{2}\left(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\sqrt[3]{1+i}$
+\end_inset
+
+ включает следующие значения 
+\begin_inset Formula $\sqrt[6]{2}\left(\cos\frac{\pi}{12}+i\sin\frac{\pi}{12}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\sqrt[6]{2}\left(\cos\frac{9\pi}{12}+i\sin\frac{9\pi}{12}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[6]{2}\left(\cos\frac{17\pi}{12}+i\sin\frac{17\pi}{12}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\sqrt[6]{2}$
+\end_inset
+
+ — арифметическое значение корня.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "roots-n-from-1"
+
+\end_inset
+
+Для дальнейшего удобно ввести следующее обозначение: 
+\begin_inset Formula 
+\[
+\varepsilon_{n}=\cos\frac{2\pi}{n}+i\sin\frac{2\pi}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:values-of-root-n-from-1"
+
+\end_inset
+
+Доказать, что все значения 
+\begin_inset Formula $\sqrt[n]{1}$
+\end_inset
+
+ — это 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}^{3}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $\varepsilon_{n}^{n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $1=1\cdot\left(\cos0+i\sin0\right)$
+\end_inset
+
+, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, модуль любого из чисел, входящих в 
+\begin_inset Formula $\sqrt[n]{1}$
+\end_inset
+
+ равен 1, а возможные значения аргумента есть 
+\begin_inset Formula $\frac{2\pi k}{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $k=0,1,\dots,n-1$
+\end_inset
+
+.
+ То есть корни 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени из 
+\begin_inset Formula $1$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n}$
+\end_inset
+
+.
+ По формуле Муавра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-power-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n}=\left(\cos\frac{2\pi}{n}+i\sin\frac{2\pi}{n}\right)^{k}=\varepsilon_{n}^{k},
+\]
+
+\end_inset
+
+что и требовалось.
+\end_layout
+
+\begin_layout Remark
+Так как 
+\begin_inset Formula $\varepsilon_{n}^{n}=1$
+\end_inset
+
+, то множество элементов 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}^{3}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $\varepsilon_{n}^{n-1}$
+\end_inset
+
+ является циклической группой относительно умножения.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $\sqrt[n]{z_{0}}$
+\end_inset
+
+.
+ Найти все значения 
+\begin_inset Formula $\sqrt[n]{z_{0}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Начнём с 
+\begin_inset Quotes rld
+\end_inset
+
+геометрического
+\begin_inset Quotes rrd
+\end_inset
+
+ решения.
+ Запишем 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ в тригонометрической форме: 
+\begin_inset Formula $z_{1}=r_{1}\left(\cos\varphi_{1}+i\sin\varphi_{1}\right)$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, значения корня степени 
+\begin_inset Formula $n$
+\end_inset
+
+ имеют одинаковое значение модуля, а их аргументы отличаются на величину,
+ кратную 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+.
+ Поэтому, значениями 
+\begin_inset Formula $\sqrt[n]{z_{0}}$
+\end_inset
+
+ будут 
+\begin_inset Formula 
+\[
+r_{1}\left(\cos\left(\varphi_{1}+\frac{2\pi k}{n}\right)+\sin\left(\varphi_{1}+\frac{2\pi k}{n}\right)\right),k=0,1,\dots n-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В дальнейшем мы будем в основном использовать представление комплексных
+ чисел точками плоскости, то есть комплексному числу 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+ будем ставить в соответствие точку с координатами 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ При этом вместо 
+\begin_inset Quotes rld
+\end_inset
+
+точка, соответствующая комплексному числу 
+\begin_inset Formula $z$
+\end_inset
+
+
+\begin_inset Quotes rrd
+\end_inset
+
+ мы будем говорить просто 
+\begin_inset Quotes rld
+\end_inset
+
+точка 
+\begin_inset Formula $z$
+\end_inset
+
+
+\begin_inset Quotes rrd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Я написал геометрическое решение, нужно ещё написать алгебраическое.
+ Возможно нужно прояснить формулировку задачи
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Получим теперь 
+\begin_inset Quotes rld
+\end_inset
+
+алгебраическое
+\begin_inset Quotes rrd
+\end_inset
+
+ решение.
+ Пусть 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — ещё какое-либо значение 
+\begin_inset Formula $\sqrt[n]{z_{0}}$
+\end_inset
+
+, тогда, по определению, 
+\begin_inset Formula $z_{2}^{n}=z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\frac{z_{2}}{z_{1}}\right)^{n}=1$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:values-of-root-n-from-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, значениями 
+\begin_inset Formula $\sqrt[n]{1}$
+\end_inset
+
+ являются 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{n}^{3}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $\varepsilon_{n}^{n-1}$
+\end_inset
+
+, поэтому они же будут возможными значениями 
+\begin_inset Formula $\frac{z_{2}}{z_{1}}$
+\end_inset
+
+, то есть все значения 
+\begin_inset Formula $\sqrt[n]{z_{0}}$
+\end_inset
+
+ равны 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{1}\varepsilon_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{1}\varepsilon_{n}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{1}\varepsilon_{n}^{3}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $z_{1}\varepsilon_{n}^{n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть комплексные числа изображаются точками плоскости.
+ Каков геометрический смысл выражений 
+\begin_inset Formula $\left|z\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z_{1}-z_{2}\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\frac{z_{1}}{z_{2}}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+, тогда числу 
+\begin_inset Formula $z$
+\end_inset
+
+, по первому геометрическому представлению комплексных чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "complex-numbers-as-poins-on-plane"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, соответствует точка 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, по определению модуля комплексного числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:absolute-value-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left|z\right|=\sqrt{a^{2}+b^{2}}$
+\end_inset
+
+ — расстояние от начала координат до точки 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, изображающей число 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Определение аргумента комплексного числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:argument-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ дано для случая, когда комплексное число интерпретируется как вектор на
+ плоскости.
+ Но так как каждому вектору можно взаимно однозначно поставить в соответствие
+ точку плоскости с теми же координатами, то получаем, что 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+ — это угол между положительным направлением оси 
+\begin_inset Formula $0x$
+\end_inset
+
+ и отрезком, соединяющим начало координат и точку 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $z_{1}=a_{1}+ib_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}=a_{2}+ib_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|z_{1}-z_{2}\right|=\sqrt{\left(a_{1}-a_{2}\right)^{2}+\left(b_{1}-b_{2}\right)^{2}}$
+\end_inset
+
+, что соответствует расстоянию между точками 
+\begin_inset Formula $\left(a_{1},b_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(a_{2},b_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, при делении комплексных чисел аргументы вычитаются, поэтому 
+\begin_inset Formula $\mathrm{Arg}\frac{z_{1}}{z_{2}}$
+\end_inset
+
+ — угол между отрезками, 
+\begin_inset Formula $OM_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $OM_{2}$
+\end_inset
+
+, где 
+\begin_inset Formula $M_{1}=\left(a_{1},b_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(a_{2},b_{2}\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $O$
+\end_inset
+
+ — начало координат.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:geometric-interpretations-of-some-complex-equations"
+
+\end_inset
+
+Найти геометрическое место точек 
+\begin_inset Formula $z$
+\end_inset
+
+, удовлетворяющих следующим условиям (
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — фиксированные комплексные числа, 
+\begin_inset Formula $r$
+\end_inset
+
+ — фиксированное действительное число 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — произвольный угол?
+\end_layout
+
+\end_inset
+
+): а) 
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+, б) 
+\begin_inset Formula $\left|z\right|=r$
+\end_inset
+
+, в) 
+\begin_inset Formula $\left|z-z_{0}\right|=r$
+\end_inset
+
+, г) 
+\begin_inset Formula $\left|z-z_{0}\right|\le r$
+\end_inset
+
+, д) 
+\begin_inset Formula $\left|z-z_{1}\right|=\left|z-z_{2}\right|$
+\end_inset
+
+, е) 
+\begin_inset Formula $\mathrm{Arg}z=\pi$
+\end_inset
+
+, ж) 
+\begin_inset Formula $\mathrm{Arg}z=\frac{9\pi}{4}$
+\end_inset
+
+, з) 
+\begin_inset Formula $\mathrm{Arg}z=\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) 
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+ описывает точки, находящиеся на расстоянии 
+\begin_inset Formula $1$
+\end_inset
+
+ от начала координат, то есть окружность с центром в начале координат и
+ радиусом 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $\left|z\right|=r$
+\end_inset
+
+ описывает точки, находящиеся на расстоянии 
+\begin_inset Formula $r$
+\end_inset
+
+ от начала координат, то есть окружность с центром в начале координат и
+ радиусом 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) 
+\begin_inset Formula $\left|z-z_{0}\right|=r$
+\end_inset
+
+ описывает точки, находящиеся на расстоянии 
+\begin_inset Formula $r$
+\end_inset
+
+ от точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то есть окружность с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и радиусом 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) 
+\begin_inset Formula $\left|z-z_{0}\right|\le r$
+\end_inset
+
+ описывает точки, находящиеся на расстоянии не более 
+\begin_inset Formula $r$
+\end_inset
+
+ от точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то есть круг с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и радиусом 
+\begin_inset Formula $r$
+\end_inset
+
+ (включая окружность).
+\end_layout
+
+\begin_layout Solution
+д) 
+\begin_inset Formula $\left|z-z_{1}\right|=\left|z-z_{2}\right|$
+\end_inset
+
+ описывает комплексные числа, находящиеся на равном расстоянии от точек
+ 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — это перпендикуляр, проходящий через середину отрезка, соединяющего точки
+ 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+е) 
+\begin_inset Formula $\mathrm{Arg}z=\pi$
+\end_inset
+
+ описывает комплексные числа с произвольным модулем и аргументом, равным
+ 
+\begin_inset Formula $\pi$
+\end_inset
+
+, то 
+\begin_inset Formula $z=\left|z\right|\left(\cos\pi+i\sin\pi\right)=-\left|z\right|$
+\end_inset
+
+ — произвольное отрицательное вещественное число.
+ Таким образом, 
+\begin_inset Formula $\mathrm{Arg}z=\pi$
+\end_inset
+
+ — отрицательная часть вещественной прямой.
+\end_layout
+
+\begin_layout Solution
+ж) 
+\begin_inset Formula $\mathrm{Arg}z=\frac{9\pi}{4}$
+\end_inset
+
+ — комплексные числа с произвольным модулем и фиксированным аргументом 
+\begin_inset Formula $\frac{9\pi}{4}=2\pi+\frac{\pi}{4}$
+\end_inset
+
+, то есть луч, выходящий из начала координат и образующий угол 
+\begin_inset Formula $\frac{\pi}{4}$
+\end_inset
+
+ с положительным направлением оси 
+\begin_inset Formula $0x$
+\end_inset
+
+, иными словами — биссектриса первого координатного угла.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+не заметил, что углы 
+\begin_inset Formula $\frac{9\pi}{4}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{\pi}{4}$
+\end_inset
+
+ эквивалентны
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+з) 
+\begin_inset Formula $\mathrm{Arg}z=\varphi$
+\end_inset
+
+ — комплексные числа с произвольным модулем и фиксированным аргументом 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, то есть луч, выходящий из начала координат и образующий угол 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ с положительным направлением оси 
+\begin_inset Formula $0x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Как располагаются на плоскости все значения 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+, где 
+\begin_inset Formula $z$
+\end_inset
+
+ — фиксированное комплексное число.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся геометрическими интерпретациями, найденными в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretations-of-some-complex-equations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, значения 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ имеют модуль 
+\begin_inset Formula $\sqrt[n]{\left|z\right|}$
+\end_inset
+
+ (используется арифметическое значение корня), то есть располагаются на
+ окружности радиуса 
+\begin_inset Formula $\sqrt[n]{\left|z\right|}$
+\end_inset
+
+.
+ Там же было показано, что аргумент 
+\begin_inset Quotes rld
+\end_inset
+
+соседних
+\begin_inset Quotes rrd
+\end_inset
+
+ значений 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ отличается на 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+, то есть значения 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ располагаются в вершинах правильного 
+\begin_inset Formula $n$
+\end_inset
+
+-угольника, вписанного в окружность радиуса 
+\begin_inset Formula $\sqrt[n]{\left|z\right|}$
+\end_inset
+
+ с центром в начале координат (для случая 
+\begin_inset Formula $n=2$
+\end_inset
+
+ многоугольник вырождается в диаметр окружности).
+ Радиус-вектор из вершин данного многоугольника образует угол 
+\begin_inset Formula $\frac{\mathrm{Arg}z}{n}$
+\end_inset
+
+ с положительным направлением оси 
+\begin_inset Formula $0x$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
