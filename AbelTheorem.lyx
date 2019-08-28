@@ -60374,6 +60374,246 @@ status open
 , 1967.
 \end_layout
 
+\begin_layout Section
+Непрерывные кривые
+\end_layout
+
+\begin_layout Standard
+Пусть параметр 
+\begin_inset Formula $t$
+\end_inset
+
+ принимает действительные значения на отрезке 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+, и пусть каждому такому значению 
+\begin_inset Formula $t$
+\end_inset
+
+ поставлено в соответствие некоторое комплексное число 
+\begin_inset Formula 
+\[
+z\left(t\right)=x\left(t\right)+iy\left(t\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Плоскость, на которой изображаются значение 
+\begin_inset Formula $z$
+\end_inset
+
+, мы будем в дальнейшем называть просто 
+\begin_inset Quotes rld
+\end_inset
+
+плоскость 
+\begin_inset Formula $z$
+\end_inset
+
+
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Если функции 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+ непрерывны при 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+, то при изменении 
+\begin_inset Formula $t$
+\end_inset
+
+ от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $1$
+\end_inset
+
+ точка 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ будет описывать некоторую 
+\emph on
+непрерывную кривую
+\emph default
+ на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ При этом мы будем рассматривать эту кривую с направлением, принимая точку
+ 
+\begin_inset Formula $z_{0}=z\left(0\right)$
+\end_inset
+
+ за начальную, а точку 
+\begin_inset Formula $z_{1}=z\left(1\right)$
+\end_inset
+
+ за конечную.
+ Функцию 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ мы будем называть 
+\emph on
+параметрическим уравнением 
+\emph default
+этой кривой.
+\end_layout
+
+\begin_layout Example
+Пусть 
+\begin_inset Formula $z\left(t\right)=t+it^{2}$
+\end_inset
+
+ .
+ Тогда 
+\begin_inset Formula $x\left(t\right)=t$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=t^{2}$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $y\left(t\right)=x^{2}\left(t\right)$
+\end_inset
+
+ при любом 
+\begin_inset Formula $t$
+\end_inset
+
+, то есть точка 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при любом 
+\begin_inset Formula $t$
+\end_inset
+
+ лежит на параболе 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+.
+ При изменении 
+\begin_inset Formula $t$
+\end_inset
+
+ от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $1$
+\end_inset
+
+ 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ также меняется от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $1$
+\end_inset
+
+ и точка 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ пробегает дугу параболы 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+ от точки 
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+ до точки 
+\begin_inset Formula $z_{1}=1+i$
+\end_inset
+
+ (показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:example-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Example
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/example-of-continuous-curve.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:example-of-continuous-curve"
+
+\end_inset
+
+Кривая 
+\begin_inset Formula $z\left(t\right)=t+it^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
