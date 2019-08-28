@@ -55564,6 +55564,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:triangle-inequality-for-complex-numbers"
+
+\end_inset
+
 Докажите неравенства:
 \end_layout
 
@@ -57205,7 +57211,7 @@ noprefix "false"
 \end_inset
 
 , поэтому 
-\begin_inset Formula $\sqrt{8}=\left\{ 2,2\left(-\frac{1}{2}+i\frac{\sqrt{3}}{2}\right),2\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)\right\} =\text{\left\{ 2,-1+i\sqrt{3},-1-i\sqrt{3}\right\} }$
+\begin_inset Formula $\sqrt{8}=\left\{ 2,2\left(-\frac{1}{2}+i\frac{\sqrt{3}}{2}\right),2\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)\right\} =\text{\left\{  2,-1+i\sqrt{3},-1-i\sqrt{3}\right\}  }$
 \end_inset
 
 , где 
@@ -57626,6 +57632,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:geometric-interpretation-of-absolute-value-and-argument-of-complex-number"
+
+\end_inset
+
 Пусть комплексные числа изображаются точками плоскости.
  Каков геометрический смысл выражений 
 \begin_inset Formula $\left|z\right|$
@@ -57788,7 +57800,7 @@ noprefix "false"
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:geometric-interpretations-of-some-complex-equations"
+name "prob:geometric-interpretations-of-some-complex-expressions"
 
 \end_inset
 
@@ -58064,7 +58076,7 @@ status open
 Воспользуемся геометрическими интерпретациями, найденными в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:geometric-interpretations-of-some-complex-equations"
+reference "prob:geometric-interpretations-of-some-complex-expressions"
 plural "false"
 caps "false"
 noprefix "false"
@@ -58138,6 +58150,2228 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Непрерывность
+\end_layout
+
+\begin_layout Standard
+В дальнейшем важную роль для нас будет играть понятие непрерывности и, в
+ частности, понятие непрерывной кривой.
+ Если читатель не знает строгого определения этих понятий, то он по-видимому,
+ все же интуитивно понимает, что такое непрерывная кривая, а также непрерывная
+ функция действительного переменного (на интуитивном уровне можно сказать,
+ что это такая функция, у которой график — непрерывная кривая).
+ Однако если функция действительного переменного является достаточно сложной,
+ например, 
+\begin_inset Formula 
+\[
+f\left(x\right)=\frac{x^{3}-2x}{x^{2}-\sin x+1},
+\]
+
+\end_inset
+
+то установить, непрерывна ли она, используя лишь интуитивное понятие непрерывнос
+ти, довольно тяжело.
+ Поэтому мы дадим строгое определение непрерывности и с помощью него докажем
+ несколько основных исходных утверждений о непрерывных функциях.
+ При этом мы дадим определение непрерывности как для функций действительного
+ аргумента, так и для функций комплексного аргумента.
+\end_layout
+
+\begin_layout Standard
+Если мы рассмотрим график некоторой функции действительного аргумента, то
+ этот график в некоторых точках может быть непрерывным, а в некоторых точках
+ иметь разрывы.
+ Поэтому естественно ввести сначала определение не вообще непрерывности
+ функции, а непрерывности функции в данной точке.
+\end_layout
+
+\begin_layout Standard
+Если мы попытаемся более точно определить наше интуитивное представление
+ о непрерывности функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ в данной точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, то получим, что непрерывность означает следующее: при малых изменениях
+ аргумента вблизи точки 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ функция тоже изменяется мало относительно значения 
+\begin_inset Formula $f\left(x_{0}\right)$
+\end_inset
+
+.
+ Причём можно добиться сколь угодно малого изменения функции, выбирая достаточно
+ малый интервал изменения аргумента.
+ Более строго это можно сформулировать следующим образом.
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ — функция действительного или комплексного аргумента 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Говорят, что функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ 
+\emph on
+непрерывна в точке
+\emph default
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, если для любого действительного числа 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ можно подобрать такое действительное число 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ (зависящее от 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и от 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+), что для всех чисел, удовлетворяющих условию 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+, будет выполняться неравенство 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Геометрический смысл неравенств 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|<\varepsilon$
+\end_inset
+
+ разъясняется в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretation-of-absolute-value-and-argument-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(пункт в) и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretations-of-some-complex-expressions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (пункт г).
+\end_layout
+
+\begin_layout Example
+Докажем, что функция комплексного аргумента 
+\begin_inset Formula $f\left(z\right)=2z$
+\end_inset
+
+ непрерывна в любой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Пусть заданы точка 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и произвольное действительное число 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ Нужно подобрать такое действительное число 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, чтобы для всех чисел 
+\begin_inset Formula $z$
+\end_inset
+
+, удовлетворяющих условию 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+, выполнялось неравенство 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|=\left|2z-2z_{0}\right|<\varepsilon$
+\end_inset
+
+.
+ Нетрудно видеть, что можно выбрать 
+\begin_inset Formula $\delta=\frac{\varepsilon}{2}$
+\end_inset
+
+ (независимо от точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+).
+ Действительно, тогда из условия 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta=\frac{\varepsilon}{2}$
+\end_inset
+
+ будет вытекать 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|2z-2z_{0}\right|=\left|2\left(z-z_{0}\right)\right|=\left|2\right|\cdot\left|z-z_{0}\right|<2\delta=\varepsilon,
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $\left|2z-2z_{0}\right|<\varepsilon$
+\end_inset
+
+.
+ Таким образом, функция 
+\begin_inset Formula $f\left(z\right)=2z$
+\end_inset
+
+ непрерывна в любой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ В частности, она непрерывна при всех действительных значениях аргумента
+ 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Поэтому, если мы ограничимся только действительными значениями аргумента,
+ то получим, что функция действительного аргумента 
+\begin_inset Formula $f\left(x\right)=2x$
+\end_inset
+
+ непрерывна при всех действительных значениях 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:constant-function-is-continuous"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — фиксированное комплексное (или, в частности, действительное число).
+ Доказать, что функция комплексного (или действительного) аргумента 
+\begin_inset Formula $f\left(z\right)=a$
+\end_inset
+
+ непрерывна при всех значениях аргумента.
+\end_layout
+
+\begin_layout Solution
+Выберем точку 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и рассмотрим выражение 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|$
+\end_inset
+
+.
+ По условию, 
+\begin_inset Formula $f\left(z\right)=a$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left|f\left(z\right)-f\left(z_{0}\right)\right|=\left|a-a\right|=\left|0\right|=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, для любого 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ можно выбрать произвольное 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ и получим 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|=0<\varepsilon$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ можно выбрать независимо ни от 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, ни от 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:identity-function-is-continuous"
+
+\end_inset
+
+Доказать, что функция комплексного аргумента 
+\begin_inset Formula $f\left(z\right)=z$
+\end_inset
+
+ и функция действительного аргумента 
+\begin_inset Formula $f\left(x\right)=x$
+\end_inset
+
+ непрерывны при всех значениях аргумента.
+\end_layout
+
+\begin_layout Solution
+Выберем произвольную точку 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ По условию, 
+\begin_inset Formula $f\left(z\right)=z$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left|f\left(z\right)-f\left(z_{0}\right)\right|=\left|z-z_{0}\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, для любого 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ и любого комплексного 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ можно выбрать 
+\begin_inset Formula $\delta=\varepsilon$
+\end_inset
+
+, тогда из 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ будет следовать 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|=\left|z-z_{0}\right|<\delta=\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна для всех комплексных 
+\begin_inset Formula $z$
+\end_inset
+
+, то она непрерывна и для всех вещественных значений 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Поэтому функция вещественного аргумента 
+\begin_inset Formula $f\left(x\right)=x$
+\end_inset
+
+ также непрерывна при всех действительных 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что функция комплексного аргумента 
+\begin_inset Formula $f\left(z\right)=z^{2}$
+\end_inset
+
+ непрерывна при всех значениях аргумента 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Выберем произвольную точку 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Пусть задано некоторое вещественное число 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ Тогда, с учётом результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left|f\left(z\right)-f\left(z_{0}\right)\right|=\left|z^{2}-z_{0}^{2}\right|=\left|\left(z-z_{0}\right)\left(z+z_{0}\right)\right|=\left|z+z_{0}\right|\cdot\left|z-z_{0}\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:triangle-inequality-for-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left|z-z_{0}\right|\ge\left|\left|z\right|-\left|z_{0}\right|\right|$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|\left|z\right|-\left|z_{0}\right|\right|\le\left|z-z_{0}\right|\le\delta$
+\end_inset
+
+ и 
+\begin_inset Formula $-\delta\le\left|z\right|-\left|z_{0}\right|\le\delta$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|z_{0}\right|-\delta\le\left|z\right|\le\left|z_{0}\right|+\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Там же было показано, что 
+\begin_inset Formula $\left|z+z_{0}\right|\le\left|z\right|+\left|z_{0}\right|$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left|z+z_{0}\right|\le\left|z_{0}\right|+\delta+\left|z_{0}\right|=2\left|z_{0}\right|+\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, получаем следующее неравенство: 
+\begin_inset Formula 
+\[
+\left|f\left(z\right)-f\left(z_{0}\right)\right|=\left|z+z_{0}\right|\cdot\left|z-z_{0}\right|\le\left(2\left|z_{0}\right|+\delta\right)\cdot\delta.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Остаётся выбрать 
+\begin_inset Formula $\delta$
+\end_inset
+
+ таким образом, чтобы выполнялось неравенство 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|<\varepsilon$
+\end_inset
+
+.
+ Для этого достаточно выполнения неравенства 
+\begin_inset Formula $\delta^{2}+2\left|z_{0}\right|\delta<\varepsilon$
+\end_inset
+
+.
+ Выделим в левой части полный квадрат по 
+\begin_inset Formula $\delta$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\delta^{2}+2\left|z_{0}\right|\delta=\delta^{2}+2\left|z_{0}\right|\delta+\left|z_{0}\right|^{2}-\left|z_{0}\right|^{2}=\left(\delta+\left|z_{0}\right|\right)^{2}-\left|z_{0}\right|^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Тогда неравенство приобретает вид 
+\begin_inset Formula 
+\[
+\left(\delta+\left|z_{0}\right|\right)^{2}<\varepsilon+\left|z_{0}\right|^{2},
+\]
+
+\end_inset
+
+или, раскрывая квадрат:
+\begin_inset Formula 
+\[
+-\sqrt{\varepsilon+\left|z_{0}\right|^{2}}<\delta+\left|z_{0}\right|<\sqrt{\varepsilon+\left|z_{0}\right|^{2}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+-\sqrt{\varepsilon+\left|z_{0}\right|^{2}}-\left|z_{0}\right|<\delta<\sqrt{\varepsilon+\left|z_{0}\right|^{2}}-\left|z_{0}\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как левое выражение меньше нуля, то достаточно взять 
+\begin_inset Formula $0<\delta<\sqrt{\varepsilon+\left|z_{0}\right|^{2}}-\left|z_{0}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — две функции комплексного (или действительного) аргумента.
+ Функция комплексного (или действительного ) аргумента 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ называется 
+\emph on
+суммой 
+\emph default
+функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+, если в каждой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $h\left(z_{0}\right)=f\left(z_{0}\right)+g\left(z_{0}\right)$
+\end_inset
+
+.
+ При этом, если значение 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $g\left(z_{0}\right)$
+\end_inset
+
+ не определено, то значение 
+\begin_inset Formula $h\left(z_{0}\right)$
+\end_inset
+
+ также не определено.
+ Аналогично определяются 
+\emph on
+разность, произведение и частное
+\emph default
+ двух функций 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Может быть написать более подробно?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+
+\end_inset
+
+Пусть функции комплексного или действительного аргумента 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ непрерывны в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Доказать, что в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ непрерывны функции: а) 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+, б) 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)-g\left(z\right)$
+\end_inset
+
+, в) 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)\cdot g\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Доказательства будем проводить для функций комплексного аргумента.
+ Так как вещественные числа являются частным случаем комплексных, то непрерывнос
+ть функции вещественного аргумента будет следовать из непрерывности функции
+ комплексного аргумента в той же (вещественной) точке.
+\end_layout
+
+\begin_layout Solution
+а) Рассмотрим выражение 
+\begin_inset Formula $\left|h\left(z\right)-h\left(z_{0}\right)\right|$
+\end_inset
+
+, так как 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $h\left(z\right)-h\left(z_{0}\right)=\left(f\left(z\right)-f\left(z_{0}\right)\right)+\left(g\left(z\right)-g\left(z_{0}\right)\right)$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:triangle-inequality-for-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left|h\left(z\right)-h\left(z_{0}\right)\right|=\left|\left(f\left(z\right)-f\left(z_{0}\right)\right)+\left(g\left(z\right)-g\left(z_{0}\right)\right)\right|\le\left|f\left(z\right)-f\left(z_{0}\right)\right|+\left|g\left(z\right)-g\left(z_{0}\right)\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Зададимся некоторым вещественным числом 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — непрерывные функции, то существуют вещественные числа 
+\begin_inset Formula $\delta_{1}>0$
+\end_inset
+
+ и 
+\begin_inset Formula $\delta_{2}>0$
+\end_inset
+
+ такие, что из 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta_{1}$
+\end_inset
+
+ следует 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+, а из 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta_{2}$
+\end_inset
+
+ следует 
+\begin_inset Formula $\left|g\left(z\right)-g\left(z_{0}\right)\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula $\delta=\min\left\{ \delta_{1},\delta_{2}\right\} $
+\end_inset
+
+, тогда при 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ будут выполняться оба неравенства 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|g\left(z\right)-g\left(z_{0}\right)\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+, и, следовательно: 
+\begin_inset Formula 
+\[
+\left|h\left(z\right)-h\left(z_{0}\right)\right|\le\left|f\left(z\right)-f\left(z_{0}\right)\right|+\left|g\left(z\right)-g\left(z_{0}\right)\right|<\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon,
+\]
+
+\end_inset
+
+что и требуется.
+\end_layout
+
+\begin_layout Solution
+б) Так как 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)-g\left(z\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $h\left(z\right)-h\left(z_{0}\right)=\left(f\left(z\right)-f\left(z_{0}\right)\right)+\left(g\left(z_{0}\right)-g\left(z\right)\right)$
+\end_inset
+
+.
+ Снова воспользуемся неравенством из задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:triangle-inequality-for-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\text{\left|h\left(z\right)-h\left(z_{0}\right)\right|\ensuremath{\le\left|f\left(z\right)-f\left(z_{0}\right)\right|+\left|g\left(z_{0}\right)-g\left(z\right)\right|=\left|f\left(z\right)-f\left(z_{0}\right)\right|+\left|g\left(z\right)-g\left(z_{0}\right)\right|.}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Дальнейшее доказательство проводится так же, как в пункте a).
+\end_layout
+
+\begin_layout Solution
+в) Пусть теперь 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)\cdot g\left(z\right)$
+\end_inset
+
+.
+ Докажем, сначала, что 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)g\left(z\right)$
+\end_inset
+
+ — непрерывная функция, когда 
+\begin_inset Formula $g\left(z\right)\equiv a$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — фиксированное комплексное число.
+ Тогда 
+\begin_inset Formula 
+\[
+\left|h\left(z\right)-h\left(z_{0}\right)\right|=\left|a\cdot f\left(z\right)-a\cdot f\left(z_{0}\right)\right|=\left|a\right|\cdot\left|f\left(z\right)-f\left(z_{0}\right)\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $a=0$
+\end_inset
+
+, то неравенство 
+\begin_inset Formula $\left|h\left(z\right)-h\left(z_{0}\right)\right|=0<\varepsilon$
+\end_inset
+
+ выполняется при любом 
+\begin_inset Formula $z$
+\end_inset
+
+ и 
+\begin_inset Formula $\delta$
+\end_inset
+
+ можно взять произвольным.
+ Если же 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+, то, в силу непрерывности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, можно выбрать такое вещественное число 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, что при 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ будет выполняться неравенство
+\begin_inset Formula 
+\[
+\left|f\left(z\right)-f\left(z_{0}\right)\right|<\frac{\varepsilon}{\left|a\right|}
+\]
+
+\end_inset
+
+и, следовательно, будет 
+\begin_inset Formula 
+\[
+\left|h\left(z\right)-h\left(z_{0}\right)\right|=\left|a\right|\cdot\left|f\left(z\right)-f\left(z_{0}\right)\right|<\left|a\right|\frac{\varepsilon}{\left|a\right|}=\varepsilon,
+\]
+
+\end_inset
+
+ что и требуется.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь общий случай, когда 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ не обязательно является константной.
+ Тогда 
+\begin_inset Formula 
+\begin{multline*}
+h\left(z\right)-h\left(z_{0}\right)=f\left(z\right)g\left(z\right)-f\left(z_{0}\right)g\left(z_{0}\right)=\\
+=f\left(z\right)g\left(z\right)-f\left(z\right)g\left(z_{0}\right)+f\left(z\right)g\left(z_{0}\right)-f\left(z_{0}\right)g\left(z_{0}\right)=\\
+=f\left(z\right)\cdot\left[g\left(z\right)-g\left(z_{0}\right)\right]+\left[f\left(z\right)-f\left(z_{0}\right)\right]g\left(z_{0}\right)=\\
+=\left[f\left(z\right)-f\left(z_{0}\right)+f\left(z_{0}\right)\right]\left[g\left(z\right)-g\left(z_{0}\right)\right]+\left[f\left(z\right)-f\left(z_{0}\right)\right]g\left(z_{0}\right)=\\
+=\left[f\left(z\right)-f\left(z_{0}\right)\right]\left[g\left(z\right)-g\left(z_{0}\right)\right]+f\left(z_{0}\right)\left[g\left(z\right)-g\left(z_{0}\right)\right]+\left(f\left(z\right)-f\left(z_{0}\right)\right)g\left(z_{0}\right)
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользуемся неравенством а) из задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:triangle-inequality-for-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left|h\left(z\right)-h\left(z_{0}\right)\right|\le\left|f\left(z\right)-f\left(z_{0}\right)\right|\left|g\left(z\right)-g\left(z_{0}\right)\right|+\left|f\left(z_{0}\right)\cdot\left[g\left(z\right)-g\left(z_{0}\right)\right]\right|+\left|\left[f\left(z\right)-f\left(z_{0}\right)\right]\cdot g\left(z_{0}\right)\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Зададимся вещественным числом 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ Нам нужно выбрать 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ таким образом, чтобы из 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ следовало 
+\begin_inset Formula $\left|h\left(z\right)-h\left(z_{0}\right)\right|<\varepsilon$
+\end_inset
+
+.
+ Попытаемся добиться того, чтобы при 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ каждое из слагаемых неравенства было бы меньше 
+\begin_inset Formula $\frac{\varepsilon}{3}$
+\end_inset
+
+, то есть чтобы одновременно выполнялись неравенства:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left|f\left(z\right)-f\left(z_{0}\right)\right|\left|g\left(z\right)-g\left(z_{0}\right)\right|<\frac{\varepsilon}{3},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left|f\left(z_{0}\right)\cdot\left[g\left(z\right)-g\left(z_{0}\right)\right]\right|<\frac{\varepsilon}{3}
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+\left|\left[f\left(z\right)-f\left(z_{0}\right)\right]\cdot g\left(z_{0}\right)\right|<\frac{\varepsilon}{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Начнём со второго неравенства.
+ Если 
+\begin_inset Formula $f\left(z_{0}\right)=0$
+\end_inset
+
+, то оно выполняется при любом 
+\begin_inset Formula $z$
+\end_inset
+
+ и 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ можно выбрать произвольно.
+ Пусть теперь 
+\begin_inset Formula $g\left(z_{0}\right)\neq0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — непрерывная функция (по условию), то мы можем выбрать вещественное число
+ 
+\begin_inset Formula $\delta_{1}>0$
+\end_inset
+
+ таким образом, чтобы при 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta_{1}$
+\end_inset
+
+ выполнялось неравенство 
+\begin_inset Formula $\left|g\left(z\right)-g\left(z_{0}\right)\right|<\frac{\varepsilon}{3\cdot\left|f\left(z_{0}\right)\right|}$
+\end_inset
+
+, тогда будет 
+\begin_inset Formula 
+\[
+\left|f\left(z_{0}\right)\left[g\left(z\right)-g\left(z_{0}\right)\right]\right|=\left|f\left(z_{0}\right)\right|\cdot\left|g\left(z\right)-g\left(z_{0}\right)\right|<\left|f\left(z_{0}\right)\right|\cdot\frac{\varepsilon}{3\cdot\left|f\left(z_{0}\right)\right|}=\frac{\varepsilon}{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Аналогично (с заменой 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+) можно показать, что существует вещественное число 
+\begin_inset Formula $\delta_{2}>0$
+\end_inset
+
+ такое, что из 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta_{2}$
+\end_inset
+
+ следует 
+\begin_inset Formula $\left|\left[f\left(z\right)-f\left(z_{0}\right)\right]\cdot g\left(z_{0}\right)\right|<\frac{\varepsilon}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Наконец, так как 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — непрерывные функции, то можно подобрать такое вещественное число 
+\begin_inset Formula $\delta_{3}>0$
+\end_inset
+
+, что при 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta_{3}$
+\end_inset
+
+ будет выполняться 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|<1$
+\end_inset
+
+, а также вещественное число 
+\begin_inset Formula $\delta_{4}>0$
+\end_inset
+
+ такое, что при 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta_{4}$
+\end_inset
+
+ будет выполняться 
+\begin_inset Formula $\left|g\left(z\right)-g\left(z_{0}\right)\right|<\frac{\varepsilon}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Теперь выберем в качестве 
+\begin_inset Formula $\delta$
+\end_inset
+
+ наименьшее из 
+\begin_inset Formula $\delta_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $\delta_{4}$
+\end_inset
+
+.
+ Тогда при 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ будут одновременно выполняться неравенства
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left|f\left(z\right)-f\left(z_{0}\right)\right|\left|g\left(z\right)-g\left(z_{0}\right)\right|<\frac{\varepsilon}{3},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left|f\left(z_{0}\right)\cdot\left[g\left(z\right)-g\left(z_{0}\right)\right]\right|<\frac{\varepsilon}{3}
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+\left|\left[f\left(z\right)-f\left(z_{0}\right)\right]\cdot g\left(z_{0}\right)\right|<\frac{\varepsilon}{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Поэтому получим, что при 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ справедливо неравенство 
+\begin_inset Formula $\left|h\left(z\right)-h\left(z_{0}\right)\right|<\varepsilon$
+\end_inset
+
+ и, следовательно, функция 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)g\left(z\right)$
+\end_inset
+
+ — непрерывная.
+\end_layout
+
+\begin_layout Solution
+Из результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (пункт в
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно, выделить каждый пункт в отдельную задачу и сослаться на конкретную
+ задачу
+\end_layout
+
+\end_inset
+
+) получаем, в частности, что если функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ — натуральное число, то функция 
+\begin_inset Formula $\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+ также непрерывна в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:ratio-of-continuous-functions-is-continuos"
+
+\end_inset
+
+Пусть функции комплексного или действительного аргумента 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ непрерывны в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)\neq0$
+\end_inset
+
+.
+ Доказать, что в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ непрерывны функции: а) 
+\begin_inset Formula $h\left(z\right)=\frac{1}{g\left(z\right)}$
+\end_inset
+
+ и б) 
+\begin_inset Formula $h\left(z\right)=\frac{f\left(z\right)}{g\left(z\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Доказательства будем проводить для функций комплексного аргумента.
+ Так как вещественные числа являются частным случаем комплексных, то непрерывнос
+ть функции вещественного аргумента будет следовать из непрерывности функции
+ комплексного аргумента в той же (вещественной) точке.
+\end_layout
+
+\begin_layout Solution
+а) По определению 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+h\left(z\right)-h\left(z_{0}\right)=\frac{1}{g\left(z\right)}-\frac{1}{g\left(z_{0}\right)}=\frac{g\left(z_{0}\right)-g\left(z\right)}{g\left(z_{0}\right)g\left(z\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Значит неравенство 
+\begin_inset Formula $\left|h\left(z\right)-h\left(z_{0}\right)\right|<\varepsilon$
+\end_inset
+
+ можно переписать в виде 
+\begin_inset Formula 
+\[
+\left|g\left(z\right)-g\left(z_{0}\right)\right|<\varepsilon\cdot\left|g\left(z_{0}\right)\right|\cdot\left|g\left(z\right)\right|=\varepsilon\cdot\left|g\left(z_{0}\right)\right|\cdot\left|\left[g\left(z\right)-g\left(z_{0}\right)\right]+g\left(z_{0}\right)\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В последнем модуле воспользуемся неравенством а) из задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:triangle-inequality-for-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left|g\left(z\right)-g\left(z_{0}\right)\right|<\varepsilon\cdot\left|g\left(z_{0}\right)\right|\left(\left|g\left(z\right)-g\left(z_{0}\right)\right|+\left|g\left(z_{0}\right)\right|\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left|g\left(z\right)-g\left(z_{0}\right)\right|-\varepsilon\cdot\left|g\left(z_{0}\right)\right|\cdot\left|g\left(z\right)-g\left(z_{0}\right)\right|<\varepsilon\cdot\left|g\left(z_{0}\right)\right|^{2},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left|g\left(z\right)-g\left(z_{0}\right)\right|<\frac{\varepsilon\cdot\left|g\left(z_{0}\right)\right|^{2}}{1-\varepsilon\cdot\left|g\left(z_{0}\right)\right|}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В последнем неравенстве правая часть больше нуля при 
+\begin_inset Formula $1-\varepsilon\left|g\left(z_{0}\right)\right|>0$
+\end_inset
+
+, то есть при 
+\begin_inset Formula $0<\varepsilon<\frac{1}{\left|g\left(z_{0}\right)\right|}$
+\end_inset
+
+ можно выбрать вещественное число 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ таким образом, чтобы из 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ следовало выполнение неравенства 
+\begin_inset Formula 
+\[
+\left|g\left(z\right)-g\left(z_{0}\right)\right|<\frac{\varepsilon\cdot\left|g\left(z_{0}\right)\right|^{2}}{1-\varepsilon\cdot\left|g\left(z_{0}\right)\right|}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Тогда 
+\begin_inset Formula 
+\[
+\left|h\left(z\right)-h\left(z_{0}\right)\right|<\varepsilon,
+\]
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Solution
+Если же 
+\begin_inset Formula $\varepsilon>\frac{1}{\left|g\left(z_{0}\right)\right|}$
+\end_inset
+
+, то возьмём действительное число 
+\begin_inset Formula $\varepsilon_{1}=\frac{1}{2\left|g\left(z_{0}\right)\right|}$
+\end_inset
+
+, по доказанному выше существует такое вещественное число 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, что из 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ следует 
+\begin_inset Formula $\left|h\left(z\right)-h\left(z_{0}\right)\right|<\varepsilon_{1}$
+\end_inset
+
+, но так как 
+\begin_inset Formula $\varepsilon>\frac{1}{\left|g\left(z_{0}\right)\right|}>\frac{1}{2\left|g\left(z_{0}\right)\right|}=\varepsilon_{1}$
+\end_inset
+
+, то при тех же ограничениях на 
+\begin_inset Formula $z$
+\end_inset
+
+ будет иметь место равенство 
+\begin_inset Formula $\left|h\left(z\right)-h\left(z_{0}\right)\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ приведено другое доказательство, которое опирается на то, что мы заранее
+ знаем, что нам понадобится, чтобы было 
+\begin_inset Formula $\left|g\left(z\right)\right|<\frac{\left|g\left(z_{0}\right)\right|}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Перепишем 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ в виде произведения:
+\begin_inset Formula 
+\[
+h\left(z\right)=\frac{f\left(z\right)}{g\left(z\right)}=f\left(z\right)\cdot\frac{1}{g\left(z\right)}.
+\]
+
+\end_inset
+
+ Здесь функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна по условию, а функция 
+\begin_inset Formula $\frac{1}{g\left(z\right)}$
+\end_inset
+
+ — по доказанному в пункте а).
+ Так как произведение двух непрерывных функций — снова непрерывная функция,
+ как было доказано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (пункт в), то 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ — непрерывная функция.
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — две функции комплексного или действительного аргумента.
+ Функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ называется 
+\emph on
+суперпозицей
+\emph default
+ функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+, если в каждой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $h\left(z_{0}\right)=f\left(g\left(z_{0}\right)\right)$
+\end_inset
+
+.
+ При этом, если 
+\begin_inset Formula $g\left(z_{0}\right)$
+\end_inset
+
+ не определено или функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $g\left(z_{0}\right)$
+\end_inset
+
+ не определена, то и 
+\begin_inset Formula $h\left(z_{0}\right)$
+\end_inset
+
+ не определено.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:superposition-of-continuous-functions-is-continuous"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — функции комплексного или действительного аргумента.
+ Пусть 
+\begin_inset Formula $g\left(z_{0}\right)=z_{1}$
+\end_inset
+
+ и пусть функция 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, а функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ доказать, что функция 
+\begin_inset Formula $h\left(z\right)=f\left(g\left(z\right)\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Зададимся некоторым вещественным числом 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $w=g\left(z\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula $h\left(z\right)-h\left(z_{0}\right)=f\left(g\left(z\right)\right)-f\left(g\left(z_{0}\right)\right)=f\left(w\right)-f\left(z_{1}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, то, по определению, существует такое вещественное число 
+\begin_inset Formula $\delta_{1}>0$
+\end_inset
+
+, что из 
+\begin_inset Formula $\left|w-z_{1}\right|<\delta_{1}$
+\end_inset
+
+ следует 
+\begin_inset Formula $\left|h\left(z\right)-h\left(z_{0}\right)\right|=\left|f\left(w\right)-f\left(z_{1}\right)\right|<\varepsilon$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $w=g\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $z_{1}=g\left(z_{0}\right)$
+\end_inset
+
+ и функция 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то существует такое 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, что из 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ следует 
+\begin_inset Formula $\left|w-z_{1}\right|=\left|g\left(z\right)-g\left(z_{0}\right)\right|<\delta_{1}$
+\end_inset
+
+, но отсюда следует, как было показано выше, выполнение неравенства 
+\begin_inset Formula $\left|h\left(z\right)-h\left(z_{0}\right)\right|<\varepsilon$
+\end_inset
+
+.
+ Значит функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, что и требовалось доказать.
+\end_layout
+
+\begin_layout Standard
+Из результатов задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:ratio-of-continuous-functions-is-continuos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:superposition-of-continuous-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, в частности, что если из нескольких функций комплексного (или
+ действительного) аргумента, непрерывных при всех значениях аргумента, построено
+ некоторое выражение с помощью операций сложения, вычитания, умножения,
+ деления, возведения в натуральную степень и суперпозиции, то полученное
+ выражение будет задавать функцию, непрерывную всюду, где ни один из знаменателе
+й не обращался в 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Например, учитывая результаты задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:constant-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:identity-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем, что функции 
+\begin_inset Formula $f\left(z\right)=z^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(z\right)=az^{n}$
+\end_inset
+
+ и вообще 
+\begin_inset Formula $f\left(z\right)=a_{0}z^{n}+a_{1}z^{n-1}+\dots+a_{n}$
+\end_inset
+
+ является непрерывными функциями аргумента 
+\begin_inset Formula $z$
+\end_inset
+
+ при любых комплексных числах 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что функции действительного аргумента 
+\begin_inset Formula $f\left(x\right)=\sin x$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x\right)=\cos x$
+\end_inset
+
+ непрерывны при всех значениях аргумента 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Выберем произвольное вещественное число 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Рассмотрим разность 
+\begin_inset Formula $\sin x-\sin x_{0}$
+\end_inset
+
+.
+ По тригонометрическим формулам 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Их нужно бы вывести
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\sin x-\sin x_{0}=2\sin\left(\frac{x-x_{0}}{2}\right)\cdot\cos\left(\frac{x+x_{0}}{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользуемся неравенствами, справедливыми для любых вещественных 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Нужно бы их доказать, особенно второе
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula $\left|\cos x\right|\le1$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|\sin x\right|\le\left|x\right|$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\left|\sin x-\sin x_{0}\right|=2\left|\sin\left(\frac{x-x_{0}}{2}\right)\right|\cdot\left|\cos\left(\frac{x+x_{0}}{2}\right)\right|\le\\
+\le2\left|\frac{x-x_{0}}{2}\right|\cdot1\le\left|x-x_{0}\right|.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, если выбрать 
+\begin_inset Formula $\delta=\varepsilon$
+\end_inset
+
+, то для любого вещественного числа 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ из неравенства 
+\begin_inset Formula $\left|x-x_{0}\right|<\delta=\varepsilon$
+\end_inset
+
+ будет следовать выполнение неравенства 
+\begin_inset Formula $\left|\sin x-\sin x_{0}\right|<\varepsilon$
+\end_inset
+
+, то есть функция 
+\begin_inset Formula $\sin x$
+\end_inset
+
+ является непрерывной при любом вещественном значении аргумента 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для косинуса имеет место аналогичное равенство 
+\begin_inset Formula 
+\[
+\cos x-\cos x_{0}=-2\sin\left(\frac{x+x_{0}}{2}\right)\cdot\sin\left(\frac{x-x_{0}}{2}\right),
+\]
+
+\end_inset
+
+ а так как 
+\begin_inset Formula $\left|\sin x\right|\le1$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{multline*}
+\left|\cos x-\cos x_{0}\right|=2\cdot\left|\sin\left(\frac{x+x_{0}}{2}\right)\right|\cdot\left|\sin\left(\frac{x-x_{0}}{2}\right)\right|\le\\
+\le2\cdot1\cdot\left|\frac{x-x_{0}}{2}\right|=\left|x-x_{0}\right|.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, для любого вещественного числа 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ из неравенства 
+\begin_inset Formula $\left|x-x_{0}\right|<\delta=\varepsilon$
+\end_inset
+
+ будет следовать выполнение неравенства 
+\begin_inset Formula $\left|\cos x-\cos x_{0}\right|<\varepsilon$
+\end_inset
+
+, то есть функция 
+\begin_inset Formula $\cos x$
+\end_inset
+
+ является непрерывной при любом вещественном значении аргумента 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Рассмотрим при всех действительных значениях 
+\begin_inset Formula $x\ge0$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+, похоже, здесь опечатка
+\end_layout
+
+\end_inset
+
+ функцию 
+\begin_inset Formula $f\left(x\right)=\sqrt[n]{x}$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — некоторое натуральное число и 
+\begin_inset Formula $\sqrt[n]{x}$
+\end_inset
+
+ берётся неотрицательным.
+ Доказать, что эта функция непрерывна при всех 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Выберем произвольное вещественное число 
+\begin_inset Formula $x_{0}>0$
+\end_inset
+
+ и рассмотрим разность 
+\begin_inset Formula $\sqrt[n]{x}-\sqrt[n]{x_{0}}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\left|x-x_{0}\right|<\delta$
+\end_inset
+
+, где 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ — произвольное вещественное число, то 
+\begin_inset Formula $x_{0}-\delta<x<x_{0}+\delta$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\sqrt[n]{x_{0}-\delta}<\sqrt[n]{x}<\sqrt[n]{x_{0}+\delta}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\sqrt[n]{x_{0}-\delta}-\sqrt[n]{x_{0}}<\sqrt[n]{x}-\sqrt[n]{x_{0}}<\sqrt[n]{x_{0}+\delta}-\sqrt[n]{x_{0}}$
+\end_inset
+
+.
+ Зададимся теперь вещественным числом 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ и рассмотрим неравенство
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left|\sqrt[n]{x}-\sqrt[n]{x_{0}}\right|<\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Раскроем в этом неравенстве модуль:
+\begin_inset Formula 
+\[
+\sqrt[n]{x_{0}}-\varepsilon<\sqrt[n]{x}<\sqrt[n]{x_{0}}+\varepsilon,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как операция возведения в натуральную степень 
+\begin_inset Formula $n$
+\end_inset
+
+ является монотонно возрастающей функцией при 
+\begin_inset Formula $x>0$
+\end_inset
+
+, то получаем 
+\begin_inset Formula 
+\[
+\left(\sqrt[n]{x_{0}}-\varepsilon\right)^{n}<x<\left(\sqrt[n]{x_{0}}+\varepsilon\right)^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $\sqrt[n]{x_{0}}=y_{0}$
+\end_inset
+
+, тогда последнее неравенство можно переписать следующим образом:
+\begin_inset Formula 
+\[
+\left(y_{0}-\varepsilon\right)^{n}<x<\left(y_{0}+\varepsilon\right)^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Исходно доказательство было переусложнено раскрытием скобок по формуле бинома
+ Ньютона
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Вычтем из каждой части неравенства 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(y_{0}-\varepsilon\right)^{n}-x_{0}<x-x<\left(y_{0}+\varepsilon\right)^{n}-x_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В качестве 
+\begin_inset Formula $\delta$
+\end_inset
+
+ возьмём наиболее из чисел 
+\begin_inset Formula $\left(y_{0}+\varepsilon\right)^{n}-x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{0}-\left(y_{0}-\varepsilon\right)^{n}$
+\end_inset
+
+.
+ Заметим, что первое из чисел положительно, поэтому 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula $\delta$
+\end_inset
+
+ зависит от 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Теперь из 
+\begin_inset Formula $\left|x-x_{0}\right|<\delta$
+\end_inset
+
+ будет следовать выполнение неравенства 
+\begin_inset Formula $\left|\sqrt[n]{x}-\sqrt[n]{x_{0}}\right|<\varepsilon$
+\end_inset
+
+, то есть функция 
+\begin_inset Formula $\sqrt[n]{x}$
+\end_inset
+
+ является непрерывной при любом вещественном 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+При изучении непрерывности приходится сталкиваться с некоторыми утверждениями,
+ которые сталкиваться с некоторыми утверждениями, которые интуитивно кажутся
+ совершенно очевидными, но строго доказательство которых сопряжено с большими
+ техническими трудностями и требует более строго, чем это делается в школе,
+ определения действительных чисел, а также изучения основ теории множеств
+ и топологии.
+ Примером такого утверждения может служить следующее утверждение: если функция
+ действительного аргумента 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ непрерывна на некотором отрезке и принимает на этом отрезке только целочисленны
+е значения, то она принимает на всём отрезке одно и то же значение.
+ Действительно, интуитивно кажется очевидным, что при движении точки 
+\begin_inset Formula $x$
+\end_inset
+
+ по отрезку значение функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ должно изменяться непрерывно и не может перескочить из одного целочисленного
+ значения в другое.
+ Однако доказать это утверждение строго довольно тяжело.
+\end_layout
+
+\begin_layout Standard
+В дальнейшем изложении мы будем больше ориентироваться на интуицию читателя
+ и примем несколько 
+\begin_inset Quotes rld
+\end_inset
+
+интуитивно ясных
+\begin_inset Quotes rrd
+\end_inset
+
+ утверждений, связанных с непрерывностью, без доказательства.
+ В частности, без доказательства мы примем утверждение, сформулированное
+ выше в качестве примера.
+ Строго доказательство этого утверждения в популярном изложении можно найти,
+ например, в книге Стинрод Н.
+ и Чинн У., Первые понятия топологии, 
+\begin_inset Quotes rld
+\end_inset
+
+Мир
+\begin_inset Quotes rrd
+\end_inset
+
+, 1967.
 \end_layout
 
 \begin_layout Standard
