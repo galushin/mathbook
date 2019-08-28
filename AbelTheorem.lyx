@@ -58388,6 +58388,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:constant-function-is-continuous"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $a$
 \end_inset
@@ -58455,6 +58461,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:identity-function-is-continuous"
+
+\end_inset
+
 Доказать, что функция комплексного аргумента 
 \begin_inset Formula $f\left(z\right)=z$
 \end_inset
@@ -59363,6 +59375,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:ratio-of-continuous-functions-is-continuos"
+
+\end_inset
+
 Пусть функции комплексного или действительного аргумента 
 \begin_inset Formula $f\left(z\right)$
 \end_inset
@@ -59675,6 +59693,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:superposition-of-continuous-functions-is-continuous"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $f\left(z\right)$
 \end_inset
@@ -59716,26 +59740,113 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Зададимся некоторым вещественным числом 
+\begin_inset Formula $\varepsilon>0$
 \end_inset
 
+.
+ Обозначим 
+\begin_inset Formula $w=g\left(z\right)$
+\end_inset
 
+, тогда 
+\begin_inset Formula $h\left(z\right)-h\left(z_{0}\right)=f\left(g\left(z\right)\right)-f\left(g\left(z_{0}\right)\right)=f\left(w\right)-f\left(z_{1}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, то, по определению, существует такое вещественное число 
+\begin_inset Formula $\delta_{1}>0$
+\end_inset
+
+, что из 
+\begin_inset Formula $\left|w-z_{1}\right|<\delta_{1}$
+\end_inset
+
+ следует 
+\begin_inset Formula $\left|h\left(z\right)-h\left(z_{0}\right)\right|=\left|f\left(w\right)-f\left(z_{1}\right)\right|<\varepsilon$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $w=g\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $z_{1}=g\left(z_{0}\right)$
+\end_inset
+
+ и функция 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то существует такое 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, что из 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ следует 
+\begin_inset Formula $\left|w-z_{1}\right|=\left|g\left(z\right)-g\left(z_{0}\right)\right|<\delta_{1}$
+\end_inset
+
+, но отсюда следует, как было показано выше, выполнение неравенства 
+\begin_inset Formula $\left|h\left(z\right)-h\left(z_{0}\right)\right|<\varepsilon$
+\end_inset
+
+.
+ Значит функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, что и требовалось доказать.
 \end_layout
 
 \begin_layout Standard
-Из результатов задач 239-241
-\begin_inset Note Note
-status open
+Из результатов задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Добавить ссылки
-\end_layout
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:ratio-of-continuous-functions-is-continuos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:superposition-of-continuous-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -59752,23 +59863,23 @@ status open
 \end_layout
 
 \begin_layout Standard
-Например, учитывая результаты задач 236
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+Например, учитывая результаты задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:constant-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
- и 237
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:identity-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -59824,16 +59935,150 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+Выберем произвольное вещественное число 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Рассмотрим разность 
+\begin_inset Formula $\sin x-\sin x_{0}$
+\end_inset
+
+.
+ По тригонометрическим формулам 
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Их нужно бы вывести
 \end_layout
 
 \end_inset
 
+,
+\begin_inset Formula 
+\[
+\sin x-\sin x_{0}=2\sin\left(\frac{x-x_{0}}{2}\right)\cdot\cos\left(\frac{x+x_{0}}{2}\right).
+\]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользуемся неравенствами, справедливыми для любых вещественных 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Нужно бы их доказать, особенно второе
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula $\left|\cos x\right|\le1$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|\sin x\right|\le\left|x\right|$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\left|\sin x-\sin x_{0}\right|=2\left|\sin\left(\frac{x-x_{0}}{2}\right)\right|\cdot\left|\cos\left(\frac{x+x_{0}}{2}\right)\right|\le\\
+\le2\left|\frac{x-x_{0}}{2}\right|\cdot1\le\left|x-x_{0}\right|.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, если выбрать 
+\begin_inset Formula $\delta=\varepsilon$
+\end_inset
+
+, то для любого вещественного числа 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ из неравенства 
+\begin_inset Formula $\left|x-x_{0}\right|<\delta=\varepsilon$
+\end_inset
+
+ будет следовать выполнение неравенства 
+\begin_inset Formula $\left|\sin x-\sin x_{0}\right|<\varepsilon$
+\end_inset
+
+, то есть функция 
+\begin_inset Formula $\sin x$
+\end_inset
+
+ является непрерывной при любом вещественном значении аргумента 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для косинуса имеет место аналогичное равенство 
+\begin_inset Formula 
+\[
+\cos x-\cos x_{0}=-2\sin\left(\frac{x+x_{0}}{2}\right)\cdot\sin\left(\frac{x-x_{0}}{2}\right),
+\]
+
+\end_inset
+
+ а так как 
+\begin_inset Formula $\left|\sin x\right|\le1$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{multline*}
+\left|\cos x-\cos x_{0}\right|=2\cdot\left|\sin\left(\frac{x+x_{0}}{2}\right)\right|\cdot\left|\sin\left(\frac{x-x_{0}}{2}\right)\right|\le\\
+\le2\cdot1\cdot\left|\frac{x-x_{0}}{2}\right|=\left|x-x_{0}\right|.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, для любого вещественного числа 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ из неравенства 
+\begin_inset Formula $\left|x-x_{0}\right|<\delta=\varepsilon$
+\end_inset
+
+ будет следовать выполнение неравенства 
+\begin_inset Formula $\left|\cos x-\cos x_{0}\right|<\varepsilon$
+\end_inset
+
+, то есть функция 
+\begin_inset Formula $\cos x$
+\end_inset
+
+ является непрерывной при любом вещественном значении аргумента 
+\begin_inset Formula $x$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -59880,16 +60125,201 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Выберем произвольное вещественное число 
+\begin_inset Formula $x_{0}>0$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ и рассмотрим разность 
+\begin_inset Formula $\sqrt[n]{x}-\sqrt[n]{x_{0}}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\left|x-x_{0}\right|<\delta$
+\end_inset
+
+, где 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ — произвольное вещественное число, то 
+\begin_inset Formula $x_{0}-\delta<x<x_{0}+\delta$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\sqrt[n]{x_{0}-\delta}<\sqrt[n]{x}<\sqrt[n]{x_{0}+\delta}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\sqrt[n]{x_{0}-\delta}-\sqrt[n]{x_{0}}<\sqrt[n]{x}-\sqrt[n]{x_{0}}<\sqrt[n]{x_{0}+\delta}-\sqrt[n]{x_{0}}$
+\end_inset
+
+.
+ Зададимся теперь вещественным числом 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ и рассмотрим неравенство
 \end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left|\sqrt[n]{x}-\sqrt[n]{x_{0}}\right|<\varepsilon.
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Раскроем в этом неравенстве модуль:
+\begin_inset Formula 
+\[
+\sqrt[n]{x_{0}}-\varepsilon<\sqrt[n]{x}<\sqrt[n]{x_{0}}+\varepsilon,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как операция возведения в натуральную степень 
+\begin_inset Formula $n$
+\end_inset
+
+ является монотонно возрастающей функцией при 
+\begin_inset Formula $x>0$
+\end_inset
+
+, то получаем 
+\begin_inset Formula 
+\[
+\left(\sqrt[n]{x_{0}}-\varepsilon\right)^{n}<x<\left(\sqrt[n]{x_{0}}+\varepsilon\right)^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $\sqrt[n]{x_{0}}=y_{0}$
+\end_inset
+
+, тогда последнее неравенство можно переписать следующим образом:
+\begin_inset Formula 
+\[
+\left(y_{0}-\varepsilon\right)^{n}<x<\left(y_{0}+\varepsilon\right)^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Раскрыв скобки по формуле бинома Ньютона 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Про это нужно написать
+\end_layout
+
+\end_inset
+
+, получим:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(y_{0}+\varepsilon\right)^{n}=y_{0}^{n}+ny_{0}^{n-1}\varepsilon+\binom{n}{2}y_{0}^{n-2}\cdot\varepsilon^{2}\dots+\varepsilon^{n},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(y_{0}-\varepsilon\right)^{n}=y_{0}^{n}-ny_{0}^{n-1}\varepsilon+\binom{n}{2}y_{0}^{n-2}\cdot\varepsilon^{2}\dots+\left(-1\right)^{n}\varepsilon^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $y_{0}^{n}=x_{0},$
+\end_inset
+
+то получаем следующее неравенство
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+-ny_{0}^{n-1}\varepsilon+\binom{n}{2}y_{0}^{n-2}\cdot\varepsilon^{2}\dots+\left(-1\right)^{n}\varepsilon^{n}<x-x_{0}<ny_{0}^{n-1}\varepsilon+\binom{n}{2}y_{0}^{n-2}\cdot\varepsilon^{2}\dots+\varepsilon^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Положим 
+\begin_inset Formula 
+\[
+\delta=\max\left\{ ny_{0}^{n-1}\varepsilon+\binom{n}{2}y_{0}^{n-2}\cdot\varepsilon^{2}\dots+\varepsilon^{n},ny_{0}^{n-1}\varepsilon-\binom{n}{2}y_{0}^{n-2}\cdot\varepsilon^{2}\dots+\left(-1\right)^{n+1}\varepsilon^{n}\right\} ,
+\]
+
+\end_inset
+
+ заметим, что первое из чисел положительно, поэтому 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula $\delta$
+\end_inset
+
+ зависит от 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Теперь из 
+\begin_inset Formula $\left|x-x_{0}\right|<\delta$
+\end_inset
+
+ будет следовать выполнение неравенства 
+\begin_inset Formula $\left|\sqrt[n]{x}-\sqrt[n]{x_{0}}\right|<\varepsilon$
+\end_inset
+
+, то есть функция 
+\begin_inset Formula $\sqrt[n]{x}$
+\end_inset
+
+ является непрерывной при любом вещественном 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
