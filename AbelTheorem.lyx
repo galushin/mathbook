@@ -57632,6 +57632,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:geometric-interpretation-of-absolute-value-and-argument-of-complex-number"
+
+\end_inset
+
 Пусть комплексные числа изображаются точками плоскости.
  Каков геометрический смысл выражений 
 \begin_inset Formula $\left|z\right|$
@@ -57794,7 +57800,7 @@ noprefix "false"
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:geometric-interpretations-of-some-complex-equations"
+name "prob:geometric-interpretations-of-some-complex-expressions"
 
 \end_inset
 
@@ -58070,7 +58076,7 @@ status open
 Воспользуемся геометрическими интерпретациями, найденными в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:geometric-interpretations-of-some-complex-equations"
+reference "prob:geometric-interpretations-of-some-complex-expressions"
 plural "false"
 caps "false"
 noprefix "false"
@@ -58265,27 +58271,27 @@ f\left(x\right)=\frac{x^{3}-2x}{x^{2}-\sin x+1},
 \begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|<\varepsilon$
 \end_inset
 
- разъясняется в задачах 233в 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
-
-\end_inset
-
- и 234г 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ разъясняется в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretation-of-absolute-value-and-argument-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-.
+(пункт в) и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretations-of-some-complex-expressions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (пункт г).
 \end_layout
 
 \begin_layout Example
@@ -58338,12 +58344,12 @@ status open
 \end_inset
 
  будет вытекать 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку на задачу 226
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -58571,10 +58577,20 @@ name "prob:identity-function-is-continuous"
 \end_inset
 
 .
- Тогда 
+ Тогда, с учётом результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
 \begin_inset Formula 
 \[
-\left|f\left(z\right)-f\left(z_{0}\right)\right|=\left|z^{2}-z_{0}^{2}\right|=\left|z+z_{0}\right|\cdot\left|z-z_{0}\right|.
+\left|f\left(z\right)-f\left(z_{0}\right)\right|=\left|z^{2}-z_{0}^{2}\right|=\left|\left(z-z_{0}\right)\left(z+z_{0}\right)\right|=\left|z+z_{0}\right|\cdot\left|z-z_{0}\right|.
 \]
 
 \end_inset
@@ -60222,23 +60238,31 @@ status open
 \end_layout
 
 \begin_layout Solution
-Раскрыв скобки по формуле бинома Ньютона 
 \begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Про это нужно написать
+Исходно доказательство было переусложнено раскрытием скобок по формуле бинома
+ Ньютона
 \end_layout
 
 \end_inset
 
-, получим:
+
+\end_layout
+
+\begin_layout Solution
+Вычтем из каждой части неравенства 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Solution
 \begin_inset Formula 
 \[
-\left(y_{0}+\varepsilon\right)^{n}=y_{0}^{n}+ny_{0}^{n-1}\varepsilon+\binom{n}{2}y_{0}^{n-2}\cdot\varepsilon^{2}\dots+\varepsilon^{n},
+\left(y_{0}-\varepsilon\right)^{n}-x_{0}<x-x<\left(y_{0}+\varepsilon\right)^{n}-x_{0}.
 \]
 
 \end_inset
@@ -60247,45 +60271,20 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Formula 
-\[
-\left(y_{0}-\varepsilon\right)^{n}=y_{0}^{n}-ny_{0}^{n-1}\varepsilon+\binom{n}{2}y_{0}^{n-2}\cdot\varepsilon^{2}\dots+\left(-1\right)^{n}\varepsilon^{n}.
-\]
-
+В качестве 
+\begin_inset Formula $\delta$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Solution
-Так как 
-\begin_inset Formula $y_{0}^{n}=x_{0},$
+ возьмём наиболее из чисел 
+\begin_inset Formula $\left(y_{0}+\varepsilon\right)^{n}-x_{0}$
 \end_inset
 
-то получаем следующее неравенство
-\end_layout
-
-\begin_layout Solution
-\begin_inset Formula 
-\[
--ny_{0}^{n-1}\varepsilon+\binom{n}{2}y_{0}^{n-2}\cdot\varepsilon^{2}\dots+\left(-1\right)^{n}\varepsilon^{n}<x-x_{0}<ny_{0}^{n-1}\varepsilon+\binom{n}{2}y_{0}^{n-2}\cdot\varepsilon^{2}\dots+\varepsilon^{n}.
-\]
-
+ и 
+\begin_inset Formula $x_{0}-\left(y_{0}-\varepsilon\right)^{n}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Solution
-Положим 
-\begin_inset Formula 
-\[
-\delta=\max\left\{ ny_{0}^{n-1}\varepsilon+\binom{n}{2}y_{0}^{n-2}\cdot\varepsilon^{2}\dots+\varepsilon^{n},ny_{0}^{n-1}\varepsilon-\binom{n}{2}y_{0}^{n-2}\cdot\varepsilon^{2}\dots+\left(-1\right)^{n+1}\varepsilon^{n}\right\} ,
-\]
-
-\end_inset
-
- заметим, что первое из чисел положительно, поэтому 
+.
+ Заметим, что первое из чисел положительно, поэтому 
 \begin_inset Formula $\delta>0$
 \end_inset
 
