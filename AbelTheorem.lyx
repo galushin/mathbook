@@ -55281,6 +55281,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:connection-between-geometric-interpretations-of-complex-numbers"
+
+\end_inset
+
 Доказать следующую взаимосвязь между двумя геометрическими представлениями
  комплексных чисел: если 
 \begin_inset Formula $z_{A}$
@@ -56119,6 +56125,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "trigonometric-representation-of-complex-number"
+
+\end_inset
+
 Отсюда 
 \begin_inset Formula 
 \[
@@ -60607,6 +60619,1063 @@ name "fig:example-of-continuous-curve"
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Построить на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ кривые, задаваемые следующими параметрическими уравнениями: а) 
+\begin_inset Formula $z\left(t\right)=2t$
+\end_inset
+
+, б) 
+\begin_inset Formula $z\left(t\right)=it$
+\end_inset
+
+, в) 
+\begin_inset Formula $z\left(t\right)=it^{2}$
+\end_inset
+
+, г) 
+\begin_inset Formula $z\left(t\right)=t-it$
+\end_inset
+
+, д) 
+\begin_inset Formula $z\left(t\right)=t^{2}+it$
+\end_inset
+
+, е) 
+\begin_inset Formula $z\left(t\right)=R\left(\cos2\pi t+i\sin2\pi t\right)$
+\end_inset
+
+, ж) 
+\begin_inset Formula $z\left(t\right)=R\left(\cos4\pi t+i\sin4\pi t\right)$
+\end_inset
+
+, з) 
+\begin_inset Formula $z\left(t\right)=R\left(\cos\pi t+i\sin\pi t\right)$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+и) 
+\begin_inset Formula $z\left(t\right)=\begin{cases}
+\cos2\pi t+i\sin2\pi t & 0\le t\le\frac{1}{2},\\
+4t-3 & \frac{1}{2}<t\le1.
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+а) 
+\begin_inset Formula $x\left(t\right)=2t$
+\end_inset
+
+, 
+\begin_inset Formula $y\left(t\right)=0$
+\end_inset
+
+ — это вертикальный отрезок, соединяющий точки 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $(2,0)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $x\left(t\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=t$
+\end_inset
+
+ — это горизонтальный отрезок, соединяющий точки 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) 
+\begin_inset Formula $x\left(t\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=t^{2}$
+\end_inset
+
+ — это тот же отрезок, что и в пункте б), так как при 
+\begin_inset Formula $t\in\left[0;1\right]$
+\end_inset
+
+ выражение 
+\begin_inset Formula $t^{2}\in\left[0;1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) 
+\begin_inset Formula $x\left(t\right)=t$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=-t$
+\end_inset
+
+, то есть 
+\begin_inset Formula $y\left(t\right)=-x\left(t\right)$
+\end_inset
+
+.
+ Это отрезок диагонали 2 и 4 квадрантов, соединяющий точки 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,-1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+д) 
+\begin_inset Formula $x\left(t\right)=t^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=t$
+\end_inset
+
+, то есть все точки кривой лежат на параболе 
+\begin_inset Formula $x=y^{2}$
+\end_inset
+
+ между точками 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+е) для этой кривой 
+\begin_inset Formula $\left|z\left(t\right)\right|=R$
+\end_inset
+
+, то есть, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretations-of-some-complex-expressions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, её точки лежат на окружности радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ с центром в начале координат.
+ Если 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+, то 
+\begin_inset Formula $0\le2\pi t\le2\pi$
+\end_inset
+
+, то есть кривая описывает всю данную окружность.
+\end_layout
+
+\begin_layout Solution
+ж) здесь также 
+\begin_inset Formula $\left|z\left(t\right)\right|=R$
+\end_inset
+
+, но аргумент пробегает значения от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $4\pi$
+\end_inset
+
+, то есть кривая 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ описывает окружность радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ с центром в начале координат дважды, то есть эта та же кривая, что и в
+ пункте е).
+\end_layout
+
+\begin_layout Solution
+з) здесь снова 
+\begin_inset Formula $\left|z\left(t\right)\right|=R$
+\end_inset
+
+, но аргумент пробегает значения от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $\pi$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ — верхняя полуокружность радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ с центром в начале координат.
+\end_layout
+
+\begin_layout Solution
+и) при 
+\begin_inset Formula $t\in\left[0;\frac{1}{2}\right]$
+\end_inset
+
+ кривая 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ представляет собой часть окружности радиуса 
+\begin_inset Formula $1$
+\end_inset
+
+, причём, так как аргумент пробегает значения от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $\pi$
+\end_inset
+
+, то это верхняя полуокружность.
+ На втором участке кривой 
+\begin_inset Formula $x\left(t\right)=4t-3$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=0$
+\end_inset
+
+, то есть это часть оси 
+\begin_inset Formula $0x$
+\end_inset
+
+, а именно — отрезок, соединяющий точки 
+\begin_inset Formula $\left(-1,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Написать какое-нибудь параметрическое уравнение отрезка, соединяющего точки
+ 
+\begin_inset Formula $z_{0}=a_{0}+b_{0}i$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}=a_{1}+b_{1}i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $z\left(t\right)=z_{0}+\left(z_{1}-z_{0}\right)t$
+\end_inset
+
+.
+ Действительно, данная кривая проходит через требуемые концы отрезка 
+\begin_inset Formula $z\left(0\right)=z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z\left(1\right)=z_{1}$
+\end_inset
+
+, при этом 
+\begin_inset Formula $x\left(t\right)=a_{0}+\left(a_{1}-a_{0}\right)t$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=b_{0}+\left(b_{1}-b_{0}\right)t$
+\end_inset
+
+, поэтому, выражая 
+\begin_inset Formula $t$
+\end_inset
+
+ из определения 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ и подставляя его в выражение для 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+ получаем 
+\begin_inset Formula $y=b_{0}+\frac{b_{1}-b_{0}}{a_{1}-a_{0}}\left(x-a_{0}\right)$
+\end_inset
+
+, то есть действительно 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ задаёт часть прямой.
+\end_layout
+
+\begin_layout Remark
+В последующих задачах параметрические уравнения имеют индексы.
+ Эти индексы указывают лишь номер на кривой, но рассматриваются данные кривые
+ на одой и той же плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+С помощью каких геометрических преобразований из кривой 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ с уравнением 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ получается кривая 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ с уравнением 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+, если:
+\end_layout
+
+\begin_layout Problem
+а) 
+\begin_inset Formula $z_{2}\left(t\right)=z_{1}\left(t\right)+z_{0}$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — произвольное комплексное число;
+\end_layout
+
+\begin_layout Problem
+б) 
+\begin_inset Formula $z_{2}\left(t\right)=a\cdot z_{1}\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — действительное положительно число;
+\end_layout
+
+\begin_layout Problem
+в) 
+\begin_inset Formula $z_{2}\left(t\right)=z_{0}\cdot z_{1}\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\left|z_{0}\right|=1$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Problem
+г) 
+\begin_inset Formula $z_{2}\left(t\right)=z_{0}\cdot z_{1}\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — произвольное комплексное число?
+\end_layout
+
+\begin_layout Solution
+а) Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:connection-between-geometric-interpretations-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
+\begin_inset Formula $z_{0}=z_{2}\left(t\right)-z_{1}\left(t\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ соответствует вектору, соединяющему точки, соответствующие 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ сдвигом на вектора 
+\begin_inset Formula $\left(a_{0},b_{0}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{0}=a_{0}+b_{0}i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Так как точка 
+\begin_inset Formula $\left(a_{1},b_{1}\right)$
+\end_inset
+
+ при умножении на вещественное число 
+\begin_inset Formula $a$
+\end_inset
+
+ переходит в 
+\begin_inset Formula $\left(a\cdot a_{1},a\cdot b_{1}\right)$
+\end_inset
+
+, то есть умножение на положительное вещественное число — растяжение в соответст
+вующее число раз.
+\end_layout
+
+\begin_layout Solution
+в) Представим все комплексные числа в тригонометрической форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "trigonometric-representation-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\left|z_{2}\left(t\right)\right|=\left|z_{0}\right|\cdot\left|z_{1}\left(t\right)\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}z_{2}\left(t\right)=\mathrm{Arg}z_{1}\left(t\right)+\mathrm{Arg}z_{0}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ поворотом на угол 
+\begin_inset Formula $\varphi=\mathrm{Arg}z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) Представим все комплексные числа в тригонометрической форме, тогда 
+\begin_inset Formula $\left|z_{2}\left(t\right)\right|=\left|z_{0}\right|\cdot\left|z_{1}\left(t\right)\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}z_{2}\left(t\right)=\mathrm{Arg}z_{1}\left(t\right)+\mathrm{Arg}z_{0}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ поворотом на угол 
+\begin_inset Formula $\varphi=\mathrm{Arg}z_{0}$
+\end_inset
+
+ и растяжением в 
+\begin_inset Formula $\left|z_{0}\right|$
+\end_inset
+
+ раз.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ — параметрическое уравнение кривой 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Какая кривая описывается уравнением 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+, если 
+\begin_inset Formula $z_{2}\left(t\right)=z_{1}\left(1-t\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+Когда 
+\begin_inset Formula $t$
+\end_inset
+
+ пробегает отрезок 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+, значения 
+\begin_inset Formula $1-t$
+\end_inset
+
+ меняются от 
+\begin_inset Formula $1$
+\end_inset
+
+ до 
+\begin_inset Formula $0$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ задаёт ту же кривую, что 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+, но проходит её в противоположном направлении.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ — параметрические уравнения кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $z_{1}\left(1\right)=z_{2}\left(0\right)$
+\end_inset
+
+.
+ Какая кривая описывается уравнением 
+\begin_inset Formula $z_{3}\left(t\right)$
+\end_inset
+
+, если 
+\begin_inset Formula 
+\[
+z_{3}\left(t\right)=\begin{cases}
+z_{1}\left(2t\right) & 0\le t\le\frac{1}{2},\\
+z_{2}\left(2t-1\right) & \frac{1}{2}<t\le1.
+\end{cases}?
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+При 
+\begin_inset Formula $0\le t\le\frac{1}{2}$
+\end_inset
+
+ выражение 
+\begin_inset Formula $2t$
+\end_inset
+
+ пробегает значения из отрезка 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+, то есть при этом 
+\begin_inset Formula $z_{3}\left(t\right)$
+\end_inset
+
+ описывает всю кривую 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $\frac{1}{2}<t\le1$
+\end_inset
+
+ выражение 
+\begin_inset Formula $2t-1$
+\end_inset
+
+ пробегает значения из отрезка 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+, то есть при этом 
+\begin_inset Formula $z_{3}\left(t\right)$
+\end_inset
+
+ описывает всю кривую 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $z_{3}\left(t\right)$
+\end_inset
+
+ описывает кривую, получаемую объединением кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z_{1}\left(1\right)=z_{2}\left(0\right)$
+\end_inset
+
+, то полученная кривая будет непрерывной.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:example-of-argument-of-curve"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $z\left(t\right)=\cos\pi t+i\sin\pi t$
+\end_inset
+
+ (график соответствующей кривой показан на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:for-problem-249"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Найти все значения 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ в зависимости от 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Сопоставляя выражения для 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ с тригонометрической формой комплексного числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "trigonometric-representation-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем, что одно из значений 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $\pi t$
+\end_inset
+
+.
+ Так как аргумент комплексного числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:argument-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ определён с точностью до слагаемого, кратного 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\mathrm{Arg}z=\pi t+2\pi j$
+\end_inset
+
+, где 
+\begin_inset Formula $j$
+\end_inset
+
+ — произвольное целое число.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-249.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:for-problem-249"
+
+\end_inset
+
+Кривая 
+\begin_inset Formula $z\left(t\right)=\cos\pi t+i\sin\pi t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $z\left(t\right)=\cos\pi t+i\sin\pi t$
+\end_inset
+
+.
+ Как нужно выбрать одно из значений 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ при каждом 
+\begin_inset Formula $t$
+\end_inset
+
+, чтобы выбранные значения изменялись непрерывно при изменении 
+\begin_inset Formula $t$
+\end_inset
+
+ от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $1$
+\end_inset
+
+ при условии, что 
+\begin_inset Formula $\mathrm{Arg}z\left(0\right)$
+\end_inset
+
+ выбран равным а) 
+\begin_inset Formula $0$
+\end_inset
+
+, б) 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, в) 
+\begin_inset Formula $-4\pi$
+\end_inset
+
+, г) 
+\begin_inset Formula $2\pi k$
+\end_inset
+
+ (
+\begin_inset Formula $k$
+\end_inset
+
+ — фиксированное целое число).
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:example-of-argument-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=\pi t+2\pi j$
+\end_inset
+
+, где 
+\begin_inset Formula $j$
+\end_inset
+
+ — произвольное целое число.
+ В каждом пункте выберем 
+\begin_inset Formula $j$
+\end_inset
+
+ таким образом, чтобы 
+\begin_inset Formula $\mathrm{Arg}z\left(0\right)=2\pi j$
+\end_inset
+
+ принял требуемое значение.
+\end_layout
+
+\begin_layout Solution
+а) 
+\begin_inset Formula $2\pi j=0$
+\end_inset
+
+ и 
+\begin_inset Formula $j=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $2\pi j=2\pi$
+\end_inset
+
+ и 
+\begin_inset Formula $j=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) 
+\begin_inset Formula $2\pi j=-4\pi$
+\end_inset
+
+ и 
+\begin_inset Formula $j=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) 
+\begin_inset Formula $2\pi j=2\pi k$
+\end_inset
+
+ и 
+\begin_inset Formula $j=k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Во всех случаях удалось найти целое значение для 
+\begin_inset Formula $j$
+\end_inset
+
+, при котором 
+\begin_inset Formula $\mathrm{Arg}z\left(0\right)$
+\end_inset
+
+ принимает заданное значение.
+ То есть при всех 
+\begin_inset Formula $t\in\left[0;1\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ задаётся выражением вида 
+\begin_inset Formula $\pi t+2\pi j$
+\end_inset
+
+.
+ Как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:constant-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:identity-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, функции вещественного аргумента 
+\begin_inset Formula $f\left(t\right)=\pi$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(t\right)=t$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(t\right)=2\pi j$
+\end_inset
+
+ являются непрерывными при всех значениях 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Тогда, как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, функция 
+\begin_inset Formula $\pi t+2\pi j=f\left(t\right)g\left(t\right)+h\left(t\right)$
+\end_inset
+
+ также является непрерывной.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать этот раздел
 \end_layout
 
 \end_inset
