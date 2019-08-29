@@ -61671,6 +61671,135 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+Следующее утверждение интуитивно кажется достаточно очевидным, и мы приведём
+ его без доказательства.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:continuous-curve-has-continuous-argument"
+
+\end_inset
+
+Пусть непрерывная кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ не проходит через начало координат (то есть 
+\begin_inset Formula $z\left(t\right)\neq0$
+\end_inset
+
+ при 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+), и пусть аргумент начальной точки кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ (то есть 
+\begin_inset Formula $\mathrm{Arg}z\left(0\right)$
+\end_inset
+
+) выбран равным 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+.
+ Тогда можно так выбрать одно из значений аргумента для всех точке кривой
+ 
+\begin_inset Formula $C$
+\end_inset
+
+, чтобы при движении точки по кривой её аргумент изменялся непрерывно, начиная
+ со значения 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Другими словами, можно при каждом 
+\begin_inset Formula $t$
+\end_inset
+
+ выбрать 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ так, чтобы функция 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ была непрерывна при 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+ и чтобы 
+\begin_inset Formula $\varphi\left(0\right)=\varphi_{0}$
+\end_inset
+
+.
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+В книге: Стинрод Н., Чинн У., Первые понятия топологии, 
+\begin_inset Quotes rld
+\end_inset
+
+Мир
+\begin_inset Quotes rrd
+\end_inset
+
+, 1967, в параграфах 20-23 строго и доступно определяется угол, заметаемый
+ данной кривой.
+ Используя это понятие, легко получить утверждение теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:continuous-curve-has-continuous-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: достаточно положить 
+\begin_inset Formula $\varphi\left(t\right)=\varphi_{0}+\varphi_{1}\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\varphi_{1}\left(t\right)$
+\end_inset
+
+ — угол, заметаемый частью данной кривой от 
+\begin_inset Formula $z\left(0\right)$
+\end_inset
+
+ до 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
