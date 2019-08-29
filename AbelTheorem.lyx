@@ -60340,8 +60340,17 @@ status open
  техническими трудностями и требует более строго, чем это делается в школе,
  определения действительных чисел, а также изучения основ теории множеств
  и топологии.
- Примером такого утверждения может служить следующее утверждение: если функция
- действительного аргумента 
+\end_layout
+
+\begin_layout Standard
+Примером такого утверждения может служить следующее утверждение: 
+\begin_inset CommandInset label
+LatexCommand label
+name "continuous-function-with-integer-values-is-constant"
+
+\end_inset
+
+если функция действительного аргумента 
 \begin_inset Formula $f\left(x\right)$
 \end_inset
 
@@ -61797,6 +61806,406 @@ noprefix "false"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:two-arguments-of-complex-curve-differs-by-2-pi-const"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi^{\prime}\left(t\right)$
+\end_inset
+
+ — две функции, описывающие непрерывное изменение 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно, придётся отказаться от использования штриха, если мы хотим в той
+ же книге обсуждать производные.
+\end_layout
+
+\end_inset
+
+Доказать, что 
+\begin_inset Formula $\varphi\left(t\right)-\varphi^{\prime}\left(t\right)=2\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — некоторое фиксированное целое число, не зависящее от 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как и 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+, и 
+\begin_inset Formula $\varphi^{\prime}\left(t\right)$
+\end_inset
+
+ являются значениями 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ в каждой точке 
+\begin_inset Formula $t$
+\end_inset
+
+, то они должны отличаться на величину, кратную 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(t\right)-\varphi^{\prime}\left(t\right)=2\pi\cdot k\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $k\left(t\right)$
+\end_inset
+
+ — целочисленная функция.
+ Остаётся доказать, что это число не зависит от 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Как было отмечено выше 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "continuous-function-with-integer-values-is-constant"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если непрерывная функция принимает на отрезке только целочисленные значения
+ (в нашем случае отрезок — 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+), то она принимает только одно значение.
+ Обозначив это единственное значение как 
+\begin_inset Formula $k$
+\end_inset
+
+, получим то, что требовалось доказать.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:argument-of-complex-curve-is-unique-given-initial-value"
+
+\end_inset
+
+Доказать, что если выбрано некоторое значение 
+\begin_inset Formula $\varphi_{0}=\varphi\left(0\right)$
+\end_inset
+
+, то функция 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+, описывающая непрерывное изменение 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, определяется однозначно.
+\end_layout
+
+\begin_layout Solution
+Пусть существует две такие функции: 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi^{\prime}\left(t\right)$
+\end_inset
+
+, тогда, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:two-arguments-of-complex-curve-differs-by-2-pi-const"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(t\right)-\varphi^{\prime}\left(t\right)=2\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — некоторое целое число.
+ Это равенство справедливо при любом вещественном 
+\begin_inset Formula $t\in\left[0;1\right]$
+\end_inset
+
+.
+ Так как при 
+\begin_inset Formula $t=0$
+\end_inset
+
+ должно быть 
+\begin_inset Formula $\varphi\left(0\right)=\varphi^{\prime}\left(0\right)=\varphi_{0}$
+\end_inset
+
+, то 
+\begin_inset Formula $2\pi k=\varphi_{0}-\varphi_{0}=0$
+\end_inset
+
+, откуда получаем 
+\begin_inset Formula $k=0$
+\end_inset
+
+.
+ Таким образом, при любом вещественном 
+\begin_inset Formula $t\in\left[0;1\right]$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\varphi\left(t\right)=\varphi^{\prime}\left(t\right)$
+\end_inset
+
+, то есть функция 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ действительно определяется однозначно.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:increment-of-argument-of-complex-curve-is-unique"
+
+\end_inset
+
+Пусть функция 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ описывает непрерывное изменение 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+.
+ Доказать, что функция 
+\begin_inset Formula $\psi\left(t\right)=\varphi\left(t\right)-\varphi\left(0\right)$
+\end_inset
+
+ однозначно определяется функцией 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ и не зависит от выбора 
+\begin_inset Formula $\varphi\left(0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:argument-of-complex-curve-is-unique-given-initial-value"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ однозначно определяется выбором 
+\begin_inset Formula $\varphi\left(0\right)$
+\end_inset
+
+.
+ Кроме того, если 
+\begin_inset Formula $\varphi^{\prime}\left(t\right)$
+\end_inset
+
+ — другая функция, описывающая непрерывное изменение 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, то, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:two-arguments-of-complex-curve-differs-by-2-pi-const"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(t\right)-\varphi^{\prime}\left(t\right)=2\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — некоторое целое число.
+ Если положить 
+\begin_inset Formula $\psi^{\prime}\left(t\right)=\varphi^{\prime}\left(t\right)-\varphi^{\prime}\left(0\right)$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{multline*}
+\psi\left(t\right)-\psi^{\prime}\left(t\right)=\left[\varphi\left(t\right)-\varphi\left(0\right)\right]-\left[\varphi^{\prime}\left(t\right)-\varphi^{\prime}\left(0\right)\right]=\\
+=\left[\varphi\left(t\right)-\varphi^{\prime}\left(t\right)\right]-\left[\varphi\left(0\right)-\varphi^{\prime}\left(0\right)\right]=2\pi k-\left[\varphi\left(0\right)-\varphi^{\prime}\left(0\right)\right],
+\end{multline*}
+
+\end_inset
+
+то есть разность между 
+\begin_inset Formula $\psi\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\psi^{\prime}\left(t\right)$
+\end_inset
+
+ есть величина постоянная на отрезке 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+.
+ Положив 
+\begin_inset Formula $t=0$
+\end_inset
+
+, получим: 
+\begin_inset Formula 
+\[
+\psi\left(0\right)-\psi^{\prime}\left(0\right)=\left[\varphi\left(0\right)-\varphi\left(0\right)\right]-\left[\varphi^{\prime}\left(0\right)-\varphi^{\prime}\left(0\right)\right]=0,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $\psi\left(t\right)-\psi^{\prime}\left(t\right)=0$
+\end_inset
+
+ для всех вещественных 
+\begin_inset Formula $t\in\left[0;1\right]$
+\end_inset
+
+, то есть при ином выборе 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ мы бы получили туже функцию 
+\begin_inset Formula $\psi\left(t\right)$
+\end_inset
+
+.
+ Так как, при этом, никак не ограничивается и выбор конкретного значения
+ 
+\begin_inset Formula $\varphi\left(0\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\psi\left(t\right)$
+\end_inset
+
+ не зависит от выбора 
+\begin_inset Formula $\varphi\left(0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из утверждения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:increment-of-argument-of-complex-curve-is-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, в частности, при 
+\begin_inset Formula $t=1$
+\end_inset
+
+, что для данной непрерывной кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, не проходящей через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, величина 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)$
+\end_inset
+
+ однозначно определяется условием непрерывного изменения 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Величину 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)$
+\end_inset
+
+ будем называть 
+\emph on
+изменением аргумента вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
