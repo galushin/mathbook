@@ -62208,6 +62208,288 @@ noprefix "false"
 .
 \end_layout
 
+\begin_layout Problem
+Чему равно изменение аргумента вдоль кривых со следующими параметрическими
+ уравнениями:
+\end_layout
+
+\begin_layout Problem
+а) 
+\begin_inset Formula $z\left(t\right)=\cos\pi t+i\sin\pi t$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+б) 
+\begin_inset Formula $z\left(t\right)=\cos2\pi t+i\sin2\pi t$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+в) 
+\begin_inset Formula $z\left(t\right)=\cos4\pi t+i\sin4\pi t$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+г) 
+\begin_inset Formula $z\left(t\right)=\left(1-t\right)+it$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+а) по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:argument-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, аргумент 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ определяется следующим образом 
+\begin_inset Formula $\varphi\left(t\right)=\pi t$
+\end_inset
+
+, причём 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+, как и требуется, — непрерывная функция, поэтому 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)=\pi\cdot1-\pi\cdot0=\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) для этой кривой аргумент определяется непрерывной функцией 
+\begin_inset Formula $\varphi\left(t\right)=2\pi t$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)=2\pi\cdot1-2\pi\cdot0=2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) 
+\begin_inset Formula $\varphi\left(t\right)=4\pi t$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)=4\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) 
+\begin_inset Formula $z\left(0\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $z\left(1\right)=i$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ — отрезок, соединяющий точки 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+, а аргумент 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ непрерывно меняется от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $\frac{\pi}{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)=\frac{\pi}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Чему равно изменение аргумента вдоль кривых изображённых на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-255"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-255.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-255"
+
+\end_inset
+
+Кривые для задания на определение изменения аргумента
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Для первой кривой аргумент меняется от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $\frac{3\pi}{2}$
+\end_inset
+
+, то есть изменение аргумента составляет 
+\begin_inset Formula $\frac{3\pi}{2}-0=\frac{3\pi}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для второй кривой аргумент меняется непрерывно от 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ до 
+\begin_inset Formula $\frac{3\pi}{2}$
+\end_inset
+
+, то есть изменение аргумента составляет 
+\begin_inset Formula $\frac{3\pi}{2}-2\pi=-\frac{\pi}{2}$
+\end_inset
+
+.
+ Заметим, что если выбрать аргумент начальной точки равным 
+\begin_inset Formula $0$
+\end_inset
+
+, а конечной — 
+\begin_inset Formula $\frac{3\pi}{2}$
+\end_inset
+
+, то его изменение не будет непрерывным вдоль данной кривой.
+\end_layout
+
+\begin_layout Standard
+Если непрерывная кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ замкнута, то есть 
+\begin_inset Formula $z\left(1\right)=z\left(0\right)$
+\end_inset
+
+, то величина 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $2\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — целое число.
+\end_layout
+
+\begin_layout Definition
+Если для непрерывной замкнутой кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, не проходящей через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, изменение аргумента равно 
+\begin_inset Formula $2\pi k$
+\end_inset
+
+, то будем говорить, что кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
