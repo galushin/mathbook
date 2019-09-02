@@ -54667,6 +54667,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:geometric-interpretation-of-multiplication-by-real-and-complex-conjugation"
+
+\end_inset
+
 Пусть комплексные числа изображаются точками плоскости.
  Каков геометрический смысл преобразования 
 \begin_inset Formula $\varphi$
@@ -60988,6 +60994,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:geometric-interpretations-of-some-linear-complex-transformations"
+
+\end_inset
+
 С помощью каких геометрических преобразований из кривой 
 \begin_inset Formula $C_{1}$
 \end_inset
@@ -61182,6 +61194,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:curve-inverse-traversal"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $z_{1}\left(t\right)$
 \end_inset
@@ -62485,6 +62503,665 @@ name "fig:problem-255"
 
  раз вокруг точки 
 \begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Сколько раз обходят вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ следующие кривые:
+\end_layout
+
+\begin_layout Problem
+а) 
+\begin_inset Formula $z\left(t\right)=2\cos2\pi t+2i\sin2\pi t$
+\end_inset
+
+ (рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-256-a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Problem
+б) 
+\begin_inset Formula $z\left(t\right)=\frac{1}{2}\cos4\pi t-\frac{1}{2}i\sin4\pi t$
+\end_inset
+
+ (рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-256-b"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Problem
+в) кривая на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-256-c"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+г) кривая на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-256-d"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-256-a.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-256-a"
+
+\end_inset
+
+Пример а) для вычисления количества обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-256-b.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-256-b"
+
+\end_inset
+
+Пример б) для вычисления количества обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-256-c.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-256-c"
+
+\end_inset
+
+Пример в) для вычисления количества обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-256-d.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-256-d"
+
+\end_inset
+
+Пример г) для вычисления количества обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+а) 
+\begin_inset Formula $\varphi\left(t\right)=2\pi t$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)=2\pi$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $k=1$
+\end_inset
+
+ и количество обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $\varphi\left(t\right)=-4\pi t$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)=-4\pi$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $k=-2$
+\end_inset
+
+ и количество обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $-2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) будем обходить кривую по отмеченному направлению (против часовой стрелки),
+ начиная с одной из точек, в которой аргумент кривой равен 
+\begin_inset Formula $0$
+\end_inset
+
+, и будем следить, сколько раз радиус-вектор совершит полный круг.
+ Получаем 
+\begin_inset Formula $2$
+\end_inset
+
+ обхода.
+\end_layout
+
+\begin_layout Solution
+г) определение проведём анлогично пункту в), получим 
+\begin_inset Formula $0$
+\end_inset
+
+ обхдов.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:number-of-rounds-depends-only-on-direction"
+
+\end_inset
+
+Доказать, что число обходов непрерывной замкнутой кривой вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ не зависит от выбора начальной точки, а зависит только от направления кривой.
+\end_layout
+
+\begin_layout Solution
+Пусть параметрическое уравение рассматриваемой кривой есть 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+, а непрерывной изменение аргумента вдоль кривой описывается некоторой функцией
+ 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+.
+ Так как кривая замкнута, то 
+\begin_inset Formula $z\left(1\right)=z\left(0\right)$
+\end_inset
+
+.
+ Выбор начальной точки обхода эквивалентет повороту кривой на угол, равный
+ аргументу этой кривой и взятый с обратным знаком.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretations-of-some-linear-complex-transformations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, такому геометрическому преобразованию соответствует умножение на число
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, модуль которого равен 
+\begin_inset Formula $1$
+\end_inset
+
+, то есть уравнение кривой будет иметь вид 
+\begin_inset Formula $z_{1}\left(t\right)=z_{0}\cdot z\left(t\right)$
+\end_inset
+
+.
+ Так как при умножении комплексных чисел аргументы складываются 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то изменение аргумента вдоль кривой с новым выбором начальной точки будет
+ выражаться функцией 
+\begin_inset Formula $\varphi_{1}\left(t\right)=\varphi\left(t\right)-\varphi_{0}$
+\end_inset
+
+, где 
+\begin_inset Formula $\varphi_{0}=\mathrm{Arg}z_{0}$
+\end_inset
+
+.
+ Тогда получим 
+\begin_inset Formula 
+\[
+\varphi_{1}\left(1\right)-\varphi_{1}\left(0\right)=\varphi\left(1\right)-\varphi_{0}-\left[\varphi\left(0\right)-\varphi_{0}\right]=\varphi\left(1\right)-\varphi\left(0\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:curve-inverse-traversal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, обходу кривой в противоположном направлении соответствует уравнение 
+\begin_inset Formula $z_{2}\left(t\right)=z\left(1-t\right)$
+\end_inset
+
+, тогда непрерывное изменение аргумента вдоль противоположного направления
+ кривой будет описываться функцией 
+\begin_inset Formula $\varphi_{2}\left(t\right)=\varphi\left(1-t\right)$
+\end_inset
+
+, тогда изменение аргумента вдоль противоложного направления кривой будет
+ равно 
+\begin_inset Formula 
+\begin{multline*}
+\varphi_{2}\left(1\right)-\varphi_{2}\left(0\right)=\varphi\left(1-1\right)-\varphi\left(1-0\right)=\\
+=\varphi\left(0\right)-\varphi\left(1\right)=-\left[\varphi\left(1\right)-\varphi\left(0\right)\right].
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, при изменении направления обхода кривой изменение аргумента
+ меняет знак на противоложный, а значит изменяет знак и количество обходов
+ вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ с уравнением 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Сколько раз обходит вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ кривая с уравнением 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+, если: а) 
+\begin_inset Formula $z_{2}\left(t\right)=2\cdot z_{1}\left(t\right)$
+\end_inset
+
+; б) 
+\begin_inset Formula $z_{2}\left(t\right)=-z_{1}\left(t\right)$
+\end_inset
+
+; в) 
+\begin_inset Formula $z_{2}\left(t\right)=z_{0}\cdot z_{1}\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{0}\neq0$
+\end_inset
+
+; г) 
+\begin_inset Formula $z_{2}\left(t\right)=\bar{z}_{1}\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Так 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ растяжением, то значения аргумента не меняется и число обходов кривой 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ отражением относительно точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Это преобразование можно рассмотреть поворот начальной точки обхода на
+ 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:number-of-rounds-depends-only-on-direction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, от выбора начальной точки количество обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ не зависит.
+ Поэтому в данном случае получаем, что количество обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretations-of-some-linear-complex-transformations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ растяжением в 
+\begin_inset Formula $\left|z_{0}\right|$
+\end_inset
+
+ раз и поворотом на 
+\begin_inset Formula $\mathrm{Arg}z_{0}$
+\end_inset
+
+.
+ Так как при растяжении аргумент не меняется, а поворот эквивалентен выбору
+ начальной точки обхода, то количество обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в данном случае будет равно 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretation-of-multiplication-by-real-and-complex-conjugation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ отражением относительно оси 
+\begin_inset Formula $Ox$
+\end_inset
+
+.
+ Это преобразование оставляет начальную точку обхода без изменений, но меняет
+ направление обхода на противоложное.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:number-of-rounds-depends-only-on-direction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, при изменении направления обхода количество обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ также меняется на противоложное, поэтому в данном случае количество обходов
+ равно 
+\begin_inset Formula $-k$
 \end_inset
 
 .
