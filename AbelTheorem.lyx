@@ -60830,6 +60830,22 @@ noprefix "false"
 \end_inset
 
 , то есть кривая описывает всю данную окружность.
+ Начало кривой находится в точке 
+\begin_inset Formula $z=R$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально не указал начальные точки обхода
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -60853,8 +60869,24 @@ noprefix "false"
 \begin_inset Formula $R$
 \end_inset
 
- с центром в начале координат дважды, то есть эта та же кривая, что и в
- пункте е).
+ с центром в начале координат (как и в пункте е), проходимая дважды.
+ Начало кривой находится в точке 
+\begin_inset Formula $z=R$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально сказал, что окружность, пройденная один и два раза, — это одна
+ и та же кривая.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -60879,6 +60911,11 @@ noprefix "false"
 \end_inset
 
  с центром в начале координат.
+ Начало кривой находится в точке 
+\begin_inset Formula $z=R$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
@@ -60921,6 +60958,11 @@ noprefix "false"
 
  и 
 \begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+.
+ Начало кривой находится в точке 
+\begin_inset Formula $z=1$
 \end_inset
 
 .
@@ -60981,6 +61023,50 @@ noprefix "false"
 \end_inset
 
  задаёт часть прямой.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально не разобрал случай 
+\begin_inset Formula $a_{1}=a_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Если же 
+\begin_inset Formula $a_{1}=a_{0}$
+\end_inset
+
+, но 
+\begin_inset Formula $b_{1}\neq b_{2}$
+\end_inset
+
+, то можно выразить 
+\begin_inset Formula $x$
+\end_inset
+
+ через 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Если, к тому же и 
+\begin_inset Formula $b_{1}=b_{0}$
+\end_inset
+
+, то получаем 
+\begin_inset Formula $z_{1}=z_{0}$
+\end_inset
+
+ и уравение приобретает вид 
+\begin_inset Formula $z\left(t\right)=z_{0}$
+\end_inset
+
+, то кривая, как и требуется, вырождается в точку.
 \end_layout
 
 \begin_layout Remark
@@ -61124,6 +61210,14 @@ noprefix "false"
 
  переходит в 
 \begin_inset Formula $\left(a\cdot a_{1},a\cdot b_{1}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z_{2}\left(t\right)\right|=a\cdot\left|z_{1}\left(t\right)\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}z_{2}\left(t\right)=\mathrm{Arg}z_{1}\left(t\right)$
 \end_inset
 
 , то есть умножение на положительное вещественное число — растяжение в соответст
@@ -61581,7 +61675,11 @@ noprefix "false"
 \begin_inset Formula $j=0$
 \end_inset
 
-.
+, поэтому 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=\pi t$
+\end_inset
+
+;
 \end_layout
 
 \begin_layout Solution
@@ -61593,7 +61691,11 @@ noprefix "false"
 \begin_inset Formula $j=1$
 \end_inset
 
-.
+, поэтому 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=\pi t+2\pi$
+\end_inset
+
+;
 \end_layout
 
 \begin_layout Solution
@@ -61602,10 +61704,24 @@ noprefix "false"
 \end_inset
 
  и 
-\begin_inset Formula $j=2$
+\begin_inset Formula $j=-2$
 \end_inset
 
-.
+, поэтому 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=\pi t-4\pi$
+\end_inset
+
+;
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально ошибся в знаке
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -61615,6 +61731,10 @@ noprefix "false"
 
  и 
 \begin_inset Formula $j=k$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=\pi t+2\pi k$
 \end_inset
 
 .
@@ -61906,11 +62026,61 @@ status open
 \end_inset
 
  — целочисленная функция.
- Остаётся доказать, что это число не зависит от 
+\end_layout
+
+\begin_layout Solution
+Остаётся доказать, что это число не зависит от 
 \begin_inset Formula $t$
 \end_inset
 
 .
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально не доказал явно непрерывность 
+\begin_inset Formula $k\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Так как 
+\begin_inset Formula $k\left(t\right)=\frac{\varphi\left(t\right)-\varphi^{\prime}\left(t\right)}{2\pi}$
+\end_inset
+
+, то 
+\begin_inset Formula $k\left(t\right)$
+\end_inset
+
+ — непрерывная функция при 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+ (по доказанному в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:ratio-of-continuous-functions-is-continuos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
  Как было отмечено выше 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -62851,6 +63021,23 @@ name "prob:number-of-rounds-depends-only-on-direction"
 \end_layout
 
 \begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ приведено другое доказательство
+\end_layout
+
+\end_inset
+
 Пусть параметрическое уравение рассматриваемой кривой есть 
 \begin_inset Formula $z\left(t\right)$
 \end_inset
@@ -63171,6 +63358,24 @@ noprefix "false"
 \end_inset
 
 .
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ доказывается через явное вычисление аргумента.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Definition
@@ -63392,7 +63597,17 @@ noprefix "false"
 \begin_inset Formula $0$
 \end_inset
 
- один раз.
+ два раза.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Была ошибка: 1 раз
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
