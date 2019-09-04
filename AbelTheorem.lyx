@@ -54667,6 +54667,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:geometric-interpretation-of-multiplication-by-real-and-complex-conjugation"
+
+\end_inset
+
 Пусть комплексные числа изображаются точками плоскости.
  Каков геометрический смысл преобразования 
 \begin_inset Formula $\varphi$
@@ -55281,6 +55287,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:connection-between-geometric-interpretations-of-complex-numbers"
+
+\end_inset
+
 Доказать следующую взаимосвязь между двумя геометрическими представлениями
  комплексных чисел: если 
 \begin_inset Formula $z_{A}$
@@ -56119,6 +56131,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "trigonometric-representation-of-complex-number"
+
+\end_inset
+
 Отсюда 
 \begin_inset Formula 
 \[
@@ -60328,8 +60346,17 @@ status open
  техническими трудностями и требует более строго, чем это делается в школе,
  определения действительных чисел, а также изучения основ теории множеств
  и топологии.
- Примером такого утверждения может служить следующее утверждение: если функция
- действительного аргумента 
+\end_layout
+
+\begin_layout Standard
+Примером такого утверждения может служить следующее утверждение: 
+\begin_inset CommandInset label
+LatexCommand label
+name "continuous-function-with-integer-values-is-constant"
+
+\end_inset
+
+если функция действительного аргумента 
 \begin_inset Formula $f\left(x\right)$
 \end_inset
 
@@ -60372,6 +60399,3311 @@ status open
 \end_inset
 
 , 1967.
+\end_layout
+
+\begin_layout Section
+Непрерывные кривые
+\end_layout
+
+\begin_layout Standard
+Пусть параметр 
+\begin_inset Formula $t$
+\end_inset
+
+ принимает действительные значения на отрезке 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+, и пусть каждому такому значению 
+\begin_inset Formula $t$
+\end_inset
+
+ поставлено в соответствие некоторое комплексное число 
+\begin_inset Formula 
+\[
+z\left(t\right)=x\left(t\right)+iy\left(t\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Плоскость, на которой изображаются значение 
+\begin_inset Formula $z$
+\end_inset
+
+, мы будем в дальнейшем называть просто 
+\begin_inset Quotes rld
+\end_inset
+
+плоскость 
+\begin_inset Formula $z$
+\end_inset
+
+
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Если функции 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+ непрерывны при 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+, то при изменении 
+\begin_inset Formula $t$
+\end_inset
+
+ от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $1$
+\end_inset
+
+ точка 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ будет описывать некоторую 
+\emph on
+непрерывную кривую
+\emph default
+ на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ При этом мы будем рассматривать эту кривую с направлением, принимая точку
+ 
+\begin_inset Formula $z_{0}=z\left(0\right)$
+\end_inset
+
+ за начальную, а точку 
+\begin_inset Formula $z_{1}=z\left(1\right)$
+\end_inset
+
+ за конечную.
+ Функцию 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ мы будем называть 
+\emph on
+параметрическим уравнением 
+\emph default
+этой кривой.
+\end_layout
+
+\begin_layout Example
+Пусть 
+\begin_inset Formula $z\left(t\right)=t+it^{2}$
+\end_inset
+
+ .
+ Тогда 
+\begin_inset Formula $x\left(t\right)=t$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=t^{2}$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $y\left(t\right)=x^{2}\left(t\right)$
+\end_inset
+
+ при любом 
+\begin_inset Formula $t$
+\end_inset
+
+, то есть точка 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при любом 
+\begin_inset Formula $t$
+\end_inset
+
+ лежит на параболе 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+.
+ При изменении 
+\begin_inset Formula $t$
+\end_inset
+
+ от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $1$
+\end_inset
+
+ 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ также меняется от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $1$
+\end_inset
+
+ и точка 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ пробегает дугу параболы 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+ от точки 
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+ до точки 
+\begin_inset Formula $z_{1}=1+i$
+\end_inset
+
+ (показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:example-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Example
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/example-of-continuous-curve.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:example-of-continuous-curve"
+
+\end_inset
+
+Кривая 
+\begin_inset Formula $z\left(t\right)=t+it^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Построить на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ кривые, задаваемые следующими параметрическими уравнениями: а) 
+\begin_inset Formula $z\left(t\right)=2t$
+\end_inset
+
+, б) 
+\begin_inset Formula $z\left(t\right)=it$
+\end_inset
+
+, в) 
+\begin_inset Formula $z\left(t\right)=it^{2}$
+\end_inset
+
+, г) 
+\begin_inset Formula $z\left(t\right)=t-it$
+\end_inset
+
+, д) 
+\begin_inset Formula $z\left(t\right)=t^{2}+it$
+\end_inset
+
+, е) 
+\begin_inset Formula $z\left(t\right)=R\left(\cos2\pi t+i\sin2\pi t\right)$
+\end_inset
+
+, ж) 
+\begin_inset Formula $z\left(t\right)=R\left(\cos4\pi t+i\sin4\pi t\right)$
+\end_inset
+
+, з) 
+\begin_inset Formula $z\left(t\right)=R\left(\cos\pi t+i\sin\pi t\right)$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+и) 
+\begin_inset Formula $z\left(t\right)=\begin{cases}
+\cos2\pi t+i\sin2\pi t & 0\le t\le\frac{1}{2},\\
+4t-3 & \frac{1}{2}<t\le1.
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+а) 
+\begin_inset Formula $x\left(t\right)=2t$
+\end_inset
+
+, 
+\begin_inset Formula $y\left(t\right)=0$
+\end_inset
+
+ — это вертикальный отрезок, соединяющий точки 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $(2,0)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $x\left(t\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=t$
+\end_inset
+
+ — это горизонтальный отрезок, соединяющий точки 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) 
+\begin_inset Formula $x\left(t\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=t^{2}$
+\end_inset
+
+ — это тот же отрезок, что и в пункте б), так как при 
+\begin_inset Formula $t\in\left[0;1\right]$
+\end_inset
+
+ выражение 
+\begin_inset Formula $t^{2}\in\left[0;1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) 
+\begin_inset Formula $x\left(t\right)=t$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=-t$
+\end_inset
+
+, то есть 
+\begin_inset Formula $y\left(t\right)=-x\left(t\right)$
+\end_inset
+
+.
+ Это отрезок диагонали 2 и 4 квадрантов, соединяющий точки 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,-1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+д) 
+\begin_inset Formula $x\left(t\right)=t^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=t$
+\end_inset
+
+, то есть все точки кривой лежат на параболе 
+\begin_inset Formula $x=y^{2}$
+\end_inset
+
+ между точками 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+е) для этой кривой 
+\begin_inset Formula $\left|z\left(t\right)\right|=R$
+\end_inset
+
+, то есть, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretations-of-some-complex-expressions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, её точки лежат на окружности радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ с центром в начале координат.
+ Если 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+, то 
+\begin_inset Formula $0\le2\pi t\le2\pi$
+\end_inset
+
+, то есть кривая описывает всю данную окружность.
+ Начало кривой находится в точке 
+\begin_inset Formula $z=R$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально не указал начальные точки обхода
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+ж) здесь также 
+\begin_inset Formula $\left|z\left(t\right)\right|=R$
+\end_inset
+
+, но аргумент пробегает значения от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $4\pi$
+\end_inset
+
+, то есть кривая 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ описывает окружность радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ с центром в начале координат (как и в пункте е), проходимая дважды.
+ Начало кривой находится в точке 
+\begin_inset Formula $z=R$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально сказал, что окружность, пройденная один и два раза, — это одна
+ и та же кривая.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+з) здесь снова 
+\begin_inset Formula $\left|z\left(t\right)\right|=R$
+\end_inset
+
+, но аргумент пробегает значения от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $\pi$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ — верхняя полуокружность радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+ с центром в начале координат.
+ Начало кривой находится в точке 
+\begin_inset Formula $z=R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+и) при 
+\begin_inset Formula $t\in\left[0;\frac{1}{2}\right]$
+\end_inset
+
+ кривая 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ представляет собой часть окружности радиуса 
+\begin_inset Formula $1$
+\end_inset
+
+, причём, так как аргумент пробегает значения от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $\pi$
+\end_inset
+
+, то это верхняя полуокружность.
+ На втором участке кривой 
+\begin_inset Formula $x\left(t\right)=4t-3$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=0$
+\end_inset
+
+, то есть это часть оси 
+\begin_inset Formula $0x$
+\end_inset
+
+, а именно — отрезок, соединяющий точки 
+\begin_inset Formula $\left(-1,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+.
+ Начало кривой находится в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Написать какое-нибудь параметрическое уравнение отрезка, соединяющего точки
+ 
+\begin_inset Formula $z_{0}=a_{0}+b_{0}i$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}=a_{1}+b_{1}i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $z\left(t\right)=z_{0}+\left(z_{1}-z_{0}\right)t$
+\end_inset
+
+.
+ Действительно, данная кривая проходит через требуемые концы отрезка 
+\begin_inset Formula $z\left(0\right)=z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z\left(1\right)=z_{1}$
+\end_inset
+
+, при этом 
+\begin_inset Formula $x\left(t\right)=a_{0}+\left(a_{1}-a_{0}\right)t$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(t\right)=b_{0}+\left(b_{1}-b_{0}\right)t$
+\end_inset
+
+, поэтому, выражая 
+\begin_inset Formula $t$
+\end_inset
+
+ из определения 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ и подставляя его в выражение для 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+ получаем 
+\begin_inset Formula $y=b_{0}+\frac{b_{1}-b_{0}}{a_{1}-a_{0}}\left(x-a_{0}\right)$
+\end_inset
+
+, то есть действительно 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ задаёт часть прямой.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально не разобрал случай 
+\begin_inset Formula $a_{1}=a_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Если же 
+\begin_inset Formula $a_{1}=a_{0}$
+\end_inset
+
+, но 
+\begin_inset Formula $b_{1}\neq b_{2}$
+\end_inset
+
+, то можно выразить 
+\begin_inset Formula $x$
+\end_inset
+
+ через 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Если, к тому же и 
+\begin_inset Formula $b_{1}=b_{0}$
+\end_inset
+
+, то получаем 
+\begin_inset Formula $z_{1}=z_{0}$
+\end_inset
+
+ и уравение приобретает вид 
+\begin_inset Formula $z\left(t\right)=z_{0}$
+\end_inset
+
+, то кривая, как и требуется, вырождается в точку.
+\end_layout
+
+\begin_layout Remark
+В последующих задачах параметрические уравнения имеют индексы.
+ Эти индексы указывают лишь номер на кривой, но рассматриваются данные кривые
+ на одой и той же плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:geometric-interpretations-of-some-linear-complex-transformations"
+
+\end_inset
+
+С помощью каких геометрических преобразований из кривой 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ с уравнением 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ получается кривая 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ с уравнением 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+, если:
+\end_layout
+
+\begin_layout Problem
+а) 
+\begin_inset Formula $z_{2}\left(t\right)=z_{1}\left(t\right)+z_{0}$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — произвольное комплексное число;
+\end_layout
+
+\begin_layout Problem
+б) 
+\begin_inset Formula $z_{2}\left(t\right)=a\cdot z_{1}\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — действительное положительно число;
+\end_layout
+
+\begin_layout Problem
+в) 
+\begin_inset Formula $z_{2}\left(t\right)=z_{0}\cdot z_{1}\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\left|z_{0}\right|=1$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Problem
+г) 
+\begin_inset Formula $z_{2}\left(t\right)=z_{0}\cdot z_{1}\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — произвольное комплексное число?
+\end_layout
+
+\begin_layout Solution
+а) Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:connection-between-geometric-interpretations-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
+\begin_inset Formula $z_{0}=z_{2}\left(t\right)-z_{1}\left(t\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ соответствует вектору, соединяющему точки, соответствующие 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ сдвигом на вектора 
+\begin_inset Formula $\left(a_{0},b_{0}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{0}=a_{0}+b_{0}i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Так как точка 
+\begin_inset Formula $\left(a_{1},b_{1}\right)$
+\end_inset
+
+ при умножении на вещественное число 
+\begin_inset Formula $a$
+\end_inset
+
+ переходит в 
+\begin_inset Formula $\left(a\cdot a_{1},a\cdot b_{1}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z_{2}\left(t\right)\right|=a\cdot\left|z_{1}\left(t\right)\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}z_{2}\left(t\right)=\mathrm{Arg}z_{1}\left(t\right)$
+\end_inset
+
+, то есть умножение на положительное вещественное число — растяжение в соответст
+вующее число раз.
+\end_layout
+
+\begin_layout Solution
+в) Представим все комплексные числа в тригонометрической форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "trigonometric-representation-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\left|z_{2}\left(t\right)\right|=\left|z_{0}\right|\cdot\left|z_{1}\left(t\right)\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}z_{2}\left(t\right)=\mathrm{Arg}z_{1}\left(t\right)+\mathrm{Arg}z_{0}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ поворотом на угол 
+\begin_inset Formula $\varphi=\mathrm{Arg}z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) Представим все комплексные числа в тригонометрической форме, тогда 
+\begin_inset Formula $\left|z_{2}\left(t\right)\right|=\left|z_{0}\right|\cdot\left|z_{1}\left(t\right)\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}z_{2}\left(t\right)=\mathrm{Arg}z_{1}\left(t\right)+\mathrm{Arg}z_{0}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ поворотом на угол 
+\begin_inset Formula $\varphi=\mathrm{Arg}z_{0}$
+\end_inset
+
+ и растяжением в 
+\begin_inset Formula $\left|z_{0}\right|$
+\end_inset
+
+ раз.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:curve-inverse-traversal"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ — параметрическое уравнение кривой 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Какая кривая описывается уравнением 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+, если 
+\begin_inset Formula $z_{2}\left(t\right)=z_{1}\left(1-t\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+Когда 
+\begin_inset Formula $t$
+\end_inset
+
+ пробегает отрезок 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+, значения 
+\begin_inset Formula $1-t$
+\end_inset
+
+ меняются от 
+\begin_inset Formula $1$
+\end_inset
+
+ до 
+\begin_inset Formula $0$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ задаёт ту же кривую, что 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+, но проходит её в противоположном направлении.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ — параметрические уравнения кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $z_{1}\left(1\right)=z_{2}\left(0\right)$
+\end_inset
+
+.
+ Какая кривая описывается уравнением 
+\begin_inset Formula $z_{3}\left(t\right)$
+\end_inset
+
+, если 
+\begin_inset Formula 
+\[
+z_{3}\left(t\right)=\begin{cases}
+z_{1}\left(2t\right) & 0\le t\le\frac{1}{2},\\
+z_{2}\left(2t-1\right) & \frac{1}{2}<t\le1.
+\end{cases}?
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+При 
+\begin_inset Formula $0\le t\le\frac{1}{2}$
+\end_inset
+
+ выражение 
+\begin_inset Formula $2t$
+\end_inset
+
+ пробегает значения из отрезка 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+, то есть при этом 
+\begin_inset Formula $z_{3}\left(t\right)$
+\end_inset
+
+ описывает всю кривую 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $\frac{1}{2}<t\le1$
+\end_inset
+
+ выражение 
+\begin_inset Formula $2t-1$
+\end_inset
+
+ пробегает значения из отрезка 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+, то есть при этом 
+\begin_inset Formula $z_{3}\left(t\right)$
+\end_inset
+
+ описывает всю кривую 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $z_{3}\left(t\right)$
+\end_inset
+
+ описывает кривую, получаемую объединением кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z_{1}\left(1\right)=z_{2}\left(0\right)$
+\end_inset
+
+, то полученная кривая будет непрерывной.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:example-of-argument-of-curve"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $z\left(t\right)=\cos\pi t+i\sin\pi t$
+\end_inset
+
+ (график соответствующей кривой показан на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:for-problem-249"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Найти все значения 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ в зависимости от 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Сопоставляя выражения для 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ с тригонометрической формой комплексного числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "trigonometric-representation-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем, что одно из значений 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $\pi t$
+\end_inset
+
+.
+ Так как аргумент комплексного числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:argument-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ определён с точностью до слагаемого, кратного 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\mathrm{Arg}z=\pi t+2\pi j$
+\end_inset
+
+, где 
+\begin_inset Formula $j$
+\end_inset
+
+ — произвольное целое число.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-249.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:for-problem-249"
+
+\end_inset
+
+Кривая 
+\begin_inset Formula $z\left(t\right)=\cos\pi t+i\sin\pi t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $z\left(t\right)=\cos\pi t+i\sin\pi t$
+\end_inset
+
+.
+ Как нужно выбрать одно из значений 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ при каждом 
+\begin_inset Formula $t$
+\end_inset
+
+, чтобы выбранные значения изменялись непрерывно при изменении 
+\begin_inset Formula $t$
+\end_inset
+
+ от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $1$
+\end_inset
+
+ при условии, что 
+\begin_inset Formula $\mathrm{Arg}z\left(0\right)$
+\end_inset
+
+ выбран равным а) 
+\begin_inset Formula $0$
+\end_inset
+
+, б) 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, в) 
+\begin_inset Formula $-4\pi$
+\end_inset
+
+, г) 
+\begin_inset Formula $2\pi k$
+\end_inset
+
+ (
+\begin_inset Formula $k$
+\end_inset
+
+ — фиксированное целое число).
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:example-of-argument-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=\pi t+2\pi j$
+\end_inset
+
+, где 
+\begin_inset Formula $j$
+\end_inset
+
+ — произвольное целое число.
+ В каждом пункте выберем 
+\begin_inset Formula $j$
+\end_inset
+
+ таким образом, чтобы 
+\begin_inset Formula $\mathrm{Arg}z\left(0\right)=2\pi j$
+\end_inset
+
+ принял требуемое значение.
+\end_layout
+
+\begin_layout Solution
+а) 
+\begin_inset Formula $2\pi j=0$
+\end_inset
+
+ и 
+\begin_inset Formula $j=0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=\pi t$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $2\pi j=2\pi$
+\end_inset
+
+ и 
+\begin_inset Formula $j=1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=\pi t+2\pi$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Solution
+в) 
+\begin_inset Formula $2\pi j=-4\pi$
+\end_inset
+
+ и 
+\begin_inset Formula $j=-2$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=\pi t-4\pi$
+\end_inset
+
+;
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально ошибся в знаке
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+г) 
+\begin_inset Formula $2\pi j=2\pi k$
+\end_inset
+
+ и 
+\begin_inset Formula $j=k$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=\pi t+2\pi k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Во всех случаях удалось найти целое значение для 
+\begin_inset Formula $j$
+\end_inset
+
+, при котором 
+\begin_inset Formula $\mathrm{Arg}z\left(0\right)$
+\end_inset
+
+ принимает заданное значение.
+ То есть при всех 
+\begin_inset Formula $t\in\left[0;1\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ задаётся выражением вида 
+\begin_inset Formula $\pi t+2\pi j$
+\end_inset
+
+.
+ Как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:constant-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:identity-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, функции вещественного аргумента 
+\begin_inset Formula $f\left(t\right)=\pi$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(t\right)=t$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(t\right)=2\pi j$
+\end_inset
+
+ являются непрерывными при всех значениях 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Тогда, как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, функция 
+\begin_inset Formula $\pi t+2\pi j=f\left(t\right)g\left(t\right)+h\left(t\right)$
+\end_inset
+
+ также является непрерывной.
+\end_layout
+
+\begin_layout Standard
+Следующее утверждение интуитивно кажется достаточно очевидным, и мы приведём
+ его без доказательства.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:continuous-curve-has-continuous-argument"
+
+\end_inset
+
+Пусть непрерывная кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ не проходит через начало координат (то есть 
+\begin_inset Formula $z\left(t\right)\neq0$
+\end_inset
+
+ при 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+), и пусть аргумент начальной точки кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ (то есть 
+\begin_inset Formula $\mathrm{Arg}z\left(0\right)$
+\end_inset
+
+) выбран равным 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+.
+ Тогда можно так выбрать одно из значений аргумента для всех точке кривой
+ 
+\begin_inset Formula $C$
+\end_inset
+
+, чтобы при движении точки по кривой её аргумент изменялся непрерывно, начиная
+ со значения 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Другими словами, можно при каждом 
+\begin_inset Formula $t$
+\end_inset
+
+ выбрать 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ так, чтобы функция 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ была непрерывна при 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+ и чтобы 
+\begin_inset Formula $\varphi\left(0\right)=\varphi_{0}$
+\end_inset
+
+.
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+В книге: Стинрод Н., Чинн У., Первые понятия топологии, 
+\begin_inset Quotes rld
+\end_inset
+
+Мир
+\begin_inset Quotes rrd
+\end_inset
+
+, 1967, в параграфах 20-23 строго и доступно определяется угол, заметаемый
+ данной кривой.
+ Используя это понятие, легко получить утверждение теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:continuous-curve-has-continuous-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: достаточно положить 
+\begin_inset Formula $\varphi\left(t\right)=\varphi_{0}+\varphi_{1}\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\varphi_{1}\left(t\right)$
+\end_inset
+
+ — угол, заметаемый частью данной кривой от 
+\begin_inset Formula $z\left(0\right)$
+\end_inset
+
+ до 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:two-arguments-of-complex-curve-differs-by-2-pi-const"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi^{\prime}\left(t\right)$
+\end_inset
+
+ — две функции, описывающие непрерывное изменение 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно, придётся отказаться от использования штриха, если мы хотим в той
+ же книге обсуждать производные.
+\end_layout
+
+\end_inset
+
+Доказать, что 
+\begin_inset Formula $\varphi\left(t\right)-\varphi^{\prime}\left(t\right)=2\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — некоторое фиксированное целое число, не зависящее от 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как и 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+, и 
+\begin_inset Formula $\varphi^{\prime}\left(t\right)$
+\end_inset
+
+ являются значениями 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ в каждой точке 
+\begin_inset Formula $t$
+\end_inset
+
+, то они должны отличаться на величину, кратную 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(t\right)-\varphi^{\prime}\left(t\right)=2\pi\cdot k\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $k\left(t\right)$
+\end_inset
+
+ — целочисленная функция.
+\end_layout
+
+\begin_layout Solution
+Остаётся доказать, что это число не зависит от 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально не доказал явно непрерывность 
+\begin_inset Formula $k\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Так как 
+\begin_inset Formula $k\left(t\right)=\frac{\varphi\left(t\right)-\varphi^{\prime}\left(t\right)}{2\pi}$
+\end_inset
+
+, то 
+\begin_inset Formula $k\left(t\right)$
+\end_inset
+
+ — непрерывная функция при 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+ (по доказанному в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:ratio-of-continuous-functions-is-continuos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Как было отмечено выше 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "continuous-function-with-integer-values-is-constant"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если непрерывная функция принимает на отрезке только целочисленные значения
+ (в нашем случае отрезок — 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+), то она принимает только одно значение.
+ Обозначив это единственное значение как 
+\begin_inset Formula $k$
+\end_inset
+
+, получим то, что требовалось доказать.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:argument-of-complex-curve-is-unique-given-initial-value"
+
+\end_inset
+
+Доказать, что если выбрано некоторое значение 
+\begin_inset Formula $\varphi_{0}=\varphi\left(0\right)$
+\end_inset
+
+, то функция 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+, описывающая непрерывное изменение 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, определяется однозначно.
+\end_layout
+
+\begin_layout Solution
+Пусть существует две такие функции: 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi^{\prime}\left(t\right)$
+\end_inset
+
+, тогда, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:two-arguments-of-complex-curve-differs-by-2-pi-const"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(t\right)-\varphi^{\prime}\left(t\right)=2\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — некоторое целое число.
+ Это равенство справедливо при любом вещественном 
+\begin_inset Formula $t\in\left[0;1\right]$
+\end_inset
+
+.
+ Так как при 
+\begin_inset Formula $t=0$
+\end_inset
+
+ должно быть 
+\begin_inset Formula $\varphi\left(0\right)=\varphi^{\prime}\left(0\right)=\varphi_{0}$
+\end_inset
+
+, то 
+\begin_inset Formula $2\pi k=\varphi_{0}-\varphi_{0}=0$
+\end_inset
+
+, откуда получаем 
+\begin_inset Formula $k=0$
+\end_inset
+
+.
+ Таким образом, при любом вещественном 
+\begin_inset Formula $t\in\left[0;1\right]$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\varphi\left(t\right)=\varphi^{\prime}\left(t\right)$
+\end_inset
+
+, то есть функция 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ действительно определяется однозначно.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:increment-of-argument-of-complex-curve-is-unique"
+
+\end_inset
+
+Пусть функция 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ описывает непрерывное изменение 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+.
+ Доказать, что функция 
+\begin_inset Formula $\psi\left(t\right)=\varphi\left(t\right)-\varphi\left(0\right)$
+\end_inset
+
+ однозначно определяется функцией 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ и не зависит от выбора 
+\begin_inset Formula $\varphi\left(0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:argument-of-complex-curve-is-unique-given-initial-value"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ однозначно определяется выбором 
+\begin_inset Formula $\varphi\left(0\right)$
+\end_inset
+
+.
+ Кроме того, если 
+\begin_inset Formula $\varphi^{\prime}\left(t\right)$
+\end_inset
+
+ — другая функция, описывающая непрерывное изменение 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)$
+\end_inset
+
+ вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, то, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:two-arguments-of-complex-curve-differs-by-2-pi-const"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(t\right)-\varphi^{\prime}\left(t\right)=2\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — некоторое целое число.
+ Если положить 
+\begin_inset Formula $\psi^{\prime}\left(t\right)=\varphi^{\prime}\left(t\right)-\varphi^{\prime}\left(0\right)$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{multline*}
+\psi\left(t\right)-\psi^{\prime}\left(t\right)=\left[\varphi\left(t\right)-\varphi\left(0\right)\right]-\left[\varphi^{\prime}\left(t\right)-\varphi^{\prime}\left(0\right)\right]=\\
+=\left[\varphi\left(t\right)-\varphi^{\prime}\left(t\right)\right]-\left[\varphi\left(0\right)-\varphi^{\prime}\left(0\right)\right]=2\pi k-\left[\varphi\left(0\right)-\varphi^{\prime}\left(0\right)\right],
+\end{multline*}
+
+\end_inset
+
+то есть разность между 
+\begin_inset Formula $\psi\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\psi^{\prime}\left(t\right)$
+\end_inset
+
+ есть величина постоянная на отрезке 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+.
+ Положив 
+\begin_inset Formula $t=0$
+\end_inset
+
+, получим: 
+\begin_inset Formula 
+\[
+\psi\left(0\right)-\psi^{\prime}\left(0\right)=\left[\varphi\left(0\right)-\varphi\left(0\right)\right]-\left[\varphi^{\prime}\left(0\right)-\varphi^{\prime}\left(0\right)\right]=0,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $\psi\left(t\right)-\psi^{\prime}\left(t\right)=0$
+\end_inset
+
+ для всех вещественных 
+\begin_inset Formula $t\in\left[0;1\right]$
+\end_inset
+
+, то есть при ином выборе 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ мы бы получили туже функцию 
+\begin_inset Formula $\psi\left(t\right)$
+\end_inset
+
+.
+ Так как, при этом, никак не ограничивается и выбор конкретного значения
+ 
+\begin_inset Formula $\varphi\left(0\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\psi\left(t\right)$
+\end_inset
+
+ не зависит от выбора 
+\begin_inset Formula $\varphi\left(0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из утверждения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:increment-of-argument-of-complex-curve-is-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, в частности, при 
+\begin_inset Formula $t=1$
+\end_inset
+
+, что для данной непрерывной кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, не проходящей через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, величина 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)$
+\end_inset
+
+ однозначно определяется условием непрерывного изменения 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Величину 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)$
+\end_inset
+
+ будем называть 
+\emph on
+изменением аргумента вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Чему равно изменение аргумента вдоль кривых со следующими параметрическими
+ уравнениями:
+\end_layout
+
+\begin_layout Problem
+а) 
+\begin_inset Formula $z\left(t\right)=\cos\pi t+i\sin\pi t$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+б) 
+\begin_inset Formula $z\left(t\right)=\cos2\pi t+i\sin2\pi t$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+в) 
+\begin_inset Formula $z\left(t\right)=\cos4\pi t+i\sin4\pi t$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+г) 
+\begin_inset Formula $z\left(t\right)=\left(1-t\right)+it$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+а) по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:argument-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, аргумент 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ определяется следующим образом 
+\begin_inset Formula $\varphi\left(t\right)=\pi t$
+\end_inset
+
+, причём 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+, как и требуется, — непрерывная функция, поэтому 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)=\pi\cdot1-\pi\cdot0=\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) для этой кривой аргумент определяется непрерывной функцией 
+\begin_inset Formula $\varphi\left(t\right)=2\pi t$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)=2\pi\cdot1-2\pi\cdot0=2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) 
+\begin_inset Formula $\varphi\left(t\right)=4\pi t$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)=4\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) 
+\begin_inset Formula $z\left(0\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $z\left(1\right)=i$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ — отрезок, соединяющий точки 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+, а аргумент 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ непрерывно меняется от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $\frac{\pi}{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)=\frac{\pi}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Чему равно изменение аргумента вдоль кривых изображённых на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-255"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-255.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-255"
+
+\end_inset
+
+Кривые для задания на определение изменения аргумента
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Для первой кривой аргумент меняется от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $\frac{3\pi}{2}$
+\end_inset
+
+, то есть изменение аргумента составляет 
+\begin_inset Formula $\frac{3\pi}{2}-0=\frac{3\pi}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для второй кривой аргумент меняется непрерывно от 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ до 
+\begin_inset Formula $\frac{3\pi}{2}$
+\end_inset
+
+, то есть изменение аргумента составляет 
+\begin_inset Formula $\frac{3\pi}{2}-2\pi=-\frac{\pi}{2}$
+\end_inset
+
+.
+ Заметим, что если выбрать аргумент начальной точки равным 
+\begin_inset Formula $0$
+\end_inset
+
+, а конечной — 
+\begin_inset Formula $\frac{3\pi}{2}$
+\end_inset
+
+, то его изменение не будет непрерывным вдоль данной кривой.
+\end_layout
+
+\begin_layout Standard
+Если непрерывная кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ замкнута, то есть 
+\begin_inset Formula $z\left(1\right)=z\left(0\right)$
+\end_inset
+
+, то величина 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $2\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — целое число.
+\end_layout
+
+\begin_layout Definition
+Если для непрерывной замкнутой кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, не проходящей через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, изменение аргумента равно 
+\begin_inset Formula $2\pi k$
+\end_inset
+
+, то будем говорить, что кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-of-rounds-of-continuous-curves-around-zero"
+
+\end_inset
+
+Сколько раз обходят вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ следующие кривые:
+\end_layout
+
+\begin_layout Problem
+а) 
+\begin_inset Formula $z\left(t\right)=2\cos2\pi t+2i\sin2\pi t$
+\end_inset
+
+ (рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-256-a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Problem
+б) 
+\begin_inset Formula $z\left(t\right)=\frac{1}{2}\cos4\pi t-\frac{1}{2}i\sin4\pi t$
+\end_inset
+
+ (рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-256-b"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Problem
+в) кривая на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-256-c"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+г) кривая на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-256-d"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-256-a.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-256-a"
+
+\end_inset
+
+Пример а) для вычисления количества обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-256-b.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-256-b"
+
+\end_inset
+
+Пример б) для вычисления количества обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-256-c.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-256-c"
+
+\end_inset
+
+Пример в) для вычисления количества обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-256-d.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-256-d"
+
+\end_inset
+
+Пример г) для вычисления количества обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+а) 
+\begin_inset Formula $\varphi\left(t\right)=2\pi t$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)=2\pi$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $k=1$
+\end_inset
+
+ и количество обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $\varphi\left(t\right)=-4\pi t$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(1\right)-\varphi\left(0\right)=-4\pi$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $k=-2$
+\end_inset
+
+ и количество обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $-2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) будем обходить кривую по отмеченному направлению (против часовой стрелки),
+ начиная с одной из точек, в которой аргумент кривой равен 
+\begin_inset Formula $0$
+\end_inset
+
+, и будем следить, сколько раз радиус-вектор совершит полный круг.
+ Получаем 
+\begin_inset Formula $2$
+\end_inset
+
+ обхода.
+\end_layout
+
+\begin_layout Solution
+г) определение проведём анлогично пункту в), получим 
+\begin_inset Formula $0$
+\end_inset
+
+ обхдов.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:number-of-rounds-depends-only-on-direction"
+
+\end_inset
+
+Доказать, что число обходов непрерывной замкнутой кривой вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ не зависит от выбора начальной точки, а зависит только от направления кривой.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ приведено другое доказательство
+\end_layout
+
+\end_inset
+
+Пусть параметрическое уравение рассматриваемой кривой есть 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+, а непрерывной изменение аргумента вдоль кривой описывается некоторой функцией
+ 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+.
+ Так как кривая замкнута, то 
+\begin_inset Formula $z\left(1\right)=z\left(0\right)$
+\end_inset
+
+.
+ Выбор начальной точки обхода эквивалентет повороту кривой на угол, равный
+ аргументу этой кривой и взятый с обратным знаком.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretations-of-some-linear-complex-transformations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, такому геометрическому преобразованию соответствует умножение на число
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, модуль которого равен 
+\begin_inset Formula $1$
+\end_inset
+
+, то есть уравнение кривой будет иметь вид 
+\begin_inset Formula $z_{1}\left(t\right)=z_{0}\cdot z\left(t\right)$
+\end_inset
+
+.
+ Так как при умножении комплексных чисел аргументы складываются 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то изменение аргумента вдоль кривой с новым выбором начальной точки будет
+ выражаться функцией 
+\begin_inset Formula $\varphi_{1}\left(t\right)=\varphi\left(t\right)-\varphi_{0}$
+\end_inset
+
+, где 
+\begin_inset Formula $\varphi_{0}=\mathrm{Arg}z_{0}$
+\end_inset
+
+.
+ Тогда получим 
+\begin_inset Formula 
+\[
+\varphi_{1}\left(1\right)-\varphi_{1}\left(0\right)=\varphi\left(1\right)-\varphi_{0}-\left[\varphi\left(0\right)-\varphi_{0}\right]=\varphi\left(1\right)-\varphi\left(0\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:curve-inverse-traversal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, обходу кривой в противоположном направлении соответствует уравнение 
+\begin_inset Formula $z_{2}\left(t\right)=z\left(1-t\right)$
+\end_inset
+
+, тогда непрерывное изменение аргумента вдоль противоположного направления
+ кривой будет описываться функцией 
+\begin_inset Formula $\varphi_{2}\left(t\right)=\varphi\left(1-t\right)$
+\end_inset
+
+, тогда изменение аргумента вдоль противоложного направления кривой будет
+ равно 
+\begin_inset Formula 
+\begin{multline*}
+\varphi_{2}\left(1\right)-\varphi_{2}\left(0\right)=\varphi\left(1-1\right)-\varphi\left(1-0\right)=\\
+=\varphi\left(0\right)-\varphi\left(1\right)=-\left[\varphi\left(1\right)-\varphi\left(0\right)\right].
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, при изменении направления обхода кривой изменение аргумента
+ меняет знак на противоложный, а значит изменяет знак и количество обходов
+ вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ с уравнением 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Сколько раз обходит вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ кривая с уравнением 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+, если: а) 
+\begin_inset Formula $z_{2}\left(t\right)=2\cdot z_{1}\left(t\right)$
+\end_inset
+
+; б) 
+\begin_inset Formula $z_{2}\left(t\right)=-z_{1}\left(t\right)$
+\end_inset
+
+; в) 
+\begin_inset Formula $z_{2}\left(t\right)=z_{0}\cdot z_{1}\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{0}\neq0$
+\end_inset
+
+; г) 
+\begin_inset Formula $z_{2}\left(t\right)=\bar{z}_{1}\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Так 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ растяжением, то значения аргумента не меняется и число обходов кривой 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ отражением относительно точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Это преобразование можно рассмотреть поворот начальной точки обхода на
+ 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:number-of-rounds-depends-only-on-direction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, от выбора начальной точки количество обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ не зависит.
+ Поэтому в данном случае получаем, что количество обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretations-of-some-linear-complex-transformations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ растяжением в 
+\begin_inset Formula $\left|z_{0}\right|$
+\end_inset
+
+ раз и поворотом на 
+\begin_inset Formula $\mathrm{Arg}z_{0}$
+\end_inset
+
+.
+ Так как при растяжении аргумент не меняется, а поворот эквивалентен выбору
+ начальной точки обхода, то количество обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в данном случае будет равно 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretation-of-multiplication-by-real-and-complex-conjugation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ получается из 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ отражением относительно оси 
+\begin_inset Formula $Ox$
+\end_inset
+
+.
+ Это преобразование оставляет начальную точку обхода без изменений, но меняет
+ направление обхода на противоложное.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:number-of-rounds-depends-only-on-direction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, при изменении направления обхода количество обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ также меняется на противоложное, поэтому в данном случае количество обходов
+ равно 
+\begin_inset Formula $-k$
+\end_inset
+
+.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ доказывается через явное вычисление аргумента.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Пусть замкнутая непрерывная кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ с уравнением 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ не проходит через точку 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+.
+ Тогда будем говорить, что кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, если кривая с уравнением 
+\begin_inset Formula $z_{2}\left(t\right)=z_{1}\left(t\right)-z_{0}$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ (смотрите пример на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rounds-of-continuous-curve-around-arbitrary-point"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rounds-around-arbitrary-point.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rounds-of-continuous-curve-around-arbitrary-point"
+
+\end_inset
+
+Обход кривой вокруг произвольной точки
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, для определения числа обходов кривой вокруг точки 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+ нужно следить за вращением вектора 
+\begin_inset Formula $z_{1}\left(t\right)-z_{0}$
+\end_inset
+
+, который можно рассматривать как вектор, соединяющий точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ (это было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:connection-between-geometric-interpretations-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Problem
+Сколько раз обходят вокруг точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ кривые, описанные в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-rounds-of-continuous-curves-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) 
+\begin_inset Formula $\left|z\left(t\right)\right|=2$
+\end_inset
+
+, поэтому точка 
+\begin_inset Formula $z_{0}=1$
+\end_inset
+
+ находится внутри кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+, при этом вектор 
+\begin_inset Formula $z\left(t\right)-1$
+\end_inset
+
+ поворачивается вокруг нуля один раз при изменении 
+\begin_inset Formula $t$
+\end_inset
+
+ от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $1$
+\end_inset
+
+, поэтому кривая 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ обходит точку 
+\begin_inset Formula $z=1$
+\end_inset
+
+ один раз;
+\end_layout
+
+\begin_layout Solution
+б) В данном случае 
+\begin_inset Formula $\left|z\left(t\right)\right|=\frac{1}{2}<1$
+\end_inset
+
+, поэтому кривая 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ не обходит точку 
+\begin_inset Formula $1$
+\end_inset
+
+ ни разу;
+\end_layout
+
+\begin_layout Solution
+в) Следя за вектором 
+\begin_inset Formula $z\left(t\right)-1$
+\end_inset
+
+, получим, что он обращается вокруг 
+\begin_inset Formula $0$
+\end_inset
+
+ один раз;
+\end_layout
+
+\begin_layout Solution
+г) Следя за вектором 
+\begin_inset Formula $z\left(t\right)-1$
+\end_inset
+
+, получим, что он обращается вокруг 
+\begin_inset Formula $0$
+\end_inset
+
+ два раза.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Была ошибка: 1 раз
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $z_{1}\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}\left(t\right)$
+\end_inset
+
+ — уравнения кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, не проходящих через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Пусть изменение аргумента вдоль этих кривых равны соответственно 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+.
+ Чему равно изменение аргумента вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ с уравнением 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+, если а) 
+\begin_inset Formula $z\left(t\right)=z_{1}\left(t\right)\cdot z_{2}\left(t\right)$
+\end_inset
+
+, б) 
+\begin_inset Formula $z\left(t\right)=\frac{z_{1}\left(t\right)}{z_{2}\left(t\right)}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+а) Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, при умножении комплексных чисел их аргументы складываются, поэтому изменение
+ аргумента для кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ будет равно 
+\begin_inset Formula $\varphi_{1}+\varphi_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, при делении комплексных чисел их аргументы складываются, поэтому изменение
+ аргумента для кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ будет равно 
+\begin_inset Formula $\varphi_{1}-\varphi_{2}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
