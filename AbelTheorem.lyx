@@ -61062,7 +61062,7 @@ status open
 \begin_inset Formula $z_{1}=z_{0}$
 \end_inset
 
- и уравение приобретает вид 
+ и уравнение приобретает вид 
 \begin_inset Formula $z\left(t\right)=z_{0}$
 \end_inset
 
@@ -62651,6 +62651,12 @@ name "fig:problem-255"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:rounds-of-continuous-curve-around-zero"
+
+\end_inset
+
 Если для непрерывной замкнутой кривой 
 \begin_inset Formula $C$
 \end_inset
@@ -63379,6 +63385,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:rounds-of-continuous-curve-around-arbitrary-point"
+
+\end_inset
+
 Пусть замкнутая непрерывная кривая 
 \begin_inset Formula $C$
 \end_inset
@@ -63877,6 +63889,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+
+\end_inset
+
 Пусть изменение аргумента вдоль кривой 
 \begin_inset Formula $C$
 \end_inset
@@ -63981,6 +63999,457 @@ noprefix "false"
 
  равно 
 \begin_inset Formula $n\cdot\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+.
+ Сколько раз обходит вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ кривая 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+, если 
+\begin_inset Formula $f\left(z\right)=\left(z-z_{0}\right)^{n}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+Пусть параметрическое уравнение кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ есть 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+.
+ По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-arbitrary-point"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз точку 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+, то кривая с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)-z_{0}$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Это, в свою очередь, означает, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что изменение аргумента кривой с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)-z_{0}$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если изменение аргумента вдоль кривой равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, то изменение аргумента вдоль кривой, полученной с помощью преобразования
+ 
+\begin_inset Formula $f\left(z\right)=z^{n}$
+\end_inset
+
+, равно 
+\begin_inset Formula $n\cdot\varphi$
+\end_inset
+
+.
+ Таким образом, изменение аргумента кривой 
+\begin_inset Formula $w\left(t\right)=\left(z\left(t\right)-z_{0}\right)^{n}$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi k\cdot n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Снова применив определение количества обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим, что кривая 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k\cdot n$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ обходит вокруг точек 
+\begin_inset Formula $z=0$
+\end_inset
+
+, 
+\begin_inset Formula $z=1$
+\end_inset
+
+, 
+\begin_inset Formula $z=i$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-i$
+\end_inset
+
+ соответственно 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $k_{4}$
+\end_inset
+
+ раз.
+ Сколько раз обходит вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ кривая 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+, если: а) 
+\begin_inset Formula $f\left(z\right)=z^{2}-z$
+\end_inset
+
+, б) 
+\begin_inset Formula $f\left(z\right)=z^{2}+1$
+\end_inset
+
+, в) 
+\begin_inset Formula $f\left(z\right)=\left(z^{2}+iz\right)^{4}$
+\end_inset
+
+, г) 
+\begin_inset Formula $f\left(z\right)=z^{3}-z^{2}+z-1$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ количества обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, изменение аргумента кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi k_{1}$
+\end_inset
+
+, кривой 
+\begin_inset Formula $z\left(t\right)-1$
+\end_inset
+
+ — 
+\begin_inset Formula $2\pi k_{2}$
+\end_inset
+
+, кривой 
+\begin_inset Formula $z\left(t\right)-i$
+\end_inset
+
+ — 
+\begin_inset Formula $2\pi k_{3}$
+\end_inset
+
+, кривой 
+\begin_inset Formula $z\left(t\right)+i=z\left(t\right)-\left(-i\right)$
+\end_inset
+
+ — 
+\begin_inset Formula $2\pi k_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента кривой, уравнение которой равно произведению уравнений
+ двух других кривых, равно сумме изменений аргумента каждой из этих двух
+ кривых.
+ Разложим каждую из функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ на множители первой степени и найдём изменение аргумента, сложив изменение
+ аргумента для каждого из множителей.
+ Разделив получившееся число на 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, получим количество обходов кривой 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Так как 
+\begin_inset Formula $f\left(z\right)=z^{2}-z=z\left(z-1\right)$
+\end_inset
+
+, то изменение аргумента 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi\left(k_{1}+k_{2}\right)$
+\end_inset
+
+, поэтому число обходов вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $k_{1}+k_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Так как 
+\begin_inset Formula $f\left(z\right)=z^{2}+1=\left(z-i\right)\left(z+i\right)$
+\end_inset
+
+, то изменение аргумента 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi\left(k_{3}+k_{4}\right)$
+\end_inset
+
+, поэтому число обходов вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $k_{3}+k_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Так как 
+\begin_inset Formula $f\left(z\right)=\left(z^{2}+iz\right)^{4}=\left(z\left(z+i\right)\right)^{4}=z^{4}\cdot\left(z+i\right)^{4}$
+\end_inset
+
+, то изменение аргумента кривой 
+\begin_inset Formula $\left(z\left(t\right)\right)^{4}$
+\end_inset
+
+, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, равно 
+\begin_inset Formula $2\pi k_{1}\cdot4$
+\end_inset
+
+, а изменение аргумента кривой 
+\begin_inset Formula $\left(z\left(t\right)+i\right)^{4}$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi k_{4}\cdot4$
+\end_inset
+
+, поэтому изменение аргумента 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi\cdot4\left(k_{1}+k_{4}\right)$
+\end_inset
+
+, а число обходов кривой 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $4\left(k_{1}+k_{4}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) Разложим 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ на множители:
+\begin_inset Formula 
+\begin{multline*}
+f\left(z\right)=z^{3}-z^{2}+z-1=\\
+=z^{2}\left(z-1\right)+\left(z-1\right)=\left(z^{2}+1\right)\left(z-1\right)=\\
+=\left(z-i\right)\left(z+i\right)\left(z-1\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, изменение аргумента 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi\left(k_{3}+k_{4}+k_{2}\right)$
+\end_inset
+
+, а число обходов вокруг 
+\begin_inset Formula $w=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $k_{2}+k_{3}+k_{4}$
 \end_inset
 
 .
