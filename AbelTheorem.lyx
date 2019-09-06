@@ -64456,6 +64456,422 @@ f\left(z\right)=z^{3}-z^{2}+z-1=\\
 \end_layout
 
 \begin_layout Standard
+Рассмотрим уравнение 
+\begin_inset Formula 
+\[
+a_{0}z^{n}+a_{1}z^{n-1}+\dots+a_{n-1}z+a_{n}=0,
+\]
+
+\end_inset
+
+ где все 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ — произвольные комплексные числа, 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{0}\neq0$
+\end_inset
+
+.
+ Наша ближайшая цель — показать, что это уравнение имеет хотя бы один комплексны
+й корень.
+ Если 
+\begin_inset Formula $a_{n}=0$
+\end_inset
+
+, то данное уравнение имеет корень 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Поэтому в дальнейшем мы будем предполагать, что 
+\begin_inset Formula $a_{n}\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "main-algebra-theorem-nomenclature"
+
+\end_inset
+
+Обозначим наибольшее из чисел 
+\begin_inset Formula $\left|a_{0}\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\left|a_{1}\right|$
+\end_inset
+
+, ..., 
+\begin_inset Formula $\left|a_{n}\right|$
+\end_inset
+
+ через 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a_{0}\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $A>0$
+\end_inset
+
+.
+ Выберем положительные действительные числа 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+, причём 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ выберем настолько малым, чтобы выполнялись два неравенства: 
+\begin_inset Formula $R_{1}\le1$
+\end_inset
+
+ и 
+\begin_inset Formula $R_{1}<\frac{\left|a_{n}\right|}{10An}$
+\end_inset
+
+, а 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ настолько большим, чтобы выполнялись два неравенства: 
+\begin_inset Formula $R_{2}\ge1$
+\end_inset
+
+ и 
+\begin_inset Formula $R_{2}>\frac{10An}{\left|a_{0}\right|}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\left|z\right|=R_{1}$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula 
+\[
+\left|a_{0}z^{n}+\dots+a_{n-1}z\right|<\frac{\left|a_{n}\right|}{10}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По неравенству треугольника, доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:triangle-inequality-for-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, и по формуле Муавра, доказанной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left|a_{0}z^{n}+\dots+a_{n-1}z\right|\le\sum_{k=0}^{n-1}\left|a_{k}\right|\cdot\left|z\right|^{n-k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По условию задачи, 
+\begin_inset Formula $\left|z\right|^{n-k}=R_{1}^{n-k}$
+\end_inset
+
+.
+ Так как в правой части неравенства 
+\begin_inset Formula $n-k$
+\end_inset
+
+ пробегает значения от 
+\begin_inset Formula $n$
+\end_inset
+
+ до 1, то 
+\begin_inset Formula $R_{1}^{n-k}=R_{1}^{n-k-1}\cdot R_{1}$
+\end_inset
+
+.
+ Так как, по условию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "main-algebra-theorem-nomenclature"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $R_{1}\le1$
+\end_inset
+
+ и 
+\begin_inset Formula $n-k>1$
+\end_inset
+
+, то 
+\begin_inset Formula $R_{1}^{n-k-1}\le1$
+\end_inset
+
+.
+ С другой стороны, по условию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "main-algebra-theorem-nomenclature"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $R_{1}<\frac{\left|a_{n}\right|}{10An}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left|z^{n-k}\right|\le R_{1}<\frac{\left|a_{n}\right|}{10An}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, получаем следующее неравенство
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left|a_{0}z^{n}+\dots+a_{n-1}z\right|<\sum_{k=0}^{n-1}\left|a_{k}\right|\cdot\frac{\left|a_{n}\right|}{10An}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "main-algebra-theorem-nomenclature"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left|a_{k}\right|\le A$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+\left|a_{0}z^{n}+\dots+a_{n-1}z\right|<\sum_{k=0}^{n-1}\left|a_{k}\right|\cdot\frac{\left|a_{n}\right|}{10An}\le\\
+\le\sum_{k=0}^{n-1}A\cdot\frac{\left|a_{n}\right|}{10An}=\frac{An\cdot\left|a_{n}\right|}{10An}=\frac{\left|a_{n}\right|}{10},
+\end{multline*}
+
+\end_inset
+
+что и требовалось.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\left|z\right|=R_{2}$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula 
+\[
+\left|\frac{a_{1}}{z}+\dots+\frac{a_{n}}{z^{n}}\right|<\frac{\left|a_{0}\right|}{10}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По неравенству треугольника, доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:triangle-inequality-for-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, и по формуле Муавра, доказанной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+\left|\frac{a_{1}}{z}+\dots+\frac{a_{n}}{z^{n}}\right|\le\sum_{k=1}^{n}\left|a_{k}\right|\cdot\frac{1}{\left|z\right|^{k}}.\label{eq:problem-266-after-triangle-inequality}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По условию задачи 
+\begin_inset Formula $\left|z\right|=R_{2}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|z\right|^{k}=R_{2}^{k}=R_{2}^{k-1}\cdot R_{2}$
+\end_inset
+
+.
+ Первый множитель оценим с помощью первого из неравенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "main-algebra-theorem-nomenclature"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+, а второй — с помощью второго из этих неравенств.
+ Получим: 
+\begin_inset Formula 
+\[
+\left|z\right|^{k}\ge R_{2}>\frac{10An}{\left|a_{0}\right|},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{1}{\left|z\right|^{k}}<\frac{\left|a_{0}\right|}{10An}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Подставив эту оценку в неравенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:problem-266-after-triangle-inequality"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+\left|\frac{a_{1}}{z}+\dots+\frac{a_{n}}{z^{n}}\right|<\sum_{k=1}^{n}\left|a_{k}\right|\cdot\frac{\left|a_{0}\right|}{10An}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "main-algebra-theorem-nomenclature"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left|a_{k}\right|<A$
+\end_inset
+
+, поэтому мы может написать 
+\begin_inset Formula 
+\[
+\left|\frac{a_{1}}{z}+\dots+\frac{a_{n}}{z^{n}}\right|<\sum_{k=1}^{n}A\cdot\frac{\left|a_{0}\right|}{10An}=\frac{An\cdot\left|a_{0}\right|}{10An}=\frac{a_{0}}{10},
+\]
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
