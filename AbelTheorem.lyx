@@ -64564,6 +64564,12 @@ name "main-algebra-theorem-nomenclature"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:upper_bound-on-polynomial-inside-small-circle"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\left|z\right|=R_{1}$
 \end_inset
@@ -64722,6 +64728,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:bounds-of-polynomial-on-large-circle"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\left|z\right|=R_{2}$
 \end_inset
@@ -64859,7 +64871,7 @@ noprefix "false"
 , поэтому мы может написать 
 \begin_inset Formula 
 \[
-\left|\frac{a_{1}}{z}+\dots+\frac{a_{n}}{z^{n}}\right|<\sum_{k=1}^{n}A\cdot\frac{\left|a_{0}\right|}{10An}=\frac{An\cdot\left|a_{0}\right|}{10An}=\frac{a_{0}}{10},
+\left|\frac{a_{1}}{z}+\dots+\frac{a_{n}}{z^{n}}\right|<\sum_{k=1}^{n}A\cdot\frac{\left|a_{0}\right|}{10An}=\frac{An\cdot\left|a_{0}\right|}{10An}=\frac{\left|a_{0}\right|}{10},
 \]
 
 \end_inset
@@ -64868,7 +64880,495 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+Кривую с уравнением 
+\begin_inset Formula $z\left(t\right)=R\left(\cos2\pi t+i\sin2\pi t\right)$
+\end_inset
 
+ (то есть окружность радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+, проходимую против часовой стрелки) обозначим 
+\begin_inset Formula $C_{R}$
+\end_inset
+
+.
+ Так как кривая 
+\begin_inset Formula $C_{R}$
+\end_inset
+
+ замкнута (
+\begin_inset Formula $z\left(1\right)=z\left(0\right)$
+\end_inset
+
+), то и кривая 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $f\left(z\right)=a_{0}z^{n}+\dots+a_{n}$
+\end_inset
+
+, также замкнута (
+\begin_inset Formula $f\left(z\left(1\right)\right)=f\left(z\left(0\right)\right)$
+\end_inset
+
+).
+ Пусть 
+\begin_inset Formula $v\left(R\right)$
+\end_inset
+
+ — число обходов кривой 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ (если 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ не проходит через точку 
+\begin_inset Formula $w=0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rounds-of-polynomial-around-zero-on-small-and-large-circles"
+
+\end_inset
+
+Чему равны значения 
+\begin_inset Formula $v\left(R_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $v\left(R_{2}\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+Начнём с нахождения 
+\begin_inset Formula $v\left(R_{1}\right)$
+\end_inset
+
+.
+ Найдём расстояние между точками 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, по определению 
+\begin_inset Formula 
+\[
+\left|f\left(z\right)-a_{n}\right|=\left|a_{0}z^{n}+\dots+a_{n-1}z\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:upper_bound-on-polynomial-inside-small-circle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, было показано, что при 
+\begin_inset Formula $\left|z\right|=R_{1}$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\left|a_{0}z^{n}+\dots+a_{n-1}z\right|<\frac{\left|a_{n}\right|}{10}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a_{n}\neq0$
+\end_inset
+
+, то получаем, что при 
+\begin_inset Formula $\left|z\right|=R_{1}$
+\end_inset
+
+ кривая 
+\begin_inset Formula $f\left(z\left(t\right)\right)$
+\end_inset
+
+ проходит от точки 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ на расстоянии не более чем 
+\begin_inset Formula $\frac{\left|a_{n}\right|}{10}$
+\end_inset
+
+.
+ Так как точка 
+\begin_inset Formula $w=0$
+\end_inset
+
+ находится от точки 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ на расстоянии 
+\begin_inset Formula $\left|a_{n}-0\right|=\left|a_{n}\right|$
+\end_inset
+
+, то кривая 
+\begin_inset Formula $f\left(z\left(t\right)\right)$
+\end_inset
+
+ вообще не обходит точку 
+\begin_inset Formula $w=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $v\left(R_{1}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся оценкой, полученной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:bounds-of-polynomial-on-large-circle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left|\frac{f\left(z\right)}{z^{n}}-a_{0}\right|=\left|\frac{a_{1}}{z}+\dots+\frac{a_{n}}{z^{n}}\right|<\frac{\left|a_{0}\right|}{10}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+До этого не догадался сам.
+ Нужно было смотреть предыдущие задачи!
+\end_layout
+
+\end_inset
+
+Таким образом, как и в предыдущем пункте, изменение аргумента для кривой,
+ получаемой преобразованием 
+\begin_inset Formula $\frac{f\left(z\right)}{z^{n}}$
+\end_inset
+
+, равно нулю.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента частного равно разности изменений аргумента делимого
+ и делителя, поэтому изменение аргумента для кривой 
+\begin_inset Formula $f\left(z\left(t\right)\right)$
+\end_inset
+
+ равно изменению аргумента кривой 
+\begin_inset Formula $\left[z\left(t\right)\right]^{n}$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $\left[z\left(t\right)\right]^{n}$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi n$
+\end_inset
+
+.
+ Поэтому изменение аргумента для кривой 
+\begin_inset Formula $f\left(z\left(t\right)\right)$
+\end_inset
+
+ также равно 
+\begin_inset Formula $2\pi n$
+\end_inset
+
+, а следовательно, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, количество обходов вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $n$
+\end_inset
+
+, то есть 
+\begin_inset Formula $v\left(R_{2}\right)=n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Будем теперь изменять радиус 
+\begin_inset Formula $R$
+\end_inset
+
+ непрерывно от 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ до 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+.
+ При этом кривая 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ будет непрерывно деформироваться от положения 
+\begin_inset Formula $f\left(C_{R_{1}}\right)$
+\end_inset
+
+ до положения 
+\begin_inset Formula $f\left(C_{R_{2}}\right)$
+\end_inset
+
+.
+ Если при некотором значении 
+\begin_inset Formula $R$
+\end_inset
+
+ кривая 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ не проходит через точку 
+\begin_inset Formula $w=0$
+\end_inset
+
+, то при достаточно малых изменения 
+\begin_inset Formula $R$
+\end_inset
+
+ кривая 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ будет деформироваться так мало, что число её обходов вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ не изменится, то есть при данном значении 
+\begin_inset Formula $R$
+\end_inset
+
+ функция 
+\begin_inset Formula $v\left(R\right)$
+\end_inset
+
+ непрерывна.
+ Если бы кривые 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ при всех значениях 
+\begin_inset Formula $R_{1}\le R\le R_{2}$
+\end_inset
+
+ не проходили через точку 
+\begin_inset Formula $w=0$
+\end_inset
+
+ , то 
+\begin_inset Formula $v\left(R\right)$
+\end_inset
+
+ было бы непрерывной функцией при всех 
+\begin_inset Formula $R_{1}\le R\le R_{2}$
+\end_inset
+
+.
+ Так как функция 
+\begin_inset Formula $v\left(R\right)$
+\end_inset
+
+ принимает только целочисленные значения, то она может быть непрерывна,
+ только если 
+\begin_inset Formula $v\left(R\right)$
+\end_inset
+
+ при всех 
+\begin_inset Formula $R$
+\end_inset
+
+ из отрезка 
+\begin_inset Formula $\left[R_{1};R_{2}\right]$
+\end_inset
+
+ принимает одно и то же значение, в частности, должно быть 
+\begin_inset Formula $v\left(R_{1}\right)=v\left(R_{2}\right)$
+\end_inset
+
+.
+ Но из решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rounds-of-polynomial-around-zero-on-small-and-large-circles"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, следует, что 
+\begin_inset Formula $v\left(R_{1}\right)=0$
+\end_inset
+
+, а 
+\begin_inset Formula $v\left(R_{2}\right)=n$
+\end_inset
+
+.
+ Следовательно, предположение о том, что кривые 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ при всех 
+\begin_inset Formula $R_{1}\le R\le R_{2}$
+\end_inset
+
+ не проходит через точку 
+\begin_inset Formula $w=0$
+\end_inset
+
+ неверно.
+ Значит, при некотором 
+\begin_inset Formula $z$
+\end_inset
+
+ должно быть 
+\begin_inset Formula $f$
+\end_inset
+
+
+\begin_inset Formula $\left(z\right)=0$
+\end_inset
+
+.
+ Тем самым мы получаем следующую теорему
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Наше рассуждение содержит некоторые нестрогости и должно рассматриваться,
+ вообще говоря, как идея доказательства.
+ Однако это рассуждение можно (хотя и не просто) сделать абсолютно строгим
+ (смотрите, например, Стинрод Н.
+ и Чинн У., Первые понятия топологии, 
+\begin_inset Quotes rld
+\end_inset
+
+Мир
+\begin_inset Quotes rrd
+\end_inset
+
+, 1967).
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(Основная теорема алгебры комплексных чисел)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Эта теорема доказана в 1799 году немецким математиком К.
+ Гауссом (1777-1855).
+\end_layout
+
+\end_inset
+
+.
+ Всякое уравнение 
+\begin_inset Formula 
+\[
+a_{0}z^{n}+a_{1}z^{n-1}+\dots+a_{n-1}z+a_{n}=0,
+\]
+
+\end_inset
+
+где все 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ — произвольные комплексные числа, 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{0}\neq0$
+\end_inset
+
+, имеет по крайней мере один комплексный корень.
 \end_layout
 
 \begin_layout Standard
