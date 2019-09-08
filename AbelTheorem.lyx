@@ -65919,12 +65919,323 @@ noprefix "false"
 , что и требовалось.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Problem
+Пусть уравнение с действительными коэффициентами 
+\begin_inset Formula 
+\[
+a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0
+\]
+
+\end_inset
+
+ имеет действительный корень 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, не являющийся действительным числом.
+ Доказать, что многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}$
+\end_inset
+
+ делится на некоторой многочлен второй степени с действительными коэффициентами.
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Дописать этот раздел
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что всякий многочлен с действительными коэффициентами можно представит
+ь в виде произведения многочленов первой и второй степени с действительными
+ коэффициентами.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Из результата задачи 272
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ вытекает, что неприводимыми многочленами (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на страницу 65
+\end_layout
+
+\end_inset
+
+) над полем действительных чисел являются только многочлены первой степени
+ и многочлены второй степени без действительных корней.
+ Мы воспользовались этим в разделе 2.3 этой главы 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+ Над полем комплексных чисел неприводимыми многочленами, как следует из
+ результата задачи 269
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, являются только многочлены первой степени.
+\end_layout
+
+\begin_layout Remark
+Вернёмся снова к многочленам с произвольными комплексными коэффициентами.
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — корень уравнения 
+\begin_inset Formula 
+\[
+a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0.
+\]
+
+\end_inset
+
+Говорят, что 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — 
+\emph on
+корень кратности 
+\begin_inset Formula $k$
+\end_inset
+
+
+\emph default
+, если многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(z-z_{0}\right)^{k}$
+\end_inset
+
+ и не делится на 
+\begin_inset Formula $\left(z-z_{0}\right)^{k+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Какова кратность корней 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ в уравнении 
+\begin_inset Formula 
+\[
+z^{5}-z^{4}-2z^{3}+2z^{2}+z-1=0?
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Производной многочлена 
+\begin_inset Formula 
+\[
+P\left(z\right)=\sum_{k=0}^{n}a_{k}z^{n-k}
+\]
+
+\end_inset
+
+ называется многочлен 
+\begin_inset Formula 
+\[
+P^{\prime}\left(z\right)=\sum_{k=0}^{n-1}a_{k}\left(n-k-1\right)z^{n-k-1}.
+\]
+
+\end_inset
+
+ Производная обычная обозначается штрихом.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(z\right)$
+\end_inset
+
+ — два многочлена.
+ Доказать равенства: а) 
+\begin_inset Formula $\left(P\left(z\right)+Q\left(z\right)\right)^{\prime}=P^{\prime}\left(z\right)+Q^{\prime}\left(z\right)$
+\end_inset
+
+; б) 
+\begin_inset Formula $\left(c\cdot P\left(z\right)\right)^{\prime}=c\cdot P^{\prime}\left(z\right)$
+\end_inset
+
+; в) 
+\begin_inset Formula $\left(P\left(z\right)\cdot Q\left(z\right)\right)^{\prime}=P^{\prime}\left(z\right)\cdot Q\left(z\right)+P\left(z\right)\cdot Q^{\prime}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $P\left(z\right)=\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ (
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ — целое).
+ Доказать, что 
+\begin_inset Formula $P^{\prime}\left(z\right)=n\left(z-z_{0}\right)^{n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что если уравнение 
+\begin_inset Formula $P\left(z\right)=0$
+\end_inset
+
+ имеет корень 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ кратности 
+\begin_inset Formula $k>1$
+\end_inset
+
+, то уравнение 
+\begin_inset Formula $P^{\prime}\left(z\right)=0$
+\end_inset
+
+ имеет корень 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ кратности 
+\begin_inset Formula $k-1$
+\end_inset
+
+.
+ Если же уравнение 
+\begin_inset Formula $P\left(z\right)=0$
+\end_inset
+
+ имеет корень 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ кратности 
+\begin_inset Formula $1$
+\end_inset
+
+, то 
+\begin_inset Formula $P^{\prime}\left(z_{0}\right)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
 \end_layout
 
 \end_inset
