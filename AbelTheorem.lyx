@@ -48580,13 +48580,13 @@ noprefix "false"
 \begin_inset Quotes rld
 \end_inset
 
-основную теорему алгебры комплексных чисел 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+основную теорему алгебры комплексных чисел
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:main-theorem-of-complex-numbers-algebra"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -50491,7 +50491,14 @@ noprefix "false"
 \end_inset
 
 .
- Если 
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "def:root-of-polynomial"
+
+\end_inset
+
+Если 
 \begin_inset Formula $P\left(a\right)=0$
 \end_inset
 
@@ -50806,6 +50813,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "Division-of-polynomials-with-residual"
+
+\end_inset
+
 Многочлены над произвольным полем 
 \begin_inset Formula $K$
 \end_inset
@@ -53118,6 +53131,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:polynomial-of-conjugate-is-conjugate-of-polynomial"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $P\left(z\right)=a_{0}z^{n}+a_{1}z^{n-1}+\cdots+a_{n-1}z+a_{n}=\sum_{k=0}^{n}a_{k}z^{n-k}$
 \end_inset
@@ -65336,6 +65355,12 @@ status collapsed
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:main-theorem-of-complex-numbers-algebra"
+
+\end_inset
+
 (Основная теорема алгебры комплексных чисел)
 \begin_inset Foot
 status open
@@ -65369,6 +65394,529 @@ a_{0}z^{n}+a_{1}z^{n-1}+\dots+a_{n-1}z+a_{n}=0,
 \end_inset
 
 , имеет по крайней мере один комплексный корень.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:polynomial-reminder-theorem"
+
+\end_inset
+
+Доказать 
+\emph on
+теорему Безу
+\emph default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Безу (1730-1783) — французский математик
+\end_layout
+
+\end_inset
+
+: если 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — корень уравнения 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0$
+\end_inset
+
+, то многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}$
+\end_inset
+
+ делится на двучлен 
+\begin_inset Formula $z-z_{0}$
+\end_inset
+
+ без остатка.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Есть альтернативная формулировка этой теоремы: остаток от деления 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $z-a$
+\end_inset
+
+ равен 
+\begin_inset Formula $P\left(a\right)$
+\end_inset
+
+.
+ Может быть написать и про неё?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=P\left(z\right)$
+\end_inset
+
+.
+ По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Division-of-polynomials-with-residual"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, разделить многочлен 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ на многочлен (в данном случае — двучлен) 
+\begin_inset Formula $z-z_{0}$
+\end_inset
+
+ — это значит найти многочлены 
+\begin_inset Formula $S\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $R\left(z\right)$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $P\left(z\right)=S\left(z\right)\cdot\left(z-z_{0}\right)+R\left(z\right)$
+\end_inset
+
+, причём степень многочлена 
+\begin_inset Formula $R\left(z\right)$
+\end_inset
+
+ должна быть ниже, чем степень многочлена 
+\begin_inset Formula $z-z_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z-z_{0}$
+\end_inset
+
+ — многочлен первой степени, то 
+\begin_inset Formula $R\left(z\right)=r_{0}$
+\end_inset
+
+, то есть многочлен-отстаток представляет сбоой константу.
+ Итак, имеет место равенство 
+\begin_inset Formula 
+\[
+P\left(z\right)=S\left(z\right)\cdot\left(z-z_{0}\right)+r_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Подставим в левую и правую части этого равенства 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+P\left(z_{0}\right)=S\left(z_{0}\right)\cdot0+r_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:multiplication-by-zero-is-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, первое слагаемое справа равно нулю, та как как 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — корень уравнения 
+\begin_inset Formula $P\left(z\right)=0$
+\end_inset
+
+, то по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:root-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $P\left(z_{0}\right)$
+\end_inset
+
+.
+ Таким образом, получаем, равенство 
+\begin_inset Formula $0=r_{0}$
+\end_inset
+
+.
+ Таким образом, остаток от деления 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $z-z_{0}$
+\end_inset
+
+ равен нулю, что и требовалось доказать.
+\end_layout
+
+\begin_layout Solution
+Отметим, что так как 
+\begin_inset Formula $P\left(z\right)=S\left(z\right)\cdot\left(z-z_{0}\right)$
+\end_inset
+
+, а при умножении многочленов их степени складываются, то степень многочлена
+ 
+\begin_inset Formula $S\left(z\right)$
+\end_inset
+
+ на единицу меньше, чем степень многочлена 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}$
+\end_inset
+
+, где 
+\begin_inset Formula $a_{0}\neq0$
+\end_inset
+
+ представим в виде 
+\begin_inset Formula 
+\begin{multline*}
+a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=\\
+=a_{0}\left(z-z_{1}\right)\left(z-z_{2}\right)\cdot\dots\cdot\left(z-z_{n}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=P\left(z\right)$
+\end_inset
+
+.
+ По основной теореме алгебры комплексных чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:main-theorem-of-complex-numbers-algebra"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у этого многочлена есть по крайней мере один корень.
+ Обозначим его 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ По теореме Безу, доказанной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:polynomial-reminder-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $z-z_{1}$
+\end_inset
+
+ без остатка, поэтому 
+\begin_inset Formula $P\left(z\right)=P_{1}\left(z\right)\left(z-z_{1}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $P_{1}\left(z\right)$
+\end_inset
+
+ — многочлен степени 
+\begin_inset Formula $n-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+К многочлену 
+\begin_inset Formula $P_{1}\left(z\right)$
+\end_inset
+
+ снова можно применить описанные выше рассуждения и получить представление
+ 
+\begin_inset Formula $P_{1}\left(z\right)=P_{2}\left(z\right)\cdot\left(z-z_{2}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — корень 
+\begin_inset Formula $P_{1}\left(z\right)$
+\end_inset
+
+, а степень 
+\begin_inset Formula $P_{2}\left(z\right)$
+\end_inset
+
+ равна 
+\begin_inset Formula $n-2$
+\end_inset
+
+.
+ Этот процесс можно продолжать, пока степень многочлена не станет равна
+ 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Так как степень многочлена снижается на 
+\begin_inset Formula $1$
+\end_inset
+
+ на каждом шаге, то всего будет выполнено 
+\begin_inset Formula $n$
+\end_inset
+
+ шагов: 
+\begin_inset Formula $P\left(z\right)=A\cdot\left(z-z_{1}\right)\left(z-z_{2}\right)\cdot\dots\cdot\left(z-z_{n}\right)$
+\end_inset
+
+.
+ Остаётся определить константу 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Так как старший коэффициент произведения многочленов равен произведению
+ их старших коэффициентов, то старший коэффициент произведения 
+\begin_inset Formula $\left(z-z_{1}\right)\left(z-z_{2}\right)\cdot\dots\cdot\left(z-z_{n}\right)$
+\end_inset
+
+ равен 
+\begin_inset Formula $1$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $A=a_{0}$
+\end_inset
+
+.
+ Требуемое равенство доказано.
+\end_layout
+
+\begin_layout Remark
+Пусть многочлен 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ разложен на множители: 
+\begin_inset Formula 
+\[
+P\left(z\right)=a_{0}\left(z-z_{1}\right)\left(z-z_{2}\right)\cdot\dots\cdot\left(z-z_{n}\right).
+\]
+
+\end_inset
+
+Правая часть равна 
+\begin_inset Formula $0$
+\end_inset
+
+ тогда и только тогда, когда хотя бы одна из скобок равна 
+\begin_inset Formula $0$
+\end_inset
+
+ (как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:multiplication-by-zero-is-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:in-field-there-are-no-divisors-of-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Поэтому корнями уравнения 
+\begin_inset Formula $P\left(z\right)=0$
+\end_inset
+
+ являются числа 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $z_{n}$
+\end_inset
+
+ и только они.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — корень уравнения 
+\begin_inset Formula 
+\[
+a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0,
+\]
+
+\end_inset
+
+ где все 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ — действительные числа.
+ Доказать, что число 
+\begin_inset Formula $\bar{z}_{0}$
+\end_inset
+
+ (комплексно сопряжённое к 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+) — также корень этого уравнения.
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=P\left(z\right)$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:polynomial-of-conjugate-is-conjugate-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $P\left(\bar{z}\right)=\overline{P\left(z\right)}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $P\left(\bar{z}_{0}\right)=\overline{P\left(z_{0}\right)}$
+\end_inset
+
+, но так как 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — корень 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $P\left(z_{0}\right)=0$
+\end_inset
+
+.
+ По определению комплексно сопряжённого числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:complex-conjugate"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\bar{0}=\overline{0+i0}=0-i0=0$
+\end_inset
+
+, поэтому окончательно получаем 
+\begin_inset Formula $P\left(\bar{z}_{0}\right)=\overline{P\left(z_{0}\right)}=\bar{0}=0$
+\end_inset
+
+.
+ Таким образом, по определению корня многочлена 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:root-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\bar{z}_{0}$
+\end_inset
+
+ — корень многочлена 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+, что и требовалось.
 \end_layout
 
 \begin_layout Standard
