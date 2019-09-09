@@ -10632,7 +10632,7 @@ name "prob:multiplication-tables-for-group-of-integers-modulo-2-3-4"
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:residuals-modulo-n-with-addition-is-cyclic-group-of-order-n"
+name "prob:reminders-modulo-n-with-addition-is-cyclic-group-of-order-n"
 
 \end_inset
 
@@ -13792,7 +13792,7 @@ noprefix "false"
 Как было показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:residuals-modulo-n-with-addition-is-cyclic-group-of-order-n"
+reference "prob:reminders-modulo-n-with-addition-is-cyclic-group-of-order-n"
 plural "false"
 caps "false"
 noprefix "false"
@@ -49962,7 +49962,7 @@ noprefix "false"
  Свойство 1 поля было доказано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:residuals-modulo-n-with-addition-is-cyclic-group-of-order-n"
+reference "prob:reminders-modulo-n-with-addition-is-cyclic-group-of-order-n"
 plural "false"
 caps "false"
 noprefix "false"
@@ -50815,7 +50815,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "Division-of-polynomials-with-residual"
+name "Division-of-polynomials-with-reminder"
 
 \end_inset
 
@@ -53914,6 +53914,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:reducible-and-irreducible-polynomials"
+
+\end_inset
+
 Многочлен с коэффициентами из некоторого поля 
 \begin_inset Formula $K$
 \end_inset
@@ -65469,7 +65475,7 @@ status open
  По определению 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "Division-of-polynomials-with-residual"
+reference "Division-of-polynomials-with-reminder"
 plural "false"
 caps "false"
 noprefix "false"
@@ -65609,6 +65615,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:factorization-of-polynomial"
+
+\end_inset
+
 Доказать, что многочлен 
 \begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}$
 \end_inset
@@ -65753,6 +65765,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:factorization-of-polynomial"
+
+\end_inset
+
 Пусть многочлен 
 \begin_inset Formula $P\left(z\right)$
 \end_inset
@@ -65814,6 +65832,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:conjugate-to-root-of-polynomial-with-real-coefficient-is-root"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $z_{0}$
 \end_inset
@@ -65920,6 +65944,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:polynomial-with-not-real-root-is-divided-by-second-order-polynomial"
+
+\end_inset
+
 Пусть уравнение с действительными коэффициентами 
 \begin_inset Formula 
 \[
@@ -65928,7 +65958,7 @@ a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0
 
 \end_inset
 
- имеет действительный корень 
+имеет комплексный корень 
 \begin_inset Formula $z_{0}$
 \end_inset
 
@@ -65941,79 +65971,243 @@ a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:conjugate-to-root-of-polynomial-with-real-coefficient-is-root"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, если многочлен с действительными коэффициентами имеет комплексный корень
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
 
+, то 
+\begin_inset Formula $\bar{z}_{0}$
+\end_inset
+
+ (комплексно сопряжённое к 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ число) также является корнем этого многочлена.
+ Таким образом, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:polynomial-reminder-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0$
+\end_inset
+
+ делится на многочлены 
+\begin_inset Formula $\left(z-z_{0}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(z-\bar{z}_{0}\right)$
+\end_inset
+
+ без остатка.
+ Это означает, что многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(z-z_{0}\right)\left(z-\bar{z}_{0}\right)$
+\end_inset
+
+.
+ Раскрыв скобки, получим 
+\begin_inset Formula $z^{2}-z\cdot\left(z_{0}+\bar{z}_{0}\right)+z_{0}\bar{z}_{0}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $z_{0}=a_{0}+ib_{0}$
+\end_inset
+
+, тогда, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:complex-conjugate"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\bar{z}_{0}=a_{0}-ib_{0}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $z_{0}+\bar{z}_{0}=2a_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{0}\bar{z}_{0}=\left(a_{0}+ib_{0}\right)\left(a_{0}-ib_{0}\right)=a_{0}^{2}+b_{0}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, в условиях задачи многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0$
+\end_inset
+
+ делится на многочлен 
+\begin_inset Formula $\left(z^{2}+2a_{0}z+a_{0}^{2}+b_{0}^{2}\right)$
+\end_inset
+
+, который является многочленом второй степени с действительными коэффициентами,
+ что и требуется.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:real-coefficient-polynomial-is-product-of-polinomial-of-1-and-2-degree"
+
+\end_inset
+
 Доказать, что всякий многочлен с действительными коэффициентами можно представит
 ь в виде произведения многочленов первой и второй степени с действительными
  коэффициентами.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorization-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, всякий многочлен с комплексными (в частности — действительными) коэффициентами
+ степени 
+\begin_inset Formula $n$
+\end_inset
 
+ можно представить в виде произведения 
+\begin_inset Formula $a_{0}\left(z-z_{1}\right)\left(z-z_{2}\right)\cdot\dots\cdot\left(z-z_{n}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ — комплексные числа.
+ Если некоторое 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ является действительными числом, то соответствующая скобка 
+\begin_inset Formula $z-z_{i}$
+\end_inset
+
+ является многочленом первой степени с действительными коэффициентами.
+ Если 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ — комплексное число, не являющееся действительным, то, как было показано
+ в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:conjugate-to-root-of-polynomial-with-real-coefficient-is-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z-\bar{z}_{i}$
+\end_inset
+
+ также входит в разложение многочлена и скобки 
+\begin_inset Formula $\left(z-z_{i}\right)\left(z-\bar{z}_{i}\right)$
+\end_inset
+
+, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:conjugate-to-root-of-polynomial-with-real-coefficient-is-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, представляют собой многочлен второй степени с действительными коэффициентами.
+ Таким образом, разложение 
+\begin_inset Formula $a_{0}\left(z-z_{1}\right)\left(z-z_{2}\right)\cdot\dots\cdot\left(z-z_{n}\right)$
+\end_inset
+
+ может быть представлено в виде произведения многочленов первой и второй
+ степени с действительными коэффициентами (действительный множитель 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ может быть внесёт в любую скобку).
 \end_layout
 
 \begin_layout Remark
-Из результата задачи 272
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+Из результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:real-coefficient-polynomial-is-product-of-polinomial-of-1-and-2-degree"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
- вытекает, что неприводимыми многочленами (
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку на страницу 65
-\end_layout
+ вытекает, что неприводимыми многочленами (смотрите определение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:reducible-and-irreducible-polynomials"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
 ) над полем действительных чисел являются только многочлены первой степени
  и многочлены второй степени без действительных корней.
- Мы воспользовались этим в разделе 2.3 этой главы 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
+ Мы воспользовались этим в разделе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:uniqueness-of-complex-numbers-field"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
 .
  Над полем комплексных чисел неприводимыми многочленами, как следует из
- результата задачи 269
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorization-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -66085,16 +66279,38 @@ z^{5}-z^{4}-2z^{3}+2z^{2}+z-1=0?
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Разложим заданный многочлен на множители:
+\begin_inset Formula 
+\begin{multline*}
+z^{5}-z^{4}-2z^{3}+2z^{2}+z-1=\\
+=z^{4}\left(z-1\right)-2z^{2}\left(z-1\right)+\left(z-1\right)=\\
+=\left(z-1\right)\left(z^{4}-2z^{2}+1\right)=\left(z-1\right)\left(z^{2}-1\right)^{2}=\\
+=\left(z-1\right)\left[\left(z-1\right)\left(z+1\right)\right]^{2}=\left(z-1\right)^{3}\left(z+1\right)^{2}.
+\end{multline*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Таким образом, кратность корня 
+\begin_inset Formula $z=1$
+\end_inset
+
+ равна 
+\begin_inset Formula $3$
+\end_inset
+
+, а кратность корня 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ равна 
+\begin_inset Formula $2$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Definition
