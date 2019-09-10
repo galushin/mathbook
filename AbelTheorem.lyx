@@ -50601,6 +50601,12 @@ name "def:sum-and-difference-of-polynomials"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:product-of-polynomials"
+
+\end_inset
+
 Чтобы вычислить 
 \emph on
 произведение
@@ -66314,6 +66320,12 @@ z^{5}-z^{4}-2z^{3}+2z^{2}+z-1=\\
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:derivative-of-polynomial"
+
+\end_inset
+
 Производной многочлена 
 \begin_inset Formula 
 \[
@@ -66351,11 +66363,29 @@ P^{\prime}\left(z\right)=\sum_{k=0}^{n-1}a_{k}\left(n-k-1\right)z^{n-k-1}.
 \begin_inset Formula $\left(c\cdot P\left(z\right)\right)^{\prime}=c\cdot P^{\prime}\left(z\right)$
 \end_inset
 
-; в) 
+, где 
+\begin_inset Formula $c$
+\end_inset
+
+ — произвольное постоянное комплексное число; в) 
 \begin_inset Formula $\left(P\left(z\right)\cdot Q\left(z\right)\right)^{\prime}=P^{\prime}\left(z\right)\cdot Q\left(z\right)+P\left(z\right)\cdot Q^{\prime}\left(z\right)$
 \end_inset
 
 .
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Складывается подозрение, что доказать эти утверждения в общем случае и для
+ полного определения производной проще, чем для многочленов и с таким определени
+е производной.
+ Но тогда нужно вводить понятие предела.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -66365,6 +66395,254 @@ status open
 \begin_layout Plain Layout
 Написать решение
 \end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula 
+\[
+P\left(z\right)=\sum_{k=0}^{n}a_{k}z^{n-k},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q\left(z\right)=\sum_{k=0}^{n}b_{k}z^{n-k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Здесь 
+\begin_inset Formula $n$
+\end_inset
+
+ — наибольшая из степеней двух многочленов, поэтому 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ или 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ могут оказаться равными нулю.
+\end_layout
+
+\begin_layout Solution
+Тогда, по определению производной многочлена 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:derivative-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+P^{\prime}\left(z\right)=\sum_{k=0}^{n-1}a_{k}\left(n-k-1\right)z^{n-k-1},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+Q^{\prime}\left(z\right)=\sum_{k=0}^{n-1}b_{k}\left(n-k-1\right)z^{n-k-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+а) По определению суммы многочленов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:sum-and-difference-of-polynomials"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $P\left(z\right)+Q\left(z\right)=\sum_{k=0}^{n}\left(a_{k}+b_{k}\right)z^{n-k}$
+\end_inset
+
+.
+ Тогда, по определению производной многочлена: 
+\begin_inset Formula 
+\[
+\left(P\left(z\right)+Q\left(z\right)\right)^{\prime}=\sum_{k=0}^{n-1}\left(a_{k}+b_{k}\right)\left(n-k-1\right)z^{n-k-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны, применяя определение суммы многочленов к сумме производных,
+ получим: 
+\begin_inset Formula 
+\begin{multline*}
+P^{\prime}\left(z\right)+Q^{\prime}\left(z\right)=\\
+=\sum_{k=0}^{n-1}a_{k}\left(n-k-1\right)z^{n-k-1}+\sum_{k=0}^{n-1}b_{k}\left(n-k-1\right)z^{n-k-1}=\\
+=\sum_{k=0}^{n-1}\left(a_{k}+b_{k}\right)\left(n-k-1\right)z^{n-k-1}=\left(P\left(z\right)+Q\left(z\right)\right)^{\prime}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:product-of-polynomials"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $c\cdot P\left(z\right)=\sum_{k=0}^{n}\left(c\cdot a_{k}\right)z^{n-k}$
+\end_inset
+
+.
+ Тогда, по определению производной многочлена: 
+\begin_inset Formula 
+\[
+\left(c\cdot P\left(z\right)\right)^{\prime}=\sum_{k=0}^{n-1}\left(c\cdot a_{k}\right)\left(n-k\right)z^{n-k-1}=c\cdot\sum_{k=0}^{n-1}a_{k}\left(n-k\right)z^{n-k-1}=c\cdot P^{\prime}\left(z\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) Докажем сначала частный случай этой формулы, когда 
+\begin_inset Formula $Q\left(z\right)=z^{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $z>0$
+\end_inset
+
+ (для 
+\begin_inset Formula $m=0$
+\end_inset
+
+ формула была доказана в пункте б), так как 
+\begin_inset Formula $\left(c\right)^{\prime}=0$
+\end_inset
+
+).
+ Тогда 
+\begin_inset Formula 
+\[
+P\left(z\right)\cdot Q\left(z\right)=P\left(z\right)\cdot z^{m}=\sum_{k=0}^{n}a_{k}z^{n-k+m}
+\]
+
+\end_inset
+
+ и, по определению производной многочлена: 
+\begin_inset Formula 
+\[
+\left(P\left(z\right)z^{m}\right)^{\prime}=\sum_{k=0}^{n}a_{k}\left(n-k+m\right)z^{n-k+m-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны, 
+\begin_inset Formula $\left(z^{m}\right)^{\prime}=m\cdot z^{m-1}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+P^{\prime}\left(z\right)\cdot Q\left(z\right)+P\left(z\right)\cdot Q^{\prime}\left(z\right)=\\
+=\sum_{k=0}^{n-1}a_{k}\left(n-k\right)z^{n-k-1}\cdot z^{m}+\sum_{k=0}^{n}a_{k}z^{n-k}\cdot m\cdot z^{m-1}=\\
+=\sum_{k=0}^{n-1}a_{k}\left(n-k\right)z^{n-k+m-1}+\sum_{k=0}^{n}a_{k}\cdot m\cdot z^{n-k+m-1}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+При 
+\begin_inset Formula $k=n$
+\end_inset
+
+ общий член первой суммы приобретает вид 
+\begin_inset Formula $a_{n}\cdot0\cdot z^{m-1}=0$
+\end_inset
+
+, поэтому в первой сумме можно изменить верхний предел суммирования на 
+\begin_inset Formula $n$
+\end_inset
+
+ без изменения значения суммы.
+ После этого, мы можем объединить две суммы в одну и вынести общие множители
+ за скобку:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+P^{\prime}\left(z\right)\cdot z^{m}+P\left(z\right)\cdot\left(z^{m}\right)^{\prime}=\\
+=\sum_{k=0}^{n}a_{k}\left(n-k+m\right)\cdot z^{n-k+m-1}=\left(P\left(z\right)z^{m}\right)^{\prime}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Перейдём теперь к общему случаю 
+\begin_inset Formula $Q\left(z\right)=\sum_{k=0}^{n}b_{k}z^{k}$
+\end_inset
+
+.
+ Воспользуемся дистрибутивностью умножения:
+\begin_inset Formula 
+\[
+P\left(z\right)\cdot Q\left(z\right)=\sum_{k=0}^{n}P\left(z\right)\cdot b_{k}\cdot z^{k},
+\]
+
+\end_inset
+
+тогда по доказанному в пунтках а), б) и выше в этом пункте: 
+\begin_inset Formula 
+\begin{multline*}
+\left(P\left(z\right)Q\left(z\right)\right)^{\prime}=\sum_{k=0}^{n}b_{k}\cdot\left(P\left(z\right)\cdot z^{k}\right)^{\prime}=\\
+=\sum_{k=0}^{n}b_{k}\left(P^{\prime}\left(z\right)z^{k}+P\left(z\right)\cdot\left(z^{k}\right)^{\prime}\right)=\\
+=P^{\prime}\left(z\right)\sum_{k=0}^{n}b_{k}z^{k}+P\left(z\right)\sum_{k=0}^{n}b_{k}\left(z^{k}\right)^{\prime}=\\
+=P^{\prime}\left(z\right)Q\left(z\right)+P\left(z\right)\left(\sum_{k=0}^{n}b_{k}z^{k}\right)^{\prime}=\\
+=P^{\prime}\left(z\right)Q\left(z\right)+P\left(z\right)\left(Q\left(z\right)\right)^{\prime}.
+\end{multline*}
 
 \end_inset
 
