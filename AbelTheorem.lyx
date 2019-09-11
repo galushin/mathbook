@@ -65525,7 +65525,7 @@ noprefix "false"
 \begin_inset Formula $R\left(z\right)=r_{0}$
 \end_inset
 
-, то есть многочлен-отстаток представляет сбоой константу.
+, то есть многочлен-отстаток представляет собой константу.
  Итак, имеет место равенство 
 \begin_inset Formula 
 \[
@@ -66225,6 +66225,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:multiplicity-of-the-polynomial-root"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $z_{0}$
 \end_inset
@@ -66346,6 +66352,12 @@ P^{\prime}\left(z\right)=\sum_{k=0}^{n-1}a_{k}\left(n-k-1\right)z^{n-k-1}.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:derivative-of-the-sum-and-product"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $P\left(z\right)$
 \end_inset
@@ -66389,15 +66401,6 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
-\end_inset
-
 Пусть 
 \begin_inset Formula 
 \[
@@ -66650,6 +66653,12 @@ P\left(z\right)\cdot Q\left(z\right)=\sum_{k=0}^{n}P\left(z\right)\cdot b_{k}\cd
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:derivative-of-the-binomial"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $P\left(z\right)=\left(z-z_{0}\right)^{n}$
 \end_inset
@@ -66667,12 +66676,101 @@ P\left(z\right)\cdot Q\left(z\right)=\sum_{k=0}^{n}P\left(z\right)\cdot b_{k}\cd
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+По формуле бинома Ньютона
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Возможно, про бином Ньютона стоит написать отдельно
 \end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left(z-z_{0}\right)^{n}=\sum_{k=0}^{n}\binom{n}{k}\cdot z^{k}\cdot z_{0}^{n-k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Тогда, по определению производной многочлена 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:derivative-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left[\left(z-z_{0}\right)^{n}\right]^{\prime}=\sum_{k=1}^{n}\binom{n}{k}\cdot k\cdot z^{k-1}\cdot z_{0}^{n-k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользуемся следующим равенством:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\binom{n}{k}\cdot k=\frac{n!}{k!\cdot\left(n-k\right)!}\cdot k=\frac{\left(n-1\right)!}{\left(k-1\right)!\left(n-k\right)!}\cdot n=\binom{n-1}{k-1}\cdot n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Тогда выражение для производной примет вид
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left[\left(z-z_{0}\right)^{n}\right]^{\prime}=n\cdot\sum_{k=1}^{n}\binom{n-1}{k-1}z^{k-1}\cdot z_{0}^{n-k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Произведём замену переменной 
+\begin_inset Formula $k$
+\end_inset
+
+ на 
+\begin_inset Formula $k+1$
+\end_inset
+
+, тогда пределы суммирования изменяться на 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $n-1$
+\end_inset
+
+ соответственно: 
+\begin_inset Formula 
+\[
+\left[\left(z-z_{0}\right)^{n}\right]^{\prime}=n\cdot\sum_{k=0}^{n-1}\binom{n-1}{k}z^{k}\cdot z_{0}^{n-1-k}=n\cdot\left(z-z_{0}\right)^{n-1}.
+\]
 
 \end_inset
 
@@ -66725,16 +66823,136 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:multiplicity-of-the-polynomial-root"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+\end_inset
+
+, 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $P\left(z\right)=\left(z-z_{0}\right)^{k}\cdot Q\left(z\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $Q\left(z\right)$
+\end_inset
+
+ — многочлен, не делящийся на 
+\begin_inset Formula $\left(z-z_{0}\right)$
+\end_inset
+
+.
+ Тогда, по правилу нахождения производной произведения многочленов, доказанному
+ в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:derivative-of-the-sum-and-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, и по формуле, доказанной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:derivative-of-the-sum-and-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+P^{\prime}\left(z\right)=\left[\left(z-z_{0}\right)^{k}\right]^{\prime}\cdot Q\left(z\right)+\left(z-z_{0}\right)^{k}\cdot Q^{\prime}\left(z\right)=\\
+=k\cdot\left(z-z_{0}\right)^{k-1}\cdot Q\left(z\right)+\left(z-z_{0}\right)^{k}\cdot Q^{\prime}\left(z\right)=\\
+=\left(z-z_{0}\right)^{k-1}\left[k\cdot Q\left(z\right)+\left(z-z_{0}\right)Q^{\prime}\left(z\right)\right].
+\end{multline*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Пусть сначала 
+\begin_inset Formula $k>1$
+\end_inset
+
+, тогда 
+\begin_inset Formula $P^{\prime}\left(z\right)$
+\end_inset
+
+ делится без остатка на 
+\begin_inset Formula $\left(z-z_{0}\right)^{k-1}$
+\end_inset
+
+.
+ Рассмотрим теперь множитель в квадратных скобках.
+ Так как 
+\begin_inset Formula $\left(z-z_{0}\right)Q^{\prime}\left(z\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(z-z_{0}\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $Q\left(z\right)$
+\end_inset
+
+ — нет, то весь этот множитель не делится на 
+\begin_inset Formula $\left(z-z_{0}\right)$
+\end_inset
+
+.
+ Таким образом, по определению 
+\begin_inset Formula $P^{\prime}\left(z\right)$
+\end_inset
+
+ имеет корень 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+ порядка 
+\begin_inset Formula $k-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если же 
+\begin_inset Formula $k=1$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(z-z_{0}\right)^{k-1}=\left(z-z_{0}\right)^{0}=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+ вообще не является корнем 
+\begin_inset Formula $P^{\prime}\left(z\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $P^{\prime}\left(z_{0}\right)\neq0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
