@@ -64484,6 +64484,32 @@ f\left(z\right)=z^{3}-z^{2}+z-1=\\
 \end_inset
 
 .
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ указан ответ 
+\begin_inset Formula $k_{1}+k_{3}+k_{4}$
+\end_inset
+
+, хотя в разложении нет множителя 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -65525,7 +65551,7 @@ noprefix "false"
 \begin_inset Formula $R\left(z\right)=r_{0}$
 \end_inset
 
-, то есть многочлен-отстаток представляет собой константу.
+, то есть многочлен-остаток представляет собой константу.
  Итак, имеет место равенство 
 \begin_inset Formula 
 \[
@@ -66637,7 +66663,7 @@ P\left(z\right)\cdot Q\left(z\right)=\sum_{k=0}^{n}P\left(z\right)\cdot b_{k}\cd
 
 \end_inset
 
-тогда по доказанному в пунтках а), б) и выше в этом пункте: 
+тогда по доказанному в пунктах а), б) и выше в этом пункте: 
 \begin_inset Formula 
 \begin{multline*}
 \left(P\left(z\right)Q\left(z\right)\right)^{\prime}=\sum_{k=0}^{n}b_{k}\cdot\left(P\left(z\right)\cdot z^{k}\right)^{\prime}=\\
@@ -66676,6 +66702,23 @@ name "prob:derivative-of-the-binomial"
 \end_layout
 
 \begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ приводится доказательство методом математической индукции
+\end_layout
+
+\end_inset
+
 По формуле бинома Ньютона
 \begin_inset Note Comment
 status open
