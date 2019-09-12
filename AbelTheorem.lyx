@@ -10632,7 +10632,7 @@ name "prob:multiplication-tables-for-group-of-integers-modulo-2-3-4"
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:residuals-modulo-n-with-addition-is-cyclic-group-of-order-n"
+name "prob:reminders-modulo-n-with-addition-is-cyclic-group-of-order-n"
 
 \end_inset
 
@@ -13792,7 +13792,7 @@ noprefix "false"
 Как было показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:residuals-modulo-n-with-addition-is-cyclic-group-of-order-n"
+reference "prob:reminders-modulo-n-with-addition-is-cyclic-group-of-order-n"
 plural "false"
 caps "false"
 noprefix "false"
@@ -48580,13 +48580,13 @@ noprefix "false"
 \begin_inset Quotes rld
 \end_inset
 
-основную теорему алгебры комплексных чисел 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+основную теорему алгебры комплексных чисел
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:main-theorem-of-complex-numbers-algebra"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -49962,7 +49962,7 @@ noprefix "false"
  Свойство 1 поля было доказано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:residuals-modulo-n-with-addition-is-cyclic-group-of-order-n"
+reference "prob:reminders-modulo-n-with-addition-is-cyclic-group-of-order-n"
 plural "false"
 caps "false"
 noprefix "false"
@@ -50491,7 +50491,14 @@ noprefix "false"
 \end_inset
 
 .
- Если 
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "def:root-of-polynomial"
+
+\end_inset
+
+Если 
 \begin_inset Formula $P\left(a\right)=0$
 \end_inset
 
@@ -50594,6 +50601,12 @@ name "def:sum-and-difference-of-polynomials"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:product-of-polynomials"
+
+\end_inset
+
 Чтобы вычислить 
 \emph on
 произведение
@@ -50806,6 +50819,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "Division-of-polynomials-with-reminder"
+
+\end_inset
+
 Многочлены над произвольным полем 
 \begin_inset Formula $K$
 \end_inset
@@ -53118,6 +53137,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:polynomial-of-conjugate-is-conjugate-of-polynomial"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $P\left(z\right)=a_{0}z^{n}+a_{1}z^{n-1}+\cdots+a_{n-1}z+a_{n}=\sum_{k=0}^{n}a_{k}z^{n-k}$
 \end_inset
@@ -53895,6 +53920,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:reducible-and-irreducible-polynomials"
+
+\end_inset
+
 Многочлен с коэффициентами из некоторого поля 
 \begin_inset Formula $K$
 \end_inset
@@ -61062,7 +61093,7 @@ status open
 \begin_inset Formula $z_{1}=z_{0}$
 \end_inset
 
- и уравение приобретает вид 
+ и уравнение приобретает вид 
 \begin_inset Formula $z\left(t\right)=z_{0}$
 \end_inset
 
@@ -62651,6 +62682,12 @@ name "fig:problem-255"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:rounds-of-continuous-curve-around-zero"
+
+\end_inset
+
 Если для непрерывной замкнутой кривой 
 \begin_inset Formula $C$
 \end_inset
@@ -63379,6 +63416,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:rounds-of-continuous-curve-around-arbitrary-point"
+
+\end_inset
+
 Пусть замкнутая непрерывная кривая 
 \begin_inset Formula $C$
 \end_inset
@@ -63611,6 +63654,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:variation-of-argument-of-product-and-ratio-of-curves"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $z_{1}\left(t\right)$
 \end_inset
@@ -63701,6 +63750,3249 @@ noprefix "false"
 
  будет равно 
 \begin_inset Formula $\varphi_{1}-\varphi_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Отображение кривых.
+ Основная теорема алгебры комплексных чисел
+\end_layout
+
+\begin_layout Standard
+Пусть даны две плоскости комплексных чисел — плоскость 
+\begin_inset Formula $z$
+\end_inset
+
+ и плоскость 
+\begin_inset Formula $w$
+\end_inset
+
+, и пусть задана функция 
+\begin_inset Formula $w=f\left(z\right)$
+\end_inset
+
+, которая каждому значению 
+\begin_inset Formula $z$
+\end_inset
+
+ ставит в соответствие однозначно определённое значение 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Если на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ имеется непрерывная кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ с уравнением 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+, то посредством функции 
+\begin_inset Formula $w=f\left(z\right)$
+\end_inset
+
+ каждая точка этой кривой отображается в некоторую точку плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Если при этом функция 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ непрерывна, то на плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+ мы также получим непрерывную кривую с уравнением 
+\begin_inset Formula $w\left(t\right)=f\left(z\left(t\right)\right)$
+\end_inset
+
+.
+ Эту кривую мы будем обозначать 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Что представляет собой кривая 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+, если 
+\begin_inset Formula $w=f\left(z\right)=z^{2}$
+\end_inset
+
+, и кривая 
+\begin_inset Formula $C$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Problem
+а) четверть окружности: 
+\begin_inset Formula $z\left(t\right)=R\left(\cos\frac{\pi t}{2}+i\sin\frac{\pi t}{2}\right)$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+б) полуокружность: 
+\begin_inset Formula $z\left(t\right)=R\left(\cos\pi t+i\sin\pi t\right)$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+в) окружность: 
+\begin_inset Formula $z\left(t\right)=R\left(\cos2\pi t+i\sin2\pi t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) По формуле Муавра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-power-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula $w\left(t\right)=\left[z\left(t\right)\right]^{2}=R^{2}\left(\cos\pi t+i\sin\pi t\right)$
+\end_inset
+
+, это полуокружность с радиусом, равным квадрату радиуса исходной четверти
+ окружности.
+\end_layout
+
+\begin_layout Solution
+б) По формуле Муавра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-power-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula $w\left(t\right)=\left[z\left(t\right)\right]^{2}=R^{2}\left(\cos2\pi t+i\sin2\pi t\right)$
+\end_inset
+
+, это окружность с радиусом, равным квадрату радиуса исходной полуокружности.
+\end_layout
+
+\begin_layout Solution
+в) По формуле Муавра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-power-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula $w\left(t\right)=\left[z\left(t\right)\right]^{2}=R^{2}\left(\cos4\pi t+i\sin4\pi t\right)$
+\end_inset
+
+, это окружность с радиусом, равным квадрату радиуса исходной полуокружности,
+ проходимая дважды.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+
+\end_inset
+
+Пусть изменение аргумента вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Чему равно изменение аргумента вдоль кривой 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+, если а) 
+\begin_inset Formula $f\left(z\right)=z^{2}$
+\end_inset
+
+, б) 
+\begin_inset Formula $f\left(z\right)=z^{3}$
+\end_inset
+
+, в) 
+\begin_inset Formula $f\left(z\right)=z^{n}$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — произвольное натуральное число?
+\end_layout
+
+\begin_layout Solution
+а) Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента для кривой 
+\begin_inset Formula 
+\[
+w\left(t\right)=f\left(z\left(t\right)\right)=\left[z\left(t\right)\right]^{2}=z\left(t\right)\cdot z\left(t\right)
+\]
+
+\end_inset
+
+ равно 
+\begin_inset Formula $\varphi+\varphi=2\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) аналогично, в этом случае получаем, что изменение аргумента для кривой
+ 
+\begin_inset Formula $\left[z\left(t\right)\right]^{3}$
+\end_inset
+
+ равно 
+\begin_inset Formula $3\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Так как 
+\begin_inset Formula $\left[z\left(t\right)\right]^{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $n$
+\end_inset
+
+ — натуральном есть произведение 
+\begin_inset Formula $n$
+\end_inset
+
+ одинаковых множителей, каждый из которых равен 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+, то по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента для кривой 
+\begin_inset Formula $\left[z\left(t\right)\right]^{n}$
+\end_inset
+
+ равно 
+\begin_inset Formula $n\cdot\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+.
+ Сколько раз обходит вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ кривая 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+, если 
+\begin_inset Formula $f\left(z\right)=\left(z-z_{0}\right)^{n}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+Пусть параметрическое уравнение кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ есть 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+.
+ По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-arbitrary-point"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз точку 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+, то кривая с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)-z_{0}$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Это, в свою очередь, означает, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что изменение аргумента кривой с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)-z_{0}$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если изменение аргумента вдоль кривой равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, то изменение аргумента вдоль кривой, полученной с помощью преобразования
+ 
+\begin_inset Formula $f\left(z\right)=z^{n}$
+\end_inset
+
+, равно 
+\begin_inset Formula $n\cdot\varphi$
+\end_inset
+
+.
+ Таким образом, изменение аргумента кривой 
+\begin_inset Formula $w\left(t\right)=\left(z\left(t\right)-z_{0}\right)^{n}$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi k\cdot n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Снова применив определение количества обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим, что кривая 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k\cdot n$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ обходит вокруг точек 
+\begin_inset Formula $z=0$
+\end_inset
+
+, 
+\begin_inset Formula $z=1$
+\end_inset
+
+, 
+\begin_inset Formula $z=i$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-i$
+\end_inset
+
+ соответственно 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $k_{4}$
+\end_inset
+
+ раз.
+ Сколько раз обходит вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ кривая 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+, если: а) 
+\begin_inset Formula $f\left(z\right)=z^{2}-z$
+\end_inset
+
+, б) 
+\begin_inset Formula $f\left(z\right)=z^{2}+1$
+\end_inset
+
+, в) 
+\begin_inset Formula $f\left(z\right)=\left(z^{2}+iz\right)^{4}$
+\end_inset
+
+, г) 
+\begin_inset Formula $f\left(z\right)=z^{3}-z^{2}+z-1$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ количества обходов вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, изменение аргумента кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi k_{1}$
+\end_inset
+
+, кривой 
+\begin_inset Formula $z\left(t\right)-1$
+\end_inset
+
+ — 
+\begin_inset Formula $2\pi k_{2}$
+\end_inset
+
+, кривой 
+\begin_inset Formula $z\left(t\right)-i$
+\end_inset
+
+ — 
+\begin_inset Formula $2\pi k_{3}$
+\end_inset
+
+, кривой 
+\begin_inset Formula $z\left(t\right)+i=z\left(t\right)-\left(-i\right)$
+\end_inset
+
+ — 
+\begin_inset Formula $2\pi k_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента кривой, уравнение которой равно произведению уравнений
+ двух других кривых, равно сумме изменений аргумента каждой из этих двух
+ кривых.
+ Разложим каждую из функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ на множители первой степени и найдём изменение аргумента, сложив изменение
+ аргумента для каждого из множителей.
+ Разделив получившееся число на 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, получим количество обходов кривой 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Так как 
+\begin_inset Formula $f\left(z\right)=z^{2}-z=z\left(z-1\right)$
+\end_inset
+
+, то изменение аргумента 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi\left(k_{1}+k_{2}\right)$
+\end_inset
+
+, поэтому число обходов вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $k_{1}+k_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Так как 
+\begin_inset Formula $f\left(z\right)=z^{2}+1=\left(z-i\right)\left(z+i\right)$
+\end_inset
+
+, то изменение аргумента 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi\left(k_{3}+k_{4}\right)$
+\end_inset
+
+, поэтому число обходов вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $k_{3}+k_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Так как 
+\begin_inset Formula $f\left(z\right)=\left(z^{2}+iz\right)^{4}=\left(z\left(z+i\right)\right)^{4}=z^{4}\cdot\left(z+i\right)^{4}$
+\end_inset
+
+, то изменение аргумента кривой 
+\begin_inset Formula $\left(z\left(t\right)\right)^{4}$
+\end_inset
+
+, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, равно 
+\begin_inset Formula $2\pi k_{1}\cdot4$
+\end_inset
+
+, а изменение аргумента кривой 
+\begin_inset Formula $\left(z\left(t\right)+i\right)^{4}$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi k_{4}\cdot4$
+\end_inset
+
+, поэтому изменение аргумента 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi\cdot4\left(k_{1}+k_{4}\right)$
+\end_inset
+
+, а число обходов кривой 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $4\left(k_{1}+k_{4}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) Разложим 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ на множители:
+\begin_inset Formula 
+\begin{multline*}
+f\left(z\right)=z^{3}-z^{2}+z-1=\\
+=z^{2}\left(z-1\right)+\left(z-1\right)=\left(z^{2}+1\right)\left(z-1\right)=\\
+=\left(z-i\right)\left(z+i\right)\left(z-1\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, изменение аргумента 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi\left(k_{3}+k_{4}+k_{2}\right)$
+\end_inset
+
+, а число обходов вокруг 
+\begin_inset Formula $w=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $k_{2}+k_{3}+k_{4}$
+\end_inset
+
+.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ указан ответ 
+\begin_inset Formula $k_{1}+k_{3}+k_{4}$
+\end_inset
+
+, хотя в разложении нет множителя 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим уравнение 
+\begin_inset Formula 
+\[
+a_{0}z^{n}+a_{1}z^{n-1}+\dots+a_{n-1}z+a_{n}=0,
+\]
+
+\end_inset
+
+ где все 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ — произвольные комплексные числа, 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{0}\neq0$
+\end_inset
+
+.
+ Наша ближайшая цель — показать, что это уравнение имеет хотя бы один комплексны
+й корень.
+ Если 
+\begin_inset Formula $a_{n}=0$
+\end_inset
+
+, то данное уравнение имеет корень 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Поэтому в дальнейшем мы будем предполагать, что 
+\begin_inset Formula $a_{n}\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "main-algebra-theorem-nomenclature"
+
+\end_inset
+
+Обозначим наибольшее из чисел 
+\begin_inset Formula $\left|a_{0}\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\left|a_{1}\right|$
+\end_inset
+
+, ..., 
+\begin_inset Formula $\left|a_{n}\right|$
+\end_inset
+
+ через 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a_{0}\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $A>0$
+\end_inset
+
+.
+ Выберем положительные действительные числа 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+, причём 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ выберем настолько малым, чтобы выполнялись два неравенства: 
+\begin_inset Formula $R_{1}\le1$
+\end_inset
+
+ и 
+\begin_inset Formula $R_{1}<\frac{\left|a_{n}\right|}{10An}$
+\end_inset
+
+, а 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ настолько большим, чтобы выполнялись два неравенства: 
+\begin_inset Formula $R_{2}\ge1$
+\end_inset
+
+ и 
+\begin_inset Formula $R_{2}>\frac{10An}{\left|a_{0}\right|}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:upper_bound-on-polynomial-inside-small-circle"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\left|z\right|=R_{1}$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula 
+\[
+\left|a_{0}z^{n}+\dots+a_{n-1}z\right|<\frac{\left|a_{n}\right|}{10}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По неравенству треугольника, доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:triangle-inequality-for-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, и по формуле Муавра, доказанной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left|a_{0}z^{n}+\dots+a_{n-1}z\right|\le\sum_{k=0}^{n-1}\left|a_{k}\right|\cdot\left|z\right|^{n-k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По условию задачи, 
+\begin_inset Formula $\left|z\right|^{n-k}=R_{1}^{n-k}$
+\end_inset
+
+.
+ Так как в правой части неравенства 
+\begin_inset Formula $n-k$
+\end_inset
+
+ пробегает значения от 
+\begin_inset Formula $n$
+\end_inset
+
+ до 1, то 
+\begin_inset Formula $R_{1}^{n-k}=R_{1}^{n-k-1}\cdot R_{1}$
+\end_inset
+
+.
+ Так как, по условию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "main-algebra-theorem-nomenclature"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $R_{1}\le1$
+\end_inset
+
+ и 
+\begin_inset Formula $n-k>1$
+\end_inset
+
+, то 
+\begin_inset Formula $R_{1}^{n-k-1}\le1$
+\end_inset
+
+.
+ С другой стороны, по условию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "main-algebra-theorem-nomenclature"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $R_{1}<\frac{\left|a_{n}\right|}{10An}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left|z^{n-k}\right|\le R_{1}<\frac{\left|a_{n}\right|}{10An}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, получаем следующее неравенство
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left|a_{0}z^{n}+\dots+a_{n-1}z\right|<\sum_{k=0}^{n-1}\left|a_{k}\right|\cdot\frac{\left|a_{n}\right|}{10An}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "main-algebra-theorem-nomenclature"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left|a_{k}\right|\le A$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+\left|a_{0}z^{n}+\dots+a_{n-1}z\right|<\sum_{k=0}^{n-1}\left|a_{k}\right|\cdot\frac{\left|a_{n}\right|}{10An}\le\\
+\le\sum_{k=0}^{n-1}A\cdot\frac{\left|a_{n}\right|}{10An}=\frac{An\cdot\left|a_{n}\right|}{10An}=\frac{\left|a_{n}\right|}{10},
+\end{multline*}
+
+\end_inset
+
+что и требовалось.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:bounds-of-polynomial-on-large-circle"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\left|z\right|=R_{2}$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula 
+\[
+\left|\frac{a_{1}}{z}+\dots+\frac{a_{n}}{z^{n}}\right|<\frac{\left|a_{0}\right|}{10}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По неравенству треугольника, доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:triangle-inequality-for-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, и по формуле Муавра, доказанной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-multiplication-and-division-trigonometric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+\left|\frac{a_{1}}{z}+\dots+\frac{a_{n}}{z^{n}}\right|\le\sum_{k=1}^{n}\left|a_{k}\right|\cdot\frac{1}{\left|z\right|^{k}}.\label{eq:problem-266-after-triangle-inequality}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По условию задачи 
+\begin_inset Formula $\left|z\right|=R_{2}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|z\right|^{k}=R_{2}^{k}=R_{2}^{k-1}\cdot R_{2}$
+\end_inset
+
+.
+ Первый множитель оценим с помощью первого из неравенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "main-algebra-theorem-nomenclature"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+, а второй — с помощью второго из этих неравенств.
+ Получим: 
+\begin_inset Formula 
+\[
+\left|z\right|^{k}\ge R_{2}>\frac{10An}{\left|a_{0}\right|},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{1}{\left|z\right|^{k}}<\frac{\left|a_{0}\right|}{10An}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Подставив эту оценку в неравенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:problem-266-after-triangle-inequality"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+\left|\frac{a_{1}}{z}+\dots+\frac{a_{n}}{z^{n}}\right|<\sum_{k=1}^{n}\left|a_{k}\right|\cdot\frac{\left|a_{0}\right|}{10An}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "main-algebra-theorem-nomenclature"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left|a_{k}\right|<A$
+\end_inset
+
+, поэтому мы может написать 
+\begin_inset Formula 
+\[
+\left|\frac{a_{1}}{z}+\dots+\frac{a_{n}}{z^{n}}\right|<\sum_{k=1}^{n}A\cdot\frac{\left|a_{0}\right|}{10An}=\frac{An\cdot\left|a_{0}\right|}{10An}=\frac{\left|a_{0}\right|}{10},
+\]
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Standard
+Кривую с уравнением 
+\begin_inset Formula $z\left(t\right)=R\left(\cos2\pi t+i\sin2\pi t\right)$
+\end_inset
+
+ (то есть окружность радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+, проходимую против часовой стрелки) обозначим 
+\begin_inset Formula $C_{R}$
+\end_inset
+
+.
+ Так как кривая 
+\begin_inset Formula $C_{R}$
+\end_inset
+
+ замкнута (
+\begin_inset Formula $z\left(1\right)=z\left(0\right)$
+\end_inset
+
+), то и кривая 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $f\left(z\right)=a_{0}z^{n}+\dots+a_{n}$
+\end_inset
+
+, также замкнута (
+\begin_inset Formula $f\left(z\left(1\right)\right)=f\left(z\left(0\right)\right)$
+\end_inset
+
+).
+ Пусть 
+\begin_inset Formula $v\left(R\right)$
+\end_inset
+
+ — число обходов кривой 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ (если 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ не проходит через точку 
+\begin_inset Formula $w=0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rounds-of-polynomial-around-zero-on-small-and-large-circles"
+
+\end_inset
+
+Чему равны значения 
+\begin_inset Formula $v\left(R_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $v\left(R_{2}\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+Начнём с нахождения 
+\begin_inset Formula $v\left(R_{1}\right)$
+\end_inset
+
+.
+ Найдём расстояние между точками 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, по определению 
+\begin_inset Formula 
+\[
+\left|f\left(z\right)-a_{n}\right|=\left|a_{0}z^{n}+\dots+a_{n-1}z\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:upper_bound-on-polynomial-inside-small-circle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, было показано, что при 
+\begin_inset Formula $\left|z\right|=R_{1}$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\left|a_{0}z^{n}+\dots+a_{n-1}z\right|<\frac{\left|a_{n}\right|}{10}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a_{n}\neq0$
+\end_inset
+
+, то получаем, что при 
+\begin_inset Formula $\left|z\right|=R_{1}$
+\end_inset
+
+ кривая 
+\begin_inset Formula $f\left(z\left(t\right)\right)$
+\end_inset
+
+ проходит от точки 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ на расстоянии не более чем 
+\begin_inset Formula $\frac{\left|a_{n}\right|}{10}$
+\end_inset
+
+.
+ Так как точка 
+\begin_inset Formula $w=0$
+\end_inset
+
+ находится от точки 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ на расстоянии 
+\begin_inset Formula $\left|a_{n}-0\right|=\left|a_{n}\right|$
+\end_inset
+
+, то кривая 
+\begin_inset Formula $f\left(z\left(t\right)\right)$
+\end_inset
+
+ вообще не обходит точку 
+\begin_inset Formula $w=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $v\left(R_{1}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся оценкой, полученной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:bounds-of-polynomial-on-large-circle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left|\frac{f\left(z\right)}{z^{n}}-a_{0}\right|=\left|\frac{a_{1}}{z}+\dots+\frac{a_{n}}{z^{n}}\right|<\frac{\left|a_{0}\right|}{10}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+До этого не догадался сам.
+ Нужно было смотреть предыдущие задачи!
+\end_layout
+
+\end_inset
+
+Таким образом, как и в предыдущем пункте, изменение аргумента для кривой,
+ получаемой преобразованием 
+\begin_inset Formula $\frac{f\left(z\right)}{z^{n}}$
+\end_inset
+
+, равно нулю.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента частного равно разности изменений аргумента делимого
+ и делителя, поэтому изменение аргумента для кривой 
+\begin_inset Formula $f\left(z\left(t\right)\right)$
+\end_inset
+
+ равно изменению аргумента кривой 
+\begin_inset Formula $\left[z\left(t\right)\right]^{n}$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $\left[z\left(t\right)\right]^{n}$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi n$
+\end_inset
+
+.
+ Поэтому изменение аргумента для кривой 
+\begin_inset Formula $f\left(z\left(t\right)\right)$
+\end_inset
+
+ также равно 
+\begin_inset Formula $2\pi n$
+\end_inset
+
+, а следовательно, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, количество обходов вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ равно 
+\begin_inset Formula $n$
+\end_inset
+
+, то есть 
+\begin_inset Formula $v\left(R_{2}\right)=n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Будем теперь изменять радиус 
+\begin_inset Formula $R$
+\end_inset
+
+ непрерывно от 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ до 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+.
+ При этом кривая 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ будет непрерывно деформироваться от положения 
+\begin_inset Formula $f\left(C_{R_{1}}\right)$
+\end_inset
+
+ до положения 
+\begin_inset Formula $f\left(C_{R_{2}}\right)$
+\end_inset
+
+.
+ Если при некотором значении 
+\begin_inset Formula $R$
+\end_inset
+
+ кривая 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ не проходит через точку 
+\begin_inset Formula $w=0$
+\end_inset
+
+, то при достаточно малых изменения 
+\begin_inset Formula $R$
+\end_inset
+
+ кривая 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ будет деформироваться так мало, что число её обходов вокруг точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+ не изменится, то есть при данном значении 
+\begin_inset Formula $R$
+\end_inset
+
+ функция 
+\begin_inset Formula $v\left(R\right)$
+\end_inset
+
+ непрерывна.
+ Если бы кривые 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ при всех значениях 
+\begin_inset Formula $R_{1}\le R\le R_{2}$
+\end_inset
+
+ не проходили через точку 
+\begin_inset Formula $w=0$
+\end_inset
+
+ , то 
+\begin_inset Formula $v\left(R\right)$
+\end_inset
+
+ было бы непрерывной функцией при всех 
+\begin_inset Formula $R_{1}\le R\le R_{2}$
+\end_inset
+
+.
+ Так как функция 
+\begin_inset Formula $v\left(R\right)$
+\end_inset
+
+ принимает только целочисленные значения, то она может быть непрерывна,
+ только если 
+\begin_inset Formula $v\left(R\right)$
+\end_inset
+
+ при всех 
+\begin_inset Formula $R$
+\end_inset
+
+ из отрезка 
+\begin_inset Formula $\left[R_{1};R_{2}\right]$
+\end_inset
+
+ принимает одно и то же значение, в частности, должно быть 
+\begin_inset Formula $v\left(R_{1}\right)=v\left(R_{2}\right)$
+\end_inset
+
+.
+ Но из решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rounds-of-polynomial-around-zero-on-small-and-large-circles"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, следует, что 
+\begin_inset Formula $v\left(R_{1}\right)=0$
+\end_inset
+
+, а 
+\begin_inset Formula $v\left(R_{2}\right)=n$
+\end_inset
+
+.
+ Следовательно, предположение о том, что кривые 
+\begin_inset Formula $f\left(C_{R}\right)$
+\end_inset
+
+ при всех 
+\begin_inset Formula $R_{1}\le R\le R_{2}$
+\end_inset
+
+ не проходит через точку 
+\begin_inset Formula $w=0$
+\end_inset
+
+ неверно.
+ Значит, при некотором 
+\begin_inset Formula $z$
+\end_inset
+
+ должно быть 
+\begin_inset Formula $f$
+\end_inset
+
+
+\begin_inset Formula $\left(z\right)=0$
+\end_inset
+
+.
+ Тем самым мы получаем следующую теорему
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Наше рассуждение содержит некоторые нестрогости и должно рассматриваться,
+ вообще говоря, как идея доказательства.
+ Однако это рассуждение можно (хотя и не просто) сделать абсолютно строгим
+ (смотрите, например, Стинрод Н.
+ и Чинн У., Первые понятия топологии, 
+\begin_inset Quotes rld
+\end_inset
+
+Мир
+\begin_inset Quotes rrd
+\end_inset
+
+, 1967).
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:main-theorem-of-complex-numbers-algebra"
+
+\end_inset
+
+(Основная теорема алгебры комплексных чисел)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Эта теорема доказана в 1799 году немецким математиком К.
+ Гауссом (1777-1855).
+\end_layout
+
+\end_inset
+
+.
+ Всякое уравнение 
+\begin_inset Formula 
+\[
+a_{0}z^{n}+a_{1}z^{n-1}+\dots+a_{n-1}z+a_{n}=0,
+\]
+
+\end_inset
+
+где все 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ — произвольные комплексные числа, 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{0}\neq0$
+\end_inset
+
+, имеет по крайней мере один комплексный корень.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:polynomial-reminder-theorem"
+
+\end_inset
+
+Доказать 
+\emph on
+теорему Безу
+\emph default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Безу (1730-1783) — французский математик
+\end_layout
+
+\end_inset
+
+: если 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — корень уравнения 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0$
+\end_inset
+
+, то многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}$
+\end_inset
+
+ делится на двучлен 
+\begin_inset Formula $z-z_{0}$
+\end_inset
+
+ без остатка.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Есть альтернативная формулировка этой теоремы: остаток от деления 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $z-a$
+\end_inset
+
+ равен 
+\begin_inset Formula $P\left(a\right)$
+\end_inset
+
+.
+ Может быть написать и про неё?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=P\left(z\right)$
+\end_inset
+
+.
+ По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Division-of-polynomials-with-reminder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, разделить многочлен 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ на многочлен (в данном случае — двучлен) 
+\begin_inset Formula $z-z_{0}$
+\end_inset
+
+ — это значит найти многочлены 
+\begin_inset Formula $S\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $R\left(z\right)$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $P\left(z\right)=S\left(z\right)\cdot\left(z-z_{0}\right)+R\left(z\right)$
+\end_inset
+
+, причём степень многочлена 
+\begin_inset Formula $R\left(z\right)$
+\end_inset
+
+ должна быть ниже, чем степень многочлена 
+\begin_inset Formula $z-z_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z-z_{0}$
+\end_inset
+
+ — многочлен первой степени, то 
+\begin_inset Formula $R\left(z\right)=r_{0}$
+\end_inset
+
+, то есть многочлен-остаток представляет собой константу.
+ Итак, имеет место равенство 
+\begin_inset Formula 
+\[
+P\left(z\right)=S\left(z\right)\cdot\left(z-z_{0}\right)+r_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Подставим в левую и правую части этого равенства 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+P\left(z_{0}\right)=S\left(z_{0}\right)\cdot0+r_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:multiplication-by-zero-is-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, первое слагаемое справа равно нулю, та как как 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — корень уравнения 
+\begin_inset Formula $P\left(z\right)=0$
+\end_inset
+
+, то по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:root-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $P\left(z_{0}\right)$
+\end_inset
+
+.
+ Таким образом, получаем, равенство 
+\begin_inset Formula $0=r_{0}$
+\end_inset
+
+.
+ Таким образом, остаток от деления 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $z-z_{0}$
+\end_inset
+
+ равен нулю, что и требовалось доказать.
+\end_layout
+
+\begin_layout Solution
+Отметим, что так как 
+\begin_inset Formula $P\left(z\right)=S\left(z\right)\cdot\left(z-z_{0}\right)$
+\end_inset
+
+, а при умножении многочленов их степени складываются, то степень многочлена
+ 
+\begin_inset Formula $S\left(z\right)$
+\end_inset
+
+ на единицу меньше, чем степень многочлена 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:factorization-of-polynomial"
+
+\end_inset
+
+Доказать, что многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}$
+\end_inset
+
+, где 
+\begin_inset Formula $a_{0}\neq0$
+\end_inset
+
+ представим в виде 
+\begin_inset Formula 
+\begin{multline*}
+a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=\\
+=a_{0}\left(z-z_{1}\right)\left(z-z_{2}\right)\cdot\dots\cdot\left(z-z_{n}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=P\left(z\right)$
+\end_inset
+
+.
+ По основной теореме алгебры комплексных чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:main-theorem-of-complex-numbers-algebra"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у этого многочлена есть по крайней мере один корень.
+ Обозначим его 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ По теореме Безу, доказанной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:polynomial-reminder-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $z-z_{1}$
+\end_inset
+
+ без остатка, поэтому 
+\begin_inset Formula $P\left(z\right)=P_{1}\left(z\right)\left(z-z_{1}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $P_{1}\left(z\right)$
+\end_inset
+
+ — многочлен степени 
+\begin_inset Formula $n-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+К многочлену 
+\begin_inset Formula $P_{1}\left(z\right)$
+\end_inset
+
+ снова можно применить описанные выше рассуждения и получить представление
+ 
+\begin_inset Formula $P_{1}\left(z\right)=P_{2}\left(z\right)\cdot\left(z-z_{2}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — корень 
+\begin_inset Formula $P_{1}\left(z\right)$
+\end_inset
+
+, а степень 
+\begin_inset Formula $P_{2}\left(z\right)$
+\end_inset
+
+ равна 
+\begin_inset Formula $n-2$
+\end_inset
+
+.
+ Этот процесс можно продолжать, пока степень многочлена не станет равна
+ 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Так как степень многочлена снижается на 
+\begin_inset Formula $1$
+\end_inset
+
+ на каждом шаге, то всего будет выполнено 
+\begin_inset Formula $n$
+\end_inset
+
+ шагов: 
+\begin_inset Formula $P\left(z\right)=A\cdot\left(z-z_{1}\right)\left(z-z_{2}\right)\cdot\dots\cdot\left(z-z_{n}\right)$
+\end_inset
+
+.
+ Остаётся определить константу 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Так как старший коэффициент произведения многочленов равен произведению
+ их старших коэффициентов, то старший коэффициент произведения 
+\begin_inset Formula $\left(z-z_{1}\right)\left(z-z_{2}\right)\cdot\dots\cdot\left(z-z_{n}\right)$
+\end_inset
+
+ равен 
+\begin_inset Formula $1$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $A=a_{0}$
+\end_inset
+
+.
+ Требуемое равенство доказано.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:factorization-of-polynomial"
+
+\end_inset
+
+Пусть многочлен 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ разложен на множители: 
+\begin_inset Formula 
+\[
+P\left(z\right)=a_{0}\left(z-z_{1}\right)\left(z-z_{2}\right)\cdot\dots\cdot\left(z-z_{n}\right).
+\]
+
+\end_inset
+
+Правая часть равна 
+\begin_inset Formula $0$
+\end_inset
+
+ тогда и только тогда, когда хотя бы одна из скобок равна 
+\begin_inset Formula $0$
+\end_inset
+
+ (как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:multiplication-by-zero-is-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:in-field-there-are-no-divisors-of-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Поэтому корнями уравнения 
+\begin_inset Formula $P\left(z\right)=0$
+\end_inset
+
+ являются числа 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $z_{n}$
+\end_inset
+
+ и только они.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:conjugate-to-root-of-polynomial-with-real-coefficient-is-root"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — корень уравнения 
+\begin_inset Formula 
+\[
+a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0,
+\]
+
+\end_inset
+
+ где все 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ — действительные числа.
+ Доказать, что число 
+\begin_inset Formula $\bar{z}_{0}$
+\end_inset
+
+ (комплексно сопряжённое к 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+) — также корень этого уравнения.
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=P\left(z\right)$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:polynomial-of-conjugate-is-conjugate-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $P\left(\bar{z}\right)=\overline{P\left(z\right)}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $P\left(\bar{z}_{0}\right)=\overline{P\left(z_{0}\right)}$
+\end_inset
+
+, но так как 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — корень 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $P\left(z_{0}\right)=0$
+\end_inset
+
+.
+ По определению комплексно сопряжённого числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:complex-conjugate"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\bar{0}=\overline{0+i0}=0-i0=0$
+\end_inset
+
+, поэтому окончательно получаем 
+\begin_inset Formula $P\left(\bar{z}_{0}\right)=\overline{P\left(z_{0}\right)}=\bar{0}=0$
+\end_inset
+
+.
+ Таким образом, по определению корня многочлена 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:root-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\bar{z}_{0}$
+\end_inset
+
+ — корень многочлена 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+, что и требовалось.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:polynomial-with-not-real-root-is-divided-by-second-order-polynomial"
+
+\end_inset
+
+Пусть уравнение с действительными коэффициентами 
+\begin_inset Formula 
+\[
+a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0
+\]
+
+\end_inset
+
+имеет комплексный корень 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, не являющийся действительным числом.
+ Доказать, что многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}$
+\end_inset
+
+ делится на некоторой многочлен второй степени с действительными коэффициентами.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:conjugate-to-root-of-polynomial-with-real-coefficient-is-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если многочлен с действительными коэффициентами имеет комплексный корень
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то 
+\begin_inset Formula $\bar{z}_{0}$
+\end_inset
+
+ (комплексно сопряжённое к 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ число) также является корнем этого многочлена.
+ Таким образом, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:polynomial-reminder-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0$
+\end_inset
+
+ делится на многочлены 
+\begin_inset Formula $\left(z-z_{0}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(z-\bar{z}_{0}\right)$
+\end_inset
+
+ без остатка.
+ Это означает, что многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(z-z_{0}\right)\left(z-\bar{z}_{0}\right)$
+\end_inset
+
+.
+ Раскрыв скобки, получим 
+\begin_inset Formula $z^{2}-z\cdot\left(z_{0}+\bar{z}_{0}\right)+z_{0}\bar{z}_{0}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $z_{0}=a_{0}+ib_{0}$
+\end_inset
+
+, тогда, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:complex-conjugate"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\bar{z}_{0}=a_{0}-ib_{0}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $z_{0}+\bar{z}_{0}=2a_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{0}\bar{z}_{0}=\left(a_{0}+ib_{0}\right)\left(a_{0}-ib_{0}\right)=a_{0}^{2}+b_{0}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, в условиях задачи многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0$
+\end_inset
+
+ делится на многочлен 
+\begin_inset Formula $\left(z^{2}+2a_{0}z+a_{0}^{2}+b_{0}^{2}\right)$
+\end_inset
+
+, который является многочленом второй степени с действительными коэффициентами,
+ что и требуется.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:real-coefficient-polynomial-is-product-of-polinomial-of-1-and-2-degree"
+
+\end_inset
+
+Доказать, что всякий многочлен с действительными коэффициентами можно представит
+ь в виде произведения многочленов первой и второй степени с действительными
+ коэффициентами.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorization-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, всякий многочлен с комплексными (в частности — действительными) коэффициентами
+ степени 
+\begin_inset Formula $n$
+\end_inset
+
+ можно представить в виде произведения 
+\begin_inset Formula $a_{0}\left(z-z_{1}\right)\left(z-z_{2}\right)\cdot\dots\cdot\left(z-z_{n}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ — комплексные числа.
+ Если некоторое 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ является действительными числом, то соответствующая скобка 
+\begin_inset Formula $z-z_{i}$
+\end_inset
+
+ является многочленом первой степени с действительными коэффициентами.
+ Если 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ — комплексное число, не являющееся действительным, то, как было показано
+ в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:conjugate-to-root-of-polynomial-with-real-coefficient-is-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z-\bar{z}_{i}$
+\end_inset
+
+ также входит в разложение многочлена и скобки 
+\begin_inset Formula $\left(z-z_{i}\right)\left(z-\bar{z}_{i}\right)$
+\end_inset
+
+, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:conjugate-to-root-of-polynomial-with-real-coefficient-is-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, представляют собой многочлен второй степени с действительными коэффициентами.
+ Таким образом, разложение 
+\begin_inset Formula $a_{0}\left(z-z_{1}\right)\left(z-z_{2}\right)\cdot\dots\cdot\left(z-z_{n}\right)$
+\end_inset
+
+ может быть представлено в виде произведения многочленов первой и второй
+ степени с действительными коэффициентами (действительный множитель 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ может быть внесёт в любую скобку).
+\end_layout
+
+\begin_layout Remark
+Из результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:real-coefficient-polynomial-is-product-of-polinomial-of-1-and-2-degree"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что неприводимыми многочленами (смотрите определение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:reducible-and-irreducible-polynomials"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) над полем действительных чисел являются только многочлены первой степени
+ и многочлены второй степени без действительных корней.
+ Мы воспользовались этим в разделе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:uniqueness-of-complex-numbers-field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Над полем комплексных чисел неприводимыми многочленами, как следует из
+ результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorization-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, являются только многочлены первой степени.
+\end_layout
+
+\begin_layout Remark
+Вернёмся снова к многочленам с произвольными комплексными коэффициентами.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:multiplicity-of-the-polynomial-root"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — корень уравнения 
+\begin_inset Formula 
+\[
+a_{0}z^{n}+\dots+a_{n-1}z+a_{n}=0.
+\]
+
+\end_inset
+
+Говорят, что 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — 
+\emph on
+корень кратности 
+\begin_inset Formula $k$
+\end_inset
+
+
+\emph default
+, если многочлен 
+\begin_inset Formula $a_{0}z^{n}+\dots+a_{n-1}z+a_{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(z-z_{0}\right)^{k}$
+\end_inset
+
+ и не делится на 
+\begin_inset Formula $\left(z-z_{0}\right)^{k+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Какова кратность корней 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ в уравнении 
+\begin_inset Formula 
+\[
+z^{5}-z^{4}-2z^{3}+2z^{2}+z-1=0?
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Разложим заданный многочлен на множители:
+\begin_inset Formula 
+\begin{multline*}
+z^{5}-z^{4}-2z^{3}+2z^{2}+z-1=\\
+=z^{4}\left(z-1\right)-2z^{2}\left(z-1\right)+\left(z-1\right)=\\
+=\left(z-1\right)\left(z^{4}-2z^{2}+1\right)=\left(z-1\right)\left(z^{2}-1\right)^{2}=\\
+=\left(z-1\right)\left[\left(z-1\right)\left(z+1\right)\right]^{2}=\left(z-1\right)^{3}\left(z+1\right)^{2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, кратность корня 
+\begin_inset Formula $z=1$
+\end_inset
+
+ равна 
+\begin_inset Formula $3$
+\end_inset
+
+, а кратность корня 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ равна 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:derivative-of-polynomial"
+
+\end_inset
+
+Производной многочлена 
+\begin_inset Formula 
+\[
+P\left(z\right)=\sum_{k=0}^{n}a_{k}z^{n-k}
+\]
+
+\end_inset
+
+ называется многочлен 
+\begin_inset Formula 
+\[
+P^{\prime}\left(z\right)=\sum_{k=0}^{n-1}a_{k}\left(n-k-1\right)z^{n-k-1}.
+\]
+
+\end_inset
+
+ Производная обычная обозначается штрихом.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:derivative-of-the-sum-and-product"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(z\right)$
+\end_inset
+
+ — два многочлена.
+ Доказать равенства: а) 
+\begin_inset Formula $\left(P\left(z\right)+Q\left(z\right)\right)^{\prime}=P^{\prime}\left(z\right)+Q^{\prime}\left(z\right)$
+\end_inset
+
+; б) 
+\begin_inset Formula $\left(c\cdot P\left(z\right)\right)^{\prime}=c\cdot P^{\prime}\left(z\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $c$
+\end_inset
+
+ — произвольное постоянное комплексное число; в) 
+\begin_inset Formula $\left(P\left(z\right)\cdot Q\left(z\right)\right)^{\prime}=P^{\prime}\left(z\right)\cdot Q\left(z\right)+P\left(z\right)\cdot Q^{\prime}\left(z\right)$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Складывается подозрение, что доказать эти утверждения в общем случае и для
+ полного определения производной проще, чем для многочленов и с таким определени
+е производной.
+ Но тогда нужно вводить понятие предела.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula 
+\[
+P\left(z\right)=\sum_{k=0}^{n}a_{k}z^{n-k},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q\left(z\right)=\sum_{k=0}^{n}b_{k}z^{n-k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Здесь 
+\begin_inset Formula $n$
+\end_inset
+
+ — наибольшая из степеней двух многочленов, поэтому 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ или 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ могут оказаться равными нулю.
+\end_layout
+
+\begin_layout Solution
+Тогда, по определению производной многочлена 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:derivative-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+P^{\prime}\left(z\right)=\sum_{k=0}^{n-1}a_{k}\left(n-k-1\right)z^{n-k-1},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+Q^{\prime}\left(z\right)=\sum_{k=0}^{n-1}b_{k}\left(n-k-1\right)z^{n-k-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+а) По определению суммы многочленов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:sum-and-difference-of-polynomials"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $P\left(z\right)+Q\left(z\right)=\sum_{k=0}^{n}\left(a_{k}+b_{k}\right)z^{n-k}$
+\end_inset
+
+.
+ Тогда, по определению производной многочлена: 
+\begin_inset Formula 
+\[
+\left(P\left(z\right)+Q\left(z\right)\right)^{\prime}=\sum_{k=0}^{n-1}\left(a_{k}+b_{k}\right)\left(n-k-1\right)z^{n-k-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны, применяя определение суммы многочленов к сумме производных,
+ получим: 
+\begin_inset Formula 
+\begin{multline*}
+P^{\prime}\left(z\right)+Q^{\prime}\left(z\right)=\\
+=\sum_{k=0}^{n-1}a_{k}\left(n-k-1\right)z^{n-k-1}+\sum_{k=0}^{n-1}b_{k}\left(n-k-1\right)z^{n-k-1}=\\
+=\sum_{k=0}^{n-1}\left(a_{k}+b_{k}\right)\left(n-k-1\right)z^{n-k-1}=\left(P\left(z\right)+Q\left(z\right)\right)^{\prime}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:product-of-polynomials"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $c\cdot P\left(z\right)=\sum_{k=0}^{n}\left(c\cdot a_{k}\right)z^{n-k}$
+\end_inset
+
+.
+ Тогда, по определению производной многочлена: 
+\begin_inset Formula 
+\[
+\left(c\cdot P\left(z\right)\right)^{\prime}=\sum_{k=0}^{n-1}\left(c\cdot a_{k}\right)\left(n-k\right)z^{n-k-1}=c\cdot\sum_{k=0}^{n-1}a_{k}\left(n-k\right)z^{n-k-1}=c\cdot P^{\prime}\left(z\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) Докажем сначала частный случай этой формулы, когда 
+\begin_inset Formula $Q\left(z\right)=z^{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $z>0$
+\end_inset
+
+ (для 
+\begin_inset Formula $m=0$
+\end_inset
+
+ формула была доказана в пункте б), так как 
+\begin_inset Formula $\left(c\right)^{\prime}=0$
+\end_inset
+
+).
+ Тогда 
+\begin_inset Formula 
+\[
+P\left(z\right)\cdot Q\left(z\right)=P\left(z\right)\cdot z^{m}=\sum_{k=0}^{n}a_{k}z^{n-k+m}
+\]
+
+\end_inset
+
+ и, по определению производной многочлена: 
+\begin_inset Formula 
+\[
+\left(P\left(z\right)z^{m}\right)^{\prime}=\sum_{k=0}^{n}a_{k}\left(n-k+m\right)z^{n-k+m-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны, 
+\begin_inset Formula $\left(z^{m}\right)^{\prime}=m\cdot z^{m-1}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+P^{\prime}\left(z\right)\cdot Q\left(z\right)+P\left(z\right)\cdot Q^{\prime}\left(z\right)=\\
+=\sum_{k=0}^{n-1}a_{k}\left(n-k\right)z^{n-k-1}\cdot z^{m}+\sum_{k=0}^{n}a_{k}z^{n-k}\cdot m\cdot z^{m-1}=\\
+=\sum_{k=0}^{n-1}a_{k}\left(n-k\right)z^{n-k+m-1}+\sum_{k=0}^{n}a_{k}\cdot m\cdot z^{n-k+m-1}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+При 
+\begin_inset Formula $k=n$
+\end_inset
+
+ общий член первой суммы приобретает вид 
+\begin_inset Formula $a_{n}\cdot0\cdot z^{m-1}=0$
+\end_inset
+
+, поэтому в первой сумме можно изменить верхний предел суммирования на 
+\begin_inset Formula $n$
+\end_inset
+
+ без изменения значения суммы.
+ После этого, мы можем объединить две суммы в одну и вынести общие множители
+ за скобку:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+P^{\prime}\left(z\right)\cdot z^{m}+P\left(z\right)\cdot\left(z^{m}\right)^{\prime}=\\
+=\sum_{k=0}^{n}a_{k}\left(n-k+m\right)\cdot z^{n-k+m-1}=\left(P\left(z\right)z^{m}\right)^{\prime}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Перейдём теперь к общему случаю 
+\begin_inset Formula $Q\left(z\right)=\sum_{k=0}^{n}b_{k}z^{k}$
+\end_inset
+
+.
+ Воспользуемся дистрибутивностью умножения:
+\begin_inset Formula 
+\[
+P\left(z\right)\cdot Q\left(z\right)=\sum_{k=0}^{n}P\left(z\right)\cdot b_{k}\cdot z^{k},
+\]
+
+\end_inset
+
+тогда по доказанному в пунктах а), б) и выше в этом пункте: 
+\begin_inset Formula 
+\begin{multline*}
+\left(P\left(z\right)Q\left(z\right)\right)^{\prime}=\sum_{k=0}^{n}b_{k}\cdot\left(P\left(z\right)\cdot z^{k}\right)^{\prime}=\\
+=\sum_{k=0}^{n}b_{k}\left(P^{\prime}\left(z\right)z^{k}+P\left(z\right)\cdot\left(z^{k}\right)^{\prime}\right)=\\
+=P^{\prime}\left(z\right)\sum_{k=0}^{n}b_{k}z^{k}+P\left(z\right)\sum_{k=0}^{n}b_{k}\left(z^{k}\right)^{\prime}=\\
+=P^{\prime}\left(z\right)Q\left(z\right)+P\left(z\right)\left(\sum_{k=0}^{n}b_{k}z^{k}\right)^{\prime}=\\
+=P^{\prime}\left(z\right)Q\left(z\right)+P\left(z\right)\left(Q\left(z\right)\right)^{\prime}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:derivative-of-the-binomial"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $P\left(z\right)=\left(z-z_{0}\right)^{n}$
+\end_inset
+
+ (
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ — целое).
+ Доказать, что 
+\begin_inset Formula $P^{\prime}\left(z\right)=n\left(z-z_{0}\right)^{n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ приводится доказательство методом математической индукции
+\end_layout
+
+\end_inset
+
+По формуле бинома Ньютона
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно, про бином Ньютона стоит написать отдельно
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left(z-z_{0}\right)^{n}=\sum_{k=0}^{n}\binom{n}{k}\cdot z^{k}\cdot z_{0}^{n-k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Тогда, по определению производной многочлена 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:derivative-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left[\left(z-z_{0}\right)^{n}\right]^{\prime}=\sum_{k=1}^{n}\binom{n}{k}\cdot k\cdot z^{k-1}\cdot z_{0}^{n-k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользуемся следующим равенством:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\binom{n}{k}\cdot k=\frac{n!}{k!\cdot\left(n-k\right)!}\cdot k=\frac{\left(n-1\right)!}{\left(k-1\right)!\left(n-k\right)!}\cdot n=\binom{n-1}{k-1}\cdot n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Тогда выражение для производной примет вид
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left[\left(z-z_{0}\right)^{n}\right]^{\prime}=n\cdot\sum_{k=1}^{n}\binom{n-1}{k-1}z^{k-1}\cdot z_{0}^{n-k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Произведём замену переменной 
+\begin_inset Formula $k$
+\end_inset
+
+ на 
+\begin_inset Formula $k+1$
+\end_inset
+
+, тогда пределы суммирования изменяться на 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $n-1$
+\end_inset
+
+ соответственно: 
+\begin_inset Formula 
+\[
+\left[\left(z-z_{0}\right)^{n}\right]^{\prime}=n\cdot\sum_{k=0}^{n-1}\binom{n-1}{k}z^{k}\cdot z_{0}^{n-1-k}=n\cdot\left(z-z_{0}\right)^{n-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что если уравнение 
+\begin_inset Formula $P\left(z\right)=0$
+\end_inset
+
+ имеет корень 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ кратности 
+\begin_inset Formula $k>1$
+\end_inset
+
+, то уравнение 
+\begin_inset Formula $P^{\prime}\left(z\right)=0$
+\end_inset
+
+ имеет корень 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ кратности 
+\begin_inset Formula $k-1$
+\end_inset
+
+.
+ Если же уравнение 
+\begin_inset Formula $P\left(z\right)=0$
+\end_inset
+
+ имеет корень 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ кратности 
+\begin_inset Formula $1$
+\end_inset
+
+, то 
+\begin_inset Formula $P^{\prime}\left(z_{0}\right)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:multiplicity-of-the-polynomial-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $P\left(z\right)$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $P\left(z\right)=\left(z-z_{0}\right)^{k}\cdot Q\left(z\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $Q\left(z\right)$
+\end_inset
+
+ — многочлен, не делящийся на 
+\begin_inset Formula $\left(z-z_{0}\right)$
+\end_inset
+
+.
+ Тогда, по правилу нахождения производной произведения многочленов, доказанному
+ в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:derivative-of-the-sum-and-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, и по формуле, доказанной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:derivative-of-the-sum-and-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+P^{\prime}\left(z\right)=\left[\left(z-z_{0}\right)^{k}\right]^{\prime}\cdot Q\left(z\right)+\left(z-z_{0}\right)^{k}\cdot Q^{\prime}\left(z\right)=\\
+=k\cdot\left(z-z_{0}\right)^{k-1}\cdot Q\left(z\right)+\left(z-z_{0}\right)^{k}\cdot Q^{\prime}\left(z\right)=\\
+=\left(z-z_{0}\right)^{k-1}\left[k\cdot Q\left(z\right)+\left(z-z_{0}\right)Q^{\prime}\left(z\right)\right].
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть сначала 
+\begin_inset Formula $k>1$
+\end_inset
+
+, тогда 
+\begin_inset Formula $P^{\prime}\left(z\right)$
+\end_inset
+
+ делится без остатка на 
+\begin_inset Formula $\left(z-z_{0}\right)^{k-1}$
+\end_inset
+
+.
+ Рассмотрим теперь множитель в квадратных скобках.
+ Так как 
+\begin_inset Formula $\left(z-z_{0}\right)Q^{\prime}\left(z\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(z-z_{0}\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $Q\left(z\right)$
+\end_inset
+
+ — нет, то весь этот множитель не делится на 
+\begin_inset Formula $\left(z-z_{0}\right)$
+\end_inset
+
+.
+ Таким образом, по определению 
+\begin_inset Formula $P^{\prime}\left(z\right)$
+\end_inset
+
+ имеет корень 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+ порядка 
+\begin_inset Formula $k-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если же 
+\begin_inset Formula $k=1$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(z-z_{0}\right)^{k-1}=\left(z-z_{0}\right)^{0}=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+ вообще не является корнем 
+\begin_inset Formula $P^{\prime}\left(z\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $P^{\prime}\left(z_{0}\right)\neq0$
 \end_inset
 
 .
