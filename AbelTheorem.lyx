@@ -66998,6 +66998,158 @@ P^{\prime}\left(z\right)=\left[\left(z-z_{0}\right)^{k}\right]^{\prime}\cdot Q\l
 .
 \end_layout
 
+\begin_layout Section
+Риманова поверхность функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выше мы рассматривали однозначные функции, при которых каждому значению
+ аргумента соответствует единственное значение функции.
+ Однако в дальнейшем нас будут особо интересовать многозначные функции,
+ при которых некоторым значениями аргумента соответствует несколько значений
+ функции
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+В тех случаях, когда это не вызывает недоразумений, мы слово 
+\begin_inset Quotes rld
+\end_inset
+
+многозначные
+\begin_inset Quotes rrd
+\end_inset
+
+ будет часто опускать.
+\end_layout
+
+\end_inset
+
+.
+ Наш интерес к таким функциям легко объясним.
+ Действительно, конечной целью нашего изложения является доказательство
+ теоремы Абеля о том, что функция, выражающая корни общего уравнения пятой
+ степени через коэффициенты, не выражается в радикалах.
+ Но эта функция является многозначной, так как уравнение пятой степени при
+ фиксированных коэффициентах имеет, вообще говоря, пять корней.
+ Также многозначными являются и функции, выражающиеся в радикалах.
+\end_layout
+
+\begin_layout Standard
+Общая идея доказательства теоремы Абеля состоит в следующем.
+ Многозначной функции комплексного аргумента мы сопоставим некоторую группу
+ — так называемую группу Галуа
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Эварист Галуа (1811-1832) — французский математик, установивший общие условия
+ разрешимости уравнений в радикалах, заложивший основы теории групп.
+ Советуем прочесть Инфельд Л., Эварист Галуа (Избранник богов), издательство
+ 
+\begin_inset Quotes rld
+\end_inset
+
+Молодая гвардия
+\begin_inset Quotes rrd
+\end_inset
+
+, М., 1958.
+\end_layout
+
+\end_inset
+
+.
+ При этом окажется, что группа Галуа для функции, выражающей корни некоторого
+ уравнения пятой степени через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+, не может совпадать ни с какой группой Галуа для функции, выражающейся
+ в радикалах, и, следовательно сама эта функция не может выражаться в радикалах.
+\end_layout
+
+\begin_layout Standard
+Для того чтобы ввести понятие группы Галуа, мы введём сначала другое очень
+ важное в теории функций комплексного переменного понятие — понятие 
+\emph on
+римановой
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Названы по имени Б.
+ Римана (1826-1866) — немецкого математика.
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+поверхности 
+\emph default
+многозначной функции.
+ При этом мы начнём с построения римановой поверхности для одного из простейших
+ примеров многозначной функции, а именно для функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Как мы знаем, функция 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ принимает одно значение 
+\begin_inset Formula $w=0$
+\end_inset
+
+ при 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и два значения при всех 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ При этом, если 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $\sqrt{z_{0}}$
+\end_inset
+
+, то другое значение 
+\begin_inset Formula $\sqrt{z_{0}}$
+\end_inset
+
+ равно 
+\begin_inset Formula $-w_{0}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
