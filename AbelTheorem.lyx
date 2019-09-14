@@ -60673,6 +60673,12 @@ name "fig:example-of-continuous-curve"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-of-curves-given-by-parametric-equation"
+
+\end_inset
+
 Построить на плоскости 
 \begin_inset Formula $z$
 \end_inset
@@ -68212,6 +68218,220 @@ status collapsed
 
  при отображении 
 \begin_inset Formula $w=w\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть для функции 
+\begin_inset Formula $w\left(z\right)=\sqrt{z}$
+\end_inset
+
+ выбрано 
+\begin_inset Formula $w\left(1\right)=\sqrt{1}=1$
+\end_inset
+
+.
+ Определить 
+\begin_inset Formula $w\left(-1\right)=\sqrt{-1}$
+\end_inset
+
+ по непрерывности вдоль: а) верхней полуокружности радиуса 1 с центром в
+ начале координат, б) нижней полуокружности 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-278"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-278.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-278"
+
+\end_inset
+
+Рисунок для задачи 278
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+а) Параметрическое уравнение верхней полуокружности есть 
+\begin_inset Formula $z\left(t\right)=\cos\pi t+i\sin\pi t$
+\end_inset
+
+ (показано в пункте з) задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-curves-given-by-parametric-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда при каждом 
+\begin_inset Formula $t$
+\end_inset
+
+ для 
+\begin_inset Formula $w\left(z\left(t\right)\right)=\sqrt{z\left(t\right)}$
+\end_inset
+
+ имеется два возможных значения: 
+\begin_inset Formula $\cos\frac{\pi}{2}t+i\sin\frac{\pi}{2}t$
+\end_inset
+
+ и 
+\begin_inset Formula $-\left(\cos\frac{\pi}{2}t+i\sin\frac{\pi}{2}t\right)$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $t=0$
+\end_inset
+
+ первое обращается в 
+\begin_inset Formula $1$
+\end_inset
+
+, а второе — в 
+\begin_inset Formula $-1$
+\end_inset
+
+, поэтому следует выбрать первый вариант.
+ Тогда 
+\begin_inset Formula $w\left(z\left(t\right)\right)=\cos\frac{\pi}{2}t+i\sin\frac{\pi}{2}t$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ при 
+\begin_inset Formula $t=1$
+\end_inset
+
+, то 
+\begin_inset Formula $w\left(-1\right)=\cos\frac{\pi}{2}+i\sin\frac{\pi}{2}=i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Параметрическое уравнение нижней полуокружности является комплексно сопряжённ
+ым к уравнению верхней полуокружности 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretation-of-multiplication-by-real-and-complex-conjugation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то есть 
+\begin_inset Formula $z\left(t\right)=\cos\pi t-i\sin\pi t$
+\end_inset
+
+.
+ Для 
+\begin_inset Formula $\sqrt{z\left(t\right)}$
+\end_inset
+
+ получаем два возможных значения: 
+\begin_inset Formula $\cos\frac{\pi}{2}t-i\sin\frac{\pi}{2}t$
+\end_inset
+
+ и 
+\begin_inset Formula $-\left(\cos\frac{\pi}{2}t-i\sin\frac{\pi}{2}t\right)$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $t=0$
+\end_inset
+
+ первое обращается в 
+\begin_inset Formula $1$
+\end_inset
+
+, а второе — в 
+\begin_inset Formula $-1$
+\end_inset
+
+, поэтому следует выбрать второй вариант.
+ Тогда 
+\begin_inset Formula $w\left(z\left(t\right)\right)=\cos\frac{\pi}{2}t-i\sin\frac{\pi}{2}t$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ при 
+\begin_inset Formula $t=1$
+\end_inset
+
+, 
+\begin_inset Formula $w\left(-1\right)=\cos\frac{\pi}{2}-i\sin\frac{\pi}{2}=-i$
 \end_inset
 
 .
