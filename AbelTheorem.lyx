@@ -67238,7 +67238,7 @@ noprefix "false"
 \end_inset
 
 : 
-\begin_inset Formula $i=1\cdot \left(\cos\frac{\pi}{2}+i\sin\frac{\pi}{2}\right)$
+\begin_inset Formula $i=1\cdot\left(\cos\frac{\pi}{2}+i\sin\frac{\pi}{2}\right)$
 \end_inset
 
 .
@@ -67320,7 +67320,904 @@ noprefix "false"
 
 \end_layout
 
-\begin_layout Solution
+\begin_layout Standard
+Проведём на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ разрез по отрицательной части действительной оси от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ и для всех 
+\begin_inset Formula $z$
+\end_inset
+
+, не лежащих на разрезе, выберем то значение 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, которое лежит в правой полуплоскости плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ При этом мы получим некоторую функцию, однозначную и непрерывную на всей
+ плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, исключая разрез, которую мы обозначим 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+.
+ Эта функция задаёт однозначное и непрерывное отображение плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, исключая разрез, на правую полуплоскость плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+, как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:first-branch-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/first-branch-of-sqrt.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:first-branch-of-sqrt"
+
+\end_inset
+
+Первая однозначная непрерывная ветвь функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Если мы выберем 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+ так, что 
+\begin_inset Formula $-\pi<\mathrm{Arg}z<\pi$
+\end_inset
+
+, то для функции 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+ получим, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{Arg}\underset{1}{\sqrt{z}}=\frac{1}{2}\mathrm{Arg}z$
+\end_inset
+
+.
+ Поэтому при отображении 
+\begin_inset Formula $w=\underset{1}{\sqrt{z}}$
+\end_inset
+
+ плоскость 
+\begin_inset Formula $z$
+\end_inset
+
+ стягивается наподобие веера к положительной части действительной оси с
+ уменьшением угла 
+\begin_inset Quotes rld
+\end_inset
+
+веера
+\begin_inset Quotes rrd
+\end_inset
+
+ вдвое и некотором изменением длин вдоль лучей 
+\begin_inset Quotes rld
+\end_inset
+
+веера
+\begin_inset Quotes rrd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если мы теперь для всех 
+\begin_inset Formula $z$
+\end_inset
+
+, не лежащих на разрезе, выберем то значение 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, которое лежит в левой полуплоскости плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+, то получим другую функцию, также однозначную и непрерывную на всей плоскости
+ 
+\begin_inset Formula $z$
+\end_inset
+
+, исключая разрез.
+ Эта функции, которую мы обозначим 
+\begin_inset Formula $\underset{2}{\sqrt{z}}$
+\end_inset
+
+, задаёт однозначное и непрерывное отображение плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, исключая разрез, на левую полуплоскость плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+, как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:second-branch-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Здесь 
+\begin_inset Formula $\underset{2}{\sqrt{z}}=-\underset{1}{\sqrt{z}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/second-branch-of-sqrt.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:second-branch-of-sqrt"
+
+\end_inset
+
+Вторая однозначная непрерывная ветвь функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Построенные нами функции 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\underset{2}{\sqrt{z}}$
+\end_inset
+
+ называются 
+\emph on
+однозначными непрерывными ветвями 
+\emph default
+функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ (при данном разрезе).
+\end_layout
+
+\begin_layout Standard
+Возьмём теперь два экземпляра плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, которые мы будем называть 
+\emph on
+листами
+\emph default
+, и на каждом проведём разрез по отрицательной части действительной оси
+ от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $-\infty$
+\end_inset
+
+, как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:branches-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Зададим на первом листе функцию 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+, а на втором листе — функцию 
+\begin_inset Formula $\underset{2}{\sqrt{z}}$
+\end_inset
+
+.
+ Тогда функции 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\underset{2}{\sqrt{z}}$
+\end_inset
+
+ мы можем рассматривать вместе как некоторую единую однозначную функцию,
+ но заданную не на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, а на более сложной поверхности, состоящей из двух отдельных листов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/branches-of-sqrt.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:branches-of-sqrt"
+
+\end_inset
+
+Листы римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При этом, если точка 
+\begin_inset Formula $z$
+\end_inset
+
+ движется непрерывно по первому листу (или по второму листу), не пересекая
+ разреза, то построенная нами однозначная функция изменяется непрерывно.
+ Если же точка 
+\begin_inset Formula $z$
+\end_inset
+
+, двигаясь, например, по первому листу, переходит через разрез, то непрерывность
+ нарушается.
+ Это видно, например, из того, что близкие точки 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ переходят при отображении 
+\begin_inset Formula $w=\underset{1}{\sqrt{z}}$
+\end_inset
+
+ в далёкие друг от друга точки 
+\begin_inset Formula $A^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $B^{\prime}$
+\end_inset
+
+, как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:first-branch-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+С другой стороны, из рисунков 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:first-branch-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:second-branch-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ легко заметить, что образ точки 
+\begin_inset Formula $A$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\underset{1}{\sqrt{z}}$
+\end_inset
+
+ (точка 
+\begin_inset Formula $A^{\prime}$
+\end_inset
+
+) оказывается близко с образом точки 
+\begin_inset Formula $D$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\underset{2}{\sqrt{z}}$
+\end_inset
+
+ (точка 
+\begin_inset Formula $D^{\prime}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Таким образом, если при пересечении разреза точка 
+\begin_inset Formula $z$
+\end_inset
+
+ будет переходить с верхнего берега разреза на одном листе на нижний берег
+ разреза на другом листе, то построенная нами однозначная функция будет
+ изменяться непрерывно.
+ Для того, чтобы обеспечить нужное нам движение точки 
+\begin_inset Formula $z$
+\end_inset
+
+, будем считать верхний берег разреза первого листа склеенными с нижним
+ берегом разреза второго листа, а верхний берег разреза второго листа —
+ склеенным с нижним берегом разреза первого листа, как показано на рисунке
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sqrt-rieman-surface"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ При этом во время склейки мы будем между склеиваемыми берегами добавлять
+ луч из точки 
+\begin_inset Formula $0$
+\end_inset
+
+ в 
+\begin_inset Formula $-\infty$
+\end_inset
+
+.
+ Во время первой склейки для точек 
+\begin_inset Formula $z$
+\end_inset
+
+, лежащих на этом луче, мы будем выбирать значения 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, лежащие на положительной части мнимой оси, а при второй склейке — значения
+ 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, лежащие на отрицательной части мнимой оси.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/glued-branches-of-sqrt.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sqrt-rieman-surface"
+
+\end_inset
+
+Риманова поверхность функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+После проведения указанных склеек мы получим, что двузначная функция 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ заменилась некоторой другой функций, которая однозначна и непрерывна, но
+ только не на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, а на некоторой новой более сложной поверхности.
+ Это поверхность и называется 
+\emph on
+римановой поверхностью функции 
+\emph default
+
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Попытки произвести указанные склейки без пересечении (не переворачивая плоскости
+) заканчиваются неудачей.
+ Несмотря на это, мы будем считать, что рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sqrt-rieman-surface"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ является изображением римановой поверхности функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, принимая дополнительное соглашение, что пересечение по отрицательной части
+ действительной оси являются кажущимися.
+ Для сравнения рассмотрим следующий пример.
+ На рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cube-and-octahedron"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ изображён остов куба.
+ Хотя некоторые отрезки на рисунке пересекаются, но мы легко соглашаемся
+ с тем, что это пересечение кажущееся, и это позволяет нам избегать ошибок.
+\end_layout
+
+\begin_layout Standard
+Риманову поверхность произвольной многозначной функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ можно построить подобно тому, как мы построили риманову поверхность функции
+ 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+ Для этого надо сначала выделить однозначные непрерывные ветви функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, при этом некоторые точки 
+\begin_inset Formula $z$
+\end_inset
+
+ (разрезы) исключаются из рассмотрения.
+ После этого полученные ветви надо склеить, восстанавливая разрезы, так
+ чтобы получилась однозначная и непрерывная функция на построенной поверхности.
+ Полученная поверхность и будет называться римановой поверхностью многозначной
+ функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Такие построения можно провести не для каждой многозначной функции, однако
+ для тех функций, которые будут рассматриваться в дальнейшем, такие построения
+ провести действительно можно.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом, остаётся выяснить как же выделять непрерывные однозначные
+ ветви произвольной многозначной функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ и как затем их склеивать.
+ Для выяснения этих вопросов рассмотрим ещё раз более подробно функцию 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ — многозначная функция, и пусть зафиксировано одно из значений 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $w^{\prime}\left(z\right)$
+\end_inset
+
+ — непрерывная однозначная ветвь функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, выделенная в некоторой области плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ (например, на всей плоскости, исключая какие-то разрезы), и такая, что
+ 
+\begin_inset Formula $w^{\prime}\left(z_{0}\right)=w_{0}$
+\end_inset
+
+.
+ Пусть, кроме того, 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая, идущая из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в некоторую точку 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и лежащая целиком в рассматриваемой нами области плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Тогда при движении точки 
+\begin_inset Formula $z$
+\end_inset
+
+ вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ функция 
+\begin_inset Formula $w^{\prime}\left(z\right)$
+\end_inset
+
+ будет изменяться непрерывно от 
+\begin_inset Formula $w^{\prime}\left(z_{0}\right)$
+\end_inset
+
+ до 
+\begin_inset Formula $w^{\prime}\left(z_{1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Этим свойством можно воспользоваться и обратную сторону, а именной для определен
+ия функции 
+\begin_inset Formula $w^{\prime}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Действительно, пусть в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ зафиксировано одно из значений 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая, идущая из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в некоторую точку 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Будем двигаться по кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, выбирая для каждой точки 
+\begin_inset Formula $z$
+\end_inset
+
+, лежащей на 
+\begin_inset Formula $C$
+\end_inset
+
+, одно из значений функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ так, чтобы выбираемые значения изменялись непрерывно при движении 
+\begin_inset Formula $z$
+\end_inset
+
+ по кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, начиная со значения 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+.
+ При этом, когда мы достигнем точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, мы будем иметь вполне определённое значение 
+\begin_inset Formula $w_{1}=w\left(z_{1}\right)$
+\end_inset
+
+.
+ Мы будем говорить, что 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ — значение 
+\begin_inset Formula $w\left(z_{1}\right)$
+\end_inset
+
+, определённое 
+\emph on
+по непрерывности вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\emph default
+при условии 
+\begin_inset Formula $w\left(z_{0}\right)=w_{0}$
+\end_inset
+
+.
+ Если значения функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, выбираемые для всех точек кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, изобразить на плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+, то должна получиться непрерывная кривая, которая начинается в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ и заканчивается в точке 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+.
+ Эта кривая является одним из непрерывных образов кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=w\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
