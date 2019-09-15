@@ -52648,7 +52648,7 @@ i & n\mod4=1\\
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:examples-on-complex-square-root"
+name "prob:square-root-of-reals-in-field-of-complex-numbers"
 
 \end_inset
 
@@ -57218,7 +57218,7 @@ noprefix "false"
 , что соответствует результату, полученному в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:examples-on-complex-square-root"
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -67184,7 +67184,7 @@ noprefix "false"
 а) Как было показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:examples-on-complex-square-root"
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -67210,7 +67210,7 @@ noprefix "false"
 б) В той же задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:examples-on-complex-square-root"
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -68224,6 +68224,12 @@ status collapsed
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:example-of-defining-value-by-continuity-along-curve"
+
+\end_inset
+
 Пусть для функции 
 \begin_inset Formula $w\left(z\right)=\sqrt{z}$
 \end_inset
@@ -68281,13 +68287,13 @@ name "fig:problem-278"
 
 \end_inset
 
-Рисунок для задачи 278
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+Рисунок для задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:example-of-defining-value-by-continuity-along-curve"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -68435,6 +68441,562 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+В действительности при определении функции по непрерывности вдоль некоторой
+ кривой мы можем столкнуться с некоторыми неприятностями.
+ Рассмотрим соответствующий пример.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:counterexample-of-defining-value-by-continuity-along-curve"
+
+\end_inset
+
+Найти все непрерывные образы кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)=2t-1$
+\end_inset
+
+ (смотрите рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-279"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) при отображении 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, начинающиеся: а) в точке 
+\begin_inset Formula $i$
+\end_inset
+
+, б) в точке 
+\begin_inset Formula $-i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-279.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-279"
+
+\end_inset
+
+Рисунок для задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:counterexample-of-defining-value-by-continuity-along-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ значения 
+\begin_inset Formula $z$
+\end_inset
+
+ являются вещественными.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
+\begin_inset Formula $a$
+\end_inset
+
+ — вещественное число, то в поле комплексных чисел квадратными корнями из
+ 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+ являются числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $-a$
+\end_inset
+
+, а из 
+\begin_inset Formula $-a^{2}$
+\end_inset
+
+ — 
+\begin_inset Formula $i\cdot a$
+\end_inset
+
+ и 
+\begin_inset Formula $-i\cdot a$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $a=0$
+\end_inset
+
+, то оба корня вырождаются в 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $0\le t<\frac{1}{2}$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $z\left(t\right)<0$
+\end_inset
+
+, а при 
+\begin_inset Formula $\frac{1}{2}<t\le1$
+\end_inset
+
+ — 
+\begin_inset Formula $z\left(t\right)>0$
+\end_inset
+
+.
+ Таким образом, при 
+\begin_inset Formula $0\le t<\frac{1}{2}$
+\end_inset
+
+ можем написать 
+\begin_inset Formula $\sqrt{z\left(t\right)}=\pm i\sqrt{1-2t}$
+\end_inset
+
+, а при 
+\begin_inset Formula $\frac{1}{2}<t\le1$
+\end_inset
+
+ — 
+\begin_inset Formula $\sqrt{z\left(t\right)}=\pm\sqrt{2t-1}$
+\end_inset
+
+, где в правых частях имеется в виду положительное вещественное значение
+ корня.
+\end_layout
+
+\begin_layout Solution
+а) при 
+\begin_inset Formula $0\le t<\frac{1}{2}$
+\end_inset
+
+ (то есть при 
+\begin_inset Formula $z<0$
+\end_inset
+
+) нужно выбрать ветвь со знаком 
+\begin_inset Formula $+$
+\end_inset
+
+, так как она даёт при 
+\begin_inset Formula $t=0$
+\end_inset
+
+ значение 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ (
+\begin_inset Formula $t=\frac{1}{2}$
+\end_inset
+
+) имеется только одно значение корня 
+\begin_inset Formula $\sqrt{0}=0$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $\frac{1}{2}<t\le1$
+\end_inset
+
+ имеются два возможных продолжения: 
+\begin_inset Formula $\sqrt{2t-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $-\sqrt{2t-1}$
+\end_inset
+
+, оба эти продолжения обращаются при 
+\begin_inset Formula $t=\frac{1}{2}$
+\end_inset
+
+ в ноль.
+ То есть руководствуясь только требованием непрерывности, нельзя определить
+ образ кривой однозначно.
+ Итак, образами кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ являются две кривые: 
+\begin_inset Formula 
+\[
+w_{1}\left(t\right)=\begin{cases}
+i\sqrt{1-2t} & 0\le t\le\frac{1}{2},\\
+\sqrt{2t-1} & \frac{1}{2}\le t\le1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+w_{2}\left(t\right)=\begin{cases}
+i\sqrt{1-2t} & 0\le t\le\frac{1}{2},\\
+-\sqrt{2t-1} & \frac{1}{2}\le t\le1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) При 
+\begin_inset Formula $0\le t<\frac{1}{2}$
+\end_inset
+
+, нужно выбрать ветвь 
+\begin_inset Formula $-i\sqrt{1-2t}$
+\end_inset
+
+, так как именно она даёт при 
+\begin_inset Formula $t=0$
+\end_inset
+
+ значение 
+\begin_inset Formula $-i$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ (
+\begin_inset Formula $t=\frac{1}{2}$
+\end_inset
+
+) имеется только одно значение корня 
+\begin_inset Formula $\sqrt{0}=0$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $\frac{1}{2}<t\le1$
+\end_inset
+
+ имеются два возможных продолжения: 
+\begin_inset Formula $\sqrt{2t-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $-\sqrt{2t-1}$
+\end_inset
+
+, аналогично предыдущему пункту, оба эти продолжения обращаются при 
+\begin_inset Formula $t=\frac{1}{2}$
+\end_inset
+
+ в ноль и однозначно выбрать одно из них только по непрерывности нельзя.
+ Итак, образами кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ являются две кривые: 
+\begin_inset Formula 
+\[
+w_{3}\left(t\right)=\begin{cases}
+-i\sqrt{1-2t} & 0\le t\le\frac{1}{2},\\
+\sqrt{2t-1} & \frac{1}{2}\le t\le1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+w_{4}\left(t\right)=\begin{cases}
+-i\sqrt{1-2t} & 0\le t\le\frac{1}{2},\\
+-\sqrt{2t-1} & \frac{1}{2}\le t\le1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:counterexample-of-defining-value-by-continuity-along-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ мы получаем, что даже при фиксировании образа начальной точки кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ непрерывный образ кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ может определяться неоднозначно.
+ Причём однозначность нарушается там, где кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ проходит через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Оказывается, что только в этом случае и может нарушаться однозначность
+ образа для функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, так как только в этом случае оба образа точки 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ подходят близко друг к другу, сливаясь в одну точку.
+\end_layout
+
+\begin_layout Standard
+Для того, чтобы избежать неоднозначности непрерывных образов кривых при
+ отображении 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, можно выколоть точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и запретить кривым проходить через эту точку.
+ Но и это ограничение не даёт нам пока возможности выделять однозначные
+ непрерывные ветви функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Действительно, если мы зафиксируем в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ одно из значений 
+\begin_inset Formula $w_{0}=w\left(z_{0}\right)$
+\end_inset
+
+ и будем определять 
+\begin_inset Formula $w\left(z_{1}\right)$
+\end_inset
+
+ в некоторой точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ по непрерывности вдоль различных кривых, идущих из 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, то мы можем получать разные значения 
+\begin_inset Formula $w\left(z_{1}\right)$
+\end_inset
+
+ (как например в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:example-of-defining-value-by-continuity-along-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Посмотрим, как можно избежать такой неоднозначности.
+\end_layout
+
+\begin_layout Problem
+Пусть изменение аргумента 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Найти изменение аргумента 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ вдоль любого непрерывного образа кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим искомое изменение аргумента 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ вдоль любого непрерывного образа кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)=\sqrt{z}$
+\end_inset
+
+ как 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left[w_{0}\left(t\right)\right]^{2}=\left[\sqrt{z\left(t\right)}\right]^{2}=z\left(t\right)$
+\end_inset
+
+, то, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi=2\varphi_{0}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\varphi_{0}=\frac{\varphi}{2}.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
