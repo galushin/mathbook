@@ -69383,6 +69383,317 @@ noprefix "false"
 .
 \end_layout
 
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — замкнутая кривая на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ (то есть 
+\begin_inset Formula $z\left(1\right)=z\left(0\right)$
+\end_inset
+
+).
+ Доказать, что значение функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ в конечной точке кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, определённое по непрерывности, будет совпадать со значением в начальной
+ точке тогда и только тогда, когда кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ обходит вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ чётное число раз.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для дальнейшего удобно ввести следующую символику.
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+.
+ Через 
+\begin_inset Formula $C^{-1}$
+\end_inset
+
+ будет обозначаться кривая, геометрически совпадающая с 
+\begin_inset Formula $C$
+\end_inset
+
+, но проходимая в противоположном направлении.
+ Как было показано в задаче 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на задачу 248
+\end_layout
+
+\end_inset
+
+, её уравнение 
+\begin_inset Formula $z_{1}\left(t\right)=z\left(1-t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Пусть начальная точка кривой 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ совпадает с конечной точкой кривой 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+.
+ Тогда под 
+\begin_inset Formula $C_{1}C_{2}$
+\end_inset
+
+ будем понимать кривую, которая получится, если сначала пройти 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+, а затем — 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на задачу 248
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ — две кривые, соединяющие точку 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ с точкой 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, и пусть выбрано одно из значений 
+\begin_inset Formula $\sqrt{z_{0}}=w_{0}$
+\end_inset
+
+.
+ Доказать, что значения 
+\begin_inset Formula $\sqrt{z_{1}}$
+\end_inset
+
+, определённые по непрерывности вдоль кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, будут одинаковыми тогда и только тогда, когда кривая 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить рисунок 30 и ссылку на него
+\end_layout
+
+\end_inset
+
+ обходит вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ чётное число раз.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из утверждения последней задачи следует, в частности, что если кривая 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ обходит вокруг точки 
+\begin_inset Formula $0$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, то значения функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ в конечных точках кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, определённые по непрерывности, будут одинаковы, если одинаковы значения
+ в начальных точках.
+\end_layout
+
+\begin_layout Standard
+Таким образом, для того чтобы выделить однозначные непрерывные ветви функции
+ 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, достаточно сделать так, чтобы кривая 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ не могла обойти ни разу вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Для этого достаточно провести какой-нибудь разрез из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в бесконечность и запретить кривым пересекать этот разрез.
+ Именно так мы и поступили выше, проведя разрез из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ по отрицательной части действительной оси.
+\end_layout
+
+\begin_layout Standard
+Если после проведения разреза зафиксировать в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ одно из значений 
+\begin_inset Formula $w_{0}^{\prime}=\sqrt{z_{0}}$
+\end_inset
+
+, а значение в любой другой точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ определить по непрерывности вдоль какой-нибудь кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, идущей из 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и не проходящей через разрез, то на всей плоскости, исключая разрез, определитс
+я некоторая однозначная непрерывная ветвь 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+ функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+ Если в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ зафиксировать другое значение 
+\begin_inset Formula $w_{0}^{\prime\prime}$
+\end_inset
+
+, то этим определится другая ветвь 
+\begin_inset Formula $\underset{2}{\sqrt{z}}$
+\end_inset
+
+ функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
