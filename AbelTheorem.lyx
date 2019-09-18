@@ -69418,16 +69418,101 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как все значения корня имеют одинаковый модуль, то значения 
+\begin_inset Formula $\sqrt{z\left(0\right)}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ и 
+\begin_inset Formula $\sqrt{z\left(1\right)}$
+\end_inset
+
+, определённое по непрерывности, будут совпадать при условии равенства аргумента.
 \end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ с параметрическим уравнением 
+\begin_inset Formula $z=z\left(t\right)$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Тогда, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, изменение аргумента вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
 
+ равно 
+\begin_inset Formula $2\pi\cdot k$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-along-sqrt-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента вдоль кривой 
+\begin_inset Formula $\sqrt{C}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{2\pi\cdot k}{2}=\pi k$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $k$
+\end_inset
+
+ — чётное, то аргумент в конечной точке кривой отличается от аргумента в
+ начальной на величину, кратную 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, то есть, по сути, совпадает.
+ Если же 
+\begin_inset Formula $k=2s+1$
+\end_inset
+
+ — нечётное число, то аргумент в конечной точке кривой будет отличаться
+ на 
+\begin_inset Formula $\pi\cdot\left(2s+1\right)=2\pi s+\pi$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\sqrt{z\left(1\right)}$
+\end_inset
+
+ будет отличаться от 
+\begin_inset Formula $\sqrt{z\left(0\right)}$
+\end_inset
+
+ знаком.
 \end_layout
 
 \begin_layout Standard
