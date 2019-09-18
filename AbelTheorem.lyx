@@ -61384,6 +61384,12 @@ name "prob:curve-inverse-traversal"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:traverse-one-curve-after-another"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $z_{1}\left(t\right)$
 \end_inset
@@ -69384,6 +69390,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:when-sqrt-of-start-and-finish-of-closed-curve-is-same-by-continuity"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $C$
 \end_inset
@@ -69520,6 +69532,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:inverse-traversal-of-curve"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $C$
 \end_inset
@@ -69539,12 +69557,12 @@ noprefix "false"
 
 , но проходимая в противоположном направлении.
  Как было показано в задаче 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на задачу 248
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:curve-inverse-traversal"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -69563,6 +69581,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:traverse-one-curve-after-another"
+
+\end_inset
+
 Пусть начальная точка кривой 
 \begin_inset Formula $C_{2}$
 \end_inset
@@ -69584,20 +69608,38 @@ status open
 \begin_inset Formula $C_{2}$
 \end_inset
 
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на задачу 248
-\end_layout
+ (в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:traverse-one-curve-after-another"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-.
+ показано, как параметрическое уравнение кривой 
+\begin_inset Formula $C_{1}C_{2}$
+\end_inset
+
+ выражается через параметрические уравнения кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:when-sqrt-of-finsih-of-two-curves-are-same-by-continuity"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $C_{1}$
 \end_inset
@@ -69635,34 +69677,196 @@ status open
 \begin_inset Formula $C_{1}^{-1}C_{2}$
 \end_inset
 
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить рисунок 30 и ссылку на него
-\end_layout
+ (смотрите рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-284"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
- обходит вокруг точки 
+) обходит вокруг точки 
 \begin_inset Formula $z=0$
 \end_inset
 
  чётное число раз.
 \end_layout
 
-\begin_layout Solution
-\begin_inset Note Note
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Написать решение
+\align center
+\begin_inset Graphics
+	filename pictures/problem-284.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-284"
+
+\end_inset
+
+Рисунок для задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:when-sqrt-of-finsih-of-two-curves-are-same-by-continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:inverse-traversal-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, кривая 
+\begin_inset Formula $C_{1}^{-1}$
+\end_inset
+
+ соединяет точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:traverse-one-curve-after-another"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, кривая 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ является замкнутой кривой, так как её начальная и конечная точка совпадают
+ (это точка 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+).
+ Пусть параметрическое уравнение кривой 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ есть 
+\begin_inset Formula $z=z_{1}\left(t\right)$
+\end_inset
+
+, параметрическое уравнение кривой 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ — 
+\begin_inset Formula $z=z_{2}\left(t\right)$
+\end_inset
+
+, а параметрическое уравнение кривой 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ — 
+\begin_inset Formula $z=z\left(t\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $z\left(0\right)=z_{1}\left(1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z\left(1\right)=z_{2}\left(1\right)$
+\end_inset
+
+.
+ Применив к кривой 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ результат задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:when-sqrt-of-start-and-finish-of-closed-curve-is-same-by-continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим, что значения 
+\begin_inset Formula $\sqrt{z\left(0\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt{z\left(1\right)}$
+\end_inset
+
+, определённое по непрерывности, совпадают тогда и только тогда, когда кривая
+ 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ обходит вокруг 
+\begin_inset Formula $z=0$
+\end_inset
+
+ чётное число раз.
+ Но равенство 
+\begin_inset Formula $\sqrt{z\left(0\right)}=\sqrt{z\left(1\right)}$
+\end_inset
+
+ эквивалентно, как было показано выше, равенству 
+\begin_inset Formula $\sqrt{z_{1}\left(1\right)}=\sqrt{z_{2}\left(1\right)}$
+\end_inset
+
+.
+ Утверждение доказано.
 \end_layout
 
 \begin_layout Standard
