@@ -57120,6 +57120,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:root-n"
+
+\end_inset
+
 Запись 
 \begin_inset Formula $\sqrt[n]{z}$
 \end_inset
@@ -67332,7 +67338,7 @@ noprefix "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 Проведём на плоскости 
 \begin_inset Formula $z$
 \end_inset
@@ -67496,7 +67502,7 @@ noprefix "false"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Definition
 Если мы теперь для всех 
 \begin_inset Formula $z$
 \end_inset
@@ -69930,6 +69936,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sqrt-continuous-branches"
+
+\end_inset
+
 Если после проведения разреза зафиксировать в некоторой точке 
 \begin_inset Formula $z_{0}$
 \end_inset
@@ -69981,6 +69993,258 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Problem
+Доказать, что для любой точки 
+\begin_inset Formula $z$
+\end_inset
+
+, не лежащей на разрезе, 
+\begin_inset Formula $\underset{1}{\sqrt{z}}\neq\underset{2}{\sqrt{z}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Проведём доказательство от противного.
+ Выберем произвольную точку 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Пусть оказалось, что при продолжении по непрерывности по некоторой кривой
+ 
+\begin_inset Formula $C$
+\end_inset
+
+, не проходящей через разрез и соединяющей точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, выполняется равенство 
+\begin_inset Formula $\underset{1}{\sqrt{z_{1}}}=\underset{2}{\sqrt{z_{1}}}$
+\end_inset
+
+.
+ Рассмотрим кривую 
+\begin_inset Formula $C^{-1}$
+\end_inset
+
+, которая, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:curve-inverse-traversal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, не проходит через разрез и соединяет точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Так как эта кривая является непрерывной, то продолжая функции 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\underset{2}{\sqrt{z}}$
+\end_inset
+
+, получим, что 
+\begin_inset Formula $\underset{1}{\sqrt{z_{0}}}=\underset{2}{\sqrt{z_{0}}}$
+\end_inset
+
+.
+ Но, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sqrt-continuous-branches"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, непрерывные ветви получаются при выборе разных значений для 
+\begin_inset Formula $\underset{1}{\sqrt{z_{0}}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\underset{2}{\sqrt{z_{0}}}$
+\end_inset
+
+.
+ Данное противоречие означает, что предположение было неправильным и для
+ любых 
+\begin_inset Formula $z$
+\end_inset
+
+, не принадлежащих разрезу, 
+\begin_inset Formula $\underset{1}{\sqrt{z}}\neq\underset{2}{\sqrt{z}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:continuous-branches-of-sqrt-does-not-depends-of-starting-point"
+
+\end_inset
+
+Зафиксируем в некоторой точке 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+ значение 
+\begin_inset Formula $w^{\prime}=\underset{1}{\sqrt{z^{\prime}}}$
+\end_inset
+
+ и определим значения функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ в остальных точках плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ (исключая разрез) по непрерывности вдоль кривых, идущих из точки 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+ и не проходящих через разрез.
+ Доказать, что получающаяся однозначная непрерывная ветвь, совпадает с функцией
+ 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+ (определённой из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольную непрерывную кривую 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+, не пересекающую разрез и соединяющую точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+.
+ Тогда любую непрерывную кривую 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, не пересекающую разрез и соединяющую точки 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, можно дополнить до непрерывной кривой, не пересекающую разрез и соединяющей
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+: нужно рассмотреть кривую 
+\begin_inset Formula $C_{1}C_{2}$
+\end_inset
+
+.
+ Таким образом, определение непрерывных ветвей 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ по непрерывности из точки 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+ свелось к определению непрерывных ветвей 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ вдоль непрерывных кривых, проходящих через точку 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+.
+ Так как значения 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, определённое по непрерывности вдоль всех непрерывных кривых, соединяющих
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ при фиксированном значении 
+\begin_inset Formula $\sqrt{z_{0}}$
+\end_inset
+
+, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:when-sqrt-of-finsih-of-two-curves-are-same-by-continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, равны друг другу, а наложение дополнительного условия только ограничивает
+ круг таких кривых, то требуемое утверждение доказано.
+\end_layout
+
+\begin_layout Standard
+Из результатов задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:continuous-branches-of-sqrt-does-not-depends-of-starting-point"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что выбирая в качестве начальной точки при выделении однозначных
+ непрерывных ветвей различные точки плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, мы будем получать один и тот же набор однозначных непрерывных ветвей,
+ который зависит, таким образом, только от того, как проведены разрезы.
 \end_layout
 
 \begin_layout Standard
