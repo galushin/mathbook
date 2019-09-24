@@ -70247,17 +70247,478 @@ noprefix "false"
  который зависит, таким образом, только от того, как проведены разрезы.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:if-curve-crosses-cut-sqrt-change-continuous-branch"
+
+\end_inset
+
+Пусть точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ не лежат на разрезе и пусть кривая 
+\begin_inset Formula $C$
+\end_inset
+
+, соединяющая точку 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ с 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, один раз пересекает разрез 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:curve-crossing-cut"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Пусть выбрано значение 
+\begin_inset Formula $w_{0}=\sqrt{z_{0}}$
+\end_inset
+
+ и по непрерывности вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ определено значение 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+.
+ Доказать, что значения 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ соответствуют разным ветвям функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Дописать этот раздел
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-287.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:curve-crossing-cut"
+
+\end_inset
+
+Кривая, пересекающая разрез.
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Проведём из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ кривую 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, не пересекающую разрез и определим по непрерывности вдоль этой кривой
+ значение 
+\begin_inset Formula $w_{2}=\sqrt{z_{1}}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ не пересекает разрез, то 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+ принадлежат одной ветви функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+ С другой стороны, так как кривая 
+\begin_inset Formula $C^{-1}C_{2}$
+\end_inset
+
+ обходит точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+ один раз, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:when-sqrt-of-finsih-of-two-curves-are-same-by-continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $w_{1}\neq w_{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+ принадлежат разным ветвям 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, а значит и 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ принадлежат разным ветвям этой функции.
+\end_layout
+
+\begin_layout Standard
+Таким образом, пересекая разрез, мы с одной ветви функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ переходим на другую ветвь, то есть ветви соединяются между собой именно
+ так, как мы соединили их раньше (то есть как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sqrt-rieman-surface"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ При этом образуется риманова поверхность функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Будем говорить, что некоторое свойство выполняется при обходе вокруг точки
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, если оно выполняется при однократном обходе против часовой стрелки по
+ всем окружностям с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, имеющим достаточно малый радиус
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Более строго это означает следующее: найдётся такое действительное число
+ 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, что указанное свойство выполняется при обходе по всем окружностям с центром
+ в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, радиус которых меньше 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что при обходе вокруг точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ мы останемся на том же листе римановой поверхности функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, если 
+\begin_inset Formula $z_{0}\neq0$
+\end_inset
+
+, и переходим на другой лист, если 
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, тогда любая окружность с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ пересекает разрез, причём один раз.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:if-curve-crosses-cut-sqrt-change-continuous-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в этом случае мы окажемся на другой непрерывной ветви функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, то есть на другом листе римановой поверхности данной функции.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $z_{0}=x_{0}+iy_{0}\neq0$
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula $\delta=\frac{1}{2}\left|y_{0}\right|$
+\end_inset
+
+, тогда любая окружность с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и радиусом меньше 
+\begin_inset Formula $\delta$
+\end_inset
+
+, не будет пересекать разрез и не будет охватывать точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Тогда, по определению непрерывной ветви функции 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sqrt-continuous-branches"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, после обхода по любой такой окружности, мы вернёмся к тому же значению
+ 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, то есть останемся на том же листе римановой поверхности данной функции.
+\end_layout
+
+\begin_layout Standard
+Следующее понятие очень важно для дальнейшего.
+\end_layout
+
+\begin_layout Definition
+Точки, при обходе которых может происходить переход с одних листов на другие
+ (то есть изменяется значение функции), называются 
+\emph on
+точками разветвления
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+В математической литературе встречаются два названия этого понятия — точка
+ разветвления и точка ветвления.
+\end_layout
+
+\end_inset
+
+
+\emph default
+ данной многозначной функции.
+\end_layout
+
+\begin_layout Standard
+Риманову поверхность функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ можно изобразить в виде схемы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme-of-the-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Эта схема показывает, что риманова поверхность функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ имеет два листа, что точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+ является точку разветвления функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ и что при обходе вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ мы с любого листа переходим на противоположный лист.
+ При этом стрелки в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ показывают переходы с листа на лист не только при обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, но и при пересечении в любом месте разреза, идущего из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в бесконечность.
+ Ниже мы увидим, что такая связь между точками разветвления и разрезами,
+ проведёнными из них, не случайна.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/scheme-of-the-rieman-surface-of-sqrt.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:scheme-of-the-rieman-surface-of-sqrt"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В дальнейшем мы в основном будем изображать не саму риманову поверхность
+ некоторой многозначной функции, а её схему.
 \end_layout
 
 \begin_layout Standard
