@@ -67336,6 +67336,17 @@ noprefix "false"
 \end_inset
 
 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно, нужно уточнить, что корни из положительных чисел обозначают арифметиче
+ское значение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Definition
@@ -70055,7 +70066,22 @@ noprefix "false"
 \end_inset
 
 .
- Так как эта кривая является непрерывной, то продолжая функции 
+ Так как эта кривая является непрерывной и не пересекает разрез (а значит,
+ не проходит через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+)
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Забыл указать это в первой редакции
+\end_layout
+
+\end_inset
+
+, то продолжая функции 
 \begin_inset Formula $\underset{1}{\sqrt{z}}$
 \end_inset
 
