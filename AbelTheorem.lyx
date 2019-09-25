@@ -52648,7 +52648,7 @@ i & n\mod4=1\\
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:examples-on-complex-square-root"
+name "prob:square-root-of-reals-in-field-of-complex-numbers"
 
 \end_inset
 
@@ -52683,12 +52683,12 @@ name "prob:examples-on-complex-square-root"
 Запишем сначала квадрат комплексного числа в алгебраической форме: 
 \begin_inset Formula 
 \[
-z^{2}=\left(x+yi\right)\cdot\left(x+yi\right)=x^{2}-y^{2}+2xyi
+z^{2}=\left(x+yi\right)\cdot\left(x+yi\right)=x^{2}-y^{2}+2xyi.
 \]
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Solution
@@ -57120,6 +57120,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:root-n"
+
+\end_inset
+
 Запись 
 \begin_inset Formula $\sqrt[n]{z}$
 \end_inset
@@ -57218,7 +57224,7 @@ noprefix "false"
 , что соответствует результату, полученному в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:examples-on-complex-square-root"
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
 plural "false"
 caps "false"
 noprefix "false"
@@ -60673,6 +60679,12 @@ name "fig:example-of-continuous-curve"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-of-curves-given-by-parametric-equation"
+
+\end_inset
+
 Построить на плоскости 
 \begin_inset Formula $z$
 \end_inset
@@ -61378,6 +61390,12 @@ name "prob:curve-inverse-traversal"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:traverse-one-curve-after-another"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $z_{1}\left(t\right)$
 \end_inset
@@ -66996,6 +67014,3737 @@ P^{\prime}\left(z\right)=\left[\left(z-z_{0}\right)^{k}\right]^{\prime}\cdot Q\l
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Риманова поверхность функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выше мы рассматривали однозначные функции, при которых каждому значению
+ аргумента соответствует единственное значение функции.
+ Однако в дальнейшем нас будут особо интересовать многозначные функции,
+ при которых некоторым значениями аргумента соответствует несколько значений
+ функции
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+В тех случаях, когда это не вызывает недоразумений, мы слово 
+\begin_inset Quotes rld
+\end_inset
+
+многозначные
+\begin_inset Quotes rrd
+\end_inset
+
+ будет часто опускать.
+\end_layout
+
+\end_inset
+
+.
+ Наш интерес к таким функциям легко объясним.
+ Действительно, конечной целью нашего изложения является доказательство
+ теоремы Абеля о том, что функция, выражающая корни общего уравнения пятой
+ степени через коэффициенты, не выражается в радикалах.
+ Но эта функция является многозначной, так как уравнение пятой степени при
+ фиксированных коэффициентах имеет, вообще говоря, пять корней.
+ Также многозначными являются и функции, выражающиеся в радикалах.
+\end_layout
+
+\begin_layout Standard
+Общая идея доказательства теоремы Абеля состоит в следующем.
+ Многозначной функции комплексного аргумента мы сопоставим некоторую группу
+ — так называемую группу Галуа
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Эварист Галуа (1811-1832) — французский математик, установивший общие условия
+ разрешимости уравнений в радикалах, заложивший основы теории групп.
+ Советуем прочесть Инфельд Л., Эварист Галуа (Избранник богов), издательство
+ 
+\begin_inset Quotes rld
+\end_inset
+
+Молодая гвардия
+\begin_inset Quotes rrd
+\end_inset
+
+, М., 1958.
+\end_layout
+
+\end_inset
+
+.
+ При этом окажется, что группа Галуа для функции, выражающей корни некоторого
+ уравнения пятой степени через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+, не может совпадать ни с какой группой Галуа для функции, выражающейся
+ в радикалах, и, следовательно сама эта функция не может выражаться в радикалах.
+\end_layout
+
+\begin_layout Standard
+Для того чтобы ввести понятие группы Галуа, мы введём сначала другое очень
+ важное в теории функций комплексного переменного понятие — понятие 
+\emph on
+римановой
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Названы по имени Б.
+ Римана (1826-1866) — немецкого математика.
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+поверхности 
+\emph default
+многозначной функции.
+ При этом мы начнём с построения римановой поверхности для одного из простейших
+ примеров многозначной функции, а именно для функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Как мы знаем, функция 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ принимает одно значение 
+\begin_inset Formula $w=0$
+\end_inset
+
+ при 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и два значения при всех 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ При этом, если 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $\sqrt{z_{0}}$
+\end_inset
+
+, то другое значение 
+\begin_inset Formula $\sqrt{z_{0}}$
+\end_inset
+
+ равно 
+\begin_inset Formula $-w_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Найти все значения: а) 
+\begin_inset Formula $\sqrt{1}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt{-1}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt{i}$
+\end_inset
+
+, г) 
+\begin_inset Formula $\sqrt{1+i\sqrt{3}}$
+\end_inset
+
+(здесь 
+\begin_inset Formula $\sqrt{3}$
+\end_inset
+
+ — положительное значение корня).
+\end_layout
+
+\begin_layout Solution
+а) Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, все решения уравнения 
+\begin_inset Formula $z^{2}=1$
+\end_inset
+
+ — это 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) В той же задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, решения уравнения 
+\begin_inset Formula $z^{2}=-1$
+\end_inset
+
+ — это 
+\begin_inset Formula $i$
+\end_inset
+
+ и 
+\begin_inset Formula $-i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Представим подкоренное выражение в тригонометрической форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "trigonometric-representation-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $i=1\cdot\left(\cos\frac{\pi}{2}+i\sin\frac{\pi}{2}\right)$
+\end_inset
+
+.
+ Тогда, как как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, значения 
+\begin_inset Formula $\sqrt{i}$
+\end_inset
+
+ имеют модуль 
+\begin_inset Formula $\sqrt{\left|i\right|}=\sqrt{1}=1$
+\end_inset
+
+, а их аргументы равны 
+\begin_inset Formula 
+\[
+\frac{\pi}{4}+\pi k,\thinspace k=0,1,
+\]
+
+\end_inset
+
+таким образом, значения 
+\begin_inset Formula $\sqrt{i}$
+\end_inset
+
+ — это 
+\begin_inset Formula $\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}=\frac{\sqrt{2}}{2}\left(1+i\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\cos\frac{5\pi}{4}+i\sin\frac{5\pi}{4}=-\frac{\sqrt{2}}{2}\left(1+i\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) Представим подкоренное выражение в тригонометрической форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "trigonometric-representation-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $1+i\sqrt{3}=2\left(\frac{1}{2}+i\cdot\frac{\sqrt{3}}{2}\right)=2\left(\cos\frac{\pi}{3}+i\sin\frac{\pi}{3}\right)$
+\end_inset
+
+.
+ Тогда, как как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\sqrt{1+i\sqrt{3}}=\pm\sqrt{2}\cdot\left(\cos\frac{\pi}{6}+i\sin\frac{\pi}{6}\right)=\pm\frac{\sqrt{2}}{2}\left(\sqrt{3}+i\right).
+\]
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно, нужно уточнить, что корни из положительных чисел обозначают арифметиче
+ское значение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Проведём на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ разрез по отрицательной части действительной оси от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ и для всех 
+\begin_inset Formula $z$
+\end_inset
+
+, не лежащих на разрезе, выберем то значение 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, которое лежит в правой полуплоскости плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ При этом мы получим некоторую функцию, однозначную и непрерывную на всей
+ плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, исключая разрез, которую мы обозначим 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+.
+ Эта функция задаёт однозначное и непрерывное отображение плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, исключая разрез, на правую полуплоскость плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+, как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:first-branch-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/first-branch-of-sqrt.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:first-branch-of-sqrt"
+
+\end_inset
+
+Первая однозначная непрерывная ветвь функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Если мы выберем 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+ так, что 
+\begin_inset Formula $-\pi<\mathrm{Arg}z<\pi$
+\end_inset
+
+, то для функции 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+ получим, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{Arg}\underset{1}{\sqrt{z}}=\frac{1}{2}\mathrm{Arg}z$
+\end_inset
+
+.
+ Поэтому при отображении 
+\begin_inset Formula $w=\underset{1}{\sqrt{z}}$
+\end_inset
+
+ плоскость 
+\begin_inset Formula $z$
+\end_inset
+
+ стягивается наподобие веера к положительной части действительной оси с
+ уменьшением угла 
+\begin_inset Quotes rld
+\end_inset
+
+веера
+\begin_inset Quotes rrd
+\end_inset
+
+ вдвое и некотором изменением длин вдоль лучей 
+\begin_inset Quotes rld
+\end_inset
+
+веера
+\begin_inset Quotes rrd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Если мы теперь для всех 
+\begin_inset Formula $z$
+\end_inset
+
+, не лежащих на разрезе, выберем то значение 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, которое лежит в левой полуплоскости плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+, то получим другую функцию, также однозначную и непрерывную на всей плоскости
+ 
+\begin_inset Formula $z$
+\end_inset
+
+, исключая разрез.
+ Эта функции, которую мы обозначим 
+\begin_inset Formula $\underset{2}{\sqrt{z}}$
+\end_inset
+
+, задаёт однозначное и непрерывное отображение плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, исключая разрез, на левую полуплоскость плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+, как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:second-branch-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Здесь 
+\begin_inset Formula $\underset{2}{\sqrt{z}}=-\underset{1}{\sqrt{z}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/second-branch-of-sqrt.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:second-branch-of-sqrt"
+
+\end_inset
+
+Вторая однозначная непрерывная ветвь функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Построенные нами функции 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\underset{2}{\sqrt{z}}$
+\end_inset
+
+ называются 
+\emph on
+однозначными непрерывными ветвями 
+\emph default
+функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ (при данном разрезе).
+\end_layout
+
+\begin_layout Standard
+Возьмём теперь два экземпляра плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, которые мы будем называть 
+\emph on
+листами
+\emph default
+, и на каждом проведём разрез по отрицательной части действительной оси
+ от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $-\infty$
+\end_inset
+
+, как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:branches-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Зададим на первом листе функцию 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+, а на втором листе — функцию 
+\begin_inset Formula $\underset{2}{\sqrt{z}}$
+\end_inset
+
+.
+ Тогда функции 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\underset{2}{\sqrt{z}}$
+\end_inset
+
+ мы можем рассматривать вместе как некоторую единую однозначную функцию,
+ но заданную не на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, а на более сложной поверхности, состоящей из двух отдельных листов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/branches-of-sqrt.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:branches-of-sqrt"
+
+\end_inset
+
+Листы римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При этом, если точка 
+\begin_inset Formula $z$
+\end_inset
+
+ движется непрерывно по первому листу (или по второму листу), не пересекая
+ разреза, то построенная нами однозначная функция изменяется непрерывно.
+ Если же точка 
+\begin_inset Formula $z$
+\end_inset
+
+, двигаясь, например, по первому листу, переходит через разрез, то непрерывность
+ нарушается.
+ Это видно, например, из того, что близкие точки 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ переходят при отображении 
+\begin_inset Formula $w=\underset{1}{\sqrt{z}}$
+\end_inset
+
+ в далёкие друг от друга точки 
+\begin_inset Formula $A^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $B^{\prime}$
+\end_inset
+
+, как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:first-branch-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+С другой стороны, из рисунков 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:first-branch-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:second-branch-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ легко заметить, что образ точки 
+\begin_inset Formula $A$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\underset{1}{\sqrt{z}}$
+\end_inset
+
+ (точка 
+\begin_inset Formula $A^{\prime}$
+\end_inset
+
+) оказывается близко с образом точки 
+\begin_inset Formula $D$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\underset{2}{\sqrt{z}}$
+\end_inset
+
+ (точка 
+\begin_inset Formula $D^{\prime}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Таким образом, если при пересечении разреза точка 
+\begin_inset Formula $z$
+\end_inset
+
+ будет переходить с верхнего берега разреза на одном листе на нижний берег
+ разреза на другом листе, то построенная нами однозначная функция будет
+ изменяться непрерывно.
+ Для того, чтобы обеспечить нужное нам движение точки 
+\begin_inset Formula $z$
+\end_inset
+
+, будем считать верхний берег разреза первого листа склеенными с нижним
+ берегом разреза второго листа, а верхний берег разреза второго листа —
+ склеенным с нижним берегом разреза первого листа, как показано на рисунке
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sqrt-rieman-surface"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ При этом во время склейки мы будем между склеиваемыми берегами добавлять
+ луч из точки 
+\begin_inset Formula $0$
+\end_inset
+
+ в 
+\begin_inset Formula $-\infty$
+\end_inset
+
+.
+ Во время первой склейки для точек 
+\begin_inset Formula $z$
+\end_inset
+
+, лежащих на этом луче, мы будем выбирать значения 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, лежащие на положительной части мнимой оси, а при второй склейке — значения
+ 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, лежащие на отрицательной части мнимой оси.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/glued-branches-of-sqrt.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sqrt-rieman-surface"
+
+\end_inset
+
+Риманова поверхность функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+После проведения указанных склеек мы получим, что двузначная функция 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ заменилась некоторой другой функций, которая однозначна и непрерывна, но
+ только не на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, а на некоторой новой более сложной поверхности.
+ Это поверхность и называется 
+\emph on
+римановой поверхностью функции 
+\emph default
+
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Попытки произвести указанные склейки без пересечении (не переворачивая плоскости
+) заканчиваются неудачей.
+ Несмотря на это, мы будем считать, что рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sqrt-rieman-surface"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ является изображением римановой поверхности функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, принимая дополнительное соглашение, что пересечение по отрицательной части
+ действительной оси являются кажущимися.
+ Для сравнения рассмотрим следующий пример.
+ На рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cube-and-octahedron"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ изображён остов куба.
+ Хотя некоторые отрезки на рисунке пересекаются, но мы легко соглашаемся
+ с тем, что это пересечение кажущееся, и это позволяет нам избегать ошибок.
+\end_layout
+
+\begin_layout Standard
+Риманову поверхность произвольной многозначной функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ можно построить подобно тому, как мы построили риманову поверхность функции
+ 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+ Для этого надо сначала выделить однозначные непрерывные ветви функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, при этом некоторые точки 
+\begin_inset Formula $z$
+\end_inset
+
+ (разрезы) исключаются из рассмотрения.
+ После этого полученные ветви надо склеить, восстанавливая разрезы, так
+ чтобы получилась однозначная и непрерывная функция на построенной поверхности.
+ Полученная поверхность и будет называться римановой поверхностью многозначной
+ функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Такие построения можно провести не для каждой многозначной функции, однако
+ для тех функций, которые будут рассматриваться в дальнейшем, такие построения
+ провести действительно можно.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом, остаётся выяснить как же выделять непрерывные однозначные
+ ветви произвольной многозначной функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ и как затем их склеивать.
+ Для выяснения этих вопросов рассмотрим ещё раз более подробно функцию 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ — многозначная функция, и пусть зафиксировано одно из значений 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $w^{\prime}\left(z\right)$
+\end_inset
+
+ — непрерывная однозначная ветвь функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, выделенная в некоторой области плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ (например, на всей плоскости, исключая какие-то разрезы), и такая, что
+ 
+\begin_inset Formula $w^{\prime}\left(z_{0}\right)=w_{0}$
+\end_inset
+
+.
+ Пусть, кроме того, 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая, идущая из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в некоторую точку 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и лежащая целиком в рассматриваемой нами области плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Тогда при движении точки 
+\begin_inset Formula $z$
+\end_inset
+
+ вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ функция 
+\begin_inset Formula $w^{\prime}\left(z\right)$
+\end_inset
+
+ будет изменяться непрерывно от 
+\begin_inset Formula $w^{\prime}\left(z_{0}\right)$
+\end_inset
+
+ до 
+\begin_inset Formula $w^{\prime}\left(z_{1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Этим свойством можно воспользоваться и обратную сторону, а именной для определен
+ия функции 
+\begin_inset Formula $w^{\prime}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Действительно, пусть в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ зафиксировано одно из значений 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая, идущая из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в некоторую точку 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Будем двигаться по кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, выбирая для каждой точки 
+\begin_inset Formula $z$
+\end_inset
+
+, лежащей на 
+\begin_inset Formula $C$
+\end_inset
+
+, одно из значений функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ так, чтобы выбираемые значения изменялись непрерывно при движении 
+\begin_inset Formula $z$
+\end_inset
+
+ по кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, начиная со значения 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+.
+ При этом, когда мы достигнем точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, мы будем иметь вполне определённое значение 
+\begin_inset Formula $w_{1}=w\left(z_{1}\right)$
+\end_inset
+
+.
+ Мы будем говорить, что 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ — значение 
+\begin_inset Formula $w\left(z_{1}\right)$
+\end_inset
+
+, определённое 
+\emph on
+по непрерывности вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\emph default
+при условии 
+\begin_inset Formula $w\left(z_{0}\right)=w_{0}$
+\end_inset
+
+.
+ Если значения функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, выбираемые для всех точек кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, изобразить на плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+, то должна получиться непрерывная кривая, которая начинается в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ и заканчивается в точке 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+.
+ Эта кривая является одним из непрерывных образов кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=w\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:example-of-defining-value-by-continuity-along-curve"
+
+\end_inset
+
+Пусть для функции 
+\begin_inset Formula $w\left(z\right)=\sqrt{z}$
+\end_inset
+
+ выбрано 
+\begin_inset Formula $w\left(1\right)=\sqrt{1}=1$
+\end_inset
+
+.
+ Определить 
+\begin_inset Formula $w\left(-1\right)=\sqrt{-1}$
+\end_inset
+
+ по непрерывности вдоль: а) верхней полуокружности радиуса 1 с центром в
+ начале координат, б) нижней полуокружности 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-278"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-278.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-278"
+
+\end_inset
+
+Рисунок для задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:example-of-defining-value-by-continuity-along-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+а) Параметрическое уравнение верхней полуокружности есть 
+\begin_inset Formula $z\left(t\right)=\cos\pi t+i\sin\pi t$
+\end_inset
+
+ (показано в пункте з) задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-curves-given-by-parametric-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда при каждом 
+\begin_inset Formula $t$
+\end_inset
+
+ для 
+\begin_inset Formula $w\left(z\left(t\right)\right)=\sqrt{z\left(t\right)}$
+\end_inset
+
+ имеется два возможных значения: 
+\begin_inset Formula $\cos\frac{\pi}{2}t+i\sin\frac{\pi}{2}t$
+\end_inset
+
+ и 
+\begin_inset Formula $-\left(\cos\frac{\pi}{2}t+i\sin\frac{\pi}{2}t\right)$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $t=0$
+\end_inset
+
+ первое обращается в 
+\begin_inset Formula $1$
+\end_inset
+
+, а второе — в 
+\begin_inset Formula $-1$
+\end_inset
+
+, поэтому следует выбрать первый вариант.
+ Тогда 
+\begin_inset Formula $w\left(z\left(t\right)\right)=\cos\frac{\pi}{2}t+i\sin\frac{\pi}{2}t$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ при 
+\begin_inset Formula $t=1$
+\end_inset
+
+, то 
+\begin_inset Formula $w\left(-1\right)=\cos\frac{\pi}{2}+i\sin\frac{\pi}{2}=i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Параметрическое уравнение нижней полуокружности является комплексно сопряжённ
+ым к уравнению верхней полуокружности 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretation-of-multiplication-by-real-and-complex-conjugation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то есть 
+\begin_inset Formula $z\left(t\right)=\cos\pi t-i\sin\pi t$
+\end_inset
+
+.
+ Для 
+\begin_inset Formula $\sqrt{z\left(t\right)}$
+\end_inset
+
+ получаем два возможных значения: 
+\begin_inset Formula $\cos\frac{\pi}{2}t-i\sin\frac{\pi}{2}t$
+\end_inset
+
+ и 
+\begin_inset Formula $-\left(\cos\frac{\pi}{2}t-i\sin\frac{\pi}{2}t\right)$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $t=0$
+\end_inset
+
+ первое обращается в 
+\begin_inset Formula $1$
+\end_inset
+
+, а второе — в 
+\begin_inset Formula $-1$
+\end_inset
+
+, поэтому следует выбрать второй вариант.
+ Тогда 
+\begin_inset Formula $w\left(z\left(t\right)\right)=\cos\frac{\pi}{2}t-i\sin\frac{\pi}{2}t$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ при 
+\begin_inset Formula $t=1$
+\end_inset
+
+, 
+\begin_inset Formula $w\left(-1\right)=\cos\frac{\pi}{2}-i\sin\frac{\pi}{2}=-i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В действительности при определении функции по непрерывности вдоль некоторой
+ кривой мы можем столкнуться с некоторыми неприятностями.
+ Рассмотрим соответствующий пример.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:counterexample-of-defining-value-by-continuity-along-curve"
+
+\end_inset
+
+Найти все непрерывные образы кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)=2t-1$
+\end_inset
+
+ (смотрите рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-279"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) при отображении 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, начинающиеся: а) в точке 
+\begin_inset Formula $i$
+\end_inset
+
+, б) в точке 
+\begin_inset Formula $-i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-279.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-279"
+
+\end_inset
+
+Рисунок для задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:counterexample-of-defining-value-by-continuity-along-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ значения 
+\begin_inset Formula $z$
+\end_inset
+
+ являются вещественными.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
+\begin_inset Formula $a$
+\end_inset
+
+ — вещественное число, то в поле комплексных чисел квадратными корнями из
+ 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+ являются числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $-a$
+\end_inset
+
+, а из 
+\begin_inset Formula $-a^{2}$
+\end_inset
+
+ — 
+\begin_inset Formula $i\cdot a$
+\end_inset
+
+ и 
+\begin_inset Formula $-i\cdot a$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $a=0$
+\end_inset
+
+, то оба корня вырождаются в 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $0\le t<\frac{1}{2}$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $z\left(t\right)<0$
+\end_inset
+
+, а при 
+\begin_inset Formula $\frac{1}{2}<t\le1$
+\end_inset
+
+ — 
+\begin_inset Formula $z\left(t\right)>0$
+\end_inset
+
+.
+ Таким образом, при 
+\begin_inset Formula $0\le t<\frac{1}{2}$
+\end_inset
+
+ можем написать 
+\begin_inset Formula $\sqrt{z\left(t\right)}=\pm i\sqrt{1-2t}$
+\end_inset
+
+, а при 
+\begin_inset Formula $\frac{1}{2}<t\le1$
+\end_inset
+
+ — 
+\begin_inset Formula $\sqrt{z\left(t\right)}=\pm\sqrt{2t-1}$
+\end_inset
+
+, где в правых частях имеется в виду положительное вещественное значение
+ корня.
+\end_layout
+
+\begin_layout Solution
+а) при 
+\begin_inset Formula $0\le t<\frac{1}{2}$
+\end_inset
+
+ (то есть при 
+\begin_inset Formula $z<0$
+\end_inset
+
+) нужно выбрать ветвь со знаком 
+\begin_inset Formula $+$
+\end_inset
+
+, так как она даёт при 
+\begin_inset Formula $t=0$
+\end_inset
+
+ значение 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ (
+\begin_inset Formula $t=\frac{1}{2}$
+\end_inset
+
+) имеется только одно значение корня 
+\begin_inset Formula $\sqrt{0}=0$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $\frac{1}{2}<t\le1$
+\end_inset
+
+ имеются два возможных продолжения: 
+\begin_inset Formula $\sqrt{2t-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $-\sqrt{2t-1}$
+\end_inset
+
+, оба эти продолжения обращаются при 
+\begin_inset Formula $t=\frac{1}{2}$
+\end_inset
+
+ в ноль.
+ То есть руководствуясь только требованием непрерывности, нельзя определить
+ образ кривой однозначно.
+ Итак, образами кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ являются две кривые: 
+\begin_inset Formula 
+\[
+w_{1}\left(t\right)=\begin{cases}
+i\sqrt{1-2t} & 0\le t\le\frac{1}{2},\\
+\sqrt{2t-1} & \frac{1}{2}\le t\le1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+w_{2}\left(t\right)=\begin{cases}
+i\sqrt{1-2t} & 0\le t\le\frac{1}{2},\\
+-\sqrt{2t-1} & \frac{1}{2}\le t\le1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) При 
+\begin_inset Formula $0\le t<\frac{1}{2}$
+\end_inset
+
+, нужно выбрать ветвь 
+\begin_inset Formula $-i\sqrt{1-2t}$
+\end_inset
+
+, так как именно она даёт при 
+\begin_inset Formula $t=0$
+\end_inset
+
+ значение 
+\begin_inset Formula $-i$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ (
+\begin_inset Formula $t=\frac{1}{2}$
+\end_inset
+
+) имеется только одно значение корня 
+\begin_inset Formula $\sqrt{0}=0$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $\frac{1}{2}<t\le1$
+\end_inset
+
+ имеются два возможных продолжения: 
+\begin_inset Formula $\sqrt{2t-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $-\sqrt{2t-1}$
+\end_inset
+
+, аналогично предыдущему пункту, оба эти продолжения обращаются при 
+\begin_inset Formula $t=\frac{1}{2}$
+\end_inset
+
+ в ноль и однозначно выбрать одно из них только по непрерывности нельзя.
+ Итак, образами кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ являются две кривые: 
+\begin_inset Formula 
+\[
+w_{3}\left(t\right)=\begin{cases}
+-i\sqrt{1-2t} & 0\le t\le\frac{1}{2},\\
+\sqrt{2t-1} & \frac{1}{2}\le t\le1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+w_{4}\left(t\right)=\begin{cases}
+-i\sqrt{1-2t} & 0\le t\le\frac{1}{2},\\
+-\sqrt{2t-1} & \frac{1}{2}\le t\le1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:counterexample-of-defining-value-by-continuity-along-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ мы получаем, что даже при фиксировании образа начальной точки кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ непрерывный образ кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ может определяться неоднозначно.
+ Причём однозначность нарушается там, где кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ проходит через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Оказывается, что только в этом случае и может нарушаться однозначность
+ образа для функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, так как только в этом случае оба образа точки 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ подходят близко друг к другу, сливаясь в одну точку.
+\end_layout
+
+\begin_layout Standard
+Для того, чтобы избежать неоднозначности непрерывных образов кривых при
+ отображении 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, можно выколоть точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и запретить кривым проходить через эту точку.
+ Но и это ограничение не даёт нам пока возможности выделять однозначные
+ непрерывные ветви функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Действительно, если мы зафиксируем в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ одно из значений 
+\begin_inset Formula $w_{0}=w\left(z_{0}\right)$
+\end_inset
+
+ и будем определять 
+\begin_inset Formula $w\left(z_{1}\right)$
+\end_inset
+
+ в некоторой точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ по непрерывности вдоль различных кривых, идущих из 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, то мы можем получать разные значения 
+\begin_inset Formula $w\left(z_{1}\right)$
+\end_inset
+
+ (как например в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:example-of-defining-value-by-continuity-along-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Посмотрим, как можно избежать такой неоднозначности.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:variation-of-argument-along-sqrt-of-curve"
+
+\end_inset
+
+Пусть изменение аргумента 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Найти изменение аргумента 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ вдоль любого непрерывного образа кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим искомое изменение аргумента 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ вдоль любого непрерывного образа кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)=\sqrt{z}$
+\end_inset
+
+ как 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left[w_{0}\left(t\right)\right]^{2}=\left[\sqrt{z\left(t\right)}\right]^{2}=z\left(t\right)$
+\end_inset
+
+, то, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi=2\varphi_{0}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\varphi_{0}=\frac{\varphi}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $w\left(z\right)=\sqrt{z}$
+\end_inset
+
+, и пусть в начальной точке кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ выбрано 
+\begin_inset Formula $w\left(1\right)=\sqrt{1}=-1$
+\end_inset
+
+.
+ Определить по непрерывности вдоль: а) отрезка, соединяющего точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=i$
+\end_inset
+
+; б) кривой с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)=\cos\frac{3\pi}{2}t-i\sin\frac{3\pi}{2}t$
+\end_inset
+
+; в) кривой с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)=\cos\frac{5\pi}{2}t+i\sin\frac{5\pi}{2}t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) изменение аргумента вдоль указанного отрезка равно 
+\begin_inset Formula $\frac{\pi}{2}-0=\frac{\pi}{2}$
+\end_inset
+
+.
+ Тогда, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-along-sqrt-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента вдоль кривой 
+\begin_inset Formula $w\left(z\left(t\right)\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{\pi}{4}$
+\end_inset
+
+.
+ Так как значение аргумента в начальной точке кривой (
+\begin_inset Formula $z=-1$
+\end_inset
+
+) равен 
+\begin_inset Formula $\pi$
+\end_inset
+
+, то аргумент в конечной точке кривой должен быть равен 
+\begin_inset Formula $\pi+\frac{\pi}{4}=\frac{5\pi}{4}$
+\end_inset
+
+.
+ Модуль квадратного корня числа равен корню модуля подкоренного выражения,
+ поэтому 
+\begin_inset Formula 
+\[
+w\left(1\right)=\sqrt{1}\left(\cos\frac{5\pi}{4}+i\sin\frac{5\pi}{4}\right)=-\left(\frac{\sqrt{2}}{2}+i\frac{\sqrt{2}}{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) При указанном параметрическом уравнении имеет место 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=-\frac{3\pi}{2}t$
+\end_inset
+
+, поэтому изменение аргумента вдоль кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $-\frac{3\pi}{2}-0=-\frac{3\pi}{2}$
+\end_inset
+
+.
+ Рассуждая аналогично предыдущему пункту, получаем, что значение аргумента
+ в конечной точке 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $\pi-\frac{3\pi}{4}=\frac{\pi}{4}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $w\left(1\right)=\sqrt{1}\left(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}\right)=\frac{\sqrt{2}}{2}+i\frac{\sqrt{2}}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) При указанном параметрическом уравнении имеет место 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=\frac{5\pi}{2}t$
+\end_inset
+
+, поэтому изменение аргумента вдоль кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{5\pi}{2}-0=\frac{5\pi}{2}$
+\end_inset
+
+.
+ Рассуждая аналогично пункту а), получаем, что значение аргумента в конечной
+ точке 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $\pi+\frac{5\pi}{4}=2\pi+\frac{\pi}{4}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $w\left(1\right)=\sqrt{1}\left(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}\right)=\frac{\sqrt{2}}{2}+i\frac{\sqrt{2}}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $w\left(z\right)=\sqrt{z}$
+\end_inset
+
+, и пусть в начальной точке кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ выбрано 
+\begin_inset Formula $w\left(1\right)=\sqrt{1}=1$
+\end_inset
+
+.
+ Определить по непрерывности вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ значение 
+\begin_inset Formula $w\left(1\right)=\sqrt{1}$
+\end_inset
+
+ в конечной точке, если кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ имеет уравнение:
+\end_layout
+
+\begin_layout Problem
+а) 
+\begin_inset Formula $z\left(t\right)=\cos2\pi t+i\sin2\pi t$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+б) 
+\begin_inset Formula $z\left(t\right)=\cos4\pi t-i\sin4\pi t$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+в) 
+\begin_inset Formula $z\left(t\right)=2-\cos2\pi t-i\sin2\pi t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=2\pi t$
+\end_inset
+
+, поэтому изменение аргумента вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Тогда, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-along-sqrt-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента вдоль 
+\begin_inset Formula $\sqrt{C}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{2\pi}{2}=\pi$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\mathrm{Arg}w\left(0\right)=0$
+\end_inset
+
+, то 
+\begin_inset Formula $\mathrm{Arg}w\left(1\right)=0+\pi=\pi$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left|w\left(1\right)\right|=\sqrt{\left|z\left(1\right)\right|}=\sqrt{1}=1$
+\end_inset
+
+, то 
+\begin_inset Formula $w\left(1\right)=1\cdot\left(\cos\pi+i\sin\pi\right)=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $\mathrm{Arg}z\left(t\right)=-4\pi t$
+\end_inset
+
+, поэтому изменение аргумента вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $-4\pi$
+\end_inset
+
+.
+ Тогда, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-along-sqrt-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента вдоль 
+\begin_inset Formula $\sqrt{C}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{-4\pi}{2}=-2\pi$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\mathrm{Arg}w\left(0\right)=0$
+\end_inset
+
+, то 
+\begin_inset Formula $\mathrm{Arg}w\left(1\right)=0-2\pi=-2\pi$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left|w\left(1\right)\right|=\sqrt{\left|z\left(1\right)\right|}=\sqrt{1}=1$
+\end_inset
+
+, то 
+\begin_inset Formula $w\left(1\right)=1\cdot\left(\cos\left(-2\pi\right)+i\sin\left(-2\pi\right)\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Так как 
+\begin_inset Formula $z\left(t\right)-2=\cos2\pi t+i\sin2\pi t$
+\end_inset
+
+, то 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ представляет собой окружность с центром в точке 
+\begin_inset Formula $z=2$
+\end_inset
+
+ и радиусом 
+\begin_inset Formula $1$
+\end_inset
+
+ (смотрите пункт е) задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-curves-given-by-parametric-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Таким образом, изменение аргумента вдоль 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Тогда, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-along-sqrt-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента вдоль 
+\begin_inset Formula $\sqrt{C}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{0}{2}=0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\mathrm{Arg}w\left(0\right)=0$
+\end_inset
+
+, то 
+\begin_inset Formula $\mathrm{Arg}w\left(1\right)=0+0=0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left|w\left(1\right)\right|=\sqrt{\left|z\left(1\right)\right|}=\sqrt{1}=1$
+\end_inset
+
+, то 
+\begin_inset Formula $w\left(1\right)=1\cdot\left(\cos0+i\sin0\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:when-sqrt-of-start-and-finish-of-closed-curve-is-same-by-continuity"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — замкнутая кривая на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ (то есть 
+\begin_inset Formula $z\left(1\right)=z\left(0\right)$
+\end_inset
+
+).
+ Доказать, что значение функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ в конечной точке кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, определённое по непрерывности, будет совпадать со значением в начальной
+ точке тогда и только тогда, когда кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ обходит вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ чётное число раз.
+\end_layout
+
+\begin_layout Solution
+Так как все значения корня имеют одинаковый модуль, то значения 
+\begin_inset Formula $\sqrt{z\left(0\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt{z\left(1\right)}$
+\end_inset
+
+, определённое по непрерывности, будут совпадать при условии равенства аргумента.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ с параметрическим уравнением 
+\begin_inset Formula $z=z\left(t\right)$
+\end_inset
+
+ обходит 
+\begin_inset Formula $k$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Тогда, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi\cdot k$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-along-sqrt-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента вдоль кривой 
+\begin_inset Formula $\sqrt{C}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{2\pi\cdot k}{2}=\pi k$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $k$
+\end_inset
+
+ — чётное, то аргумент в конечной точке кривой отличается от аргумента в
+ начальной на величину, кратную 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, то есть, по сути, совпадает.
+ Если же 
+\begin_inset Formula $k=2s+1$
+\end_inset
+
+ — нечётное число, то аргумент в конечной точке кривой будет отличаться
+ на 
+\begin_inset Formula $\pi\cdot\left(2s+1\right)=2\pi s+\pi$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\sqrt{z\left(1\right)}$
+\end_inset
+
+ будет отличаться от 
+\begin_inset Formula $\sqrt{z\left(0\right)}$
+\end_inset
+
+ знаком.
+\end_layout
+
+\begin_layout Standard
+Для дальнейшего удобно ввести следующую символику.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:inverse-traversal-of-curve"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+.
+ Через 
+\begin_inset Formula $C^{-1}$
+\end_inset
+
+ будет обозначаться кривая, геометрически совпадающая с 
+\begin_inset Formula $C$
+\end_inset
+
+, но проходимая в противоположном направлении.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:curve-inverse-traversal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, её уравнение 
+\begin_inset Formula $z_{1}\left(t\right)=z\left(1-t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:traverse-one-curve-after-another"
+
+\end_inset
+
+Пусть начальная точка кривой 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ совпадает с конечной точкой кривой 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+.
+ Тогда под 
+\begin_inset Formula $C_{1}C_{2}$
+\end_inset
+
+ будем понимать кривую, которая получится, если сначала пройти 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+, а затем — 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ (в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:traverse-one-curve-after-another"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ показано, как параметрическое уравнение кривой 
+\begin_inset Formula $C_{1}C_{2}$
+\end_inset
+
+ выражается через параметрические уравнения кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:when-sqrt-of-finsih-of-two-curves-are-same-by-continuity"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ — две кривые, соединяющие точку 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ с точкой 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, и пусть выбрано одно из значений 
+\begin_inset Formula $\sqrt{z_{0}}=w_{0}$
+\end_inset
+
+.
+ Доказать, что значения 
+\begin_inset Formula $\sqrt{z_{1}}$
+\end_inset
+
+, определённые по непрерывности вдоль кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, будут одинаковыми тогда и только тогда, когда кривая 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ (смотрите рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-284"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) обходит вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ чётное число раз.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-284.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-284"
+
+\end_inset
+
+Рисунок для задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:when-sqrt-of-finsih-of-two-curves-are-same-by-continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:inverse-traversal-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, кривая 
+\begin_inset Formula $C_{1}^{-1}$
+\end_inset
+
+ соединяет точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:traverse-one-curve-after-another"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, кривая 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ является замкнутой кривой, так как её начальная и конечная точка совпадают
+ (это точка 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+).
+ Пусть параметрическое уравнение кривой 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ есть 
+\begin_inset Formula $z=z_{1}\left(t\right)$
+\end_inset
+
+, параметрическое уравнение кривой 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ — 
+\begin_inset Formula $z=z_{2}\left(t\right)$
+\end_inset
+
+, а параметрическое уравнение кривой 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ — 
+\begin_inset Formula $z=z\left(t\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $z\left(0\right)=z_{1}\left(1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z\left(1\right)=z_{2}\left(1\right)$
+\end_inset
+
+.
+ Применив к кривой 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ результат задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:when-sqrt-of-start-and-finish-of-closed-curve-is-same-by-continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим, что значения 
+\begin_inset Formula $\sqrt{z\left(0\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt{z\left(1\right)}$
+\end_inset
+
+, определённое по непрерывности, совпадают тогда и только тогда, когда кривая
+ 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ обходит вокруг 
+\begin_inset Formula $z=0$
+\end_inset
+
+ чётное число раз.
+ Но равенство 
+\begin_inset Formula $\sqrt{z\left(0\right)}=\sqrt{z\left(1\right)}$
+\end_inset
+
+ эквивалентно, как было показано выше, равенству 
+\begin_inset Formula $\sqrt{z_{1}\left(1\right)}=\sqrt{z_{2}\left(1\right)}$
+\end_inset
+
+.
+ Утверждение доказано.
+\end_layout
+
+\begin_layout Standard
+Из утверждения последней задачи следует, в частности, что если кривая 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ обходит вокруг точки 
+\begin_inset Formula $0$
+\end_inset
+
+ раз вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, то значения функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ в конечных точках кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, определённые по непрерывности, будут одинаковы, если одинаковы значения
+ в начальных точках.
+\end_layout
+
+\begin_layout Standard
+Таким образом, для того чтобы выделить однозначные непрерывные ветви функции
+ 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, достаточно сделать так, чтобы кривая 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ не могла обойти ни разу вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Для этого достаточно провести какой-нибудь разрез из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в бесконечность и запретить кривым пересекать этот разрез.
+ Именно так мы и поступили выше, проведя разрез из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ по отрицательной части действительной оси.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sqrt-continuous-branches"
+
+\end_inset
+
+Если после проведения разреза зафиксировать в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ одно из значений 
+\begin_inset Formula $w_{0}^{\prime}=\sqrt{z_{0}}$
+\end_inset
+
+, а значение в любой другой точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ определить по непрерывности вдоль какой-нибудь кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, идущей из 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и не проходящей через разрез, то на всей плоскости, исключая разрез, определитс
+я некоторая однозначная непрерывная ветвь 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+ функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+ Если в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ зафиксировать другое значение 
+\begin_inset Formula $w_{0}^{\prime\prime}$
+\end_inset
+
+, то этим определится другая ветвь 
+\begin_inset Formula $\underset{2}{\sqrt{z}}$
+\end_inset
+
+ функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что для любой точки 
+\begin_inset Formula $z$
+\end_inset
+
+, не лежащей на разрезе, 
+\begin_inset Formula $\underset{1}{\sqrt{z}}\neq\underset{2}{\sqrt{z}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Проведём доказательство от противного.
+ Выберем произвольную точку 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Пусть оказалось, что при продолжении по непрерывности по некоторой кривой
+ 
+\begin_inset Formula $C$
+\end_inset
+
+, не проходящей через разрез и соединяющей точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, выполняется равенство 
+\begin_inset Formula $\underset{1}{\sqrt{z_{1}}}=\underset{2}{\sqrt{z_{1}}}$
+\end_inset
+
+.
+ Рассмотрим кривую 
+\begin_inset Formula $C^{-1}$
+\end_inset
+
+, которая, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:curve-inverse-traversal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, не проходит через разрез и соединяет точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Так как эта кривая является непрерывной и не пересекает разрез (а значит,
+ не проходит через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+)
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Забыл указать это в первой редакции
+\end_layout
+
+\end_inset
+
+, то продолжая функции 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\underset{2}{\sqrt{z}}$
+\end_inset
+
+, получим, что 
+\begin_inset Formula $\underset{1}{\sqrt{z_{0}}}=\underset{2}{\sqrt{z_{0}}}$
+\end_inset
+
+.
+ Но, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sqrt-continuous-branches"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, непрерывные ветви получаются при выборе разных значений для 
+\begin_inset Formula $\underset{1}{\sqrt{z_{0}}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\underset{2}{\sqrt{z_{0}}}$
+\end_inset
+
+.
+ Данное противоречие означает, что предположение было неправильным и для
+ любых 
+\begin_inset Formula $z$
+\end_inset
+
+, не принадлежащих разрезу, 
+\begin_inset Formula $\underset{1}{\sqrt{z}}\neq\underset{2}{\sqrt{z}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:continuous-branches-of-sqrt-does-not-depends-of-starting-point"
+
+\end_inset
+
+Зафиксируем в некоторой точке 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+ значение 
+\begin_inset Formula $w^{\prime}=\underset{1}{\sqrt{z^{\prime}}}$
+\end_inset
+
+ и определим значения функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ в остальных точках плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ (исключая разрез) по непрерывности вдоль кривых, идущих из точки 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+ и не проходящих через разрез.
+ Доказать, что получающаяся однозначная непрерывная ветвь, совпадает с функцией
+ 
+\begin_inset Formula $\underset{1}{\sqrt{z}}$
+\end_inset
+
+ (определённой из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольную непрерывную кривую 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+, не пересекающую разрез и соединяющую точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+.
+ Тогда любую непрерывную кривую 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, не пересекающую разрез и соединяющую точки 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, можно дополнить до непрерывной кривой, не пересекающую разрез и соединяющей
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+: нужно рассмотреть кривую 
+\begin_inset Formula $C_{1}C_{2}$
+\end_inset
+
+.
+ Таким образом, определение непрерывных ветвей 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ по непрерывности из точки 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+ свелось к определению непрерывных ветвей 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ вдоль непрерывных кривых, проходящих через точку 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+.
+ Так как значения 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, определённое по непрерывности вдоль всех непрерывных кривых, соединяющих
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ при фиксированном значении 
+\begin_inset Formula $\sqrt{z_{0}}$
+\end_inset
+
+, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:when-sqrt-of-finsih-of-two-curves-are-same-by-continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, равны друг другу, а наложение дополнительного условия только ограничивает
+ круг таких кривых, то требуемое утверждение доказано.
+\end_layout
+
+\begin_layout Standard
+Из результатов задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:continuous-branches-of-sqrt-does-not-depends-of-starting-point"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что выбирая в качестве начальной точки при выделении однозначных
+ непрерывных ветвей различные точки плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, мы будем получать один и тот же набор однозначных непрерывных ветвей,
+ который зависит, таким образом, только от того, как проведены разрезы.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:if-curve-crosses-cut-sqrt-change-continuous-branch"
+
+\end_inset
+
+Пусть точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ не лежат на разрезе и пусть кривая 
+\begin_inset Formula $C$
+\end_inset
+
+, соединяющая точку 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ с 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, один раз пересекает разрез 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:curve-crossing-cut"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Пусть выбрано значение 
+\begin_inset Formula $w_{0}=\sqrt{z_{0}}$
+\end_inset
+
+ и по непрерывности вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ определено значение 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+.
+ Доказать, что значения 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ соответствуют разным ветвям функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-287.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:curve-crossing-cut"
+
+\end_inset
+
+Кривая, пересекающая разрез.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Проведём из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ кривую 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, не пересекающую разрез и определим по непрерывности вдоль этой кривой
+ значение 
+\begin_inset Formula $w_{2}=\sqrt{z_{1}}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ не пересекает разрез, то 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+ принадлежат одной ветви функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+ С другой стороны, так как кривая 
+\begin_inset Formula $C^{-1}C_{2}$
+\end_inset
+
+ обходит точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+ один раз, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:when-sqrt-of-finsih-of-two-curves-are-same-by-continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $w_{1}\neq w_{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+ принадлежат разным ветвям 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, а значит и 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ принадлежат разным ветвям этой функции.
+\end_layout
+
+\begin_layout Standard
+Таким образом, пересекая разрез, мы с одной ветви функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ переходим на другую ветвь, то есть ветви соединяются между собой именно
+ так, как мы соединили их раньше (то есть как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sqrt-rieman-surface"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ При этом образуется риманова поверхность функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Будем говорить, что некоторое свойство выполняется при обходе вокруг точки
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, если оно выполняется при однократном обходе против часовой стрелки по
+ всем окружностям с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, имеющим достаточно малый радиус
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Более строго это означает следующее: найдётся такое действительное число
+ 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, что указанное свойство выполняется при обходе по всем окружностям с центром
+ в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, радиус которых меньше 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Доказать, что при обходе вокруг точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ мы останемся на том же листе римановой поверхности функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, если 
+\begin_inset Formula $z_{0}\neq0$
+\end_inset
+
+, и переходим на другой лист, если 
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, тогда любая окружность с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ пересекает разрез, причём один раз.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:if-curve-crosses-cut-sqrt-change-continuous-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в этом случае мы окажемся на другой непрерывной ветви функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, то есть на другом листе римановой поверхности данной функции.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $z_{0}=x_{0}+iy_{0}\neq0$
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula $\delta=\frac{1}{2}\left|y_{0}\right|$
+\end_inset
+
+, тогда любая окружность с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и радиусом меньше 
+\begin_inset Formula $\delta$
+\end_inset
+
+, не будет пересекать разрез и не будет охватывать точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Тогда, по определению непрерывной ветви функции 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sqrt-continuous-branches"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, после обхода по любой такой окружности, мы вернёмся к тому же значению
+ 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, то есть останемся на том же листе римановой поверхности данной функции.
+\end_layout
+
+\begin_layout Standard
+Следующее понятие очень важно для дальнейшего.
+\end_layout
+
+\begin_layout Definition
+Точки, при обходе которых может происходить переход с одних листов на другие
+ (то есть изменяется значение функции), называются 
+\emph on
+точками разветвления
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+В математической литературе встречаются два названия этого понятия — точка
+ разветвления и точка ветвления.
+\end_layout
+
+\end_inset
+
+
+\emph default
+ данной многозначной функции.
+\end_layout
+
+\begin_layout Standard
+Риманову поверхность функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ можно изобразить в виде схемы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme-of-the-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Эта схема показывает, что риманова поверхность функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ имеет два листа, что точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+ является точку разветвления функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ и что при обходе вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ мы с любого листа переходим на противоположный лист.
+ При этом стрелки в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ показывают переходы с листа на лист не только при обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, но и при пересечении в любом месте разреза, идущего из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в бесконечность.
+ Ниже мы увидим, что такая связь между точками разветвления и разрезами,
+ проведёнными из них, не случайна.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/scheme-of-the-rieman-surface-of-sqrt.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:scheme-of-the-rieman-surface-of-sqrt"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В дальнейшем мы в основном будем изображать не саму риманову поверхность
+ некоторой многозначной функции, а её схему.
 \end_layout
 
 \begin_layout Standard
