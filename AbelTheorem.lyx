@@ -63407,7 +63407,7 @@ noprefix "false"
 \begin_inset Formula $z=0$
 \end_inset
 
- также меняется на противоложное, поэтому в данном случае количество обходов
+ также меняется на противоположное, поэтому в данном случае количество обходов
  равно 
 \begin_inset Formula $-k$
 \end_inset
@@ -70622,6 +70622,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:branching-points"
+
+\end_inset
+
 Точки, при обходе которых может происходить переход с одних листов на другие
  (то есть изменяется значение функции), называются 
 \emph on
@@ -70745,6 +70751,284 @@ name "fig:scheme-of-the-rieman-surface-of-sqrt"
 \begin_layout Standard
 В дальнейшем мы в основном будем изображать не саму риманову поверхность
  некоторой многозначной функции, а её схему.
+\end_layout
+
+\begin_layout Section
+Римановы поверхности более сложных функций
+\end_layout
+
+\begin_layout Standard
+Рассмотрим сначала многозначную функцию 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:variation-of-argument-of-root-3"
+
+\end_inset
+
+Пусть изменение аргумента вдоль кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ — непрерывный образ кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+.
+ Найти изменение аргумента вдоль кривой 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим изменение аргумента вдоль 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ как 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z\left(t\right)=\left[w_{0}\left(t\right)\right]^{3}$
+\end_inset
+
+, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi=3\varphi_{0}$
+\end_inset
+
+, откуда 
+\begin_inset Formula 
+\[
+\varphi_{0}=\frac{\varphi}{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти точки разветвления функции 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branching-points"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, точка разветвления — это точка, при обходе которой может происходить переход
+ с одного листа на другие.
+ Так как для любого 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+ существует три возможных значения корня (было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), то у функции 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+ будет три листа.
+ В той же задаче было показано, что значения 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+ имеют одинаковый модуль, а их аргументы отличаются (при 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+) на 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+При обходе точки 
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+ по окружности изменение аргумента равно, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Пусть эта окружность задаётся параметрическим уравнением 
+\begin_inset Formula $z=z\left(t\right)$
+\end_inset
+
+, тогда изменение аргумента вдоль кривой 
+\begin_inset Formula $\sqrt[3]{z\left(t\right)}$
+\end_inset
+
+ , как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, равно 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+, то есть соответствует переходу от одного значения корня к другому.
+ Таким образом, точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+ является точкой ветвления.
+\end_layout
+
+\begin_layout Solution
+Если же 
+\begin_inset Formula $z_{0}\neq0$
+\end_inset
+
+, то можно выбрать окружность настолько малого радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+ (например 
+\begin_inset Formula $r=\frac{\left|z\right|}{2}$
+\end_inset
+
+), чтобы окружность радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ не охватывала точку 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Тогда число обходов рассматриваемой окружности вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно нулю, а значит нулю равно и изменение аргумента.
+ Снова воспользовавшись результатом задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим, что изменение аргумента 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+ при обходе по такой окружности также равно нулю, то есть значение корня
+ не изменяется, а значит мы остались на том же листе.
+\end_layout
+
+\begin_layout Solution
+Итак, точкой ветвления функции 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+ является только точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать этот раздел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доделать книгу
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
