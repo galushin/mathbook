@@ -71225,6 +71225,136 @@ f_{3}\left(-i\right)=\sqrt[3]{1}\left(\cos\left(\frac{\pi}{2}+\frac{4\pi}{3}\rig
 
 \end_layout
 
+\begin_layout Problem
+Построить риманову поверхность и её схему для функции 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $\sqrt[n]{z\left(0\right)}$
+\end_inset
+
+.
+ Доказать, что имеется хотя бы один непрерывный образ кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)=\sqrt[n]{z}$
+\end_inset
+
+, начинающийся в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть изменение аргумента вдоль кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ — непрерывный образ кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{z}$
+\end_inset
+
+.
+ Найти изменение аргумента вдоль кривой 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти точки разветвления функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
