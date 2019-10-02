@@ -71234,11 +71234,38 @@ f_{3}\left(-i\right)=\sqrt[3]{1}\left(\cos\left(\frac{\pi}{2}+\frac{4\pi}{3}\rig
 \end_layout
 
 \begin_layout Solution
+Так как при каждом фиксированном 
+\begin_inset Formula $z$
+\end_inset
+
+, кроме 
+\begin_inset Formula $z=0$
+\end_inset
+
+, у 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+ имеется три значения, то риманова поверхность будет состоять из трёх листов.
+ Проведём разрез из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ вдоль отрицательной части действительной оси.
+ Левый край разреза первого листа соединим с правым краем разреза второго
+ листа, затем соединим левый край разреза второго листа с правым краем разреза
+ третьего листа.
+ Наконец, левый край третьего листа соединим с правым краем первого листа.
+ 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Взять картинки из ответов
 \end_layout
 
 \end_inset
