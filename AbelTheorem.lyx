@@ -71349,12 +71349,39 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Обозначим изменение аргумента вдоль 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ как 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z\left(t\right)=\left[w_{0}\left(t\right)\right]^{n}$
+\end_inset
+
+, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi=n\cdot\varphi_{0}$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula 
+\[
+\varphi_{0}=\frac{\varphi}{n}.
+\]
 
 \end_inset
 
