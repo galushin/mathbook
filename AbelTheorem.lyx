@@ -59465,7 +59465,7 @@ name "prob:ratio-of-continuous-functions-is-continuos"
 \end_inset
 
  и 
-\begin_inset Formula $g\left(z\right)\neq0$
+\begin_inset Formula $g\left(z_{0}\right)\neq0$
 \end_inset
 
 .
@@ -59990,6 +59990,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:sinus-and-cosinus-are-continuous"
+
+\end_inset
+
 Доказать, что функции действительного аргумента 
 \begin_inset Formula $f\left(x\right)=\sin x$
 \end_inset
@@ -60153,6 +60159,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:algebraic-root-is-continuous"
+
+\end_inset
+
 Рассмотрим при всех действительных значениях 
 \begin_inset Formula $x\ge0$
 \end_inset
@@ -71307,16 +71319,254 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+Запишем 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ в тригонометрической форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "trigonometric-representation-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+z\left(t\right)=r\left(t\right)\left[\cos\varphi\left(t\right)+i\sin\varphi\left(t\right)\right].
+\]
+
+\end_inset
+
+Функции 
+\begin_inset Formula $r\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ являются непрерывными.
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Может быть вынести доказательство этого в отдельную задачу?
 \end_layout
 
 \end_inset
 
+ Действительно, 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
 
+ можно выбрать непрерывным по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:continuous-curve-has-continuous-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula 
+\[
+\left|\cos\varphi\left(t\right)+i\sin\varphi\left(t\right)\right|=\cos^{2}\varphi\left(t\right)+\sin^{2}\varphi\left(t\right)=1,
+\]
+
+\end_inset
+
+то 
+\begin_inset Formula $\cos\varphi\left(t\right)+i\sin\varphi\left(t\right)\neq0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+r\left(t\right)=\frac{z\left(t\right)}{\cos\varphi\left(t\right)+i\sin\varphi\left(t\right)}
+\]
+
+\end_inset
+
+является непрерывным как частное двух непрерывных функций (смотрите задачу
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:ratio-of-continuous-functions-is-continuos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Тогда, по формуле корня в тригонометрической форме, полученной в задаче
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+w\left(t\right)=\sqrt[n]{z\left(t\right)}=\sqrt[n]{r\left(t\right)}\cdot\left[\cos\psi\left(t\right)+i\cos\psi\left(t\right)\right],
+\]
+
+\end_inset
+
+где в правой части 
+\begin_inset Formula $\sqrt[n]{r\left(t\right)}$
+\end_inset
+
+ обозначает вещественное положительное значение корня и 
+\begin_inset Formula 
+\[
+\psi\left(t\right)=\frac{\varphi\left(t\right)}{n}+\frac{2\pi k}{n},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $k$
+\end_inset
+
+ — целое число, которое следует выбрать таким образом, чтобы 
+\begin_inset Formula $w_{0}=w\left(0\right)=\sqrt[n]{z\left(0\right)}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+w\left(0\right)=\sqrt[n]{r\left(t\right)}\cdot\left[\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n}\right]=w_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $r\left(t\right)$
+\end_inset
+
+ — непрерывная функция, то, как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:algebraic-root-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:superposition-of-continuous-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\sqrt[n]{r\left(t\right)}$
+\end_inset
+
+ является непрерывной функцией.
+ Так как 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ — непрерывная функция по доказанному выше, а постоянные величины — непрерывны
+ по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:constant-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\psi\left(t\right)=\frac{\varphi\left(t\right)}{n}+\frac{2\pi k}{n}$
+\end_inset
+
+ непрерывна по доказанному в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:ratio-of-continuous-functions-is-continuos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, следовательно, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sinus-and-cosinus-are-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\cos\psi\left(t\right)+i\sin\psi\left(t\right)$
+\end_inset
+
+ — непрерывная функция.
+ Наконец, так как 
+\begin_inset Formula $\sqrt[n]{r\left(t\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $\cos\psi\left(t\right)+i\sin\psi\left(t\right)$
+\end_inset
+
+ непрерывны, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, непрерывна 
+\begin_inset Formula $w\left(t\right)=\sqrt[n]{r\left(t\right)}\left[\cos\psi\left(t\right)+i\sin\psi\left(t\right)\right]$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
