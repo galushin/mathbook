@@ -62458,6 +62458,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-on-variation-of-argument-of-curve"
+
+\end_inset
+
 Чему равно изменение аргумента вдоль кривых со следующими параметрическими
  уравнениями:
 \end_layout
@@ -63404,7 +63410,7 @@ noprefix "false"
 
 .
  Это преобразование оставляет начальную точку обхода без изменений, но меняет
- направление обхода на противоложное.
+ направление обхода на противоположное.
  Как было показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -71570,6 +71576,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+
+\end_inset
+
 Пусть изменение аргумента вдоль кривой 
 \begin_inset Formula $z\left(t\right)$
 \end_inset
@@ -71647,16 +71659,163 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим точку 
+\begin_inset Formula $z_{0}=0$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ и окружность 
+\begin_inset Formula $C$
+\end_inset
+
+ произвольного радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+, с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, проходимую против часовой стрелки.
+ В этом случае, как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-curves-given-by-parametric-equation"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+ (пункт е) и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-on-variation-of-argument-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+(пункт б), изменение аргумента вдоль 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Тогда изменение аргумента вдоль 
+\begin_inset Formula $\sqrt[n]{C}$
+\end_inset
+
+, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, равно 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+, то есть при 
+\begin_inset Formula $n>1$
+\end_inset
+
+ значение 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ изменится при обходе вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если же 
+\begin_inset Formula $z_{0}\neq0$
+\end_inset
+
+ то можно выбрать радиус 
+\begin_inset Formula $R$
+\end_inset
+
+ окружности 
+\begin_inset Formula $C$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ так, что окружность не будет охватывать точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, таким образом, изменение аргумента вдоль 
+\begin_inset Formula $C$
+\end_inset
+
+ будет равно 
+\begin_inset Formula $0$
+\end_inset
+
+, а следовательно, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента вдоль 
+\begin_inset Formula $\sqrt[n]{C}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{0}{n}=0$
+\end_inset
+
+, поэтому при обходе 
+\begin_inset Formula $C$
+\end_inset
+
+ значение 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ не изменится.
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $z=0$
+\end_inset
+
+ — единственная точка разветвления функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branching-points"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
