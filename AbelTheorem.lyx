@@ -71818,6 +71818,142 @@ noprefix "false"
 .
 \end_layout
 
+\begin_layout Solution
+Ранее мы ввели обозначение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "roots-n-from-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varepsilon_{n}=\cos\frac{2\pi}{n}+i\sin\frac{2\pi}{n}.
+\]
+
+\end_inset
+
+ Там же рассмотрены некоторые свойства этого комплексного числа.
+\end_layout
+
+\begin_layout Problem
+Пусть кривая 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ не проходит через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ — один из непрерывных образов кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{z}$
+\end_inset
+
+.
+ Найти все непрерывные образы кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $w_{j}\left(t\right)$
+\end_inset
+
+ — некоторый образ кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{z}.$
+\end_inset
+
+ Тогда 
+\begin_inset Formula $w_{j}^{n}\left(t\right)=z\left(t\right)$
+\end_inset
+
+ и, по условию задачи, 
+\begin_inset Formula $w_{0}^{n}\left(t\right)=z\left(t\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z\left(t\right)\neq0$
+\end_inset
+
+ по условию задачи, то мы можем разделить одно из этих равенств на другое:
+ 
+\begin_inset Formula 
+\[
+\left[\frac{w_{j}\left(t\right)}{w_{0}\left(t\right)}\right]^{n}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:values-of-root-n-from-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, корни степени 
+\begin_inset Formula $n$
+\end_inset
+
+ из единицы могут быть записаны в виде 
+\begin_inset Formula $\varepsilon_{n}^{j}$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,\dots,n-1$
+\end_inset
+
+.
+ Таким образом,
+\begin_inset Formula 
+\[
+\frac{w_{j}\left(t\right)}{w_{0}\left(t\right)}=\varepsilon_{n}^{j}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+w_{j}\left(t\right)=\varepsilon_{n}^{j}w_{0}\left(t\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
