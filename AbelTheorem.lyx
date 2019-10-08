@@ -71841,6 +71841,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:expressing-images-of-root-n-of-given-curve-from-some-image"
+
+\end_inset
+
 Пусть кривая 
 \begin_inset Formula $z\left(t\right)$
 \end_inset
@@ -71947,6 +71953,201 @@ noprefix "false"
 \begin_inset Formula 
 \[
 w_{j}\left(t\right)=\varepsilon_{n}^{j}w_{0}\left(t\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть две непрерывные кривые 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ из некоторой точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в некоторую точку 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Так же, как для функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:when-sqrt-of-finsih-of-two-curves-are-same-by-continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, доказывается, что если кривая 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ ни разу не обходит вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, то функция 
+\begin_inset Formula $w=\sqrt[n]{z}$
+\end_inset
+
+ определяется по непрерывности одинаково вдоль кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+.
+ Поэтому, так же как для функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, если мы проведём какой-нибудь разрез из точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в бесконечность, то функция 
+\begin_inset Formula $w=\sqrt[n]{z}$
+\end_inset
+
+ распадается на непрерывные однозначные ветви.
+\end_layout
+
+\begin_layout Problem
+Проведём какой-либо разрез из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в 
+\begin_inset Formula $\infty$
+\end_inset
+
+, не проходящий через точку 
+\begin_inset Formula $z=1$
+\end_inset
+
+, и определим непрерывные однозначные ветви функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ условиями: 
+\begin_inset Formula $f_{j}\left(1\right)=\varepsilon_{n}^{j}$
+\end_inset
+
+, где 
+\begin_inset Formula $j$
+\end_inset
+
+ пробегает целые значения от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $n-1$
+\end_inset
+
+.
+ Как выражаются ветви 
+\begin_inset Formula $f_{j}\left(z\right)$
+\end_inset
+
+ через 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Кривые 
+\begin_inset Formula $f_{j}\left(z\right)$
+\end_inset
+
+ не проходят через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и все являются непрерывными по условию задачи.
+ Поэтому, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:expressing-images-of-root-n-of-given-curve-from-some-image"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{equation}
+f_{j}\left(z\right)=f_{0}\left(z\right)\cdot\varepsilon_{n}^{k_{j}}\label{eq:problem-297-undefined-coefficient}
+\end{equation}
+
+\end_inset
+
+, где 
+\begin_inset Formula $k_{j}$
+\end_inset
+
+ — целые числа от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $n-1$
+\end_inset
+
+, которые нужно определить таким образом, чтобы выполнялись условия 
+\begin_inset Formula $f_{j}\left(1\right)=\text{\ensuremath{\varepsilon_{n}^{j}}}$
+\end_inset
+
+.
+ Положим в выражении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:expressing-images-of-root-n-of-given-curve-from-some-image"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $z=1$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\varepsilon_{n}^{j}=\varepsilon_{n}^{0}\cdot\varepsilon_{n}^{k_{j}}=\varepsilon_{n}^{k_{j}},
+\]
+
+\end_inset
+
+ таким образом, 
+\begin_inset Formula $k_{j}=j$
+\end_inset
+
+, и окончательно получаем 
+\begin_inset Formula 
+\[
+f_{j}\left(z\right)=f_{0}\left(z\right)\cdot\varepsilon_{n}^{j}.
 \]
 
 \end_inset
