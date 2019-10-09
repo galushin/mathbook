@@ -72225,6 +72225,81 @@ status open
 
 \end_layout
 
+\begin_layout Problem
+Для функции 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+ найти точки разветвления и построить схему римановой поверхности.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти точки разветвления и построить схему римановой поверхности для функции
+ 
+\begin_inset Formula $\sqrt[n]{z+i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В тех случаях, когда многозначная функция будет иметь несколько точек разветвлен
+ия, мы будем для выделения однозначных ветвей проводить разрезы из каждой
+ точки разветвления в бесконечность по каким-либо непересекающимся линиям.
+\end_layout
+
+\begin_layout Standard
+При этом схема римановой поверхности данной функции может существенно зависеть
+ от того, по каким именно линиям проведены разрезы из точек разветвления
+ в бесконечность (соответствующий пример будет рассмотрен ниже 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылки на задачи 327 и 328
+\end_layout
+
+\end_inset
+
+).
+ В тех случаях, когда такая ситуация имеет место, мы будем указывать, как
+ проводятся разрезы.
+ Если же это не существенно, то указывать их не будем.
+\end_layout
+
+\begin_layout Standard
+Схемы римановой поверхностей, построенные читателем при решении предлагаемых
+ ниже задач, могут отличаться от схем, приведённых в решениях, за счёт различной
+ нумерации листов.
+ При соответствующей перенумерации листов эти схемы должны совпадать.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
