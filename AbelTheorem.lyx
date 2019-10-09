@@ -72096,12 +72096,12 @@ noprefix "false"
 , 
 \begin_inset Formula 
 \begin{equation}
-f_{j}\left(z\right)=f_{0}\left(z\right)\cdot\varepsilon_{n}^{k_{j}}\label{eq:problem-297-undefined-coefficient}
+f_{j}\left(z\right)=f_{0}\left(z\right)\cdot\varepsilon_{n}^{k_{j}},\label{eq:problem-297-undefined-coefficient}
 \end{equation}
 
 \end_inset
 
-, где 
+где 
 \begin_inset Formula $k_{j}$
 \end_inset
 
@@ -72149,6 +72149,76 @@ noprefix "false"
 \[
 f_{j}\left(z\right)=f_{0}\left(z\right)\cdot\varepsilon_{n}^{j}.
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Построить схему римановой поверхности функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как при каждом фиксированном 
+\begin_inset Formula $z$
+\end_inset
+
+, кроме 
+\begin_inset Formula $z=0$
+\end_inset
+
+, у 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ имеется 
+\begin_inset Formula $n$
+\end_inset
+
+ различных значений, то риманова поверхность будет состоять из 
+\begin_inset Formula $n$
+\end_inset
+
+ листов.
+ Проведём разрез из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ вдоль отрицательной части действительной оси.
+ Левый край разреза на листе 
+\begin_inset Formula $j$
+\end_inset
+
+ соединим с правым краем разреза листа 
+\begin_inset Formula $j+1$
+\end_inset
+
+ (при 
+\begin_inset Formula $j=1,...n-1$
+\end_inset
+
+).
+ Наконец, левый край листа 
+\begin_inset Formula $n$
+\end_inset
+
+ соединим с правым краем первого листа.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Взять картинки из ответов
+\end_layout
 
 \end_inset
 
