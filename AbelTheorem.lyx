@@ -70666,6 +70666,12 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+
+\end_inset
+
 Риманову поверхность функции 
 \begin_inset Formula $w=\sqrt{z}$
 \end_inset
@@ -72234,11 +72240,81 @@ status open
 \end_layout
 
 \begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:connection-between-geometric-interpretations-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, преобразованию 
+\begin_inset Formula $z\to z-1$
+\end_inset
+
+ соответствует сдвигу комплексной плоскости на вектор, соответствующий комплексн
+ому числу 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Так как точкой разветвления функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ является только точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому точкой разветвления функции 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+ является точка 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ Аналогично, схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+ получается из схемы римановой поверхности 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, показанной на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme-of-the-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ сдвигом на вектор, соответствующий числу 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Добавить рисунок из ответов
 \end_layout
 
 \end_inset
@@ -72256,11 +72332,81 @@ status open
 \end_layout
 
 \begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:connection-between-geometric-interpretations-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, преобразованию 
+\begin_inset Formula $z\to z+i$
+\end_inset
+
+ соответствует сдвигу комплексной плоскости на вектор, соответствующий комплексн
+ому числу 
+\begin_inset Formula $-i$
+\end_inset
+
+.
+ Так как точкой разветвления функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ является только точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому точкой разветвления функции 
+\begin_inset Formula $\sqrt[n]{z+i}$
+\end_inset
+
+ является точка 
+\begin_inset Formula $z=-i$
+\end_inset
+
+.
+ Аналогично, схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[n]{z+i}$
+\end_inset
+
+ получается из схемы римановой поверхности 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+, показанной на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme-of-the-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ сдвигом на вектор, соответствующий числу 
+\begin_inset Formula $z=-i$
+\end_inset
+
+.
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Добавить рисунок из ответов
 \end_layout
 
 \end_inset
