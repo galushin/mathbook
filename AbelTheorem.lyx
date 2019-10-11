@@ -71298,6 +71298,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:there-exists-continuous-image-of-continuous-curve-by-root-n"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $C$
 \end_inset
@@ -72444,6 +72450,199 @@ status open
  ниже задач, могут отличаться от схем, приведённых в решениях, за счёт различной
  нумерации листов.
  При соответствующей перенумерации листов эти схемы должны совпадать.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ — однозначная непрерывная функция и 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, начинающаяся в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Доказать, что существует хотя бы один непрерывный образ кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, начинающийся в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим кривую 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+, являющуюся образом кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Эта кривая является непрерывной и начинается в точке 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:there-exists-continuous-image-of-continuous-curve-by-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует непрерывный образ 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ кривой 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+, начинающийся в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — это одно из значений 
+\begin_inset Formula $\sqrt[n]{f\left(z_{0}\right)}$
+\end_inset
+
+, то 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ будет непрерывным образом кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, начинающимся в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ — однозначная непрерывная функция и 
+\begin_inset Formula $w_{0}\left(z\right)$
+\end_inset
+
+ — одна из непрерывных однозначных ветвей (при соответствующих разрезах)
+ функции 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Найти все однозначные непрерывные функции (при тех же разрезах) функции
+ 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $w_{j}\left(z\right)$
+\end_inset
+
+ — ещё какая-то непрерывная однозначная ветвь функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Тогда, если 
+\begin_inset Formula $f\left(z\right)\neq0$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left[\frac{w_{j}\left(z\right)}{w_{0}\left(z\right)}\right]^{n}=\frac{f\left(z\right)}{f\left(z\right)}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, так как 
+\begin_inset Formula $\frac{w_{j}\left(z\right)}{w_{0}\left(z\right)}=\sqrt[n]{1}$
+\end_inset
+
+, то, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "roots-n-from-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+w_{j}\left(z\right)=w_{0}\left(z\right)\cdot\varepsilon_{n}^{j},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $j=0,\dots,n-1$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
