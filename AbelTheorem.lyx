@@ -72568,6 +72568,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:all-branches-of-root-n-from-function-from-one-branch"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $f\left(z\right)$
 \end_inset
@@ -72643,6 +72649,162 @@ w_{j}\left(z\right)=w_{0}\left(z\right)\cdot\varepsilon_{n}^{j},
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Problem
+Найти все точки разветвления и построить схемы римановых поверхностей для
+ функций а)
+\begin_inset Formula $\sqrt{z\left(z-i\right)}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt{z^{2}+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Точками разветвления могут быть только такие 
+\begin_inset Formula $z$
+\end_inset
+
+, что подкоренное выражение равно нулю.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-from-function-from-one-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у указанных функций будет существовать две непрерывные однозначные ветви,
+ поэтому в их римановых поверхностей будет два листа, а левые края разрезов
+ одного листа нужно соединять с правыми краями соответствующих разрезов
+ другого листа.
+\end_layout
+
+\begin_layout Solution
+В случае а) такими точками будут решения уравнения 
+\begin_inset Formula $z\left(z-i\right)=0$
+\end_inset
+
+, то есть, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:in-field-there-are-no-divisors-of-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и 
+\begin_inset Formula $z=i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+В случае б) точками разветвления будут комплексные корни уравнения 
+\begin_inset Formula $z^{2}+1=0$
+\end_inset
+
+ или 
+\begin_inset Formula $z^{2}=-1$
+\end_inset
+
+.
+ Корнями этого уравнения будут 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $z=i$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Взять рисунки из решений
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Построить схемы римановых поверхностей следующих функций: а) 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt[3]{\left(z-1\right)^{2}z}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt[3]{\left(z^{2}+1\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Выделить непрерывные однозначные ветви и построить схему римановой поверхности
+ для функции 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
