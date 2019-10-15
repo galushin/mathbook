@@ -72687,7 +72687,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-В случае а) такими точками будут решения уравнения 
+В случае а) точками разветвления будут решения уравнения 
 \begin_inset Formula $z\left(z-i\right)=0$
 \end_inset
 
@@ -72722,7 +72722,7 @@ noprefix "false"
 \end_inset
 
 .
- Корнями этого уравнения будут 
+ Корнями этого уравнения будут, как показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "prob:square-root-of-reals-in-field-of-complex-numbers"
@@ -72732,7 +72732,7 @@ noprefix "false"
 
 \end_inset
 
- 
+, 
 \begin_inset Formula $z=i$
 \end_inset
 
@@ -72773,11 +72773,186 @@ status open
 \end_layout
 
 \begin_layout Solution
+Точками разветвления могут быть только такие 
+\begin_inset Formula $z$
+\end_inset
+
+, что подкоренное выражение равно нулю.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-from-function-from-one-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у указанных функций будет существовать по три непрерывные однозначные
+ ветви.
+\end_layout
+
+\begin_layout Solution
+В случае a) точками разветвления будут корни уравнения 
+\begin_inset Formula $z^{2}-1=0$
+\end_inset
+
+ или 
+\begin_inset Formula $z^{2}=1$
+\end_inset
+
+.
+ Корнями этого уравнения будут, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-1$
+\end_inset
+
+.
+ При обходе каждой точки разветвления аргумент значения будет изменяться
+ на 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+, поэтому левый край разрезов первого лист нужно соединить с правым краем
+ соответствующих разрезов второго листа, левый край разрезов второго лист
+ нужно соединить с правым краем соответствующих разрезов третьего листа,
+ а левый край разрезов третьего листа нужно соединить с правым краем соответству
+ющих разрезов первого листа.
+\end_layout
+
+\begin_layout Solution
+В случае б) точками разветвления будут корни уравнения 
+\begin_inset Formula $\left(z-1\right)^{2}z=0$
+\end_inset
+
+, то есть, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:in-field-there-are-no-divisors-of-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ При обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ аргумент будет изменяться на 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+, поэтому при пересечении против часовой стрелки разреза, выходящего из
+ точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, с первого листа будем переходить на второй, со второго — на третий, а
+ с третьего — на первый.
+ При обходе же вокруг точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ аргумент изменяется на 
+\begin_inset Formula $\frac{4\pi}{3}$
+\end_inset
+
+ (в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ показано, что изменение аргумента 
+\begin_inset Formula $z\left(t\right)^{2}$
+\end_inset
+
+ в двое больше, чем изменение аргумента 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+), поэтому при пересечении против часовой стрелки разреза, выходящего из
+ точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+, с первого листа будем переходить на третий, с третьего — на второй, а
+ со второго — на первый.
+\end_layout
+
+\begin_layout Solution
+В случае в) точками разветвления будут корни уравнения 
+\begin_inset Formula $z^{2}+1=0$
+\end_inset
+
+ или 
+\begin_inset Formula $z^{2}=-1$
+\end_inset
+
+, то есть, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z=i$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-i$
+\end_inset
+
+.
+ При обходе каждой точки разветвления аргумент значения будет изменяться
+ на 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+, поэтому левый край разрезов первого лист нужно соединить с правым краем
+ соответствующих разрезов второго листа, левый край разрезов второго лист
+ нужно соединить с правым краем соответствующих разрезов третьего листа,
+ а левый край разрезов третьего листа нужно соединить с правым краем соответству
+ющих разрезов первого листа.
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Взять рисунки из решений
 \end_layout
 
 \end_inset
