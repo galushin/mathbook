@@ -63072,11 +63072,11 @@ name "fig:problem-256-d"
 \end_layout
 
 \begin_layout Solution
-г) определение проведём анлогично пункту в), получим 
+г) определение проведём аналогично пункту в), получим 
 \begin_inset Formula $0$
 \end_inset
 
- обхдов.
+ обходов.
 \end_layout
 
 \begin_layout Problem
@@ -63111,7 +63111,7 @@ status open
 
 \end_inset
 
-Пусть параметрическое уравение рассматриваемой кривой есть 
+Пусть параметрическое уравнение рассматриваемой кривой есть 
 \begin_inset Formula $z\left(t\right)$
 \end_inset
 
@@ -63126,7 +63126,7 @@ status open
 \end_inset
 
 .
- Выбор начальной точки обхода эквивалентет повороту кривой на угол, равный
+ Выбор начальной точки обхода эквивалентен повороту кривой на угол, равный
  аргументу этой кривой и взятый с обратным знаком.
  Как было показано в задаче 
 \begin_inset CommandInset ref
@@ -63203,7 +63203,7 @@ noprefix "false"
 \begin_inset Formula $\varphi_{2}\left(t\right)=\varphi\left(1-t\right)$
 \end_inset
 
-, тогда изменение аргумента вдоль противоложного направления кривой будет
+, тогда изменение аргумента вдоль противоположного направления кривой будет
  равно 
 \begin_inset Formula 
 \begin{multline*}
@@ -63218,7 +63218,7 @@ noprefix "false"
 
 \begin_layout Solution
 Таким образом, при изменении направления обхода кривой изменение аргумента
- меняет знак на противоложный, а значит изменяет знак и количество обходов
+ меняет знак на противоположный, а значит изменяет знак и количество обходов
  вокруг точки 
 \begin_inset Formula $z=0$
 \end_inset
@@ -72961,9 +72961,228 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:continuous-branches-of-sqrt-of-square-of-z"
+
+\end_inset
+
 Выделить непрерывные однозначные ветви и построить схему римановой поверхности
  для функции 
 \begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у квадратного корня в поле комплексных чисел имеется два возможных значения
+ за исключения квадратного корня из нуля.
+ Поэтому, кривые, проходящие через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, нужно исключить при нахождении однозначных непрерывных ветвей.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольную непрерывную кривую 
+\begin_inset Formula $C$
+\end_inset
+
+ на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, не проходящую через точку 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Пусть изменение аргумента 
+\begin_inset Formula $z$
+\end_inset
+
+ вдоль этой кривой равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Тогда изменение аргумента 
+\begin_inset Formula $z^{2}$
+\end_inset
+
+ вдоль этой же кривой равно, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $2\cdot\varphi$
+\end_inset
+
+.
+ А изменение аргумента 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ равно, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\frac{2\varphi}{2}=\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как модули и изменение аргументов 
+\begin_inset Formula $z$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ равны, то одно из однозначных непрерывных ветвей 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ является функция 
+\begin_inset Formula $f_{1}\left(z\right)=z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-from-function-from-one-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, второй однозначной непрерывной ветвью для 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ является 
+\begin_inset Formula $f_{2}\left(z\right)=f_{1}\left(z\right)\cdot\varepsilon_{2}=-f_{1}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Построим теперь риманову поверхность функции 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+.
+ Если кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ охватывает точку 
+\begin_inset Formula $0$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi=2\pi$
+\end_inset
+
+ и изменение аргумента 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ вдоль 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $C$
+\end_inset
+
+ не охватывает точку 
+\begin_inset Formula $0$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi=0$
+\end_inset
+
+ и изменение аргумента 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ вдоль 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Таким образом, в обоих случаях, при обходе произвольной точки значение
+ 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ не изменяется, то есть у 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ нет точек разветвления.
+\end_layout
+
+\begin_layout Solution
+Таким образом, разрезы на листах поверхности Римана производить нет необходимост
+и.
+ Единственный способ перейти с одного листа на другой, это пройти через
+ точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+ непосредственно.
+ Таким образом, листы римановой поверхности функции 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ соединяются только в точке 
+\begin_inset Formula $z=0$
 \end_inset
 
 .
@@ -72974,12 +73193,227 @@ status open
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Добавить картинку из решения
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Remark
+Из решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:continuous-branches-of-sqrt-of-square-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ мы получаем, что точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+ не является точкой разветвления функции 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+.
+ В то же время образы кривых, проходящих через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, определяются не однозначно.
+ Например, непрерывными образами ломаной 
+\begin_inset Formula $AOB$
+\end_inset
+
+ (как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:example-of-ambiguity-of-sqrt-of-square-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) при отображении 
+\begin_inset Formula $w=\sqrt{z^{2}}$
+\end_inset
+
+ являются ломаные 
+\begin_inset Formula $COD$
+\end_inset
+
+, 
+\begin_inset Formula $COF$
+\end_inset
+
+, 
+\begin_inset Formula $EOD$
+\end_inset
+
+ и 
+\begin_inset Formula $EOF$
+\end_inset
+
+.
+ Проходя через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, мы можем остаться на том же листе (ломаные 
+\begin_inset Formula $COD$
+\end_inset
+
+ и 
+\begin_inset Formula $EOF$
+\end_inset
+
+) или перейти на другой лист (ломанные 
+\begin_inset Formula $COF$
+\end_inset
+
+ и 
+\begin_inset Formula $EOD$
+\end_inset
+
+).
+ Риманов поверхность функции 
+\begin_inset Formula $w\left(z\right)=\sqrt{z^{2}}$
+\end_inset
+
+ имеет вид, показанный на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-of-sqrt-of-square-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-305-note.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:example-of-ambiguity-of-sqrt-of-square-of-z"
+
+\end_inset
+
+Пример неоднозначности непрерывных образов при отображении 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-of-sqrt-of-square-of-z.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-of-sqrt-of-square-of-z"
+
+\end_inset
+
+Риманова поверхность функции 
+\begin_inset Formula $w\left(z\right)=\sqrt{z^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Точки, в которых нарушается однозначность непрерывных образов кривых, но
+ которые не являются точками разветвления, мы будем называть 
+\emph on
+точками неоднозначности 
+\emph default
+данной функции.
+\end_layout
+
+\begin_layout Standard
+При построении схем римановых поверхностей из точек неоднозначности можно
+ не проводить разрезы в бесконечность, достаточно эти точки выколоть, то
+ есть не проводить через них кривые.
 \end_layout
 
 \begin_layout Standard
