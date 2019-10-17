@@ -73416,6 +73416,362 @@ name "fig:rieman-surface-of-sqrt-of-square-of-z"
  есть не проводить через них кривые.
 \end_layout
 
+\begin_layout Problem
+Построить схемы римановых поверхностей следующих функций: а) 
+\begin_inset Formula $\sqrt[4]{z^{2}+2}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt[4]{z^{2}}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt[4]{\left(z-1\right)^{2}\left(z+1\right)^{3}}$
+\end_inset
+
+, г) 
+\begin_inset Formula $\sqrt[4]{\left(z^{2}-1\right)^{3}\left(z+1\right)^{3}}$
+\end_inset
+
+, д) 
+\begin_inset Formula $\sqrt[4]{z\left(z^{3}-1\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-from-function-from-one-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у всех заданных функций будет 4 непрерывные однозначные ветви, а значит
+ их римановы поверхности будут состоять из 4 листов.
+ Точками разветвления или неоднозначности могут быть только такие 
+\begin_inset Formula $z$
+\end_inset
+
+, в которых подкоренное выражение равно нулю.
+ Пронумеруем листы от 1 до 4, где номер соответствует выбору одно из значений
+ 
+\begin_inset Formula $\varepsilon_{4}^{j}=\left(\cos\frac{\pi}{2}+i\sin\frac{\pi}{2}\right)^{j}$
+\end_inset
+
+ (смотри 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "roots-n-from-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+а) Из уравнения 
+\begin_inset Formula $z^{2}+2=0$
+\end_inset
+
+ получаем 
+\begin_inset Formula $z^{2}=-2$
+\end_inset
+
+ и, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z=i\sqrt{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-i\sqrt{2}$
+\end_inset
+
+.
+ При обходе этих точек по окружностям достаточно малого радиуса, аргумент
+ подкоренного выражения изменяется на 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, а значит аргумент корня изменяется, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, на 
+\begin_inset Formula $\frac{2\pi}{4}=\frac{\pi}{2}$
+\end_inset
+
+.
+ Таким образом, при обходе каждой из этих точек осуществляется переход с
+ первого листа на второй, со второго — на третий, с третьего — на четвёртый,
+ а с четвёртого на первый.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить картинку из решения
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Из уравнения 
+\begin_inset Formula $z^{2}=0$
+\end_inset
+
+ получаем 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ При обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ по окружности аргумент 
+\begin_inset Formula $\sqrt[4]{z^{2}}$
+\end_inset
+
+ изменяется на 
+\begin_inset Formula $\frac{1}{4}\cdot2\cdot2\pi=\pi$
+\end_inset
+
+.
+ Таким образом, при обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ осуществляется переход с первого листа на третий, с третьего — на первый,
+ со второго — на четвёртый, а с четвёртого — на второй.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить картинку из решения
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) Из уравнения 
+\begin_inset Formula $\left(z-1\right)^{2}\left(z+1\right)^{3}=0$
+\end_inset
+
+ получаем, что, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:in-field-there-are-no-divisors-of-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, точками разветвления или неоднозначности могут быть 
+\begin_inset Formula $z=1$
+\end_inset
+
+ или 
+\begin_inset Formula $z=-1$
+\end_inset
+
+.
+ При обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ значение аргумента изменяется на 
+\begin_inset Formula $\frac{1}{4}\cdot2\cdot2\pi=\pi$
+\end_inset
+
+.
+ Таким образом, при обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ осуществляется переход с первого листа на третий, с третьего — на первый,
+ со второго — на четвёртый, а с четвёртого — на второй.
+ При обходе точки 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ значение аргумента изменяется на 
+\begin_inset Formula $\frac{1}{4}\cdot3\cdot2\pi=3\frac{\pi}{2}$
+\end_inset
+
+.
+ Таким образом, при обходе точки 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ осуществляется переход с первого листа на четвёртый, со второго — на первый,
+ с третьего — на второй, а с четвёртого — на третий.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить картинку из решения
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+г) Так как 
+\begin_inset Formula $\left(z^{2}-1\right)^{3}\left(z+1\right)^{3}=\left[\left(z-1\right)\left(z+1\right)\right]^{3}\left(z+1\right)^{3}=\left(z-1\right)^{3}\left(z+1\right)^{6}$
+\end_inset
+
+ и точками разветвления или неоднозначности могут быть точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-1$
+\end_inset
+
+.
+ При обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ аргумент изменяется на 
+\begin_inset Formula $\frac{1}{4}\cdot3\cdot2\pi=3\frac{\pi}{2}$
+\end_inset
+
+.
+ Таким образом, при обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ осуществляется переход с первого листа на четвёртый, со второго — на первый,
+ с третьего — на второй, а с четвёртого — на третий.
+ При обходе точки 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ аргумент изменяется на 
+\begin_inset Formula $\frac{1}{4}\cdot6\cdot2\pi=3\pi$
+\end_inset
+
+, так как аргумент определён с точностью до величины, кратной 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, то можно считать, что изменение аргумента равно 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ Таким образом, при обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ осуществляется переход с первого листа на третий, с третьего — на первый,
+ со второго — на четвёртый, а с четвёртого — на второй.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить картинку из решения
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+д) Так как 
+\begin_inset Formula $z\left(z^{3}-1\right)=z\left(z-1\right)\left(z^{2}+z+1\right)=z\left(z-1\right)\left(z-\frac{-1+i\sqrt{3}}{2}\right)\left(z-\frac{-1-i\sqrt{3}}{2}\right)$
+\end_inset
+
+, то точками разветвления или неоднозначности могут быть точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\frac{-1\pm i\sqrt{3}}{2}$
+\end_inset
+
+.
+ При обходе каждой из этих точек значение аргумента меняется на 
+\begin_inset Formula $\frac{1}{4}\cdot2\pi=\frac{\pi}{2}$
+\end_inset
+
+.
+ Таким образом, при обходе каждой из этих точек осуществляется переход с
+ первого листа на второй, со второго — на третий, с третьего — на четвёртый,
+ а с четвёртого на первый.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить картинку из решения
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
