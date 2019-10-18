@@ -74150,6 +74150,228 @@ status open
 \end_layout
 
 \begin_layout Standard
+При решении задач этого параграфа мы везде получали, что после проведения
+ непересекающихся разрезов из всех точек разветвления в бесконечность рассматрив
+аемая функция распадается на однозначные непрерывные ветви, которые затем
+ определённым образом соединяются по разрезам.
+ Оказывается, что этим свойством обладает довольно широкий класс многозначных
+ функций.
+ В частности, таим свойством обладают все рассматриваемые ниже функции,
+ а именно функции, выражающиеся в радикалах (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на параграф 11
+\end_layout
+
+\end_inset
+
+), и алгебраические функции (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на параграф 14
+\end_layout
+
+\end_inset
+
+)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+И те, и другие функции являются частными случаями более широкого класса
+ так называемых аналитических функций, также обладающих указанным свойством.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Доказательство этого утверждения выходит за рамки данной книги.
+ Поэтому мы могли бы просто сослаться на существующую по данному вопросу
+ литературу
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+См., например, Спрингер Дж., Введение в теорию римановых поверхностей, ИЛ,
+ 1960.
+\end_layout
+
+\end_inset
+
+ и принять сформулированное выше утверждение без доказательства (Читатель
+ может так и поступить, перейдя сразу к чтению параграфа 11
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Однако при этом у читателя может остаться некоторое чувство неудовлетворённости.
+ И хотя мы не сможем полностью избавить читателя от этого чувства, мы всё
+ же покажем, что сформулированное выше свойство вытекает из другого свойства
+ — так называемого 
+\emph on
+свойства монодромии
+\emph default
+, которое выглядит более очевидным.
+\end_layout
+
+\begin_layout Standard
+Мы знаем, что для выделения однозначных непрерывных ветвей многозначной
+ функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ (в некоторой области плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+) необходимо, чтобы функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ определялась по непрерывности одинаково вдоль любых двух кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, лежащих в этой области и идущих из произвольной точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в некоторую другую точку 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Свойство монодромии и связано с этим условием.
+\end_layout
+
+\begin_layout Standard
+Пусть многозначная функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ такова, что при фиксировании любого её значения 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ в произвольной точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ может быть определена по непрерывности (возможно, неоднозначно) вдоль любой
+ кривой, выходящей из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ (и не проходящей через точки, в которых функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ не определена).
+ Скажем, что многозначная функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ обладает свойством монодромии, если для неё справедливо следующее утверждение.
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Свойство монодромии.
+ 
+\emph default
+Пусть 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ — непрерывные кривые на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, начинающиеся в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, кончающиеся в некоторой точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и не проходящие через точки разветвления и неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Пусть, кроме того, кривую можно непрерывно деформировать в кривую 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ так, чтобы кривые, получающиеся при деформации, не проходили через точки
+ разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ и чтобы их концы оставались неподвижными (см.
+ рис.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить рисунок 35 и ссылку на него
+\end_layout
+
+\end_inset
+
+).
+ Тогда значение 
+\begin_inset Formula $w\left(z_{1}\right)$
+\end_inset
+
+ одинаково определяется по непрерывности вдоль кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ (если зафиксировано некоторое значение 
+\begin_inset Formula $w_{0}=w\left(z_{0}\right)$
+\end_inset
+
+).
+ Выясним, какие следствия вытекают из свойства монодромии.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
