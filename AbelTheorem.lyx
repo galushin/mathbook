@@ -73402,6 +73402,12 @@ name "fig:rieman-surface-of-sqrt-of-square-of-z"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:point-of-ambiguity"
+
+\end_inset
+
 Точки, в которых нарушается однозначность непрерывных образов кривых, но
  которые не являются точками разветвления, мы будем называть 
 \emph on
@@ -74512,6 +74518,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:monodromic-function-cut-cross-point-does-not-matter"
+
+\end_inset
+
 Пусть при условиях предыдущей задачи разрезы не проходят через точки неоднозначн
 ости функции 
 \begin_inset Formula $w\left(z\right)$
@@ -74570,17 +74582,492 @@ noprefix "false"
  Что и требовалось доказать.
 \end_layout
 
+\begin_layout Remark
+При обходе вокруг точки разветвления мы один раз пересекаем разрез, идущий
+ из данной точки в бесконечность.
+ Поэтому в силу результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-cut-cross-point-does-not-matter"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ переходы с одних ветвей на другие при пересечении некоторого разреза в
+ произвольном месте совпадают с переходами, получающимися при обходе (в
+ соответствующую сторону) точки разветвления, из которой проведён разрез,
+ и, следовательно, совпадают с переходами, указанными в схеме римановой
+ поверхности.
+\end_layout
+
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Из результатов задач 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Дописать этот раздел
+добавить ссылку на задачу 309
+\end_layout
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-cut-cross-point-does-not-matter"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что если многозначная функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ обладает свойством монодромии 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:monodromy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то для 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ можно построить риманову поверхность.
+ Причём для выяснения структуры этой поверхности достаточно найти точки
+ разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ и установить переходы между ветвями функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ при обходе этих точек.
+\end_layout
+
+\begin_layout Standard
+Все функции, которые будут рассматриваться ниже, обладают свойством монодромии.
+ Строго доказтать это утверждение мы здесь не сможем, так как для этого
+ требуется привлечение понятия аналитической функции.
+ Однако мы дадим идею доказательства того, что некоторая многозначная функция
+ 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ обладает свойством монодромии, предполагая, что эта функция является 
+\begin_inset Quotes rld
+\end_inset
+
+достаточно хорошей
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Что это означает — будет видно из идеи доказательства.
+\end_layout
+
+\begin_layout Standard
+Итак, пусть выполняются условия из свойства монодромии.
+ Пусть 
+\begin_inset Formula $C_{1}^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}^{\prime}$
+\end_inset
+
+ — непрерывные образы кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, начинающиеся в точке 
+\begin_inset Formula $w_{0}=w\left(z_{0}\right)$
+\end_inset
+
+.
+ Надо доказать, что кривые 
+\begin_inset Formula $C_{1}^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}^{\prime}$
+\end_inset
+
+ оканчиваются в одной и той же точке.
+\end_layout
+
+\begin_layout Standard
+Предположим сначала, что кривые, получающиеся при деформации 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ в 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, не проходят не только через точки разветвления, но и через точки неоднозначнос
+ти 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:point-of-ambiguity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — любая из таких кривых.
+ Тогда существует единственный непрерывный образ 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, начинающийся в точке 
+\begin_inset Formula $w_{0}=w\left(z_{0}\right)$
+\end_inset
+
+.
+ Если функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ 
+\begin_inset Quotes rld
+\end_inset
+
+достаточно хорошая
+\begin_inset Quotes rrd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Обычно теорема монодромии доказывается для произвольных аналитических функций.
+ См., например, Спрингер Дж., Введение в теорию римановых поверхностей, ИЛ,
+ 1960, стр.
+ 97.
+\end_layout
+
+\end_inset
+
+, то при непрерывной деформации кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ от положения 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ до положения 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ кривые 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ непрерывно деформируются от положения 
+\begin_inset Formula $C_{1}^{\prime}$
+\end_inset
+
+ до положения 
+\begin_inset Formula $C_{2}^{\prime}$
+\end_inset
+
+.
+ При этом конечная точка кривой 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ также должна деформироваться непрерывно.
+ Но кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ оканчивается в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, поэтому конечная точка кривой 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ должна совпадать с одним из образом 
+\begin_inset Formula $w\left(z_{1}\right)$
+\end_inset
+
+ точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Если функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ принимает при каждом 
+\begin_inset Formula $z$
+\end_inset
+
+ (в частности, при 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+) лишь конечное число значений (а мы рассматриваем только такие функции),
+ то конечная точка кривой 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ не может перескочить из одного образа точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ в другой образ, так как при этом нарушится непрерывность деформации.
+ Следовательно, конечные точки всех кривых 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ и, в частности, кривых 
+\begin_inset Formula $C_{1}^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Посмотрим теперь, что происходит, когда кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ переходит через точку неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, которая не является точкой разветвления.
+ Рассмотрим только частный случай, когда кривая изменяется лишь вблизи точки
+ неоднозначности 
+\begin_inset Formula $a$
+\end_inset
+
+ (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить рисунок 36 и ссылку на него
+\end_layout
+
+\end_inset
+
+).
+ Если в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ зафиксировано значение 
+\begin_inset Formula $w_{0}=w\left(z_{0}\right)$
+\end_inset
+
+, то по непрерывности однозначно определится значение 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ После этого одинаково определяются по непрерывности вдоль кривых 
+\begin_inset Formula $ADE$
+\end_inset
+
+ и 
+\begin_inset Formula $ABE$
+\end_inset
+
+ значения 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $E$
+\end_inset
+
+, так как иначе при обходе по кривой 
+\begin_inset Formula $EDABE$
+\end_inset
+
+ изменилось бы значение функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ и точка 
+\begin_inset Formula $a$
+\end_inset
+
+ была бы точкой разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ После того как значения 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $E$
+\end_inset
+
+ определились одинаково по обеим кривым, одинаково определяются по непрерывности
+ вдоль кривой 
+\begin_inset Formula $Ez_{1}$
+\end_inset
+
+ и значения 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/monodromy-point-of-ambiguity.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:monodromy-point-of-ambiguity"
+
+\end_inset
+
+Иллюстрация к доказательству свойства монодромии для случая пересечения
+ точки неоднозначности
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, 
+\begin_inset Quotes rld
+\end_inset
+
+тёмным
+\begin_inset Quotes rrd
+\end_inset
+
+ местом в нашем изложении осталось утверждение о том, что все рассматриваемые
+ ниже функции являются 
+\begin_inset Quotes rld
+\end_inset
+
+достаточно хорошими
+\begin_inset Quotes rrd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Здесь уж читателю придётся либо принять это утверждение на веру, либо обратиться
+ к более глубокому изучению аналитических функций
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+См.
+ например, Бицадзе А.В., Основы теории аналитических функций комплексного
+ переменного, 
+\begin_inset Quotes rld
+\end_inset
+
+Наука
+\begin_inset Quotes rrd
+\end_inset
+
+, 1969.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
