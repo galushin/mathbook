@@ -74301,6 +74301,12 @@ status open
 \begin_layout Definition
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "def:monodromy"
+
+\end_inset
+
 Свойство монодромии.
  
 \emph default
@@ -74341,12 +74347,12 @@ status open
  и чтобы их концы оставались неподвижными (см.
  рис.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить рисунок 35 и ссылку на него
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:monodromy"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -74369,6 +74375,199 @@ status open
 
 ).
  Выясним, какие следствия вытекают из свойства монодромии.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/monodromy-sample.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:monodromy"
+
+\end_inset
+
+Иллюстрация к свойству монодромии.
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — точки разветвления
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ обладает свойством монодромии.
+ Проведём на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ непересекающиеся разрезы из всех точек разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в бесконечность и выколем точки неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Доказать, что при этом функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ распадается на однозначные непрерывные ветви.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ — непрерывные кривые на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, начинающиеся в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, кончающиеся в некоторой точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, не проходящие через точки разветвления и неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ и не пересекающие разрезы, проведённые из точек разветвления.
+ Тогда, по свойству монодромии 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:monodromy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, при выбранном значении функции 
+\begin_inset Formula $w\left(z_{0}\right)$
+\end_inset
+
+ значение 
+\begin_inset Formula $w_{1}\left(z\right)$
+\end_inset
+
+ определяется однозначно.
+ Таким образом, выбирая различные значения для 
+\begin_inset Formula $w\left(z_{0}\right)$
+\end_inset
+
+ будем получать различные однозначные непрерывные ветви функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть при условиях предыдущей задачи разрезы не проходят через точки неоднозначн
+ости функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ и у 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ конечное число точек разветвления.
+ Доказать, что при пересечении некоторого разреза (в определённую сторону)
+ мы с любой фиксированной ветви функции 
+\begin_inset Formula $w^{\prime}\left(z\right)$
+\end_inset
+
+ будем переходить на одно и ту же ветвь независимо от того, в каком именно
+ месте мы пересекаем разрез.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ две непрерывные кривые, начинающиеся в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и заканчивающиеся в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, пересекающие некоторый разрез в одну и ту же сторону, причём в каждой
+ из областей, разделённых данным разрезом, эти кривые можно непрерывно деформиро
+вать друг в друга.
+ Тогда в точке пересечения разреза (с каждой из сторон разреза) вдоль этих
+ кривых 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ должна иметь одно и то же значение по свойству монодромии 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:monodromy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Что и требовалось доказать.
 \end_layout
 
 \begin_layout Standard
