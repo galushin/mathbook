@@ -75281,6 +75281,12 @@ name "fig:monodromy"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:monodromic-function-can-be-partitioned-on-continuous-unambiguous-branches"
+
+\end_inset
+
 Пусть функция 
 \begin_inset Formula $w\left(z\right)$
 \end_inset
@@ -75332,7 +75338,16 @@ name "fig:monodromy"
 \end_inset
 
  и не пересекающие разрезы, проведённые из точек разветвления.
- Тогда, по свойству монодромии 
+ Тогда, поскольку 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ можно непрерывно деформировать в 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, так, что промежуточные кривые не будут проходить через точки разветвления,
+ то по свойству монодромии 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "def:monodromy"
@@ -75369,8 +75384,17 @@ name "prob:monodromic-function-cut-cross-point-does-not-matter"
 
 \end_inset
 
-Пусть при условиях предыдущей задачи разрезы не проходят через точки неоднозначн
-ости функции 
+Пусть при условиях задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-can-be-partitioned-on-continuous-unambiguous-branches"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрезы не проходят через точки неоднозначности функции 
 \begin_inset Formula $w\left(z\right)$
 \end_inset
 
@@ -75389,31 +75413,134 @@ name "prob:monodromic-function-cut-cross-point-does-not-matter"
 \end_layout
 
 \begin_layout Solution
-Пусть 
-\begin_inset Formula $C_{1}$
+Рассмотрим две кривые 
+\begin_inset Formula $AB$
 \end_inset
 
  и 
-\begin_inset Formula $C_{2}$
+\begin_inset Formula $CD$
 \end_inset
 
- две непрерывные кривые, начинающиеся в точке 
-\begin_inset Formula $z_{0}$
+, пересекающие разрез, проведённый из некоторой точки разветвления (см.
+ рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-310"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
- и заканчивающиеся в точке 
-\begin_inset Formula $z_{1}$
+).
+ Пусть при движении по 
+\begin_inset Formula $AB$
 \end_inset
 
-, пересекающие некоторый разрез в одну и ту же сторону, причём в каждой
- из областей, разделённых данным разрезом, эти кривые можно непрерывно деформиро
-вать друг в друга.
- Тогда в точке пересечения разреза (с каждой из сторон разреза) вдоль этих
- кривых 
+ мы переходим с 
+\begin_inset Formula $i$
+\end_inset
+
+-й на 
+\begin_inset Formula $j$
+\end_inset
+
+-ю ветвь.
+ Рассмотрим, на какую ветвь мы перейдём с 
+\begin_inset Formula $i$
+\end_inset
+
+-й ветви при движении по 
+\begin_inset Formula $CD$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-310.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-310"
+
+\end_inset
+
+Иллюстрация к доказательству независимости смены ветви от точки пересечения
+ разреза.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как у функции 
 \begin_inset Formula $w\left(z\right)$
 \end_inset
 
- должна иметь одно и то же значение по свойству монодромии 
+ конечное число точек разветвления, то кривые 
+\begin_inset Formula $AB$
+\end_inset
+
+ и 
+\begin_inset Formula $CD$
+\end_inset
+
+ можно выбрать настолько короткими, а кривые 
+\begin_inset Formula $CA$
+\end_inset
+
+ и 
+\begin_inset Formula $BD$
+\end_inset
+
+ настолько близкими к разрезу, что внутри кривой 
+\begin_inset Formula $CABDC$
+\end_inset
+
+ не будет точек разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ В таком случае кривую 
+\begin_inset Formula $CABD$
+\end_inset
+
+ можно, очевидно, непрерывно деформировать в кривую 
+\begin_inset Formula $CD$
+\end_inset
+
+, не проходя через точки разветвления.
+ Так как функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ обладает свойством монодромии 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "def:monodromy"
@@ -75423,8 +75550,61 @@ noprefix "false"
 
 \end_inset
 
+, то функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ одинаково определяется по непрерывности 
+\begin_inset Formula $CD$
+\end_inset
+
+ и 
+\begin_inset Formula $CABD$
+\end_inset
+
 .
- Что и требовалось доказать.
+ Начиная с 
+\begin_inset Formula $i$
+\end_inset
+
+-ой ветви и двигаясь по кривой 
+\begin_inset Formula $CABD$
+\end_inset
+
+, мы сначала находимся на 
+\begin_inset Formula $i$
+\end_inset
+
+-ой ветви, затем переходим на 
+\begin_inset Formula $j$
+\end_inset
+
+-ю ветвь и затем движемся по 
+\begin_inset Formula $j$
+\end_inset
+
+-й ветви.
+ Таким образом, по кривой 
+\begin_inset Formula $CABD$
+\end_inset
+
+, а следовательно, и по кривой 
+\begin_inset Formula $CD$
+\end_inset
+
+ мы с 
+\begin_inset Formula $i$
+\end_inset
+
+-й ветви переходим на 
+\begin_inset Formula $j$
+\end_inset
+
+-ю ветвь, то есть так же, как и по кривой 
+\begin_inset Formula $AB$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Remark
@@ -75456,12 +75636,12 @@ noprefix "false"
 
 \begin_layout Remark
 Из результатов задач 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку на задачу 309
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-can-be-partitioned-on-continuous-unambiguous-branches"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -75508,8 +75688,8 @@ noprefix "false"
 
 \begin_layout Standard
 Все функции, которые будут рассматриваться ниже, обладают свойством монодромии.
- Строго доказтать это утверждение мы здесь не сможем, так как для этого
- требуется привлечение понятия аналитической функции.
+ Строго доказать это утверждение мы здесь не сможем, так как для этого требуется
+ привлечение понятия аналитической функции.
  Однако мы дадим идею доказательства того, что некоторая многозначная функция
  
 \begin_inset Formula $w\left(z\right)$
