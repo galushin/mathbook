@@ -59465,7 +59465,7 @@ name "prob:ratio-of-continuous-functions-is-continuos"
 \end_inset
 
  и 
-\begin_inset Formula $g\left(z\right)\neq0$
+\begin_inset Formula $g\left(z_{0}\right)\neq0$
 \end_inset
 
 .
@@ -59990,6 +59990,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:sinus-and-cosinus-are-continuous"
+
+\end_inset
+
 Доказать, что функции действительного аргумента 
 \begin_inset Formula $f\left(x\right)=\sin x$
 \end_inset
@@ -60153,6 +60159,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:algebraic-root-is-continuous"
+
+\end_inset
+
 Рассмотрим при всех действительных значениях 
 \begin_inset Formula $x\ge0$
 \end_inset
@@ -62446,6 +62458,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-on-variation-of-argument-of-curve"
+
+\end_inset
+
 Чему равно изменение аргумента вдоль кривых со следующими параметрическими
  уравнениями:
 \end_layout
@@ -63054,11 +63072,11 @@ name "fig:problem-256-d"
 \end_layout
 
 \begin_layout Solution
-г) определение проведём анлогично пункту в), получим 
+г) определение проведём аналогично пункту в), получим 
 \begin_inset Formula $0$
 \end_inset
 
- обхдов.
+ обходов.
 \end_layout
 
 \begin_layout Problem
@@ -63093,7 +63111,7 @@ status open
 
 \end_inset
 
-Пусть параметрическое уравение рассматриваемой кривой есть 
+Пусть параметрическое уравнение рассматриваемой кривой есть 
 \begin_inset Formula $z\left(t\right)$
 \end_inset
 
@@ -63108,7 +63126,7 @@ status open
 \end_inset
 
 .
- Выбор начальной точки обхода эквивалентет повороту кривой на угол, равный
+ Выбор начальной точки обхода эквивалентен повороту кривой на угол, равный
  аргументу этой кривой и взятый с обратным знаком.
  Как было показано в задаче 
 \begin_inset CommandInset ref
@@ -63185,7 +63203,7 @@ noprefix "false"
 \begin_inset Formula $\varphi_{2}\left(t\right)=\varphi\left(1-t\right)$
 \end_inset
 
-, тогда изменение аргумента вдоль противоложного направления кривой будет
+, тогда изменение аргумента вдоль противоположного направления кривой будет
  равно 
 \begin_inset Formula 
 \begin{multline*}
@@ -63200,7 +63218,7 @@ noprefix "false"
 
 \begin_layout Solution
 Таким образом, при изменении направления обхода кривой изменение аргумента
- меняет знак на противоложный, а значит изменяет знак и количество обходов
+ меняет знак на противоположный, а значит изменяет знак и количество обходов
  вокруг точки 
 \begin_inset Formula $z=0$
 \end_inset
@@ -63392,7 +63410,7 @@ noprefix "false"
 
 .
  Это преобразование оставляет начальную точку обхода без изменений, но меняет
- направление обхода на противоложное.
+ направление обхода на противоположное.
  Как было показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -63407,7 +63425,7 @@ noprefix "false"
 \begin_inset Formula $z=0$
 \end_inset
 
- также меняется на противоложное, поэтому в данном случае количество обходов
+ также меняется на противоположное, поэтому в данном случае количество обходов
  равно 
 \begin_inset Formula $-k$
 \end_inset
@@ -70622,6 +70640,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:branching-points"
+
+\end_inset
+
 Точки, при обходе которых может происходить переход с одних листов на другие
  (то есть изменяется значение функции), называются 
 \emph on
@@ -70642,6 +70666,12 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+
+\end_inset
+
 Риманову поверхность функции 
 \begin_inset Formula $w=\sqrt{z}$
 \end_inset
@@ -70745,6 +70775,5337 @@ name "fig:scheme-of-the-rieman-surface-of-sqrt"
 \begin_layout Standard
 В дальнейшем мы в основном будем изображать не саму риманову поверхность
  некоторой многозначной функции, а её схему.
+\end_layout
+
+\begin_layout Section
+Римановы поверхности более сложных функций
+\end_layout
+
+\begin_layout Standard
+Рассмотрим сначала многозначную функцию 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:variation-of-argument-of-root-3"
+
+\end_inset
+
+Пусть изменение аргумента вдоль кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ — непрерывный образ кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+.
+ Найти изменение аргумента вдоль кривой 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим изменение аргумента вдоль 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ как 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z\left(t\right)=\left[w_{0}\left(t\right)\right]^{3}$
+\end_inset
+
+, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi=3\varphi_{0}$
+\end_inset
+
+, откуда 
+\begin_inset Formula 
+\[
+\varphi_{0}=\frac{\varphi}{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти точки разветвления функции 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branching-points"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, точка разветвления — это точка, при обходе которой может происходить переход
+ с одного листа на другие.
+ Так как для любого 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+ существует три возможных значения корня (было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), то у функции 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+ будет три листа.
+ В той же задаче было показано, что значения 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+ имеют одинаковый модуль, а их аргументы отличаются (при 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+) на 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+При обходе точки 
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+ по окружности изменение аргумента равно, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:rounds-of-continuous-curve-around-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Пусть эта окружность задаётся параметрическим уравнением 
+\begin_inset Formula $z=z\left(t\right)$
+\end_inset
+
+, тогда изменение аргумента вдоль кривой 
+\begin_inset Formula $\sqrt[3]{z\left(t\right)}$
+\end_inset
+
+ , как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, равно 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+, то есть соответствует переходу от одного значения корня к другому.
+ Таким образом, точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+ является точкой ветвления.
+\end_layout
+
+\begin_layout Solution
+Если же 
+\begin_inset Formula $z_{0}\neq0$
+\end_inset
+
+, то можно выбрать окружность настолько малого радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+ (например 
+\begin_inset Formula $r=\frac{\left|z\right|}{2}$
+\end_inset
+
+), чтобы окружность радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ не охватывала точку 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Тогда число обходов рассматриваемой окружности вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно нулю, а значит нулю равно и изменение аргумента.
+ Снова воспользовавшись результатом задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим, что изменение аргумента 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+ при обходе по такой окружности также равно нулю, то есть значение корня
+ не изменяется, а значит мы остались на том же листе.
+\end_layout
+
+\begin_layout Solution
+Итак, точкой ветвления функции 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+ является только точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть разрез проведён из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ по отрицательной части действительной оси, и пусть непрерывные однозначные
+ ветви функции 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+ заданы условиями: 
+\begin_inset Formula $f_{1}\left(1\right)$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+f_{2}\left(1\right)=\cos\frac{2\pi}{3}+i\sin\frac{2\pi}{3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}i,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+f_{3}\left(1\right)=\cos\frac{4\pi}{3}+i\sin\frac{4\pi}{3}=-\frac{1}{2}-\frac{\sqrt{3}}{2}i.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти 
+\begin_inset Formula $f_{1}\left(i\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{2}\left(i\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(8\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{3}\left(8\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{3}\left(-i\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $\left[f_{j}\left(z\right)\right]^{3}=z$
+\end_inset
+
+, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, обозначив 
+\begin_inset Formula $\left|z\right|=r$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}z=\varphi$
+\end_inset
+
+, получим 
+\begin_inset Formula $f_{j}\left(z\right)=\sqrt[3]{r}\left(\cos\left(\frac{\varphi}{3}+\varphi_{j}\right)+i\sin\left(\frac{\varphi}{3}+\varphi_{j}\right)\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left|1\right|=1$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}1=0$
+\end_inset
+
+, то 
+\begin_inset Formula $f_{j}\left(1\right)=\cos\varphi_{j}+j\sin\varphi_{j}$
+\end_inset
+
+, таким образом, величина 
+\begin_inset Formula $\varphi_{j}$
+\end_inset
+
+ однозначно (с точность до угла, кратного 
+\begin_inset Formula $2\pi$
+\end_inset
+
+) определяется значением 
+\begin_inset Formula $f_{j}\left(1\right)$
+\end_inset
+
+.
+ А именно: 
+\begin_inset Formula $\varphi_{1}=0$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi_{2}=\frac{2\pi}{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{3}=\frac{4\pi}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $z=i$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}z=\frac{\pi}{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+f_{1}\left(i\right)=\sqrt[3]{1}\left(\cos\frac{\pi}{6}+i\sin\frac{\pi}{6}\right)=\frac{\sqrt{3}}{2}+\frac{1}{2}i.
+\]
+
+\end_inset
+
+Аналогично, 
+\begin_inset Formula 
+\begin{multline*}
+f_{2}\left(i\right)=\sqrt[3]{1}\left(\cos\left(\frac{\pi}{6}+\frac{2\pi}{3}\right)+i\sin\left(\frac{\pi}{6}+\frac{2\pi}{3}\right)\right)=\\
+=\cos\frac{5\pi}{6}+i\sin\frac{5\pi}{6}=-\frac{\sqrt{3}}{2}+\frac{1}{2}i.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $z=8$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|z\right|=8$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}z=0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $f_{1}\left(8\right)=\sqrt[3]{8}\left(\cos0+i\sin0\right)=2$
+\end_inset
+
+.
+ Аналогично 
+\begin_inset Formula 
+\begin{multline*}
+f_{3}\left(8\right)=\sqrt[3]{8}\left(\cos\left(\frac{0}{3}+\frac{4\pi}{3}\right)+i\sin\left(\frac{0}{3}+\frac{4\pi}{3}\right)\right)=\\
+=2\left(\cos\frac{4\pi}{3}+i\sin\frac{4\pi}{3}\right)=2\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)=-1-i\sqrt{3}.
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь была ошибка, 
+\begin_inset Formula $\sin\frac{4\pi}{3}=\frac{\sqrt{3}}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $z=-i$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}z=-\frac{\pi}{2}$
+\end_inset
+
+ (значение 
+\begin_inset Formula $\frac{3\pi}{2}$
+\end_inset
+
+ не подходит, так как кривая не должна пересекать разрез
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В начале я ошибочно выбрал именно это значение
+\end_layout
+
+\end_inset
+
+), поэтому 
+\begin_inset Formula 
+\begin{multline*}
+f_{3}\left(-i\right)=\sqrt[3]{1}\left(\cos\left(-\frac{\pi}{6}+\frac{4\pi}{3}\right)+i\sin\left(-\frac{\pi}{6}+\frac{4\pi}{3}\right)\right)=\\
+=\cos\frac{7\pi}{6}+i\sin\frac{7\pi}{6}=-\frac{\sqrt{3}}{2}-\frac{1}{2}i.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Построить риманову поверхность и её схему для функции 
+\begin_inset Formula $w=\sqrt[3]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как при каждом фиксированном 
+\begin_inset Formula $z$
+\end_inset
+
+, кроме 
+\begin_inset Formula $z=0$
+\end_inset
+
+, у 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+ имеется три значения, то риманова поверхность будет состоять из трёх листов.
+ Проведём разрез из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ вдоль отрицательной части действительной оси.
+ Левый край разреза первого листа соединим с правым краем разреза второго
+ листа, затем соединим левый край разреза второго листа с правым краем разреза
+ третьего листа.
+ Наконец, левый край третьего листа соединим с правым краем первого листа.
+ Схема и условное изображение римановой поверхности показано на рисунке
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-of-cube-root-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ На самом деле три выделенные точки должны быть соединены в одну.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-cube-root-of-z.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-of-cube-root-of-z"
+
+\end_inset
+
+Схема римановой поверхности и её условное изображение для функции 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:there-exists-continuous-image-of-continuous-curve-by-root-n"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $\sqrt[n]{z\left(0\right)}$
+\end_inset
+
+.
+ Доказать, что имеется хотя бы один непрерывный образ кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)=\sqrt[n]{z}$
+\end_inset
+
+, начинающийся в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Запишем 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ в тригонометрической форме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "trigonometric-representation-of-complex-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+z\left(t\right)=r\left(t\right)\left[\cos\varphi\left(t\right)+i\sin\varphi\left(t\right)\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть сначала 
+\begin_inset Formula $C$
+\end_inset
+
+ не проходит через точку 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Тогда функции 
+\begin_inset Formula $r\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ определены однозначно и являются непрерывными.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Может быть вынести доказательство этого в отдельную задачу?
+\end_layout
+
+\end_inset
+
+ Действительно, 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ можно выбрать непрерывным по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:continuous-curve-has-continuous-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula 
+\[
+\left|\cos\varphi\left(t\right)+i\sin\varphi\left(t\right)\right|=\cos^{2}\varphi\left(t\right)+\sin^{2}\varphi\left(t\right)=1,
+\]
+
+\end_inset
+
+то 
+\begin_inset Formula $\cos\varphi\left(t\right)+i\sin\varphi\left(t\right)\neq0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+r\left(t\right)=\frac{z\left(t\right)}{\cos\varphi\left(t\right)+i\sin\varphi\left(t\right)}
+\]
+
+\end_inset
+
+является непрерывным как частное двух непрерывных функций (смотрите задачу
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:ratio-of-continuous-functions-is-continuos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Тогда, по формуле корня в тригонометрической форме, полученной в задаче
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+w\left(t\right)=\sqrt[n]{z\left(t\right)}=\sqrt[n]{r\left(t\right)}\cdot\left[\cos\psi\left(t\right)+i\cos\psi\left(t\right)\right],
+\]
+
+\end_inset
+
+где в правой части 
+\begin_inset Formula $\sqrt[n]{r\left(t\right)}$
+\end_inset
+
+ обозначает вещественное положительное значение корня и 
+\begin_inset Formula 
+\[
+\psi\left(t\right)=\frac{\varphi\left(t\right)}{n}+\frac{2\pi k}{n},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $k$
+\end_inset
+
+ — целое число, которое следует выбрать таким образом, чтобы 
+\begin_inset Formula $w_{0}=w\left(0\right)=\sqrt[n]{z\left(0\right)}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+w\left(0\right)=\sqrt[n]{r\left(t\right)}\cdot\left[\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n}\right]=w_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $r\left(t\right)$
+\end_inset
+
+ — непрерывная функция, то, как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:algebraic-root-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:superposition-of-continuous-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\sqrt[n]{r\left(t\right)}$
+\end_inset
+
+ является непрерывной функцией.
+ Так как 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ — непрерывная функция по доказанному выше, а постоянные величины — непрерывны
+ по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:constant-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\psi\left(t\right)=\frac{\varphi\left(t\right)}{n}+\frac{2\pi k}{n}$
+\end_inset
+
+ непрерывна по доказанному в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:ratio-of-continuous-functions-is-continuos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, следовательно, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sinus-and-cosinus-are-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\cos\psi\left(t\right)+i\sin\psi\left(t\right)$
+\end_inset
+
+ — непрерывная функция.
+ Наконец, так как 
+\begin_inset Formula $\sqrt[n]{r\left(t\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $\cos\psi\left(t\right)+i\sin\psi\left(t\right)$
+\end_inset
+
+ непрерывны, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, непрерывна 
+\begin_inset Formula $w\left(t\right)=\sqrt[n]{r\left(t\right)}\left[\cos\psi\left(t\right)+i\sin\psi\left(t\right)\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Опять забыл про то, что аргумент неопределён при 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть теперь кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ проходит через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ В этом случае, значения 
+\begin_inset Formula $t$
+\end_inset
+
+, при которых 
+\begin_inset Formula $z\left(t\right)=0$
+\end_inset
+
+ разбивают 
+\begin_inset Formula $t$
+\end_inset
+
+ на части, не проходящие через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Для каждой части построим однозначный непрерывный образ, как было показано
+ выше, причём для первой части выберем образ, начинающийся в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, а для остальных — в точке 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Так как если 
+\begin_inset Formula $z\left(t\right)=0$
+\end_inset
+
+, то и 
+\begin_inset Formula $w\left(t\right)=\sqrt[n]{0}=0$
+\end_inset
+
+, то образы частей можно объединить в одну непрерывную кривую, которая и
+ будет искомой.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+
+\end_inset
+
+Пусть изменение аргумента вдоль кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ — непрерывный образ кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{z}$
+\end_inset
+
+.
+ Найти изменение аргумента вдоль кривой 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим изменение аргумента вдоль 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ как 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z\left(t\right)=\left[w_{0}\left(t\right)\right]^{n}$
+\end_inset
+
+, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-natural-power-of-continuous-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi=n\cdot\varphi_{0}$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula 
+\[
+\varphi_{0}=\frac{\varphi}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти точки разветвления функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим точку 
+\begin_inset Formula $z_{0}=0$
+\end_inset
+
+ и окружность 
+\begin_inset Formula $C$
+\end_inset
+
+ произвольного радиуса 
+\begin_inset Formula $R$
+\end_inset
+
+, с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, проходимую против часовой стрелки.
+ В этом случае, как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-curves-given-by-parametric-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (пункт е) и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-on-variation-of-argument-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(пункт б), изменение аргумента вдоль 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Тогда изменение аргумента вдоль 
+\begin_inset Formula $\sqrt[n]{C}$
+\end_inset
+
+, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, равно 
+\begin_inset Formula $\frac{2\pi}{n}$
+\end_inset
+
+, то есть при 
+\begin_inset Formula $n>1$
+\end_inset
+
+ значение 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ изменится при обходе вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если же 
+\begin_inset Formula $z_{0}\neq0$
+\end_inset
+
+ то можно выбрать радиус 
+\begin_inset Formula $R$
+\end_inset
+
+ окружности 
+\begin_inset Formula $C$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ так, что окружность не будет охватывать точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, таким образом, изменение аргумента вдоль 
+\begin_inset Formula $C$
+\end_inset
+
+ будет равно 
+\begin_inset Formula $0$
+\end_inset
+
+, а следовательно, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента вдоль 
+\begin_inset Formula $\sqrt[n]{C}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{0}{n}=0$
+\end_inset
+
+, поэтому при обходе 
+\begin_inset Formula $C$
+\end_inset
+
+ значение 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ не изменится.
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $z=0$
+\end_inset
+
+ — единственная точка разветвления функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branching-points"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Ранее мы ввели обозначение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "roots-n-from-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varepsilon_{n}=\cos\frac{2\pi}{n}+i\sin\frac{2\pi}{n}.
+\]
+
+\end_inset
+
+ Там же рассмотрены некоторые свойства этого комплексного числа.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:expressing-images-of-root-n-of-given-curve-from-some-image"
+
+\end_inset
+
+Пусть кривая 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ не проходит через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ — один из непрерывных образов кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{z}$
+\end_inset
+
+.
+ Найти все непрерывные образы кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $w_{j}\left(t\right)$
+\end_inset
+
+ — некоторый образ кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{z}.$
+\end_inset
+
+ Тогда 
+\begin_inset Formula $w_{j}^{n}\left(t\right)=z\left(t\right)$
+\end_inset
+
+ и, по условию задачи, 
+\begin_inset Formula $w_{0}^{n}\left(t\right)=z\left(t\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z\left(t\right)\neq0$
+\end_inset
+
+ по условию задачи, то мы можем разделить одно из этих равенств на другое:
+ 
+\begin_inset Formula 
+\[
+\left[\frac{w_{j}\left(t\right)}{w_{0}\left(t\right)}\right]^{n}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:values-of-root-n-from-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, корни степени 
+\begin_inset Formula $n$
+\end_inset
+
+ из единицы могут быть записаны в виде 
+\begin_inset Formula $\varepsilon_{n}^{j}$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,\dots,n-1$
+\end_inset
+
+.
+ Таким образом,
+\begin_inset Formula 
+\[
+\frac{w_{j}\left(t\right)}{w_{0}\left(t\right)}=\varepsilon_{n}^{j}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+w_{j}\left(t\right)=\varepsilon_{n}^{j}w_{0}\left(t\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть две непрерывные кривые 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ из некоторой точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в некоторую точку 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Так же, как для функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+ в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:when-sqrt-of-finsih-of-two-curves-are-same-by-continuity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, доказывается, что если кривая 
+\begin_inset Formula $C_{1}^{-1}C_{2}$
+\end_inset
+
+ ни разу не обходит вокруг точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, то функция 
+\begin_inset Formula $w=\sqrt[n]{z}$
+\end_inset
+
+ определяется по непрерывности одинаково вдоль кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+.
+ Поэтому, так же как для функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+, если мы проведём какой-нибудь разрез из точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в бесконечность, то функция 
+\begin_inset Formula $w=\sqrt[n]{z}$
+\end_inset
+
+ распадается на непрерывные однозначные ветви.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:branches-of-root-n-of-z"
+
+\end_inset
+
+Проведём какой-либо разрез из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в 
+\begin_inset Formula $\infty$
+\end_inset
+
+, не проходящий через точку 
+\begin_inset Formula $z=1$
+\end_inset
+
+, и определим непрерывные однозначные ветви функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ условиями: 
+\begin_inset Formula $f_{j}\left(1\right)=\varepsilon_{n}^{j}$
+\end_inset
+
+, где 
+\begin_inset Formula $j$
+\end_inset
+
+ пробегает целые значения от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $n-1$
+\end_inset
+
+.
+ Как выражаются ветви 
+\begin_inset Formula $f_{j}\left(z\right)$
+\end_inset
+
+ через 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Кривые 
+\begin_inset Formula $f_{j}\left(z\right)$
+\end_inset
+
+ не проходят через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и все являются непрерывными по условию задачи.
+ Поэтому, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:expressing-images-of-root-n-of-given-curve-from-some-image"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{equation}
+f_{j}\left(z\right)=f_{0}\left(z\right)\cdot\varepsilon_{n}^{k_{j}},\label{eq:problem-297-undefined-coefficient}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $k_{j}$
+\end_inset
+
+ — целые числа от 
+\begin_inset Formula $0$
+\end_inset
+
+ до 
+\begin_inset Formula $n-1$
+\end_inset
+
+, которые нужно определить таким образом, чтобы выполнялись условия 
+\begin_inset Formula $f_{j}\left(1\right)=\text{\ensuremath{\varepsilon_{n}^{j}}}$
+\end_inset
+
+.
+ Положим в выражении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:expressing-images-of-root-n-of-given-curve-from-some-image"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $z=1$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\varepsilon_{n}^{j}=\varepsilon_{n}^{0}\cdot\varepsilon_{n}^{k_{j}}=\varepsilon_{n}^{k_{j}},
+\]
+
+\end_inset
+
+ таким образом, 
+\begin_inset Formula $k_{j}=j$
+\end_inset
+
+, и окончательно получаем 
+\begin_inset Formula 
+\[
+f_{j}\left(z\right)=f_{0}\left(z\right)\cdot\varepsilon_{n}^{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Построить схему римановой поверхности функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как при каждом фиксированном 
+\begin_inset Formula $z$
+\end_inset
+
+, кроме 
+\begin_inset Formula $z=0$
+\end_inset
+
+, у 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ имеется 
+\begin_inset Formula $n$
+\end_inset
+
+ различных значений, то риманова поверхность будет состоять из 
+\begin_inset Formula $n$
+\end_inset
+
+ листов.
+ Проведём разрез из точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ вдоль отрицательной части действительной оси.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:branches-of-root-n-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, при однократном обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ значение функции умножается на 
+\begin_inset Formula $\varepsilon_{n}$
+\end_inset
+
+.
+ Поэтому левый край разреза на листе 
+\begin_inset Formula $j$
+\end_inset
+
+ нужно соединить с правым краем разреза листа 
+\begin_inset Formula $j+1$
+\end_inset
+
+ (при 
+\begin_inset Formula $j=1,...n-1$
+\end_inset
+
+), а левый край листа 
+\begin_inset Formula $n$
+\end_inset
+
+ нужно соединить с правым краем первого листа.
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-roon-n-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-roon-n-of-z.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-roon-n-of-z"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Для функции 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+ найти точки разветвления и построить схему римановой поверхности.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:connection-between-geometric-interpretations-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, преобразованию 
+\begin_inset Formula $z\to z-1$
+\end_inset
+
+ соответствует сдвигу комплексной плоскости на вектор, соответствующий комплексн
+ому числу 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Так как точкой разветвления функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ является только точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому точкой разветвления функции 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+ является точка 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ Аналогично, схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+ получается из схемы римановой поверхности 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, показанной на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme-of-the-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ сдвигом на вектор, соответствующий числу 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ Полученная схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt-of-(z-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt-of-(z-1).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt-of-(z-1)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти точки разветвления и построить схему римановой поверхности для функции
+ 
+\begin_inset Formula $\sqrt[n]{z+i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:connection-between-geometric-interpretations-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, преобразованию 
+\begin_inset Formula $z\to z+i$
+\end_inset
+
+ соответствует сдвигу комплексной плоскости на вектор, соответствующий комплексн
+ому числу 
+\begin_inset Formula $-i$
+\end_inset
+
+.
+ Так как точкой разветвления функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ является только точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому точкой разветвления функции 
+\begin_inset Formula $\sqrt[n]{z+i}$
+\end_inset
+
+ является точка 
+\begin_inset Formula $z=-i$
+\end_inset
+
+.
+ Аналогично, схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[n]{z+i}$
+\end_inset
+
+ получается из схемы римановой поверхности 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+, показанной на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme-of-the-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ сдвигом на вектор, соответствующий числу 
+\begin_inset Formula $z=-i$
+\end_inset
+
+.
+ Полученная схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-root-of-(z+i)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-root-of-(z+i).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-root-of-(z+i)"
+
+\end_inset
+
+Риманова поверхность функции 
+\begin_inset Formula $\sqrt[n]{z+i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В тех случаях, когда многозначная функция будет иметь несколько точек разветвлен
+ия, мы будем для выделения однозначных ветвей проводить разрезы из каждой
+ точки разветвления в бесконечность по каким-либо непересекающимся линиям.
+\end_layout
+
+\begin_layout Standard
+При этом схема римановой поверхности данной функции может существенно зависеть
+ от того, по каким именно линиям проведены разрезы из точек разветвления
+ в бесконечность (соответствующий пример будет рассмотрен ниже 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылки на задачи 327 и 328
+\end_layout
+
+\end_inset
+
+).
+ В тех случаях, когда такая ситуация имеет место, мы будем указывать, как
+ проводятся разрезы.
+ Если же это не существенно, то указывать их не будем.
+\end_layout
+
+\begin_layout Standard
+Схемы римановой поверхностей, построенные читателем при решении предлагаемых
+ ниже задач, могут отличаться от схем, приведённых в решениях, за счёт различной
+ нумерации листов.
+ При соответствующей перенумерации листов эти схемы должны совпадать.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ — однозначная непрерывная функция и 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, начинающаяся в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Доказать, что существует хотя бы один непрерывный образ кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, начинающийся в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим кривую 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+, являющуюся образом кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Эта кривая является непрерывной и начинается в точке 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:there-exists-continuous-image-of-continuous-curve-by-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует непрерывный образ 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ кривой 
+\begin_inset Formula $f\left(C\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+, начинающийся в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — это одно из значений 
+\begin_inset Formula $\sqrt[n]{f\left(z_{0}\right)}$
+\end_inset
+
+, то 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ будет непрерывным образом кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, начинающимся в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:all-branches-of-root-n-from-function-from-one-branch"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ — однозначная непрерывная функция и 
+\begin_inset Formula $w_{0}\left(z\right)$
+\end_inset
+
+ — одна из непрерывных однозначных ветвей (при соответствующих разрезах)
+ функции 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Найти все однозначные непрерывные функции (при тех же разрезах) функции
+ 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $w_{j}\left(z\right)$
+\end_inset
+
+ — ещё какая-то непрерывная однозначная ветвь функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Тогда, если 
+\begin_inset Formula $f\left(z\right)\neq0$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left[\frac{w_{j}\left(z\right)}{w_{0}\left(z\right)}\right]^{n}=\frac{f\left(z\right)}{f\left(z\right)}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, так как 
+\begin_inset Formula $\frac{w_{j}\left(z\right)}{w_{0}\left(z\right)}=\sqrt[n]{1}$
+\end_inset
+
+, то, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "roots-n-from-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+w_{j}\left(z\right)=w_{0}\left(z\right)\cdot\varepsilon_{n}^{j},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $j=0,\dots,n-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Найти все точки разветвления и построить схемы римановых поверхностей для
+ функций а)
+\begin_inset Formula $\sqrt{z\left(z-i\right)}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt{z^{2}+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Точками разветвления могут быть только такие 
+\begin_inset Formula $z$
+\end_inset
+
+, что подкоренное выражение равно нулю.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-from-function-from-one-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у указанных функций будет существовать две непрерывные однозначные ветви,
+ поэтому в их римановых поверхностей будет два листа, а левые края разрезов
+ одного листа нужно соединять с правыми краями соответствующих разрезов
+ другого листа.
+\end_layout
+
+\begin_layout Solution
+В случае а) точками разветвления будут решения уравнения 
+\begin_inset Formula $z\left(z-i\right)=0$
+\end_inset
+
+, то есть, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:in-field-there-are-no-divisors-of-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и 
+\begin_inset Formula $z=i$
+\end_inset
+
+.
+ Полученная схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt-of-quadrics-samples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ слева.
+\end_layout
+
+\begin_layout Solution
+В случае б) точками разветвления будут комплексные корни уравнения 
+\begin_inset Formula $z^{2}+1=0$
+\end_inset
+
+ или 
+\begin_inset Formula $z^{2}=-1$
+\end_inset
+
+.
+ Корнями этого уравнения будут, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z=i$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-i$
+\end_inset
+
+.
+ Полученная схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt-of-quadrics-samples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ справа.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt-of-quadrics-samples.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt-of-quadrics-samples"
+
+\end_inset
+
+Схемы римановых поверхностей функций 
+\begin_inset Formula $\sqrt{z\left(z-i\right)}$
+\end_inset
+
+ (слева) и 
+\begin_inset Formula $\sqrt{z^{2}+1}$
+\end_inset
+
+ (справа).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Построить схемы римановых поверхностей следующих функций: а) 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt[3]{\left(z-1\right)^{2}z}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt[3]{\left(z^{2}+1\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Точками разветвления могут быть только такие 
+\begin_inset Formula $z$
+\end_inset
+
+, что подкоренное выражение равно нулю.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-from-function-from-one-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у указанных функций будет существовать по три непрерывные однозначные
+ ветви.
+\end_layout
+
+\begin_layout Solution
+В случае a) точками разветвления будут корни уравнения 
+\begin_inset Formula $z^{2}-1=0$
+\end_inset
+
+ или 
+\begin_inset Formula $z^{2}=1$
+\end_inset
+
+.
+ Корнями этого уравнения будут, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-1$
+\end_inset
+
+.
+ При обходе каждой точки разветвления аргумент значения будет изменяться
+ на 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+, поэтому левый край разрезов первого лист нужно соединить с правым краем
+ соответствующих разрезов второго листа, левый край разрезов второго лист
+ нужно соединить с правым краем соответствующих разрезов третьего листа,
+ а левый край разрезов третьего листа нужно соединить с правым краем соответству
+ющих разрезов первого листа.
+ Полученная схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-cube-root-of-(z2-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-cube-root-of-(z2-1).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-cube-root-of-(z2-1)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В случае б) точками разветвления будут корни уравнения 
+\begin_inset Formula $\left(z-1\right)^{2}z=0$
+\end_inset
+
+, то есть, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:in-field-there-are-no-divisors-of-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ При обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ аргумент будет изменяться на 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+, поэтому при пересечении против часовой стрелки разреза, выходящего из
+ точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, с первого листа будем переходить на второй, со второго — на третий, а
+ с третьего — на первый.
+ При обходе же вокруг точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ аргумент изменяется на 
+\begin_inset Formula $\frac{4\pi}{3}$
+\end_inset
+
+ (в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ показано, что изменение аргумента 
+\begin_inset Formula $z\left(t\right)^{2}$
+\end_inset
+
+ в двое больше, чем изменение аргумента 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+), поэтому при пересечении против часовой стрелки разреза, выходящего из
+ точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+, с первого листа будем переходить на третий, с третьего — на второй, а
+ со второго — на первый.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-cube-root-of-z(z-1)(z-1).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-cube-root-of-z(z-1)(z-1)"
+
+\end_inset
+
+Риманова поверхность функции 
+\begin_inset Formula $\sqrt[3]{\left(z-1\right)^{2}z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В случае в) точками разветвления будут корни уравнения 
+\begin_inset Formula $z^{2}+1=0$
+\end_inset
+
+ или 
+\begin_inset Formula $z^{2}=-1$
+\end_inset
+
+, то есть, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z=i$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-i$
+\end_inset
+
+.
+ При обходе каждой точки разветвления аргумент значения будет изменяться
+ на 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+, поэтому левый край разрезов первого лист нужно соединить с правым краем
+ соответствующих разрезов второго листа, левый край разрезов второго лист
+ нужно соединить с правым краем соответствующих разрезов третьего листа,
+ а левый край разрезов третьего листа нужно соединить с правым краем соответству
+ющих разрезов первого листа.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Для этого пункта в 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ указано решение, в котором принята иная нумерация листов, чем во всех остальных
+ пунктах
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Сделать рисунок для пункта в)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:continuous-branches-of-sqrt-of-square-of-z"
+
+\end_inset
+
+Выделить непрерывные однозначные ветви и построить схему римановой поверхности
+ для функции 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у квадратного корня в поле комплексных чисел имеется два возможных значения
+ за исключения квадратного корня из нуля.
+ Поэтому, кривые, проходящие через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, нужно исключить при нахождении однозначных непрерывных ветвей.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольную непрерывную кривую 
+\begin_inset Formula $C$
+\end_inset
+
+ на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, не проходящую через точку 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Пусть изменение аргумента 
+\begin_inset Formula $z$
+\end_inset
+
+ вдоль этой кривой равно 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Тогда изменение аргумента 
+\begin_inset Formula $z^{2}$
+\end_inset
+
+ вдоль этой же кривой равно, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $2\cdot\varphi$
+\end_inset
+
+.
+ А изменение аргумента 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ равно, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\frac{2\varphi}{2}=\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как модули и изменение аргументов 
+\begin_inset Formula $z$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ равны, то одно из однозначных непрерывных ветвей 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ является функция 
+\begin_inset Formula $f_{1}\left(z\right)=z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-from-function-from-one-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, второй однозначной непрерывной ветвью для 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ является 
+\begin_inset Formula $f_{2}\left(z\right)=f_{1}\left(z\right)\cdot\varepsilon_{2}=-f_{1}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Построим теперь риманову поверхность функции 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+.
+ Если кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ охватывает точку 
+\begin_inset Formula $0$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi=2\pi$
+\end_inset
+
+ и изменение аргумента 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ вдоль 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $C$
+\end_inset
+
+ не охватывает точку 
+\begin_inset Formula $0$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi=0$
+\end_inset
+
+ и изменение аргумента 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ вдоль 
+\begin_inset Formula $C$
+\end_inset
+
+ равно 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Таким образом, в обоих случаях, при обходе произвольной точки значение
+ 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ не изменяется, то есть у 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ нет точек разветвления.
+\end_layout
+
+\begin_layout Solution
+Таким образом, разрезы на листах поверхности Римана производить нет необходимост
+и.
+ Единственный способ перейти с одного листа на другой, это пройти через
+ точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+ непосредственно.
+ Таким образом, листы римановой поверхности функции 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+ соединяются только в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Из решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:continuous-branches-of-sqrt-of-square-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ мы получаем, что точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+ не является точкой разветвления функции 
+\begin_inset Formula $\sqrt{z^{2}}$
+\end_inset
+
+.
+ В то же время образы кривых, проходящих через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, определяются не однозначно.
+ Например, непрерывными образами ломаной 
+\begin_inset Formula $AOB$
+\end_inset
+
+ (как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:example-of-ambiguity-of-sqrt-of-square-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) при отображении 
+\begin_inset Formula $w=\sqrt{z^{2}}$
+\end_inset
+
+ являются ломаные 
+\begin_inset Formula $COD$
+\end_inset
+
+, 
+\begin_inset Formula $COF$
+\end_inset
+
+, 
+\begin_inset Formula $EOD$
+\end_inset
+
+ и 
+\begin_inset Formula $EOF$
+\end_inset
+
+.
+ Проходя через точку 
+\begin_inset Formula $z=0$
+\end_inset
+
+, мы можем остаться на том же листе (ломаные 
+\begin_inset Formula $COD$
+\end_inset
+
+ и 
+\begin_inset Formula $EOF$
+\end_inset
+
+) или перейти на другой лист (ломанные 
+\begin_inset Formula $COF$
+\end_inset
+
+ и 
+\begin_inset Formula $EOD$
+\end_inset
+
+).
+ Риманов поверхность функции 
+\begin_inset Formula $w\left(z\right)=\sqrt{z^{2}}$
+\end_inset
+
+ имеет вид, показанный на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-of-sqrt-of-square-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-305-note.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:example-of-ambiguity-of-sqrt-of-square-of-z"
+
+\end_inset
+
+Пример неоднозначности непрерывных образов при отображении 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-of-sqrt-of-square-of-z.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-of-sqrt-of-square-of-z"
+
+\end_inset
+
+Риманова поверхность функции 
+\begin_inset Formula $w\left(z\right)=\sqrt{z^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:point-of-ambiguity"
+
+\end_inset
+
+Точки, в которых нарушается однозначность непрерывных образов кривых, но
+ которые не являются точками разветвления, мы будем называть 
+\emph on
+точками неоднозначности 
+\emph default
+данной функции.
+\end_layout
+
+\begin_layout Standard
+При построении схем римановых поверхностей из точек неоднозначности можно
+ не проводить разрезы в бесконечность, достаточно эти точки выколоть, то
+ есть не проводить через них кривые.
+\end_layout
+
+\begin_layout Problem
+Построить схемы римановых поверхностей следующих функций: а) 
+\begin_inset Formula $\sqrt[4]{z^{2}+2}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt[4]{z^{2}}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt[4]{\left(z-1\right)^{2}\left(z+1\right)^{3}}$
+\end_inset
+
+, г) 
+\begin_inset Formula $\sqrt[4]{\left(z^{2}-1\right)^{3}\left(z+1\right)^{3}}$
+\end_inset
+
+, д) 
+\begin_inset Formula $\sqrt[4]{z\left(z^{3}-1\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-from-function-from-one-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у всех заданных функций будет 4 непрерывные однозначные ветви, а значит
+ их римановы поверхности будут состоять из 4 листов.
+ Точками разветвления или неоднозначности могут быть только такие 
+\begin_inset Formula $z$
+\end_inset
+
+, в которых подкоренное выражение равно нулю.
+ Пронумеруем листы от 1 до 4, где номер соответствует выбору одно из значений
+ 
+\begin_inset Formula $\varepsilon_{4}^{j}=\left(\cos\frac{\pi}{2}+i\sin\frac{\pi}{2}\right)^{j}$
+\end_inset
+
+ (смотри 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "roots-n-from-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+а) Из уравнения 
+\begin_inset Formula $z^{2}+2=0$
+\end_inset
+
+ получаем 
+\begin_inset Formula $z^{2}=-2$
+\end_inset
+
+ и, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $z=i\sqrt{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-i\sqrt{2}$
+\end_inset
+
+.
+ При обходе этих точек по окружностям достаточно малого радиуса, аргумент
+ подкоренного выражения изменяется на 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, а значит аргумент корня изменяется, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, на 
+\begin_inset Formula $\frac{2\pi}{4}=\frac{\pi}{2}$
+\end_inset
+
+.
+ Таким образом, при обходе каждой из этих точек осуществляется переход с
+ первого листа на второй, со второго — на третий, с третьего — на четвёртый,
+ а с четвёртого на первый.
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-root-4-of-(z2+2)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-root-4-of-(z2+2).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-root-4-of-(z2+2)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[4]{z^{2}+2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Из уравнения 
+\begin_inset Formula $z^{2}=0$
+\end_inset
+
+ получаем 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ При обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ по окружности аргумент 
+\begin_inset Formula $\sqrt[4]{z^{2}}$
+\end_inset
+
+ изменяется на 
+\begin_inset Formula $\frac{1}{4}\cdot2\cdot2\pi=\pi$
+\end_inset
+
+.
+ Таким образом, при обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ осуществляется переход с первого листа на третий, с третьего — на первый,
+ со второго — на четвёртый, а с четвёртого — на второй.
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-root-4-of-z2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-root-4-of-z2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-root-4-of-z2"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[4]{z^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) Из уравнения 
+\begin_inset Formula $\left(z-1\right)^{2}\left(z+1\right)^{3}=0$
+\end_inset
+
+ получаем, что, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:in-field-there-are-no-divisors-of-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, точками разветвления или неоднозначности могут быть 
+\begin_inset Formula $z=1$
+\end_inset
+
+ или 
+\begin_inset Formula $z=-1$
+\end_inset
+
+.
+ При обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ значение аргумента изменяется на 
+\begin_inset Formula $\frac{1}{4}\cdot2\cdot2\pi=\pi$
+\end_inset
+
+.
+ Таким образом, при обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ осуществляется переход с первого листа на третий, с третьего — на первый,
+ со второго — на четвёртый, а с четвёртого — на второй.
+ При обходе точки 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ значение аргумента изменяется на 
+\begin_inset Formula $\frac{1}{4}\cdot3\cdot2\pi=3\frac{\pi}{2}$
+\end_inset
+
+.
+ Таким образом, при обходе точки 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ осуществляется переход с первого листа на четвёртый, со второго — на первый,
+ с третьего — на второй, а с четвёртого — на третий.
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-root-4-of-(z-1)2(z+1)3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-root-4-of-(z-1)^2(z+1)^3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-root-4-of-(z-1)2(z+1)3"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[4]{\left(z-1\right)^{2}\left(z+1\right)^{3}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+г) Так как 
+\begin_inset Formula $\left(z^{2}-1\right)^{3}\left(z+1\right)^{3}=\left[\left(z-1\right)\left(z+1\right)\right]^{3}\left(z+1\right)^{3}=\left(z-1\right)^{3}\left(z+1\right)^{6}$
+\end_inset
+
+ и точками разветвления или неоднозначности могут быть точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-1$
+\end_inset
+
+.
+ При обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ аргумент изменяется на 
+\begin_inset Formula $\frac{1}{4}\cdot3\cdot2\pi=3\frac{\pi}{2}$
+\end_inset
+
+.
+ Таким образом, при обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ осуществляется переход с первого листа на четвёртый, со второго — на первый,
+ с третьего — на второй, а с четвёртого — на третий.
+ При обходе точки 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ аргумент изменяется на 
+\begin_inset Formula $\frac{1}{4}\cdot6\cdot2\pi=3\pi$
+\end_inset
+
+, так как аргумент определён с точностью до величины, кратной 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, то можно считать, что изменение аргумента равно 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ Таким образом, при обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ осуществляется переход с первого листа на третий, с третьего — на первый,
+ со второго — на четвёртый, а с четвёртого — на второй.
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-root-4-of-(z^2-1)^3(z+1)3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-root-4-of-(z^2-1)^3(z+1)^3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-root-4-of-(z^2-1)^3(z+1)3"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[4]{\left(z^{2}-1\right)^{3}\left(z+1\right)^{3}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+д) Так как 
+\begin_inset Formula $z\left(z^{3}-1\right)=z\left(z-1\right)\left(z^{2}+z+1\right)=z\left(z-1\right)\left(z-\frac{-1+i\sqrt{3}}{2}\right)\left(z-\frac{-1-i\sqrt{3}}{2}\right)$
+\end_inset
+
+, то точками разветвления или неоднозначности могут быть точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, 
+\begin_inset Formula $z=1$
+\end_inset
+
+, 
+\begin_inset Formula $z=\varepsilon_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\varepsilon_{3}^{2}$
+\end_inset
+
+.
+ При обходе каждой из этих точек значение аргумента меняется на 
+\begin_inset Formula $\frac{1}{4}\cdot2\pi=\frac{\pi}{2}$
+\end_inset
+
+.
+ Таким образом, при обходе каждой из этих точек осуществляется переход с
+ первого листа на второй, со второго — на третий, с третьего — на четвёртый,
+ а с четвёртого на первый.
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-root-4-of-z(z3-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-root-4-of-z(z3-1).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-root-4-of-z(z3-1)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[4]{z\left(z^{3}-1\right)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ниже мы будем рассматривать и такие функции, которые не определены в некоторых
+ точках.
+ При этом такие точки могут оказаться точками разветвления.
+\end_layout
+
+\begin_layout Problem
+Построить схему римановой поверхности функции 
+\begin_inset Formula $\sqrt{\frac{1}{z}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Функция 
+\begin_inset Formula $\sqrt{\frac{1}{z}}$
+\end_inset
+
+ определена однозначно всюду, кроме точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+, где она вообще не определена.
+ Причём, так как при 
+\begin_inset Formula $z=0$
+\end_inset
+
+ величина 
+\begin_inset Formula $\frac{1}{z}$
+\end_inset
+
+ не обращается в ноль.
+ Таким образом, только точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+ является кандидатом в точки разветвления или неоднозначности, а риманова
+ поверхность функции 
+\begin_inset Formula $\sqrt{\frac{1}{z}}$
+\end_inset
+
+ содержит два листа.
+\end_layout
+
+\begin_layout Solution
+При обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ по окружности аргумент 
+\begin_inset Formula $\frac{1}{z}$
+\end_inset
+
+ изменяется, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, на 
+\begin_inset Formula $0-2\pi=-2\pi$
+\end_inset
+
+.
+ А изменение аргумента 
+\begin_inset Formula $\sqrt{\frac{1}{z}}$
+\end_inset
+
+ равно, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\frac{-2\pi}{2}=-\pi$
+\end_inset
+
+.
+ Поэтому при обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ осуществляется переход с первого листа на второй, а со второго — на первый.
+ Таким образом, схема римановой поверхности совпадает со схемой римановой
+ поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, показанной на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme-of-the-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Построить схемы римановых поверхностей следующих функций: а) 
+\begin_inset Formula $\sqrt{\frac{1}{z-i}}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt[3]{\frac{z-1}{z+1}}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt[4]{\frac{\left(z+i\right)^{2}}{z\left(z-1\right)^{3}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Кандидатами в точки разветвления или неоднозначности будут те 
+\begin_inset Formula $z$
+\end_inset
+
+, в которых подкоренное выражение равно нулю или не определено.
+\end_layout
+
+\begin_layout Solution
+а) Риманова поверхность функции 
+\begin_inset Formula $\sqrt{\frac{1}{z-i}}$
+\end_inset
+
+ будет содержать два листа.
+ Подкоренное выражение не определено при 
+\begin_inset Formula $z=i$
+\end_inset
+
+, а при остальных 
+\begin_inset Formula $z$
+\end_inset
+
+ не обращается в ноль.
+ При обходе точки 
+\begin_inset Formula $z=i$
+\end_inset
+
+ по окружности аргумент 
+\begin_inset Formula $\frac{1}{z}$
+\end_inset
+
+ изменяется, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, на 
+\begin_inset Formula $0-2\pi=-2\pi$
+\end_inset
+
+.
+ А изменение аргумента 
+\begin_inset Formula $\sqrt{\frac{1}{z}}$
+\end_inset
+
+ равно, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\frac{-2\pi}{2}=-\pi$
+\end_inset
+
+.
+ Поэтому при обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ осуществляется переход с первого листа на второй, а со второго — на первый.
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-308-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-308-1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-308-1"
+
+\end_inset
+
+Риманова поверхность функции 
+\begin_inset Formula $\sqrt{\frac{1}{z-i}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Выражение 
+\begin_inset Formula $\frac{z-1}{z+1}$
+\end_inset
+
+ обращается в ноль при 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и не определено при 
+\begin_inset Formula $z=-1$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $z\neq-1$
+\end_inset
+
+ подкоренное выражение определено однозначно, поэтому риманова поверхность
+ 
+\begin_inset Formula $\sqrt[3]{\frac{z-1}{z+1}}$
+\end_inset
+
+ будет содержать три листа.
+ При обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ изменение аргумента равно 
+\begin_inset Formula $\frac{1}{3}\cdot2\pi=\frac{2\pi}{3}$
+\end_inset
+
+.
+ Таким образом, при обходе этой точки будет осуществляться переход с первого
+ листа на второй, со второго — на третий, а с третьего — на первый.
+\end_layout
+
+\begin_layout Solution
+При обходе точки 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ изменение аргумента будет равно 
+\begin_inset Formula $\frac{1}{3}\cdot\left(-2\pi\right)=\frac{-2\pi}{3}$
+\end_inset
+
+, так как аргумент определён с точностью до величины, кратной 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, то можно считать, что изменение аргумента равно 
+\begin_inset Formula $\frac{-2\pi}{3}+2\pi=\frac{4\pi}{3}$
+\end_inset
+
+.
+ Таким образом, при обходе точки 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ будет осуществляться переход с первого листа на третий, с третьего — на
+ второй, а со второго — на первый.
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-308-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-308-2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-308-2"
+
+\end_inset
+
+Риманова поверхность функции 
+\begin_inset Formula $\sqrt[3]{\frac{z-1}{z+1}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) Выражение 
+\begin_inset Formula $\frac{\left(z+i\right)^{2}}{z\left(z-1\right)^{3}}$
+\end_inset
+
+ обращается в ноль при 
+\begin_inset Formula $z=i$
+\end_inset
+
+ и не определено при 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и при 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+ и 
+\begin_inset Formula $z\neq1$
+\end_inset
+
+ подкоренное выражение определено однозначно, поэтому риманова поверхность
+ функции 
+\begin_inset Formula $\sqrt[4]{\frac{\left(z+i\right)^{2}}{z\left(z-1\right)^{3}}}$
+\end_inset
+
+ будет содержать 4 листа.
+\end_layout
+
+\begin_layout Solution
+При обходе точки 
+\begin_inset Formula $z=-i$
+\end_inset
+
+ изменение аргумента рассматриваемой функции равно 
+\begin_inset Formula $\frac{1}{4}\cdot2\cdot2\pi=\pi$
+\end_inset
+
+.
+ Поэтому при обходе данной точки будет осуществляться переход с первого
+ листа на третий, с третьего — на первый, со второго — на четвёртый, а с
+ четвёртого — на второй.
+\end_layout
+
+\begin_layout Solution
+При обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ изменение аргумента равно 
+\begin_inset Formula $\frac{1}{4}\cdot\left(-2\pi\right)=-\frac{\pi}{2}=\frac{3\pi}{2}\mod2\pi$
+\end_inset
+
+.
+ Таким образом, при обходе этой точки будет осуществляться переход с первого
+ листа на четвёртый, со второго — на первый, с третьего — на второй, а с
+ четвёртого — на третий.
+\end_layout
+
+\begin_layout Solution
+При обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ изменение аргумента равно 
+\begin_inset Formula $\frac{1}{4}\cdot3\cdot\left(-2\pi\right)=-\frac{3\pi}{2}=\frac{\pi}{2}\mod2\pi$
+\end_inset
+
+.
+ Таким образом, при обходе этой точки будет осуществляться переход с первого
+ листа на второй, со второго — на третий, с третьего — на четвёртый, а с
+ четвёртого — на первый.
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rieman-surface-scheme-308-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-308-3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "rieman-surface-scheme-308-3"
+
+\end_inset
+
+Риманова поверхность функции 
+\begin_inset Formula $\sqrt[4]{\frac{\left(z+i\right)^{2}}{z\left(z-1\right)^{3}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При решении задач этого параграфа мы везде получали, что после проведения
+ непересекающихся разрезов из всех точек разветвления в бесконечность рассматрив
+аемая функция распадается на однозначные непрерывные ветви, которые затем
+ определённым образом соединяются по разрезам.
+ Оказывается, что этим свойством обладает довольно широкий класс многозначных
+ функций.
+ В частности, таим свойством обладают все рассматриваемые ниже функции,
+ а именно функции, выражающиеся в радикалах (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на параграф 11
+\end_layout
+
+\end_inset
+
+), и алгебраические функции (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на параграф 14
+\end_layout
+
+\end_inset
+
+)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+И те, и другие функции являются частными случаями более широкого класса
+ так называемых аналитических функций, также обладающих указанным свойством.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Доказательство этого утверждения выходит за рамки данной книги.
+ Поэтому мы могли бы просто сослаться на существующую по данному вопросу
+ литературу
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+См., например, Спрингер Дж., Введение в теорию римановых поверхностей, ИЛ,
+ 1960.
+\end_layout
+
+\end_inset
+
+ и принять сформулированное выше утверждение без доказательства (Читатель
+ может так и поступить, перейдя сразу к чтению параграфа 11
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Однако при этом у читателя может остаться некоторое чувство неудовлетворённости.
+ И хотя мы не сможем полностью избавить читателя от этого чувства, мы всё
+ же покажем, что сформулированное выше свойство вытекает из другого свойства
+ — так называемого 
+\emph on
+свойства монодромии
+\emph default
+, которое выглядит более очевидным.
+\end_layout
+
+\begin_layout Standard
+Мы знаем, что для выделения однозначных непрерывных ветвей многозначной
+ функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ (в некоторой области плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+) необходимо, чтобы функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ определялась по непрерывности одинаково вдоль любых двух кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, лежащих в этой области и идущих из произвольной точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в некоторую другую точку 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Свойство монодромии и связано с этим условием.
+\end_layout
+
+\begin_layout Standard
+Пусть многозначная функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ такова, что при фиксировании любого её значения 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ в произвольной точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ может быть определена по непрерывности (возможно, неоднозначно) вдоль любой
+ кривой, выходящей из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ (и не проходящей через точки, в которых функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ не определена).
+ Скажем, что многозначная функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ обладает свойством монодромии, если для неё справедливо следующее утверждение.
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "def:monodromy"
+
+\end_inset
+
+Свойство монодромии.
+ 
+\emph default
+Пусть 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ — непрерывные кривые на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, начинающиеся в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, кончающиеся в некоторой точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и не проходящие через точки разветвления и неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Пусть, кроме того, кривую можно непрерывно деформировать в кривую 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ так, чтобы кривые, получающиеся при деформации, не проходили через точки
+ разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ и чтобы их концы оставались неподвижными (см.
+ рис.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:monodromy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Тогда значение 
+\begin_inset Formula $w\left(z_{1}\right)$
+\end_inset
+
+ одинаково определяется по непрерывности вдоль кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ (если зафиксировано некоторое значение 
+\begin_inset Formula $w_{0}=w\left(z_{0}\right)$
+\end_inset
+
+).
+ Выясним, какие следствия вытекают из свойства монодромии.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/monodromy-sample.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:monodromy"
+
+\end_inset
+
+Иллюстрация к свойству монодромии.
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — точки разветвления
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:monodromic-function-can-be-partitioned-on-continuous-unambiguous-branches"
+
+\end_inset
+
+Пусть функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ обладает свойством монодромии.
+ Проведём на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ непересекающиеся разрезы из всех точек разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в бесконечность и выколем точки неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Доказать, что при этом функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ распадается на однозначные непрерывные ветви.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ — непрерывные кривые на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, начинающиеся в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, кончающиеся в некоторой точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, не проходящие через точки разветвления и неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ и не пересекающие разрезы, проведённые из точек разветвления.
+ Тогда, поскольку 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ можно непрерывно деформировать в 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, так, что промежуточные кривые не будут проходить через точки разветвления,
+ то по свойству монодромии 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:monodromy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, при выбранном значении функции 
+\begin_inset Formula $w\left(z_{0}\right)$
+\end_inset
+
+ значение 
+\begin_inset Formula $w_{1}\left(z\right)$
+\end_inset
+
+ определяется однозначно.
+ Таким образом, выбирая различные значения для 
+\begin_inset Formula $w\left(z_{0}\right)$
+\end_inset
+
+ будем получать различные однозначные непрерывные ветви функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:monodromic-function-cut-cross-point-does-not-matter"
+
+\end_inset
+
+Пусть при условиях задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-can-be-partitioned-on-continuous-unambiguous-branches"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрезы не проходят через точки неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ и у 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ конечное число точек разветвления.
+ Доказать, что при пересечении некоторого разреза (в определённую сторону)
+ мы с любой фиксированной ветви функции 
+\begin_inset Formula $w^{\prime}\left(z\right)$
+\end_inset
+
+ будем переходить на одно и ту же ветвь независимо от того, в каком именно
+ месте мы пересекаем разрез.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим две кривые 
+\begin_inset Formula $AB$
+\end_inset
+
+ и 
+\begin_inset Formula $CD$
+\end_inset
+
+, пересекающие разрез, проведённый из некоторой точки разветвления (см.
+ рисунок 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:problem-310"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Пусть при движении по 
+\begin_inset Formula $AB$
+\end_inset
+
+ мы переходим с 
+\begin_inset Formula $i$
+\end_inset
+
+-й на 
+\begin_inset Formula $j$
+\end_inset
+
+-ю ветвь.
+ Рассмотрим, на какую ветвь мы перейдём с 
+\begin_inset Formula $i$
+\end_inset
+
+-й ветви при движении по 
+\begin_inset Formula $CD$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/problem-310.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:problem-310"
+
+\end_inset
+
+Иллюстрация к доказательству независимости смены ветви от точки пересечения
+ разреза.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как у функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ конечное число точек разветвления, то кривые 
+\begin_inset Formula $AB$
+\end_inset
+
+ и 
+\begin_inset Formula $CD$
+\end_inset
+
+ можно выбрать настолько короткими, а кривые 
+\begin_inset Formula $CA$
+\end_inset
+
+ и 
+\begin_inset Formula $BD$
+\end_inset
+
+ настолько близкими к разрезу, что внутри кривой 
+\begin_inset Formula $CABDC$
+\end_inset
+
+ не будет точек разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ В таком случае кривую 
+\begin_inset Formula $CABD$
+\end_inset
+
+ можно, очевидно, непрерывно деформировать в кривую 
+\begin_inset Formula $CD$
+\end_inset
+
+, не проходя через точки разветвления.
+ Так как функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ обладает свойством монодромии 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:monodromy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ одинаково определяется по непрерывности 
+\begin_inset Formula $CD$
+\end_inset
+
+ и 
+\begin_inset Formula $CABD$
+\end_inset
+
+.
+ Начиная с 
+\begin_inset Formula $i$
+\end_inset
+
+-ой ветви и двигаясь по кривой 
+\begin_inset Formula $CABD$
+\end_inset
+
+, мы сначала находимся на 
+\begin_inset Formula $i$
+\end_inset
+
+-ой ветви, затем переходим на 
+\begin_inset Formula $j$
+\end_inset
+
+-ю ветвь и затем движемся по 
+\begin_inset Formula $j$
+\end_inset
+
+-й ветви.
+ Таким образом, по кривой 
+\begin_inset Formula $CABD$
+\end_inset
+
+, а следовательно, и по кривой 
+\begin_inset Formula $CD$
+\end_inset
+
+ мы с 
+\begin_inset Formula $i$
+\end_inset
+
+-й ветви переходим на 
+\begin_inset Formula $j$
+\end_inset
+
+-ю ветвь, то есть так же, как и по кривой 
+\begin_inset Formula $AB$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+При обходе вокруг точки разветвления мы один раз пересекаем разрез, идущий
+ из данной точки в бесконечность.
+ Поэтому в силу результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-cut-cross-point-does-not-matter"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ переходы с одних ветвей на другие при пересечении некоторого разреза в
+ произвольном месте совпадают с переходами, получающимися при обходе (в
+ соответствующую сторону) точки разветвления, из которой проведён разрез,
+ и, следовательно, совпадают с переходами, указанными в схеме римановой
+ поверхности.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Из результатов задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-can-be-partitioned-on-continuous-unambiguous-branches"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-cut-cross-point-does-not-matter"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что если многозначная функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ обладает свойством монодромии 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:monodromy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то для 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ можно построить риманову поверхность.
+ Причём для выяснения структуры этой поверхности достаточно найти точки
+ разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ и установить переходы между ветвями функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ при обходе этих точек.
+\end_layout
+
+\begin_layout Standard
+Все функции, которые будут рассматриваться ниже, обладают свойством монодромии.
+ Строго доказать это утверждение мы здесь не сможем, так как для этого требуется
+ привлечение понятия аналитической функции.
+ Однако мы дадим идею доказательства того, что некоторая многозначная функция
+ 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ обладает свойством монодромии, предполагая, что эта функция является 
+\begin_inset Quotes rld
+\end_inset
+
+достаточно хорошей
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Что это означает — будет видно из идеи доказательства.
+\end_layout
+
+\begin_layout Standard
+Итак, пусть выполняются условия из свойства монодромии.
+ Пусть 
+\begin_inset Formula $C_{1}^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}^{\prime}$
+\end_inset
+
+ — непрерывные образы кривых 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, начинающиеся в точке 
+\begin_inset Formula $w_{0}=w\left(z_{0}\right)$
+\end_inset
+
+.
+ Надо доказать, что кривые 
+\begin_inset Formula $C_{1}^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}^{\prime}$
+\end_inset
+
+ оканчиваются в одной и той же точке.
+\end_layout
+
+\begin_layout Standard
+Предположим сначала, что кривые, получающиеся при деформации 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ в 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+, не проходят не только через точки разветвления, но и через точки неоднозначнос
+ти 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:point-of-ambiguity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — любая из таких кривых.
+ Тогда существует единственный непрерывный образ 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, начинающийся в точке 
+\begin_inset Formula $w_{0}=w\left(z_{0}\right)$
+\end_inset
+
+.
+ Если функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ 
+\begin_inset Quotes rld
+\end_inset
+
+достаточно хорошая
+\begin_inset Quotes rrd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Обычно теорема монодромии доказывается для произвольных аналитических функций.
+ См., например, Спрингер Дж., Введение в теорию римановых поверхностей, ИЛ,
+ 1960, стр.
+ 97.
+\end_layout
+
+\end_inset
+
+, то при непрерывной деформации кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ от положения 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ до положения 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ кривые 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ непрерывно деформируются от положения 
+\begin_inset Formula $C_{1}^{\prime}$
+\end_inset
+
+ до положения 
+\begin_inset Formula $C_{2}^{\prime}$
+\end_inset
+
+.
+ При этом конечная точка кривой 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ также должна деформироваться непрерывно.
+ Но кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ оканчивается в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, поэтому конечная точка кривой 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ должна совпадать с одним из образом 
+\begin_inset Formula $w\left(z_{1}\right)$
+\end_inset
+
+ точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Если функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ принимает при каждом 
+\begin_inset Formula $z$
+\end_inset
+
+ (в частности, при 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+) лишь конечное число значений (а мы рассматриваем только такие функции),
+ то конечная точка кривой 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ не может перескочить из одного образа точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ в другой образ, так как при этом нарушится непрерывность деформации.
+ Следовательно, конечные точки всех кривых 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ и, в частности, кривых 
+\begin_inset Formula $C_{1}^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Посмотрим теперь, что происходит, когда кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ переходит через точку неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, которая не является точкой разветвления.
+ Рассмотрим только частный случай, когда кривая изменяется лишь вблизи точки
+ неоднозначности 
+\begin_inset Formula $a$
+\end_inset
+
+ (как показано на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:monodromy-point-of-ambiguity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Если в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ зафиксировано значение 
+\begin_inset Formula $w_{0}=w\left(z_{0}\right)$
+\end_inset
+
+, то по непрерывности однозначно определится значение 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ После этого одинаково определяются по непрерывности вдоль кривых 
+\begin_inset Formula $ADE$
+\end_inset
+
+ и 
+\begin_inset Formula $ABE$
+\end_inset
+
+ значения 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $E$
+\end_inset
+
+, так как иначе при обходе по кривой 
+\begin_inset Formula $EDABE$
+\end_inset
+
+ изменилось бы значение функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ и точка 
+\begin_inset Formula $a$
+\end_inset
+
+ была бы точкой разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ После того как значения 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $E$
+\end_inset
+
+ определились одинаково по обеим кривым, одинаково определяются по непрерывности
+ вдоль кривой 
+\begin_inset Formula $Ez_{1}$
+\end_inset
+
+ и значения 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/monodromy-point-of-ambiguity.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:monodromy-point-of-ambiguity"
+
+\end_inset
+
+Иллюстрация к доказательству свойства монодромии для случая пересечения
+ точки неоднозначности
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, 
+\begin_inset Quotes rld
+\end_inset
+
+тёмным
+\begin_inset Quotes rrd
+\end_inset
+
+ местом в нашем изложении осталось утверждение о том, что все рассматриваемые
+ ниже функции являются 
+\begin_inset Quotes rld
+\end_inset
+
+достаточно хорошими
+\begin_inset Quotes rrd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Здесь уж читателю придётся либо принять это утверждение на веру, либо обратиться
+ к более глубокому изучению аналитических функций
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+См.
+ например, Бицадзе А.В., Основы теории аналитических функций комплексного
+ переменного, 
+\begin_inset Quotes rld
+\end_inset
+
+Наука
+\begin_inset Quotes rrd
+\end_inset
+
+, 1969.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доделать книгу
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
