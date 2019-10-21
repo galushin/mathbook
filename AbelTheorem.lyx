@@ -75008,13 +75008,13 @@ name "rieman-surface-scheme-308-3"
  Оказывается, что этим свойством обладает довольно широкий класс многозначных
  функций.
  В частности, таим свойством обладают все рассматриваемые ниже функции,
- а именно функции, выражающиеся в радикалах (
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на параграф 11
-\end_layout
+ а именно функции, выражающиеся в радикалах (описанных в разделе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:radical-expressed-functions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -75057,13 +75057,13 @@ status open
 \end_inset
 
  и принять сформулированное выше утверждение без доказательства (Читатель
- может так и поступить, перейдя сразу к чтению параграфа 11
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ может так и поступить, перейдя сразу к чтению раздела 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:radical-expressed-functions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -76093,6 +76093,513 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:radical-expressed-functions"
+
+\end_inset
+
+Функции, выражающиеся в радикалах
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — две многозначные функции.
+ Под 
+\begin_inset Formula $f\left(z\right)+g\left(z\right)$
+\end_inset
+
+ будет пониматься многозначная функции, все значения которой в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ получается, если каждое значение 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+ сложить с каждым значением 
+\begin_inset Formula $g\left(z_{0}\right)$
+\end_inset
+
+.
+ Так же определяются функции 
+\begin_inset Formula $f\left(z\right)-g\left(z\right)$
+\end_inset
+
+ , 
+\begin_inset Formula $f\left(z\right)\cdot g\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{f\left(z\right)}{g\left(z\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Под 
+\begin_inset Formula $\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — натуральное число, будет пониматься функция, все значения которой в точке
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ получаются, если каждое значение 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+ возвести в степень 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Под 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — натуральное число, будет пониматься функция, все значения которой в точке
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ получаются, если для каждого значения 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+ вычислить все 
+\begin_inset Formula $n$
+\end_inset
+
+ значений 
+\begin_inset Formula $\sqrt[n]{f\left(z_{0}\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Найти все значения а) 
+\begin_inset Formula $\sqrt[3]{-8}+\sqrt{2i}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\frac{1-\sqrt{-2i}}{\sqrt{-4}}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt{i+\sqrt{-1}}$
+\end_inset
+
+, г) 
+\begin_inset Formula $\left(\sqrt[4]{\left(1+i\right)^{2}}\right)^{2}$
+\end_inset
+
+, д) 
+\begin_inset Formula $\left(\sqrt{i}+\sqrt{i}\right)^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Так как 
+\begin_inset Formula $\left|-8\right|=8$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\left(-8\right)=\pi$
+\end_inset
+
+, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula $\left|\sqrt[3]{-8}\right|=\sqrt[3]{8}=2$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\sqrt[3]{-8}=\pi+\frac{2\pi k}{3}$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1,2$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $k=0$
+\end_inset
+
+ получим 
+\begin_inset Formula $\sqrt[3]{-8}=2\left(\cos\pi+i\sin\pi\right)=-2$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $k=1$
+\end_inset
+
+ получим значение аргумента 
+\begin_inset Formula $\pi+\frac{2\pi}{3}=\frac{5\pi}{3}=-\frac{\pi}{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[3]{-8}=2\left(\cos\frac{\pi}{3}-i\sin\frac{\pi}{3}\right)=2\left(\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)=1-i\sqrt{3}$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $k=2$
+\end_inset
+
+ получим значение аргумента 
+\begin_inset Formula $\pi+\frac{4\pi}{3}=\frac{7\pi}{3}=\frac{\pi}{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[3]{-8}=2\left(\cos\frac{\pi}{3}+i\sin\frac{\pi}{3}\right)=1+i\sqrt{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $\left|2i\right|=2$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\left(2i\right)=\frac{\pi}{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|\sqrt{2i}\right|=\sqrt{2}$
+\end_inset
+
+ (в правой части имеется в виду положительное значение корня) и 
+\begin_inset Formula $\mathrm{Arg}\sqrt{2i}=\frac{\pi}{4}+\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula 
+\[
+\sqrt{2i}=\pm\sqrt{2}\left(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}\right)=\pm\sqrt{2}\left(\frac{\sqrt{2}}{2}+i\frac{\sqrt{2}}{2}\right)=\pm\left(1+i\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Теперь, чтобы получить значения всего выражения 
+\begin_inset Formula $\sqrt[3]{-8}+\sqrt{2i}$
+\end_inset
+
+, нужно взять всевозможные пары значений слагаемых.
+ Всего получится следующих значений.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+-2+1+i=-1+i,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+-2-1-i=-3-i,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-i\sqrt{3}+1+i=2+i\left(1-\sqrt{3}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-i\sqrt{3}-1-i=-i\left(\sqrt{3}+1\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+1+i\sqrt{3}+1+i=2+i\left(\sqrt{3}+1\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+1+i\sqrt{3}-1-i=i\left(\sqrt{3}-1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Так как 
+\begin_inset Formula $\left|-2i\right|=\left|2\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\left(-2i\right)=-\frac{\pi}{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|\sqrt{-2i}\right|=\sqrt{2}$
+\end_inset
+
+ (в правой части имеется в виду положительное значение корня) и 
+\begin_inset Formula $\mathrm{Arg}\sqrt{-2i}=-\frac{\pi}{4}+\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1$
+\end_inset
+
+.
+ Таким образом: 
+\begin_inset Formula 
+\[
+\sqrt{-2i}=\pm\sqrt{2}\left(\cos\frac{\pi}{4}-i\sin\frac{\pi}{4}\right)=\pm\left(1-i\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-\sqrt{-2i}=1\pm\left(i-1\right)=\left\{ i,2-i\right\} ,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt{-4}=\pm2i.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Выражение 
+\begin_inset Formula $\frac{1-\sqrt{-2i}}{\sqrt{-4}}$
+\end_inset
+
+ будет иметь четыре значения: 
+\begin_inset Formula 
+\[
+\frac{i}{\pm2i}=\pm\frac{1}{2},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{2-i}{\pm2i}=\pm\left(\frac{1}{i}-\frac{1}{2}\right)=\pm\left(-\frac{1}{2}-i\right)=\pm\left(\frac{1}{2}+i\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) 
+\begin_inset Formula $\sqrt{-1}=\pm i$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $i+\sqrt{-1}=i\pm i=\left\{ 2i,0\right\} $
+\end_inset
+
+.
+ В свою очередь, как мы видели выше, 
+\begin_inset Formula $\sqrt{2i}=\pm\left(1+i\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $\sqrt{0}=0$
+\end_inset
+
+, таким образом 
+\begin_inset Formula 
+\[
+\sqrt{i+\sqrt{-1}}=\left\{ -\left(1+i\right),0,\left(1+i\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+г) 
+\begin_inset Formula $\left(1+i\right)^{2}=1^{2}+2i+i^{2}=2i$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left|2i\right|=2$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\left(2i\right)=\frac{\pi}{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|\sqrt[4]{2i}\right|=\sqrt[4]{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\left(2i\right)=\frac{\pi}{8}+\frac{2\pi k}{4}$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1,2,3$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+\left(\sqrt[4]{\left(1+i\right)^{2}}\right)^{2}=\sqrt{2}\left(\cos\left(\frac{\pi}{4}+\pi k\right)+i\sin\left(\frac{\pi}{4}+\pi k\right)\right),
+\]
+
+\end_inset
+
+ но так как аргумент 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ с одной стороны, и 
+\begin_inset Formula $\pi$
+\end_inset
+
+ и 
+\begin_inset Formula $3\pi$
+\end_inset
+
+ — с другой задают один и тот же угол, то получим два возможных значения
+ (при 
+\begin_inset Formula $k=0$
+\end_inset
+
+ и 
+\begin_inset Formula $k=1$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\sqrt[4]{\left(1+i\right)^{2}}\right)^{2}=\pm\sqrt{2}\left(\frac{\sqrt{2}}{2}+i\frac{\sqrt{2}}{2}\right)=\pm\left(1+i\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+д) 
+\begin_inset Formula $\sqrt{i}=\pm\left(\frac{\sqrt{2}}{2}+i\frac{\sqrt{2}}{2}\right)$
+\end_inset
+
+.
+ Значения первого и второго корня могут выбираться независимо, поэтому 
+\begin_inset Formula 
+\[
+\sqrt{i}+\sqrt{i}=\left\{ 0,\pm\left(\sqrt{2}+i\sqrt{2}\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать этот раздел
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
