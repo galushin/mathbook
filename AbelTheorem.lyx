@@ -67036,7 +67036,7 @@ P^{\prime}\left(z\right)=\left[\left(z-z_{0}\right)^{k}\right]^{\prime}\cdot Q\l
 
 \begin_layout Section
 Риманова поверхность функции 
-\begin_inset Formula $\sqrt[n]{z}$
+\begin_inset Formula $\sqrt{z}$
 \end_inset
 
 
@@ -70778,6 +70778,12 @@ name "fig:scheme-of-the-rieman-surface-of-sqrt"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:rieman-surfaces"
+
+\end_inset
+
 Римановы поверхности более сложных функций
 \end_layout
 
@@ -76587,6 +76593,515 @@ noprefix "false"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Definition
+Будем говорить, что многозначная функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ 
+\emph on
+выражается в радикалах
+\emph default
+, если она может быть получена из функции 
+\begin_inset Formula $f\left(z\right)=z$
+\end_inset
+
+ и постоянных функций вида 
+\begin_inset Formula $g\left(z\right)=a$
+\end_inset
+
+ (где 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольное фиксированное комплексное число) с помощью операций сложения,
+ вычитания, умножения, деления, возведения в натуральную степень и извлечения
+ корней натуральной степени.
+\end_layout
+
+\begin_layout Standard
+Например, функция 
+\begin_inset Formula $h\left(z\right)=\left(\sqrt[3]{\sqrt{z}+3z^{2}}-\frac{i}{\sqrt{z}}\right)^{4}$
+\end_inset
+
+ выражена в радикалах.
+ Некоторые функции, выражающиеся в радикалах мы уже рассматривали выше.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:there-exists-continuous-image-of-curve-by-radical-expressed-function"
+
+\end_inset
+
+Пусть функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ выражается в радикалах, и пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, начинающаяся в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и не проходящая через точки, в которых 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ не определена.
+ Доказать, что если 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $h\left(z_{0}\right)$
+\end_inset
+
+ , то имеется хотя бы один непрерывный образ кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=h\left(z\right)$
+\end_inset
+
+, начинающийся в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ (считаем, что параметрическое уравнение 
+\begin_inset Formula $w\left(t\right)=a$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — фиксированное комплексное число, задаёт непрерывную кривую, вырождающуюся
+ в точку).
+\end_layout
+
+\begin_layout Solution
+Доказательство проведём индукцией по структуре функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+, выражающейся в радикалах.
+\end_layout
+
+\begin_layout Solution
+Базой индукции будет утверждение о том, что искомый непрерывный образ будет
+ существовать при 
+\begin_inset Formula $h\left(z\right)=z$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(z\right)=a$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольное комплексное число.
+ Действительно, при 
+\begin_inset Formula $h\left(z\right)=z$
+\end_inset
+
+ достаточно взять 
+\begin_inset Formula $w\left(t\right)=z\left(t\right)$
+\end_inset
+
+, а при 
+\begin_inset Formula $h\left(z\right)=a$
+\end_inset
+
+ — 
+\begin_inset Formula $w\left(t\right)=a$
+\end_inset
+
+.
+ Непрерывность функций такого вида доказана в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:identity-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:constant-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ соответственно.
+\end_layout
+
+\begin_layout Solution
+Теперь нужно доказать, что если 
+\begin_inset Formula $h_{1}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}\left(z\right)$
+\end_inset
+
+ — отображения, для которых существует требуемый по условию непрерывный
+ образ, то такими же будет следующие функции: 
+\begin_inset Formula $h_{1}\left(z\right)+h_{2}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}\left(z\right)-h_{2}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}\left(z\right)\cdot h_{2}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{h_{1}\left(z\right)}{h_{2}\left(z\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $\left[h_{1}\left(z\right)\right]^{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[n]{h_{1}\left(z\right)}$
+\end_inset
+
+ (в последних двух выражения 
+\begin_inset Formula $n$
+\end_inset
+
+ — произвольное натуральное число).
+ Рассмотрим эти выражения последовательно.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:ratio-of-continuous-functions-is-continuos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
+\begin_inset Formula $h_{1}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}\left(z\right)$
+\end_inset
+
+ непрерывны (справедливо в силу предположения индукции), а 
+\begin_inset Formula $h_{2}\left(z\right)\neq0$
+\end_inset
+
+ (справедливо по условиям задачи, когда 
+\begin_inset Formula $h_{2}\left(z\right)$
+\end_inset
+
+ стоит в знаменателе дроби), то непрерывны и функции 
+\begin_inset Formula $h_{1}\left(z\right)+h_{2}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}\left(z\right)-h_{2}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}\left(z\right)\cdot h_{2}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{h_{1}\left(z\right)}{h_{2}\left(z\right)}$
+\end_inset
+
+.
+ Так как возможные значения этих выражений получаются как соответственно
+ сумма, разность, произведение и частное функций 
+\begin_inset Formula $h_{1}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}\left(z\right)$
+\end_inset
+
+, то для любого возможного значения 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ выражения 
+\begin_inset Formula $h_{1}\left(z_{0}\right)+h_{2}\left(z_{0}\right)$
+\end_inset
+
+ существуют 
+\begin_inset Formula $w_{0}^{\prime}=h_{1}\left(z_{0}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{0}^{\prime\prime}=h_{2}\left(z_{0}\right)$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $w_{0}=w_{0}^{\prime}+w_{0}^{\prime\prime}$
+\end_inset
+
+.
+ Аналогично обстоит дело и с разностью, произведением и частным.
+\end_layout
+
+\begin_layout Solution
+Случай 
+\begin_inset Formula $h\left(z\right)=\left[h_{1}\left(z\right)\right]^{n}$
+\end_inset
+
+.
+ Он сводится к случаю 
+\begin_inset Formula $h\left(z\right)=h_{1}\left(z\right)\cdot h_{2}\left(z\right)$
+\end_inset
+
+, так как возведение в натуральную степень — это нахождение произведения
+ соответствующего количества одинаковых слагаемых.
+\end_layout
+
+\begin_layout Solution
+Наконец, рассмотрим случай 
+\begin_inset Formula $h\left(z\right)=\sqrt[n]{h_{1}\left(z\right)}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $v\left(t\right)$
+\end_inset
+
+ — непрерывный образ кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $h_{1}\left(z\right)$
+\end_inset
+
+, начинающийся в точке 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+, где 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $h_{1}\left(z_{0}\right)$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:there-exists-continuous-image-of-continuous-curve-by-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует непрерывный образ этой кривой при отображении 
+\begin_inset Formula $w\left(v\right)=\sqrt[n]{v}$
+\end_inset
+
+, начинающийся в любой точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+, которая является одним из значений 
+\begin_inset Formula $\sqrt[n]{v_{0}}$
+\end_inset
+
+.
+ Так как все возможные значения 
+\begin_inset Formula $h\left(z_{0}\right)$
+\end_inset
+
+ получаются как всевозможные значения корня 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени из 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+, то эту полученную кривую можно взять в качестве искомого непрерывного
+ образа 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:there-exists-continuous-image-of-curve-by-radical-expressed-function"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем, что произвольная функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+, выражающаяся в радикалах, может быть определена по непрерывности вдоль
+ любой непрерывной кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, не проходящей через точки, в которых функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ не определена.
+ Если при этом кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ не проходит через точки разветвления 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branching-points"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и неоднозначности 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:point-of-ambiguity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+, то функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ определяется вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ однозначно.
+\end_layout
+
+\begin_layout Standard
+Мы уже отмечали в предыдущем разделе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:rieman-surfaces"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что функции, выражающиеся в радикалах, являются 
+\begin_inset Quotes rld
+\end_inset
+
+достаточно хорошими
+\begin_inset Quotes rrd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Функции, выражающиеся в радикалах, являются аналитическими.
+\end_layout
+
+\end_inset
+
+, то есть они обладают свойством монодромии.
+ Поэтому для любой функции, выражающейся в радикалах, можно построить риманову
+ поверхность (смотри задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-can-be-partitioned-on-continuous-unambiguous-branches"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-cut-cross-point-does-not-matter"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Любая функция, выражающаяся в радикалах, имеет конечное число точек разветвления.
+\end_layout
+
+\end_inset
+
+).
+ Выясним структуру этих римановых поверхностей.
+\end_layout
+
+\begin_layout Standard
+В дальнейшем всюду в этом разделе можно предполагать, что речь идёт о функциях,
+ выражающихся в радикалах.
 \end_layout
 
 \begin_layout Standard
