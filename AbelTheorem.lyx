@@ -77104,6 +77104,133 @@ status open
  выражающихся в радикалах.
 \end_layout
 
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+.
+ Выколем из плоскости все точки неоднозначности функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ и проведём непересекающиеся разрезы в бесконечность из всех точек, которые
+ являются точками разветвления хотя бы одной из функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $f_{n}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}\left(z\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $g_{m}\left(z\right)$
+\end_inset
+
+ — непрерывные однозначные ветви функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ на полученной плоскости с разрезами.
+ Найти непрерывные однозначные ветви функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольную кривую 
+\begin_inset Formula $C$
+\end_inset
+
+ на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, которая не пересекает проведённые разрезы и не проходит через выколотые
+ точки, начинающуюся в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и заканчивающуюся в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Функция 
+\begin_inset Formula $h_{j,k}\left(z\right)=f_{j}\left(z\right)+g_{k}\left(z\right)$
+\end_inset
+
+ является однозначной и непрерывной вдоль таких кривых, поэтому она будет
+ непрерывной однозначной ветвью 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+.
+ Всего имеется 
+\begin_inset Formula $n\cdot m$
+\end_inset
+
+ таких ветвей.
+ Возможные значения 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $w_{0}=u_{0}+v_{0}$
+\end_inset
+
+, где 
+\begin_inset Formula $u_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $g\left(z_{0}\right)$
+\end_inset
+
+.
+ Таких значений также 
+\begin_inset Formula $n\cdot m$
+\end_inset
+
+.
+ Таким образом, других однозначных непрерывных ветвей быть не может.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
