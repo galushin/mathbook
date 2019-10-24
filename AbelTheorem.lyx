@@ -71284,6 +71284,12 @@ f_{3}\left(-i\right)=\sqrt[3]{1}\left(\cos\left(-\frac{\pi}{6}+\frac{4\pi}{3}\ri
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-and-its-scheme-of-cube-root-of-z"
+
+\end_inset
+
 Построить риманову поверхность и её схему для функции 
 \begin_inset Formula $w=\sqrt[3]{z}$
 \end_inset
@@ -72336,6 +72342,12 @@ f_{j}\left(z\right)=f_{0}\left(z\right)\cdot\varepsilon_{n}^{j}.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-scheme-of-root-n-of-z"
+
+\end_inset
+
 Построить схему римановой поверхности функции 
 \begin_inset Formula $\sqrt[n]{z}$
 \end_inset
@@ -72471,6 +72483,12 @@ name "fig:rieman-surface-scheme-of-roon-n-of-z"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-scheme-of-sqrt-of-(z-1)"
+
+\end_inset
+
 Для функции 
 \begin_inset Formula $\sqrt{z-1}$
 \end_inset
@@ -73150,6 +73168,12 @@ name "fig:rieman-surface-scheme-of-sqrt-of-quadrics-samples"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-scheme-examples-of-sqrt-3-of-polynomial"
+
+\end_inset
+
 Построить схемы римановых поверхностей следующих функций: а) 
 \begin_inset Formula $\sqrt[3]{z^{2}-1}$
 \end_inset
@@ -74506,6 +74530,12 @@ name "fig:rieman-surface-scheme-of-root-4-of-z(z3-1)"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieaman-surface-scheme-of-sqrt-of-1/z"
+
+\end_inset
+
 Построить схему римановой поверхности функции 
 \begin_inset Formula $\sqrt{\frac{1}{z}}$
 \end_inset
@@ -77229,6 +77259,547 @@ status open
 
 .
  Таким образом, других однозначных непрерывных ветвей быть не может.
+\end_layout
+
+\begin_layout Standard
+Если при обходе точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ мы с ветви 
+\begin_inset Formula $f_{i_{1}}\left(z\right)$
+\end_inset
+
+ переходим на ветвь 
+\begin_inset Formula $f_{i_{2}}\left(z\right)$
+\end_inset
+
+ и с ветви 
+\begin_inset Formula $g_{j_{1}}\left(z\right)$
+\end_inset
+
+ на ветвь 
+\begin_inset Formula $g_{j_{2}}\left(z\right)$
+\end_inset
+
+, то, очевидно, с ветви 
+\begin_inset Formula $h_{i_{1},j_{1}}\left(z\right)=f_{i_{1}}\left(z\right)+g_{j_{1}}\left(z\right)$
+\end_inset
+
+ мы перейдём на ветвь 
+\begin_inset Formula $h_{i_{2},j_{2}}\left(z\right)=f_{i_{2}}\left(z\right)+g_{j_{2}}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "foraml-method-of-constructing-rieman-surface-scheme"
+
+\end_inset
+
+Это подсказывает нам следующий формальный метод построения схемы римановой
+ поверхности функции 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+ при условии, что построены (при тех же разрезах) схемы римановых поверхностей
+ функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+.
+ Каждой паре ветвей 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{j}\left(z\right)$
+\end_inset
+
+ ставим в соответствие лист, на котором считаем заданной ветвь 
+\begin_inset Formula $h_{i,j}\left(z\right)=f_{i}\left(z\right)+g_{j}\left(z\right)$
+\end_inset
+
+.
+ Если в схемах римановых поверхностей функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ указаны переходы с ветви 
+\begin_inset Formula $f_{i_{1}}\left(z\right)$
+\end_inset
+
+ на ветвь 
+\begin_inset Formula $f_{i_{2}}\left(z\right)$
+\end_inset
+
+ и с ветви 
+\begin_inset Formula $g_{j_{1}}\left(z\right)$
+\end_inset
+
+ на ветвь 
+\begin_inset Formula $g_{j_{2}}\left(z\right)$
+\end_inset
+
+, то в схеме римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ указываем в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ переход с ветви 
+\begin_inset Formula $h_{i_{1},j_{1}}\left(z\right)$
+\end_inset
+
+ на ветвь 
+\begin_inset Formula $h_{i_{2},j_{2}}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Построить схемы римановых поверхностей следующих функций: а) 
+\begin_inset Formula $\sqrt{z}+\sqrt{z-1}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}+\sqrt{\frac{1}{z}}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt{z}+\sqrt[3]{z}$
+\end_inset
+
+, г) 
+\begin_inset Formula $\sqrt{z^{2}-1}+\sqrt[4]{z-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся формальным методом, описанным выше в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "foraml-method-of-constructing-rieman-surface-scheme"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ приведена в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-sqrt-of-(z-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ осуществляется переход между листами 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+, а в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ — между листами 
+\begin_inset Formula $\left(i,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(i,1\right)$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить схему из решений
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-examples-of-sqrt-3-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а функции 
+\begin_inset Formula $\sqrt{\frac{1}{z}}$
+\end_inset
+
+ — в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieaman-surface-scheme-of-sqrt-of-1/z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В точках 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ осуществляется переход с листа 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+ на лист 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+, с листа 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(2,j\right)$
+\end_inset
+
+, а с листа 
+\begin_inset Formula $\left(2,j\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ осуществляется переход между листами 
+\begin_inset Formula $\left(i,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(i,1\right)$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить схему из решений
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ приведена в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-and-its-scheme-of-cube-root-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ осуществляется переход между листами 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+, с листа 
+\begin_inset Formula $\left(i,0\right)$
+\end_inset
+
+ происходит переход на лист 
+\begin_inset Formula $\left(i,1\right)$
+\end_inset
+
+, с листа 
+\begin_inset Formula $\left(i,1\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(i,2\right)$
+\end_inset
+
+, а с листа 
+\begin_inset Formula $\left(i,2\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(i,0\right)$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить схему из решений
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+г) Так как 
+\begin_inset Formula $z^{2}-1=\left(z-1\right)\left(z+1\right)$
+\end_inset
+
+, то у функции 
+\begin_inset Formula $\sqrt{z^{2}-1}$
+\end_inset
+
+ имеется две точки разветвления: 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ В каждой из этих точке осуществляется переход между двумя листами этой
+ функции.
+\end_layout
+
+\begin_layout Solution
+По аналогии с результатом задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-root-n-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у функции 
+\begin_inset Formula $\sqrt[4]{z-1}$
+\end_inset
+
+ имеется 4 ветви и одна точка разветвления 
+\begin_inset Formula $z=1$
+\end_inset
+
+, определяемая из условия равенства нулю подкоренного выражения.
+ В этой точке происходит переход с первого листа на второй, со второго —
+ на третий, с третьего — на четвёртый, а с четвёртого — на первый.
+\end_layout
+
+\begin_layout Solution
+Таким образом, в точке 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ осуществляется переход между листами 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+, а в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ происходят переходы между листами 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+, а также переходы с листам 
+\begin_inset Formula $\left(i,0\right)$
+\end_inset
+
+ на лист 
+\begin_inset Formula $\left(i,1\right)$
+\end_inset
+
+, с листа 
+\begin_inset Formula $\left(i,1\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(i,2\right)$
+\end_inset
+
+, с листа 
+\begin_inset Formula $\left(i,2\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(i,3\right)$
+\end_inset
+
+, а с листа 
+\begin_inset Formula $\left(i,3\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(i,0\right)$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить схему из решений
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Описанный выше формальный метод построения римановой поверхности функции
+ 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+ не всегда даёт правильный результат, так как он не учитывает, что некоторые
+ из ветвей 
+\begin_inset Formula $h_{i,j}\left(z\right)$
+\end_inset
+
+ могут оказаться равными.
+ Для простоты будем считать, что разрезы не проходят через точки неоднозначности
+ функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+.
+ В таком случае при пересечении любого разреза мы с листов, соответствующих
+ равным ветвям функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+, будем переходить, в силу однозначности, на листы, также соответствующие
+ равным ветвям.
+ Следовательно, если мы склеим листы, соответствующие одинаковым ветвям
+ функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+, то есть заменим каждое множество таких листов одним листом, то однозначно
+ определяются переход между полученными листами при обходе любой точки разветвле
+ния 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
