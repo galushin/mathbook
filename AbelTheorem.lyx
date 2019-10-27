@@ -73170,7 +73170,7 @@ name "fig:rieman-surface-scheme-of-sqrt-of-quadrics-samples"
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:rieman-surface-scheme-examples-of-sqrt-3-of-polynomial"
+name "prob:rieman-surface-scheme-examples-of-cube-root-of-polynomial"
 
 \end_inset
 
@@ -73952,6 +73952,12 @@ name "def:point-of-ambiguity"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-schemes-of-root-4-of-polynomials-examples"
+
+\end_inset
+
 Построить схемы римановых поверхностей следующих функций: а) 
 \begin_inset Formula $\sqrt[4]{z^{2}+2}$
 \end_inset
@@ -76142,6 +76148,12 @@ name "sec:radical-expressed-functions"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:arithmetic-operations-and-roots-of-multivalue-functions"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $f\left(z\right)$
 \end_inset
@@ -77407,16 +77419,6 @@ noprefix "false"
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Исправить решения
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Solution
@@ -77495,7 +77497,7 @@ status open
  была построена в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:rieman-surface-scheme-examples-of-sqrt-3-of-polynomial"
+reference "prob:rieman-surface-scheme-examples-of-cube-root-of-polynomial"
 plural "false"
 caps "false"
 noprefix "false"
@@ -78025,8 +78027,14 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-of-rieman-surface-schemes-by-schemes-of-terms"
+
+\end_inset
+
 Для указанных функций построить схему римановой поверхности формальным методом
- и истинную схему римановой поверхности: : а) 
+ и истинную схему римановой поверхности: а) 
 \begin_inset Formula $f\left(z\right)=\sqrt{z}+\sqrt{z}$
 \end_inset
 
@@ -78350,7 +78358,7 @@ status open
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Problem
 Построить схемы римановых поверхностей следующих функций: а) 
 \begin_inset Formula $i\sqrt{z}-\sqrt[4]{z^{2}}$
 \end_inset
@@ -78371,6 +78379,12 @@ status open
 \end_layout
 
 \begin_layout Solution
+Сначала для каждой функции построим схемы римановых поверхностей формальным
+ методом, а затем склеим листы, соответствующие равным непрерывным однозначным
+ ветвям рассматриваемой функции.
+\end_layout
+
+\begin_layout Solution
 а) 
 \begin_inset Note Note
 status open
@@ -78381,16 +78395,366 @@ status open
 
 \end_inset
 
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ приведена в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а функции 
+\begin_inset Formula $\sqrt[4]{z^{2}}$
+\end_inset
+
+ — в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-schemes-of-root-4-of-polynomials-examples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Точками разветвления для уменьшаемого и вычитаемого являются точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Переходы между листами 
+\begin_inset Formula $i\sqrt{z}$
+\end_inset
+
+ можно описать следующим образом: 
+\begin_inset Formula $0\to1\to0$
+\end_inset
+
+, а переходы между листами 
+\begin_inset Formula $\sqrt[4]{z^{2}}$
+\end_inset
+
+ — 
+\begin_inset Formula $0\to2\to0$
+\end_inset
+
+ и 
+\begin_inset Formula $1\to3\to1$
+\end_inset
+
+.
+ Соответственно, формальным методом получаем следующую схему переходов между
+ листами: 
+\begin_inset Formula $\left(0,0\right)\to\left(1,2\right)\to\left(0,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,1\right)\to\left(1,3\right)\to\left(0,1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,2\right)\to\left(1,0\right)\to\left(0,2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,3\right)\to\left(1,1\right)\to\left(0,3\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Чтобы понять, нужно ли склеивать листы схемы, полученной формальным методом,
+ рассмотрим значения этой функции в точке, не лежащей на разрезе и не являющейся
+ точкой разветвления, например 
+\begin_inset Formula $z=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\sqrt{1}=\left\{ -1,1\right\} 
+\]
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Solution
-б) 
+\begin_inset Formula 
+\[
+i\sqrt{1}=\left\{ -i,i\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\sqrt[4]{1^{2}}=\sqrt[4]{1}=\left\{ i,-1,-i,1\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Перебирая всевозможные пары значений, получаем следующие значения:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i\sqrt{z}-\sqrt[4]{z^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-2i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, имеется 7 различных непрерывных однозначных ветвей, так как
+ листы 
+\begin_inset Formula $\left(0,2\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+ соответствуют одному и тому же значению функции.
+ Окончательно получаем следующие циклы переходов: 
+\begin_inset Formula $\left(0,0\right)\to\left(1,2\right)\to\left(0,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,1\right)\to\left(1,3\right)\to\left(0,1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,3\right)\to\left(1,1\right)\to\left(0,3\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение пункта б)
+Взять рисунок из решений
 \end_layout
 
 \end_inset
@@ -78399,12 +78763,345 @@ status open
 \end_layout
 
 \begin_layout Solution
-в) 
+б) Представим функцию 
+\begin_inset Formula $\sqrt{z-1}\cdot\sqrt[4]{z}$
+\end_inset
+
+ как произведение двух неоднозначных функций 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[4]{z}$
+\end_inset
+
+.
+ Схемы которых были получены в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt-of-(z-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-root-n-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ соответственно.
+ Переходы между листами 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+ (при обходе точки 
+\begin_inset Formula $1$
+\end_inset
+
+): 
+\begin_inset Formula $0\to1\to0$
+\end_inset
+
+.
+ Переходы между листами 
+\begin_inset Formula $\sqrt[4]{z}$
+\end_inset
+
+ (при обходе точки 
+\begin_inset Formula $0$
+\end_inset
+
+): 
+\begin_inset Formula $0\to1\to2\to3\to0$
+\end_inset
+
+.
+ Формальным методом получаем в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ переходы 
+\begin_inset Formula $\left(i,0\right)\to\left(i,1\right)\to\left(i,2\right)\to\left(i,3\right)\to\left(i,0\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $i=0,1$
+\end_inset
+
+, а в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ — 
+\begin_inset Formula $\left(0,j\right)\to\left(1,j\right)\to\left(0,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2,3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Выясним, какие листы нужно склеить.
+ В точке 
+\begin_inset Formula $z=2$
+\end_inset
+
+: 
+\begin_inset Formula $\sqrt{z-1}=\sqrt{2-1}=\sqrt{1}=\left\{ -1,1\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\sqrt[4]{2}=\sqrt[4]{2}\cdot\left\{ i,-1,-i,1\right\} $
+\end_inset
+
+ (в правой части последнего равенства имеется в виду вещественное положительное
+ значение корня).
+ Перебирая всевозможные пары значений (множитель 
+\begin_inset Formula $\sqrt[4]{2}$
+\end_inset
+
+ во втором слагаемом опущен для ясности), получаем следующие значения:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sqrt{z-1}\cdot\sqrt[4]{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, получаем 4 ветви.
+ 
+\begin_inset Formula $\left(0,0\right)\sim\left(1,2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,1\right)\sim\left(1,3\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,2\right)\sim\left(1,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,3\right)\sim\left(1,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение пункта в)
+Взять рисунок из решений
 \end_layout
 
 \end_inset
@@ -78413,12 +79110,968 @@ status open
 \end_layout
 
 \begin_layout Solution
-г) 
+в) Представим функцию 
+\begin_inset Formula $\frac{\sqrt{z^{2}-1}}{\sqrt[4]{z+1}}$
+\end_inset
+
+ как частное двух функций: 
+\begin_inset Formula $\sqrt{z^{2}-1}=\sqrt{\left(z-1\right)\left(z+1\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[4]{z+1}$
+\end_inset
+
+.
+ Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z^{2}-1}$
+\end_inset
+
+ может быть получена по аналогии с пунктом а) задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-root-4-of-(z2+2)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в ней в точках 
+\begin_inset Formula $z=\pm1$
+\end_inset
+
+ будут переходы 
+\begin_inset Formula $0\to1\to0$
+\end_inset
+
+.
+ Схема римановой поверхности 
+\begin_inset Formula $\sqrt[4]{z+1}$
+\end_inset
+
+ аналогична римановой поверхности 
+\begin_inset Formula $\sqrt[4]{z}$
+\end_inset
+
+, полученной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-root-n-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, но со сдвигом на 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ В ней имеется 4 листа, а в точке 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ происходят переходы 
+\begin_inset Formula $0\to1\to2\to3\to0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Формальным методом получаем, что у функции 
+\begin_inset Formula $\frac{\sqrt{z^{2}-1}}{\sqrt[4]{z+1}}$
+\end_inset
+
+ будет 8 листов.
+ В точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ будут происходить переходы 
+\begin_inset Formula $\left(0,j\right)\to\left(1,j\right)\to\left(0,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2,3$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ будут происходить переходы 
+\begin_inset Formula $\left(0,0\right)\to\left(1,1\right)\to\left(0,2\right)\to\left(1,3\right)\to\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,1\right)\to\left(1,2\right)\to\left(0,3\right)\to\left(1,0\right)\to\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для того, чтобы понять, какие листы нужно склеивать, рассмотрим возможные
+ значения функции в точке, не являющейся точкой разветвления или неоднозначности
+, например в 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Для числитель и знаменателя получим следующие возможные значения: 
+\begin_inset Formula $\sqrt{-1}=\left\{ -i,i\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[4]{1}=\left\{ i,-1,-i,1\right\} $
+\end_inset
+
+.
+ Рассмотрим теперь всевозможные пары значений и их частное:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Легко понять, что склеить нужно листы 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,3\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,2\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,3\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+.
+ Если в цепочке 
+\begin_inset Formula $\left(0,1\right)\to\left(1,2\right)\to\left(0,3\right)\to\left(1,0\right)\to\left(0,1\right)$
+\end_inset
+
+ заменить каждый лист на второй лист из склеиваемой пары, то получим 
+\begin_inset Formula $\left(1,3\right)\to\left(0,0\right)\to\left(1,1\right)\to\left(0,2\right)\to\left(1,3\right)$
+\end_inset
+
+, то есть первую цепочку (с другим выбором начальной точки).
+\end_layout
+
+\begin_layout Solution
+Таким образом, у функции 
+\begin_inset Formula $\frac{\sqrt{z^{2}-1}}{\sqrt[4]{z+1}}$
+\end_inset
+
+ будет 4 листа.
+ В точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ будет цепочка переходов 
+\begin_inset Formula $\left(0,0\right)\to\left(1,1\right)\to\left(0,2\right)\to\left(1,3\right)\to\left(0,0\right)$
+\end_inset
+
+, а в точке 
+\begin_inset Formula $z=-1$
+\end_inset
+
+: 
+\begin_inset Formula $\left(0,0\right)\to\left(0,2\right)\to\left(0,0\right)$
+\end_inset
+
+, и 
+\begin_inset Formula $\left(0,1\right)\to\left(0,3\right)\to\left(0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение пункта г)
+Взять рисунок из решений
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+г) Представим функцию 
+\begin_inset Formula $\frac{\sqrt{z}+\sqrt{z}}{\sqrt[3]{z\left(z-1\right)}}$
+\end_inset
+
+ как частное функций 
+\begin_inset Formula $\sqrt{z}+\sqrt{z}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[3]{z\left(z-1\right)}$
+\end_inset
+
+.
+ Схема римановой поверхности 
+\begin_inset Formula $\sqrt{z}+\sqrt{z}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-rieman-surface-schemes-by-schemes-of-terms"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ имеются следующие цепочки переходов между листами: 
+\begin_inset Formula $0\to2\to0$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Построим схему римановой поверхности 
+\begin_inset Formula $\sqrt[3]{z\left(z-1\right)}$
+\end_inset
+
+ по аналогии с решением пункта а) задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-examples-of-cube-root-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В каждой из точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и 
+\begin_inset Formula $z=1$
+\end_inset
+
+ происходят переходы вида 
+\begin_inset Formula $0\to1\to2\to0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Формальным методом получаем в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ переходы вида 
+\begin_inset Formula $\left(i,0\right)\to\left(i,1\right)\to\left(i,2\right)\to\left(i,0\right)$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ имеются следующие цепочки переходов: 
+\begin_inset Formula $\left(0,0\right)\to\left(2,1\right)\to\left(0,2\right)\to\left(2,0\right)\to\left(0,1\right)\to\left(2,2\right)\to\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим, какие листы нужно склеить.
+ В точке 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ получаем 
+\begin_inset Formula $\sqrt{-1}=\left\{ -i,i\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\sqrt{-1}+\sqrt{-1}=\left\{ -2i,0,2i\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\sqrt[3]{-1\left(-2\right)}=\sqrt[3]{2}=\sqrt[3]{2}\left\{ 1,-\frac{1}{2}+i\frac{\sqrt{3}}{2},-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right\} $
+\end_inset
+
+.
+ Так как ноль, делённый на любое число даёт ноль, то листы 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+ необходимо склеить.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Взять рисунок из решений
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{2}\left(z\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $f_{m}\left(z\right)$
+\end_inset
+
+ — все непрерывные однозначные ветви функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Найти при тех же разрезах все непрерывные однозначные ветви функции 
+\begin_inset Formula $h\left(z\right)=\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — некоторое натуральное число.
+\end_layout
+
+\begin_layout Solution
+Так как каждая функция 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ и функция 
+\begin_inset Formula $g\left(z\right)=z^{n}$
+\end_inset
+
+ являются непрерывными, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:superposition-of-continuous-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, непрерывными будут и функции 
+\begin_inset Formula $\left[f_{i}\left(z\right)\right]^{n}$
+\end_inset
+
+.
+ По определению возведения многозначной функции в натуральную степень 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:arithmetic-operations-and-roots-of-multivalue-functions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в любой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ значение 
+\begin_inset Formula $\left[f_{i}\left(z_{0}\right)\right]^{n}$
+\end_inset
+
+ является одним из значений функции 
+\begin_inset Formula $\left[f\left(z_{0}\right)\right]^{n}$
+\end_inset
+
+, поэтому функции 
+\begin_inset Formula $h_{i}\left(z\right)=\left[f_{i}\left(z\right)\right]^{n}$
+\end_inset
+
+ будут непрерывными однозначными ветвями функции 
+\begin_inset Formula $\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+.
+ Так как у этой функции имеется не более 
+\begin_inset Formula $m$
+\end_inset
+
+ различных значений, то мы нашли все непрерывные однозначные ветви.
+\end_layout
+
+\begin_layout Standard
+Из результата последней задачи легко вытекает, что схема римановой поверхности
+ функции 
+\begin_inset Formula $h\left(z\right)=\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+ совпадала бы со схемой римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, если бы все ветви 
+\begin_inset Formula $h_{i}\left(z\right)=\left[f_{i}\left(z\right)\right]^{n}$
+\end_inset
+
+ были различными.
+ Однако это не всегда так.
+ Если получаются равные ветви, то при переходе через разрезы, мы в силу
+ однозначности будем с равных ветвей переходить на равные ветви.
+\end_layout
+
+\begin_layout Standard
+Окончательно получаем, что для построения схемы римановой поверхности функции
+ 
+\begin_inset Formula $h\left(z\right)=\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+ достаточно на схеме римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ рассмотреть вместо ветвей 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ ветви 
+\begin_inset Formula $h_{i}\left(z\right)=\left[f_{i}\left(z\right)\right]^{n}$
+\end_inset
+
+.
+ Если при этом появляются одинаковые ветви, то нужно склеить соответствующие
+ листы.
+\end_layout
+
+\begin_layout Problem
+Построить схемы римановых поверхностей следующих функций: а) 
+\begin_inset Formula $\left(\sqrt[4]{z}\right)^{2}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\left(\sqrt{z}+\sqrt{z}\right)^{2}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\left(\sqrt{z}\cdot\sqrt[3]{z-1}\right)^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Схема римановой поверхности 
+\begin_inset Formula $\sqrt[4]{z}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-root-n-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: в ней в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ происходят переходы 
+\begin_inset Formula $0\to1\to2\to3\to0$
+\end_inset
+
+.
+ Рассмотрим теперь значения 
+\begin_inset Formula $\left(\sqrt[4]{z}\right)^{2}$
+\end_inset
+
+ в точке, не являющейся точкой разветвления, например 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sqrt[4]{1}=\left\{ i,-1,-i,1\right\} $
+\end_inset
+
+, так как 
+\begin_inset Formula $i^{2}=\left(-i\right)^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(-1\right)^{2}=1^{2}$
+\end_inset
+
+, то листы 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $2$
+\end_inset
+
+, а также 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $3$
+\end_inset
+
+ нужно склеить.
+ Получаем схему с переходами 
+\begin_inset Formula $0\to1\to0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Взять рисунок из решений
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Схема римановой поверхности 
+\begin_inset Formula $\sqrt{z}+\sqrt{z}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-rieman-surface-schemes-by-schemes-of-terms"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В ней в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ происходят переходы 
+\begin_inset Formula $0\to2\to0$
+\end_inset
+
+.
+ Чтобы понять, какие листы нужно склеить, рассмотрим значение функции 
+\begin_inset Formula $\left(\sqrt{z}+\sqrt{z}\right)^{2}$
+\end_inset
+
+ в точке, не являющаяся точкой разветвления, например, в 
+\begin_inset Formula $z=1$
+\end_inset
+
+, получим 
+\begin_inset Formula $\sqrt{1}+\sqrt{1}=\left\{ -2,0,2\right\} $
+\end_inset
+
+, а 
+\begin_inset Formula $\left(-2\right)^{2}=2^{2}$
+\end_inset
+
+, то есть листы 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $2$
+\end_inset
+
+ нужно склеить.
+ Получаем схему из двух изолированных листов 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Взять рисунок из решений
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}\cdot\sqrt[3]{z-1}$
+\end_inset
+
+ состоит из шести листов, в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ происходят переходы 
+\begin_inset Formula $\left(0,j\right)\to\left(1,j\right)\to\left(0,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ происходят переходы 
+\begin_inset Formula $\left(i,0\right)\to\left(i,1\right)\to\left(i,2\right)\to\left(i,0\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $i=0,1$
+\end_inset
+
+.
+ Для того, чтобы понять, какие листы следует склеивать, рассмотрим значения
+ функции 
+\begin_inset Formula $\left(\sqrt{z}\cdot\sqrt[3]{z-1}\right)^{3}$
+\end_inset
+
+ в точке, не являющейся точкой разветвления, например, 
+\begin_inset Formula $z=2$
+\end_inset
+
+, получим 
+\begin_inset Formula $\sqrt{2}=\left\{ -\sqrt{2},+\sqrt{2}\right\} $
+\end_inset
+
+ (в правой части имеется в виду вещественное положительное значение корня)
+ и 
+\begin_inset Formula $\sqrt[3]{1}=\left\{ 1,-\frac{1}{2}+i\frac{\sqrt{3}}{2},-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(\sqrt{2}\cdot\sqrt[3]{1}\right)^{3}=\left(\sqrt{2}\right)^{3}\cdot1=\left\{ -2\sqrt{2},-2\sqrt{2}\right\} $
+\end_inset
+
+ (в правой части снова имеется в виду вещественное положительное значение
+ корня).
+ Таким образом, тройки листов вида 
+\begin_inset Formula $\left(i,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(i,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(i,2\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $i=0,1$
+\end_inset
+
+, нужно склеить.
+\end_layout
+
+\begin_layout Solution
+Окончательно получаем, что схема римановой поверхности будет состоять из
+ двух листов.
+ В точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ между листами не будет переходов, а в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ — будут.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Взять рисунок из решений
 \end_layout
 
 \end_inset
