@@ -80079,6 +80079,438 @@ status open
 
 \end_layout
 
+\begin_layout Problem
+Какие точки могут быть точками разветвления функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+Так как точками разветвления функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ является точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+, то точки, в которых одно из значений 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $0$
+\end_inset
+
+, будут точками разветвления 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Кроме того, точками разветвления этой функции будут точки разветвления
+ 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Проведём на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ разрезы из точек разветвления функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ в бесконечность так, чтобы они не проходили через точки, в которых одно
+ из значений функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $0$
+\end_inset
+
+, и выделим непрерывные однозначные ветви функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Пусть это будут (однозначные) функции 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{2}\left(z\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $f_{m}\left(z\right)$
+\end_inset
+
+.
+ Проведём дополнительно разрезы в бесконечность из точек, в которых одно
+ из значений функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — одна из непрерывных однозначных ветвей функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ при этих разрезах.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:every-branch-of-root-n-of-f(z)-corresponds-to-some-branch-of-f(z)"
+
+\end_inset
+
+Доказать, что функция 
+\begin_inset Formula $\left[g\left(z\right)\right]^{n}$
+\end_inset
+
+ совпадает с одной из функций 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ всюду, кроме разрезов.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — непрерывная функция, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left[g\left(z\right)\right]^{n}$
+\end_inset
+
+ — тоже непрерывная функция.
+ По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:arithmetic-operations-and-roots-of-multivalue-functions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в каждой точке 
+\begin_inset Formula $z$
+\end_inset
+
+, не находящейся на разрезах, функция 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ совпадает с одним из значений корня степени 
+\begin_inset Formula $n$
+\end_inset
+
+ из одного из значений 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Поэтому, в каждой точке 
+\begin_inset Formula $z$
+\end_inset
+
+, не находящейся на разрезах, 
+\begin_inset Formula $\left[g\left(z\right)\right]^{n}$
+\end_inset
+
+ будет совпадать с одним из значений 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\left[g\left(z\right)\right]^{n}$
+\end_inset
+
+ является однозначной непрерывной ветвью 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, то есть совпадает с какой-либо из функции 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-branch-of-root-n-of-f(z)-corresponds-to-some-branch-of-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ мы получаем, что каждая ветвь функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ соответствует некоторой ветви функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:all-branches-of-root-n-of-multivalued-f(z)-corresponding-to-some-branch-of-f(z)"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — непрерывная однозначная ветвь функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, соответствующая ветви 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Найти все непрерывные однозначные ветви функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, соответствующие ветви 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим искомые непрерывные однозначные ветви, соответствующие 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+, как 
+\begin_inset Formula $g_{i,j}\left(z\right)$
+\end_inset
+
+.
+ Тогда, по определению, будут иметь место равенства 
+\begin_inset Formula $\left[g\left(z\right)\right]^{n}=f_{i}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left[g_{i,j}\left(z\right)\right]^{n}=f_{i}\left(z\right)$
+\end_inset
+
+.
+ По аналогии с 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-from-function-from-one-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, рассмотрим следующее выражение:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left[\frac{g_{i,j}\left(z\right)}{g\left(z\right)}\right]^{n}=\frac{\left[g_{i,j}\left(z\right)\right]^{n}}{\left[g\left(z\right)\right]^{n}}=\frac{f_{i}\left(z\right)}{f_{i}\left(z\right)}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $\frac{g_{i,j}\left(z\right)}{g\left(z\right)}=\sqrt[n]{1}$
+\end_inset
+
+.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:values-of-root-n-of-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, было показано, что все возможные значения 
+\begin_inset Formula $\sqrt[n]{1}$
+\end_inset
+
+ есть 
+\begin_inset Formula $\varepsilon_{n}^{j}$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,\dots n-1$
+\end_inset
+
+ и 
+\begin_inset Formula $\varepsilon_{n}=\cos\frac{2\pi}{n}+i\sin\frac{2\pi}{n}$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula 
+\[
+g_{i,j}\left(z\right)=g\left(z\right)\cdot\varepsilon_{n}^{j},j=0,1,\dots n-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-of-multivalued-f(z)-corresponding-to-some-branch-of-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ мы получаем, что каждой ветви 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ соответствует 
+\begin_inset Quotes rld
+\end_inset
+
+пачка
+\begin_inset Quotes rrd
+\end_inset
+
+ состоящая из 
+\begin_inset Formula $n$
+\end_inset
+
+ ветвей функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Мы занумеруем ветви в этой пачке 
+\begin_inset Formula $f_{i,0}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{i,1}\left(z\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $f_{i,n-1}\left(z\right)$
+\end_inset
+
+, причём так, чтобы для любого 
+\begin_inset Formula $j$
+\end_inset
+
+ выполнялось равенство 
+\begin_inset Formula $f_{i,j}\left(z\right)=f_{i,0}\left(z\right)\cdot\varepsilon_{n}^{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — точка разветвления функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, и пусть, при обходе вокруг точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ мы с ветви 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ переходим на ветвь 
+\begin_inset Formula $f_{j}\left(z\right)$
+\end_inset
+
+.
+ Тогда, очевидно, что для функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ мы получаем следующее: со всех листов пачки, соответствующей ветви 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+, мы при обходе вокруг точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ будем переходить на листы пачки, соответствующей ветви 
+\begin_inset Formula $f_{j}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
