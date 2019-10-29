@@ -80511,6 +80511,191 @@ noprefix "false"
 .
 \end_layout
 
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — кривая на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+, и пусть кривая на плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+ с уравнением 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ является непрерывным образом кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Доказать, что кривая с уравнением 
+\begin_inset Formula $w_{k}\left(t\right)=w_{0}\left(t\right)\cdot\varepsilon_{n}^{k}$
+\end_inset
+
+ также является непрерывным образом кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ — непрерывная функция по условию, 
+\begin_inset Formula $\varepsilon_{n}^{k}$
+\end_inset
+
+ — непрерывная функция, как и любая константа, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:constant-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а произведение непрерывных функций — также непрерывная функция (как было
+ показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), то 
+\begin_inset Formula $w_{k}\left(t\right)=w_{0}\left(t\right)\cdot\varepsilon_{n}^{k}$
+\end_inset
+
+ — непрерывная функция.
+\end_layout
+
+\begin_layout Solution
+Остаётся доказать, что 
+\begin_inset Formula $w_{k}\left(t\right)$
+\end_inset
+
+ является образом 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при преобразовании 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Рассмотрим это отображение как композицию отображений 
+\begin_inset Formula $w=\sqrt[n]{u}$
+\end_inset
+
+ и 
+\begin_inset Formula $u=f\left(z\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ — образ 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left[w_{0}\left(t\right)\right]^{n}=u\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $u\left(t\right)$
+\end_inset
+
+ — образ 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $u=f\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь выражение 
+\begin_inset Formula $\left[w_{k}\left(t\right)\right]^{n}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\left[w_{k}\left(t\right)\right]^{n}=\left[w_{0}\left(t\right)\right]^{n}\cdot\left[\varepsilon_{n}^{k}\right]^{n}=\\
+=\left[w_{0}\left(t\right)\right]^{n}\cdot\left[\varepsilon_{n}^{n}\right]^{k}=\\
+=\left[w_{0}\left(t\right)\right]^{n}\cdot1^{k}=\left[w_{0}\left(t\right)\right]^{n}=u\left(t\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $\left[w_{k}\left(t\right)\right]^{n}$
+\end_inset
+
+ — образ 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $u=f\left(z\right)$
+\end_inset
+
+, а значит 
+\begin_inset Formula $w_{k}\left(t\right)$
+\end_inset
+
+ — образ 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, причём непрерывный, как было показано выше.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
