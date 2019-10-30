@@ -57444,6 +57444,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:roots-n-of-1-form-cyclic-group-order-n"
+
+\end_inset
+
 Так как 
 \begin_inset Formula $\varepsilon_{n}^{n}=1$
 \end_inset
@@ -80694,6 +80700,180 @@ noprefix "false"
 \end_inset
 
 , причём непрерывный, как было показано выше.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:transits-of-f_i,(s+k)-by-transits-of-f_i,s"
+
+\end_inset
+
+Пусть кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ не проходит через точки разветвления и точки неоднозначности функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Доказать, что если мы при движении вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ переходим с ветви 
+\begin_inset Formula $f_{i,s}\left(z\right)$
+\end_inset
+
+ на ветвь 
+\begin_inset Formula $f_{j,r}\left(z\right)$
+\end_inset
+
+, то с ветви 
+\begin_inset Formula $f_{i,s+k}\left(z\right)$
+\end_inset
+
+ мы перейдём на ветвь 
+\begin_inset Formula $f_{j,r+k}\left(z\right)$
+\end_inset
+
+, где суммы 
+\begin_inset Formula $s+k$
+\end_inset
+
+ и 
+\begin_inset Formula $r+k$
+\end_inset
+
+ вычисляются по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ (смотрите задачу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:reminders-modulo-n-with-addition-is-cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-of-multivalued-f(z)-corresponding-to-some-branch-of-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $f_{i,s}\left(z\right)=f_{i,0}\left(z\right)\cdot\varepsilon_{n}^{s}$
+\end_inset
+
+.
+ Значения 
+\begin_inset Formula $\varepsilon_{n}^{k}$
+\end_inset
+
+ образуют циклическую группу порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ (как указывалось в замечании 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:roots-n-of-1-form-cyclic-group-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому показатель степени 
+\begin_inset Formula $k$
+\end_inset
+
+ можно брать по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, мы можем написать:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+f_{i,s+k}\left(z\right)=f_{i,0}\left(z\right)\cdot\varepsilon_{n}^{s+k}=f_{i,s}\left(z\right)\cdot\varepsilon_{n}^{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как константа 
+\begin_inset Formula $\varepsilon_{n}^{k}$
+\end_inset
+
+ влияет на порядок переходов, а с ветви 
+\begin_inset Formula $f_{i,s}\left(z\right)$
+\end_inset
+
+ происходить переход на ветвь 
+\begin_inset Formula $f_{j,r}\left(z\right)$
+\end_inset
+
+, то с 
+\begin_inset Formula $f_{i,s+k}\left(z\right)$
+\end_inset
+
+ переходим на ветвь 
+\begin_inset Formula 
+\[
+f_{j,r}\left(z\right)\cdot\varepsilon_{n}^{k}=f_{j,0}\left(z\right)\varepsilon_{n}^{r+k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, для определения того, куда мы перейдём с листов данной пачки
+ при обходе данной точки разветвления функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, достаточно определить, куда мы перейдём с одного листов данной пачки,
+ а для других листов этой пачки переходы определяются автоматически в силу
+ результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:transits-of-f_i,(s+k)-by-transits-of-f_i,s"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
