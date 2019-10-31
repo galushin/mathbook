@@ -80086,6 +80086,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:branching-and-ambiguity-points-of-root-n-of-multivalued-f(z)"
+
+\end_inset
+
 Какие точки могут быть точками разветвления функции 
 \begin_inset Formula $\sqrt[n]{f\left(z\right)}$
 \end_inset
@@ -80871,6 +80877,359 @@ plural "false"
 caps "false"
 noprefix "false"
 
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Построить схему римановой поверхности функции 
+\begin_inset Formula $\sqrt{\sqrt{z}-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально решил неправильно
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)=-f_{0}\left(z\right)$
+\end_inset
+
+ — однозначные непрерывные ветви 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, причём 
+\begin_inset Formula $f_{0}\left(1\right)=1$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(1\right)=-1$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)-1$
+\end_inset
+
+ — однозначные непрерывные ветви функции 
+\begin_inset Formula $\sqrt{z}-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-of-multivalued-f(z)-corresponding-to-some-branch-of-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, каждой непрерывной однозначной ветви 
+\begin_inset Formula $\sqrt{z}-1$
+\end_inset
+
+ соответствует две непрерывные однозначные ветви функции 
+\begin_inset Formula $\sqrt{\sqrt{z}-1}$
+\end_inset
+
+.
+ Таким образом, в схеме римановой поверхности этой функции будет 4 листа,
+ обозначим их как 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+.
+ Остаётся выяснить, в каких точках и между каким листами осуществляются
+ переходы в этой схеме.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:branching-and-ambiguity-points-of-root-n-of-multivalued-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, точками разветвления 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ могут быть точки разветвления 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и точки 
+\begin_inset Formula $z$
+\end_inset
+
+, в которых одно из значений 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ равно нулю.
+ Так как точка разветвления 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ — это 
+\begin_inset Formula $z=0$
+\end_inset
+
+, а выражение 
+\begin_inset Formula $\sqrt{z}-1$
+\end_inset
+
+ обращается в ноль в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+, то точками разветвления 
+\begin_inset Formula $\sqrt{\sqrt{z}-1}$
+\end_inset
+
+ могут быть точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ Причём в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ разветвление может происходить только в пачке, соответствующей ветви 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+, так как только в этой ветви 
+\begin_inset Formula $\sqrt{1}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Найдём изменение аргумента при обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ — одна из ветвей 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left[f_{0}\left(z\right)\right]^{2}$
+\end_inset
+
+ и
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+f_{0}\left(z\right)-1=\frac{\left(f_{0}\left(z\right)-1\right)\left(f_{0}\left(z\right)+1\right)}{f_{0}\left(z\right)+1}=\\
+=\frac{\left[f_{0}\left(z\right)\right]^{2}-1}{f_{0}\left(z\right)+1}=\frac{z-1}{f_{0}\left(z\right)+1}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $f_{0}\left(1\right)+1=2\neq0$
+\end_inset
+
+, то при обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ по окружности достаточно малого радиуса аргумент знаменателя не изменится.
+ Аргумент же числителя изменится на 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, так как 
+\begin_inset Formula $1-1=0$
+\end_inset
+
+.
+ Таким образом, изменение аргумента 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+ при обходе 
+\begin_inset Formula $z=1$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Тогда, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-along-sqrt-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $\sqrt{f_{0}\left(z\right)-1}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\pi$
+\end_inset
+
+ и при обходе 
+\begin_inset Formula $z=1$
+\end_inset
+
+ значение 
+\begin_inset Formula $\sqrt{f_{0}\left(z\right)-1}$
+\end_inset
+
+ изменится на противоположное, то есть будет происходить переход между листами
+ 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь переходы между листами в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ При обходе этой точки происходит переход между ветвями 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+ функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, поэтому в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ будет происходить переход с листов пачки, соответствующей 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+ на листы пачки, соответствующей ветви 
+\begin_inset Formula $f_{1}\left(z\right)-1$
+\end_inset
+
+, и наоборот.
+ При двукратном обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ выражение 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ возвращается к своему исходному значению и 
+\begin_inset Formula $\mathrm{Arg}\left(\sqrt{z}-1\right)$
+\end_inset
+
+ не изменится, так как 
+\begin_inset Formula $\sqrt{0}-1=-1\neq0$
+\end_inset
+
+, поэтому при двукратном обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ мы возвращаемся на исходный лист.
+\end_layout
+
+\begin_layout Solution
+Итак, в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ будут происходить переходы между листами 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+, а также между листами 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,1\right)$
 \end_inset
 
 .
