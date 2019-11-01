@@ -81106,7 +81106,17 @@ f_{0}\left(z\right)-1=\frac{\left(f_{0}\left(z\right)-1\right)\left(f_{0}\left(z
 \end_inset
 
 .
- Таким образом, изменение аргумента 
+ Таким образом, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
 \begin_inset Formula $f_{0}\left(z\right)-1$
 \end_inset
 
@@ -81133,8 +81143,18 @@ noprefix "false"
 \begin_inset Formula $\sqrt{f_{0}\left(z\right)-1}$
 \end_inset
 
- равно 
-\begin_inset Formula $\pi$
+ равно, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\frac{2\pi}{2}=\pi$
 \end_inset
 
  и при обходе 
@@ -81233,6 +81253,589 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить рисунок из решений
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Построить схемы римановых поверхностей следующих функции: а) 
+\begin_inset Formula $\sqrt[3]{\sqrt{z}-2}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt{\sqrt[3]{z}-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Пусть 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)=-f_{0}\left(z\right)$
+\end_inset
+
+ — однозначные непрерывные ветви функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, причём 
+\begin_inset Formula $f_{0}\left(1\right)=1$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(1\right)=-1$
+\end_inset
+
+.
+ Тогда однозначными непрерывными ветвями 
+\begin_inset Formula $\sqrt{z}-2$
+\end_inset
+
+ будут функции 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)-2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Каждой однозначной непрерывной ветви функции 
+\begin_inset Formula $\sqrt{z}-2$
+\end_inset
+
+ будет соответствовать пачка из трёх ветвей функции 
+\begin_inset Formula $\sqrt[3]{\sqrt{z}-2}$
+\end_inset
+
+.
+ То есть в схеме римановой поверхности этой функции будет 6 листов.
+ Остаётся выяснить, в каких точках и между какими листами будут существовать
+ переходы.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:branching-and-ambiguity-points-of-root-n-of-multivalued-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, точками разветвления 
+\begin_inset Formula $\sqrt[3]{\sqrt{z}-2}$
+\end_inset
+
+ могут быть точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ (точка разветвления 
+\begin_inset Formula $\sqrt{z}-2$
+\end_inset
+
+) и 
+\begin_inset Formula $z=4$
+\end_inset
+
+ (точка, в которой подкоренное выражение равно 
+\begin_inset Formula $0$
+\end_inset
+
+), причём в последней точке переходы будут осуществляться только в ветви
+ 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+, так как 
+\begin_inset Formula $f_{0}\left(4\right)=2$
+\end_inset
+
+, а 
+\begin_inset Formula $f_{1}\left(4\right)=-2$
+\end_inset
+
+ и подкоренное выражение не обращается в ноль.
+\end_layout
+
+\begin_layout Solution
+Найдём изменение аргумента при обходе точки 
+\begin_inset Formula $z=4$
+\end_inset
+
+.
+ Преобразуем выражение 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+f_{0}\left(z\right)-2=\frac{\left(f_{0}\left(z\right)-2\right)\left(f_{0}\left(z\right)+2\right)}{f_{0}\left(z\right)+2}=\\
+=\frac{\left[f_{0}\left(z\right)\right]^{2}-4}{f_{0}\left(z\right)+2}=\frac{z-4}{f_{0}\left(z\right)+2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $f_{0}\left(4\right)+2=4\neq0$
+\end_inset
+
+, то при обходе точки 
+\begin_inset Formula $z=4$
+\end_inset
+
+ по окружности достаточно малого радиуса изменение аргумента знаменателя
+ будет равно нулю.
+ Изменение аргумента числителя будет равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Таким образом, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi-0=2\pi$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $\sqrt[3]{f_{0}\left(z\right)-2}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+.
+ Таким образом, функция 
+\begin_inset Formula $\sqrt[3]{f_{0}\left(z\right)-2}$
+\end_inset
+
+ будет возвращаться к исходному значению после трёх обходов точки 
+\begin_inset Formula $z=4$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=4$
+\end_inset
+
+ будут происходить переходы по следующей схеме 
+\begin_inset Formula $\left(0,0\right)\to\left(0,1\right)\to\left(0,2\right)\to\left(0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь переходы между листами в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ При обходе этой точки происходит переход между 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+, а значит будут происходить с листов пачки, соответствующей 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+, на листы пачки, соответствующей 
+\begin_inset Formula $f_{1}\left(z\right)-1$
+\end_inset
+
+, и наоборот.
+ Так как 
+\begin_inset Formula $\sqrt{0}-2=-2\neq0$
+\end_inset
+
+, то изменение аргумента выражения 
+\begin_inset Formula $\sqrt{z}-2$
+\end_inset
+
+ при обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно нулю.
+ Поэтому переход между ветвями функций 
+\begin_inset Formula $\sqrt[3]{f_{i}\left(z\right)-2}$
+\end_inset
+
+ происходить не будет.
+ Таким образом, в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ будут осуществляться переходы между листами 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить рисунок из решений
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $\sqrt{\sqrt[3]{z}-1}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(z\right)$
+\end_inset
+
+ — однозначные непрерывные ветви функции 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+, причём 
+\begin_inset Formula $f_{0}\left(1\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(1\right)=-\frac{1}{2}+i\frac{\sqrt{3}}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(1\right)=-\frac{1}{2}+i\frac{\sqrt{3}}{2}$
+\end_inset
+
+, как было выбрано при решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-and-its-scheme-of-cube-root-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Следовательно, однозначными непрерывными ветвями 
+\begin_inset Formula $\sqrt[3]{z}-1$
+\end_inset
+
+ будут функции 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(z\right)-1$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(z\right)-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Точками разветвления функции 
+\begin_inset Formula $\sqrt{\sqrt[3]{z}-1}$
+\end_inset
+
+ являются точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ (точка разветвления функции 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+) и 
+\begin_inset Formula $z=1$
+\end_inset
+
+ (точка, где одно из значений 
+\begin_inset Formula $\sqrt[3]{z}-1$
+\end_inset
+
+ равно нулю, причём в последней точке разветвление происходит только на
+ ветвях пачки, соответствующей 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+, так как 
+\begin_inset Formula $f_{0}\left(1\right)-1=0$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(1\right)-1\neq0$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(1\right)-1\neq0$
+\end_inset
+
+.
+ Чтобы выяснить переходы между листами в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+, преобразуем выражение 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+f_{0}\left(z\right)-1=\frac{\left(f_{0}\left(z\right)-1\right)\left(\left[f_{0}\left(z\right)\right]^{2}+f_{0}\left(z\right)+1\right)}{\left[f_{0}\left(z\right)\right]^{2}+f_{0}\left(z\right)+1}=\\
+=\frac{\left[f_{0}\left(z\right)\right]^{3}-1}{\left[f_{0}\left(z\right)\right]^{2}+f_{0}\left(z\right)+1}=\frac{z-1}{\left[f_{0}\left(z\right)\right]^{2}+f_{0}\left(z\right)+1}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $\left[f_{0}\left(1\right)\right]^{2}+f_{0}\left(1\right)+1=3\neq0$
+\end_inset
+
+, то при обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ по окружности достаточно малого радиуса изменение аргумента знаменателя
+ будет равно нулю.
+ Изменение аргумента числителя будет равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Таким образом, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi-0=2\pi$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $\sqrt{f_{0}\left(z\right)-1}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{2\pi}{2}=\pi$
+\end_inset
+
+.
+ Таким образом, функция 
+\begin_inset Formula $\sqrt{f_{0}\left(z\right)-1}$
+\end_inset
+
+ будет возвращаться к исходному значению после двух обходов точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ будут происходить переходы по следующей схеме 
+\begin_inset Formula $\left(0,0\right)\to\left(0,1\right)\to\left(0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь переходы между листами в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ При обходе этой точки происходит переход с 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+, с 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+ — на 
+\begin_inset Formula $f_{2}\left(z\right)$
+\end_inset
+
+, а с 
+\begin_inset Formula $f_{2}\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+.
+ Аналогичные переходы будут происходить и между 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(z\right)-1$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(z\right)-1$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\sqrt[3]{0}-1=-1\neq0$
+\end_inset
+
+, то изменение аргумента выражения 
+\begin_inset Formula $\sqrt[3]{z}-1$
+\end_inset
+
+ при обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно нулю.
+ Поэтому переход между ветвями функций 
+\begin_inset Formula $\sqrt{f_{i}\left(z\right)-1}$
+\end_inset
+
+ происходить не будет.
+ Таким образом, в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ будут осуществляться переходы вида 
+\begin_inset Formula $\left(0,j\right)\to\left(1,j\right)\to\left(2,j\right)\to\left(0,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить рисунок из решений
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
