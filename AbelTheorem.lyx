@@ -72782,13 +72782,24 @@ name "fig:rieman-surface-scheme-of-root-of-(z+i)"
 \begin_layout Standard
 При этом схема римановой поверхности данной функции может существенно зависеть
  от того, по каким именно линиям проведены разрезы из точек разветвления
- в бесконечность (соответствующий пример будет рассмотрен ниже 
-\begin_inset Note Note
-status open
+ в бесконечность (соответствующий пример будет рассмотрен ниже в задачах
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-sqrt(z^2+1)-2"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-добавить ссылки на задачи 327 и 328
-\end_layout
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:example-of-rieman-surface-depending-on-cuts"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -76647,6 +76658,51 @@ noprefix "false"
 \end_inset
 
 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не дорешал: забыл возвести в квадрат
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Возведём эти возможные значения в квадрат:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+0^{2}=0,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\pm\left(\sqrt{2}+i\sqrt{2}\right)\right]^{2}=\left(\sqrt{2}+i\sqrt{2}\right)^{2}=4i.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, получаем два возможных значения: 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $4i$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Definition
@@ -77488,12 +77544,56 @@ noprefix "false"
 \end_inset
 
 .
- 
-\begin_inset Note Note
+ Полученная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z)+sqrt(z-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Добавить схему из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z)+sqrt(z-1).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z)+sqrt(z-1)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}+\sqrt{z-1}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -77577,12 +77677,59 @@ noprefix "false"
 \end_inset
 
 .
- 
-\begin_inset Note Note
+ Полученная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z^2-1)+sqrt(1/z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Добавить схему из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z^2-1)+sqrt(inv(z)).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z^2-1)+sqrt(1/z)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}+\sqrt{\frac{1}{z}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -77632,13 +77779,71 @@ noprefix "false"
 \begin_inset Formula $\left(\left(i+1\right)\mod2,\left(j+1\right)\mod3\right)$
 \end_inset
 
+: 
+\begin_inset Formula 
+\[
+\left(0,0\right)\to\left(1,1\right)\to\left(0,2\right)\to\left(1,0\right)\to\left(0,1\right)\to\left(1,2\right)\to\left(0,0\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Полученная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z)+root-3-of(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
 .
- 
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Добавить схему из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z)+root-3-of(z).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z)+root-3-of(z)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}+\sqrt[3]{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -77717,13 +77922,75 @@ noprefix "false"
 \begin_inset Formula $\left(\left(i+1\right)\mod2,\left(j+1\right)\mod4\right)$
 \end_inset
 
+: 
+\begin_inset Formula 
+\[
+\left(0,0\right)\to\left(1,1\right)\to\left(0,2\right)\to\left(1,3\right)\to\left(0,0\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(0,1\right)\to\left(1,2\right)\to\left(0,3\right)\to\left(1,0\right)\to\left(0,1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Полученная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z^2-1)+root[4](z-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
 .
- 
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Добавить схему из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z^2-1)+root[4](z-1).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z^2-1)+root[4](z-1)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z^{2}-1}+\sqrt[4]{z-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -78098,6 +78365,60 @@ noprefix "false"
 \end_inset
 
 .
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z)+sqrt(z)-formal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z)+sqrt(z)-formal.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z)+sqrt(z)-formal"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}+\sqrt{z}$
+\end_inset
+
+, полученная формальным методов.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -78146,14 +78467,55 @@ noprefix "false"
 \end_inset
 
 , а третий лист остаётся изолированным от них.
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z)+sqrt(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Взять схемы из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z)+sqrt(z).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z)+sqrt(z)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}+\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -78167,11 +78529,121 @@ status open
 \end_inset
 
  осуществляется переход на лист 
-\begin_inset Formula $\left(\left(i+1\right)\mod2,\left(j+1\right)\mod4\right)$
+\begin_inset Formula $\left(\left(i+1\right)\mod2,\left(j+2\right)\mod4\right)$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь изначально было ошибочно указано 
+\begin_inset Formula $j+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(0,0\right)\to\left(1,2\right)\to\left(0,0\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(0,1\right)\to\left(1,3\right)\to\left(0,1\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1,0\right)\to\left(0,2\right)\to\left(1,0\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1,1\right)\to\left(0,3\right)\to\left(1,1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Схема римановой поверхности, полученная формальным методом, показана на
+ рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z)+root[4](z)-formal"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
 .
- Но листы, соответствующие 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z)+root[4](z)-formal.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z)+root[4](z)-formal"
+
+\end_inset
+
+Риманово поверхности функции 
+\begin_inset Formula $f\left(z\right)=\sqrt{z}+\sqrt[4]{z^{2}}$
+\end_inset
+
+, полученная формальным методом.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Но листы, соответствующие значениям 
 \begin_inset Formula $+1-1$
 \end_inset
 
@@ -78180,7 +78652,7 @@ status open
 \end_inset
 
  должны быть склеены, номера этих листов 
-\begin_inset Formula $\left(0,3\right)$
+\begin_inset Formula $\left(0,2\right)$
 \end_inset
 
  и 
@@ -78188,71 +78660,60 @@ status open
 \end_inset
 
 .
- Поэтому получаем, что с листа 
-\begin_inset Formula $\left(0,0\right)$
-\end_inset
+ Остальные переходы сохраняются.
+ Истинная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z)+root[4](z)"
+plural "false"
+caps "false"
+noprefix "false"
 
- осуществляется переход на 
-\begin_inset Formula $\left(1,1\right)$
-\end_inset
-
-, с листа 
-\begin_inset Formula $\left(1,1\right)$
-\end_inset
-
- — на лист 
-\begin_inset Formula $\left(0,2\right)$
-\end_inset
-
-, с листа 
-\begin_inset Formula $\left(0,2\right)$
-\end_inset
-
- — на лист 
-\begin_inset Formula $\left(1,3\right)$
-\end_inset
-
-, с листа 
-\begin_inset Formula $\left(1,3\right)$
-\end_inset
-
- — на лист 
-\begin_inset Formula $\left(0,0\right)$
-\end_inset
-
-, с листа 
-\begin_inset Formula $\left(0,1\right)$
-\end_inset
-
- — на лист 
-\begin_inset Formula $\left(1,2\right)$
-\end_inset
-
-, с листа 
-\begin_inset Formula $\left(1,2\right)$
-\end_inset
-
- — на лист 
-\begin_inset Formula $(0,3)$
-\end_inset
-
-, с листа 
-\begin_inset Formula $\left(0,3\right)\sim\left(1,0\right)$
-\end_inset
-
- — на лист 
-\begin_inset Formula $\left(0,1\right)$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Взять схемы из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z)+root[4](z).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z)+root[4](z)"
+
+\end_inset
+
+Риманово поверхности функции 
+\begin_inset Formula $f\left(z\right)=\sqrt{z}+\sqrt[4]{z^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -78274,8 +78735,92 @@ status open
 \begin_inset Formula $\left(\left(i+1\right)\mod3,\left(j+1\right)\mod3\right)$
 \end_inset
 
+: 
+\begin_inset Formula 
+\[
+\left(0,0\right)\to\left(1,1\right)\to\left(2,2\right)\to\left(0,0\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(0,1\right)\to\left(1,2\right)\to\left(2,0\right)\to\left(0,1\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(0,2\right)\to\left(1,0\right)\to\left(2,1\right)\to\left(0,2\right).
+\]
+
+\end_inset
+
+Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-root[3](z)+root[3](z)-formal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
 .
- Но листы 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-root[3](z)+root[3](z)-formal.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-root[3](z)+root[3](z)-formal"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z}+\sqrt[3]{z}$
+\end_inset
+
+, полученная формальным методом.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Но листы 
 \begin_inset Formula $\left(i,j\right)$
 \end_inset
 
@@ -78333,6 +78878,64 @@ status open
 \end_inset
 
 .
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-root[3](z)+root[3](z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-root[3](z)+root[3](z).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-root[3](z)+root[3](z)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z}+\sqrt[3]{z}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -78397,17 +79000,7 @@ status open
 \end_layout
 
 \begin_layout Solution
-а) 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение пункта а)
-\end_layout
-
-\end_inset
-
-Схема римановой поверхности функции 
+а) Схема римановой поверхности функции 
 \begin_inset Formula $\sqrt{z}$
 \end_inset
 
@@ -78490,13 +79083,12 @@ noprefix "false"
 \end_inset
 
 :
-\end_layout
+\begin_inset Note Comment
+status open
 
-\begin_layout Solution
-\begin_inset Formula 
-\[
-\sqrt{1}=\left\{ -1,1\right\} 
-\]
+\begin_layout Plain Layout
+Изначально использовал другую нумерацию
+\end_layout
 
 \end_inset
 
@@ -78506,18 +79098,23 @@ noprefix "false"
 \begin_layout Solution
 \begin_inset Formula 
 \[
-i\sqrt{1}=\left\{ -i,i\right\} 
+\sqrt{1}=\left\{ 1,-1\right\} ,
 \]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Solution
 \begin_inset Formula 
 \[
-\sqrt[4]{1^{2}}=\sqrt[4]{1}=\left\{ i,-1,-i,1\right\} 
+i\sqrt{1}=\left\{ i,-i\right\} ,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt[4]{1^{2}}=\sqrt[4]{1}=\left\{ 1,i,-1,-i\right\} .
 \]
 
 \end_inset
@@ -78555,6 +79152,18 @@ i\sqrt{1}=\left\{ -i,i\right\}
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Formula $i$
 \end_inset
 
@@ -78575,36 +79184,10 @@ i\sqrt{1}=\left\{ -i,i\right\}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-i$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 \begin_inset Formula $-i$
 \end_inset
 
@@ -78613,57 +79196,9 @@ i\sqrt{1}=\left\{ -i,i\right\}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-2i$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-i+1$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-i-1$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -78675,7 +79210,19 @@ i\sqrt{1}=\left\{ -i,i\right\}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -78687,7 +79234,7 @@ i\sqrt{1}=\left\{ -i,i\right\}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -78699,7 +79246,7 @@ i\sqrt{1}=\left\{ -i,i\right\}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -78711,11 +79258,61 @@ i\sqrt{1}=\left\{ -i,i\right\}
 
 \end_inset
 </cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-2i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $i-1$
+\begin_inset Formula $0$
 \end_inset
 
 
@@ -78734,11 +79331,11 @@ i\sqrt{1}=\left\{ -i,i\right\}
 \begin_layout Solution
 Таким образом, имеется 7 различных непрерывных однозначных ветвей, так как
  листы 
-\begin_inset Formula $\left(0,2\right)$
+\begin_inset Formula $\left(0,1\right)$
 \end_inset
 
  и 
-\begin_inset Formula $\left(1,0\right)$
+\begin_inset Formula $\left(1,3\right)$
 \end_inset
 
  соответствуют одному и тому же значению функции.
@@ -78747,11 +79344,11 @@ i\sqrt{1}=\left\{ -i,i\right\}
 \end_inset
 
 , 
-\begin_inset Formula $\left(0,1\right)\to\left(1,3\right)\to\left(0,1\right)$
+\begin_inset Formula $\left(0,1\right)\sim\left(1,3\right)$
 \end_inset
 
 , 
-\begin_inset Formula $\left(0,2\right)$
+\begin_inset Formula $\left(0,2\right)\to\left(1,0\right)\to\left(0,2\right)$
 \end_inset
 
 , 
@@ -78759,14 +79356,59 @@ i\sqrt{1}=\left\{ -i,i\right\}
 \end_inset
 
 .
+ Полученная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-317a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Взять рисунок из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-317a.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-317a"
+
+\end_inset
+
+Схема римановой поверхности 
+\begin_inset Formula $i\sqrt{z}-\sqrt[4]{z^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -78869,11 +79511,11 @@ noprefix "false"
 \end_inset
 
 : 
-\begin_inset Formula $\sqrt{z-1}=\sqrt{2-1}=\sqrt{1}=\left\{ -1,1\right\} $
+\begin_inset Formula $\sqrt{z-1}=\sqrt{2-1}=\sqrt{1}=\left\{ 1,-1\right\} $
 \end_inset
 
 , 
-\begin_inset Formula $\sqrt[4]{2}=\sqrt[4]{2}\cdot\left\{ i,-1,-i,1\right\} $
+\begin_inset Formula $\sqrt[4]{2}=\sqrt[4]{2}\cdot\left\{ 1,i,-1,-i\right\} $
 \end_inset
 
  (в правой части последнего равенства имеется в виду вещественное положительное
@@ -78899,7 +79541,19 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\sqrt{z-1}\cdot\sqrt[4]{z}$
+\begin_inset Formula $\sqrt{z-1}\cdot\sqrt[4]{z}\cdot\left(\sqrt[4]{2}\right)^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
 \end_inset
 
 
@@ -78931,23 +79585,11 @@ noprefix "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-i$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1$
+\begin_inset Formula $-i$
 \end_inset
 
 
@@ -78961,19 +79603,7 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $-1$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-i$
+\begin_inset Formula $1$
 \end_inset
 
 
@@ -78998,6 +79628,18 @@ noprefix "false"
 
 \begin_layout Plain Layout
 \begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
 \end_inset
 
 
@@ -79009,7 +79651,7 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $-1$
+\begin_inset Formula $-i$
 \end_inset
 
 
@@ -79023,19 +79665,7 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $i$
+\begin_inset Formula $-1$
 \end_inset
 
 
@@ -79067,11 +79697,23 @@ noprefix "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
 \end_inset
 
 
@@ -79106,14 +79748,81 @@ noprefix "false"
 \end_inset
 
 .
+ Таким образом, в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ остаётся одна цепочка переходов 
+\begin_inset Formula $\left(0,0\right)\to\left(0,1\right)\to\left(0,2\right)\to\left(0,3\right)\to\left(0,0\right)$
+\end_inset
+
+.
+ А в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ происходят переходы вида 
+\begin_inset Formula $\left(0,j\right)\to\left(0,\left(j+2\right)\mod4\right)\to\left(0,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1$
+\end_inset
+
+.
+ Построенная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-317b"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Взять рисунок из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-317b.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-317b"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z-1}\cdot\sqrt[4]{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -79235,11 +79944,11 @@ noprefix "false"
 
 .
  Для числитель и знаменателя получим следующие возможные значения: 
-\begin_inset Formula $\sqrt{-1}=\left\{ -i,i\right\} $
+\begin_inset Formula $\sqrt{-1}=\left\{ i,-i\right\} $
 \end_inset
 
  и 
-\begin_inset Formula $\sqrt[4]{1}=\left\{ i,-1,-i,1\right\} $
+\begin_inset Formula $\sqrt[4]{1}=\left\{ 1,i,-1,-i\right\} $
 \end_inset
 
 .
@@ -79269,6 +79978,18 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Formula $i$
 \end_inset
 
@@ -79289,23 +80010,11 @@ noprefix "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-i$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1$
+\begin_inset Formula $-i$
 \end_inset
 
 
@@ -79319,19 +80028,7 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $-i$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-1$
+\begin_inset Formula $i$
 \end_inset
 
 
@@ -79356,6 +80053,18 @@ noprefix "false"
 
 \begin_layout Plain Layout
 \begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
 \end_inset
 
 
@@ -79367,7 +80076,7 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $-i$
+\begin_inset Formula $-1$
 \end_inset
 
 
@@ -79381,19 +80090,7 @@ noprefix "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $i$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1$
+\begin_inset Formula $-i$
 \end_inset
 
 
@@ -79425,11 +80122,23 @@ noprefix "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
 \end_inset
 
 
@@ -79501,7 +80210,7 @@ noprefix "false"
 \end_inset
 
  будет цепочка переходов 
-\begin_inset Formula $\left(0,0\right)\to\left(1,1\right)\to\left(0,2\right)\to\left(1,3\right)\to\left(0,0\right)$
+\begin_inset Formula $\left(0,0\right)\to\left(0,3\right)\to\left(0,2\right)\to\left(0,1\right)\to\left(0,0\right)$
 \end_inset
 
 , а в точке 
@@ -79513,18 +80222,77 @@ noprefix "false"
 \end_inset
 
 , и 
-\begin_inset Formula $\left(0,1\right)\to\left(0,3\right)\to\left(0,0\right)$
+\begin_inset Formula $\left(0,1\right)\to\left(0,3\right)\to\left(0,1\right)$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь была опечатка: последний блок был 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Построенная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-317c"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Взять рисунок из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-317c.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-317c"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\frac{\sqrt{z^{2}-1}}{\sqrt[4]{z+1}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -79561,16 +80329,30 @@ noprefix "false"
 \end_inset
 
 .
+ Обозначим однозначные непрерывные ветви этой функции следующим образом:
+ 
+\begin_inset Formula $f_{0}\left(z\right)\equiv0$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(z\right)=-f_{1}\left(z\right)$
+\end_inset
+
+.
  В точке 
 \begin_inset Formula $z=0$
 \end_inset
 
  имеются следующие цепочки переходов между листами: 
-\begin_inset Formula $0\to2\to0$
+\begin_inset Formula $1\to2\to1$
 \end_inset
 
  и 
-\begin_inset Formula $1$
+\begin_inset Formula $0$
 \end_inset
 
 .
@@ -79622,11 +80404,11 @@ noprefix "false"
 \end_inset
 
  имеются следующие цепочки переходов: 
-\begin_inset Formula $\left(0,0\right)\to\left(2,1\right)\to\left(0,2\right)\to\left(2,0\right)\to\left(0,1\right)\to\left(2,2\right)\to\left(0,0\right)$
+\begin_inset Formula $\left(1,0\right)\to\left(2,1\right)\to\left(1,2\right)\to\left(2,0\right)\to\left(1,1\right)\to\left(2,2\right)\to\left(1,0\right)$
 \end_inset
 
  и 
-\begin_inset Formula $\left(1,j\right)$
+\begin_inset Formula $\left(0,j\right)$
 \end_inset
 
 , где 
@@ -79647,7 +80429,7 @@ noprefix "false"
 \end_inset
 
 , 
-\begin_inset Formula $\sqrt{-1}+\sqrt{-1}=\left\{ -2i,0,2i\right\} $
+\begin_inset Formula $\sqrt{-1}+\sqrt{-1}=\left\{ 0,2i,-2i\right\} $
 \end_inset
 
  
@@ -79656,26 +80438,81 @@ noprefix "false"
 
 .
  Так как ноль, делённый на любое число даёт ноль, то листы 
-\begin_inset Formula $\left(1,0\right)$
+\begin_inset Formula $\left(0,0\right)$
 \end_inset
 
 , 
-\begin_inset Formula $\left(1,1\right)$
+\begin_inset Formula $\left(0,1\right)$
 \end_inset
 
  и 
-\begin_inset Formula $\left(1,2\right)$
+\begin_inset Formula $\left(0,2\right)$
 \end_inset
 
- необходимо склеить.
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
+ необходимо склеить
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Взять рисунок из решений
+Изначально использовал другую нумерацию
+\end_layout
+
+\end_inset
+
+.
+ Построенная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-317d"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-317d.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-317d"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\frac{\sqrt{z}+\sqrt{z}}{\sqrt[3]{z\left(z-1\right)}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -79900,19 +80737,17 @@ noprefix "false"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Взять рисунок из решений
-\end_layout
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme-of-the-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Solution
@@ -79974,14 +80809,59 @@ noprefix "false"
 \end_inset
 
 .
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-square(sqrt(z)+sqrt(z))"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Взять рисунок из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-square(sqrt(z)+sqrt(z)).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-square(sqrt(z)+sqrt(z))"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\left(\sqrt{z}+\sqrt{z}\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -80076,19 +80956,17 @@ status open
 \end_inset
 
  — будут.
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Взять рисунок из решений
-\end_layout
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme-of-the-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Problem
@@ -80106,30 +80984,93 @@ name "prob:branching-and-ambiguity-points-of-root-n-of-multivalued-f(z)"
 \end_layout
 
 \begin_layout Solution
-Так как точками разветвления функции 
-\begin_inset Formula $\sqrt[n]{z}$
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально решение было практически без аргументации
+\end_layout
+
 \end_inset
 
- является точка 
-\begin_inset Formula $z=0$
+Пусть точка 
+\begin_inset Formula $z_{0}$
 \end_inset
 
-, то точки, в которых одно из значений 
+ не является точкой разветвления функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Тогда при обходе вокруг точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ по окружности достаточно малого радиуса значение функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ не изменится.
+ Пусть, кроме того, все значения 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ не равны 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Тогда при отображении 
+\begin_inset Formula $w=f\left(z\right)$
+\end_inset
+
+ непрерывными образами окружностей с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и с достаточно малыми радиусами будут являться некоторые непрерывные замкнутые
+ кривые, находящиеся вблизи значений 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+.
+ Так как все значения 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+ не равны 
+\begin_inset Formula $0$
+\end_inset
+
+, то все такие кривые при достаточно малых радиусах окружностей не обходят
+ точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+, то есть аргумент 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ не изменяется.
+ Но тогда не изменится также значение функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Поэтому точками разветвления функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ могут быть только точки разветвления функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и точки, в которых одно из значений 
 \begin_inset Formula $f\left(z\right)$
 \end_inset
 
  равно 
 \begin_inset Formula $0$
-\end_inset
-
-, будут точками разветвления 
-\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
-\end_inset
-
-.
- Кроме того, точками разветвления этой функции будут точки разветвления
- 
-\begin_inset Formula $f\left(z\right)$
 \end_inset
 
 .
@@ -81259,14 +82200,59 @@ noprefix "false"
 \end_inset
 
 .
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-sqrt(sqrt(z)-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Добавить рисунок из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-sqrt(sqrt(z)-1).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-sqrt(sqrt(z)-1)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{\sqrt{z}-1}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -81539,28 +82525,64 @@ noprefix "false"
 \end_inset
 
 .
-\end_layout
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-root[3](sqrt(z)-2)"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить рисунок из решений
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-б) 
-\begin_inset Formula $\sqrt{\sqrt[3]{z}-1}$
 \end_inset
 
 .
- Пусть 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-root[3](sqrt(z)-2).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-root[3](sqrt(z)-2)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{\sqrt{z}-2}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Пусть 
 \begin_inset Formula $f_{0}\left(z\right)$
 \end_inset
 
@@ -81829,14 +82851,56 @@ noprefix "false"
 \end_inset
 
 .
-\end_layout
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-sqrt(root[3](z)-1)"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Solution
-\begin_inset Note Note
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Добавить рисунок из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-sqrt(root[3](z)-1).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-sqrt(root[3](z)-1)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{\sqrt[3]{z}-1}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -82193,19 +83257,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Взять схему для пункта а) из решений
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
 В случае б) при движении по непрерывной кривой, не проходящей через разрезы
  изменение аргумента 
 \begin_inset Formula $z-i$
@@ -82274,20 +83325,13 @@ noprefix "false"
  окажутся на разных листах.
 \end_layout
 
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Взять схему для пункта б) из решений
-\end_layout
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:example-of-rieman-surface-depending-on-cuts"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Problem
 Построить схему римановой поверхности функции 
 \begin_inset Formula $h\left(z\right)=\sqrt{\sqrt{z^{2}+1}-2}$
 \end_inset
@@ -82617,11 +83661,55 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-328a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Взять схему для пункта а) из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-328a.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-328a"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)=\sqrt{\sqrt{z^{2}+1}-2}$
+\end_inset
+
+ при разрезах по пункту а).
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -82760,14 +83848,59 @@ noprefix "false"
 \end_inset
 
 .
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-328b"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Взять схему для пункта б) из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-328b.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-328b"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)=\sqrt{\sqrt{z^{2}+1}-2}$
+\end_inset
+
+ при разрезах по пункту б).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
