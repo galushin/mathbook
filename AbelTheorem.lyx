@@ -57350,7 +57350,7 @@ name "roots-n-from-1"
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:values-of-root-n-from-1"
+name "prob:values-of-root-n-of-1"
 
 \end_inset
 
@@ -57444,6 +57444,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:roots-n-of-1-form-cyclic-group-order-n"
+
+\end_inset
+
 Так как 
 \begin_inset Formula $\varepsilon_{n}^{n}=1$
 \end_inset
@@ -57624,7 +57630,7 @@ status open
  Как было показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:values-of-root-n-from-1"
+reference "prob:values-of-root-n-of-1"
 plural "false"
 caps "false"
 noprefix "false"
@@ -67036,7 +67042,7 @@ P^{\prime}\left(z\right)=\left[\left(z-z_{0}\right)^{k}\right]^{\prime}\cdot Q\l
 
 \begin_layout Section
 Риманова поверхность функции 
-\begin_inset Formula $\sqrt[n]{z}$
+\begin_inset Formula $\sqrt{z}$
 \end_inset
 
 
@@ -70778,6 +70784,12 @@ name "fig:scheme-of-the-rieman-surface-of-sqrt"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:rieman-surfaces"
+
+\end_inset
+
 Римановы поверхности более сложных функций
 \end_layout
 
@@ -71278,6 +71290,12 @@ f_{3}\left(-i\right)=\sqrt[3]{1}\left(\cos\left(-\frac{\pi}{6}+\frac{4\pi}{3}\ri
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-and-its-scheme-of-cube-root-of-z"
+
+\end_inset
+
 Построить риманову поверхность и её схему для функции 
 \begin_inset Formula $w=\sqrt[3]{z}$
 \end_inset
@@ -72089,7 +72107,7 @@ name "prob:expressing-images-of-root-n-of-given-curve-from-some-image"
 Как было показано в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:values-of-root-n-from-1"
+reference "prob:values-of-root-n-of-1"
 plural "false"
 caps "false"
 noprefix "false"
@@ -72330,6 +72348,12 @@ f_{j}\left(z\right)=f_{0}\left(z\right)\cdot\varepsilon_{n}^{j}.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-scheme-of-root-n-of-z"
+
+\end_inset
+
 Построить схему римановой поверхности функции 
 \begin_inset Formula $\sqrt[n]{z}$
 \end_inset
@@ -72465,6 +72489,12 @@ name "fig:rieman-surface-scheme-of-roon-n-of-z"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-scheme-of-sqrt-of-(z-1)"
+
+\end_inset
+
 Для функции 
 \begin_inset Formula $\sqrt{z-1}$
 \end_inset
@@ -72752,13 +72782,24 @@ name "fig:rieman-surface-scheme-of-root-of-(z+i)"
 \begin_layout Standard
 При этом схема римановой поверхности данной функции может существенно зависеть
  от того, по каким именно линиям проведены разрезы из точек разветвления
- в бесконечность (соответствующий пример будет рассмотрен ниже 
-\begin_inset Note Note
-status open
+ в бесконечность (соответствующий пример будет рассмотрен ниже в задачах
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-sqrt(z^2+1)-2"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-добавить ссылки на задачи 327 и 328
-\end_layout
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:example-of-rieman-surface-depending-on-cuts"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -72975,6 +73016,12 @@ w_{j}\left(z\right)=w_{0}\left(z\right)\cdot\varepsilon_{n}^{j},
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-scheme-for-sqrt-of-z(z-i)-and-z^2+1"
+
+\end_inset
+
 Найти все точки разветвления и построить схемы римановых поверхностей для
  функций а)
 \begin_inset Formula $\sqrt{z\left(z-i\right)}$
@@ -73144,6 +73191,12 @@ name "fig:rieman-surface-scheme-of-sqrt-of-quadrics-samples"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-scheme-examples-of-cube-root-of-polynomial"
+
+\end_inset
+
 Построить схемы римановых поверхностей следующих функций: а) 
 \begin_inset Formula $\sqrt[3]{z^{2}-1}$
 \end_inset
@@ -73922,6 +73975,12 @@ name "def:point-of-ambiguity"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-schemes-of-root-4-of-polynomials-examples"
+
+\end_inset
+
 Построить схемы римановых поверхностей следующих функций: а) 
 \begin_inset Formula $\sqrt[4]{z^{2}+2}$
 \end_inset
@@ -74500,6 +74559,12 @@ name "fig:rieman-surface-scheme-of-root-4-of-z(z3-1)"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieaman-surface-scheme-of-sqrt-of-1/z"
+
+\end_inset
+
 Построить схему римановой поверхности функции 
 \begin_inset Formula $\sqrt{\frac{1}{z}}$
 \end_inset
@@ -75008,13 +75073,13 @@ name "rieman-surface-scheme-308-3"
  Оказывается, что этим свойством обладает довольно широкий класс многозначных
  функций.
  В частности, таим свойством обладают все рассматриваемые ниже функции,
- а именно функции, выражающиеся в радикалах (
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на параграф 11
-\end_layout
+ а именно функции, выражающиеся в радикалах (описанных в разделе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:radical-expressed-functions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -75057,13 +75122,13 @@ status open
 \end_inset
 
  и принять сформулированное выше утверждение без доказательства (Читатель
- может так и поступить, перейдя сразу к чтению параграфа 11
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ может так и поступить, перейдя сразу к чтению раздела 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:radical-expressed-functions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -76093,6 +76158,7973 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:radical-expressed-functions"
+
+\end_inset
+
+Функции, выражающиеся в радикалах
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:arithmetic-operations-and-roots-of-multivalue-functions"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — две многозначные функции.
+ Под 
+\begin_inset Formula $f\left(z\right)+g\left(z\right)$
+\end_inset
+
+ будет пониматься многозначная функции, все значения которой в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ получается, если каждое значение 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+ сложить с каждым значением 
+\begin_inset Formula $g\left(z_{0}\right)$
+\end_inset
+
+.
+ Так же определяются функции 
+\begin_inset Formula $f\left(z\right)-g\left(z\right)$
+\end_inset
+
+ , 
+\begin_inset Formula $f\left(z\right)\cdot g\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{f\left(z\right)}{g\left(z\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Под 
+\begin_inset Formula $\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — натуральное число, будет пониматься функция, все значения которой в точке
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ получаются, если каждое значение 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+ возвести в степень 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Под 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — натуральное число, будет пониматься функция, все значения которой в точке
+ 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ получаются, если для каждого значения 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+ вычислить все 
+\begin_inset Formula $n$
+\end_inset
+
+ значений 
+\begin_inset Formula $\sqrt[n]{f\left(z_{0}\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Найти все значения а) 
+\begin_inset Formula $\sqrt[3]{-8}+\sqrt{2i}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\frac{1-\sqrt{-2i}}{\sqrt{-4}}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt{i+\sqrt{-1}}$
+\end_inset
+
+, г) 
+\begin_inset Formula $\left(\sqrt[4]{\left(1+i\right)^{2}}\right)^{2}$
+\end_inset
+
+, д) 
+\begin_inset Formula $\left(\sqrt{i}+\sqrt{i}\right)^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Так как 
+\begin_inset Formula $\left|-8\right|=8$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\left(-8\right)=\pi$
+\end_inset
+
+, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:complex-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula $\left|\sqrt[3]{-8}\right|=\sqrt[3]{8}=2$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\sqrt[3]{-8}=\pi+\frac{2\pi k}{3}$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1,2$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $k=0$
+\end_inset
+
+ получим 
+\begin_inset Formula $\sqrt[3]{-8}=2\left(\cos\pi+i\sin\pi\right)=-2$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $k=1$
+\end_inset
+
+ получим значение аргумента 
+\begin_inset Formula $\pi+\frac{2\pi}{3}=\frac{5\pi}{3}=-\frac{\pi}{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[3]{-8}=2\left(\cos\frac{\pi}{3}-i\sin\frac{\pi}{3}\right)=2\left(\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)=1-i\sqrt{3}$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $k=2$
+\end_inset
+
+ получим значение аргумента 
+\begin_inset Formula $\pi+\frac{4\pi}{3}=\frac{7\pi}{3}=\frac{\pi}{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[3]{-8}=2\left(\cos\frac{\pi}{3}+i\sin\frac{\pi}{3}\right)=1+i\sqrt{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $\left|2i\right|=2$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\left(2i\right)=\frac{\pi}{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|\sqrt{2i}\right|=\sqrt{2}$
+\end_inset
+
+ (в правой части имеется в виду положительное значение корня) и 
+\begin_inset Formula $\mathrm{Arg}\sqrt{2i}=\frac{\pi}{4}+\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula 
+\[
+\sqrt{2i}=\pm\sqrt{2}\left(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}\right)=\pm\sqrt{2}\left(\frac{\sqrt{2}}{2}+i\frac{\sqrt{2}}{2}\right)=\pm\left(1+i\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Теперь, чтобы получить значения всего выражения 
+\begin_inset Formula $\sqrt[3]{-8}+\sqrt{2i}$
+\end_inset
+
+, нужно взять всевозможные пары значений слагаемых.
+ Всего получится следующих значений.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+-2+1+i=-1+i,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+-2-1-i=-3-i,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-i\sqrt{3}+1+i=2+i\left(1-\sqrt{3}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-i\sqrt{3}-1-i=-i\left(\sqrt{3}+1\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+1+i\sqrt{3}+1+i=2+i\left(\sqrt{3}+1\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+1+i\sqrt{3}-1-i=i\left(\sqrt{3}-1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Так как 
+\begin_inset Formula $\left|-2i\right|=\left|2\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\left(-2i\right)=-\frac{\pi}{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|\sqrt{-2i}\right|=\sqrt{2}$
+\end_inset
+
+ (в правой части имеется в виду положительное значение корня) и 
+\begin_inset Formula $\mathrm{Arg}\sqrt{-2i}=-\frac{\pi}{4}+\pi k$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1$
+\end_inset
+
+.
+ Таким образом: 
+\begin_inset Formula 
+\[
+\sqrt{-2i}=\pm\sqrt{2}\left(\cos\frac{\pi}{4}-i\sin\frac{\pi}{4}\right)=\pm\left(1-i\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-\sqrt{-2i}=1\pm\left(i-1\right)=\left\{ i,2-i\right\} ,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt{-4}=\pm2i.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Выражение 
+\begin_inset Formula $\frac{1-\sqrt{-2i}}{\sqrt{-4}}$
+\end_inset
+
+ будет иметь четыре значения: 
+\begin_inset Formula 
+\[
+\frac{i}{\pm2i}=\pm\frac{1}{2},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{2-i}{\pm2i}=\pm\left(\frac{1}{i}-\frac{1}{2}\right)=\pm\left(-\frac{1}{2}-i\right)=\pm\left(\frac{1}{2}+i\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) 
+\begin_inset Formula $\sqrt{-1}=\pm i$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $i+\sqrt{-1}=i\pm i=\left\{ 2i,0\right\} $
+\end_inset
+
+.
+ В свою очередь, как мы видели выше, 
+\begin_inset Formula $\sqrt{2i}=\pm\left(1+i\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $\sqrt{0}=0$
+\end_inset
+
+, таким образом 
+\begin_inset Formula 
+\[
+\sqrt{i+\sqrt{-1}}=\left\{ -\left(1+i\right),0,\left(1+i\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+г) 
+\begin_inset Formula $\left(1+i\right)^{2}=1^{2}+2i+i^{2}=2i$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left|2i\right|=2$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\left(2i\right)=\frac{\pi}{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|\sqrt[4]{2i}\right|=\sqrt[4]{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Arg}\left(2i\right)=\frac{\pi}{8}+\frac{2\pi k}{4}$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1,2,3$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+\left(\sqrt[4]{\left(1+i\right)^{2}}\right)^{2}=\sqrt{2}\left(\cos\left(\frac{\pi}{4}+\pi k\right)+i\sin\left(\frac{\pi}{4}+\pi k\right)\right),
+\]
+
+\end_inset
+
+ но так как аргумент 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ с одной стороны, и 
+\begin_inset Formula $\pi$
+\end_inset
+
+ и 
+\begin_inset Formula $3\pi$
+\end_inset
+
+ — с другой задают один и тот же угол, то получим два возможных значения
+ (при 
+\begin_inset Formula $k=0$
+\end_inset
+
+ и 
+\begin_inset Formula $k=1$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\sqrt[4]{\left(1+i\right)^{2}}\right)^{2}=\pm\sqrt{2}\left(\frac{\sqrt{2}}{2}+i\frac{\sqrt{2}}{2}\right)=\pm\left(1+i\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+д) 
+\begin_inset Formula $\sqrt{i}=\pm\left(\frac{\sqrt{2}}{2}+i\frac{\sqrt{2}}{2}\right)$
+\end_inset
+
+.
+ Значения первого и второго корня могут выбираться независимо, поэтому 
+\begin_inset Formula 
+\[
+\sqrt{i}+\sqrt{i}=\left\{ 0,\pm\left(\sqrt{2}+i\sqrt{2}\right)\right\} .
+\]
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не дорешал: забыл возвести в квадрат
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Возведём эти возможные значения в квадрат:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+0^{2}=0,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\pm\left(\sqrt{2}+i\sqrt{2}\right)\right]^{2}=\left(\sqrt{2}+i\sqrt{2}\right)^{2}=4i.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, получаем два возможных значения: 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $4i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Будем говорить, что многозначная функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ 
+\emph on
+выражается в радикалах
+\emph default
+, если она может быть получена из функции 
+\begin_inset Formula $f\left(z\right)=z$
+\end_inset
+
+ и постоянных функций вида 
+\begin_inset Formula $g\left(z\right)=a$
+\end_inset
+
+ (где 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольное фиксированное комплексное число) с помощью операций сложения,
+ вычитания, умножения, деления, возведения в натуральную степень и извлечения
+ корней натуральной степени.
+\end_layout
+
+\begin_layout Standard
+Например, функция 
+\begin_inset Formula $h\left(z\right)=\left(\sqrt[3]{\sqrt{z}+3z^{2}}-\frac{i}{\sqrt{z}}\right)^{4}$
+\end_inset
+
+ выражена в радикалах.
+ Некоторые функции, выражающиеся в радикалах мы уже рассматривали выше.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:there-exists-continuous-image-of-curve-by-radical-expressed-function"
+
+\end_inset
+
+Пусть функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ выражается в радикалах, и пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, начинающаяся в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и не проходящая через точки, в которых 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ не определена.
+ Доказать, что если 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $h\left(z_{0}\right)$
+\end_inset
+
+ , то имеется хотя бы один непрерывный образ кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=h\left(z\right)$
+\end_inset
+
+, начинающийся в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ (считаем, что параметрическое уравнение 
+\begin_inset Formula $w\left(t\right)=a$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — фиксированное комплексное число, задаёт непрерывную кривую, вырождающуюся
+ в точку).
+\end_layout
+
+\begin_layout Solution
+Доказательство проведём индукцией по структуре функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+, выражающейся в радикалах.
+\end_layout
+
+\begin_layout Solution
+Базой индукции будет утверждение о том, что искомый непрерывный образ будет
+ существовать при 
+\begin_inset Formula $h\left(z\right)=z$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(z\right)=a$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольное комплексное число.
+ Действительно, при 
+\begin_inset Formula $h\left(z\right)=z$
+\end_inset
+
+ достаточно взять 
+\begin_inset Formula $w\left(t\right)=z\left(t\right)$
+\end_inset
+
+, а при 
+\begin_inset Formula $h\left(z\right)=a$
+\end_inset
+
+ — 
+\begin_inset Formula $w\left(t\right)=a$
+\end_inset
+
+.
+ Непрерывность функций такого вида доказана в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:identity-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:constant-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ соответственно.
+\end_layout
+
+\begin_layout Solution
+Теперь нужно доказать, что если 
+\begin_inset Formula $h_{1}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}\left(z\right)$
+\end_inset
+
+ — отображения, для которых существует требуемый по условию непрерывный
+ образ, то такими же будет следующие функции: 
+\begin_inset Formula $h_{1}\left(z\right)+h_{2}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}\left(z\right)-h_{2}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}\left(z\right)\cdot h_{2}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{h_{1}\left(z\right)}{h_{2}\left(z\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $\left[h_{1}\left(z\right)\right]^{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[n]{h_{1}\left(z\right)}$
+\end_inset
+
+ (в последних двух выражения 
+\begin_inset Formula $n$
+\end_inset
+
+ — произвольное натуральное число).
+ Рассмотрим эти выражения последовательно.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:ratio-of-continuous-functions-is-continuos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
+\begin_inset Formula $h_{1}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}\left(z\right)$
+\end_inset
+
+ непрерывны (справедливо в силу предположения индукции), а 
+\begin_inset Formula $h_{2}\left(z\right)\neq0$
+\end_inset
+
+ (справедливо по условиям задачи, когда 
+\begin_inset Formula $h_{2}\left(z\right)$
+\end_inset
+
+ стоит в знаменателе дроби), то непрерывны и функции 
+\begin_inset Formula $h_{1}\left(z\right)+h_{2}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}\left(z\right)-h_{2}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}\left(z\right)\cdot h_{2}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{h_{1}\left(z\right)}{h_{2}\left(z\right)}$
+\end_inset
+
+.
+ Так как возможные значения этих выражений получаются как соответственно
+ сумма, разность, произведение и частное функций 
+\begin_inset Formula $h_{1}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}\left(z\right)$
+\end_inset
+
+, то для любого возможного значения 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ выражения 
+\begin_inset Formula $h_{1}\left(z_{0}\right)+h_{2}\left(z_{0}\right)$
+\end_inset
+
+ существуют 
+\begin_inset Formula $w_{0}^{\prime}=h_{1}\left(z_{0}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{0}^{\prime\prime}=h_{2}\left(z_{0}\right)$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $w_{0}=w_{0}^{\prime}+w_{0}^{\prime\prime}$
+\end_inset
+
+.
+ Аналогично обстоит дело и с разностью, произведением и частным.
+\end_layout
+
+\begin_layout Solution
+Случай 
+\begin_inset Formula $h\left(z\right)=\left[h_{1}\left(z\right)\right]^{n}$
+\end_inset
+
+.
+ Он сводится к случаю 
+\begin_inset Formula $h\left(z\right)=h_{1}\left(z\right)\cdot h_{2}\left(z\right)$
+\end_inset
+
+, так как возведение в натуральную степень — это нахождение произведения
+ соответствующего количества одинаковых слагаемых.
+\end_layout
+
+\begin_layout Solution
+Наконец, рассмотрим случай 
+\begin_inset Formula $h\left(z\right)=\sqrt[n]{h_{1}\left(z\right)}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $v\left(t\right)$
+\end_inset
+
+ — непрерывный образ кривой 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $h_{1}\left(z\right)$
+\end_inset
+
+, начинающийся в точке 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+, где 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $h_{1}\left(z_{0}\right)$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:there-exists-continuous-image-of-continuous-curve-by-root-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует непрерывный образ этой кривой при отображении 
+\begin_inset Formula $w\left(v\right)=\sqrt[n]{v}$
+\end_inset
+
+, начинающийся в любой точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+, которая является одним из значений 
+\begin_inset Formula $\sqrt[n]{v_{0}}$
+\end_inset
+
+.
+ Так как все возможные значения 
+\begin_inset Formula $h\left(z_{0}\right)$
+\end_inset
+
+ получаются как всевозможные значения корня 
+\begin_inset Formula $n$
+\end_inset
+
+-ой степени из 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+, то эту полученную кривую можно взять в качестве искомого непрерывного
+ образа 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:there-exists-continuous-image-of-curve-by-radical-expressed-function"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем, что произвольная функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+, выражающаяся в радикалах, может быть определена по непрерывности вдоль
+ любой непрерывной кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, не проходящей через точки, в которых функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ не определена.
+ Если при этом кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ не проходит через точки разветвления 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branching-points"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и неоднозначности 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:point-of-ambiguity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+, то функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ определяется вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ однозначно.
+\end_layout
+
+\begin_layout Standard
+Мы уже отмечали в предыдущем разделе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:rieman-surfaces"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что функции, выражающиеся в радикалах, являются 
+\begin_inset Quotes rld
+\end_inset
+
+достаточно хорошими
+\begin_inset Quotes rrd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Функции, выражающиеся в радикалах, являются аналитическими.
+\end_layout
+
+\end_inset
+
+, то есть они обладают свойством монодромии.
+ Поэтому для любой функции, выражающейся в радикалах, можно построить риманову
+ поверхность (смотри задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-can-be-partitioned-on-continuous-unambiguous-branches"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-cut-cross-point-does-not-matter"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Любая функция, выражающаяся в радикалах, имеет конечное число точек разветвления.
+\end_layout
+
+\end_inset
+
+).
+ Выясним структуру этих римановых поверхностей.
+\end_layout
+
+\begin_layout Standard
+В дальнейшем всюду в этом разделе можно предполагать, что речь идёт о функциях,
+ выражающихся в радикалах.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+.
+ Выколем из плоскости все точки неоднозначности функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ и проведём непересекающиеся разрезы в бесконечность из всех точек, которые
+ являются точками разветвления хотя бы одной из функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $f_{n}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}\left(z\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $g_{m}\left(z\right)$
+\end_inset
+
+ — непрерывные однозначные ветви функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ на полученной плоскости с разрезами.
+ Найти непрерывные однозначные ветви функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольную кривую 
+\begin_inset Formula $C$
+\end_inset
+
+ на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+, которая не пересекает проведённые разрезы и не проходит через выколотые
+ точки, начинающуюся в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и заканчивающуюся в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Функция 
+\begin_inset Formula $h_{j,k}\left(z\right)=f_{j}\left(z\right)+g_{k}\left(z\right)$
+\end_inset
+
+ является однозначной и непрерывной вдоль таких кривых, поэтому она будет
+ непрерывной однозначной ветвью 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+.
+ Всего имеется 
+\begin_inset Formula $n\cdot m$
+\end_inset
+
+ таких ветвей.
+ Возможные значения 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $w_{0}=u_{0}+v_{0}$
+\end_inset
+
+, где 
+\begin_inset Formula $u_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $g\left(z_{0}\right)$
+\end_inset
+
+.
+ Таких значений также 
+\begin_inset Formula $n\cdot m$
+\end_inset
+
+.
+ Таким образом, других однозначных непрерывных ветвей быть не может.
+\end_layout
+
+\begin_layout Standard
+Если при обходе точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ мы с ветви 
+\begin_inset Formula $f_{i_{1}}\left(z\right)$
+\end_inset
+
+ переходим на ветвь 
+\begin_inset Formula $f_{i_{2}}\left(z\right)$
+\end_inset
+
+ и с ветви 
+\begin_inset Formula $g_{j_{1}}\left(z\right)$
+\end_inset
+
+ на ветвь 
+\begin_inset Formula $g_{j_{2}}\left(z\right)$
+\end_inset
+
+, то, очевидно, с ветви 
+\begin_inset Formula $h_{i_{1},j_{1}}\left(z\right)=f_{i_{1}}\left(z\right)+g_{j_{1}}\left(z\right)$
+\end_inset
+
+ мы перейдём на ветвь 
+\begin_inset Formula $h_{i_{2},j_{2}}\left(z\right)=f_{i_{2}}\left(z\right)+g_{j_{2}}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "foraml-method-of-constructing-rieman-surface-scheme"
+
+\end_inset
+
+Это подсказывает нам следующий формальный метод построения схемы римановой
+ поверхности функции 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+ при условии, что построены (при тех же разрезах) схемы римановых поверхностей
+ функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+.
+ Каждой паре ветвей 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{j}\left(z\right)$
+\end_inset
+
+ ставим в соответствие лист, на котором считаем заданной ветвь 
+\begin_inset Formula $h_{i,j}\left(z\right)=f_{i}\left(z\right)+g_{j}\left(z\right)$
+\end_inset
+
+.
+ Если в схемах римановых поверхностей функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ указаны переходы с ветви 
+\begin_inset Formula $f_{i_{1}}\left(z\right)$
+\end_inset
+
+ на ветвь 
+\begin_inset Formula $f_{i_{2}}\left(z\right)$
+\end_inset
+
+ и с ветви 
+\begin_inset Formula $g_{j_{1}}\left(z\right)$
+\end_inset
+
+ на ветвь 
+\begin_inset Formula $g_{j_{2}}\left(z\right)$
+\end_inset
+
+, то в схеме римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ указываем в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ переход с ветви 
+\begin_inset Formula $h_{i_{1},j_{1}}\left(z\right)$
+\end_inset
+
+ на ветвь 
+\begin_inset Formula $h_{i_{2},j_{2}}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Построить схемы римановых поверхностей следующих функций: а) 
+\begin_inset Formula $\sqrt{z}+\sqrt{z-1}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}+\sqrt{\frac{1}{z}}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt{z}+\sqrt[3]{z}$
+\end_inset
+
+, г) 
+\begin_inset Formula $\sqrt{z^{2}-1}+\sqrt[4]{z-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся формальным методом, описанным выше в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "foraml-method-of-constructing-rieman-surface-scheme"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ приведена в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-sqrt-of-(z-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ осуществляется переход между листами 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+, а в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ — между листами 
+\begin_inset Formula $\left(i,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(i,1\right)$
+\end_inset
+
+.
+ Полученная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z)+sqrt(z-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z)+sqrt(z-1).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z)+sqrt(z-1)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}+\sqrt{z-1}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-examples-of-cube-root-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а функции 
+\begin_inset Formula $\sqrt{\frac{1}{z}}$
+\end_inset
+
+ — в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieaman-surface-scheme-of-sqrt-of-1/z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В точках 
+\begin_inset Formula $z=1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ осуществляется переход с листа 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+ на лист 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+, с листа 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(2,j\right)$
+\end_inset
+
+, а с листа 
+\begin_inset Formula $\left(2,j\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ осуществляется переход между листами 
+\begin_inset Formula $\left(i,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(i,1\right)$
+\end_inset
+
+.
+ Полученная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z^2-1)+sqrt(1/z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z^2-1)+sqrt(inv(z)).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z^2-1)+sqrt(1/z)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}+\sqrt{\frac{1}{z}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ приведена в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-and-its-scheme-of-cube-root-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ осуществляется переход с листа 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ на лист 
+\begin_inset Formula $\left(\left(i+1\right)\mod2,\left(j+1\right)\mod3\right)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left(0,0\right)\to\left(1,1\right)\to\left(0,2\right)\to\left(1,0\right)\to\left(0,1\right)\to\left(1,2\right)\to\left(0,0\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Полученная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z)+root-3-of(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z)+root-3-of(z).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z)+root-3-of(z)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}+\sqrt[3]{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+г) Так как 
+\begin_inset Formula $z^{2}-1=\left(z-1\right)\left(z+1\right)$
+\end_inset
+
+, то у функции 
+\begin_inset Formula $\sqrt{z^{2}-1}$
+\end_inset
+
+ имеется две точки разветвления: 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ В каждой из этих точке осуществляется переход между двумя листами этой
+ функции.
+\end_layout
+
+\begin_layout Solution
+По аналогии с результатом задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-root-n-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у функции 
+\begin_inset Formula $\sqrt[4]{z-1}$
+\end_inset
+
+ имеется 4 ветви и одна точка разветвления 
+\begin_inset Formula $z=1$
+\end_inset
+
+, определяемая из условия равенства нулю подкоренного выражения.
+ В этой точке происходит переход с первого листа на второй, со второго —
+ на третий, с третьего — на четвёртый, а с четвёртого — на первый.
+\end_layout
+
+\begin_layout Solution
+Таким образом, в точке 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ осуществляется переход между листами 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+, а в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ происходят переход с листа 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ на лист 
+\begin_inset Formula $\left(\left(i+1\right)\mod2,\left(j+1\right)\mod4\right)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left(0,0\right)\to\left(1,1\right)\to\left(0,2\right)\to\left(1,3\right)\to\left(0,0\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(0,1\right)\to\left(1,2\right)\to\left(0,3\right)\to\left(1,0\right)\to\left(0,1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Полученная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z^2-1)+root[4](z-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z^2-1)+root[4](z-1).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z^2-1)+root[4](z-1)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z^{2}-1}+\sqrt[4]{z-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Описанный выше формальный метод построения римановой поверхности функции
+ 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+ не всегда даёт правильный результат, так как он не учитывает, что некоторые
+ из ветвей 
+\begin_inset Formula $h_{i,j}\left(z\right)$
+\end_inset
+
+ могут оказаться равными.
+ Для простоты будем считать, что разрезы не проходят через точки неоднозначности
+ функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+.
+ В таком случае при пересечении любого разреза мы с листов, соответствующих
+ равным ветвям функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+, будем переходить, в силу однозначности, на листы, также соответствующие
+ равным ветвям.
+ Следовательно, если мы склеим листы, соответствующие одинаковым ветвям
+ функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+, то есть заменим каждое множество таких листов одним листом, то однозначно
+ определяются переход между полученными листами при обходе любой точки разветвле
+ния 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-of-multivalue-expressions"
+
+\end_inset
+
+Найти все значения 
+\begin_inset Formula $f\left(1\right)$
+\end_inset
+
+, если: а) 
+\begin_inset Formula $f\left(z\right)=\sqrt{z}+\sqrt{z}$
+\end_inset
+
+, б) 
+\begin_inset Formula $f\left(z\right)=\sqrt{z}+\sqrt[4]{z^{2}}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt[3]{z}+\sqrt[3]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Возможные значения 
+\begin_inset Formula $\sqrt{1}$
+\end_inset
+
+ равны, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\pm1$
+\end_inset
+
+.
+ Тогда возможными значениями 
+\begin_inset Formula $\sqrt{1}+\sqrt{1}$
+\end_inset
+
+ будут 
+\begin_inset Formula $1+1=2$
+\end_inset
+
+, 
+\begin_inset Formula $1-1=0$
+\end_inset
+
+, 
+\begin_inset Formula $-1+1=0$
+\end_inset
+
+ и 
+\begin_inset Formula $-1-1=-2$
+\end_inset
+
+, таким образом получаем три возможных значения 
+\begin_inset Formula $f\left(1\right)=\left\{ -2,0,2\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Как указывалось в предыдущем пункте, 
+\begin_inset Formula $\sqrt{1}=\pm1$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $z=1$
+\end_inset
+
+ получаем 
+\begin_inset Formula $z^{2}=1\cdot1=1$
+\end_inset
+
+.
+ Возможные значения 
+\begin_inset Formula $\sqrt[4]{1}$
+\end_inset
+
+ есть, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:values-of-root-n-of-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\cos\left(\frac{2\pi}{4}k\right)+i\sin\left(\frac{2\pi}{4}k\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1,2,3$
+\end_inset
+
+.
+ То есть 
+\begin_inset Formula $\sqrt[4]{1}=\left\{ 1,i,-1,-i\right\} $
+\end_inset
+
+.
+ Рассмотрим всевозможные пары значений слагаемых и вычислим их суммы: 
+\begin_inset Formula $1+1=2$
+\end_inset
+
+, 
+\begin_inset Formula $1+i$
+\end_inset
+
+, 
+\begin_inset Formula $1-1=0$
+\end_inset
+
+, 
+\begin_inset Formula $1-i$
+\end_inset
+
+, 
+\begin_inset Formula $-1+1=0$
+\end_inset
+
+, 
+\begin_inset Formula $-1+i$
+\end_inset
+
+, 
+\begin_inset Formula $-1-1=-2$
+\end_inset
+
+, 
+\begin_inset Formula $-1-i$
+\end_inset
+
+.
+ Таким образом 
+\begin_inset Formula 
+\[
+\sqrt{z}+\sqrt[4]{z^{2}}=\left\{ 2,1+i,0,1-i,-1+i,-2,-1-i\right\} ,
+\]
+
+\end_inset
+
+то есть имеется 7 возможных значений.
+\end_layout
+
+\begin_layout Solution
+в) Как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:values-of-root-n-of-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, возможными значениями 
+\begin_inset Formula $\sqrt[3]{1}$
+\end_inset
+
+ являются 
+\begin_inset Formula $\cos\left(\frac{2\pi k}{3}\right)+i\sin\left(\frac{2\pi k}{3}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $k=0,1,2$
+\end_inset
+
+, то есть 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $-\frac{1}{2}+i\frac{\sqrt{3}}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $-\frac{1}{2}-i\frac{\sqrt{3}}{2}$
+\end_inset
+
+.
+ Рассмотрим всевозможные пары значений и вычислим их суммы.
+ В силу коммутативности сложения, пары, отличающиеся порядком слагаемых
+ можно не рассматривать.
+\begin_inset Formula 
+\[
+1+1=2,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+1+\left(-\frac{1}{2}+i\frac{\sqrt{3}}{2}\right)=\frac{1}{2}+i\frac{\sqrt{3}}{2},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+1+\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)=\frac{1}{2}-i\frac{\sqrt{3}}{2},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(-\frac{1}{2}+i\frac{\sqrt{3}}{2}\right)+\left(-\frac{1}{2}+i\frac{\sqrt{3}}{2}\right)=-1+i\sqrt{3},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(-\frac{1}{2}+i\frac{\sqrt{3}}{2}\right)+\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)=-1,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)+\left(-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right)=-1-i\sqrt{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, получаем шесть возможных значений.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:examples-of-rieman-surface-schemes-by-schemes-of-terms"
+
+\end_inset
+
+Для указанных функций построить схему римановой поверхности формальным методом
+ и истинную схему римановой поверхности: а) 
+\begin_inset Formula $f\left(z\right)=\sqrt{z}+\sqrt{z}$
+\end_inset
+
+, б) 
+\begin_inset Formula $f\left(z\right)=\sqrt{z}+\sqrt[4]{z^{2}}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt[3]{z}+\sqrt[3]{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Будем пользоваться результатами задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-multivalue-expressions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Формальным методом получаем 4 листа с точкой разветвления в 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ В этой точке осуществляется переход между листами 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+, а также между листами 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+.
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z)+sqrt(z)-formal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z)+sqrt(z)-formal.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z)+sqrt(z)-formal"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}+\sqrt{z}$
+\end_inset
+
+, полученная формальным методов.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Но, как мы видели в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-multivalue-expressions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, листы 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+ должны быть склеены.
+ Поэтому истинная схема состоит из трёх листов: 
+\begin_inset Formula $\text{\left(0,0\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,0\right)\sim\left(0,1\right)$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ осуществляется переход между листами 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+, а третий лист остаётся изолированным от них.
+ Соответствующая схема показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z)+sqrt(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z)+sqrt(z).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z)+sqrt(z)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}+\sqrt{z}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Формальным методом получаем, что с листа 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ осуществляется переход на лист 
+\begin_inset Formula $\left(\left(i+1\right)\mod2,\left(j+2\right)\mod4\right)$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь изначально было ошибочно указано 
+\begin_inset Formula $j+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(0,0\right)\to\left(1,2\right)\to\left(0,0\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(0,1\right)\to\left(1,3\right)\to\left(0,1\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1,0\right)\to\left(0,2\right)\to\left(1,0\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(1,1\right)\to\left(0,3\right)\to\left(1,1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Схема римановой поверхности, полученная формальным методом, показана на
+ рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z)+root[4](z)-formal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z)+root[4](z)-formal.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z)+root[4](z)-formal"
+
+\end_inset
+
+Риманово поверхности функции 
+\begin_inset Formula $f\left(z\right)=\sqrt{z}+\sqrt[4]{z^{2}}$
+\end_inset
+
+, полученная формальным методом.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Но листы, соответствующие значениям 
+\begin_inset Formula $+1-1$
+\end_inset
+
+ и 
+\begin_inset Formula $-1+1$
+\end_inset
+
+ должны быть склеены, номера этих листов 
+\begin_inset Formula $\left(0,2\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+.
+ Остальные переходы сохраняются.
+ Истинная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt(z)+root[4](z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-sqrt(z)+root[4](z).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-sqrt(z)+root[4](z)"
+
+\end_inset
+
+Риманово поверхности функции 
+\begin_inset Formula $f\left(z\right)=\sqrt{z}+\sqrt[4]{z^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) Формальным методом мы получаем схемы, состоящую из 9 листов с точкой
+ разветвления 
+\begin_inset Formula $z=0$
+\end_inset
+
+, в которой осуществляется переход с листа 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ на лист 
+\begin_inset Formula $\left(\left(i+1\right)\mod3,\left(j+1\right)\mod3\right)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left(0,0\right)\to\left(1,1\right)\to\left(2,2\right)\to\left(0,0\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(0,1\right)\to\left(1,2\right)\to\left(2,0\right)\to\left(0,1\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(0,2\right)\to\left(1,0\right)\to\left(2,1\right)\to\left(0,2\right).
+\]
+
+\end_inset
+
+Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-root[3](z)+root[3](z)-formal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-root[3](z)+root[3](z)-formal.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-root[3](z)+root[3](z)-formal"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z}+\sqrt[3]{z}$
+\end_inset
+
+, полученная формальным методом.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Но листы 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(j,i\right)$
+\end_inset
+
+ дают одинаковое значение выражения и должны быть склеены.
+ Получаем, что с листа 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ осуществляется переход на лист 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+, с листа 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(2,2\right)$
+\end_inset
+
+, с листа 
+\begin_inset Formula $\left(2,2\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+, с листа 
+\begin_inset Formula $\left(0,1\right)\sim\left(0,1\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(1,2\right)\sim\left(2,1\right)$
+\end_inset
+
+, с листа 
+\begin_inset Formula $\left(1,2\right)\sim\left(2,1\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\left(2,0\right)\sim\left(0,2\right)$
+\end_inset
+
+, а с листа 
+\begin_inset Formula $\left(0,2\right)\sim\left(2,0\right)$
+\end_inset
+
+ — на лист 
+\begin_inset Formula $\text{\left(1,0\right)\textasciitilde\left(0,1\right)}$
+\end_inset
+
+.
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-root[3](z)+root[3](z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-of-root[3](z)+root[3](z).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-of-root[3](z)+root[3](z)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z}+\sqrt[3]{z}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Окончательно получаем, что для построения схемы римановой поверхности функции
+ 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+ по схемам римановых поверхностей функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ (построенным при тех же разрезах) достаточно построить схему описанным
+ выше формальным методом и затем произвести соответствующие склейки.
+\end_layout
+
+\begin_layout Standard
+Легко видеть, что этот алгоритм можно применять и построении схемы римановой
+ поверхности функций 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)-g\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)\cdot g\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)/g\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Построить схемы римановых поверхностей следующих функций: а) 
+\begin_inset Formula $i\sqrt{z}-\sqrt[4]{z^{2}}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt{z-1}\cdot\sqrt[4]{z}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\frac{\sqrt{z^{2}-1}}{\sqrt[4]{z+1}}$
+\end_inset
+
+, г) 
+\begin_inset Formula $\frac{\sqrt{z}+\sqrt{z}}{\sqrt[3]{z\left(z-1\right)}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Сначала для каждой функции построим схемы римановых поверхностей формальным
+ методом, а затем склеим листы, соответствующие равным непрерывным однозначным
+ ветвям рассматриваемой функции.
+\end_layout
+
+\begin_layout Solution
+а) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ приведена в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а функции 
+\begin_inset Formula $\sqrt[4]{z^{2}}$
+\end_inset
+
+ — в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-schemes-of-root-4-of-polynomials-examples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Точками разветвления для уменьшаемого и вычитаемого являются точка 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Переходы между листами 
+\begin_inset Formula $i\sqrt{z}$
+\end_inset
+
+ можно описать следующим образом: 
+\begin_inset Formula $0\to1\to0$
+\end_inset
+
+, а переходы между листами 
+\begin_inset Formula $\sqrt[4]{z^{2}}$
+\end_inset
+
+ — 
+\begin_inset Formula $0\to2\to0$
+\end_inset
+
+ и 
+\begin_inset Formula $1\to3\to1$
+\end_inset
+
+.
+ Соответственно, формальным методом получаем следующую схему переходов между
+ листами: 
+\begin_inset Formula $\left(0,0\right)\to\left(1,2\right)\to\left(0,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,1\right)\to\left(1,3\right)\to\left(0,1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,2\right)\to\left(1,0\right)\to\left(0,2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,3\right)\to\left(1,1\right)\to\left(0,3\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Чтобы понять, нужно ли склеивать листы схемы, полученной формальным методом,
+ рассмотрим значения этой функции в точке, не лежащей на разрезе и не являющейся
+ точкой разветвления, например 
+\begin_inset Formula $z=1$
+\end_inset
+
+:
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально использовал другую нумерацию
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\sqrt{1}=\left\{ 1,-1\right\} ,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i\sqrt{1}=\left\{ i,-i\right\} ,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt[4]{1^{2}}=\sqrt[4]{1}=\left\{ 1,i,-1,-i\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Перебирая всевозможные пары значений, получаем следующие значения:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i\sqrt{z}-\sqrt[4]{z^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-2i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, имеется 7 различных непрерывных однозначных ветвей, так как
+ листы 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,3\right)$
+\end_inset
+
+ соответствуют одному и тому же значению функции.
+ Окончательно получаем следующие циклы переходов: 
+\begin_inset Formula $\left(0,0\right)\to\left(1,2\right)\to\left(0,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,1\right)\sim\left(1,3\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,2\right)\to\left(1,0\right)\to\left(0,2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,3\right)\to\left(1,1\right)\to\left(0,3\right)$
+\end_inset
+
+.
+ Полученная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-317a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-317a.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-317a"
+
+\end_inset
+
+Схема римановой поверхности 
+\begin_inset Formula $i\sqrt{z}-\sqrt[4]{z^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Представим функцию 
+\begin_inset Formula $\sqrt{z-1}\cdot\sqrt[4]{z}$
+\end_inset
+
+ как произведение двух неоднозначных функций 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[4]{z}$
+\end_inset
+
+.
+ Схемы которых были получены в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt-of-(z-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-root-n-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ соответственно.
+ Переходы между листами 
+\begin_inset Formula $\sqrt{z-1}$
+\end_inset
+
+ (при обходе точки 
+\begin_inset Formula $1$
+\end_inset
+
+): 
+\begin_inset Formula $0\to1\to0$
+\end_inset
+
+.
+ Переходы между листами 
+\begin_inset Formula $\sqrt[4]{z}$
+\end_inset
+
+ (при обходе точки 
+\begin_inset Formula $0$
+\end_inset
+
+): 
+\begin_inset Formula $0\to1\to2\to3\to0$
+\end_inset
+
+.
+ Формальным методом получаем в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ переходы 
+\begin_inset Formula $\left(i,0\right)\to\left(i,1\right)\to\left(i,2\right)\to\left(i,3\right)\to\left(i,0\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $i=0,1$
+\end_inset
+
+, а в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ — 
+\begin_inset Formula $\left(0,j\right)\to\left(1,j\right)\to\left(0,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2,3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Выясним, какие листы нужно склеить.
+ В точке 
+\begin_inset Formula $z=2$
+\end_inset
+
+: 
+\begin_inset Formula $\sqrt{z-1}=\sqrt{2-1}=\sqrt{1}=\left\{ 1,-1\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\sqrt[4]{2}=\sqrt[4]{2}\cdot\left\{ 1,i,-1,-i\right\} $
+\end_inset
+
+ (в правой части последнего равенства имеется в виду вещественное положительное
+ значение корня).
+ Перебирая всевозможные пары значений (множитель 
+\begin_inset Formula $\sqrt[4]{2}$
+\end_inset
+
+ во втором слагаемом опущен для ясности), получаем следующие значения:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sqrt{z-1}\cdot\sqrt[4]{z}\cdot\left(\sqrt[4]{2}\right)^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, получаем 4 ветви.
+ 
+\begin_inset Formula $\left(0,0\right)\sim\left(1,2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,1\right)\sim\left(1,3\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,2\right)\sim\left(1,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,3\right)\sim\left(1,1\right)$
+\end_inset
+
+.
+ Таким образом, в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ остаётся одна цепочка переходов 
+\begin_inset Formula $\left(0,0\right)\to\left(0,1\right)\to\left(0,2\right)\to\left(0,3\right)\to\left(0,0\right)$
+\end_inset
+
+.
+ А в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ происходят переходы вида 
+\begin_inset Formula $\left(0,j\right)\to\left(0,\left(j+2\right)\mod4\right)\to\left(0,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1$
+\end_inset
+
+.
+ Построенная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-317b"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-317b.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-317b"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z-1}\cdot\sqrt[4]{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) Представим функцию 
+\begin_inset Formula $\frac{\sqrt{z^{2}-1}}{\sqrt[4]{z+1}}$
+\end_inset
+
+ как частное двух функций: 
+\begin_inset Formula $\sqrt{z^{2}-1}=\sqrt{\left(z-1\right)\left(z+1\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[4]{z+1}$
+\end_inset
+
+.
+ Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z^{2}-1}$
+\end_inset
+
+ может быть получена по аналогии с пунктом а) задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-root-4-of-(z2+2)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в ней в точках 
+\begin_inset Formula $z=\pm1$
+\end_inset
+
+ будут переходы 
+\begin_inset Formula $0\to1\to0$
+\end_inset
+
+.
+ Схема римановой поверхности 
+\begin_inset Formula $\sqrt[4]{z+1}$
+\end_inset
+
+ аналогична римановой поверхности 
+\begin_inset Formula $\sqrt[4]{z}$
+\end_inset
+
+, полученной в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-root-n-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, но со сдвигом на 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ В ней имеется 4 листа, а в точке 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ происходят переходы 
+\begin_inset Formula $0\to1\to2\to3\to0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Формальным методом получаем, что у функции 
+\begin_inset Formula $\frac{\sqrt{z^{2}-1}}{\sqrt[4]{z+1}}$
+\end_inset
+
+ будет 8 листов.
+ В точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ будут происходить переходы 
+\begin_inset Formula $\left(0,j\right)\to\left(1,j\right)\to\left(0,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2,3$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ будут происходить переходы 
+\begin_inset Formula $\left(0,0\right)\to\left(1,1\right)\to\left(0,2\right)\to\left(1,3\right)\to\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,1\right)\to\left(1,2\right)\to\left(0,3\right)\to\left(1,0\right)\to\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для того, чтобы понять, какие листы нужно склеивать, рассмотрим возможные
+ значения функции в точке, не являющейся точкой разветвления или неоднозначности
+, например в 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Для числитель и знаменателя получим следующие возможные значения: 
+\begin_inset Formula $\sqrt{-1}=\left\{ i,-i\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[4]{1}=\left\{ 1,i,-1,-i\right\} $
+\end_inset
+
+.
+ Рассмотрим теперь всевозможные пары значений и их частное:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Легко понять, что склеить нужно листы 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,3\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,2\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,3\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+.
+ Если в цепочке 
+\begin_inset Formula $\left(0,1\right)\to\left(1,2\right)\to\left(0,3\right)\to\left(1,0\right)\to\left(0,1\right)$
+\end_inset
+
+ заменить каждый лист на второй лист из склеиваемой пары, то получим 
+\begin_inset Formula $\left(1,3\right)\to\left(0,0\right)\to\left(1,1\right)\to\left(0,2\right)\to\left(1,3\right)$
+\end_inset
+
+, то есть первую цепочку (с другим выбором начальной точки).
+\end_layout
+
+\begin_layout Solution
+Таким образом, у функции 
+\begin_inset Formula $\frac{\sqrt{z^{2}-1}}{\sqrt[4]{z+1}}$
+\end_inset
+
+ будет 4 листа.
+ В точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ будет цепочка переходов 
+\begin_inset Formula $\left(0,0\right)\to\left(0,3\right)\to\left(0,2\right)\to\left(0,1\right)\to\left(0,0\right)$
+\end_inset
+
+, а в точке 
+\begin_inset Formula $z=-1$
+\end_inset
+
+: 
+\begin_inset Formula $\left(0,0\right)\to\left(0,2\right)\to\left(0,0\right)$
+\end_inset
+
+, и 
+\begin_inset Formula $\left(0,1\right)\to\left(0,3\right)\to\left(0,1\right)$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь была опечатка: последний блок был 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Построенная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-317c"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-317c.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-317c"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\frac{\sqrt{z^{2}-1}}{\sqrt[4]{z+1}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+г) Представим функцию 
+\begin_inset Formula $\frac{\sqrt{z}+\sqrt{z}}{\sqrt[3]{z\left(z-1\right)}}$
+\end_inset
+
+ как частное функций 
+\begin_inset Formula $\sqrt{z}+\sqrt{z}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[3]{z\left(z-1\right)}$
+\end_inset
+
+.
+ Схема римановой поверхности 
+\begin_inset Formula $\sqrt{z}+\sqrt{z}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-rieman-surface-schemes-by-schemes-of-terms"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Обозначим однозначные непрерывные ветви этой функции следующим образом:
+ 
+\begin_inset Formula $f_{0}\left(z\right)\equiv0$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(z\right)=-f_{1}\left(z\right)$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ имеются следующие цепочки переходов между листами: 
+\begin_inset Formula $1\to2\to1$
+\end_inset
+
+ и 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Построим схему римановой поверхности 
+\begin_inset Formula $\sqrt[3]{z\left(z-1\right)}$
+\end_inset
+
+ по аналогии с решением пункта а) задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-examples-of-cube-root-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В каждой из точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и 
+\begin_inset Formula $z=1$
+\end_inset
+
+ происходят переходы вида 
+\begin_inset Formula $0\to1\to2\to0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Формальным методом получаем в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ переходы вида 
+\begin_inset Formula $\left(i,0\right)\to\left(i,1\right)\to\left(i,2\right)\to\left(i,0\right)$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ имеются следующие цепочки переходов: 
+\begin_inset Formula $\left(1,0\right)\to\left(2,1\right)\to\left(1,2\right)\to\left(2,0\right)\to\left(1,1\right)\to\left(2,2\right)\to\left(1,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим, какие листы нужно склеить.
+ В точке 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ получаем 
+\begin_inset Formula $\sqrt{-1}=\left\{ -i,i\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\sqrt{-1}+\sqrt{-1}=\left\{ 0,2i,-2i\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $\sqrt[3]{-1\left(-2\right)}=\sqrt[3]{2}=\sqrt[3]{2}\left\{ 1,-\frac{1}{2}+i\frac{\sqrt{3}}{2},-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right\} $
+\end_inset
+
+.
+ Так как ноль, делённый на любое число даёт ноль, то листы 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,2\right)$
+\end_inset
+
+ необходимо склеить
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально использовал другую нумерацию
+\end_layout
+
+\end_inset
+
+.
+ Построенная схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-317d"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-317d.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-317d"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\frac{\sqrt{z}+\sqrt{z}}{\sqrt[3]{z\left(z-1\right)}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{2}\left(z\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $f_{m}\left(z\right)$
+\end_inset
+
+ — все непрерывные однозначные ветви функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Найти при тех же разрезах все непрерывные однозначные ветви функции 
+\begin_inset Formula $h\left(z\right)=\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — некоторое натуральное число.
+\end_layout
+
+\begin_layout Solution
+Так как каждая функция 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ и функция 
+\begin_inset Formula $g\left(z\right)=z^{n}$
+\end_inset
+
+ являются непрерывными, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:superposition-of-continuous-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, непрерывными будут и функции 
+\begin_inset Formula $\left[f_{i}\left(z\right)\right]^{n}$
+\end_inset
+
+.
+ По определению возведения многозначной функции в натуральную степень 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:arithmetic-operations-and-roots-of-multivalue-functions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в любой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ значение 
+\begin_inset Formula $\left[f_{i}\left(z_{0}\right)\right]^{n}$
+\end_inset
+
+ является одним из значений функции 
+\begin_inset Formula $\left[f\left(z_{0}\right)\right]^{n}$
+\end_inset
+
+, поэтому функции 
+\begin_inset Formula $h_{i}\left(z\right)=\left[f_{i}\left(z\right)\right]^{n}$
+\end_inset
+
+ будут непрерывными однозначными ветвями функции 
+\begin_inset Formula $\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+.
+ Так как у этой функции имеется не более 
+\begin_inset Formula $m$
+\end_inset
+
+ различных значений, то мы нашли все непрерывные однозначные ветви.
+\end_layout
+
+\begin_layout Standard
+Из результата последней задачи легко вытекает, что схема римановой поверхности
+ функции 
+\begin_inset Formula $h\left(z\right)=\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+ совпадала бы со схемой римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, если бы все ветви 
+\begin_inset Formula $h_{i}\left(z\right)=\left[f_{i}\left(z\right)\right]^{n}$
+\end_inset
+
+ были различными.
+ Однако это не всегда так.
+ Если получаются равные ветви, то при переходе через разрезы, мы в силу
+ однозначности будем с равных ветвей переходить на равные ветви.
+\end_layout
+
+\begin_layout Standard
+Окончательно получаем, что для построения схемы римановой поверхности функции
+ 
+\begin_inset Formula $h\left(z\right)=\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+ достаточно на схеме римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ рассмотреть вместо ветвей 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ ветви 
+\begin_inset Formula $h_{i}\left(z\right)=\left[f_{i}\left(z\right)\right]^{n}$
+\end_inset
+
+.
+ Если при этом появляются одинаковые ветви, то нужно склеить соответствующие
+ листы.
+\end_layout
+
+\begin_layout Problem
+Построить схемы римановых поверхностей следующих функций: а) 
+\begin_inset Formula $\left(\sqrt[4]{z}\right)^{2}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\left(\sqrt{z}+\sqrt{z}\right)^{2}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\left(\sqrt{z}\cdot\sqrt[3]{z-1}\right)^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Схема римановой поверхности 
+\begin_inset Formula $\sqrt[4]{z}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-root-n-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: в ней в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ происходят переходы 
+\begin_inset Formula $0\to1\to2\to3\to0$
+\end_inset
+
+.
+ Рассмотрим теперь значения 
+\begin_inset Formula $\left(\sqrt[4]{z}\right)^{2}$
+\end_inset
+
+ в точке, не являющейся точкой разветвления, например 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sqrt[4]{1}=\left\{ i,-1,-i,1\right\} $
+\end_inset
+
+, так как 
+\begin_inset Formula $i^{2}=\left(-i\right)^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(-1\right)^{2}=1^{2}$
+\end_inset
+
+, то листы 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $2$
+\end_inset
+
+, а также 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $3$
+\end_inset
+
+ нужно склеить.
+ Получаем схему с переходами 
+\begin_inset Formula $0\to1\to0$
+\end_inset
+
+.
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme-of-the-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Схема римановой поверхности 
+\begin_inset Formula $\sqrt{z}+\sqrt{z}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:examples-of-rieman-surface-schemes-by-schemes-of-terms"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В ней в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ происходят переходы 
+\begin_inset Formula $0\to2\to0$
+\end_inset
+
+.
+ Чтобы понять, какие листы нужно склеить, рассмотрим значение функции 
+\begin_inset Formula $\left(\sqrt{z}+\sqrt{z}\right)^{2}$
+\end_inset
+
+ в точке, не являющаяся точкой разветвления, например, в 
+\begin_inset Formula $z=1$
+\end_inset
+
+, получим 
+\begin_inset Formula $\sqrt{1}+\sqrt{1}=\left\{ -2,0,2\right\} $
+\end_inset
+
+, а 
+\begin_inset Formula $\left(-2\right)^{2}=2^{2}$
+\end_inset
+
+, то есть листы 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $2$
+\end_inset
+
+ нужно склеить.
+ Получаем схему из двух изолированных листов 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-square(sqrt(z)+sqrt(z))"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-square(sqrt(z)+sqrt(z)).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-square(sqrt(z)+sqrt(z))"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\left(\sqrt{z}+\sqrt{z}\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}\cdot\sqrt[3]{z-1}$
+\end_inset
+
+ состоит из шести листов, в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ происходят переходы 
+\begin_inset Formula $\left(0,j\right)\to\left(1,j\right)\to\left(0,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ происходят переходы 
+\begin_inset Formula $\left(i,0\right)\to\left(i,1\right)\to\left(i,2\right)\to\left(i,0\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $i=0,1$
+\end_inset
+
+.
+ Для того, чтобы понять, какие листы следует склеивать, рассмотрим значения
+ функции 
+\begin_inset Formula $\left(\sqrt{z}\cdot\sqrt[3]{z-1}\right)^{3}$
+\end_inset
+
+ в точке, не являющейся точкой разветвления, например, 
+\begin_inset Formula $z=2$
+\end_inset
+
+, получим 
+\begin_inset Formula $\sqrt{2}=\left\{ -\sqrt{2},+\sqrt{2}\right\} $
+\end_inset
+
+ (в правой части имеется в виду вещественное положительное значение корня)
+ и 
+\begin_inset Formula $\sqrt[3]{1}=\left\{ 1,-\frac{1}{2}+i\frac{\sqrt{3}}{2},-\frac{1}{2}-i\frac{\sqrt{3}}{2}\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(\sqrt{2}\cdot\sqrt[3]{1}\right)^{3}=\left(\sqrt{2}\right)^{3}\cdot1=\left\{ -2\sqrt{2},-2\sqrt{2}\right\} $
+\end_inset
+
+ (в правой части снова имеется в виду вещественное положительное значение
+ корня).
+ Таким образом, тройки листов вида 
+\begin_inset Formula $\left(i,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(i,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(i,2\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $i=0,1$
+\end_inset
+
+, нужно склеить.
+\end_layout
+
+\begin_layout Solution
+Окончательно получаем, что схема римановой поверхности будет состоять из
+ двух листов.
+ В точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ между листами не будет переходов, а в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ — будут.
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme-of-the-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:branching-and-ambiguity-points-of-root-n-of-multivalued-f(z)"
+
+\end_inset
+
+Какие точки могут быть точками разветвления функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально решение было практически без аргументации
+\end_layout
+
+\end_inset
+
+Пусть точка 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ не является точкой разветвления функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Тогда при обходе вокруг точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ по окружности достаточно малого радиуса значение функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ не изменится.
+ Пусть, кроме того, все значения 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ не равны 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Тогда при отображении 
+\begin_inset Formula $w=f\left(z\right)$
+\end_inset
+
+ непрерывными образами окружностей с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и с достаточно малыми радиусами будут являться некоторые непрерывные замкнутые
+ кривые, находящиеся вблизи значений 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+.
+ Так как все значения 
+\begin_inset Formula $f\left(z_{0}\right)$
+\end_inset
+
+ не равны 
+\begin_inset Formula $0$
+\end_inset
+
+, то все такие кривые при достаточно малых радиусах окружностей не обходят
+ точки 
+\begin_inset Formula $w=0$
+\end_inset
+
+, то есть аргумент 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ не изменяется.
+ Но тогда не изменится также значение функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Поэтому точками разветвления функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ могут быть только точки разветвления функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и точки, в которых одно из значений 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Проведём на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ разрезы из точек разветвления функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ в бесконечность так, чтобы они не проходили через точки, в которых одно
+ из значений функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $0$
+\end_inset
+
+, и выделим непрерывные однозначные ветви функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Пусть это будут (однозначные) функции 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{2}\left(z\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $f_{m}\left(z\right)$
+\end_inset
+
+.
+ Проведём дополнительно разрезы в бесконечность из точек, в которых одно
+ из значений функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — одна из непрерывных однозначных ветвей функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ при этих разрезах.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:every-branch-of-root-n-of-f(z)-corresponds-to-some-branch-of-f(z)"
+
+\end_inset
+
+Доказать, что функция 
+\begin_inset Formula $\left[g\left(z\right)\right]^{n}$
+\end_inset
+
+ совпадает с одной из функций 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ всюду, кроме разрезов.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — непрерывная функция, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left[g\left(z\right)\right]^{n}$
+\end_inset
+
+ — тоже непрерывная функция.
+ По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:arithmetic-operations-and-roots-of-multivalue-functions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в каждой точке 
+\begin_inset Formula $z$
+\end_inset
+
+, не находящейся на разрезах, функция 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ совпадает с одним из значений корня степени 
+\begin_inset Formula $n$
+\end_inset
+
+ из одного из значений 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Поэтому, в каждой точке 
+\begin_inset Formula $z$
+\end_inset
+
+, не находящейся на разрезах, 
+\begin_inset Formula $\left[g\left(z\right)\right]^{n}$
+\end_inset
+
+ будет совпадать с одним из значений 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\left[g\left(z\right)\right]^{n}$
+\end_inset
+
+ является однозначной непрерывной ветвью 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, то есть совпадает с какой-либо из функции 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-branch-of-root-n-of-f(z)-corresponds-to-some-branch-of-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ мы получаем, что каждая ветвь функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ соответствует некоторой ветви функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:all-branches-of-root-n-of-multivalued-f(z)-corresponding-to-some-branch-of-f(z)"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — непрерывная однозначная ветвь функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, соответствующая ветви 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+.
+ Найти все непрерывные однозначные ветви функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, соответствующие ветви 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим искомые непрерывные однозначные ветви, соответствующие 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+, как 
+\begin_inset Formula $g_{i,j}\left(z\right)$
+\end_inset
+
+.
+ Тогда, по определению, будут иметь место равенства 
+\begin_inset Formula $\left[g\left(z\right)\right]^{n}=f_{i}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left[g_{i,j}\left(z\right)\right]^{n}=f_{i}\left(z\right)$
+\end_inset
+
+.
+ По аналогии с 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-from-function-from-one-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, рассмотрим следующее выражение:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left[\frac{g_{i,j}\left(z\right)}{g\left(z\right)}\right]^{n}=\frac{\left[g_{i,j}\left(z\right)\right]^{n}}{\left[g\left(z\right)\right]^{n}}=\frac{f_{i}\left(z\right)}{f_{i}\left(z\right)}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $\frac{g_{i,j}\left(z\right)}{g\left(z\right)}=\sqrt[n]{1}$
+\end_inset
+
+.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:values-of-root-n-of-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, было показано, что все возможные значения 
+\begin_inset Formula $\sqrt[n]{1}$
+\end_inset
+
+ есть 
+\begin_inset Formula $\varepsilon_{n}^{j}$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,\dots n-1$
+\end_inset
+
+ и 
+\begin_inset Formula $\varepsilon_{n}=\cos\frac{2\pi}{n}+i\sin\frac{2\pi}{n}$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula 
+\[
+g_{i,j}\left(z\right)=g\left(z\right)\cdot\varepsilon_{n}^{j},j=0,1,\dots n-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-of-multivalued-f(z)-corresponding-to-some-branch-of-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ мы получаем, что каждой ветви 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ соответствует 
+\begin_inset Quotes rld
+\end_inset
+
+пачка
+\begin_inset Quotes rrd
+\end_inset
+
+ состоящая из 
+\begin_inset Formula $n$
+\end_inset
+
+ ветвей функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Мы занумеруем ветви в этой пачке 
+\begin_inset Formula $f_{i,0}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{i,1}\left(z\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $f_{i,n-1}\left(z\right)$
+\end_inset
+
+, причём так, чтобы для любого 
+\begin_inset Formula $j$
+\end_inset
+
+ выполнялось равенство 
+\begin_inset Formula $f_{i,j}\left(z\right)=f_{i,0}\left(z\right)\cdot\varepsilon_{n}^{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — точка разветвления функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, и пусть, при обходе вокруг точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ мы с ветви 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ переходим на ветвь 
+\begin_inset Formula $f_{j}\left(z\right)$
+\end_inset
+
+.
+ Тогда, очевидно, что для функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ мы получаем следующее: со всех листов пачки, соответствующей ветви 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+, мы при обходе вокруг точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ будем переходить на листы пачки, соответствующей ветви 
+\begin_inset Formula $f_{j}\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — кривая на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ с параметрическим уравнением 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+, и пусть кривая на плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+ с уравнением 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ является непрерывным образом кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Доказать, что кривая с уравнением 
+\begin_inset Formula $w_{k}\left(t\right)=w_{0}\left(t\right)\cdot\varepsilon_{n}^{k}$
+\end_inset
+
+ также является непрерывным образом кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ — непрерывная функция по условию, 
+\begin_inset Formula $\varepsilon_{n}^{k}$
+\end_inset
+
+ — непрерывная функция, как и любая константа, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:constant-function-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а произведение непрерывных функций — также непрерывная функция (как было
+ показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sum-difference-and-product-of-continuoues-functions-is-continuous"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), то 
+\begin_inset Formula $w_{k}\left(t\right)=w_{0}\left(t\right)\cdot\varepsilon_{n}^{k}$
+\end_inset
+
+ — непрерывная функция.
+\end_layout
+
+\begin_layout Solution
+Остаётся доказать, что 
+\begin_inset Formula $w_{k}\left(t\right)$
+\end_inset
+
+ является образом 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при преобразовании 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Рассмотрим это отображение как композицию отображений 
+\begin_inset Formula $w=\sqrt[n]{u}$
+\end_inset
+
+ и 
+\begin_inset Formula $u=f\left(z\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $w_{0}\left(t\right)$
+\end_inset
+
+ — образ 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left[w_{0}\left(t\right)\right]^{n}=u\left(t\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $u\left(t\right)$
+\end_inset
+
+ — образ 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $u=f\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь выражение 
+\begin_inset Formula $\left[w_{k}\left(t\right)\right]^{n}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\left[w_{k}\left(t\right)\right]^{n}=\left[w_{0}\left(t\right)\right]^{n}\cdot\left[\varepsilon_{n}^{k}\right]^{n}=\\
+=\left[w_{0}\left(t\right)\right]^{n}\cdot\left[\varepsilon_{n}^{n}\right]^{k}=\\
+=\left[w_{0}\left(t\right)\right]^{n}\cdot1^{k}=\left[w_{0}\left(t\right)\right]^{n}=u\left(t\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $\left[w_{k}\left(t\right)\right]^{n}$
+\end_inset
+
+ — образ 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $u=f\left(z\right)$
+\end_inset
+
+, а значит 
+\begin_inset Formula $w_{k}\left(t\right)$
+\end_inset
+
+ — образ 
+\begin_inset Formula $z\left(t\right)$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, причём непрерывный, как было показано выше.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:transits-of-f_i,(s+k)-by-transits-of-f_i,s"
+
+\end_inset
+
+Пусть кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ не проходит через точки разветвления и точки неоднозначности функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+.
+ Доказать, что если мы при движении вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ переходим с ветви 
+\begin_inset Formula $f_{i,s}\left(z\right)$
+\end_inset
+
+ на ветвь 
+\begin_inset Formula $f_{j,r}\left(z\right)$
+\end_inset
+
+, то с ветви 
+\begin_inset Formula $f_{i,s+k}\left(z\right)$
+\end_inset
+
+ мы перейдём на ветвь 
+\begin_inset Formula $f_{j,r+k}\left(z\right)$
+\end_inset
+
+, где суммы 
+\begin_inset Formula $s+k$
+\end_inset
+
+ и 
+\begin_inset Formula $r+k$
+\end_inset
+
+ вычисляются по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ (смотрите задачу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:reminders-modulo-n-with-addition-is-cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-of-multivalued-f(z)-corresponding-to-some-branch-of-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $f_{i,s}\left(z\right)=f_{i,0}\left(z\right)\cdot\varepsilon_{n}^{s}$
+\end_inset
+
+.
+ Значения 
+\begin_inset Formula $\varepsilon_{n}^{k}$
+\end_inset
+
+ образуют циклическую группу порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ (как указывалось в замечании 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:roots-n-of-1-form-cyclic-group-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому показатель степени 
+\begin_inset Formula $k$
+\end_inset
+
+ можно брать по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, мы можем написать:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+f_{i,s+k}\left(z\right)=f_{i,0}\left(z\right)\cdot\varepsilon_{n}^{s+k}=f_{i,s}\left(z\right)\cdot\varepsilon_{n}^{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как константа 
+\begin_inset Formula $\varepsilon_{n}^{k}$
+\end_inset
+
+ влияет на порядок переходов, а с ветви 
+\begin_inset Formula $f_{i,s}\left(z\right)$
+\end_inset
+
+ происходить переход на ветвь 
+\begin_inset Formula $f_{j,r}\left(z\right)$
+\end_inset
+
+, то с 
+\begin_inset Formula $f_{i,s+k}\left(z\right)$
+\end_inset
+
+ переходим на ветвь 
+\begin_inset Formula 
+\[
+f_{j,r}\left(z\right)\cdot\varepsilon_{n}^{k}=f_{j,0}\left(z\right)\varepsilon_{n}^{r+k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, для определения того, куда мы перейдём с листов данной пачки
+ при обходе данной точки разветвления функции 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, достаточно определить, куда мы перейдём с одного листов данной пачки,
+ а для других листов этой пачки переходы определяются автоматически в силу
+ результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:transits-of-f_i,(s+k)-by-transits-of-f_i,s"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Построить схему римановой поверхности функции 
+\begin_inset Formula $\sqrt{\sqrt{z}-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Изначально решил неправильно
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)=-f_{0}\left(z\right)$
+\end_inset
+
+ — однозначные непрерывные ветви 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, причём 
+\begin_inset Formula $f_{0}\left(1\right)=1$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(1\right)=-1$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)-1$
+\end_inset
+
+ — однозначные непрерывные ветви функции 
+\begin_inset Formula $\sqrt{z}-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-branches-of-root-n-of-multivalued-f(z)-corresponding-to-some-branch-of-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, каждой непрерывной однозначной ветви 
+\begin_inset Formula $\sqrt{z}-1$
+\end_inset
+
+ соответствует две непрерывные однозначные ветви функции 
+\begin_inset Formula $\sqrt{\sqrt{z}-1}$
+\end_inset
+
+.
+ Таким образом, в схеме римановой поверхности этой функции будет 4 листа,
+ обозначим их как 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+.
+ Остаётся выяснить, в каких точках и между каким листами осуществляются
+ переходы в этой схеме.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:branching-and-ambiguity-points-of-root-n-of-multivalued-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, точками разветвления 
+\begin_inset Formula $\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ могут быть точки разветвления 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и точки 
+\begin_inset Formula $z$
+\end_inset
+
+, в которых одно из значений 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ равно нулю.
+ Так как точка разветвления 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ — это 
+\begin_inset Formula $z=0$
+\end_inset
+
+, а выражение 
+\begin_inset Formula $\sqrt{z}-1$
+\end_inset
+
+ обращается в ноль в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+, то точками разветвления 
+\begin_inset Formula $\sqrt{\sqrt{z}-1}$
+\end_inset
+
+ могут быть точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ Причём в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ разветвление может происходить только в пачке, соответствующей ветви 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+, так как только в этой ветви 
+\begin_inset Formula $\sqrt{1}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Найдём изменение аргумента при обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ — одна из ветвей 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left[f_{0}\left(z\right)\right]^{2}$
+\end_inset
+
+ и
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+f_{0}\left(z\right)-1=\frac{\left(f_{0}\left(z\right)-1\right)\left(f_{0}\left(z\right)+1\right)}{f_{0}\left(z\right)+1}=\\
+=\frac{\left[f_{0}\left(z\right)\right]^{2}-1}{f_{0}\left(z\right)+1}=\frac{z-1}{f_{0}\left(z\right)+1}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $f_{0}\left(1\right)+1=2\neq0$
+\end_inset
+
+, то при обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ по окружности достаточно малого радиуса аргумент знаменателя не изменится.
+ Аргумент же числителя изменится на 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, так как 
+\begin_inset Formula $1-1=0$
+\end_inset
+
+.
+ Таким образом, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+ при обходе 
+\begin_inset Formula $z=1$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Тогда, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-along-sqrt-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $\sqrt{f_{0}\left(z\right)-1}$
+\end_inset
+
+ равно, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\frac{2\pi}{2}=\pi$
+\end_inset
+
+ и при обходе 
+\begin_inset Formula $z=1$
+\end_inset
+
+ значение 
+\begin_inset Formula $\sqrt{f_{0}\left(z\right)-1}$
+\end_inset
+
+ изменится на противоположное, то есть будет происходить переход между листами
+ 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь переходы между листами в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ При обходе этой точки происходит переход между ветвями 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+ функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, поэтому в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ будет происходить переход с листов пачки, соответствующей 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+ на листы пачки, соответствующей ветви 
+\begin_inset Formula $f_{1}\left(z\right)-1$
+\end_inset
+
+, и наоборот.
+ При двукратном обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ выражение 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ возвращается к своему исходному значению и 
+\begin_inset Formula $\mathrm{Arg}\left(\sqrt{z}-1\right)$
+\end_inset
+
+ не изменится, так как 
+\begin_inset Formula $\sqrt{0}-1=-1\neq0$
+\end_inset
+
+, поэтому при двукратном обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ мы возвращаемся на исходный лист.
+\end_layout
+
+\begin_layout Solution
+Итак, в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ будут происходить переходы между листами 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+, а также между листами 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+.
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-sqrt(sqrt(z)-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-sqrt(sqrt(z)-1).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-sqrt(sqrt(z)-1)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{\sqrt{z}-1}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Построить схемы римановых поверхностей следующих функции: а) 
+\begin_inset Formula $\sqrt[3]{\sqrt{z}-2}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt{\sqrt[3]{z}-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Пусть 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)=-f_{0}\left(z\right)$
+\end_inset
+
+ — однозначные непрерывные ветви функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, причём 
+\begin_inset Formula $f_{0}\left(1\right)=1$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(1\right)=-1$
+\end_inset
+
+.
+ Тогда однозначными непрерывными ветвями 
+\begin_inset Formula $\sqrt{z}-2$
+\end_inset
+
+ будут функции 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)-2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Каждой однозначной непрерывной ветви функции 
+\begin_inset Formula $\sqrt{z}-2$
+\end_inset
+
+ будет соответствовать пачка из трёх ветвей функции 
+\begin_inset Formula $\sqrt[3]{\sqrt{z}-2}$
+\end_inset
+
+.
+ То есть в схеме римановой поверхности этой функции будет 6 листов.
+ Остаётся выяснить, в каких точках и между какими листами будут существовать
+ переходы.
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:branching-and-ambiguity-points-of-root-n-of-multivalued-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, точками разветвления 
+\begin_inset Formula $\sqrt[3]{\sqrt{z}-2}$
+\end_inset
+
+ могут быть точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ (точка разветвления 
+\begin_inset Formula $\sqrt{z}-2$
+\end_inset
+
+) и 
+\begin_inset Formula $z=4$
+\end_inset
+
+ (точка, в которой подкоренное выражение равно 
+\begin_inset Formula $0$
+\end_inset
+
+), причём в последней точке переходы будут осуществляться только в ветви
+ 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+, так как 
+\begin_inset Formula $f_{0}\left(4\right)=2$
+\end_inset
+
+, а 
+\begin_inset Formula $f_{1}\left(4\right)=-2$
+\end_inset
+
+ и подкоренное выражение не обращается в ноль.
+\end_layout
+
+\begin_layout Solution
+Найдём изменение аргумента при обходе точки 
+\begin_inset Formula $z=4$
+\end_inset
+
+.
+ Преобразуем выражение 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+f_{0}\left(z\right)-2=\frac{\left(f_{0}\left(z\right)-2\right)\left(f_{0}\left(z\right)+2\right)}{f_{0}\left(z\right)+2}=\\
+=\frac{\left[f_{0}\left(z\right)\right]^{2}-4}{f_{0}\left(z\right)+2}=\frac{z-4}{f_{0}\left(z\right)+2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $f_{0}\left(4\right)+2=4\neq0$
+\end_inset
+
+, то при обходе точки 
+\begin_inset Formula $z=4$
+\end_inset
+
+ по окружности достаточно малого радиуса изменение аргумента знаменателя
+ будет равно нулю.
+ Изменение аргумента числителя будет равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Таким образом, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi-0=2\pi$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $\sqrt[3]{f_{0}\left(z\right)-2}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+.
+ Таким образом, функция 
+\begin_inset Formula $\sqrt[3]{f_{0}\left(z\right)-2}$
+\end_inset
+
+ будет возвращаться к исходному значению после трёх обходов точки 
+\begin_inset Formula $z=4$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=4$
+\end_inset
+
+ будут происходить переходы по следующей схеме 
+\begin_inset Formula $\left(0,0\right)\to\left(0,1\right)\to\left(0,2\right)\to\left(0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь переходы между листами в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ При обходе этой точки происходит переход между 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+, а значит будут происходить с листов пачки, соответствующей 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+, на листы пачки, соответствующей 
+\begin_inset Formula $f_{1}\left(z\right)-1$
+\end_inset
+
+, и наоборот.
+ Так как 
+\begin_inset Formula $\sqrt{0}-2=-2\neq0$
+\end_inset
+
+, то изменение аргумента выражения 
+\begin_inset Formula $\sqrt{z}-2$
+\end_inset
+
+ при обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно нулю.
+ Поэтому переход между ветвями функций 
+\begin_inset Formula $\sqrt[3]{f_{i}\left(z\right)-2}$
+\end_inset
+
+ происходить не будет.
+ Таким образом, в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ будут осуществляться переходы между листами 
+\begin_inset Formula $\left(0,j\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2$
+\end_inset
+
+.
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-root[3](sqrt(z)-2)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-root[3](sqrt(z)-2).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-root[3](sqrt(z)-2)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{\sqrt{z}-2}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Пусть 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(z\right)$
+\end_inset
+
+ — однозначные непрерывные ветви функции 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+, причём 
+\begin_inset Formula $f_{0}\left(1\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(1\right)=-\frac{1}{2}+i\frac{\sqrt{3}}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(1\right)=-\frac{1}{2}+i\frac{\sqrt{3}}{2}$
+\end_inset
+
+, как было выбрано при решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-and-its-scheme-of-cube-root-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Следовательно, однозначными непрерывными ветвями 
+\begin_inset Formula $\sqrt[3]{z}-1$
+\end_inset
+
+ будут функции 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(z\right)-1$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(z\right)-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Точками разветвления функции 
+\begin_inset Formula $\sqrt{\sqrt[3]{z}-1}$
+\end_inset
+
+ являются точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ (точка разветвления функции 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+) и 
+\begin_inset Formula $z=1$
+\end_inset
+
+ (точка, где одно из значений 
+\begin_inset Formula $\sqrt[3]{z}-1$
+\end_inset
+
+ равно нулю, причём в последней точке разветвление происходит только на
+ ветвях пачки, соответствующей 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+, так как 
+\begin_inset Formula $f_{0}\left(1\right)-1=0$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(1\right)-1\neq0$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(1\right)-1\neq0$
+\end_inset
+
+.
+ Чтобы выяснить переходы между листами в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+, преобразуем выражение 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+f_{0}\left(z\right)-1=\frac{\left(f_{0}\left(z\right)-1\right)\left(\left[f_{0}\left(z\right)\right]^{2}+f_{0}\left(z\right)+1\right)}{\left[f_{0}\left(z\right)\right]^{2}+f_{0}\left(z\right)+1}=\\
+=\frac{\left[f_{0}\left(z\right)\right]^{3}-1}{\left[f_{0}\left(z\right)\right]^{2}+f_{0}\left(z\right)+1}=\frac{z-1}{\left[f_{0}\left(z\right)\right]^{2}+f_{0}\left(z\right)+1}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $\left[f_{0}\left(1\right)\right]^{2}+f_{0}\left(1\right)+1=3\neq0$
+\end_inset
+
+, то при обходе точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+ по окружности достаточно малого радиуса изменение аргумента знаменателя
+ будет равно нулю.
+ Изменение аргумента числителя будет равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Таким образом, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi-0=2\pi$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $\sqrt{f_{0}\left(z\right)-1}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{2\pi}{2}=\pi$
+\end_inset
+
+.
+ Таким образом, функция 
+\begin_inset Formula $\sqrt{f_{0}\left(z\right)-1}$
+\end_inset
+
+ будет возвращаться к исходному значению после двух обходов точки 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ будут происходить переходы по следующей схеме 
+\begin_inset Formula $\left(0,0\right)\to\left(0,1\right)\to\left(0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь переходы между листами в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ При обходе этой точки происходит переход с 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+, с 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+ — на 
+\begin_inset Formula $f_{2}\left(z\right)$
+\end_inset
+
+, а с 
+\begin_inset Formula $f_{2}\left(z\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+.
+ Аналогичные переходы будут происходить и между 
+\begin_inset Formula $f_{0}\left(z\right)-1$
+\end_inset
+
+, 
+\begin_inset Formula $f_{1}\left(z\right)-1$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{2}\left(z\right)-1$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\sqrt[3]{0}-1=-1\neq0$
+\end_inset
+
+, то изменение аргумента выражения 
+\begin_inset Formula $\sqrt[3]{z}-1$
+\end_inset
+
+ при обходе точки 
+\begin_inset Formula $z=0$
+\end_inset
+
+ равно нулю.
+ Поэтому переход между ветвями функций 
+\begin_inset Formula $\sqrt{f_{i}\left(z\right)-1}$
+\end_inset
+
+ происходить не будет.
+ Таким образом, в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ будут осуществляться переходы вида 
+\begin_inset Formula $\left(0,j\right)\to\left(1,j\right)\to\left(2,j\right)\to\left(0,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2$
+\end_inset
+
+.
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-sqrt(root[3](z)-1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-sqrt(root[3](z)-1).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-sqrt(root[3](z)-1)"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{\sqrt[3]{z}-1}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-scheme-of-sqrt(z^2+1)-2"
+
+\end_inset
+
+Построить схему римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)=\sqrt{z^{2}+1}-2$
+\end_inset
+
+ при разрезах, изображённых: а) на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cuts-for-sqrt(z^2+1)-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ слева, б) на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cuts-for-sqrt(z^2+1)-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ справа.
+ В обоих случаях определить, на одном или на разных листах лежат точки 
+\begin_inset Formula $z$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $f\left(z\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/cuts-for-sqrt(z^2+1)-2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cuts-for-sqrt(z^2+1)-2"
+
+\end_inset
+
+Варианты разрезов для функции 
+\begin_inset Formula $\sqrt{z^{2}+1}-2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z^{2}+1}$
+\end_inset
+
+ была получена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-for-sqrt-of-z(z-i)-and-z^2+1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Так как константа 
+\begin_inset Formula $2$
+\end_inset
+
+ — это однозначная функция, то схема римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)=\sqrt{z^{2}+1}-2$
+\end_inset
+
+ совпадает со схемой римановой поверхности 
+\begin_inset Formula $\sqrt{z^{2}+1}$
+\end_inset
+
+.
+ Таким образом, в обоих пунктах ответом будет схема, показанная на рисунке
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-of-sqrt-of-quadrics-samples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ справа.
+\end_layout
+
+\begin_layout Solution
+Теперь положим, что в точке 
+\begin_inset Formula $z=-\sqrt{3}$
+\end_inset
+
+ мы находимся на ветви 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $f_{0}\left(-\sqrt{3}\right)=0$
+\end_inset
+
+.
+ Проведём непрерывную кривую, начинающуюся в 
+\begin_inset Formula $-\sqrt{3}$
+\end_inset
+
+ и заканчивающуюся в 
+\begin_inset Formula $\sqrt{3}$
+\end_inset
+
+, и определим значение в конечной точке по непрерывности.
+ При этом будем учитывать, что 
+\begin_inset Formula $z^{2}+1=\left(z-i\right)\left(z+i\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для случая а) возьмём отрезок, соединяющий точки 
+\begin_inset Formula $-\sqrt{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt{3}$
+\end_inset
+
+.
+ Найдём изменение аргумента 
+\begin_inset Formula $z-i$
+\end_inset
+
+ и 
+\begin_inset Formula $z+i$
+\end_inset
+
+ вдоль этого отрезка.
+ Выразим 
+\begin_inset Formula $-\sqrt{3}-i$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt{3}-i$
+\end_inset
+
+ в тригонометрической форме:
+\begin_inset Formula 
+\[
+-\sqrt{3}-i=2\left(-\frac{\sqrt{3}}{2}-i\frac{1}{2}\right)=2\left(\cos\left(-\frac{5\pi}{6}\right)+i\sin\left(-\frac{5\pi}{6}\right)\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt{3}-i=2\left(\frac{\sqrt{3}}{2}-i\frac{1}{2}\right)=2\left(\cos\left(-\frac{\pi}{6}\right)+i\sin\left(-\frac{\pi}{6}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, изменение аргумента 
+\begin_inset Formula $z-i$
+\end_inset
+
+ вдоль рассматриваемого отрезка равно 
+\begin_inset Formula 
+\[
+-\frac{\pi}{6}+\frac{5\pi}{6}=\frac{4\pi}{6}=\frac{2\pi}{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Теперь запишем в тригонометрической форме 
+\begin_inset Formula $-\sqrt{3}-\left(-i\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt{3}-\left(-i\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+-\sqrt{3}-\left(-i\right)=2\left(-\frac{\sqrt{3}}{2}+i\frac{1}{2}\right)=2\left(\cos\frac{5\pi}{6}+i\sin\frac{5\pi}{6}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt{3}-\left(-i\right)=2\left(\frac{\sqrt{3}}{2}+i\frac{1}{2}\right)=2\left(\cos\frac{\pi}{6}+i\sin\frac{\pi}{6}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, изменение 
+\begin_inset Formula $z+i$
+\end_inset
+
+ вдоль рассматриваемого отрезка равно 
+\begin_inset Formula 
+\[
+\frac{\pi}{6}-\frac{5\pi}{6}=-\frac{4\pi}{6}=-\frac{2\pi}{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента произведения равно сумме изменений аргумента, поэтому
+ изменение аргумента 
+\begin_inset Formula $z^{2}+1=\left(z-i\right)\left(z+i\right)$
+\end_inset
+
+ вдоль рассматриваемого отрезка равно 
+\begin_inset Formula $\frac{2\pi}{3}+-\frac{2\pi}{3}=0$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-along-sqrt-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $\sqrt{z^{2}+1}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{0}{2}=0$
+\end_inset
+
+.
+ Таким образом, если при 
+\begin_inset Formula $z=-\sqrt{3}$
+\end_inset
+
+ выражение 
+\begin_inset Formula $\sqrt{z^{2}+1}$
+\end_inset
+
+ было равно 
+\begin_inset Formula $2$
+\end_inset
+
+, то и при 
+\begin_inset Formula $z=\sqrt{3}$
+\end_inset
+
+ оно будет равно 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Таким образом при разрезах пункта а) обе точки, в которых 
+\begin_inset Formula $f\left(z\right)=0$
+\end_inset
+
+ будут лежать на одном листе.
+\end_layout
+
+\begin_layout Solution
+В случае б) при движении по непрерывной кривой, не проходящей через разрезы
+ изменение аргумента 
+\begin_inset Formula $z-i$
+\end_inset
+
+ будет равно 
+\begin_inset Formula $\frac{4\pi}{3}$
+\end_inset
+
+, а изменение аргумента 
+\begin_inset Formula $z+i=z-\left(-i\right)$
+\end_inset
+
+ будет равно 
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента произведения равно сумме изменений аргумента, поэтому
+ изменение аргумента 
+\begin_inset Formula $z^{2}+1=\left(z-i\right)\left(z+i\right)$
+\end_inset
+
+ вдоль рассматриваемого отрезка равно 
+\begin_inset Formula $\frac{4\pi}{3}+\frac{2\pi}{3}=\frac{6\pi}{3}=2\pi$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-along-sqrt-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $\sqrt{z^{2}+1}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{2\pi}{2}=\pi$
+\end_inset
+
+.
+ Таким образом, значение 
+\begin_inset Formula $\sqrt{z^{2}+1}$
+\end_inset
+
+ измениться на противоположное и корни 
+\begin_inset Formula $\sqrt{z^{2}+1}-2$
+\end_inset
+
+ окажутся на разных листах.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:example-of-rieman-surface-depending-on-cuts"
+
+\end_inset
+
+Построить схему римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)=\sqrt{\sqrt{z^{2}+1}-2}$
+\end_inset
+
+ при разрезах, изображённых: а) рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cuts-for-sqrt(sqrt(z^2+1)-2)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ слева, б) на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cuts-for-sqrt(sqrt(z^2+1)-2)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ справа.
+\end_layout
+
+\begin_layout Problem
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/cuts-for-sqrt(sqrt(z^2+1)-2).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cuts-for-sqrt(sqrt(z^2+1)-2)"
+
+\end_inset
+
+Разрезы для функции 
+\begin_inset Formula $h\left(z\right)=\sqrt{\sqrt{z^{2}+1}-2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z^{2}+1}-2$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-sqrt(z^2+1)-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:every-branch-of-root-n-of-f(z)-corresponds-to-some-branch-of-f(z)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, для каждого листа римановой поверхности функции 
+\begin_inset Formula $\sqrt{z^{2}+1}-2$
+\end_inset
+
+ в римановой поверхности функции 
+\begin_inset Formula $\sqrt{\sqrt{z^{2}+1}-2}$
+\end_inset
+
+ будет существовать пачка из двух листов.
+ Остаётся выяснить, как будут осуществляться переходы между этими листами.
+ Переход между пачками будет происходить в точках 
+\begin_inset Formula $z=i$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-i$
+\end_inset
+
+, то есть будут происходить переходы вида 
+\begin_inset Formula $\left(0,j\right)\to\left(1,j\right)\to\left(0,j\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $f_{0}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)$
+\end_inset
+
+ — однозначные непрерывные ветви функции 
+\begin_inset Formula $\sqrt{z^{2}+1}$
+\end_inset
+
+ (при некоторых разрезах), тогда однозначными непрерывными ветвями функции
+ 
+\begin_inset Formula $\sqrt{z^{2}+1}-2$
+\end_inset
+
+ при тех же разрезах будут функции 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(z\right)-2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Данный случай соответствует случаю а) задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-sqrt(z^2+1)-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ То есть в точках 
+\begin_inset Formula $z=-\sqrt{z}$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\sqrt{3}$
+\end_inset
+
+ в ноль обращается ветвь 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+.
+ Выясним изменение аргумента подкоренного выражения.
+ Для этого выполним следующие преобразования:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+f_{0}\left(z\right)-2=\frac{\left(f_{0}\left(z\right)-2\right)\left(f_{0}\left(z\right)+2\right)}{f_{0}\left(z\right)+2}=\frac{\left[f_{0}\left(z\right)\right]^{2}-4}{f_{0}\left(z\right)+2}=\\
+=\frac{z^{2}+1-3}{f_{0}\left(z\right)+2}=\frac{z^{2}-3}{f_{0}\left(z\right)+2}=\frac{\left(z-\sqrt{3}\right)\left(z+\sqrt{3}\right)}{f_{0}\left(z\right)+2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как при 
+\begin_inset Formula $z=-\sqrt{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\sqrt{3}$
+\end_inset
+
+ значение 
+\begin_inset Formula $f_{0}\left(z\right)+2$
+\end_inset
+
+ не равно нулю, поэтому изменение аргумента этого выражения при обходе данных
+ точек равно нулю.
+ Аналогично, при обходе точки 
+\begin_inset Formula $z=-\sqrt{3}$
+\end_inset
+
+ равно нулю изменение аргумента выражения 
+\begin_inset Formula $z-\sqrt{3}$
+\end_inset
+
+, а при обходе точки 
+\begin_inset Formula $z=\sqrt{3}$
+\end_inset
+
+ равно нулю изменение аргумента выражения 
+\begin_inset Formula $z+\sqrt{3}$
+\end_inset
+
+.
+ С другой стороны, при обходе точки 
+\begin_inset Formula $z=-\sqrt{3}$
+\end_inset
+
+ изменение аргумента выражения 
+\begin_inset Formula $z+\sqrt{3}$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, а при обходе точки 
+\begin_inset Formula $z=\sqrt{3}$
+\end_inset
+
+ изменение аргумента выражения 
+\begin_inset Formula $z-\sqrt{3}$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Таким образом, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+ равно 
+\begin_inset Formula $2\pi+0-0=2\pi$
+\end_inset
+
+.
+ Тогда, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $h\left(z\right)=\sqrt{\sqrt{z^{2}+1}-2}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{2\pi}{2}=\pi$
+\end_inset
+
+, то есть значение корня изменится на противоположное и произойдёт переход
+ между листами данной пачки: 
+\begin_inset Formula $\left(0,0\right)\to\left(0,1\right)\to\left(0,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Выражение 
+\begin_inset Formula $f_{1}\left(z\right)-2$
+\end_inset
+
+ не обращается в ноль в условиях данного пункта, поэтому при обходе любой
+ точки изменение аргумента 
+\begin_inset Formula $f_{1}\left(z\right)-2$
+\end_inset
+
+ равно нулю, а следовательно, нулю равно и изменение аргумента 
+\begin_inset Formula $\sqrt{f_{1}\left(z\right)-2}$
+\end_inset
+
+, поэтому значение 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ не изменяется.
+ То есть между листами пачки, соответствующей однозначной непрерывной ветви
+ 
+\begin_inset Formula $f_{1}\left(z\right)-2$
+\end_inset
+
+, переходы не происходят.
+\end_layout
+
+\begin_layout Solution
+Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-328a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-328a.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-328a"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)=\sqrt{\sqrt{z^{2}+1}-2}$
+\end_inset
+
+ при разрезах по пункту а).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) В условиях данного пункта корни выражения 
+\begin_inset Formula $\sqrt{z^{2}+1}-2$
+\end_inset
+
+ лежат на разных листах, для определённости положим: 
+\begin_inset Formula $f_{0}\left(-\sqrt{3}\right)=2$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(\sqrt{3}\right)=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $f_{0}\left(\sqrt{3}\right)\neq2$
+\end_inset
+
+ и 
+\begin_inset Formula $f_{1}\left(-\sqrt{3}\right)\neq2$
+\end_inset
+
+, то изменение аргумента 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+ при обходе точки 
+\begin_inset Formula $z=\sqrt{3}$
+\end_inset
+
+ равно нулю, аналогично равно нулю изменение аргумента 
+\begin_inset Formula $f_{1}\left(z\right)-2$
+\end_inset
+
+ при обходе 
+\begin_inset Formula $z=-\sqrt{3}$
+\end_inset
+
+.
+ Как было показано в предыдущем пункте,
+\begin_inset Formula 
+\[
+f_{j}\left(z\right)-2=\frac{\left(z-\sqrt{3}\right)\left(z+\sqrt{3}\right)}{f_{j}\left(z\right)+2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Из этого разложения следует, что при обходе точки 
+\begin_inset Formula $z=-\sqrt{3}$
+\end_inset
+
+ изменение аргумента 
+\begin_inset Formula $f_{0}\left(z\right)-2$
+\end_inset
+
+, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, равно 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+ Тогда, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-root-n-of-curve-with-given-variation-of-argument"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изменение аргумента 
+\begin_inset Formula $\sqrt{f_{0}\left(z\right)-2}$
+\end_inset
+
+ при обходе точки 
+\begin_inset Formula $z=-\sqrt{3}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{2\pi}{2}=\pi$
+\end_inset
+
+, то есть произойдёт переход между листами пачки.
+ Аналогично, в точке 
+\begin_inset Formula $z=\sqrt{3}$
+\end_inset
+
+ изменение аргумента 
+\begin_inset Formula $\sqrt{f_{1}\left(z\right)-2}$
+\end_inset
+
+ равно 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ Таким образом, в точке 
+\begin_inset Formula $z=-\sqrt{3}$
+\end_inset
+
+ происходят следующие переходы между листами: 
+\begin_inset Formula $\left(0,0\right)\to\left(0,1\right)\to\left(0,0\right)$
+\end_inset
+
+.
+ В точке 
+\begin_inset Formula $z=\sqrt{3}$
+\end_inset
+
+ происходят следующие переходы: 
+\begin_inset Formula $\left(1,0\right)\to\left(1,1\right)\to\left(1,0\right)$
+\end_inset
+
+.
+ Соответствующая схема римановой поверхности показана на рисунке 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:rieman-surface-scheme-328b"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-scheme-328b.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:rieman-surface-scheme-328b"
+
+\end_inset
+
+Схема римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)=\sqrt{\sqrt{z^{2}+1}-2}$
+\end_inset
+
+ при разрезах по пункту б).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сформулируем ещё раз те результаты этого параграфа, которые потребуются
+ нам в дальнейшем.
+\end_layout
+
+\begin_layout Theorem
+Для построения схемы римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)-g\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)\cdot g\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(z\right)=\frac{f\left(z\right)}{g\left(z\right)}$
+\end_inset
+
+ по схемам римановых поверхностей функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+, построенных при тех же разрезах, достаточно:
+\end_layout
+
+\begin_layout Theorem
+а) каждой паре ветвей 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{j}\left(z\right)$
+\end_inset
+
+ достаточно лист, на котором считать заданной ветвь 
+\begin_inset Formula $h_{i,j}\left(z\right)$
+\end_inset
+
+, равную соответственно 
+\begin_inset Formula $f_{i}\left(z\right)+g_{j}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{i}\left(z\right)-g_{j}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f_{i}\left(z\right)\cdot g_{j}\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{f_{i}\left(z\right)}{g_{j}\left(z\right)}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Theorem
+б) если при обходе вокруг точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ имеется переход с ветви 
+\begin_inset Formula $f_{i_{1}}\left(z\right)$
+\end_inset
+
+ на ветвь 
+\begin_inset Formula $f_{i_{2}}\left(z\right)$
+\end_inset
+
+, а с ветви 
+\begin_inset Formula $g_{j_{1}}\left(z\right)$
+\end_inset
+
+ — на ветвь 
+\begin_inset Formula $g_{j_{2}}\left(z\right)$
+\end_inset
+
+, то для функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ при том же обходе указать переход с ветви 
+\begin_inset Formula $h_{i_{1},j_{1}}\left(z\right)$
+\end_inset
+
+ на ветвь 
+\begin_inset Formula $h_{i_{2},j_{2}}\left(z\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Theorem
+в) листы, на которых заданы одинаковые ветви 
+\begin_inset Formula $h_{i,j}\left(z\right)$
+\end_inset
+
+, склеить.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Для построения схемы римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)=\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+ по схеме римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, построенной при тех же разрезах, достаточно:
+\end_layout
+
+\begin_layout Theorem
+а) на схеме римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ считать заданными вместо ветвей 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ ветви 
+\begin_inset Formula $h_{i}\left(z\right)=\left[f_{i}\left(z\right)\right]^{n}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Theorem
+б) листы, на которых оказываются заданными одинаковые ветви 
+\begin_inset Formula $h_{i}\left(z\right)$
+\end_inset
+
+, склеить.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+При построении схемы римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ по схеме римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, построенной при тех же разрезах:
+\end_layout
+
+\begin_layout Theorem
+а) каждый лист схемы римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ заменяется пачкой из 
+\begin_inset Formula $n$
+\end_inset
+
+ листов;
+\end_layout
+
+\begin_layout Theorem
+б) при обходе вокруг любой точки разветвления функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ мы листов одной пачки переходим на листы одной и той же пачки;
+\end_layout
+
+\begin_layout Theorem
+в) эти переходы с одной пачки на другую совпадают с переходами между соответству
+ющими листами римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Theorem
+г) если листы в пачках перенумерованы так, что 
+\begin_inset Formula $f_{i,k}\left(z\right)=f_{i,0}\left(z\right)\cdot\varepsilon_{n}^{k}$
+\end_inset
+
+, то переходы с одной пачки на другую происходят без перемешивания листов,
+ а только с циклическим сдвигом (как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:transits-of-f_i,(s+k)-by-transits-of-f_i,s"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
