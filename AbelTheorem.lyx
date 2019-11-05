@@ -84127,6 +84127,93 @@ noprefix "false"
 ).
 \end_layout
 
+\begin_layout Section
+Группы Галуа многозначных функций
+\end_layout
+
+\begin_layout Standard
+Свяжем теперь с каждой схемой римановой поверхности некоторую группу подстановок.
+\end_layout
+
+\begin_layout Problem
+Пусть непрерывная
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теореме Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ явно не указано, что эта кривая непрерывна.
+\end_layout
+
+\end_inset
+
+ кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ на плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+ не проходит через точки разветвления и точки неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Доказать, что при движении вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ мы с разных листов схемы римановой поверхности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ будем переходить на разные листы.
+\end_layout
+
+\begin_layout Solution
+Если допустить обратное, то есть возможность перехода с разных листов на
+ один, то при движении по кривой 
+\begin_inset Formula $C^{-1}$
+\end_inset
+
+ (по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:inverse-traversal-of-curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ это обозначает кривую 
+\begin_inset Formula $C$
+\end_inset
+
+ проходимую в обратном направлении), нарушалась бы однозначность.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доделать этот раздел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
