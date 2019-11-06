@@ -77456,6 +77456,12 @@ name "foraml-method-of-constructing-rieman-surface-scheme"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-schemes-of-sums-examples"
+
+\end_inset
+
 Построить схемы римановых поверхностей следующих функций: а) 
 \begin_inset Formula $\sqrt{z}+\sqrt{z-1}$
 \end_inset
@@ -84136,6 +84142,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:leaves-of-rieman-surface-dont-branch"
+
+\end_inset
+
 Пусть непрерывная
 \begin_inset Note Comment
 status open
@@ -84199,6 +84211,141 @@ noprefix "false"
 \end_inset
 
  проходимую в обратном направлении), нарушалась бы однозначность.
+\end_layout
+
+\begin_layout Standard
+Таким образом, в силу результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:leaves-of-rieman-surface-dont-branch"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, обходу (против часовой стрелки) вокруг любой точки разветвления функции
+ 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ соответствует подстановка листов схемы римановой поверхности 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, которая указывает, на какой лист мы переходим с каждого листа.
+\end_layout
+
+\begin_layout Problem
+Пусть схемы римановых поверхностей для функций, перечисленных в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-schemes-of-sums-examples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, построены так, как это сделано в решений.
+ И пусть листы на этих схемах занумерованы снизу вверх числами 1, 2, ....
+ Записать для каждой функции подстановки листов, соответствующие обходам
+ вокруг каждой точки разветвления.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+а) В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ получаем подстановку 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 1 & 2
+\end{array}\right)$
+\end_inset
+
+, а в точке 
+\begin_inset Formula $z=1$
+\end_inset
+
+ — 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 1 & 4 & 3
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) В точках 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=1$
+\end_inset
+
+ получаем подстановку 
+\begin_inset Formula $\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+3 & 4 & 5 & 6 & 1 & 2
+\end{array}\right)$
+\end_inset
+
+, в точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ — 
+\begin_inset Formula $\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+2 & 1 & 4 & 3 & 6 & 5
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) В точке 
+\begin_inset Formula $z=0$
+\end_inset
+
+ получаем подстановку 
+\begin_inset Formula $\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+5 & 6 & 4 & 2 & 3 & 1
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) В точке 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ получаем подстановку 
+\begin_inset Formula $\left(\begin{array}{cccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+\\
+\end{array}\right)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
