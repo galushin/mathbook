@@ -84254,15 +84254,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
-\end_inset
-
 а) В точке 
 \begin_inset Formula $z=0$
 \end_inset
@@ -84341,11 +84332,22 @@ status open
  получаем подстановку 
 \begin_inset Formula $\left(\begin{array}{cccccccc}
 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
-\\
+5 & 6 & 7 & 8 & 1 & 2 & 3 & 4
 \end{array}\right)$
 \end_inset
 
+, а в точке 
+\begin_inset Formula $z=1$
+\end_inset
 
+ — 
+\begin_inset Formula $\left(\begin{array}{cccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+6 & 7 & 8 & 5 & 2 & 3 & 4 & 1
+\end{array}\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
