@@ -84350,6 +84350,220 @@ noprefix "false"
 .
 \end_layout
 
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:subgroup-generated-by-subset"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $g_{s}$
+\end_inset
+
+ — некоторые элементы произвольной группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Рассмотрим все элементы группы 
+\begin_inset Formula $G$
+\end_inset
+
+, которые могут быть получены из 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $g_{s}$
+\end_inset
+
+ путём многократного применения операции умножения и взятия обратного элемента.
+ Доказать, что полученное множество элементов образует подгруппу в группе
+ 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим описанное в условиях задачи множество как 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ принадлежит 
+\begin_inset Formula $H$
+\end_inset
+
+, если выполняется хотя бы одно из следующих условий: a) 
+\begin_inset Formula $a$
+\end_inset
+
+ совпадает с одним из элементов 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $g_{s}$
+\end_inset
+
+; б) 
+\begin_inset Formula $a=h_{1}\cdot h_{2}$
+\end_inset
+
+, где 
+\begin_inset Formula $h_{1},h_{2}\in H$
+\end_inset
+
+; в) 
+\begin_inset Formula $a=h^{-1}$
+\end_inset
+
+, где 
+\begin_inset Formula $h\in H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся результатом задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в которой приведены три необходимых и достаточных условия того, что подмножест
+во является подгруппой.
+\end_layout
+
+\begin_layout Solution
+Для рассматриваемого подмножества 
+\begin_inset Formula $H$
+\end_inset
+
+ условие 1) выполняется в силу пункта б), а условие 3) выполняется в силу
+ пункта в).
+ Условие 2) вытекает из условия 1) и 3): 
+\begin_inset Formula $e=g_{1}\cdot g_{1}^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Подгруппа, полученная в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-generated-by-subset"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, называется 
+\emph on
+подгруппой, порождённой элементами 
+\emph default
+
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $g_{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $g_{s}$
+\end_inset
+
+ — подстановки листов некоторой схемы римановой поверхности, соответствующей
+ обходам (против часовой стрелки) вокруг всех точек разветвления.
+ Подгруппу, порождённую элементами 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $g_{s}$
+\end_inset
+
+, будем называть 
+\emph on
+группой подстановок листов данной схемы римановой поверхности.
+\end_layout
+
+\begin_layout Remark
+Если число листов в схеме конечно (а мы рассматриваем только такие схемы),
+ то при построении группы подстановок листов этой схемы достаточно использовать
+ операцию умножения подстановок, а операцию взятия обратной подстановки
+ можно исключить.
+ Действительно, в этом случае любая подстановка листов 
+\begin_inset Formula $g$
+\end_inset
+
+ имеет конечный порядок 
+\begin_inset Formula $k$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g^{k}=e$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $g^{-1}=g^{k-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Группы подстановок листов, которые будут строиться ниже, будут рассматриваться,
+ как обычно, с точностью до изоморфизма.
+ Поэтому нумерация листов будет не важна, так как при разных нумерациях
+ получаются хотя и различные, но изоморфные подгруппы группы 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
