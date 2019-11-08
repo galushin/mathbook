@@ -84564,6 +84564,427 @@ noprefix "false"
 .
 \end_layout
 
+\begin_layout Problem
+Каким из известных вам групп изоморфны группы подстановок листов схем римановых
+ поверхностей следующих функций: а) 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, б) 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+, в) 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+, г) 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}$
+\end_inset
+
+ (смотри задачу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-examples-of-cube-root-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), д) 
+\begin_inset Formula $\sqrt[4]{\left(z-1\right)^{2}\left(z+1\right)^{3}}$
+\end_inset
+
+.
+ (смотри задачу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-schemes-of-root-4-of-polynomials-examples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+а) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, как видно из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branchins-points-and-scheme-of-rieman-surface-of-sqrt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, включает одну подстановку листов: 
+\begin_inset Formula $g=\left(\begin{array}{cc}
+1 & 2\\
+2 & 1
+\end{array}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $g^{2}=\left(\begin{array}{cc}
+1 & 2\\
+1 & 2
+\end{array}\right)=e$
+\end_inset
+
+, то группа подстановок листов схемы римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+ состоит из двух элементов, а значит, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изоморфна группе 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+б) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-and-its-scheme-of-cube-root-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В ней имеется одна точка разветвления 
+\begin_inset Formula $z=0$
+\end_inset
+
+, которой соответствует подстановка 
+\begin_inset Formula $g=\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 3 & 1
+\end{array}\right).$
+\end_inset
+
+ Тогда 
+\begin_inset Formula $g^{2}=\left(\begin{array}{ccc}
+1 & 2 & 3\\
+3 & 1 & 2
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g^{3}=\left(\begin{array}{ccc}
+1 & 2 & 3\\
+1 & 2 & 3
+\end{array}\right)=e$
+\end_inset
+
+.
+ То есть группа подстановок листов схемы римановой поверхности 
+\begin_inset Formula $\sqrt[3]{z}$
+\end_inset
+
+ состоит из трёх элементов, а значит, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, изоморфна группе 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+в) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-root-n-of-z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В ней имеется одна точка разветвления 
+\begin_inset Formula $z=0$
+\end_inset
+
+, которой соответствует подстановка листов 
+\begin_inset Formula $g=\left(\begin{array}{ccccc}
+1 & 2 & \dots & n-1 & n\\
+2 & 3 & \dots & n & 1
+\end{array}\right)$
+\end_inset
+
+.
+ Таким образом, группа подстановок листов схемы римановой поверхности 
+\begin_inset Formula $\sqrt[n]{z}$
+\end_inset
+
+ будет группой степей подстановки 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Так как эта подстановка соответствует циклическому сдвигу на один элемент,
+ а всего имеется 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов, то 
+\begin_inset Formula $g$
+\end_inset
+
+ является элементом порядка 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Как указано в замечании 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:powers-of-element-form-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, эта подгруппа степеней одного элемента конечного порядка изоморфна 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-of-order-n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+г) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-examples-of-cube-root-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Она содержит две точки разветвления 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=1$
+\end_inset
+
+, которым соответствуют подстановка листов 
+\begin_inset Formula $g=\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 3 & 1
+\end{array}\right)$
+\end_inset
+
+.
+ Таким образом, как и в пункте б), получаем, что группа подстановок листов
+ схемы римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}$
+\end_inset
+
+ изоморфна 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+д) Схема римановой поверхности функции 
+\begin_inset Formula $\sqrt[4]{\left(z-1\right)^{2}\left(z+1\right)^{3}}$
+\end_inset
+
+ была построена в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-schemes-of-root-4-of-polynomials-examples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Она включает две точки разветвления 
+\begin_inset Formula $z=-1$
+\end_inset
+
+ и 
+\begin_inset Formula $z=1$
+\end_inset
+
+, которым соответствуют подстановки листов 
+\begin_inset Formula $g_{1}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+4 & 1 & 2 & 3
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 1 & 2
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим степени элемента 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+: 
+\begin_inset Formula $g_{1}^{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 1 & 2
+\end{array}\right)=g_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}^{3}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 3 & 4 & 1
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}^{4}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 2 & 3 & 4
+\end{array}\right)=e$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ — элемент порядка 
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь степени элемента 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+: 
+\begin_inset Formula $g_{2}^{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 2 & 3 & 4
+\end{array}\right)=e$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ — элемент порядка 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, группа подстановок листов схемы римановой поверхности функции
+ 
+\begin_inset Formula $\sqrt[4]{\left(z-1\right)^{2}\left(z+1\right)^{3}}$
+\end_inset
+
+ является группой степеней элемента 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и изоморфна 
+\begin_inset Formula $Z_{4}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
