@@ -78980,6 +78980,12 @@ name "fig:rieman-surface-scheme-of-root[3](z)+root[3](z)"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-schemes-of-radical-expressed-functions-examples"
+
+\end_inset
+
 Построить схемы римановых поверхностей следующих функций: а) 
 \begin_inset Formula $i\sqrt{z}-\sqrt[4]{z^{2}}$
 \end_inset
@@ -80661,6 +80667,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:rieman-surface-scheme-of-power-of-radical-expressed-functions-examples"
+
+\end_inset
+
 Построить схемы римановых поверхностей следующих функций: а) 
 \begin_inset Formula $\left(\sqrt[4]{z}\right)^{2}$
 \end_inset
@@ -84565,6 +84577,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:galoise-groups-simple-examples"
+
+\end_inset
+
 Каким из известных вам групп изоморфны группы подстановок листов схем римановых
  поверхностей следующих функций: а) 
 \begin_inset Formula $\sqrt{z}$
@@ -84980,6 +84998,832 @@ noprefix "false"
 
  и изоморфна 
 \begin_inset Formula $Z_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Каким из известных вам групп изоморфны группы подстановок листов схем римановых
+ поверхностей функций, перечисленных в задачах: 1) 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-schemes-of-sums-examples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 2) 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-schemes-of-radical-expressed-functions-examples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 3) 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:rieman-surface-scheme-of-power-of-radical-expressed-functions-examples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+1а) Схеме римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}+\sqrt{z-1}$
+\end_inset
+
+ соответствуют следующие подстановки листов: 
+\begin_inset Formula $g_{1}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 1 & 2
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 1 & 4 & 3
+\end{array}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $g_{1}^{2}=g_{2}^{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 2 & 3 & 4
+\end{array}\right)=e$
+\end_inset
+
+, то 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ являются элементами второго порядка.
+ Ещё одна подстановка искомой группы получается как произведение элементов
+ 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+: 
+\begin_inset Formula $g_{1}g_{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+4 & 3 & 2 & 1
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}g_{1}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+4 & 3 & 2 & 1
+\end{array}\right)$
+\end_inset
+
+.
+ Обозначим её 
+\begin_inset Formula $g_{3}$
+\end_inset
+
+.
+ Она также является элементом второго порядка, так как 
+\begin_inset Formula $g_{3}^{2}=e$
+\end_inset
+
+.
+ Никаких новых элементов построить уже невозможно, так как, например: 
+\begin_inset Formula $g_{1}g_{3}=g_{1}\left(g_{1}g_{2}\right)=\left(g_{1}g_{1}\right)g_{2}=eg_{2}=g_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом искомая группа подстановок листов схемы римановой поверхности
+ функции 
+\begin_inset Formula $\sqrt{z}+\sqrt{z-1}$
+\end_inset
+
+ состоит из элементов 
+\begin_inset Formula $\left\{ e,g_{1},g_{2},g_{3}\right\} $
+\end_inset
+
+, где все элементы, кроме 
+\begin_inset Formula $e$
+\end_inset
+
+, являются элементами второго порядка.
+ Так как с точностью до изоморфизма существует только две группы порядка
+ 4 (как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Построенная группа изоморфна группе 
+\begin_inset Formula $Z_{2}\times Z_{2}$
+\end_inset
+
+, так как именно в ней нет элементов порядка выше второго.
+\end_layout
+
+\begin_layout Solution
+1б) Схеме римановой поверхности функции 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}+\sqrt{\frac{1}{z}}$
+\end_inset
+
+ соответствуют следующие подстановки листов: 
+\begin_inset Formula $g_{1}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+3 & 4 & 5 & 6 & 1 & 2
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+2 & 1 & 4 & 3 & 6 & 5
+\end{array}\right)$
+\end_inset
+
+.
+ Во-первых, заметим, что 
+\begin_inset Formula $g_{2}^{2}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+1 & 2 & 3 & 4 & 5 & 6
+\end{array}\right)=e$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ — элемент второго порядка.
+ Рассмотрим теперь степени элемента 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+: 
+\begin_inset Formula $g_{1}^{2}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+5 & 6 & 1 & 2 & 3 & 4
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}^{3}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+1 & 2 & 3 & 4 & 5 & 6
+\end{array}\right)=e$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ — элемент третьего порядка, а искомая группа будет включать, по меньшей
+ мере, элементы 
+\begin_inset Formula $\left\{ e,g_{1},g_{1}^{2},g_{2}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $g_{2}g_{1}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+4 & 3 & 6 & 5 & 2 & 1
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}g_{2}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+4 & 3 & 6 & 5 & 2 & 1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $g_{2}g_{1}^{2}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+6 & 5 & 2 & 1 & 4 & 3
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}^{2}g_{2}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+6 & 5 & 2 & 1 & 4 & 3
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Никаких других элементов породить уже нельзя.
+ Действительно, умножая 
+\begin_inset Formula $g_{1}g_{2}=g_{2}g_{1}$
+\end_inset
+
+ на 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+, получим 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, так как 
+\begin_inset Formula $g_{2}^{2}=e$
+\end_inset
+
+, а умножая 
+\begin_inset Formula $g_{2}g_{1}^{2}=g_{1}^{2}g_{2}$
+\end_inset
+
+ на 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ или 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+, получим 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ или 
+\begin_inset Formula $g_{1}^{2}$
+\end_inset
+
+ соответственно, так как 
+\begin_inset Formula $g_{1}^{3}=g_{2}^{2}=e$
+\end_inset
+
+.
+ Аналогично и для других произведений.
+\end_layout
+
+\begin_layout Solution
+Таким образом, искомая группа подстановок листов схемы римановой поверхности
+ функции 
+\begin_inset Formula $\sqrt[3]{z^{2}-1}$
+\end_inset
+
++
+\begin_inset Formula $\sqrt{\frac{1}{z}}$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $\left\{ e,g_{1},g_{1}^{2},g_{2},g_{1}g_{2},g_{1}^{2}g_{2}\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $g_{1}^{3}=g_{2}^{2}=e$
+\end_inset
+
+.
+ Эта группа имеет порядок шесть, все группы порядка шесть (с точностью до
+ автоморфизма) были найдены в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Группа, содержащая элементы порядка 2 и 3 изоморфна группе симметрий правильног
+о треугольника.
+\end_layout
+
+\begin_layout Solution
+1в) Схеме римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}+\sqrt[3]{z}$
+\end_inset
+
+ соответствует подстановка 
+\begin_inset Formula $g=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+5 & 6 & 4 & 2 & 3 & 1
+\end{array}\right)$
+\end_inset
+
+.
+ Искомая группа будет группой степеней этого элемента.
+ Остаётся только выяснить её порядок: 
+\begin_inset Formula $g^{2}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+3 & 1 & 2 & 6 & 4 & 5
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g^{3}=g^{2}g=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+4 & 5 & 6 & 1 & 2 & 3
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g^{4}=\left(g^{2}\right)^{2}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+2 & 3 & 1 & 5 & 6 & 4
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g^{5}=g^{3}g^{2}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+6 & 4 & 5 & 3 & 1 & 2
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g^{6}=\left(g^{3}\right)^{2}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+1 & 2 & 3 & 4 & 5 & 6
+\end{array}\right)=e$
+\end_inset
+
+, таким образом 
+\begin_inset Formula $g$
+\end_inset
+
+ — элемент порядка шесть.
+\end_layout
+
+\begin_layout Solution
+Искомая группа подстановок листов схемы римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}+\sqrt[3]{z}$
+\end_inset
+
+ изоморфна 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+1г) Схеме римановой поверхности функции 
+\begin_inset Formula $\sqrt{z^{2}-1}+\sqrt[4]{z-1}$
+\end_inset
+
+ соответствуют следующие подстановки листов: 
+\begin_inset Formula $g_{1}=\left(\begin{array}{cccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+5 & 6 & 7 & 8 & 1 & 2 & 3 & 4
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}=\left(\begin{array}{cccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+6 & 7 & 8 & 5 & 2 & 3 & 4 & 1
+\end{array}\right)$
+\end_inset
+
+.
+ Во-первых заметим, что 
+\begin_inset Formula $g_{1}^{2}=e$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ — элемент второго порядка.
+ Рассмотрим теперь степени элемента 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+: 
+\begin_inset Formula $g_{2}^{2}=\left(\begin{array}{cccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+3 & 4 & 1 & 2 & 7 & 8 & 5 & 6
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}^{3}=g_{2}^{2}g_{2}=\left(\begin{array}{cccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+8 & 5 & 6 & 7 & 4 & 1 & 2 & 3
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}^{4}=\left(g_{2}^{2}\right)^{2}=\left(\begin{array}{cccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8
+\end{array}\right)=e$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ — элемент четвёртого порядка.
+\end_layout
+
+\begin_layout Solution
+Далее заметим, что 
+\begin_inset Formula $g_{1}g_{2}=g_{2}g_{1}=\left(\begin{array}{cccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+2 & 3 & 4 & 1 & 6 & 7 & 8 & 5
+\end{array}\right)$
+\end_inset
+
+, поэтому все элементы искомой группы имеют вид 
+\begin_inset Formula $g_{1}^{k}g_{2}^{j}$
+\end_inset
+
+ причём 
+\begin_inset Formula $k=0,1$
+\end_inset
+
+ и 
+\begin_inset Formula $j=0,1,2,3$
+\end_inset
+
+, так как 
+\begin_inset Formula $g_{1}^{2}=g_{2}^{4}=e$
+\end_inset
+
+.
+ Таким образом искомая группа является группой порядка 
+\begin_inset Formula $8$
+\end_inset
+
+.
+ Все группы порядка 
+\begin_inset Formula $8$
+\end_inset
+
+ (с точностью до изоморфизма) были построены в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Группа подстановок листов схемы римановой поверхности функции 
+\begin_inset Formula $\sqrt{z^{2}-1}+\sqrt[4]{z-1}$
+\end_inset
+
+ изоморфна группе 
+\begin_inset Formula $Z_{4}\times Z_{2}$
+\end_inset
+
+ так как только она содержит элементы порядка 
+\begin_inset Formula $4$
+\end_inset
+
+ и 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2а) Схеме римановой поверхности функции 
+\begin_inset Formula $i\sqrt{z}-\sqrt[4]{z^{2}}$
+\end_inset
+
+ соответствует подстановка 
+\begin_inset Formula $g=\left(\begin{array}{ccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+2 & 1 & 4 & 3 & 6 & 5 & 7
+\end{array}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $g^{2}=\left(\begin{array}{ccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+1 & 2 & 3 & 4 & 5 & 6 & 7
+\end{array}\right)=e$
+\end_inset
+
+, то 
+\begin_inset Formula $g$
+\end_inset
+
+ — элемент второго порядка, а искомая группа подстановок листов схемы римановой
+ поверхности функции 
+\begin_inset Formula $i\sqrt{z}-\sqrt[4]{z^{2}}$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $\left\{ e,g\right\} $
+\end_inset
+
+, а в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-order-2-or-3-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что все группы порядка два изоморфны друг другу и 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2б) Схеме римановой поверхности функции 
+\begin_inset Formula $\sqrt{z-1}\cdot\sqrt[4]{z}$
+\end_inset
+
+ соответствуют подстановки 
+\begin_inset Formula $g_{1}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 3 & 4 & 1
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 1 & 2
+\end{array}\right)$
+\end_inset
+
+.
+ Найдём порядки этих элементов 
+\begin_inset Formula $g_{2}^{2}=e$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}^{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 1 & 2
+\end{array}\right)=g_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}^{3}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+4 & 1 & 2 & 3
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}^{4}=\left(g_{1}^{2}\right)^{2}=\left(g_{2}\right)^{2}=e$
+\end_inset
+
+.
+ Таким образом, искомая группа является группой степеней подстановки 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, которая является элементом четвёртого порядка, то есть искомая группа
+ изоморфна 
+\begin_inset Formula $Z_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2в) Схеме римановой поверхности функции 
+\begin_inset Formula $\frac{\sqrt{z^{2}-1}}{\sqrt[4]{z+1}}$
+\end_inset
+
+ соответствуют подстановки 
+\begin_inset Formula $g_{1}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+4 & 1 & 2 & 3
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 1 & 2
+\end{array}\right)$
+\end_inset
+
+.
+ Мы снова видим, что 
+\begin_inset Formula $g_{2}^{2}=e$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}^{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 1 & 2
+\end{array}\right)=g_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}^{3}=g_{1}^{2}g_{1}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 3 & 4 & 1
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}^{4}=\left(g_{1}^{2}\right)^{2}=g_{2}^{2}=e$
+\end_inset
+
+.
+ Таким образом, искомая группа является группой степеней подстановки 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, которая является элементом четвёртого порядка, то есть искомая группа
+ изоморфна 
+\begin_inset Formula $Z_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+2г) Схеме римановой поверхности функции 
+\begin_inset Formula $\frac{\sqrt{z}+\sqrt{z}}{\sqrt[3]{z\left(z-1\right)}}$
+\end_inset
+
+ соответствуют подстановки 
+\begin_inset Formula $g_{1}=\left(\begin{array}{ccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+1 & 6 & 7 & 5 & 3 & 4 & 2
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}=\left(\begin{array}{ccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+1 & 3 & 4 & 2 & 6 & 7 & 5
+\end{array}\right)$
+\end_inset
+
+.
+ Найдём все степени и порядки данных элементов группы:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $g_{2}^{2}=\left(\begin{array}{ccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+1 & 4 & 2 & 3 & 7 & 5 & 6
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}^{3}=\left(\begin{array}{ccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+1 & 2 & 3 & 4 & 5 & 6 & 7
+\end{array}\right)=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $g_{1}^{2}=\left(\begin{array}{ccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+1 & 4 & 2 & 3 & 7 & 5 & 6
+\end{array}\right)=g_{2}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}^{3}=g_{1}^{2}g_{1}=\left(\begin{array}{ccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+1 & 5 & 6 & 7 & 2 & 3 & 4
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}^{4}=\left(g_{1}^{2}\right)^{2}=\left(g_{2}^{2}\right)^{2}=g_{2}^{4}=g_{2}^{3}g_{2}=eg_{2}=g_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}^{5}=g_{1}^{4}g_{1}=g_{2}g_{1}=\left(\begin{array}{ccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+1 & 7 & 5 & 6 & 4 & 2 & 3
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}^{6}=\left(g_{1}^{3}\right)^{2}=e$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ является элементом шестого порядка, а группа подстановок листов схемы римановой
+ поверхности функции 
+\begin_inset Formula $\frac{\sqrt{z}+\sqrt{z}}{\sqrt[3]{z\left(z-1\right)}}$
+\end_inset
+
+ является группой степеней этого элемента и изоморфна 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+3а) Схема римановой поверхности функции 
+\begin_inset Formula $\left(\sqrt[4]{z}\right)^{2}$
+\end_inset
+
+ совпадает со схемой римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, группа подстановок которой была построена в пункте а) задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:galoise-groups-simple-examples"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом этому группа подстановок листов схемы римановой поверхности
+ функции 
+\begin_inset Formula $\left(\sqrt[4]{z}\right)^{2}$
+\end_inset
+
+ изоморфна 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+3б) Схема римановой поверхности функции 
+\begin_inset Formula $\left(\sqrt{z}+\sqrt{z}\right)^{2}$
+\end_inset
+
+ не содержит точек разветвления, поэтому группа подстановок листов схемы
+ римановой поверхности этой функции содержит только единичный элемент, то
+ есть она изоморфна 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+3в) Схема римановой поверхности функции 
+\begin_inset Formula $\left(\sqrt{z}\cdot\sqrt[3]{z-1}\right)^{3}$
+\end_inset
+
+совпадает со схемой римановой поверхности функции 
+\begin_inset Formula $\sqrt{z}$
+\end_inset
+
+, поэтому группа подстановок листов схемы римановой поверхности этой группы
+ изоморфна 
+\begin_inset Formula $Z_{2}$
 \end_inset
 
 .
