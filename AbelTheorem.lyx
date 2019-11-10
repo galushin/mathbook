@@ -85829,17 +85829,824 @@ noprefix "false"
 .
 \end_layout
 
+\begin_layout Problem
+Описать группу подстановок листов для обеих схем римановой поверхности функции
+ 
+\begin_inset Formula $h\left(z\right)=\sqrt{\sqrt{z^{2}+1}-2}$
+\end_inset
+
+, построенных при решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:example-of-rieman-surface-depending-on-cuts"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+В первом случае имеем нужно рассмотреть группу, порождённую подстановками
+ 
+\begin_inset Formula $g_{1}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 1 & 3 & 4
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 1 & 2
+\end{array}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $g_{1}^{2}=g_{2}^{2}=e$
+\end_inset
+
+.
+ 
+\begin_inset Formula $g_{1}g_{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 2 & 1
+\end{array}\right)=h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}g_{1}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+4 & 3 & 1 & 2
+\end{array}\right)=h_{2}$
+\end_inset
+
+.
+ Определим порядок элементов 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $h_{1}^{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 1 & 4 & 3
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}^{3}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+4 & 3 & 1 & 2
+\end{array}\right)=h_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}^{4}=\left(h_{1}^{2}\right)^{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 2 & 3 & 4
+\end{array}\right)=e$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ — элемент порядка 
+\begin_inset Formula $4$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{1}^{3}=h_{2}$
+\end_inset
+
+.
+ Это позволяет легко определить порядок элемента 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+: 
+\begin_inset Formula $h_{2}^{2}=h_{1}^{6}=h_{1}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $h_{2}^{3}=h_{1}^{9}=h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{2}^{4}=h_{1}^{12}=e$
+\end_inset
+
+, то есть 
+\begin_inset Formula $h_{2}$
+\end_inset
+
+ — также элемент порядка 
+\begin_inset Formula $4$
+\end_inset
+
+ и каждая его степень совпадает с некоторой степенью элемента 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+.
+ Итак, искомая группа включает элементы 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}=g_{1}g_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}^{3}$
+\end_inset
+
+.
+ Рассмотрим, нужно ли добавить к этим элементам ещё какие-либо: 
+\begin_inset Formula 
+\[
+g_{1}h_{1}=g_{1}\left(g_{1}g_{2}\right)=\left(g_{1}g_{1}\right)g_{2}=g_{2},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h_{1}g_{2}=g_{1}g_{2}g_{2}=g_{1},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h_{1}g_{1}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+4 & 3 & 2 & 1
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{2}h_{1}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 2 & 4 & 3
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{1}h_{1}^{2}=g_{1}g_{1}g_{2}h_{1}=g_{2}h_{1},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+h_{1}^{2}g_{1}=g_{1}\left(g_{2}g_{1}\right)\left(g_{2}g_{1}\right)=g_{1}h_{2}^{2}=g_{1}h_{1}^{2}=g_{2}h_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+h_{1}^{2}g_{2}=h_{1}g_{1}g_{2}g_{2}=h_{1}g_{1},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{1}h_{1}^{3}=g_{1}g_{1}g_{2}h_{1}^{2}=g_{2}h_{1}^{2}=g_{2}h_{1},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h_{1}^{3}g_{1}=h_{2}g_{1}=g_{2}g_{1}g_{1}=g_{2},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{2}h_{1}^{3}=g_{2}h_{2}=g_{2}g_{2}g_{1}=g_{1},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h_{1}^{3}g_{2}=h_{2}g_{2}=g_{1}g_{2}g_{2}=g_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, к искомой группе нужно добавить элементы 
+\begin_inset Formula $h_{1}g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}h_{1}$
+\end_inset
+
+, которые не совпадают ни с одним из включённых ранее.
+ Эти элементы являются элементами второго порядка, действительно:
+\begin_inset Formula 
+\[
+\left(h_{1}g_{1}\right)^{2}=h_{1}g_{1}h_{1}g_{1}=h_{1}g_{2}g_{1}=h_{1}h_{2}=h_{1}h_{1}^{3}=h_{1}^{4}=e,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(g_{2}h_{1}\right)^{2}=g_{2}h_{1}g_{2}h_{1}=g_{2}g_{1}h_{1}=h_{2}h_{1}=h_{1}^{4}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+При умножении элементов 
+\begin_inset Formula $h_{1}g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}h_{1}$
+\end_inset
+
+на ранее включенные в группу элементы новых элементов не получится, так
+ как мы рассмотрели все возможные произведения 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ и степеней 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+.
+ Таким образом, в искомой группе имеется один элемент порядка 1, 5 элементов
+ порядка 
+\begin_inset Formula $2$
+\end_inset
+
+ и два элемента порядка 
+\begin_inset Formula $4$
+\end_inset
+
+, а вся группа является группой восьмого порядка.
+ Все группы порядка 8 (с точностью до изоморфизма) были построены в задаче
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:all-groups-of-orders-4-6-8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Сравнивая порядки элементов, приходим к выводу, что искомая группа изоморфна
+ группе симметрий квадрата.
+\end_layout
+
+\begin_layout Solution
+Во втором случае, искомая группа порождается подстановками 
+\begin_inset Formula $g_{1}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+2 & 1 & 3 & 4
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+3 & 4 & 1 & 2
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{3}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 2 & 4 & 3
+\end{array}\right)$
+\end_inset
+
+.
+ При рассмотрении первого случая мы получили, что элемент 
+\begin_inset Formula $g_{2}g_{1}g_{2}=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 2 & 4 & 3
+\end{array}\right)=g_{3}$
+\end_inset
+
+, поэтому группа, порождённая элементами 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{3}$
+\end_inset
+
+, совпадает с группой, порождённой элементами 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
+Пусть точка 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ не является точкой разветвления и неоднозначности многозначной функции
+ 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $w_{n}$
+\end_inset
+
+ — все значения функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Рассмотрим некоторую непрерывную кривую 
+\begin_inset Formula $C$
+\end_inset
+
+, начинающуюся и кончающуюся в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и не проходящую через точки разветвления или неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Если мы выберем некоторое значение 
+\begin_inset Formula $w_{i}=w\left(z_{0}\right)$
+\end_inset
+
+ и определим новое значение 
+\begin_inset Formula $w\left(z_{0}\right)$
+\end_inset
+
+ по непрерывности вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, то получим некоторое новое значение 
+\begin_inset Formula $w_{j}\left(z\right)=w\left(z_{0}\right)$
+\end_inset
+
+.
+ При этом, начиная с разных значений 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+, мы будем получать различные значения 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+ (иначе по кривой 
+\begin_inset Formula $C^{-1}$
+\end_inset
+
+ нарушалась бы однозначность).
+ Следовательно, кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ соответствует некоторая подстановка значений 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $w_{n}$
+\end_inset
+
+.
+ При этом, если кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ соответствует подстановка 
+\begin_inset Formula $g$
+\end_inset
+
+, то кривой 
+\begin_inset Formula $C^{-1}$
+\end_inset
+
+ соответствует подстановка 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+ и если кривым 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ (с концами в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+) соответствуют подстановки 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+, то кривой 
+\begin_inset Formula $C_{1}C_{2}$
+\end_inset
+
+ соответствует подстановка 
+\begin_inset Formula $g_{2}g_{1}$
+\end_inset
+
+ (напомним, что подстановки выполняются справа налево).
+\end_layout
+
+\begin_layout Standard
+Таким образом, если мы рассмотрим всевозможные кривые, начинающиеся и заканчиваю
+щиеся в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то соответствующие им подстановки будут образовывать некоторую 
+\emph on
+группу подстановок значений 
+\begin_inset Formula $w\left(z_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:groups-of-permutationsof-leaves-and-values-are-isomorphic"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ — группа подстановок значений 
+\begin_inset Formula $w\left(z_{0}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ — группа подстановок листов некоторой схемы римановой поверхности функции
+ 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Доказать, что группы 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ изоморфны.
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Доделать этот раздел
+Написать решение
 \end_layout
 
 \end_inset
 
 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не решил сам
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $w_{1},\dots,w_{n}$
+\end_inset
+
+ — все значения 
+\begin_inset Formula $w\left(z_{0}\right)$
+\end_inset
+
+, и пусть 
+\begin_inset Formula $z_{1},\dots,z_{s}$
+\end_inset
+
+ — точки разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Занумеруем листы схемы римановой поверхности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ так, чтобы значение 
+\begin_inset Formula $w_{i}=w\left(z_{0}\right)$
+\end_inset
+
+ соответствовало 
+\begin_inset Formula $i$
+\end_inset
+
+-му листу.
+ Тогда каждой подстановке значений 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ единственным образом соответствует подстановка листов.
+ Докажем, что при таком соответствии группы 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ практически совпадают.
+\end_layout
+
+\begin_layout Solution
+Пусть подстановка 
+\begin_inset Formula $g$
+\end_inset
+
+ из 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ порождена некоторой кривой, начинающейся и заканчивающейся в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, и пусть кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ пересекает по порядку разрезы (при которых строилась риманова поверхность),
+ идущие из точек разветвления 
+\begin_inset Formula $z_{i_{1}},z_{i_{2}},\dots,z_{i_{m}}$
+\end_inset
+
+.
+ Если точке разветвления 
+\begin_inset Formula $z_{j}$
+\end_inset
+
+ соответствует подстановка листов 
+\begin_inset Formula $g_{j}$
+\end_inset
+
+, то легко понять, что кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ соответствует подстановка листов (а вместе с этим и значений 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+), равная 
+\begin_inset Formula $g_{i_{1}}^{\sigma_{1}}g_{i_{2}}^{\sigma_{2}}\cdot\dots\cdot g_{i_{m}}^{\sigma_{m}}$
+\end_inset
+
+, где 
+\begin_inset Formula $\sigma_{i_{r}}=1$
+\end_inset
+
+, если кривая пересекает разрез, выходящий из точки 
+\begin_inset Formula $z_{i_{r}}$
+\end_inset
+
+, против часовой стрелки, и 
+\begin_inset Formula $\sigma_{i_{r}}=-1$
+\end_inset
+
+ — если по часовой.
+ Отсюда 
+\begin_inset Formula $g=g_{i_{1}}^{\sigma_{1}}g_{i_{2}}^{\sigma_{2}}\cdot\dots\cdot g_{i_{m}}^{\sigma_{m}}$
+\end_inset
+
+ и 
+\begin_inset Formula $g\in G_{2}$
+\end_inset
+
+ (по определению 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Обратно, если дан элемент 
+\begin_inset Formula $g=g_{i_{1}}^{\sigma_{1}}g_{i_{2}}^{\sigma_{2}}\cdot\dots\cdot g_{i_{m}}^{\sigma_{m}}$
+\end_inset
+
+, где 
+\begin_inset Formula $\sigma_{i_{r}}=\pm1$
+\end_inset
+
+, то можно построить кривую, порождающую такую же подстановку значений в
+ группе 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим, что при определении группы подстановок значений 
+\begin_inset Formula $w\left(z_{0}\right)$
+\end_inset
+
+ не использовалась никакая схема римановой поверхности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Поэтому из результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:groups-of-permutationsof-leaves-and-values-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что группа подстановок значений 
+\begin_inset Formula $w\left(z_{0}\right)$
+\end_inset
+
+ для 
+\emph on
+произвольной
+\emph default
+ точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и группа подстановок листов 
+\emph on
+произвольной 
+\emph default
+схемы римановой поверхности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ изоморфны.
+ Следовательно, группы подстановок значений 
+\begin_inset Formula $w\left(z_{0}\right)$
+\end_inset
+
+ для 
+\emph on
+всех 
+\emph default
+точек 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и группы подстановок листов 
+\emph on
+всех 
+\emph default
+схем римановых поверхностей функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ изоморфны, то есть являются фактически одной и той же группой.
+ Эту группу будем называть 
+\emph on
+группой Галуа 
+\emph default
+многозначной функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Эту группу называют также 
+\emph on
+группой монодромии.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
