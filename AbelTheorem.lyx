@@ -43354,6 +43354,12 @@ status open
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:solvable-group"
+
+\end_inset
+
 Разрешимые группы
 \end_layout
 
@@ -86670,6 +86676,471 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Группы Галуа функций, выражающихся в радикалах
+\end_layout
+
+\begin_layout Standard
+Перейдём теперь к доказательству одного из основных утверждений этой книги,
+ а именно следующей теоремы.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:galois-group-of-radical-expression-is-solvable"
+
+\end_inset
+
+Если многозначная функция 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ выражается в радикалах, то группа Галуа функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ разрешима (смотри 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:solvable-group"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Доказательство теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:galois-group-of-radical-expression-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ заключено в решениях следующих задач
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки на задачи 336-342
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+, или 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)-g\left(z\right)$
+\end_inset
+
+, или 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)\cdot g\left(z\right)$
+\end_inset
+
+, или 
+\begin_inset Formula $h\left(z\right)=\frac{f\left(z\right)}{g\left(z\right)}$
+\end_inset
+
+, и пусть схема римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ построена из римановых поверхностей функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ формальным методом 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на теорему 8
+\end_layout
+
+\end_inset
+
+.
+ Доказать, что если 
+\begin_inset Formula $F$
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+ — группы подстановок листов исходных схем, то группа подстановок листов
+ построенной схемы изоморфна некоторой подгруппе в прямом произведении 
+\begin_inset Formula $F\times G$
+\end_inset
+
+ (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на раздел 2.7
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть при условиях предыдущей задачи 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ — группа подстановок листов схемы, построенной формальным методом, а 
+\begin_inset Formula $H_{2}$
+\end_inset
+
+ — группа подстановок истинной схемы римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+.
+ Доказать, что существует гомоморфизм (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на раздел 2.13
+\end_layout
+
+\end_inset
+
+) группы 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ на группу 
+\begin_inset Formula $H_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть группы Галуа функций 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ разрешимы.
+ Доказать, что тогда разрешимы группы Галуа следующих функций: 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)-g\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(z\right)=f\left(z\right)\cdot g\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(z\right)=\frac{f\left(z\right)}{g\left(z\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть группа Галуа функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ разрешима.
+ Доказать, что группа Галуа функции 
+\begin_inset Formula $h\left(z\right)=\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+ также разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа подстановок листов схемы римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+, а 
+\begin_inset Formula $F$
+\end_inset
+
+ — группа подстановок листов схемы римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, построенной при тех же разрезах.
+ Построить гомоморфизм группы 
+\begin_inset Formula $H$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что ядро гомоморфизма 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на 2.13
+\end_layout
+
+\end_inset
+
+, построенного в решении предыдущей задачи, коммутативно.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть группа Галуа функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ разрешима.
+ Доказать, что группа Галуа функции 
+\begin_inset Formula $h\left(z\right)=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ также разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Функции константы 
+\begin_inset Formula $h\left(z\right)=a$
+\end_inset
+
+ и функция 
+\begin_inset Formula $h\left(z\right)=z$
+\end_inset
+
+ являются функциями однозначными и непрерывными на всей плоскости 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Поэтому их римановы поверхности состоят только из одного листа, и, следовательн
+о, соответствующие им группы Галуа состоят только из одного элемента 
+\begin_inset Formula $e$
+\end_inset
+
+ и, значит, разрешимы.
+ Отсюда, учитывая определение функций, выражающихся в радикалах (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+), и результаты задач 338, 339 и 342
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки
+\end_layout
+
+\end_inset
+
+, получаем доказательство теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:galois-group-of-radical-expression-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Для читателей, знакомых с теорией аналитических функций, отметим следующее.
+ Если группу Галуа функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ определять как группу подстановок значений функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+), то теорема 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:galois-group-of-radical-expression-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ будет справедливой и для более широкого класса функций.
+ Например, при построении функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ кроме констант, тождественной функции, арифметических операций и радикалов,
+ можно разрешить использовать любые однозначные аналитические функции (например,
+ 
+\begin_inset Formula $e^{z}$
+\end_inset
+
+, 
+\begin_inset Formula $\sin z$
+\end_inset
+
+ и так далее), многозначную функцию 
+\begin_inset Formula $\mathrm{Ln}z$
+\end_inset
+
+ и некоторые другие функции.
+ При этом группа Галуа функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ будет разрешимой, хотя уже не обязательно будет конечной.
 \end_layout
 
 \begin_layout Standard
