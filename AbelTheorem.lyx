@@ -85323,8 +85323,41 @@ noprefix "false"
 \end_inset
 
 .
- Группа, содержащая элементы порядка 2 и 3 изоморфна группе симметрий правильног
-о треугольника.
+ Так как элементы построенной группы имеют вид 
+\begin_inset Formula $g_{1}^{j}g_{2}^{k}$
+\end_inset
+
+, где 
+\begin_inset Formula $j=0,1,2$
+\end_inset
+
+ и 
+\begin_inset Formula $k=0,1$
+\end_inset
+
+, то эта группа изоморфна 
+\begin_inset Formula $Z_{3}\times Z_{2}$
+\end_inset
+
+.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Первоначально ошибся, здесь был ответ: 
+\begin_inset Quotes rld
+\end_inset
+
+группа симметрий правильного треугольника
+\begin_inset Quotes rrd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -86407,16 +86440,6 @@ name "prob:groups-of-permutationsof-leaves-and-values-are-isomorphic"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
-\end_inset
-
-
 \begin_inset Note Comment
 status open
 
