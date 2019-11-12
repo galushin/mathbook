@@ -19023,6 +19023,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:cartesian-product-of-groups"
+
+\end_inset
+
 Прямое произведение
 \end_layout
 
@@ -38959,6 +38965,12 @@ gh_{j}g^{-1}=ga_{j}g^{-1}gb_{j}g^{-1}ga_{j}^{-1}g^{-1}gb_{j}^{-1}g_{j}.
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:homomorphism"
+
+\end_inset
+
 Гомоморфизм
 \end_layout
 
@@ -83938,6 +83950,12 @@ name "fig:rieman-surface-scheme-328b"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:rieman-surface-scheme-of-sum-difference-product-and-ratio"
+
+\end_inset
+
 Для построения схемы римановой поверхности функции 
 \begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
 \end_inset
@@ -83974,7 +83992,7 @@ name "fig:rieman-surface-scheme-328b"
 \begin_inset Formula $g_{j}\left(z\right)$
 \end_inset
 
- достаточно лист, на котором считать заданной ветвь 
+ сопоставить лист, на котором считать заданной ветвь 
 \begin_inset Formula $h_{i,j}\left(z\right)$
 \end_inset
 
@@ -86768,17 +86786,17 @@ status open
 \begin_inset Formula $g\left(z\right)$
 \end_inset
 
- формальным методом 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на теорему 8
-\end_layout
+ формальным методом (как описано в теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:rieman-surface-scheme-of-sum-difference-product-and-ratio"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-.
+).
  Доказать, что если 
 \begin_inset Formula $F$
 \end_inset
@@ -86792,13 +86810,13 @@ status open
 \begin_inset Formula $F\times G$
 \end_inset
 
- (
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на раздел 2.7
-\end_layout
+ (описанное в разделе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:cartesian-product-of-groups"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -86806,16 +86824,77 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Если в некоторой точке 
+\begin_inset Formula $z_{0}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ в схеме римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ осуществляются переходы между листами, которым соответствует подстановка
+ 
+\begin_inset Formula $f_{j}$
+\end_inset
+
+, а в схеме римановой поверхности функции 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ — 
+\begin_inset Formula $g_{k}$
+\end_inset
+
+.
+ Тогда, согласно пункту б) теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:rieman-surface-scheme-of-sum-difference-product-and-ratio"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, индексы листов схемы римановой поверхности меняются независимо.
+ Таким образом, при обходе точки 
+\begin_inset Formula $z_{0}$
+\end_inset
 
+ производится подстановка листов схемы римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+, которую можно рассматривать как пару подстановок 
+\begin_inset Formula $\left(f_{j},g_{k}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+С другой стороны, всевозможные пары подстановок групп 
+\begin_inset Formula $F$
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+ образуют группу 
+\begin_inset Formula $F\times G$
+\end_inset
+
+.
+ Поэтому группа подстановок листов схемы римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ будет подгруппой группы 
+\begin_inset Formula $F\times G$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -86832,13 +86911,14 @@ status open
 \end_inset
 
 .
- Доказать, что существует гомоморфизм (
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на раздел 2.13
-\end_layout
+ Доказать, что существует гомоморфизм (гомоморфизмы рассмотрены в разделе
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
