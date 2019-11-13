@@ -44953,6 +44953,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:cartesian-product-of-solvalble-groups-is-solvable"
+
+\end_inset
+
 Пусть группы 
 \begin_inset Formula $G$
 \end_inset
@@ -84067,6 +84073,12 @@ name "thm:rieman-surface-scheme-of-sum-difference-product-and-ratio"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:rieman-surface-scheme-of-natural-power-of-function"
+
+\end_inset
+
 Для построения схемы римановой поверхности функции 
 \begin_inset Formula $h\left(z\right)=\left[f\left(z\right)\right]^{n}$
 \end_inset
@@ -84110,6 +84122,12 @@ name "thm:rieman-surface-scheme-of-sum-difference-product-and-ratio"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:rieman-surface-scheme-of-root-n-of-function"
+
+\end_inset
+
 При построении схемы римановой поверхности функции 
 \begin_inset Formula $h\left(z\right)=\sqrt[n]{f\left(z\right)}$
 \end_inset
@@ -86758,6 +86776,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:Galois-group-of-sum-difference-product-or-ratio-is-subset-of-cartesian-product-of-galois-groups-of-operands"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $h\left(z\right)=f\left(z\right)+g\left(z\right)$
 \end_inset
@@ -86898,6 +86922,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:homomorphism-from-formal-to-true-rieman-surface-scheme"
+
+\end_inset
+
 Пусть при условиях предыдущей задачи 
 \begin_inset Formula $H_{1}$
 \end_inset
@@ -86911,8 +86941,8 @@ noprefix "false"
 \end_inset
 
 .
- Доказать, что существует гомоморфизм (гомоморфизмы рассмотрены в разделе
- 
+ Доказать, что существует гомоморфизм (понятие и свойства гомоморфизма рассмотре
+ны в разделе 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:homomorphism"
@@ -86934,16 +86964,40 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+\begin_inset Formula $H_{2}$
 \end_inset
 
+ получается из 
+\begin_inset Formula $H_{1}$
+\end_inset
 
+ склеиванием листов, соответствующих одинаковым значениям функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+.
+ Рассмотрим отображение, которое ставит в соответствие подстановке листов
+ схемы римановой поверхности, построенной формальным методом, подстановку
+ листов истинной схемы римановой поверхности функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ по следующему правилу: в исходной подстановке заменим все номера листов,
+ соответствующих одному значению функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+, одним из номеров этих листов (один и тот же при каждой замене).
+ Это и будет требуемый гомоморфизм.
+\end_layout
+
+\begin_layout Solution
+Отметим, что при описанном преобразовании подстановки останутся подстановками
+ (взаимно-однозначными отображениями).
+ Взаимная однозначность могла бы нарушиться, если бы в результате применения
+ построенного преобразования появились переходы с разных листов на один
+ и тот же, но это невозможно в силу того, что мы рассматриваем только непрерывны
+е однозначные ветви.
 \end_layout
 
 \begin_layout Problem
@@ -86976,16 +87030,157 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Доказательство удобно провести для групп подстановок листов римановых поверхност
+ей указанных функций, а затем воспользоваться тем, что группы Галуа изоморфны
+ соответствующим группам подстановок листов схем римановой поверхности (было
+ доказано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:groups-of-permutationsof-leaves-and-values-are-isomorphic"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+).
+\end_layout
 
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $F$
+\end_inset
+
+ — группа Галуа функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа Галуа функции 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+, а группу подстановок листов схемы римановой поверхности, построенной формальны
+м методом, функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ обозначим как 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+.
+ В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:Galois-group-of-sum-difference-product-or-ratio-is-subset-of-cartesian-product-of-galois-groups-of-operands"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $H_{1}\subset F\times G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $F$
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+ — разрешимые группы, то, как показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:cartesian-product-of-solvalble-groups-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $F\times G$
+\end_inset
+
+ — также разрешимая группа.
+ А в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:subgroup-of-solvable-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что подгруппа разрешимой группы разрешима, поэтому группа
+ 
+\begin_inset Formula $H_{1}\subset F\times G$
+\end_inset
+
+ — разрешима.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $H_{2}$
+\end_inset
+
+ — группа подстановок листов истинной схемы римановой поверхности функции
+ 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+.
+ Тогда, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-from-formal-to-true-rieman-surface-scheme"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует гомоморфизм 
+\begin_inset Formula $\varphi:H_{1}\to H_{2}$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-solvable-group-is-solvable-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем, что группа 
+\begin_inset Formula $H_{2}$
+\end_inset
+
+ — разрешима.
+\end_layout
+
+\begin_layout Solution
+Окончательно получаем, что группа Галуа функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ действительно разрешима.
 \end_layout
 
 \begin_layout Problem
@@ -87002,16 +87197,66 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Пусть 
+\begin_inset Formula $F$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ — группа Галуа функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа Галуа функции 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+.
+ Группа Галуа функции 
+\begin_inset Formula $h\left(z\right)=\left[f\left(z\right)\right]^{n}$
+\end_inset
+
+ получается объединением листов схемы римановой поверхности функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+, для которых значения 
+\begin_inset Formula $h\left(z\right)$
+\end_inset
+
+ совпадают.
+ По аналогии с задачей 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-from-formal-to-true-rieman-surface-scheme"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, можно построить гомоморфизм 
+\begin_inset Formula $\varphi:F\to H$
+\end_inset
 
+.
+ Следовательно, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-solvable-group-is-solvable-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что группа 
+\begin_inset Formula $H$
+\end_inset
+
+ является разрешимой.
 \end_layout
 
 \begin_layout Problem
