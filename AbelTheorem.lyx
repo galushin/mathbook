@@ -44814,7 +44814,7 @@ noprefix "false"
 \begin_layout Problem
 \begin_inset CommandInset label
 LatexCommand label
-name "prob:if-normal-subgroup-and-factorgroup-is-solvable-them-group-is-solvable"
+name "prob:if-normal-subgroup-and-factorgroup-is-solvable-then-group-is-solvable"
 
 \end_inset
 
@@ -45054,7 +45054,7 @@ noprefix "false"
  Значит, по доказанному в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-them-group-is-solvable"
+reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-then-group-is-solvable"
 plural "false"
 caps "false"
 noprefix "false"
@@ -45241,7 +45241,7 @@ noprefix "false"
  являются разрешимыми, то, по доказанному в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-them-group-is-solvable"
+reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-then-group-is-solvable"
 plural "false"
 caps "false"
 noprefix "false"
@@ -45650,7 +45650,7 @@ noprefix "false"
  — разрешимые группы, то, по доказанному в задаче 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-them-group-is-solvable"
+reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-then-group-is-solvable"
 plural "false"
 caps "false"
 noprefix "false"
@@ -86700,6 +86700,13 @@ noprefix "false"
 \end_inset
 
  
+\begin_inset CommandInset label
+LatexCommand label
+name "galois-group-of-function"
+
+\end_inset
+
+
 \begin_inset Foot
 status open
 
@@ -86762,17 +86769,7 @@ noprefix "false"
 
 \end_inset
 
- заключено в решениях следующих задач
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылки на задачи 336-342
-\end_layout
-
-\end_inset
-
-.
+ заключено в решениях задач данного раздела.
 \end_layout
 
 \begin_layout Problem
@@ -87001,6 +86998,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:galois-group-of-sum-difference-product-and-ratio-is-solvable-if-arguments-galois-groups-is-solvable"
+
+\end_inset
+
 Пусть группы Галуа функций 
 \begin_inset Formula $f\left(z\right)$
 \end_inset
@@ -87184,6 +87187,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:galois-group-of-power-is-solvable-if-argument-if-solvable"
+
+\end_inset
+
 Пусть группа Галуа функции 
 \begin_inset Formula $f\left(z\right)$
 \end_inset
@@ -87260,6 +87269,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:homomorphism-of-galois-group-of-root-n-of-function-to-this-function's-one"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $H$
 \end_inset
@@ -87451,33 +87466,108 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
-Доказать, что ядро гомоморфизма 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на 2.13
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:kernel-of-homomorphism-of-galois-group-of-root-n-of-function-to-this-function's-one-is-commutative"
 
 \end_inset
 
-, построенного в решении предыдущей задачи, коммутативно.
+Доказать, что ядро гомоморфизма (определение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), построенного в решении задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-of-galois-group-of-root-n-of-function-to-this-function's-one"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, коммутативно.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Ядром указанного гомоморфизма является подгруппа подстановок, которые этот
+ гомоморфизм переводит в тождественную подстановку, то есть подгруппа подстаново
+к, переводящих пачку листов в себя.
+ Пусть 
+\begin_inset Formula $a$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — две такие подстановки.
 \end_layout
+
+\begin_layout Solution
+Пусть листы в пачке занумерованы так, что 
+\begin_inset Formula $f_{i,k}\left(z\right)=f_{i,0}\left(z\right)\cdot\varepsilon_{n}^{k}$
+\end_inset
+
+, тогда, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:rieman-surface-scheme-of-root-n-of-function"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, подстановки 
+\begin_inset Formula $a$
+\end_inset
 
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ циклически сдвигают листы пачки.
+ Пусть величины этих сдвигов равны, соответственно 
+\begin_inset Formula $j_{a}$
+\end_inset
+
+ и 
+\begin_inset Formula $j_{b}$
+\end_inset
+
+, тогда и 
+\begin_inset Formula $ab$
+\end_inset
+
+, и 
+\begin_inset Formula $ba$
+\end_inset
+
+ циклически сдвигают листы пачки на 
+\begin_inset Formula $j_{a}+j_{b}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:galois-group-of-root-n-is-solvable-if-argument-if-solvable"
+
+\end_inset
+
 Пусть группа Галуа функции 
 \begin_inset Formula $f\left(z\right)$
 \end_inset
@@ -87491,16 +87581,154 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Пусть 
+\begin_inset Formula $F$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ — группы Галуа функции 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(z\right)=\sqrt[n]{f\left(z\right)}$
+\end_inset
+
+ соответственно, а 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм 
+\begin_inset Formula $H$
+\end_inset
+
+ на 
+\begin_inset Formula $F$
+\end_inset
+
+, построенный в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:homomorphism-of-galois-group-of-root-n-of-function-to-this-function's-one"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Обозначим 
+\begin_inset Formula $N=\mathrm{Ker}\varphi$
+\end_inset
 
+.
+ Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — ядро гомоморфизма, то, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:kernel-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, это нормальная подгруппа группы 
+\begin_inset Formula $H$
+\end_inset
+
+, поэтому по ней можно построить факторгруппу 
+\begin_inset Formula $H/N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:natural-mapping-of-factorgroup-by-kernel-homomorphism-is-isomorphism"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует изоморфизм 
+\begin_inset Formula $\psi:H/N\to F$
+\end_inset
+
+.
+ Так как группа 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешима по условию, то 
+\begin_inset Formula $H/N$
+\end_inset
+
+ также разрешима.
+\end_layout
+
+\begin_layout Solution
+В задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:kernel-of-homomorphism-of-galois-group-of-root-n-of-function-to-this-function's-one-is-commutative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $N=\mathrm{Ker}\varphi$
+\end_inset
+
+ является коммутативной группой, а значит и разрешимой (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "commutative-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ и 
+\begin_inset Formula $H/N$
+\end_inset
+
+ — разрешимые группы, то, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:if-normal-subgroup-and-factorgroup-is-solvable-then-group-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, группа 
+\begin_inset Formula $H$
+\end_inset
+
+ также является разрешимой, что и требовалось доказать.
 \end_layout
 
 \begin_layout Standard
@@ -87523,23 +87751,44 @@ status open
 \end_inset
 
  и, значит, разрешимы.
- Отсюда, учитывая определение функций, выражающихся в радикалах (
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ Отсюда, учитывая определение функций, выражающихся в радикалах (смотри
+ раздел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:radical-expressed-functions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-), и результаты задач 338, 339 и 342
-\begin_inset Note Note
-status open
+), и результаты задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:galois-group-of-sum-difference-product-and-ratio-is-solvable-if-arguments-galois-groups-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Добавить ссылки
-\end_layout
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:galois-group-of-power-is-solvable-if-argument-if-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:galois-group-of-root-n-is-solvable-if-argument-if-solvable"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -87570,13 +87819,13 @@ noprefix "false"
 \begin_inset Formula $z_{0}$
 \end_inset
 
- (
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку
-\end_layout
+ (смотри 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "galois-group-of-function"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
