@@ -66887,6 +66887,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:if-polynomial-equation-has-multiple-root-then-its-derivative-has-same-root"
+
+\end_inset
+
 Доказать, что если уравнение 
 \begin_inset Formula $P\left(z\right)=0$
 \end_inset
@@ -87864,6 +87870,351 @@ noprefix "false"
 \end_inset
 
  будет разрешимой, хотя уже не обязательно будет конечной.
+\end_layout
+
+\begin_layout Section
+Теорема Абеля
+\end_layout
+
+\begin_layout Standard
+Рассмотрим уравнение 
+\begin_inset Formula 
+\begin{equation}
+3w^{5}-25w^{3}+60w-z=0.\label{eq:sample-equation-for-abel-theorem}
+\end{equation}
+
+\end_inset
+
+ Мы будем считать 
+\begin_inset Formula $z$
+\end_inset
+
+ параметром и для каждого комплексного значения 
+\begin_inset Formula $z$
+\end_inset
+
+ будем искать все комплексные корни 
+\begin_inset Formula $w$
+\end_inset
+
+ этого уравнения.
+ В силу результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorization-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ данное уравнение при каждом 
+\begin_inset Formula $z$
+\end_inset
+
+ имеет пять корней (с учётом кратности), некоторые из которых могут совпадать.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:sample-equation-for-abel-theorem-multiple-root"
+
+\end_inset
+
+Какие значения 
+\begin_inset Formula $w$
+\end_inset
+
+ могут быть кратными корнями (кратности больше 1, смотри определение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:multiplicity-of-the-polynomial-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+? При каких значениях 
+\begin_inset Formula $z$
+\end_inset
+
+ они будут кратными корнями?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не догадался сам, что нужно рассмотреть производную
+\end_layout
+
+\end_inset
+
+Обозначим 
+\begin_inset Formula $P\left(w\right)=3w^{5}-25w^{3}+60w-z$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — кратный корень уравнения 
+\begin_inset Formula $P\left(w\right)=0$
+\end_inset
+
+, то по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:if-polynomial-equation-has-multiple-root-then-its-derivative-has-same-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula $P^{\prime}\left(w_{0}\right)=0$
+\end_inset
+
+.
+ Вычислим производную 
+\begin_inset Formula $P\left(w\right)$
+\end_inset
+
+ по 
+\begin_inset Formula $w$
+\end_inset
+
+ (
+\begin_inset Formula $z$
+\end_inset
+
+ при дифференцировании по 
+\begin_inset Formula $w$
+\end_inset
+
+ следует рассматривать как константу):
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+P^{\prime}\left(w\right)=15w^{4}-75w^{2}+60=15\left(w^{4}-5w^{2}+4\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Решим уравнение 
+\begin_inset Formula $P^{\prime}\left(w\right)=0$
+\end_inset
+
+ как биквадратное, то есть обозначим 
+\begin_inset Formula $y=w^{2}$
+\end_inset
+
+ и получим квадратное уравнение: 
+\begin_inset Formula 
+\[
+15\left(y^{2}-5y+4\right)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Решая это уравнение (так как сумма коэффициентов равна нулю, то одним из
+ корней будет 
+\begin_inset Formula $y=1$
+\end_inset
+
+, а вторым — 
+\begin_inset Formula $y=4$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Можно было бы вынести 
+\begin_inset Quotes rld
+\end_inset
+
+секреты
+\begin_inset Quotes rrd
+\end_inset
+
+ квадратных уравнений в отдельную задачу
+\end_layout
+
+\end_inset
+
+).
+ Откуда следует, что если 
+\begin_inset Formula $w$
+\end_inset
+
+ — корень уравнение 
+\begin_inset Formula $P^{\prime}\left(w\right)=0$
+\end_inset
+
+, то 
+\begin_inset Formula $w^{2}=1$
+\end_inset
+
+ или 
+\begin_inset Formula $w^{2}=4$
+\end_inset
+
+.
+ По доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:square-root-of-reals-in-field-of-complex-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем следующие возможные значения кратных корней исходного уравнения:
+ 
+\begin_inset Formula $w=\pm1$
+\end_inset
+
+ и 
+\begin_inset Formula $w=\pm2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Подставляя эти значения в исходной уравнение, получим значения 
+\begin_inset Formula $z$
+\end_inset
+
+, при которых у уравнения 
+\begin_inset Formula $P\left(w\right)=0$
+\end_inset
+
+ будут кратные корни, а именно: 
+\begin_inset Formula $z=38$
+\end_inset
+
+, 
+\begin_inset Formula $z=-38$
+\end_inset
+
+, 
+\begin_inset Formula $z=3\cdot32-25\cdot8+60\cdot2=16$
+\end_inset
+
+ и 
+\begin_inset Formula $z=-3\cdot32+25\cdot8-60\cdot2=-16$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Из решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sample-equation-for-abel-theorem-multiple-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что при 
+\begin_inset Formula $z=\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\pm16$
+\end_inset
+
+ уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет 4 различных корня, при остальных значениях 
+\begin_inset Formula $z$
+\end_inset
+
+ это уравнение имеет 5 различных корней.
+ Таким образом, функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, выражающая корни уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+, принимает 4 различных значения при 
+\begin_inset Formula $z=\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\pm16$
+\end_inset
+
+, а при остальных значениях 
+\begin_inset Formula $z$
+\end_inset
+
+ — 5 различных значения.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доделать этот раздел
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
