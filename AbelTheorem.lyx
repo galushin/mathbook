@@ -88137,7 +88137,7 @@ noprefix "false"
 .
 \end_layout
 
-\begin_layout Solution
+\begin_layout Standard
 Из решения задачи 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -88202,6 +88202,1116 @@ noprefix "false"
 \end_inset
 
  — 5 различных значения.
+\end_layout
+
+\begin_layout Standard
+Докажем сначала, что при малом изменении параметра 
+\begin_inset Formula $z$
+\end_inset
+
+ корни уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ изменяются также мало.
+ Более точно это свойство выражено в следующей задаче.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:small-change-in-parameter-leads-to-small-changes-of-roots"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ — произвольное комплексное число и 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — один из корней уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+.
+ Рассмотрим круг сколь угодно малого радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+.
+ Доказать, что существует такое действительное число 
+\begin_inset Formula $\rho>0$
+\end_inset
+
+, что если 
+\begin_inset Formula $\left|z_{1}-z_{0}\right|<\rho$
+\end_inset
+
+, то в рассматриваемом круге лежит хотя бы один корень уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и при 
+\begin_inset Formula $z=z_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ выражается корни уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+ и пусть 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — одно из значений 
+\begin_inset Formula $w\left(z_{0}\right)$
+\end_inset
+
+.
+ Тогда из результатов задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:small-change-in-parameter-leads-to-small-changes-of-roots"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ вытекает, что если 
+\begin_inset Formula $z$
+\end_inset
+
+ движется непрерывно по некоторой кривой, начинающейся в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то можно так выбираться одно из значений 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, чтобы точка 
+\begin_inset Formula $w$
+\end_inset
+
+ также двигалась непрерывно по некоторой кривой, начинающейся в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+.
+ Другими словами, функцию 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ можно определить по непрерывности вдоль любой кривой 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Если при этом кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ не проходит через точки разветвления и неоднозначности (смотри определения
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:branching-points"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:point-of-ambiguity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, то функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ определяется по непрерывности вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ однозначно.
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:branching-and-ambiguity-points-of-sample-function-of-Abel-theorem"
+
+\end_inset
+
+Доказать, что точки, отличные от 
+\begin_inset Formula $z=\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\pm16$
+\end_inset
+
+ не могут быть точками разветвления и точками неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, выражающей корни уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ — функция, выражающая корни уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Являясь одной из алгебраических функций
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Многозначная функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ называется 
+\emph on
+алгебраической
+\emph default
+, если она выражает через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+ все корни некоторого уравнения 
+\begin_inset Formula 
+\[
+a_{n}\left(z\right)w^{n}+a_{1}\left(z\right)w^{n-1}+\dots+a_{n}\left(z\right)=0,
+\]
+
+\end_inset
+
+ в котором все 
+\begin_inset Formula $a_{i}\left(z\right)$
+\end_inset
+
+ — многочлены от 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Все алгебраические функции являются аналитическими.
+\end_layout
+
+\end_inset
+
+, функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ является 
+\begin_inset Quotes rld
+\end_inset
+
+достаточно хорошей
+\begin_inset Quotes rrd
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на раздел 3.10
+\end_layout
+
+\end_inset
+
+, то есть она обладает свойством монодромии.
+ Поэтому для функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ можно построить риманову поверхность (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки на задачи 309 и 310
+\end_layout
+
+\end_inset
+
+).
+ Эта риманова поверхность будет иметь, очевидно, 5 листов.
+\end_layout
+
+\begin_layout Standard
+В силу результата задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:branching-and-ambiguity-points-of-sample-function-of-Abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ точками разветвления и неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ могут быть только точки 
+\begin_inset Formula $z=\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\pm16$
+\end_inset
+
+, но пока не ясно, являются ли они таковыми.
+\end_layout
+
+\begin_layout Problem
+Пусть известно, что точка 
+\begin_inset Formula $z_{0}=38$
+\end_inset
+
+ (или 
+\begin_inset Formula $z_{0}=-38$
+\end_inset
+
+, или 
+\begin_inset Formula $z_{0}=\pm16$
+\end_inset
+
+) являются точками разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, выражающей корни уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Как соединяются листы римановой поверхности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ (точнее, на разрезе, проходящем из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в бесконечность; 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на замечание 2 на странице 101
+\end_layout
+
+\end_inset
+
+)?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ — функция, выражающая корни уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Пусть, кроме того, 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ — произвольные точки, отличные от 
+\begin_inset Formula $z=\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\pm16$
+\end_inset
+
+, а 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ — любые их образ при отображении 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Доказать, что можно провести непрерывную кривую из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ в точку 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ так, чтобы она не проходила через точки 
+\begin_inset Formula $z=\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\pm16$
+\end_inset
+
+ и чтобы её непрерывный образ, начинающийся в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+, оканчивался в точке 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что все четыре точки 
+\begin_inset Formula $z=\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\pm16$
+\end_inset
+
+ являются точками разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Как может выглядеть схема римановой поверхности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+? Нарисовать все различные варианты (различными считаем те схемы, которые
+ нельзя получить друг из друга перестановкой листов и точек разветвления).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти группу Галуа функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, выражающей корни уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Доказать, что функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, выражающей корни уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+, не может быть выражена в радикалах.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:algebraic-equation-of-order-5-is-not-radical-solvable"
+
+\end_inset
+
+Доказать, что общее уравнение алгебраическое уравнение пятой степени 
+\begin_inset Formula 
+\[
+a_{0}w^{5}+a_{1}w^{4}+a_{2}w^{3}+a_{3}w^{2}+a_{4}w+a_{5}=0,
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{3}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{4}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{5}$
+\end_inset
+
+ — комплексные параметры и 
+\begin_inset Formula $a_{0}\neq0$
+\end_inset
+
+) неразрешимо в радикалах, то есть не существует формулы, выражающей корни
+ этого уравнения через коэффициенты с помощью операций сложения, вычитания,
+ умножения, деления, возведения в натуральную степень и извлечения корней
+ натуральной степени.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:algebraic-equation-of-order-greater-then-5-is-not-radical-solvable"
+
+\end_inset
+
+Рассматривая уравнение 
+\begin_inset Formula 
+\[
+\left(3w^{5}-25w^{3}+60w-z\right)w^{n-5}=0,
+\]
+
+\end_inset
+
+ доказать, что при 
+\begin_inset Formula $n>5$
+\end_inset
+
+ общее алгебраическое уравнение степени 
+\begin_inset Formula $n$
+\end_inset
+
+ неразрешимо в радикалах.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Результаты задач 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:algebraic-equation-of-order-5-is-not-radical-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:algebraic-equation-of-order-greater-then-5-is-not-radical-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ составляют основное утверждение данной книги.
+ Нами доказана следующая теорема.
+\end_layout
+
+\begin_layout Theorem
+(Абель).
+ При 
+\begin_inset Formula $n\ge5$
+\end_inset
+
+ общее алгебраическое уравнение степени 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+a_{0}w^{n}+a_{1}w^{n-1}+\dots+a_{n-1}w+a_{n}=0,
+\]
+
+\end_inset
+
+ неразрешимо в радикалах.
+\end_layout
+
+\begin_layout Remark
+Во 
+\begin_inset Quotes rld
+\end_inset
+
+Введении
+\begin_inset Quotes rrd
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ была получена формула Кардано для решения общего алгебраического уравнения
+ третьей степени.
+ Причём корнями уравнения являлись не все значения, задаваемые этой формулой,
+ а лишь те, для которых выполнялось некоторое дополнительное условие.
+ Поэтому может возникнуть вопрос, нельзя ли и общего уравнения степени 
+\begin_inset Formula $n$
+\end_inset
+
+ (
+\begin_inset Formula $n\ge5$
+\end_inset
+
+) построить формулу в радикалах так, чтобы его корни являлись бы лишь частью
+ значений, задаваемых формулой.
+ Покажем, что этого нельзя сделать уже для уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Действительно, если значения функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, выражающей корни уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+ являются часть значений некоторой функции 
+\begin_inset Formula $w_{1}\left(z\right)$
+\end_inset
+
+, выражающейся в радикалах, то риманова поверхность функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ является отдельной частью римановой поверхности функции 
+\begin_inset Formula $w_{1}\left(z\right)$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа Галуа функции 
+\begin_inset Formula $w_{1}\left(z\right)$
+\end_inset
+
+, то каждой подстановке группы 
+\begin_inset Formula $G$
+\end_inset
+
+ соответствует подстановка пяти листов, относящихся к 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Это отображение является гомоморфизмом группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $S_{5}$
+\end_inset
+
+.
+ Так как группа 
+\begin_inset Formula $S_{5}$
+\end_inset
+
+ неразрешима, то и группа 
+\begin_inset Formula $G$
+\end_inset
+
+ неразрешима (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на задачу 163
+\end_layout
+
+\end_inset
+
+).
+ С другой стороны, группа 
+\begin_inset Formula $G$
+\end_inset
+
+ должна быть разрешима как группа Галуа для функции, выражающейся в радикалах.
+ Противоречие.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Из замечания на странице 114 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ вытекает, что теорема Абеля остаётся справедливой, если кроме радикалов
+ разрешить использовать и некоторые другие функции, например любые однозначные
+ аналитические функции (
+\begin_inset Formula $e^{z}$
+\end_inset
+
+, 
+\begin_inset Formula $\sin z$
+\end_inset
+
+ и так далее), функцию 
+\begin_inset Formula $\mathrm{Ln}z$
+\end_inset
+
+ и некоторые другие.
+\end_layout
+
+\begin_layout Remark
+Рассмотрим уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ только в области действительных чисел.
+ Пусть функция 
+\begin_inset Formula $y\left(z\right)$
+\end_inset
+
+ выражает действительные корни уравнения 
+\begin_inset Formula 
+\[
+3y^{5}-25y^{3}+60y-x=0
+\]
+
+\end_inset
+
+ через действительный параметр 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Нельзя ли функцию 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ выразить в радикалах? Оказывается, что нельзя.
+ Для тех, кто знаком с курсом теории аналитических функций укажем, что это
+ вытекает из теоремы об аналитическом продолжении.
+ Действительно, функция 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, выражающая корни уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ через параметр 
+\begin_inset Formula $z$
+\end_inset
+
+, является аналитической функцией.
+ Поэтому, если бы функция 
+\begin_inset Formula $y\left(x\right)$
+\end_inset
+
+ выражалась бы в радикалах, то соответствующая формула, рассматриваемая
+ в области комплексных чисел, задавала бы, в силу теоремы об аналитическом
+ продолжении, функцию 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ выражалась бы в радикалах.
+\end_layout
+
+\begin_layout Remark
+Следовательно, теорема Абеля останется справедливой и в том случае, если
+ рассматривать только действительной корни общего алгебраического уравнения
+ степени 
+\begin_inset Formula $n$
+\end_inset
+
+ (
+\begin_inset Formula $n\ge5$
+\end_inset
+
+) при всевозможных действительных значениях коэффициентов.
+ При этом, в силу замечания 2
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, она останется справедливой даже в том случае, если кроме радикалов разрешить
+ использовать некоторые другие функции, допускающие однозначное аналитическое
+ продолжение (
+\begin_inset Formula $e^{z}$
+\end_inset
+
+, 
+\begin_inset Formula $\sin z$
+\end_inset
+
+ и так далее), функцию 
+\begin_inset Formula $\ln z$
+\end_inset
+
+ и некоторые другие.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Класс алгебраических функций 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на сноску на странице 115
+\end_layout
+
+\end_inset
+
+ является достаточно богатым и интересным классом.
+ В частности, можно показать, что все функции, выражающиеся в радикалах,
+ являются алгебраическими.
+ Мы доказали, что любая функция, выражающаяся в радикалах, имеет разрешимую
+ группу Галуа (теорема 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:galois-group-of-radical-expression-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Оказывается, что если ограничиться алгебраическими функциями, то будет
+ верно и обратное утверждение: если группа Галуа некоторой алгебраической
+ функции разрешима, то эта функция выражается в радикалах.
+ Таким образом, алгебраическая функция выражается в радикалах тогда и только
+ тогда, когда её группа Галуа разрешима.
+ Этот результат является частным случаем общей теории Галуа (смотри например
+ Чеботарёв, Н.Г.
+ Основы теории Галуа, ОНТИ — ГТТИ, 1934).
 \end_layout
 
 \begin_layout Standard
