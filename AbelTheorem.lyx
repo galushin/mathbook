@@ -88813,6 +88813,12 @@ status open
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:sample-equation-cant-be-radical-solved"
+
+\end_inset
+
 Доказать, что функция 
 \begin_inset Formula $w\left(z\right)$
 \end_inset
@@ -88854,7 +88860,7 @@ name "prob:algebraic-equation-of-order-5-is-not-radical-solvable"
 
 \end_inset
 
-Доказать, что общее уравнение алгебраическое уравнение пятой степени 
+Доказать, что общее алгебраическое уравнение пятой степени 
 \begin_inset Formula 
 \[
 a_{0}w^{5}+a_{1}w^{4}+a_{2}w^{3}+a_{3}w^{2}+a_{4}w+a_{5}=0,
@@ -88897,16 +88903,53 @@ a_{0}w^{5}+a_{1}w^{4}+a_{2}w^{3}+a_{3}w^{2}+a_{4}w+a_{5}=0,
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Докажем от противного.
+ Пусть подобная формула существует.
+ Тогда, положив в этой формуле 
+\begin_inset Formula $a_{0}=3$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+, 
+\begin_inset Formula $a_{1}=a_{3}=0$
+\end_inset
+
+, 
+\begin_inset Formula $a_{2}=-25$
+\end_inset
+
+, 
+\begin_inset Formula $a_{4}=60$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{5}=z_{0}$
+\end_inset
+
+ мы получим выражение в радикалах для корней уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Но, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sample-equation-cant-be-radical-solved"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+ это невозможно.
+ Полученное противоречие означает, что исходное предположение было неверным
+ и не существует выражения в радикалах для корней общего алгебраического
+ уравнения пятой степени.
 \end_layout
 
 \begin_layout Problem
@@ -89312,19 +89355,6 @@ noprefix "false"
  Этот результат является частным случаем общей теории Галуа (смотри например
  Чеботарёв, Н.Г.
  Основы теории Галуа, ОНТИ — ГТТИ, 1934).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Доделать этот раздел
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
