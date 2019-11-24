@@ -88922,7 +88922,7 @@ a_{0}w^{5}+a_{1}w^{4}+a_{2}w^{3}+a_{3}w^{2}+a_{4}w+a_{5}=0,
 \end_inset
 
  и 
-\begin_inset Formula $a_{5}=z_{0}$
+\begin_inset Formula $a_{5}=z$
 \end_inset
 
  мы получим выражение в радикалах для корней уравнения 
@@ -88979,16 +88979,99 @@ name "prob:algebraic-equation-of-order-greater-then-5-is-not-radical-solvable"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Корнями данного уравнения являются 
+\begin_inset Formula $w=0$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ и корни уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Если бы для корней рассматриваемого уравнения (кроме 
+\begin_inset Formula $w=0$
+\end_inset
 
+) существовало выражение в радикалах, то и для корней уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ существовало бы выражение в радикалах, а это противоречит результатам задачи
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:sample-equation-cant-be-radical-solved"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, рассматриваемое уравнение неразрешимо в радикалах.
+\end_layout
+
+\begin_layout Solution
+Если бы общее алгебраическое уравнение степени 
+\begin_inset Formula $n$
+\end_inset
+
+ при 
+\begin_inset Formula $n>5$
+\end_inset
+
+ было бы разрешимо в радикалах, то подставив в это выражение для корней
+ 
+\begin_inset Formula $a_{0}=3$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1}=a_{3}=0$
+\end_inset
+
+, 
+\begin_inset Formula $a_{2}=-25$
+\end_inset
+
+, 
+\begin_inset Formula $a_{4}=60$
+\end_inset
+
+, 
+\begin_inset Formula $a_{5}=z$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{k}=0$
+\end_inset
+
+ при 
+\begin_inset Formula $k>5$
+\end_inset
+
+ мы бы получили выражение в радикалах для указанного в условиях задачи уравнения.
+ Но по доказанному выше такого выражения существовать не может.
+ Таким образом, общее алгебраической уравнение степени 
+\begin_inset Formula $n$
+\end_inset
+
+ при 
+\begin_inset Formula $n>5$
+\end_inset
+
+ неразрешимо в радикалах.
 \end_layout
 
 \begin_layout Standard
