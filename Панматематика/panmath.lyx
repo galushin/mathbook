@@ -115,11 +115,11 @@
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\text{\ensuremath{\mathrm{Z}}}$
+\begin_inset Formula $\mathbb{\mathbb{Z}}$
 \end_inset
 
  — множество целых чисел, 
-\begin_inset Formula $\mathrm{Z}=\left\{ \dots,-4,-3,-2,-1,0,1,2,3,4,\dots\right\} $
+\begin_inset Formula $\mathrm{\mathbb{\mathbb{Z}}}=\left\{ \dots,-4,-3,-2,-1,0,1,2,3,4,\dots\right\} $
 \end_inset
 
 .
@@ -175,6 +175,277 @@
 .
  Что такое группа мы рассмотрим в следующем блоке на примере целых чисел,
  исходя из идеи, что все математические идеи нужно вводить сразу же.
+\end_layout
+
+\begin_layout Section
+Что такое группа
+\end_layout
+
+\begin_layout Standard
+Итак, что такое группа? И всё время помните, что вы знаете только целые
+ числа.
+ Целые числа образуют группу по следующим причинам.
+ А потом мы абстрагируемся от целых чисел.
+\end_layout
+
+\begin_layout Standard
+Целые числа — это некоторое множество, любые элементы которых можно складывать
+ друг с другом 
+\begin_inset Formula $\left(\mathbb{Z},+\right)$
+\end_inset
+
+.
+ Сложение обладает несколькими свойствами: 
+\begin_inset Formula $a+b=b+a$
+\end_inset
+
+.
+ Но, как ни странно, это свойство в определение группы не входит, а группы,
+ которые обладают этим свойством носят специальное название — коммутативные
+ или Абелевы.
+ Это равенство следует из геометрических соображений
+\end_layout
+
+\begin_layout Standard
+Второе свойство: 
+\begin_inset Formula $\left(a+b\right)+c=a+\left(b+c\right)$
+\end_inset
+
+.
+ Это наглядно очевидно для целых чисел.
+\end_layout
+
+\begin_layout Standard
+Есть некоторое специальное число 
+\begin_inset Formula $0$
+\end_inset
+
+, которое обладает следующим свойством 
+\begin_inset Formula $a+0=0+a=a$
+\end_inset
+
+.
+ Ноль при сложении ничего не меняет.
+ Это называется нейтральный элемент группы.
+\end_layout
+
+\begin_layout Standard
+Для любого целого 
+\begin_inset Formula $a$
+\end_inset
+
+ существует противоположное ему 
+\begin_inset Formula $-a$
+\end_inset
+
+, то есть такое, которое его нейтрализует 
+\begin_inset Formula $a+\left(-a\right)=\left(-a\right)+a=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если мы возьмем эти три аксиомы (свойства) и будем их изучать их безотносительно
+ к тому, что такое целые числа и сложение, а просто есть какое-то множество
+ и какая-то операция.
+ Неважно, конечное или бесконечное.
+ Множество 
+\begin_inset Formula $G$
+\end_inset
+
+, с элементами можно проделывать операцию 
+\begin_inset Formula $*$
+\end_inset
+
+: чисто абстрактное действие, которое выполнимо с любыми элементами 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Заменив в описанных выше свойствах плюс на звездочку, мы можем изучать
+ такую абстрактную группу.
+ Многие выводы можно сделать для любых таких множеств, независимо от природы
+ элементов, а не только для целых чисел.
+\end_layout
+
+\begin_layout Section
+Целые числа как группа
+\end_layout
+
+\begin_layout Standard
+Мы будем их изучать немного необычно: как группу.
+ Потом мы соберём все плоды с этого дерева, сейчас мы его посадим.
+ Мы сажаем такое дерево, у себя в голове, что целые числа — это группа,
+ и задавать надо теоретико-групповые вопросы.
+ Если в целых числах такие подмножества 
+\begin_inset Formula $\mathbb{\mathbb{Z}}\supset A$
+\end_inset
+
+, которые то же образуют группу относительно той же операции сложения 
+\begin_inset Formula $\left(A,+\right)$
+\end_inset
+
+, то есть подгруппы.
+ Операция не выводит за рамки группы.
+\end_layout
+
+\begin_layout Standard
+Одну такую подгруппу можно угадать.
+ Это множество 
+\begin_inset Formula $\left\{ 0\right\} $
+\end_inset
+
+.
+ Есть ли другие подгруппы?
+\end_layout
+
+\begin_layout Standard
+Предположим, что подгруппа содержит некоторое число 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+.
+ Я сразу могу сказать, что если подгруппа содержит 
+\begin_inset Formula $b$
+\end_inset
+
+, то она содержит и ноль: 
+\begin_inset Formula $b-b=0$
+\end_inset
+
+.
+ Любая подгруппа целых чисел содержит ноль.
+ Подгруппа точно содержит 
+\begin_inset Formula $\left\{ -b,0,b\right\} $
+\end_inset
+
+.
+ Если мы можем вычесть из нуля 
+\begin_inset Formula $b$
+\end_inset
+
+, то можем вычесть 
+\begin_inset Formula $b$
+\end_inset
+
+ и из результата.
+ Это самый главный божий дар, который есть у людей — рекурсия.
+\end_layout
+
+\begin_layout Standard
+Если мы рассматриваем выражение 
+\begin_inset Formula $b+b+b$
+\end_inset
+
+, то мы можем вычислить его двумя способами: 
+\begin_inset Formula $\left(b+b\right)+b$
+\end_inset
+
+ и 
+\begin_inset Formula $b+\left(b+b\right)$
+\end_inset
+
+.
+ Вдруг окажется, что это два разных числа? Но нет, они будут одинаковыми
+ в силу аксиомы ассоциативности.
+\end_layout
+
+\begin_layout Standard
+При 
+\begin_inset Formula $b=1$
+\end_inset
+
+ получим все целые числа.
+ Но можно взять 
+\begin_inset Formula $b$
+\end_inset
+
+ любое целое! Например, 
+\begin_inset Formula $b=13$
+\end_inset
+
+.
+ Получаем кратные 
+\begin_inset Formula $13$
+\end_inset
+
+.
+ Мы приходим к операции умножения.
+ Умножить 
+\begin_inset Formula $b$
+\end_inset
+
+ на 
+\begin_inset Formula $3$
+\end_inset
+
+ это значит сложить 
+\begin_inset Formula $b$
+\end_inset
+
+ три раза: 
+\begin_inset Formula $3\cdot b=b+b+b$
+\end_inset
+
+.
+ Умножить 
+\begin_inset Formula $b$
+\end_inset
+
+ на 
+\begin_inset Formula $-4$
+\end_inset
+
+ — это взять 4 раза 
+\begin_inset Formula $-b$
+\end_inset
+
+: 
+\begin_inset Formula $\left(-4\right)\cdot b=\left(-b\right)+\left(-b\right)+\left(-b\right)+\left(-b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассматривая естественную конструкцию подгруппы в целых числах, мы пришли
+ к понятию произведения целых чисел.
+ Произведение — это следствие чисто групповой идеи.
+ Группа является базовым понятием для всей современной математики.
+ Поэтому с него и надо начинать, именно таким образом нужно изучать.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n\cdot b$
+\end_inset
+
+ — это сумма 
+\begin_inset Formula $n$
+\end_inset
+
+ слагаемых, каждое из которых равно 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+А если мы рассмотрим 
+\begin_inset Formula $b\cdot n$
+\end_inset
+
+, то это 
+\begin_inset Formula $b$
+\end_inset
+
+ слагаемых, каждое из которых равно 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Это одно и то же?
 \end_layout
 
 \end_body
