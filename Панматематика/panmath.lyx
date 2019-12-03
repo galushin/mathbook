@@ -584,5 +584,252 @@
  Докажем это.
 \end_layout
 
+\begin_layout Section
+Подгруппы целых чисел
+\end_layout
+
+\begin_layout Standard
+Мы изучаем подгруппы внутри целых чисел, то есть подмножества, замкнутые
+ относительно операций сложения и вычитания.
+\end_layout
+
+\begin_layout Standard
+Мы уже столкнулись с тем, что если мы возьмем любое число 
+\begin_inset Formula $b$
+\end_inset
+
+, то все кратные этого числа образуют подгруппу.
+ И мы заметили, что эта группа подозрительно похожа на группу целых чисел.
+ Позже мы скажем 
+\begin_inset Quotes rld
+\end_inset
+
+изоморфна
+\begin_inset Quotes rrd
+\end_inset
+
+, а пока мы не будем произносить это страшное слово.
+ Попробуем доказать, что любая подгруппа имеет такой вид.
+\end_layout
+
+\begin_layout Standard
+Подгруппа — непустое множество.
+ Если кроме нуля в этой подгруппе ничего нет, то мы получаем 
+\begin_inset Formula $\left\{ 0\right\} $
+\end_inset
+
+.
+ Если же есть что-то кроме нуля: 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, то есть и противоположный элемент 
+\begin_inset Formula $-b$
+\end_inset
+
+.
+ Соответственно, если есть какой-то не нулевой элемент, то есть и положительный.
+ Теперь мы возьмём самый маленький положительный элемент 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Докажем, что все остальные элементы являются его кратными.
+ Пусть 
+\begin_inset Formula $b$
+\end_inset
+
+ не кратен 
+\begin_inset Formula $c$
+\end_inset
+
+, то есть 
+\begin_inset Formula $b\neq nc$
+\end_inset
+
+.
+ Так как вместе с 
+\begin_inset Formula $b$
+\end_inset
+
+ в подгруппу входит и 
+\begin_inset Formula $-b$
+\end_inset
+
+, то мы можем сразу считать, что 
+\begin_inset Formula $b$
+\end_inset
+
+ — положительный.
+ Пусть 
+\begin_inset Formula $b$
+\end_inset
+
+ лежит между 
+\begin_inset Formula $nc$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(n+1\right)c$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $b-nc$
+\end_inset
+
+ тоже принадлежит подгруппе.
+ Так как 
+\begin_inset Formula $nc<b<\left(n+1\right)c$
+\end_inset
+
+, то 
+\begin_inset Formula $0<b-nc<c$
+\end_inset
+
+, таким образом, мы нашли положительный элемент, меньший 
+\begin_inset Formula $c$
+\end_inset
+
+, что противоречит определению этого элемента 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Значит, предположение, что 
+\begin_inset Formula $b$
+\end_inset
+
+ не кратно 
+\begin_inset Formula $c$
+\end_inset
+
+ приводит к противоречию и не верно.
+ Значит любая подгруппа целых чисел является одной из подгрупп вида 
+\begin_inset Formula $b\cdot\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Деление с остатком
+\end_layout
+
+\begin_layout Standard
+Важнейшая операция с целыми числами, унаследованная нами от древней Греции.
+ Пусть имеются числа 
+\begin_inset Formula $c$
+\end_inset
+
+ и 
+\begin_inset Formula $b>c$
+\end_inset
+
+, мы искали кратные 
+\begin_inset Formula $c$
+\end_inset
+
+, которые с двух сторон охватывают 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Если бы нам повезло, то 
+\begin_inset Formula $b$
+\end_inset
+
+ могло бы просто быть кратным 
+\begin_inset Formula $c$
+\end_inset
+
+, тогда бы мы сказали, что 
+\begin_inset Formula $b$
+\end_inset
+
+ просто делится на 
+\begin_inset Formula $c$
+\end_inset
+
+ и всё.
+ Если нам не повезло, то 
+\begin_inset Formula $b$
+\end_inset
+
+ не кратное 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Тогда есть аксиома (или просто визуально видно), что существует целое 
+\begin_inset Formula $n$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $nc\le b<\left(n+1\right)c$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $d=b-nc$
+\end_inset
+
+ называется остатком от деления 
+\begin_inset Formula $b$
+\end_inset
+
+ на 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Остаток, по соглашению, всегда положителен.
+ Но должен предупредить, что лучше избавиться от этого отягощающего фантома
+ из школьной программы.
+ Остаток, может быть и больше и меньше нулю, но по модулю он меньше 
+\begin_inset Formula $c$
+\end_inset
+
+: 
+\begin_inset Formula $\left|d\right|<c$
+\end_inset
+
+.
+ Когда вы избавитесь от того, что учат в школе, то окажется, что любое число
+ делиться с остатком двумя способами 
+\begin_inset Formula $b=nc+d$
+\end_inset
+
+ и 
+\begin_inset Formula $n=\left(n+1\right)c-\left(c-d\right)$
+\end_inset
+
+.
+ Оба способа, в общем-то равноправны с точки зрения теории делимости.
+ Самое важное, чтобы остаток по модулю был бы меньше, чем то на что мы делим.
+ Посмотрим, что мы узнали, что если есть два целых числа 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c\neq0$
+\end_inset
+
+, то всегда мы можем разделить 
+\begin_inset Formula $b$
+\end_inset
+
+ на 
+\begin_inset Formula $c$
+\end_inset
+
+ нацело или с небольшим остатком.
+ Этот остаток будет всегда меньше 
+\begin_inset Formula $c$
+\end_inset
+
+ по модулю.
+\end_layout
+
 \end_body
 \end_document
