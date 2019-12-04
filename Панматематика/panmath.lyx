@@ -831,5 +831,188 @@
  по модулю.
 \end_layout
 
+\begin_layout Section
+На подступах к основной теореме арифметики (ОТА)
+\end_layout
+
+\begin_layout Standard
+Возьмём любое целое число, кроме нуля, единицы и минус единицы.
+ Например, 36.
+ И давайте попробуем понять, кратно ли оно кому-нибудь до него.
+ В принципе, можно, например: 
+\begin_inset Formula $36=12+12+12=3\cdot12$
+\end_inset
+
+.
+ А тройка кратна каким-нибудь из предыдущих чисел: двойке? Тогда мы называем
+ 3 простым числом.
+ Простое число — это такое, которое делится только на единицу и само на
+ себя (это самые простые случаи).
+ А 12? 12 кратно двум.
+ 
+\begin_inset Formula $36=3\cdot12=3\cdot2\cdot6$
+\end_inset
+
+.
+ А дальше можно продолжить этот процесс? У двойки допустимых предыдущих
+ нет.
+ Остаётся 6, которая кратна 2 и 3.
+ 
+\begin_inset Formula $36=3\cdot2\cdot2\cdot3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+А в другой комнате сидит другой человек, который говорит 
+\begin_inset Formula $36=6\cdot6=2\cdot3\cdot2\cdot3$
+\end_inset
+
+.
+ Как видим, разложения состоят из одних и тех же множителей.
+ Перемешанных по разному, но мы уже знаем, что от перестановки множителей
+ произведение не меняется.
+\end_layout
+
+\begin_layout Standard
+Ещё кто-то мог заметить, что 
+\begin_inset Formula $36=4\cdot9$
+\end_inset
+
+ и он нашёл совершенно новое разложение.
+ Но, на самом деле, ничего нового в нём нет, так как 
+\begin_inset Formula $4=2\cdot2$
+\end_inset
+
+ и 
+\begin_inset Formula $9=3\cdot3$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $36=4\cdot9=2\cdot2\cdot3\cdot3$
+\end_inset
+
+.
+ Опять все то же самое.
+ Но может быть нам пока так везёт.
+ Может быть какой-нибудь зверь, типа 1728 или что-то в этом духе, получится
+ разными способами.
+ Экспериментально человечеству не удалось обнаружить, чтобы два разных набора
+ простых чисел (кроме просто перестановки) давали один и тот же результат.
+\end_layout
+
+\begin_layout Standard
+В детских учебниках пишут, что это вот такое свойство целых чисел и просто
+ примите его как данность.
+ Но мы ничего как данность принимать не будем.
+ Мы докажем его как основную теорему арифметики.
+\end_layout
+
+\begin_layout Standard
+Мы могли бы ещё написать 
+\begin_inset Formula $36=\left(-3\right)\cdot\left(-2\right)\cdot2\cdot3$
+\end_inset
+
+.
+ Мы могли бы сказать, что это то же, что и 
+\begin_inset Formula $36=3\cdot2\cdot2\cdot3$
+\end_inset
+
+.
+ Но это нужно сначала чётко сформулировать.
+ Мы можем заметить, что 3 и 
+\begin_inset Formula $-3$
+\end_inset
+
+ ведут себя одинаково относительно умножения.
+ Все кратные 3 — это кратные и 
+\begin_inset Formula $-3$
+\end_inset
+
+, и так далее.
+ Нужно как-то математически точно сформулировать, что мы имеем в виду, когда
+ говорим, что любое число существенно единственным образом раскладывается
+ на произведение простых.
+ Ну и конечно надо бы это доказать.
+ И для доказательства нам придётся ещё довольно сильно попотеть.
+\end_layout
+
+\begin_layout Section
+Формулировка основной теоремы арифметики
+\end_layout
+
+\begin_layout Standard
+Давайте оттачивать наш логический аппарат и сформулируем её строже, чем
+ всё, что делали до этого.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $N\in\mathbb{Z}\setminus\left\{ -1,0,1\right\} $
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $N=p_{1}\cdot p_{2}\cdot\dots\cdot p_{n}=q_{1}\cdot q_{2}\cdot\dots\cdot q_{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ и 
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ — простые числа.
+ То
+\end_layout
+
+\begin_layout Standard
+1) 
+\begin_inset Formula $n=m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2) Существует перестановка набора 
+\begin_inset Formula $p_{1},p_{2},\dots,p_{n}$
+\end_inset
+
+, такая, что после неё получается 
+\begin_inset Formula $p_{i}^{\prime}=\pm q_{i}$
+\end_inset
+
+.
+ Иными словами, количества сомножителей совпадают и для любого 
+\begin_inset Formula $i$
+\end_inset
+
+ существует 
+\begin_inset Formula $j$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $p_{i}=\pm q_{j}$
+\end_inset
+
+.
+ Причём все 
+\begin_inset Formula $j$
+\end_inset
+
+ разные.
+\end_layout
+
+\begin_layout Standard
+Будем доказывать.
+ Это теорема, на которой как на ките, стоит оставшаяся часть математики.
+ Так что сейчас мы её будем строго, формально доказывать.
+ Это потребует некоторого интеллектуального усилия.
+\end_layout
+
 \end_body
 \end_document
