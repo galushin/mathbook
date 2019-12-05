@@ -1245,5 +1245,465 @@
  Это утверждение будет ключевым при доказательстве ОТА.
 \end_layout
 
+\begin_layout Section
+Определение группы
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+, не равные нулю одновременно, то есть неверно, что оба равны нулю.
+ Тогда существует такое целое 
+\begin_inset Formula $d>0$
+\end_inset
+
+, что выполнены два свойства:
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $d|a$
+\end_inset
+
+ и 
+\begin_inset Formula $d|b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ Существуют 
+\begin_inset Formula $n,m\in\mathbb{Z}$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $d=ma+nb$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из пункта 2 следует, что 
+\begin_inset Formula $d$
+\end_inset
+
+ — наибольший общий делитель 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $a=p$
+\end_inset
+
+ — простое и 
+\begin_inset Formula $p\nmid b$
+\end_inset
+
+, то существуют такие 
+\begin_inset Formula $n,m\in\mathbb{Z}$
+\end_inset
+
+, что 
+\begin_inset Formula $mp+nb=1$
+\end_inset
+
+.
+ Это основной кирпичик для ОТА.
+ Почему равно единице? Потому что какой может быть общий делитель у простого
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ У 
+\begin_inset Formula $p$
+\end_inset
+
+ делители 
+\begin_inset Formula $\left\{ -p,-1,1,p\right\} $
+\end_inset
+
+, а у 
+\begin_inset Formula $b$
+\end_inset
+
+ нет делителя 
+\begin_inset Formula $p$
+\end_inset
+
+, поэтому у 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ нет никаких нетривиальных общих делителей.
+\end_layout
+
+\begin_layout Standard
+Теперь мы можем перейти к доказательству ОТА, но я хочу злоупотребить вашим
+ вниманием.
+ Я хочу, сформулировать что такое группа чисто абстрактно.
+ Чтобы вы поняли, что целые числа — действительно группа по сложению.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+Пусть дано непустое множество 
+\begin_inset Formula $G$
+\end_inset
+
+ вместе с операцией 
+\begin_inset Formula $*$
+\end_inset
+
+ (Операция должна быть применимой для любой пары элементов 
+\begin_inset Formula $G$
+\end_inset
+
+), называется группой, если
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $\left(a*b\right)*c=a*\left(b*c\right)$
+\end_inset
+
+ — ассоциативность
+\end_layout
+
+\begin_layout Standard
+2.
+ Существует нейтральный элемент 
+\begin_inset Formula $e$
+\end_inset
+
+: 
+\begin_inset Formula $e*a=a*e=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+3.
+ Для любого 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ существует 
+\begin_inset Formula $b$
+\end_inset
+
+ (нейтрализатор) такой, что 
+\begin_inset Formula $a*b=b*a=e$
+\end_inset
+
+, он называется 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если ещё всегда 
+\begin_inset Formula $a*b=b*a$
+\end_inset
+
+, то группа называется абелевой или коммутативной.
+\end_layout
+
+\begin_layout Standard
+Все целые числа образуют абелеву группу по сложению.
+\end_layout
+
+\begin_layout Standard
+Операция в абстрактной алгебре может называться хоть горшком.
+ Если операция оказывается плюсом, то 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ обозначают 
+\begin_inset Formula $-a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Доказательство ОТА
+\end_layout
+
+\begin_layout Standard
+Последний шаг — это так называемая основная лемма.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое, тогда если 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, то 
+\begin_inset Formula $ab$
+\end_inset
+
+ тоже не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Это можно распространить на несколько чисел: если несколько чисел не делятся
+ на простое 
+\begin_inset Formula $p$
+\end_inset
+
+, то и их произведение не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Я переформулирую это утверждение в обратном виде.
+ Утверждения 
+\begin_inset Formula $A\to B$
+\end_inset
+
+ и 
+\begin_inset Formula $\bar{B}\to\bar{A}$
+\end_inset
+
+ — это одно и то же.
+ Мы потом проведём отдельный урок логических утверждений.
+\end_layout
+
+\begin_layout Standard
+Пойдём от противного.
+ Пусть есть такие 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, что 
+\begin_inset Formula $ab$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, но при этом ни 
+\begin_inset Formula $a$
+\end_inset
+
+, ни 
+\begin_inset Formula $b$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $ab$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Отсюда нужно вывести, что 
+\begin_inset Formula $b$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, то 
+\begin_inset Formula $1=am+pn$
+\end_inset
+
+ при некоторых целых 
+\begin_inset Formula $m,n$
+\end_inset
+
+.
+ 
+\begin_inset Formula $b=abm+pbn$
+\end_inset
+
+.
+ По условию 
+\begin_inset Formula $ab$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть 
+\begin_inset Formula $ab=pk$
+\end_inset
+
+, то есть 
+\begin_inset Formula $b=pkm+pbn=p\left(km+bn\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $b$
+\end_inset
+
+ — делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом, если все числа некоторого набора не делятся на 
+\begin_inset Formula $p$
+\end_inset
+
+, то и их произведение не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Переходим к доказательству ОТА
+\end_layout
+
+\begin_layout Standard
+Если ОТА не верна, то есть числа, которые разными способами представляется
+ как произведение простых.
+ Среди них есть самое маленькое, обозначим его 
+\begin_inset Formula $N$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=p_{1}\cdot\dots\cdot p_{k}=q_{1}\cdot\dots\cdot q_{l},
+\]
+
+\end_inset
+
+причём эти разложения не получаются друг из друга перестановкой, тогда 
+\begin_inset Formula $\left\{ p_{1}\cdot\dots\cdot p_{k}\right\} \cap\left\{ q_{1}\cdot\dots\cdot q_{l}\right\} =\emptyset$
+\end_inset
+
+.
+ Если есть пересечение, то на него можно сократить, и мы получили бы меньшее
+ число с двумя разными разложениями.
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ не может делиться на 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+, и вообще все 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ не делятся на 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+, но тогда и 
+\begin_inset Formula $N$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ по основной лемме.
+ Но это противоречит тому, что 
+\begin_inset Formula $N=q_{1}\cdot\left(q_{2}\cdot\dots\cdot q_{l}\right)$
+\end_inset
+
+.
+ Теорема доказана.
+\end_layout
+
 \end_body
 \end_document
