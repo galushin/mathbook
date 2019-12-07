@@ -1882,5 +1882,584 @@ N=p_{1}\cdot\dots\cdot p_{k}=q_{1}\cdot\dots\cdot q_{l},
 Вы не поверите, но это всё двести уроков примерно.
 \end_layout
 
+\begin_layout Section
+Пропущенный ролик
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Найти и записать
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Сумма Минковсого
+\end_layout
+
+\begin_layout Standard
+Начнём с алгебры 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+ Давайте ещё раз рассмотрим целые числа с научной точки зрения.
+ На прямой через равные промежутки отмечены точки, одна из которых названа
+ нулём.
+ У нас есть множество таких чисел и есть операция 
+\begin_inset Quotes rld
+\end_inset
+
+плюс
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Вы ещё скажите, что есть операция 
+\begin_inset Quotes rld
+\end_inset
+
+минус
+\begin_inset Quotes rrd
+\end_inset
+
+, но я скажу, что 
+\begin_inset Quotes rld
+\end_inset
+
+минус
+\begin_inset Quotes rrd
+\end_inset
+
+ — это операция вторичная по отношению к 
+\begin_inset Quotes rld
+\end_inset
+
+плюсу
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Почему? Потому что я всегда могу написать 
+\begin_inset Formula $a-b=a+\left(-b\right)$
+\end_inset
+
+.
+ Но вы скажите, что справа-то тоже есть минус.
+ Давайте вспомним, что такое 
+\begin_inset Formula $\left(-b\right)$
+\end_inset
+
+? Это такое целое число 
+\begin_inset Formula $c$
+\end_inset
+
+, что 
+\begin_inset Formula $b+c=c+b=0$
+\end_inset
+
+.
+ И вообще 
+\begin_inset Formula $a-b$
+\end_inset
+
+ это такое 
+\begin_inset Formula $c$
+\end_inset
+
+, что 
+\begin_inset Formula $b+c=c+b=a$
+\end_inset
+
+.
+ И когда мы говорим, что целые числа образуют группу по сложению, мы имеем
+ в виду, что есть операция, которая обладает определёнными свойствами, в
+ частности, есть ноль и для каждого есть обратный элемент, который обращает
+ исходный в ноль.
+ Это лейтмотивом пройдёт через наш курс ещё много-много раз.
+\end_layout
+
+\begin_layout Standard
+Давайте введём операцию суммирования подмножеств целых чисел.
+ Пусть я взял 
+\begin_inset Formula $\left\{ -2,1,2\right\} $
+\end_inset
+
+ и хочу сложить их с 
+\begin_inset Formula $\left\{ 0,4,5\right\} $
+\end_inset
+
+.
+ Какое подмножество будет равно сумме этих двух.
+ Делается это следующим образом: долго и нудно мы берём всевозможные суммы,
+ в которых первое слагаемое берётся из первого множества, а второе — из
+ второго.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Повторяющиеся игнорируем, вообще могло быть 9 чисел, но в данном случае
+ — 7.
+ Обозначают это следующим образом: 
+\begin_inset Formula $\left\{ -2,1,2\right\} \oplus\left\{ 0,4,5\right\} =\left\{ -2,1,2,3,5,6,7\right\} $
+\end_inset
+
+.
+ и называют 
+\begin_inset Quotes rld
+\end_inset
+
+сумма Минковского
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Операция называется 
+\begin_inset Quotes rld
+\end_inset
+
+суммированием по Минковскому
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Аналогично можно определить разность по Минковскому 
+\begin_inset Formula $A\ominus B$
+\end_inset
+
+.
+ Сразу хочу обратить внимание, что это не такое 
+\begin_inset Formula $C$
+\end_inset
+
+, что 
+\begin_inset Formula $B\oplus C=A$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+Такое определение, вообще говоря, не имеет смысла, так как двух произвольных
+ множества 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ не всегда удаётся найти такое 
+\begin_inset Formula $C$
+\end_inset
+
+, что 
+\begin_inset Formula $A=B\oplus C$
+\end_inset
+
+.
+ Так что сумма по Минковскому не обладает обратной операцией.
+ 
+\begin_inset Formula $\left\{ 0\right\} \oplus A=A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A\oplus B=B\oplus A$
+\end_inset
+
+ 
+\begin_inset Formula $\left(A\oplus B\right)\oplus C=A\oplus\left(B\oplus C\right)$
+\end_inset
+
+.
+ Подмножества целых чисел с операцией 
+\begin_inset Quotes rld
+\end_inset
+
+суммирование по Минковскому
+\begin_inset Quotes rrd
+\end_inset
+
+ группу не образуют, но образуют то, что называется 
+\begin_inset Quotes rld
+\end_inset
+
+моноид
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Зададимся вопросом, чему равно 
+\begin_inset Formula $A\oplus\emptyset$
+\end_inset
+
+? Это 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+, так как нет числа, которое можно представить в виде суммы числа из 
+\begin_inset Formula $A$
+\end_inset
+
+ и какого-то числа из пустого множества.
+ Так мы постепенно осваиваем правила формальной логики, я намеренно не выношу
+ их пока на отдельный слайд.
+ Когда-нибудь я это сделаю, но пока этого делать не нужно, мы получаем их
+ естественно, когда мы начинаем о чём-то рассуждать.
+ Вот мы начали рассуждать о том, что такое сумма по Минковскому пустого
+ и непустого множеств и мы познакомились с некоторыми правилами логики.
+\end_layout
+
+\begin_layout Section
+Остатки
+\end_layout
+
+\begin_layout Standard
+Остатки как фактор-группа.
+ В алгебре напридумано огромное количество терминов.
+ Наверное 1000.
+ Или я знаю 1000, а их 10000.
+ И основная проблема при освоении алгебры — это трудности с языком, но если
+ сразу поставить язык куда нужно, то эти термины постепенно наливаются житейским
+ смыслом.
+ Итак, все знают, что такое остатки от деления на какое-то число.
+\end_layout
+
+\begin_layout Standard
+Лемма.
+ 
+\begin_inset Formula $\left[1\oplus4\mathbb{Z}\right]+\left[2\oplus4\mathbb{Z}\right]=3\oplus4\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Правильнее конечно было бы написать 
+\begin_inset Formula $\left[\left\{ 1\right\} \oplus4\mathbb{Z}\right]+\left[\left\{ 2\right\} \oplus4\mathbb{Z}\right]=\left\{ 3\right\} \oplus4\mathbb{Z}$
+\end_inset
+
+ , но можно было бы злоупотребить обозначениями и называть соответствующие
+ множества просто 
+\begin_inset Formula $4\mathbb{Z}+1$
+\end_inset
+
+, 
+\begin_inset Formula $4\mathbb{Z}+2$
+\end_inset
+
+, 
+\begin_inset Formula $4\mathbb{Z}+3$
+\end_inset
+
+ и 
+\begin_inset Formula $4\mathbb{Z}+4=4\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ну и понятно, что эту лемму можно обобщить.
+ У нас получается очень интересная система: конечный список вот таких вот
+ подмножеств.
+ Четыре подмножества 
+\begin_inset Formula $Z$
+\end_inset
+
+, попарно непересекающиеся, арифметика Минковского которых превращает их
+ в конечную группу.
+ Которую можно обозначит 
+\begin_inset Formula $\left\{ 0,1,2,3\right\} =\mathbb{Z}/4\mathbb{Z}$
+\end_inset
+
+ и это называют фактор-группой.
+\end_layout
+
+\begin_layout Standard
+Мы уже проверили, что ноль не выводит за пределы группы.
+ Ноль есть, так как 
+\begin_inset Formula $4\mathbb{Z}$
+\end_inset
+
+ плюс (по Минковскому) любой из этих классов есть снова этот класс.
+ Эту лемму я доказывать не буду, так как это очевидно.
+ Что такое противоположное к 1? Вы скажите -1, но нужно искать в этом списке,
+ это 3 конечно.
+ Если я сложу число, которое даёт остаток 3 при делении на 4, с числом,
+ которое даёт остаток 1 при делении на 4, то я получу число, делящееся на
+ 4.
+ А 
+\begin_inset Formula $4\mathbb{Z}+2$
+\end_inset
+
+ вообще интересный, он противоположен сам себе.
+ 
+\begin_inset Formula $2+2=0$
+\end_inset
+
+ в остатках при делении на 4.
+\end_layout
+
+\begin_layout Standard
+Сначала сформулируем утверждение.
+ Любой квадрат 
+\begin_inset Formula $n\cdot n$
+\end_inset
+
+ принадлежит либо 
+\begin_inset Formula $4\mathbb{Z}$
+\end_inset
+
+, либо 
+\begin_inset Formula $4\mathbb{Z}+1$
+\end_inset
+
+, и никогда не принадлежит 
+\begin_inset Formula $4\mathbb{Z}+2$
+\end_inset
+
+, либо 
+\begin_inset Formula $4\mathbb{Z}+3$
+\end_inset
+
+.
+ Это нам пригодится при описании пифагоровых троек.
+\end_layout
+
+\begin_layout Standard
+На этих классах можно ввести ещё и операцию умножения.
+ Ввести ещё и операцию умножения, то есть ввести структуру кольца.
+ Целые числа — это кольцо.
+ Почему? Потому что можно складывать и вычитать, умножать, но не делить.
+ Фактор-группы оказываются кольцом.
+ Но к этому мы вернёмся потом, я не хочу перегружать пока фактами из алгебры.
+ Мы будем идти поэтапно.
+\end_layout
+
+\begin_layout Standard
+Любое 
+\begin_inset Formula $n$
+\end_inset
+
+ — либо чётное, либо нечётное.
+ 
+\begin_inset Formula $n\in2\mathbb{Z}\land n\in2\mathbb{Z}+1$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $n$
+\end_inset
+
+ чётное, то 
+\begin_inset Formula $n=2k$
+\end_inset
+
+ и 
+\begin_inset Formula $n^{2}=4k^{2}\in4\mathbb{Z}$
+\end_inset
+
+, если 
+\begin_inset Formula $n$
+\end_inset
+
+ нечётное, то 
+\begin_inset Formula $n=2k+1$
+\end_inset
+
+ и 
+\begin_inset Formula $n^{2}=4k^{2}+4k+1\in4\mathbb{Z}+1$
+\end_inset
+
+ .
+ Мы здесь воспользуемся формулами сокращённого умножения.
+ Мы их получим потом, когда будем говорить о геометрии, увидим, как легко
+ их можно получить.
+\end_layout
+
+\begin_layout Standard
+Теперь мы готовы к обобщению, которое состоит в том, что мы заменяем 4 на
+ произвольное число 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Красиво изобразить все 4 смежных класса.
+\end_layout
+
 \end_body
 \end_document
