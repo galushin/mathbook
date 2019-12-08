@@ -2461,5 +2461,463 @@ status open
 Красиво изобразить все 4 смежных класса.
 \end_layout
 
+\begin_layout Section
+Подгруппы 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ и операции с ними
+\end_layout
+
+\begin_layout Standard
+Подгруппы 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $m\mathbb{Z}$
+\end_inset
+
+, ещё есть выделенная подгруппа, состоящая только из нуля (можно было бы
+ сказать, что это все кратные нуля, но это уже будет формалистика какая-то).
+ Имея в виду дальнейшие обобщения, например, на произвольные Абелевы подгруппы,
+ возьмём две произвольные подгруппы 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+\SpecialChar endofsentence
+ 
+\begin_inset Formula $A,B\subset\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Повторяет, что такое подгруппа в общем случае.
+\end_layout
+
+\begin_layout Standard
+Если взять 
+\begin_inset Formula $A\oplus B$
+\end_inset
+
+, то это тоже будет подгруппа.
+ Хотелось бы, что бы для Вас это стало очевидным, но давайте сначала проверим.
+ Что такое элемент 
+\begin_inset Formula $A\oplus B$
+\end_inset
+
+, это 
+\begin_inset Formula $a+b,a\in A,b\in B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(a+b\right)+\left(c+d\right)=\left(a+c\right)+\left(b+d\right)$
+\end_inset
+
+.
+ Противоположный для него, это 
+\begin_inset Formula $-\left(a+b\right)=\left(-a\right)+\left(-b\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $0=0+0,0\in A,0\in B$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+Сумма Минковского двух подгрупп — подгруппа.
+ Но какая?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=a\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $B=b\mathbb{Z}$
+\end_inset
+
+ 
+\begin_inset Formula $A\oplus B=gcd\left(a,b\right)\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Докажем это утверждение.
+ Кстати, из этого равенства следует, что НОД можно было бы ввести чисто
+ в групповых, алгебраических терминах.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+ 1) Любой элемент из 
+\begin_inset Formula $A\oplus B$
+\end_inset
+
+, имея вид 
+\begin_inset Formula $ax+by$
+\end_inset
+
+, где 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+, делится на 
+\begin_inset Formula $gcd(a,b)$
+\end_inset
+
+, поэтому он принадлежит 
+\begin_inset Formula $gcd\left(a,b\right)\mathbb{Z}$
+\end_inset
+
+.
+ Иными словами, сумма Минковского двух подгрупп лежит внутри 
+\begin_inset Formula $gcd\left(a,b\right)\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Обратно, мы знаем, что 
+\begin_inset Formula $gcd\left(a,b\right)$
+\end_inset
+
+ представляется в виде 
+\begin_inset Formula $ma+nb$
+\end_inset
+
+, а значит он принадлежит 
+\begin_inset Formula $A\oplus B$
+\end_inset
+
+, а значит и любое его кратное принадлежит 
+\begin_inset Formula $A\oplus B$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\gcd\left(a,b\right)\mathbb{Z}\subset A\oplus B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Это очень важное, это очень красиво, это вскрывает смысл НОДа.
+\end_layout
+
+\begin_layout Standard
+Мы продолжим изучение НОДа, когда лучше разберёмся с операцией умножения
+ целых чисел.
+ А пока мы переключимся на вывод формулы Пифагоровых троек.
+ Нужна же какая-то сверхцель, свет в конце тоннеля.
+\end_layout
+
+\begin_layout Section
+Геометрическая алгебра
+\end_layout
+
+\begin_layout Standard
+Довольно прикольный раздел математики.
+ Если переставить слова, то получится 
+\begin_inset Quotes rld
+\end_inset
+
+алгебраическая геометрия
+\begin_inset Quotes rrd
+\end_inset
+
+, возможно, кто-то из тех, кто меня смотрит, может быть дойдёт.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(2k+1\right)^{2}=$
+\end_inset
+
+ Давайте увидим, чему это равно.
+ Изобразим квадрат со стороной 
+\begin_inset Formula $2k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+(в лекции показано в масштабе)
+\end_layout
+
+\begin_layout Standard
+Поэтому 
+\begin_inset Formula $\left(2k+1\right)^{2}=4k^{2}+4k+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Это типичный пример, как можно видеть алгебру.
+ Когда мы видим алгебру, мы называем это геометрической алгеброй.
+\end_layout
+
+\begin_layout Standard
+Чрез неё можно доказать, что 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Остальные формулы арифметики тоже можно так увидеть.
+ 
+\begin_inset Formula $a\left(b+c\right)=ab+ac$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a^{2}-b^{2}=\left(a-b\right)\left(a+b\right)$
+\end_inset
+
+.
+ Получается перестановкой частей чертежа.
+ Это лучше, чем заучивать формулы.
+\end_layout
+
+\begin_layout Standard
+Сейчас мы применим этот же метод, к доказательству теоремы Пифагора.
+ Это нарисовано на обложке моей книги математика для гуманитариев.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим два абсолютно одинаковых квадратов, со сторонами 
+\begin_inset Formula $a+b$
+\end_inset
+
+.
+ Дальше идёт доказательство, которое я не успеваю зарисовать.
+\end_layout
+
 \end_body
 \end_document
