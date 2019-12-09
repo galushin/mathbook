@@ -2919,5 +2919,407 @@ status open
  Дальше идёт доказательство, которое я не успеваю зарисовать.
 \end_layout
 
+\begin_layout Section
+Подготовка к пифагоровым тройкам
+\end_layout
+
+\begin_layout Standard
+Итак, мы ищем все прямоугольные треугольники с целочисленными сторонами
+ 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+: 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Начнём со следующего замечания: если взял некоторый треугольник и, например,
+ учетверил, то нет никаких сомнений, что получившийся таким образом треугольник
+ тоже будет прямоугольным и с целочисленными сторонами.
+ Конечно, это совершенно не интересно.
+ Эти треугольники подобны.
+ Если мы нашли одно решение 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+, то 
+\begin_inset Formula $na,nb,nc$
+\end_inset
+
+ — тоже решение.
+\end_layout
+
+\begin_layout Standard
+Все знаю один такой треугольник: 3,4,5.
+ Если его удвоить: 6,8,10.
+ Если утроить 9, 12, 15.
+ Все эти треугольники мы считаем одним и тем же решением.
+\end_layout
+
+\begin_layout Standard
+Если мы нашли какое-решение, то нужно искать среди всех подобных ему самый-самый
+ маленький (который все ещё с целыми сторонами).
+\end_layout
+
+\begin_layout Standard
+Это означает, что на какое бы число я не поделил 
+\begin_inset Formula $a$
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $a/d$
+\end_inset
+
+ — целое, то либо 
+\begin_inset Formula $b/d$
+\end_inset
+
+, либо 
+\begin_inset Formula $c/d$
+\end_inset
+
+ не будут целыми.
+ Иными словами 
+\begin_inset Formula $gcd\left(a,b,c\right)=1$
+\end_inset
+
+.
+ То есть эти три числа взаимно-просты в совокупности.
+\end_layout
+
+\begin_layout Standard
+Утверждение.
+ Если 
+\begin_inset Formula $a,b,c\in\mathbb{Z}$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ взаимно-просты в совокупности, тогда и только тогда, когда они попарно
+ взаимно-просты: 
+\begin_inset Formula $gcd\left(a,b\right)=gcd\left(b,c\right)=gcd\left(c,a\right)=1$
+\end_inset
+
+.
+ Это тоже самое, что в 
+\begin_inset Quotes rld
+\end_inset
+
+канонических
+\begin_inset Quotes rrd
+\end_inset
+
+ разложениях 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ на простые множители множества множителей не пересекаются попарно.
+\end_layout
+
+\begin_layout Standard
+Как нам это доказать.
+ Если у двух был бы общий делитель, то и третьего он тоже был бы.
+\end_layout
+
+\begin_layout Standard
+Могло ведь оказаться, что пересечение всех трёх пустое, но у каких-то двух
+ есть непустое пересечение.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a=mp$
+\end_inset
+
+ и 
+\begin_inset Formula $b=np$
+\end_inset
+
+, то 
+\begin_inset Formula $c^{2}=\left(m^{2}+n^{2}\right)p^{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $c$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ (мы применили утверждение, что если 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ не делятся на 
+\begin_inset Formula $p$
+\end_inset
+
+, то и 
+\begin_inset Formula $ab$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+).
+ Аналогично для пар 
+\begin_inset Formula $a,c$
+\end_inset
+
+ и 
+\begin_inset Formula $b,c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если мы ищем минимальный треугольник, то мы ищем треугольник, у которого
+ стороны попарно взаимно-просты, то есть мы свели задачу поиска всех целочисленн
+ых прямоугольных треугольников к задаче о том, чтобы найти все решения 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+, с попарно взаимно-простыми 
+\begin_inset Formula $a,b,c\in\mathbb{Z}$
+\end_inset
+
+.
+ Именно этой задачей мы и будем заниматься.
+\end_layout
+
+\begin_layout Section
+Теория делимости
+\end_layout
+
+\begin_layout Standard
+Математика — это наполовину язык, причём язык, совершенно естественно возникающи
+х из решаемых задач.
+ Сейчас мы начали решать задачу о пифагоровых тройках и поняли, что нам
+ немного не хватает формальной теории делимости.
+\end_layout
+
+\begin_layout Standard
+Чтобы больше в ней не плавать, давайте немного её разберём.
+ Она нам понадобится потом в других задачах.
+ Пока, целых чисел.
+ Можно ещё рассматривать в произвольных кольцах.
+\end_layout
+
+\begin_layout Standard
+Число 
+\begin_inset Formula $a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $b$
+\end_inset
+
+ по определению тогда и только тогда, когда существует 
+\begin_inset Formula $c\in\mathbb{Z}$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $a=bc$
+\end_inset
+
+.
+ Сейчас мы говорим о целых числах, но это же определение можно применить
+ к отрезкам с нецелой и даже нерациональной длинной.
+\end_layout
+
+\begin_layout Standard
+Математика — искусство обобщения.
+ Сейчас мы говорим про целые числа, а потом будет применять тоже к отрезкам.
+\end_layout
+
+\begin_layout Standard
+Следствие 1.
+ Для любого числа 
+\begin_inset Formula $b$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $0|b$
+\end_inset
+
+: при 
+\begin_inset Formula $c=0$
+\end_inset
+
+ имеем 
+\begin_inset Formula $bc=b0=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Следствие 2.
+ 
+\begin_inset Formula $0|0$
+\end_inset
+
+ (sic!), потому что существует 
+\begin_inset Formula $c$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $0c=0$
+\end_inset
+
+ (
+\begin_inset Formula $c$
+\end_inset
+
+ — любое).
+ Но поделить на ноль мы все равно не можем.
+ Поделить на что-то — это указать единственный результат деления, а здесь
+ результатов бесконечно много!
+\end_layout
+
+\begin_layout Standard
+Следствие 3.
+ Если 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на ноль.
+ Действительно, иначе существовало бы 
+\begin_inset Formula $c$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $a=0\cdot c$
+\end_inset
+
+, но 
+\begin_inset Formula $0\cdot c=0$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+Свойства:
+\end_layout
+
+\begin_layout Standard
+1.
+ Пусть 
+\begin_inset Formula $a|b$
+\end_inset
+
+ и 
+\begin_inset Formula $b|c$
+\end_inset
+
+, тогда 
+\begin_inset Formula $a|c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2.
+ Пусть 
+\begin_inset Formula $a|b$
+\end_inset
+
+ и 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(na\right)|\left(nb\right)$
+\end_inset
+
+.
+ Можно взять даже 
+\begin_inset Formula $n=0$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+3.
+ Пусть 
+\begin_inset Formula $a|c$
+\end_inset
+
+ и 
+\begin_inset Formula $b|c$
+\end_inset
+
+, тогда для любых 
+\begin_inset Formula $m,n\in\mathbb{Z}$
+\end_inset
+
+ 
+\begin_inset Formula $am+bn|c$
+\end_inset
+
+.
+ В частности, 
+\begin_inset Formula $a+b|c$
+\end_inset
+
+ и 
+\begin_inset Formula $a-b|c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Теперь можно перейти к анализу уравнения 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+ в целых числах.
+\end_layout
+
 \end_body
 \end_document
