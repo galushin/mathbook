@@ -4038,7 +4038,7 @@ status open
 Итак, что ещё можно сделать с этими точками? Ответ: их можно перевернуть.
  Взять какую-то точку за основу.
  Зафиксировать её и повернуть прямую на 
-\begin_inset Formula $180\text{\textdegree}$
+\begin_inset Formula $180\text{°}$
 \end_inset
 
 .
@@ -4197,6 +4197,342 @@ status open
  На самом деле, такого быть не может.
  Но это нужно доказать и мы это сделаем.
  С помощью основной теоремы арифметики.
+\end_layout
+
+\begin_layout Section
+Все дроби разные
+\end_layout
+
+\begin_layout Standard
+Мы воспользуемся основной леммой.
+ Пусть 
+\begin_inset Formula $\frac{m}{n}$
+\end_inset
+
+ — несократимая дробь.
+ Будем доказывать, что все положительные дроби разные.
+ Положительная дробь не может быть равна отрицательной.
+ А для отрицательных доказательство получим, поменяв знаки в числителях.
+ 
+\begin_inset Formula $\gcd\left(m,n\right)=1$
+\end_inset
+
+.
+ Существуют 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+, что 
+\begin_inset Formula $mx+ny=1$
+\end_inset
+
+, откуда, если 
+\begin_inset Formula $mk|n$
+\end_inset
+
+, то 
+\begin_inset Formula $k|n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Теперь 
+\begin_inset Formula $\frac{k}{l}$
+\end_inset
+
+ — другая несократимая дробь.
+ 
+\begin_inset Formula $\left(k\neq m\right)\vee\left(n\neq l\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Воспользуемся соображениями здравого смысла, которые можно ввести как аксиому,
+ что если 
+\begin_inset Formula $\frac{m}{n}=\frac{k}{l}$
+\end_inset
+
+, то 
+\begin_inset Formula $\frac{ml}{nl}=\frac{kn}{nl}$
+\end_inset
+
+.
+ Теперь должно быть 
+\begin_inset Formula $ml=kn$
+\end_inset
+
+.
+ Это строгий вывод условия равенства дробей.
+ Из этого равенства нужно вывести противоречие.
+ Итак, пусть 
+\begin_inset Formula $ml|n$
+\end_inset
+
+, тогда должно быть 
+\begin_inset Formula $l|n$
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula $ml|k$
+\end_inset
+
+, откуда 
+\begin_inset Formula $m|k$
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula $kn|m$
+\end_inset
+
+ и 
+\begin_inset Formula $kn|l$
+\end_inset
+
+ , откуда 
+\begin_inset Formula $k|m$
+\end_inset
+
+ и 
+\begin_inset Formula $k|l$
+\end_inset
+
+.
+ Смотрите, что получилось: два целых числа делятся друг на друга нацело.
+ Откуда 
+\begin_inset Formula $k=m$
+\end_inset
+
+ и 
+\begin_inset Formula $l=n$
+\end_inset
+
+, таким образом, эти дроби одинаковые, а не разные.
+\end_layout
+
+\begin_layout Standard
+Теперь я хочу рассмотреть математическую философию, связанную с этим.
+ Все различные несократимые дроби обозначают разные 
+\begin_inset Quotes rld
+\end_inset
+
+физические количества
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Это, наверное, второй по важности результат начальной школы, после ОТА.
+ Позже математики будут рассматривать различные обобщения.
+ Системы с делением.
+ В этих системах с делением нужно будет задавать вопрос, верна ли в них
+ основная теорема арифметики.
+ Там будут некоторые тонкости.
+ Которые мы не осознаем.
+ Они неосознаны, потому что в других системах с делением они могут не выполнятьс
+я.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $K$
+\end_inset
+
+ — кольцо.
+ Что такое дробь? Мы умеем только складывать, вычитать и умножать, а делить
+ — не всегда.
+ Возникает нетривиальная теория делимости.
+ Она начинается с определения того, что такое делимость.
+ 
+\begin_inset Formula $a|b\Longleftrightarrow\exists c:bc=a$
+\end_inset
+
+.
+ Из обычных свойств кольца выводится, что ноль умноженный на любое число
+ — это снова ноль.
+ Про это мы когда-то поговорим.
+ На ноль не может ничего делится.
+ Кроме самого нуля.
+ В любом кольце нельзя делить на ноль.
+ Если что-то на что-то не делится, то можно рассмотреть дроби.
+ Но их нужно вводить уже внешне, как факт.
+ Тогда возникает вопрос, как такие объекты отождествлять.
+ И здесь все становится гораздо сложнее! Но это задел на будущее.
+ Введение деления в общем случае натыкается на некоторые трудности
+\end_layout
+
+\begin_layout Section
+Геометрия дробей
+\end_layout
+
+\begin_layout Standard
+Любая истина начальной математики должна представать перед нами в двух ипостасях
+: геометрической и алгебраической (арифметической).
+ А если арифметическая и алгебраическая оказываются разными, то вообще получаем
+ три.
+ У пифагоровых троек есть три кита.
+ Мы поговорили только про одну.
+\end_layout
+
+\begin_layout Standard
+Для дробей мы рассмотрели алгебраическую 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+.
+ Это привело нас к понятию поля.
+\end_layout
+
+\begin_layout Standard
+А теперь рассмотрим геометрию дробей.
+ Постулат: во всех подобных треугольниках отношения соответствующих сторон
+ одинаковое.
+ Мы его уже немного обсуждали, когда говорили про удвоение кратных.
+ Ту же мысль можно применить и к дробям.
+ Разные количества — это разные наклоны.
+ Две разные несократимые дроби не могут обозначать одно и то же физическое
+ количество, а значит они лежат на разных лучах.
+ Как тогда можно описать дроби? Это все лучи, проходящие через начало координат
+ и целые точки.
+ Это же даёт идею, как определить, какая дробь больше.
+ Больше та, луч которой лежит выше.
+ У сравнение через общий знаменатель тоже есть геометрическая интерпретация.
+ И у сложения тоже.
+ Значение дробей лежит на прямой, отстоящее от вертикальной оси на один
+ (в положительное направление).
+\end_layout
+
+\begin_layout Standard
+Для полей верен целый ряд утверждений про многочлены.
+ Мы их будем изучать.
+ Но сначала нужно посмотреть некоторые другие поля.
+ В частности, конечные поля.
+\end_layout
+
+\begin_layout Section
+Алгоритм Евклида
+\end_layout
+
+\begin_layout Standard
+Теперь технология 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ взаимно просты.
+ Как найти числа 
+\begin_inset Formula $x,y$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $mx+ny=1$
+\end_inset
+
+? Потом мы увидим, что такие задачи возникают очень часто.
+ Если 
+\begin_inset Formula $\gcd\left(m,n\right)=d$
+\end_inset
+
+ и мы ищем 
+\begin_inset Formula $x,y$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $mx+ny=d$
+\end_inset
+
+ то все сводится к 
+\begin_inset Formula $\frac{m}{d}x+\frac{n}{d}y=1$
+\end_inset
+
+.
+ Вспоминаем кузнечика.
+\end_layout
+
+\begin_layout Standard
+Есть два способа решать эту задачу.
+ Оба придумал Евклид.
+ Один из них называется делением с остатком, а другой всё ускоряет в разы
+ и называется 
+\begin_inset Quotes rld
+\end_inset
+
+цепные дроби
+\begin_inset Quotes rrd
+\end_inset
+
+ (я их обожаю, это суперкруто).
+\end_layout
+
+\begin_layout Standard
+Рассмотрим пример.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $m=20$
+\end_inset
+
+ и 
+\begin_inset Formula $n=11$
+\end_inset
+
+.
+ Иногда это можно угадать.
+ Но мы притворимся, что не угадали.
+ Берём большее и делим на меньшее с остатком.
+ 
+\begin_inset Formula $20=11\cdot1+9$
+\end_inset
+
+.
+ Теперь 
+\begin_inset Formula $11=9\cdot1+2$
+\end_inset
+
+.
+ Каждый раз делитель становится делимым, а остаток становится делителем.
+ 
+\begin_inset Formula $9=2\cdot4+1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $2=1\cdot2+0.$
+\end_inset
+
+ 
+\begin_inset Formula $1=9-2\cdot4=9\cdot1+2\cdot\left(-4\right)$
+\end_inset
+
+.
+ Это решение для другого уравнения того же типа.
+ 
+\begin_inset Formula 
+\[
+1=9\cdot1+2\cdot\left(-4\right)=9\cdot1+\left(11\cdot1+9\cdot\left(-1\right)\right)\left(-4\right)=9\cdot\left(5\right)+11\left(-4\right)=\left(20-11\right)\cdot5+11\cdot\left(-4\right)=20\cdot5+11\cdot\left(-9\right)=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Обращает внимание, что в такой тривиальной вещи совершает много ошибок.
+ И теперь переходим ко второму методу.
 \end_layout
 
 \end_body
