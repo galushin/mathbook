@@ -6104,8 +6104,459 @@ status open
 Кольца и поля остатков
 \end_layout
 
+\begin_layout Standard
+Рассмотрим ещё таблицы умножения по модулю 6 и 7.
+\end_layout
+
+\begin_layout Standard
+Таблицы центрально симметричны.
+ Дело в том, что 
+\begin_inset Formula $\left(-a\right)\cdot\left(-b\right)=ab$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В таблице умножения для 6 есть нули, а для 7 — нет.
+\end_layout
+
+\begin_layout Standard
+Некоторые наблюдения (все сказанное про строки относится также и к строкам,
+ так как умножение коммутативно):
+\end_layout
+
+\begin_layout Standard
+Иногда строки содержат ноль, а иногда — нет.
+\end_layout
+
+\begin_layout Standard
+В строке иногда есть единица, а иногда — нет.
+\end_layout
+
+\begin_layout Standard
+Иногда в строке все остатки, а иногда — не все.
+\end_layout
+
+\begin_layout Standard
+Иногда все строки 
+\begin_inset Quotes rld
+\end_inset
+
+однотипные
+\begin_inset Quotes rrd
+\end_inset
+
+, а иногда нет.
+\end_layout
+
+\begin_layout Standard
+Для любых 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $k$
+\end_inset
+
+ из ненулевых остатков, следующие три утверждения равносильны: в строке
+ номер 
+\begin_inset Formula $k$
+\end_inset
+
+ таблицы умножения для остатков от деления на 
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1) Нет нуля в строке
+\end_layout
+
+\begin_layout Standard
+2) Есть единица
+\end_layout
+
+\begin_layout Standard
+3) Есть все остатки
+\end_layout
+
+\begin_layout Standard
+От чего это зависит? Мы это разберём, но пока докажем, что эти утверждения
+ действительно равносильны.
+\end_layout
+
+\begin_layout Standard
+Во-первых, если есть все, то есть и единица.
+\end_layout
+
+\begin_layout Standard
+Теперь, если есть ноль, но не все остатки есть.
+\end_layout
+
+\begin_layout Standard
+А что происходит, если есть не все остатки, то есть какой-то повтор.
+ По принципу Дирихле.
+ То есть 
+\begin_inset Formula $ka=kb\mod m$
+\end_inset
+
+, тогда 
+\begin_inset Formula $k\left(b-a\right)=0\mod m$
+\end_inset
+
+.
+ Таким образом, если нет нуля, то есть все остатки.
+\end_layout
+
+\begin_layout Standard
+Теперь докажем, что если существует единица, то нет нуля.
+ То есть существует 
+\begin_inset Formula $x$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $kx=1$
+\end_inset
+
+, а если есть ноль, то существует 
+\begin_inset Formula $y$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $ky=0$
+\end_inset
+
+, тогда 
+\begin_inset Formula $y=1\cdot y=\left(xk\right)y=x\left(ky\right)=x0=0$
+\end_inset
+
+, тогда 
+\begin_inset Formula $y=0$
+\end_inset
+
+.
+ Это противоречие показывает, что если есть единица, то нет нуля.
+\end_layout
+
+\begin_layout Standard
+Осталось выяснить, при каких 
+\begin_inset Formula $m$
+\end_inset
+
+ получаем таблицы умножения без нулей.
+\end_layout
+
 \begin_layout Section
 Построение конечных полей
+\end_layout
+
+\begin_layout Standard
+Для любого 
+\begin_inset Formula $m$
+\end_inset
+
+ (модуля рассмотрения) 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+, для любого ненулевого остатка 
+\begin_inset Formula $k$
+\end_inset
+
+ при делении на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Следующие утверждения равносильны (нулевой столбец не рассматриваем):
+\end_layout
+
+\begin_layout Standard
+1) В строке 
+\begin_inset Formula $k$
+\end_inset
+
+ нет нулей.
+\end_layout
+
+\begin_layout Standard
+2) В строке 
+\begin_inset Formula $k$
+\end_inset
+
+ есть единица
+\end_layout
+
+\begin_layout Standard
+3) В строке 
+\begin_inset Formula $k$
+\end_inset
+
+ есть все остатки (на 
+\begin_inset Formula $k$
+\end_inset
+
+ делится любой остаток).
+\end_layout
+
+\begin_layout Standard
+4) Новое утверждение: 
+\begin_inset Formula $\gcd\left(k,m\right)=1$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+ Из 4) выведем одно из 1-3), а потом из одного из них 4).
+\end_layout
+
+\begin_layout Standard
+1) влечёт 4), что эквивалентно: из не 4) следует не 1).
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\gcd\left(k,m\right)=d\neq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $k\left(\frac{m}{d}\right)=\frac{k}{d}\cdot m=0\mod m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Теперь докажем, что из 4) следует 2).
+ Из 
+\begin_inset Formula $\gcd\left(k,m\right)=1$
+\end_inset
+
+ следует, что существуют 
+\begin_inset Formula $x,y$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $kx+my=1$
+\end_inset
+
+.
+ Берём 
+\begin_inset Formula $\bar{x}=x\mod m$
+\end_inset
+
+ и видим, что 
+\begin_inset Formula $k\bar{x}=1\mod m$
+\end_inset
+
+.
+ То есть единица находится в столбце 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Итак, ура, мы получаем следующее замечательное свойство всех таблиц умножения.
+ Рисуем таблицу и берём 
+\begin_inset Formula $k$
+\end_inset
+
+ строку, если 
+\begin_inset Formula $k$
+\end_inset
+
+ взаимно просто с 
+\begin_inset Formula $m$
+\end_inset
+
+, то это полная строка, если нет — то есть нули и т.п.
+\end_layout
+
+\begin_layout Standard
+В каких таблицах вообще нет нулей (кроме первого столбца и первой строки)?
+ В таких, что 
+\begin_inset Formula $k=1,\dots,m-1$
+\end_inset
+
+ взаимно просто с 
+\begin_inset Formula $m$
+\end_inset
+
+, это равносильно тому, что 
+\begin_inset Formula $m$
+\end_inset
+
+ — простое.
+ Если 
+\begin_inset Formula $m$
+\end_inset
+
+ не простое, то оно не взаимно просто со своими собственными делителями.
+ Простые числа — это те и только те, которые взаимно просты со всеми предыдущими.
+\end_layout
+
+\begin_layout Standard
+Мы доказали, что при 
+\begin_inset Formula $m=p$
+\end_inset
+
+ простом и только в этом случае 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+ — поле, а иначе — это всего лишь кольцо.
+ И в этом кольце есть делители нуля, то есть 
+\begin_inset Formula $a,b\neq0$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $ab=0$
+\end_inset
+
+.
+ Мы получаем сразу огромное количество полей.
+\end_layout
+
+\begin_layout Standard
+Мы будем использовать его при изучении многочленов.
+\end_layout
+
+\begin_layout Section
+Вычисление примера
+\end_layout
+
+\begin_layout Standard
+Найдём 
+\begin_inset Formula $13/88\mod101$
+\end_inset
+
+.
+ Сначала обратим элемент 
+\begin_inset Formula $88$
+\end_inset
+
+, то есть 
+\begin_inset Formula $13/88=13\cdot88^{-1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $88x=1\mod101$
+\end_inset
+
+ или 
+\begin_inset Formula $88x|101$
+\end_inset
+
+ или 
+\begin_inset Formula $88x-1=101y$
+\end_inset
+
+ или 
+\begin_inset Formula $88x+101y=1$
+\end_inset
+
+, нужно решить в целых числа такое уравнение.
+ Воспользуемся цепными дробями.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\frac{101}{88}=1+\frac{13}{88}=1+\frac{1}{\frac{88}{13}}=1+\frac{1}{6+\frac{10}{13}}=1+\frac{1}{6+\frac{1}{\frac{13}{10}}}=\\
+=1+\frac{1}{6+\frac{1}{1+\frac{3}{10}}}=1+\frac{1}{6+\frac{1}{1+\frac{1}{\frac{10}{3}}}}=1+\frac{1}{6+\frac{1}{1+\frac{1}{3+\frac{1}{3}}}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1+\frac{1}{6+\frac{1}{1+\frac{1}{3}}}=1+\frac{1}{6+\frac{3}{4}}=1+\frac{1}{\frac{27}{4}}=1+\frac{4}{27}=\frac{31}{27}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+88\cdot31-27\cdot101=\pm1
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $31=88^{-1}\mod101$
+\end_inset
+
+, 
+\begin_inset Formula $13/88=13\cdot31=403\mod101$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Я конечно, сглупил, ведь 
+\begin_inset Formula $13+88=101$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $13/88=13/\left(-13\right)=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если бы взяли 
+\begin_inset Formula $25/88$
+\end_inset
+
+ то получилось бы по другому, но можно воспользоваться тем, что 
+\begin_inset Formula $88^{-1}=31$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Решение сводится к решению уравнения 
+\begin_inset Formula $kx+my=1$
+\end_inset
+
+ в целых числах.
+\end_layout
+
+\begin_layout Standard
+Первое, что мы будем изучать предметно — это многочлены с коэффициентами
+ в кольцах и полях.
+\end_layout
+
+\begin_layout Standard
+Многочлен — это сумма, в которой каждое слагаемое — это произведение элемента
+ кольца или поля и 
+\begin_inset Formula $x$
+\end_inset
+
+ в натуральной степени.
 \end_layout
 
 \end_body
