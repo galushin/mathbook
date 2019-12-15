@@ -6559,5 +6559,267 @@ status open
  в натуральной степени.
 \end_layout
 
+\begin_layout Section
+План
+\end_layout
+
+\begin_layout Standard
+Прежде чем заниматься абстрактными вещами, составим план, чтобы настроиться
+ на эти абстракции.
+ Далее будет много абстракций.
+ Математика только в начале наглядная и простая.
+ Перечислим задачи, которые мы решим.
+ Эти задачи будут нашими путеводными звёздами, наподобие задачи о пифагоровых
+ тройках.
+\end_layout
+
+\begin_layout Standard
+1) Великая теорема Ферма (не докажем до конца, но разберём частные случаи)
+ 
+\begin_inset Formula $a^{n}+b^{n}=c^{n}$
+\end_inset
+
+.
+ Эта задача вдохновляла половину математики 350 лет подряд.
+ Решим при 
+\begin_inset Formula $n=4$
+\end_inset
+
+ и 
+\begin_inset Formula $n=3$
+\end_inset
+
+ (при 4 легче).
+ Для 
+\begin_inset Formula $n=3$
+\end_inset
+
+ решается с помощью комплексных чисел (числа Эйзенштейна), поэтому их надо
+ будет ввести.
+ На самом деле математика только первые несколько уроков работает без комплексны
+х чисел.
+ Дальше без них нельзя даже плюнуть.
+ На пути к ним нужно изучать движения простых объектов (прямой, окружности,
+ плоскости, сферы и других).
+ Отсюда идёт эрлангенская программа Клейна, современная геометрия.
+\end_layout
+
+\begin_layout Standard
+2) Когда произвольное 
+\begin_inset Formula $n=a^{2}+b^{2}$
+\end_inset
+
+, это задача трёх величайших умов прошлого Ферма, Эйлер, Гаусс.
+ Нам понадобится множество новых инструментов, многочлены над 
+\begin_inset Formula $\mathbb{Z}/p\mathbb{Z}$
+\end_inset
+
+, кольцо гауссовых целых чисел.
+\end_layout
+
+\begin_layout Standard
+3) 
+\begin_inset Formula $y^{2}=x^{3}\pm1$
+\end_inset
+
+ в 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+, отсюда пойдут эллиптические кривые.
+\end_layout
+
+\begin_layout Standard
+4) Какие целые точки есть на прямой.
+\end_layout
+
+\begin_layout Standard
+5) Уравнение Пелля 
+\begin_inset Formula $x^{2}-my^{2}=\pm1$
+\end_inset
+
+, гиперболические повороты, линейная алгебра.
+ Группы перестановок.
+\end_layout
+
+\begin_layout Standard
+6) Поле всех корней всех многочленов с целыми коэффициентами.
+\end_layout
+
+\begin_layout Standard
+Это ещё не говоря о том, что ещё несколько сотен лекций будет по математическому
+ анализу.
+\end_layout
+
+\begin_layout Standard
+Если подходить к матану не изучая всё перечисленное выше, всю вот эту алгебру,
+ то не сможете стать профессионалом.
+ А после матана и линейной алгебры уже начинается настоящая математика.
+\end_layout
+
+\begin_layout Section
+План МАТАН
+\end_layout
+
+\begin_layout Standard
+На подступах к математическому анализу (и линейной алгебре тоже).
+ И связывает их понятие экспоненты.
+ Экспонента — это попытка решить функциональное уравнение 
+\begin_inset Formula $f\left(x+y\right)=f\left(x\right)f\left(y\right)$
+\end_inset
+
+, то есть нужно найти функцию 
+\begin_inset Formula $f$
+\end_inset
+
+, которая удовлетворяет требования для любых 
+\begin_inset Formula $x,y$
+\end_inset
+
+.
+ Это совсем не то, что вы привыкли делать.
+\end_layout
+
+\begin_layout Standard
+Нам нужно систематических изучать понятие полноты, модели вещественных чисел.
+\end_layout
+
+\begin_layout Standard
+Математический анализ нужен для асимптотического распределения простых чисел,
+ теорема Дирихле о простых числах в арифметических прогрессиях (требуется
+ даже комплексный анализ), доказательства трансцендентности 
+\begin_inset Formula $e$
+\end_inset
+
+ и 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ Анализ эллиптических кривых, Бёрч-Суиннертон-Дайер, одна из семи проблем
+ Клея, ещё одна — гипотеза Римана.
+\end_layout
+
+\begin_layout Standard
+Теорема Бернштейна-Кантора, и ещё Кантор встретится множество раз, без теории
+ множеств не разобраться с вещественными числами.
+ Ну а дальше будут пределы, предельные переходы, пределы последовательностей,
+ функций.
+\end_layout
+
+\begin_layout Section
+Кольцо многочленов
+\end_layout
+
+\begin_layout Standard
+Детальное знакомство с многочленами.
+ Это выражения вида 
+\begin_inset Formula $a_{0}+a_{1}x+\dots+a_{n}x^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ — целое число, которое называется степенью многочлена, имеется в виду,
+ что 
+\begin_inset Formula $a_{n}\neq0$
+\end_inset
+
+, иначе не было смысл писать это слагаемое! 
+\begin_inset Formula $a_{0},a_{1},\dots,a_{n-1}$
+\end_inset
+
+ — любые числа, коэффициенты.
+\end_layout
+
+\begin_layout Standard
+Два ключевых вопроса:
+\end_layout
+
+\begin_layout Standard
+1) это операции над ними
+\end_layout
+
+\begin_layout Standard
+2) вычисление значений при конкретных 
+\begin_inset Formula $x$
+\end_inset
+
+ (многочлен как функция).
+\end_layout
+
+\begin_layout Standard
+2.1) нахождение корней, то есть нахождение таких 
+\begin_inset Formula $x$
+\end_inset
+
+, что многочлен равен нулю
+\end_layout
+
+\begin_layout Standard
+Отметим, что для того, чтобы 2 и 2.1 были возможны, надо, чтобы все 
+\begin_inset Formula $a_{0},\dots,a_{n}$
+\end_inset
+
+ и все 
+\begin_inset Formula $x$
+\end_inset
+
+ жили в некотором кольце (множество с операциями сложения, вычитания и умножения
+).
+\end_layout
+
+\begin_layout Standard
+Пусть даны два многочлена 
+\begin_inset Formula $f\left(x\right)=a_{0}+a_{1}x+\dots+a_{n}x^{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)=b_{0}+b_{1}x+\dots+b_{k}x^{k}$
+\end_inset
+
+, Поставим любую операцию (сложение, вычитание, умножение) между этими двумя
+ выражениями.
+ Пусть 
+\begin_inset Formula $k\ge n$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)+g\left(x\right)=\left(a_{0}+b_{0}\right)+\left(a_{1}+b_{1}\right)x+\dots+\left(a_{k}+b_{k}\right)x^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+С произведением аналогично, но несколько сложнее.
+\end_layout
+
+\begin_layout Standard
+Многочлены нам понятны, так как они связаны с системами счисления.
+\end_layout
+
+\begin_layout Standard
+Определённые таким образом операции превращают множество многочленов с коэффицие
+нтами в кольце — в кольцо 
+\begin_inset Formula $K\left[x\right]$
+\end_inset
+
+.
+ Это кольцо мы будем всесторонне изучать.
+\end_layout
+
 \end_body
 \end_document
