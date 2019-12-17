@@ -7480,5 +7480,170 @@ f\left(x\right)+g\left(x\right)=\left(a_{0}+b_{0}\right)+\left(a_{1}+b_{1}\right
 , но это два разных многочлена.
 \end_layout
 
+\begin_layout Section
+Многочлены как кольцо
+\end_layout
+
+\begin_layout Standard
+То есть мы будем смотреть какие-то операции непосредственно над многочленами
+ и к чему они будут приводить.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(a_{0}+a_{1}x+\dots+a_{n}x^{n}\right)\left(b_{0}+b_{1}x+\dots+b_{k}x^{k}\right)=a_{0}b_{0}+\dots+a_{n}b_{k}x^{n+k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из этого хочется сделать вывод, что степень произведения многочленов равна
+ сумме степеней сомножителей: 
+\begin_inset Formula $def\left(fg\right)=deg\left(f\right)+deg\left(g\right)$
+\end_inset
+
+.
+ Однако, верно это тогда и только тогда, когда 
+\begin_inset Formula $a_{n}b_{k}\neq0$
+\end_inset
+
+, как мы видели, что 
+\begin_inset Formula $a_{n}\neq0$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{k}\neq0$
+\end_inset
+
+ не гарантирует 
+\begin_inset Formula $a_{n}b_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пример в 
+\begin_inset Formula $\left(Z/6Z\right)\left[x\right]$
+\end_inset
+
+: 
+\begin_inset Formula $\left(2x-1\right)\left(3x+2\right)=6x^{2}+x-2=x-2$
+\end_inset
+
+, то есть произведение двух линейных — снова линейный.
+ Что снова против всех канонов, мы смогли разложить на множители многочлен
+ первой степени со старшим коэффициентом, равным единице.
+\end_layout
+
+\begin_layout Standard
+Каковы же достаточные условия того, что 
+\begin_inset Formula $def\left(fg\right)=deg\left(f\right)+deg\left(g\right)$
+\end_inset
+
+ справедливо всегда.
+ Мы видели, что делителей нуля нет в любом поле, в частности в 
+\begin_inset Formula $Z/pZ$
+\end_inset
+
+ , где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое.
+\end_layout
+
+\begin_layout Standard
+Сделаем отступление.
+ В любом поле нет делителей нуля.
+ Пусть 
+\begin_inset Formula $ab=0$
+\end_inset
+
+ и 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $a=abb^{-1}=0b^{-1}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ещё примеры.
+\end_layout
+
+\begin_layout Standard
+Введём понятие делимости в 
+\begin_inset Formula $K\left[x\right]$
+\end_inset
+
+ определяется стандартно.
+ Многочлен 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ делится 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ тогда и только тогда, когда существует 
+\begin_inset Formula $h\left(x\right)\in K\left[x\right]$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)h\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В частности, 
+\begin_inset Formula $x-2$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2x-1$
+\end_inset
+
+ в 
+\begin_inset Formula $\left(Z/6Z\right)\left[x\right]$
+\end_inset
+
+.
+ Это неприятно.
+ Нам бы хотелось, чтобы многочлен меньшей степени никогда не делился бы
+ на многочлен большей степени.
+\end_layout
+
+\begin_layout Standard
+В 
+\begin_inset Formula $\left(Z/pZ\right)\left[x\right]$
+\end_inset
+
+, да и вообще в любом 
+\begin_inset Formula $P\left[x\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $P$
+\end_inset
+
+ — поле, такого и не будет.
+ Так как в 
+\begin_inset Formula $P\left[x\right]$
+\end_inset
+
+ сумма степеней равна сумме степеней множителей.
+\end_layout
+
+\begin_layout Standard
+Все нужные нам свойства мы потом просуммируем, а пока продолжим изучение
+ аномалий.
+\end_layout
+
 \end_body
 \end_document
