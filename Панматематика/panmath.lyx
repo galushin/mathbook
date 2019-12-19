@@ -7960,5 +7960,496 @@ f\left(x\right)+g\left(x\right)=\left(a_{0}+b_{0}\right)+\left(a_{1}+b_{1}\right
  она верна и красива.
 \end_layout
 
+\begin_layout Section
+Основная теорема арифметики для многочленов с коэффициентами в поле
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $P\left[x\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $P$
+\end_inset
+
+ — некоторое поле (
+\begin_inset Formula $Z/pZ$
+\end_inset
+
+ при простом 
+\begin_inset Formula $p$
+\end_inset
+
+, или 
+\begin_inset Formula $Q$
+\end_inset
+
+, или 
+\begin_inset Formula $R$
+\end_inset
+
+, или 
+\begin_inset Formula $C$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Любой многочлен представляется в виде произведения ненулевой константы и
+ приведённого многочлена соответствующей степени:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=a_{n}\bar{f}\left(x\right)=a_{n}\left[x^{n}+\frac{a_{n-1}}{a_{n}}x^{n-1}+\dots+\frac{a_{1}}{a_{n}}x+\frac{a_{0}}{a_{n}}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)h\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+ необратимы, то 
+\begin_inset Formula $\deg f>\deg g$
+\end_inset
+
+ и 
+\begin_inset Formula $\deg f>\deg h$
+\end_inset
+
+.
+ Если раскладывать дальше, то не более чем за 
+\begin_inset Formula $n$
+\end_inset
+
+ шагов мы получим 
+\begin_inset Formula $f\left(x\right)=h_{1}\left(x\right)\cdot\dots\cdot h_{k}\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $h_{j}$
+\end_inset
+
+ — простые.
+ То есть любой многочлен имеет конечное разложение.
+ Остаётся доказать, что оно единственное.
+\end_layout
+
+\begin_layout Standard
+Теперь если также 
+\begin_inset Formula $f\left(x\right)=q_{1}\left(x\right)\cdot\dots\cdot q_{l}\left(x\right)$
+\end_inset
+
+, то напишем оба равенства через приведённые: 
+\begin_inset Formula 
+\[
+f\left(x\right)=a_{n}\bar{f}\left(x\right)=\alpha_{1}\bar{q}_{1}\left(x\right)\cdot\dots\cdot\alpha_{l}\bar{q}_{l}\left(x\right)=\beta_{1}\bar{h}_{1}\left(x\right)\cdot\dots\cdot\beta_{k}\bar{h}_{k}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если поверить в ОТА для многочленов, то каждому 
+\begin_inset Formula $\alpha_{j}\bar{q}_{j}\left(x\right)$
+\end_inset
+
+ соответствует 
+\begin_inset Formula $\beta_{i}\bar{h}_{i}\left(x\right)$
+\end_inset
+
+ (и наоборот), то есть 
+\begin_inset Formula $\bar{q}_{j}$
+\end_inset
+
+ и 
+\begin_inset Formula $\bar{h}_{i}$
+\end_inset
+
+ ассоциированы, откуда 
+\begin_inset Formula $\bar{q}_{j}=\bar{h}_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Допустим теперь, что мы установили утверждение, что если приведённый многочлен
+ раскладывается двумя способами в произведение приведённых, то эти два разложени
+я можно получить друг из друга перестановкой множителей.
+\end_layout
+
+\begin_layout Standard
+Для неприведённых многочленов, перестановкой будут получаться уже не равные,
+ а ассоциированные многочлены.
+\end_layout
+
+\begin_layout Standard
+Удобная формулировка, эквивалентная исходной (без потери общности).
+\end_layout
+
+\begin_layout Standard
+Формулировка ОТА для 
+\begin_inset Formula $P\left[x\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Любой приведённый многочлен 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ единственным (с точностью до перестановки множителей) способом раскладывается
+ в произведение простых приведённых многочленов:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=q_{1}\left(x\right)\cdot\dots\cdot q_{r}\left(x\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Если же 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — произвольный многочлен, то это разложение приобретает вид 
+\begin_inset Formula $f\left(x\right)=a_{n}\cdot q_{1}\left(x\right)\cdot\dots\cdot q_{r}\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ — старший коэффициент 
+\begin_inset Formula $f$
+\end_inset
+
+, а 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ — простые приведённые.
+\end_layout
+
+\begin_layout Standard
+Эту теорему мы будем доказывать довольно долго, а пока вернёмся к 
+\begin_inset Formula $Z/mZ$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Теорема Безу — формулировка
+\end_layout
+
+\begin_layout Standard
+Аномалии (окончание).
+ Вернёмся в 
+\begin_inset Formula $Z/8Z$
+\end_inset
+
+ и многочлены на ней
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $x^{2}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{2}-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ Здесь содержится удивительная информация для тех, кто занимался хоть какой-то
+ алгеброй.
+ Уравнение 
+\begin_inset Formula $x^{2}-1$
+\end_inset
+
+ имеет 4 корня в 
+\begin_inset Formula $Z/8Z$
+\end_inset
+
+, а именно, все нечётные числа (все обратимые элементы этого кольца).
+ Мы привыкли, что корней не больше, чем степень.
+ Но это гарантировано только в полях, а не в произвольных кольцах.
+\end_layout
+
+\begin_layout Standard
+Какая первая теорема про многочлены? Теорема Безу.
+ Для её формулировки необходимо уметь делить с остатком.
+\end_layout
+
+\begin_layout Standard
+В многочленах с коэффициентами в полях можно делить любой на любой, а с
+ коэффициентами в кольцах — только на приведённые.
+\end_layout
+
+\begin_layout Standard
+Пример: 
+\begin_inset Formula $f\left(x\right)=7x^{3}+2x^{2}-x-1$
+\end_inset
+
+ делим на 
+\begin_inset Formula $x-b$
+\end_inset
+
+ с остатком.
+ Оказывается, что остаток равен 
+\begin_inset Formula $f\left(b\right)$
+\end_inset
+
+.
+ Это не совпадение.
+\end_layout
+
+\begin_layout Standard
+Теорема Безу.
+ Пусть 
+\begin_inset Formula $K$
+\end_inset
+
+ — кольцо 
+\begin_inset Formula $f\left(x\right)\in K\left[x\right]$
+\end_inset
+
+, тогда для любого 
+\begin_inset Formula $b\in K$
+\end_inset
+
+ остаток от деления 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left(x-b\right)$
+\end_inset
+
+ равен 
+\begin_inset Formula $f\left(b\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=q\left(x\right)\left(x-b\right)+f\left(b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
