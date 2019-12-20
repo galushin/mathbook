@@ -8451,5 +8451,379 @@ f\left(x\right)=q\left(x\right)\left(x-b\right)+f\left(b\right)
 
 \end_layout
 
+\begin_layout Section
+Теорема Безу.
+ Доказательство и примеры
+\end_layout
+
+\begin_layout Standard
+Самый общий факт начальной алгебры — теорема Безу, это факт про 
+\begin_inset Formula $K\left[x\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $K$
+\end_inset
+
+ — любое кольцо.
+ Остаток от деления 
+\begin_inset Formula $f\left(x\right)\in K\left[x\right]$
+\end_inset
+
+ на 
+\begin_inset Formula $x-b$
+\end_inset
+
+ равен 
+\begin_inset Formula $f\left(b\right)$
+\end_inset
+
+.
+ Следствие: 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ делится нацело на 
+\begin_inset Formula $x-b$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $f\left(b\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+\end_layout
+
+\begin_layout Standard
+Выполним деление 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $x-b$
+\end_inset
+
+ с остатком.
+ По построению 
+\begin_inset Formula $f\left(x\right)=\left(x-b\right)g\left(x\right)+A$
+\end_inset
+
+.
+ Подставим 
+\begin_inset Formula $x=b$
+\end_inset
+
+, тогда получим 
+\begin_inset Formula $f\left(b\right)=0\cdot g\left(b\right)+A$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $A=f\left(b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x\right)=\left(x-b\right)g\left(x\right)+f\left(b\right)$
+\end_inset
+
+.
+ Делимость нацело на 
+\begin_inset Formula $x-b$
+\end_inset
+
+ означает, что 
+\begin_inset Formula $b$
+\end_inset
+
+ — корень.
+\end_layout
+
+\begin_layout Standard
+Поэкспериментируем 
+\begin_inset Formula $x^{2}-1$
+\end_inset
+
+ имеет корни 
+\begin_inset Formula $1,3,5,7$
+\end_inset
+
+ в 
+\begin_inset Formula $\left(Z/8Z\right)\left[x\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+По теореме Безу, 
+\begin_inset Formula $x^{2}-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $x-1$
+\end_inset
+
+, 
+\begin_inset Formula $x-3$
+\end_inset
+
+, 
+\begin_inset Formula $x-5$
+\end_inset
+
+ и на 
+\begin_inset Formula $x-7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{2}-1=\left(x-1\right)\left(x-7\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{2}-1=\left(x-3\right)\left(x-5\right)$
+\end_inset
+
+.
+ Наша интуиция говорит, что 
+\begin_inset Formula $x^{2}-1$
+\end_inset
+
+ должен делиться на их произведение, но, в данном случае, это не так.
+ Эта интуиция связана с основной теоремой арифметики.
+ Но в 
+\begin_inset Formula $\left(Z/8Z\right)\left[x\right]$
+\end_inset
+
+ не гарантируется ни ОТА, ни простота 
+\begin_inset Formula $x-b$
+\end_inset
+
+.
+ Гарантирована только теорема Безу.
+\end_layout
+
+\begin_layout Standard
+А чтобы получить далеко идущие выводы, считаем, что в 
+\begin_inset Formula $Z/mZ$
+\end_inset
+
+ число 
+\begin_inset Formula $m=p$
+\end_inset
+
+ — простое число.
+\end_layout
+
+\begin_layout Section
+Многочлены над полями
+\end_layout
+
+\begin_layout Standard
+Следствия из теоремы Безу для 
+\begin_inset Formula $P\left[x\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $P$
+\end_inset
+
+ — поле.
+\end_layout
+
+\begin_layout Standard
+Утверждение.
+ Если 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+ — два различных корня многочлена 
+\begin_inset Formula $f\left(x\right)\in P\left[x\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(x-a\right)\left(x-b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+ По теореме Безу, 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(x-a\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)=\left(x-a\right)g\left(x\right)$
+\end_inset
+
+, подставляем 
+\begin_inset Formula $x=b$
+\end_inset
+
+ в это равенство (под гром литавров), 
+\begin_inset Formula $0=f\left(b\right)=\left(b-a\right)g\left(b\right)$
+\end_inset
+
+, так как 
+\begin_inset Formula $b-a\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $g\left(b\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Врезка про 
+\begin_inset Formula $\left(Z/8Z\right)\left[x\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x^{2}-1=\left(x-1\right)\left(x-7\right)$
+\end_inset
+
+, но подставляя 
+\begin_inset Formula $x=3$
+\end_inset
+
+, получим 
+\begin_inset Formula $0=3^{2}-1=\left(3-1\right)\left(3-7\right)=2\cdot4=0$
+\end_inset
+
+.
+ Таким образом, ситуацию портит именно наличие делителей нуля.
+\end_layout
+
+\begin_layout Standard
+Раз 
+\begin_inset Formula $b$
+\end_inset
+
+ — корень 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $g\left(x\right)=\left(x-b\right)h\left(x\right)$
+\end_inset
+
+, но тогда 
+\begin_inset Formula $f\left(x\right)=\left(x-a\right)\left(x-b\right)h\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пока мы просто сформулируем ряд утверждений для многочленов в поле.
+\end_layout
+
+\begin_layout Standard
+1.
+ Правило степени 
+\begin_inset Formula $\forall f,g\in P\left[x\right]$
+\end_inset
+
+ таких, что 
+\begin_inset Formula $f,g\neq0$
+\end_inset
+
+: 
+\begin_inset Formula $deg\left(fg\right)=deg\left(f\right)+deg\left(g\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2, Для любого 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ 
+\begin_inset Formula $x-a$
+\end_inset
+
+ — простой.
+\end_layout
+
+\begin_layout Standard
+3.
+ Для любого 
+\begin_inset Formula $f\in P\left[x\right]$
+\end_inset
+
+ и любого набора 
+\begin_inset Formula $a_{1},\dots,a_{m}$
+\end_inset
+
+ его различных корней 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(x-a_{1}\right)\cdot\dots\cdot\left(x-a_{m}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+4.
+ Как следствие, различных корней многочлена 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ меньше или равно 
+\begin_inset Formula $\deg f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+4a.
+ Если 
+\begin_inset Formula $f$
+\end_inset
+
+ — приведённый многочлен и у него 
+\begin_inset Formula $degf$
+\end_inset
+
+ различных корней 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(x\right)=\left(x-a_{1}\right)\cdot\dots\cdot\left(x-a_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+5.
+ (Ещё не доказали) Верна основная теорема арифметики.
+\end_layout
+
 \end_body
 \end_document
