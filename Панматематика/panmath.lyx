@@ -8825,5 +8825,384 @@ f\left(x\right)=q\left(x\right)\left(x-b\right)+f\left(b\right)
  (Ещё не доказали) Верна основная теорема арифметики.
 \end_layout
 
+\begin_layout Section
+Малая теорема Ферма
+\end_layout
+
+\begin_layout Standard
+Следующий ряд сюжетов связан с малой теоремой Ферма.
+ Есть два строительных кирпича: теорема Безу и малая теорема Ферма.
+ Последнюю будем доказывать несколькими способами (как минимум 4).
+ Мы видели на примере, что в 
+\begin_inset Formula $Z/5Z$
+\end_inset
+
+ имеет место тождество 
+\begin_inset Formula $x=x^{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для любого 
+\begin_inset Formula $p$
+\end_inset
+
+ — простого и любого 
+\begin_inset Formula $a\in\left\{ 0,1,\dots,p-1\right\} $
+\end_inset
+
+ имеет место 
+\begin_inset Formula $a^{p}=a\mod p$
+\end_inset
+
+.
+ Это можно записать более удобным способом: для любого 
+\begin_inset Formula $a\in\left\{ 1,\dots,p\right\} $
+\end_inset
+
+ имеем 
+\begin_inset Formula $a^{p-1}=1\mod p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Докажем, что эти формулировки эквивалентны.
+ Если 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ то достаточно умножить на 
+\begin_inset Formula $a$
+\end_inset
+
+, а для 
+\begin_inset Formula $a=0$
+\end_inset
+
+ утверждение очевидно.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $a$
+\end_inset
+
+ не делиться на 
+\begin_inset Formula $p$
+\end_inset
+
+, то рассмотрим выражение 
+\begin_inset Formula $a^{p}-a=0\mod p$
+\end_inset
+
+, но 
+\begin_inset Formula $a^{p}-a=a\cdot\left[a^{p-1}-1\right]$
+\end_inset
+
+.
+ Применим свойство отсутствия делителей нуля, так как 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{p-1}=1\mod p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Первое доказательство.
+ Выпишем в таблице умножения по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ строку с номером 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Все элементы этой строки разные и не равны нулю, как мы убеждались выше.
+ Поэтому 
+\begin_inset Formula $\left\{ a,2a,3a,\dots\left(p-1\right)a\right\} $
+\end_inset
+
+ — перестановка 
+\begin_inset Formula $\left\{ 1,2,3,\dots,p-1\right\} $
+\end_inset
+
+.
+ Найдём произведение элементов каждого множества, они будут равны.
+ Произведение всех чисел от 1 до 
+\begin_inset Formula $n$
+\end_inset
+
+ называется факториал 
+\begin_inset Formula $n$
+\end_inset
+
+ и обозначается 
+\begin_inset Formula $n!$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(a\right)\left(2a\right)\cdot\dots\cdot\left(\left(p-1\right)a\right)=\left(p-1\right)!\mod p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вынесем все 
+\begin_inset Formula $a$
+\end_inset
+
+ слева: 
+\begin_inset Formula $a^{p-1}\left(p-1\right)!=\left(p-1\right)!\mod p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(p-1\right)!\neq0$
+\end_inset
+
+, так как делителей нуля нет, сократим на него: 
+\begin_inset Formula $a^{p-1}=1\mod p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Есть ещё 3 красивых доказательства, каждое из них порождает новую отрасль
+ математики.
+\end_layout
+
+\begin_layout Section
+Теорема Вильсона
+\end_layout
+
+\begin_layout Standard
+Из малой теоремы Ферма можно вывести очень важное следствие — теорему Вильсона.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим уравнение 
+\begin_inset Formula $n=x^{2}+y^{2}$
+\end_inset
+
+ 
+\begin_inset Formula $x,y\in$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В 
+\begin_inset Formula $Z/pZ$
+\end_inset
+
+ каждый 
+\begin_inset Formula $a\in\left\{ 1,\dots,p-1\right\} $
+\end_inset
+
+ удовлетворяет тождеству 
+\begin_inset Formula $a^{p-1}=1$
+\end_inset
+
+, то есть является корнем многочлена 
+\begin_inset Formula $x^{p-1}-1$
+\end_inset
+
+.
+ Это означает, что у многочлена 
+\begin_inset Formula $x^{p-1}-1$
+\end_inset
+
+ в поле 
+\begin_inset Formula $Z/pZ$
+\end_inset
+
+ ровно 
+\begin_inset Formula $p-1$
+\end_inset
+
+ корней, а именно — все ненулевые остатки.
+ В силу теоремы Безу, получаем 
+\begin_inset Formula $x^{p-1}-1=\left(x-1\right)\cdot\left(x-2\right)\cdot\dots\cdot\left(x-\left(p-1\right)\right)$
+\end_inset
+
+.
+ Равенство здесь понимается как равенство многочленов (все коэффициенты
+ равны)
+\end_layout
+
+\begin_layout Standard
+Упражнение.
+ Проверить это при 
+\begin_inset Formula $p=3,5,7,11,\dots,2017,\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Отсюда можно сделать вывод, который нам понадобится в дальнейшем.
+\end_layout
+
+\begin_layout Standard
+Свободный член слева — 
+\begin_inset Formula $-1$
+\end_inset
+
+, а справа 
+\begin_inset Formula $\left(-1\right)\left(-2\right)\cdot\dots\cdot\left(-p+1\right)=\left(p-1\right)!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это теорема Вильсона: для любого простого 
+\begin_inset Formula $p$
+\end_inset
+
+ число 
+\begin_inset Formula $\left(p-1\right)!+1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Это полная характеризация простых чисел.
+ Если 
+\begin_inset Formula $m$
+\end_inset
+
+ — не простое, тогда 
+\begin_inset Formula $m=ab$
+\end_inset
+
+, но тогда, если 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+, то в 
+\begin_inset Formula $\left(m-1\right)!$
+\end_inset
+
+ входят и 
+\begin_inset Formula $a$
+\end_inset
+
+, и 
+\begin_inset Formula $b$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(m-1\right)!=0\mod m$
+\end_inset
+
+, а если разложения на два разных множителя не существует, но 
+\begin_inset Formula $m$
+\end_inset
+
+ — непростое, то 
+\begin_inset Formula $m=p^{2}$
+\end_inset
+
+ — полный квадрат простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $p\ge3$
+\end_inset
+
+ 
+\begin_inset Formula $m!$
+\end_inset
+
+ будет содержать 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $2p$
+\end_inset
+
+, произведение которых делится на 
+\begin_inset Formula $p^{2}=m$
+\end_inset
+
+.
+ Теперь остаётся единственный вариант: 
+\begin_inset Formula $m=2^{2}=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(4-1\right)!=3!=6=2\mod4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Усиленная форма теоремы Вильсона.
+ Если 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое, то 
+\begin_inset Formula $\left(p-1\right)!=-1\mod p$
+\end_inset
+
+ (для двойки требуется особая отдельная проверка).
+ Если 
+\begin_inset Formula $m$
+\end_inset
+
+ — не простое, то при 
+\begin_inset Formula $m=4$
+\end_inset
+
+ 
+\begin_inset Formula $\left(m-1\right)!=2\mod m$
+\end_inset
+
+, а при 
+\begin_inset Formula $m\neq4$
+\end_inset
+
+ получаем 
+\begin_inset Formula $\left(m-1\right)!=0\mod m$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document
