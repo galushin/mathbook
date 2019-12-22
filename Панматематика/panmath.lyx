@@ -9204,5 +9204,493 @@ f\left(x\right)=q\left(x\right)\left(x-b\right)+f\left(b\right)
 .
 \end_layout
 
+\begin_layout Section
+Двжиение, лемма о двух гвоздях и теорема Шаля
+\end_layout
+
+\begin_layout Standard
+Классификация движений на прямой.
+\end_layout
+
+\begin_layout Standard
+Сначала подготовительная работа на грани доказательств.
+ Мы исходим не из аксиом, а из интуиции, которая понятная всем жителям Земли.
+\end_layout
+
+\begin_layout Standard
+Постулат, который мы пощупаем, но строгое доказательство тут вряд ли возможно,
+ иначе придётся строго определить, что такое прямая.
+\end_layout
+
+\begin_layout Standard
+Если движение 
+\begin_inset Formula $g$
+\end_inset
+
+ оставляет две точки на месте, то 
+\begin_inset Formula $g=Id$
+\end_inset
+
+.
+ Это называется лемма о двух гвоздях.
+\end_layout
+
+\begin_layout Standard
+В дополнение мы убедимся, что любое движение обратимо.
+ Поэтому для любого движения существует 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Почему движение биекция? Итак, пусть на месте остались точки 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Произвольная точка может быть между ними, либо по одну сторону от них.
+ На заданном расстоянии от точки 
+\begin_inset Formula $A$
+\end_inset
+
+ находятся две точки, но они находятся на разном расстоянии от точки 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|x-A\right|=\left|g\left(x\right)-g\left(A\right)\right|=\left|g\left(x\right)-A\right|$
+\end_inset
+
+ и аналогично от 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Тоже самое для случая, когда точка с одной стороны от двух фиксированных.
+\end_layout
+
+\begin_layout Standard
+Вообще, считаем это очевидным.
+\end_layout
+
+\begin_layout Standard
+Почему любое движение — биекция.
+ Проследим за судьбой этих точек.
+\end_layout
+
+\begin_layout Standard
+Для любой точки 
+\begin_inset Formula $y$
+\end_inset
+
+ должна существовать 
+\begin_inset Formula $x$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $g\left(x\right)=y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это последние рассуждения в стиле 
+\begin_inset Quotes rld
+\end_inset
+
+смотри и понимай
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Дальше будут формальные доказательства.
+\end_layout
+
+\begin_layout Standard
+Если любое движение — взаимно однозначное соответствие.
+\end_layout
+
+\begin_layout Standard
+Мы будем классифицировать движения по тому, сколько точек осталось на месте.
+ Мы уже видели, что если на месте остались две точки, то остались на месте
+ вообще все точки.
+ Так что остаётся рассмотреть только два случая: когда одна точка осталась
+ на месте, и когда ни одна точке не осталась на месте.
+\end_layout
+
+\begin_layout Standard
+Лемма об отражениях.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $g:R\to R$
+\end_inset
+
+ — движение прямой, для которого существует единственная точка 
+\begin_inset Formula $A$
+\end_inset
+
+, остающаяся на месте: 
+\begin_inset Formula $g\left(A\right)=A$
+\end_inset
+
+, тогда 
+\begin_inset Formula $g=S_{A}$
+\end_inset
+
+ — отражение относительно точки 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Равно для отображений определяется как равенство результатов при применении
+ к равным аргументам.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ещё одну точку 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left|A-B\right|=\left|g\left(A\right)-g\left(B\right)\right|=\left|A-g\left(B\right)\right|$
+\end_inset
+
+.
+ Это даёт два случая: 
+\begin_inset Formula $g\left(B\right)=B$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(B\right)=B^{\prime}$
+\end_inset
+
+ (
+\begin_inset Formula $B$
+\end_inset
+
+ отразилась относительно 
+\begin_inset Formula $A$
+\end_inset
+
+).
+ Если все точки перескочили через 
+\begin_inset Formula $A$
+\end_inset
+
+, то получаем отражение.
+ А если ещё хотя бы одна точка осталась на месте, то все точки должны были
+ бы остаться на месте по лемме о двух гвоздях.
+\end_layout
+
+\begin_layout Standard
+Итак, одна неподвижная точка — отражение.
+ Две или более неподвижных — тождественное преобразование.
+\end_layout
+
+\begin_layout Standard
+Осталось понять, что будет, если неподвижных точек нет.
+ Чтобы разобраться с этим, нам нужна артподготовка.
+\end_layout
+
+\begin_layout Standard
+Лемма.
+ Если два движения 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ одинаково действуют на различных двух точках 
+\begin_inset Formula $A\neq B$
+\end_inset
+
+, то 
+\begin_inset Formula $g_{1}=g_{2}$
+\end_inset
+
+ как движение: 
+\begin_inset Formula $g_{1}\left(x\right)=g_{2}\left(x\right)$
+\end_inset
+
+ для любого 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+ (Чисто теоретико-групповое).
+\end_layout
+
+\begin_layout Standard
+Рассмотрим движение 
+\begin_inset Formula $g_{2}^{-1}g_{1}:R\to R$
+\end_inset
+
+, раз это движение, то 
+\begin_inset Formula $\left(g_{2}^{-1}g_{1}\right)\left(A\right)=g_{2}^{-1}\left(g_{1}\left(A\right)\right)=A=g_{2}^{-1}\left(g_{2}\left(A\right)\right)=\left(g_{2}^{-1}g_{2}\right)\left(A\right)=A$
+\end_inset
+
+ и аналогично 
+\begin_inset Formula $\left(g_{2}^{-1}g_{1}\right)\left(B\right)=B$
+\end_inset
+
+.
+ Но тогда у 
+\begin_inset Formula $g_{2}^{-1}g_{1}$
+\end_inset
+
+ есть по крайней мере две неподвижные точки, откуда 
+\begin_inset Formula $g_{2}^{-1}g_{1}=Id$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}=g_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Последнее рассуждение появится у нас в рассуждениях ещё много раз.
+\end_layout
+
+\begin_layout Standard
+Теперь мы переходим к последнему случаю, и нам нужно будет научиться делать
+ комбинации движений.
+\end_layout
+
+\begin_layout Section
+Арифметика движений
+\end_layout
+
+\begin_layout Standard
+Теперь мы будем доказывать, что если неподвижных точек нет, то 
+\begin_inset Formula $g=T$
+\end_inset
+
+ — сдвиг на некоторый ненулевой вектор.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим композиции известных нам движений.
+ Чему равно 
+\begin_inset Formula $S_{B}S_{A}$
+\end_inset
+
+? Я утверждаю, что 
+\begin_inset Formula $S_{B}S_{A}=T_{2\overrightarrow{AB}}$
+\end_inset
+
+.
+ Воспользуемся леммой о двух гвоздях.
+ Проверим две точки: 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $C=A-\overrightarrow{AB}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{2\overrightarrow{AB}}\left(A\right)=A+2\overrightarrow{AB}=D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(S_{B}S_{A}\right)\left(A\right)=S_{B}\left(S_{A}\left(A\right)\right)=S_{B}\left(A\right)=A+\overrightarrow{AB}=D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{2\overrightarrow{AB}}\left(C\right)=A-\overrightarrow{AB}+2\overrightarrow{AB}=A+\overrightarrow{AB}=B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(S_{B}S_{A}\right)\left(C\right)=S_{B}\left(S_{A}\left(C\right)\right)=S_{B}\left(B\right)=B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, есть две разные точки, на которых движения 
+\begin_inset Formula $S_{B}S_{A}$
+\end_inset
+
+ и 
+\begin_inset Formula $T_{2\overrightarrow{AB}}$
+\end_inset
+
+ совпадают, поэтому они равны.
+\end_layout
+
+\begin_layout Standard
+Также заметим, что переносы не меняют направления прямой, а при отражении
+ направление меняется на обратный.
+ Это даёт очень важный гомоморфизм: ориентация.
+ Мы будем изучать его подробно позже.
+\end_layout
+
+\begin_layout Standard
+А если 
+\begin_inset Formula $A=B$
+\end_inset
+
+, то 
+\begin_inset Formula $S_{B}S_{A}=Id$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Теперь рассмотрим доказательство.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим движение 
+\begin_inset Formula $g$
+\end_inset
+
+ такое, что у него нет неподвижных точек и любую точку 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $g\left(A\right)=B$
+\end_inset
+
+.
+ Середину 
+\begin_inset Formula $AB$
+\end_inset
+
+ обозначим за 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ По построению, 
+\begin_inset Formula $\left|A-O\right|=\left|g\left(A\right)-O\right|$
+\end_inset
+
+.
+ Теперь рассмотрим 
+\begin_inset Formula $S_{O}\circ g$
+\end_inset
+
+ и исследуем её действие на точке 
+\begin_inset Formula $A$
+\end_inset
+
+: 
+\begin_inset Formula $\left(S_{O}g\right)\left(A\right)=S_{O}\left(g\left(A\right)\right)=S_{O}\left(B\right)=A$
+\end_inset
+
+, то есть 
+\begin_inset Formula $A$
+\end_inset
+
+ — неподвижная точка для движения 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $S_{O}g=Id$
+\end_inset
+
+ или 
+\begin_inset Formula $S_{O}g=S_{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $S_{O}g=Id$
+\end_inset
+
+, то 
+\begin_inset Formula $S_{O}S_{O}g=S_{O}$
+\end_inset
+
+ или 
+\begin_inset Formula $g=S_{O}$
+\end_inset
+
+, но 
+\begin_inset Formula $g$
+\end_inset
+
+ не сохраняет ни одной точки, а 
+\begin_inset Formula $S_{O}$
+\end_inset
+
+ сохраняет точку 
+\begin_inset Formula $O$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом 
+\begin_inset Formula $S_{O}g=S_{A}$
+\end_inset
+
+ и 
+\begin_inset Formula $g=S_{O}S_{A}=T_{2\overrightarrow{AO}}=T_{\overrightarrow{AB}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В результате мы получили полную классификацию движений прямой.
+\end_layout
+
+\begin_layout Standard
+Следующие наши задачи: записать таблицу композиций движений и записать гомоморфи
+зм ориентации.
+\end_layout
+
 \end_body
 \end_document
