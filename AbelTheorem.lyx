@@ -88074,7 +88074,7 @@ status open
 \begin_inset Formula $w$
 \end_inset
 
- — корень уравнение 
+ — корень уравнения 
 \begin_inset Formula $P^{\prime}\left(w\right)=0$
 \end_inset
 
@@ -88288,16 +88288,354 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Не смог решить сам.
+ Потом появилось немного другая идея решения.
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $P_{z}\left(w\right)=3w^{5}-25w^{3}+60w-z$
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula $z=z_{0}$
+\end_inset
+
+ и рассмотрим однозначное отображение плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+ в некоторую комплексную плоскость 
+\begin_inset Formula $\tau$
+\end_inset
+
+, задаваемое равенством 
+\begin_inset Formula $\tau=P_{z_{0}}\left(w\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $C$
+\end_inset
+
+ — окружность радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ на плоскости 
+\begin_inset Formula $w$
+\end_inset
+
+, а 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ — образ окружности 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $\tau=P_{z_{0}}\left(w\right)$
+\end_inset
+
+.
+ Разложим многочлен 
+\begin_inset Formula $P_{z_{0}}\left(w\right)$
+\end_inset
+
+ на линейные множители, что всегда возможно по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:factorization-of-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+P_{z_{0}}\left(w\right)=3\left(w-w_{1}\right)\left(w-w_{2}\right)\left(w-w_{3}\right)\left(w-w_{4}\right)\left(w-w_{5}\right),
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+ при 
+\begin_inset Formula $j=1,\dots,5$
+\end_inset
+
+ — все корни уравнения 
+\begin_inset Formula $P_{z_{0}}\left(w\right)=0$
+\end_inset
+
+.
+ При обходе окружности 
+\begin_inset Formula $C$
+\end_inset
+
+ против часовой стрелки аргумент сомножителя 
+\begin_inset Formula $w-w_{j}$
+\end_inset
+
+ либо не изменяется (если 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+ лежит вне окружности 
+\begin_inset Formula $C$
+\end_inset
+
+), либо увеличивается на 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ (если 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+ лежит внутри окружности 
+\begin_inset Formula $C$
+\end_inset
+
+).
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+До сих пор не понимаю, почему не рассматривается случай, когда 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+ лежит точно на окружности 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+Поэтому, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:variation-of-argument-of-product-and-ratio-of-curves"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, при обходе окружности 
+\begin_inset Formula $C$
+\end_inset
+
+ против часовой стрелки аргумент функции 
+\begin_inset Formula $P_{z_{0}}\left(w\right)$
+\end_inset
+
+ увеличивается на 
+\begin_inset Formula $2\pi m$
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+ — число корней (с учётом кратностей) уравнения 
+\begin_inset Formula $P_{z_{0}}\left(w\right)$
+\end_inset
+
+, лежащих внутри окружности 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Поэтому кривая 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ — образ окружности 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $\tau=P_{z_{0}}\left(w\right)$
+\end_inset
+
+ — обходит вокруг точки 
+\begin_inset Formula $\tau=0$
+\end_inset
+
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ раз.
+ Так как, по условию задачи центр окружности 
+\begin_inset Formula $C$
+\end_inset
+
+ — точка 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ — является корнем уравнения 
+\begin_inset Formula $P_{z_{0}}\left(w\right)=0$
+\end_inset
+
+, то 
+\begin_inset Formula $m\ge1$
+\end_inset
+
+.
+ Таким образом, существует такое 
+\begin_inset Formula $\rho>0$
+\end_inset
+
+, что окружность радиуса 
+\begin_inset Formula $\rho$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $\tau=0$
+\end_inset
+
+ целиком содержится внутри кривой 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Возьмём теперь другое комплексное число 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и рассмотрим ещё одно отображение 
+\begin_inset Formula $\tau=P_{z_{1}}\left(w\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $C^{\prime\prime}$
+\end_inset
+
+ — образ окружности 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $\tau=P_{z_{1}}\left(w\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $P_{z_{1}}\left(w\right)=P_{z_{0}}\left(w\right)+\left(z_{0}-z_{1}\right)$
+\end_inset
+
+, то кривая 
+\begin_inset Formula $C^{\prime\prime}$
+\end_inset
+
+ получается из 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ сдвигом на вектор 
+\begin_inset Formula $z_{0}-z_{1}$
+\end_inset
+
+ (как было показано в пункте а задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:geometric-interpretations-of-some-linear-complex-transformations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Если длина вектора 
+\begin_inset Formula $z_{0}-z_{1}$
+\end_inset
+
+ меньше 
+\begin_inset Formula $\rho$
+\end_inset
+
+, то кривая 
+\begin_inset Formula $C^{\prime\prime}$
+\end_inset
+
+ будет обходить вокруг точки 
+\begin_inset Formula $\tau=0$
+\end_inset
+
+ столько же раз, сколько и кривая 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+.
+ Так как кривая 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ обходит вокруг точки 
+\begin_inset Formula $\tau=0$
+\end_inset
+
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ раз, то и кривая 
+\begin_inset Formula $C^{\prime\prime}$
+\end_inset
+
+ будет обходить вокруг точки 
+\begin_inset Formula $\tau=0$
+\end_inset
+
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ раз.
+ Отсюда, рассуждая как и выше, получаем, что внутри окружности 
+\begin_inset Formula $C$
+\end_inset
+
+ лежит 
+\begin_inset Formula $m\ge1$
+\end_inset
+
+ корней уравнения 
+\begin_inset Formula $P_{z_{1}}\left(w\right)=0$
+\end_inset
+
+ (с учётом кратностей).
 \end_layout
 
 \begin_layout Standard
