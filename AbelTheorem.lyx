@@ -46446,6 +46446,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:elementary-transposition-genearates-group-of-all-permutations"
+
+\end_inset
+
 Если некоторая подгруппа симметрической группы 
 \begin_inset Formula $S_{n}$
 \end_inset
@@ -48470,6 +48476,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:group-of-permutations-of-more-than-4-elements-is-not-solvable"
+
+\end_inset
+
 При 
 \begin_inset Formula $n\ge5$
 \end_inset
@@ -89194,6 +89206,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:Abel-theorem-sample-function-rieman-surface-branches-connections"
+
+\end_inset
+
 Пусть известно, что точка 
 \begin_inset Formula $z_{0}=38$
 \end_inset
@@ -89251,16 +89269,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
-\end_inset
-
-
 \begin_inset Note Comment
 status open
 
@@ -89411,6 +89419,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:special-continuous-curve-for-sample-equation-of-Abel-theorem"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $w\left(z\right)$
 \end_inset
@@ -89454,7 +89468,7 @@ noprefix "false"
 \begin_inset Formula $w_{1}$
 \end_inset
 
- — любые их образ при отображении 
+ — любые их образы при отображении 
 \begin_inset Formula $w\left(z\right)$
 \end_inset
 
@@ -89487,19 +89501,153 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Не смог решить сам
 \end_layout
 
 \end_inset
 
+Рассмотрим непрерывную кривую 
+\begin_inset Formula $C^{\prime}$
+\end_inset
 
+ из точки 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ в 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+, не проходящие через образы точек 
+\begin_inset Formula $\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $\pm16$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ (это всегда возможно, так как количество образов конечно — у каждой точки
+ не более пяти).
+ Рассмотрим также отображение 
+\begin_inset Formula $z\left(w\right)=3w^{5}-25w^{3}+60w$
+\end_inset
+
+, обратное отображении 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Пусть кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ — образ кривой 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $z\left(w\right)$
+\end_inset
+
+.
+ Так как кривая 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ — непрерывная и отображение 
+\begin_inset Formula $z\left(w\right)$
+\end_inset
+
+ также непрерывно, то кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ также будет непрерывной.
+ Так как 
+\begin_inset Formula $w$
+\end_inset
+
+ и 
+\begin_inset Formula $z$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ связаны соотношением 
+\begin_inset Formula $3w^{5}-25w^{3}+60w-z$
+\end_inset
+
+, то 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ будет непрерывным образом кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ При этом, эта кривая будет начинаться в точке 
+\begin_inset Formula $z\left(w_{0}\right)=z_{0}$
+\end_inset
+
+ и заканчиваться в точке 
+\begin_inset Formula $z\left(w_{1}\right)=z_{1}$
+\end_inset
+
+.
+ Так как кривая 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ не проходит через образы точек 
+\begin_inset Formula $z=\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\pm16$
+\end_inset
+
+, то 
+\begin_inset Formula $C$
+\end_inset
+
+ не проходит через точки 
+\begin_inset Formula $z=\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\pm16$
+\end_inset
+
+.
+ Таким образом, кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ является искомой.
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:possible-rieman-surface-schemes-for-sample-function-of-Abel-theorem"
+
+\end_inset
+
 Доказать, что все четыре точки 
 \begin_inset Formula $z=\pm38$
 \end_inset
@@ -89522,11 +89670,109 @@ status open
 \end_layout
 
 \begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог решить сам
+\end_layout
+
+\end_inset
+
+В силу доказанного в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:special-continuous-curve-for-sample-equation-of-Abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует кривая, не проходящая через точки 
+\begin_inset Formula $z=\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\pm16$
+\end_inset
+
+, вдоль которой можно перейти с любого на любой лист римановой поверхности
+ функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Соединения листов должно быть таким, чтобы все листы образовывали единую
+ связную схему, а не разбивались на несколько не соединённых между собой
+ подмножеств.
+ Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:Abel-theorem-sample-function-rieman-surface-branches-connections"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в каждой точке разветвления могут быть соединены только два листа.
+ Таким образом, точек разветвления должно быть не менее четырёх, таким образом,
+ но, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:branching-and-ambiguity-points-of-sample-function-of-Abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, точками разветвления могут быть только 
+\begin_inset Formula $z=\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $z=\pm16$
+\end_inset
+
+, а значит все эти точки являются точками разветвления.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь возможные схемы римановой поверхности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+ Их можно классифицировать по количеству листов, с которыми соединён первый
+ лист (при этом, можно считать, что первый лист соединён с наибольшим количество
+м других листов, так как мы не различаем схемы поверхностей, отличающиеся
+ только нумерацией листов).
+ Первая возможность — первый лист соединён со всеми остальными четырьмя
+ листами.
+ Тогда у остальных листов не будет соединений друг с другом.
+\end_layout
+
+\begin_layout Solution
+Вторая возможность — первый лист соединён с тремя листами (для определённости
+ — вторым, третьим и четвёртым), а один из них (например, четвёртый) — ещё
+ и с пятым.
+\end_layout
+
+\begin_layout Solution
+Третья возможность — первый лист соединён с двумя листами (второй и третий).
+ Чтобы обеспечить полную связность, второй лист должен быть соединён с четвёртым
+, а третий — с пятым.
+ Изменив нумерацию листов в этой схеме, можно получить схему, в которой
+ первый соединён лист соединён со вторым, второй — ещё с третьим, третий
+ — ещё с четвёртым, а четвёртый — ещё с пятым.
+ 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Добавить рисунок из решений
 \end_layout
 
 \end_inset
@@ -89534,7 +89780,18 @@ status open
 
 \end_layout
 
+\begin_layout Solution
+Отметим, что мы не утверждаем, какие из перечисленных схем могут быть реализован
+ы.
+\end_layout
+
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:galois-group-of-Abel-theorem-sample-function"
+
+\end_inset
+
 Найти группу Галуа функции 
 \begin_inset Formula $w\left(z\right)$
 \end_inset
@@ -89557,16 +89814,120 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Не смог решить сам
 \end_layout
 
 \end_inset
 
+Докажем, что группа Галуа содержит все элементарные транспозиции при реализации
+ каждой из схем, построенных в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:possible-rieman-surface-schemes-for-sample-function-of-Abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+.
+ В третьей схеме все элементарные транспозиции присутствуют в явном виде.
+\end_layout
+
+\begin_layout Solution
+В первой схеме явно имеются транспозиции 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(1,3\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(1,4\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1,5\right)$
+\end_inset
+
+.
+ Транспозиция 
+\begin_inset Formula $\left(2,3\right)$
+\end_inset
+
+ может быть получена как произведение 
+\begin_inset Formula $\left(1,2\right)\left(1,3\right)\left(1,2\right)=\left(2,3\right)$
+\end_inset
+
+, аналогично: 
+\begin_inset Formula $\left(3,4\right)=\left(1,3\right)\left(1,4\right)\left(1,3\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(4,5\right)=\left(1,4\right)\left(1,5\right)\left(1,4\right)$
+\end_inset
+
+.
+ Таким образом, при реализации второй схемы группа Галуа также будет содержать
+ все элементарные транспозиции.
+\end_layout
+
+\begin_layout Solution
+Наконец, во второй схеме имеются транспозиции 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(1,3\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(1,4\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(4,5\right)$
+\end_inset
+
+.
+ При реализации этой схемы элементарные транспозиции 
+\begin_inset Formula $\left(2,3\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(3,4\right)$
+\end_inset
+
+ получаются также, как и в первой, а 
+\begin_inset Formula $\left(4,5\right)$
+\end_inset
+
+ присутствует в явном виде.
+\end_layout
+
+\begin_layout Solution
+Таким образом, во всех возможных случаях группа Галуа содержит все элементарные
+ транспозиции.
+ Тогда, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:elementary-transposition-genearates-group-of-all-permutations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, группа Галуа совпадает с группой всех перестановок пяти элементов — 
+\begin_inset Formula $S_{5}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -89598,16 +89959,53 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:galois-group-of-Abel-theorem-sample-function"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, группа Галуа функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
 
+ изоморфна 
+\begin_inset Formula $S_{5}$
+\end_inset
+
+.
+ Данная группа, как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:group-of-permutations-of-more-than-4-elements-is-not-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, является неразрешимой.
+ С другой стороны, группа Галуа функции, которая может быть выражена в радикалах
+, является разрешимой (теорема 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:galois-group-of-radical-expression-is-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Таким образом, 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ не может может быть выражена в радикалах.
 \end_layout
 
 \begin_layout Problem
