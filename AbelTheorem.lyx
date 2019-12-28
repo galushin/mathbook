@@ -75730,6 +75730,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:how-to-construct-rieman-surface-of-monodromic-function"
+
+\end_inset
+
 Из результатов задач 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -88783,16 +88789,272 @@ noprefix "false"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Не смог решить целиком сам
 \end_layout
 
 \end_inset
 
+Рассмотрим некоторую точку 
+\begin_inset Formula $z_{0}$
+\end_inset
 
+, отличную от 
+\begin_inset Formula $\pm38$
+\end_inset
+
+ и 
+\begin_inset Formula $\pm16$
+\end_inset
+
+.
+ Тогда имеется ровно 5 различных образов точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w=w\left(z\right)$
+\end_inset
+
+, обозначим их как 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $w_{3}$
+\end_inset
+
+, 
+\begin_inset Formula $w_{4}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{5}$
+\end_inset
+
+.
+ Если непрерывная кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ выходит из точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+, то из каждой точки 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+ (
+\begin_inset Formula $j=1,\dots,5$
+\end_inset
+
+) выходит хотя бы один непрерывный образ кривой 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Если бы из некоторой точки 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+ выходило бы два непрерывных образа (расходящихся именно в точке 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+), то кривая 
+\begin_inset Formula $C$
+\end_inset
+
+ имела бы шесть непрерывных образов, что невозможно, так как уравнение пятой
+ степени не может иметь более пяти корней.
+ Таким образом, точка 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ не является точкой неоднозначности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь пять кругов 
+\begin_inset Formula $D_{j}$
+\end_inset
+
+ (
+\begin_inset Formula $j=1,.\dots,5$
+\end_inset
+
+) радиуса 
+\begin_inset Formula $r$
+\end_inset
+
+ с центрами в точках 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+, причём выберем 
+\begin_inset Formula $r$
+\end_inset
+
+ настолько малым, чтобы круги не пересекались и не касались друг друга.
+ Тогда, по доказанному в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:small-change-in-parameter-leads-to-small-changes-of-roots"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует круг 
+\begin_inset Formula $D_{0}$
+\end_inset
+
+ с центром точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ такого радиуса 
+\begin_inset Formula $\rho$
+\end_inset
+
+, что у любой точки 
+\begin_inset Formula $z\in D_{0}$
+\end_inset
+
+ существует хотя бы один (и следовательно, равно один) образ в каждом из
+ кругов 
+\begin_inset Formula $D_{j}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $C$
+\end_inset
+
+ — непрерывная кривая, целиком лежащая в круге 
+\begin_inset Formula $D_{0}$
+\end_inset
+
+, то все образы всех её точек лежат в кругах 
+\begin_inset Formula $D_{j}$
+\end_inset
+
+.
+ Так как эти круги не пересекаются и не касаются друг друга, то переход
+ с одного непрерывного образа кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ на другой невозможен.
+ То есть любой непрерывный образ 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ кривой 
+\begin_inset Formula $C$
+\end_inset
+
+ при отображении 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ лежит внутри одного из кругов 
+\begin_inset Formula $D_{j}$
+\end_inset
+
+.
+ Если кривая 
+\begin_inset Formula $C$
+\end_inset
+
+, лежащая целиком в круге 
+\begin_inset Formula $D_{0}$
+\end_inset
+
+, начинается и заканчивается в одной и той же точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, то её непрерывный образ 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ должен начинаться и заканчиваться в точках, являющихся образами точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, но внутри каждого круга 
+\begin_inset Formula $D_{j}$
+\end_inset
+
+ находится ровно один образ точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $C^{\prime}$
+\end_inset
+
+ также будет начинаться и заканчиваться в одной точке.
+\end_layout
+
+\begin_layout Solution
+Окончательно получаем, что если 
+\begin_inset Formula $C$
+\end_inset
+
+ — замкнутая непрерывная кривая, целиком лежащая внутри круга 
+\begin_inset Formula $D_{0}$
+\end_inset
+
+, то значение функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ в конечной точке кривой, определённое по непрерывности вдоль кривой 
+\begin_inset Formula $C$
+\end_inset
+
+, совпадает со значением в начальной точке.
+ В частности, в качестве 
+\begin_inset Formula $C$
+\end_inset
+
+ можно взять окружность радиуса не больше 
+\begin_inset Formula $\rho$
+\end_inset
+
+ с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Следовательно, точка 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ не является точкой разветвления функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -88866,28 +89128,38 @@ a_{n}\left(z\right)w^{n}+a_{1}\left(z\right)w^{n-1}+\dots+a_{n}\left(z\right)=0,
 \begin_inset Quotes rrd
 \end_inset
 
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на раздел 3.10
-\end_layout
+, то есть она обладает свойством монодромии (смотрите определение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:monodromy"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-, то есть она обладает свойством монодромии.
+).
  Поэтому для функции 
 \begin_inset Formula $w\left(z\right)$
 \end_inset
 
- можно построить риманову поверхность (
-\begin_inset Note Note
-status open
+ можно построить риманову поверхность (как показано в задачах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-can-be-partitioned-on-continuous-unambiguous-branches"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Добавить ссылки на задачи 309 и 310
-\end_layout
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:monodromic-function-cut-cross-point-does-not-matter"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -88965,13 +89237,13 @@ noprefix "false"
 \begin_inset Formula $z_{0}$
 \end_inset
 
- в бесконечность; 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на замечание 2 на странице 101
-\end_layout
+ в бесконечность; смотри замечание 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:how-to-construct-rieman-surface-of-monodromic-function"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -88989,6 +89261,153 @@ status open
 \end_inset
 
 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог решить сам
+\end_layout
+
+\end_inset
+
+При 
+\begin_inset Formula $z_{0}=38$
+\end_inset
+
+ уравнение имеет 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-equation-for-abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ четыре различных корня 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $j=1,\dots,4$
+\end_inset
+
+.
+ Причём 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ (выбран произвольно без потери общности) имеет кратность два, а остальные
+ корни — один.
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+Возможно, стоит доказать, что корней кратности более 2 быть не может, а
+ также рассмотреть, возможен ли случай, когда имеется два кратных корня.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть точка 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ лежит вблизи точки 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Тогда, из решения задачи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:small-change-in-parameter-leads-to-small-changes-of-roots"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что вблизи точки 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ лежат два образа точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, а вблизи точек 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $w_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{4}$
+\end_inset
+
+ — по одному.
+ Пусть окружность малого радиуса с центром в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ начинается и заканчивается в точке 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+ Рассуждая также, как в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:branching-and-ambiguity-points-of-sample-function-of-Abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем, что непрерывные образы этой окружности, находящиеся вблизи точек
+ 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $w_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{4}$
+\end_inset
+
+ начинаются и заканчивается в одной точке, а непрерывные образы, находящиеся
+ вблизи точки 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+, могут начинаться и заканчиваться в разных образах точки 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ (лежащих вблизи 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Таким образом, в точке 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ только два листа могут соединяться между собой, а между другими листами
+ переходов нет.
 \end_layout
 
 \begin_layout Problem
