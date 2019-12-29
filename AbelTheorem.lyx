@@ -321,17 +321,6 @@ noprefix "false"
 Оказывается, можно избежать подобных исключений, если рассматривать алгебраическ
 ие уравнения не в области вещественных чисел, а в более широкой области
  комплексных чисел.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ввести (неформально) комплексные числа
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Definition
@@ -485,6 +474,12 @@ x^{2}+px+q=x^{2}-\left(x_{1}+x_{2}\right)x+x_{1}x_{2}=\\
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Cardano-formula"
+
+\end_inset
+
 Кубические уравнения
 \end_layout
 
@@ -54181,13 +54176,13 @@ status open
 \end_layout
 
 \begin_layout Standard
-В дальнейшем мы покажем (
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-добавить ссылку на задачу 272
-\end_layout
+В дальнейшем мы покажем (в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:polynomial-with-not-real-root-is-divided-by-second-order-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -75126,12 +75121,12 @@ noprefix "false"
 \end_inset
 
 ), и алгебраические функции (
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на параграф 14
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Abel-theorem"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -87830,6 +87825,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:galois-group-is-solvable-for-wider-class-of-functions"
+
+\end_inset
+
 Для читателей, знакомых с теорией аналитических функций, отметим следующее.
  Если группу Галуа функции 
 \begin_inset Formula $h\left(z\right)$
@@ -87891,6 +87892,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Abel-theorem"
+
+\end_inset
+
 Теорема Абеля
 \end_layout
 
@@ -89089,9 +89096,16 @@ noprefix "false"
 \end_inset
 
 .
- Являясь одной из алгебраических функций
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "def:algebraic-functions"
+
+\end_inset
+
+Являясь одной из алгебраических функций
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Многозначная функция 
@@ -89767,12 +89781,42 @@ noprefix "false"
  Изменив нумерацию листов в этой схеме, можно получить схему, в которой
  первый соединён лист соединён со вторым, второй — ещё с третьим, третий
  — ещё с четвёртым, а четвёртый — ещё с пятым.
- 
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Solution
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Добавить рисунок из решений
+\align center
+\begin_inset Graphics
+	filename pictures/rieman-surface-schemes-for-Abel-theorem-sample-function.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Возможные схемы римановой поверхности для функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -90229,6 +90273,36 @@ noprefix "false"
  неразрешимо в радикалах.
 \end_layout
 
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В 
+\begin_inset Quotes rld
+\end_inset
+
+Теорема Абеля...
+\begin_inset Quotes rrd
+\end_inset
+
+ приведено другое доказательство, основанное на построении схемы римановой
+ поверхности, которая состоит из изолированного листа 
+\begin_inset Formula $w\equiv0$
+\end_inset
+
+ и схемы римановой поверхности функции 
+\begin_inset Formula $w\left(z\right)$
+\end_inset
+
+ для уравнения 5 степени.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Результаты задач 
 \begin_inset CommandInset ref
@@ -90284,17 +90358,17 @@ a_{0}w^{n}+a_{1}w^{n-1}+\dots+a_{n-1}w+a_{n}=0,
 \begin_inset Quotes rrd
 \end_inset
 
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ (раздел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Cardano-formula"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
- была получена формула Кардано для решения общего алгебраического уравнения
+) была получена формула Кардано для решения общего алгебраического уравнения
  третьей степени.
  Причём корнями уравнения являлись не все значения, задаваемые этой формулой,
  а лишь те, для которых выполнялось некоторое дополнительное условие.
@@ -90340,7 +90414,7 @@ noprefix "false"
 \begin_inset Formula $z$
 \end_inset
 
- являются часть значений некоторой функции 
+ являются частью значений некоторой функции 
 \begin_inset Formula $w_{1}\left(z\right)$
 \end_inset
 
@@ -90387,13 +90461,13 @@ noprefix "false"
 \begin_inset Formula $G$
 \end_inset
 
- неразрешима (
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на задачу 163
-\end_layout
+ неразрешима (как было показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:image-of-solvable-group-is-solvable-by-homomorphism"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -90414,13 +90488,13 @@ status open
 \end_layout
 
 \begin_layout Remark
-Из замечания на странице 114 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+Из замечания 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:galois-group-is-solvable-for-wider-class-of-functions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -90525,13 +90599,13 @@ noprefix "false"
 \end_inset
 
 ) при всевозможных действительных значениях коэффициентов.
- При этом, в силу замечания 2
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ При этом, в силу замечания 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:galois-group-is-solvable-for-wider-class-of-functions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -90560,17 +90634,17 @@ status open
 \end_layout
 
 \begin_layout Remark
-Класс алгебраических функций 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку на сноску на странице 115
-\end_layout
+Класс алгебраических функций (смотрите сноску к абзацу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:algebraic-functions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
- является достаточно богатым и интересным классом.
+) является достаточно богатым и интересным классом.
  В частности, можно показать, что все функции, выражающиеся в радикалах,
  являются алгебраическими.
  Мы доказали, что любая функция, выражающаяся в радикалах, имеет разрешимую
@@ -90593,19 +90667,6 @@ noprefix "false"
  Этот результат является частным случаем общей теории Галуа (смотри например
  Чеботарёв, Н.Г.
  Основы теории Галуа, ОНТИ — ГТТИ, 1934).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Доделать книгу
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
