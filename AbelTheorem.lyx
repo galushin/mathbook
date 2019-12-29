@@ -31559,6 +31559,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:center-of-group-is-normal-subgroup"
+
+\end_inset
+
 Множество элементов группы 
 \begin_inset Formula $G$
 \end_inset
@@ -35390,7 +35396,7 @@ noprefix "false"
 
 .
  Так как 
-\begin_inset Formula $1\cdot1=1$
+\begin_inset Formula $1\cdot1=\left(-1\right)\left(-1\right)=1$
 \end_inset
 
  и 
@@ -35406,16 +35412,29 @@ noprefix "false"
 \end_inset
 
  (группа симметрий ромба).
-\begin_inset Note Note
-status open
+ Элементы 
+\begin_inset Formula $1$
+\end_inset
 
-\begin_layout Plain Layout
-Написать, является ли эта группа нормальной
-\end_layout
+ и 
+\begin_inset Formula $-1$
+\end_inset
+
+ коммутируют с остальными элементами группы, поэтому подгруппа 
+\begin_inset Formula $\left\{ -1,1\right\} $
+\end_inset
+
+ является нормальной (показано в задаче 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:center-of-group-is-normal-subgroup"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
+).
 \end_layout
 
 \begin_layout Solution
@@ -55750,11 +55769,11 @@ name "prob:triangle-inequality-for-complex-numbers"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать алгебраическое доказательство
+Дать алгебраическое доказательство
 \end_layout
 
 \end_inset
