@@ -89,7 +89,7 @@ theorems-ams-bytype
 \end_layout
 
 \begin_layout Section
-Обратимая идемпотентная матрица является единичной
+Обратимая идемпотентная матрица является единичной (задача 1)
 \end_layout
 
 \begin_layout Problem
@@ -166,7 +166,7 @@ A=I_{n}.
 \end_layout
 
 \begin_layout Section
-Собственные значения подобных матрицы равны
+Собственные значения подобных матрицы равны (задача 2)
 \end_layout
 
 \begin_layout Problem
@@ -337,12 +337,84 @@ p_{A}\left(t\right)=\det\left(A-tI\right)=\det\left(S^{-1}BS-tI\right)=\\
  и их алгебраических кратностей.
 \end_layout
 
+\begin_layout Section
+Линейное отображение преобразует нулевой вектор в нулевой вектор (задача
+ 5)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $T:\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ — линейное отображение.
+ Пусть 
+\begin_inset Formula $0_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $0_{m}$
+\end_inset
+
+ — нулевые вектора 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+ соответственно.
+ Показать, что 
+\begin_inset Formula $T\left(0_{n}\right)=0_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $x$
+\end_inset
+
+ — произвольный элемент 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $y=T\left(x\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $0\cdot x=0_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $0\cdot y=0_{m}$
+\end_inset
+
+ и, так как 
+\begin_inset Formula $T$
+\end_inset
+
+ — линейное отображение, то 
+\begin_inset Formula 
+\[
+T\left(0_{n}\right)=T\left(0\cdot x\right)=0\cdot T\left(x\right)=0\cdot y=0_{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Теория групп
 \end_layout
 
 \begin_layout Section
-Условие того, что коммутант является нормальной подгруппой
+Условие того, что коммутант является нормальной подгруппой (задача 3)
 \end_layout
 
 \begin_layout Problem
@@ -666,6 +738,381 @@ aka^{-1}=a\left(k_{1}\cdot k_{2}\cdot\dots\cdot k_{m}\right)a^{-1}=\\
 
  является нормальной подгруппой группы 
 \begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Факторгруппа по ядру гомоморфизма порождает инъективный гомоморфизм (задача
+ 4)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ — группы, а 
+\begin_inset Formula $\phi:G\to H$
+\end_inset
+
+ — гомоморфизм групп.
+ Покажите, что 
+\begin_inset Formula $\phi$
+\end_inset
+
+ порождает инъективный гомоморфизм 
+\begin_inset Formula $G/\ker\phi\to H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $T\left[g\right]$
+\end_inset
+
+ — это элемент 
+\begin_inset Formula $G/\ker\phi$
+\end_inset
+
+, представителем которого является 
+\begin_inset Formula $g\in G$
+\end_inset
+
+.
+ Определим 
+\begin_inset Formula $\psi:G/\ker\phi\to H$
+\end_inset
+
+ следующим образом: 
+\begin_inset Formula $\psi\left(T_{g}\right)=\phi\left(g\right)$
+\end_inset
+
+.
+ Для этого нужно убедиться, что такое определение не зависит от выбора конкретно
+го представителя класса 
+\begin_inset Formula $T\left[g\right]$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ — другой представитель класса 
+\begin_inset Formula $T\left[g\right]$
+\end_inset
+
+.
+ Тогда существует такой элемент 
+\begin_inset Formula $a\in\ker\phi$
+\end_inset
+
+, что 
+\begin_inset Formula $g_{2}=ag$
+\end_inset
+
+, но тогда, так как 
+\begin_inset Formula $\phi$
+\end_inset
+
+ — гомоморфизм, а элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ принадлежит его ядру: 
+\begin_inset Formula 
+\[
+\phi\left(g_{2}\right)=\phi\left(ag\right)=\phi\left(a\right)\phi\left(g\right)=e_{H}\phi\left(g\right)=\phi\left(g\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Итак, отображение 
+\begin_inset Formula $\psi$
+\end_inset
+
+ определено корректно.
+ Докажем теперь, что оно является гомоморфизмом.
+ Пусть 
+\begin_inset Formula $T=T_{1}T_{2}$
+\end_inset
+
+, а 
+\begin_inset Formula $g_{1}\in T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in T_{2}$
+\end_inset
+
+.
+ Тогда, так как 
+\begin_inset Formula $\phi$
+\end_inset
+
+ — гомоморфизм: 
+\begin_inset Formula 
+\[
+\psi\left(T_{1}\right)\psi\left(T_{2}\right)=\phi\left(g_{1}\right)\phi\left(g_{2}\right)=\phi\left(g_{1}g_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению произведения смежных классов, 
+\begin_inset Formula $T=T_{1}T_{2}$
+\end_inset
+
+ — это смежный класс, которому принадлежит 
+\begin_inset Formula $g_{1}g_{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\psi\left(T\right)=\psi\left(T_{1}T_{2}\right)=\phi\left(g_{1}g_{2}\right)$
+\end_inset
+
+, таким образом 
+\begin_inset Formula $\psi\left(T_{1}T_{2}\right)=\psi\left(T_{1}\right)\psi\left(T_{2}\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\psi$
+\end_inset
+
+ — гомоморфизм.
+ Остаётся доказать, что 
+\begin_inset Formula $\psi$
+\end_inset
+
+ — инъективное отображение, то есть из 
+\begin_inset Formula $\psi\left(T_{1}\right)=\psi\left(T_{2}\right)$
+\end_inset
+
+ следует 
+\begin_inset Formula $T_{1}=T_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $\psi\left(T_{1}\right)=\psi\left(T_{2}\right)$
+\end_inset
+
+ и выбраны представители 
+\begin_inset Formula $g_{1}\in T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in T_{2}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\phi\left(g_{1}\right)=\phi\left(g_{2}\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $e_{H}=\phi\left(g_{1}\right)\left[\phi\left(g_{2}\right)\right]^{-1}=\phi\left(g_{1}\right)\phi\left(g_{2}^{-1}\right)=\phi\left(g_{1}g_{2}^{-1}\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g_{1}g_{2}^{-1}\in\ker\phi$
+\end_inset
+
+, а значит 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ принадлежат одному и тому же смежному классу по 
+\begin_inset Formula $\ker\phi$
+\end_inset
+
+, то есть 
+\begin_inset Formula $T_{1}=T_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Можно сначала показать, что если 
+\begin_inset Formula $\psi^{-1}\left(e_{H}\right)=\ker\phi$
+\end_inset
+
+, то 
+\begin_inset Formula $\psi$
+\end_inset
+
+ — инъективное отображение, а затем показать, что из 
+\begin_inset Formula $\psi\left(T\right)=e_{H}$
+\end_inset
+
+ следует 
+\begin_inset Formula $T=\ker\phi$
+\end_inset
+
+.
+ Действительно, пусть 
+\begin_inset Formula $\psi\left(T\right)=e_{H}$
+\end_inset
+
+ и 
+\begin_inset Formula $g\in T$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\phi\left(g\right)=e_{H}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g\in\ker\phi$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $T=\ker\phi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Группа линейных функций (задача 6)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $f_{a,b}\left(x\right)=ax+b$
+\end_inset
+
+, где 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+ и 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ Показать, что 
+\begin_inset Formula $G:=\left\{ f_{a,b}|a,b\in\mathbb{R},a>0\right\} $
+\end_inset
+
+ является группой, если в качестве операции взять композицию функций.
+\end_layout
+
+\begin_layout Solution
+Докажем последовательно, что для 
+\begin_inset Formula $G$
+\end_inset
+
+ выполняются все свойства функции.
+ Во-первых, 
+\begin_inset Formula $G$
+\end_inset
+
+ замкнута относительно операции композиции функций:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\left(f_{a,b}\circ f_{c,d}\right)\left(x\right)=f_{a,b}\left(f_{c,d}\left(x\right)\right)=f_{a,b}\left(cx+d\right)=\\
+=a\left(cx+d\right)+b=\left(ac\right)x+\left(ad+b\right)=f_{ac,ad+b}\left(x\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Во-вторых, эта операция является ассоциативной, так как операция композиции
+ является ассоциативной для любых функций.
+\end_layout
+
+\begin_layout Solution
+Докажем, что в 
+\begin_inset Formula $G$
+\end_inset
+
+ есть единичный элемент, а именно 
+\begin_inset Formula $f_{1,0}$
+\end_inset
+
+.
+ Действительно, по доказанному выше: 
+\begin_inset Formula $f_{1,0}\circ f_{a,b}=f_{a,b}\circ f_{1,0}=f_{a,b}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем, что в 
+\begin_inset Formula $G$
+\end_inset
+
+ есть обратный элемент для каждого 
+\begin_inset Formula $f_{a,b}$
+\end_inset
+
+.
+ Нужно найти такой 
+\begin_inset Formula $f_{c,d}$
+\end_inset
+
+, что 
+\begin_inset Formula $f_{ac,ad+b}=f_{1,0}$
+\end_inset
+
+, то есть имеют место равенства 
+\begin_inset Formula $ac=1$
+\end_inset
+
+ и 
+\begin_inset Formula $ad+b=0$
+\end_inset
+
+.
+ Из первого равенства получаем 
+\begin_inset Formula $c=a^{-1}$
+\end_inset
+
+ и, так как 
+\begin_inset Formula $a>0$
+\end_inset
+
+, то 
+\begin_inset Formula $c$
+\end_inset
+
+ всегда определено.
+ Из второго равенства получаем 
+\begin_inset Formula $d=-\frac{b}{a}$
+\end_inset
+
+, что также всегда определено, так как 
+\begin_inset Formula $a>0$
 \end_inset
 
 .
