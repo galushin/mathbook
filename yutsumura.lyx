@@ -409,6 +409,637 @@ T\left(0_{n}\right)=T\left(0\cdot x\right)=0\cdot T\left(x\right)=0\cdot y=0_{m}
 
 \end_layout
 
+\begin_layout Section
+Степени диагональной матрицы (задача 7)
+\end_layout
+
+\begin_layout Standard
+Эту задачу можно было бы обобщить для матриц произвольного порядка.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+a & 0\\
+0 & b
+\end{array}\right)$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $A^{n}=\left(\begin{array}{cc}
+a^{n} & 0\\
+0 & b^{n}
+\end{array}\right)$
+\end_inset
+
+ для любого 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $B=S^{-1}AS$
+\end_inset
+
+, где 
+\begin_inset Formula $S$
+\end_inset
+
+ — обратимая матрица 
+\begin_inset Formula $2\times2$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $B^{n}=S^{-1}A^{n}S$
+\end_inset
+
+ для любого 
+\begin_inset Formula $n\in\mathbb{N}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Найдём общую формулу для произведения диагональных матриц.
+ Пусть 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+a & 0\\
+0 & b
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $C=\left(\begin{array}{cc}
+c & 0\\
+0 & d
+\end{array}\right)$
+\end_inset
+
+, тогда по правилам вычисления произведения матриц: 
+\begin_inset Formula $AC=\left(\begin{array}{cc}
+ac & 0\\
+0 & bd
+\end{array}\right)$
+\end_inset
+
+.
+ Тогда равенство 
+\begin_inset Formula $A^{n}=\left(\begin{array}{cc}
+a^{n} & 0\\
+0 & b^{n}
+\end{array}\right)$
+\end_inset
+
+ можно доказать по индукции.
+ База индукции: 
+\begin_inset Formula $A^{1}=A=\left(\begin{array}{cc}
+a^{1} & 0\\
+0 & b^{1}
+\end{array}\right)$
+\end_inset
+
+.
+ Пусть теперь мы доказали для некоторого 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, что 
+\begin_inset Formula $A^{k}=\left(\begin{array}{cc}
+a^{k} & 0\\
+0 & b^{k}
+\end{array}\right)$
+\end_inset
+
+.
+ Найдём 
+\begin_inset Formula 
+\[
+A^{k+1}=A^{k}A=\left(\begin{array}{cc}
+a^{k} & 0\\
+0 & b^{k}
+\end{array}\right)\left(\begin{array}{cc}
+a & 0\\
+0 & b
+\end{array}\right)=\left(\begin{array}{cc}
+a^{k+1} & 0\\
+0 & b^{k+1}
+\end{array}\right),
+\]
+
+\end_inset
+
+что и требовалось.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь матрицу 
+\begin_inset Formula $B=S^{-1}AS$
+\end_inset
+
+.
+ Снова воспользуемся математической индукцией.
+ База индукции: 
+\begin_inset Formula $B^{1}=B=S^{-1}AS=S^{-1}A^{1}S$
+\end_inset
+
+.
+ Пусть теперь доказали для некоторого 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, что 
+\begin_inset Formula $B^{k}=S^{-1}A^{k}S$
+\end_inset
+
+.
+ Найдём 
+\begin_inset Formula 
+\begin{multline*}
+B^{k+1}=B^{k}B=\left(S^{-1}A^{k}S\right)\cdot\left(S^{-1}AS\right)=\\
+=S^{-1}A^{k}\left(SS^{-1}\right)AS=S^{-1}A^{k}I_{2}AS=\\
+=S^{-1}A^{k}AS=S^{-1}A^{k+1}S,
+\end{multline*}
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Section
+Как найти формулу для степени матрицы (задача 8)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+1 & 2\\
+2 & 1
+\end{array}\right)$
+\end_inset
+
+.
+ Вычислить 
+\begin_inset Formula $A^{n}$
+\end_inset
+
+ для любого 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Диагонализируем матрицу 
+\begin_inset Formula $A$
+\end_inset
+
+, а затем воспользуемся результатом решения предыдущей задачи.
+\end_layout
+
+\begin_layout Solution
+Сначала найдём собственные числа матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Для этого решим уравнение
+\begin_inset Formula 
+\[
+\left|A-\lambda I_{2}\right|=\left|\begin{array}{cc}
+1-\lambda & 2\\
+2 & 1-\lambda
+\end{array}\right|=0,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По правилу вычисления определителей получаем 
+\begin_inset Formula $\left|A-\lambda I_{2}\right|=\left(\lambda-1\right)^{2}-4=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\lambda-1=\pm2$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda=1\pm2$
+\end_inset
+
+ то есть собственные числа матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ — это 
+\begin_inset Formula $\lambda_{1}=3$
+\end_inset
+
+ и 
+\begin_inset Formula $\lambda_{2}=-1$
+\end_inset
+
+.
+ Найдём теперь собственные векторы матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Для этого нужно решить системы уравнений 
+\begin_inset Formula 
+\[
+\left(A-\lambda_{j}I_{2}\right)u=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+При 
+\begin_inset Formula $j=1$
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cc}
+1-3 & 2\\
+2 & 1-3
+\end{array}\right)\left(\begin{array}{c}
+x\\
+y
+\end{array}\right)=\left(\begin{array}{cc}
+-2 & 2\\
+2 & -2
+\end{array}\right)\left(\begin{array}{c}
+x\\
+y
+\end{array}\right)=\left(\begin{array}{c}
+0\\
+0
+\end{array}\right),
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $-2x+2y=0$
+\end_inset
+
+ или 
+\begin_inset Formula $y=x$
+\end_inset
+
+, из условия нормировки 
+\begin_inset Formula $x^{2}+y^{2}=1$
+\end_inset
+
+ получаем, что 
+\begin_inset Formula $x=y=\frac{1}{\sqrt{2}}$
+\end_inset
+
+ и первый собственный вектор матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ есть 
+\begin_inset Formula 
+\[
+u_{1}=\frac{1}{\sqrt{2}}\left(\begin{array}{c}
+1\\
+1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+При 
+\begin_inset Formula $j=2$
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cc}
+1-\left(-1\right) & 2\\
+2 & 1-\left(-1\right)
+\end{array}\right)\left(\begin{array}{c}
+x\\
+y
+\end{array}\right)=\left(\begin{array}{cc}
+2 & 2\\
+2 & 2
+\end{array}\right)\left(\begin{array}{c}
+x\\
+y
+\end{array}\right)=\left(\begin{array}{c}
+0\\
+0
+\end{array}\right),
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $2x+2y=0$
+\end_inset
+
+ или 
+\begin_inset Formula $y=-x$
+\end_inset
+
+, из условия нормировки 
+\begin_inset Formula $x^{2}+y^{2}=1$
+\end_inset
+
+ получаем, что 
+\begin_inset Formula $x=-y=\frac{1}{\sqrt{2}}$
+\end_inset
+
+ и второй собственный вектор матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ есть 
+\begin_inset Formula 
+\[
+u_{2}=\frac{1}{\sqrt{2}}\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Составим матрицу 
+\begin_inset Formula $S$
+\end_inset
+
+, столбцы которой есть собственные вектора матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+S:=\frac{1}{\sqrt{2}}\left(\begin{array}{cc}
+1 & 1\\
+1 & -1
+\end{array}\right).
+\]
+
+\end_inset
+
+Положим также 
+\begin_inset Formula $\Lambda:=\left(\begin{array}{cc}
+\lambda_{1} & 0\\
+0 & \lambda_{2}
+\end{array}\right)=\left(\begin{array}{cc}
+3 & 0\\
+0 & -1
+\end{array}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula $A=S^{-1}\Lambda S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как эта матрица 
+\begin_inset Formula $S$
+\end_inset
+
+ ортогональная, то 
+\begin_inset Formula 
+\[
+S^{-1}=S^{T}=\frac{1}{\sqrt{2}}\left(\begin{array}{cc}
+1 & 1\\
+1 & -1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По доказанному в предыдущей задаче, 
+\begin_inset Formula $A^{n}=S^{-1}\Lambda^{n}S$
+\end_inset
+
+ и 
+\begin_inset Formula $\Lambda^{n}=\left(\begin{array}{cc}
+3^{n} & 0\\
+0 & \left(-1\right)^{n}
+\end{array}\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+A^{n}=\frac{1}{2}\left(\begin{array}{cc}
+1 & 1\\
+1 & -1
+\end{array}\right)\left(\begin{array}{cc}
+3^{n} & 0\\
+0 & \left(-1\right)^{n}
+\end{array}\right)\left(\begin{array}{cc}
+1 & 1\\
+1 & -1
+\end{array}\right)=\\
+=\frac{1}{2}\left(\begin{array}{cc}
+1 & 1\\
+1 & -1
+\end{array}\right)\left(\begin{array}{cc}
+3^{n} & 3^{n}\\
+\left(-1\right)^{n} & -\left(-1\right)^{n}
+\end{array}\right)=\frac{1}{2}\left(\begin{array}{cc}
+3^{n}+\left(-1\right)^{n} & 3^{n}-\left(-1\right)^{n}\\
+3^{n}-\left(-1\right)^{n} & 3^{n}+\left(-1\right)^{n}
+\end{array}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Определитель, след и собственные значения матрицы (задача 9)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Эту задачу нужно рассмотреть подробнее, так как не смог её решить во всех
+ деталях сам
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ и 
+\begin_inset Formula $\lambda_{1},\dots,\lambda_{n}$
+\end_inset
+
+ — её собственные значения.
+ Показать, что 
+\begin_inset Formula 
+\[
+\det\left(A\right)=\prod_{j=1}^{n}\lambda_{j}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(A\right)=\sum_{j=1}^{n}\lambda_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению собственных числе матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+, они являются корнем характеристического многочлена: 
+\begin_inset Formula 
+\[
+\det\left(A-\lambda I\right)=\prod_{j=1}^{n}\left(\lambda_{j}-\lambda\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Положив 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+\det\left(A\right)=\prod_{j=1}^{n}\lambda_{j},
+\]
+
+\end_inset
+
+ что и требовалось.
+ Теперь докажем формулу для следа матрицы.
+ Сравним коэффициенты при 
+\begin_inset Formula $\lambda^{n-1}$
+\end_inset
+
+ в левой и правой части выражений для характеристического многочлена: 
+\begin_inset Formula 
+\[
+\left(-1\right)^{n-1}\left(a_{11}+a_{22}+\dots+a_{nn}\right)=\left(-1\right)^{n-1}\sum_{j=1}^{n}\lambda_{j},
+\]
+
+\end_inset
+
+ откуда, по определению следа матрицы: 
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(A\right)=\sum_{j=1}^{n}\lambda_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Второй метод доказательства основан на приведении 
+\begin_inset Formula $A$
+\end_inset
+
+ к жордановой нормальной/канонической форме 
+\begin_inset Formula $B=P^{-1}AP$
+\end_inset
+
+, где 
+\begin_inset Formula $B$
+\end_inset
+
+ — верхняя треугольная матрица, на диагонали которой стоят собственные числа.
+ Так как определитель треугольной матрицы есть произведение диагоналных
+ элементов, то получаем следующее равенство: 
+\begin_inset Formula 
+\begin{multline*}
+\prod_{j=1}^{n}\lambda_{j}=\det\left(P^{-1}AP\right)=\det\left(P^{-1}\right)\det\left(A\right)\det\left(P\right)=\\
+=\left(\det\left(P\right)\right)^{-1}\det\left(A\right)\det\left(P\right)=\det\left(A\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Аналогично: 
+\begin_inset Formula 
+\[
+\sum_{j=1}^{n}\lambda_{j}=\mathrm{tr}\left(P^{-1}AP\right)=\mathrm{tr}\left(APP^{-1}\right)=\mathrm{tr}\left(A\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Здесь мы воспользовались тем, что 
+\begin_inset Formula $\det\left(A^{-1}\right)=\left(\det\left(A\right)\right)^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{tr}\left(AB\right)=\mathrm{tr}\left(BA\right)$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Chapter
 Теория групп
 \end_layout
