@@ -490,20 +490,12 @@ A\triangle B=\left(A\setminus B\right)\cup\left(B\setminus A\right)=\left(A\cup 
 
 \begin_layout Problem
 Старейший математик среди шахматистов и старейший шахматист среди математиков
- — один или тот же человек или (возможно) разные?
+ — один и тот же человек или (возможно) разные?
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
-\end_inset
-
-
+И в том, и в другом случае речь идёт о старейшем человеке в пересечении
+ множеств математиков и шахматистов, поэтому это один и тот же человек.
 \end_layout
 
 \begin_layout Problem
@@ -512,16 +504,9 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
-\end_inset
-
-
+Первый — лучший математик в множестве, являющемся пересечением множеств
+ математиков и программистов, а второй — лучший шахматист в том же множестве.
+ Это могут быть два разных человека.
 \end_layout
 
 \begin_layout Problem
@@ -530,16 +515,46 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Пусть 
+\begin_inset Formula $A$
 \end_inset
 
+ — множество математиков, а 
+\begin_inset Formula $B$
+\end_inset
 
+ — множество шахматистов.
+ И пусть в элементами множества 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ являются 
+\begin_inset Formula $n$
+\end_inset
+
+ человек.
+ Тогда, по условию, в множество 
+\begin_inset Formula $A$
+\end_inset
+
+ входят 
+\begin_inset Formula $10n$
+\end_inset
+
+ человек, а в множество 
+\begin_inset Formula $B$
+\end_inset
+
+ — 
+\begin_inset Formula $6n$
+\end_inset
+
+, поэтому математиков больше, чем шахматистов, причём математиков больше
+ в 
+\begin_inset Formula $\frac{10}{6}=\frac{5}{3}$
+\end_inset
+
+ раз.
 \end_layout
 
 \begin_layout Problem
@@ -571,16 +586,23 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+По определению пересечения множества 
+\begin_inset Formula $A\cap B\subset A$
 \end_inset
 
+, а так как 
+\begin_inset Formula $A\cap C=\emptyset$
+\end_inset
 
+, то и 
+\begin_inset Formula $\left(A\cap B\right)\cap C=\emptyset$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left(A\cap B\right)\setminus C\neq\emptyset$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
@@ -624,16 +646,8 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
-\end_inset
-
-
+Так как следующая задача полностью покрывает эту, то просто ссылаемся на
+ неё.
 \end_layout
 
 \begin_layout Problem
@@ -664,7 +678,7 @@ status open
 \begin_inset Quotes rrd
 \end_inset
 
- ассоциативна: 
+ является ассоциативной операцией: 
 \begin_inset Formula $A\triangle\left(B\triangle C\right)=\left(A\triangle B\right)\triangle C$
 \end_inset
 
@@ -933,12 +947,12 @@ status open
  элементов, поскольку все множества данного размера равновероятны).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Закончить этот раздел
+Написать решение
 \end_layout
 
 \end_inset
