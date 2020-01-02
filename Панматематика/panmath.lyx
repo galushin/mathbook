@@ -1,0 +1,9696 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style russian
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Панматематика
+\end_layout
+
+\begin_layout Author
+по мотивам видеолекций А.В.
+\begin_inset space \thinspace{}
+\end_inset
+
+Савватеева
+\end_layout
+
+\begin_layout Section
+Начальная математическая подготовка
+\end_layout
+
+\begin_layout Standard
+Все начинается с абстракции, которая называется число.
+ Число — это когда мы научились что-то измерять, да ещё и выбрали единицу
+ измерения.
+ Научились измерять — значит научились говорить, что что-то в два раза больше,
+ чем в что-то и т.д.
+ Чтобы была линейная шкала.
+\end_layout
+
+\begin_layout Standard
+Пример шкалы Цельсия.
+\end_layout
+
+\begin_layout Standard
+Изображаем числа на прямой
+\end_layout
+
+\begin_layout Section
+Целые числа
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{\mathbb{Z}}$
+\end_inset
+
+ — множество целых чисел, 
+\begin_inset Formula $\mathrm{\mathbb{\mathbb{Z}}}=\left\{ \dots,-4,-3,-2,-1,0,1,2,3,4,\dots\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Целые числа мы умеем складывать, вычитать и умножать.
+\end_layout
+
+\begin_layout Standard
+Что значит 
+\begin_inset Formula $3+4$
+\end_inset
+
+? Это значит: на числовой прямой обозначить тройку и приставить к ней отрезок,
+ обозначающий 4.
+ 
+\begin_inset Formula $3+4=7$
+\end_inset
+
+.
+ Также можно отложить 4 влево.
+ Это будет 
+\begin_inset Formula $3-4=3+\left(-4\right)$
+\end_inset
+
+.
+ Содержательно это означает, что мы уменьшаем тройку на 4.
+ 
+\begin_inset Formula $3-4=1$
+\end_inset
+
+.
+ Операция вычитания обратна операции сложения: 
+\begin_inset Formula $\left(3-4\right)+4=3$
+\end_inset
+
+.
+ Если температура сначала упала на 4 градуса, а затем поднялась на 4 градуса,
+ то ничего не изменилось.
+\end_layout
+
+\begin_layout Standard
+Это всё очевидно, но требует специального названия.
+ Называется это словом 
+\begin_inset Quotes rld
+\end_inset
+
+группа
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Что такое группа мы рассмотрим в следующем блоке на примере целых чисел,
+ исходя из идеи, что все математические идеи нужно вводить сразу же.
+\end_layout
+
+\begin_layout Section
+Что такое группа
+\end_layout
+
+\begin_layout Standard
+Итак, что такое группа? И всё время помните, что вы знаете только целые
+ числа.
+ Целые числа образуют группу по следующим причинам.
+ А потом мы абстрагируемся от целых чисел.
+\end_layout
+
+\begin_layout Standard
+Целые числа — это некоторое множество, любые элементы которых можно складывать
+ друг с другом 
+\begin_inset Formula $\left(\mathbb{Z},+\right)$
+\end_inset
+
+.
+ Сложение обладает несколькими свойствами: 
+\begin_inset Formula $a+b=b+a$
+\end_inset
+
+.
+ Но, как ни странно, это свойство в определение группы не входит, а группы,
+ которые обладают этим свойством носят специальное название — коммутативные
+ или Абелевы.
+ Это равенство следует из геометрических соображений
+\end_layout
+
+\begin_layout Standard
+Второе свойство: 
+\begin_inset Formula $\left(a+b\right)+c=a+\left(b+c\right)$
+\end_inset
+
+.
+ Это наглядно очевидно для целых чисел.
+\end_layout
+
+\begin_layout Standard
+Есть некоторое специальное число 
+\begin_inset Formula $0$
+\end_inset
+
+, которое обладает следующим свойством 
+\begin_inset Formula $a+0=0+a=a$
+\end_inset
+
+.
+ Ноль при сложении ничего не меняет.
+ Это называется нейтральный элемент группы.
+\end_layout
+
+\begin_layout Standard
+Для любого целого 
+\begin_inset Formula $a$
+\end_inset
+
+ существует противоположное ему 
+\begin_inset Formula $-a$
+\end_inset
+
+, то есть такое, которое его нейтрализует 
+\begin_inset Formula $a+\left(-a\right)=\left(-a\right)+a=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если мы возьмем эти три аксиомы (свойства) и будем их изучать их безотносительно
+ к тому, что такое целые числа и сложение, а просто есть какое-то множество
+ и какая-то операция.
+ Неважно, конечное или бесконечное.
+ Множество 
+\begin_inset Formula $G$
+\end_inset
+
+, с элементами можно проделывать операцию 
+\begin_inset Formula $*$
+\end_inset
+
+: чисто абстрактное действие, которое выполнимо с любыми элементами 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Заменив в описанных выше свойствах плюс на звездочку, мы можем изучать
+ такую абстрактную группу.
+ Многие выводы можно сделать для любых таких множеств, независимо от природы
+ элементов, а не только для целых чисел.
+\end_layout
+
+\begin_layout Section
+Целые числа как группа
+\end_layout
+
+\begin_layout Standard
+Мы будем их изучать немного необычно: как группу.
+ Потом мы соберём все плоды с этого дерева, сейчас мы его посадим.
+ Мы сажаем такое дерево, у себя в голове, что целые числа — это группа,
+ и задавать надо теоретико-групповые вопросы.
+ Если в целых числах такие подмножества 
+\begin_inset Formula $\mathbb{\mathbb{Z}}\supset A$
+\end_inset
+
+, которые то же образуют группу относительно той же операции сложения 
+\begin_inset Formula $\left(A,+\right)$
+\end_inset
+
+, то есть подгруппы.
+ Операция не выводит за рамки группы.
+\end_layout
+
+\begin_layout Standard
+Одну такую подгруппу можно угадать.
+ Это множество 
+\begin_inset Formula $\left\{ 0\right\} $
+\end_inset
+
+.
+ Есть ли другие подгруппы?
+\end_layout
+
+\begin_layout Standard
+Предположим, что подгруппа содержит некоторое число 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+.
+ Я сразу могу сказать, что если подгруппа содержит 
+\begin_inset Formula $b$
+\end_inset
+
+, то она содержит и ноль: 
+\begin_inset Formula $b-b=0$
+\end_inset
+
+.
+ Любая подгруппа целых чисел содержит ноль.
+ Подгруппа точно содержит 
+\begin_inset Formula $\left\{ -b,0,b\right\} $
+\end_inset
+
+.
+ Если мы можем вычесть из нуля 
+\begin_inset Formula $b$
+\end_inset
+
+, то можем вычесть 
+\begin_inset Formula $b$
+\end_inset
+
+ и из результата.
+ Это самый главный божий дар, который есть у людей — рекурсия.
+\end_layout
+
+\begin_layout Standard
+Если мы рассматриваем выражение 
+\begin_inset Formula $b+b+b$
+\end_inset
+
+, то мы можем вычислить его двумя способами: 
+\begin_inset Formula $\left(b+b\right)+b$
+\end_inset
+
+ и 
+\begin_inset Formula $b+\left(b+b\right)$
+\end_inset
+
+.
+ Вдруг окажется, что это два разных числа? Но нет, они будут одинаковыми
+ в силу аксиомы ассоциативности.
+\end_layout
+
+\begin_layout Standard
+При 
+\begin_inset Formula $b=1$
+\end_inset
+
+ получим все целые числа.
+ Но можно взять 
+\begin_inset Formula $b$
+\end_inset
+
+ любое целое! Например, 
+\begin_inset Formula $b=13$
+\end_inset
+
+.
+ Получаем кратные 
+\begin_inset Formula $13$
+\end_inset
+
+.
+ Мы приходим к операции умножения.
+ Умножить 
+\begin_inset Formula $b$
+\end_inset
+
+ на 
+\begin_inset Formula $3$
+\end_inset
+
+ это значит сложить 
+\begin_inset Formula $b$
+\end_inset
+
+ три раза: 
+\begin_inset Formula $3\cdot b=b+b+b$
+\end_inset
+
+.
+ Умножить 
+\begin_inset Formula $b$
+\end_inset
+
+ на 
+\begin_inset Formula $-4$
+\end_inset
+
+ — это взять 4 раза 
+\begin_inset Formula $-b$
+\end_inset
+
+: 
+\begin_inset Formula $\left(-4\right)\cdot b=\left(-b\right)+\left(-b\right)+\left(-b\right)+\left(-b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассматривая естественную конструкцию подгруппы в целых числах, мы пришли
+ к понятию произведения целых чисел.
+ Произведение — это следствие чисто групповой идеи.
+ Группа является базовым понятием для всей современной математики.
+ Поэтому с него и надо начинать, именно таким образом нужно изучать.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n\cdot b$
+\end_inset
+
+ — это сумма 
+\begin_inset Formula $n$
+\end_inset
+
+ слагаемых, каждое из которых равно 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+А если мы рассмотрим 
+\begin_inset Formula $b\cdot n$
+\end_inset
+
+, то это 
+\begin_inset Formula $b$
+\end_inset
+
+ слагаемых, каждое из которых равно 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Это одно и то же?
+\end_layout
+
+\begin_layout Section
+Коммутативность умножения, подгруппы целых чисел
+\end_layout
+
+\begin_layout Standard
+Итак, я сказал, что 
+\begin_inset Formula $n$
+\end_inset
+
+ раз взятое число 
+\begin_inset Formula $b$
+\end_inset
+
+ почему-то должно быть равно 
+\begin_inset Formula $b$
+\end_inset
+
+ раз взятому числу 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Почему это так? А вот почему.
+ Нарисуем прямоугольную таблицу.
+ Она состоит из 
+\begin_inset Formula $n$
+\end_inset
+
+ строк и 
+\begin_inset Formula $b$
+\end_inset
+
+ столбцов.
+ Просто потому, что я хочу.
+ Пока рисуем, я хочу сказать, что математик это самая свободная профессия.
+ Вот я хочу нарисовать такой прямоугольник и ни одна собака не может менять
+ спросить, почему я вообще так решил и имею право.
+ Все математические доказательства проводятся так.
+ И если человек постоянно спрашивает, а почему вот это рассмотрели, то он
+ не математик и ему нужно себя лечить от этого.
+\end_layout
+
+\begin_layout Standard
+Итак 
+\begin_inset Formula $n\cdot b$
+\end_inset
+
+ — это количество ячеек во всех строках этой таблицы, то есть количество
+ ячеек во всей этой таблице.
+ А 
+\begin_inset Formula $b\cdot n$
+\end_inset
+
+ — это количество ячеек во всех столбцах этой таблицы.
+ Но это одно и то же! Отсюда и следует это фундаментальное тождество.
+\end_layout
+
+\begin_layout Standard
+А мы переходим к вопросу о том, все ли подгруппы целых чисел мы описали.
+\end_layout
+
+\begin_layout Standard
+Итак, рассмотрим все целые числа на числовой прямой, отметим ноль и единицу.
+ И вот очевидный пример подгруппы, когда мы взяли числа через одно и то
+ же расстояние.
+ Или, иными словами, мы взяли все кратные какого-то числа 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ В примере 
+\begin_inset Formula $b=3$
+\end_inset
+
+.
+ Вот такое разряженное в три раза множество целых чисел носит, по очевидным
+ причинам, название 
+\begin_inset Formula $3\cdot\mathbb{Z}$
+\end_inset
+
+.
+ А в общем случае — 
+\begin_inset Formula $b\cdot\mathbb{Z}$
+\end_inset
+
+.
+ Есть ещё подгруппа, состоящая из одного нуля.
+\end_layout
+
+\begin_layout Standard
+Утверждение.
+ Никаких других подгрупп в 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ нет.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+ При доказательстве мы придём к ещё одной важной конструкции — делении с
+ остатком.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим любую подгруппу.
+ Если в ней только ноль, то мы её уже описали.
+ Если есть некоторое 
+\begin_inset Formula $b$
+\end_inset
+
+, то есть все его кратные.
+ По крайней мере, любая подгруппа должна содержать эти кратные.
+ Противоположный элемент тоже есть в подгруппе.
+ Таким образом, в нетривиальной подгруппе справа от нуля есть какие-то элементы.
+ Так давайте возьмём ближайший элемент к нулю и обозначим его 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Я утверждаю, что 
+\begin_inset Formula $b$
+\end_inset
+
+ кратно 
+\begin_inset Formula $c$
+\end_inset
+
+: 
+\begin_inset Formula $b=nc$
+\end_inset
+
+.
+ Докажем это.
+\end_layout
+
+\begin_layout Section
+Подгруппы целых чисел
+\end_layout
+
+\begin_layout Standard
+Мы изучаем подгруппы внутри целых чисел, то есть подмножества, замкнутые
+ относительно операций сложения и вычитания.
+\end_layout
+
+\begin_layout Standard
+Мы уже столкнулись с тем, что если мы возьмем любое число 
+\begin_inset Formula $b$
+\end_inset
+
+, то все кратные этого числа образуют подгруппу.
+ И мы заметили, что эта группа подозрительно похожа на группу целых чисел.
+ Позже мы скажем 
+\begin_inset Quotes rld
+\end_inset
+
+изоморфна
+\begin_inset Quotes rrd
+\end_inset
+
+, а пока мы не будем произносить это страшное слово.
+ Попробуем доказать, что любая подгруппа имеет такой вид.
+\end_layout
+
+\begin_layout Standard
+Подгруппа — непустое множество.
+ Если кроме нуля в этой подгруппе ничего нет, то мы получаем 
+\begin_inset Formula $\left\{ 0\right\} $
+\end_inset
+
+.
+ Если же есть что-то кроме нуля: 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, то есть и противоположный элемент 
+\begin_inset Formula $-b$
+\end_inset
+
+.
+ Соответственно, если есть какой-то не нулевой элемент, то есть и положительный.
+ Теперь мы возьмём самый маленький положительный элемент 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Докажем, что все остальные элементы являются его кратными.
+ Пусть 
+\begin_inset Formula $b$
+\end_inset
+
+ не кратен 
+\begin_inset Formula $c$
+\end_inset
+
+, то есть 
+\begin_inset Formula $b\neq nc$
+\end_inset
+
+.
+ Так как вместе с 
+\begin_inset Formula $b$
+\end_inset
+
+ в подгруппу входит и 
+\begin_inset Formula $-b$
+\end_inset
+
+, то мы можем сразу считать, что 
+\begin_inset Formula $b$
+\end_inset
+
+ — положительный.
+ Пусть 
+\begin_inset Formula $b$
+\end_inset
+
+ лежит между 
+\begin_inset Formula $nc$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(n+1\right)c$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $b-nc$
+\end_inset
+
+ тоже принадлежит подгруппе.
+ Так как 
+\begin_inset Formula $nc<b<\left(n+1\right)c$
+\end_inset
+
+, то 
+\begin_inset Formula $0<b-nc<c$
+\end_inset
+
+, таким образом, мы нашли положительный элемент, меньший 
+\begin_inset Formula $c$
+\end_inset
+
+, что противоречит определению этого элемента 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Значит, предположение, что 
+\begin_inset Formula $b$
+\end_inset
+
+ не кратно 
+\begin_inset Formula $c$
+\end_inset
+
+ приводит к противоречию и не верно.
+ Значит любая подгруппа целых чисел является одной из подгрупп вида 
+\begin_inset Formula $b\cdot\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Деление с остатком
+\end_layout
+
+\begin_layout Standard
+Важнейшая операция с целыми числами, унаследованная нами от древней Греции.
+ Пусть имеются числа 
+\begin_inset Formula $c$
+\end_inset
+
+ и 
+\begin_inset Formula $b>c$
+\end_inset
+
+, мы искали кратные 
+\begin_inset Formula $c$
+\end_inset
+
+, которые с двух сторон охватывают 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Если бы нам повезло, то 
+\begin_inset Formula $b$
+\end_inset
+
+ могло бы просто быть кратным 
+\begin_inset Formula $c$
+\end_inset
+
+, тогда бы мы сказали, что 
+\begin_inset Formula $b$
+\end_inset
+
+ просто делится на 
+\begin_inset Formula $c$
+\end_inset
+
+ и всё.
+ Если нам не повезло, то 
+\begin_inset Formula $b$
+\end_inset
+
+ не кратное 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Тогда есть аксиома (или просто визуально видно), что существует целое 
+\begin_inset Formula $n$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $nc\le b<\left(n+1\right)c$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $d=b-nc$
+\end_inset
+
+ называется остатком от деления 
+\begin_inset Formula $b$
+\end_inset
+
+ на 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Остаток, по соглашению, всегда положителен.
+ Но должен предупредить, что лучше избавиться от этого отягощающего фантома
+ из школьной программы.
+ Остаток, может быть и больше и меньше нулю, но по модулю он меньше 
+\begin_inset Formula $c$
+\end_inset
+
+: 
+\begin_inset Formula $\left|d\right|<c$
+\end_inset
+
+.
+ Когда вы избавитесь от того, что учат в школе, то окажется, что любое число
+ делиться с остатком двумя способами 
+\begin_inset Formula $b=nc+d$
+\end_inset
+
+ и 
+\begin_inset Formula $n=\left(n+1\right)c-\left(c-d\right)$
+\end_inset
+
+.
+ Оба способа, в общем-то равноправны с точки зрения теории делимости.
+ Самое важное, чтобы остаток по модулю был бы меньше, чем то на что мы делим.
+ Посмотрим, что мы узнали, что если есть два целых числа 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c\neq0$
+\end_inset
+
+, то всегда мы можем разделить 
+\begin_inset Formula $b$
+\end_inset
+
+ на 
+\begin_inset Formula $c$
+\end_inset
+
+ нацело или с небольшим остатком.
+ Этот остаток будет всегда меньше 
+\begin_inset Formula $c$
+\end_inset
+
+ по модулю.
+\end_layout
+
+\begin_layout Section
+На подступах к основной теореме арифметики (ОТА)
+\end_layout
+
+\begin_layout Standard
+Возьмём любое целое число, кроме нуля, единицы и минус единицы.
+ Например, 36.
+ И давайте попробуем понять, кратно ли оно кому-нибудь до него.
+ В принципе, можно, например: 
+\begin_inset Formula $36=12+12+12=3\cdot12$
+\end_inset
+
+.
+ А тройка кратна каким-нибудь из предыдущих чисел: двойке? Тогда мы называем
+ 3 простым числом.
+ Простое число — это такое, которое делится только на единицу и само на
+ себя (это самые простые случаи).
+ А 12? 12 кратно двум.
+ 
+\begin_inset Formula $36=3\cdot12=3\cdot2\cdot6$
+\end_inset
+
+.
+ А дальше можно продолжить этот процесс? У двойки допустимых предыдущих
+ нет.
+ Остаётся 6, которая кратна 2 и 3.
+ 
+\begin_inset Formula $36=3\cdot2\cdot2\cdot3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+А в другой комнате сидит другой человек, который говорит 
+\begin_inset Formula $36=6\cdot6=2\cdot3\cdot2\cdot3$
+\end_inset
+
+.
+ Как видим, разложения состоят из одних и тех же множителей.
+ Перемешанных по разному, но мы уже знаем, что от перестановки множителей
+ произведение не меняется.
+\end_layout
+
+\begin_layout Standard
+Ещё кто-то мог заметить, что 
+\begin_inset Formula $36=4\cdot9$
+\end_inset
+
+ и он нашёл совершенно новое разложение.
+ Но, на самом деле, ничего нового в нём нет, так как 
+\begin_inset Formula $4=2\cdot2$
+\end_inset
+
+ и 
+\begin_inset Formula $9=3\cdot3$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $36=4\cdot9=2\cdot2\cdot3\cdot3$
+\end_inset
+
+.
+ Опять все то же самое.
+ Но может быть нам пока так везёт.
+ Может быть какой-нибудь зверь, типа 1728 или что-то в этом духе, получится
+ разными способами.
+ Экспериментально человечеству не удалось обнаружить, чтобы два разных набора
+ простых чисел (кроме просто перестановки) давали один и тот же результат.
+\end_layout
+
+\begin_layout Standard
+В детских учебниках пишут, что это вот такое свойство целых чисел и просто
+ примите его как данность.
+ Но мы ничего как данность принимать не будем.
+ Мы докажем его как основную теорему арифметики.
+\end_layout
+
+\begin_layout Standard
+Мы могли бы ещё написать 
+\begin_inset Formula $36=\left(-3\right)\cdot\left(-2\right)\cdot2\cdot3$
+\end_inset
+
+.
+ Мы могли бы сказать, что это то же, что и 
+\begin_inset Formula $36=3\cdot2\cdot2\cdot3$
+\end_inset
+
+.
+ Но это нужно сначала чётко сформулировать.
+ Мы можем заметить, что 3 и 
+\begin_inset Formula $-3$
+\end_inset
+
+ ведут себя одинаково относительно умножения.
+ Все кратные 3 — это кратные и 
+\begin_inset Formula $-3$
+\end_inset
+
+, и так далее.
+ Нужно как-то математически точно сформулировать, что мы имеем в виду, когда
+ говорим, что любое число существенно единственным образом раскладывается
+ на произведение простых.
+ Ну и конечно надо бы это доказать.
+ И для доказательства нам придётся ещё довольно сильно попотеть.
+\end_layout
+
+\begin_layout Section
+Формулировка основной теоремы арифметики
+\end_layout
+
+\begin_layout Standard
+Давайте оттачивать наш логический аппарат и сформулируем её строже, чем
+ всё, что делали до этого.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $N\in\mathbb{Z}\setminus\left\{ -1,0,1\right\} $
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $N=p_{1}\cdot p_{2}\cdot\dots\cdot p_{n}=q_{1}\cdot q_{2}\cdot\dots\cdot q_{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ и 
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ — простые числа.
+ То
+\end_layout
+
+\begin_layout Standard
+1) 
+\begin_inset Formula $n=m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2) Существует перестановка набора 
+\begin_inset Formula $p_{1},p_{2},\dots,p_{n}$
+\end_inset
+
+, такая, что после неё получается 
+\begin_inset Formula $p_{i}^{\prime}=\pm q_{i}$
+\end_inset
+
+.
+ Иными словами, количества сомножителей совпадают и для любого 
+\begin_inset Formula $i$
+\end_inset
+
+ существует 
+\begin_inset Formula $j$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $p_{i}=\pm q_{j}$
+\end_inset
+
+.
+ Причём все 
+\begin_inset Formula $j$
+\end_inset
+
+ разные.
+\end_layout
+
+\begin_layout Standard
+Будем доказывать.
+ Это теорема, на которой как на ките, стоит оставшаяся часть математики.
+ Так что сейчас мы её будем строго, формально доказывать.
+ Это потребует некоторого интеллектуального усилия.
+\end_layout
+
+\begin_layout Section
+ОТА: лемма о кузнечике
+\end_layout
+
+\begin_layout Standard
+Кирпичём для нашей теоремы служит лемма о кузнечиках.
+ Пусть у кузнечика 2 ноги (лапы).
+ Прыжок с левой ноги всегда на 
+\begin_inset Formula $a$
+\end_inset
+
+ шагов (единиц измерения), а с правой ноги — всегда на 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Тогда множество всех возможных точек попадания равно 
+\begin_inset Formula $d\mathbb{Z}$
+\end_inset
+
+ при некотором 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Что эта лемма утверждает? Казалось бы, множество точек попадания — это какое-то
+ сложное множество.
+ Его можно записать как 
+\begin_inset Formula $\left\{ ma+nb|m,n\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Оно дословно совпадает с 
+\begin_inset Formula $d\mathbb{Z}$
+\end_inset
+
+.
+ Иными словами ему можно отрезать ноги и приделать одну ногу, которая скачет
+ на 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ От этого его возможности скакать не изменяться.
+\end_layout
+
+\begin_layout Standard
+Приём доказательства будет нам знаком.
+ Именно с помощью него мы доказывали, что все подгруппы целых чисел имеют
+ такой вид.
+\end_layout
+
+\begin_layout Section
+Доказательство леммы о кузнечике
+\end_layout
+
+\begin_layout Standard
+Для доказательства сделает утверждения.
+ Множество точек попадания 
+\begin_inset Formula $\left\{ ma+nb|m,n\in\mathbb{Z}\right\} $
+\end_inset
+
+ — подгруппа во множестве всех целых числа.
+ Смотрите, вот это уже логика чистой и высокой математики на простейшем
+ примере.
+ Я утверждаю, что если есть какие-то две точки попадания, то их сумма —
+ тоже точка попадания.
+ Разность тоже.
+ Просто меняем все скачки налево меняем на скачки направо и наоборот.
+ А следовательно она имеет вид 
+\begin_inset Formula $d\mathbb{Z}$
+\end_inset
+
+.
+ Видите, как работает математика.
+ Мы когда-то зачем-то доказывали какой вид имеют подгруппы целых чисел.
+ А теперь взяли какое-то специальное подмножество и доказали, что оно тоже
+ имеет такой вид.
+ Но это доказательство для того, кто уже родился гениальным математиком,
+ для которого все эти конструкции естественны.
+ Предположим, что Вы не гениальный математик, уж извините.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим самое левое место, в которое кузнечик может попасть, как 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ То есть в ноль и 
+\begin_inset Formula $d$
+\end_inset
+
+ он может попасть, а между ними залезть не может.
+ Понятно, что такая точка существует.
+ Так как он точно может попасть в 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Так как все точки попадания целые, то самая малая положительная среди них
+ найдётся.
+ Я утверждаю, что как 
+\begin_inset Formula $a$
+\end_inset
+
+, так и 
+\begin_inset Formula $b$
+\end_inset
+
+ должны быть кратны этому 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Доказательство состоит в том, что если бы 
+\begin_inset Formula $a$
+\end_inset
+
+ не было бы кратно 
+\begin_inset Formula $d$
+\end_inset
+
+, то вот этот коротенький отрезок был бы доступен нашему кузнечику.
+ На самом деле, быть такого не могло, поэтому все точки попадания кратны
+ 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Мы имеем два важных свойства: 
+\begin_inset Formula $a=dl$
+\end_inset
+
+ и 
+\begin_inset Formula $b=dk$
+\end_inset
+
+.
+ Но есть дополнительно очень важно свойство, которое надо здесь выписать:
+ и при этом 
+\begin_inset Formula $d$
+\end_inset
+
+ как точка попадания, можно записать как 
+\begin_inset Formula $d=am+bn$
+\end_inset
+
+.
+ 
+\begin_inset Formula $d$
+\end_inset
+
+ — является общим делителем 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, то если мы рассмотрим какой-то ещё делитель 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, то из этой формулы ясно, что 
+\begin_inset Formula $d$
+\end_inset
+
+ должен на другой этот делитель делится.
+ Если 
+\begin_inset Formula $d^{\prime}|a$
+\end_inset
+
+ и 
+\begin_inset Formula $d^{\prime}|b$
+\end_inset
+
+, то 
+\begin_inset Formula $d^{\prime}|d$
+\end_inset
+
+, а следовательно 
+\begin_inset Formula $\left|d^{\prime}\right|\le\left|d\right|$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $d$
+\end_inset
+
+ оказывается самым большим общим делителем.
+\end_layout
+
+\begin_layout Standard
+Итак, мы ввели очень важно понятие.
+ 
+\begin_inset Formula $d$
+\end_inset
+
+ называется наибольшим общим делителем чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, не равных одновременно нулю.
+\end_layout
+
+\begin_layout Standard
+Если одно из этих чисел равно нулю, это ещё полбеды.
+ А вот если оба...
+ Кстати, сами подумайте, почему дозволяется, чтобы одно из чисел было равно
+ нулю?
+\end_layout
+
+\begin_layout Standard
+Существенный случай, это когда оба не равны нулю.
+ Тогда у них есть наибольший общий делитель.
+ Это утверждение будет ключевым при доказательстве ОТА.
+\end_layout
+
+\begin_layout Section
+Определение группы
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+, не равные нулю одновременно, то есть неверно, что оба равны нулю.
+ Тогда существует такое целое 
+\begin_inset Formula $d>0$
+\end_inset
+
+, что выполнены два свойства:
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $d|a$
+\end_inset
+
+ и 
+\begin_inset Formula $d|b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ Существуют 
+\begin_inset Formula $n,m\in\mathbb{Z}$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $d=ma+nb$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из пункта 2 следует, что 
+\begin_inset Formula $d$
+\end_inset
+
+ — наибольший общий делитель 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $a=p$
+\end_inset
+
+ — простое и 
+\begin_inset Formula $p\nmid b$
+\end_inset
+
+, то существуют такие 
+\begin_inset Formula $n,m\in\mathbb{Z}$
+\end_inset
+
+, что 
+\begin_inset Formula $mp+nb=1$
+\end_inset
+
+.
+ Это основной кирпичик для ОТА.
+ Почему равно единице? Потому что какой может быть общий делитель у простого
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ У 
+\begin_inset Formula $p$
+\end_inset
+
+ делители 
+\begin_inset Formula $\left\{ -p,-1,1,p\right\} $
+\end_inset
+
+, а у 
+\begin_inset Formula $b$
+\end_inset
+
+ нет делителя 
+\begin_inset Formula $p$
+\end_inset
+
+, поэтому у 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ нет никаких нетривиальных общих делителей.
+\end_layout
+
+\begin_layout Standard
+Теперь мы можем перейти к доказательству ОТА, но я хочу злоупотребить вашим
+ вниманием.
+ Я хочу, сформулировать что такое группа чисто абстрактно.
+ Чтобы вы поняли, что целые числа — действительно группа по сложению.
+\end_layout
+
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
+Пусть дано непустое множество 
+\begin_inset Formula $G$
+\end_inset
+
+ вместе с операцией 
+\begin_inset Formula $*$
+\end_inset
+
+ (Операция должна быть применимой для любой пары элементов 
+\begin_inset Formula $G$
+\end_inset
+
+), называется группой, если
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $\left(a*b\right)*c=a*\left(b*c\right)$
+\end_inset
+
+ — ассоциативность
+\end_layout
+
+\begin_layout Standard
+2.
+ Существует нейтральный элемент 
+\begin_inset Formula $e$
+\end_inset
+
+: 
+\begin_inset Formula $e*a=a*e=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+3.
+ Для любого 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ существует 
+\begin_inset Formula $b$
+\end_inset
+
+ (нейтрализатор) такой, что 
+\begin_inset Formula $a*b=b*a=e$
+\end_inset
+
+, он называется 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если ещё всегда 
+\begin_inset Formula $a*b=b*a$
+\end_inset
+
+, то группа называется абелевой или коммутативной.
+\end_layout
+
+\begin_layout Standard
+Все целые числа образуют абелеву группу по сложению.
+\end_layout
+
+\begin_layout Standard
+Операция в абстрактной алгебре может называться хоть горшком.
+ Если операция оказывается плюсом, то 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ обозначают 
+\begin_inset Formula $-a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Доказательство ОТА
+\end_layout
+
+\begin_layout Standard
+Последний шаг — это так называемая основная лемма.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое, тогда если 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, то 
+\begin_inset Formula $ab$
+\end_inset
+
+ тоже не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Это можно распространить на несколько чисел: если несколько чисел не делятся
+ на простое 
+\begin_inset Formula $p$
+\end_inset
+
+, то и их произведение не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Я переформулирую это утверждение в обратном виде.
+ Утверждения 
+\begin_inset Formula $A\to B$
+\end_inset
+
+ и 
+\begin_inset Formula $\bar{B}\to\bar{A}$
+\end_inset
+
+ — это одно и то же.
+ Мы потом проведём отдельный урок логических утверждений.
+\end_layout
+
+\begin_layout Standard
+Пойдём от противного.
+ Пусть есть такие 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, что 
+\begin_inset Formula $ab$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, но при этом ни 
+\begin_inset Formula $a$
+\end_inset
+
+, ни 
+\begin_inset Formula $b$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $ab$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Отсюда нужно вывести, что 
+\begin_inset Formula $b$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, то 
+\begin_inset Formula $1=am+pn$
+\end_inset
+
+ при некоторых целых 
+\begin_inset Formula $m,n$
+\end_inset
+
+.
+ 
+\begin_inset Formula $b=abm+pbn$
+\end_inset
+
+.
+ По условию 
+\begin_inset Formula $ab$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть 
+\begin_inset Formula $ab=pk$
+\end_inset
+
+, то есть 
+\begin_inset Formula $b=pkm+pbn=p\left(km+bn\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $b$
+\end_inset
+
+ — делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом, если все числа некоторого набора не делятся на 
+\begin_inset Formula $p$
+\end_inset
+
+, то и их произведение не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Переходим к доказательству ОТА
+\end_layout
+
+\begin_layout Standard
+Если ОТА не верна, то есть числа, которые разными способами представляется
+ как произведение простых.
+ Среди них есть самое маленькое, обозначим его 
+\begin_inset Formula $N$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=p_{1}\cdot\dots\cdot p_{k}=q_{1}\cdot\dots\cdot q_{l},
+\]
+
+\end_inset
+
+причём эти разложения не получаются друг из друга перестановкой, тогда 
+\begin_inset Formula $\left\{ p_{1}\cdot\dots\cdot p_{k}\right\} \cap\left\{ q_{1}\cdot\dots\cdot q_{l}\right\} =\emptyset$
+\end_inset
+
+.
+ Если есть пересечение, то на него можно сократить, и мы получили бы меньшее
+ число с двумя разными разложениями.
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ не может делиться на 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+, и вообще все 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ не делятся на 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+, но тогда и 
+\begin_inset Formula $N$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ по основной лемме.
+ Но это противоречит тому, что 
+\begin_inset Formula $N=q_{1}\cdot\left(q_{2}\cdot\dots\cdot q_{l}\right)$
+\end_inset
+
+.
+ Теорема доказана.
+\end_layout
+
+\begin_layout Section
+Вокруг ОТА
+\end_layout
+
+\begin_layout Standard
+Во-первых, какой-то очень въедливый слушатель должен мне сказать, а почему
+ вообще можно разложить натуральное число в произведение простых? Чтобы
+ понять это, нужно нащупать некоторую, фактически, аксиому, которая связана
+ с натуральными числами.
+ Звучит она так: натуральное число нельзя уменьшать бесконечное количество
+ шагов.
+ Если есть целое число 
+\begin_inset Formula $N>0$
+\end_inset
+
+ и если есть его разложение на произведение 
+\begin_inset Formula $N=ab$
+\end_inset
+
+, где 
+\begin_inset Formula $a,b\neq\pm1$
+\end_inset
+
+, то одно из них меньше 
+\begin_inset Formula $N$
+\end_inset
+
+ по модулю.
+ Если они не простые, то этот процесс можно продолжать, пока это получается.
+ При этом произведение не может быть бесконечно длинным.
+ Если достаточно много раз взять даже число 2 и перемножить, то оно станет
+ больше 
+\begin_inset Formula $N$
+\end_inset
+
+ (по модулю).
+ Для каждого числа 
+\begin_inset Formula $N$
+\end_inset
+
+ есть оценка на количество множителей.
+\end_layout
+
+\begin_layout Standard
+Дополнение про целые числа.
+ Если 
+\begin_inset Formula $N$
+\end_inset
+
+ — целое, то 
+\begin_inset Formula $N$
+\end_inset
+
+ единственным способом представляется в виде 
+\begin_inset Formula $N=\left(\pm1\right)\cdot p_{1}\cdot\dots\cdot p_{K}$
+\end_inset
+
+, где простые числа 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ могут повторяться.
+ Если сгруппировать одинаковые степени и рассортировать их по 
+\begin_inset Quotes rld
+\end_inset
+
+росту
+\begin_inset Quotes rrd
+\end_inset
+
+, 
+\begin_inset Formula $N=\left(\pm1\right)\cdot2^{n_{1}}\cdot3^{n_{2}}\cdot\dots\cdot p_{j}^{n_{j}}\cdot\dots$
+\end_inset
+
+, где 
+\begin_inset Formula $n_{j}\ge0$
+\end_inset
+
+.
+ Формально, мы пишем до бесконечности, но на самом деле, будет только конечное
+ число множителей: 
+\begin_inset Formula $N=\left(\pm1\right)q_{1}^{\alpha_{1}}\cdot q_{2}^{\alpha_{2}}\cdot\dots\cdot q_{r}^{\alpha_{r}}$
+\end_inset
+
+ , где 
+\begin_inset Formula $2\le q_{1}<q_{2}<\dots<q_{r}$
+\end_inset
+
+ — разные простые числа, 
+\begin_inset Formula $\alpha_{i}>0$
+\end_inset
+
+.
+ И вот такое разложение уже полностью единственное, то есть существует однозначн
+о определённый знак числа и однозначный набор идущих по возрастанию простых
+ положительных различных чисел, начиная с двойки или выше, в положительных
+ степенях.
+\end_layout
+
+\begin_layout Standard
+Для каких чисел мы вообще не рассматриваем разложение на простые? Это ноль,
+ один и минус один.
+ Для 
+\begin_inset Formula $\pm1$
+\end_inset
+
+ это формально пустой набор, а для нуля вообще ничего нельзя написать, это
+ совершенно особенное число с точки зрения делимости.
+ Один и минус один — это тоже особенные числа, на них делится любое целое
+ число.
+ Они называются обратимыми и играют особую роль в арифметике целых чисел.
+\end_layout
+
+\begin_layout Standard
+Всё это нам очень пригодится, особенно когда мы будем обобщать всё это на
+ произвольные кольца.
+\end_layout
+
+\begin_layout Section
+План-анонс дальнейших видео
+\end_layout
+
+\begin_layout Standard
+Дальше разветвление на пять различных сюжетов, которые мы будем разрабатывать
+\end_layout
+
+\begin_layout Enumerate
+Арифметика целых чисел — это многочисленные следствия из ОТА, решение некоторых
+ замечательных уравнений в целых числах, самое известное — 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+, то есть нахождение всех прямоугольных треугольников с целыми сторонами.
+ Причём мы решим её разными способами, причём одним способом мы готовы решать
+ прямо сейчас.
+\end_layout
+
+\begin_layout Enumerate
+Алгебра целых чисел.
+ Сумма Минковсого, о групповой структуре целых чисел, НОД, фактор-группы
+ (арифметика остатков).
+\end_layout
+
+\begin_layout Enumerate
+Геометрия 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+ Забываем про то, что где-то есть ноль, получаем афинные целые числа, то
+ есть точки идущие на равном расстоянии на прямой.
+ Рассмотрим преобразования, которое переводи такую прямую в себя (движения).
+ Потом, сильно позже, перейдём к общим движениям
+\end_layout
+
+\begin_layout Enumerate
+Технология целых чисел.
+ Алгоритм Евклида, цепные дроби.
+ Геометрический алгоритм Евклида.
+\end_layout
+
+\begin_layout Enumerate
+Расширения 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+ Кольца Гауссовых чисел.
+ Числа Эйзенштейна.
+ Многочлены.
+ Про многочлены мы будем очень много говорить.
+\end_layout
+
+\begin_layout Standard
+Вы не поверите, но это всё двести уроков примерно.
+\end_layout
+
+\begin_layout Section
+Пропущенный ролик
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Найти и записать
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Сумма Минковсого
+\end_layout
+
+\begin_layout Standard
+Начнём с алгебры 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+ Давайте ещё раз рассмотрим целые числа с научной точки зрения.
+ На прямой через равные промежутки отмечены точки, одна из которых названа
+ нулём.
+ У нас есть множество таких чисел и есть операция 
+\begin_inset Quotes rld
+\end_inset
+
+плюс
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Вы ещё скажите, что есть операция 
+\begin_inset Quotes rld
+\end_inset
+
+минус
+\begin_inset Quotes rrd
+\end_inset
+
+, но я скажу, что 
+\begin_inset Quotes rld
+\end_inset
+
+минус
+\begin_inset Quotes rrd
+\end_inset
+
+ — это операция вторичная по отношению к 
+\begin_inset Quotes rld
+\end_inset
+
+плюсу
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Почему? Потому что я всегда могу написать 
+\begin_inset Formula $a-b=a+\left(-b\right)$
+\end_inset
+
+.
+ Но вы скажите, что справа-то тоже есть минус.
+ Давайте вспомним, что такое 
+\begin_inset Formula $\left(-b\right)$
+\end_inset
+
+? Это такое целое число 
+\begin_inset Formula $c$
+\end_inset
+
+, что 
+\begin_inset Formula $b+c=c+b=0$
+\end_inset
+
+.
+ И вообще 
+\begin_inset Formula $a-b$
+\end_inset
+
+ это такое 
+\begin_inset Formula $c$
+\end_inset
+
+, что 
+\begin_inset Formula $b+c=c+b=a$
+\end_inset
+
+.
+ И когда мы говорим, что целые числа образуют группу по сложению, мы имеем
+ в виду, что есть операция, которая обладает определёнными свойствами, в
+ частности, есть ноль и для каждого есть обратный элемент, который обращает
+ исходный в ноль.
+ Это лейтмотивом пройдёт через наш курс ещё много-много раз.
+\end_layout
+
+\begin_layout Standard
+Давайте введём операцию суммирования подмножеств целых чисел.
+ Пусть я взял 
+\begin_inset Formula $\left\{ -2,1,2\right\} $
+\end_inset
+
+ и хочу сложить их с 
+\begin_inset Formula $\left\{ 0,4,5\right\} $
+\end_inset
+
+.
+ Какое подмножество будет равно сумме этих двух.
+ Делается это следующим образом: долго и нудно мы берём всевозможные суммы,
+ в которых первое слагаемое берётся из первого множества, а второе — из
+ второго.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Повторяющиеся игнорируем, вообще могло быть 9 чисел, но в данном случае
+ — 7.
+ Обозначают это следующим образом: 
+\begin_inset Formula $\left\{ -2,1,2\right\} \oplus\left\{ 0,4,5\right\} =\left\{ -2,1,2,3,5,6,7\right\} $
+\end_inset
+
+.
+ и называют 
+\begin_inset Quotes rld
+\end_inset
+
+сумма Минковского
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Операция называется 
+\begin_inset Quotes rld
+\end_inset
+
+суммированием по Минковскому
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Аналогично можно определить разность по Минковскому 
+\begin_inset Formula $A\ominus B$
+\end_inset
+
+.
+ Сразу хочу обратить внимание, что это не такое 
+\begin_inset Formula $C$
+\end_inset
+
+, что 
+\begin_inset Formula $B\oplus C=A$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+Такое определение, вообще говоря, не имеет смысла, так как двух произвольных
+ множества 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ не всегда удаётся найти такое 
+\begin_inset Formula $C$
+\end_inset
+
+, что 
+\begin_inset Formula $A=B\oplus C$
+\end_inset
+
+.
+ Так что сумма по Минковскому не обладает обратной операцией.
+ 
+\begin_inset Formula $\left\{ 0\right\} \oplus A=A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A\oplus B=B\oplus A$
+\end_inset
+
+ 
+\begin_inset Formula $\left(A\oplus B\right)\oplus C=A\oplus\left(B\oplus C\right)$
+\end_inset
+
+.
+ Подмножества целых чисел с операцией 
+\begin_inset Quotes rld
+\end_inset
+
+суммирование по Минковскому
+\begin_inset Quotes rrd
+\end_inset
+
+ группу не образуют, но образуют то, что называется 
+\begin_inset Quotes rld
+\end_inset
+
+моноид
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Зададимся вопросом, чему равно 
+\begin_inset Formula $A\oplus\emptyset$
+\end_inset
+
+? Это 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+, так как нет числа, которое можно представить в виде суммы числа из 
+\begin_inset Formula $A$
+\end_inset
+
+ и какого-то числа из пустого множества.
+ Так мы постепенно осваиваем правила формальной логики, я намеренно не выношу
+ их пока на отдельный слайд.
+ Когда-нибудь я это сделаю, но пока этого делать не нужно, мы получаем их
+ естественно, когда мы начинаем о чём-то рассуждать.
+ Вот мы начали рассуждать о том, что такое сумма по Минковскому пустого
+ и непустого множеств и мы познакомились с некоторыми правилами логики.
+\end_layout
+
+\begin_layout Section
+Остатки
+\end_layout
+
+\begin_layout Standard
+Остатки как фактор-группа.
+ В алгебре напридумано огромное количество терминов.
+ Наверное 1000.
+ Или я знаю 1000, а их 10000.
+ И основная проблема при освоении алгебры — это трудности с языком, но если
+ сразу поставить язык куда нужно, то эти термины постепенно наливаются житейским
+ смыслом.
+ Итак, все знают, что такое остатки от деления на какое-то число.
+\end_layout
+
+\begin_layout Standard
+Лемма.
+ 
+\begin_inset Formula $\left[1\oplus4\mathbb{Z}\right]+\left[2\oplus4\mathbb{Z}\right]=3\oplus4\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Правильнее конечно было бы написать 
+\begin_inset Formula $\left[\left\{ 1\right\} \oplus4\mathbb{Z}\right]+\left[\left\{ 2\right\} \oplus4\mathbb{Z}\right]=\left\{ 3\right\} \oplus4\mathbb{Z}$
+\end_inset
+
+ , но можно было бы злоупотребить обозначениями и называть соответствующие
+ множества просто 
+\begin_inset Formula $4\mathbb{Z}+1$
+\end_inset
+
+, 
+\begin_inset Formula $4\mathbb{Z}+2$
+\end_inset
+
+, 
+\begin_inset Formula $4\mathbb{Z}+3$
+\end_inset
+
+ и 
+\begin_inset Formula $4\mathbb{Z}+4=4\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ну и понятно, что эту лемму можно обобщить.
+ У нас получается очень интересная система: конечный список вот таких вот
+ подмножеств.
+ Четыре подмножества 
+\begin_inset Formula $Z$
+\end_inset
+
+, попарно непересекающиеся, арифметика Минковского которых превращает их
+ в конечную группу.
+ Которую можно обозначит 
+\begin_inset Formula $\left\{ 0,1,2,3\right\} =\mathbb{Z}/4\mathbb{Z}$
+\end_inset
+
+ и это называют фактор-группой.
+\end_layout
+
+\begin_layout Standard
+Мы уже проверили, что ноль не выводит за пределы группы.
+ Ноль есть, так как 
+\begin_inset Formula $4\mathbb{Z}$
+\end_inset
+
+ плюс (по Минковскому) любой из этих классов есть снова этот класс.
+ Эту лемму я доказывать не буду, так как это очевидно.
+ Что такое противоположное к 1? Вы скажите -1, но нужно искать в этом списке,
+ это 3 конечно.
+ Если я сложу число, которое даёт остаток 3 при делении на 4, с числом,
+ которое даёт остаток 1 при делении на 4, то я получу число, делящееся на
+ 4.
+ А 
+\begin_inset Formula $4\mathbb{Z}+2$
+\end_inset
+
+ вообще интересный, он противоположен сам себе.
+ 
+\begin_inset Formula $2+2=0$
+\end_inset
+
+ в остатках при делении на 4.
+\end_layout
+
+\begin_layout Standard
+Сначала сформулируем утверждение.
+ Любой квадрат 
+\begin_inset Formula $n\cdot n$
+\end_inset
+
+ принадлежит либо 
+\begin_inset Formula $4\mathbb{Z}$
+\end_inset
+
+, либо 
+\begin_inset Formula $4\mathbb{Z}+1$
+\end_inset
+
+, и никогда не принадлежит 
+\begin_inset Formula $4\mathbb{Z}+2$
+\end_inset
+
+, либо 
+\begin_inset Formula $4\mathbb{Z}+3$
+\end_inset
+
+.
+ Это нам пригодится при описании пифагоровых троек.
+\end_layout
+
+\begin_layout Standard
+На этих классах можно ввести ещё и операцию умножения.
+ Ввести ещё и операцию умножения, то есть ввести структуру кольца.
+ Целые числа — это кольцо.
+ Почему? Потому что можно складывать и вычитать, умножать, но не делить.
+ Фактор-группы оказываются кольцом.
+ Но к этому мы вернёмся потом, я не хочу перегружать пока фактами из алгебры.
+ Мы будем идти поэтапно.
+\end_layout
+
+\begin_layout Standard
+Любое 
+\begin_inset Formula $n$
+\end_inset
+
+ — либо чётное, либо нечётное.
+ 
+\begin_inset Formula $n\in2\mathbb{Z}\land n\in2\mathbb{Z}+1$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $n$
+\end_inset
+
+ чётное, то 
+\begin_inset Formula $n=2k$
+\end_inset
+
+ и 
+\begin_inset Formula $n^{2}=4k^{2}\in4\mathbb{Z}$
+\end_inset
+
+, если 
+\begin_inset Formula $n$
+\end_inset
+
+ нечётное, то 
+\begin_inset Formula $n=2k+1$
+\end_inset
+
+ и 
+\begin_inset Formula $n^{2}=4k^{2}+4k+1\in4\mathbb{Z}+1$
+\end_inset
+
+ .
+ Мы здесь воспользуемся формулами сокращённого умножения.
+ Мы их получим потом, когда будем говорить о геометрии, увидим, как легко
+ их можно получить.
+\end_layout
+
+\begin_layout Standard
+Теперь мы готовы к обобщению, которое состоит в том, что мы заменяем 4 на
+ произвольное число 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Красиво изобразить все 4 смежных класса.
+\end_layout
+
+\begin_layout Section
+Подгруппы 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ и операции с ними
+\end_layout
+
+\begin_layout Standard
+Подгруппы 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $m\mathbb{Z}$
+\end_inset
+
+, ещё есть выделенная подгруппа, состоящая только из нуля (можно было бы
+ сказать, что это все кратные нуля, но это уже будет формалистика какая-то).
+ Имея в виду дальнейшие обобщения, например, на произвольные Абелевы подгруппы,
+ возьмём две произвольные подгруппы 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+\SpecialChar endofsentence
+ 
+\begin_inset Formula $A,B\subset\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Повторяет, что такое подгруппа в общем случае.
+\end_layout
+
+\begin_layout Standard
+Если взять 
+\begin_inset Formula $A\oplus B$
+\end_inset
+
+, то это тоже будет подгруппа.
+ Хотелось бы, что бы для Вас это стало очевидным, но давайте сначала проверим.
+ Что такое элемент 
+\begin_inset Formula $A\oplus B$
+\end_inset
+
+, это 
+\begin_inset Formula $a+b,a\in A,b\in B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(a+b\right)+\left(c+d\right)=\left(a+c\right)+\left(b+d\right)$
+\end_inset
+
+.
+ Противоположный для него, это 
+\begin_inset Formula $-\left(a+b\right)=\left(-a\right)+\left(-b\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $0=0+0,0\in A,0\in B$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+Сумма Минковского двух подгрупп — подгруппа.
+ Но какая?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=a\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $B=b\mathbb{Z}$
+\end_inset
+
+ 
+\begin_inset Formula $A\oplus B=gcd\left(a,b\right)\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Докажем это утверждение.
+ Кстати, из этого равенства следует, что НОД можно было бы ввести чисто
+ в групповых, алгебраических терминах.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+ 1) Любой элемент из 
+\begin_inset Formula $A\oplus B$
+\end_inset
+
+, имея вид 
+\begin_inset Formula $ax+by$
+\end_inset
+
+, где 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+, делится на 
+\begin_inset Formula $gcd(a,b)$
+\end_inset
+
+, поэтому он принадлежит 
+\begin_inset Formula $gcd\left(a,b\right)\mathbb{Z}$
+\end_inset
+
+.
+ Иными словами, сумма Минковского двух подгрупп лежит внутри 
+\begin_inset Formula $gcd\left(a,b\right)\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Обратно, мы знаем, что 
+\begin_inset Formula $gcd\left(a,b\right)$
+\end_inset
+
+ представляется в виде 
+\begin_inset Formula $ma+nb$
+\end_inset
+
+, а значит он принадлежит 
+\begin_inset Formula $A\oplus B$
+\end_inset
+
+, а значит и любое его кратное принадлежит 
+\begin_inset Formula $A\oplus B$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\gcd\left(a,b\right)\mathbb{Z}\subset A\oplus B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Это очень важное, это очень красиво, это вскрывает смысл НОДа.
+\end_layout
+
+\begin_layout Standard
+Мы продолжим изучение НОДа, когда лучше разберёмся с операцией умножения
+ целых чисел.
+ А пока мы переключимся на вывод формулы Пифагоровых троек.
+ Нужна же какая-то сверхцель, свет в конце тоннеля.
+\end_layout
+
+\begin_layout Section
+Геометрическая алгебра
+\end_layout
+
+\begin_layout Standard
+Довольно прикольный раздел математики.
+ Если переставить слова, то получится 
+\begin_inset Quotes rld
+\end_inset
+
+алгебраическая геометрия
+\begin_inset Quotes rrd
+\end_inset
+
+, возможно, кто-то из тех, кто меня смотрит, может быть дойдёт.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(2k+1\right)^{2}=$
+\end_inset
+
+ Давайте увидим, чему это равно.
+ Изобразим квадрат со стороной 
+\begin_inset Formula $2k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+(в лекции показано в масштабе)
+\end_layout
+
+\begin_layout Standard
+Поэтому 
+\begin_inset Formula $\left(2k+1\right)^{2}=4k^{2}+4k+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Это типичный пример, как можно видеть алгебру.
+ Когда мы видим алгебру, мы называем это геометрической алгеброй.
+\end_layout
+
+\begin_layout Standard
+Чрез неё можно доказать, что 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Остальные формулы арифметики тоже можно так увидеть.
+ 
+\begin_inset Formula $a\left(b+c\right)=ab+ac$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a^{2}-b^{2}=\left(a-b\right)\left(a+b\right)$
+\end_inset
+
+.
+ Получается перестановкой частей чертежа.
+ Это лучше, чем заучивать формулы.
+\end_layout
+
+\begin_layout Standard
+Сейчас мы применим этот же метод, к доказательству теоремы Пифагора.
+ Это нарисовано на обложке моей книги математика для гуманитариев.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим два абсолютно одинаковых квадратов, со сторонами 
+\begin_inset Formula $a+b$
+\end_inset
+
+.
+ Дальше идёт доказательство, которое я не успеваю зарисовать.
+\end_layout
+
+\begin_layout Section
+Подготовка к пифагоровым тройкам
+\end_layout
+
+\begin_layout Standard
+Итак, мы ищем все прямоугольные треугольники с целочисленными сторонами
+ 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+: 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Начнём со следующего замечания: если взял некоторый треугольник и, например,
+ учетверил, то нет никаких сомнений, что получившийся таким образом треугольник
+ тоже будет прямоугольным и с целочисленными сторонами.
+ Конечно, это совершенно не интересно.
+ Эти треугольники подобны.
+ Если мы нашли одно решение 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+, то 
+\begin_inset Formula $na,nb,nc$
+\end_inset
+
+ — тоже решение.
+\end_layout
+
+\begin_layout Standard
+Все знаю один такой треугольник: 3,4,5.
+ Если его удвоить: 6,8,10.
+ Если утроить 9, 12, 15.
+ Все эти треугольники мы считаем одним и тем же решением.
+\end_layout
+
+\begin_layout Standard
+Если мы нашли какое-решение, то нужно искать среди всех подобных ему самый-самый
+ маленький (который все ещё с целыми сторонами).
+\end_layout
+
+\begin_layout Standard
+Это означает, что на какое бы число я не поделил 
+\begin_inset Formula $a$
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $a/d$
+\end_inset
+
+ — целое, то либо 
+\begin_inset Formula $b/d$
+\end_inset
+
+, либо 
+\begin_inset Formula $c/d$
+\end_inset
+
+ не будут целыми.
+ Иными словами 
+\begin_inset Formula $gcd\left(a,b,c\right)=1$
+\end_inset
+
+.
+ То есть эти три числа взаимно-просты в совокупности.
+\end_layout
+
+\begin_layout Standard
+Утверждение.
+ Если 
+\begin_inset Formula $a,b,c\in\mathbb{Z}$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ взаимно-просты в совокупности, тогда и только тогда, когда они попарно
+ взаимно-просты: 
+\begin_inset Formula $gcd\left(a,b\right)=gcd\left(b,c\right)=gcd\left(c,a\right)=1$
+\end_inset
+
+.
+ Это тоже самое, что в 
+\begin_inset Quotes rld
+\end_inset
+
+канонических
+\begin_inset Quotes rrd
+\end_inset
+
+ разложениях 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ на простые множители множества множителей не пересекаются попарно.
+\end_layout
+
+\begin_layout Standard
+Как нам это доказать.
+ Если у двух был бы общий делитель, то и третьего он тоже был бы.
+\end_layout
+
+\begin_layout Standard
+Могло ведь оказаться, что пересечение всех трёх пустое, но у каких-то двух
+ есть непустое пересечение.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a=mp$
+\end_inset
+
+ и 
+\begin_inset Formula $b=np$
+\end_inset
+
+, то 
+\begin_inset Formula $c^{2}=\left(m^{2}+n^{2}\right)p^{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $c$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ (мы применили утверждение, что если 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ не делятся на 
+\begin_inset Formula $p$
+\end_inset
+
+, то и 
+\begin_inset Formula $ab$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+).
+ Аналогично для пар 
+\begin_inset Formula $a,c$
+\end_inset
+
+ и 
+\begin_inset Formula $b,c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если мы ищем минимальный треугольник, то мы ищем треугольник, у которого
+ стороны попарно взаимно-просты, то есть мы свели задачу поиска всех целочисленн
+ых прямоугольных треугольников к задаче о том, чтобы найти все решения 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+, с попарно взаимно-простыми 
+\begin_inset Formula $a,b,c\in\mathbb{Z}$
+\end_inset
+
+.
+ Именно этой задачей мы и будем заниматься.
+\end_layout
+
+\begin_layout Section
+Теория делимости
+\end_layout
+
+\begin_layout Standard
+Математика — это наполовину язык, причём язык, совершенно естественно возникающи
+х из решаемых задач.
+ Сейчас мы начали решать задачу о пифагоровых тройках и поняли, что нам
+ немного не хватает формальной теории делимости.
+\end_layout
+
+\begin_layout Standard
+Чтобы больше в ней не плавать, давайте немного её разберём.
+ Она нам понадобится потом в других задачах.
+ Пока, целых чисел.
+ Можно ещё рассматривать в произвольных кольцах.
+\end_layout
+
+\begin_layout Standard
+Число 
+\begin_inset Formula $a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $b$
+\end_inset
+
+ по определению тогда и только тогда, когда существует 
+\begin_inset Formula $c\in\mathbb{Z}$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $a=bc$
+\end_inset
+
+.
+ Сейчас мы говорим о целых числах, но это же определение можно применить
+ к отрезкам с нецелой и даже нерациональной длинной.
+\end_layout
+
+\begin_layout Standard
+Математика — искусство обобщения.
+ Сейчас мы говорим про целые числа, а потом будет применять тоже к отрезкам.
+\end_layout
+
+\begin_layout Standard
+Следствие 1.
+ Для любого числа 
+\begin_inset Formula $b$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $0|b$
+\end_inset
+
+: при 
+\begin_inset Formula $c=0$
+\end_inset
+
+ имеем 
+\begin_inset Formula $bc=b0=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Следствие 2.
+ 
+\begin_inset Formula $0|0$
+\end_inset
+
+ (sic!), потому что существует 
+\begin_inset Formula $c$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $0c=0$
+\end_inset
+
+ (
+\begin_inset Formula $c$
+\end_inset
+
+ — любое).
+ Но поделить на ноль мы все равно не можем.
+ Поделить на что-то — это указать единственный результат деления, а здесь
+ результатов бесконечно много!
+\end_layout
+
+\begin_layout Standard
+Следствие 3.
+ Если 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на ноль.
+ Действительно, иначе существовало бы 
+\begin_inset Formula $c$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $a=0\cdot c$
+\end_inset
+
+, но 
+\begin_inset Formula $0\cdot c=0$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+Свойства:
+\end_layout
+
+\begin_layout Standard
+1.
+ Пусть 
+\begin_inset Formula $a|b$
+\end_inset
+
+ и 
+\begin_inset Formula $b|c$
+\end_inset
+
+, тогда 
+\begin_inset Formula $a|c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2.
+ Пусть 
+\begin_inset Formula $a|b$
+\end_inset
+
+ и 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(na\right)|\left(nb\right)$
+\end_inset
+
+.
+ Можно взять даже 
+\begin_inset Formula $n=0$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+3.
+ Пусть 
+\begin_inset Formula $a|c$
+\end_inset
+
+ и 
+\begin_inset Formula $b|c$
+\end_inset
+
+, тогда для любых 
+\begin_inset Formula $m,n\in\mathbb{Z}$
+\end_inset
+
+ 
+\begin_inset Formula $am+bn|c$
+\end_inset
+
+.
+ В частности, 
+\begin_inset Formula $a+b|c$
+\end_inset
+
+ и 
+\begin_inset Formula $a-b|c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Теперь можно перейти к анализу уравнения 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+ в целых числах.
+\end_layout
+
+\begin_layout Section
+Пифагоровы тройки
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $a,b,c\in\mathbb{Z}$
+\end_inset
+
+.
+ Если мы ищем стороны треугольника, то нужно искать 
+\begin_inset Formula $a,b,c>0$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\left(a,b,c\right)$
+\end_inset
+
+ — решение, то 
+\begin_inset Formula $\left(\pm a,\pm b,\pm c\right)$
+\end_inset
+
+ — тоже является решением.
+ Если хотя бы одно из них равно нулю, то тут нечего решать.
+ Поэтому решать в целых числах — по степени сложности то же самое, что искать
+ прямоугольные треугольники с целыми сторонами.
+ 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ попарно взаимно просты
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Исправить выше 
+\begin_inset Quotes rld
+\end_inset
+
+взаимно-просты
+\begin_inset Quotes rrd
+\end_inset
+
+ на 
+\begin_inset Quotes rld
+\end_inset
+
+взаимно просты
+\begin_inset Quotes rrd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим сначала, что раз они попарно взаимно просты, то не более одного
+ из них могут делиться на 2 (если бы было два чётных, то и третье оказалось
+ бы чётным, и мы могли бы сократить на 2).
+ А может ли оказаться так, что ни одного чётного вообще нет? Не может, если
+ есть два нечётных, то третье оказывается чётным из уравнения 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+.
+ Таким образом, ровно одно из 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ чётно.
+\end_layout
+
+\begin_layout Standard
+Теперь я хочу привести к противоречию вот эту конструкцию: 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — нечётные, а 
+\begin_inset Formula $c$
+\end_inset
+
+ — чётное.
+ Иными словами, 
+\begin_inset Formula $c$
+\end_inset
+
+ — обязательно нечётное.
+ И вот тут я как раз вспомню про то, какие бывают квадраты при делении на
+ 4.
+\end_layout
+
+\begin_layout Standard
+Доказательство от противного (противное название 
+\begin_inset Quotes rld
+\end_inset
+
+от противного
+\begin_inset Quotes rrd
+\end_inset
+
+, я бы писал 
+\begin_inset Quotes rld
+\end_inset
+
+от противоположного
+\begin_inset Quotes rrd
+\end_inset
+
+, но дань моде и я уже ничего не могу изменить, уже все так говорят, ну
+ и я буду).
+ Если 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — нечётные, то 
+\begin_inset Formula $a^{2},b^{2}\in1+4\mathbb{Z}$
+\end_inset
+
+, , тогда 
+\begin_inset Formula $c^{2}=a^{2}+b^{2}\in\left(1+4\mathbb{Z}\right)\oplus\left(1+4\mathbb{Z}\right)=2+4\mathbb{Z}$
+\end_inset
+
+, получаем противоречие, так как квадрат целого числа при делении на 4 даёт
+ в остатке 
+\begin_inset Formula $0$
+\end_inset
+
+ или 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Мы доказали очень важное свойство.
+ Это очередная веха в описании всех пифагоровых троек: 
+\begin_inset Formula $c$
+\end_inset
+
+ — обязательно нечётное.
+\end_layout
+
+\begin_layout Standard
+Итак 
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $a,b,c\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $a,b,c>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ попарно взаимно просты.
+ Следует искать такие, что 
+\begin_inset Formula $c$
+\end_inset
+
+ — нечётно.
+ Нечётно одно из 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Мы не можем различить 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, от их взаимной замены ничего не меняется.
+ Поэтому можно одно из них просто объявить чётным, так как одно чётное точно
+ должно быть.
+ Без ограничения общности рассмотрения (БОО).
+ Мы ничего не потеряем, продолжаем двигаться к полному решению.
+ Считаем, что 
+\begin_inset Formula $a$
+\end_inset
+
+ — чётно, 
+\begin_inset Formula $b$
+\end_inset
+
+ — нечётно.
+\end_layout
+
+\begin_layout Standard
+Ключевой ход.
+ Переносим 
+\begin_inset Formula $b^{2}$
+\end_inset
+
+ в правую часть: 
+\begin_inset Formula $a^{2}=c^{2}-b^{2}$
+\end_inset
+
+.
+ Ну а этом мы умеем раскладывать на множители.
+ 
+\begin_inset Formula $a^{2}=\left(c-b\right)\left(c+b\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $c$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — нечётные, тогда их разность и сумма будут чётными.
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ — чётное, 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+ делится на 4.
+ Делим всё это на 4.
+ Раз 
+\begin_inset Formula $a$
+\end_inset
+
+ — чётное, то 
+\begin_inset Formula $a/2$
+\end_inset
+
+ — целое: 
+\begin_inset Formula 
+\[
+\left(\frac{a}{2}\right)^{2}=\frac{\left(c-b\right)\left(c+b\right)}{4}=\frac{c-b}{2}\cdot\frac{c+b}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Причём это равенство в целых числах.
+ Итак, квадрат некоторого целого числа равен произведению двух целых чисел.
+ Ну и что из того? Пока ничего.
+ Но сейчас будет лемма.
+\end_layout
+
+\begin_layout Standard
+Лемма.
+ Числа 
+\begin_inset Formula $\frac{c-b}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{c+b}{2}$
+\end_inset
+
+ — взаимно просты.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+ От противного.
+ Если они не взаимно просты, то существует общий простой делитель 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Итак, имеем 
+\begin_inset Formula $\frac{c+b}{2}|p$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{c-b}{2}|p$
+\end_inset
+
+.
+ Но тогда сумма и разность этих чисел на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Сумма и разность равны, соответственно 
+\begin_inset Formula $c$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Это противоречит попарной взаимной простоте.
+\end_layout
+
+\begin_layout Standard
+Итак, мы доказали, что равенство 
+\begin_inset Formula 
+\[
+\left(\frac{a}{2}\right)^{2}=\frac{\left(c-b\right)\left(c+b\right)}{4}=\frac{c-b}{2}\cdot\frac{c+b}{2},
+\]
+
+\end_inset
+
+ причём 
+\begin_inset Formula $\frac{a}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{c-b}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{c+b}{2}$
+\end_inset
+
+ — целые, больше нулю, а последние два взаимно просты.
+\end_layout
+
+\begin_layout Standard
+Я анонсирую результат, который мы в следующий раз докажем.
+ В этом случае, оба числа в правой части являются квадратами целых чисел.
+ То есть существуют такие 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+, что 
+\begin_inset Formula $\frac{c-b}{2}=m^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{c+b}{2}=n^{2}$
+\end_inset
+
+.
+ Это сложно, но не безумно сложно и после этого мы выведем формулу для пифагоров
+ых троек.
+\end_layout
+
+\begin_layout Section
+Доказательство пифагоровых троек
+\end_layout
+
+\begin_layout Standard
+Фундаментальная арифметическая лемма (не путать с основной теоремой арифметики!).
+ Она нам очень поможет.
+ Пусть 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{k}>0$
+\end_inset
+
+ — целые, попарно взаимно простые и имеет место равенство 
+\begin_inset Formula $b^{n}=a_{1}\cdot a_{2}\cdot\dots\cdot a_{k}$
+\end_inset
+
+, здесь можно считать 
+\begin_inset Formula $b>0$
+\end_inset
+
+ (но это не обязательно).
+ В этом случае, каждое 
+\begin_inset Formula $a_{i}=c_{i}^{n}$
+\end_inset
+
+, то есть является 
+\begin_inset Formula $n$
+\end_inset
+
+ степенью некоторого целого положительного числа.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+ Разложим 
+\begin_inset Formula $b$
+\end_inset
+
+ на множители по каноническому виду.
+ 
+\begin_inset Formula $b=p_{1}^{\alpha_{1}}\cdot\dots\cdot p_{r}^{\alpha_{r}}$
+\end_inset
+
+.
+ Самое важное здесь не ввести новый индекс, совпадающий с каким-нибудь старым.
+ Тогда 
+\begin_inset Formula $b^{n}=p_{1}^{n\alpha_{1}}\cdot\dots\cdot p_{r}^{n\alpha_{r}}=a_{1}\cdot\dots\cdot a_{k}$
+\end_inset
+
+.
+ Но так как 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ взаимно просты, то 
+\begin_inset Formula $p_{j}$
+\end_inset
+
+ может входить в разложение только одно из них, поэтому в разложение любого
+ 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ любой простой множитель входит в степени, кратной 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ А значит и все 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ является степенью 
+\begin_inset Formula $n$
+\end_inset
+
+ некоторого целого числа.
+\end_layout
+
+\begin_layout Standard
+Осталось простое.
+ Раз 
+\begin_inset Formula $\left(\frac{a}{2}\right)^{2}=\frac{c-b}{2}\cdot\frac{c+b}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{c-b}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{c+b}{2}$
+\end_inset
+
+ взаимно просты, тогда 
+\begin_inset Formula $\frac{c+b}{2}=m^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{c-b}{2}=n^{2}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $c=m^{2}+n^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $b=m^{2}-n^{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a^{2}=4m^{2}n^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $a=2mn$
+\end_inset
+
+.
+ Это общая формула пифагоровых троек.
+ Эта формула даёт единое представление прямоугольного треугольника с целыми
+ сторонами (самого маленького в класса подобных).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c=k\left[m^{2}+n^{2}\right]$
+\end_inset
+
+, 
+\begin_inset Formula $b=k\left[m^{2}-n^{2}\right]$
+\end_inset
+
+ и 
+\begin_inset Formula $a=k\left[2mn\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $m>n$
+\end_inset
+
+.
+ Сами 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ должны быть взаимно просты, иначе у 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ будет общий делитель.
+ Они разной чётности, иначе бы все 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ делились бы на 2 и это не был бы самый маленький треугольник в классе подобных.
+\end_layout
+
+\begin_layout Standard
+Итак, окончательно мы доказали.
+ Если рассматривается самый маленький в классе подобных прямоугольный треугольни
+к с целыми сторонами, то существуют целые положительные 
+\begin_inset Formula $m,n$
+\end_inset
+
+ разной чётности и взаимно простые такие, что 
+\begin_inset Formula $c=m^{2}+n^{2},b=m^{2}-n^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $a=2mn$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Немножко истории вопроса.
+ Эта формула была известна древним индусам.
+ Если вы угадали эту формулу, то проверить её не сложно.
+ А вот вывести и доказать, что других вариантов нет, то вот это уже сложно.
+ И, как мы сейчас считаем, индусы этого делать не умели.
+\end_layout
+
+\begin_layout Standard
+Впервые это появляется у Диофанта Александрийского, о котором мы поговорим,
+ когда будем говорить о великой теореме Ферма.
+\end_layout
+
+\begin_layout Section
+Геометрия целых чисел
+\end_layout
+
+\begin_layout Standard
+Итак, после достаточно глубокого знакомства с целыми числами, давайте взглянём
+ на них немного иначе.
+\end_layout
+
+\begin_layout Standard
+Целые числа — это нанизанные на ниточку через равные промежутки точки.
+ Когда мы их складываем, вычитаем и умножаем, мы должны задать ноль и положитель
+ное направление.
+\end_layout
+
+\begin_layout Standard
+С детства мне казалось, что здесь смешаны два смысла.
+ Первый: рассмотреть точки на одинаковом расстоянии друг от друга.
+ Отсюда возникает идея бесконечности.
+\end_layout
+
+\begin_layout Standard
+А то, что мы ставим ноль, это уже другой смысл.
+\end_layout
+
+\begin_layout Standard
+А можем ли мы увидеть числа, не переходя к разметке? Можем, если под числом
+ понимать сдвиг.
+\end_layout
+
+\begin_layout Standard
+Что такое +2.
+ Это параллельный перенос на две единицы на право.
+\end_layout
+
+\begin_layout Standard
+Это взаимно-однозначное соответствие.
+\end_layout
+
+\begin_layout Standard
+Что такое 
+\begin_inset Formula $-3$
+\end_inset
+
+? Это преобразование сдвига налево.
+ То есть нам нужно направление, но нуль ещё не нужен.
+ Хотя выбор направления произволен.
+\end_layout
+
+\begin_layout Standard
+Что такое ноль? Это тождественное преобразование!
+\end_layout
+
+\begin_layout Standard
+Такое подход называется геометрия чисел.
+ Мы каждому числу поставили в соответствие преобразование прямой с точками.
+\end_layout
+
+\begin_layout Standard
+Теперь можно рассмотреть композицию.
+ Сначала сдвинем вправо на 2, а потом влево на 
+\begin_inset Formula $-3$
+\end_inset
+
+.
+ Отметим, что записываем справа налево: 
+\begin_inset Formula $\left(f_{-3}\circ f_{2}\right)\left(A\right)=f_{-1}\left(A\right)$
+\end_inset
+
+.
+ При композиции происходит сложение чисел.
+ Это и есть правильное понимание, что такое сумма.
+\end_layout
+
+\begin_layout Standard
+Это проходит лейтмотивом по всей современной науке.
+\end_layout
+
+\begin_layout Section
+Отражения и дроби
+\end_layout
+
+\begin_layout Standard
+Снова нарисуем 
+\begin_inset Quotes rld
+\end_inset
+
+безликую
+\begin_inset Quotes rrd
+\end_inset
+
+ прямую целых чисел.
+ Настолько безликую, что даже не будем указывать направление.
+ При сдвигах целые числа переходили в целые.
+ Вопрос: есть ли ещё какие-то преобразования, которые оставляют эту систему
+ точек на месте (то есть переводят в себя)?
+\end_layout
+
+\begin_layout Standard
+Отступление: если есть некоторое множество 
+\begin_inset Formula $X$
+\end_inset
+
+, являющееся подмножеством в множестве 
+\begin_inset Formula $A$
+\end_inset
+
+, и задан список, возможно бесконечный, 
+\begin_inset Quotes rld
+\end_inset
+
+разрешённых преобразований
+\begin_inset Quotes rrd
+\end_inset
+
+ вот объемлющего множества 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ То преобразования, сохраняющее 
+\begin_inset Formula $X$
+\end_inset
+
+ на месте (внутри 
+\begin_inset Formula $X$
+\end_inset
+
+ возможны перестановки точек, но для внешнего наблюдателя ничего не меняется),
+ образуют группу.
+ Это способ получения групп, который был исторически первым (Э.
+ Галуа).
+ Умножением в этой группе будет композиция преобразований.
+ Я ещё не объяснил, что такое преобразование.
+ Это нужно строго определять, мы к этому ещё вернёмся.
+\end_layout
+
+\begin_layout Standard
+Пока мы не сказали, что является разрешёнными преобразованиями прямой.
+ Мы долгое время будем считать разрешёнными преобразования, которые сохраняют
+ расстояния.
+\end_layout
+
+\begin_layout Standard
+Итак, что ещё можно сделать с этими точками? Ответ: их можно перевернуть.
+ Взять какую-то точку за основу.
+ Зафиксировать её и повернуть прямую на 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+.
+ Пока вертелась, она сошла со своего места, но в конце она возвращается
+ в себя.
+ Иными словами, произошло отражение, относительно выбранной точки.
+ При таком отражении меняются местами точки, находящиеся на равном расстоянии
+ от гвоздя.
+\end_layout
+
+\begin_layout Standard
+Вопрос.
+ Все ли преобразования прямой, которые переводят целые точки в себя, мы
+ теперь перечислили? Ответ.
+ Не все.
+ Если я забью гвоздь в серединку между двумя целыми точками, между которыми
+ вообще нет целого числа, то я тоже получу преобразование, которое переводит
+ целые числа в себя.
+ Выясняется, что для описания всех преобразований целых чисел в себя, приходится
+ привлекать точки, находящиеся строго по середине между целыми точками.
+ Потому что каждая точка порождает отражение, которое переводит целые в
+ себя.
+\end_layout
+
+\begin_layout Standard
+Итак, рассмотрев целые, мы должны рассмотреть и полуцелые.
+\end_layout
+
+\begin_layout Standard
+Но если мы рассмотрели такие точки, то мы должны признать их существование.
+ Но признавая полуцелые, мы можем рассмотреть вопрос, какие преобразования
+ сохраняют целые и полуцелые.
+ Но тогда мы приходим к четвертьцелыми.
+ И так далее.
+\end_layout
+
+\begin_layout Standard
+Таким образом, мы получаем дробные числа со знаменателями в виде степени
+ двойки.
+ Но если мы разрешаем такие дроби, то почему мы должны запрещать другие
+ дроби.
+ Итак, изучая отражения, мы пришли к идее дробей.
+ Ими мы теперь и займёмся.
+\end_layout
+
+\begin_layout Section
+Дроби
+\end_layout
+
+\begin_layout Standard
+Дроби и операции с ними.
+ Что такое дробь? Исходная идея дроби — это то, что количество одинаковых
+ объектов разделяется поровну среди некоторого количества людей.
+\end_layout
+
+\begin_layout Standard
+Например есть 
+\begin_inset Formula $m$
+\end_inset
+
+ яблок и 
+\begin_inset Formula $n$
+\end_inset
+
+ детей.
+ Поделить поровну не всегда просто (например 19 на 7).
+\end_layout
+
+\begin_layout Standard
+Очевидные дроби.
+\end_layout
+
+\begin_layout Standard
+Если количество детей и яблок увеличивается в одно и то же число раз.
+ 
+\begin_inset Formula $\frac{19\cdot2}{7\cdot2}=\frac{19}{2}$
+\end_inset
+
+.
+ Если мы видим кратности, то это упрощает процесс деления.
+ Это естественно приводит нас к идее, что какие бы количества мы не рассмотрели,
+ мы сразу пытаемся упростить задачу.
+ 
+\begin_inset Formula $\frac{22}{6}=\frac{2\cdot11}{2\cdot3}=\frac{11}{3}$
+\end_inset
+
+.
+ С этим числом дальше ничего сделать нельзя.
+ Мы говорим, что эта дробь несократимая: у числителя и знаменателя нет общих
+ множителей.
+ Любую дробь можно записать как несократимую, она будет обозначать одно
+ и то же 
+\begin_inset Quotes rld
+\end_inset
+
+физическое количество
+\begin_inset Quotes rrd
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\frac{a}{b}=\frac{a/\gcd\left(a,b\right)}{b/\gcd\left(a,b\right)}=\frac{m}{n}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\gcd\left(m,n\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Достаточно рассматривать не все дроби, а только несократимые.
+ У этого множества есть имя и обозначение.
+ Множество (несократимых) дробей вида 
+\begin_inset Formula $\frac{m}{n}$
+\end_inset
+
+, где 
+\begin_inset Formula $m,n\in\mathbb{Z}$
+\end_inset
+
+ (можно считать 
+\begin_inset Formula $n>0$
+\end_inset
+
+, иначе знак можно перенести на числитель) (при этом 
+\begin_inset Formula $0=\frac{0}{1}$
+\end_inset
+
+) называется множеством рациональных чисел и обозначается 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Я замёл под ковёр вопрос о том, могут ли две несократимые дроби обозначать
+ одно и тоже 
+\begin_inset Quotes rld
+\end_inset
+
+физическое количество
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ На самом деле, такого быть не может.
+ Но это нужно доказать и мы это сделаем.
+ С помощью основной теоремы арифметики.
+\end_layout
+
+\begin_layout Section
+Все дроби разные
+\end_layout
+
+\begin_layout Standard
+Мы воспользуемся основной леммой.
+ Пусть 
+\begin_inset Formula $\frac{m}{n}$
+\end_inset
+
+ — несократимая дробь.
+ Будем доказывать, что все положительные дроби разные.
+ Положительная дробь не может быть равна отрицательной.
+ А для отрицательных доказательство получим, поменяв знаки в числителях.
+ 
+\begin_inset Formula $\gcd\left(m,n\right)=1$
+\end_inset
+
+.
+ Существуют 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+, что 
+\begin_inset Formula $mx+ny=1$
+\end_inset
+
+, откуда, если 
+\begin_inset Formula $mk|n$
+\end_inset
+
+, то 
+\begin_inset Formula $k|n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Теперь 
+\begin_inset Formula $\frac{k}{l}$
+\end_inset
+
+ — другая несократимая дробь.
+ 
+\begin_inset Formula $\left(k\neq m\right)\vee\left(n\neq l\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Воспользуемся соображениями здравого смысла, которые можно ввести как аксиому,
+ что если 
+\begin_inset Formula $\frac{m}{n}=\frac{k}{l}$
+\end_inset
+
+, то 
+\begin_inset Formula $\frac{ml}{nl}=\frac{kn}{nl}$
+\end_inset
+
+.
+ Теперь должно быть 
+\begin_inset Formula $ml=kn$
+\end_inset
+
+.
+ Это строгий вывод условия равенства дробей.
+ Из этого равенства нужно вывести противоречие.
+ Итак, пусть 
+\begin_inset Formula $ml|n$
+\end_inset
+
+, тогда должно быть 
+\begin_inset Formula $l|n$
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula $ml|k$
+\end_inset
+
+, откуда 
+\begin_inset Formula $m|k$
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula $kn|m$
+\end_inset
+
+ и 
+\begin_inset Formula $kn|l$
+\end_inset
+
+ , откуда 
+\begin_inset Formula $k|m$
+\end_inset
+
+ и 
+\begin_inset Formula $k|l$
+\end_inset
+
+.
+ Смотрите, что получилось: два целых числа делятся друг на друга нацело.
+ Откуда 
+\begin_inset Formula $k=m$
+\end_inset
+
+ и 
+\begin_inset Formula $l=n$
+\end_inset
+
+, таким образом, эти дроби одинаковые, а не разные.
+\end_layout
+
+\begin_layout Standard
+Теперь я хочу рассмотреть математическую философию, связанную с этим.
+ Все различные несократимые дроби обозначают разные 
+\begin_inset Quotes rld
+\end_inset
+
+физические количества
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Это, наверное, второй по важности результат начальной школы, после ОТА.
+ Позже математики будут рассматривать различные обобщения.
+ Системы с делением.
+ В этих системах с делением нужно будет задавать вопрос, верна ли в них
+ основная теорема арифметики.
+ Там будут некоторые тонкости.
+ Которые мы не осознаем.
+ Они неосознаны, потому что в других системах с делением они могут не выполнятьс
+я.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $K$
+\end_inset
+
+ — кольцо.
+ Что такое дробь? Мы умеем только складывать, вычитать и умножать, а делить
+ — не всегда.
+ Возникает нетривиальная теория делимости.
+ Она начинается с определения того, что такое делимость.
+ 
+\begin_inset Formula $a|b\Longleftrightarrow\exists c:bc=a$
+\end_inset
+
+.
+ Из обычных свойств кольца выводится, что ноль умноженный на любое число
+ — это снова ноль.
+ Про это мы когда-то поговорим.
+ На ноль не может ничего делится.
+ Кроме самого нуля.
+ В любом кольце нельзя делить на ноль.
+ Если что-то на что-то не делится, то можно рассмотреть дроби.
+ Но их нужно вводить уже внешне, как факт.
+ Тогда возникает вопрос, как такие объекты отождествлять.
+ И здесь все становится гораздо сложнее! Но это задел на будущее.
+ Введение деления в общем случае натыкается на некоторые трудности
+\end_layout
+
+\begin_layout Section
+Геометрия дробей
+\end_layout
+
+\begin_layout Standard
+Любая истина начальной математики должна представать перед нами в двух ипостасях
+: геометрической и алгебраической (арифметической).
+ А если арифметическая и алгебраическая оказываются разными, то вообще получаем
+ три.
+ У пифагоровых троек есть три кита.
+ Мы поговорили только про одну.
+\end_layout
+
+\begin_layout Standard
+Для дробей мы рассмотрели алгебраическую 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+.
+ Это привело нас к понятию поля.
+\end_layout
+
+\begin_layout Standard
+А теперь рассмотрим геометрию дробей.
+ Постулат: во всех подобных треугольниках отношения соответствующих сторон
+ одинаковое.
+ Мы его уже немного обсуждали, когда говорили про удвоение кратных.
+ Ту же мысль можно применить и к дробям.
+ Разные количества — это разные наклоны.
+ Две разные несократимые дроби не могут обозначать одно и то же физическое
+ количество, а значит они лежат на разных лучах.
+ Как тогда можно описать дроби? Это все лучи, проходящие через начало координат
+ и целые точки.
+ Это же даёт идею, как определить, какая дробь больше.
+ Больше та, луч которой лежит выше.
+ У сравнение через общий знаменатель тоже есть геометрическая интерпретация.
+ И у сложения тоже.
+ Значение дробей лежит на прямой, отстоящее от вертикальной оси на один
+ (в положительное направление).
+\end_layout
+
+\begin_layout Standard
+Для полей верен целый ряд утверждений про многочлены.
+ Мы их будем изучать.
+ Но сначала нужно посмотреть некоторые другие поля.
+ В частности, конечные поля.
+\end_layout
+
+\begin_layout Section
+Алгоритм Евклида
+\end_layout
+
+\begin_layout Standard
+Теперь технология 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ взаимно просты.
+ Как найти числа 
+\begin_inset Formula $x,y$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $mx+ny=1$
+\end_inset
+
+? Потом мы увидим, что такие задачи возникают очень часто.
+ Если 
+\begin_inset Formula $\gcd\left(m,n\right)=d$
+\end_inset
+
+ и мы ищем 
+\begin_inset Formula $x,y$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $mx+ny=d$
+\end_inset
+
+ то все сводится к 
+\begin_inset Formula $\frac{m}{d}x+\frac{n}{d}y=1$
+\end_inset
+
+.
+ Вспоминаем кузнечика.
+\end_layout
+
+\begin_layout Standard
+Есть два способа решать эту задачу.
+ Оба придумал Евклид.
+ Один из них называется делением с остатком, а другой всё ускоряет в разы
+ и называется 
+\begin_inset Quotes rld
+\end_inset
+
+цепные дроби
+\begin_inset Quotes rrd
+\end_inset
+
+ (я их обожаю, это суперкруто).
+\end_layout
+
+\begin_layout Standard
+Рассмотрим пример.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $m=20$
+\end_inset
+
+ и 
+\begin_inset Formula $n=11$
+\end_inset
+
+.
+ Иногда это можно угадать.
+ Но мы притворимся, что не угадали.
+ Берём большее и делим на меньшее с остатком.
+ 
+\begin_inset Formula $20=11\cdot1+9$
+\end_inset
+
+.
+ Теперь 
+\begin_inset Formula $11=9\cdot1+2$
+\end_inset
+
+.
+ Каждый раз делитель становится делимым, а остаток становится делителем.
+ 
+\begin_inset Formula $9=2\cdot4+1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $2=1\cdot2+0.$
+\end_inset
+
+ 
+\begin_inset Formula $1=9-2\cdot4=9\cdot1+2\cdot\left(-4\right)$
+\end_inset
+
+.
+ Это решение для другого уравнения того же типа.
+ 
+\begin_inset Formula 
+\[
+1=9\cdot1+2\cdot\left(-4\right)=9\cdot1+\left(11\cdot1+9\cdot\left(-1\right)\right)\left(-4\right)=9\cdot\left(5\right)+11\left(-4\right)=\left(20-11\right)\cdot5+11\cdot\left(-4\right)=20\cdot5+11\cdot\left(-9\right)=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Обращает внимание, что в такой тривиальной вещи совершает много ошибок.
+ И теперь переходим ко второму методу.
+\end_layout
+
+\begin_layout Section
+Цепные дроби
+\end_layout
+
+\begin_layout Standard
+Знакомство с цепными дробями
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{20}{11}=1+\frac{9}{11}=1+\frac{1}{\frac{11}{9}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Обращаем внимание, что здесь выделилась целая часть, возник остаток и делитель,
+ а здесь — они перевернулись.
+ На самом деле я делаю тот же алгоритм Евклида, но по другому
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\frac{20}{11}=1+\frac{9}{11}=1+\frac{1}{\frac{11}{9}}=\\
+=1+\frac{1}{1+\frac{2}{9}}=1+\frac{1}{1+\frac{1}{\frac{9}{2}}}=1+\frac{1}{1+\frac{1}{4+\frac{1}{2}}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+То, что получилось, называется цепная дробь.
+ Теперь можно записать приближённые равенства.
+ Некоторые говорят, как это может быть в математике приближённое равенство?
+ В математике ведь все точно?! Это полная ерунда, в математике много чего
+ примерно.
+ Просто нужно понимать, как мы с этим общаемся.
+ Произведём ампутацию члена.
+\begin_inset Formula 
+\[
+\frac{20}{11}\approx1+\frac{1}{1+\frac{1}{4}}=1+\frac{1}{\frac{5}{4}}=1+\frac{4}{5}=\frac{9}{5}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+А обоснование будет в отдельном разделе про цепные дроби большом, сильно
+ позже.
+ А пока просто волшебство.
+ 
+\begin_inset Formula 
+\[
+\frac{20}{11}\approx\frac{9}{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+20\cdot5\approx11\cdot9
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ну тут уже нужно совсем немного подумать, чтобы понять, где нужно поставить
+ плюс, а где минус, чтобы получить 1:
+\begin_inset Formula 
+\[
+20\cdot5+11\cdot\left(-9\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тут ошибиться трудно, но нужно обоснование.
+ Я забегу вперёд, но сейчас скажу.
+\end_layout
+
+\begin_layout Standard
+Если взять любую цепную дробь и отбросить последний член.
+ Если исходная была 
+\begin_inset Formula $\frac{m}{n}$
+\end_inset
+
+, а с ампутированным членом 
+\begin_inset Formula $\frac{k}{l}$
+\end_inset
+
+, то 
+\begin_inset Formula $ml-kn=\pm1$
+\end_inset
+
+.
+ Магия чисел с её разоблачением.
+ Быстро и эффективно.
+ Это арифметика цепных дробей.
+ Но есть ещё их геометрия, мгновенно приводящая к алгоритму Евклиду.
+\end_layout
+
+\begin_layout Standard
+Возьмём пару 
+\begin_inset Formula $\left(20,11\right)$
+\end_inset
+
+, изобразим прямоугольник с такими сторонами.
+ Отрезаем от него квадрат 
+\begin_inset Formula $11\times11$
+\end_inset
+
+, остаётся прямоугольник 
+\begin_inset Formula $11\times9$
+\end_inset
+
+.
+ Снова отрезаем квадрат, остаётся 
+\begin_inset Formula $9\times2$
+\end_inset
+
+.
+ Отрезаем 4 квадрата, остаётся 
+\begin_inset Formula $2\times1$
+\end_inset
+
+ (два полных квадратика).
+ Количество квадратов — это знаменатели в цепной дроби.
+ Рисунок? Понятно, что этот алгоритм остановится, следует из того, что в
+ любой исходный прямоугольник укладывается целое число квадратиков 
+\begin_inset Formula $1\times1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Здесь огромное количество математических идей, созданных ещё в древнем мире.
+\end_layout
+
+\begin_layout Standard
+Любые два целых числа соизмеримы, то есть в них целое число раз укладывается
+ единичный отрезок.
+ Понятие соизмеримости мы пропашем вдоль и поперёк.
+ Всеми методами, которые есть.
+ Это центральное понятие всей математики.
+ Про неё будем очень подробно говорить.
+ А теперь мы полностью вооружены для того, чтобы отложить цепные дроби и
+ заняться арифметикой остатков.
+\end_layout
+
+\begin_layout Section
+Кольца остатков
+\end_layout
+
+\begin_layout Standard
+Систематическое изучение остатков.
+ 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+.
+ Одни брать смысла нет, ноль запрещён.
+ Если рассматривать наивно, это вот эти числа: 
+\begin_inset Formula $0,1,\dots,m-1$
+\end_inset
+
+.
+ Он удобный при этом.
+ Но чтобы его обосновать мы вспомним, что на самом деле, формально верны
+ подход — это классы чисел 
+\begin_inset Formula $m\mathbb{Z}\oplus k$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — 
+\begin_inset Formula $0,1,\dots,m-1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $m\mathbb{Z}\oplus\left(m-1\right)=m\mathbb{Z}\ominus1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Это можно изобразить графически.
+\end_layout
+
+\begin_layout Standard
+Сумма по Минковскому корректно определяет сложение на классах.
+ Это факторизация.
+ Сумма любых двух элементов из двух классов даёт элемент одного и того же
+ класса.
+\end_layout
+
+\begin_layout Standard
+Если я беру произведение 
+\begin_inset Formula $\left(m\mathbb{Z}\oplus a\right)\odot\left(m\mathbb{Z}\oplus b\right)\subset m\mathbb{Z}\oplus ab=m\mathbb{Z}\oplus k$
+\end_inset
+
+ и это нам даёт моральное или теоретическое основание определить произведение
+ двух классов, но это произведение уже не будет произведением по Минковскому.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k$
+\end_inset
+
+ — остаток от деления 
+\begin_inset Formula $ab$
+\end_inset
+
+ на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Операции с остатками можно выполнять следующим образом: сначала выполняем
+ обычную операцию как с целыми числами, а потом берём остаток от деления
+ на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Мы получили корректное описание некоторого кольца.
+ Состоящего из 
+\begin_inset Formula $m$
+\end_inset
+
+ элементов.
+ 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+.
+ Раньше мы рассматривали её как группу, а теперь как кольцо.
+ Минус — это операция, связанная с плюсом, поэтому нужно добавить только
+ таблицу умножения.
+\end_layout
+
+\begin_layout Standard
+Возьмём некоторые характерные 
+\begin_inset Formula $m=4$
+\end_inset
+
+ и 
+\begin_inset Formula $m=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $*$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $*$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+По сложению для всех групп остатков всё просто, это циклическая группа 
+\begin_inset Formula $Z_{m}$
+\end_inset
+
+, она, вроде бы, уже встречалась.
+\end_layout
+
+\begin_layout Standard
+При 
+\begin_inset Formula $m=4$
+\end_inset
+
+ получаем 
+\begin_inset Formula $2\cdot2=0$
+\end_inset
+
+! Почувствуйте разницу.
+ При 
+\begin_inset Formula $m=5$
+\end_inset
+
+ каждая строка содержит все числа, то есть всегда можно поделить любые два
+ числа.
+ Как поделить 1 на 2? Какое кратное двойки равно 1? Это 3.
+ И т.д.
+ Поделить можно каждое на каждое, кроме нуля, который я не упоминаю вообще.
+ Система остатков от деления на 5 образует поле.
+ Это очень круто, поле из конечного числа элементов.
+\end_layout
+
+\begin_layout Standard
+А при 
+\begin_inset Formula $m=4$
+\end_inset
+
+ получаются только чётные произведения, поэтому нечетные числа разделить
+ на что-то нетривиальное нельзя.
+ Есть и повторы, и нули.
+\end_layout
+
+\begin_layout Standard
+Мы нарисуем несколько примеров, а потом сформулируем общие результаты.
+ Определим, к какому типу систем относится 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+ при разных 
+\begin_inset Formula $m$
+\end_inset
+
+: кольцо или поле.
+\end_layout
+
+\begin_layout Standard
+Мы подбираемся к важнейшему, что есть в начальной математике.
+\end_layout
+
+\begin_layout Section
+Кольца и поля остатков
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ещё таблицы умножения по модулю 6 и 7.
+\end_layout
+
+\begin_layout Standard
+Таблицы центрально симметричны.
+ Дело в том, что 
+\begin_inset Formula $\left(-a\right)\cdot\left(-b\right)=ab$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В таблице умножения для 6 есть нули, а для 7 — нет.
+\end_layout
+
+\begin_layout Standard
+Некоторые наблюдения (все сказанное про строки относится также и к строкам,
+ так как умножение коммутативно):
+\end_layout
+
+\begin_layout Standard
+Иногда строки содержат ноль, а иногда — нет.
+\end_layout
+
+\begin_layout Standard
+В строке иногда есть единица, а иногда — нет.
+\end_layout
+
+\begin_layout Standard
+Иногда в строке все остатки, а иногда — не все.
+\end_layout
+
+\begin_layout Standard
+Иногда все строки 
+\begin_inset Quotes rld
+\end_inset
+
+однотипные
+\begin_inset Quotes rrd
+\end_inset
+
+, а иногда нет.
+\end_layout
+
+\begin_layout Standard
+Для любых 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $k$
+\end_inset
+
+ из ненулевых остатков, следующие три утверждения равносильны: в строке
+ номер 
+\begin_inset Formula $k$
+\end_inset
+
+ таблицы умножения для остатков от деления на 
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1) Нет нуля в строке
+\end_layout
+
+\begin_layout Standard
+2) Есть единица
+\end_layout
+
+\begin_layout Standard
+3) Есть все остатки
+\end_layout
+
+\begin_layout Standard
+От чего это зависит? Мы это разберём, но пока докажем, что эти утверждения
+ действительно равносильны.
+\end_layout
+
+\begin_layout Standard
+Во-первых, если есть все, то есть и единица.
+\end_layout
+
+\begin_layout Standard
+Теперь, если есть ноль, но не все остатки есть.
+\end_layout
+
+\begin_layout Standard
+А что происходит, если есть не все остатки, то есть какой-то повтор.
+ По принципу Дирихле.
+ То есть 
+\begin_inset Formula $ka=kb\mod m$
+\end_inset
+
+, тогда 
+\begin_inset Formula $k\left(b-a\right)=0\mod m$
+\end_inset
+
+.
+ Таким образом, если нет нуля, то есть все остатки.
+\end_layout
+
+\begin_layout Standard
+Теперь докажем, что если существует единица, то нет нуля.
+ То есть существует 
+\begin_inset Formula $x$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $kx=1$
+\end_inset
+
+, а если есть ноль, то существует 
+\begin_inset Formula $y$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $ky=0$
+\end_inset
+
+, тогда 
+\begin_inset Formula $y=1\cdot y=\left(xk\right)y=x\left(ky\right)=x0=0$
+\end_inset
+
+, тогда 
+\begin_inset Formula $y=0$
+\end_inset
+
+.
+ Это противоречие показывает, что если есть единица, то нет нуля.
+\end_layout
+
+\begin_layout Standard
+Осталось выяснить, при каких 
+\begin_inset Formula $m$
+\end_inset
+
+ получаем таблицы умножения без нулей.
+\end_layout
+
+\begin_layout Section
+Построение конечных полей
+\end_layout
+
+\begin_layout Standard
+Для любого 
+\begin_inset Formula $m$
+\end_inset
+
+ (модуля рассмотрения) 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+, для любого ненулевого остатка 
+\begin_inset Formula $k$
+\end_inset
+
+ при делении на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Следующие утверждения равносильны (нулевой столбец не рассматриваем):
+\end_layout
+
+\begin_layout Standard
+1) В строке 
+\begin_inset Formula $k$
+\end_inset
+
+ нет нулей.
+\end_layout
+
+\begin_layout Standard
+2) В строке 
+\begin_inset Formula $k$
+\end_inset
+
+ есть единица
+\end_layout
+
+\begin_layout Standard
+3) В строке 
+\begin_inset Formula $k$
+\end_inset
+
+ есть все остатки (на 
+\begin_inset Formula $k$
+\end_inset
+
+ делится любой остаток).
+\end_layout
+
+\begin_layout Standard
+4) Новое утверждение: 
+\begin_inset Formula $\gcd\left(k,m\right)=1$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+ Из 4) выведем одно из 1-3), а потом из одного из них 4).
+\end_layout
+
+\begin_layout Standard
+1) влечёт 4), что эквивалентно: из не 4) следует не 1).
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\gcd\left(k,m\right)=d\neq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $k\left(\frac{m}{d}\right)=\frac{k}{d}\cdot m=0\mod m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Теперь докажем, что из 4) следует 2).
+ Из 
+\begin_inset Formula $\gcd\left(k,m\right)=1$
+\end_inset
+
+ следует, что существуют 
+\begin_inset Formula $x,y$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $kx+my=1$
+\end_inset
+
+.
+ Берём 
+\begin_inset Formula $\bar{x}=x\mod m$
+\end_inset
+
+ и видим, что 
+\begin_inset Formula $k\bar{x}=1\mod m$
+\end_inset
+
+.
+ То есть единица находится в столбце 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Итак, ура, мы получаем следующее замечательное свойство всех таблиц умножения.
+ Рисуем таблицу и берём 
+\begin_inset Formula $k$
+\end_inset
+
+ строку, если 
+\begin_inset Formula $k$
+\end_inset
+
+ взаимно просто с 
+\begin_inset Formula $m$
+\end_inset
+
+, то это полная строка, если нет — то есть нули и т.п.
+\end_layout
+
+\begin_layout Standard
+В каких таблицах вообще нет нулей (кроме первого столбца и первой строки)?
+ В таких, что 
+\begin_inset Formula $k=1,\dots,m-1$
+\end_inset
+
+ взаимно просто с 
+\begin_inset Formula $m$
+\end_inset
+
+, это равносильно тому, что 
+\begin_inset Formula $m$
+\end_inset
+
+ — простое.
+ Если 
+\begin_inset Formula $m$
+\end_inset
+
+ не простое, то оно не взаимно просто со своими собственными делителями.
+ Простые числа — это те и только те, которые взаимно просты со всеми предыдущими.
+\end_layout
+
+\begin_layout Standard
+Мы доказали, что при 
+\begin_inset Formula $m=p$
+\end_inset
+
+ простом и только в этом случае 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+ — поле, а иначе — это всего лишь кольцо.
+ И в этом кольце есть делители нуля, то есть 
+\begin_inset Formula $a,b\neq0$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $ab=0$
+\end_inset
+
+.
+ Мы получаем сразу огромное количество полей.
+\end_layout
+
+\begin_layout Standard
+Мы будем использовать его при изучении многочленов.
+\end_layout
+
+\begin_layout Section
+Вычисление примера
+\end_layout
+
+\begin_layout Standard
+Найдём 
+\begin_inset Formula $13/88\mod101$
+\end_inset
+
+.
+ Сначала обратим элемент 
+\begin_inset Formula $88$
+\end_inset
+
+, то есть 
+\begin_inset Formula $13/88=13\cdot88^{-1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $88x=1\mod101$
+\end_inset
+
+ или 
+\begin_inset Formula $88x|101$
+\end_inset
+
+ или 
+\begin_inset Formula $88x-1=101y$
+\end_inset
+
+ или 
+\begin_inset Formula $88x+101y=1$
+\end_inset
+
+, нужно решить в целых числа такое уравнение.
+ Воспользуемся цепными дробями.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\frac{101}{88}=1+\frac{13}{88}=1+\frac{1}{\frac{88}{13}}=1+\frac{1}{6+\frac{10}{13}}=1+\frac{1}{6+\frac{1}{\frac{13}{10}}}=\\
+=1+\frac{1}{6+\frac{1}{1+\frac{3}{10}}}=1+\frac{1}{6+\frac{1}{1+\frac{1}{\frac{10}{3}}}}=1+\frac{1}{6+\frac{1}{1+\frac{1}{3+\frac{1}{3}}}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1+\frac{1}{6+\frac{1}{1+\frac{1}{3}}}=1+\frac{1}{6+\frac{3}{4}}=1+\frac{1}{\frac{27}{4}}=1+\frac{4}{27}=\frac{31}{27}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+88\cdot31-27\cdot101=\pm1
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $31=88^{-1}\mod101$
+\end_inset
+
+, 
+\begin_inset Formula $13/88=13\cdot31=403\mod101$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Я конечно, сглупил, ведь 
+\begin_inset Formula $13+88=101$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $13/88=13/\left(-13\right)=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если бы взяли 
+\begin_inset Formula $25/88$
+\end_inset
+
+ то получилось бы по другому, но можно воспользоваться тем, что 
+\begin_inset Formula $88^{-1}=31$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Решение сводится к решению уравнения 
+\begin_inset Formula $kx+my=1$
+\end_inset
+
+ в целых числах.
+\end_layout
+
+\begin_layout Standard
+Первое, что мы будем изучать предметно — это многочлены с коэффициентами
+ в кольцах и полях.
+\end_layout
+
+\begin_layout Standard
+Многочлен — это сумма, в которой каждое слагаемое — это произведение элемента
+ кольца или поля и 
+\begin_inset Formula $x$
+\end_inset
+
+ в натуральной степени.
+\end_layout
+
+\begin_layout Section
+План
+\end_layout
+
+\begin_layout Standard
+Прежде чем заниматься абстрактными вещами, составим план, чтобы настроиться
+ на эти абстракции.
+ Далее будет много абстракций.
+ Математика только в начале наглядная и простая.
+ Перечислим задачи, которые мы решим.
+ Эти задачи будут нашими путеводными звёздами, наподобие задачи о пифагоровых
+ тройках.
+\end_layout
+
+\begin_layout Standard
+1) Великая теорема Ферма (не докажем до конца, но разберём частные случаи)
+ 
+\begin_inset Formula $a^{n}+b^{n}=c^{n}$
+\end_inset
+
+.
+ Эта задача вдохновляла половину математики 350 лет подряд.
+ Решим при 
+\begin_inset Formula $n=4$
+\end_inset
+
+ и 
+\begin_inset Formula $n=3$
+\end_inset
+
+ (при 4 легче).
+ Для 
+\begin_inset Formula $n=3$
+\end_inset
+
+ решается с помощью комплексных чисел (числа Эйзенштейна), поэтому их надо
+ будет ввести.
+ На самом деле математика только первые несколько уроков работает без комплексны
+х чисел.
+ Дальше без них нельзя даже плюнуть.
+ На пути к ним нужно изучать движения простых объектов (прямой, окружности,
+ плоскости, сферы и других).
+ Отсюда идёт эрлангенская программа Клейна, современная геометрия.
+\end_layout
+
+\begin_layout Standard
+2) Когда произвольное 
+\begin_inset Formula $n=a^{2}+b^{2}$
+\end_inset
+
+, это задача трёх величайших умов прошлого Ферма, Эйлер, Гаусс.
+ Нам понадобится множество новых инструментов, многочлены над 
+\begin_inset Formula $\mathbb{Z}/p\mathbb{Z}$
+\end_inset
+
+, кольцо гауссовых целых чисел.
+\end_layout
+
+\begin_layout Standard
+3) 
+\begin_inset Formula $y^{2}=x^{3}\pm1$
+\end_inset
+
+ в 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+, отсюда пойдут эллиптические кривые.
+\end_layout
+
+\begin_layout Standard
+4) Какие целые точки есть на прямой.
+\end_layout
+
+\begin_layout Standard
+5) Уравнение Пелля 
+\begin_inset Formula $x^{2}-my^{2}=\pm1$
+\end_inset
+
+, гиперболические повороты, линейная алгебра.
+ Группы перестановок.
+\end_layout
+
+\begin_layout Standard
+6) Поле всех корней всех многочленов с целыми коэффициентами.
+\end_layout
+
+\begin_layout Standard
+Это ещё не говоря о том, что ещё несколько сотен лекций будет по математическому
+ анализу.
+\end_layout
+
+\begin_layout Standard
+Если подходить к матану не изучая всё перечисленное выше, всю вот эту алгебру,
+ то не сможете стать профессионалом.
+ А после матана и линейной алгебры уже начинается настоящая математика.
+\end_layout
+
+\begin_layout Section
+План МАТАН
+\end_layout
+
+\begin_layout Standard
+На подступах к математическому анализу (и линейной алгебре тоже).
+ И связывает их понятие экспоненты.
+ Экспонента — это попытка решить функциональное уравнение 
+\begin_inset Formula $f\left(x+y\right)=f\left(x\right)f\left(y\right)$
+\end_inset
+
+, то есть нужно найти функцию 
+\begin_inset Formula $f$
+\end_inset
+
+, которая удовлетворяет требования для любых 
+\begin_inset Formula $x,y$
+\end_inset
+
+.
+ Это совсем не то, что вы привыкли делать.
+\end_layout
+
+\begin_layout Standard
+Нам нужно систематических изучать понятие полноты, модели вещественных чисел.
+\end_layout
+
+\begin_layout Standard
+Математический анализ нужен для асимптотического распределения простых чисел,
+ теорема Дирихле о простых числах в арифметических прогрессиях (требуется
+ даже комплексный анализ), доказательства трансцендентности 
+\begin_inset Formula $e$
+\end_inset
+
+ и 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ Анализ эллиптических кривых, Бёрч-Суиннертон-Дайер, одна из семи проблем
+ Клея, ещё одна — гипотеза Римана.
+\end_layout
+
+\begin_layout Standard
+Теорема Бернштейна-Кантора, и ещё Кантор встретится множество раз, без теории
+ множеств не разобраться с вещественными числами.
+ Ну а дальше будут пределы, предельные переходы, пределы последовательностей,
+ функций.
+\end_layout
+
+\begin_layout Section
+Кольцо многочленов
+\end_layout
+
+\begin_layout Standard
+Детальное знакомство с многочленами.
+ Это выражения вида 
+\begin_inset Formula $a_{0}+a_{1}x+\dots+a_{n}x^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ — целое число, которое называется степенью многочлена, имеется в виду,
+ что 
+\begin_inset Formula $a_{n}\neq0$
+\end_inset
+
+, иначе не было смысл писать это слагаемое! 
+\begin_inset Formula $a_{0},a_{1},\dots,a_{n-1}$
+\end_inset
+
+ — любые числа, коэффициенты.
+\end_layout
+
+\begin_layout Standard
+Два ключевых вопроса:
+\end_layout
+
+\begin_layout Standard
+1) это операции над ними
+\end_layout
+
+\begin_layout Standard
+2) вычисление значений при конкретных 
+\begin_inset Formula $x$
+\end_inset
+
+ (многочлен как функция).
+\end_layout
+
+\begin_layout Standard
+2.1) нахождение корней, то есть нахождение таких 
+\begin_inset Formula $x$
+\end_inset
+
+, что многочлен равен нулю
+\end_layout
+
+\begin_layout Standard
+Отметим, что для того, чтобы 2 и 2.1 были возможны, надо, чтобы все 
+\begin_inset Formula $a_{0},\dots,a_{n}$
+\end_inset
+
+ и все 
+\begin_inset Formula $x$
+\end_inset
+
+ жили в некотором кольце (множество с операциями сложения, вычитания и умножения
+).
+\end_layout
+
+\begin_layout Standard
+Пусть даны два многочлена 
+\begin_inset Formula $f\left(x\right)=a_{0}+a_{1}x+\dots+a_{n}x^{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)=b_{0}+b_{1}x+\dots+b_{k}x^{k}$
+\end_inset
+
+, Поставим любую операцию (сложение, вычитание, умножение) между этими двумя
+ выражениями.
+ Пусть 
+\begin_inset Formula $k\ge n$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)+g\left(x\right)=\left(a_{0}+b_{0}\right)+\left(a_{1}+b_{1}\right)x+\dots+\left(a_{k}+b_{k}\right)x^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+С произведением аналогично, но несколько сложнее.
+\end_layout
+
+\begin_layout Standard
+Многочлены нам понятны, так как они связаны с системами счисления.
+\end_layout
+
+\begin_layout Standard
+Определённые таким образом операции превращают множество многочленов с коэффицие
+нтами в кольце — в кольцо 
+\begin_inset Formula $K\left[x\right]$
+\end_inset
+
+.
+ Это кольцо мы будем всесторонне изучать.
+\end_layout
+
+\begin_layout Section
+Многочлены и системы счисления
+\end_layout
+
+\begin_layout Standard
+Приложения многочленов к системам счисления и записи чисел.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $125=100+20+5=1\cdot10^{2}+2\cdot10+5=\left(x^{2}+2x+5\right)\left(10\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Умножение столбиком — это аналог умножения многочленов.
+\end_layout
+
+\begin_layout Standard
+В любой системе счисления число записывается как значение некоторого многочлена
+ при 
+\begin_inset Formula $x$
+\end_inset
+
+ равном основанию системы счисления.
+\end_layout
+
+\begin_layout Standard
+Это гуманитарное обоснование того, почему многочлены нам интересны.
+\end_layout
+
+\begin_layout Standard
+Начнём мы с самого простого случая, когда кольцо — конечное, например —
+ просто кольцо остатков.
+ По
+\end_layout
+
+\begin_layout Section
+Многочлены над кольцами вычетами
+\end_layout
+
+\begin_layout Standard
+Пояснение про то, что коэффициенты нужно воспринимать как инвариантное представл
+ение числа (а не его запись в конкретной системе счисления).
+\end_layout
+
+\begin_layout Standard
+Это все относится к целым числам, для многочленов над произвольным кольцом
+ коэффициентами являются произвольные элементы этого кольца.
+\end_layout
+
+\begin_layout Standard
+Пример 
+\begin_inset Formula $3-5x+2x^{2}$
+\end_inset
+
+ как функция над кольцами остатков 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+ при 
+\begin_inset Formula $m=2,\dots,5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сразу перепишем в удобной форме, над 
+\begin_inset Formula $Z/2Z$
+\end_inset
+
+ существуют вообще только два числа, 
+\begin_inset Formula $2=0$
+\end_inset
+
+ 
+\begin_inset Formula $3=-5=1$
+\end_inset
+
+, получаем 
+\begin_inset Formula $1+x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В 
+\begin_inset Formula $Z/3Z$
+\end_inset
+
+: 
+\begin_inset Formula $-5=1$
+\end_inset
+
+ и 
+\begin_inset Formula $3=0$
+\end_inset
+
+, поэтому он равен 
+\begin_inset Formula $x+2x^{2}$
+\end_inset
+
+ и его таблица имеет вид
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Придумайте другой 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ с такой же таблицей значений.
+\end_layout
+
+\begin_layout Standard
+Над конечными кольцами могут существовать различные многочлены, которые
+ равны как функции.
+\end_layout
+
+\begin_layout Standard
+В 
+\begin_inset Formula $Z/4Z$
+\end_inset
+
+ 
+\begin_inset Formula $-5=3$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $f\left(x\right)=3+3x+2x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В 
+\begin_inset Formula $Z/5Z$
+\end_inset
+
+ 
+\begin_inset Formula $-5=0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $f\left(x\right)=3+2x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{5}$
+\end_inset
+
+ в 
+\begin_inset Formula $Z/5Z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Как функции на 
+\begin_inset Formula $Z/5Z$
+\end_inset
+
+: 
+\begin_inset Formula $x^{5}=x$
+\end_inset
+
+, но это два разных многочлена.
+\end_layout
+
+\begin_layout Section
+Многочлены как кольцо
+\end_layout
+
+\begin_layout Standard
+То есть мы будем смотреть какие-то операции непосредственно над многочленами
+ и к чему они будут приводить.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(a_{0}+a_{1}x+\dots+a_{n}x^{n}\right)\left(b_{0}+b_{1}x+\dots+b_{k}x^{k}\right)=a_{0}b_{0}+\dots+a_{n}b_{k}x^{n+k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из этого хочется сделать вывод, что степень произведения многочленов равна
+ сумме степеней сомножителей: 
+\begin_inset Formula $def\left(fg\right)=deg\left(f\right)+deg\left(g\right)$
+\end_inset
+
+.
+ Однако, верно это тогда и только тогда, когда 
+\begin_inset Formula $a_{n}b_{k}\neq0$
+\end_inset
+
+, как мы видели, что 
+\begin_inset Formula $a_{n}\neq0$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{k}\neq0$
+\end_inset
+
+ не гарантирует 
+\begin_inset Formula $a_{n}b_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пример в 
+\begin_inset Formula $\left(Z/6Z\right)\left[x\right]$
+\end_inset
+
+: 
+\begin_inset Formula $\left(2x-1\right)\left(3x+2\right)=6x^{2}+x-2=x-2$
+\end_inset
+
+, то есть произведение двух линейных — снова линейный.
+ Что снова против всех канонов, мы смогли разложить на множители многочлен
+ первой степени со старшим коэффициентом, равным единице.
+\end_layout
+
+\begin_layout Standard
+Каковы же достаточные условия того, что 
+\begin_inset Formula $def\left(fg\right)=deg\left(f\right)+deg\left(g\right)$
+\end_inset
+
+ справедливо всегда.
+ Мы видели, что делителей нуля нет в любом поле, в частности в 
+\begin_inset Formula $Z/pZ$
+\end_inset
+
+ , где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое.
+\end_layout
+
+\begin_layout Standard
+Сделаем отступление.
+ В любом поле нет делителей нуля.
+ Пусть 
+\begin_inset Formula $ab=0$
+\end_inset
+
+ и 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $a=abb^{-1}=0b^{-1}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ещё примеры.
+\end_layout
+
+\begin_layout Standard
+Введём понятие делимости в 
+\begin_inset Formula $K\left[x\right]$
+\end_inset
+
+ определяется стандартно.
+ Многочлен 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ делится 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ тогда и только тогда, когда существует 
+\begin_inset Formula $h\left(x\right)\in K\left[x\right]$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)h\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В частности, 
+\begin_inset Formula $x-2$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2x-1$
+\end_inset
+
+ в 
+\begin_inset Formula $\left(Z/6Z\right)\left[x\right]$
+\end_inset
+
+.
+ Это неприятно.
+ Нам бы хотелось, чтобы многочлен меньшей степени никогда не делился бы
+ на многочлен большей степени.
+\end_layout
+
+\begin_layout Standard
+В 
+\begin_inset Formula $\left(Z/pZ\right)\left[x\right]$
+\end_inset
+
+, да и вообще в любом 
+\begin_inset Formula $P\left[x\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $P$
+\end_inset
+
+ — поле, такого и не будет.
+ Так как в 
+\begin_inset Formula $P\left[x\right]$
+\end_inset
+
+ сумма степеней равна сумме степеней множителей.
+\end_layout
+
+\begin_layout Standard
+Все нужные нам свойства мы потом просуммируем, а пока продолжим изучение
+ аномалий.
+\end_layout
+
+\begin_layout Section
+Простота многочленов
+\end_layout
+
+\begin_layout Standard
+Продолжаем собирать коллекцию аномалий в 
+\begin_inset Formula $\left(Z/mZ\right)\left[x\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В прошлый раз мы нашли пример, когда в этом кольце многочлен делится на
+ многочлен той же степени.
+ Сейчас рассмотрим пример, когда многочлен делится на многочлен старшей
+ степени!
+\end_layout
+
+\begin_layout Standard
+Рассмотрим в 
+\begin_inset Formula $\left(Z/6Z\right)\left[x\right]$
+\end_inset
+
+ следующее произведение многочленов:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(2x^{2}+2x+1\right)\left(3x+3\right)=\left(2x^{2}+2x\right)\left(3x+3\right)+\left(3x+3\right)=3x+3=6\left(x^{2}+x\right)\left(x+1\right)+\left(3x+3\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Итого 
+\begin_inset Formula $3x+3$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2x^{2}+2x+1$
+\end_inset
+
+ в 
+\begin_inset Formula $\left(Z/6Z\right)\left[x\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Упражнение.
+ Найти ещё более убедительную аномалию вида 
+\begin_inset Formula $x-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $ax^{2}+bx+c$
+\end_inset
+
+ в каком-то из 
+\begin_inset Formula $\left(Z/mZ\right)\left[x\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Мы очень любим многочлены со старшим коэффициентом, равным единице.
+\end_layout
+
+\begin_layout Standard
+Многочлен называется приведённым, если 
+\begin_inset Formula $a_{n}=1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $f\left(x\right)=x^{n}+a_{n-1}x^{n-1}+\dots+a_{1}x+a_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для приведённых многочленов в любых кольцах верна теорема про суммы степеней.
+ Если 
+\begin_inset Formula $f,g$
+\end_inset
+
+ приведённые многочлены в 
+\begin_inset Formula $\left(Z/mZ\right)\left[x\right]$
+\end_inset
+
+, то всегда верно 
+\begin_inset Formula $deg\left(fg\right)=deg\left(f\right)+deg\left(g\right)$
+\end_inset
+
+.
+ Один умножить на один никогда не равно нулю.
+\end_layout
+
+\begin_layout Standard
+Кстати, формула верна даже если один многочлен является приведённым! Так
+ как не ноль на единицу всегда даёт не ноль.
+\end_layout
+
+\begin_layout Standard
+Но это не спасает от других аномалий, от делимости на многочлены более старшей
+ степени.
+\end_layout
+
+\begin_layout Standard
+Естественным следствием того, что 
+\begin_inset Formula $deg\left(fg\right)=deg\left(f\right)+deg\left(g\right)$
+\end_inset
+
+ в 
+\begin_inset Formula $\left(Z/mZ\right)\left[x\right]$
+\end_inset
+
+ при 
+\begin_inset Formula $m$
+\end_inset
+
+ — простом следует, что все многочлены вида 
+\begin_inset Formula $ax+b$
+\end_inset
+
+ простые (не могут быть разложены на множители).
+\end_layout
+
+\begin_layout Standard
+Когда мы говорим про простые числа, мы не рассматриваем обратимые числа
+ 
+\begin_inset Formula $\pm1$
+\end_inset
+
+, а также ноль.
+\end_layout
+
+\begin_layout Standard
+Тождественный ноль 
+\begin_inset Formula $f\left(x\right)\equiv0$
+\end_inset
+
+ выкидывается, и считается, что его степень не определена или определяется
+ как равная минус бесконечности.
+ Мы также выкидываем все константы, обратимые в 
+\begin_inset Formula $K$
+\end_inset
+
+, а в поле — вообще все константы (они все обратимы!).
+ Если 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ обратимо, то 
+\begin_inset Formula $f\left(x\right)=a_{0}+a_{1}x+\dots+a_{n}x^{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $g\left(x\right)=b_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)\cdot\left[\frac{a_{0}}{b_{0}}+\frac{a_{1}}{b_{0}}x+\dots+\frac{a_{n}}{b_{0}}x^{n}\right]$
+\end_inset
+
+.
+ Делимость многочленов определяется с точностью до обратимых констант.
+ Многочлен простой делится только на обратимые константы и на себя (возможно,
+ помноженному на обратимые константы).
+\end_layout
+
+\begin_layout Section
+Основная теорема арифметики для многочленов
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $\left(Z/8Z\right)\left[x\right]$
+\end_inset
+
+.
+ Очень богатое на контрпримеры множество.
+\end_layout
+
+\begin_layout Standard
+Например, 
+\begin_inset Formula $\left(x-1\right)$
+\end_inset
+
+ будет простым, если он делится только на 
+\begin_inset Formula $\left\{ 1,3,5,7,x-1,3x-3,5x-5,7x-7\right\} $
+\end_inset
+
+.
+ Многочлены 
+\begin_inset Formula $\left\{ x-1,3x-3,5x-5,7x-7\right\} $
+\end_inset
+
+ называется ассоциированными с 
+\begin_inset Formula $x-1$
+\end_inset
+
+.
+ Но я не знаю, простой ли он.
+ Он запросто может делится на какой-то многочлен.
+\end_layout
+
+\begin_layout Standard
+В 
+\begin_inset Formula $\left(Z/5Z\right)\left[x\right]$
+\end_inset
+
+ многочлен 
+\begin_inset Formula $x-1$
+\end_inset
+
+ будет простым, так как делится только на 
+\begin_inset Formula $\left\{ 1,2,3,4,x-1,2x-2,3x-3,4x-4\right\} $
+\end_inset
+
+.
+ Это позволяет в любом поле выбрать канонического представителя среди многочлено
+в, ассоциированных с данным многочленом 
+\begin_inset Formula $f\left(x\right)=a_{0}+a_{1}x+\dots+a_{n}x^{n}$
+\end_inset
+
+.
+ В качестве него берут приведённый 
+\begin_inset Formula $\bar{f}\left(x\right)=\frac{a_{0}}{a_{n}}+\frac{a_{1}}{a_{n}}x+\dots+\frac{a_{n-1}}{a_{n}}x^{n-1}+x^{n}$
+\end_inset
+
+.
+ В каждом классе есть один канонический.
+\end_layout
+
+\begin_layout Standard
+Основная теорема арифметики в 
+\begin_inset Formula $\left(Z/mZ\right)\left[x\right]$
+\end_inset
+
+ или в 
+\begin_inset Formula $K\left[x\right]$
+\end_inset
+
+.
+ Пока только формулировка.
+ Любой многочлен 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ равен произведению 
+\begin_inset Formula $g_{1}\left(x\right)\cdot\dots\cdot g_{r}\left(x\right)$
+\end_inset
+
+.
+ И если также выполняется 
+\begin_inset Formula $f\left(x\right)=h_{1}\left(x\right)\cdot\dots\cdot h_{l}\left(x\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $l=r$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ ассоциирован с 
+\begin_inset Formula $h_{i_{1}}$
+\end_inset
+
+ и так далее.
+ Все 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{j}$
+\end_inset
+
+ — простые многочлены.
+ То есть между 
+\begin_inset Formula $g_{i}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{j}$
+\end_inset
+
+ можно установить взаимно-однозначное соответствие ассоциированности.
+\end_layout
+
+\begin_layout Standard
+Я должен вас ужасно огорчить.
+ Если 
+\begin_inset Formula $m$
+\end_inset
+
+ — не простое число, то всё написанное может быть неверным.
+ Для произвольных колец понятие простоты может быть нереализуемым: каждый
+ элемент будет бесконечное число раз делим на другие элементы! Даже если
+ это не так, для этих колец ОТА может быть не верна.
+\end_layout
+
+\begin_layout Standard
+Поэтому сформулируем её в гораздо более симпатичном виде для полей 
+\begin_inset Formula $\left(Z/pZ\right)\left[x\right]$
+\end_inset
+
+ она верна и красива.
+\end_layout
+
+\begin_layout Section
+Основная теорема арифметики для многочленов с коэффициентами в поле
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $P\left[x\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $P$
+\end_inset
+
+ — некоторое поле (
+\begin_inset Formula $Z/pZ$
+\end_inset
+
+ при простом 
+\begin_inset Formula $p$
+\end_inset
+
+, или 
+\begin_inset Formula $Q$
+\end_inset
+
+, или 
+\begin_inset Formula $R$
+\end_inset
+
+, или 
+\begin_inset Formula $C$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Любой многочлен представляется в виде произведения ненулевой константы и
+ приведённого многочлена соответствующей степени:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=a_{n}\bar{f}\left(x\right)=a_{n}\left[x^{n}+\frac{a_{n-1}}{a_{n}}x^{n-1}+\dots+\frac{a_{1}}{a_{n}}x+\frac{a_{0}}{a_{n}}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)h\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+ необратимы, то 
+\begin_inset Formula $\deg f>\deg g$
+\end_inset
+
+ и 
+\begin_inset Formula $\deg f>\deg h$
+\end_inset
+
+.
+ Если раскладывать дальше, то не более чем за 
+\begin_inset Formula $n$
+\end_inset
+
+ шагов мы получим 
+\begin_inset Formula $f\left(x\right)=h_{1}\left(x\right)\cdot\dots\cdot h_{k}\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $h_{j}$
+\end_inset
+
+ — простые.
+ То есть любой многочлен имеет конечное разложение.
+ Остаётся доказать, что оно единственное.
+\end_layout
+
+\begin_layout Standard
+Теперь если также 
+\begin_inset Formula $f\left(x\right)=q_{1}\left(x\right)\cdot\dots\cdot q_{l}\left(x\right)$
+\end_inset
+
+, то напишем оба равенства через приведённые: 
+\begin_inset Formula 
+\[
+f\left(x\right)=a_{n}\bar{f}\left(x\right)=\alpha_{1}\bar{q}_{1}\left(x\right)\cdot\dots\cdot\alpha_{l}\bar{q}_{l}\left(x\right)=\beta_{1}\bar{h}_{1}\left(x\right)\cdot\dots\cdot\beta_{k}\bar{h}_{k}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если поверить в ОТА для многочленов, то каждому 
+\begin_inset Formula $\alpha_{j}\bar{q}_{j}\left(x\right)$
+\end_inset
+
+ соответствует 
+\begin_inset Formula $\beta_{i}\bar{h}_{i}\left(x\right)$
+\end_inset
+
+ (и наоборот), то есть 
+\begin_inset Formula $\bar{q}_{j}$
+\end_inset
+
+ и 
+\begin_inset Formula $\bar{h}_{i}$
+\end_inset
+
+ ассоциированы, откуда 
+\begin_inset Formula $\bar{q}_{j}=\bar{h}_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Допустим теперь, что мы установили утверждение, что если приведённый многочлен
+ раскладывается двумя способами в произведение приведённых, то эти два разложени
+я можно получить друг из друга перестановкой множителей.
+\end_layout
+
+\begin_layout Standard
+Для неприведённых многочленов, перестановкой будут получаться уже не равные,
+ а ассоциированные многочлены.
+\end_layout
+
+\begin_layout Standard
+Удобная формулировка, эквивалентная исходной (без потери общности).
+\end_layout
+
+\begin_layout Standard
+Формулировка ОТА для 
+\begin_inset Formula $P\left[x\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Любой приведённый многочлен 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ единственным (с точностью до перестановки множителей) способом раскладывается
+ в произведение простых приведённых многочленов:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=q_{1}\left(x\right)\cdot\dots\cdot q_{r}\left(x\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Если же 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — произвольный многочлен, то это разложение приобретает вид 
+\begin_inset Formula $f\left(x\right)=a_{n}\cdot q_{1}\left(x\right)\cdot\dots\cdot q_{r}\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ — старший коэффициент 
+\begin_inset Formula $f$
+\end_inset
+
+, а 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ — простые приведённые.
+\end_layout
+
+\begin_layout Standard
+Эту теорему мы будем доказывать довольно долго, а пока вернёмся к 
+\begin_inset Formula $Z/mZ$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Теорема Безу — формулировка
+\end_layout
+
+\begin_layout Standard
+Аномалии (окончание).
+ Вернёмся в 
+\begin_inset Formula $Z/8Z$
+\end_inset
+
+ и многочлены на ней
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $x^{2}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{2}-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ Здесь содержится удивительная информация для тех, кто занимался хоть какой-то
+ алгеброй.
+ Уравнение 
+\begin_inset Formula $x^{2}-1$
+\end_inset
+
+ имеет 4 корня в 
+\begin_inset Formula $Z/8Z$
+\end_inset
+
+, а именно, все нечётные числа (все обратимые элементы этого кольца).
+ Мы привыкли, что корней не больше, чем степень.
+ Но это гарантировано только в полях, а не в произвольных кольцах.
+\end_layout
+
+\begin_layout Standard
+Какая первая теорема про многочлены? Теорема Безу.
+ Для её формулировки необходимо уметь делить с остатком.
+\end_layout
+
+\begin_layout Standard
+В многочленах с коэффициентами в полях можно делить любой на любой, а с
+ коэффициентами в кольцах — только на приведённые.
+\end_layout
+
+\begin_layout Standard
+Пример: 
+\begin_inset Formula $f\left(x\right)=7x^{3}+2x^{2}-x-1$
+\end_inset
+
+ делим на 
+\begin_inset Formula $x-b$
+\end_inset
+
+ с остатком.
+ Оказывается, что остаток равен 
+\begin_inset Formula $f\left(b\right)$
+\end_inset
+
+.
+ Это не совпадение.
+\end_layout
+
+\begin_layout Standard
+Теорема Безу.
+ Пусть 
+\begin_inset Formula $K$
+\end_inset
+
+ — кольцо 
+\begin_inset Formula $f\left(x\right)\in K\left[x\right]$
+\end_inset
+
+, тогда для любого 
+\begin_inset Formula $b\in K$
+\end_inset
+
+ остаток от деления 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left(x-b\right)$
+\end_inset
+
+ равен 
+\begin_inset Formula $f\left(b\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=q\left(x\right)\left(x-b\right)+f\left(b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Теорема Безу.
+ Доказательство и примеры
+\end_layout
+
+\begin_layout Standard
+Самый общий факт начальной алгебры — теорема Безу, это факт про 
+\begin_inset Formula $K\left[x\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $K$
+\end_inset
+
+ — любое кольцо.
+ Остаток от деления 
+\begin_inset Formula $f\left(x\right)\in K\left[x\right]$
+\end_inset
+
+ на 
+\begin_inset Formula $x-b$
+\end_inset
+
+ равен 
+\begin_inset Formula $f\left(b\right)$
+\end_inset
+
+.
+ Следствие: 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ делится нацело на 
+\begin_inset Formula $x-b$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $f\left(b\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+\end_layout
+
+\begin_layout Standard
+Выполним деление 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $x-b$
+\end_inset
+
+ с остатком.
+ По построению 
+\begin_inset Formula $f\left(x\right)=\left(x-b\right)g\left(x\right)+A$
+\end_inset
+
+.
+ Подставим 
+\begin_inset Formula $x=b$
+\end_inset
+
+, тогда получим 
+\begin_inset Formula $f\left(b\right)=0\cdot g\left(b\right)+A$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $A=f\left(b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x\right)=\left(x-b\right)g\left(x\right)+f\left(b\right)$
+\end_inset
+
+.
+ Делимость нацело на 
+\begin_inset Formula $x-b$
+\end_inset
+
+ означает, что 
+\begin_inset Formula $b$
+\end_inset
+
+ — корень.
+\end_layout
+
+\begin_layout Standard
+Поэкспериментируем 
+\begin_inset Formula $x^{2}-1$
+\end_inset
+
+ имеет корни 
+\begin_inset Formula $1,3,5,7$
+\end_inset
+
+ в 
+\begin_inset Formula $\left(Z/8Z\right)\left[x\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+По теореме Безу, 
+\begin_inset Formula $x^{2}-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $x-1$
+\end_inset
+
+, 
+\begin_inset Formula $x-3$
+\end_inset
+
+, 
+\begin_inset Formula $x-5$
+\end_inset
+
+ и на 
+\begin_inset Formula $x-7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{2}-1=\left(x-1\right)\left(x-7\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{2}-1=\left(x-3\right)\left(x-5\right)$
+\end_inset
+
+.
+ Наша интуиция говорит, что 
+\begin_inset Formula $x^{2}-1$
+\end_inset
+
+ должен делиться на их произведение, но, в данном случае, это не так.
+ Эта интуиция связана с основной теоремой арифметики.
+ Но в 
+\begin_inset Formula $\left(Z/8Z\right)\left[x\right]$
+\end_inset
+
+ не гарантируется ни ОТА, ни простота 
+\begin_inset Formula $x-b$
+\end_inset
+
+.
+ Гарантирована только теорема Безу.
+\end_layout
+
+\begin_layout Standard
+А чтобы получить далеко идущие выводы, считаем, что в 
+\begin_inset Formula $Z/mZ$
+\end_inset
+
+ число 
+\begin_inset Formula $m=p$
+\end_inset
+
+ — простое число.
+\end_layout
+
+\begin_layout Section
+Многочлены над полями
+\end_layout
+
+\begin_layout Standard
+Следствия из теоремы Безу для 
+\begin_inset Formula $P\left[x\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $P$
+\end_inset
+
+ — поле.
+\end_layout
+
+\begin_layout Standard
+Утверждение.
+ Если 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+ — два различных корня многочлена 
+\begin_inset Formula $f\left(x\right)\in P\left[x\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(x-a\right)\left(x-b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+ По теореме Безу, 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(x-a\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)=\left(x-a\right)g\left(x\right)$
+\end_inset
+
+, подставляем 
+\begin_inset Formula $x=b$
+\end_inset
+
+ в это равенство (под гром литавров), 
+\begin_inset Formula $0=f\left(b\right)=\left(b-a\right)g\left(b\right)$
+\end_inset
+
+, так как 
+\begin_inset Formula $b-a\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $g\left(b\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Врезка про 
+\begin_inset Formula $\left(Z/8Z\right)\left[x\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x^{2}-1=\left(x-1\right)\left(x-7\right)$
+\end_inset
+
+, но подставляя 
+\begin_inset Formula $x=3$
+\end_inset
+
+, получим 
+\begin_inset Formula $0=3^{2}-1=\left(3-1\right)\left(3-7\right)=2\cdot4=0$
+\end_inset
+
+.
+ Таким образом, ситуацию портит именно наличие делителей нуля.
+\end_layout
+
+\begin_layout Standard
+Раз 
+\begin_inset Formula $b$
+\end_inset
+
+ — корень 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $g\left(x\right)=\left(x-b\right)h\left(x\right)$
+\end_inset
+
+, но тогда 
+\begin_inset Formula $f\left(x\right)=\left(x-a\right)\left(x-b\right)h\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пока мы просто сформулируем ряд утверждений для многочленов в поле.
+\end_layout
+
+\begin_layout Standard
+1.
+ Правило степени 
+\begin_inset Formula $\forall f,g\in P\left[x\right]$
+\end_inset
+
+ таких, что 
+\begin_inset Formula $f,g\neq0$
+\end_inset
+
+: 
+\begin_inset Formula $deg\left(fg\right)=deg\left(f\right)+deg\left(g\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2, Для любого 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ 
+\begin_inset Formula $x-a$
+\end_inset
+
+ — простой.
+\end_layout
+
+\begin_layout Standard
+3.
+ Для любого 
+\begin_inset Formula $f\in P\left[x\right]$
+\end_inset
+
+ и любого набора 
+\begin_inset Formula $a_{1},\dots,a_{m}$
+\end_inset
+
+ его различных корней 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(x-a_{1}\right)\cdot\dots\cdot\left(x-a_{m}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+4.
+ Как следствие, различных корней многочлена 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ меньше или равно 
+\begin_inset Formula $\deg f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+4a.
+ Если 
+\begin_inset Formula $f$
+\end_inset
+
+ — приведённый многочлен и у него 
+\begin_inset Formula $degf$
+\end_inset
+
+ различных корней 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(x\right)=\left(x-a_{1}\right)\cdot\dots\cdot\left(x-a_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+5.
+ (Ещё не доказали) Верна основная теорема арифметики.
+\end_layout
+
+\begin_layout Section
+Малая теорема Ферма
+\end_layout
+
+\begin_layout Standard
+Следующий ряд сюжетов связан с малой теоремой Ферма.
+ Есть два строительных кирпича: теорема Безу и малая теорема Ферма.
+ Последнюю будем доказывать несколькими способами (как минимум 4).
+ Мы видели на примере, что в 
+\begin_inset Formula $Z/5Z$
+\end_inset
+
+ имеет место тождество 
+\begin_inset Formula $x=x^{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для любого 
+\begin_inset Formula $p$
+\end_inset
+
+ — простого и любого 
+\begin_inset Formula $a\in\left\{ 0,1,\dots,p-1\right\} $
+\end_inset
+
+ имеет место 
+\begin_inset Formula $a^{p}=a\mod p$
+\end_inset
+
+.
+ Это можно записать более удобным способом: для любого 
+\begin_inset Formula $a\in\left\{ 1,\dots,p\right\} $
+\end_inset
+
+ имеем 
+\begin_inset Formula $a^{p-1}=1\mod p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Докажем, что эти формулировки эквивалентны.
+ Если 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ то достаточно умножить на 
+\begin_inset Formula $a$
+\end_inset
+
+, а для 
+\begin_inset Formula $a=0$
+\end_inset
+
+ утверждение очевидно.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $a$
+\end_inset
+
+ не делиться на 
+\begin_inset Formula $p$
+\end_inset
+
+, то рассмотрим выражение 
+\begin_inset Formula $a^{p}-a=0\mod p$
+\end_inset
+
+, но 
+\begin_inset Formula $a^{p}-a=a\cdot\left[a^{p-1}-1\right]$
+\end_inset
+
+.
+ Применим свойство отсутствия делителей нуля, так как 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{p-1}=1\mod p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Первое доказательство.
+ Выпишем в таблице умножения по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ строку с номером 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Все элементы этой строки разные и не равны нулю, как мы убеждались выше.
+ Поэтому 
+\begin_inset Formula $\left\{ a,2a,3a,\dots\left(p-1\right)a\right\} $
+\end_inset
+
+ — перестановка 
+\begin_inset Formula $\left\{ 1,2,3,\dots,p-1\right\} $
+\end_inset
+
+.
+ Найдём произведение элементов каждого множества, они будут равны.
+ Произведение всех чисел от 1 до 
+\begin_inset Formula $n$
+\end_inset
+
+ называется факториал 
+\begin_inset Formula $n$
+\end_inset
+
+ и обозначается 
+\begin_inset Formula $n!$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(a\right)\left(2a\right)\cdot\dots\cdot\left(\left(p-1\right)a\right)=\left(p-1\right)!\mod p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вынесем все 
+\begin_inset Formula $a$
+\end_inset
+
+ слева: 
+\begin_inset Formula $a^{p-1}\left(p-1\right)!=\left(p-1\right)!\mod p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(p-1\right)!\neq0$
+\end_inset
+
+, так как делителей нуля нет, сократим на него: 
+\begin_inset Formula $a^{p-1}=1\mod p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Есть ещё 3 красивых доказательства, каждое из них порождает новую отрасль
+ математики.
+\end_layout
+
+\begin_layout Section
+Теорема Вильсона
+\end_layout
+
+\begin_layout Standard
+Из малой теоремы Ферма можно вывести очень важное следствие — теорему Вильсона.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим уравнение 
+\begin_inset Formula $n=x^{2}+y^{2}$
+\end_inset
+
+ 
+\begin_inset Formula $x,y\in$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В 
+\begin_inset Formula $Z/pZ$
+\end_inset
+
+ каждый 
+\begin_inset Formula $a\in\left\{ 1,\dots,p-1\right\} $
+\end_inset
+
+ удовлетворяет тождеству 
+\begin_inset Formula $a^{p-1}=1$
+\end_inset
+
+, то есть является корнем многочлена 
+\begin_inset Formula $x^{p-1}-1$
+\end_inset
+
+.
+ Это означает, что у многочлена 
+\begin_inset Formula $x^{p-1}-1$
+\end_inset
+
+ в поле 
+\begin_inset Formula $Z/pZ$
+\end_inset
+
+ ровно 
+\begin_inset Formula $p-1$
+\end_inset
+
+ корней, а именно — все ненулевые остатки.
+ В силу теоремы Безу, получаем 
+\begin_inset Formula $x^{p-1}-1=\left(x-1\right)\cdot\left(x-2\right)\cdot\dots\cdot\left(x-\left(p-1\right)\right)$
+\end_inset
+
+.
+ Равенство здесь понимается как равенство многочленов (все коэффициенты
+ равны)
+\end_layout
+
+\begin_layout Standard
+Упражнение.
+ Проверить это при 
+\begin_inset Formula $p=3,5,7,11,\dots,2017,\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Отсюда можно сделать вывод, который нам понадобится в дальнейшем.
+\end_layout
+
+\begin_layout Standard
+Свободный член слева — 
+\begin_inset Formula $-1$
+\end_inset
+
+, а справа 
+\begin_inset Formula $\left(-1\right)\left(-2\right)\cdot\dots\cdot\left(-p+1\right)=\left(p-1\right)!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это теорема Вильсона: для любого простого 
+\begin_inset Formula $p$
+\end_inset
+
+ число 
+\begin_inset Formula $\left(p-1\right)!+1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Это полная характеризация простых чисел.
+ Если 
+\begin_inset Formula $m$
+\end_inset
+
+ — не простое, тогда 
+\begin_inset Formula $m=ab$
+\end_inset
+
+, но тогда, если 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+, то в 
+\begin_inset Formula $\left(m-1\right)!$
+\end_inset
+
+ входят и 
+\begin_inset Formula $a$
+\end_inset
+
+, и 
+\begin_inset Formula $b$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(m-1\right)!=0\mod m$
+\end_inset
+
+, а если разложения на два разных множителя не существует, но 
+\begin_inset Formula $m$
+\end_inset
+
+ — непростое, то 
+\begin_inset Formula $m=p^{2}$
+\end_inset
+
+ — полный квадрат простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $p\ge3$
+\end_inset
+
+ 
+\begin_inset Formula $m!$
+\end_inset
+
+ будет содержать 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $2p$
+\end_inset
+
+, произведение которых делится на 
+\begin_inset Formula $p^{2}=m$
+\end_inset
+
+.
+ Теперь остаётся единственный вариант: 
+\begin_inset Formula $m=2^{2}=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(4-1\right)!=3!=6=2\mod4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Усиленная форма теоремы Вильсона.
+ Если 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое, то 
+\begin_inset Formula $\left(p-1\right)!=-1\mod p$
+\end_inset
+
+ (для двойки требуется особая отдельная проверка).
+ Если 
+\begin_inset Formula $m$
+\end_inset
+
+ — не простое, то при 
+\begin_inset Formula $m=4$
+\end_inset
+
+ 
+\begin_inset Formula $\left(m-1\right)!=2\mod m$
+\end_inset
+
+, а при 
+\begin_inset Formula $m\neq4$
+\end_inset
+
+ получаем 
+\begin_inset Formula $\left(m-1\right)!=0\mod m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Двжиение, лемма о двух гвоздях и теорема Шаля
+\end_layout
+
+\begin_layout Standard
+Классификация движений на прямой.
+\end_layout
+
+\begin_layout Standard
+Сначала подготовительная работа на грани доказательств.
+ Мы исходим не из аксиом, а из интуиции, которая понятная всем жителям Земли.
+\end_layout
+
+\begin_layout Standard
+Постулат, который мы пощупаем, но строгое доказательство тут вряд ли возможно,
+ иначе придётся строго определить, что такое прямая.
+\end_layout
+
+\begin_layout Standard
+Если движение 
+\begin_inset Formula $g$
+\end_inset
+
+ оставляет две точки на месте, то 
+\begin_inset Formula $g=Id$
+\end_inset
+
+.
+ Это называется лемма о двух гвоздях.
+\end_layout
+
+\begin_layout Standard
+В дополнение мы убедимся, что любое движение обратимо.
+ Поэтому для любого движения существует 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Почему движение биекция? Итак, пусть на месте остались точки 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Произвольная точка может быть между ними, либо по одну сторону от них.
+ На заданном расстоянии от точки 
+\begin_inset Formula $A$
+\end_inset
+
+ находятся две точки, но они находятся на разном расстоянии от точки 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|x-A\right|=\left|g\left(x\right)-g\left(A\right)\right|=\left|g\left(x\right)-A\right|$
+\end_inset
+
+ и аналогично от 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Тоже самое для случая, когда точка с одной стороны от двух фиксированных.
+\end_layout
+
+\begin_layout Standard
+Вообще, считаем это очевидным.
+\end_layout
+
+\begin_layout Standard
+Почему любое движение — биекция.
+ Проследим за судьбой этих точек.
+\end_layout
+
+\begin_layout Standard
+Для любой точки 
+\begin_inset Formula $y$
+\end_inset
+
+ должна существовать 
+\begin_inset Formula $x$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $g\left(x\right)=y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это последние рассуждения в стиле 
+\begin_inset Quotes rld
+\end_inset
+
+смотри и понимай
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Дальше будут формальные доказательства.
+\end_layout
+
+\begin_layout Standard
+Если любое движение — взаимно однозначное соответствие.
+\end_layout
+
+\begin_layout Standard
+Мы будем классифицировать движения по тому, сколько точек осталось на месте.
+ Мы уже видели, что если на месте остались две точки, то остались на месте
+ вообще все точки.
+ Так что остаётся рассмотреть только два случая: когда одна точка осталась
+ на месте, и когда ни одна точке не осталась на месте.
+\end_layout
+
+\begin_layout Standard
+Лемма об отражениях.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $g:R\to R$
+\end_inset
+
+ — движение прямой, для которого существует единственная точка 
+\begin_inset Formula $A$
+\end_inset
+
+, остающаяся на месте: 
+\begin_inset Formula $g\left(A\right)=A$
+\end_inset
+
+, тогда 
+\begin_inset Formula $g=S_{A}$
+\end_inset
+
+ — отражение относительно точки 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Равно для отображений определяется как равенство результатов при применении
+ к равным аргументам.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ещё одну точку 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left|A-B\right|=\left|g\left(A\right)-g\left(B\right)\right|=\left|A-g\left(B\right)\right|$
+\end_inset
+
+.
+ Это даёт два случая: 
+\begin_inset Formula $g\left(B\right)=B$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(B\right)=B^{\prime}$
+\end_inset
+
+ (
+\begin_inset Formula $B$
+\end_inset
+
+ отразилась относительно 
+\begin_inset Formula $A$
+\end_inset
+
+).
+ Если все точки перескочили через 
+\begin_inset Formula $A$
+\end_inset
+
+, то получаем отражение.
+ А если ещё хотя бы одна точка осталась на месте, то все точки должны были
+ бы остаться на месте по лемме о двух гвоздях.
+\end_layout
+
+\begin_layout Standard
+Итак, одна неподвижная точка — отражение.
+ Две или более неподвижных — тождественное преобразование.
+\end_layout
+
+\begin_layout Standard
+Осталось понять, что будет, если неподвижных точек нет.
+ Чтобы разобраться с этим, нам нужна артподготовка.
+\end_layout
+
+\begin_layout Standard
+Лемма.
+ Если два движения 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ одинаково действуют на различных двух точках 
+\begin_inset Formula $A\neq B$
+\end_inset
+
+, то 
+\begin_inset Formula $g_{1}=g_{2}$
+\end_inset
+
+ как движение: 
+\begin_inset Formula $g_{1}\left(x\right)=g_{2}\left(x\right)$
+\end_inset
+
+ для любого 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Доказательство.
+ (Чисто теоретико-групповое).
+\end_layout
+
+\begin_layout Standard
+Рассмотрим движение 
+\begin_inset Formula $g_{2}^{-1}g_{1}:R\to R$
+\end_inset
+
+, раз это движение, то 
+\begin_inset Formula $\left(g_{2}^{-1}g_{1}\right)\left(A\right)=g_{2}^{-1}\left(g_{1}\left(A\right)\right)=A=g_{2}^{-1}\left(g_{2}\left(A\right)\right)=\left(g_{2}^{-1}g_{2}\right)\left(A\right)=A$
+\end_inset
+
+ и аналогично 
+\begin_inset Formula $\left(g_{2}^{-1}g_{1}\right)\left(B\right)=B$
+\end_inset
+
+.
+ Но тогда у 
+\begin_inset Formula $g_{2}^{-1}g_{1}$
+\end_inset
+
+ есть по крайней мере две неподвижные точки, откуда 
+\begin_inset Formula $g_{2}^{-1}g_{1}=Id$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}=g_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Последнее рассуждение появится у нас в рассуждениях ещё много раз.
+\end_layout
+
+\begin_layout Standard
+Теперь мы переходим к последнему случаю, и нам нужно будет научиться делать
+ комбинации движений.
+\end_layout
+
+\begin_layout Section
+Арифметика движений
+\end_layout
+
+\begin_layout Standard
+Теперь мы будем доказывать, что если неподвижных точек нет, то 
+\begin_inset Formula $g=T$
+\end_inset
+
+ — сдвиг на некоторый ненулевой вектор.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим композиции известных нам движений.
+ Чему равно 
+\begin_inset Formula $S_{B}S_{A}$
+\end_inset
+
+? Я утверждаю, что 
+\begin_inset Formula $S_{B}S_{A}=T_{2\overrightarrow{AB}}$
+\end_inset
+
+.
+ Воспользуемся леммой о двух гвоздях.
+ Проверим две точки: 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $C=A-\overrightarrow{AB}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{2\overrightarrow{AB}}\left(A\right)=A+2\overrightarrow{AB}=D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(S_{B}S_{A}\right)\left(A\right)=S_{B}\left(S_{A}\left(A\right)\right)=S_{B}\left(A\right)=A+\overrightarrow{AB}=D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{2\overrightarrow{AB}}\left(C\right)=A-\overrightarrow{AB}+2\overrightarrow{AB}=A+\overrightarrow{AB}=B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(S_{B}S_{A}\right)\left(C\right)=S_{B}\left(S_{A}\left(C\right)\right)=S_{B}\left(B\right)=B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, есть две разные точки, на которых движения 
+\begin_inset Formula $S_{B}S_{A}$
+\end_inset
+
+ и 
+\begin_inset Formula $T_{2\overrightarrow{AB}}$
+\end_inset
+
+ совпадают, поэтому они равны.
+\end_layout
+
+\begin_layout Standard
+Также заметим, что переносы не меняют направления прямой, а при отражении
+ направление меняется на обратный.
+ Это даёт очень важный гомоморфизм: ориентация.
+ Мы будем изучать его подробно позже.
+\end_layout
+
+\begin_layout Standard
+А если 
+\begin_inset Formula $A=B$
+\end_inset
+
+, то 
+\begin_inset Formula $S_{B}S_{A}=Id$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Теперь рассмотрим доказательство.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим движение 
+\begin_inset Formula $g$
+\end_inset
+
+ такое, что у него нет неподвижных точек и любую точку 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $g\left(A\right)=B$
+\end_inset
+
+.
+ Середину 
+\begin_inset Formula $AB$
+\end_inset
+
+ обозначим за 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ По построению, 
+\begin_inset Formula $\left|A-O\right|=\left|g\left(A\right)-O\right|$
+\end_inset
+
+.
+ Теперь рассмотрим 
+\begin_inset Formula $S_{O}\circ g$
+\end_inset
+
+ и исследуем её действие на точке 
+\begin_inset Formula $A$
+\end_inset
+
+: 
+\begin_inset Formula $\left(S_{O}g\right)\left(A\right)=S_{O}\left(g\left(A\right)\right)=S_{O}\left(B\right)=A$
+\end_inset
+
+, то есть 
+\begin_inset Formula $A$
+\end_inset
+
+ — неподвижная точка для движения 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $S_{O}g=Id$
+\end_inset
+
+ или 
+\begin_inset Formula $S_{O}g=S_{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $S_{O}g=Id$
+\end_inset
+
+, то 
+\begin_inset Formula $S_{O}S_{O}g=S_{O}$
+\end_inset
+
+ или 
+\begin_inset Formula $g=S_{O}$
+\end_inset
+
+, но 
+\begin_inset Formula $g$
+\end_inset
+
+ не сохраняет ни одной точки, а 
+\begin_inset Formula $S_{O}$
+\end_inset
+
+ сохраняет точку 
+\begin_inset Formula $O$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом 
+\begin_inset Formula $S_{O}g=S_{A}$
+\end_inset
+
+ и 
+\begin_inset Formula $g=S_{O}S_{A}=T_{2\overrightarrow{AO}}=T_{\overrightarrow{AB}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В результате мы получили полную классификацию движений прямой.
+\end_layout
+
+\begin_layout Standard
+Следующие наши задачи: записать таблицу композиций движений и записать гомоморфи
+зм ориентации.
+\end_layout
+
+\end_body
+\end_document
