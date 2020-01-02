@@ -1,0 +1,963 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extreport
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style russian
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Лекции по математической логике и теории алгоритмов
+\end_layout
+
+\begin_layout Part
+Начала теории множеств
+\end_layout
+
+\begin_layout Chapter
+Множества и мощности
+\end_layout
+
+\begin_layout Section
+Множества
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Множества 
+\emph default
+состоят из 
+\emph on
+элементов
+\emph default
+.
+ Запись 
+\begin_inset Formula $x\in M$
+\end_inset
+
+ означает, что 
+\begin_inset Formula $x$
+\end_inset
+
+ является элементом множества 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Говорят, что множество 
+\begin_inset Formula $A$
+\end_inset
+
+ является 
+\emph on
+подмножеством 
+\emph default
+множества 
+\begin_inset Formula $B$
+\end_inset
+
+ (записывают 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+), если все элементы 
+\begin_inset Formula $A$
+\end_inset
+
+ являются элементами 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Множества 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\emph on
+равны 
+\emph default
+(записывают 
+\begin_inset Formula $A=B$
+\end_inset
+
+), если они содержат одни и те же элементы (другими словами, если 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+ и 
+\begin_inset Formula $B\subset A$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Если 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+ и 
+\begin_inset Formula $A\neq B$
+\end_inset
+
+, то 
+\begin_inset Formula $A$
+\end_inset
+
+ называют 
+\emph on
+собственным 
+\emph default
+подмножеством 
+\begin_inset Formula $B$
+\end_inset
+
+ (записывают 
+\begin_inset Formula $A\subsetneq B$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Пустое 
+\emph default
+множество 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ не содержит ни одного элемента и является подмножеством любого множества.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Пересечение 
+\emph default
+
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ двух множеств 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ состоит из элементов, которые принадлежат обоим множествам 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Это записывают следующим образом: 
+\begin_inset Formula 
+\[
+A\cap B=\left\{ x|x\in A\wedge x\in B\right\} 
+\]
+
+\end_inset
+
+ (читается: множество таких 
+\begin_inset Formula $x$
+\end_inset
+
+, что ...).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Объединение
+\emph default
+ 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ состоит из элементов, которые принадлежат хотя бы одному из множеств 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+A\cup B=\left\{ x|x\in A\vee x\in B\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Разность 
+\begin_inset Formula $A\setminus B$
+\end_inset
+
+ состоит из элементов, которые принадлежат 
+\begin_inset Formula $A$
+\end_inset
+
+, но не принадлежат 
+\begin_inset Formula $B$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+A\setminus B=\left\{ x|x\in A\wedge x\notin B\right\} .
+\]
+
+\end_inset
+
+Если множество 
+\begin_inset Formula $B$
+\end_inset
+
+ является подмножеством множества 
+\begin_inset Formula $A$
+\end_inset
+
+, разность 
+\begin_inset Formula $A\setminus B$
+\end_inset
+
+ называют также 
+\emph on
+дополнением 
+\begin_inset Formula $B$
+\end_inset
+
+ до 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Симметрическая разность 
+\begin_inset Formula $A\triangle B$
+\end_inset
+
+ 
+\emph default
+состоит из элементов, которые принадлежат ровно одному из множеств 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+A\triangle B=\left(A\setminus B\right)\cup\left(B\setminus A\right)=\left(A\cup B\right)\setminus\left(A\cap B\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Через 
+\begin_inset Formula $\left\{ a,b,c\right\} $
+\end_inset
+
+ обозначается множество, которое содержит элементы 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+ и не содержит других.
+ Если среди 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+ есть равные, оно может содержать один или два элемента.
+ Подобное обозначение используется и в менее формальных ситуациях: множество
+ членов последовательности 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+,...
+ обозначается 
+\begin_inset Formula $\left\{ a_{0},a_{1},\dots\right\} $
+\end_inset
+
+ или даже 
+\begin_inset Formula $\left\{ a_{i}\right\} $
+\end_inset
+
+.
+ Более аккуратная запись для того же множества такова: 
+\begin_inset Formula $\left\{ a_{i}|i\in\mathbb{N}\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ — множество натуральных чисел 
+\begin_inset Formula $\left\{ 0,1,2,\dots\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Старейший математик среди шахматистов и старейший шахматист среди математиков
+ — один или тот же человек или (возможно) разные?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Лучший математик среди шахматистов и лучший шахматист среди математиков
+ — это один и тот же человек или (возможно) разные?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Каждый десятый математик — шахматист, а каждый шестой шахматист — математик.
+ Кого больше — математиков или шахматистов — и во сколько раз?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Существуют ли такие множества 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+, что 
+\begin_inset Formula $A\cap B\neq\emptyset$
+\end_inset
+
+, 
+\begin_inset Formula $A\cap C=\emptyset$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(A\cap B\right)\setminus C=\emptyset$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Какие из следующих равенств верны для любых множеств 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+: 
+\begin_inset Formula $\left(A\cap B\right)\cup C=\left(A\cup B\right)\cap\left(B\cup C\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(A\cup B\right)\cap C=\left(A\cap C\right)\cup\left(B\cap C\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(A\cup B\right)\setminus C=\left(A\setminus C\right)\cup B$
+\end_inset
+
+, 
+\begin_inset Formula $\left(A\cap B\right)\setminus C=\left(A\setminus C\right)\cap B$
+\end_inset
+
+, 
+\begin_inset Formula $A\setminus\left(B\cup C\right)=\left(A\setminus B\right)\cap\left(A\setminus C\right)$
+\end_inset
+
+, 
+\begin_inset Formula $A\setminus\left(B\cap C\right)=\left(A\setminus B\right)\cup\left(A\setminus C\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Проведите подобное доказательство верных равенств предыдущей задачи, исходя
+ из определений.
+ К неверным равенствам приведите контрпримеры.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Докажите, что операция 
+\begin_inset Quotes rld
+\end_inset
+
+симметрическая разность
+\begin_inset Quotes rrd
+\end_inset
+
+ ассоциативна: 
+\begin_inset Formula $A\triangle\left(B\triangle C\right)=\left(A\triangle B\right)\triangle C$
+\end_inset
+
+ для любых 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+ (указание: сложение по модулю 2 ассоциативно).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Докажите, что 
+\begin_inset Formula $\left(A_{1}\cap\dots\cap A_{n}\right)\triangle\left(B_{1}\cap\dots\cap B_{n}\right)\subset\left(A_{1}\triangle B_{1}\right)\cup\dots\cup\left(A_{n}\triangle B_{n}\right)$
+\end_inset
+
+ для любых множеств 
+\begin_inset Formula $A_{1},\dots,A_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $B_{1},\dots,B_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Докажите, что если какое-то равенство (содержащее переменные для множеств
+ и операции 
+\begin_inset Formula $\cap$
+\end_inset
+
+, 
+\begin_inset Formula $\cup$
+\end_inset
+
+ и 
+\begin_inset Formula $\setminus$
+\end_inset
+
+) неверно, то можно найти контрпример к нему, в котором множества пусты
+ или состоят из одного элемента.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Сколько различных выражений для множеств можно составить из переменных 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ с помощью (многократно используемых) операций пересечения, объединения
+ и разности? (Для выражения считаются одинаковыми, если они равны при любых
+ значениях переменных).
+ Тот же вопрос для трёх множеств и для 
+\begin_inset Formula $n$
+\end_inset
+
+ множеств.
+ (Ответ в общем случае: 
+\begin_inset Formula $2^{2^{n}-1}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Тот же вопрос, если используются только операции объединения и пересечения.
+ (Для двух и трёх переменных это число несложно посчитать, но общей формулы
+ для 
+\begin_inset Formula $n$
+\end_inset
+
+ переменных не известно.
+ Эту задачу называют также задачей о числе монотонных булевых функций от
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ аргументов).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Сколько существует подмножеств у 
+\begin_inset Formula $n$
+\end_inset
+
+-элементного множества?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть множество 
+\begin_inset Formula $A$
+\end_inset
+
+ содержит 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов, а его подмножество 
+\begin_inset Formula $B$
+\end_inset
+
+ содержит 
+\begin_inset Formula $k$
+\end_inset
+
+ элементов.
+ Сколько существует множеств 
+\begin_inset Formula $C$
+\end_inset
+
+, для которых 
+\begin_inset Formula $B\subset C\subset A$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Множество 
+\begin_inset Formula $U$
+\end_inset
+
+ содержит 
+\begin_inset Formula $2n$
+\end_inset
+
+ элементов.
+ В нём выделено 
+\begin_inset Formula $k$
+\end_inset
+
+ подмножеств, причём ни одно из них не является подмножеством другого.
+ Каково может быть максимальных значение числа 
+\begin_inset Formula $k$
+\end_inset
+
+? (Указание.
+ Максимум достигается, когда все подмножества имеют по 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов.
+ В самом деле, представим себе, что мы начинаем с пустого множества и добавляем
+ по одному элементу, пока не получится множество 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ В ходе такого процесса может появиться не более одного выделенного множества;
+ с другой стороны, можно подсчитать математическое ожидание числа выделенных
+ множеств по линейности; вероятности пройти через данное множество 
+\begin_inset Formula $Z\subset U$
+\end_inset
+
+ минимальна, когда 
+\begin_inset Formula $Z$
+\end_inset
+
+ содержит 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов, поскольку все множества данного размера равновероятны).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить этот раздел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить книгу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
