@@ -84,8 +84,986 @@ theorems-ams-bytype
 Решение задач сайта Problems in Mathematics (yutsumura.com)
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Part
 Линейная алгебра
+\end_layout
+
+\begin_layout Chapter
+Матрицы
+\end_layout
+
+\begin_layout Section
+Если произведение матриц 
+\begin_inset Formula $AB$
+\end_inset
+
+ является квадратной матрицей, то 
+\begin_inset Formula $BA$
+\end_inset
+
+ — квадратная? (задача 263)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ такие матрицы, что матричное произведение 
+\begin_inset Formula $AB$
+\end_inset
+
+ определено и 
+\begin_inset Formula $AB$
+\end_inset
+
+ — квадратная матрица.
+\end_layout
+
+\begin_layout Problem
+Верно ли, что матричного произведение 
+\begin_inset Formula $BA$
+\end_inset
+
+ также определено и 
+\begin_inset Formula $BA$
+\end_inset
+
+ — квадратная матрица? Если это верно, то докажите это, а если нет — найдите
+ контрпример.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $n\times m$
+\end_inset
+
+, а 
+\begin_inset Formula $B$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $s\times t$
+\end_inset
+
+.
+ Так как произведение 
+\begin_inset Formula $AB$
+\end_inset
+
+ определено, то 
+\begin_inset Formula $m=s$
+\end_inset
+
+, а произведение 
+\begin_inset Formula $AB$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $n\times t$
+\end_inset
+
+.
+ По условию, 
+\begin_inset Formula $AB$
+\end_inset
+
+ — квадратная матрица, поэтому 
+\begin_inset Formula $n=t$
+\end_inset
+
+, таким образом.
+\end_layout
+
+\begin_layout Solution
+Чтобы произведение 
+\begin_inset Formula $BA$
+\end_inset
+
+ было определено, необходимо, чтобы выполнялось равенство 
+\begin_inset Formula $t=n$
+\end_inset
+
+, размер произведения 
+\begin_inset Formula $BA$
+\end_inset
+
+ есть 
+\begin_inset Formula $s\times m$
+\end_inset
+
+.
+ Чтобы 
+\begin_inset Formula $BA$
+\end_inset
+
+ было квадратной матрицей, необходимо, чтобы выполнялось равенство 
+\begin_inset Formula $s=m$
+\end_inset
+
+.
+ Оба эти равенства были доказаны выше.
+\end_layout
+
+\begin_layout Section
+Верно или не верно: 
+\begin_inset Formula $\left(A-B\right)\left(A+B\right)=A^{2}-B^{2}$
+\end_inset
+
+ для матриц (задача 96).
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — матрицы 
+\begin_inset Formula $2\times2$
+\end_inset
+
+.
+ Докажите или найдите контрпример для равенства 
+\begin_inset Formula $\left(A-B\right)\left(A+B\right)=A^{2}-B^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Раскрыв скобки в левой части равенства 
+\begin_inset Formula 
+\[
+\left(A-B\right)\left(A+B\right)=A^{2}-BA+AB-B^{2}.
+\]
+
+\end_inset
+
+Таким образом, для выполнения исходного равенства требуется, чтобы матрицы
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ были коммутируемыми, то есть, чтобы выполнялось равенство 
+\begin_inset Formula $AB=BA$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+1 & 2\\
+3 & 1
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $B=\left(\begin{array}{cc}
+2 & 1\\
+3 & 2
+\end{array}\right)$
+\end_inset
+
+, тогда
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+AB=\left(\begin{array}{cc}
+8 & 5\\
+9 & 5
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+BA=\left(\begin{array}{cc}
+5 & 4\\
+9 & 8
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $AB\neq BA$
+\end_inset
+
+, то данные матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — контрпример для рассматриваемого равенства.
+\end_layout
+
+\begin_layout Section
+Если матричное произведение 
+\begin_inset Formula $AB=O$
+\end_inset
+
+, то также 
+\begin_inset Formula $BA=O$
+\end_inset
+
+? (задача 98)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — матрицы 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Предположим, что 
+\begin_inset Formula $AB=O$
+\end_inset
+
+, где 
+\begin_inset Formula $O$
+\end_inset
+
+ — нулевая матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Верно ли, что матричное произведение в обратном порядке 
+\begin_inset Formula $BA$
+\end_inset
+
+ также даёт нулевую матрицу? Если это верно, то докажите, если нет — приведите
+ контрпример.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим матрицы 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+1 & 1\\
+0 & 0
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $B=\left(\begin{array}{cc}
+1 & 2\\
+-1 & -2
+\end{array}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+AB=\left(\begin{array}{cc}
+1-1 & 2-2\\
+0 & 0
+\end{array}\right)=\left(\begin{array}{cc}
+0 & 0\\
+0 & 0
+\end{array}\right)=O,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+BA=\left(\begin{array}{cc}
+1 & 2\\
+-1 & -1
+\end{array}\right)\neq O.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, произведение 
+\begin_inset Formula $BA$
+\end_inset
+
+ не всегда равно нулевой матрице, когда 
+\begin_inset Formula $AB$
+\end_inset
+
+ — нулевая матрица.
+\end_layout
+
+\begin_layout Section
+Пример нильпотентной матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $A^{2}\neq O$
+\end_inset
+
+, но 
+\begin_inset Formula $A^{3}=O$
+\end_inset
+
+.
+ (задача 305)
+\end_layout
+
+\begin_layout Definition
+Квадратная матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ называется нильпотентной, если существует натуральное 
+\begin_inset Formula $k$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $A^{k}$
+\end_inset
+
+ — нулевая матрица.
+ Наименьшее такое 
+\begin_inset Formula $k$
+\end_inset
+
+ называется степенью или индексом 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Найдите ненулевую матрицу 
+\begin_inset Formula $A$
+\end_inset
+
+ размера 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ такую, что 
+\begin_inset Formula $A^{2}\neq O$
+\end_inset
+
+ и 
+\begin_inset Formula $A^{3}=O$
+\end_inset
+
+, где 
+\begin_inset Formula $O$
+\end_inset
+
+ — нулевая матрица размера 
+\begin_inset Formula $3\times3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{ccc}
+0 & 1 & 1\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{array}\right),
+\]
+
+\end_inset
+
+тогда
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+A^{2}=\left(\begin{array}{ccc}
+0 & 0 & 1\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{array}\right)\neq O,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+A^{3}=A^{2}A=\left(\begin{array}{ccc}
+0 & 0 & 0\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{array}\right)=O,
+\]
+
+\end_inset
+
+ что и требовалось по условиям.
+\end_layout
+
+\begin_layout Section
+Вычислите произведение 
+\begin_inset Formula $A^{2017}u$
+\end_inset
+
+ степени матрицы и вектора (задача 114).
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cc}
+-1 & 2\\
+0 & -1
+\end{array}\right)
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+u=\left(\begin{array}{c}
+1\\
+0
+\end{array}\right).
+\]
+
+\end_inset
+
+Вычислите 
+\begin_inset Formula $A^{2017}u$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Найдём произведение 
+\begin_inset Formula 
+\[
+Au=\left(\begin{array}{cc}
+-1 & 2\\
+0 & -1
+\end{array}\right)\left(\begin{array}{c}
+1\\
+0
+\end{array}\right)=\left(\begin{array}{c}
+-1+0\\
+0+0
+\end{array}\right)=\left(\begin{array}{c}
+-1\\
+0
+\end{array}\right)=-u.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, 
+\begin_inset Formula $u$
+\end_inset
+
+ — собственный вектор матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ с собственным числом 
+\begin_inset Formula $\left(-1\right)$
+\end_inset
+
+, поэтому
+\begin_inset Formula 
+\[
+A^{k+1}u=A^{k}\left(Au\right)=A^{k}\left(-u\right)=-A^{k}u=\left(-1\right)^{k+1}u
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+A^{2017}u=\left(-1\right)^{2017}u=-u=\left(\begin{array}{c}
+-1\\
+0
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Найти формулу для степени матрицы (задача 383)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{ccc}
+1 & 1 & 1\\
+0 & 0 & 1\\
+0 & 0 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+ Найти формулу для 
+\begin_inset Formula $A^{n}$
+\end_inset
+
+ для любого положительного целого 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution*
+Вычислим несколько первых степеней 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+A^{2}=\left(\begin{array}{ccc}
+1 & 1 & 3\\
+0 & 0 & 1\\
+0 & 0 & 1
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A^{3}=A^{2}A=\left(\begin{array}{ccc}
+1 & 1 & 5\\
+0 & 0 & 1\\
+0 & 0 & 1
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+\begin_inset Formula 
+\[
+A^{4}=A^{2}A^{2}=\left(\begin{array}{ccc}
+1 & 1 & 7\\
+0 & 0 & 1\\
+0 & 0 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Из этих вычислений мы можем предположить, что общая формула для 
+\begin_inset Formula $A^{n}$
+\end_inset
+
+ есть 
+\begin_inset Formula 
+\[
+A^{n}=\left(\begin{array}{ccc}
+1 & 1 & 2n-1\\
+0 & 0 & 1\\
+0 & 0 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Докажем эту формулу методом математической индукции.
+ База индукции 
+\begin_inset Formula 
+\[
+A^{1}=A=\left(\begin{array}{ccc}
+1 & 1 & 1\\
+0 & 0 & 1\\
+0 & 0 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Докажем теперь индукционный переход.
+ Пусть доказано, что для некоторого положительного целого 
+\begin_inset Formula $k$
+\end_inset
+
+ имеет место равенство
+\begin_inset Formula 
+\[
+A^{k}=\left(\begin{array}{ccc}
+1 & 1 & 2k-1\\
+0 & 0 & 1\\
+0 & 0 & 1
+\end{array}\right),
+\]
+
+\end_inset
+
+ вычислим 
+\begin_inset Formula $A^{k+1}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+A^{k+1}=A^{k}A=\left(\begin{array}{ccc}
+1 & 1 & 2k+1\\
+0 & 0 & 1\\
+0 & 0 & 1
+\end{array}\right)=\left(\begin{array}{ccc}
+1 & 1 & 2\left(k+1\right)-1\\
+0 & 0 & 1\\
+0 & 0 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Таким образом, равенство 
+\begin_inset Formula 
+\[
+A^{n}=\left(\begin{array}{ccc}
+1 & 1 & 2n-1\\
+0 & 0 & 1\\
+0 & 0 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+доказано для любого целого 
+\begin_inset Formula $n>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Если 
+\begin_inset Formula $A$
+\end_inset
+
+ — идемпотентная матрица, то когда 
+\begin_inset Formula $I-kA$
+\end_inset
+
+ — идемпотентная матрица? (задача 426)
+\end_layout
+
+\begin_layout Definition
+Квадратная матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ называется идемпотентной, если 
+\begin_inset Formula $A^{2}=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+а) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — идемпотентная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ и 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+ — единичная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $I_{n}-A$
+\end_inset
+
+ — идемпотентная матрица.
+\end_layout
+
+\begin_layout Problem
+б) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — ненулевая идемпотентная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Определите все целые 
+\begin_inset Formula $k$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $I_{n}-kA$
+\end_inset
+
+ является идемпотентной.
+\end_layout
+
+\begin_layout Problem
+в) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — матрицы размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, удовлетворяющие равенствам 
+\begin_inset Formula $AB=A$
+\end_inset
+
+ и 
+\begin_inset Formula $BA=B$
+\end_inset
+
+, докажите, что 
+\begin_inset Formula $A$
+\end_inset
+
+ — идемпотентная матрица.
+\end_layout
+
+\begin_layout Solution
+а) Вычислим 
+\begin_inset Formula $\left(I_{n}-A\right)^{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\left(I_{n}-A\right)^{2}=\left(I_{n}-A\right)\left(I_{n}-A\right)=\\
+=I_{n}I_{n}-AI_{n}-I_{n}A+A^{2}=I_{n}-2A+A^{2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $A$
+\end_inset
+
+ — идемпотентная матрица, то 
+\begin_inset Formula $A^{2}=A$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left(I_{n}-A\right)^{2}=I_{n}-2A+A=I_{n}-A,
+\]
+
+\end_inset
+
+ таким образом, 
+\begin_inset Formula $I_{n}-A$
+\end_inset
+
+ — идемпотентная матрица.
+\end_layout
+
+\begin_layout Solution
+б) Вычислим 
+\begin_inset Formula $I_{n}-kA$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+\left(I_{n}-kA\right)^{2}=\left(I_{n}-kA\right)\left(I_{n}-kA\right)=\\
+=I_{n}I_{n}-kAI_{n}-kI_{n}A+k^{2}A^{2}=I_{n}-2kA+k^{2}A^{2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $A$
+\end_inset
+
+ — идемпотентная матрица, то 
+\begin_inset Formula $A^{2}=A$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left(I_{n}-kA\right)^{2}=I_{n}-2kA+k^{2}A=I_{n}-A\left(2k-k^{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Для того, чтобы 
+\begin_inset Formula $I_{n}-kA$
+\end_inset
+
+ была идемпотентной, необходимо, чтобы выполнялось равенство 
+\begin_inset Formula $k=2k-k^{2}$
+\end_inset
+
+ или 
+\begin_inset Formula $k^{2}-k=0$
+\end_inset
+
+.
+ Вынесем 
+\begin_inset Formula $k$
+\end_inset
+
+ в правой части: 
+\begin_inset Formula $k\left(k-1\right)=0$
+\end_inset
+
+, откуда следует 
+\begin_inset Formula $k=0$
+\end_inset
+
+ или 
+\begin_inset Formula $k=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) По условию задачи 
+\begin_inset Formula $AB=A$
+\end_inset
+
+.
+ Умножим это равенство на 
+\begin_inset Formula $A$
+\end_inset
+
+ справа: 
+\begin_inset Formula $A^{2}=ABA$
+\end_inset
+
+, но, снова по условию задачи, имеет место равенство 
+\begin_inset Formula $BA=B$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $A^{2}=A\left(BA\right)=AB=A$
+\end_inset
+
+, таким образом 
+\begin_inset Formula $A$
+\end_inset
+
+ — идемпотентная, что и требовалось.
+\end_layout
+
+\begin_layout Chapter
+Не сортированные
 \end_layout
 
 \begin_layout Section
