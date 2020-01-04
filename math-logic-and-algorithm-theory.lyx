@@ -6704,12 +6704,124 @@ M_{k+1}\triangle N_{k+1}\subset\left(A_{1}\triangle B_{1}\right)\cup\dots\cup\le
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Общее решение получается следующим образом.
+ Рассмотрим 
+\begin_inset Formula $n$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ множеств 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ в общем положении: у каждого множества есть часть, не пересекающаяся ни
+ с одним из остальных множеств, а также 
+\begin_inset Formula $n-1$
+\end_inset
+
+ часть, каждая из которых пересекается с одним из остальных множеств.
+ Пусть общее количество таких частей равно 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+.
+ Тогда искомое количество выражений равно 
+\begin_inset Formula $2^{P_{n}}$
+\end_inset
+
+.
+ Остаётся определить 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ и показать, что любая из описанных частей может быть фактически реализована.
+ Выразим 
+\begin_inset Formula $P_{n+1}$
+\end_inset
+
+ через 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+.
+ При добавлении ещё одного множества 
+\begin_inset Formula $A_{n+1}$
+\end_inset
+
+ к 
+\begin_inset Formula $n$
+\end_inset
+
+ множествам, каждая из частей разделяется на две части: пересекающуюся с
+ 
+\begin_inset Formula $A_{n+1}$
+\end_inset
+
+ и не пересекающуюся с 
+\begin_inset Formula $A_{n+1}$
+\end_inset
+
+, кроме того, ещё одна часть возникает из-за наличия части 
+\begin_inset Formula $A_{n+1}$
+\end_inset
+
+, которая не пересекается ни с одним из остальных множеств.
+ Таким образом, 
+\begin_inset Formula $P_{n+1}=2P_{n}+1$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $n=1$
+\end_inset
+
+ имеется только одна часть — само множество 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $P_{1}=1$
+\end_inset
+
+.
+ Покажем, что данному рекуррентному соотношению удовлетворяет 
+\begin_inset Formula $P_{n}=2^{n}-1$
+\end_inset
+
+.
+ Действительно, при 
+\begin_inset Formula $n=1$
+\end_inset
+
+ получаем 
+\begin_inset Formula $P_{1}=2^{1}-1=2-1=1$
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula 
+\[
+2P_{n}+1=2\cdot\left(2^{n}-1\right)+1=2^{n+1}-2+1=2^{n+1}-1=P_{n+1}.
+\]
+
+\end_inset
+
+
 \end_layout
+
+\begin_layout Solution
+Таким образом, окончательный ответ: 
+\begin_inset Formula 
+\[
+2^{2^{n}-1}.
+\]
 
 \end_inset
 
