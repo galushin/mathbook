@@ -1910,7 +1910,405 @@ a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{22}b_{22}
 
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Section
+Меняется ли след матрицы при транспонировании? (задача 633)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Правда ли, что 
+\begin_inset Formula $\mathrm{tr}\left(A^{T}\right)=\mathrm{tr}\left(A\right)$
+\end_inset
+
+? Если да, то докажите это, если нет — найдите контрпример.
+\end_layout
+
+\begin_layout Solution
+Обозначим элементы матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ как 
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+.
+ По определению, 
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(A\right)=\sum_{j=1}^{n}a_{jj}.
+\]
+
+\end_inset
+
+ С другой стороны, элементы матрицы 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+ есть 
+\begin_inset Formula $a_{ji}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(A^{T}\right)=\sum_{j=1}^{n}a_{jj}=\mathrm{tr}\left(A\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Коммутативность скалярного произведения (задача 637)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $v$
+\end_inset
+
+ и 
+\begin_inset Formula $w$
+\end_inset
+
+ — векторы-столбцы размера 
+\begin_inset Formula $n\times1$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $v^{T}w=w^{T}v$
+\end_inset
+
+.
+ Приведите пример, когда 
+\begin_inset Formula $vw^{T}\neq wv^{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению произведения матриц 
+\begin_inset Formula 
+\[
+v^{T}w=\sum_{j=1}^{n}v_{j}w_{j},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+w^{T}v=\sum_{j=1}^{n}w_{j}v_{j}.
+\]
+
+\end_inset
+
+Так как умножение вещественных чисел коммутативно, то 
+\begin_inset Formula 
+\[
+v^{T}w=\sum_{j=1}^{n}v_{j}w_{j}=\sum_{j=1}^{n}w_{j}v_{j}=w^{T}v.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $v=\begin{pmatrix}1\\
+2
+\end{pmatrix}$
+\end_inset
+
+ и 
+\begin_inset Formula $w=\begin{pmatrix}3\\
+4
+\end{pmatrix}$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+vw^{T}=\begin{pmatrix}3 & 4\\
+6 & 8
+\end{pmatrix},
+\]
+
+\end_inset
+
+но 
+\begin_inset Formula 
+\[
+wv^{T}=\begin{pmatrix}3 & 6\\
+4 & 8
+\end{pmatrix}.
+\]
+
+\end_inset
+
+Заметим, что в общем случае, 
+\begin_inset Formula $vw^{T}=\left(wv^{T}\right)^{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Соотношение между скалярным произведением и следом (задача 638)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $v$
+\end_inset
+
+ и 
+\begin_inset Formula $w$
+\end_inset
+
+ — векторы-столбцы размера 
+\begin_inset Formula $n\times1$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $\mathrm{tr}\left(vw^{T}\right)=v^{T}w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению произведения матриц 
+\begin_inset Formula 
+\[
+v^{T}w=\sum_{j=1}^{n}v_{j}w_{j},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(vw^{T}\right)_{ij}=v_{i}w_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Тогда, по определению следа матрицы 
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(vw^{T}\right)=\sum_{j=1}^{n}\left(vw^{T}\right)_{jj}=v_{j}w_{j}=v^{T}w.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Длина вектора равна нулю только для нулевого вектора (задача 639)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $v$
+\end_inset
+
+ — вектор-столбец размера 
+\begin_inset Formula $n\times1$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $v^{T}v=0$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $v$
+\end_inset
+
+ — нулевой вектор.
+\end_layout
+
+\begin_layout Solution
+По определению, 
+\begin_inset Formula 
+\[
+v^{T}v=\sum_{j=1}^{n}v_{j}^{2},
+\]
+
+\end_inset
+
+ это выражение, как сумма квадратов, является неотрицательным.
+ Так как каждое слагаемое является неотрицательным, то вся сумма равна нулю
+ тогда и только тогда, когда все слагаемые равны нулю, то есть 
+\begin_inset Formula $v_{j}=0$
+\end_inset
+
+ для любого 
+\begin_inset Formula $j=1,\dots,n$
+\end_inset
+
+.
+ То есть 
+\begin_inset Formula $v$
+\end_inset
+
+ — нулевой вектор-столбец размера 
+\begin_inset Formula $n\times1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Если векторы-столбцы матрицы образуют ортонормальную систему, то образуют
+ ли векторы-строки ортонормальную систему? (задача 317)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — действительная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+а) Правда ли, что матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ должна коммутировать с транспонированной матрицей 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+б) Предположим, что столбцы матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ (если рассматривать их как векторы), образуют ортонормальную систему.
+ Правда ли, что строки матрицы также должны образовывать ортонормальную
+ систему.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не решил сам
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+а) Рассмотрим 
+\begin_inset Formula $A=\begin{pmatrix}1 & 1\\
+0 & 2
+\end{pmatrix}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $A^{T}=\begin{pmatrix}1 & 0\\
+1 & 2
+\end{pmatrix}$
+\end_inset
+
+.
+ По правилам умножения матриц: 
+\begin_inset Formula $AA^{T}=\begin{pmatrix}2 & 2\\
+2 & 4
+\end{pmatrix}$
+\end_inset
+
+ и 
+\begin_inset Formula $A^{T}A=\begin{pmatrix}1 & 1\\
+1 & 5
+\end{pmatrix}$
+\end_inset
+
+, то есть в общем случае 
+\begin_inset Formula $AA^{T}\neq A^{T}A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) По условию задачи, столбцы 
+\begin_inset Formula $A$
+\end_inset
+
+ образуют ортонормальную систему, поэтому 
+\begin_inset Formula 
+\[
+A^{T}A=I_{n}.
+\]
+
+\end_inset
+
+Для того, чтобы строки матрицы образовывали ортонормальную систему, необходимо,
+ чтобы аналогичное равенство выполнялось для матрицы, у которой переставлены
+ местами строки и столбцы, то есть для транспонированной матрицы:
+\begin_inset Formula 
+\[
+\left(A^{T}\right)^{T}\left(A\right)^{T}=AA^{T}=I_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $A^{T}A=I_{n}$
+\end_inset
+
+, то 
+\begin_inset Formula $A^{-1}=A^{T}$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $AA^{T}=AA^{-1}=I_{n}$
+\end_inset
+
+, что и требовалось, то есть строки 
+\begin_inset Formula $A$
+\end_inset
+
+ действительно образуют ортонормированную систему.
 \end_layout
 
 \begin_layout Chapter
