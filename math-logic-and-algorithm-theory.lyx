@@ -7008,6 +7008,514 @@ status open
 
 \end_layout
 
+\begin_layout Section
+Число элементов
+\end_layout
+
+\begin_layout Standard
+Число элементов в конечном множестве 
+\begin_inset Formula $A$
+\end_inset
+
+ называют также его 
+\emph on
+мощностью 
+\emph default
+и обозначают 
+\begin_inset Formula $\left|A\right|$
+\end_inset
+
+ (а также 
+\begin_inset Formula $\#A$
+\end_inset
+
+).
+ (Вскоре мы будем говорить о мощностях и для бесконечных множеств).
+ Следующая формула позволяет найти мощность объединения нескольких множеств,
+ если известных мощности каждого из них, а также мощности всех пересечений.
+\end_layout
+
+\begin_layout Theorem
+(Формула включений и исключений).
+ 
+\begin_inset Formula 
+\[
+\left|A\cup B\right|=\left|A\right|+\left|B\right|-\left|A\cap B\right|;
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+\left|A\cup B\cup C\right|=\left|A\right|+\left|B\right|+\left|C\right|-\\
+-\left|A\cap B\right|-\left|A\cap C\right|-\left|B\cap C\right|+\\
++\left|A\cap B\cap C\right|;
+\end{multline*}
+
+\end_inset
+
+ вообще 
+\begin_inset Formula 
+\[
+\left|A_{1}\cup\dots\cup A_{n}\right|=\sum_{i}\left|A_{i}\right|-\sum_{i<j}\left|A_{i}\cap A_{j}\right|+\sum_{i<j<k}\left|A_{i}\cap A_{j}\cap A_{k}\right|-\dots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Это утверждение несложно доказать индукцией по 
+\begin_inset Formula $n$
+\end_inset
+
+, но мы приведём другое доказательство.
+ Фиксируем произвольное множество 
+\begin_inset Formula $U$
+\end_inset
+
+, подможествами которого являются множества 
+\begin_inset Formula $A_{1},\dots,A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+
+\emph on
+Характеристической функцией 
+\emph default
+множества 
+\begin_inset Formula $X\subset U$
+\end_inset
+
+ называют функцию 
+\begin_inset Formula $\chi_{X}$
+\end_inset
+
+, которая равна 
+\begin_inset Formula $1$
+\end_inset
+
+ на элементах 
+\begin_inset Formula $X$
+\end_inset
+
+ и 
+\begin_inset Formula $0$
+\end_inset
+
+ на остальных элементах 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ Операции над подмножествами множесетсва 
+\begin_inset Formula $U$
+\end_inset
+
+ соответствуют операцим с их характеристическими функциями.
+ В частности, пересечению множеств соответствует произведение характеристических
+ функций: 
+\begin_inset Formula 
+\[
+\chi_{A\cap B}\left(u\right)=\chi_{A}\left(u\right)\chi_{B}\left(u\right).
+\]
+
+\end_inset
+
+ Дополнению (до 
+\begin_inset Formula $U$
+\end_inset
+
+) соответствует функция 
+\begin_inset Formula $1-\chi$
+\end_inset
+
+, если 
+\begin_inset Formula $\chi$
+\end_inset
+
+ — характеристическая функция исходного множества.
+\end_layout
+
+\begin_layout Proof
+Число элементов множества можно записать как сумму значений его характеристическ
+ой функции: 
+\begin_inset Formula 
+\[
+\left|X\right|=\sum_{u\in U}\chi_{X}\left(u\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Объединение 
+\begin_inset Formula $A_{1}\cup\dots\cup A_{n}$
+\end_inset
+
+ можно записать как дополнение к пересечению дополнений множеств 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+, в терминах характеристических функйий имеем: 
+\begin_inset Formula 
+\[
+\chi_{A_{1}\cup\dots\cup A_{n}}=1-\prod_{i=1}^{n}\left(1-\chi_{A_{i}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Раскрыв скобки в правой части, мы получим 
+\begin_inset Formula 
+\[
+\sum_{i}\chi_{A_{i}}-\sum_{i<j}\chi_{A_{i}}\chi_{A_{j}}+\sum_{i<j<k}\chi_{A_{i}}\chi_{A_{j}}\chi_{A_{k}}-\dots
+\]
+
+\end_inset
+
+ и просуммировав левую и правую часть по всем элементам 
+\begin_inset Formula $U$
+\end_inset
+
+ (обе они есть функции на 
+\begin_inset Formula $U$
+\end_inset
+
+), получим формулу включений и исключений.
+\end_layout
+
+\begin_layout Problem
+Докажите, что 
+\begin_inset Formula $\left|A_{1}\triangle\dots\triangle A_{n}\right|$
+\end_inset
+
+ равно 
+\begin_inset Formula 
+\[
+\sum_{i}\left|A_{i}\right|-2\sum_{i<j}\left|A_{i}\cap A_{j}\right|+4\sum_{i<j<k}\left|A_{i}\cap A_{j}\cap A_{k}\right|-\dots
+\]
+
+\end_inset
+
+ (коэффициенты — последовательные степени двойки).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Для двух множеств получаем: 
+\begin_inset Formula 
+\begin{multline*}
+\left|A_{1}\triangle A_{2}\right|=\left|\left(A_{1}\cup A_{2}\right)\setminus\left(A_{1}\cap A_{2}\right)\right|=\\
+=\left|A_{1}\cup A_{2}\right|-\left|A_{1}\cap A_{2}\right|=\\
+=\left|A_{1}\right|+\left|A_{2}\right|-2\left|A_{1}\cap A_{2}\right|.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Подсчёт количества элементов в конечных множествах относится к 
+\emph on
+комбинаторике
+\emph default
+.
+ Некоторые начальные сведения из комбинаторики приведены дальше в качестве
+ задач.
+ Сейчас нас в первую очередь интересует следующий принцип: если между двумя
+ множествами можно установить взаимно однозначное соответствие, то в них
+ одинаковое количество элементов.
+ (Взаимная однозначность требует, чтобы каждому элементу первого множества
+ соответствовал ровно один элемент второго и наоборот).
+\end_layout
+
+\begin_layout Standard
+Вот несколько примеров использования этого принципа.
+\end_layout
+
+\begin_layout Problem
+На окружности выбраны 1000 белых точек и одна чёрная.
+ Чего больше: треугольников с вершинами в белых точках или четырёхугольников,
+ у которых одна вершина чёрная, а остальные три белые?
+\end_layout
+
+\begin_layout Solution
+Их поровну, поскольку каждому четырёхугольнику соответствует треугольник,
+ образованный тремя его белыми вершинами.
+\end_layout
+
+\begin_layout Problem
+Каких подмножеств больше у 100-элементного множества: мощности 57 или мощности
+ 43? (указание: 
+\begin_inset Formula $57+43=100$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Solution
+Обозначим исходное множество как 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Каждому подмножеству 
+\begin_inset Formula $B$
+\end_inset
+
+ множества 
+\begin_inset Formula $A$
+\end_inset
+
+ мощности 57 можно однозначно поставить в соответствие подмножество 
+\begin_inset Formula $B^{\prime}$
+\end_inset
+
+ мощности 47, а именно: подмножество тех элементов, которые не входят в
+ 
+\begin_inset Formula $B$
+\end_inset
+
+: 
+\begin_inset Formula $B^{\prime}=A\setminus B$
+\end_inset
+
+.
+ Поэтому количество указанных подмножеств одинаковое.
+\end_layout
+
+\begin_layout Problem
+Докажите, что последовательностей длины 
+\begin_inset Formula $n$
+\end_inset
+
+, составленных из нулей и единиц, столько же, сколько подмножеств у множеств
+ 
+\begin_inset Formula $\left\{ 1,2,\dots,n\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Solution
+(Указание: каждому подмножеству 
+\begin_inset Formula $X\subset\left\{ 1,2,\dots,n\right\} $
+\end_inset
+
+ соответствуе характеристическая последователность, на 
+\begin_inset Formula $i$
+\end_inset
+
+-м месте которой стоит единица если и только если 
+\begin_inset Formula $i\in X$
+\end_inset
+
+).
+ Поэтому количество подмножеств и последовательностей длины 
+\begin_inset Formula $n$
+\end_inset
+
+ одинаковое.
+\end_layout
+
+\begin_layout Problem
+Докажите, что последовательностей нулей и единиц длины 
+\begin_inset Formula $n$
+\end_inset
+
+, в которых число единиц равно 
+\begin_inset Formula $k$
+\end_inset
+
+, равно числу 
+\begin_inset Formula $k$
+\end_inset
+
+-элементных подмножеств 
+\begin_inset Formula $n$
+\end_inset
+
+-элементного множества.
+\end_layout
+
+\begin_layout Solution
+Как и в предыдущей задаче, каждому 
+\begin_inset Formula $k$
+\end_inset
+
+-элементному подмножеству 
+\begin_inset Formula $A$
+\end_inset
+
+ соответствует последовательность из нулей и единиц длины 
+\begin_inset Formula $n$
+\end_inset
+
+, в которой 
+\begin_inset Formula $i$
+\end_inset
+
+-ый элемент равен единице тогда и только тогда, когда 
+\begin_inset Formula $i\in A$
+\end_inset
+
+.
+ Так как в подмножестве 
+\begin_inset Formula $k$
+\end_inset
+
+ элементов, то число единиц в такой последовательности равно 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Это число называется 
+\emph on
+числом сочетаний из 
+\begin_inset Formula $n$
+\end_inset
+
+ по 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\emph default
+и обозначается 
+\begin_inset Formula $C_{n}^{k}$
+\end_inset
+
+ (в русской литературе) или 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ (в иностранной литературе).
+\end_layout
+
+\begin_layout Problem
+Докажите, что 
+\begin_inset Formula $C_{n}^{k}=C_{n}^{n-k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим множество 
+\begin_inset Formula $\left\{ 1,2,\dots,n\right\} $
+\end_inset
+
+.
+ Так как каждому 
+\begin_inset Formula $k$
+\end_inset
+
+-элементному подмножеству этого множества соответствует подмножество из
+ 
+\begin_inset Formula $n-k$
+\end_inset
+
+ элементов и наоборот, то количества таких подмножеств равны.
+ По определению, количество 
+\begin_inset Formula $k$
+\end_inset
+
+-элементных подмножеств равно 
+\begin_inset Formula $C_{n}^{k}$
+\end_inset
+
+, а количество 
+\begin_inset Formula $\left(n-k\right)$
+\end_inset
+
+-элементных подмножеств равно 
+\begin_inset Formula $C_{n}^{n-k}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $C_{n}^{k}=C_{n}^{n-k}$
+\end_inset
+
+, что и требовалось.
+\end_layout
+
+\begin_layout Problem
+Докажите.
+ что 
+\begin_inset Formula 
+\[
+\sum_{k=0}^{n}C_{n}^{k}=2^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим множество 
+\begin_inset Formula $\left\{ 1,2,\dots,n\right\} $
+\end_inset
+
+.
+ Общее количество его подмножеств равно 
+\begin_inset Formula $2^{n}.$
+\end_inset
+
+ С другой стороны, подмножества этого множества могут быть пустым, 1-элементным,
+ 2-элементным, и так далее, вплоть до всего множества.
+ Количество 
+\begin_inset Formula $k$
+\end_inset
+
+-элементных подмножеств рассматриваемого множества равно 
+\begin_inset Formula $C_{n}^{k}$
+\end_inset
+
+, суммируя подмножества всевозможных мощностей, получим искомое равенство.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить этот раздел
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
