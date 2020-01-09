@@ -2311,6 +2311,757 @@ A^{T}A=I_{n}.
  действительно образуют ортонормированную систему.
 \end_layout
 
+\begin_layout Section
+Докажите, что 
+\begin_inset Formula $vv^{T}$
+\end_inset
+
+ — симметричная матрица для любого вектора 
+\begin_inset Formula $v$
+\end_inset
+
+ (задача 640)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $v$
+\end_inset
+
+ — вектор-столбец размера 
+\begin_inset Formula $n\times1$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $vv^{T}$
+\end_inset
+
+ — симметричная матрица.
+\end_layout
+
+\begin_layout Solution
+Матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ с элементами 
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+ называется симметричной, если 
+\begin_inset Formula $a_{ji}=a_{ij}$
+\end_inset
+
+.
+ По определению произведения матриц 
+\begin_inset Formula $\left(vv^{T}\right)_{ij}=v_{i}v_{j}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\left(vv^{T}\right)_{ji}=v_{j}v_{i}=v_{i}v_{j}=\left(vv^{T}\right)_{ij}$
+\end_inset
+
+ (среднее равенство справедливо в силу коммутативности умножения вещественных
+ чисел).
+\end_layout
+
+\begin_layout Section
+Матричные операции с транспонированием (задача 636)
+\end_layout
+
+\begin_layout Problem
+Используя следующие матрицы:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}2 & 3\\
+-5 & 1
+\end{pmatrix},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\begin{pmatrix}0 & -1\\
+1 & -1
+\end{pmatrix},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v=\begin{pmatrix}2\\
+-4
+\end{pmatrix},
+\]
+
+\end_inset
+
+вычислите следующие выражения: 
+\begin_inset Formula $AB^{T}+vv^{T}$
+\end_inset
+
+, 
+\begin_inset Formula $Av-2v$
+\end_inset
+
+, 
+\begin_inset Formula $v^{T}B$
+\end_inset
+
+ и 
+\begin_inset Formula $v^{T}v+v^{T}BA^{T}v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $B^{T}=\begin{pmatrix}0 & 1\\
+-1 & -1
+\end{pmatrix}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $AB^{T}=\begin{pmatrix}-3 & -1\\
+-1 & -6
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+AB^{T}+vv^{T}=\begin{pmatrix}-3 & -1\\
+-1 & -6
+\end{pmatrix}+\begin{pmatrix}4 & -8\\
+-8 & 16
+\end{pmatrix}=\begin{pmatrix}1 & -9\\
+-9 & 10
+\end{pmatrix}.
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{multline*}
+Av-2v=\begin{pmatrix}2 & 3\\
+-5 & 1
+\end{pmatrix}\begin{pmatrix}2\\
+-4
+\end{pmatrix}-2\begin{pmatrix}2\\
+-4
+\end{pmatrix}=\\
+=\begin{pmatrix}4-12\\
+-10-4
+\end{pmatrix}-\begin{pmatrix}4\\
+-8
+\end{pmatrix}=\\
+=\begin{pmatrix}-8\\
+-14
+\end{pmatrix}-\begin{pmatrix}4\\
+-8
+\end{pmatrix}=\begin{pmatrix}-12\\
+-6
+\end{pmatrix}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+v^{T}B=\begin{pmatrix}2 & -4\end{pmatrix}\begin{pmatrix}0 & -1\\
+1 & -1
+\end{pmatrix}=\begin{pmatrix}-4 & 2\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+v^{T}v+v^{T}BA^{T}v=\left(2^{2}+\left(-4\right)^{2}\right)+\begin{pmatrix}-4 & 2\end{pmatrix}\begin{pmatrix}2 & -5\\
+3 & 1
+\end{pmatrix}\begin{pmatrix}2\\
+-4
+\end{pmatrix}=\\
+=20+\begin{pmatrix}-4 & 2\end{pmatrix}\begin{pmatrix}24\\
+2
+\end{pmatrix}=20+\left(-96+4\right)=20-92=-72.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Докажите, что 
+\begin_inset Formula $\left(A+B\right)v=Av+Bv$
+\end_inset
+
+ (задача 635)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — матрицы размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, а 
+\begin_inset Formula $v$
+\end_inset
+
+ — вектор столбец размера 
+\begin_inset Formula $n\times1$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $\left(A+B\right)v=Av+Bv$
+\end_inset
+
+, используя элементы матриц.
+\end_layout
+
+\begin_layout Solution
+Пусть элементы матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ — 
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+, элементы матрицы 
+\begin_inset Formula $B$
+\end_inset
+
+ — 
+\begin_inset Formula $b_{ij}$
+\end_inset
+
+, а элементы вектора 
+\begin_inset Formula $v$
+\end_inset
+
+ — 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+.
+ По определению сложения матриц 
+\begin_inset Formula $\left(A+B\right)_{ij}=a_{ij}+b_{ij}$
+\end_inset
+
+, а элементы вектора 
+\begin_inset Formula $w=\left(A+B\right)v$
+\end_inset
+
+, по правилу умножения матриц: 
+\begin_inset Formula 
+\[
+w_{i}=\sum_{j=1}^{n}\left(a_{ij}+b_{ij}\right)v_{j}.
+\]
+
+\end_inset
+
+ С другой стороны, 
+\begin_inset Formula 
+\[
+\left(Av\right)_{i}=\sum_{j=1}^{n}a_{ij}v_{j}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+(Bv)_{i}=\sum_{j=1}^{n}a_{ij}v_{j}.
+\]
+
+\end_inset
+
+ Таким образом, в элементах равенство 
+\begin_inset Formula $\left(A+B\right)v=Av+Bv$
+\end_inset
+
+ имеет вид
+\begin_inset Formula 
+\[
+\sum_{j=1}^{n}\left(a_{ij}+b_{ij}\right)v_{j}=\sum_{j=1}^{n}a_{ij}v_{j}+\sum_{j=1}^{n}b_{ij}v_{j},
+\]
+
+\end_inset
+
+ последнее равенство является верным в силу дистрибутивности умножения относител
+ьно сложения и ассоциативности сложения вещественных чисел.
+\end_layout
+
+\begin_layout Section
+Если 
+\begin_inset Formula $A^{T}A=A$
+\end_inset
+
+, то 
+\begin_inset Formula $A$
+\end_inset
+
+ — симметричная идемпотентная матрица (задача 447)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — квадратная матрица такая, что 
+\begin_inset Formula $A^{T}A=A$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $A$
+\end_inset
+
+ — идемпотентная матрица, то есть 
+\begin_inset Formula $A^{2}=A$
+\end_inset
+
+.
+ Также докажите, что 
+\begin_inset Formula $A$
+\end_inset
+
+ — симметричная матрица.
+\end_layout
+
+\begin_layout Solution
+Докажем сначала, что 
+\begin_inset Formula $A$
+\end_inset
+
+ — симметричная.
+ Так как по условию задачи 
+\begin_inset Formula $A=A^{T}A$
+\end_inset
+
+, то, по правилу транспонирования произведения:
+\begin_inset Formula 
+\[
+A^{T}=\left(A^{T}A\right)=A^{T}\left(A^{T}\right)^{T}=A^{T}A=A,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $A$
+\end_inset
+
+ совпадает со своей транспонированной, то есть действительно является симметричн
+ой.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь, что 
+\begin_inset Formula $A$
+\end_inset
+
+ — идемпотентная.
+ Так как 
+\begin_inset Formula $A^{T}=A$
+\end_inset
+
+, то 
+\begin_inset Formula $A=A^{T}A=AA=A^{2}$
+\end_inset
+
+, что и требовалось.
+\end_layout
+
+\begin_layout Section
+Симметричные матрицы и произведения двух матриц (задача 111)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — действительные симметричные матрицы размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите следующие утверждения:
+\end_layout
+
+\begin_layout Problem
+а) 
+\begin_inset Formula $AB$
+\end_inset
+
+ симметричная, тогда и только тогда, когда 
+\begin_inset Formula $AB=BA$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+б) Если произведение 
+\begin_inset Formula $AB$
+\end_inset
+
+ — диагональная матрица, то 
+\begin_inset Formula $AB=BA$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $AB=BA$
+\end_inset
+
+.
+ По правилу транспонирования произведения 
+\begin_inset Formula $\left(AB\right)^{T}=B^{T}A^{T}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — симметричные матрицы, то 
+\begin_inset Formula 
+\[
+\left(AB\right)^{T}=B^{T}A^{T}=BA.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, если 
+\begin_inset Formula $AB=BA$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(AB\right)^{T}=BA=AB$
+\end_inset
+
+ и матрица 
+\begin_inset Formula $AB$
+\end_inset
+
+ — симметричная.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $AB$
+\end_inset
+
+ — симметричная матрица, тогда, с одной стороны: 
+\begin_inset Formula $\left(AB\right)^{T}=AB$
+\end_inset
+
+, а с другой — 
+\begin_inset Formula $\left(AB\right)^{T}=B^{T}A^{T}=BA$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $AB=BA$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Наконец, пусть 
+\begin_inset Formula $AB$
+\end_inset
+
+ — диагональная матрица.
+ Любая диагональная матрица является симметричной, поэтому, по доказанному
+ выше, 
+\begin_inset Formula $AB=BA$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+След, определитель и собственные значения (задача 389, экзамен Гарвардского
+ университета)
+\end_layout
+
+\begin_layout Problem
+а) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $\mathrm{tr}\left(A^{2}\right)=5$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{tr}\left(A\right)=3$
+\end_inset
+
+, найти 
+\begin_inset Formula $\det\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+б) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ такая, что у неё столбцы параллельны и 
+\begin_inset Formula $\mathrm{tr}\left(A\right)=5$
+\end_inset
+
+, найти 
+\begin_inset Formula $\mathrm{tr}\left(A^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+в) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $\det\left(A\right)=5$
+\end_inset
+
+ и у этой матрицы собственные значения целые и положительные.
+ Найти 
+\begin_inset Formula $\mathrm{tr}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}a_{11} & a_{12}\\
+a_{21} & a_{22}
+\end{pmatrix},
+\]
+
+\end_inset
+
+тогда, по определению:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\det\left(A\right)=\begin{vmatrix}a_{11} & a_{12}\\
+a_{21} & a_{22}
+\end{vmatrix}=a_{11}a_{22}-a_{12}a_{21}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+A^{2}=\begin{pmatrix}a_{11}^{2}+a_{12}a_{21} & a_{11}a_{12}+a_{12}a_{22}\\
+a_{21}a_{11}+a_{22}a_{21} & a_{21}a_{12}+a_{22}^{2}
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(A\right)=a_{11}+a_{22}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(A^{2}\right)=a_{11}^{2}+2a_{12}a_{21}+a_{22}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\mathrm{tr}\left(A\right)\right)^{2}=a_{11}^{2}+2a_{11}a_{22}+a_{22}^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Поэтому 
+\begin_inset Formula 
+\[
+\left(\mathrm{tr}\left(A\right)\right)^{2}-\mathrm{tr}\left(A^{2}\right)=2\left(a_{11}a_{22}-a_{12}a_{21}\right)=2\det\left(A\right)
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+\det\left(A\right)=\frac{\left(\mathrm{tr}\left(A\right)\right)^{2}-\mathrm{tr}\left(A^{2}\right)}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+И в пункте а) получаем 
+\begin_inset Formula 
+\[
+\det\left(A\right)=\frac{\left(3\right)^{2}-5}{2}=\frac{9-5}{2}=\frac{4}{2}=2.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) По условию этого пункта, у матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ столбцы параллельны, поэтому 
+\begin_inset Formula $\det\left(A\right)=0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(A^{2}\right)=\left(\mathrm{tr}\left(A\right)\right)^{2}=5^{2}=25.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) По свойствам собственных значений: 
+\begin_inset Formula $\det\left(A\right)=\lambda_{1}\lambda_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{tr}\left(A\right)=\lambda_{1}+\lambda_{2}$
+\end_inset
+
+, так как 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+ — целые числа и 
+\begin_inset Formula $\lambda_{1}\lambda_{2}=5$
+\end_inset
+
+, а 
+\begin_inset Formula $5$
+\end_inset
+
+ — простое число, то 
+\begin_inset Formula $\lambda_{1}=5$
+\end_inset
+
+ и 
+\begin_inset Formula $\lambda_{2}=1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\mathrm{tr}\left(A\right)=\lambda_{1}+\lambda_{2}=5+1=6$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Chapter
 Не сортированные
 \end_layout
