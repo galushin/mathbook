@@ -3062,6 +3062,350 @@ a_{21}a_{11}+a_{22}a_{21} & a_{21}a_{12}+a_{22}^{2}
 .
 \end_layout
 
+\begin_layout Section
+Коммутатор матриц никогда не равен единичной матрице (задача 261)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $I$
+\end_inset
+
+ — единичная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — положительное целое число.
+ Докажите, что не существует матриц 
+\begin_inset Formula $X$
+\end_inset
+
+ и 
+\begin_inset Formula $Y$
+\end_inset
+
+ размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ таких, что 
+\begin_inset Formula 
+\[
+XY-YX=I.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Доказательство проведём от противного.
+ Пусть существуют матрицы 
+\begin_inset Formula $X$
+\end_inset
+
+ и 
+\begin_inset Formula $Y$
+\end_inset
+
+ размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ такие, что выполняется равенство 
+\begin_inset Formula 
+\[
+XY-YX=I.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Вычислим след правой и левой части этого равенства.
+ По определению следа, 
+\begin_inset Formula 
+\[
+\mathrm{tr}I=\sum_{j=1}^{n}\delta_{jj}=n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Элементы матрицы 
+\begin_inset Formula $A=XY$
+\end_inset
+
+ определяются выражением 
+\begin_inset Formula 
+\[
+a_{ij}=\sum_{k=1}^{n}x_{ik}y_{kj},
+\]
+
+\end_inset
+
+ поэтому 
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(XY\right)=\mathrm{tr}\left(A\right)=\sum_{i=1}^{n}a_{ii}=\sum_{i=1}^{n}\sum_{k=1}^{n}x_{ik}y_{ki}
+\]
+
+\end_inset
+
+и, аналогично, 
+\begin_inset Formula 
+\[
+\mathrm{\mathrm{tr}}\left(YX\right)=\sum_{i=1}^{n}\sum_{k=1}^{n}y_{ik}x_{ki}=\sum_{k=1}^{n}\sum_{i=1}^{n}x_{ki}y_{ik}.
+\]
+
+\end_inset
+
+Изменив в последней сумме индексы суммирования, получим 
+\begin_inset Formula 
+\[
+\mathrm{\mathrm{tr}}\left(YX\right)=\sum_{k=1}^{n}\sum_{i=1}^{n}x_{ki}y_{ik}=\sum_{i=1}^{n}\sum_{k=1}^{n}x_{ik}y_{ki}=\mathrm{tr}\left(XY\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+След — линейная функция, действительно, пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — произвольные матрицы размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, с элементами соответственно 
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{ij}$
+\end_inset
+
+, а 
+\begin_inset Formula $r$
+\end_inset
+
+ — произвольное вещественное число, тогда:
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(A+B\right)=\sum_{i=1}^{n}\left(a_{ii}+b_{ii}\right)=\sum_{i=1}^{n}a_{ii}+\sum_{i=1}^{n}b_{ii}=\mathrm{tr}\left(A\right)+\mathrm{tr}\left(B\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(rA\right)=\sum_{i=1}^{n}ra_{ii}=r\sum_{i=1}^{n}a_{ii}=r\cdot\mathrm{tr}\left(A\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом: 
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(XY-YX\right)=\mathrm{tr}\left(XY\right)-\mathrm{tr}\left(YX\right),
+\]
+
+\end_inset
+
+ а как мы видели выше, 
+\begin_inset Formula $\mathrm{tr}\left(XY\right)=\mathrm{tr}\left(YX\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(XY-YX\right)=\mathrm{tr}\left(XY\right)-\mathrm{tr}\left(YX\right)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Итак, если выполняется равенство 
+\begin_inset Formula $XY-YX=I$
+\end_inset
+
+, то мы приходим к равенству 
+\begin_inset Formula $0=n$
+\end_inset
+
+, что невозможно при положительном 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Вопросы о следе матрицы (задача 19)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A=\left(a_{ij}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $B=\left(b_{ij}\right)$
+\end_inset
+
+ — вещественные матрицы размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Выразите 
+\begin_inset Formula $\mathrm{tr}\left(AB^{T}\right)$
+\end_inset
+
+ в терминах элементов 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+, где 
+\begin_inset Formula $B^{T}$
+\end_inset
+
+ — матрица, транспонированная к 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Покажите, что 
+\begin_inset Formula $\mathrm{tr}\left(AA^{T}\right)$
+\end_inset
+
+ — сумма квадратов элементов 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Покажите, что если 
+\begin_inset Formula $A$
+\end_inset
+
+ — ненулевая симметричная матрица, то 
+\begin_inset Formula $\mathrm{tr}\left(A^{2}\right)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Элементы матрицы 
+\begin_inset Formula $B^{T}$
+\end_inset
+
+, по определению, задаются формулой 
+\begin_inset Formula 
+\[
+\left(B^{T}\right)_{ij}=b_{ji},
+\]
+
+\end_inset
+
+поэтому элементы 
+\begin_inset Formula $AB^{T}$
+\end_inset
+
+ определяются формулой: 
+\begin_inset Formula 
+\[
+\left(AB^{T}\right)_{ij}=\sum_{k=1}^{n}a_{ik}b_{jk},
+\]
+
+\end_inset
+
+тогда, по определению, 
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(AB^{T}\right)=\sum_{i=1}^{n}\left(AB^{T}\right)_{ii}=\sum_{i=1}^{n}\sum_{k=1}^{n}a_{ik}b_{ik}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Подставляя в эту формулу 
+\begin_inset Formula $B=A$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(AA^{T}\right)=\sum_{i=1}^{n}\sum_{k=1}^{n}a_{ik}^{2},
+\]
+
+\end_inset
+
+что и требовалось.
+\end_layout
+
+\begin_layout Solution
+Наконец, если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — симметричная, то 
+\begin_inset Formula $A^{T}=A$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(AA\right)=\mathrm{tr}\left(AA^{T}\right)=\sum_{i=1}^{n}\sum_{k=1}^{n}a_{ik}^{2}\ge0,
+\]
+
+\end_inset
+
+ так как в правой части стоит сумма квадратов, а квадрат вещественного числа
+ не может быть меньше нулю, причём равенство нулю возможно только тогда,
+ когда все 
+\begin_inset Formula $a_{ik}=0$
+\end_inset
+
+, то есть когда 
+\begin_inset Formula $A$
+\end_inset
+
+ — нулевая матрица.
+\end_layout
+
 \begin_layout Chapter
 Не сортированные
 \end_layout
