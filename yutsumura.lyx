@@ -3406,6 +3406,559 @@ a_{ij}=\sum_{k=1}^{n}x_{ik}y_{kj},
  — нулевая матрица.
 \end_layout
 
+\begin_layout Section
+Докажите, что 
+\begin_inset Formula $x^{T}Ax\ge0$
+\end_inset
+
+ и найдите такие 
+\begin_inset Formula $x$
+\end_inset
+
+, что 
+\begin_inset Formula $x^{T}Ax=0$
+\end_inset
+
+ (задача 559)
+\end_layout
+
+\begin_layout Problem
+Для каждой из следующих матриц докажите, что 
+\begin_inset Formula $x^{T}Ax\ge0$
+\end_inset
+
+ для всех 
+\begin_inset Formula $x\in\mathbb{R}^{2}$
+\end_inset
+
+.
+ Также найдите такие 
+\begin_inset Formula $x\in\mathbb{R}^{2}$
+\end_inset
+
+, что 
+\begin_inset Formula $x^{T}Ax=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+а) 
+\begin_inset Formula $A=\begin{pmatrix}4 & 2\\
+2 & 1
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+б) 
+\begin_inset Formula $A=\begin{pmatrix}2 & 1\\
+1 & 3
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $x=\begin{pmatrix}y\\
+z
+\end{pmatrix}$
+\end_inset
+
+, тогда в случае а) 
+\begin_inset Formula $x^{T}Ax=4y^{2}+4yz+1\cdot z^{2}$
+\end_inset
+
+.
+ Выделим полный квадрат: 
+\begin_inset Formula 
+\[
+x^{T}Ax=4y^{2}+4yz+z^{2}=\left(2y\right)^{2}+2\cdot2y\cdot z+z^{2}=\left(2y+z\right)^{2},
+\]
+
+\end_inset
+
+таким образом, 
+\begin_inset Formula $x^{T}Ax$
+\end_inset
+
+ является квадратом вещественного числа, поэтому действительно 
+\begin_inset Formula $x^{T}Ax\ge0$
+\end_inset
+
+.
+ Так как квадрат вещественного числа равен нулю только когда само это число
+ равно нулю, то 
+\begin_inset Formula $x^{T}Ax=0$
+\end_inset
+
+ при 
+\begin_inset Formula $2y+z=0$
+\end_inset
+
+, то есть при 
+\begin_inset Formula $z=-2y$
+\end_inset
+
+ или 
+\begin_inset Formula $x=\begin{pmatrix}y\\
+-2y
+\end{pmatrix}$
+\end_inset
+
+, где 
+\begin_inset Formula $y$
+\end_inset
+
+ — произвольное вещественное число.
+\end_layout
+
+\begin_layout Solution
+Аналогично, в случае б) получаем 
+\begin_inset Formula $x^{T}Ax=2y^{2}+2yz+3z^{2}$
+\end_inset
+
+.
+ Выделим полный квадрат: 
+\begin_inset Formula 
+\begin{multline*}
+x^{T}Ax=\left(\sqrt{2}y\right)^{2}+2\cdot\sqrt{2}y\cdot\frac{z}{\sqrt{2}}+\frac{z^{2}}{2}-\frac{z^{2}}{2}+3z^{2}=\\
+=\left(\sqrt{2}y+\frac{z}{\sqrt{2}}\right)^{2}+\frac{5}{2}z^{2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В данном случае оказалось, что 
+\begin_inset Formula $x^{T}Ax$
+\end_inset
+
+ — сумма двух квадратов вещественных чисел, а следовательно — неотрицательное
+ вещественное число.
+ Сумма неотрицательных чисел равна нулю только тогда, когда все слагаемые
+ равны нулю, поэтому 
+\begin_inset Formula $x^{T}Ax=0$
+\end_inset
+
+ при 
+\begin_inset Formula $z=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt{2}y+\frac{z}{\sqrt{2}}=0$
+\end_inset
+
+.
+ Первое уравнение даёт 
+\begin_inset Formula $z=0$
+\end_inset
+
+, а второе (после подстановки 
+\begin_inset Formula $z=0$
+\end_inset
+
+) — 
+\begin_inset Formula $y=0$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $x^{T}Ax=0$
+\end_inset
+
+ только при 
+\begin_inset Formula $x=\begin{pmatrix}0\\
+0
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Пример на вычисление квадратных корней матриц размера 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ (задача 512)
+\end_layout
+
+\begin_layout Problem
+а) Докажите, что у матрицы 
+\begin_inset Formula $A=\begin{pmatrix}0 & 1\\
+0 & 0
+\end{pmatrix}$
+\end_inset
+
+ нет квадратного корня (не существует комплексной матрицы 
+\begin_inset Formula $B$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $B^{2}=A$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Problem
+б) докажите, что у единичной матрицы размера 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ имеется бесконечно много корней.
+\end_layout
+
+\begin_layout Solution
+а) Пусть 
+\begin_inset Formula $B=\begin{pmatrix}x & y\\
+z & w
+\end{pmatrix}$
+\end_inset
+
+ — матрица с комплексными элементами.
+ Найдём квадрат этой матрицы: 
+\begin_inset Formula 
+\[
+B^{2}=\begin{pmatrix}x & y\\
+z & w
+\end{pmatrix}\begin{pmatrix}x & y\\
+z & w
+\end{pmatrix}=\begin{pmatrix}x^{2}+yz & xy+yw\\
+zx+wz & zy+w^{2}
+\end{pmatrix}.
+\]
+
+\end_inset
+
+Если 
+\begin_inset Formula $B^{2}=A$
+\end_inset
+
+, то 
+\begin_inset Formula $x^{2}+yz=0$
+\end_inset
+
+, 
+\begin_inset Formula $zx+wz=0$
+\end_inset
+
+, 
+\begin_inset Formula $zy+w^{2}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $xy+yw=1$
+\end_inset
+
+.
+ Из последнего равенства 
+\begin_inset Formula $xy+yw=1$
+\end_inset
+
+, получаем 
+\begin_inset Formula $y\left(x+w\right)=1$
+\end_inset
+
+, а значит 
+\begin_inset Formula $x+w\neq0$
+\end_inset
+
+ и 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+.
+ Из второго равенства 
+\begin_inset Formula $zx+wz=0$
+\end_inset
+
+ следует 
+\begin_inset Formula $z\left(x+w\right)=0$
+\end_inset
+
+, так как 
+\begin_inset Formula $x+w\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Подставив 
+\begin_inset Formula $z=0$
+\end_inset
+
+ в остальные равенства, получим 
+\begin_inset Formula $x^{2}=0$
+\end_inset
+
+, 
+\begin_inset Formula $w^{2}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $y\left(x+w\right)=1$
+\end_inset
+
+, откуда 
+\begin_inset Formula $x=0$
+\end_inset
+
+ и 
+\begin_inset Formula $w=0$
+\end_inset
+
+, но тогда 
+\begin_inset Formula $x+w=0$
+\end_inset
+
+, что противоречит равенству 
+\begin_inset Formula $y\left(x+w\right)=1$
+\end_inset
+
+.
+ Противоречие означает, что у 
+\begin_inset Formula $A$
+\end_inset
+
+ нет квадратного корня.
+\end_layout
+
+\begin_layout Solution
+б) Пусть снова 
+\begin_inset Formula $B=\begin{pmatrix}x & 0\\
+0 & w
+\end{pmatrix}$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+B^{2}=\begin{pmatrix}x & y\\
+z & w
+\end{pmatrix}\begin{pmatrix}x & y\\
+z & w
+\end{pmatrix}=\begin{pmatrix}x^{2}+yz & xy+yw\\
+zx+wz & zy+w^{2}
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $B^{2}=I$
+\end_inset
+
+, то 
+\begin_inset Formula $x^{2}+yz=1$
+\end_inset
+
+, 
+\begin_inset Formula $y\left(x+w\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $z\left(x+w\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $zy+w^{2}=1$
+\end_inset
+
+.
+ Нужно рассматреть два случая: 
+\begin_inset Formula $x+w=0$
+\end_inset
+
+ и 
+\begin_inset Formula $x+w\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $x+w\neq0$
+\end_inset
+
+, тогда из второго и третьего равенства получаем 
+\begin_inset Formula $y=z=0$
+\end_inset
+
+, тогда 
+\begin_inset Formula $x^{2}=w^{2}=1$
+\end_inset
+
+ и 
+\begin_inset Formula $x=w=\pm1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $x+w=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $w=-x$
+\end_inset
+
+.
+ Четвёртое равенство принимает вид 
+\begin_inset Formula $zy+x^{2}=1$
+\end_inset
+
+, то есть получаем уравнение, эквивалентное первому.
+ Возьмём 
+\begin_inset Formula $z$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ произвольно, тогда 
+\begin_inset Formula 
+\[
+x^{2}=1-zy,
+\]
+
+\end_inset
+
+так как 
+\begin_inset Formula $x$
+\end_inset
+
+ может быть комплексным числом, то у этого уравнения имеется два решения
+ при любых комплексых 
+\begin_inset Formula $z$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Таким образом, действително имеется бесконечное количетсво различных квадратных
+ корней из 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Матрица, коммутирующая с диагональной матрицей с различными элементами,
+ является диагональной (задача 492)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $D=diag\left(d_{1},d_{2},\dots,d_{n}\right)$
+\end_inset
+
+ — диагональная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ с различными элемантами: если 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+, то 
+\begin_inset Formula $d_{i}\neq d_{j}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $A=\left(a_{ij}\right)$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AD=DA$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $A$
+\end_inset
+
+ — диагональная.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $B=\left(b_{ij}\right)=AD$
+\end_inset
+
+ и 
+\begin_inset Formula $C=\left(c_{ij}\right)=DA$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+b_{ij}=\sum_{k=1}^{n}a_{ik}\delta_{kj}d_{j}=a_{ij}d_{j},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c_{ij}=\sum_{k=1}^{n}\delta_{ik}d_{i}a_{kj}=a_{ij}d_{i}.
+\]
+
+\end_inset
+
+ Так как по условию, 
+\begin_inset Formula $AD=DA$
+\end_inset
+
+, то 
+\begin_inset Formula $a_{ij}d_{j}=a_{ij}d_{i}$
+\end_inset
+
+, откуда 
+\begin_inset Formula $a_{ij}\left(d_{j}-d_{i}\right)=0$
+\end_inset
+
+, так как при 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+ 
+\begin_inset Formula $d_{i}\neq d_{j}$
+\end_inset
+
+, то 
+\begin_inset Formula $a_{ij}=0$
+\end_inset
+
+ (для недиагональных элементов).
+\end_layout
+
 \begin_layout Chapter
 Не сортированные
 \end_layout
