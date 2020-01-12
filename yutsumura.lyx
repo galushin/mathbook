@@ -3960,6 +3960,523 @@ c_{ij}=\sum_{k=1}^{n}\delta_{ik}d_{i}a_{kj}=a_{ij}d_{i}.
 \end_layout
 
 \begin_layout Chapter
+Элементарные операции со строками матриц
+\end_layout
+
+\begin_layout Section
+Приведите матрицы с помощью элементарных операций со строками к ступечатому
+ виду (по строкам) и определите их ранг (задача 643)
+\end_layout
+
+\begin_layout Problem
+Для каждой из следующей матрицы, приведите матрицу к степенчатому виду по
+ строкам с помощью элементарных операций со строками.
+ Затем определите ранг каждой матрицы.
+\end_layout
+
+\begin_layout Problem
+а) 
+\begin_inset Formula $A=\begin{pmatrix}1 & 3\\
+-2 & -2
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+б) 
+\begin_inset Formula $B=\begin{pmatrix}2 & 6 & -2\\
+3 & -2 & 8
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+в) 
+\begin_inset Formula $C=\begin{pmatrix}2 & -2 & 4\\
+4 & 1 & -2\\
+6 & -1 & 2
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+г) 
+\begin_inset Formula $D=\begin{pmatrix}-2\\
+3\\
+1
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+е) 
+\begin_inset Formula $E=\begin{pmatrix}-2 & 3 & 1\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+а) 
+\begin_inset Formula $A=\begin{pmatrix}1 & 3\\
+-2 & -2
+\end{pmatrix}$
+\end_inset
+
+.
+ Первая строка уже имеет желаемый вид.
+ Умножив вторую строку на 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+A_{1}=\begin{pmatrix}1 & 3\\
+-1 & -1
+\end{pmatrix},
+\]
+
+\end_inset
+
+а затем прибавим ко второй строке первую: 
+\begin_inset Formula 
+\[
+A_{2}=\begin{pmatrix}1 & 3\\
+0 & 2
+\end{pmatrix},
+\]
+
+\end_inset
+
+наконец, снова умножим вторую строку на 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+A_{3}=\begin{pmatrix}1 & 3\\
+0 & 1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $A_{3}$
+\end_inset
+
+ имеет ступенчатый вид, эквивалентна 
+\begin_inset Formula $A$
+\end_inset
+
+ и содержит 2 ненулевые строки, поэтому ранг 
+\begin_inset Formula $A$
+\end_inset
+
+ равен 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Formula $B=\begin{pmatrix}2 & 6 & -2\\
+3 & -2 & 8
+\end{pmatrix}$
+\end_inset
+
+.
+ Умножим первую строку на 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+B_{1}=\begin{pmatrix}1 & 3 & -1\\
+3 & -2 & 8
+\end{pmatrix},
+\]
+
+\end_inset
+
+ теперь прибавим ко второй строке первую, умноженную на 
+\begin_inset Formula $-3$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+B_{2}=\begin{pmatrix}1 & 3 & -1\\
+0 & -11 & 11
+\end{pmatrix},
+\]
+
+\end_inset
+
+наконец, умножим вторую строку на 
+\begin_inset Formula $-\frac{1}{11}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+B_{3}=\begin{pmatrix}1 & 3 & -1\\
+0 & 1 & -1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Матрица 
+\begin_inset Formula $B_{3}$
+\end_inset
+
+ имеет ступенчатый вид, эквивалентна 
+\begin_inset Formula $B$
+\end_inset
+
+ и содержит 2 ненулевые строки, поэтому ранг 
+\begin_inset Formula $A$
+\end_inset
+
+ равен 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) 
+\begin_inset Formula $C=\begin{pmatrix}2 & -2 & 4\\
+4 & 1 & -2\\
+6 & -1 & 2
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Умножим первую строку на 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+C_{1}=\begin{pmatrix}1 & -1 & 2\\
+4 & 1 & -2\\
+6 & -1 & 2
+\end{pmatrix},
+\]
+
+\end_inset
+
+ затем прибавим ко второй строке первую, умноженную на 
+\begin_inset Formula $-4$
+\end_inset
+
+, а к третьей — первую, умноженную на 
+\begin_inset Formula $-6$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+C_{2}=\begin{pmatrix}1 & -1 & 2\\
+0 & 5 & -10\\
+0 & 5 & -10
+\end{pmatrix},
+\]
+
+\end_inset
+
+теперь прибавим к третьей строке вторую, умноженную на 
+\begin_inset Formula $-1$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+C_{3}=\begin{pmatrix}1 & -1 & 2\\
+0 & 5 & -10\\
+0 & 0 & 0
+\end{pmatrix},
+\]
+
+\end_inset
+
+ наконец, умножим вторую строку на 
+\begin_inset Formula $-\frac{1}{5}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+C_{4}=\begin{pmatrix}1 & -1 & 2\\
+0 & 1 & -2\\
+0 & 0 & 0
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Матрица 
+\begin_inset Formula $C_{4}$
+\end_inset
+
+ имеет ступенчатый вид, эквивалентна 
+\begin_inset Formula $C$
+\end_inset
+
+ и содержит 2 ненулевые строки, поэтому ранг 
+\begin_inset Formula $C$
+\end_inset
+
+ равен 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+г) Разделим первую строку матрицы 
+\begin_inset Formula $D$
+\end_inset
+
+ на её первый элемент, а остальные — на первй элемент, взятый с обратным
+ знаком: 
+\begin_inset Formula 
+\[
+D_{1}=\begin{pmatrix}1\\
+-1\\
+-1
+\end{pmatrix},
+\]
+
+\end_inset
+
+ теперь прибавим ко второй и третьей строке первую: 
+\begin_inset Formula 
+\[
+D_{2}=\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, в матрице, эквивалентной 
+\begin_inset Formula $D$
+\end_inset
+
+ и имеющей ступенчатый вид, имеется одна ненулевая строка, поэтому ранг
+ 
+\begin_inset Formula $D$
+\end_inset
+
+ равен 1.
+\end_layout
+
+\begin_layout Solution
+е) Матрица 
+\begin_inset Formula $E=\begin{pmatrix}-2 & 3 & 1\end{pmatrix}$
+\end_inset
+
+ уже приведена к ступенчатому виду и содержит одну строку (причём она не
+ нулевая), поэтому её ранг равен 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Условие того, что две матрицы эквивалентны (задача 248)
+\end_layout
+
+\begin_layout Problem
+Мы говорим, что две матрицы эквивалентны, если одна может быть получена
+ из другой элементраными операциями со строками.
+ Пусть 
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}1 & b\\
+c & d
+\end{pmatrix}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+I=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+ Докажите, что матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ эквивалентна 
+\begin_inset Formula $I$
+\end_inset
+
+, если 
+\begin_inset Formula $d-cb\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Прибавим ко второй строке матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ первую, умноженную на 
+\begin_inset Formula $-c$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+A_{1}=\begin{pmatrix}1 & b\\
+0 & d-bc
+\end{pmatrix}.
+\]
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $d-bc\neq0$
+\end_inset
+
+, тогда вторую строку можно разделить на 
+\begin_inset Formula $d-bc$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+A_{2}=\begin{pmatrix}1 & b\\
+0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+ А затем прибавить к первой строке вторую, умноженную на 
+\begin_inset Formula $-b$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+A_{3}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, действительно, если 
+\begin_inset Formula $d-bc\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $I$
+\end_inset
+
+ являются эквивалентными.
+\end_layout
+
+\begin_layout Section
+Если ранги двух матриц равны, то они эквивалентны? (задача 644)
+\end_layout
+
+\begin_layout Problem
+Если ранги матриц 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ равны, то они эквивалентны? Если это правда, то докажите, если нет — найдите
+ контрпример.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $A=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}$
+\end_inset
+
+ и 
+\begin_inset Formula $B=\begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0
+\end{pmatrix}$
+\end_inset
+
+.
+ Эти матрицы имеют ступенчатый вид по строкам и содержат две ненулевые строки,
+ поэтому их ранги равны двум.
+ Но, очевидно, что 
+\begin_inset Formula $A\neq B$
+\end_inset
+
+.
+ Вообще, возможность неравенства связана с тем, что не указано, что матрицы
+ имеют одинаковый размер.
+\end_layout
+
+\begin_layout Chapter
 Не сортированные
 \end_layout
 
