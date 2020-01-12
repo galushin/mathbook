@@ -709,6 +709,20 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+С учётом этого, теорему можно переформулировать следующим образом: 
+\emph on
+Если 
+\begin_inset Formula $2^{n}-1$
+\end_inset
+
+ — простое число, то 
+\begin_inset Formula $2^{n-1}\left(2^{n}-1\right)$
+\end_inset
+
+ — совершенное число.
+\end_layout
+
 \begin_layout Problem
 Если 
 \begin_inset Formula $2^{n}-1$
@@ -722,12 +736,144 @@ status open
 \end_layout
 
 \begin_layout Solution*
-\begin_inset Note Note
-status open
+Докажем контр-оппозицию этого утверждения, то есть, из того, что 
+\begin_inset Formula $n$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ — не простое число, выведем, что 
+\begin_inset Formula $2^{n}-1$
+\end_inset
+
+ — также не простое число.
+ 
 \end_layout
+
+\begin_layout Solution*
+Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ — не является простым, то есть может быть представлено в виде 
+\begin_inset Formula $n=ab$
+\end_inset
+
+, где 
+\begin_inset Formula $1<a<n$
+\end_inset
+
+ и 
+\begin_inset Formula $1<b<n$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+2^{n}-1=2^{ab}-1=\left(2^{a}\right)^{b}-1^{b}=\left(2^{a}-1\right)\sum_{k=0}^{b-1}2^{ak}.
+\]
+
+\end_inset
+
+ Так как 
+\begin_inset Formula $a>1$
+\end_inset
+
+, то 
+\begin_inset Formula $2^{a}-1>1$
+\end_inset
+
+, то есть у 
+\begin_inset Formula $2^{n}-1$
+\end_inset
+
+ есть делители, отличные от 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $2^{n}-1$
+\end_inset
+
+.
+ Утверждение доказано, а вместе с ним и исходное утверждение задачи.
+\end_layout
+
+\begin_layout Standard
+Обозначим сумму делителей числа 
+\begin_inset Formula $n$
+\end_inset
+
+ как 
+\begin_inset Formula $\sigma\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $n=p_{1}$
+\end_inset
+
+ — простое число.
+ Тогда делителями 
+\begin_inset Formula $n$
+\end_inset
+
+ являются числа 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $p_{1}=n$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\sigma\left(n\right)=1+p_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть теперь 
+\begin_inset Formula $n=p_{1}^{a_{1}}$
+\end_inset
+
+, где 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ — простое число и 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ — целое положительное число.
+ Тогда делителями 
+\begin_inset Formula $n$
+\end_inset
+
+ являются 
+\begin_inset Formula $p_{1}^{k}$
+\end_inset
+
+ при 
+\begin_inset Formula $k=0,1,\dots a_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+\sigma\left(n\right)=\sum_{k=0}^{a_{1}}p_{1}^{k},
+\]
+
+\end_inset
+
+ тогда, по формуле суммы геометричесокй прогрессии: 
+\begin_inset Formula 
+\[
+\sigma\left(n\right)=\frac{p_{1}^{a_{1}+1}-1}{p_{1}-1}.
+\]
 
 \end_inset
 
@@ -735,16 +881,435 @@ status open
 \end_layout
 
 \begin_layout Standard
+Для нахождения формулы в общем случае, рассмотрим сначала одно свойство
+ функции 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Докажите, что если 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ — взаимно простые числа (то есть не имующие общих делителей, кроме 
+\begin_inset Formula $1$
+\end_inset
+
+), то 
+\begin_inset Formula 
+\[
+\sigma\left(mn\right)=\sigma\left(m\right)\sigma\left(n\right).
+\]
+
+\end_inset
+
+ (говорят, что 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ — мультипликативная функция).
+\end_layout
+
+\begin_layout Solution
+Пусть делители 
+\begin_inset Formula $m$
+\end_inset
+
+ — это числа 
+\begin_inset Formula $d_{0}=1,d_{1},\dots,d_{r},d_{r+1}=m$
+\end_inset
+
+, а делители 
+\begin_inset Formula $n$
+\end_inset
+
+ — это 
+\begin_inset Formula $g_{0}=1,g_{1},\dots,g_{s},g_{s+1}=n$
+\end_inset
+
+.
+ Тогда можно написать 
+\begin_inset Formula 
+\[
+\sigma\left(m\right)=\sum_{i=1}^{r+1}d_{i},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma\left(n\right)=\sum_{j=1}^{s+1}g_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как у 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ нет общих делителей, то делители 
+\begin_inset Formula $mn$
+\end_inset
+
+ имеют вид 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Закончить этот раздел
+возможно, это нужно доказать подробнее
 \end_layout
 
 \end_inset
 
 
+\begin_inset Formula 
+\[
+d_{i}g_{j},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $0\le i\le r+1$
+\end_inset
+
+ и 
+\begin_inset Formula $0\le j\le s+1$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\sigma\left(nm\right)=\sum_{i=0}^{r+1}\sum_{j=0}^{s+1}d_{i}g_{j}.
+\]
+
+\end_inset
+
+ Так как 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ не зависит от индекса 
+\begin_inset Formula $j$
+\end_inset
+
+, то его можно вынести из под внутренней суммы: 
+\begin_inset Formula 
+\[
+\sigma\left(nm\right)=\sum_{i=0}^{r+1}d_{i}\sum_{j=0}^{s+1}g_{j}=\sum_{i=0}^{r+1}d_{i}\sigma\left(n\right)=\sigma\left(n\right)\sum_{i=0}^{r+1}d_{i}=\sigma\left(n\right)\sigma\left(m\right),
+\]
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Standard
+Пусть теперь 
+\begin_inset Formula $n$
+\end_inset
+
+ — произвольное натуальное число, большее 
+\begin_inset Formula $1$
+\end_inset
+
+, тогда, по основной теореме арифметики 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать про неё и сослаться
+\end_layout
+
+\end_inset
+
+, его можно представить в виде 
+\begin_inset Formula 
+\[
+n=\prod_{i=1}^{r}p_{i}^{a_{i}},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ — простые числа, 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ — положительные целые числа.
+ По доказанному выше, 
+\begin_inset Formula 
+\[
+\sigma\left(n\right)=\prod_{i=1}^{r}\sigma\left(p_{i}^{a_{i}}\right)=\prod_{i=1}^{r}\frac{p_{i}^{a_{i}+1}-1}{p_{i}-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Наконец, рассмотрим сумму сосбвтенных делителей числа 
+\begin_inset Formula $n$
+\end_inset
+
+ (аликвотная сумма): 
+\begin_inset Formula 
+\[
+\alpha\left(n\right)=\sigma\left(n\right)-n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для доказательства теоремы нужно доказать, что когда 
+\begin_inset Formula $\left(2^{n}-1\right)$
+\end_inset
+
+ — простое число, то 
+\begin_inset Formula $\alpha\left(2^{n-1}\left(2^{n}-1\right)\right)=2^{n-1}\left(2^{n}-1\right)$
+\end_inset
+
+.
+ Действительно, пусть 
+\begin_inset Formula $2^{n}-1$
+\end_inset
+
+ — простое число, тогда 
+\begin_inset Formula $2^{n-1}<2^{n}-1$
+\end_inset
+
+ (при 
+\begin_inset Formula $n>1)$
+\end_inset
+
+ и 
+\begin_inset Formula $2^{n-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $2^{n}-1$
+\end_inset
+
+ взаимно просты.
+ Поэтому 
+\begin_inset Formula 
+\begin{multline*}
+\sigma\left(2^{n-1}\left(2^{n}-1\right)\right)=\sigma\left(2^{n-1}\right)\sigma\left(2^{n}-1\right)=\\
+=\frac{2^{n}-1}{2-1}\cdot\left(2^{n}-1+1\right)=\left(2^{n}-1\right)\cdot2^{n},
+\end{multline*}
+
+\end_inset
+
+тогда 
+\begin_inset Formula 
+\[
+\alpha\left(2^{n-1}\left(2^{n}-1\right)\right)=2^{n}\left(2^{n}-1\right)-2^{n-1}\left(2^{n}-1\right)=2^{n-1}\left(2^{n}-1\right),
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $2^{n-1}\left(2^{n}-1\right)$
+\end_inset
+
+ действительно является совершенным числом.
+\end_layout
+
+\begin_layout Standard
+Теорема Евклида утверждает, что если число имеет определённый вди, то оно
+ совершенное.
+ Возникает интересный вопрос: верно ли обратное, то есть правда ли, что
+ если число совершенное, то оно имеет вид 
+\begin_inset Formula $2^{n-1}\left(2^{n}-1\right)$
+\end_inset
+
+? В XVIII веке Эйлер доказал, что всякое чётное соврешенное число действительно
+ имеет такой вид.
+ Но он не смог доказать более общий результат — что 
+\emph on
+любое 
+\emph default
+совершенное число имеет такой вид.
+ Эта проблема и по сей день остаётся нерешённой, мы не знаем, существуют
+ ли нечётне совершенные числа.
+\end_layout
+
+\begin_layout Problem
+Докажите, что любое чётное совершенное число является треугольным.
+\end_layout
+
+\begin_layout Solution
+Треугольные числа имеют вид 
+\begin_inset Formula 
+\[
+\frac{m\left(m-1\right)}{2}.
+\]
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — чётное соврешенное число.
+ Тогда, по доказанному Эйлером
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Может быть это надо доказать тоже?
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $a=2^{n-1}\left(2^{n}-1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+a=\frac{2^{n}\left(2^{n}-1\right)}{2},
+\]
+
+\end_inset
+
+таким образом, если положить 
+\begin_inset Formula $m=2^{n}$
+\end_inset
+
+, то мы увидим, что 
+\begin_inset Formula $a$
+\end_inset
+
+ действительно является треугольным числом.
+\end_layout
+
+\begin_layout Problem
+Докажите, что сумма числе, обратных делителям соверешнного числа, равна
+ 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Например: 
+\begin_inset Formula 
+\[
+1+\frac{1}{2}+\frac{1}{3}+\frac{1}{6}=2.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольное совершенное число 
+\begin_inset Formula $n$
+\end_inset
+
+, пусть его делители есть 
+\begin_inset Formula $d_{0}=1,d_{1},\dots,d_{r},d_{r+1}=n$
+\end_inset
+
+, тогда, поскольку 
+\begin_inset Formula $n$
+\end_inset
+
+ — совершенное число, то
+\begin_inset Formula 
+\[
+\sigma\left(n\right)=\sum_{i=0}^{r+1}d_{i}=2n,
+\]
+
+\end_inset
+
+ разделим это равенство на 
+\begin_inset Formula $n$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+\sum_{i=0}^{r+1}\frac{d_{i}}{n}=2,
+\]
+
+\end_inset
+
+ но если 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ является делителем 
+\begin_inset Formula $n$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\frac{n}{d_{i}}=d_{j_{i}},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $d_{j_{i}}$
+\end_inset
+
+ — некоторый другой делитель числа 
+\begin_inset Formula $n$
+\end_inset
+
+, причём при разных 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ будем получать разные 
+\begin_inset Formula $d_{j_{i}}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $d_{j_{0}},\dots d_{j_{r+1}}$
+\end_inset
+
+ является перестановкой чисел 
+\begin_inset Formula $d_{0},\dots d_{r+1}$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula 
+\[
+\sum_{i=0}^{r+1}\frac{d_{i}}{n}=\sum_{i=0}^{r+1}\frac{1}{d_{j_{i}}}=\sum_{i=1}^{r+1}\frac{1}{d_{i}}=2,
+\]
+
+\end_inset
+
+ что требовалось.
+ 
 \end_layout
 
 \begin_layout Standard
