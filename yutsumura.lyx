@@ -3964,7 +3964,7 @@ c_{ij}=\sum_{k=1}^{n}\delta_{ik}d_{i}a_{kj}=a_{ij}d_{i}.
 \end_layout
 
 \begin_layout Section
-Приведите матрицы с помощью элементарных операций со строками к ступечатому
+Приведите матрицы с помощью элементарных операций со строками к ступенчатому
  виду (по строкам) и определите их ранг (задача 643)
 \end_layout
 
@@ -4474,6 +4474,425 @@ A_{3}=\begin{pmatrix}1 & 0\\
 .
  Вообще, возможность неравенства связана с тем, что не указано, что матрицы
  имеют одинаковый размер.
+\end_layout
+
+\begin_layout Section
+Определите ранг матрицы с параметром (задача 103)
+\end_layout
+
+\begin_layout Problem
+Найдите ранг следующей действительной матрицы 
+\begin_inset Formula 
+\[
+\begin{pmatrix}a & 1 & 2\\
+1 & 1 & 1\\
+-1 & 1 & 1-a
+\end{pmatrix},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $a$
+\end_inset
+
+ — это действительное число.
+\end_layout
+
+\begin_layout Solution
+Прибавим ко третьей строке вторую:
+\begin_inset Formula 
+\[
+\begin{pmatrix}a & 1 & 2\\
+1 & 1 & 1\\
+0 & 2 & 2-a
+\end{pmatrix},
+\]
+
+\end_inset
+
+а вторую строку умножим на 
+\begin_inset Formula $-a$
+\end_inset
+
+, а затем прибавим к ней первую: 
+\begin_inset Formula 
+\[
+\begin{pmatrix}a & 1 & 2\\
+-a & -a & -a\\
+0 & 2 & 2-a
+\end{pmatrix},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}a & 1 & 2\\
+0 & 1-a & 2-a\\
+0 & 2 & 2-a
+\end{pmatrix},
+\]
+
+\end_inset
+
+ изменим порядок строк — поменяем местами вторую и третью строки: 
+\begin_inset Formula 
+\[
+\begin{pmatrix}a & 1 & 2\\
+0 & 2 & 2-a\\
+0 & 1-a & 2-a
+\end{pmatrix},
+\]
+
+\end_inset
+
+разделим вторую строку на 
+\begin_inset Formula $2$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{pmatrix}a & 1 & 2\\
+0 & 1 & \frac{2-a}{2}\\
+0 & 1-a & 2-a
+\end{pmatrix},
+\]
+
+\end_inset
+
+прибавим к третьей строке первую, умноженную на 
+\begin_inset Formula $-\left(1-a\right)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+\begin{pmatrix}a & 1 & 2\\
+0 & 1 & \frac{2-a}{2}\\
+0 & 0 & \left(2-a\right)-\frac{2-a}{2}\left(1-a\right)
+\end{pmatrix}=\begin{pmatrix}a & 1 & 2\\
+0 & 1 & \frac{2-a}{2}\\
+0 & 0 & \left(2-a\right)\frac{\left(2-1+a\right)}{2}
+\end{pmatrix}=\\
+=\begin{pmatrix}a & 1 & 2\\
+0 & 1 & \frac{2-a}{2}\\
+0 & 0 & \frac{\left(2-a\right)\left(1+a\right)}{2}
+\end{pmatrix}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Ранг этой матрицы равен 
+\begin_inset Formula $2$
+\end_inset
+
+, если 
+\begin_inset Formula $\left(2-a\right)\left(1+a\right)=0$
+\end_inset
+
+, то есть при 
+\begin_inset Formula $a=2$
+\end_inset
+
+ и 
+\begin_inset Formula $a=-1$
+\end_inset
+
+, в остальных случае ранг равен 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Так как данная матрица была получена из исходной элементарными преобразованиями
+, то ранг исходной матрицы также равен 
+\begin_inset Formula $2$
+\end_inset
+
+ при 
+\begin_inset Formula $a=2$
+\end_inset
+
+ и 
+\begin_inset Formula $a=-1$
+\end_inset
+
+, а в остальных случаях — 
+\begin_inset Formula $3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Пример матриц 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ таких, что 
+\begin_inset Formula $rref\left(AB\right)\neq rref\left(A\right)rref\left(B\right)$
+\end_inset
+
+ (задача 569)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $rref\left(M\right)$
+\end_inset
+
+ — это ступенчатый вид по строкам матрицы 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Приведите пример матриц 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ таких, что 
+\begin_inset Formula $rref\left(AB\right)\neq rref\left(A\right)rref\left(B\right)$
+\end_inset
+
+ (задача 569)
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не решил сам
+\end_layout
+
+\end_inset
+
+, пример 
+\begin_inset Formula $A=\begin{pmatrix}0 & 1\\
+0 & 0
+\end{pmatrix}$
+\end_inset
+
+ и 
+\begin_inset Formula $B=\begin{pmatrix}0 & 0\\
+1 & 0
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По правилам умножения матриц: 
+\begin_inset Formula 
+\[
+AB=\begin{pmatrix}1 & 0\\
+0 & 0
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ уже приведена к ступенчатому виду: 
+\begin_inset Formula $rref\left(A\right)=A$
+\end_inset
+
+.
+ Для приведения матрицы 
+\begin_inset Formula $B$
+\end_inset
+
+ к ступенчатому виду нужно поменять местами строки: 
+\begin_inset Formula 
+\[
+rref\left(B\right)=\begin{pmatrix}0 & 1\\
+0 & 0
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Поэтому 
+\begin_inset Formula 
+\[
+rref\left(A\right)\cdot rref\left(B\right)=\begin{pmatrix}0 & 1\\
+0 & 0
+\end{pmatrix}\begin{pmatrix}0 & 1\\
+0 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}\neq AB.
+\]
+
+\end_inset
+
+ Можно заменить, что существование подобных матриц связано с наличием делителей
+ нуля.
+\end_layout
+
+\begin_layout Section
+Найти все матрицы ступенчатого вида по строкам размера 
+\begin_inset Formula $3\times3$
+\end_inset
+
+, ранг которых равен 1 и 2 (задача 646)
+\end_layout
+
+\begin_layout Problem
+Найти все матрицы ступенчатого вида по строкам размера 
+\begin_inset Formula $3\times3$
+\end_inset
+
+, ранг которых равен 1 и 2.
+\end_layout
+
+\begin_layout Solution
+Если ранг матрицы, приведённой к ступенчатому виду по строкам, равен 
+\begin_inset Formula $1$
+\end_inset
+
+, то в ней одна ненулевая строка (первая).
+ В этой строке может быть от одного до трёх ненулевых элементов, поэтому
+ такие матрицы имеют вид 
+\begin_inset Formula 
+\[
+\begin{pmatrix}a & b & c\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ не равны одновременной нулю, что можно записать в виде 
+\begin_inset Formula $a^{2}+b^{2}+c^{2}>0$
+\end_inset
+
+.
+ Вспомнив, что ведущий элемент должен быть равен единице, то получим три
+ возможных вида подобных матриц:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $\begin{pmatrix}1 & b & c\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $\begin{pmatrix}0 & 1 & c\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix}$
+\end_inset
+
+ и 
+\begin_inset Formula $\begin{pmatrix}0 & 0 & 1\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если же ранг матрицы, приведённой к ступенчатому виду по строкам, равен
+ 
+\begin_inset Formula $2$
+\end_inset
+
+, то в ней имеется две ненулевые строки, причём в первой может быть от одного
+ до трёх ненулевых элементов, а во второй — один или два ненулевых элемента
+ (первый обязательно должен быть равен нулю).
+ Пусть второй элемент второй строки не равен нулю, тогда первый элемент
+ первой строки должен быть ненулевым, и мы получаем следующий вид матрицы:
+\begin_inset Formula 
+\[
+\begin{pmatrix}1 & b & c\\
+0 & 1 & d\\
+0 & 0 & 0
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если во второй строке только третий элемент является ненулевым, то первый
+ элемент первой строки может быть как нулевым, так и ненулевым.
+ Это даёт два возможных вида искомой матрицы 
+\begin_inset Formula $\begin{pmatrix}1 & b & c\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{pmatrix}$
+\end_inset
+
+ и 
+\begin_inset Formula $\begin{pmatrix}0 & 1 & c\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Числа 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+ и 
+\begin_inset Formula $d$
+\end_inset
+
+ могут быть произвольными (в том числе — нулями).
 \end_layout
 
 \begin_layout Chapter
@@ -5432,7 +5851,7 @@ status open
 .
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Part
 Теория групп
 \end_layout
 
