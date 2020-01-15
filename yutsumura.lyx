@@ -4647,11 +4647,24 @@ A_{3}=\begin{pmatrix}1 & 0\\
 \end_layout
 
 \begin_layout Problem
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нужно переделать, так как я неправильно понял смысл 
+\begin_inset Formula $rref$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $rref\left(M\right)$
 \end_inset
 
- — это ступенчатый вид по строкам матрицы 
+ — это приведённый (канонический) ступенчатый вид по строкам матрицы 
 \begin_inset Formula $M$
 \end_inset
 
@@ -4893,6 +4906,204 @@ rref\left(A\right)\cdot rref\left(B\right)=\begin{pmatrix}0 & 1\\
 \end_inset
 
  могут быть произвольными (в том числе — нулями).
+\end_layout
+
+\begin_layout Section
+Эквивалентность матриц транзитивна (задача 642)
+\end_layout
+
+\begin_layout Problem
+Если 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+ — это матрицы размера 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $A$
+\end_inset
+
+ эквивалентна (по строкам) 
+\begin_inset Formula $B$
+\end_inset
+
+, а 
+\begin_inset Formula $B$
+\end_inset
+
+ эквивалентна (по строкам) 
+\begin_inset Formula $C$
+\end_inset
+
+, то можем ли мы заключить, что 
+\begin_inset Formula $A$
+\end_inset
+
+ эквивалентна (по строкам) матрице 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Если да, то докажите это.
+ Если нет, найдите контрпример.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не решил сам
+\end_layout
+
+\end_inset
+
+По определению, существует последовательность элементарных операций 
+\begin_inset Formula $r_{1},\dots r_{m}$
+\end_inset
+
+, переводящая 
+\begin_inset Formula $A$
+\end_inset
+
+ в 
+\begin_inset Formula $B$
+\end_inset
+
+, а также последовательность элементарных операций 
+\begin_inset Formula $s_{1},\dots,s_{n}$
+\end_inset
+
+, переводящая 
+\begin_inset Formula $B$
+\end_inset
+
+ в 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Тогда, применив к 
+\begin_inset Formula $A$
+\end_inset
+
+ последовательность операций 
+\begin_inset Formula $r_{1},\dots,r_{m},s_{1},\dots,s_{n}$
+\end_inset
+
+, мы переведём её в 
+\begin_inset Formula $C$
+\end_inset
+
+, таком образом, указанная последовательность и будет требуемой последовательнос
+тью элементарных операций, а значит 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+ эквивалентны по строам.
+\end_layout
+
+\begin_layout Section
+Если 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица полного ранга, то 
+\begin_inset Formula $rref\left(A\right)$
+\end_inset
+
+ — единичная матрица (задача 645)
+\end_layout
+
+\begin_layout Problem
+Докажите, что если 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ ранга 
+\begin_inset Formula $n$
+\end_inset
+
+, то её канонический ступенчатый вид (по строкам) — единичная матрица.
+\end_layout
+
+\begin_layout Solution
+Если матрица 
+\begin_inset Formula $rref\left(A\right)$
+\end_inset
+
+ — приведена к ступенчатому виду и её ранг равен 
+\begin_inset Formula $n$
+\end_inset
+
+, то в ней 
+\begin_inset Formula $n$
+\end_inset
+
+ ненулевых строк, причём ведущий элемент каждой строки равен единице.
+ Это возможно только если все элементы главной диагонали 
+\begin_inset Formula $rref\left(A\right)$
+\end_inset
+
+ равны единице.
+ В каноническом степенчатом виде матрицы над и под ведущими элементами каждой
+ строки должны стоять нули, поэтому 
+\begin_inset Formula $rref\left(A\right)=I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Если симметричная матрица приведена к каноническому ступенчатому виду по
+ строкам, то она диагональная? (задача 647)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — симметричная матрица и она приведена к каноническому ступенчатому виду.
+ Верно ли, что она диагональная? Если да, то докажите это, если нет, то
+ найдите контрпример.
+\end_layout
+
+\begin_layout Solution
+У матрицы, приведённой к каноническому ступенчатому виду ниже главной диагонали
+ стоят нули.
+ Так как матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ ещё и симметрична, то и все элементы выше главной диагонали равны нулю.
+ Таким образом, ненулевые элементы 
+\begin_inset Formula $A$
+\end_inset
+
+ могут находиться только на главной диагонали, то есть 
+\begin_inset Formula $A$
+\end_inset
+
+ — диагональная.
 \end_layout
 
 \begin_layout Chapter
