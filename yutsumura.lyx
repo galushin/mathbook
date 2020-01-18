@@ -5107,6 +5107,663 @@ status open
 \end_layout
 
 \begin_layout Chapter
+Метод исключения Гаусса
+\end_layout
+
+\begin_layout Chapter
+Решения систем линейных уравнений
+\end_layout
+
+\begin_layout Chapter
+Линейные комбинации и линейная независимость
+\end_layout
+
+\begin_layout Section
+Докажите, что множество векторов, содержащее нулевой вектор является линейно
+ зависимым (задача 652)
+\end_layout
+
+\begin_layout Problem
+Докажите, что множество векторов, содержащее нулевой вектор, является линейно
+ зависимым.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим множество векторов 
+\begin_inset Formula $\left\{ v_{1},v_{2},\dots,v_{m}\right\} $
+\end_inset
+
+, причём один из них (без ограничения общности можно считать, что это 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+) и их линейную комбинацию с 
+\begin_inset Formula $\lambda_{1}=1$
+\end_inset
+
+ и 
+\begin_inset Formula $\lambda_{2}=\dots=\lambda_{m}=0$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\sum_{i=1}^{m}\lambda_{i}v_{i}=0,
+\]
+
+\end_inset
+
+ так как при этом 
+\begin_inset Formula $\lambda_{1}\neq0$
+\end_inset
+
+, то множество векторов 
+\begin_inset Formula $\left\{ v_{1},v_{2},\dots,v_{m}\right\} $
+\end_inset
+
+ является линейно зависимым.
+\end_layout
+
+\begin_layout Section
+Ортогональные векторы являются линейно независимыми (задачи 281)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\left\{ v_{1},v_{2},v_{3}\right\} $
+\end_inset
+
+ — множество ненулевых векторов в 
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+ таких, что 
+\begin_inset Formula $\left(v_{i},v_{j}\right)=0$
+\end_inset
+
+ при 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+.
+ Докажите, что это множество линейно независимо.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Множество может быть произвольного размера! На доказательство это не влияет
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольную линейную комбинацию векторов рассматриваемого множества,
+ равную нулю:
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}\lambda_{i}v_{i}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Умножим скалярно это равенство на 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+, по условию задачи 
+\begin_inset Formula $\left(v_{i},v_{j}\right)=\delta_{ij}\left(v_{j},v_{j}\right)$
+\end_inset
+
+, поэтому мы получаем
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}\lambda_{i}\delta_{ij}\left(v_{j},v_{j}\right)=\lambda_{j}\left(v_{j},v_{j}\right)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как, по условию, 
+\begin_inset Formula $v_{j}\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $\lambda_{j}=0$
+\end_inset
+
+, то линейная комбинация векторов 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ равна нулю, только если все 
+\begin_inset Formula $\lambda_{j}=0$
+\end_inset
+
+, а значит, множество 
+\begin_inset Formula $\left\{ v_{i}\right\} $
+\end_inset
+
+ является линейно независимым.
+\end_layout
+
+\begin_layout Section
+Столбцы матрицы размера 
+\begin_inset Formula $3\times5$
+\end_inset
+
+ линейно зависимы (задача 580)
+\end_layout
+
+\begin_layout Problem
+Докажите, что cтолбцы матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ размера 
+\begin_inset Formula $3\times5$
+\end_inset
+
+ линейно зависимы.
+ Докажите, что строки матрицы 
+\begin_inset Formula $B$
+\end_inset
+
+ размера 
+\begin_inset Formula $5\times3$
+\end_inset
+
+ линейно зависимы.
+ 
+\end_layout
+
+\begin_layout Solution
+В обоих случаях имеем пять векторов размерности три.
+ Но любое множество векторов, размером больше размрности этих векторов,
+ является линейно зависимым.
+\end_layout
+
+\begin_layout Section
+Столбцы верхнетреугольной матрицы с ненулевыми диагональными элементами
+ линейно назависимы (задача 654)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $M$
+\end_inset
+
+ — верхнетреугольная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что если все диагональные элементы 
+\begin_inset Formula $M$
+\end_inset
+
+ не равны нулю, то её векторы столбцы линейно независимы.
+ Имеет ли тоже самое место, если допустить наличие нулевых диагональных
+ элементов.
+\end_layout
+
+\begin_layout Solution
+Столбцы матрицы линейно независимы, если система уравнений 
+\begin_inset Formula $Mx=0$
+\end_inset
+
+ имеет только тривиальное решение.
+ Если 
+\begin_inset Formula $M$
+\end_inset
+
+ верхнедиагональная матрица, все диагональные элементы которой не равны
+ нулю, то решая последовательно уравнения этой системы (начиная с последнего),
+ получим, что 
+\begin_inset Formula $x=0$
+\end_inset
+
+, поэтому столбцы 
+\begin_inset Formula $M$
+\end_inset
+
+ действительно являются линейно независимыми.
+ Действительно, уравнения этой системы имеют вид 
+\begin_inset Formula 
+\[
+\sum_{j=i}^{n}m_{ij}x_{j}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Докажем, что все 
+\begin_inset Formula $x_{j}=0$
+\end_inset
+
+ по индукции.
+ Последнее уравнение можно записать как 
+\begin_inset Formula $m_{nn}x_{n}=0$
+\end_inset
+
+, так как 
+\begin_inset Formula $m_{nn}\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $x_{n}=0$
+\end_inset
+
+.
+ Далее, пусть мы доказали, что 
+\begin_inset Formula $x_{k+1}=\dots=x_{n}=0$
+\end_inset
+
+, тогда уравнение для строки 
+\begin_inset Formula $k$
+\end_inset
+
+ приобретает вид 
+\begin_inset Formula 
+\[
+\sum_{j=k}^{n}m_{kj}x_{j}=m_{kk}x_{k}+\sum_{i=k+1}^{n}m_{kj}x_{j}=m_{kk}x_{k}=0,
+\]
+
+\end_inset
+
+ откуда, в силу того, что по условию задачи 
+\begin_inset Formula $m_{kk}\neq0$
+\end_inset
+
+, получаем 
+\begin_inset Formula $x_{k}=0$
+\end_inset
+
+.
+ Что и требовалось.
+\end_layout
+
+\begin_layout Solution
+Если же среди диагональных элементов 
+\begin_inset Formula $M$
+\end_inset
+
+ имеются нулевые, то на некотором шаге мы получим уравнение вида 
+\begin_inset Formula $0\cdot x_{k}=0$
+\end_inset
+
+, имеющее ненулевые решения, например 
+\begin_inset Formula $x_{k}=1$
+\end_inset
+
+, тогда у уравнения 
+\begin_inset Formula $Mx=0$
+\end_inset
+
+ будет нетривиальное решение и множество её столбцов будет линейно зависимым.
+\end_layout
+
+\begin_layout Section
+Условие того, что вектор является линейной комбинацией векторов матрицы
+ (задача 656)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $n\times m$
+\end_inset
+
+, составленная из столбцов 
+\begin_inset Formula $a_{1},\dots,a_{m}$
+\end_inset
+
+.
+ Докажите, что вектор 
+\begin_inset Formula $v\in\mathbb{R}^{n}$
+\end_inset
+
+ может быть записан как линейная комбинация этих столбцов тогда и только
+ тогда, когда существует 
+\begin_inset Formula $x$
+\end_inset
+
+, являющийся решением уравнения 
+\begin_inset Formula $Ax=v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Заметим, что произведение 
+\begin_inset Formula $Ax$
+\end_inset
+
+ может быть записано как линейная комбинация 
+\begin_inset Formula 
+\[
+\sum_{i=1}^{m}x_{i}a_{i}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть у уравнения 
+\begin_inset Formula $Ax=v$
+\end_inset
+
+ существует решение, тогда 
+\begin_inset Formula 
+\[
+\sum_{i=1}^{m}x_{i}a_{i}=v
+\]
+
+\end_inset
+
+ и, очевидно, 
+\begin_inset Formula $v$
+\end_inset
+
+ является линейной комбинацей столбцов 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+С другой стороны, пусть 
+\begin_inset Formula $v=\sum_{j=1}^{m}\lambda_{j}v_{j}$
+\end_inset
+
+, тогда вектор
+\begin_inset Formula 
+\[
+x=\begin{pmatrix}\lambda_{1}\\
+\lambda_{2}\\
+\dots\\
+\lambda_{m}
+\end{pmatrix}
+\]
+
+\end_inset
+
+будет решением уравнения 
+\begin_inset Formula $Ax=v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Невырожденные матрицы
+\end_layout
+
+\begin_layout Section
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, то существует ненулевая матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB=O$
+\end_inset
+
+ (задача 271)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что существует ненулевая матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB=O$
+\end_inset
+
+, где 
+\begin_inset Formula $O$
+\end_inset
+
+ — нулевая матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, то у уравнеия 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ имеется ненулевое решение.
+ Составим матрицу 
+\begin_inset Formula $B$
+\end_inset
+
+ из столбцов, каждый из которых равен 
+\begin_inset Formula $x$
+\end_inset
+
+, эта матрица будет ненулевой, но все столбцы произведения будут равны нулю,
+ так как 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+.
+ Таким образом, будет 
+\begin_inset Formula $AB=O$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, то существует ненулевая матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB$
+\end_inset
+
+ — нулевая матрица (задача 271)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что существует ненулевая матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB=O$
+\end_inset
+
+, где 
+\begin_inset Formula $O$
+\end_inset
+
+ — нулевая матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, то у уравнеия 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ имеется ненулевое решение.
+ Составим матрицу 
+\begin_inset Formula $B$
+\end_inset
+
+ из столбцов, каждый из которых равен 
+\begin_inset Formula $x$
+\end_inset
+
+, эта матрица будет ненулевой, но все столбцы произведения будут равны нулю,
+ так как 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+.
+ Таким образом, будет 
+\begin_inset Formula $AB=O$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, то существует ненулевая матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB$
+\end_inset
+
+ — нулевая матрица (задача 301)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица 
+\begin_inset Formula $3\times3$
+\end_inset
+
+.
+ Докажите, что существует ненулевая матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ размера 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB=O$
+\end_inset
+
+, где 
+\begin_inset Formula $O$
+\end_inset
+
+ — нулевая матрица размера 
+\begin_inset Formula $3\times3$
+\end_inset
+
+.
+ Это частный случай задачи 271.
+\end_layout
+
+\begin_layout Solution
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, то у уравнеия 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ имеется ненулевое решение.
+ Составим матрицу 
+\begin_inset Formula $B$
+\end_inset
+
+ из столбцов, каждый из которых равен 
+\begin_inset Formula $x$
+\end_inset
+
+, эта матрица будет ненулевой, но все столбцы произведения будут равны нулю,
+ так как 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+.
+ Таким образом, будет 
+\begin_inset Formula $AB=O$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Chapter
 Не сортированные
 \end_layout
 
