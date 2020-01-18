@@ -1542,6 +1542,365 @@ status open
  
 \end_layout
 
+\begin_layout Chapter
+Алгоритм Евклида
+\end_layout
+
+\begin_layout Section
+Афины и Александрия
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Чисто исторический раздел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Алгоритм Евклида нахождения общей меры
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Проработать этот раздел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Функция gcm0 неэффективна, когда один отрезок намного длиннее другого.
+ Предложите более эффективную реализацию.
+ Помните, что запрещено использовать опрации, которые нельзя выполнить с
+ помощью циркуля и линейки.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Программная задача.
+ Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Докажите, что если некоторые отрезок измеряет два других отрезка, то он
+ измеряет и их наибольшую общую меру.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Тысяча лет без математики
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Чисто исторический раздел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Странная история нуля
+\end_layout
+
+\begin_layout Problem
+Докажите, что 
+\begin_inset Formula $\sqrt[3]{16}+\sqrt[3]{54}=\sqrt[3]{250}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Заметим, что 
+\begin_inset Formula $16=2^{4}$
+\end_inset
+
+ и 
+\begin_inset Formula $54=2\cdot3^{3}$
+\end_inset
+
+.
+ Возведём левую часть рассматриваемого равенства в куб, по формуле куба
+ суммы: 
+\begin_inset Formula 
+\begin{multline*}
+\left(\sqrt[3]{16}+\sqrt[3]{54}\right)^{3}=\\
+=\left(\sqrt[3]{16}\right)^{3}+3\left(\sqrt[3]{16}\right)^{2}\sqrt[3]{54}+3\sqrt[3]{16}\left(\sqrt[3]{54}\right)^{2}+\left(\sqrt[3]{54}\right)^{3}=\\
+=16+3\sqrt[3]{16^{2}\cdot54}+3\sqrt[3]{16\cdot54^{2}}+54=\\
+=16+3\sqrt[3]{\left(2^{4}\right)^{2}\cdot2\cdot3^{3}}+3\sqrt[3]{2\cdot2^{3}\cdot2^{2}\cdot3^{6}}+54=\\
+=16+3\sqrt[3]{2^{9}\cdot3^{3}}+3\sqrt[3]{2^{6}3^{6}}+54=\\
+=16+3\cdot2^{3}\cdot3+3\cdot2^{2}\cdot3^{2}+54=\\
+=16+72+108+54=250.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $\left(\sqrt[3]{16}+\sqrt[3]{54}\right)^{3}=250$
+\end_inset
+
+, то 
+\begin_inset Formula $\sqrt[3]{16}+\sqrt[3]{54}=\sqrt[3]{250}$
+\end_inset
+
+.
+ Что и требовалось.
+ 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Здесь можно было бы ещё доказать, что у вещественного числа может быть только
+ один вещественный корень
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Докажите следующее утверждение из 
+\begin_inset Quotes rld
+\end_inset
+
+Книги квадратов
+\begin_inset Quotes rrd
+\end_inset
+
+: для любого нечётного квадратного числа 
+\begin_inset Formula $x$
+\end_inset
+
+ найдётся чётное квадратное число 
+\begin_inset Formula $y$
+\end_inset
+
+, такое, что 
+\begin_inset Formula $x+y$
+\end_inset
+
+ — квадратное число.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольное нечётное квадратное число 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Так как квадрат чётного числа – это чётное число, а квадрат нечётного числа
+ — нечётное число
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать?
+\end_layout
+
+\end_inset
+
+, то 
+\begin_inset Formula $y$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $y=\left(2k+1\right)^{2}$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — произвольное натуральное число (в том числе — ноль).
+ Любое нечётное число можно представить как разность квадратов двух соседних
+ натуральных чисел: 
+\begin_inset Formula 
+\[
+\left(k+1\right)^{2}-k^{2}=k^{2}+2k+1-k^{2}=2k+1,
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula 
+\[
+y=\left(\left(k+1\right)^{2}-k^{2}\right)^{2}=\left(k+1\right)^{4}-2\left(k+1\right)^{2}k^{2}+k^{4}.
+\]
+
+\end_inset
+
+Положим теперь 
+\begin_inset Formula $x=4\left(k+1\right)^{2}k^{2}=\left(2\left(k+1\right)k\right)^{2}$
+\end_inset
+
+.
+ Очевидно, что это число является квадратом, притом целым.
+ Тогда получим 
+\begin_inset Formula 
+\[
+x+y=\left(k+1\right)^{4}+2\left(k+1\right)^{2}k^{2}+k^{4}=\left(\left(k+1\right)^{2}+k^{2}\right)^{2},
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $x+y$
+\end_inset
+
+ также будет квадратом.
+\end_layout
+
+\begin_layout Problem
+Докажите следующее утверждение из 
+\begin_inset Quotes rld
+\end_inset
+
+Книги квадратов
+\begin_inset Quotes rrd
+\end_inset
+
+: если 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ — суммы двух квадратов, то таким же будет и их произведение 
+\begin_inset Formula $xy$
+\end_inset
+
+ (это важный результат, на который опирался ферма).
+\end_layout
+
+\begin_layout Solution
+По условию 
+\begin_inset Formula $x=m^{2}+n^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $y=s^{2}+t^{2}$
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+, 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $s$
+\end_inset
+
+ и 
+\begin_inset Formula $t$
+\end_inset
+
+ — целые числа.
+ Тогда 
+\begin_inset Formula 
+\[
+xy=\left(m^{2}+n^{2}\right)\left(s^{2}+t^{2}\right)=m^{2}s^{2}+m^{2}t^{2}+n^{2}s^{2}+n^{2}t^{2}.
+\]
+
+\end_inset
+
+ Добавим и вычтем из этого выражения 
+\begin_inset Formula $2mnst$
+\end_inset
+
+, а затем перегруппируем слагаемые: 
+\begin_inset Formula 
+\begin{multline*}
+xy=m^{2}s^{2}+m^{2}t^{2}+n^{2}s^{2}+n^{2}t^{2}+2mnst-2mnst=\\
+=m^{2}s^{2}+2mnst+n^{2}t^{2}+m^{2}t^{2}-2mtns+n^{2}s^{2}=\\
+=\left(ms+nt\right)^{2}+\left(mt-ns\right)^{2},
+\end{multline*}
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $xy$
+\end_inset
+
+ действительно является суммой двух квадратов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить этот раздел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить эту главу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
