@@ -5515,6 +5515,442 @@ x=\begin{pmatrix}\lambda_{1}\\
 .
 \end_layout
 
+\begin_layout Section
+Линейно независимые векторы 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ и линейно независимые векторы 
+\begin_inset Formula $Av_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $Av_{2}$
+\end_inset
+
+ для невырожденной матрицы (задача 284)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ — двумерные векторы, а 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $2\times2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Problem
+а) Докажите, что если 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ линейно зависимы, то векторы 
+\begin_inset Formula $Av_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $Av_{2}$
+\end_inset
+
+ также линейно зависимы.
+\end_layout
+
+\begin_layout Problem
+б) Если 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ линейно независимы, то можем ли мы заключить, что векторы 
+\begin_inset Formula $Av_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $Av_{2}$
+\end_inset
+
+ также линейно независимы?
+\end_layout
+
+\begin_layout Problem
+в) Пусть 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ линейно независимы и 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная матрица.
+ Докажите, что векторы 
+\begin_inset Formula $Av_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $Av_{2}$
+\end_inset
+
+ также линейно независимы.
+\end_layout
+
+\begin_layout Solution
+а) Пусть 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ линейно зависимы, тогда существую такие вещественные числа 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+, не равные одновременно нулю, что 
+\begin_inset Formula 
+\[
+\lambda_{1}v_{1}+\lambda_{2}v_{2}=0,
+\]
+
+\end_inset
+
+ умножим это равенство слева на 
+\begin_inset Formula $A$
+\end_inset
+
+, по правилам умножения матриц на вектор, получим 
+\begin_inset Formula 
+\[
+\lambda_{1}\left(Av_{1}\right)+\lambda_{2}\left(Av_{2}\right)=0,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $Av_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $Av_{2}$
+\end_inset
+
+ линейно зависимы по определению.
+\end_layout
+
+\begin_layout Solution
+б) Если 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ линейно независимы, то линейная комбинация 
+\begin_inset Formula $\lambda_{1}v_{1}+\lambda_{2}v_{2}$
+\end_inset
+
+ равна нулю только при 
+\begin_inset Formula $\lambda_{1}=\lambda_{2}=0$
+\end_inset
+
+.
+ Для того, чтобы линейно независимыми были вектора 
+\begin_inset Formula $Av_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $Av_{2}$
+\end_inset
+
+, как мы видели выше, необходимо, чтобы равенство 
+\begin_inset Formula $A\left(\lambda_{1}v_{1}+\lambda_{2}v_{2}\right)=0$
+\end_inset
+
+ выполнялось только при 
+\begin_inset Formula $\lambda_{1}=\lambda_{2}=0$
+\end_inset
+
+.
+ Но, если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ является особенной, то у уравнения 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ имеются ненулые решения.
+ Возмём одно из таких решений и обозначим его 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ — два линейно независимых вектора в двумерном пространстве, то они образуют
+ в этом пространстве базис, а значит 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ может быть выражен в виде линейной комбинации 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+: 
+\begin_inset Formula $x_{0}=\lambda_{1}v_{1}+\lambda_{2}v_{2}$
+\end_inset
+
+, причём, так как 
+\begin_inset Formula $x_{0}\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+ не равны нулю одновременно.
+ Таким образом, тогда 
+\begin_inset Formula $A\left(\lambda_{1}v_{1}+\lambda_{2}v_{2}\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+\lambda_{1}\left(Av_{1}\right)+\lambda_{2}\left(Av_{2}\right)=0,
+\]
+
+\end_inset
+
+ поэтому 
+\begin_inset Formula $Av_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $Av_{2}$
+\end_inset
+
+ могут быть линейно зависимыми.
+\end_layout
+
+\begin_layout Solution
+в) Если теперь 
+\begin_inset Formula $A$
+\end_inset
+
+ невырожденная матрица, то у уравнения 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ имеются только нулевое решение.
+ Поэтому, если равенство 
+\begin_inset Formula $\lambda_{1}Av_{1}+\lambda_{2}Av_{2}=0$
+\end_inset
+
+ выполняется при некоторых 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+, которые не равны нулю одновременно, то 
+\begin_inset Formula $A\left(\lambda_{1}v_{1}+\lambda_{2}v_{2}\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\lambda_{1}v_{1}+\lambda_{2}v_{2}=0$
+\end_inset
+
+, то есть придём к противоречию с тем, что 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ линейно независимы по условию.
+\end_layout
+
+\begin_layout Section
+Если сумма элементом каждой строки матрицы равна нулю, то эта матрица вырожденна
+я (задача 622)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ и сумма элементов каждой строки матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ равна нулю.
+ Докажите, что матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ вырожденная
+\end_layout
+
+\begin_layout Solution
+По условию задачи 
+\begin_inset Formula 
+\[
+\sum_{j=1}^{n}a_{ij}=0,
+\]
+
+\end_inset
+
+ это равенство можно переписать в виде 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+, где 
+\begin_inset Formula $x$
+\end_inset
+
+ — это вектор-столбец, все элементы которого равны единице, то есть у уравнения
+ 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ есть ненулевое решение, а значит 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица.
+\end_layout
+
+\begin_layout Section
+Произведение двух невырожденных матриц также невырождено (задача 479)
+\end_layout
+
+\begin_layout Problem
+Докажите, что если 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — невырожденные матрицы размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, то их произведение 
+\begin_inset Formula $AB$
+\end_inset
+
+ — также невырожденная матрица.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим уравнение 
+\begin_inset Formula $\left(AB\right)x=0$
+\end_inset
+
+, которое, по правилам умножения матриц, можно переписать как 
+\begin_inset Formula $A\left(Bx\right)=0$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $y=Bx$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная матрица по условию задачи, то 
+\begin_inset Formula $Ay=0$
+\end_inset
+
+ только при 
+\begin_inset Formula $y=0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $Bx=0$
+\end_inset
+
+.
+ Но 
+\begin_inset Formula $B$
+\end_inset
+
+ — тоже невырожденная матрица по условию задачи, то 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ Таким образом, у уравнения 
+\begin_inset Formula $\left(AB\right)x=0$
+\end_inset
+
+ нет ненулевых решений, а значит матрица 
+\begin_inset Formula $AB$
+\end_inset
+
+ является невырожденной.
+\end_layout
+
 \begin_layout Chapter
 Невырожденные матрицы
 \end_layout
