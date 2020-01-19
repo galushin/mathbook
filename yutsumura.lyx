@@ -5515,6 +5515,253 @@ x=\begin{pmatrix}\lambda_{1}\\
 .
 \end_layout
 
+\begin_layout Chapter
+Невырожденные матрицы
+\end_layout
+
+\begin_layout Section
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, то существует ненулевая матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB=O$
+\end_inset
+
+ (задача 271)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что существует ненулевая матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB=O$
+\end_inset
+
+, где 
+\begin_inset Formula $O$
+\end_inset
+
+ — нулевая матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, то у уравнеия 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ имеется ненулевое решение.
+ Составим матрицу 
+\begin_inset Formula $B$
+\end_inset
+
+ из столбцов, каждый из которых равен 
+\begin_inset Formula $x$
+\end_inset
+
+, эта матрица будет ненулевой, но все столбцы произведения будут равны нулю,
+ так как 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+.
+ Таким образом, будет 
+\begin_inset Formula $AB=O$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, то существует ненулевая матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB$
+\end_inset
+
+ — нулевая матрица (задача 271)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что существует ненулевая матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB=O$
+\end_inset
+
+, где 
+\begin_inset Formula $O$
+\end_inset
+
+ — нулевая матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, то у уравнеия 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ имеется ненулевое решение.
+ Составим матрицу 
+\begin_inset Formula $B$
+\end_inset
+
+ из столбцов, каждый из которых равен 
+\begin_inset Formula $x$
+\end_inset
+
+, эта матрица будет ненулевой, но все столбцы произведения будут равны нулю,
+ так как 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+.
+ Таким образом, будет 
+\begin_inset Formula $AB=O$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, то существует ненулевая матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB$
+\end_inset
+
+ — нулевая матрица (задача 301)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица 
+\begin_inset Formula $3\times3$
+\end_inset
+
+.
+ Докажите, что существует ненулевая матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ размера 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB=O$
+\end_inset
+
+, где 
+\begin_inset Formula $O$
+\end_inset
+
+ — нулевая матрица размера 
+\begin_inset Formula $3\times3$
+\end_inset
+
+.
+ Это частный случай задачи 271.
+\end_layout
+
+\begin_layout Solution
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, то у уравнеия 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ имеется ненулевое решение.
+ Составим матрицу 
+\begin_inset Formula $B$
+\end_inset
+
+ из столбцов, каждый из которых равен 
+\begin_inset Formula $x$
+\end_inset
+
+, эта матрица будет ненулевой, но все столбцы произведения будут равны нулю,
+ так как 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+.
+ Таким образом, будет 
+\begin_inset Formula $AB=O$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Линейно независимые векторы 
 \begin_inset Formula $v_{1}$
@@ -5949,254 +6196,6 @@ x=\begin{pmatrix}\lambda_{1}\\
 \end_inset
 
  является невырожденной.
-\end_layout
-
-\begin_layout Chapter
-Невырожденные матрицы
-\end_layout
-
-\begin_layout Section
-Если матрица 
-\begin_inset Formula $A$
-\end_inset
-
- — вырожденная, то существует ненулевая матрица 
-\begin_inset Formula $B$
-\end_inset
-
- такая, что 
-\begin_inset Formula $AB=O$
-\end_inset
-
- (задача 271)
-\end_layout
-
-\begin_layout Problem
-Пусть 
-\begin_inset Formula $A$
-\end_inset
-
- — вырожденная матрица 
-\begin_inset Formula $n\times n$
-\end_inset
-
-.
- Докажите, что существует ненулевая матрица 
-\begin_inset Formula $B$
-\end_inset
-
- размера 
-\begin_inset Formula $n\times n$
-\end_inset
-
- такая, что 
-\begin_inset Formula $AB=O$
-\end_inset
-
-, где 
-\begin_inset Formula $O$
-\end_inset
-
- — нулевая матрица размера 
-\begin_inset Formula $n\times n$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Solution
-Если матрица 
-\begin_inset Formula $A$
-\end_inset
-
- — вырожденная, то у уравнеия 
-\begin_inset Formula $Ax=0$
-\end_inset
-
- имеется ненулевое решение.
- Составим матрицу 
-\begin_inset Formula $B$
-\end_inset
-
- из столбцов, каждый из которых равен 
-\begin_inset Formula $x$
-\end_inset
-
-, эта матрица будет ненулевой, но все столбцы произведения будут равны нулю,
- так как 
-\begin_inset Formula $Ax=0$
-\end_inset
-
-.
- Таким образом, будет 
-\begin_inset Formula $AB=O$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Section
-Если матрица 
-\begin_inset Formula $A$
-\end_inset
-
- — вырожденная, то существует ненулевая матрица 
-\begin_inset Formula $B$
-\end_inset
-
- такая, что 
-\begin_inset Formula $AB$
-\end_inset
-
- — нулевая матрица (задача 271)
-\end_layout
-
-\begin_layout Problem
-Пусть 
-\begin_inset Formula $A$
-\end_inset
-
- — вырожденная матрица 
-\begin_inset Formula $n\times n$
-\end_inset
-
-.
- Докажите, что существует ненулевая матрица 
-\begin_inset Formula $B$
-\end_inset
-
- размера 
-\begin_inset Formula $n\times n$
-\end_inset
-
- такая, что 
-\begin_inset Formula $AB=O$
-\end_inset
-
-, где 
-\begin_inset Formula $O$
-\end_inset
-
- — нулевая матрица размера 
-\begin_inset Formula $n\times n$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Solution
-Если матрица 
-\begin_inset Formula $A$
-\end_inset
-
- — вырожденная, то у уравнеия 
-\begin_inset Formula $Ax=0$
-\end_inset
-
- имеется ненулевое решение.
- Составим матрицу 
-\begin_inset Formula $B$
-\end_inset
-
- из столбцов, каждый из которых равен 
-\begin_inset Formula $x$
-\end_inset
-
-, эта матрица будет ненулевой, но все столбцы произведения будут равны нулю,
- так как 
-\begin_inset Formula $Ax=0$
-\end_inset
-
-.
- Таким образом, будет 
-\begin_inset Formula $AB=O$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Section
-Если матрица 
-\begin_inset Formula $A$
-\end_inset
-
- — вырожденная, то существует ненулевая матрица 
-\begin_inset Formula $B$
-\end_inset
-
- такая, что 
-\begin_inset Formula $AB$
-\end_inset
-
- — нулевая матрица (задача 301)
-\end_layout
-
-\begin_layout Problem
-Пусть 
-\begin_inset Formula $A$
-\end_inset
-
- — вырожденная матрица 
-\begin_inset Formula $3\times3$
-\end_inset
-
-.
- Докажите, что существует ненулевая матрица 
-\begin_inset Formula $B$
-\end_inset
-
- размера 
-\begin_inset Formula $3\times3$
-\end_inset
-
- такая, что 
-\begin_inset Formula $AB=O$
-\end_inset
-
-, где 
-\begin_inset Formula $O$
-\end_inset
-
- — нулевая матрица размера 
-\begin_inset Formula $3\times3$
-\end_inset
-
-.
- Это частный случай задачи 271.
-\end_layout
-
-\begin_layout Solution
-Если матрица 
-\begin_inset Formula $A$
-\end_inset
-
- — вырожденная, то у уравнеия 
-\begin_inset Formula $Ax=0$
-\end_inset
-
- имеется ненулевое решение.
- Составим матрицу 
-\begin_inset Formula $B$
-\end_inset
-
- из столбцов, каждый из которых равен 
-\begin_inset Formula $x$
-\end_inset
-
-, эта матрица будет ненулевой, но все столбцы произведения будут равны нулю,
- так как 
-\begin_inset Formula $Ax=0$
-\end_inset
-
-.
- Таким образом, будет 
-\begin_inset Formula $AB=O$
-\end_inset
-
-.
- 
 \end_layout
 
 \begin_layout Chapter
