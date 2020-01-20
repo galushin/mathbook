@@ -5529,87 +5529,6 @@ x=\begin{pmatrix}\lambda_{1}\\
 \end_inset
 
  такая, что 
-\begin_inset Formula $AB=O$
-\end_inset
-
- (задача 271)
-\end_layout
-
-\begin_layout Problem
-Пусть 
-\begin_inset Formula $A$
-\end_inset
-
- — вырожденная матрица 
-\begin_inset Formula $n\times n$
-\end_inset
-
-.
- Докажите, что существует ненулевая матрица 
-\begin_inset Formula $B$
-\end_inset
-
- размера 
-\begin_inset Formula $n\times n$
-\end_inset
-
- такая, что 
-\begin_inset Formula $AB=O$
-\end_inset
-
-, где 
-\begin_inset Formula $O$
-\end_inset
-
- — нулевая матрица размера 
-\begin_inset Formula $n\times n$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Solution
-Если матрица 
-\begin_inset Formula $A$
-\end_inset
-
- — вырожденная, то у уравнеия 
-\begin_inset Formula $Ax=0$
-\end_inset
-
- имеется ненулевое решение.
- Составим матрицу 
-\begin_inset Formula $B$
-\end_inset
-
- из столбцов, каждый из которых равен 
-\begin_inset Formula $x$
-\end_inset
-
-, эта матрица будет ненулевой, но все столбцы произведения будут равны нулю,
- так как 
-\begin_inset Formula $Ax=0$
-\end_inset
-
-.
- Таким образом, будет 
-\begin_inset Formula $AB=O$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Section
-Если матрица 
-\begin_inset Formula $A$
-\end_inset
-
- — вырожденная, то существует ненулевая матрица 
-\begin_inset Formula $B$
-\end_inset
-
- такая, что 
 \begin_inset Formula $AB$
 \end_inset
 
@@ -6196,6 +6115,690 @@ x=\begin{pmatrix}\lambda_{1}\\
 \end_inset
 
  является невырожденной.
+\end_layout
+
+\begin_layout Section
+Условия для коэффициентов, при выполнении которых матрица является невырожденной
+ (задача 72)
+\end_layout
+
+\begin_layout Problem
+а) Пусть 
+\begin_inset Formula $A=\left(a_{ij}\right)$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Предположим, что элементы матрицы удовлетворяют следующему соотношению:
+ 
+\begin_inset Formula 
+\[
+\left|a_{ii}\right|>\sum_{j\neq i}\left|a_{ij}\right|
+\]
+
+\end_inset
+
+ для всех 
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+.
+ Докажите, что матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная.
+ 
+\end_layout
+
+\begin_layout Problem
+б) Пусть 
+\begin_inset Formula $B=\left(b_{ij}\right)$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, такая что для любых 
+\begin_inset Formula $1\le i,j\le n$
+\end_inset
+
+ (
+\begin_inset Formula $i\neq j)$
+\end_inset
+
+ выполняются соотношения 
+\begin_inset Formula $\left|b_{ii}\right|=1$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|b_{ij}\right|<\frac{1}{n-1}$
+\end_inset
+
+.
+ Докажите, что матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ невырожденная.
+\end_layout
+
+\begin_layout Problem
+в) Определите, вырожденная ли следующая матрица или нет: 
+\begin_inset Formula 
+\[
+C=\begin{pmatrix}\pi & e & \frac{e^{2}}{2\pi^{2}}\\
+\frac{e^{2}}{2\pi^{2}} & \pi & e\\
+e & \frac{e^{2}}{2\pi^{2}} & \pi
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ вырожденная, то у уравнения 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ имеется ненулевое решение.
+ Запишем это уравнение покомпоненто 
+\begin_inset Formula 
+\[
+\sum_{j=1}^{n}a_{ij}x_{j}=0,
+\]
+
+\end_inset
+
+ так как не все 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ равны нулю, то среди них можно выбрать наибольший по модулю, пусть его
+ 
+\begin_inset Formula $x_{k}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left|x_{k}\right|=\max_{1\le i\le n}\left|x_{i}\right|>0,
+\]
+
+\end_inset
+
+ тогда из 
+\begin_inset Formula $k$
+\end_inset
+
+-го уравнения: 
+\begin_inset Formula 
+\[
+-a_{kk}x_{k}=\sum_{j\neq k}a_{kj}x_{j}.
+\]
+
+\end_inset
+
+ Возьмём модуль от левой и правой части: 
+\begin_inset Formula 
+\[
+\left|a_{kk}\right|\left|x_{k}\right|=\left|\sum_{j\neq k}a_{kj}x_{j}\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По неравенству треугольника: 
+\begin_inset Formula 
+\[
+\left|a_{kk}\right|\left|x_{k}\right|\le\sum_{j\neq k}\left|a_{kj}\right|\left|x_{j}\right|\le\sum_{j\neq k}\left|a_{kk}\right|\left|x_{k}\right|,
+\]
+
+\end_inset
+
+ так как 
+\begin_inset Formula $\left|x_{k}\right|>0$
+\end_inset
+
+, то левую и правую чатси можно поделить на 
+\begin_inset Formula $\left|x_{k}\right|$
+\end_inset
+
+ и мы получим 
+\begin_inset Formula 
+\[
+\left|a_{kk}\right|\le\sum_{j\neq k}\left|a_{kk}\right|.
+\]
+
+\end_inset
+
+Итак, мы доказали, что из того, что 
+\begin_inset Formula $A$
+\end_inset
+
+ вырожденная, следует выполнение последнего неравенства.
+ Контроппозиция данного утверждения даёт утверждение, которое требовалось
+ доказать.
+ 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог решить пункт а) сам
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Заметим, что для матрицы 
+\begin_inset Formula $B$
+\end_inset
+
+ имеет место 
+\begin_inset Formula 
+\[
+\sum_{j\neq i}\left|b_{ij}\right|<\sum_{j\neq i}\frac{1}{n-1}=\frac{n-1}{n-1}=1=\left|b_{ii}\right|,
+\]
+
+\end_inset
+
+ то есть условие, при выполнении которого матрица является невырожденной,
+ как было доказано в пункте а).
+\end_layout
+
+\begin_layout Solution
+в) Применим к матрице 
+\begin_inset Formula $C$
+\end_inset
+
+ результат пунтка а).
+ Сумма недиагональных элементов любой строки есть 
+\begin_inset Formula $e+\frac{e^{2}}{2\pi^{2}}<\pi$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать этот факт
+\end_layout
+
+\end_inset
+
+, поэтму 
+\begin_inset Formula $C$
+\end_inset
+
+ — невырожденная.
+\end_layout
+
+\begin_layout Section
+Соотношение ненулевого векторов-строк и векторов-столбцов (задача 406)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ и существует ненулевой вектор-строка такой, что 
+\begin_inset Formula $yA=y$
+\end_inset
+
+.
+ Докажите, что существует ненулевой вектор-столбец такой, что 
+\begin_inset Formula $Ax=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $yA=y$
+\end_inset
+
+, то 
+\begin_inset Formula $y\left(A-I\right)=0$
+\end_inset
+
+ или 
+\begin_inset Formula $\left(A-I\right)^{T}y^{T}=0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $y$
+\end_inset
+
+ и, как следствие, 
+\begin_inset Formula $y^{T}$
+\end_inset
+
+ — ненулевые, то 
+\begin_inset Formula $\left(A-I\right)^{T}$
+\end_inset
+
+ — вырожденная матрица, но тогда 
+\begin_inset Formula $A-I$
+\end_inset
+
+ — тоже вырожденная матрица 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать это выше? Задача 558
+\end_layout
+
+\end_inset
+
+, но тогда у уравнения 
+\begin_inset Formula $\left(A-I\right)x=0$
+\end_inset
+
+ существует ненулевое решение, для этого решения будет выполняться 
+\begin_inset Formula $Ax-Ix=0$
+\end_inset
+
+ или 
+\begin_inset Formula $Ax=x$
+\end_inset
+
+, что и требовалось.
+\end_layout
+
+\begin_layout Section
+Десять вопросов о невырожденных матрицах (задача 500)
+\end_layout
+
+\begin_layout Problem
+Определите, верны ли следующие утверждения.
+\end_layout
+
+\begin_layout Problem
+1) Если 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — невырожденные матрица 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, то 
+\begin_inset Formula $A+B$
+\end_inset
+
+ также невырожденная матрица.
+\end_layout
+
+\begin_layout Problem
+2) Если у матрицы нет нулевых строк и столбцов, то к ней существует обратная
+ матрица.
+\end_layout
+
+\begin_layout Problem
+3) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица 
+\begin_inset Formula $m\times n$
+\end_inset
+
+, если у уравнения 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ есть только нулевое решение 
+\begin_inset Formula $x\in\mathbb{R}^{n}$
+\end_inset
+
+, то столбцы 
+\begin_inset Formula $A$
+\end_inset
+
+ линейной независимы.
+\end_layout
+
+\begin_layout Problem
+4) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица 
+\begin_inset Formula $m\times n$
+\end_inset
+
+, если у уравнения 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ есть только нулевое решение 
+\begin_inset Formula $x\in\mathbb{R}^{n}$
+\end_inset
+
+, то строки 
+\begin_inset Formula $A$
+\end_inset
+
+ линейной независимы.
+\end_layout
+
+\begin_layout Problem
+5) Ступенчатая форма обратимой матрицы 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ обратима.
+\end_layout
+
+\begin_layout Problem
+6) Существует ненулевая невырожденная матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $A^{2}=O$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+7) Если 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ обратимые матрицы 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, то 
+\begin_inset Formula $AB=BA$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+8) Если 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ невырожденные матрицы 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $A^{2}=B^{2}=I$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(AB\right)^{-1}=BA$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+9) Если 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ для любого 
+\begin_inset Formula $x\in\mathbb{R}^{n}$
+\end_inset
+
+, то 
+\begin_inset Formula $A$
+\end_inset
+
+ — нулевая матрица размера 
+\begin_inset Formula $m\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+10) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная матрица 
+\begin_inset Formula $2\times2$
+\end_inset
+
+, а 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ — линейно независимы в 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, тогда векторы 
+\begin_inset Formula $Av_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $Av_{2}$
+\end_inset
+
+ линейно независимые векторы в 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Solution
+1) Нет, достаточно взять 
+\begin_inset Formula $B=-A$
+\end_inset
+
+, тогда 
+\begin_inset Formula $A+B=O$
+\end_inset
+
+, которая является вырожденной.
+\end_layout
+
+\begin_layout Solution
+2) Нет, контрпример — любая матрица, все строки которой ненулевые, но равны
+ друг другу.
+\end_layout
+
+\begin_layout Solution
+3) Да.
+ Для доказательства нужно записать произведение 
+\begin_inset Formula $Ax$
+\end_inset
+
+ в виде линейной комбинации столбцов матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+4) Да.
+ Строки и столбцы линейно зависимы или линейно независимы одновременно.
+\end_layout
+
+\begin_layout Solution
+5) Да.
+ Ступенчатая форма матрицы эквивалента ей, а значит они одновременно обратимы
+ или необратимы.
+\end_layout
+
+\begin_layout Solution
+6) Нет.
+ Пусть матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ невырожденная и 
+\begin_inset Formula $A^{2}=O$
+\end_inset
+
+, тогда 
+\begin_inset Formula $A=A^{-1}O=O$
+\end_inset
+
+, то есть 
+\begin_inset Formula $A$
+\end_inset
+
+ — нулевая.
+\end_layout
+
+\begin_layout Solution
+7) Нет.
+ Умножение матриц в общем случае некоммутативно.
+\end_layout
+
+\begin_layout Solution
+8) Да.
+ Если 
+\begin_inset Formula $A^{2}=B^{2}=I$
+\end_inset
+
+, то 
+\begin_inset Formula $A=A^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $B=B^{-1}$
+\end_inset
+
+ (получается умножением равенства на 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $B^{-1}$
+\end_inset
+
+ соответственно).
+ Тогда 
+\begin_inset Formula $\left(AB\right)^{-1}=B^{-1}A^{-1}=BA$
+\end_inset
+
+, что и требовалось.
+\end_layout
+
+\begin_layout Solution
+9) Да.
+ Выбирая такие векторы 
+\begin_inset Formula $x$
+\end_inset
+
+, у которых только одна координата равна единице, а остальные равны нулю,
+ то есть 
+\begin_inset Formula $x_{j}^{\left(k\right)}=\delta_{kj}$
+\end_inset
+
+, можно получить 
+\begin_inset Formula 
+\[
+\sum_{j=1}^{n}a_{ij}x_{j}^{\left(k\right)}=\sum_{j=1}^{n}a_{ij}\delta_{kj}=a_{ik}=0,
+\]
+
+\end_inset
+
+ так как 
+\begin_inset Formula $1\le i\le m$
+\end_inset
+
+ и 
+\begin_inset Formula $k$
+\end_inset
+
+ можно выбирать произвольно, то 
+\begin_inset Formula $a_{ik}=0$
+\end_inset
+
+ для любых 
+\begin_inset Formula $i$
+\end_inset
+
+ и 
+\begin_inset Formula $k$
+\end_inset
+
+, то есть 
+\begin_inset Formula $A$
+\end_inset
+
+ — нулевая матрица.
+\end_layout
+
+\begin_layout Solution
+10) Да.
+ Было доказано в задаче 284.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на эту задачу
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
