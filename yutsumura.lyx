@@ -5520,6 +5520,108 @@ x=\begin{pmatrix}\lambda_{1}\\
 \end_layout
 
 \begin_layout Section
+Определите, что данная матрица 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ невырожденная (задача 671)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, которая сможет решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Покажите, что данная матрица 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ вырожденная (задача 655)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, которая сможет решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Найдите значения 
+\begin_inset Formula $a$
+\end_inset
+
+, при которых матрица является невырожденной (задача 126)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, которая сможет решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Для каких значений 
+\begin_inset Formula $a$
+\end_inset
+
+ матрица невырожденная? (задача 670)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, которая сможет решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Является ли матрица коэффициентов системы линейных уравнений невырожденной?
+ (задача 669)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, которая сможет решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Если матрица 
 \begin_inset Formula $A$
 \end_inset
@@ -6794,6 +6896,777 @@ status open
 
 \begin_layout Plain Layout
 Добавить ссылку на эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Транспонированная матрица к вырожденной также является невырожденной (задача
+ 558)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что транспонированная матрица 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+ также невырожденна.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог решить сам
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть существует ненулевой вектор 
+\begin_inset Formula $y$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $A^{T}y=0$
+\end_inset
+
+.
+ Так как матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная, то существует такой вектор 
+\begin_inset Formula $x$
+\end_inset
+
+, что 
+\begin_inset Formula $Ax=y$
+\end_inset
+
+ (а именно 
+\begin_inset Formula $x=A^{-1}y$
+\end_inset
+
+)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Этот факт нужно доказать
+\end_layout
+
+\end_inset
+
+.
+ Подставляя это выражение для 
+\begin_inset Formula $y$
+\end_inset
+
+ в уравнение 
+\begin_inset Formula $A^{T}y=0$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+A^{T}Ax=0.
+\]
+
+\end_inset
+
+ Умножим это равенство слева на 
+\begin_inset Formula $x^{T}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+x^{T}A^{T}Ax=x^{T}0=0,
+\]
+
+\end_inset
+
+но выражение слева можно записать как 
+\begin_inset Formula 
+\[
+x^{T}A^{T}Ax=\left(Ax\right)^{T}\left(Ax\right)=\left\Vert Ax\right\Vert ^{2},
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $\left\Vert Ax\right\Vert ^{2}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ (так как норма равна нулю только у нулевого вектора).
+ Но так как 
+\begin_inset Formula $Ax=y$
+\end_inset
+
+, то 
+\begin_inset Formula $y=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, если 
+\begin_inset Formula $A^{T}y=0$
+\end_inset
+
+, то 
+\begin_inset Formula $y=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+ — невырожденная матрица, что и требовалось доказать.
+\end_layout
+
+\begin_layout Section
+Пусть 
+\begin_inset Formula $A=\left[A_{1},\dots,A_{n-1}\right]$
+\end_inset
+
+, тогда матрица 
+\begin_inset Formula $\left[A_{1},\dots,A_{n-1},Ab\right]$
+\end_inset
+
+ всегда вырождена (задача 560)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $n\times\left(n-1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $b\in\mathbb{R}^{n-1}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $Ab\in\mathbb{R}^{n}$
+\end_inset
+
+.
+ Составим матрицу 
+\begin_inset Formula $B=\left[A_{1},\dots,A_{n-1},Ab\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ — 
+\begin_inset Formula $i$
+\end_inset
+
+-ый столбец матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $B$
+\end_inset
+
+ — вырожденная матрица для любого 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По правилу умножения матрицы на вектор-сталбец 
+\begin_inset Formula $Ab$
+\end_inset
+
+ можно записать в виде 
+\begin_inset Formula 
+\[
+Ab=\sum_{j=1}^{n-1}A_{j}b_{j},
+\]
+
+\end_inset
+
+это равенство можно переписать следующим образом 
+\begin_inset Formula 
+\[
+\sum_{j=1}^{n-1}A_{j}b_{j}-Ab=0.
+\]
+
+\end_inset
+
+ Это подсказывает, как найти вектор 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $Bx=0$
+\end_inset
+
+.
+ Действительно, положим 
+\begin_inset Formula $x_{j}=b_{j}$
+\end_inset
+
+ при 
+\begin_inset Formula $j=1,\dots n-1$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{n}=-1$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+Bx=\sum_{j=1}^{n}B_{j}x_{j}=\sum_{j=1}^{n-1}A_{j}x_{j}+Ab\cdot\left(-1\right)=\sum_{j=1}^{n-1}A_{j}x_{j}-Ab=0.
+\]
+
+\end_inset
+
+Определённый таким образом вектор 
+\begin_inset Formula $x$
+\end_inset
+
+ всегда будет ненулевым, так как одна из его координат всегда не равна нулю:
+ 
+\begin_inset Formula $x_{n}=-1\neq0$
+\end_inset
+
+.
+ Итак, у уравнения 
+\begin_inset Formula $Bx=0$
+\end_inset
+
+ имеется ненулевое решение, поэтому 
+\begin_inset Formula $B$
+\end_inset
+
+ — вырожденная матрица.
+\end_layout
+
+\begin_layout Section
+Две матрицы невырождены тогда и только тогда, когда их произведение невырождено
+ (задачи 562)
+\end_layout
+
+\begin_layout Problem
+Докажите:
+\end_layout
+
+\begin_layout Problem
+а) Если 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — невырожденные матрицы размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, то 
+\begin_inset Formula $AB$
+\end_inset
+
+ — также невырожденная матрица.
+\end_layout
+
+\begin_layout Problem
+б) Если 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — матрицы размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, а их произведение 
+\begin_inset Formula $AB$
+\end_inset
+
+ — невырожденная матрица, тогда матрицы 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденные.
+\end_layout
+
+\begin_layout Solution
+а) Докажем контроппозицию рассматриваемого утверждения.
+ Пусть 
+\begin_inset Formula $AB$
+\end_inset
+
+ — вырожденная матрица.
+ Тогда у уравнения 
+\begin_inset Formula $\left(AB\right)x=0$
+\end_inset
+
+ имеется ненулевое решение 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Возможны два случая: 
+\begin_inset Formula $Bx=0$
+\end_inset
+
+ и 
+\begin_inset Formula $Bx\neq0$
+\end_inset
+
+.
+ В первом случае 
+\begin_inset Formula $B$
+\end_inset
+
+ — вырожденная матрица.
+ Во втором случае обозначим 
+\begin_inset Formula $y=Bx$
+\end_inset
+
+ и получим, что существует ненулевой вектор 
+\begin_inset Formula $y$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $Ay=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица.
+ Таким образом, из того, что 
+\begin_inset Formula $AB$
+\end_inset
+
+ вырожденная следует, что 
+\begin_inset Formula $A$
+\end_inset
+
+ или 
+\begin_inset Formula $B$
+\end_inset
+
+ вырожденная матрица.
+ Это утверждение эквивалентно тому, которое требуется доказать.
+\end_layout
+
+\begin_layout Solution
+Докажем контроппозицию рассматриваемого утверждения.
+ Пусть 
+\begin_inset Formula $B$
+\end_inset
+
+ — вырожденная матрица.
+ Тогда, по определению вырожденной матрицы, существует такой ненулевой вектор
+ 
+\begin_inset Formula $x$
+\end_inset
+
+, что 
+\begin_inset Formula $Bx=0$
+\end_inset
+
+, но тогда 
+\begin_inset Formula $\left(AB\right)x=A\left(Bx\right)=A0=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $AB$
+\end_inset
+
+ — вырожденная матрица.
+ Таким образом, если 
+\begin_inset Formula $AB$
+\end_inset
+
+ невырожденная матрица, то 
+\begin_inset Formula $B$
+\end_inset
+
+ — тоже невырожденная матрица.
+ 
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица, а матрица 
+\begin_inset Formula $B$
+\end_inset
+
+ — невырожденная (случай, когда 
+\begin_inset Formula $B$
+\end_inset
+
+ вырожденная был рассмотрен выше) тогда существует ненулевой вектор 
+\begin_inset Formula $y$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $Ay=0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $B$
+\end_inset
+
+ — невырожденная матрица, то существует такой вектор 
+\begin_inset Formula $x$
+\end_inset
+
+, что 
+\begin_inset Formula $Bx=y$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Это надо доказать
+\end_layout
+
+\end_inset
+
+, причём 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, так как 
+\begin_inset Formula $B0=0$
+\end_inset
+
+, но 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+\left(AB\right)x=A\left(Bx\right)=Ay=0
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $AB$
+\end_inset
+
+ — вырожденная матрица.
+\end_layout
+
+\begin_layout Section
+Вырожденная матрица и матричные уравнения 
+\begin_inset Formula $Ax=e_{i}$
+\end_inset
+
+ с единичными векторами (задача 561)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ и пусть 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ — орты: 
+\begin_inset Formula 
+\[
+e_{ij}=\delta_{ij}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Докажите, что по крайней мере одно из уравнений 
+\begin_inset Formula 
+\[
+Ax=e_{i}
+\]
+
+\end_inset
+
+при 
+\begin_inset Formula $i=1,\dots,n$
+\end_inset
+
+ не имеет решений 
+\begin_inset Formula $x\in\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем от противного.
+ Пусть у всех уравнений 
+\begin_inset Formula $Ax=e_{i}$
+\end_inset
+
+ существует решение.
+ Любой вектор 
+\begin_inset Formula $b$
+\end_inset
+
+ можно представить в виде линейной комбинации векторов 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+b=\sum_{i=1}^{n}b_{i}e_{i}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ — это некоторое решение уравнение 
+\begin_inset Formula $Ax=e_{i}$
+\end_inset
+
+, тогда составим матрицу 
+\begin_inset Formula $X=\left[x_{1},\dots,x_{n}\right]$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+AX=\left[Ax_{1},\dots,Ax_{n}\right]=\left[e_{1},\dots e_{n}\right]=I.
+\]
+
+\end_inset
+
+Так как матрица 
+\begin_inset Formula $I$
+\end_inset
+
+ невырожденная (если 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $Ix=x\neq0$
+\end_inset
+
+), то, по доказанному в задаче 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на 562
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $X$
+\end_inset
+
+ — невырожденные матрицы.
+ Но 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица по условию.
+ Полученное противоречие означает, что исходное предположение было неправильным
+ и 
+\begin_inset Formula $\text{не у всех уравнений }Ax=e_{i}$
+\end_inset
+
+ есть решение.
+ 
+\end_layout
+
+\begin_layout Section
+Как доказать, что доказать, что матрица невырожденная за 10 секунд (задача
+ 509)
+\end_layout
+
+\begin_layout Problem
+Используя знаки числа 
+\begin_inset Formula 
+\[
+\pi=3.1415926535897932384626433832795028841971693993751058209749\dots
+\]
+
+\end_inset
+
+ мы построили матрицу 
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}3 & 14 & 1592 & 65358\\
+97932 & 38462643 & 38 & 52\\
+7950 & 2 & 8841 & 9716\\
+939937510 & 5820 & 974 & 9
+\end{pmatrix}.
+\]
+
+\end_inset
+
+ Докажите, что матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не додумался до этого сам
+\end_layout
+
+\end_inset
+
+Можно было бы просто вычислить определитель матрицы, но элементы достаточно
+ большие.
+ Также 
+\begin_inset Formula $A$
+\end_inset
+
+ — это не матрица с диагональным преобладанием 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на задачу
+\end_layout
+
+\end_inset
+
+.
+ Но можно заметить, что если мы докажем, что определитель 
+\begin_inset Formula $A$
+\end_inset
+
+ — нечётное число, то он не равен нулю (ноль — чётное число), а значит 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная.
+ Для определения чётности определителя нужно выполнять все вычисления по
+ модулю 2, причём сначала взять по модулю 2 сами элементы матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+A\mod2=\begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}=I,
+\]
+
+\end_inset
+
+ поэтому 
+\begin_inset Formula $\det\left(A\right)\mod2=\det\left(I\right)\mod2=1$
+\end_inset
+
+, таким образом определитель 
+\begin_inset Formula $A$
+\end_inset
+
+ — нечётное число и 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная матрица.
+\end_layout
+
+\begin_layout Chapter
+Обратимые матрицы
+\end_layout
+
+\begin_layout Section
+Найдите обратные матрицы (для обратимых матриц) с помощью элементарных операций
+ со строками (задача 552)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, которая сможет решить эту задачу
 \end_layout
 
 \end_inset
