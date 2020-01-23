@@ -8313,6 +8313,473 @@ status open
 .
 \end_layout
 
+\begin_layout Section
+Случай б) предыдущей задачи 289
+\end_layout
+
+\begin_layout Section
+Найти невырожденную матрицу, удовлетворяющую некоторому соотношению (задача
+ 280)
+\end_layout
+
+\begin_layout Problem
+Определите, существует ли невырожденная матрица 
+\begin_inset Formula $A$
+\end_inset
+
+, если 
+\begin_inset Formula 
+\[
+A^{2}=AB+2A,
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $B$
+\end_inset
+
+ — заданная матрицы.
+ Если такая невырожденная матрица существует, найдите обратную матрицу 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+а) 
+\begin_inset Formula $B=\begin{pmatrix}-1 & 1 & -1\\
+0 & -1 & 0\\
+1 & 2 & -2
+\end{pmatrix}$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Переписал с ошибкой!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+б) 
+\begin_inset Formula $B=\begin{pmatrix}-1 & 1 & -1\\
+0 & -1 & 0\\
+2 & 1 & -4
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная, то существует 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ и равенство 
+\begin_inset Formula $A^{2}=AB+2A$
+\end_inset
+
+ можно умножить слева на 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+, мы получим равенство 
+\begin_inset Formula 
+\[
+A=B+2I.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В случае а) мы получаем 
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}-1 & 1 & -1\\
+0 & -1 & 0\\
+1 & 2 & -2
+\end{pmatrix}+2\begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}=\begin{pmatrix}1 & 1 & -1\\
+0 & 1 & 0\\
+1 & 2 & 0
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Найдём обратную матрицу, приведя 
+\begin_inset Formula $\left[A|I\right]$
+\end_inset
+
+ к виду 
+\begin_inset Formula $\left[I|A^{\prime}\right]$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+\begin{pmatrix}\begin{array}{rrr|rrr}
+1 & 1 & -1 & 1 & 0 & 0\\
+0 & 1 & 0 & 0 & 1 & 0\\
+1 & 2 & 0 & 0 & 0 & 1
+\end{array}\end{pmatrix}\sim\begin{pmatrix}\begin{array}{rrr|rrr}
+1 & 1 & -1 & 1 & 0 & 0\\
+0 & 1 & 0 & 0 & 1 & 0\\
+0 & 1 & 1 & -1 & 0 & 1
+\end{array}\end{pmatrix}\sim\\
+\sim\begin{pmatrix}\begin{array}{rrr|rrr}
+1 & 1 & -1 & 1 & 0 & 0\\
+0 & 1 & 0 & 0 & 1 & 0\\
+0 & 0 & 1 & -1 & -1 & 1
+\end{array}\end{pmatrix}\sim\\
+\sim\begin{pmatrix}\begin{array}{rrr|rrr}
+1 & 1 & 0 & 0 & -1 & 1\\
+0 & 1 & 0 & 0 & 1 & 0\\
+0 & 0 & 1 & -1 & -1 & 1
+\end{array}\end{pmatrix}\sim\begin{pmatrix}\begin{array}{rrr|rrr}
+1 & 0 & 0 & 0 & -2 & 1\\
+0 & 1 & 0 & 0 & 1 & 0\\
+0 & 0 & 1 & -1 & -1 & 1
+\end{array}\end{pmatrix}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula 
+\[
+A^{-1}=\begin{pmatrix}0 & -2 & 1\\
+0 & 1 & 0\\
+-1 & -1 & 1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В случае б) мы получаем 
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}-1 & 1 & -1\\
+0 & -1 & 0\\
+2 & 1 & -4
+\end{pmatrix}+2\begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}=\begin{pmatrix}1 & 1 & -1\\
+0 & 1 & 0\\
+2 & 1 & -2
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Заметим, что удвоенная первая строка равна сумме второй и третьей строк,
+ поэтому строки 
+\begin_inset Formula $A$
+\end_inset
+
+ линейно зависимы, то есть матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ вырождена, а значит обратная к ней не существует.
+ Таким образом, в случае б) требуемой матрицы не существует.
+\end_layout
+
+\begin_layout Section
+Определите, существует ли невырожденная матрица, удовлетворяющая уравнению
+ 
+\begin_inset Formula $A^{4}=ABA^{2}+2A^{3}$
+\end_inset
+
+ (задача 486)
+\end_layout
+
+\begin_layout Problem
+Определите, существует ли невырожденная матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ такая, что 
+\begin_inset Formula 
+\[
+A^{4}=ABA^{2}+2A^{3},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula 
+\[
+B=\begin{pmatrix}-1 & 1 & -1\\
+0 & -1 & 0\\
+2 & 1 & -4
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ невырожденная, то существует 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+.
+ Умножая заданное равенство слева на 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+, а справа на 
+\begin_inset Formula $\left(A^{-1}\right)^{2}$
+\end_inset
+
+, то получим 
+\begin_inset Formula 
+\[
+A=B+2I.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Подставляя в это выражение 
+\begin_inset Formula $B$
+\end_inset
+
+ мы получаем 
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}-1 & 1 & -1\\
+0 & -1 & 0\\
+2 & 1 & -4
+\end{pmatrix}+2\begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}=\begin{pmatrix}1 & 1 & -1\\
+0 & 1 & 0\\
+2 & 1 & -2
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Заметим, что удвоенная первая строка равна сумме второй и третьей строк,
+ поэтому строки 
+\begin_inset Formula $A$
+\end_inset
+
+ линейно зависимы, то есть матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ вырождена, а значит обратная к ней не существует.
+\end_layout
+
+\begin_layout Solution
+Таким образом, требуемой матрицы не существует.
+\end_layout
+
+\begin_layout Section
+Вычислите и упростите матричное выражение, включающее транспонирование и
+ обращение матриц (задача 297)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, которая сможет это решить.
+ Здесь есть два уровня: просто вычислить и упростить, а потом вычислить
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Решите СЛАУ, вычислив обратную матрицу, и вычислите 
+\begin_inset Formula $A^{2017}x$
+\end_inset
+
+ (задача 300)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица коэффициентов следующей СЛАУ: 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+-x_{1}-2x_{2}=1\\
+2x_{1}+3x_{2}=-1
+\end{array}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Решите эту систему, вычислив обратную матрицу 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $x=\begin{pmatrix}x_{1}\\
+x_{2}
+\end{pmatrix}$
+\end_inset
+
+ — решение данной системы.
+ Вычислите и упростите 
+\begin_inset Formula $A^{2017}x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По условию задачи 
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}-1 & -2\\
+2 & 3
+\end{pmatrix}.
+\]
+
+\end_inset
+
+ Найдём 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+\left[A|I\right]=\begin{pmatrix}\begin{array}{rr|rr}
+-1 & -2 & 1 & 0\\
+2 & 3 & 0 & 1
+\end{array}\end{pmatrix}\sim\begin{pmatrix}\begin{array}{rr|rr}
+1 & 2 & -1 & 0\\
+2 & 3 & 0 & 1
+\end{array}\end{pmatrix}\sim\\
+\sim\begin{pmatrix}\begin{array}{rr|rr}
+1 & 2 & -1 & 0\\
+0 & -1 & 2 & 1
+\end{array}\end{pmatrix}\sim\\
+\sim\begin{pmatrix}\begin{array}{rr|rr}
+1 & 2 & -1 & 0\\
+0 & 1 & -2 & -1
+\end{array}\end{pmatrix}\sim\begin{pmatrix}\begin{array}{rr|rr}
+1 & 0 & 3 & 2\\
+0 & 1 & -2 & -1
+\end{array}\end{pmatrix}=\left[I|A^{-1}\right],
+\end{multline*}
+
+\end_inset
+
+ поэтому 
+\begin_inset Formula 
+\[
+A^{-1}=\begin{pmatrix}3 & 2\\
+-2 & -1
+\end{pmatrix}
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+x=A^{-1}\begin{pmatrix}1\\
+-1
+\end{pmatrix}=\begin{pmatrix}3 & 2\\
+-2 & -1
+\end{pmatrix}\begin{pmatrix}1\\
+-1
+\end{pmatrix}=\begin{pmatrix}1\\
+-1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+ Мы получаем 
+\begin_inset Formula 
+\[
+Ax=x,
+\]
+
+\end_inset
+
+поэтому, по индукции можно показать, что 
+\begin_inset Formula 
+\[
+A^{n}x=x=\begin{pmatrix}1\\
+-1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Не сортированные
 \end_layout
