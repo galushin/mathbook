@@ -7674,8 +7674,361 @@ status open
 
 \end_layout
 
-\begin_layout Chapter
-Не сортированные
+\begin_layout Section
+Определите, являются ли следующие матрицы обратимыми.
+ Если да, то найдите обратные матрицы (задача 76)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, которая сможет решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Найдите обратную матрицу для матрицы 
+\begin_inset Formula $3\times3$
+\end_inset
+
+, если она существует (задача 299)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, которая сможет решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Обратная матрица к верхнетреугольной матрице с переменными (задача 275)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, которая сможет решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Определите, когда данная матрица обратима (задача 101)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, которая сможет решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Если 
+\begin_inset Formula $M$
+\end_inset
+
+ и 
+\begin_inset Formula $P$
+\end_inset
+
+ — невырожденные матрицы, то существует матрица 
+\begin_inset Formula $N$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $MN=P$
+\end_inset
+
+ (задача 657)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $M$
+\end_inset
+
+ и 
+\begin_inset Formula $P$
+\end_inset
+
+ — невырожденные матрицы размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что существует матрица 
+\begin_inset Formula $N$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $MN=P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $M$
+\end_inset
+
+ — невырожденная матрица, то для любого вектора 
+\begin_inset Formula $b$
+\end_inset
+
+ существует решение уравения 
+\begin_inset Formula $Mx=b$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $P_{1},\dots,P_{n}$
+\end_inset
+
+ — векторы-столбцы матрицы 
+\begin_inset Formula $P$
+\end_inset
+
+, а 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ — это решение уравнения 
+\begin_inset Formula $Mx_{j}=P_{j}$
+\end_inset
+
+.
+ Составим из решений матрицу 
+\begin_inset Formula $N=\left[x_{1},\dots,x_{n}\right]$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+MN=M\left[x_{1},\dots,x_{n}\right]=\left[Mx_{1},\dots,Mx_{n}\right]=\left[P_{1},\dots,P_{n}\right]=P.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Решить, нужно ли оставить оба доказательства
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Более кратко это можно сформулировать следующим образом: так как 
+\begin_inset Formula $M$
+\end_inset
+
+ — невырожденная, то для неё сущестует обратная матрица, положим 
+\begin_inset Formula $N=M^{-1}P$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+MN=M\left(M^{-1}P\right)=\left(MM^{-1}\right)P=IP=P,
+\]
+
+\end_inset
+
+что и требуется.
+\end_layout
+
+\begin_layout Section
+Обратимая матрица, удовлетворяющая многочлену второй степени (задача 266)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, удовлетворяющая условию 
+\begin_inset Formula 
+\[
+A^{2}+c_{1}A+c_{0}I=O,
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $c_{0}$
+\end_inset
+
+ — скаляры, 
+\begin_inset Formula $I$
+\end_inset
+
+ — единичная матрица 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, а 
+\begin_inset Formula $O$
+\end_inset
+
+ — нулевая матрица 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что если 
+\begin_inset Formula $c_{0}\neq0$
+\end_inset
+
+, то матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ обратимая (невырожденная).
+ Справедливо ли обратное утверждение? А имеено: верно ли, что если 
+\begin_inset Formula $c_{0}=0$
+\end_inset
+
+, то 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $c_{0}\neq0$
+\end_inset
+
+, тогда равенство 
+\begin_inset Formula 
+\[
+A^{2}+c_{1}A+c_{0}I=O,
+\]
+
+\end_inset
+
+ можно переписать в виде 
+\begin_inset Formula 
+\[
+A\left(A+c_{1}I\right)=-c_{0}I.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Можно было бы сделать ещё один шаг и найти в явном виде обратную матрицу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Матрица 
+\begin_inset Formula $-c_{0}I$
+\end_inset
+
+ является невырожденной (обратная матрица для неё есть 
+\begin_inset Formula $-\frac{1}{c_{0}}I$
+\end_inset
+
+), поэтому.
+ как было доказано в задаче 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+нужна ссылка
+\end_layout
+
+\end_inset
+
+, матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ является невырожденной.
+\end_layout
+
+\begin_layout Solution
+Если же 
+\begin_inset Formula $c_{0}=0$
+\end_inset
+
+, то 
+\begin_inset Formula $A\left(A+c_{1}I\right)=O$
+\end_inset
+
+ и тогда 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырождена или 
+\begin_inset Formula $A+c_{1}I$
+\end_inset
+
+ вырождена.
+ Последнее возможно при 
+\begin_inset Formula $A=-c_{1}I$
+\end_inset
+
+, то есть когда 
+\begin_inset Formula $A$
+\end_inset
+
+ не вырождена.
+ Таким образом, обратное утверждение не верно.
 \end_layout
 
 \begin_layout Section
@@ -7753,6 +8106,215 @@ A=I_{n}.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Обратная матрица и невырожденная матрица, удовлетворяющая заданному соотношению
+ (задача 289)
+\end_layout
+
+\begin_layout Problem
+а) Найдите обратную матрицу к матрице 
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}1 & 0 & 1\\
+1 & 0 & 0\\
+2 & 1 & 1
+\end{pmatrix},
+\]
+
+\end_inset
+
+если она существует.
+ Если обратной матрицы не существует, укажите причину.
+\end_layout
+
+\begin_layout Problem
+б) Найдите невырожденную матрицу 
+\begin_inset Formula $A$
+\end_inset
+
+ размера 
+\begin_inset Formula $2\times2$
+\end_inset
+
+, удовлетворяющую равенству 
+\begin_inset Formula 
+\[
+A^{3}=A^{2}B-3A^{2},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula 
+\[
+B=\begin{pmatrix}4 & 1\\
+2 & 6
+\end{pmatrix}.
+\]
+
+\end_inset
+
+Проверьте, что найденная матрица действительно является невырожденной.
+\end_layout
+
+\begin_layout Solution
+Запишем матрицу 
+\begin_inset Formula $\left[A|I\right]$
+\end_inset
+
+ и приведём её к виду 
+\begin_inset Formula $\left[I|A^{\prime}\right]$
+\end_inset
+
+ с помощью элементарных преобразований строк, тоогда будет 
+\begin_inset Formula $A^{-1}=A^{\prime}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left[A|I\right]=\begin{pmatrix}\begin{array}{rrr|rrr}
+1 & 0 & 1 & 1 & 0 & 0\\
+1 & 0 & 0 & 0 & 1 & 0\\
+2 & 1 & 1 & 0 & 0 & 1
+\end{array}\end{pmatrix},
+\]
+
+\end_inset
+
+Поменяем местами строки (циклически сдвинем строки вверх): 
+\begin_inset Formula 
+\[
+\begin{pmatrix}\begin{array}{rrr|rrr}
+1 & 0 & 0 & 0 & 1 & 0\\
+2 & 1 & 1 & 0 & 0 & 1\\
+1 & 0 & 1 & 1 & 0 & 0
+\end{array}\end{pmatrix}.
+\]
+
+\end_inset
+
+ ко второй строке прибавим первую, умноженную на 
+\begin_inset Formula $-2$
+\end_inset
+
+, а к третьей — первую, умноженную на 
+\begin_inset Formula $-1$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\begin{pmatrix}\begin{array}{rrr|rrr}
+1 & 0 & 0 & 0 & 1 & 0\\
+0 & 1 & 1 & 0 & -2 & 1\\
+0 & 0 & 1 & 1 & -1 & 0
+\end{array}\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Наконец, вычтем из второй строки третью: 
+\begin_inset Formula 
+\[
+\begin{pmatrix}\begin{array}{rrr|rrr}
+1 & 0 & 0 & 0 & 1 & 0\\
+0 & 1 & 0 & -1 & -1 & 1\\
+0 & 0 & 1 & 1 & -1 & 0
+\end{array}\end{pmatrix}.
+\]
+
+\end_inset
+
+ Итак 
+\begin_inset Formula 
+\[
+A^{-1}=\begin{pmatrix}0 & 1 & 0\\
+-1 & -1 & 1\\
+1 & -1 & 0
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Так как матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ должна быть обратимой, то умножим данное в условиях задачи равенство на
+ 
+\begin_inset Formula $\left(A^{-1}\right)^{2}$
+\end_inset
+
+, мы получим 
+\begin_inset Formula 
+\[
+A=B-3I=\begin{pmatrix}4 & 1\\
+2 & 6
+\end{pmatrix}-3\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=\begin{pmatrix}1 & 1\\
+2 & 3
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Проверим, что 
+\begin_inset Formula $A$
+\end_inset
+
+ действительно является невырожденной.
+ Для этого приведём её к ступенчатому виду по строкам, а именно, умножим
+ первую строку на 
+\begin_inset Formula $-2$
+\end_inset
+
+ и прибавим полученный результат ко второй строке: 
+\begin_inset Formula 
+\[
+\begin{pmatrix}1 & 1\\
+2 & 3
+\end{pmatrix}\to\begin{pmatrix}1 & 1\\
+0 & 1
+\end{pmatrix},
+\]
+
+\end_inset
+
+ эта матрица треугольная, причём все её недиагольные элементы не равны нулю,
+ поэтому она невырожденная 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нужна ссылка
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Не сортированные
 \end_layout
 
 \begin_layout Section
