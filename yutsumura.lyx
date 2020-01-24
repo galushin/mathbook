@@ -10368,5 +10368,470 @@ aka^{-1}=a\left(k_{1}\cdot k_{2}\cdot\dots\cdot k_{m}\right)a^{-1}=\\
 .
 \end_layout
 
+\begin_layout Part
+Теория вероятностей
+\end_layout
+
+\begin_layout Chapter
+Случайные события
+\end_layout
+
+\begin_layout Subsection
+Нижняя и верхняя граница для вероятности пересечения двух событий (задача
+ 741)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — события с вероятностями 
+\begin_inset Formula $P\left(A\right)=\frac{2}{5}$
+\end_inset
+
+ и 
+\begin_inset Formula $P\left(B\right)=\frac{5}{6}$
+\end_inset
+
+ соответственно.
+ Найдите наилучшие нижнюю и верхнюю границу для вероятности 
+\begin_inset Formula $P\left(A\cap B\right)$
+\end_inset
+
+ пересечения 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+.
+ То есть найдите вещественные числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ такие, что 
+\begin_inset Formula 
+\[
+a\le P\left(A\cap B\right)\le b
+\]
+
+\end_inset
+
+ и вероятность 
+\begin_inset Formula $P\left(A\cap B\right)$
+\end_inset
+
+ может принимать любые значения между 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По принципу включения-исключения: 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+P\left(A\cup B\right)=P\left(A\right)+P\left(B\right)-P\left(A\cap B\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(A\cap B\right)=P\left(A\right)+P\left(B\right)-P\left(A\cup B\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как вероятности 
+\begin_inset Formula $P\left(A\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $P\left(B\right)$
+\end_inset
+
+ фиксированы, то величина 
+\begin_inset Formula $P\left(A\cap B\right)$
+\end_inset
+
+ зависит только от 
+\begin_inset Formula $P\left(A\cup B\right)$
+\end_inset
+
+.
+ Для того, чтобы сделать 
+\begin_inset Formula $P\left(A\cap B\right)$
+\end_inset
+
+ как можно меньше, нужно сделать 
+\begin_inset Formula $P\left(A\cup B\right)$
+\end_inset
+
+ как можно больше (оно входит в правую часть со знаком минус), но объедение
+ двух множеств включает каждое из них целиком, поэтому, в силу аддитивности
+ вероятности: 
+\begin_inset Formula $P\left(A\cup B\right)\ge P\left(A\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $P\left(A\cup B\right)\ge P\left(B\right)$
+\end_inset
+
+.
+ Два этих равенства можно переписать в виде одного: 
+\begin_inset Formula 
+\[
+P\left(A\cup B\right)\ge\max\left\{ P\left(A\right),P\left(B\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+P\left(A\cap B\right)\le P\left(A\right)+P\left(B\right)-\max\left\{ P\left(A\right),P\left(B\right)\right\} ,
+\]
+
+\end_inset
+
+так как мы вычитаем из суммы двух величин наибольшую из них, то получим
+ наименьшую: 
+\begin_inset Formula 
+\[
+P\left(A\cap B\right)\le\min\left\{ P\left(A\right),P\left(B\right)\right\} =b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+b=\min\left\{ \frac{2}{5},\frac{5}{6}\right\} =\frac{2}{5}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Аналогично, чтобы сделать 
+\begin_inset Formula $P\left(A\cap B\right)$
+\end_inset
+
+ как можно больше, нужно сделать 
+\begin_inset Formula $P\left(A\cup B\right)$
+\end_inset
+
+ как можно меньше.
+ Но верхняя граница для 
+\begin_inset Formula $P\left(A\cup B\right)$
+\end_inset
+
+ равна единице 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не додумался до этого момента сам, хотя был близок
+\end_layout
+
+\end_inset
+
+, так как 
+\begin_inset Formula $P\left(A\right)+P\left(B\right)\ge1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+a=P\left(A\right)+P\left(B\right)-1=\\
+=\frac{2}{5}+\frac{5}{6}-1=\frac{12+25-30}{30}=\frac{7}{30}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Дискретные случайные величины
+\end_layout
+
+\begin_layout Subsection
+Линейность математического ожидания (задача 743)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $X$
+\end_inset
+
+ и 
+\begin_inset Formula $Y$
+\end_inset
+
+ — дискретные случайные величины.
+ Докажите, что математическое ожидание является линейным: 
+\begin_inset Formula 
+\[
+E\left[X+Y\right]=E\left[X\right]+E\left[Y\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $X$
+\end_inset
+
+ принимает значения 
+\begin_inset Formula $x_{1},\dots,x_{m}$
+\end_inset
+
+, а 
+\begin_inset Formula $Y$
+\end_inset
+
+ — значения 
+\begin_inset Formula $y_{1},\dots,y_{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+E\left[X\right]=\sum_{i=1}^{m}x_{i}P\left(X=x_{i}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left[Y\right]=\sum_{j=1}^{n}y_{j}P\left(X=y_{j}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+E\left[X+Y\right]=\sum_{i=1}^{m}\sum_{j=1}^{n}\left(x_{i}+y_{j}\right)P\left(X=x_{i}\wedge Y=y_{j}\right)=\\
+=\sum_{i=1}^{m}\sum_{j=1}^{n}x_{i}P\left(X=x_{i}\wedge Y=y_{j}\right)+\sum_{i=1}^{m}\sum_{j=1}^{n}y_{j}P\left(X=x_{i}\wedge Y=y_{j}\right)=\\
+=\sum_{i=1}^{m}x_{i}\sum_{j=1}^{n}P\left(X=x_{i}\wedge Y=y_{j}\right)+\sum_{j=1}^{n}y_{j}\sum_{i=1}^{m}P\left(X=x_{i}\wedge Y=y_{j}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $x_{1},\dots,x_{m}$
+\end_inset
+
+ — все возможные значения 
+\begin_inset Formula $X$
+\end_inset
+
+, а 
+\begin_inset Formula $Y$
+\end_inset
+
+ — все возможные значения 
+\begin_inset Formula $y_{1},\dots,y_{n}$
+\end_inset
+
+, то
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\sum_{j=1}^{n}P\left(X=x_{i}\wedge Y=y_{j}\right)=P\left(X=x_{i}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{i=1}^{m}P\left(X=x_{i}\wedge Y=y_{j}\right)=P\left(Y=y_{j}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С учётом этих равенств получаем 
+\begin_inset Formula 
+\begin{multline*}
+E\left[X+Y\right]=\\
+=\sum_{i=1}^{m}x_{i}P\left(X=x_{i}\right)+\sum_{j=1}^{n}y_{j}P\left(Y=y_{j}\right)=\\
+=E\left[X\right]+E\left[Y\right].
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Если множество значений счётное, то требуются более аккуратные вычисления,
+ связанные со сходимостью рядов
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Математическое ожидание, дисперсия и среднеквадратическое отклонение случайной
+ величины с распределением Бернулли (задача 747)
+\end_layout
+
+\begin_layout Definition
+Говорят, что случайная величина 
+\begin_inset Formula $X$
+\end_inset
+
+ имеет распределение Бернулли, если её функция распределения вероятностей
+ определяется следующим образом: 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+P\left(X=0\right)=1-p\\
+P\left(X=1\right)=p
+\end{array},
+\]
+
+\end_inset
+
+ для некоторого вещественного числа 
+\begin_inset Formula $0\le p\le1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $X$
+\end_inset
+
+ — случайная величина с распределением Бернулли.
+ Найдите её математическое ожидание, дисперсию и среднеквадратическое отклонение.
+\end_layout
+
+\begin_layout Solution
+По определению математического ожидания:
+\begin_inset Formula 
+\[
+E\left[X\right]=0\cdot P\left(X=0\right)+1\cdot P\left(X=1\right)=P\left(X=1\right)=p.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Дисперсия может быть вычислена по определению: 
+\begin_inset Formula 
+\begin{multline*}
+D\left[X\right]=\sum_{k=0}^{1}\left(k-p\right)^{2}\cdot P\left(X=k\right)=\\
+=\left(0-p\right)^{2}P\left(X=0\right)+\left(1-p\right)^{2}\cdot P\left(X=1\right)=\\
+=p^{2}\left(1-p\right)+\left(1-p\right)^{2}p=\\
+=p\left(1-p\right)\left(p+1-p\right)=p\left(1-p\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Используя другое выражение для дисперсии 
+\begin_inset Formula $D\left[X\right]=E\left[X^{2}\right]-\left(E\left[X\right]\right)^{2}$
+\end_inset
+
+ позволяет упростить вычисления, если заметить, что 
+\begin_inset Formula $0^{2}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $1^{2}=1$
+\end_inset
+
+, то есть для случайной величины с распределением Бернулли имеет место равенств
+ 
+\begin_inset Formula $X^{2}=X$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+D\left[X\right]=E\left[X\right]-\left(E\left[X\right]\right)^{2}=p-p^{2}=p\left(1-p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Наконец, по определению среднеквадратического отклонения:
+\begin_inset Formula 
+\[
+\sigma\left[X\right]=\sqrt{D\left[X\right]}=\sqrt{p\left(1-p\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
