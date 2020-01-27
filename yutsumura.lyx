@@ -11016,6 +11016,235 @@ P\left(A|B\right)=\frac{\frac{1}{3}}{\frac{1}{2}}=\frac{2}{3}.
 \end_layout
 
 \begin_layout Subsection
+Выберите два шара из ящика, какова вероятность того, что они оба красные
+ (задача 729)
+\end_layout
+
+\begin_layout Problem
+В ящике лежат три синих шара и два красных шара.
+ Если мы берём из ящика два шара без замены, какова вероятность того, что
+ оба шара будут красными?
+\end_layout
+
+\begin_layout Solution
+Вероятность того, что оба шара будут красными, по определению вероятности
+ совмещения двух событий 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, равна вероятности того, что первый шар будет красным, умноженной на вероятност
+ь того, что второй шар будет красным при условии, что красным был первый
+ шар.
+ Первая названная вероятность равна, по классическому определению вероятностей,
+ 
+\begin_inset Formula $\frac{2}{2+3}=\frac{2}{5}$
+\end_inset
+
+.
+ Вторая вероятность равна 
+\begin_inset Formula $\frac{1}{1+3}=\frac{1}{4}$
+\end_inset
+
+.
+ Таким образом, вероятность, которую нужно найти в задаче, равна 
+\begin_inset Formula 
+\[
+\frac{2}{5}\cdot\frac{1}{4}=\frac{1}{10}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Какова вероятность того, что при броске четырёх монет выпадут все решки,
+ если...
+ (задача 730)
+\end_layout
+
+\begin_layout Problem
+Пусть подбрасывается четыре сбалансированные монеты.
+ 
+\end_layout
+
+\begin_layout Problem
+1) Какова вероятность того, что на всех монетах выпадет решка.
+\end_layout
+
+\begin_layout Problem
+2) Какова вероятность того, что на всех монетах выпадет решка, если на первой
+ монете выпала решка?
+\end_layout
+
+\begin_layout Problem
+3) Какова вероятность того, что на всех монетах выпадет решка, если выпала
+ по меньшей мере одна решка?
+\end_layout
+
+\begin_layout Solution
+Вероятность выпадения решки на одной монете равна 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+.
+ Обозначим событие 
+\begin_inset Quotes rld
+\end_inset
+
+все четыре монеты упали решкой вверх
+\begin_inset Quotes rrd
+\end_inset
+
+ как 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+1) Так как броски можно считать независимыми, то вероятность выпадения всех
+ монет решкой равна произведению вероятностей выпадения решки на каждой
+ монете, то есть 
+\begin_inset Formula 
+\[
+P\left(A\right)=\frac{1}{2^{4}}=\frac{1}{16}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+2) Обозначим событие 
+\begin_inset Quotes rld
+\end_inset
+
+на первой монете выпала решка
+\begin_inset Quotes rrd
+\end_inset
+
+ как 
+\begin_inset Formula $B$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+P\left(A|B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Очевидно, что 
+\begin_inset Formula $P\left(B\right)=\frac{1}{2}$
+\end_inset
+
+, а 
+\begin_inset Formula $A\cap B=A$
+\end_inset
+
+, так как 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\[
+P\left(A|B\right)=\frac{\frac{1}{16}}{\frac{1}{2}}=\frac{1}{8}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+3) Обозначим событие 
+\begin_inset Quotes rld
+\end_inset
+
+по крайней мере на одной монете выпала решка
+\begin_inset Quotes rrd
+\end_inset
+
+ как 
+\begin_inset Formula $C$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+P\left(A|C\right)=\frac{P\left(A\cap C\right)}{P\left(C\right)}.
+\]
+
+\end_inset
+
+ Здесь снова 
+\begin_inset Formula $A\subset C$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $P\left(A\cap C\right)=P\left(A\right)$
+\end_inset
+
+.
+ Событие 
+\begin_inset Formula $C$
+\end_inset
+
+ является противоположным событием для события 
+\begin_inset Quotes rld
+\end_inset
+
+не выпало ни одной решки
+\begin_inset Quotes rrd
+\end_inset
+
+, вероятность которого равна 
+\begin_inset Formula 
+\[
+\left(\frac{1}{2}\right)^{4}=\frac{1}{16},
+\]
+
+\end_inset
+
+ поэтому 
+\begin_inset Formula 
+\[
+P\left(C\right)=1-\frac{1}{16}=\frac{15}{16}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом 
+\begin_inset Formula 
+\[
+P\left(A|C\right)=\frac{\frac{1}{16}}{\frac{15}{16}}=\frac{1}{15}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Нижняя и верхняя граница для вероятности пересечения двух событий (задача
  741)
 \end_layout
@@ -11620,6 +11849,228 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Можно ли сдать зачёт, отвечая на вопросы теста случайно (задача 749)
+\end_layout
+
+\begin_layout Problem
+Тест на зачёте по курсу 
+\begin_inset Quotes rld
+\end_inset
+
+Начала теории вероятностей
+\begin_inset Quotes rrd
+\end_inset
+
+ состоит из 10 вопросов с несколькими вариантами ответов.
+ У каждого вопроса четыре варианта ответов и только один из них правильный.
+ Чтобы получить зачёт, необходимо правильно ответить на 8 или более вопросов.
+ Предположим, что студент не вообще учил теорию вероятностей и не представляет,
+ как отвечать на эти вопросы.
+ Поэтому этот студент решает отвечать на все вопросы случайным образом.
+ Таким образом, для каждого из 10 вопросов студент случайным образом выбирает
+ один из четырёх вариантов ответов, причём каждый выбор независим от остальных.
+\end_layout
+
+\begin_layout Problem
+1) Какова вероятность того, что студент правильно ответит только на один
+ вопрос из 10?
+\end_layout
+
+\begin_layout Problem
+2) Определите вероятность того, что студент получит зачёт.
+\end_layout
+
+\begin_layout Problem
+3) Чему равно математическое ожидание количества вопросов, на которые студент
+ ответит правильно.
+\end_layout
+
+\begin_layout Problem
+4) Найдите дисперсию и среднеквадратическое отклонение количества правильных
+ ответов.
+\end_layout
+
+\begin_layout Solution
+Вероятность ответить правильно на каждый из вопросов равна, в силу случайности
+ выбора, 
+\begin_inset Formula $p=\frac{1}{4}$
+\end_inset
+
+.
+ Обозначим общее число вопросов как 
+\begin_inset Formula $n=10$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+1) Если студент ответил правильно на один вопрос из 10, то на 9 он ответил
+ неправильно.
+ Правильным может быть каждый из 10 ответов, поэтому вероятность данного
+ события равна 
+\begin_inset Formula 
+\begin{multline*}
+P_{1}=n\cdot p\cdot\left(1-p\right)^{n-1}=10\cdot\frac{1}{4}\cdot\left(\frac{3}{4}\right)^{9}=.\\
+=\frac{10\cdot3^{9}}{4^{10}}=\frac{196830}{4^{10}}\approx0,1877.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+2) Вероятность получить зачёт равна вероятности правильно ответить на 8,
+ 9 или 10 вопросов.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+P_{2}=\binom{10}{8}\frac{1^{8}\cdot3^{2}}{4^{10}}+\binom{10}{9}\frac{1^{9}3^{1}}{4^{10}}+\binom{10}{10}\frac{1^{10}3^{0}}{4^{10}}=\\
+=\frac{10\cdot9}{2}\cdot\frac{3^{2}}{4^{10}}+10\cdot\frac{3}{10^{4}}+\frac{1}{4^{10}}=\\
+=\frac{405+30+1}{4^{10}}=\frac{436}{4^{10}}\approx0,0004158.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+3) Случайную величину 
+\begin_inset Quotes rld
+\end_inset
+
+количество правильных ответов
+\begin_inset Quotes rrd
+\end_inset
+
+ можно представить в виде суммы 
+\begin_inset Formula 
+\[
+Y=\sum_{k=1}^{10}X_{k},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $X_{k}$
+\end_inset
+
+ — индикатор 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ того, что студент правильно ответил на 
+\begin_inset Formula $k$
+\end_inset
+
+-й вопрос.
+ Математическое ожидание 
+\begin_inset Formula $X_{k}$
+\end_inset
+
+ равно 
+\begin_inset Formula $p=\frac{1}{4}$
+\end_inset
+
+, так как это случайная величина с распределением Бернулли 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+ Математическое ожидание суммы равно сумме математических ожиданий 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, поэтому математическое ожидание количества правильных ответов равно 
+\begin_inset Formula 
+\[
+E\left[Y\right]=10\cdot\frac{1}{4}=\frac{5}{2}=2,5.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+4) Дисперсия суммы независимых случайных величин равна сумме дисперсий 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+D\left[Y\right]=\sum_{k=1}^{10}D\left[X_{k}\right].
+\]
+
+\end_inset
+
+ Дисперсия случайно величины с распределением Бернулли равна 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+D\left[X_{k}\right]=p\left(1-p\right),
+\]
+
+\end_inset
+
+ поэтому 
+\begin_inset Formula 
+\[
+D\left[Y\right]=10\cdot\frac{1}{4}\cdot\frac{3}{4}=\frac{15}{8}=1,875,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma\left(X\right)=\sqrt{\frac{15}{8}}\approx1.3693.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
