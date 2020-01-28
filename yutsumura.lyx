@@ -6432,7 +6432,7 @@ status open
 \begin_inset Formula $C$
 \end_inset
 
- результат пунтка а).
+ результат пункта а).
  Сумма недиагональных элементов любой строки есть 
 \begin_inset Formula $e+\frac{e^{2}}{2\pi^{2}}<\pi$
 \end_inset
@@ -6447,7 +6447,7 @@ status open
 
 \end_inset
 
-, поэтму 
+, поэтому 
 \begin_inset Formula $C$
 \end_inset
 
@@ -11242,6 +11242,489 @@ P\left(A|C\right)=\frac{\frac{1}{16}}{\frac{15}{16}}=\frac{1}{15}.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Вероятность провала теста качества ювелирной компании (Задача 731)
+\end_layout
+
+\begin_layout Problem
+Ювелирная компания требует, чтобы их изделия проходили три теста перед продажей
+ в магазинах.
+ 90% золотых колец проходят первый тест, 85% — проходят второй тест, 80%
+ — проходят третий тест.
+ Если изделие не прошло любой из тестов, то это изделие выбрасывают и не
+ подвергают последующим тестам.
+ Если золотое кольцо не прошло один из тестов, то какова вероятность того,
+ что оно не прошло второй тест?
+\end_layout
+
+\begin_layout Solution
+Обозначим событие 
+\begin_inset Quotes rld
+\end_inset
+
+Золотое кольцо не прошло 
+\begin_inset Formula $k$
+\end_inset
+
+-й тест
+\begin_inset Quotes rrd
+\end_inset
+
+ как 
+\begin_inset Formula $A_{k}$
+\end_inset
+
+, а событие 
+\begin_inset Quotes rld
+\end_inset
+
+Золотое кольцо не прошло один из тестов
+\begin_inset Quotes rrd
+\end_inset
+
+ как 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Тогда нам нужно найти вероятность 
+\begin_inset Formula $P\left(A_{2}|B\right)$
+\end_inset
+
+.
+ По формуле условной вероятности 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+P\left(A_{2}|B\right)=\frac{P\left(A_{2}\cap B\right)}{P\left(B\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $A_{2}\subset B$
+\end_inset
+
+, то 
+\begin_inset Formula $A_{2}\cap B=A_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $P\left(A_{2}\cap B\right)=P\left(A_{2}\right)=0.9\cdot0.15$
+\end_inset
+
+ (если кольцо не прошло второй тест, то оно должно было пройти первый, чтобы
+ вообще попасть на второй).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $B$
+\end_inset
+
+ может реализоваться в следующих случаях, если кольцо не прошло первый тест
+ или прошло первый тест, но не прошло второй или прошло первый и второй
+ тесты, но не прошло третий, поэтому
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+P\left(B\right)=0.1+0.9\cdot\left(0.15+0.85\cdot0.2\right)=0.388.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Другой способ расчёта: 
+\begin_inset Formula $B$
+\end_inset
+
+ — это дополнение события 
+\begin_inset Quotes rld
+\end_inset
+
+кольцо успешно прошло все тесты
+\begin_inset Quotes rrd
+\end_inset
+
+, вероятность которого равна 
+\begin_inset Formula 
+\[
+P\left(\bar{B}\right)=0.9\cdot0.85\cdot0.8=0.612
+\]
+
+\end_inset
+
+ и 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(B\right)=1-P\left(\bar{B}\right)=1-0.612=0.388.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Независимые события для колоды карт (задача 732)
+\end_layout
+
+\begin_layout Problem
+Пусть из стандартной колоды (52 карты) случайно выбирается одна карта.
+ Пусть 
+\begin_inset Formula $E$
+\end_inset
+
+ — это событие 
+\begin_inset Quotes rld
+\end_inset
+
+выбранная карта оказалась королём
+\begin_inset Quotes rrd
+\end_inset
+
+, а 
+\begin_inset Formula $F$
+\end_inset
+
+ — событие 
+\begin_inset Quotes rld
+\end_inset
+
+масть выбранной карты — черви
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Докажите или опровергните, что события 
+\begin_inset Formula $E$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ независимы.
+\end_layout
+
+\begin_layout Solution
+События 
+\begin_inset Formula $E$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ независимы, тогда и только тогда, когда 
+\begin_inset Formula $P\left(E\cap F\right)=P\left(E\right)P\left(F\right)$
+\end_inset
+
+.
+ Вычислим эти три вероятности по классическому определению вероятностей.
+ Так как в колоде 4 короля и 13 карт масти 
+\begin_inset Quotes rld
+\end_inset
+
+червы
+\begin_inset Quotes rrd
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+P\left(E\right)=\frac{4}{52}=\frac{1}{13},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(F\right)=\frac{13}{52}=\frac{1}{4},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(E\right)P\left(F\right)=\frac{1}{13}\cdot\frac{1}{4}=\frac{1}{52}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны, 
+\begin_inset Formula $E\cap F$
+\end_inset
+
+ — это событие 
+\begin_inset Quotes rld
+\end_inset
+
+выбранная карта оказалась король масти черви
+\begin_inset Quotes rrd
+\end_inset
+
+, а король масти черви в колоде только один, то 
+\begin_inset Formula 
+\[
+P\left(E\cap F\right)=\frac{1}{52}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, мы видим, что 
+\begin_inset Formula $P\left(E\cap F\right)=P\left(E\right)P\left(F\right)$
+\end_inset
+
+, а значит события 
+\begin_inset Formula $E$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ независимы.
+\end_layout
+
+\begin_layout Subsection
+Независимые и зависимые события при бросании трёх монет (задача 733)
+\end_layout
+
+\begin_layout Problem
+Предположим, что бросаются три сбалансированные монеты.
+ Пусть 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ — это событие 
+\begin_inset Quotes rld
+\end_inset
+
+на первой монете выпала решка
+\begin_inset Quotes rrd
+\end_inset
+
+, а 
+\begin_inset Formula $H_{2}$
+\end_inset
+
+ — 
+\begin_inset Quotes rld
+\end_inset
+
+на второй монете выпала решка
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula $E$
+\end_inset
+
+ — это событие 
+\begin_inset Quotes rld
+\end_inset
+
+ровно на двух монетах подряд выпала решка
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Для каждой из возможных пар этих событий определите, независимы они или
+ нет.
+\end_layout
+
+\begin_layout Solution
+Напомним, что события 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ называются независимыми, если 
+\begin_inset Formula $P\left(A\cap B\right)=P\left(A\right)P\left(B\right)$
+\end_inset
+
+.
+ Таким образом, для проверки независимости событий, перечисленных в задаче,
+ нам нужно найти вероятности каждого из этих событий и вероятности их попарных
+ пересечений.
+\end_layout
+
+\begin_layout Solution
+Так как монеты сбалансированны, то 
+\begin_inset Formula $P\left(H_{1}\right)=P\left(H_{2}\right)=\frac{1}{2}$
+\end_inset
+
+.
+ Событие 
+\begin_inset Formula $E$
+\end_inset
+
+ может реализоваться двумя способами: 1) решка выпала на первой и второй
+ монетах, а на третьей — орёл; или 2) решка выпала на второй и третьей монетах,
+ а на первой — орёл.
+ При броске двух монет имеется восемь возможных исходов, поэтому 
+\begin_inset Formula 
+\[
+P\left(E\right)=\frac{2}{8}=\frac{1}{4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь попарные пересечения интересующих нас событий.
+ Событие 
+\begin_inset Formula $H_{1}\cap H_{2}$
+\end_inset
+
+ — это два из восьми возможных исходов (третья монета может выпасть орлом
+ или решкой), поэтому 
+\begin_inset Formula 
+\[
+P\left(H_{1}\cap H_{2}\right)=\frac{2}{8}=\frac{1}{4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Заметим, что 
+\begin_inset Formula $P\left(H_{1}\cap H_{2}\right)=P\left(H_{1}\right)P\left(H_{2}\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $H_{2}$
+\end_inset
+
+ независимы.
+\end_layout
+
+\begin_layout Solution
+Для вычисления 
+\begin_inset Formula $P\left(E\cap H_{1}\right)$
+\end_inset
+
+ заметим, что из двух способов реализации 
+\begin_inset Formula $E$
+\end_inset
+
+ только первый совместим с 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+P\left(E\cap H_{1}\right)=\frac{1}{8}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Заметим, что 
+\begin_inset Formula $P\left(E\right)\cdot P\left(H_{1}\right)=\frac{1}{4}\cdot\frac{1}{2}=\frac{1}{8}=P\left(E\cap H_{1}\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $E$
+\end_inset
+
+ и 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ независимы.
+\end_layout
+
+\begin_layout Solution
+Наконец 
+\begin_inset Formula $E\subset H_{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+P\left(E\cap H_{2}\right)=P\left(E\right)=\frac{1}{4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Заметим, что 
+\begin_inset Formula 
+\[
+P\left(E\right)\cdot P\left(H_{2}\right)=\frac{1}{4}\cdot\frac{1}{2}=\frac{1}{8}\neq P\left(E\cap H_{2}\right),
+\]
+
+\end_inset
+
+ поэтому события 
+\begin_inset Formula $E$
+\end_inset
+
+ и 
+\begin_inset Formula $H_{2}$
+\end_inset
+
+ зависимы.
 \end_layout
 
 \begin_layout Subsection
