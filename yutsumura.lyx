@@ -84,6 +84,20 @@ theorems-ams-bytype
 Решение задач сайта Problems in Mathematics (yutsumura.com)
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Десятичную точку нужно бы заменить на запятую, так как это принято в русском
+ языке
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Линейная алгебра
 \end_layout
@@ -12039,6 +12053,319 @@ P\left(C|S\right)=\frac{P\left(S|C\right)P\left(C\right)}{P\left(S\right)}.
 \begin_inset Formula 
 \[
 P\left(C|S\right)=\frac{0.7\cdot0.1}{0.2}=\frac{0.7}{2}=0.35.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Если по меньшей мере одна монета из двух выпала решкой, то какова условная
+ вероятность того, что первая монета выпала решкой? (задача 737)
+\end_layout
+
+\begin_layout Problem
+Пусть подброшены две сбалансированные монеты.
+ Какова условная вероятность того, что первая монета выпала решкой при условии,
+ что по меньшей мере одна из них выпала решкой?
+\end_layout
+
+\begin_layout Solution
+Введём обозначения для интересующих нас событий: 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ — первая монета выпала решкой, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ — вторая монета выпала решкой, 
+\begin_inset Formula $B$
+\end_inset
+
+ — по меньшей мере одна монета выпала решкой.
+ Тогда нам нужно найти вероятность 
+\begin_inset Formula $P\left(A_{1}|B\right)$
+\end_inset
+
+.
+ Сразу можно заметить, что так как монеты сбалансированы, то 
+\begin_inset Formula 
+\[
+P\left(A_{1}\right)=P\left(A_{2}\right)=\frac{1}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользуемся связью между условной вероятностью и вероятностью совмещения
+ событий: 
+\begin_inset Formula 
+\[
+P\left(A_{1}|B\right)=\frac{P\left(A_{1}\cap B\right)}{P\left(B\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Для определения вероятности 
+\begin_inset Formula $P\left(B\right)$
+\end_inset
+
+ найдём сначала вероятность противоположного события, то есть события 
+\begin_inset Quotes rld
+\end_inset
+
+ни одна монета не выпала решкой
+\begin_inset Quotes rrd
+\end_inset
+
+, которое можно записать как совмещение двух независимых событий 
+\begin_inset Formula $\bar{B}=\bar{A}_{1}\cap\bar{A}_{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+P\left(B\right)=1-P\left(\bar{B}\right)=1-P\left(\bar{A}_{1}\cap\bar{A}_{2}\right)=\\
+=1-P\left(\bar{A}_{1}\right)P\left(\bar{A}_{2}\right)=\\
+=1-\left(1-P\left(A_{1}\right)\right)\left(1-P\left(A_{2}\right)\right)=\\
+=1-\frac{1}{2}\cdot\frac{1}{2}=\frac{3}{4}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В свою очередь, 
+\begin_inset Formula $A_{1}\subset B$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $P\left(A_{1}\cap B\right)=P\left(A_{1}\right)=\frac{1}{2}$
+\end_inset
+
+.
+ Окончательно получаем 
+\begin_inset Formula 
+\[
+P\left(A_{1}|B\right)=\frac{P\left(A_{1}\cap B\right)}{P\left(B\right)}=\frac{\frac{1}{2}}{\frac{3}{4}}=\frac{2}{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Если смартфон бракованный, то на каком заводе он был изготовлен? (задача
+ 738)
+\end_layout
+
+\begin_layout Problem
+Некоторая модель смартфона производится на трёх заводах 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Эти заводы производят соответственно 60%, 25% и 15% общего числа смартфонов.
+ Предположим, что доля брака на этих заводах равна 5%, 2% и 7%, соответственно.
+ Если смартфон данной модели оказался бракованным, то какова вероятность
+ того, что смартфон был произведён на заводе 
+\begin_inset Formula $C$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+Обозначим событие, заключающееся в том, что смартфон произведён на определённом
+ заводе, той же буковой, что и сам завод.
+ Пусть 
+\begin_inset Formula $D$
+\end_inset
+
+ — событие 
+\begin_inset Quotes rld
+\end_inset
+
+данный смартфон бракованный
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Нам нужно определить вероятность 
+\begin_inset Formula $P\left(C|D\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся теоремой Байеса: 
+\begin_inset Formula 
+\[
+P\left(C|D\right)=\frac{P\left(D|C\right)P\left(C\right)}{P\left(D\right)}.
+\]
+
+\end_inset
+
+ Вероятность 
+\begin_inset Formula $P\left(D\right)$
+\end_inset
+
+ была вычислена ранее 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на задачу 735
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula $P\left(D\right)=0.0455$
+\end_inset
+
+.
+ По условиям задачи 
+\begin_inset Formula $P\left(C\right)=0.15$
+\end_inset
+
+ и 
+\begin_inset Formula $P\left(D|C\right)=0.07$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+P\left(C|D\right)=\frac{0.07\cdot0.15}{0.0455}\approx0.2308.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Какова вероятность того, что была выбрана монета с двумя решками? (задача
+ 739)
+\end_layout
+
+\begin_layout Problem
+В ящике лежат три монеты.
+ Первая их них — с двумя решками.
+ Вторая — сбалансированная.
+ Третья — несбалансированная, причём на ней решка выпадает в 
+\begin_inset Formula $75\%$
+\end_inset
+
+ случаев.
+ Одна из этих монет выбрана случайным образом и подброшена, причём выпала
+ решка.
+ Какова вероятность того, что была выбрана монета с двумя решками?
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $A_{k}$
+\end_inset
+
+ — это событие, заключающееся в том, что была выбрана 
+\begin_inset Formula $k$
+\end_inset
+
+-я монета, а 
+\begin_inset Formula $B$
+\end_inset
+
+ — выпадение решки.
+ Нам нужно найти вероятность 
+\begin_inset Formula $P\left(A_{1}|B\right)$
+\end_inset
+
+.
+ По теореме Байеса: 
+\begin_inset Formula 
+\[
+P\left(A_{1}|B\right)=\frac{P\left(B|A_{1}\right)P\left(A_{1}\right)}{P\left(B\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По условиям задачи 
+\begin_inset Formula $P\left(B|A_{1}\right)=1$
+\end_inset
+
+ (у первой монеты обе стороны — решки), а 
+\begin_inset Formula $P\left(A_{1}\right)=\frac{1}{3}$
+\end_inset
+
+, так как монеты выбираются случайным образом.
+ Для определения вероятности 
+\begin_inset Formula $P\left(B\right)$
+\end_inset
+
+ заметим, что события 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $A_{3}$
+\end_inset
+
+ образуют полную группу событий, поэтому 
+\begin_inset Formula 
+\[
+P\left(B\right)=\sum_{k=1}^{3}P\left(B|A_{k}\right)P\left(A_{k}\right),
+\]
+
+\end_inset
+
+в этой формуле все вероятности в правой части известны из условий задачи:
+ 
+\begin_inset Formula 
+\begin{multline*}
+P\left(B\right)=1\cdot\frac{1}{3}+\frac{1}{2}\cdot\frac{1}{3}+\frac{3}{4}\cdot\frac{1}{3}=\\
+=\frac{1}{3}+\frac{1}{6}+\frac{1}{4}=\frac{4+2+3}{12}=\frac{9}{12}=\frac{3}{4}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Окончательно получаем 
+\begin_inset Formula 
+\[
+P\left(A_{1}|B\right)=\frac{1\cdot\frac{1}{3}}{\frac{3}{4}}=\frac{4}{9}.
 \]
 
 \end_inset
