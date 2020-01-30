@@ -12374,6 +12374,158 @@ P\left(A_{1}|B\right)=\frac{1\cdot\frac{1}{3}}{\frac{3}{4}}=\frac{4}{9}.
 \end_layout
 
 \begin_layout Subsection
+Найдите условную вероятность, связанную с экспериментом на экзамене по математик
+е (задача 740)
+\end_layout
+
+\begin_layout Problem
+Исследователь провёл следующий эксперимент.
+ Студенты были разделены на две группы.
+ Студенты первой группы спали более 6 часов и сдавали экзамен по математике.
+ Студенты второй группы спали менее 6 часов и сдавали тот же самый экзамен.
+\end_layout
+
+\begin_layout Problem
+Доля успешно прошедших экзамен в первой группе была вдвое выше, чем во второй
+ группе.
+ Предположим, что в первую группу входило 60% всех студентов.
+ Какова вероятность того, что случайно выбранный студент принадлежит первой
+ группе, если известно, что он сдал экзамен успешно.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ — событие 
+\begin_inset Quotes rld
+\end_inset
+
+студент принадлежит первой группе
+\begin_inset Quotes rrd
+\end_inset
+
+, а 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ — событие 
+\begin_inset Quotes rld
+\end_inset
+
+студент принадлежит второй группе
+\begin_inset Quotes rrd
+\end_inset
+
+, а 
+\begin_inset Formula $E$
+\end_inset
+
+ — студент успешно сдал экзамен.
+ Тогда нам нужно найти вероятность 
+\begin_inset Formula $P\left(G_{1}|E\right)$
+\end_inset
+
+.
+ По формуле 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+P\left(G_{1}|E\right)=\frac{P\left(G_{1}\cap E\right)}{P\left(E\right)}=\frac{P\left(E|G_{1}\right)P\left(G_{1}\right)}{P\left(E\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Величина 
+\begin_inset Formula $P\left(G_{1}\right)$
+\end_inset
+
+ известна из условий задачи: 
+\begin_inset Formula $P\left(G_{1}\right)=0.6$
+\end_inset
+
+.
+ Определим остальные вероятности.
+ По формуле полной вероятности 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+P\left(E\right)=P\left(E|G_{1}\right)P\left(G_{1}\right)+P\left(E|G_{2}\right)P\left(G_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Из условий задачи известно, что 
+\begin_inset Formula $P\left(E|G_{1}\right)=2P\left(E|G_{2}\right)$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $P\left(E|G_{2}\right)$
+\end_inset
+
+ как 
+\begin_inset Formula $x$
+\end_inset
+
+ и заметим, что 
+\begin_inset Formula $P\left(G_{2}\right)=1-P\left(G_{1}\right)=0.4$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+P\left(E\right)=0.6\cdot2x+0.4x=1.6x
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+P\left(G_{1}|E\right)=\frac{2x\cdot0.6}{1.6x}=\frac{1.2}{1.6}=\frac{3}{4}.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Problem
+The pass rate of the first group was twice as big as the second group.
+ Suppose that 60% of the students were in the first group.
+ What is the probability that a randomly selected student belongs to the
+ first group if the student passed the exam?
+\end_layout
+
+\begin_layout Subsection
 Нижняя и верхняя граница для вероятности пересечения двух событий (задача
  741)
 \end_layout
@@ -12572,6 +12724,531 @@ status open
 a=P\left(A\right)+P\left(B\right)-1=\\
 =\frac{2}{5}+\frac{5}{6}-1=\frac{12+25-30}{30}=\frac{7}{30}.
 \end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Возможность изменения порядка взятия предела и вычисления вероятности для
+ возрастающей или убывающей последовательности событий (задача 744)
+\end_layout
+
+\begin_layout Problem
+Последовательность событий 
+\begin_inset Formula $\left\{ E_{n}\right\} _{n\ge1}$
+\end_inset
+
+ называют возрастающей, если она удовлетворяет соотношению 
+\begin_inset Formula 
+\[
+E_{1}\subset E_{2}\subset\dots\subset E_{n}\subset\dots.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Аналогично, последовательность 
+\begin_inset Formula $\left\{ E_{n}\right\} _{n\ge1}$
+\end_inset
+
+ называют убывающей, если он удовлетворяет соотношению 
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+E_{1}\supset E_{2}\supset\dots\supset E_{n}\supset\dots.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Если 
+\begin_inset Formula $\left\{ E_{n}\right\} _{n\ge1}$
+\end_inset
+
+ — возрастающая последовательность событий, мы определим новое событие,
+ обозначаемое как 
+\begin_inset Formula $\lim_{n\to\infty}E_{n}$
+\end_inset
+
+, как 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}E_{n}=\bigcup_{n=1}^{\infty}E_{n}.
+\]
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Похоже, было бы неплохо определить, что такое бесконечное объединение и
+ бесконечное пересечение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Кроме того, если Если 
+\begin_inset Formula $\left\{ E_{n}\right\} _{n\ge1}$
+\end_inset
+
+ — убывающая последовательность событий, мы определим новое событие, обозначаемо
+е как 
+\begin_inset Formula $\lim_{n\to\infty}E_{n}$
+\end_inset
+
+, как 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}E_{n}=\bigcap_{n=1}^{\infty}E_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\left\{ E_{n}\right\} _{n\ge1}$
+\end_inset
+
+ — возрастающая или убывающая последовательность событий.
+ Докажите, что 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}P\left(E_{n}\right)=P\left(\lim_{n\to\infty}E_{n}\right),
+\]
+
+\end_inset
+
+то есть что для таких последовательностей операции взятия предела и вычисления
+ вероятности могут выполняться в любой последовательности.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим возрастающие и убывающие последовательности событий поочередно.
+ Пусть сначала 
+\begin_inset Formula $\left\{ E_{n}\right\} _{n\ge1}$
+\end_inset
+
+ — возрастающая последовательность событий.
+ Так как 
+\begin_inset Formula $E_{n}\subset E_{n+1}$
+\end_inset
+
+, то 
+\begin_inset Formula $P\left(E_{n}\right)\le P\left(E_{n+1}\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left\{ P\left(E_{n}\right)\right\} _{n\ge1}$
+\end_inset
+
+ — монотонно неубывающая последовательность вещественных чисел.
+ Так как вероятность любого события не больше единицы, то эта последовательность
+ ограничена сверху.
+ Отсюда следует 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, что 
+\begin_inset Formula $\lim_{n\to\infty}P\left(E_{n}\right)$
+\end_inset
+
+ существует.
+\end_layout
+
+\begin_layout Solution
+Заметим, что из 
+\begin_inset Formula $E_{n}\subset E_{n+1}$
+\end_inset
+
+, следует 
+\begin_inset Formula $\bigcup_{n=1}^{k}E_{n}=E_{k}$
+\end_inset
+
+.
+ Определим новую последовательность событий 
+\begin_inset Formula $F_{n}$
+\end_inset
+
+ следующим образом.
+ Формально доопределим 
+\begin_inset Formula $E_{0}=\emptyset$
+\end_inset
+
+ и положим 
+\begin_inset Formula $F_{n}=E_{n}\setminus E_{n-1}$
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не решился сделать это сам, хотя аналогичные мысли были
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+События 
+\begin_inset Formula $\left\{ F_{n}\right\} _{n\ge1}$
+\end_inset
+
+ являются взаимно-исключающими 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать!
+\end_layout
+
+\end_inset
+
+ и для любого натурального 
+\begin_inset Formula $m$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\bigcup_{n=1}^{m}F_{n}=\bigcup_{n=1}^{m}E_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Откуда следует 
+\begin_inset Formula 
+\[
+\bigcup_{n=1}^{\infty}F_{n}=\bigcup_{n=1}^{\infty}E_{n}=\lim_{n\to\infty}E_{n}.
+\]
+
+\end_inset
+
+ Тогда, по теореме сложения вероятностей:
+\begin_inset Formula 
+\begin{multline*}
+P\left(\lim_{n\to\infty}E_{n}\right)=P\left(\bigcup_{n=1}^{\infty}E_{n}\right)=\\
+=P\left(\bigcup_{n=1}^{\infty}F_{n}\right)=\sum_{n=1}^{\infty}P\left(F_{n}\right)=\\
+=\lim_{m\to\infty}\sum_{n=1}^{m}P\left(F_{n}\right)=\lim_{m\to\infty}P\left(\bigcup_{n=1}^{m}F_{n}\right)=\\
+=\lim_{m\to\infty}P\left(\bigcup_{n=1}^{m}E_{n}\right)=\lim_{m\to\infty}P\left(E_{m}\right),
+\end{multline*}
+
+\end_inset
+
+ что и доказывает желаемое равенство.
+\end_layout
+
+\begin_layout Solution
+Теперь проведём доказательство для убывающей последовательности событий.
+ Пусть 
+\begin_inset Formula $\left\{ E_{n}\right\} _{n\ge1}$
+\end_inset
+
+ — убывающая последовательность событий.
+ Рассмотрим последовательность противоположных событий: 
+\begin_inset Formula $\left\{ \bar{E}_{n}\right\} _{n\ge1}$
+\end_inset
+
+.
+ Легко проверить, что эта последовательность является возрастающей.
+ Причём, по принципу двойственности 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+нужна ссылка
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\overline{\left(\bigcap_{n=1}^{\infty}E_{n}\right)}=\bigcup_{n=1}^{\infty}\bar{E}_{n}=\lim_{n\to\infty}\bar{E}_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По доказанному выше, для возрастающих последовательность возможна перестановка
+ взятия предела и вычисления вероятности, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+P\left(\lim_{n\to\infty}\bar{E}_{n}\right)=\lim_{n\to\infty}P\left(\bar{E}_{n}\right)=\\
+=\lim_{n\to\infty}\left(1-P\left(E_{n}\right)\right)=1-\lim_{n\to\infty}P\left(E_{n}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны, из равенства 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на предпредыщую формулу
+\end_layout
+
+\end_inset
+
+, следует 
+\begin_inset Formula 
+\begin{multline*}
+P\left(\lim_{n\to\infty}\bar{E}_{n}\right)=P\left(\bigcup_{n=1}^{\infty}\bar{E}_{n}\right)=\\
+=P\left(\overline{\left(\bigcap_{n=1}^{\infty}E_{n}\right)}\right)=1-P\left(\bigcap_{n=1}^{\infty}E_{n}\right)=\\
+=1-P\left(\lim_{n\to\infty}E_{n}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Из двух последних цепочек равенств следует 
+\begin_inset Formula 
+\[
+1-\lim_{n\to\infty}P\left(E_{n}\right)=1-P\left(\lim_{n\to\infty}E_{n}\right),
+\]
+
+\end_inset
+
+ откуда путём элементарных преобразований получается требуемое равенство
+ 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}P\left(E_{n}\right)=P\left(\lim_{n\to\infty}E_{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Вероятности для бесконечной последовательности бросков кости (задача 745)
+\end_layout
+
+\begin_layout Problem
+Рассмотрим бесконечную последовательность бросков сбалансированной шестигранной
+ кости.
+ Предположим, что все броски независимы друг от друга.
+ Определите вероятность следующих событий:
+\end_layout
+
+\begin_layout Problem
+1) По меньшей мере при одном броске из первых 
+\begin_inset Formula $n$
+\end_inset
+
+ выпало 5.
+\end_layout
+
+\begin_layout Problem
+2) При ровно 
+\begin_inset Formula $k$
+\end_inset
+
+ бросках из первых 
+\begin_inset Formula $n\ge k$
+\end_inset
+
+ выпало 5.
+\end_layout
+
+\begin_layout Problem
+3) При каждом броске кости выпало 5.
+\end_layout
+
+\begin_layout Solution
+1) Обозначим рассматриваемое событие как 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Найдём сначала вероятность противоположного события 
+\begin_inset Formula $\bar{A}$
+\end_inset
+
+, то есть события 
+\begin_inset Quotes rld
+\end_inset
+
+за первые 
+\begin_inset Formula $n$
+\end_inset
+
+ бросков ни разу не выпало 5
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ По классическому определению вероятности вероятность не выпадения 5 при
+ одном броске равна 
+\begin_inset Formula $\frac{5}{6}$
+\end_inset
+
+.
+ Так как броски независимы, то по теореме об умножении вероятностей, получаем,
+ что 
+\begin_inset Formula 
+\[
+P\left(\bar{A}\right)=\left(\frac{5}{6}\right)^{n},
+\]
+
+\end_inset
+
+ тогда, по формуле для вероятности противоположного события: 
+\begin_inset Formula 
+\[
+P\left(A\right)=1-P\left(\bar{A}\right)=1-\left(\frac{5}{6}\right)^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+2) Обозначим рассматриваемое событие как 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Если при 
+\begin_inset Formula $k$
+\end_inset
+
+ из 
+\begin_inset Formula $n$
+\end_inset
+
+ бросков выпало 5, то не 5 выпало при 
+\begin_inset Formula $n-k$
+\end_inset
+
+ бросках.
+ Конкретные 
+\begin_inset Formula $k$
+\end_inset
+
+ бросков из 
+\begin_inset Formula $n$
+\end_inset
+
+ можно выбрать 
+\begin_inset Formula $\binom{n}{k}$
+\end_inset
+
+ способами, поэтому, так как броски независимы по условию задачи, то 
+\begin_inset Formula 
+\[
+P\left(B\right)=\binom{n}{k}\left(\frac{1}{6}\right)^{k}\left(\frac{5}{6}\right)^{n-k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+3) Обозначим рассматриваемое событие как 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Вероятность события 
+\begin_inset Formula $C_{n}$
+\end_inset
+
+, которое мы определим как 
+\begin_inset Quotes rld
+\end_inset
+
+при первых 
+\begin_inset Formula $n$
+\end_inset
+
+ бросках 
+\begin_inset Formula $n$
+\end_inset
+
+ раз выпало 5
+\begin_inset Quotes rrd
+\end_inset
+
+, по доказанному в пункте 2), равна: 
+\begin_inset Formula 
+\[
+P\left(C_{n}\right)=\binom{n}{n}\left(\frac{1}{6}\right)^{n}\left(\frac{5}{6}\right)^{n-n}=\frac{1}{6^{n}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Переходя в этом равенстве к пределу при 
+\begin_inset Formula $n\to\infty,$
+\end_inset
+
+получим 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на задачу 744
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+P\left(\lim_{n\to\infty}C_{n}\right)=\lim_{n\to\infty}P\left(C_{n}\right)=\lim_{n\to\infty}\frac{1}{6^{n}}=0.
+\]
 
 \end_inset
 
