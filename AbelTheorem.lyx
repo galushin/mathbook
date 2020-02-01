@@ -55769,12 +55769,70 @@ name "prob:triangle-inequality-for-complex-numbers"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Comment
-status open
+Рассмотрим теперь алгебраическое доказательство.
+ Пусть 
+\begin_inset Formula $z_{1}=x_{1}+iy_{1}$
+\end_inset
 
-\begin_layout Plain Layout
-Дать алгебраическое доказательство
+ и 
+\begin_inset Formula $z_{2}=x_{2}+iy_{2}$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\begin{multline*}
+\left|z_{1}+z_{2}\right|^{2}=\left(x_{1}+x_{2}\right)^{2}+\left(y_{1}+y_{2}\right)^{2}=\\
+=x_{1}^{2}+2x_{1}x_{2}+x_{2}^{2}+y_{1}^{2}+2y_{1}y_{2}+y_{2}^{2}=\\
+=x_{1}^{2}+y_{1}^{2}+x_{2}^{2}+y_{2}^{2}+2\left(x_{1}x_{2}+y_{1}y_{2}\right)=\\
+=\left|z_{1}\right|^{2}+\left|z_{2}\right|^{2}+2\left(x_{1}x_{2}+y_{1}y_{2}\right).
+\end{multline*}
+
+\end_inset
+
+
 \end_layout
+
+\begin_layout Solution
+С другой стороны 
+\begin_inset Formula 
+\[
+\left(\left|z_{1}\right|+\left|z_{2}\right|\right)^{2}=\left|z_{1}\right|^{2}+2\left|z_{1}\right|\left|z_{2}\right|+\left|z_{2}\right|^{2}.
+\]
+
+\end_inset
+
+ Остаётся доказать, что 
+\begin_inset Formula $x_{1}x_{2}+y_{1}y_{2}\le\left|z_{1}\right|\left|z_{2}\right|$
+\end_inset
+
+.
+ Возведём левую часть неравенства в квадрат, получим: 
+\begin_inset Formula 
+\begin{multline*}
+\left(x_{1}x_{2}+y_{1}y_{2}\right)^{2}=x_{1}^{2}x_{2}^{2}+2x_{1}x_{2}y_{1}y_{2}+y_{1}^{2}y_{2}^{2}=\\
+=x_{1}^{2}x_{2}^{2}+x_{1}^{2}y_{2}^{2}-x_{1}^{2}y_{2}^{2}+y_{1}^{2}y_{2}^{2}+y_{1}^{2}x_{2}^{2}-y_{1}^{2}x_{2}^{2}+2x_{1}x_{2}y_{1}y_{2}=\\
+=x_{1}^{2}x_{2}^{2}+x_{1}^{2}y_{2}^{2}+y_{1}^{2}y_{2}^{2}+y_{1}^{2}x_{2}^{2}-\left(x_{1}^{2}y_{2}^{2}-2x_{1}x_{2}y_{1}y_{2}+y_{1}^{2}x_{2}^{2}\right)=\\
+=\left(x_{1}^{2}+y_{1}^{2}\right)\left(x_{2}^{2}+y_{2}^{2}\right)-\left(x_{1}y_{2}-y_{1}x_{2}\right)^{2}\le\left(x_{1}^{2}+y_{1}^{2}\right)\left(x_{2}^{2}+y_{2}^{2}\right)=\\
+=\left|z_{1}\right|\left|z_{2}\right|.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Итак, мы показали, что 
+\begin_inset Formula $\left|z_{1}+z_{2}\right|^{2}\le\left(\left|z_{1}\right|+\left|z_{2}\right|\right)^{2}$
+\end_inset
+
+.
+ Так как возводимые в квадрат в этом неравенстве числа неотрицательные (модуль
+ всегда неотрицательный), то из этого неравенства следует 
+\begin_inset Formula 
+\[
+\left|z_{1}+z_{2}\right|\le\left|z_{1}\right|+\left|z_{2}\right|.
+\]
 
 \end_inset
 
@@ -56076,10 +56134,6 @@ noprefix "false"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
