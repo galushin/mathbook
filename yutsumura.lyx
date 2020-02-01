@@ -10390,6 +10390,10 @@ aka^{-1}=a\left(k_{1}\cdot k_{2}\cdot\dots\cdot k_{m}\right)a^{-1}=\\
 Случайные события
 \end_layout
 
+\begin_layout Section
+Классическое определение вероятности
+\end_layout
+
 \begin_layout Subsection
 Задачи на вероятности при броске двух костей (задача 727)
 \end_layout
@@ -10928,6 +10932,83 @@ status open
 \[
 \frac{15}{36}=\frac{5}{12}.
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Вероятность вытянуть два красных шара из выбранного ящика (задача 751)
+\end_layout
+
+\begin_layout Problem
+Имеется два ящика, содержащие красные и синие шары.
+ Назовём их ящик A и ящик B.
+ Каждый ящик содержит равное количество красных и синих шаров.
+ Конкретнее, в ящике A находится 5 красных шаров и 5 синих шаров, а в ящике
+ B — 20 красных и 20 синих шаров.
+ Вы выбираете один из ящиков, а затем случайным образом вытягиваете два
+ шара из выбранного ящика без замены, то есть не возвращая первый вынутый
+ шар обратно в ящик до того, как вытянуть второй шар.
+\end_layout
+
+\begin_layout Problem
+Если вы вытянули два шара одного цвета, то вы победили.
+ В противном случае — проиграли.
+ Какой ящик следует выбрать, чтобы максимизировать шансы на победу? 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Название задачи не вполне соответствует её тексту
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Найдём вероятности вытянуть шары одного цвета из каждого из ящиков.
+ Первый вытянутый шар может быть произвольного цвета, а второй должен быть
+ того же цвета.
+ Перед вытягиванием второго шара в ящике становится меньше на один шар цвета
+ первого вытянутого шара (и на один шар меньше вообще), поэтому 
+\begin_inset Formula $P_{A}=\frac{4}{9}$
+\end_inset
+
+ и 
+\begin_inset Formula $P_{B}=\frac{19}{39}$
+\end_inset
+
+.
+ Найдём разность 
+\begin_inset Formula 
+\[
+P_{B}-P_{A}=\frac{19}{39}-\frac{4}{9}=\frac{9\cdot19-4\cdot39}{9\cdot39}=\frac{171-156}{9\cdot39}=\frac{15}{9\cdot39}>0,
+\]
+
+\end_inset
+
+ таким образом, вероятность выиграть, выбрав второй ящик, больше.
+\end_layout
+
+\begin_layout Remark
+Важны не конкретные количества шаров в ящиках, а то, какое из них больше.
+\end_layout
+
+\begin_layout Section
+Не сортированные
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Разбить по подходящим разделам
+\end_layout
 
 \end_inset
 
@@ -12518,13 +12599,6 @@ P\left(G_{1}|E\right)=\frac{2x\cdot0.6}{1.6x}=\frac{1.2}{1.6}=\frac{3}{4}.
  
 \end_layout
 
-\begin_layout Problem
-The pass rate of the first group was twice as big as the second group.
- Suppose that 60% of the students were in the first group.
- What is the probability that a randomly selected student belongs to the
- first group if the student passed the exam?
-\end_layout
-
 \begin_layout Subsection
 Нижняя и верхняя граница для вероятности пересечения двух событий (задача
  741)
@@ -13255,6 +13329,35 @@ P\left(\lim_{n\to\infty}C_{n}\right)=\lim_{n\to\infty}P\left(C_{n}\right)=\lim_{
 
 \end_layout
 
+\begin_layout Subsection
+Вероятность того, что Алиса подбросила монету три раза, если Алиса и Боб
+ вместе подбросили монету семь раз.
+ (задача 752)
+\end_layout
+
+\begin_layout Problem
+Алиса подбрасывает сбалансированную монету, пока не выпадет решка.
+ После этого Боб подбрасывает монету, пока не выпадет решка.
+ Предположим, что общее число бросков монеты Алисой и Бобом было равно 7.
+ Предполагая, что все броски независимы друг от друга, каковая вероятность
+ того, что Алиса подбросила монету ровно три раза?
+\end_layout
+
+\begin_layout Solution
+Если Алиса подбросила монету три раза, значит Боб подбросил монету 4 раза,
+ причём первые три раза выпадал орёл, а в четвёртый раз — решка.
+ Так как все броски независимы друг от друга, поэтому вероятность такого
+ события равна 
+\begin_inset Formula 
+\[
+\left(1-\frac{1}{2}\right)^{3}\cdot\frac{1}{2}=\frac{1}{2^{4}}=\frac{1}{16}.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Дискретные случайные величины
 \end_layout
@@ -13874,6 +13977,277 @@ D\left[Y\right]=10\cdot\frac{1}{4}\cdot\frac{3}{4}=\frac{15}{8}=1,875,
 \sigma\left(X\right)=\sqrt{\frac{15}{8}}\approx1.3693.
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Задача о сборе купонов: найти математическое ожидаемое количество ящиков
+ для сбора всех игрушек (задача 750)
+\end_layout
+
+\begin_layout Problem
+Коробка некоторой закуски содержит одну из пяти игрушек.
+ Шанс получить каждую из этих игрушек одинаков и не зависит от предыдущих
+ результатов.
+\end_layout
+
+\begin_layout Problem
+а) Предположим, что вы покупаете коробки, пока не соберёте все пять игрушек.
+ Найдите математическое ожидание количества ящиков, которое необходимо купить.
+\end_layout
+
+\begin_layout Problem
+б) Найдите дисперсию и среднеквадратическое отклонение случайной величины,
+ описанной в части а).
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Была такая идея, но не довёл мысль до конца и подсмотрел решение
+\end_layout
+
+\end_inset
+
+ Введём следующие обозначения: 
+\begin_inset Formula $X$
+\end_inset
+
+ — количество коробок, которое необходимо купить, чтобы собрать все пять
+ игрушек, а 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ — количество коробок, которое нужно купить для получения 
+\begin_inset Formula $i$
+\end_inset
+
+-й игрушки после того, как уже было собрано 
+\begin_inset Formula $i-1$
+\end_inset
+
+ игрушек.
+ Тогда 
+\begin_inset Formula 
+\[
+X=\sum_{i=1}^{5}X_{i}.
+\]
+
+\end_inset
+
+ В силу линейности математического ожидания 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, мы получим 
+\begin_inset Formula 
+\[
+E\left[X\right]=\sum_{i=1}^{5}E\left[X_{i}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как после покупки одной коробки гарантирована будет иметься одна игрушка,
+ то 
+\begin_inset Formula $X_{1}=1$
+\end_inset
+
+ и 
+\begin_inset Formula $E\left[X_{1}\right]=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Определим теперь 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+.
+ Если уже собрана ровно одна игрушка, то при покупке каждой коробки (вплоть
+ до того момента, как будут собраны две игрушки) вероятность получить туже
+ игрушку равна 
+\begin_inset Formula $\frac{1}{5}$
+\end_inset
+
+, а вероятность получить новую игрушку равна 
+\begin_inset Formula $\frac{4}{5}$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+ — имеет геометрическое распределение с параметром 
+\begin_inset Formula $\frac{4}{5}$
+\end_inset
+
+ (мы определяем его как номер первого появления события в схеме Бернулли),
+ это можно записать следующим образом 
+\begin_inset Formula 
+\[
+X_{2}\sim G\left(\frac{4}{5}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Вероятность получить третью игрушку после того, как собраны 2 игрушки, при
+ покупке каждой коробки равна 
+\begin_inset Formula $\frac{3}{5}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+X_{3}\sim G\left(\frac{3}{5}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Аналогично, 
+\begin_inset Formula 
+\[
+X_{4}\sim G\left(\frac{2}{5}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X_{5}\sim G\left(\frac{1}{5}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Найдём математическое ожидание геометрического распределения
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вынести в отдельную задачу
+\end_layout
+
+\end_inset
+
+.
+ По определению 
+\begin_inset Formula 
+\[
+P\left\{ G\left(p\right)=k\right\} =\left(1-p\right)^{k-1}p,
+\]
+
+\end_inset
+
+ поэтому, по определению математического ожидания:
+\begin_inset Formula 
+\begin{multline*}
+E\left[G\left(p\right)\right]=\sum_{k=1}^{\infty}k\cdot P\left\{ G\left(p\right)=k\right\} =\sum_{k=1}^{\infty}k\cdot\left(1-p\right)^{k-1}p=\\
+=p\sum_{k=1}^{\infty}k\cdot\left(1-p\right)^{k-1}=\left(-p\right)\sum_{k=1}^{\infty}\left[\left(1-p\right)^{k}\right]^{\prime}=\\
+=\left(-p\right)\left[\sum_{k=1}^{\infty}\left(1-p\right)^{k}\right]^{\prime}=\left(-p\right)\left[\frac{\left(1-p\right)}{1-\left(1-p\right)}\right]^{\prime}=\\
+=\left(-p\right)\left[\frac{1}{p}-1\right]^{\prime}=\left(-p\right)\left(-\frac{1}{p^{2}}\right)=\frac{1}{p}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом: 
+\begin_inset Formula 
+\begin{multline*}
+E\left[X\right]=\sum_{i=1}^{5}E\left[X_{i}\right]=1+\sum_{i=2}^{5}E\left[G\left(\frac{5-i}{5}\right)\right]=\\
+=1+\frac{5}{4}+\frac{5}{3}+\frac{5}{2}+\frac{5}{1}=\frac{12+15+20+30+60}{12}=\\
+=\frac{137}{12}\approx11.4167.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Найдём теперь дисперсию 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Так как дисперсия суммы независимых случайных величин равна сумме дисперсий
+ слагаемых, то получим 
+\begin_inset Formula 
+\[
+D\left[X\right]=\sum_{i=1}^{5}D\left[X_{i}\right]=\sum_{i=1}^{5}D\left[G\left(\frac{5-i}{5}\right)\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Найдём дисперсию случайно величины с геометрическим распределением 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить отдельную задачу
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $D\left[G\left(p\right)\right]=\frac{1-p}{p^{2}}$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{multline*}
+D\left[X\right]=0+\frac{\frac{1}{5}}{\left(\frac{4}{5}\right)^{2}}+\frac{\frac{2}{5}}{\left(\frac{3}{5}\right)^{2}}+\frac{\frac{3}{5}}{\left(\frac{2}{5}\right)^{2}}+\frac{\frac{4}{5}}{\left(\frac{1}{5}\right)^{2}}=\\
+=\frac{5}{4^{2}}+\frac{2\cdot5}{3^{3}}+\frac{3\cdot5}{2^{2}}+\frac{4\cdot5}{1^{2}}=\\
+=5\left(\frac{1}{4^{2}}+\frac{2}{3^{3}}+\frac{3}{2^{2}}+\frac{4}{1^{2}}\right)\approx25.17361.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Наконец, 
+\begin_inset Formula $\sigma_{X}=\sqrt{D\left[X\right]}\approx5.0173.$
 \end_inset
 
 
