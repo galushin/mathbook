@@ -8794,6 +8794,719 @@ A^{n}x=x=\begin{pmatrix}1\\
 
 \end_layout
 
+\begin_layout Section
+Если матрица — произведение двух матриц, то является ли она обратимой? (задача
+ 393)
+\end_layout
+
+\begin_layout Problem
+а) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $6\times6$
+\end_inset
+
+ и она может быть записана как 
+\begin_inset Formula $A=BC$
+\end_inset
+
+, где 
+\begin_inset Formula $B$
+\end_inset
+
+ — это матрица размера 
+\begin_inset Formula $6\times5$
+\end_inset
+
+, а 
+\begin_inset Formula $C$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $5\times6$
+\end_inset
+
+.
+ Докажите, что матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ не может быть обратимой.
+\end_layout
+
+\begin_layout Problem
+б) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ и она может быть записана как 
+\begin_inset Formula $A=BC$
+\end_inset
+
+, где 
+\begin_inset Formula $B$
+\end_inset
+
+ — это матрица размера 
+\begin_inset Formula $2\times3$
+\end_inset
+
+, а 
+\begin_inset Formula $C$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $3\times2$
+\end_inset
+
+.
+ Может ли матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ быть обратимой?
+\end_layout
+
+\begin_layout Solution
+а) Так как в матрице 
+\begin_inset Formula $C$
+\end_inset
+
+ имеется 6 столбцов размерности 5, то это столбцы линейно зависимы, а значит
+ существует такой ненулевой вектор-столбец 
+\begin_inset Formula $y$
+\end_inset
+
+ размера 
+\begin_inset Formula $6\times1$
+\end_inset
+
+, что 
+\begin_inset Formula $Cy=0$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula 
+\[
+Ay=\left(BC\right)y=B\left(Cy\right)=B0=0,
+\]
+
+\end_inset
+
+то есть у однородного уравнения 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ есть нетривиальное решение, а значит 
+\begin_inset Formula $A$
+\end_inset
+
+ — необратимая матрица.
+\end_layout
+
+\begin_layout Solution
+б) Рассмотрим пример: 
+\begin_inset Formula $B=\begin{pmatrix}1 & 0 & 0\\
+0 & 0 & 1
+\end{pmatrix}$
+\end_inset
+
+ и 
+\begin_inset Formula $C=\begin{pmatrix}1 & 0\\
+1 & 1\\
+0 & 1
+\end{pmatrix}$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+A=BC=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=I,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $A$
+\end_inset
+
+ — обратимая матрица (
+\begin_inset Formula $I^{-1}=I$
+\end_inset
+
+).0з
+\end_layout
+
+\begin_layout Section
+Идемпотентные матрицы (Вступительные экзамен в университете Токио, 2007
+ год) (задача 265) 
+\end_layout
+
+\begin_layout Problem
+Для некоторого вещественного числа 
+\begin_inset Formula $a$
+\end_inset
+
+ рассмотрим матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $P$
+\end_inset
+
+ и 
+\begin_inset Formula $Q$
+\end_inset
+
+ удовлетворяющие следующим условиям:
+\end_layout
+
+\begin_layout Problem
+1) 
+\begin_inset Formula $A=aP+\left(a+1\right)Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+2) 
+\begin_inset Formula $P^{2}=P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+3) 
+\begin_inset Formula $Q^{2}=Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+4) 
+\begin_inset Formula $PQ=O$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+5) 
+\begin_inset Formula $QP=O$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Где 
+\begin_inset Formula $O$
+\end_inset
+
+ — нулевая матрица 
+\begin_inset Formula $2\times2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Problem
+а) Докажите, что 
+\begin_inset Formula $\left(P+Q\right)A=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+б) Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — положительное вещественное число, положим 
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}a & 0\\
+1 & a+1
+\end{pmatrix},
+\]
+
+\end_inset
+
+ найдите все матрицы 
+\begin_inset Formula $P$
+\end_inset
+
+ и 
+\begin_inset Formula $Q$
+\end_inset
+
+, удовлетворяющие условиям 1) – 5).
+\end_layout
+
+\begin_layout Problem
+в) Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ — целое число, большее 1.
+ Для любого целого 
+\begin_inset Formula $k$
+\end_inset
+
+ (
+\begin_inset Formula $2\le k\le n$
+\end_inset
+
+) определим матрицу 
+\begin_inset Formula 
+\[
+A_{k}=\begin{pmatrix}k & 0\\
+1 & k+1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Вычислите произведение 
+\begin_inset Formula 
+\[
+A_{n}A_{n-1}A_{n-2}\cdot\dots\cdot A_{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+а) Подставим в произведение 
+\begin_inset Formula $\left(P+Q\right)A$
+\end_inset
+
+ выражение 
+\begin_inset Formula $A=aP+\left(a+1\right)Q$
+\end_inset
+
+ (условие 1).
+ 
+\begin_inset Formula 
+\begin{multline*}
+\left(P+Q\right)A=\left(P+Q\right)\left(aP+\left(a+1\right)Q\right)=\\
+=aP^{2}+aQP+\left(a+1\right)PQ+\left(a+1\right)Q^{2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В силу условий 4) и 5) 
+\begin_inset Formula $QP=PQ=O$
+\end_inset
+
+, а в силу условий 2) и 3) 
+\begin_inset Formula $P^{2}=P$
+\end_inset
+
+ и 
+\begin_inset Formula $Q^{2}=Q$
+\end_inset
+
+, поэтому: 
+\begin_inset Formula 
+\[
+\left(P+Q\right)A=aP+\left(a+1\right)Q=A,
+\]
+
+\end_inset
+
+ что и требовалось доказать.
+\end_layout
+
+\begin_layout Solution
+б) Если 
+\begin_inset Formula $a>0$
+\end_inset
+
+, то матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ невырожденная, так как она является треугольной с ненулевыми элементами
+ на главной диагонали.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная, то существует обратная матрица: 
+\begin_inset Formula 
+\begin{multline*}
+\left(A|I\right)\sim\begin{pmatrix}\begin{array}{rr|rr}
+a & 0 & 1 & 0\\
+1 & a+1 & 0 & 1
+\end{array}\end{pmatrix}\sim\begin{pmatrix}\begin{array}{rr|rr}
+1 & 0 & \frac{1}{a} & 0\\
+1 & a+1 & 0 & 1
+\end{array}\end{pmatrix}\sim\\
+\sim\begin{pmatrix}\begin{array}{rr|rr}
+1 & 0 & \frac{1}{a} & 0\\
+0 & a+1 & -\frac{1}{a} & 1
+\end{array}\end{pmatrix}\sim\begin{pmatrix}\begin{array}{rr|rr}
+1 & 0 & \frac{1}{a} & 0\\
+0 & 1 & -\frac{1}{a\left(a+1\right)} & \frac{1}{a+1}
+\end{array}\end{pmatrix}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом 
+\begin_inset Formula 
+\[
+A^{-1}=\begin{pmatrix}\frac{1}{a} & 0\\
+-\frac{1}{a\left(a+1\right)} & \frac{1}{a+1}
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Тогда равенство 
+\begin_inset Formula $\left(P+Q\right)A=A$
+\end_inset
+
+ можно умножить справа на 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ и мы получим равенство 
+\begin_inset Formula 
+\[
+P+Q=I,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $Q=I-P$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел этот шаг
+\end_layout
+
+\end_inset
+
+Подставим это равенство в определение 
+\begin_inset Formula $A$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+A=aP+\left(a+1\right)\left(I-P\right)=\left(a+1\right)I-P,
+\]
+
+\end_inset
+
+ откуда 
+\begin_inset Formula 
+\begin{multline*}
+P=\left(a+1\right)I-A=\\
+=\begin{pmatrix}a+1 & 0\\
+0 & a+1
+\end{pmatrix}-\begin{pmatrix}a & 0\\
+1 & a+1
+\end{pmatrix}=\begin{pmatrix}1 & 0\\
+-1 & 0
+\end{pmatrix}.
+\end{multline*}
+
+\end_inset
+
+ Наконец 
+\begin_inset Formula 
+\[
+Q=I-P=\begin{pmatrix}0 & 0\\
+1 & 1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Нетрудно убедиться, что 
+\begin_inset Formula $P$
+\end_inset
+
+ и 
+\begin_inset Formula $Q$
+\end_inset
+
+ удовлетворяют условиям 2)–5), а условие 1) было использовано для их получения,
+ поэтому его справедливость очевидна.
+\end_layout
+
+\begin_layout Solution
+в) Воспользуемся результатом пункта б), так как целые числа 
+\begin_inset Formula $k\ge2$
+\end_inset
+
+ — это положительные вещественные числа, то 
+\begin_inset Formula 
+\[
+A_{k}=kP+\left(k+1\right)Q,
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $P=\begin{pmatrix}1 & 0\\
+-1 & 0
+\end{pmatrix}$
+\end_inset
+
+ и 
+\begin_inset Formula $Q=\begin{pmatrix}0 & 0\\
+1 & 1
+\end{pmatrix}$
+\end_inset
+
+ — идемпотентные матрицы.
+ Рассмотрим произведение 
+\begin_inset Formula $A_{k}A_{j}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+A_{k}A_{j}=\left(kP+\left(k+1\right)Q\right)\left(jP+\left(j+1\right)Q\right)=\\
+=kjP^{2}+k\left(j+1\right)PQ+\left(k+1\right)jP+\left(k+1\right)\left(j+1\right)Q^{2}=\\
+=kjP+\left(k+1\right)\left(j+1\right)Q.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Применяя этот результат к произведению 
+\begin_inset Formula $A_{n}A_{n-1}A_{n-2}\cdot\dots\cdot A_{2}$
+\end_inset
+
+ получим 
+\begin_inset Formula 
+\begin{multline*}
+A_{n}A_{n-1}A_{n-2}\cdot\dots\cdot A_{2}=n!P+\frac{\left(n+1\right)!}{2}Q=.\\
+=\begin{pmatrix}n! & 0\\
+-n! & 0
+\end{pmatrix}+\begin{pmatrix}0 & 0\\
+\frac{\left(n+1\right)!}{2} & \frac{\left(n+1\right)!}{2}
+\end{pmatrix}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Найдём значение 
+\begin_inset Formula 
+\begin{multline*}
+\frac{\left(n+1\right)!}{2}-n!=\frac{n!\left(n+1\right)}{2}-n!=\\
+=n!\left(\frac{n+1-2}{2}\right)=\frac{n!\left(n-1\right)}{2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Окончательно получаем 
+\begin_inset Formula 
+\[
+A_{n}A_{n-1}A_{n-2}\cdot\dots\cdot A_{2}=\begin{pmatrix}n! & 0\\
+\frac{n!\cdot\left(n-1\right)}{2} & \frac{\left(n+1\right)!}{2}
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Построение симметричной матрицы, совпадающей со своей обратной (задача 556)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $v$
+\end_inset
+
+ — ненулевой вектор из 
+\begin_inset Formula $\mathbb{R}^{n}.$
+\end_inset
+
+ Тогда 
+\begin_inset Formula $\left(v,v\right)=v^{T}v\neq0$
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula 
+\[
+a:=\frac{2}{v^{T}v}
+\]
+
+\end_inset
+
+ и определим матрицу 
+\begin_inset Formula $A$
+\end_inset
+
+ размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ следующим образом 
+\begin_inset Formula 
+\[
+A=I-avv^{T},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $I$
+\end_inset
+
+ — единичная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $A$
+\end_inset
+
+ — симметричная матрица и 
+\begin_inset Formula $AA=I$
+\end_inset
+
+, а затем выведите из этого результата, что 
+\begin_inset Formula $A=A^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем сначала, что 
+\begin_inset Formula $A$
+\end_inset
+
+ симметричная, для этого найдём 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+A^{T}=\left(I-avv^{T}\right)^{T}=I^{T}-\left(avv^{T}\right)^{T}=\\
+=I-a\left(v^{T}\right)^{T}v^{T}=I-avv^{T}=A,
+\end{multline*}
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $A$
+\end_inset
+
+ действительно является симметричной матрицей.
+\end_layout
+
+\begin_layout Solution
+Вычислим теперь 
+\begin_inset Formula $AA$
+\end_inset
+
+, воспользовавшись определением 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+AA=\left(I-avv^{T}\right)\left(I-avv^{T}\right)=\\
+=I-2avv^{T}+a^{2}vv^{T}vv^{T}=\\
+=I-2avv^{T}+a^{2}\left(v^{T}v\right)vv^{T}=\\
+=I-2avv^{T}+a\frac{2}{v^{T}v}\left(v^{T}v\right)vv^{T}=\\
+=I-2avv^{T}+2avv^{T}=I.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, действительно 
+\begin_inset Formula $AA=I$
+\end_inset
+
+.
+ Из определения обратной матрицы получаем, что 
+\begin_inset Formula $A^{-1}=A$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Chapter
 Не сортированные
 \end_layout
