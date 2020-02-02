@@ -869,7 +869,7 @@ status open
 
 \end_inset
 
- тогда, по формуле суммы геометричесокй прогрессии: 
+ тогда, по формуле суммы геометрической прогрессии: 
 \begin_inset Formula 
 \[
 \sigma\left(n\right)=\frac{p_{1}^{a_{1}+1}-1}{p_{1}-1}.
@@ -898,7 +898,7 @@ status open
 \begin_inset Formula $m$
 \end_inset
 
- — взаимно простые числа (то есть не имующие общих делителей, кроме 
+ — взаимно простые числа (то есть не имеющие общих делителей, кроме 
 \begin_inset Formula $1$
 \end_inset
 
@@ -1025,7 +1025,7 @@ d_{i}g_{j},
 \begin_inset Formula $n$
 \end_inset
 
- — произвольное натуальное число, большее 
+ — произвольное натуральное число, большее 
 \begin_inset Formula $1$
 \end_inset
 
@@ -1068,7 +1068,7 @@ n=\prod_{i=1}^{r}p_{i}^{a_{i}},
 \end_layout
 
 \begin_layout Standard
-Наконец, рассмотрим сумму сосбвтенных делителей числа 
+Наконец, рассмотрим сумму собственных делителей числа 
 \begin_inset Formula $n$
 \end_inset
 
@@ -1146,7 +1146,7 @@ n=\prod_{i=1}^{r}p_{i}^{a_{i}},
 \begin_inset Formula $2^{n-1}\left(2^{n}-1\right)$
 \end_inset
 
-? В XVIII веке Эйлер доказал, что всякое чётное соврешенное число действительно
+? В XVIII веке Эйлер доказал, что всякое чётное совершенное число действительно
  имеет такой вид.
  Но он не смог доказать более общий результат — что 
 \emph on
@@ -1154,7 +1154,7 @@ n=\prod_{i=1}^{r}p_{i}^{a_{i}},
 \emph default
 совершенное число имеет такой вид.
  Эта проблема и по сей день остаётся нерешённой, мы не знаем, существуют
- ли нечётне совершенные числа.
+ ли нечётные совершенные числа.
 \end_layout
 
 \begin_layout Problem
@@ -1345,9 +1345,9 @@ status open
 \end_layout
 
 \begin_layout Standard
-Пользуюясь этой логикой, пифагорейцы обнаружили доказательство, которое
- подрывало всю их программу (Мы не знаем, сам ли Пифагор совершил это открытие
- или кто-то из его ранных учеников).
+Пользуясь этой логикой, пифагорейцы обнаружили доказательство, которое подрывало
+ всю их программу (Мы не знаем, сам ли Пифагор совершил это открытие или
+ кто-то из его ранних учеников).
 \end_layout
 
 \begin_layout Theorem
@@ -1373,7 +1373,7 @@ status open
 Иными словами, отношение диагонали квадрата к его стороне невозможно выразить
  рациональным числом (отношением двух целых чисел).
  Сегодня мы сказали бы, что пифагорейцы открыли иррациональные числа, а
- точнее докзали, что число 
+ точнее доказали, что число 
 \begin_inset Formula $\sqrt{2}$
 \end_inset
 
@@ -1519,7 +1519,7 @@ n^{2}=2m_{1}^{2},
 \begin_inset Formula $n$
 \end_inset
 
- являются чётными, но это проитворечит предположению о том, что у них нет
+ являются чётными, но это противоречит предположению о том, что у них нет
  общих множителей.
  Таким образом, 
 \begin_inset Formula $\sqrt{2}$
@@ -1583,8 +1583,8 @@ status open
 \begin_layout Problem
 Функция gcm0 неэффективна, когда один отрезок намного длиннее другого.
  Предложите более эффективную реализацию.
- Помните, что запрещено использовать опрации, которые нельзя выполнить с
- помощью циркуля и линейки.
+ Помните, что запрещено использовать операции, которые нельзя выполнить
+ с помощью циркуля и линейки.
 \end_layout
 
 \begin_layout Solution
@@ -1880,12 +1880,555 @@ xy=m^{2}s^{2}+m^{2}t^{2}+n^{2}s^{2}+n^{2}t^{2}+2mnst-2mnst=\\
 status open
 
 \begin_layout Plain Layout
-Закончить этот раздел
+Закончить эту главу
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Chapter
+Зарождение современной теории чисел
+\end_layout
+
+\begin_layout Section
+Простые числа Мерсенна и Ферма
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пропущена вводная часть
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Если 
+\begin_inset Formula $2^{n}-1$
+\end_inset
+
+ — простое число, то 
+\begin_inset Formula $n$
+\end_inset
+
+ — простое.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказательство было выше, в упражнении 3.5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Если 
+\begin_inset Formula $2^{n}+1$
+\end_inset
+
+ — простое число, то 
+\begin_inset Formula $n=2^{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Предположим, что 
+\begin_inset Formula $n\neq2^{k}$
+\end_inset
+
+, тогда у 
+\begin_inset Formula $n$
+\end_inset
+
+ должен быть нечётный сомножитель, запишем его как 
+\begin_inset Formula $2q+1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $n=m\left(2q+1\right)$
+\end_inset
+
+, причём 
+\begin_inset Formula $2q+1>1$
+\end_inset
+
+.
+ По формуле суммы нечётных степеней 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нужно вывести формулу для суммы нечётных степеней и сослаться на неё
+\end_layout
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+2^{n}+1=2^{m\left(2q+1\right)}+1=\\
+=\left(2^{m}\right)^{\left(2q+1\right)}+1^{\left(2q+1\right)}=\\
+=\left(2^{m}+1\right)\left(\sum_{i=0}^{2q}\left(2^{m}\right)^{i}\left(-1\right)^{i}\right).
+\end{multline*}
+
+\end_inset
+
+ Но если любая из скобок отлична от единицы, то у 
+\begin_inset Formula $2^{n}+1$
+\end_inset
+
+ есть нетривиальные делители, то есть оно не будет простым.
+ Таким образом, наше предположение ложно и 
+\begin_inset Formula $n=2^{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Что можно сказать о других простых числа вида 
+\begin_inset Formula $2^{2^{i}}+1$
+\end_inset
+
+? Ферма утверждал, что числа 3, 5, 17, 257, 65537, 4294967297 и 1844674407370955
+1617 простые, а, значит, простыми являются и все остальные числа такого
+ вида.
+ К сожалению, он был не прав как в части двух примеров (простыми являются
+ только первые пять из названных им чисел), так и в части утверждения в
+ целом.
+ В 1732 году Эйлер показала, что 
+\begin_inset Formula 
+\[
+2^{32}+1=4294967297=641\times6700417.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+На самом деле мы знаем, что для всех 
+\begin_inset Formula $5\le i\le32$
+\end_inset
+
+ числа Ферма составные.
+ Существуют ли ещё какие-нибудь числа Ферма, кроме первых пяти? Пока никто
+ не знает.
+\end_layout
+
+\begin_layout Section
+Малая теорема Ферма
+\end_layout
+
+\begin_layout Theorem
+(малая теорема Ферма).
+ Если 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое, то 
+\begin_inset Formula $a^{p-1}-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ для любого 
+\begin_inset Formula $0<a<p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для доказательства этой теоремы нужно рассмотреть несколько промежуточных
+ результатов.
+\end_layout
+
+\begin_layout Theorem
+(Евклид VII, 30).
+ Произведение двух целых чисел, меньших простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+, не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — целые числа и 
+\begin_inset Formula $0<a,b<p$
+\end_inset
+
+.
+ Нужно доказать, что 
+\begin_inset Formula $ab$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $p$
+\end_inset
+
+ — взаимно простые, то существуют такие целые числа 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+, что 
+\begin_inset Formula $ma+np=1$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Здесь нужно сослаться на 
+\begin_inset Quotes rld
+\end_inset
+
+лемму о кузнечике
+\begin_inset Quotes rrd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Умножим это равенство на 
+\begin_inset Formula $b$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+mab+nbp=b.
+\]
+
+\end_inset
+
+ Если 
+\begin_inset Formula $ab$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть 
+\begin_inset Formula $ab=kp$
+\end_inset
+
+, то 
+\begin_inset Formula $b=\left(mk+nb\right)p$
+\end_inset
+
+, то есть 
+\begin_inset Formula $b$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, но это невозможно, так как 
+\begin_inset Formula $b<p$
+\end_inset
+
+ по условию задачи.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим ещё одно доказательство, не опирающееся на другие предположения.
+ Пойдём от противного: предположим, что существует такие 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, что 
+\begin_inset Formula $ab$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Пусть для данного 
+\begin_inset Formula $a$
+\end_inset
+
+ число 
+\begin_inset Formula $b$
+\end_inset
+
+ — это наименьшее целое число такое, что 
+\begin_inset Formula $ab=mp$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое, то оно не делится на 
+\begin_inset Formula $b$
+\end_inset
+
+ без остатка, поэтому
+\begin_inset Formula 
+\[
+p=kb+r,0<r<b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда 
+\begin_inset Formula $r=p-kb$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+ar=pa-kab=pa-kmp=\left(a-km\right)p,
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $ar$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, но 
+\begin_inset Formula $r>b$
+\end_inset
+
+, но это противоречит тому, что 
+\begin_inset Formula $b$
+\end_inset
+
+ наименьшее из таких чисел.
+ Таким образом, предположение не верно и 
+\begin_inset Formula $ab$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Такой метод доказательства типичен для древнегреческой математики.
+ Он основан на невозможности существования бесконечной убывающей последовательно
+сти натуральных чисел.
+\end_layout
+
+\begin_layout Lemma
+(Лемма о перестановке остатков).
+ Если 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое, то для любого 
+\begin_inset Formula $0<a<p$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+a\cdot\left\{ 1,\dots,p-1\right\} =\left\{ q_{1}p+r_{1},\dots,q_{p-1}p+r_{p-1}\right\} ,
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $0<r_{j}<p_{j}$
+\end_inset
+
+ при 
+\begin_inset Formula $0<j<p$
+\end_inset
+
+.
+ Тогда из 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+ следует 
+\begin_inset Formula $r_{i}\neq r_{j}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Lemma
+Иными словами, если взять все кратные 
+\begin_inset Formula $a$
+\end_inset
+
+ от 
+\begin_inset Formula $1\cdot a$
+\end_inset
+
+ до 
+\begin_inset Formula $\left(p-1\right)a$
+\end_inset
+
+ и поделить каждое из них с остатком на 
+\begin_inset Formula $p$
+\end_inset
+
+, то все остатки будут различны, причём множество остатков является перестановко
+й множества 
+\begin_inset Formula $\left\{ 1,\dots,p-1\right\} $
+\end_inset
+
+ (каждый остаток меньше 
+\begin_inset Formula $p$
+\end_inset
+
+, но больше нуля, все они разные).
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+, но 
+\begin_inset Formula $r_{i}=r_{j}$
+\end_inset
+
+, без ограничения общности можно считать, что 
+\begin_inset Formula $i<j$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+aj-ai=\left(q_{j}p+r_{j}\right)-\left(q_{i}p+r_{i}\right)=\left(q_{j}-q_{i}\right)p.
+\]
+
+\end_inset
+
+ С другой стороны 
+\begin_inset Formula $aj-ai=a\left(j-i\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+a\left(j-i\right)=\left(q_{j}-q_{i}\right)p.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Но 
+\begin_inset Formula $0<a<p$
+\end_inset
+
+ по условиям леммы, а 
+\begin_inset Formula $0<j-i<p$
+\end_inset
+
+ так как 
+\begin_inset Formula $0<j<p$
+\end_inset
+
+ и 
+\begin_inset Formula $0<i<j$
+\end_inset
+
+.
+ Таким образом, мы нашли два натуральных числа, меньших 
+\begin_inset Formula $p$
+\end_inset
+
+, произведение которых делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Но это невозможно в силу теоремы 5.4
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Полученное противоречие означает, что совпадающих остатков нет, то есть
+ все они различны.
 \end_layout
 
 \begin_layout Standard
