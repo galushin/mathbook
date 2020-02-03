@@ -2431,6 +2431,512 @@ status open
  все они различны.
 \end_layout
 
+\begin_layout Section
+Сокращение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Описать арифметику по модулю
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Числа 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ являются взаимно обратимыми (по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+), если их произведение даёт остаток 1 при делении на 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+(правило обратимости).
+ Если 
+\begin_inset Formula $p$
+\end_inset
+
+ простое, то для любого 
+\begin_inset Formula $0<a<p$
+\end_inset
+
+ существует такое 
+\begin_inset Formula $0<b<p$
+\end_inset
+
+, что 
+\begin_inset Formula $ab=mp+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В книге 
+\begin_inset Quotes rld
+\end_inset
+
+От математики к обобщённому программированию
+\begin_inset Quotes rrd
+\end_inset
+
+ эта лемма доказывается через лемму о перестановке остатков.
+ Можно поступить наоборот: доказать лемму 5.2 другим способом, а в теореме
+ 5.4 использовать эту лемму.
+ Мы попробуем поступить именно так.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим всевозможные выражения вида 
+\begin_inset Formula $sa+tp$
+\end_inset
+
+, где 
+\begin_inset Formula $s$
+\end_inset
+
+ и 
+\begin_inset Formula $t$
+\end_inset
+
+ — произвольные целые числа.
+ Пусть 
+\begin_inset Formula $d$
+\end_inset
+
+ — наименьшее положительное число, которое может быть представлено в таком
+ виде.
+ Докажем, что 
+\begin_inset Formula $d=1$
+\end_inset
+
+.
+ Пойдём от противного, пусть 
+\begin_inset Formula $d>1$
+\end_inset
+
+.
+ Разделим 
+\begin_inset Formula $p$
+\end_inset
+
+ на 
+\begin_inset Formula $d$
+\end_inset
+
+ с остатком, то есть запишем 
+\begin_inset Formula $p$
+\end_inset
+
+ в виде 
+\begin_inset Formula $p=qd+r$
+\end_inset
+
+, где 
+\begin_inset Formula $0<r<d$
+\end_inset
+
+ (равенство 
+\begin_inset Formula $r$
+\end_inset
+
+ нулю невозможно в силу того, что 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое, а значит делится без остатка только на 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $p$
+\end_inset
+
+).
+ Тогда 
+\begin_inset Formula 
+\[
+p=q\left(sa+tp\right)+r
+\]
+
+\end_inset
+
+ или 
+\begin_inset Formula 
+\[
+\left(1-t\right)p+\left(-sq\right)a=r,
+\]
+
+\end_inset
+
+так как 
+\begin_inset Formula $0<r<d$
+\end_inset
+
+, то мы пришли к противоречию с тем, что 
+\begin_inset Formula $d$
+\end_inset
+
+ наименьшее из чисел, представимых в подобном виде.
+\end_layout
+
+\begin_layout Standard
+Итак, мы показали, что существуют 
+\begin_inset Formula $s$
+\end_inset
+
+ и 
+\begin_inset Formula $t$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $sa+tp=1$
+\end_inset
+
+, положив 
+\begin_inset Formula $b=s$
+\end_inset
+
+, получим 
+\begin_inset Formula $ab=-tp+1$
+\end_inset
+
+, то есть требуемое равенство с 
+\begin_inset Formula $m=-t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Элементы 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $p-1$
+\end_inset
+
+ являются обратными к самим себе.
+ Очевидно, что 
+\begin_inset Formula $1\cdot1=1=0\cdot p+1$
+\end_inset
+
+.
+ Аналогично:
+\begin_inset Formula 
+\[
+\left(p-1\right)^{2}=p^{2}-p+1=\left(p-1\right)p+1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Более того, 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $p-1$
+\end_inset
+
+ — единственные самообратимые элементы.
+\end_layout
+
+\begin_layout Lemma
+(правило самообратимы) Для любого 
+\begin_inset Formula $0<a<p$
+\end_inset
+
+ из 
+\begin_inset Formula $a^{2}=mp+1$
+\end_inset
+
+ следует, что 
+\begin_inset Formula $a=1$
+\end_inset
+
+ или 
+\begin_inset Formula $a=p-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $a^{2}=mp+1$
+\end_inset
+
+, но 
+\begin_inset Formula $a\neq1$
+\end_inset
+
+ и 
+\begin_inset Formula $a\neq p-1$
+\end_inset
+
+.
+ тогда 
+\begin_inset Formula $a^{2}-1=mp$
+\end_inset
+
+ .
+ По формуле разности квадратов
+\begin_inset Formula 
+\[
+a^{2}-1=\left(a-1\right)\left(a+1\right).
+\]
+
+\end_inset
+
+ То есть 
+\begin_inset Formula $\left(a-1\right)\left(a+1\right)=mp$
+\end_inset
+
+ или 
+\begin_inset Formula $\left(a-1\right)\left(a+1\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $1<a<p-1$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+0<a-1<p-2<p
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+0<2<a+1<p.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Но тогда 
+\begin_inset Formula $a-1$
+\end_inset
+
+ и 
+\begin_inset Formula $a+1$
+\end_inset
+
+ не делятся на 
+\begin_inset Formula $p$
+\end_inset
+
+, а значит по теореме 5.4 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $\left(a-1\right)\left(a+1\right)$
+\end_inset
+
+ также не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Но выше мы видели, что 
+\begin_inset Formula $\left(a-1\right)\left(a+1\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Полученное противоречие показывает, что 
+\begin_inset Formula $a=1$
+\end_inset
+
+ или 
+\begin_inset Formula $a=p-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(теорема Вильсона).
+ Если 
+\begin_inset Formula $p$
+\end_inset
+
+ простое, то существует такое целое 
+\begin_inset Formula $m$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+\left(p-1\right)!=mp+\left(p-1\right),
+\]
+
+\end_inset
+
+или, иными словами: 
+\begin_inset Formula 
+\[
+\left(p-1\right)!=\left(p-1\right)\mod p.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог догадаться сам, что нужно воспользоваться правилом самообратимости
+\end_layout
+
+\end_inset
+
+ По определению 
+\begin_inset Formula 
+\[
+\left(p-1\right)!=\prod_{k=1}^{p-1}k=1\cdot2\cdot3\cdot\dots\cdot\left(p-1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По правилу самообратимости
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ все множители в правой части, кроме 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $p-1$
+\end_inset
+
+, разбиваются на пары обратных к друг другу по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Поэтому произведение 
+\begin_inset Formula $2\cdot3\cdot\dots\cdot\left(p-2\right)$
+\end_inset
+
+ представимо в виде 
+\begin_inset Formula $np+1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left(p-1\right)!=\left(np+1\right)\left(p-1\right)=n\left(p-1\right)p+\left(p-1\right).
+\]
+
+\end_inset
+
+ Полагая 
+\begin_inset Formula $m=n\left(p-1\right)$
+\end_inset
+
+ получим требуемое равенство.
+\end_layout
+
+\begin_layout Problem
+Докажите, что если 
+\begin_inset Formula $n>4$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(n-1\right)!$
+\end_inset
+
+ кратно 4.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $n>4$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(n-1\right)!=1\cdot2\cdot3\cdot4\cdot\dots\cdot(n-1)$
+\end_inset
+
+ то есть 
+\begin_inset Formula $\left(n-1\right)!$
+\end_inset
+
+ содержит множитель 
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
