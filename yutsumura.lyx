@@ -9507,6 +9507,326 @@ AA=\left(I-avv^{T}\right)\left(I-avv^{T}\right)=\\
 .
 \end_layout
 
+\begin_layout Section
+Решение системы линейных уравнений с использованием обратной матрицы (задачи
+ 65, 442)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Создать систему компьютерной алгебры, которая могла бы решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Линейной независимые векторы, обратимая матрица и выражение вектора в виде
+ линейной комбинации (задача 66)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Создать систему компьютерной алгебры, которая могла бы решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Найдите матрицу, преобразующую заданные вектора в другие заданные вектора
+ (задача 44)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Создать систему компьютерной алгебры, которая могла бы решить эту задачу,
+\end_layout
+
+\begin_layout Plain Layout
+здесь нужна будет небольшая теоретическая подготовка
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Простое коммутативное соотношение для матриц (задача 55)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — вещественные матрицы размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $A+B$
+\end_inset
+
+ — обратимая матрица, покажите, что 
+\begin_inset Formula 
+\[
+A\left(A+B\right)^{-1}B=B\left(A+B\right)^{-1}A.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим выражение 
+\begin_inset Formula 
+\begin{multline*}
+A\left(A+B\right)^{-1}B+B\left(A+B\right)^{-1}B=\\
+=\left(A+B\right)\left(A+B\right)^{-1}B=B.
+\end{multline*}
+
+\end_inset
+
+ С другой стороны: 
+\begin_inset Formula 
+\begin{multline*}
+B\left(A+B\right)^{-1}A+B\left(A+B\right)^{-1}B=\\
+=B\left(A+B\right)^{-1}\left(A+B\right)=B.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как оба эти выражения равны 
+\begin_inset Formula $B$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{multline*}
+A\left(A+B\right)^{-1}B+B\left(A+B\right)^{-1}B=\\
+=B\left(A+B\right)^{-1}A+B\left(A+B\right)^{-1}B.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Вычитая из левой и правой части этого равенства 
+\begin_inset Formula $B\left(A+B\right)^{-1}B$
+\end_inset
+
+, получим требуемое равенство 
+\begin_inset Formula 
+\[
+A\left(A+B\right)^{-1}B=B\left(A+B\right)^{-1}A.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим ещё одно доказательство 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Это доказательство с yutsumura.com
+\end_layout
+
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $A+B=P$
+\end_inset
+
+, тогда 
+\begin_inset Formula $B=P-A$
+\end_inset
+
+.
+ Перепишем левую и правую части доказываемого равенства в терминах 
+\begin_inset Formula $P$
+\end_inset
+
+ и 
+\begin_inset Formula $A$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+A\left(A+B\right)^{-1}B=AP^{-1}\left(P-A\right)=\\
+=AP^{-1}P-AP^{-1}A=A-AP^{-1}A,
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+B\left(A+B\right)^{-1}A=\left(P-A\right)P^{-1}A=\\
+=PP^{-1}A-AP^{-1}A=A-AP^{-1}A.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Правые части этих равенств равны, значит равны и левые, что и требовалось.
+\end_layout
+
+\begin_layout Section
+Единственность обратной матрицы (задача 251)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — обратимая матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что обратная матрица матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ единственная.
+\end_layout
+
+\begin_layout Solution
+Пусть у 
+\begin_inset Formula $A$
+\end_inset
+
+ имеется две обратные матрицы 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+.
+ По определению обратной матрицы должны выполняться равенства 
+\begin_inset Formula 
+\[
+AB_{1}=B_{1}A=I,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+AB_{2}=B_{2}A=I,
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $I$
+\end_inset
+
+ — единичная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим выражение 
+\begin_inset Formula $B_{1}AB_{2}$
+\end_inset
+
+.
+ В силу того, что 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ — обратная матрица к 
+\begin_inset Formula $A$
+\end_inset
+
+, получаем: 
+\begin_inset Formula 
+\[
+B_{1}AB_{2}=\left(B_{1}A\right)B_{2}=IB_{2}=B_{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны, в силу того, что 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+ — тоже обратная матрица к 
+\begin_inset Formula $A$
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+B_{1}AB_{2}=B_{1}\left(AB_{2}\right)=B_{1}I=B_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как левые части этих цепочек равенств равны, то равны и правые, то есть
+ 
+\begin_inset Formula $B_{1}=B_{2}$
+\end_inset
+
+, то есть у 
+\begin_inset Formula $A$
+\end_inset
+
+ не может быть несколько разных обратных матриц.
+\end_layout
+
 \begin_layout Chapter
 Не сортированные
 \end_layout
@@ -14071,6 +14391,28 @@ P\left(\lim_{n\to\infty}C_{n}\right)=\lim_{n\to\infty}P\left(C_{n}\right)=\lim_{
 
 \end_layout
 
+\begin_layout Subsection
+Вероятность того, что три отрезка образуют треугольник (задача 754)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Преобразовать в задачу и решить
+\end_layout
+
+\end_inset
+
+Имеется палочка единичной длины.
+ На палочке случайным образом выбираются две точки (равномерно по длине
+ палочки), независимо друг от друга.
+ В этих точках палочка ломается на три кусочка.
+ Какова вероятность того, что из трёх этих кусочков можно сформировать треугольн
+ик?
+\end_layout
+
 \begin_layout Chapter
 Дискретные случайные величины
 \end_layout
@@ -14964,6 +15306,210 @@ D\left[X\right]=0+\frac{\frac{1}{5}}{\left(\frac{4}{5}\right)^{2}}+\frac{\frac{2
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Верхняя граница для дисперсии ограниченной случайной величины (задача 753)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $c$
+\end_inset
+
+ — заданное положительное вещественное число, 
+\begin_inset Formula $X$
+\end_inset
+
+ — случайная величина, принимающая значения между 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+, откуда следует 
+\begin_inset Formula $P\left\{ 0\le X\le c\right\} =1$
+\end_inset
+
+.
+ Докажите, следующее неравенство о дисперсии 
+\begin_inset Formula 
+\[
+D\left[X\right]\le\frac{c^{2}}{4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению, 
+\begin_inset Formula 
+\[
+D\left[X\right]=E\left[\left(X-E\left[X\right]\right)^{2}\right],
+\]
+
+\end_inset
+
+из этого равенства можно вывести эквивалентную формулу 
+\begin_inset Formula 
+\[
+D\left[X\right]=E\left[X^{2}\right]-\left(E\left[X\right]\right)^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $0\le X\le c$
+\end_inset
+
+, то 
+\begin_inset Formula $0\le X^{2}\le c^{2}$
+\end_inset
+
+, откуда 
+\begin_inset Formula $E\left[X\right]<c$
+\end_inset
+
+ и 
+\begin_inset Formula $E\left[X^{2}\right]<c^{2}$
+\end_inset
+
+.
+ Заметив, что 
+\begin_inset Formula $\left(E\left[X\right]\right)^{2}\ge0$
+\end_inset
+
+ как и квадрат любого вещественного числа, легко получить более грубую оценку,
+ чем требуется в задаче:
+\begin_inset Formula 
+\[
+D\left[X\right]\le E\left[X^{2}\right]\le c^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Попытаемся теперь улучшить эту оценку.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел этот момент
+\end_layout
+
+\end_inset
+
+ Так как 
+\begin_inset Formula $X\le c$
+\end_inset
+
+, то
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+E\left[X^{2}\right]=E\left[XX\right]\le E\left[cX\right]=cE\left[X\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula 
+\[
+D\left[X\right]\le cE\left[X\right]-\left(E\left[X\right]\right)^{2}=E\left[X\right]\left(c-E\left[X\right]\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначив 
+\begin_inset Formula $E\left[X\right]=\mu$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+D\left[X\right]\le\mu\left(c-\mu\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим выражение в правой части как функцию от 
+\begin_inset Formula $\mu$
+\end_inset
+
+ на отрезке 
+\begin_inset Formula $0\le\mu\le c$
+\end_inset
+
+ и найдём её наибольшее значение.
+ Воспользуемся необходимым условием экстремума
+\begin_inset Formula 
+\[
+\left[\mu\left(c-\mu\right)\right]^{\prime}=\left(c-\mu\right)-\mu=c-2\mu,
+\]
+
+\end_inset
+
+ таким образом, производная равна нулю при 
+\begin_inset Formula $\mu=\frac{c}{2}$
+\end_inset
+
+.
+ Остаётся рассмотреть значение функции 
+\begin_inset Formula $\mu\left(c-\mu\right)$
+\end_inset
+
+ в этой точке и на концах отрезка, то есть при 
+\begin_inset Formula $\mu=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\mu=c$
+\end_inset
+
+ получаем 
+\begin_inset Formula $D\left[X\right]=0$
+\end_inset
+
+.
+ А при 
+\begin_inset Formula $\mu=\frac{c}{2}$
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+D\left[X\right]\le\frac{c}{2}\left(c-\frac{c}{2}\right)=\left(\frac{c}{2}\right)^{2}=\frac{c^{2}}{4},
+\]
+
+\end_inset
+
+ что и требовалось.
 \end_layout
 
 \end_body
