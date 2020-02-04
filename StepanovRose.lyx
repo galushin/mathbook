@@ -2937,6 +2937,505 @@ status open
 .
 \end_layout
 
+\begin_layout Section
+Доказательство малой теоремы Ферма
+\end_layout
+
+\begin_layout Standard
+Воспользовавшись полученными выше в этой главе результатами, можно доказать
+ малую теорему Ферма.
+\end_layout
+
+\begin_layout Theorem*
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на эту же формулировку выше
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $p$
+\end_inset
+
+ простое, то 
+\begin_inset Formula $a^{p-1}-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ для любого 
+\begin_inset Formula $0<a<p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим выражение 
+\begin_inset Formula 
+\[
+\prod_{k=1}^{p-1}\left(ak\right)=a^{p-1}\prod_{k=1}^{p-1}k=a^{p-1}\left(p-1\right)!.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По теореме Вильсона 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left(p-1\right)!=mp+\left(p-1\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+\prod_{k=1}^{p-1}\left(ak\right)=a^{p-1}\left(mp+\left(p-1\right)\right)=\\
+=a^{p-1}\left(m+1\right)p-a^{p-1}=vp-a^{p-1},
+\end{multline*}
+
+\end_inset
+
+где 
+\begin_inset Formula $v$
+\end_inset
+
+ — некоторое целое число.
+\end_layout
+
+\begin_layout Proof
+С другой стороны, любое произведение 
+\begin_inset Formula $ak$
+\end_inset
+
+ можно разделить с остатком на 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть представить в виде 
+\begin_inset Formula 
+\[
+ak=q_{k}p+r_{k},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $q_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $r_{k}$
+\end_inset
+
+ — целые числа и 
+\begin_inset Formula $0<r_{k}<p$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+\prod_{k=1}^{p-1}\left(ak\right)=\prod_{k=1}^{p-1}\left(q_{k}p+r_{k}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Раскрывая в этом произведении скобки получим 
+\begin_inset Formula 
+\[
+\prod_{k=1}^{p-1}\left(ak\right)=up+\prod_{k=1}^{p-1}r_{k},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $u$
+\end_inset
+
+ — некоторое целое число.
+ По лемме о перестановке остатков 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ множество 
+\begin_inset Formula $\left\{ r_{1},\dots,r_{p-1}\right\} $
+\end_inset
+
+ является перестановкой множества 
+\begin_inset Formula $\left\{ 1,2,\dots,p-1\right\} $
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\prod_{k=1}^{p-1}r_{k}=\left(p-1\right)!,
+\]
+
+\end_inset
+
+поэтому 
+\begin_inset Formula 
+\begin{multline*}
+\prod_{k=1}^{p-1}\left(ak\right)=up+\left(p-1\right)!=up+mp+\left(p-1\right)=\\
+=\left(u+m+1\right)p-1=wp-1,
+\end{multline*}
+
+\end_inset
+
+где 
+\begin_inset Formula $w=u+m+1$
+\end_inset
+
+.
+ Приравнивания два выражения 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылки
+\end_layout
+
+\end_inset
+
+ для 
+\begin_inset Formula $\prod_{k=1}^{p-1}\left(ak\right)$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+wp-1=vp-a^{p-1}
+\]
+
+\end_inset
+
+ или 
+\begin_inset Formula 
+\[
+a^{p-1}-1=vp-wp=\left(v-w\right)p,
+\]
+
+\end_inset
+
+ так как 
+\begin_inset Formula $\left(v-w\right)$
+\end_inset
+
+ — целое число, то что 
+\begin_inset Formula $a^{p-1}-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, что и требовалось доказать.
+\end_layout
+
+\begin_layout Standard
+Заметим, что 
+\begin_inset Formula $a^{p-2}$
+\end_inset
+
+ является обратным к 
+\begin_inset Formula $a$
+\end_inset
+
+, поэтому что 
+\begin_inset Formula $a^{p-2}a=a^{p-1}$
+\end_inset
+
+, что, по малой теореме Ферма, равно 
+\begin_inset Formula $mp+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Справедливо ли утверждение, обратное малой теореме Ферма.
+ Для ответа на этот вопрос нужен ещё один промежуточный результат.
+\end_layout
+
+\begin_layout Lemma
+(Лемма о необратимости).
+ Если 
+\begin_inset Formula $n=uv$
+\end_inset
+
+ и 
+\begin_inset Formula $u,v>1$
+\end_inset
+
+, то 
+\begin_inset Formula $u$
+\end_inset
+
+ не является обратимым по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Нужно доказать, что не существует числа 
+\begin_inset Formula $w$
+\end_inset
+
+ такого, что 
+\begin_inset Formula $wu=1\mod n$
+\end_inset
+
+.
+ Доказывать будем от противного.
+ Пусть существует такое целое 
+\begin_inset Formula $w$
+\end_inset
+
+, что 
+\begin_inset Formula $wu=mn+1$
+\end_inset
+
+.
+ Умножим это равенство на 
+\begin_inset Formula $v$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+wuv=mnv+v,
+\]
+
+\end_inset
+
+так как 
+\begin_inset Formula $n=uv$
+\end_inset
+
+ по условию, то 
+\begin_inset Formula 
+\[
+v=wn-mnv=\left(w-mv\right)n.
+\]
+
+\end_inset
+
+Так как 
+\begin_inset Formula $n=uv$
+\end_inset
+
+ и 
+\begin_inset Formula $u>1$
+\end_inset
+
+, то 
+\begin_inset Formula $v<n$
+\end_inset
+
+.
+ Но это противоречит равенству 
+\begin_inset Formula $v=\left(w-mv\right)n$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $z=w-mw>0$
+\end_inset
+
+, то 
+\begin_inset Formula $zn\ge n>v$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $z<0$
+\end_inset
+
+, то 
+\begin_inset Formula $zn<0$
+\end_inset
+
+, но 
+\begin_inset Formula $v>1$
+\end_inset
+
+ по условию.
+\end_layout
+
+\begin_layout Proof
+Полученное противоречие означает, что предположение было неправильным и
+ для 
+\begin_inset Formula $u$
+\end_inset
+
+ не существует обратного элемента.
+\end_layout
+
+\begin_layout Definition
+Числа 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ называются взаимно простыми, если 
+\begin_inset Formula $\gcd\left(m,n\right)=1$
+\end_inset
+
+.
+ Иначе говоря, 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ взаимно простые, если у них нет общих делителей, больших 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+По лемме о необратимости, в арифметике по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+, где число 
+\begin_inset Formula $n$
+\end_inset
+
+ — не простое, бывают как обратимые, так и не обратимые элементы.
+ Те элементы, которые не являются взаимно-простыми с 
+\begin_inset Formula $n$
+\end_inset
+
+, необратимы.
+\end_layout
+
+\begin_layout Theorem
+(обращение малой теоремы Ферма)
+\end_layout
+
+\begin_layout Theorem
+Если для любого 
+\begin_inset Formula $a$
+\end_inset
+
+ такого, что 
+\begin_inset Formula $0<a<n$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula 
+\[
+a^{n-1}=1+q_{a}n,
+\]
+
+\end_inset
+
+то 
+\begin_inset Formula $n$
+\end_inset
+
+ простое.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не додумался до этого шага сам
+\end_layout
+
+\end_inset
+
+ Допустим, что 
+\begin_inset Formula $n=uv$
+\end_inset
+
+ — не простое число.
+ Тогда, по лемме о необратимости 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, число 
+\begin_inset Formula $u$
+\end_inset
+
+ является необратимым.
+ Но по условию теоремы 
+\begin_inset Formula 
+\[
+u^{n-1}=u^{n-2}\cdot u=1+q_{u}n,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $u^{n-2}$
+\end_inset
+
+ являются взаимно обратными элементами или, иными словами, число 
+\begin_inset Formula $u$
+\end_inset
+
+ — обратимо по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Полученное противоречие означает, что исходное предположение было неправильным
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ — простое число.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
