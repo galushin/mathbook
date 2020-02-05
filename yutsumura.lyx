@@ -9827,6 +9827,1071 @@ B_{1}AB_{2}=B_{1}\left(AB_{2}\right)=B_{1}I=B_{1}.
  не может быть несколько разных обратных матриц.
 \end_layout
 
+\begin_layout Section
+Формула Шермана-Вудберри для обратной матрицы (задача 250)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ — векторы из 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, а 
+\begin_inset Formula $I$
+\end_inset
+
+ — единичная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Пусть выполняется 
+\begin_inset Formula 
+\[
+v^{T}u\neq-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Определим матрицу 
+\begin_inset Formula $A=I+uv^{T}$
+\end_inset
+
+.
+ Докажите, что матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ обратимая и обратная матрица даётся формулой 
+\begin_inset Formula $A^{-1}=I-auv^{T}$
+\end_inset
+
+, где 
+\begin_inset Formula 
+\[
+a=\frac{1}{1+v^{T}u}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Данная формула называется формулой Шермана-Вудберри.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим матрицу 
+\begin_inset Formula 
+\[
+B=I-\frac{uv^{T}}{1+v^{T}u}
+\]
+
+\end_inset
+
+ и вычислим 
+\begin_inset Formula $AB$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+AB=\left(I-uv^{T}\right)\left(I-\frac{uv^{T}}{1+v^{T}u}\right)=\\
+=I-uv^{T}-\frac{uv^{T}}{1+v^{T}u}+\frac{uv^{T}uv^{T}}{1+v^{T}u}=\\
+=I-\frac{uv^{T}\left(1+v^{T}u-1\right)}{1+v^{T}u}+\frac{uv^{T}\cdot v^{T}u}{1+v^{T}u}=\\
+=I-\frac{uv^{T}\left(v^{T}u-v^{T}u\right)}{1+v^{T}u}=I.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Из 
+\begin_inset Formula $AB=I$
+\end_inset
+
+ следует 
+\begin_inset Formula $BA=I$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать или дать ссылку
+\end_layout
+
+\end_inset
+
+.
+ Действительно, пусть 
+\begin_inset Formula $AB=I$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\left(BA\right)B=B$
+\end_inset
+
+ и 
+\begin_inset Formula $A\left(BA\right)=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, действительно 
+\begin_inset Formula $A^{-1}=B$
+\end_inset
+
+, то есть 
+\begin_inset Formula $A$
+\end_inset
+
+ — обратимая матрица.
+\end_layout
+
+\begin_layout Section
+Формула обратной матрицы для матрицы 
+\begin_inset Formula $I+A$
+\end_inset
+
+, где 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица размера 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ (задача 505)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная матрица размера 
+\begin_inset Formula $2\times2$
+\end_inset
+
+, причём 
+\begin_inset Formula $\mathrm{tr}\left(A\right)\neq-1$
+\end_inset
+
+ и пусть 
+\begin_inset Formula $I$
+\end_inset
+
+ — единичная матрица размера 
+\begin_inset Formula $2\times2$
+\end_inset
+
+.
+ Докажите, что обратная матрица для матрицы 
+\begin_inset Formula $I+A$
+\end_inset
+
+ даётся формулой 
+\begin_inset Formula 
+\[
+\left(I+A\right)^{-1}=I-\frac{1}{1+\mathrm{tr}\left(A\right)}A.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Используя эту формулу, вычислите обратную матрицу для матрицы 
+\begin_inset Formula $\begin{pmatrix}2 & 1\\
+1 & 2
+\end{pmatrix}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $A$
+\end_inset
+
+ вырожденная, то её 
+\begin_inset Formula $A$
+\end_inset
+
+ можно представить в виде 
+\begin_inset Formula $uv^{T}$
+\end_inset
+
+, где 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ — некоторые вектора из 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ Действительно, так как матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ вырожденная, то уравнение у уравнения 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ имеется нетривиальное решение.
+ Обозначим вектор-столбцы 
+\begin_inset Formula $A$
+\end_inset
+
+ как 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $x_{1}A_{1}+x_{2}A_{2}=0$
+\end_inset
+
+, где 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ не равны одновременно нулю.
+ Пусть 
+\begin_inset Formula $x_{1}\neq0$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+A_{1}=-\frac{x_{2}}{x_{1}}A_{2}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula $A$
+\end_inset
+
+ можно записать в виде 
+\begin_inset Formula $A=uv^{T}$
+\end_inset
+
+, где 
+\begin_inset Formula $u=A_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $v^{T}=\begin{pmatrix}-\frac{x_{2}}{x_{1}} & 1\end{pmatrix}$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $x_{1}=0$
+\end_inset
+
+, то 
+\begin_inset Formula $x_{2}\neq0$
+\end_inset
+
+ (так как 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ не могут быть равны нулю одновременно) и 
+\begin_inset Formula 
+\[
+A_{2}=-\frac{x_{1}}{x_{2}}A_{1},
+\]
+
+\end_inset
+
+а матрицу 
+\begin_inset Formula $A$
+\end_inset
+
+ можно записать в виде 
+\begin_inset Formula $A=uv^{T}$
+\end_inset
+
+, где 
+\begin_inset Formula $u=A_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $v^{T}=\begin{pmatrix}1 & -\frac{x_{1}}{x_{2}}\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению следа матрицы, в случае матрицы размера 
+\begin_inset Formula $2\times2$
+\end_inset
+
+, получаем:
+\begin_inset Formula 
+\[
+\mathrm{tr}\left(A\right)=a_{11}+a_{22}=u_{1}v_{1}+u_{2}v_{2}=v^{T}u=u^{T}v,
+\]
+
+\end_inset
+
+ по условию задачи 
+\begin_inset Formula $\mathrm{tr}\left(A\right)\neq-1$
+\end_inset
+
+, поэтому поэтому к матрице 
+\begin_inset Formula $I+A=I+uv^{T}$
+\end_inset
+
+ применим результат задачи 250
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\[
+\left(I+A\right)^{-1}=I-\frac{1}{1+u^{T}v}A=I-\frac{1}{1+\mathrm{tr}\left(A\right)}A,
+\]
+
+\end_inset
+
+ что и требовалось доказать.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $B=\begin{pmatrix}2 & 1\\
+1 & 2
+\end{pmatrix}$
+\end_inset
+
+, представим эту матрицу в виде 
+\begin_inset Formula $B=I+A$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+A=B-I=\begin{pmatrix}2 & 1\\
+1 & 2
+\end{pmatrix}-\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=\begin{pmatrix}1 & 1\\
+1 & 1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+ Эта матрица вырожденная, так как её столбцы одинаковы и 
+\begin_inset Formula $\mathrm{tr}\left(A\right)=1+1=2\neq-1$
+\end_inset
+
+, поэтому мы можем воспользоваться полученным выше результатом: 
+\begin_inset Formula 
+\[
+B^{-1}=I-\frac{1}{1+\mathrm{tr}\left(A\right)}A=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}-\frac{1}{3}\begin{pmatrix}1 & 1\\
+1 & 1
+\end{pmatrix}=\frac{1}{3}\begin{pmatrix}2 & -1\\
+-1 & 2
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Степени диагональной матрицы (задача 7)
+\end_layout
+
+\begin_layout Standard
+Эту задачу можно было бы обобщить для матриц произвольного порядка.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+a & 0\\
+0 & b
+\end{array}\right)$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $A^{n}=\left(\begin{array}{cc}
+a^{n} & 0\\
+0 & b^{n}
+\end{array}\right)$
+\end_inset
+
+ для любого 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $B=S^{-1}AS$
+\end_inset
+
+, где 
+\begin_inset Formula $S$
+\end_inset
+
+ — обратимая матрица 
+\begin_inset Formula $2\times2$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $B^{n}=S^{-1}A^{n}S$
+\end_inset
+
+ для любого 
+\begin_inset Formula $n\in\mathbb{N}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Найдём общую формулу для произведения диагональных матриц.
+ Пусть 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+a & 0\\
+0 & b
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $C=\left(\begin{array}{cc}
+c & 0\\
+0 & d
+\end{array}\right)$
+\end_inset
+
+, тогда по правилам вычисления произведения матриц: 
+\begin_inset Formula $AC=\left(\begin{array}{cc}
+ac & 0\\
+0 & bd
+\end{array}\right)$
+\end_inset
+
+.
+ Тогда равенство 
+\begin_inset Formula $A^{n}=\left(\begin{array}{cc}
+a^{n} & 0\\
+0 & b^{n}
+\end{array}\right)$
+\end_inset
+
+ можно доказать по индукции.
+ База индукции: 
+\begin_inset Formula $A^{1}=A=\left(\begin{array}{cc}
+a^{1} & 0\\
+0 & b^{1}
+\end{array}\right)$
+\end_inset
+
+.
+ Пусть теперь мы доказали для некоторого 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, что 
+\begin_inset Formula $A^{k}=\left(\begin{array}{cc}
+a^{k} & 0\\
+0 & b^{k}
+\end{array}\right)$
+\end_inset
+
+.
+ Найдём 
+\begin_inset Formula 
+\[
+A^{k+1}=A^{k}A=\left(\begin{array}{cc}
+a^{k} & 0\\
+0 & b^{k}
+\end{array}\right)\left(\begin{array}{cc}
+a & 0\\
+0 & b
+\end{array}\right)=\left(\begin{array}{cc}
+a^{k+1} & 0\\
+0 & b^{k+1}
+\end{array}\right),
+\]
+
+\end_inset
+
+что и требовалось.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь матрицу 
+\begin_inset Formula $B=S^{-1}AS$
+\end_inset
+
+.
+ Снова воспользуемся математической индукцией.
+ База индукции: 
+\begin_inset Formula $B^{1}=B=S^{-1}AS=S^{-1}A^{1}S$
+\end_inset
+
+.
+ Пусть теперь доказали для некоторого 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, что 
+\begin_inset Formula $B^{k}=S^{-1}A^{k}S$
+\end_inset
+
+.
+ Найдём 
+\begin_inset Formula 
+\begin{multline*}
+B^{k+1}=B^{k}B=\left(S^{-1}A^{k}S\right)\cdot\left(S^{-1}AS\right)=\\
+=S^{-1}A^{k}\left(SS^{-1}\right)AS=S^{-1}A^{k}I_{2}AS=\\
+=S^{-1}A^{k}AS=S^{-1}A^{k+1}S,
+\end{multline*}
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Section
+Обратная матрица для транспонированной — это транспонированная от обратной
+ матрицы (задача 506)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — обратимая матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+ — так же обратимая матрица и 
+\begin_inset Formula 
+\[
+\left(A^{T}\right)^{-1}=\left(A^{-1}\right)^{T}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Действительно, по правилу вычисления транспонирования произведения матриц
+ получаем 
+\begin_inset Formula 
+\[
+A^{T}\left(A^{-1}\right)^{T}=\left(A^{-1}A\right)^{T}=I^{T}=I,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(A^{-1}\right)^{T}A^{T}=\left(AA^{-1}\right)^{T}=I^{T}=I.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $\left(A^{-1}\right)^{T}$
+\end_inset
+
+ удовлетворяет требованиям к 
+\begin_inset Formula $\left(A^{T}\right)^{-1}$
+\end_inset
+
+.
+ Так как обратная матрица единственная 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\left(A^{T}\right)^{-1}=\left(A^{-1}\right)^{T}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ существует по условию задачи, то 
+\begin_inset Formula $\left(A^{T}\right)^{-1}$
+\end_inset
+
+ также существует и 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+ — обратимая матрица.
+\end_layout
+
+\begin_layout Section
+Является ли произведение нильпотентной и обратимой матрицы нильпотентной
+ матрицей? (задача 77)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Матрица обратимая тогда и только тогда, когда она невырожденная (задача
+ 26)
+\end_layout
+
+\begin_layout Problem
+В этой задаче мы покажем, что концепция невырожденной матрицы эквивалентна
+ концепции обратимой матрицы.
+ Итак, мы хотим показать, что матрица не вырождена тогда и только тогда,
+ когда она обратима.
+\end_layout
+
+\begin_layout Problem
+а) Покажите, что если 
+\begin_inset Formula $A$
+\end_inset
+
+ — обратимая матрица, то 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная.
+\end_layout
+
+\begin_layout Problem
+б) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ и 
+\begin_inset Formula $C$
+\end_inset
+
+ — матрицы размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ и 
+\begin_inset Formula $AB=C$
+\end_inset
+
+.
+ Докажите, что если 
+\begin_inset Formula $A$
+\end_inset
+
+ или 
+\begin_inset Formula $B$
+\end_inset
+
+ вырождены, то 
+\begin_inset Formula $C$
+\end_inset
+
+ — тоже вырождена.
+\end_layout
+
+\begin_layout Problem
+в) Покажите, что если 
+\begin_inset Formula $A$
+\end_inset
+
+ \SpecialChar softhyphen
+– невырожденная, то 
+\begin_inset Formula $A$
+\end_inset
+
+ обратима.
+\end_layout
+
+\begin_layout Solution
+Напомним, что матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ называется вырожденной, если у уравнения 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ имеются нетривиальные (ненулевые) решения.
+\end_layout
+
+\begin_layout Solution
+а) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — обратимая матрица, рассмотрим уравнение 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+.
+ Если у этого уравнения есть решение 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, то умножив равенство 
+\begin_inset Formula $Ax_{0}=0$
+\end_inset
+
+ на 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ слева, получим 
+\begin_inset Formula $x_{0}=A^{-1}0=0$
+\end_inset
+
+, таким образом, у уравнения 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ имеются только нулевые решения, а значит 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная матрица.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+А мы это не доказывали ранее?
+\end_layout
+
+\end_inset
+
+ Пусть 
+\begin_inset Formula $B$
+\end_inset
+
+ вырождена, тогда имеется такой ненулевой вектор 
+\begin_inset Formula $y$
+\end_inset
+
+, что 
+\begin_inset Formula $By=0$
+\end_inset
+
+.
+ Умножив это равенство слева на 
+\begin_inset Formula $A$
+\end_inset
+
+, получим 
+\begin_inset Formula $A\left(By\right)=0$
+\end_inset
+
+, но по определению произведения матриц получаем 
+\begin_inset Formula $A\left(By\right)=\left(AB\right)y=Cy$
+\end_inset
+
+.
+ Таким образом, если 
+\begin_inset Formula $B$
+\end_inset
+
+ вырожденная матрица, то у уравнения 
+\begin_inset Formula $Cx=0$
+\end_inset
+
+ имеется нетривиальное решение, то есть 
+\begin_inset Formula $C=AB$
+\end_inset
+
+ — тоже вырожденная матрица.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $A$
+\end_inset
+
+ — вырожденная, 
+\begin_inset Formula $B$
+\end_inset
+
+ — невырожденная (случай, когда 
+\begin_inset Formula $B$
+\end_inset
+
+ вырожденная был уже рассмотрен выше).
+ Тогда существует такой ненулевой вектор 
+\begin_inset Formula $z$
+\end_inset
+
+, что 
+\begin_inset Formula $Az=0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $B$
+\end_inset
+
+ невырожденная, то у уравнения 
+\begin_inset Formula $By=z$
+\end_inset
+
+ имеется решение.
+ Тогда 
+\begin_inset Formula $Cy=\left(AB\right)y=A\left(By\right)=Az=0$
+\end_inset
+
+.
+ Так как из 
+\begin_inset Formula $y=0$
+\end_inset
+
+ следует 
+\begin_inset Formula $z=By=B0=0$
+\end_inset
+
+, то 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+.
+ Таким образом, у уравнения 
+\begin_inset Formula $Cy=0$
+\end_inset
+
+ имеется ненулевое решение, то есть 
+\begin_inset Formula $C$
+\end_inset
+
+ — вырожденная матрица.
+\end_layout
+
+\begin_layout Solution
+в) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — невырожденная матрица.
+ Тогда у уравнения 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ имеется единственное решение для любого 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ В частности, можно взять в качестве 
+\begin_inset Formula $b$
+\end_inset
+
+ столбцы единичной матрицы 
+\begin_inset Formula $e_{1},\dots,e_{n}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $x_{k}$
+\end_inset
+
+ — это решение уравнения 
+\begin_inset Formula $Ax=e_{k}$
+\end_inset
+
+.
+ Составим матрицу 
+\begin_inset Formula $B=\left[x_{1,},\dots,x_{n}\right]$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+AB=\left[Ax_{1},\dots,Ax_{n}\right]=\left[e_{1},\dots,e_{n}\right]=I.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Упустил этот момент
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Повторим те же рассуждения применительно к матрице 
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+а почему 
+\begin_inset Formula $B$
+\end_inset
+
+ оказалась невырожденной?
+\end_layout
+
+\end_inset
+
+.
+ Тогда существует матрица 
+\begin_inset Formula $C$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $BC=I$
+\end_inset
+
+.
+ Мы покажем, что 
+\begin_inset Formula $C=A$
+\end_inset
+
+.
+ Умножим равенство 
+\begin_inset Formula $AB=I$
+\end_inset
+
+ на 
+\begin_inset Formula $C$
+\end_inset
+
+ справа: 
+\begin_inset Formula $ABC=C$
+\end_inset
+
+, так как 
+\begin_inset Formula $BC=I$
+\end_inset
+
+, то 
+\begin_inset Formula $ABC=A\left(BC\right)=AI=A$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $C=A$
+\end_inset
+
+.
+ Таким образом, мы доказали, что 
+\begin_inset Formula $AB=BA=I$
+\end_inset
+
+, то есть матрица обратима и 
+\begin_inset Formula $A^{-1}=B$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Chapter
 Не сортированные
 \end_layout
@@ -10073,165 +11138,6 @@ T\left(0_{n}\right)=T\left(0\cdot x\right)=0\cdot T\left(x\right)=0\cdot y=0_{m}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Степени диагональной матрицы (задача 7)
-\end_layout
-
-\begin_layout Standard
-Эту задачу можно было бы обобщить для матриц произвольного порядка.
-\end_layout
-
-\begin_layout Problem
-Пусть 
-\begin_inset Formula $A=\left(\begin{array}{cc}
-a & 0\\
-0 & b
-\end{array}\right)$
-\end_inset
-
-.
- Доказать, что 
-\begin_inset Formula $A^{n}=\left(\begin{array}{cc}
-a^{n} & 0\\
-0 & b^{n}
-\end{array}\right)$
-\end_inset
-
- для любого 
-\begin_inset Formula $n\in\mathbb{N}$
-\end_inset
-
-.
- Пусть 
-\begin_inset Formula $B=S^{-1}AS$
-\end_inset
-
-, где 
-\begin_inset Formula $S$
-\end_inset
-
- — обратимая матрица 
-\begin_inset Formula $2\times2$
-\end_inset
-
-.
- Доказать, что 
-\begin_inset Formula $B^{n}=S^{-1}A^{n}S$
-\end_inset
-
- для любого 
-\begin_inset Formula $n\in\mathbb{N}.$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-Найдём общую формулу для произведения диагональных матриц.
- Пусть 
-\begin_inset Formula $A=\left(\begin{array}{cc}
-a & 0\\
-0 & b
-\end{array}\right)$
-\end_inset
-
- и 
-\begin_inset Formula $C=\left(\begin{array}{cc}
-c & 0\\
-0 & d
-\end{array}\right)$
-\end_inset
-
-, тогда по правилам вычисления произведения матриц: 
-\begin_inset Formula $AC=\left(\begin{array}{cc}
-ac & 0\\
-0 & bd
-\end{array}\right)$
-\end_inset
-
-.
- Тогда равенство 
-\begin_inset Formula $A^{n}=\left(\begin{array}{cc}
-a^{n} & 0\\
-0 & b^{n}
-\end{array}\right)$
-\end_inset
-
- можно доказать по индукции.
- База индукции: 
-\begin_inset Formula $A^{1}=A=\left(\begin{array}{cc}
-a^{1} & 0\\
-0 & b^{1}
-\end{array}\right)$
-\end_inset
-
-.
- Пусть теперь мы доказали для некоторого 
-\begin_inset Formula $k\in\mathbb{N}$
-\end_inset
-
-, что 
-\begin_inset Formula $A^{k}=\left(\begin{array}{cc}
-a^{k} & 0\\
-0 & b^{k}
-\end{array}\right)$
-\end_inset
-
-.
- Найдём 
-\begin_inset Formula 
-\[
-A^{k+1}=A^{k}A=\left(\begin{array}{cc}
-a^{k} & 0\\
-0 & b^{k}
-\end{array}\right)\left(\begin{array}{cc}
-a & 0\\
-0 & b
-\end{array}\right)=\left(\begin{array}{cc}
-a^{k+1} & 0\\
-0 & b^{k+1}
-\end{array}\right),
-\]
-
-\end_inset
-
-что и требовалось.
-\end_layout
-
-\begin_layout Solution
-Рассмотрим теперь матрицу 
-\begin_inset Formula $B=S^{-1}AS$
-\end_inset
-
-.
- Снова воспользуемся математической индукцией.
- База индукции: 
-\begin_inset Formula $B^{1}=B=S^{-1}AS=S^{-1}A^{1}S$
-\end_inset
-
-.
- Пусть теперь доказали для некоторого 
-\begin_inset Formula $k\in\mathbb{N}$
-\end_inset
-
-, что 
-\begin_inset Formula $B^{k}=S^{-1}A^{k}S$
-\end_inset
-
-.
- Найдём 
-\begin_inset Formula 
-\begin{multline*}
-B^{k+1}=B^{k}B=\left(S^{-1}A^{k}S\right)\cdot\left(S^{-1}AS\right)=\\
-=S^{-1}A^{k}\left(SS^{-1}\right)AS=S^{-1}A^{k}I_{2}AS=\\
-=S^{-1}A^{k}AS=S^{-1}A^{k+1}S,
-\end{multline*}
-
-\end_inset
-
- что и требовалось.
 \end_layout
 
 \begin_layout Section
