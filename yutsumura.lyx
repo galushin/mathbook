@@ -10525,6 +10525,318 @@ status open
 
 \end_layout
 
+\begin_layout Problem
+Квадратная матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ называется нильпотентной, если существует такое положительное целое число
+ 
+\begin_inset Formula $k$
+\end_inset
+
+, что 
+\begin_inset Formula $A^{k}=O$
+\end_inset
+
+, где 
+\begin_inset Formula $O$
+\end_inset
+
+ — нулевая матрица соответствующей размерности.
+\end_layout
+
+\begin_layout Problem
+а) Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — нильпотентная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, а 
+\begin_inset Formula $B$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $N\times N$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $AB=BA$
+\end_inset
+
+.
+ Покажите, что 
+\begin_inset Formula $AB$
+\end_inset
+
+ нильпотентная матрица.
+\end_layout
+
+\begin_layout Problem
+б) Пусть 
+\begin_inset Formula $P$
+\end_inset
+
+ — обратимая матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, а 
+\begin_inset Formula $N$
+\end_inset
+
+ — нильпотентная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Является ли произведение 
+\begin_inset Formula $PN$
+\end_inset
+
+ нильпотентной матрицей? Если да, то докажите это, а если нет — приведите
+ контрпример.
+\end_layout
+
+\begin_layout Solution
+а) Рассмотрим 
+\begin_inset Formula $\left(AB\right)^{s}$
+\end_inset
+
+ и докажем, что 
+\begin_inset Formula $\left(AB\right)^{s}=A^{s}B^{s}$
+\end_inset
+
+.
+ Доказательство будем проводить по индукции.
+ Для 
+\begin_inset Formula $s=1$
+\end_inset
+
+ равенство очевидно.
+ Пусть теперь равенство 
+\begin_inset Formula $\left(AB\right)^{s}=A^{s}B^{s}$
+\end_inset
+
+ доказано для всех 
+\begin_inset Formula $s=0,\dots,m$
+\end_inset
+
+.
+ Рассмотрим 
+\begin_inset Formula $\left(AB\right)^{m+1}=\left(AB\right)^{m}\left(AB\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $AB=BA$
+\end_inset
+
+, то, применяя данное равенство 
+\begin_inset Formula $m$
+\end_inset
+
+ раз, получим 
+\begin_inset Formula $B^{m}A=AB^{m}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+\left(AB\right)^{m+1}=\left(AB\right)^{m}\left(AB\right)=A^{m}B^{m}AB=\\
+=A^{m}AB^{m}B=A^{m+1}B^{m+1}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Итак, 
+\begin_inset Formula $\left(AB\right)^{k}=A^{k}B^{k}$
+\end_inset
+
+, но 
+\begin_inset Formula $A^{k}=O$
+\end_inset
+
+ по условию задачи, поэтому 
+\begin_inset Formula $\left(AB\right)^{k}=A^{k}B^{k}=OB^{k}=O$
+\end_inset
+
+, то есть 
+\begin_inset Formula $AB$
+\end_inset
+
+ — нильпотентная матрица.
+\end_layout
+
+\begin_layout Solution
+б) 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не догадался до очевидного контрпримера и подсмотрел
+\end_layout
+
+\end_inset
+
+ Положим 
+\begin_inset Formula 
+\[
+P=\begin{pmatrix}1 & 0 & 0\\
+1 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+N=\begin{pmatrix}0 & 1 & 1\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Найдём несколько первых степеней 
+\begin_inset Formula $N$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+N^{2}=\begin{pmatrix}0 & 1 & 1\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & 1 & 1\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 0 & 1\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N^{3}=N^{2}N=\begin{pmatrix}0 & 0 & 1\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & 1 & 1\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 0 & 0\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix}=O,
+\]
+
+\end_inset
+
+ таким образом 
+\begin_inset Formula $N$
+\end_inset
+
+ — нильпотентная матрица.
+\end_layout
+
+\begin_layout Standard
+Теперь найдём произведение 
+\begin_inset Formula $PN$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+PN=\begin{pmatrix}1 & 0 & 0\\
+1 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}0 & 1 & 1\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 1 & 1\\
+0 & 1 & 2\\
+0 & 0 & 0
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Покажем, что 
+\begin_inset Formula $\left(PN\right)$
+\end_inset
+
+ не является нильпотентной.
+ 
+\begin_inset Formula 
+\[
+\left(PN\right)^{2}=\begin{pmatrix}0 & 1 & 1\\
+0 & 1 & 2\\
+0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & 1 & 1\\
+0 & 1 & 2\\
+0 & 0 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 1 & 2\\
+0 & 1 & 2\\
+0 & 0 & 0
+\end{pmatrix}\neq O,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(PN\right)^{3}=\left(PN\right)^{2}\left(PN\right)=\begin{pmatrix}0 & 1 & 2\\
+0 & 1 & 2\\
+0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & 1 & 1\\
+0 & 1 & 2\\
+0 & 0 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 1 & 2\\
+0 & 1 & 2\\
+0 & 0 & 0
+\end{pmatrix}=\left(PN\right)^{2},
+\]
+
+\end_inset
+
+ далее, по индукции, получаем, что при 
+\begin_inset Formula $k\ge3$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\left(PN\right)^{k}=\left(PN\right)^{2}\ne O$
+\end_inset
+
+, то есть 
+\begin_inset Formula $PN$
+\end_inset
+
+ — не является нильпотентной матрицей.
+\end_layout
+
 \begin_layout Section
 Матрица обратимая тогда и только тогда, когда она невырожденная (задача
  26)
@@ -10890,6 +11202,288 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Является ли сумма нильпотентной и обратимой матрицы обратимой? (задача 582)
+\end_layout
+
+\begin_layout Problem
+Квадратная матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ называется нильпотентной, если существует такое положительное целое число
+ 
+\begin_inset Formula $k$
+\end_inset
+
+, что 
+\begin_inset Formula $A^{k}=O$
+\end_inset
+
+, где 
+\begin_inset Formula $O$
+\end_inset
+
+ — нулевая матрица соответствующей размерности.
+ Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — нильпотентная матрица, а 
+\begin_inset Formula $B$
+\end_inset
+
+ — обратимая матрица той же размерности, что и 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Является ли матрица 
+\begin_inset Formula $B-A$
+\end_inset
+
+ обратимой? Если да, то докажите это, если нет — приведите контрпример.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не нашёл контрпример сам.
+ Но нашёл обратную для 
+\begin_inset Formula $I-A$
+\end_inset
+
+.
+ Это нужно будет в другой задаче!
+\end_layout
+
+\end_inset
+
+.
+ Мы покажем, что 
+\begin_inset Formula $B-A$
+\end_inset
+
+ не обязательно является обратимой.
+ Рассмотрим 
+\begin_inset Formula $A=\begin{pmatrix}0 & -1\\
+0 & 0
+\end{pmatrix}$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+A^{2}=O,
+\]
+
+\end_inset
+
+так что 
+\begin_inset Formula $A$
+\end_inset
+
+ действительно является нильпотентной.
+ Теперь рассмотрим матрицу 
+\begin_inset Formula $B=\begin{pmatrix}1 & 0\\
+1 & 1
+\end{pmatrix}$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+B-A=\begin{pmatrix}1 & 1\\
+1 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula $B-A$
+\end_inset
+
+ не является разрешимой, так как строки 
+\begin_inset Formula $B-A$
+\end_inset
+
+ равны.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Перенести это в более подходящее место.
+ 146?
+\end_layout
+
+\end_inset
+
+Начнём с простейшего случая, когда 
+\begin_inset Formula $B=I$
+\end_inset
+
+.
+ Рассмотрим формальный ряд 
+\begin_inset Formula $I+A+A^{2}+\dots+A^{k}+\dots$
+\end_inset
+
+.
+ По аналогии с суммой бесконечной геометрической прогрессией мы получаем
+ 
+\begin_inset Formula 
+\[
+I+A+A^{2}+\dots+A^{k}+\dots=\left(I-A\right)^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Но так как 
+\begin_inset Formula $A^{k}=O$
+\end_inset
+
+, то от данного ряда остаётся только конечный отрезок, включающий степени
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ не выше 
+\begin_inset Formula $k-1$
+\end_inset
+
+.
+ Теперь проверим вычислением, что 
+\begin_inset Formula 
+\[
+\left(I-A\right)^{-1}=\sum_{j=0}^{k-1}A^{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Действительно 
+\begin_inset Formula 
+\begin{multline*}
+\left(I-A\right)\sum_{j=0}^{k-1}A^{j}=\sum_{j=0}^{k-1}A^{j}-\sum_{j=0}^{k-1}A^{j+1}=\\
+=\sum_{j=0}^{k-1}A^{j}-\sum_{j=1}^{k}A^{j}=\\
+=I+\sum_{j=1}^{k-1}A^{j}-\sum_{j=1}^{k-1}A^{j}-A^{k}=\\
+=I-A^{k}=I-O=I.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Найдите обратную матрицу с использованием присоединённых матриц (задача
+ 546)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, которая сможет решать такие задачи
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Обратная матрица симметричной матрицы с положительными диагональными элементами
+ (задача 599)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — действительная симметричная матрица, диагональные элементы которой положитель
+ны.
+ Верно ли, что диагональные элементы 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ также положительны.
+ Если да, то докажите это, если нет — найдите контрпример.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсознательно или случайно подсмотрел решение
+\end_layout
+
+\end_inset
+
+ Рассмотрим следующую матрицу 
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}1 & 2\\
+2 & 1
+\end{pmatrix},
+\]
+
+\end_inset
+
+ очевидно, что она удовлетворяет условиям задачи.
+ Найдём 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+\begin{pmatrix}\begin{array}{ll|ll}
+1 & 2 & 1 & 0\\
+2 & 1 & 0 & 1
+\end{array}\end{pmatrix}\sim\begin{pmatrix}\begin{array}{ll|ll}
+1 & 2 & 1 & 0\\
+0 & -3 & -2 & 1
+\end{array}\end{pmatrix}\sim\\
+\sim\begin{pmatrix}\begin{array}{ll|ll}
+1 & 2 & 1 & 0\\
+0 & 1 & \frac{2}{3} & -\frac{1}{3}
+\end{array}\end{pmatrix}\sim\begin{pmatrix}\begin{array}{ll|ll}
+1 & 0 & -\frac{1}{3} & \frac{2}{3}\\
+0 & 1 & \frac{2}{3} & -\frac{1}{3}
+\end{array}\end{pmatrix}.
+\end{multline*}
+
+\end_inset
+
+Таким образом 
+\begin_inset Formula 
+\[
+A^{-1}=\frac{1}{3}\begin{pmatrix}-1 & 2\\
+2 & -1
+\end{pmatrix}
+\]
+
+\end_inset
+
+и мы показали, что в общем случае утверждение не верно.
 \end_layout
 
 \begin_layout Chapter
