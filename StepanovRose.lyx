@@ -2448,7 +2448,7 @@ status open
 
 \end_layout
 
-\begin_layout Definition
+\begin_layout Standard
 Числа 
 \begin_inset Formula $u$
 \end_inset
@@ -3434,6 +3434,598 @@ u^{n-1}=u^{n-2}\cdot u=1+q_{u}n,
 \end_inset
 
  — простое число.
+\end_layout
+
+\begin_layout Section
+Теорема Эйлера
+\end_layout
+
+\begin_layout Definition
+Функцией Эйлера 
+\begin_inset Formula $\phi\left(n\right)$
+\end_inset
+
+ целого положительного числа 
+\begin_inset Formula $n$
+\end_inset
+
+ называется количество целых положительных чисел, меньших 
+\begin_inset Formula $n$
+\end_inset
+
+ и взаимно простых с 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Поскольку у простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ по определению нет простых общих делителей с меньшими числами, то 
+\begin_inset Formula $\phi\left(p\right)=p-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Эйлер понял, что показатель степени 
+\begin_inset Formula $p-1$
+\end_inset
+
+ в малой теореме Ферма — просто частный случай, а именно значение функции
+ 
+\begin_inset Formula $\phi$
+\end_inset
+
+ для простых чисел.
+ А обобщение Эйлера этой теоремы формулируется следующим образом.
+\end_layout
+
+\begin_layout Theorem
+(Теорема Эйлера).
+ Если 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ взаимно просты, то 
+\begin_inset Formula $a^{\phi\left(n\right)}-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Докажите теорему Эйлера, модифицировав доказательство малой теоремы Ферма.
+ Вот перечень необходимых шагов:
+\end_layout
+
+\begin_layout Problem
+1) Заменить лемму о перестановке остатков леммой о перестановке взаимно-простых
+ остатков.
+\end_layout
+
+\begin_layout Problem
+2) Доказать, что у каждого взаимно простого остатка есть обратный элемент
+ относительно умножения по модулю (на предыдущем шаге было показано, что
+ такие остатки образуют перестановку, поэтому 1 должна встречаться только
+ в перестановке).
+\end_layout
+
+\begin_layout Problem
+3) Использовать произведение всех взаимно простых остатков там где в доказательс
+тве малой теоремы Ферма фигурирует произведение всех ненулевых остатков.
+\end_layout
+
+\begin_layout Exercise*
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise*
+Пусть 
+\begin_inset Formula $1=b_{1},\dots,b_{m}$
+\end_inset
+
+ — все остатки, взаимно простые с 
+\begin_inset Formula $n$
+\end_inset
+
+ (
+\begin_inset Formula $b_{1}=1$
+\end_inset
+
+, так как любое число являются взаимно простым с 
+\begin_inset Formula $1$
+\end_inset
+
+).
+ Будем считать, что они упорядочены по возрастанию.
+ Тогда 
+\begin_inset Formula $m=\phi\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise*
+1) Рассмотрим произведения 
+\begin_inset Formula $ab_{j}$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+ab_{j}=q_{j}n+r_{j},j=1,\dots,\phi\left(n\right).
+\]
+
+\end_inset
+
+ Докажем, множество 
+\begin_inset Formula $\left\{ r_{1},\dots,r_{m}\right\} $
+\end_inset
+
+ является перестановкой множества 
+\begin_inset Formula $\left\{ b_{1},\dots,b_{m}\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise*
+Начнём с того, что докажем, что все 
+\begin_inset Formula $ab_{j}$
+\end_inset
+
+ различны.
+ Пойдём от противного, пусть 
+\begin_inset Formula $r_{j}=r_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $k>j$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+ab_{k}-ab_{j}=\left(q_{k}-q_{j}\right)n+\left(r_{k}-r_{j}\right)=\left(q_{k}-q_{j}\right)n,
+\]
+
+\end_inset
+
+с другой стороны 
+\begin_inset Formula 
+\[
+ab_{k}-ab_{j}=a\left(b_{k}-b_{j}\right),
+\]
+
+\end_inset
+
+поэтому 
+\begin_inset Formula 
+\[
+a\left(b_{k}-b_{j}\right)=\left(q_{k}-q_{j}\right)n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise*
+Числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ взаимно просты по условию, поэтому 
+\begin_inset Formula $b_{k}-b_{j}$
+\end_inset
+
+ должно делиться на 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Но 
+\begin_inset Formula $0<b_{k}-b_{j}<n$
+\end_inset
+
+, полученное противоречие означает, что 
+\begin_inset Formula $r_{j}\neq r_{k}$
+\end_inset
+
+ при 
+\begin_inset Formula $j\neq k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise*
+Теперь нужно доказать, что остатки 
+\begin_inset Formula $r_{j}$
+\end_inset
+
+ являются взаимно простыми с 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ По определению, 
+\begin_inset Formula $ab_{j}=q_{j}n+r_{j}$
+\end_inset
+
+.
+ Пусть у 
+\begin_inset Formula $r_{j}$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ есть простой общий делитель 
+\begin_inset Formula $d>1$
+\end_inset
+
+, тогда 
+\begin_inset Formula $ab_{j}$
+\end_inset
+
+ также должно делиться на 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Но 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ не делятся на 
+\begin_inset Formula $d$
+\end_inset
+
+, так как у них нет общих делителей с 
+\begin_inset Formula $n$
+\end_inset
+
+ (у 
+\begin_inset Formula $a$
+\end_inset
+
+ — по условию, а у 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ по определению).
+\end_layout
+
+\begin_layout Exercise*
+Таким образом, множество 
+\begin_inset Formula $\left\{ r_{1},\dots r_{m}\right\} $
+\end_inset
+
+ содержит ровно 
+\begin_inset Formula $m$
+\end_inset
+
+ различных элементов, каждый из которых должен совпадать с одним из 
+\begin_inset Formula $\left\{ b_{1},\dots,b_{m}\right\} $
+\end_inset
+
+, то есть эти множества являются перестановками друг друга.
+\end_layout
+
+\begin_layout Exercise*
+2) Докажем теперь, что у каждого элемента множества взаимно простых остатков
+ 
+\begin_inset Formula $\left\{ b_{1},\dots,b_{m}\right\} $
+\end_inset
+
+ есть обратный элемент относительно умножения по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Пусть мы рассматриваем элемент 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+.
+ Применив пункт 1) к 
+\begin_inset Formula $a=b_{j}$
+\end_inset
+
+, мы получим, что среди 
+\begin_inset Formula $b_{j}b_{k}$
+\end_inset
+
+ при 
+\begin_inset Formula $k=1,\dots,m$
+\end_inset
+
+ есть 
+\begin_inset Formula $b_{1}=1$
+\end_inset
+
+, соответствующий 
+\begin_inset Formula $b_{k}$
+\end_inset
+
+ и будет элементом, обратным к 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise*
+3) Рассмотрим произведение 
+\begin_inset Formula 
+\[
+\prod_{j=1}^{m}\left(ab_{j}\right)=a^{m}\prod_{j=1}^{m}b_{j}.
+\]
+
+\end_inset
+
+ Так как множество 
+\begin_inset Formula $\left\{ ab_{1}\mod n,\dots ab_{m}\mod n\right\} $
+\end_inset
+
+ является перестановкой множества 
+\begin_inset Formula $\left\{ b_{1},\dots,b_{m}\right\} $
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\prod_{j=1}^{m}\left(ab_{j}\right)=\prod_{j=1}^{m}b_{j}+un,
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $u$
+\end_inset
+
+ — некоторое целое число.
+ Таким образом 
+\begin_inset Formula 
+\[
+a^{m}\prod_{j=1}^{m}b_{j}-\prod_{j=1}^{m}b_{j}=\left(a^{m}-1\right)\prod_{j=1}^{m}b_{j}=un.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise*
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Может быть через аналог теоремы Вильсона?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise*
+Так как все 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ не имеют общих множителей с 
+\begin_inset Formula $n$
+\end_inset
+
+, то и у их произведения нет общих множителей с 
+\begin_inset Formula $n$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+a^{m}-1=a^{\phi\left(n\right)}-1
+\]
+
+\end_inset
+
+ делится на 
+\begin_inset Formula $n$
+\end_inset
+
+, что и требовалось доказать.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать про вычисление функции Эйлера по разложению числа на простые множители
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть для целого положительного числа 
+\begin_inset Formula $n$
+\end_inset
+
+ задано его разложение на простые множители 
+\begin_inset Formula $n=p_{1}^{k_{1}}\cdot\dots p_{m}^{k_{m}}$
+\end_inset
+
+.
+ Вычислим для него функцию Эйлера.
+ Будем постепенно рассматривать всё более сложные случаи.
+\end_layout
+
+\begin_layout Standard
+Пусть сначала 
+\begin_inset Formula $m=1$
+\end_inset
+
+ и 
+\begin_inset Formula $k_{1}=1$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\phi\left(n\right)=\phi\left(p_{1}\right)=p_{1}-1$
+\end_inset
+
+, так как любое простое число является взаимно простым со всеми целыми положител
+ьными числами, меньшими его.
+\end_layout
+
+\begin_layout Standard
+Пусть теперь 
+\begin_inset Formula $n=p^{k}$
+\end_inset
+
+, где 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+ — целое число.
+ Тогда у 
+\begin_inset Formula $n$
+\end_inset
+
+ и любого целого положительного, кратного 
+\begin_inset Formula $p$
+\end_inset
+
+, есть общий множитель.
+ Таких чисел в интервале 
+\begin_inset Formula $\left[1,n-1\right]$
+\end_inset
+
+ имеется 
+\begin_inset Formula $\frac{n}{p}-1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+\phi\left(n\right)=\left(n-1\right)-\frac{n}{p}-1=\\
+=n-\frac{n}{p}=p^{k}-p^{k-1}=p^{k}\left(1-\frac{1}{p}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть теперь 
+\begin_inset Formula $n=p_{1}^{k_{1}}p_{2}^{k_{2}}$
+\end_inset
+
+.
+ Тогда у 
+\begin_inset Formula $n$
+\end_inset
+
+ имеются общие делители с любыми числами, кратными 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ или 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+.
+ Таких чисел, среди 
+\begin_inset Formula $\left[1;n-1\right]$
+\end_inset
+
+ имеется 
+\begin_inset Formula $\frac{n-p_{1}}{p_{1}}+\frac{n-p_{2}}{p_{2}}-\frac{n-p_{1}p_{2}}{p_{1}p_{2}}$
+\end_inset
+
+ (мы вычли количество чисел, кратных 
+\begin_inset Formula $p_{1}p_{2}$
+\end_inset
+
+, иначе эти числа были бы учтены два раза, это называется принципом влюкчения-ис
+ключения
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+написать про него отдельно
+\end_layout
+
+\end_inset
+
+).
+ Таким образом 
+\begin_inset Formula 
+\begin{multline*}
+\phi\left(n\right)=\left(n-1\right)-\left(\frac{n}{p_{1}}-1\right)-\left(\frac{n}{p_{2}}-1\right)+\frac{n}{p_{1}p_{2}}-1=\\
+=n\left(1-\frac{1}{p_{1}}-\frac{1}{p_{2}}+\frac{1}{p_{1}p_{2}}\right)=n\left(1-\frac{1}{p_{1}}-\frac{1}{p_{2}}\left(1-\frac{1}{p_{1}}\right)\right)=\\
+=n\left(1-\frac{1}{p_{1}}\right)\left(1-\frac{1}{p_{2}}\right)=p_{1}^{k_{1}}\left(1-\frac{1}{p_{1}}\right)p_{2}^{k_{2}}\left(1-\frac{1}{p_{2}}\right)=\\
+=\phi\left(p_{1}^{k_{1}}\right)\phi\left(p_{2}^{k_{2}}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать мультипликативность функции Эйлера
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
