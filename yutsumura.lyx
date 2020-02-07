@@ -9509,7 +9509,25 @@ AA=\left(I-avv^{T}\right)\left(I-avv^{T}\right)=\\
 
 \begin_layout Section
 Решение системы линейных уравнений с использованием обратной матрицы (задачи
- 65, 442)
+ 65)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Создать систему компьютерной алгебры, которая могла бы решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Решение системы линейных уравнений с использованием обратной матрицы матрицы
+ коэффициентов (задачи 442)
 \end_layout
 
 \begin_layout Standard
@@ -9536,6 +9554,24 @@ status open
 
 \begin_layout Plain Layout
 Создать систему компьютерной алгебры, которая могла бы решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+След, определитель и собственные значения (Задача с экзамена в Гарвардском
+ университете) (задача 389)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на предыдущее упоминание этой задачи
 \end_layout
 
 \end_inset
@@ -11484,6 +11520,775 @@ A^{-1}=\frac{1}{3}\begin{pmatrix}-1 & 2\\
 \end_inset
 
 и мы показали, что в общем случае утверждение не верно.
+\end_layout
+
+\begin_layout Section
+Обратная матрица содержит только целые числа тогда и только тогда, когда
+ определитель равен 
+\begin_inset Formula $\pm1$
+\end_inset
+
+ (задача 547)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать формулу для обратной матрицы через присоединённую матрицу и решить
+ эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Подпространства 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Проработать эту главу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+12 примеров подмножеств, которые не являются подпространствами векторного
+ пространства (задача 338)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Является ли множество ортогональных матриц векторными пространством? (задача
+ 611)
+\end_layout
+
+\begin_layout Problem
+Квадратная матрица 
+\begin_inset Formula $A$
+\end_inset
+
+ называется ортогональной, если 
+\begin_inset Formula $A^{T}A=I$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $V$
+\end_inset
+
+ — векторного пространство матриц размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Я обобщил условия, в которых изначально было 
+\begin_inset Formula $n=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Рассмотрим подмножество 
+\begin_inset Formula 
+\[
+W=\left\{ A\in V|A^{T}A=I\right\} .
+\]
+
+\end_inset
+
+ Докажите или опровергните, что 
+\begin_inset Formula $W$
+\end_inset
+
+ — подпространство 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $W$
+\end_inset
+
+ — подпространство, то матрица 
+\begin_inset Formula $B=A+A=2A$
+\end_inset
+
+ должна принадлежать 
+\begin_inset Formula $W$
+\end_inset
+
+.
+ Но 
+\begin_inset Formula 
+\[
+B^{T}B=\left(2A\right)^{T}\left(2A\right)=4A^{T}A=4I\neq I,
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $B\notin W$
+\end_inset
+
+ и 
+\begin_inset Formula $W$
+\end_inset
+
+ — не является подпространством 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Другой подход основан на том, что 
+\begin_inset Formula $O^{T}O=O\neq I$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $W$
+\end_inset
+
+ не содержит нулевого элемента
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Линейные свойства умножения матриц и ядро матрицы (задача 155)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $m\times n$
+\end_inset
+
+, а 
+\begin_inset Formula $N\left(A\right)$
+\end_inset
+
+ — ядро матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $u,v\in N\left(A\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $w=3u-5v$
+\end_inset
+
+.
+ Найдите 
+\begin_inset Formula $Aw$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $u,v\in N\left(A\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $Au=Av=0$
+\end_inset
+
+.
+ Таким образом: 
+\begin_inset Formula 
+\[
+Aw=A\left(3u-5w\right)=3Au-5Aw=3\cdot0-5\cdot0=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Может быть обобщить эту задачу, чтобы она требовала доказательства того,
+ что ядро — это подпространство?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Базисы и размерности подпространств в 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Проработать эту главу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Общие векторные пространства
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Описать аксиомы векторного пространства
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Докажите свойства векторного пространства, используя аксиомы векторного
+ пространства (задача 711)
+\end_layout
+
+\begin_layout Problem
+Используя аксиомы векторного пространства, докажите следующие свойства.
+ Пусть 
+\begin_inset Formula $V$
+\end_inset
+
+ — векторное пространство над 
+\begin_inset Formula $R$
+\end_inset
+
+ и 
+\begin_inset Formula $u,v,w\in V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+а) Если 
+\begin_inset Formula $u+v=u+w$
+\end_inset
+
+, то 
+\begin_inset Formula $v=w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+б) Если 
+\begin_inset Formula $v+u=w+u$
+\end_inset
+
+, то 
+\begin_inset Formula $v=w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+в) Нулевой вектор является единственным.
+\end_layout
+
+\begin_layout Problem
+г) Для каждого 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ обратный относительно сложения элемент 
+\begin_inset Formula $-v$
+\end_inset
+
+ является единственным.
+\end_layout
+
+\begin_layout Problem
+д) 
+\begin_inset Formula $0v=0$
+\end_inset
+
+ (слева стоит нулевой скаляр, а справа — нулевой вектор)
+\end_layout
+
+\begin_layout Problem
+е) 
+\begin_inset Formula $a0=0$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольный скаляр.
+\end_layout
+
+\begin_layout Problem
+ж) Если 
+\begin_inset Formula $av=0$
+\end_inset
+
+, то 
+\begin_inset Formula $a=0$
+\end_inset
+
+ или 
+\begin_inset Formula $v=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+з) 
+\begin_inset Formula $(−1)v=−v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Два первых свойства называются законом сокращения.
+\end_layout
+
+\begin_layout Solution
+а) Для каждого 
+\begin_inset Formula $u$
+\end_inset
+
+ существует обратный относительно сложения элемент 
+\begin_inset Formula $-u$
+\end_inset
+
+, прибавим его к левой и правой части равенства 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $u+v=u+w$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left(-u\right)+\left(u+v\right)=\left(-u\right)+\left(u+w\right).
+\]
+
+\end_inset
+
+ Так как операция сложения является ассоциативной, то можно изменить порядок
+ суммирования в левой и правой частях: 
+\begin_inset Formula 
+\[
+\left(\left(-u\right)+u\right)+v=\left(\left(-u\right)+u\right)+w,
+\]
+
+\end_inset
+
+ по определению обратного элемента 
+\begin_inset Formula 
+\[
+\left(-u\right)+u=0,
+\]
+
+\end_inset
+
+ а по определению нулевого элемента 
+\begin_inset Formula 
+\[
+0+v=0
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+0+w=w,
+\]
+
+\end_inset
+
+поэтому получаем 
+\begin_inset Formula 
+\[
+v=w,
+\]
+
+\end_inset
+
+что и требовалось.
+\end_layout
+
+\begin_layout Solution
+б) Так как сложение коммутативно, то из 
+\begin_inset Formula $v+u=w+u$
+\end_inset
+
+ следует 
+\begin_inset Formula $u+v=u+w$
+\end_inset
+
+.
+ Применяя результат пункта а), получим 
+\begin_inset Formula $v=w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Пусть имеется два нулевых вектора 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+.
+ Рассмотрим вектор 
+\begin_inset Formula $z_{1}+z_{2}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ нулевой вектор, то 
+\begin_inset Formula $z_{1}+z_{2}=z_{2}$
+\end_inset
+
+, а так как 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — нулевой вектор, то 
+\begin_inset Formula $z_{1}+z_{2}=z_{1}$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula 
+\[
+z_{1}=z_{1}+z_{2}=z_{2},
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $z_{1}=z_{2}$
+\end_inset
+
+ и в векторном пространстве не может быть нескольких нулевых векторов.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Из групповых свойств?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+г) Пусть у элемента 
+\begin_inset Formula $v$
+\end_inset
+
+ имеется два обратных относительно сложения: 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+.
+ Рассмотрим выражение 
+\begin_inset Formula $w_{1}+v+w_{2}$
+\end_inset
+
+.
+ С одной стороны 
+\begin_inset Formula 
+\[
+w_{1}+v+w_{2}=\left(w_{1}+v\right)+w_{2}=0+w_{2}=w_{2},
+\]
+
+\end_inset
+
+а с другой 
+\begin_inset Formula 
+\[
+w_{1}+v+w_{2}=w_{1}+\left(v+w_{2}\right)=w_{1}+0=w_{1}.
+\]
+
+\end_inset
+
+ Таким образом 
+\begin_inset Formula $w_{1}=w_{1}+v+w_{2}=w_{2}$
+\end_inset
+
+ и у элемента 
+\begin_inset Formula $v$
+\end_inset
+
+ не может быть двух разных обратных элемента относительно сложения.
+\end_layout
+
+\begin_layout Solution
+д) По свойству умножения на скаляр: 
+\begin_inset Formula $1\cdot v=v$
+\end_inset
+
+.
+ Но 
+\begin_inset Formula $1=1+0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+v+0=v=1\cdot v=\left(1+0\right)\cdot v=1\cdot v+0\cdot v=v+0\cdot v.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, мы получили равенство 
+\begin_inset Formula 
+\[
+v+0=v+0\cdot v,
+\]
+
+\end_inset
+
+из которого, по доказанному в пункте а), следует 
+\begin_inset Formula $0\cdot v=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+е) 
+\begin_inset Formula $a0=0$
+\end_inset
+
+ Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольный скаляр, а 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ — произвольный вектор, тогда, по определению нулевого вектора:
+\begin_inset Formula 
+\[
+av=a\left(v+0\right)=av+a0.
+\]
+
+\end_inset
+
+ Выражение слева можно записать в виде 
+\begin_inset Formula $av=av+0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+av+0=av+a0,
+\]
+
+\end_inset
+
+откуда, в силу доказанного в пункте а), следует 
+\begin_inset Formula $a0=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+ж) Пусть 
+\begin_inset Formula $av=0$
+\end_inset
+
+, но 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+, тогда существует 
+\begin_inset Formula $b=\frac{1}{a}$
+\end_inset
+
+.
+ Умножив левую и правую части равенства 
+\begin_inset Formula $av=0$
+\end_inset
+
+ на 
+\begin_inset Formula $b$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+bav=b0.
+\]
+
+\end_inset
+
+ Так как 
+\begin_inset Formula $b=\frac{1}{a}$
+\end_inset
+
+, то 
+\begin_inset Formula $ba=1$
+\end_inset
+
+ и 
+\begin_inset Formula $bav=1\cdot v=v$
+\end_inset
+
+.
+ С другой стороны, по доказанному в пункте е), 
+\begin_inset Formula $b0=0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $v=0$
+\end_inset
+
+.
+ Таким образом, если 
+\begin_inset Formula $av=0$
+\end_inset
+
+, то 
+\begin_inset Formula $a=0$
+\end_inset
+
+ или 
+\begin_inset Formula $v=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+з) По свойствам умножения на скаляр 
+\begin_inset Formula 
+\[
+v+\left(-1\right)v=1\cdot v+\left(-1\right)\cdot v=\left(1+\left(-1\right)\right)v=0\cdot v,
+\]
+
+\end_inset
+
+поэтому, по доказанному в пункте д), 
+\begin_inset Formula $v+\left(-1\right)v=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left(-1\right)v$
+\end_inset
+
+ удовлетворяет требованиям к 
+\begin_inset Formula $-v$
+\end_inset
+
+, а так как обратный относительно сложения вектор является единственным,
+ как было доказано в пункте г), то 
+\begin_inset Formula $-v=\left(-1\right)v$
+\end_inset
+
+, что и требовалось.
 \end_layout
 
 \begin_layout Chapter
