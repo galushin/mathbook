@@ -4028,6 +4028,161 @@ status open
 
 \end_layout
 
+\begin_layout Chapter
+Абстракция в математике
+\end_layout
+
+\begin_layout Section
+Группы
+\end_layout
+
+\begin_layout Definition
+Группой называется множество 
+\begin_inset Formula $G$
+\end_inset
+
+, на котором определены операции 
+\begin_inset Formula $x\circ y$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+, а также константа 
+\begin_inset Formula $e$
+\end_inset
+
+, таким образом, что
+\end_layout
+
+\begin_layout Definition
+1) 
+\begin_inset Formula $x\circ\left(y\circ z\right)=\left(x\circ y\right)\circ z$
+\end_inset
+
+ (ассоциативность)
+\end_layout
+
+\begin_layout Definition
+2) 
+\begin_inset Formula $x\circ e=e\circ x=x$
+\end_inset
+
+ (нейтральность)
+\end_layout
+
+\begin_layout Definition
+3) 
+\begin_inset Formula $x\circ x^{-1}=x^{-1}\circ x=e$
+\end_inset
+
+ (сокращение)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Абелевой называется группа, в которой операция 
+\begin_inset Formula $\circ$
+\end_inset
+
+ коммутативна.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Аддитивной группой называется абелева группа, в которой операцией является
+ сложение.
+\end_layout
+
+\begin_layout Problem
+Для скольких целых чисел обращение относительно умножения также является
+ целым? Что это за числа?
+\end_layout
+
+\begin_layout Solution
+У целого числа 
+\begin_inset Formula $0$
+\end_inset
+
+ не может быть обратного элемента, так как 
+\begin_inset Formula $n\cdot0=0\neq1$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $n=\pm1$
+\end_inset
+
+, то 
+\begin_inset Formula $n^{2}=\left(\pm1\right)^{2}=1$
+\end_inset
+
+, то есть числа 
+\begin_inset Formula $\pm1$
+\end_inset
+
+ являются обратными для самих себя.
+ Для остальных целых чисел выполняется 
+\begin_inset Formula $\left|n\right|>1$
+\end_inset
+
+.
+ Ноль не может быть обратным элементом ни для какого числа, так как 
+\begin_inset Formula $n\cdot0=0\neq1$
+\end_inset
+
+.
+ Для любого ненулевого целого числа 
+\begin_inset Formula $m$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $\left|m\right|\ge1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left|mn\right|>\left|m\right|\ge1$
+\end_inset
+
+.
+ То есть у целого числа 
+\begin_inset Formula $n$
+\end_inset
+
+, кроме 
+\begin_inset Formula $\pm1$
+\end_inset
+
+, не может быть целого обратного элемента относительно умножения.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пример: остатки от деления на простое число образуют группу с операцией
+ умножения
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
