@@ -210,7 +210,7 @@ W\left(a\right)=\sum_{j=1}^{n}\left(ax_{j}-y_{j}\right)^{2}\to\min_{a}.
 , минимизирующего среднеквадратическую ошибку предсказания:
 \begin_inset Formula 
 \[
-W\left(a\right)=\sum_{j=1}^{n}\left(ax_{j}+b-y_{j}\right)^{2}\to\min_{a,b}.
+W\left(a,b\right)=\sum_{j=1}^{n}\left(ax_{j}+b-y_{j}\right)^{2}\to\min_{a,b}.
 \]
 
 \end_inset
@@ -303,7 +303,7 @@ W\left(a\right)=\sum_{j=1}^{n}\left(a^{T}x_{j}-y_{j}\right)^{2}\to\min_{a}.
 , минимизирующего среднеквадратическую ошибку предсказания:
 \begin_inset Formula 
 \[
-W\left(a\right)=\sum_{j=1}^{n}\left(a^{T}x_{j}+b-y_{j}\right)^{2}\to\min_{a,b}.
+W\left(a,b\right)=\sum_{j=1}^{n}\left(a^{T}x_{j}+b-y_{j}\right)^{2}\to\min_{a,b}.
 \]
 
 \end_inset
