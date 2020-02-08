@@ -13728,6 +13728,19 @@ aka^{-1}=a\left(k_{1}\cdot k_{2}\cdot\dots\cdot k_{m}\right)a^{-1}=\\
 Случайные события
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Разобраться с обозначением дисперсии
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Классическое определение вероятности
 \end_layout
@@ -17815,6 +17828,541 @@ D\left[X\right]\le\frac{c}{2}\left(c-\frac{c}{2}\right)=\left(\frac{c}{2}\right)
 \end_inset
 
  что и требовалось.
+\end_layout
+
+\begin_layout Subsection
+Условная вероятность, когда известна сумма двух случайных величин с геометрическ
+им распределением (задача 755)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $X$
+\end_inset
+
+ и 
+\begin_inset Formula $Y$
+\end_inset
+
+ — случайные величины с геометрическим распределением с параметром 
+\begin_inset Formula $p$
+\end_inset
+
+ (
+\begin_inset Formula $0\le p\le1)$
+\end_inset
+
+.
+ Предполагается, что 
+\begin_inset Formula $X$
+\end_inset
+
+ и 
+\begin_inset Formula $Y$
+\end_inset
+
+ независимы.
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ целое число и 
+\begin_inset Formula $n>1$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $k$
+\end_inset
+
+ — целое число и 
+\begin_inset Formula $1\le k\le n$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Может лучше было бы переформулировать, найдите вероятность...
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left\{ X=k|X+Y=n\right\} =\frac{1}{n-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользуемся формулой 
+\begin_inset Formula 
+\[
+P\left(A|B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)},
+\]
+
+\end_inset
+
+где в нашем случае будет 
+\begin_inset Formula $A=\left\{ X=k\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $B=\left\{ X+Y=n\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Событие 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ можно переписать следующим образом: 
+\begin_inset Formula 
+\[
+\left\{ X=k\right\} \cap\left\{ Y=n-k\right\} ,
+\]
+
+\end_inset
+
+а так как 
+\begin_inset Formula $X$
+\end_inset
+
+ независимы, то 
+\begin_inset Formula 
+\[
+P\left(A\cap B\right)=P\left\{ X=k\right\} P\left\{ Y=n-k\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению случайной величины с геометрическим распределением с параметром
+ 
+\begin_inset Formula $p$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+P\left\{ X=k\right\} =q^{k-1}p,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left\{ Y=n-k\right\} =q^{n-k-1}p,
+\]
+
+\end_inset
+
+где введено обозначение 
+\begin_inset Formula $q=1-p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Поэтому 
+\begin_inset Formula 
+\[
+P\left(A\cap B\right)=q^{k-1}pq^{n-k-1}p=q^{n-2}p^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Теперь рассмотрим 
+\begin_inset Formula $P\left(B\right)=P\left\{ X+Y=n\right\} $
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $Y>0$
+\end_inset
+
+, то 
+\begin_inset Formula $X<n$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+P\left\{ X+Y=n\right\} =\sum_{j=1}^{n-1}P\left\{ \left(X=j\right)\wedge\left(X+Y=n\right)\right\} .
+\]
+
+\end_inset
+
+ Выше мы показали, что 
+\begin_inset Formula 
+\[
+P\left\{ \left(X=j\right)\wedge\left(X+Y=n\right)\right\} =q^{n-2}p^{2},
+\]
+
+\end_inset
+
+ поэтому 
+\begin_inset Formula 
+\[
+P\left\{ X+Y=n\right\} =\sum_{j=1}^{n-1}q^{n-2}p^{2}=\left(n-1\right)q^{n-2}p^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Окончательно получаем: 
+\begin_inset Formula 
+\[
+P\left\{ X=k|X+Y=n\right\} =\frac{q^{n-2}p^{2}}{\left(n-1\right)q^{n-2}p^{2}}=\frac{1}{n-1},
+\]
+
+\end_inset
+
+ что и требовалось доказать.
+\end_layout
+
+\begin_layout Chapter
+Непрерывные случайные величины
+\end_layout
+
+\begin_layout Subsection
+Условие того, что функция является функцией плотности вероятности (задача
+ 756)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $c$
+\end_inset
+
+ — положительное вещественное число и 
+\begin_inset Formula $X$
+\end_inset
+
+ — непрерывная случайная величина, функция плотности которой даётся формулой
+ 
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+\frac{1}{x^{3}}, & x\ge c,\\
+0, & x<c.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+а) определите значение 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+б) Найдите вероятность 
+\begin_inset Formula $P\left\{ X>2c\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) По определению, если 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — функция плотности вероятности, то 
+\begin_inset Formula 
+\[
+\intop_{-\infty}^{+\infty}f\left(x\right)dx=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В рассматриваемом случае получаем 
+\begin_inset Formula 
+\begin{multline*}
+\intop_{-\infty}^{+\infty}f\left(x\right)dx=\intop_{-\infty}^{c}f\left(x\right)dx+\intop_{c}^{+\infty}f\left(x\right)dx=\\
+=0+\intop_{c}^{+\infty}\frac{1}{x^{3}}dx=\intop_{c}^{+\infty}x^{-3}dx=\left.\frac{x^{-2}}{-2}\right|_{c}^{+\infty}=\frac{1}{2c^{2}}.
+\end{multline*}
+
+\end_inset
+
+ Таким образом, должно выполняться равенство 
+\begin_inset Formula 
+\[
+\intop_{-\infty}^{+\infty}f\left(x\right)dx=\frac{1}{2c^{2}}=1,
+\]
+
+\end_inset
+
+поэтому 
+\begin_inset Formula 
+\[
+c^{2}=\frac{1}{2}
+\]
+
+\end_inset
+
+ и, так как 
+\begin_inset Formula $c>0$
+\end_inset
+
+ по условию задачи, то
+\begin_inset Formula 
+\[
+c=\frac{1}{\sqrt{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) По определению, 
+\begin_inset Formula 
+\begin{multline*}
+P\left\{ X>2c\right\} =P\left\{ X>\sqrt{2}\right\} =\intop_{2c}^{+\infty}f\left(x\right)dx=\\
+=\left.\frac{x^{-2}}{-2}\right|_{\sqrt{2}}^{+\infty}=\frac{1}{2\left(\sqrt{2}\right)^{2}}=\frac{1}{4}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Математическое ожидание и дисперсия случайной величины с экспоненциальным
+ распределением (задача 757)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $X$
+\end_inset
+
+ — случайная величина с геометрическим распределением с параметром 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+а) Для любого положительного числа 
+\begin_inset Formula $n$
+\end_inset
+
+ докажите, что 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[X^{n}\right]=\frac{n}{\lambda}\mathbb{E}\left[X^{n-1}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+б) Найдите математическое ожидание величины 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+в) Найдите дисперсию величины 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+г) Найдите среднеквадратическое отклонение величины 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению, функция плотности вероятности случайной величины 
+\begin_inset Formula $X$
+\end_inset
+
+ задаётся формулой 
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+\lambda e^{-\lambda x}, & x\ge0,\\
+0, & x<0.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+а) По определению, 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[X^{n}\right]=\intop_{0}^{+\infty}x^{n}f\left(x\right)dx=\intop_{0}^{+\infty}x^{n}\lambda x^{-\lambda x}dx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользуемся методом интегрирования по частям, а именно, положим 
+\begin_inset Formula $u=x^{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $dv=\lambda e^{-\lambda x}dx$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $du=nx^{n-1}dx$
+\end_inset
+
+ и 
+\begin_inset Formula $v=-e^{-\lambda x}$
+\end_inset
+
+, поэтому
+\begin_inset Formula 
+\begin{multline*}
+\mathbb{E}\left[X^{n}\right]=\left.uv\right|_{0}^{+\infty}-\intop_{0}^{+\infty}vdy=\\
+=\left.x^{n}e^{-\lambda x}\right|_{0}^{+\infty}+\intop_{0}^{+\infty}nx^{n-1}e^{-\lambda x}dx=\\
+=0+\frac{n}{\lambda}\intop_{0}^{+\infty}x^{n-1}\lambda e^{-\lambda x}dx=\frac{n}{\lambda}\mathbb{E}\left[X^{n-1}\right].
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Здесь нужно уточнить, почему 
+\begin_inset Formula $\lim_{x\to+\infty}x^{n}e^{-\lambda x}=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+б) Воспользуемся результатом пункта a) при 
+\begin_inset Formula $n=1$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[X\right]=\mathbb{E}\left[X^{1}\right]=\frac{1}{\lambda}\mathbb{E}\left[X^{0}\right]=\frac{1}{\lambda}\mathbb{E}\left[1\right]=\frac{1}{\lambda}\cdot1=\frac{1}{\lambda}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+в) По определению: 
+\begin_inset Formula 
+\[
+D\left[X\right]=\mathbb{E}\left[X^{2}\right]-\left(\mathbb{E}\left[X\right]\right)^{2}.
+\]
+
+\end_inset
+
+ В пункте б) мы показали, что 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[X\right]=\frac{1}{\lambda},
+\]
+
+\end_inset
+
+ что с учётом результата пункта а) даёт 
+\begin_inset Formula 
+\[
+\mathbb{E}\left[X^{2}\right]=\frac{2}{\lambda}\mathbb{E}\left[X\right]=\frac{2}{\lambda^{2}}.
+\]
+
+\end_inset
+
+ Таким образом, окончательно получаем 
+\begin_inset Formula 
+\[
+D\left[X\right]=\frac{2}{\lambda^{2}}-\frac{1}{\lambda^{2}}=\frac{1}{\lambda^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+г) По определению среднеквадратического отклонения: 
+\begin_inset Formula 
+\[
+\sigma_{X}=\sqrt{D\left[X\right]}=\sqrt{\frac{1}{\lambda^{2}}}=\frac{1}{\lambda}.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
