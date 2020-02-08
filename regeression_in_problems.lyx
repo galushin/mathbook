@@ -6,6 +6,9 @@
 \origin unavailable
 \textclass article
 \use_default_options true
+\begin_modules
+theorems-ams-bytype
+\end_modules
 \maintain_unincluded_children false
 \language russian
 \language_package default
@@ -77,7 +80,7 @@
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Problem
 Для того, чтобы повысить точность определения некоторой величины можно провести
  серию измерений в одинаковых условиях.
  Пусть мы провели 
@@ -93,10 +96,10 @@
  сумма квадратов уклонения измерений от которого минимальна:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Problem
 \begin_inset Formula 
 \[
-W\left(b\right)=\sum_{j=1}^{n}\left(y_{i}-b\right)^{2}\to\min_{b}.
+W\left(b\right)=\sum_{j=1}^{n}\left(b-y_{i}\right)^{2}\to\min_{b}.
 \]
 
 \end_inset
@@ -104,7 +107,7 @@ W\left(b\right)=\sum_{j=1}^{n}\left(y_{i}-b\right)^{2}\to\min_{b}.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Problem
 Найдите 
 \begin_inset Formula $b$
 \end_inset
@@ -114,6 +117,198 @@ W\left(b\right)=\sum_{j=1}^{n}\left(y_{i}-b\right)^{2}\to\min_{b}.
 \end_inset
 
  достигает минимума.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Мы изучаем зависимость величины 
+\begin_inset Formula $Y$
+\end_inset
+
+ от величины 
+\begin_inset Formula $X$
+\end_inset
+
+ (обе величины — вещественные числа).
+ Для этого проводится 
+\begin_inset Formula $n$
+\end_inset
+
+ экспериментов, в которых 
+\begin_inset Formula $X$
+\end_inset
+
+ принимала значения 
+\begin_inset Formula $x_{1},\dots,x_{n}$
+\end_inset
+
+, а 
+\begin_inset Formula $Y$
+\end_inset
+
+ — 
+\begin_inset Formula $y_{1},\dots,y_{n}$
+\end_inset
+
+.
+ Будем искать зависимость виде 
+\begin_inset Formula $Y=aX+E$
+\end_inset
+
+, где 
+\begin_inset Formula $E$
+\end_inset
+
+ — погрешность.
+ Найдите значение параметра 
+\begin_inset Formula $a$
+\end_inset
+
+, минимизирующего среднеквадратическую ошибку предсказания:
+\begin_inset Formula 
+\[
+W\left(a\right)=\sum_{j=1}^{n}\left(ax_{i}-y_{i}\right)^{2}\to\min_{a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Усложним модель, которую рассматривали в предыдущей задаче, а именно, будем
+ искать зависимость виде 
+\begin_inset Formula $Y=aX+b+E$
+\end_inset
+
+, где 
+\begin_inset Formula $E$
+\end_inset
+
+ — погрешность.
+ Найдите значение параметров 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, минимизирующего среднеквадратическую ошибку предсказания:
+\begin_inset Formula 
+\[
+W\left(a\right)=\sum_{j=1}^{n}\left(ax_{i}+b-y_{i}\right)^{2}\to\min_{a,b}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пусть теперь мы хотим изучать зависимость одной величины от нескольких других
+ (обозначим их количество как 
+\begin_inset Formula $m$
+\end_inset
+
+).
+ В этом случае значения 
+\begin_inset Formula $Y$
+\end_inset
+
+ остаются вещественными числа, а значения 
+\begin_inset Formula $X$
+\end_inset
+
+ — становятся векторами размерности 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Модель усложниться, теперь нужно рассматривать целый вектор параметров
+ 
+\begin_inset Formula $a\in\mathbb{R}^{m}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+Y=a^{T}X+E=\sum_{j=1}^{m}a^{\left(j\right)}X^{\left(j\right)}+E.
+\]
+
+\end_inset
+
+ Найдите вектор параметров 
+\begin_inset Formula $a$
+\end_inset
+
+, минимизирующий среднеквадратическую ошибку предсказания:
+\begin_inset Formula 
+\[
+W\left(a\right)=\sum_{j=1}^{n}\left(a^{T}x_{i}-y_{i}\right)^{2}\to\min_{a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+По аналогии с тем, как задача 4 обобщает задачу 2 на случай нескольких параметро
+в, обобщим задачу 3.
+ Модель примет вид 
+\begin_inset Formula $Y=a^{T}X+b+E$
+\end_inset
+
+, где 
+\begin_inset Formula $E$
+\end_inset
+
+ — погрешность.
+ Найдите значение параметров 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, минимизирующего среднеквадратическую ошибку предсказания:
+\begin_inset Formula 
+\[
+W\left(a\right)=\sum_{j=1}^{n}\left(a^{T}x_{i}+b-y_{i}\right)^{2}\to\min_{a,b}.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
