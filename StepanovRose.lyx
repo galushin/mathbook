@@ -4477,6 +4477,652 @@ x^{n}\circ x^{m}=x^{m}\circ x^{n}=x^{n+m}.
  Поскольку не осталось никаких аксиом, то нельзя доказать никаких теорем.
 \end_layout
 
+\begin_layout Section
+Некоторые теоремы о группах
+\end_layout
+
+\begin_layout Standard
+Важное наблюдение заключается в том, что группы являются группами преобразований.
+ Другие словами, каждый элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ определяется преобразование 
+\begin_inset Formula $G$
+\end_inset
+
+ на себя: 
+\begin_inset Formula 
+\[
+x\mapsto ax.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Преобразование группы — взаимно однозначное соответствие.
+\end_layout
+
+\begin_layout Proof
+Нужно доказать, что если 
+\begin_inset Formula $ax=ay$
+\end_inset
+
+, то 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+ Действительно, так как у любого элемента группы, в том числе и у 
+\begin_inset Formula $a$
+\end_inset
+
+, существует обратный элемент.
+ Умножим равенство 
+\begin_inset Formula $ax=ay$
+\end_inset
+
+ слева на 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+a^{-1}\left(ax\right)=a^{-1}\left(ay\right),
+\]
+
+\end_inset
+
+ а так как умножение в группе ассоциативно, то 
+\begin_inset Formula 
+\[
+a^{-1}\left(ax\right)=\left(a^{-1}a\right)x=ex=x,
+\]
+
+\end_inset
+
+аналогично 
+\begin_inset Formula $a^{-1}\left(ay\right)=y$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Иными словами, для любого конечного множества 
+\begin_inset Formula $S$
+\end_inset
+
+ элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и любого 
+\begin_inset Formula $a\in G$
+\end_inset
+
+, в множестве 
+\begin_inset Formula $aS$
+\end_inset
+
+ столько же элементов, сколько в 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Для каждого элемента группы существует только один обратный элемент.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим произвольную группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и её произвольный элемент 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Предположим, что в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ у элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ два обратных элемента 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{2}$
+\end_inset
+
+.
+ Рассмотрим произведение 
+\begin_inset Formula $b_{1}ab_{2}$
+\end_inset
+
+.
+ У этого выражения есть два способа вычисления, которые, в силу ассоциативности
+ умножения, дают один и тот же результат: 
+\begin_inset Formula 
+\[
+\left(b_{1}a\right)b_{2}=b_{1}\left(ab_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{2}$
+\end_inset
+
+ — обратные элементы для 
+\begin_inset Formula $a$
+\end_inset
+
+, то 
+\begin_inset Formula $b_{1}a=ab_{2}=e$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula 
+\[
+\left(b_{1}a\right)b_{2}=eb_{2}=b_{2},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b_{1}\left(ab_{2}\right)=b_{1}e=b_{1}.
+\]
+
+\end_inset
+
+ Так как левые части этих двух равенств равны, то равны и правые, поэтому
+ 
+\begin_inset Formula 
+\[
+b_{1}=b_{2},
+\]
+
+\end_inset
+
+ то есть у каждого элемента может быть только один обратный элемент.
+\end_layout
+
+\begin_layout Theorem
+Элемент обратный произведению двух элементов, равен произведению обратных
+ элементов в обратном порядке: 
+\begin_inset Formula 
+\[
+\left(ab\right)^{-1}=b^{-1}a^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как выше мы показали 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, что обратный элемент является единственным, то достаточно показать, что
+ 
+\begin_inset Formula $\left(b^{-1}a^{-1}\right)\left(ab\right)=\left(ab\right)\left(b^{-1}a^{-1}\right)=e$
+\end_inset
+
+.
+ Действительно, так как умножение ассоциативно, то 
+\begin_inset Formula 
+\begin{multline*}
+\left(b^{-1}a^{-1}\right)\left(ab\right)=b^{-1}\left(a^{-1}\left(ab\right)\right)=b^{-1}\left(\left(a^{-1}a\right)b\right)=\\
+=b^{-1}\left(eb\right)=b^{-1}b=e.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Аналогично, 
+\begin_inset Formula 
+\begin{multline*}
+\left(ab\right)\left(b^{-1}a^{-1}\right)=a\left(b\left(b^{-1}a^{-1}\right)\right)=a\left(\left(bb^{-1}\right)a^{-1}\right)=\\
+=a\left(ea^{-1}\right)=aa^{-1}=e.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Степень обратного элемента равна элементу, обратному степени: 
+\begin_inset Formula 
+\[
+\left(x^{-1}\right)^{n}=\left(x^{n}\right)^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как выше мы показали 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, что обратный элемент является единственным, то достаточно показать, что
+ 
+\begin_inset Formula $x^{n}\left(x^{-1}\right)^{n}=\left(x^{-1}\right)^{n}x^{n}=e$
+\end_inset
+
+.
+ Доказательство проведём по индукции.
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $n=1$
+\end_inset
+
+ равенство тривиально: 
+\begin_inset Formula $x^{-1}=x^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть равенство доказано для всех 
+\begin_inset Formula $n=1,\dots,k$
+\end_inset
+
+.
+ Докажем, его для 
+\begin_inset Formula $x^{k+1}$
+\end_inset
+
+.
+ По определению степени 
+\begin_inset Formula 
+\begin{multline*}
+x^{k+1}\left(x^{-1}\right)^{k+1}=\left[x^{k}x\right]\left[x^{-1}\left(x^{-1}\right)^{k}\right]=\\
+=x^{k}\left[xx^{-1}\right]\left(x^{-1}\right)^{k}=x^{k}\left(x^{-1}\right)^{k}=e,
+\end{multline*}
+
+\end_inset
+
+ аналогично:
+\begin_inset Formula 
+\[
+\left(x^{-1}\right)^{k+1}x^{k+1}=\left(x^{-1}\right)^{k}x^{-1}xx^{k}=\left(x^{-1}\right)^{k}x^{k}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, равенство 
+\begin_inset Formula $\left(x^{-1}\right)^{n}=\left(x^{n}\right)^{-1}$
+\end_inset
+
+ справедливо для всех натуральных 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Докажите, что в любой группе есть хотя бы один элемент.
+\end_layout
+
+\begin_layout Solution
+В любой группе есть нейтральный элемент 
+\begin_inset Formula $e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Если группа состоит из 
+\begin_inset Formula $n>0$
+\end_inset
+
+ элементов, то 
+\begin_inset Formula $n$
+\end_inset
+
+ называют порядком группы.
+ Если в группе бесконечно много элементов, то её порядок бесконечен.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Говорят, что элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $n>0$
+\end_inset
+
+, если 
+\begin_inset Formula $a^{n}=e$
+\end_inset
+
+ и для любого 
+\begin_inset Formula $0<k<n$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $a^{k}\neq e$
+\end_inset
+
+ (иными словами, порядок 
+\begin_inset Formula $a$
+\end_inset
+
+ — это наименьшая степень, при возведении в которую получается нейтральный
+ элемент 
+\begin_inset Formula $e$
+\end_inset
+
+).
+ Если такого 
+\begin_inset Formula $n$
+\end_inset
+
+ не существует, то говорят, что порядок 
+\begin_inset Formula $a$
+\end_inset
+
+ бесконечен.
+\end_layout
+
+\begin_layout Problem
+Чему равен порядок 
+\begin_inset Formula $e$
+\end_inset
+
+? Докажите, что 
+\begin_inset Formula $e$
+\end_inset
+
+ — единственный элемент, имеющий такой порядок.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $e^{1}=e$
+\end_inset
+
+, то порядок 
+\begin_inset Formula $e$
+\end_inset
+
+ равен 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Пусть теперь порядок элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ равен 
+\begin_inset Formula $1$
+\end_inset
+
+, значит 
+\begin_inset Formula $a=a^{1}=e$
+\end_inset
+
+, то есть 
+\begin_inset Formula $e$
+\end_inset
+
+ — единственный элемент, порядок которого равен 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Каждый элемент конечной группы имеет конечный порядок.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа конечного порядка 
+\begin_inset Formula $n$
+\end_inset
+
+, а 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент этой группы, причём его порядок бесконечен, то есть для любого
+ натурального 
+\begin_inset Formula $k$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $a^{k}\neq e$
+\end_inset
+
+.
+ Тогда все степени элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ различны.
+ Действительно, пусть 
+\begin_inset Formula $j>i$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{j}=a^{i}$
+\end_inset
+
+.
+ Умножим это равенство на 
+\begin_inset Formula $\left(a^{i}\right)^{-1}$
+\end_inset
+
+.
+ По теореме 6.5
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\left(a^{i}\right)^{-1}=\left(a^{-1}\right)^{i}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+a^{j}\left(a^{-1}\right)^{i}=a^{i}\left(a^{i}\right)^{-1}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $a^{j-i}=e$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент порядка не выше 
+\begin_inset Formula $j-i$
+\end_inset
+
+, но это противоречит тому, что для любого натурального 
+\begin_inset Formula $k$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $a^{k}\neq e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Итак, все степени 
+\begin_inset Formula $a$
+\end_inset
+
+ различны, но все степени 
+\begin_inset Formula $a$
+\end_inset
+
+ принадлежат 
+\begin_inset Formula $G$
+\end_inset
+
+, которые содержит конечное число элементов.
+ Полученное противоречие означает, что 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент конечного порядка, либо 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа бесконечного порядка.
+\end_layout
+
+\begin_layout Problem
+Докажите, что если 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент порядка 
+\begin_inset Formula $n$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{-1}=a^{n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению степени 
+\begin_inset Formula $aa^{n-1}=a^{n-1}a=a^{n}$
+\end_inset
+
+, а так как 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент порядка 
+\begin_inset Formula $n$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{n}=e$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $a^{n-1}$
+\end_inset
+
+ удовлетворяет определению обратного элемента для 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ А так как обратный элемент единственный 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, то 
+\begin_inset Formula $a^{n-1}=a^{-1}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
