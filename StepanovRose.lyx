@@ -4183,6 +4183,300 @@ status open
 
 \end_layout
 
+\begin_layout Section
+Моноиды и полугруппы
+\end_layout
+
+\begin_layout Standard
+Иногда интерес представляют алгебраические структуры, к которым предъявляется
+ меньше требований, чем к группам.
+ Например, не всегда нужна операция обращения, но другие свойства группы
+ хотелось бы сохранить.
+\end_layout
+
+\begin_layout Definition
+Моноидом называется множество, на котором определены операция 
+\begin_inset Formula $\circ$
+\end_inset
+
+ и константа 
+\begin_inset Formula $e$
+\end_inset
+
+ таким образом, что выполняются следующие аксиомы:
+\end_layout
+
+\begin_layout Definition
+1) 
+\begin_inset Formula $x\circ\left(y\circ z\right)=\left(x\circ y\right)\circ z$
+\end_inset
+
+ (ассоциативность)
+\end_layout
+
+\begin_layout Definition
+2) 
+\begin_inset Formula $x\circ e=e\circ x=x$
+\end_inset
+
+ (нейтральность)
+\end_layout
+
+\begin_layout Standard
+Примеры моноидов: моноид конечных строк (свободный моноид), в нём операцией
+ является конкатенация, а нейтральным элементом — пустая строка; мультипликативн
+ый моноид целых чисел.
+\end_layout
+
+\begin_layout Definition
+Полугруппой называется множество, на котором определена ассоциативная операция
+ 
+\begin_inset Formula $\circ$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Повторное умножение нескольких одинаковых элементов, так же как и для умножения
+ чисел, называется степенью.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+x^{n}=\begin{cases}
+x, & n=1,\\
+x\circ x^{n-1}, & n>1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Почему нельзя определить степень в полугруппе, начав с 
+\begin_inset Formula $n=0$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+Если мы хотим сохранить равенство 
+\begin_inset Formula $x^{n+m}=x^{n}\circ x^{m}$
+\end_inset
+
+, то при 
+\begin_inset Formula $m=0$
+\end_inset
+
+ должно быть 
+\begin_inset Formula $x^{n}=x^{n}\circ x^{0}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $x^{0}=e$
+\end_inset
+
+, но в полугруппе нейтрального элемента может и не быть.
+\end_layout
+
+\begin_layout Standard
+Мы определили степень так, что групповая операция применяется с степени
+ с более низким показателем слева.
+ Что измениться, если применить умножение с другой стороны? Оказывается,
+ что при этом ничего не изменится.
+\end_layout
+
+\begin_layout Lemma
+Для 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+ и ассоциативной операции 
+\begin_inset Formula $\circ$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $x\circ x^{n-1}=x^{n-1}\circ x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем это равенство по индукции.
+ При 
+\begin_inset Formula $n=2$
+\end_inset
+
+ получим равенство 
+\begin_inset Formula $x\circ x=x\circ x$
+\end_inset
+
+, которое, очевидно, верно.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь мы доказали требуемое равенство для 
+\begin_inset Formula $n=2,\dots,k$
+\end_inset
+
+.
+ Докажем его для 
+\begin_inset Formula $n=k+1$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{multline*}
+x\circ x^{\left(k+1\right)-1}=x\circ x^{k}=x\circ\left(x^{k-1}\circ x\right)=\\
+=\left(x\circ x^{k-1}\right)\circ x=\left(x^{k-1}\circ x\right)\circ x=\\
+=x^{k}\circ x=x^{\left(k+1\right)-1}\circ x.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Более того, хотя вообще говоря умножение в полугруппе не является коммутативным,
+ степени любого элемента коммутируют.
+\end_layout
+
+\begin_layout Theorem
+(Коммутативность степеней) Пусть 
+\begin_inset Formula $\circ$
+\end_inset
+
+ — ассоциативная операция, тогда 
+\begin_inset Formula $x^{n}\circ x^{m}=x^{m}\circ x^{n}=x^{n+m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Доказательство проведём по индукции по 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $m=1$
+\end_inset
+
+ получаем утверждение леммы 6.1.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть теперь мы доказали, что равенство выполняется для всех 
+\begin_inset Formula $m=1,\dots,k$
+\end_inset
+
+.
+ Докажем его для 
+\begin_inset Formula $m=k+1$
+\end_inset
+
+.
+ По определению степени 
+\begin_inset Formula $x^{k+1}=x\circ x^{k}=x^{k}\circ x$
+\end_inset
+
+, тогда, в силу ассоциативности операции:
+\begin_inset Formula 
+\[
+x^{n}\circ x^{k+1}=x^{n}\circ\left(x^{k}\circ x\right)=\left(x^{n}\circ x^{k}\right)\circ x.
+\]
+
+\end_inset
+
+Так как требуемое равенство доказано для 
+\begin_inset Formula $m=k$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+x^{n}\circ x^{k+1}=x^{n+k}\circ x,
+\]
+
+\end_inset
+
+а в силу леммы 6.1
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+x^{n}\circ x^{k+1}=x^{n+k}\circ x=x^{n+k+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Мы показали, что 
+\begin_inset Formula $x^{n}\circ x^{m}=x^{n+m}$
+\end_inset
+
+.
+ Так как сложение целых чисел коммутативно, то 
+\begin_inset Formula 
+\[
+x^{m}\circ x^{n}=x^{m+n}=x^{n+m},
+\]
+
+\end_inset
+
+поэтому 
+\begin_inset Formula 
+\[
+x^{n}\circ x^{m}=x^{m}\circ x^{n}=x^{n+m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Полугруппа — самая слабая из интересных алгебраических структур.
+ Единственное требование, которое ещё можно ослабить — аксиома ассоциативности.
+ Если опустить её, получится алгебраическая структура, называемая 
+\emph on
+магмой
+\emph default
+, но на слишком полезна.
+ Поскольку не осталось никаких аксиом, то нельзя доказать никаких теорем.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
