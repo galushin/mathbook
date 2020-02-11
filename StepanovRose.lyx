@@ -5123,7 +5123,569 @@ status open
 .
 \end_layout
 
+\begin_layout Section
+Подгруппы и циклические группы
+\end_layout
+
+\begin_layout Definition
+Подмножество 
+\begin_inset Formula $H$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ называется 
+\emph on
+подгруппой
+\emph default
+ 
+\begin_inset Formula $G$
+\end_inset
+
+, если 
+\begin_inset Formula 
+\[
+e\in H,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a\in H\Rightarrow a^{-1}\in H,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a,b\in H\Rightarrow a\circ b\in H.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+Иными словами.
+ чтобы быть подгруппой, 
+\begin_inset Formula $H$
+\end_inset
+
+ должна быть одновременно подмножеством и группой.
+ Из ассоциативности операции в 
+\begin_inset Formula $G$
+\end_inset
+
+ следует её ассоциативность в 
+\begin_inset Formula $H$
+\end_inset
+
+, поэтому в этом определении не нужно явно постулировать ассоциативность.
+ По тем же причинам не нужно явно повторять аксиомы нейтральности и сокращения.
+\end_layout
+
+\begin_layout Standard
+Например, аддитивная группа чётных чисел является подгруппой аддитивной
+ группы целых чисел, равно как и аддитивная группа чисел, кратных 
+\begin_inset Formula $5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+У некоторых групп много подгрупп, но почти у всех есть по меньшей мере две:
+ сама подгрупп и группа, состоящая из одного элемента 
+\begin_inset Formula $e$
+\end_inset
+
+.
+ Эти две подгруппы называются 
+\emph on
+тривиальными 
+\emph default
+(единственная группа, у которой нет даже двух подгрупп, — группа, состоящая
+ только из нейтрального элемента)
+\emph on
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пример про подгруппы группы ненулевых остатков от деления на 
+\begin_inset Formula $7$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Найти порядок каждого элемента:
+\end_layout
+
+\begin_layout Problem
+1) мультипликативной группы остатков по модулю 7.
+\end_layout
+
+\begin_layout Problem
+2) мультипликативной группы остатков по модулю 11.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать систему компьютерной алгебры, решающую эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Конечная группа называется 
+\emph on
+циклической
+\emph default
+, если в ней имеется такой элемент 
+\begin_inset Formula $a$
+\end_inset
+
+, что для любого элемента 
+\begin_inset Formula $b$
+\end_inset
+
+ найдётся целое число 
+\begin_inset Formula $n$
+\end_inset
+
+, такое, что 
+\begin_inset Formula 
+\[
+b=a^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Такой элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ называется 
+\emph on
+образующим
+\emph default
+ или 
+\emph on
+порождающими
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+В группе может быть несколько порождающих элементов.
+ Например, в мультипликативной группе ненулевых остатков по модулю 7 образующими
+ являются элементы 
+\begin_inset Formula $3$
+\end_inset
+
+ и 
+\begin_inset Formula $5$
+\end_inset
+
+, потому что они не входят ни в какую нетривиальную подгруппу исходной группы.
+\end_layout
+
+\begin_layout Problem
+Докажите, что любая подгруппа циклической группы циклическая.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+Рассмотрим циклическую группу 
+\begin_inset Formula $G$
+\end_inset
+
+ и некоторую её подгруппу 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $G$
+\end_inset
+
+ конечная по определению, то конечной является и 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $H=\left\{ b_{1},\dots,b_{m}\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+ — порядок 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $G$
+\end_inset
+
+ циклическая, то элементы 
+\begin_inset Formula $H$
+\end_inset
+
+ являются степенями некоторого 
+\begin_inset Formula $a\in G$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $b_{i}=a^{n_{i}}$
+\end_inset
+
+ при 
+\begin_inset Formula $i=1,\dots,m$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то она включает в себя любой элемент вида 
+\begin_inset Formula 
+\[
+\prod_{j=1}^{m}b_{j}^{k_{j}}=a^{\sum_{j=1}^{m}k_{j}n_{j}},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $k_{j}$
+\end_inset
+
+ — произвольные целые числа.
+ В частности, можно взять такие 
+\begin_inset Formula $k_{j}$
+\end_inset
+
+, что 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\sum_{j=1}^{m}k_{j}n_{j}=\gcd\left(n_{1},\dots,n_{m}\right)=d,
+\]
+
+\end_inset
+
+поэтому 
+\begin_inset Formula $b_{0}=a^{d}\in H$
+\end_inset
+
+.
+ Тогда, по определению наибольшего общего делителя: 
+\begin_inset Formula 
+\[
+n_{j}=d\cdot\left(\frac{n_{j}}{d}\right)=d\cdot s_{j},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula 
+\[
+s_{j}=\frac{n_{j}}{d}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Поэтому
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+b_{j}=a^{n_{j}}=a^{d\cdot s_{j}}=b_{0}^{s_{j}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ является образующим 
+\begin_inset Formula $H$
+\end_inset
+
+, а сама 
+\begin_inset Formula $H$
+\end_inset
+
+ — циклическая.
+\end_layout
+
+\begin_layout Problem
+Докажите, что любая циклическая группа абелева.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+В циклической группе все элементы являются степенями некоторого элемента,
+ а степени одного элемента коммутируют 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+Степени любого элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ конечной группы 
+\begin_inset Formula $G$
+\end_inset
+
+ образуют подгруппу.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+Обозначим множество степеней 
+\begin_inset Formula $a$
+\end_inset
+
+ как 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Проверим выполнение всех требований подгруппы.
+ Прежде всего, степени любого элемента сами являются элементами этой группы,
+ поэтому они образуют подмножество.
+\end_layout
+
+\begin_layout Proof
+Так как, по определению, 
+\begin_inset Formula $a^{0}=e$
+\end_inset
+
+, то 
+\begin_inset Formula $e\in H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как группа 
+\begin_inset Formula $G$
+\end_inset
+
+ конечная, то конечной является и 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Тогда порядок элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ также конечен
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+ Обозначим его как 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Рассмотрим произвольный элемент 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Он имеет вид 
+\begin_inset Formula $a^{k}$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — натуральное число.
+ Рассмотрим элемент 
+\begin_inset Formula $a^{m-k}$
+\end_inset
+
+.
+ По свойству степеней 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+a^{k}\circ a^{m-k}=a^{m-k}\circ a^{k}=a^{m}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $0\le k\le m$
+\end_inset
+
+, то 
+\begin_inset Formula $0\le m-k\le m$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a^{m-k}\in H$
+\end_inset
+
+, поскольку 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа степеней 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Наконец, Рассмотрим два элемента группы 
+\begin_inset Formula $H$
+\end_inset
+
+: 
+\begin_inset Formula $a^{j}$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{k}$
+\end_inset
+
+, тогда 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $a^{j}\circ a^{k}=a^{j+k}\in H$
+\end_inset
+
+, так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа степеней 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
 \begin_inset Note Note
 status open
 
