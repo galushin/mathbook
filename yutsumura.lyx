@@ -13200,6 +13200,480 @@ ax+by=\left(a+b\right)0=0.
  равна нулю.
 \end_layout
 
+\begin_layout Section
+Ядро матрицы является подпространством 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ (задача 121)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ — матрица размера 
+\begin_inset Formula $m\times n$
+\end_inset
+
+.
+ Ядро 
+\begin_inset Formula $\mathcal{N}\left(A\right)$
+\end_inset
+
+ матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ определяется как 
+\begin_inset Formula 
+\[
+\mathcal{N}\left(A\right)=\left\{ x\in\mathbb{R}^{n}|Ax=0\right\} ,
+\]
+
+\end_inset
+
+то есть ядро — это множество решений однородной системы 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+Докажите.
+ что 
+\begin_inset Formula $\mathcal{N}\left(A\right)$
+\end_inset
+
+ является подпространством 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Нужно доказать, что
+\end_layout
+
+\begin_layout Solution
+а) Нулевой вектор принадлежит 
+\begin_inset Formula $\mathcal{N}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Если 
+\begin_inset Formula $x,y\in\mathcal{N}\left(A\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $x+y\in\mathcal{N}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Если 
+\begin_inset Formula $x\in\mathcal{N}\left(A\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольное вещественное число, то 
+\begin_inset Formula $ax\in\mathcal{N}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем, что эти свойства действительно выполняются.
+\end_layout
+
+\begin_layout Solution
+а) По определению произведения матриц 
+\begin_inset Formula $A0=0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $0\in\mathcal{N}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Если 
+\begin_inset Formula $x,y\in\mathcal{N}\left(A\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $Ax=Ay=0$
+\end_inset
+
+, поэтому, по свойствам умножения матрицы на вектор:
+\begin_inset Formula 
+\[
+A\left(x+y\right)=Ax+Ay=0+0=0,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $x+y\in\mathcal{N}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Аналогично, 
+\begin_inset Formula $x\in\mathcal{N}\left(A\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+A\left(ax\right)=aAx=a0=0,
+\]
+
+\end_inset
+
+ поэтому 
+\begin_inset Formula $ax\in\mathcal{N}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Любая плоскость, проходящая через начало координат, в трёхмерном пространстве
+ является подпространством (задача 294)
+\end_layout
+
+\begin_layout Problem
+Докажите, что любая плоскость в 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+, проходящая через начало координат, является подпространством 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Конкретная размерность не важна
+\end_layout
+
+\end_inset
+
+Уравнение плоскости, проходящей через начало координат, может быть записана
+ в виде 
+\begin_inset Formula $a^{T}x=0$
+\end_inset
+
+, где 
+\begin_inset Formula $a\in\mathbb{R}^{3}$
+\end_inset
+
+.
+ Как было показано в задаче 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на задачу 659
+\end_layout
+
+\end_inset
+
+, множество векторов, ортогональных заданному вектору, является подпространством.
+\end_layout
+
+\begin_layout Section
+Гиперплоскость, проходящая через начало координат, в четырёхмерном линейном
+ пространстве (задача 371)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $S$
+\end_inset
+
+ — подмножество 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+, состоящее из векторов, удовлетворяющих уравнению 
+\begin_inset Formula $b^{T}x=0$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+обобщено, в оригинале конкретное уравнение
+\end_layout
+
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $S$
+\end_inset
+
+ — подпространство в 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) 
+\begin_inset Formula $b^{T}0=0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $0\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+б) Пусть 
+\begin_inset Formula $x,y\in S$
+\end_inset
+
+, тогда 
+\begin_inset Formula $b^{T}x=b^{T}y=0$
+\end_inset
+
+, поэтому, по свойствам скалярного произведения, 
+\begin_inset Formula 
+\[
+b^{T}\left(x+y\right)=b^{T}x+b^{T}y=0+0=0,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $x+y\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Пусть 
+\begin_inset Formula $x\in S$
+\end_inset
+
+, тогда 
+\begin_inset Formula $b^{T}x=0$
+\end_inset
+
+, поэтому, по свойствам скалярного произведения, для любого вещественного
+ числа 
+\begin_inset Formula $a$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+b^{T}\left(ax\right)=a\cdot b^{T}x=a\cdot0=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $S$
+\end_inset
+
+ — подпространство.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пропущены задачи 17-20
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Пересечение двух подпространств также является подпространством (задача
+ 595)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $U$
+\end_inset
+
+ и 
+\begin_inset Formula $V$
+\end_inset
+
+ — подпространства линейного пространства 
+\begin_inset Formula $W$
+\end_inset
+
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Обобщено, в оригинале было 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $U\cap V$
+\end_inset
+
+ — тоже подпространство пространства 
+\begin_inset Formula $W$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+а) Так как 
+\begin_inset Formula $U$
+\end_inset
+
+ и 
+\begin_inset Formula $V$
+\end_inset
+
+ подпространства, то нулевой вектор 
+\begin_inset Formula $W$
+\end_inset
+
+ принадлежит каждому из этих множеств.
+ Но тогда нулевой вектор принадлежит их пересечению: 
+\begin_inset Formula $0\in U\cap W$
+\end_inset
+
+, что и требуется.
+\end_layout
+
+\begin_layout Solution
+б) Пусть 
+\begin_inset Formula $x,y\in U\cap V$
+\end_inset
+
+, тогда, по определению пересечения множеств, 
+\begin_inset Formula $x,y\in U$
+\end_inset
+
+ и 
+\begin_inset Formula $x,y\in V$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $U$
+\end_inset
+
+ и 
+\begin_inset Formula $V$
+\end_inset
+
+ подпространства, то 
+\begin_inset Formula $x+y\in U$
+\end_inset
+
+ и 
+\begin_inset Formula $x+y\in V$
+\end_inset
+
+, отсюда, снова по определению пересечения множеств, 
+\begin_inset Formula $x+y\in U\cap V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+в) Пусть 
+\begin_inset Formula $x\in U\cap V$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+ — вещественное число.
+ Тогда, по определению пересечения множеств, 
+\begin_inset Formula $x\in U$
+\end_inset
+
+ и 
+\begin_inset Formula $x\in V$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $U$
+\end_inset
+
+ и 
+\begin_inset Formula $V$
+\end_inset
+
+ подпространства, то 
+\begin_inset Formula $ax\in U$
+\end_inset
+
+ и 
+\begin_inset Formula $ax\in V$
+\end_inset
+
+, отсюда, снова по определению пересечения множеств, 
+\begin_inset Formula $ax\in U\cap V$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Chapter
 Базисы и размерности подпространств в 
 \begin_inset Formula $\mathbb{R}^{n}$
