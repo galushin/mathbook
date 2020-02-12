@@ -5685,6 +5685,888 @@ status open
 .
 \end_layout
 
+\begin_layout Section
+Теорема Лагранжа
+\end_layout
+
+\begin_layout Standard
+Общая алгебра замечательна тем, что мы можем доказывать результаты о таких
+ структурах, как группы, ничего не зная ни о конкретных элементах группы,
+ ни о её операции.
+\end_layout
+
+\begin_layout Definition
+Если 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа, а 
+\begin_inset Formula $H\subset G$
+\end_inset
+
+ — подгруппа 
+\begin_inset Formula $G$
+\end_inset
+
+, то для любого 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ левым смежным классом 
+\begin_inset Formula $a$
+\end_inset
+
+ по 
+\begin_inset Formula $H$
+\end_inset
+
+ называется множество 
+\begin_inset Formula 
+\[
+aH=\left\{ g\in G|\exists h\in H:g=ah\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Иначе говоря, левый смежный класс 
+\begin_inset Formula $aH$
+\end_inset
+
+ — это множество всех элементов 
+\begin_inset Formula $G$
+\end_inset
+
+, которые можно получить умножением элементов 
+\begin_inset Formula $H$
+\end_inset
+
+ на 
+\begin_inset Formula $a$
+\end_inset
+
+ слева.
+\end_layout
+
+\begin_layout Lemma
+(размер смежных классов).
+ В конечной группе 
+\begin_inset Formula $G$
+\end_inset
+
+ для любой её подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+ количество элементов в смежном классе 
+\begin_inset Formula $aH$
+\end_inset
+
+ равно количеству элементов в самой подгруппе 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как подгруппа является подмножеством, то по теореме
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на теорему 6.2
+\end_layout
+
+\end_inset
+
+, между 
+\begin_inset Formula $H$
+\end_inset
+
+ и 
+\begin_inset Formula $aH$
+\end_inset
+
+ существует взаимно однозначное соответствие, следовательно в них одинаковое
+ число элементов.
+\end_layout
+
+\begin_layout Lemma
+(Полное покрытие смежными классами).
+ Каждый элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ принадлежит какому-нибудь смежному классу подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то нейтральный элемент 
+\begin_inset Formula $e$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ также принадлежит 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $a\in aH$
+\end_inset
+
+, так как 
+\begin_inset Formula $e\in H$
+\end_inset
+
+ и 
+\begin_inset Formula $a=ae$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+(смежные класса не пересекаются или совпадают).
+ Если у двух смежных классов 
+\begin_inset Formula $aH$
+\end_inset
+
+ и 
+\begin_inset Formula $bH$
+\end_inset
+
+ в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ имеется хотя бы один общий элемент 
+\begin_inset Formula $c$
+\end_inset
+
+, то 
+\begin_inset Formula $aH=bH$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $c\in aH$
+\end_inset
+
+, докажем, что 
+\begin_inset Formula $aH=cH$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $c\in aH$
+\end_inset
+
+, то существует такой 
+\begin_inset Formula $h_{c}\in H$
+\end_inset
+
+, что 
+\begin_inset Formula $c=ah_{c}$
+\end_inset
+
+.
+ Умножив это равенство на 
+\begin_inset Formula $h_{c}^{-1}$
+\end_inset
+
+ справа, получим 
+\begin_inset Formula $a=ch_{c}^{-1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа и 
+\begin_inset Formula $h_{c}\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $h_{c}^{-1}\in H$
+\end_inset
+
+ и, следовательно, 
+\begin_inset Formula $a\in cH$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Рассмотрим теперь произвольный элемент 
+\begin_inset Formula $x\in aH$
+\end_inset
+
+.
+ По определению смежного класса, существует элемент 
+\begin_inset Formula $h_{x}\in H$
+\end_inset
+
+, такой, что 
+\begin_inset Formula $x=ah_{x}$
+\end_inset
+
+.
+ Подставив в это равенство выражение 
+\begin_inset Formula $a=ch_{c}^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+x=ah_{x}=ch_{c}^{-1}h_{x}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа и 
+\begin_inset Formula $h_{c},h_{x}\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $h_{c}^{-1}\in H$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{c}^{-1}h_{x}\in H$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $x=c\left(h_{c}^{-1}h_{x}\right)\in cH$
+\end_inset
+
+.
+ Мы показали, что из 
+\begin_inset Formula $c\in aH$
+\end_inset
+
+ следует 
+\begin_inset Formula $a\in cH$
+\end_inset
+
+ и 
+\begin_inset Formula $aH\subset cH$
+\end_inset
+
+.
+ Тогда из 
+\begin_inset Formula $a\in cH$
+\end_inset
+
+ следует 
+\begin_inset Formula $cH\subset aH$
+\end_inset
+
+.
+ Окончательно получаем, что из 
+\begin_inset Formula $c\in aH$
+\end_inset
+
+ следует 
+\begin_inset Formula $aH=cH$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как, по условию, 
+\begin_inset Formula $c\in bH$
+\end_inset
+
+, то, по доказанному выше, 
+\begin_inset Formula $bH=cH$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $aH=cH=bH$
+\end_inset
+
+, что и требовалось доказать\SpecialChar endofsentence
+
+\end_layout
+
+\begin_layout Standard
+Располагая этими результатами, мы можем доказать важную теорему из теории
+ групп, которая иллюстрирует мощь абстрактных рассуждений.
+\end_layout
+
+\begin_layout Theorem
+(Теореме Лагранжа).
+ Порядок любой подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+ конечной группы 
+\begin_inset Formula $G$
+\end_inset
+
+ делит порядок группы.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим всевозможные левые смежные классы группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по подгруппе 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Этих классов не более, чем элементов в группе 
+\begin_inset Formula $G$
+\end_inset
+
+, то есть некоторое конечное число 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, а значит и подмножество, 
+\begin_inset Formula $G$
+\end_inset
+
+, то её порядок также является некоторым конечным числом 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Количество левых смежных классов может быть меньше 
+\begin_inset Formula $n$
+\end_inset
+
+, так как разные элементы могут порождать один и тот же левый смежный класс.
+ Пусть количество левых смежных классов равно 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Смежные классы не пересекаются 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на лемму 6.4
+\end_layout
+
+\end_inset
+
+ и покрывают всю группу 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на лемму 6.5
+\end_layout
+
+\end_inset
+
+, поэтому сумма количества элементов в каждом классе равна, с одной стороны
+ 
+\begin_inset Formula $m\cdot d$
+\end_inset
+
+, а с другой — 
+\begin_inset Formula $n$
+\end_inset
+
+, таким образом: 
+\begin_inset Formula $n=md$
+\end_inset
+
+, то есть 
+\begin_inset Formula $n$
+\end_inset
+
+ делится нацело на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Интересно, что обращение теоремы Лагранжа не верно: если порядок группы
+ делится на некоторое число 
+\begin_inset Formula $m$
+\end_inset
+
+, то у группы может и не быть подгруппы порядка 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Порядок любого элемента конечной группы делит порядок группы.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим произвольную группу 
+\begin_inset Formula $G$
+\end_inset
+
+ и произвольный элемент этой группы 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ По лемме 6.2 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, степени 
+\begin_inset Formula $a$
+\end_inset
+
+ образуют подгруппу группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Порядок этой группы равен порядку элемента 
+\begin_inset Formula $a$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать или сослаться
+\end_layout
+
+\end_inset
+
+.
+ По теореме Лагранжа 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, порядок этой подгруппы делит порядок группы 
+\begin_inset Formula $G$
+\end_inset
+
+, а значит и порядок элемента делит порядок группы.
+\end_layout
+
+\begin_layout Proposition
+Если группа 
+\begin_inset Formula $G$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $a\in G$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{n}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По доказанному выше
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, порядок 
+\begin_inset Formula $a$
+\end_inset
+
+ (обозначим его как 
+\begin_inset Formula $m$
+\end_inset
+
+) делит 
+\begin_inset Formula $n$
+\end_inset
+
+, то есть существует такое целое 
+\begin_inset Formula $d$
+\end_inset
+
+, что 
+\begin_inset Formula $n=md$
+\end_inset
+
+.
+ По определению порядка элемента, 
+\begin_inset Formula $a^{m}=e$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+a^{n}=\left(a^{m}\right)^{d}=e^{d}=e,
+\]
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Standard
+Теорема Лагранжа позволяет доказать некоторые важные результаты из главы
+ 5
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ проще, чем это было сделано раньше.
+\end_layout
+
+\begin_layout Theorem*
+(Малая теорема Ферма).
+ Если 
+\begin_inset Formula $p$
+\end_inset
+
+ простое, то 
+\begin_inset Formula $a^{p-1}-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ для любого 
+\begin_inset Formula $0<a<p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать теоретико-групповое доказательство
+\end_layout
+
+\end_inset
+
+Возьмём в качестве 
+\begin_inset Formula $G$
+\end_inset
+
+ мультипликативную группу остатков от деления на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Порядок этой группы равен 
+\begin_inset Formula $p-1$
+\end_inset
+
+, 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ по условию, поэтому, как было показано выше 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $a^{p-1}=1\mod p$
+\end_inset
+
+ или 
+\begin_inset Formula $a^{p-1}-1=0\mod p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem*
+(Теорема Эйлера).Если 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ взаимно просты, то 
+\begin_inset Formula $a^{\phi\left(n\right)}-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим мультипликативную группу обратимых остатков от деления на 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Она содержит 
+\begin_inset Formula $\phi\left(n\right)$
+\end_inset
+
+ элементов, поэтому для 
+\begin_inset Formula $a$
+\end_inset
+
+, таких, что 
+\begin_inset Formula $1\le a\le n$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+ взаимно просто с 
+\begin_inset Formula $n$
+\end_inset
+
+, имеет место 
+\begin_inset Formula $a^{\phi\left(n\right)}=1\mod n$
+\end_inset
+
+ или 
+\begin_inset Formula $a^{\phi\left(n\right)}-1\mod n$
+\end_inset
+
+.
+ Пусть теперь 
+\begin_inset Formula $a>n$
+\end_inset
+
+, но 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ взаимно просты.
+ Тогда 
+\begin_inset Formula $a=qn+r$
+\end_inset
+
+, где 
+\begin_inset Formula $0<r<n$
+\end_inset
+
+ (
+\begin_inset Formula $r\neq0$
+\end_inset
+
+, так как в противном случае 
+\begin_inset Formula $a=qn$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ не взаимно просты).
+ Тогда 
+\begin_inset Formula $a^{\phi\left(n\right)}\mod n=r^{\phi\left(n\right)}\mod n$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Наверное, нужно доказать выше, что 
+\begin_inset Formula $b^{m}\mod n=\left(b\mod n\right)^{m}\mod n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+(Очень лёгкое).
+ Какие подгруппы имеет группа порядка 101?
+\end_layout
+
+\begin_layout Solution
+Так как 101 — простое число, то у группы порядка 101 есть только две подгруппы:
+ сама эта группа (порядка 101) и группа, состоящая только из нейтрального
+ элемента (порядка 1).
+\end_layout
+
+\begin_layout Problem
+Докажите, что любая группа простого порядка циклическая.
+\end_layout
+
+\begin_layout Solution
+Как было показано выше
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, порядок элемента группы является делителем порядка группы.
+ Так как делителями простого числа являются только единица и само это число,
+ то в группе простого порядка 
+\begin_inset Formula $p$
+\end_inset
+
+ все элементы имеют порядок 1 или 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Единственный элемент порядка 1 — это нейтральный элемент 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $p>1$
+\end_inset
+
+, то в группе существуют другие элементы, возьмём любой из них и обозначим
+ как 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Порядок этого элемента, равен 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Элементы 
+\begin_inset Formula $a^{k}$
+\end_inset
+
+ при 
+\begin_inset Formula $k=0,1,\dots,p-1$
+\end_inset
+
+ различны
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать или добавить ссылку
+\end_layout
+
+\end_inset
+
+ и являются элементами рассматриваемой группы.
+ Таким образом, все 
+\begin_inset Formula $p$
+\end_inset
+
+ элементов группы являются степенями любого её элемента (кроме нейтрального).
+ 
+\end_layout
+
 \begin_layout Proof
 \begin_inset Note Note
 status open
