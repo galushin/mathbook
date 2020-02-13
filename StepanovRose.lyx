@@ -6567,7 +6567,504 @@ status open
  
 \end_layout
 
-\begin_layout Proof
+\begin_layout Section
+Теории и модели
+\end_layout
+
+\begin_layout Standard
+Группы, моноиды и полугруппы — примеры того, что математики теориями.
+\end_layout
+
+\begin_layout Definition
+Теорией называется множество истинных предложений.
+\end_layout
+
+\begin_layout Itemize
+теория может быть порождена набором аксиом, дополненными правилами вывода;
+\end_layout
+
+\begin_layout Itemize
+теория называется 
+\emph on
+конечно аксиоматизируемой
+\emph default
+, если может быть порождена конечным набором аксиом;
+\end_layout
+
+\begin_layout Itemize
+набор аксиом называется 
+\emph on
+независимым
+\emph default
+, если удаление из него любой аксиомы приводит к уменьшению множества истинных
+ предложений;
+\end_layout
+
+\begin_layout Itemize
+теория называется 
+\emph on
+полной
+\emph default
+, если для любого предложения она содержит либо само это предложение, либо
+ его отрицание;
+\end_layout
+
+\begin_layout Itemize
+теория называется 
+\emph on
+непротиворечивой
+\emph default
+, если не существует предложения, для которого теория содержит как его само,
+ так и его отрицание.
+\end_layout
+
+\begin_layout Standard
+Мы не собираемся перечислять все предложения, составляющие теорию групп.
+ Вместо этого мы порождаем предложения, выводя их из аксиом и ранее доказанных
+ предложений.
+\end_layout
+
+\begin_layout Definition
+Множество элементов, для которого определены все операции теории и истины
+ все предложения теории, называется 
+\emph on
+моделью 
+\emph default
+теории.
+\end_layout
+
+\begin_layout Standard
+В некотором смысле, чем больше предложений в теории, тем меньше её различных
+ моделей.
+ Это имеет интуитивный смысл: аксиомы и предложения можно рассматривать
+ как 
+\emph on
+ограничения 
+\emph default
+теории; чем их больше, тем труднее им всем удовлетворить, и, стало быть,
+ тем меньше моделей способны это сделать.
+\end_layout
+
+\begin_layout Definition
+Две модели называются 
+\emph on
+изоморфными
+\emph default
+, если между ними можно установить взаимно однозначное соответствие, сохраняющее
+ операции.
+ Это означает, что отображение (или обратное к нему) можно применить как
+ до, так и после операции — результат получится одинаковый.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Непротиворечивая теория называется 
+\emph on
+категоричной
+\emph default
+, или 
+\emph on
+унивалентной
+\emph default
+, если все её модели изоморфны.
+ Это оригинальное определение Освальда Веблена.
+ В современной логике применяется понятие 
+\begin_inset Formula $k$
+\end_inset
+
+-категоричной теории, для которой все модели мощности 
+\begin_inset Formula $k$
+\end_inset
+
+ изоморфны.
+\end_layout
+
+\begin_layout Standard
+У противоречивой теории вообще нет моделей — невозможно удовлетворить всем
+ предложениям, не придя к противоречию.
+\end_layout
+
+\begin_layout Section
+Примеры категоричных и не категоричных теорий
+\end_layout
+
+\begin_layout Standard
+Пример категоричной теории — циклическая группа порядка 
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пример не категоричной теории — произвольная группа 
+\begin_inset Formula $4$
+\end_inset
+
+.
+ Существует две неизоморфные группы: циклическая группа порядка 
+\begin_inset Formula $4$
+\end_inset
+
+ и группа Клейна (группа симметрий прямоугольника).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Структура
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Операции
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Элементы
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Аксиомы
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Пример
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Магма
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\circ y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Полугруппа
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\circ y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\circ\left(y\circ z\right)=\left(x\circ y\right)\circ z$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(\mathbb{Z^{+}},+\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Моноид
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\circ y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{array}{c}
+x\circ\left(y\circ z\right)=\left(x\circ y\right)\circ z\\
+x\circ e=e\circ x=x
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Строки с операцией конкатенации
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Группа
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\circ y,x^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{array}{c}
+x\circ\left(y\circ z\right)=\left(x\circ y\right)\circ z\\
+x\circ e=e\circ x=x\\
+x\circ x^{-1}=x^{-1}\circ x=e
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Обратимые матрицы с операцией умножения
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Абелева группа
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\circ y,x^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{array}{c}
+x\circ\left(y\circ z\right)=\left(x\circ y\right)\circ z\\
+x\circ e=e\circ x=x\\
+x\circ x^{-1}=x^{-1}\circ x=e\\
+x\circ y=y\circ x
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Двумерные векторы с операцией сложения
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
