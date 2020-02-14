@@ -7102,6 +7102,666 @@ F_{n-1}+F_{n-2}, & n\ge2.
 
 \end_layout
 
+\begin_layout Chapter
+Вывод обобщённого алгоритма
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Эта глава больше относится к программированию, кроме, пожалуй, раздела 7.7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Вычисление чисел Фибоначчи
+\end_layout
+
+\begin_layout Standard
+Последовательность чисел Фибоначчи формально определяется следующим образом:
+ 
+\begin_inset Formula 
+\[
+F_{n}=\begin{cases}
+0, & n=0,\\
+1, & n=1,\\
+F_{n-1}+F_{n-2}, & n\ge2.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Наивная реализация на C++ могла бы выглядеть так:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+int fin0(int n)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	if(n == 0) return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+	if(n == 1) return 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+	return fib0(n-1) + fib0(n-2);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Однако этот код снова и снова выполняется одни и те же действия.
+\end_layout
+
+\begin_layout Exercise
+Сколько сложений необходимо для вычисления fib0(n)?
+\end_layout
+
+\begin_layout Solution
+Обозначим искомое количество как 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+ Очевидно, 
+\begin_inset Formula $A_{0}=A_{1}=0$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+ требуется 
+\begin_inset Formula $A_{n-1}+A_{n-2}+1$
+\end_inset
+
+ сложений (сначала вычисляем слагаемые, а затем — выполняем одно сложение
+ для получения окончательного результата) Найдём несколько следующих значений.
+ 
+\begin_inset Formula 
+\[
+A_{2}=A_{1}+A_{0}+1=1,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{3}=A_{2}+A_{1}+1=1+1=2,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{4}=A_{3}+A_{1}+1=2+1+1=4,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{5}=A_{4}+A_{3}+1=4+2+1=7,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{6}=A_{5}+A_{4}+1=7+4+1=12.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Воспользуемся аппаратом производящих функций.
+ Рассмотрим функцию 
+\begin_inset Formula 
+\[
+A\left(z\right)=\sum_{n=0}^{\infty}A_{n}z^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+A\left(z\right)=A_{0}+A_{1}z+\sum_{n=2}^{\infty}A_{n}z^{n}=\\
+=A_{0}+A_{1}z+\sum_{n=2}^{\infty}\left(A_{n-1}+A_{n-2}+1\right)z^{n}=\\
+=A_{0}+A_{1}z+z\sum_{n=2}^{\infty}A_{n-1}z^{n-1}+z^{2}\sum_{n=2}^{\infty}A_{n-2}z^{n-2}+\sum_{n=0}^{\infty}z^{n}=\\
+=A_{0}+A_{1}z+z\sum_{n=1}^{\infty}A_{n}z^{n}+z^{2}\sum_{n=0}^{\infty}A_{n}z^{n-2}+\sum_{n=0}^{\infty}z^{n}=\\
+=A_{0}+A_{1}z+z\left(A\left(z\right)-A_{0}\right)+z^{2}A\left(z\right)+\frac{1}{1-z}=\\
+=A\left(z\right)\left(z+z^{2}\right)+A_{0}+\left(A_{1}-A_{0}\right)z+\frac{1}{1-z}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $A_{0}=A_{1}=0$
+\end_inset
+
+, то: 
+\begin_inset Formula 
+\[
+A\left(z\right)=A\left(z\right)\left(z+z^{2}\right)+\frac{1}{1-z}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выразим 
+\begin_inset Formula $A\left(z\right)$
+\end_inset
+
+ из этого уравнения:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A\left(z\right)\left[1-z-z^{2}\right]=\frac{1}{1-z}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Решим уравнение 
+\begin_inset Formula $z^{2}+z-1=0$
+\end_inset
+
+, чтобы разложить 
+\begin_inset Formula $1-z-z^{2}$
+\end_inset
+
+ на множители.
+ 
+\begin_inset Formula 
+\[
+D=1+4=5,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z_{1,2}=\frac{-1\pm\sqrt{5}}{2},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Реализуйте вычисление чисел Фибоначчи с помощью алгоритма power.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Линейной рекуррентной функцией порядка 
+\begin_inset Formula $k$
+\end_inset
+
+ называется функция 
+\begin_inset Formula 
+\[
+f\left(y_{0},\dots,y_{k-1}\right)=\sum_{j=0}^{k-1}a_{j}y_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Линейной рекуррентной последовательностью называется последовательность,
+ порождаемая линейной рекуррентной функцией по 
+\begin_inset Formula $k$
+\end_inset
+
+ начальным значениям.
+\end_layout
+
+\begin_layout Chapter
+Ещё об алгебраических структурах
+\end_layout
+
+\begin_layout Section
+Стевин, полиномы и НОД
+\end_layout
+
+\begin_layout Standard
+Рассмотрим алгоритм вычисления значений многочлена:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+template <InputIterator I, Semigroup R>
+\end_layout
+
+\begin_layout Plain Layout
+
+R polynomial_value(I first, I last, R x)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	if(first == last) return R(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+	R sum(*first);
+\end_layout
+
+\begin_layout Plain Layout
+
+	while(++first != last)
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+		sum *= x;
+\end_layout
+
+\begin_layout Plain Layout
+
+		sum += *first;
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+	return sum;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Какие требования предъявляются к 
+\series bold
+R 
+\series default
+и типу значений итератора? Иными словами, каковы требования к коэффициентам
+ полинома и их значениям?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Революционный прорыв Стевина позволил рассматривать полиномы как числа и
+ производить над ними обычные арифметические операции.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Описать операции над многочленами
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Степенью многочлена 
+\begin_inset Formula $\deg\left(P\right)$
+\end_inset
+
+ называется самая старшая степень переменной с ненулевым коэффициентом.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Многочлен 
+\begin_inset Formula $a$
+\end_inset
+
+ делиться на многочлен 
+\begin_inset Formula $b$
+\end_inset
+
+ с остатком, если существует такие многочлены 
+\begin_inset Formula $q$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+a=bq+r,\deg\left(r\right)<\deg\left(b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Докажите, что для любых двух многочленов 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Problem
+1) 
+\begin_inset Formula $p\left(x\right)=q\left(x\right)\cdot\left(x-x_{0}\right)+r\Rightarrow p\left(x_{0}\right)=r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+2) 
+\begin_inset Formula $p\left(x_{0}\right)=0\Rightarrow p\left(x\right)=q\left(x\right)\cdot\left(x-x_{0}\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+1) Непосредственной подстановкой убеждаемся, что 
+\begin_inset Formula 
+\[
+p\left(x_{0}\right)=q\left(x_{0}\right)\cdot\left(x_{0}-x_{0}\right)+r=q\left(x_{0}\right)\cdot0+r=0+r=r.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+2) Разделим 
+\begin_inset Formula $p\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $\left(x-x_{0}\right)$
+\end_inset
+
+ с остатком.
+ Так как степень остатка меньше степени делителя, а 
+\begin_inset Formula $\left(x-x_{0}\right)$
+\end_inset
+
+ — многочлен первой степени, то остаток будет многочленом степени не выше
+ 1, то есть просто числом: 
+\begin_inset Formula 
+\[
+p\left(x\right)=q\left(x\right)\cdot\left(x-x_{0}\right)+r.
+\]
+
+\end_inset
+
+ Тогда, по доказанному в пункте 1), 
+\begin_inset Formula $p\left(x_{0}\right)=r=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\[
+p\left(x\right)=q\left(x\right)\cdot\left(x-x_{0}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Стевин понял, что для вычисления НОД двух многочленов можно использовать
+ все тот же алгоритм Евклида, нужно только изменить типы.
+ Чтобы понять, что алгоритм завершается, нужно вспомнить, что степень остатка
+ не выше степени делителя, поэтому степень многочлена на каждом шаге уменьшается
+, а так как степень неотрицательное число, то убывающая последовательность
+ степеней должна быть конечной.
+\end_layout
+
+\begin_layout Problem
+Найдите НОД следующих многочленов:
+\end_layout
+
+\begin_layout Problem
+1.
+ 
+\begin_inset Formula $16x^{4}-56x^{3}-88x^{2}+278x+105$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula $16x^{4}-64x^{3}-44x^{2}+232x+70$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+2.
+ 
+\begin_inset Formula $7x^{4}+6x^{3}-8x^{2}-6x+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula $11x^{4}+15x^{3}-2x^{2}-5x+1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+3.
+ 
+\begin_inset Formula $nx^{n+1}-\left(n+1\right)x^{n}+1$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula $x^{n}-nx+\left(n-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+написать систему компьютерной алгебры, которая могла бы решить эту задачу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Геттинген и немецкая математика
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Определение комплексных чисел и Гауссовых чисел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Нётер и рождение общей алгебры
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+В основном — биографический раздел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Наивная реализация на C++ могла бы выглядеть так:
 \end_layout
