@@ -7064,6 +7064,315 @@ x\circ y=y\circ x
 
 \end_layout
 
+\begin_layout Chapter
+Вывод обобщённого алгоритма
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Эта глава больше относится к программированию, кроме, пожалуй, раздела 7.7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Вычисление чисел Фибоначчи
+\end_layout
+
+\begin_layout Standard
+Последовательность чисел Фибоначчи формально определяется следующим образом:
+ 
+\begin_inset Formula 
+\[
+F_{n}=\begin{cases}
+0, & n=0,\\
+1, & n=1,\\
+F_{n-1}+F_{n-2}, & n\ge2.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Наивная реализация на C++ могла бы выглядеть так:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+int fin0(int n)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	if(n == 0) return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+	if(n == 1) return 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+	return fib0(n-1) + fib0(n-2);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Однако этот код снова и снова выполняется одни и те же действия.
+\end_layout
+
+\begin_layout Exercise
+Сколько сложений необходимо для вычисления fib0(n)?
+\end_layout
+
+\begin_layout Solution
+Обозначим искомое количество как 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+ Очевидно, 
+\begin_inset Formula $A_{0}=A_{1}=0$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+ требуется 
+\begin_inset Formula $A_{n-1}+A_{n-2}+1$
+\end_inset
+
+ сложений (сначала вычисляем слагаемые, а затем — выполняем одно сложение
+ для получения окончательного результата) Найдём несколько следующих значений.
+ 
+\begin_inset Formula 
+\[
+A_{2}=A_{1}+A_{0}+1=1,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{3}=A_{2}+A_{1}+1=1+1=2,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{4}=A_{3}+A_{1}+1=2+1+1=4,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{5}=A_{4}+A_{3}+1=4+2+1=7,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{6}=A_{5}+A_{4}+1=7+4+1=12.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Воспользуемся аппаратом производящих функций.
+ Рассмотрим функцию 
+\begin_inset Formula 
+\[
+A\left(z\right)=\sum_{n=0}^{\infty}A_{n}z^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+A\left(z\right)=A_{0}+A_{1}z+\sum_{n=2}^{\infty}A_{n}z^{n}=\\
+=A_{0}+A_{1}z+\sum_{n=2}^{\infty}\left(A_{n-1}+A_{n-2}+1\right)z^{n}=\\
+=A_{0}+A_{1}z+z\sum_{n=2}^{\infty}A_{n-1}z^{n-1}+z^{2}\sum_{n=2}^{\infty}A_{n-2}z^{n-2}+\sum_{n=0}^{\infty}z^{n}=\\
+=A_{0}+A_{1}z+z\sum_{n=1}^{\infty}A_{n}z^{n}+z^{2}\sum_{n=0}^{\infty}A_{n}z^{n-2}+\sum_{n=0}^{\infty}z^{n}=\\
+=A_{0}+A_{1}z+z\left(A\left(z\right)-A_{0}\right)+z^{2}A\left(z\right)+\frac{1}{1-z}=\\
+=A\left(z\right)\left(z+z^{2}\right)+A_{0}+\left(A_{1}-A_{0}\right)z+\frac{1}{1-z}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $A_{0}=A_{1}=0$
+\end_inset
+
+, то: 
+\begin_inset Formula 
+\[
+A\left(z\right)=A\left(z\right)\left(z+z^{2}\right)+\frac{1}{1-z}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выразим 
+\begin_inset Formula $A\left(z\right)$
+\end_inset
+
+ из этого уравнения:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A\left(z\right)\left[1-z-z^{2}\right]=\frac{1}{1-z}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Решим уравнение 
+\begin_inset Formula $z^{2}+z-1=0$
+\end_inset
+
+, чтобы разложить 
+\begin_inset Formula $1-z-z^{2}$
+\end_inset
+
+ на множители.
+ 
+\begin_inset Formula 
+\[
+D=1+4=5,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z_{1,2}=\frac{-1\pm\sqrt{5}}{2},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Реализуйте вычисление чисел Фибоначчи с помощью алгоритма power.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Линейной рекуррентной функцией порядка 
+\begin_inset Formula $k$
+\end_inset
+
+ называется функция 
+\begin_inset Formula 
+\[
+f\left(y_{0},\dots,y_{k-1}\right)=\sum_{j=0}^{k-1}a_{j}y_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Линейной рекуррентной последовательностью называется последовательность,
+ порождаемая линейной рекуррентной функцией по 
+\begin_inset Formula $k$
+\end_inset
+
+ начальным значениям.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
