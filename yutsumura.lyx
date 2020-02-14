@@ -13517,17 +13517,455 @@ b^{T}\left(ax\right)=a\cdot b^{T}x=a\cdot0=0.
  — подпространство.
 \end_layout
 
-\begin_layout Solution
-\begin_inset Note Note
-status open
+\begin_layout Section
+Определите, являются ли данные подмножества 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
 
-\begin_layout Plain Layout
-Пропущены задачи 17-20
+ подпространствами (задача 480)
 \end_layout
+
+\begin_layout Problem
+а) Пусть 
+\begin_inset Formula $S$
+\end_inset
+
+ — подмножество
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+, состоящее из векторов 
+\begin_inset Formula $x^{T}=\left(x,y,z,w\right)$
+\end_inset
+
+, удовлетворяющих уравнению 
+\begin_inset Formula 
+\[
+2x+4y+3z+7w+1=0.
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Problem
+Определите, является ли 
+\begin_inset Formula $S$
+\end_inset
+
+ подпространством 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+.
+ Если это так, то докажите это, если нет — объясните, почему это не подпространс
+тво.
+\end_layout
+
+\begin_layout Problem
+б) Пусть теперь 
+\begin_inset Formula $S$
+\end_inset
+
+ — подмножество
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+, состоящее из векторов 
+\begin_inset Formula $x^{T}=\left(x,y,z,w\right)$
+\end_inset
+
+, удовлетворяющих уравнению 
+\begin_inset Formula 
+\[
+2x+4y+3z+7w=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Определите, является ли 
+\begin_inset Formula $S$
+\end_inset
+
+ подпространством 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+.
+ Если это так, то докажите это, если нет — объясните, почему это не подпространс
+тво.
+\end_layout
+
+\begin_layout Solution
+Эту задачу можно серьёзно обобщить.
+ Во-первых, вместо 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+ можно было бы рассматривать 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+.
+ Тогда уравнения можно было бы записать в виде 
+\begin_inset Formula 
+\[
+S=\left\{ x\in\mathbb{R}^{n}|a^{T}x=b\right\} ,
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $a\in\mathbb{R}^{4}$
+\end_inset
+
+ и 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $b\in\mathbb{R}$
+\end_inset
+
+.
+ Покажем, в каких случаях 
+\begin_inset Formula $S$
+\end_inset
+
+ является или не является подпространством.
+ Рассмотрим произвольные 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ и 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+ (причём 
+\begin_inset Formula $c\neq1$
+\end_inset
+
+), тогда 
+\begin_inset Formula $a^{T}\left(cx\right)=c\cdot\left(a^{T}x\right)=c\cdot b$
+\end_inset
+
+.
+ Тогда, если 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{T}\left(cx\right)\neq b$
+\end_inset
+
+, поэтому при 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+ подмножество 
+\begin_inset Formula $S$
+\end_inset
+
+ не является подпространством.
+\end_layout
+
+\begin_layout Solution
+В задаче 295
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ было показано, что уравнение 
+\begin_inset Formula $a^{T}x=0$
+\end_inset
+
+ задаёт подпространство, поэтому при 
+\begin_inset Formula $b=0$
+\end_inset
+
+ подмножество 
+\begin_inset Formula $S$
+\end_inset
+
+ является подпространством.
+\end_layout
+
+\begin_layout Solution
+Таким образом, в пункте а) 
+\begin_inset Formula $S$
+\end_inset
+
+ не является подпространством, а в пункте б) — является.
+\end_layout
+
+\begin_layout Section
+Прямая является подпространством тогда и только тогда, когда она проходит
+ через начало координат (задача 663)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ — это координатная плоскость 
+\begin_inset Formula $Oxy$
+\end_inset
+
+.
+ Пусть прямая 
+\begin_inset Formula $l\subset\mathbb{R}^{2}$
+\end_inset
+
+ задана следующим образом: 
+\begin_inset Formula 
+\[
+l=\left\{ \left(x,y\right)\in R|y=mx+b\right\} ,
+\]
+
+\end_inset
+
+ докажите, что 
+\begin_inset Formula $l$
+\end_inset
+
+ — подпространство тогда и только тогда, когда 
+\begin_inset Formula $b=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Уравнение 
+\begin_inset Formula $y=mx+b$
+\end_inset
+
+ можно переписать в виде 
+\begin_inset Formula $mx+\left(-1\right)y=-b$
+\end_inset
+
+.
+ В задаче 480 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ было показано, что подмножество, задаваемое подобным уравнением, является
+ подпространством тогда и только тогда, когда 
+\begin_inset Formula $b=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Контрпример подпространства в 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ (задача 125)
+\end_layout
+
+\begin_layout Problem
+Пусть подмножество 
+\begin_inset Formula $S$
+\end_inset
+
+ задаётся следующим образом 
+\begin_inset Formula 
+\[
+S=\left\{ x\in R\left|x=\begin{pmatrix}a\\
+b\\
+c
+\end{pmatrix},a,b,c\in\mathbb{Z}\right.\right\} ,
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ — множество всех целых чисел.
+ Определите, является ли 
+\begin_inset Formula $S$
+\end_inset
+
+ подпространством.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula 
+\[
+x=\begin{pmatrix}1\\
+1\\
+1
+\end{pmatrix}\in S,
+\]
+
+\end_inset
+
+ рассмотрим вектор 
+\begin_inset Formula $\frac{1}{2}\cdot x$
+\end_inset
+
+ Если 
+\begin_inset Formula $S$
+\end_inset
+
+ подпространство, то 
+\begin_inset Formula $\frac{1}{2}\cdot x$
+\end_inset
+
+ должен принадлежать 
+\begin_inset Formula $S$
+\end_inset
+
+, но 
+\begin_inset Formula 
+\[
+\frac{1}{2}\cdot x=\begin{pmatrix}\frac{1}{2}\\
+\frac{1}{2}\\
+\frac{1}{2}
+\end{pmatrix}\neq S,
+\]
+
+\end_inset
+
+а значит 
+\begin_inset Formula $S$
+\end_inset
+
+ не является подпространством.
+\end_layout
+
+\begin_layout Section
+Подмножество векторов, перпендикулярных двум заданным векторам, является
+ подпространством (задача 119)
+\end_layout
+
+\begin_layout Problem
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Задача обобщена на произвольное линейное пространство 
+\begin_inset Formula $V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $V$
+\end_inset
+
+ — линейное пространство и 
+\begin_inset Formula $a,b\in V$
+\end_inset
+
+ — два фиксированных вектора.
+ Рассмотрим подмножество 
+\begin_inset Formula 
+\[
+W=\left\{ x\in V|a^{T}x=0\wedge b^{T}x=0\right\} .
+\]
+
+\end_inset
+
+ Докажите, что 
+\begin_inset Formula $W$
+\end_inset
+
+ — подпространство.
+\end_layout
+
+\begin_layout Solution
+По определению пересечения множеств: 
+\begin_inset Formula $W=W_{1}\cap W_{2}$
+\end_inset
+
+, где 
+\begin_inset Formula 
+\[
+W_{1}=\left\{ x\in V|a^{T}x=0\right\} ,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W_{2}=\left\{ x\in V|b^{T}x=0\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Как было показано в задаче 659
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $W_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $W_{2}$
+\end_inset
+
+ — подпространства пространства 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ А в задаче 595
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $W_{1}\cap W_{2}=W$
+\end_inset
+
+ — подпространство пространства 
+\begin_inset Formula $V$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -13669,6 +14107,438 @@ status open
 
 , отсюда, снова по определению пересечения множеств, 
 \begin_inset Formula $ax\in U\cap V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Является ли пересечение базисов базисом пересечения (задача 253)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Объединение подпространств не обязательно является подпространством векторного
+ пространства (задача 274)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $U$
+\end_inset
+
+ и 
+\begin_inset Formula $V$
+\end_inset
+
+ — подпространства линейного пространства 
+\begin_inset Formula $W$
+\end_inset
+
+.
+ Если ни 
+\begin_inset Formula $U\subset V$
+\end_inset
+
+, ни 
+\begin_inset Formula $V\subset U$
+\end_inset
+
+, то 
+\begin_inset Formula $U\cup V$
+\end_inset
+
+ не является подпространством 
+\begin_inset Formula $W$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $U$
+\end_inset
+
+ не является подмножеством 
+\begin_inset Formula $V$
+\end_inset
+
+, то существует такой 
+\begin_inset Formula $x$
+\end_inset
+
+, что 
+\begin_inset Formula $x\in U$
+\end_inset
+
+ и 
+\begin_inset Formula $x\notin V$
+\end_inset
+
+.
+ Аналогично, если 
+\begin_inset Formula $V$
+\end_inset
+
+ не является подмножеством 
+\begin_inset Formula $U$
+\end_inset
+
+, то существует такой 
+\begin_inset Formula $y$
+\end_inset
+
+, что 
+\begin_inset Formula $y\notin U$
+\end_inset
+
+ и 
+\begin_inset Formula $y\in V$
+\end_inset
+
+.
+ По определению объединения множеств 
+\begin_inset Formula $x,y\in U\cup V$
+\end_inset
+
+.
+ Покажем, что 
+\begin_inset Formula $x+y\notin U\cup V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пойдём от противного.
+ Пусть 
+\begin_inset Formula $x+y\in U\cup V$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $x+y\in U$
+\end_inset
+
+ или 
+\begin_inset Formula $x+y\in V$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $x+y\in U$
+\end_inset
+
+, так как 
+\begin_inset Formula $U$
+\end_inset
+
+ подпространство и 
+\begin_inset Formula $x\in U$
+\end_inset
+
+, то 
+\begin_inset Formula $-x\in U$
+\end_inset
+
+, а также 
+\begin_inset Formula $x+y-x=x-x+y=y\in U$
+\end_inset
+
+, но 
+\begin_inset Formula $y\notin U$
+\end_inset
+
+.
+ Мы пришли к противоречию с тем, что 
+\begin_inset Formula $x\notin V$
+\end_inset
+
+, значит 
+\begin_inset Formula $x+y\in V$
+\end_inset
+
+.
+ Но так как 
+\begin_inset Formula $y\in V$
+\end_inset
+
+ и 
+\begin_inset Formula $V$
+\end_inset
+
+ — подпространство, то 
+\begin_inset Formula $-y\in V$
+\end_inset
+
+ и 
+\begin_inset Formula $x+y-y=x\in V$
+\end_inset
+
+, мы пришли к противоречию с тем, что 
+\begin_inset Formula $y\notin V$
+\end_inset
+
+.
+ Таким образом, исходное предположение было ложным, то есть 
+\begin_inset Formula $x+y\notin U\cup V$
+\end_inset
+
+, а значит 
+\begin_inset Formula $U\cup V$
+\end_inset
+
+ не является подпространством 
+\begin_inset Formula $W$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Объединение подпространств является подпространством тогда и только тогда,
+ когда одно из них включает другое (задача 427)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $W_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $W_{2}$
+\end_inset
+
+ — подпространства линейного пространства 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $W_{1}\cup W_{2}$
+\end_inset
+
+ является подпространством 
+\begin_inset Formula $V$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $W_{1}\subset W_{2}$
+\end_inset
+
+ или 
+\begin_inset Formula $W_{2}\subset W_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $W_{1}\subset W_{2}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $W_{1}\cup W_{2}=W_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $W_{1}\cup W_{2}$
+\end_inset
+
+ является подпространством 
+\begin_inset Formula $V$
+\end_inset
+
+, так как 
+\begin_inset Formula $W_{2}$
+\end_inset
+
+ — подпространство 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $W_{2}\subset W_{1}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $W_{1}\cup W_{2}=W_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $W_{1}\cup W_{2}$
+\end_inset
+
+ является подпространством 
+\begin_inset Formula $V$
+\end_inset
+
+, так как 
+\begin_inset Formula $W_{1}$
+\end_inset
+
+ — подпространство 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Таким образом, если 
+\begin_inset Formula $W_{1}\subset W_{2}$
+\end_inset
+
+ или 
+\begin_inset Formula $W_{2}\subset W_{1}$
+\end_inset
+
+, то 
+\begin_inset Formula $W_{1}\cup W_{2}$
+\end_inset
+
+ — подпространство 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+В задаче 274
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, было показано, что если ни 
+\begin_inset Formula $W_{1}\subset W_{2}$
+\end_inset
+
+, ни 
+\begin_inset Formula $W_{2}\subset W_{1}$
+\end_inset
+
+, то 
+\begin_inset Formula $W_{1}\cup W_{2}$
+\end_inset
+
+ не является подпространством 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Таким образом, если 
+\begin_inset Formula $W_{1}\cup W_{2}$
+\end_inset
+
+ — подпространство, то 
+\begin_inset Formula $W_{1}\subset W_{2}$
+\end_inset
+
+ или 
+\begin_inset Formula $W_{2}\subset W_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Пересечение ядер двух матриц является подмножеством ядра их суммы (задача
+ 311)
+\end_layout
+
+\begin_layout Problem
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ — матрицы размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+ Докажите, что 
+\begin_inset Formula $\mathcal{N}\left(A\right)\cap\mathcal{N}\left(B\right)\subset\mathcal{N}\left(A+B\right),$
+\end_inset
+
+ где 
+\begin_inset Formula $\mathcal{N}\left(X\right)$
+\end_inset
+
+ — ядро матрицы 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $x\in\mathcal{N}\left(A\right)\cap\mathcal{N}\left(B\right)$
+\end_inset
+
+, тогда, по определению пересечения множеств, 
+\begin_inset Formula $x\in\mathcal{N}\left(A\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x\in\mathcal{N}\left(B\right)$
+\end_inset
+
+.
+ Тогда по определению ядра матрицы, должны выполняться равенства 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+ и 
+\begin_inset Formula $Bx=0$
+\end_inset
+
+.
+ По определению суммы двух матриц 
+\begin_inset Formula 
+\[
+\left(A+B\right)x=Ax+Bx=0+0=0,
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $x\in\mathcal{N}\left(A+B\right)$
+\end_inset
+
+.
+ Таким образом, из 
+\begin_inset Formula $x\in\mathcal{N}\left(A\right)\cap\mathcal{N}\left(B\right)$
+\end_inset
+
+ следует 
+\begin_inset Formula $x\in\mathcal{N}\left(A+B\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\mathcal{N}\left(A\right)\cap\mathcal{N}\left(B\right)\subset\mathcal{N}\left(A+B\right)$
 \end_inset
 
 .
