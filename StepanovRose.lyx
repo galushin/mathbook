@@ -7102,44 +7102,6 @@ F_{n-1}+F_{n-2}, & n\ge2.
 
 \end_layout
 
-\begin_layout Chapter
-Вывод обобщённого алгоритма
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Эта глава больше относится к программированию, кроме, пожалуй, раздела 7.7
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Вычисление чисел Фибоначчи
-\end_layout
-
-\begin_layout Standard
-Последовательность чисел Фибоначчи формально определяется следующим образом:
- 
-\begin_inset Formula 
-\[
-F_{n}=\begin{cases}
-0, & n=0,\\
-1, & n=1,\\
-F_{n-1}+F_{n-2}, & n\ge2.
-\end{cases}
-\]
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 Наивная реализация на C++ могла бы выглядеть так:
 \end_layout
@@ -8031,6 +7993,626 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Кольца
+\end_layout
+
+\begin_layout Definition
+Кольцом
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Термин 
+\begin_inset Quotes rld
+\end_inset
+
+кольцо
+\begin_inset Quotes rrd
+\end_inset
+
+, предложенный Гильбертом, задумывался как метафора сообщества (круга) людей,
+ объединённых общим предприятием, например шайка (англ.
+ ring) преступников
+\end_layout
+
+\end_inset
+
+ называется множество, на котором определены операции сложения, умножения
+ и взятия обратного элемента по сложению, а также в котором существуют константы
+ 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+, для которых выполняются следующие аксиомы:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+x+\left(y+z\right)=\left(x+y\right)+z;
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+0=0+x=x;
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+\left(-x\right)=\left(-x\right)+x=0;
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+y=y+x;
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(yz\right)=\left(xy\right)z;
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1\neq0;
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1x=x1=x;
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0x=x0=0;
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(y+z\right)=xy+xz;
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(y+z\right)x=yx+zx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нельзя ли вывести 
+\begin_inset Formula $0x=x0=0$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Кольца
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Некоторые математики определяют кольцо без нейтрального элемента по умножению
+ и относящихся с нему аксиом, называя кольца, в которых они имеются унитарными
+ кольцами.
+ Мы такого различия проводить не будем.
+\end_layout
+
+\end_inset
+
+ обладают свойствами, которые мы привыкли ассоциировать с целыми числами.
+ Примерами являются:
+\end_layout
+
+\begin_layout Itemize
+целые числа;
+\end_layout
+
+\begin_layout Itemize
+множество матриц размерности 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ с вещественными коэффициентами;
+\end_layout
+
+\begin_layout Itemize
+множество гауссовых целых чисел;
+\end_layout
+
+\begin_layout Itemize
+множество многочленов с целыми коэффициентами.
+\end_layout
+
+\begin_layout Definition
+Элемент 
+\begin_inset Formula $x$
+\end_inset
+
+ кольца называется обратимым, если существует такой 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+xx^{-1}=x^{-1}x=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В каждом кольце есть по крайней мере один обратимый элемент — 1.
+ Но их может быть и больше, например, в 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ обратимы 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Обратимый элемент кольца называется единицей этого кольца.
+\end_layout
+
+\begin_layout Problem
+(очень лёгкое) Какое кольцо содержит в точности один обратимый элемент?
+ Каковы единицы в кольце 
+\begin_inset Formula $\mathbb{Z}\left[\sqrt{-1}\right]$
+\end_inset
+
+ гауссовых целых чисел?
+\end_layout
+
+\begin_layout Solution
+Один обратимый элемент может быть только в кольце, состоящем из 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Гауссовы целые числа имеют вид 
+\begin_inset Formula $m+in$
+\end_inset
+
+, где 
+\begin_inset Formula $m,n\in\mathbb{Z}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+\frac{1}{m+in}=\frac{m-in}{m^{2}+n^{2}}=\frac{m}{m^{2}+n^{2}}-i\frac{n}{m^{2}+n^{2}}.
+\]
+
+\end_inset
+
+ Если 
+\begin_inset Formula $\left|m\right|>1$
+\end_inset
+
+, то 
+\begin_inset Formula $m^{2}+n^{2}>m$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $m$
+\end_inset
+
+ не может делиться нацело на 
+\begin_inset Formula $m^{2}+n^{2}$
+\end_inset
+
+.
+ Аналогично 
+\begin_inset Formula $n$
+\end_inset
+
+ не делиться нацело на 
+\begin_inset Formula $m^{2}+n^{2}$
+\end_inset
+
+ при 
+\begin_inset Formula $\left|n\right|>1$
+\end_inset
+
+.
+ Поэтому у обратимого элемента 
+\begin_inset Formula $\left|m\right|\le1$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|n\right|\le1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $0+i0$
+\end_inset
+
+ не является обратимым, так как 
+\begin_inset Formula $0x=x0=0\neq1$
+\end_inset
+
+.
+ Обратимыми являются 
+\begin_inset Formula $\pm1$
+\end_inset
+
+ и 
+\begin_inset Formula $\pm i$
+\end_inset
+
+.
+ Ещё остаются элементы 
+\begin_inset Formula $\pm1\pm i$
+\end_inset
+
+, но они не являются обратимыми, так как 
+\begin_inset Formula $\pm1$
+\end_inset
+
+ не делиться на 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Множество единиц кольца замкнуто относительно умножения (то есть произведение
+ двух единиц само является единицей).
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — единицы кольца 
+\begin_inset Formula $R$
+\end_inset
+
+, то есть существуют 
+\begin_inset Formula $a^{-1},b^{-1}\in R$
+\end_inset
+
+ такие, что 
+\begin_inset Formula 
+\[
+aa^{-1}=a^{-1}a=bb^{-1}=b^{-1}b=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Докажем, что у элемента 
+\begin_inset Formula $ab$
+\end_inset
+
+ есть обратный элемент, а именно — 
+\begin_inset Formula $b^{-1}a^{-1}$
+\end_inset
+
+.
+ Действительно: 
+\begin_inset Formula 
+\[
+\left(ab\right)\left(b^{-1}a^{-1}\right)=a\left(bb^{-1}\right)a^{-1}=a\cdot1\cdot a^{-1}=aa^{-1}=1,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(b^{-1}a^{-1}\right)\left(ab\right)=b^{-1}\left(aa^{-1}\right)b=b^{-1}\cdot1\cdot b=b^{-1}b=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Докажите, что
+\end_layout
+
+\begin_layout Problem
+1) 
+\begin_inset Formula $1$
+\end_inset
+
+ является единицей;
+\end_layout
+
+\begin_layout Problem
+2) элемент, обратный единице, является единицей.
+\end_layout
+
+\begin_layout Solution
+1) По определению 
+\begin_inset Formula $1x=x1=x$
+\end_inset
+
+.
+ Подставив в это равенство 
+\begin_inset Formula $x=1$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+1\cdot1=1\cdot1=1,
+\]
+
+\end_inset
+
+ то есть у 
+\begin_inset Formula $1$
+\end_inset
+
+ есть обратный элемент, а именно — сама 
+\begin_inset Formula $1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $1$
+\end_inset
+
+ является единицей.
+\end_layout
+
+\begin_layout Solution
+2) Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — единица, тогда существует такой 
+\begin_inset Formula $b=a^{-1}$
+\end_inset
+
+, что 
+\begin_inset Formula $ab=ba=1$
+\end_inset
+
+.
+ Это равенство можно переписать следующим образом: 
+\begin_inset Formula 
+\[
+ba=ab=1,
+\]
+
+\end_inset
+
+откуда следует, что 
+\begin_inset Formula $a=b^{-1}$
+\end_inset
+
+, то есть у 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ есть обратный элемент и это 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Элемент 
+\begin_inset Formula $x$
+\end_inset
+
+ кольца называется делителем нуля, если 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ и существует такой 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+, что 
+\begin_inset Formula $xy=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Например, в кольце 
+\begin_inset Formula $\mathbb{Z}_{6}$
+\end_inset
+
+ элементы 
+\begin_inset Formula $2$
+\end_inset
+
+ и 
+\begin_inset Formula $3$
+\end_inset
+
+ являются делителями нуля.
+\end_layout
+
+\begin_layout Definition
+Коммутативное кольцо без делителей нуля называется 
+\emph on
+областью целостности
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Примеры областей целостности:
+\end_layout
+
+\begin_layout Itemize
+целые числа;
+\end_layout
+
+\begin_layout Itemize
+гауссовы числа;
+\end_layout
+
+\begin_layout Itemize
+многочлены над множеством целых чисел;
+\end_layout
+
+\begin_layout Itemize
+рациональные функции над множеством целых чисел (рациональная функция —
+ отношение двух полиномов).
+\end_layout
+
+\begin_layout Standard
+Кольцо остатков будет областью целостности тогда и только тогда, когда модуль
+ — простое число.
+\end_layout
+
+\begin_layout Problem
+(очень лёгкое) Докажите, что делитель нуля не является единицей.
+ Пусть 
+\begin_inset Formula $x$
+\end_inset
+
+ — делитель нуля, тогда существует 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+ такой, что 
+\begin_inset Formula 
+\[
+xy=0.
+\]
+
+\end_inset
+
+ Если 
+\begin_inset Formula $x$
+\end_inset
+
+ — единица, то существует 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $x^{-1}x=1$
+\end_inset
+
+, умножив это равенство справа на 
+\begin_inset Formula $y$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+\left(x^{-1}x\right)y=1y,
+\]
+
+\end_inset
+
+ слева применим ассоциативность, а справа — аксиому умножения на единицу:
+ 
+\begin_inset Formula 
+\[
+x^{-1}\left(xy\right)=y,
+\]
+
+\end_inset
+
+ так как 
+\begin_inset Formula $xy=0$
+\end_inset
+
+, то получаем 
+\begin_inset Formula 
+\[
+y=x^{-1}0=0,
+\]
+
+\end_inset
+
+ но 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+, полученное противоречие означает, что 
+\begin_inset Formula $x$
+\end_inset
+
+ — не является единицей.
 \end_layout
 
 \begin_layout Standard
