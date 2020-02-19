@@ -9524,6 +9524,276 @@ status open
 
 \end_layout
 
+\begin_layout Section
+Евклидовы кольца
+\end_layout
+
+\begin_layout Standard
+Мы начали эту главу с обобщения алгоритма Евклида нахождения НОД сначала
+ на полиномы, затем на комплексные числа и т.д.
+ Как далеко может завести такое обобщение? Иными словами, каковы самые общие
+ математические сущности, для которых работает алгоритм вычисления НОД (область
+ определения алгоритма)? Разработанные Нётер абстракции наконец-то позволили
+ найти ответ на этот вопрос: область определения алгоритма вычисления НОД
+ Нётер назвала 
+\emph on
+евклидовым кольцом
+\emph default
+.
+\end_layout
+
+\begin_layout Definition
+Множество 
+\begin_inset Formula $E$
+\end_inset
+
+ называется 
+\emph on
+евклидовым кольцом
+\emph default
+, если: 
+\begin_inset Formula $E$
+\end_inset
+
+ — область целостности и в 
+\begin_inset Formula $E$
+\end_inset
+
+ определены операции 
+\begin_inset Formula $quotient$
+\end_inset
+
+ и 
+\begin_inset Formula $reminder$
+\end_inset
+
+ такие, что 
+\begin_inset Formula 
+\[
+b\neq0\Rightarrow a=quotient(a,b)\cdot b+remainder(a,b);
+\]
+
+\end_inset
+
+в 
+\begin_inset Formula $E$
+\end_inset
+
+ определена неотрицательная норма 
+\begin_inset Formula $\left\Vert x\right\Vert :E\to\mathbb{N}$
+\end_inset
+
+, удовлетворяющая следующим условиям:
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\left\Vert a\right\Vert =0\Rightarrow a=0,\\
+b\neq0\rightarrow\left\Vert ab\right\Vert \ge\left\Vert a\right\Vert ,\\
+\left\Vert remainder\left(a,b\right)\right\Vert \le\left\Vert b\right\Vert .
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Используемую здесь норму не следует путать с нормой линейных нормированных
+ пространств, изучаемых в линейной алгебре.
+\end_layout
+
+\begin_layout Standard
+Чтобы обобщить нечто, не нужно добавлять новые сущности.
+ Нужно убрать ограничения и свести алгоритм к самой сути.
+\end_layout
+
+\begin_layout Section
+Поля и другие алгебраические структуры
+\end_layout
+
+\begin_layout Standard
+Ещё одна важная абстракция — поле
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Термин 
+\begin_inset Quotes rld
+\end_inset
+
+поле
+\begin_inset Quotes rrd
+\end_inset
+
+ этимологически связан с полем для исследований, а не с пшеничным полем
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Область целостности, в которой каждый ненулевой элемент обратим, называется
+ 
+\emph on
+полем
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Если каноническим примером кольца являются целые числа, то каноническим
+ примером поля — рациональные числа 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+.
+ Ещё несколько примеров: вещественные числа, поле остатков по простому модулю
+ 
+\begin_inset Formula $\mathbb{Z}_{p}$
+\end_inset
+
+, комплексные числа.
+\end_layout
+
+\begin_layout Standard
+Простым полем называется поле, не содержащее нетривиального подполя (не
+ совпадающего с самим полем).
+ Как выясняется, у любого поля есть только одно из двух видов простых подполей:
+ 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ или 
+\begin_inset Formula $\mathbb{Z}_{p}$
+\end_inset
+
+.
+ Характеристика поля равна 
+\begin_inset Formula $p$
+\end_inset
+
+, если его простое подполе совпадает с 
+\begin_inset Formula $\mathbb{Z}_{p}$
+\end_inset
+
+, если же оно совпадает с 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+, то характеристика равна 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Любое поле можно получить, начав с простого поля и добавляя элементы с соблюдени
+ем аксиом поля.
+ Это называется расширением поля.
+ В частности, поле можно алгебраически расширить, добавив дополнительный
+ элемент, являющийся корнем некоторого полинома.
+ Например, можно расширить поле 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ элементом 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+, не являющимся рациональным числом, поскольку это корень полинома 
+\begin_inset Formula $x^{2}-2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Можно также расширить поле 
+\emph on
+топологически
+\emph default
+, 
+\begin_inset Quotes rld
+\end_inset
+
+заполнив дыры
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Рациональные числа оставляют лакуны на числовой оси, но у вещественных
+ чисел лакун нет, поэтому поле вещественных чисел является топологическим
+ расширением поля рациональных чисел.
+ Можно также расширить это поле на два измерения с помощью комплексных чисел.
+ Удивительно, но других конечномерных полей, содержащих вещественные числа,
+ не существует
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Существуют похожи на поля четырехмерные и восьмимерные струтуры, которые
+ называются кватернионами и октонионами.
+ Но это не совсем поля, потому что они не удовлетворяют некоторым аксиомам:
+ они не коммутативны по умножению, а умножение октонионов ещё и не ассоциативно.
+ Других конечномерных расширений поля вещественных чисел не существует.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Все рассмотренные до сих пор алгебраические структуры стороились над одним
+ множеством значений, но существуют также структуры, определённые над нескольким
+и множествами.
+ Например, важная структура, именуемая 
+\emph on
+модулем
+\emph default
+, содержит главное множество (аддитивную группу 
+\begin_inset Formula $G$
+\end_inset
+
+) и вспомогательное множество (кольцо коэффициентов 
+\begin_inset Formula $R$
+\end_inset
+
+) с дополнительной операцией 
+\begin_inset Formula $R\times G\to G$
+\end_inset
+
+, которая удовлетворяет следующим аксиомам: 
+\begin_inset Formula 
+\begin{multline*}
+a,b\in R\wedge x,y\in G:\\
+\begin{array}{c}
+\left(a+b\right)x=ax+bx,\\
+a\left(x+y\right)=ax+ay.
+\end{array}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если кольцо 
+\begin_inset Formula $R$
+\end_inset
+
+ является ещё и полем, то такая структура называется 
+\emph on
+векторным пространством
+\emph default
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
