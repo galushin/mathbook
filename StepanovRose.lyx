@@ -10288,12 +10288,357 @@ x\left(y+z\right)=xy+xz\\
 
 \end_layout
 
+\begin_layout Chapter
+Организация математических знаний
+\end_layout
+
+\begin_layout Section
+Доказательства
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Закончить эту главу
+Наглядное доказательство: 
+\begin_inset Formula $a+b=b+a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Наглядное доказательство: 
+\begin_inset Formula $\left(a+b\right)+c=a+\left(b+c\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Наглядное доказательство: 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Наглядное доказательство: 
+\begin_inset Formula $\left(ab\right)c=a\left(bc\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Наглядное доказательство: 
+\begin_inset Formula $\left(a+b\right)^{2}=a^{2}+2ab+b^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Наглядное доказательство: 
+\begin_inset Formula $\pi>3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Придумайте наглядные доказательства следующих тождеств:
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula $\left(a-b\right)^{2}=a^{2}-2ab+b^{2},$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula $a^{2}-b^{2}=\left(a+b\right)\left(a-b\right),$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula $\left(a+b\right)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3},$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula $\left(a-b\right)^{3}=a^{3}-3a^{2}b+3ab^{2}-b^{3}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение.
+ Нужно придумать, как эффективно строить чертежи
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+С помощью наглядного доказательства найдите верхнюю границу 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение и построить чертёж.
+ Идея: вписать круг в квадрат
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Доказательство 
+\emph default
+предложения обладает следующими свойствами: 
+\end_layout
+
+\begin_layout Definition
+1) это рассуждение;
+\end_layout
+
+\begin_layout Definition
+2) оно принято математическим сообществом;
+\end_layout
+
+\begin_layout Definition
+3) оно устанавливает истинность предложения.
+\end_layout
+
+\begin_layout Section
+Первая теорема
+\end_layout
+
+\begin_layout Theorem
+(теорема Фалеса).
+ Для любого вписанного в круг треугольника, опирающегося на её диаметр,
+ угол при вершине, противположной диаметру, является прямым.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство.
+ Нужно средство построения чертежей
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Евклид и аксиоматический метод
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Раздел не содержит определений, теорем и задач
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Альтернативы евклидовой геометрии
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Раздел не содержит определений, теорем и задач
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Формалистический подход Гильберта
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Раздел не содержит определений, теорем и задач
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Пеано и его аксиомы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Раздел не содержит определений, теорем и задач
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В 1889 году Пеано опубликовал набор аксиом, заложивших формальную основу
+ арифметики.
+ Их было пять, как и у Евклида/
+\end_layout
+
+\begin_layout Standard
+Существует множество 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+, называемое множеством 
+\emph on
+натуральных чисел
+\emph default
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists0\in\mathbb{N}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall n\in\mathbb{N}:\exists n^{\prime}\in\mathbb{N}$
+\end_inset
+
+ — следующий элемент.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall S\subset\mathbb{N}:\left(0\in S\wedge\forall n:n\in S\Rightarrow n^{\prime}\in S\right)\Rightarrow S=\mathbb{N}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall n,m\in\mathbb{N}:n^{\prime}=m^{\prime}\Rightarrow n=m.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall n\in\mathbb{N}:n^{\prime}\neq0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать необходимость всех аксиом.
+ Полезнее будет не переписывать это, а вернуться к этому и доказать самостоятель
+но
 \end_layout
 
 \end_inset
