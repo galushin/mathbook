@@ -10651,6 +10651,19 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Разбить на более формальные блоки
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Установив, что все аксиомы Пеана независимы и, стал быть, необходимы для
  описания того, что понимается под целыми числами, мы можем построить арифметику
  на чисто теоретической основе.
@@ -11308,21 +11321,63 @@ a\left(bc^{\prime}\right)=a\left(bc\right)+ab=\left(ab\right)c+ab=\left(ab\right
  что и требовалось.
 \end_layout
 
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
+\begin_layout Standard
 Наконец, докажем коммутативность умножения, то есть равенство 
 \begin_inset Formula $ab=ba$
 \end_inset
 
 .
+ Воспользуемся методом индукции по 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ 
 \end_layout
+
+\begin_layout Standard
+База индукции: при 
+\begin_inset Formula $b=0$
+\end_inset
+
+ получаем 
+\begin_inset Formula $ab=a0=0$
+\end_inset
+
+ (по определению умножения) и 
+\begin_inset Formula $ba=0a=0$
+\end_inset
+
+ (было доказано выше).
+\end_layout
+
+\begin_layout Standard
+Шаг индукции: пусть 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+, по определению умножения 
+\begin_inset Formula $ab^{\prime}=ab+a$
+\end_inset
+
+.
+ По предположению шага индукции: 
+\begin_inset Formula 
+\[
+ab^{\prime}=ab+a=ba+a,
+\]
 
 \end_inset
 
+ а так как умножение дистрибутивно относительно сложения: 
+\begin_inset Formula 
+\[
+ab^{\prime}=ba+a=\left(b+1\right)a=b^{\prime}a,
+\]
 
+\end_inset
+
+ что и требовалось.
 \end_layout
 
 \begin_layout Problem
@@ -11331,16 +11386,25 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Естественным полным порядком на множестве натуральных чисел является тот,
+ который связан с понятием следующего элемента.
+ Для каждого элемента 
+\begin_inset Formula $a\in\mathbb{N}$
 \end_inset
 
+ определим, что 
+\begin_inset Formula $a<a^{\prime}$
+\end_inset
 
+, а затем возьмём транзитивное замыкание этого отношения, то есть 
+\begin_inset Formula $a<b\Rightarrow a<b^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{\prime}<b\Rightarrow a<b$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Problem
