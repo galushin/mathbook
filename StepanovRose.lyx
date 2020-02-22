@@ -10646,6 +10646,734 @@ status open
 
 \end_layout
 
+\begin_layout Section
+Построение арифметики
+\end_layout
+
+\begin_layout Standard
+Установив, что все аксиомы Пеана независимы и, стал быть, необходимы для
+ описания того, что понимается под целыми числами, мы можем построить арифметику
+ на чисто теоретической основе.
+ Для этого мы точно определим, что понимать под сложением и умножением двух
+ натуральных чисел:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a+0=a,\label{eq:peano-plus-zero}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+a+b^{\prime}=\left(a+b\right)^{\prime}.\label{eq:peano-plus-successor}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Мы не доказываем эти утверждения, они составляют само определение сложения.
+ Из этого определения следуют все свойства сложения натуральных чисел.
+\end_layout
+
+\begin_layout Standard
+Докажем, что 
+\begin_inset Formula $0$
+\end_inset
+
+ — левый нейтральный элемент относительно сложения, то есть, что для любого
+ 
+\begin_inset Formula $0+a=a$
+\end_inset
+
+.
+ Докажем это утверждение по индукции.
+ База индукции: 
+\begin_inset Formula $0+0=0$
+\end_inset
+
+ является верным утверждением в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:peano-plus-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $a=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Теперь нужно доказать, что из 
+\begin_inset Formula $0+a=a$
+\end_inset
+
+ следует 
+\begin_inset Formula $0+a^{\prime}=a^{\prime}$
+\end_inset
+
+.
+ Действительно, по определению сложения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:peano-plus-successor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $0+a^{\prime}=\left(0+a\right)^{\prime}$
+\end_inset
+
+.
+ По предположению индукции 
+\begin_inset Formula $0+a=a$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+0+a^{\prime}=\left(0+a\right)^{\prime}=a^{\prime},
+\]
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Standard
+Определение умножения: 
+\begin_inset Formula 
+\begin{equation}
+a\cdot0=0,\label{eq:peano-mult-zero}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+a\cdot b^{\prime}=\left(a\cdot b\right)+a.\label{eq:peano-mult-successor}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь мы можем доказать, что 
+\begin_inset Formula $0\cdot a=0$
+\end_inset
+
+.
+ Сделаем это с помощью метода математической индукции.
+\end_layout
+
+\begin_layout Standard
+База индукции: при 
+\begin_inset Formula $a=0$
+\end_inset
+
+ из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:peano-mult-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем 
+\begin_inset Formula $0\cdot0=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Шаг индукции: 
+\begin_inset Formula $0\cdot a=0\Rightarrow0\cdot a^{\prime}=0\cdot a+0=0+0=0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Определим 
+\begin_inset Formula $1$
+\end_inset
+
+ как число, следующее за 
+\begin_inset Formula $0$
+\end_inset
+
+: 
+\begin_inset Formula $0^{\prime}=1$
+\end_inset
+
+.
+ Мы знаем, как прибавить 1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a+1=a+0^{\prime}=\left(a+0\right)^{\prime}=a^{\prime}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Мы также знаем, как умножить на 1: 
+\begin_inset Formula 
+\[
+a\cdot1=a\cdot0^{\prime}=\left(a\cdot0\right)+a=a.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Докажем ассоциативность сложения: 
+\begin_inset Formula $\left(a+b\right)+c=a+\left(b+c\right)$
+\end_inset
+
+ индукцией по 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+База индукции: 
+\begin_inset Formula $\left(a+b\right)+0=a+b$
+\end_inset
+
+, 
+\begin_inset Formula $a+\left(b+0\right)=a+b$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left(a+b\right)+0=a+\left(b+0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Шаг индукции: пусть 
+\begin_inset Formula $\left(a+b\right)+c=a+\left(b+c\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\left(a+b\right)+c^{\prime}=\left(\left(a+b\right)+c\right)^{\prime}=\left(a+\left(b+c\right)\right)^{\prime}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+a+\left(b+c^{\prime}\right)=a+\left(b+c\right)^{\prime}=\left(a+\left(b+c\right)\right)^{\prime}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как правые части последних двух равенств равны, то равны и левые: 
+\begin_inset Formula 
+\[
+\left(a+b\right)+c^{\prime}=a+\left(b+c^{\prime}\right),
+\]
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Standard
+Докажем теперь коммутативность сложения: 
+\begin_inset Formula $a+b=b+a$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $b=0$
+\end_inset
+
+ мы видели, что 
+\begin_inset Formula $a+0=a$
+\end_inset
+
+ и 
+\begin_inset Formula $0+a=a$
+\end_inset
+
+, поэтому действительно 
+\begin_inset Formula $a+0=0+a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Теперь нужно доказать, что из 
+\begin_inset Formula $a+b=b+a$
+\end_inset
+
+ следует 
+\begin_inset Formula $a+b^{\prime}=b^{\prime}+a$
+\end_inset
+
+.
+ Выше мы видели, что 
+\begin_inset Formula $b^{\prime}=b+1$
+\end_inset
+
+.
+ Докажем, что 
+\begin_inset Formula $b+1=1+b$
+\end_inset
+
+ по индукции.
+\end_layout
+
+\begin_layout Standard
+База индукции: 
+\begin_inset Formula $0+1=1=1+0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Шаг индукции: Пусть 
+\begin_inset Formula $b+1=1+b$
+\end_inset
+
+.
+ Тогда, то по определению сложения: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1+b^{\prime}=\left(1+b\right)^{\prime},
+\]
+
+\end_inset
+
+ а по предположению 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1+b^{\prime}=\left(1+b\right)^{\prime}=\left(b+1\right)^{\prime}=\left(b+1\right)+1.
+\]
+
+\end_inset
+
+ С другой стороны 
+\begin_inset Formula $b^{\prime}+1=\left(b+1\right)+1$
+\end_inset
+
+.
+ Так как правые части равенств равны, то равны и левые, то есть 
+\begin_inset Formula 
+\[
+1+b^{\prime}=b^{\prime}+1,
+\]
+
+\end_inset
+
+ то есть для любого 
+\begin_inset Formula $b$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $1+b=b+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть теперь 
+\begin_inset Formula $a+b=b+a$
+\end_inset
+
+, докажем, что 
+\begin_inset Formula $a+b^{\prime}=b^{\prime}+a$
+\end_inset
+
+.
+ По определению сложения 
+\begin_inset Formula $a+b^{\prime}=a+\left(b+1\right)$
+\end_inset
+
+, тогда, так как сложение ассоциативно и по предположению индукции
+\begin_inset Formula 
+\[
+a+b^{\prime}=a+\left(b+1\right)=\left(a+b\right)+1=\left(b+a\right)+1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+С другой стороны 
+\begin_inset Formula $b^{\prime}+a=\left(b+1\right)+a$
+\end_inset
+
+.
+ Так как сложение ассоциативно, то 
+\begin_inset Formula 
+\[
+b^{\prime}+a=\left(b+1\right)+a=b+\left(1+a\right).
+\]
+
+\end_inset
+
+ Выше мы показали, что сложение с 
+\begin_inset Formula $1$
+\end_inset
+
+ коммутативно, поэтому 
+\begin_inset Formula 
+\[
+b^{\prime}+a=b+\left(a+1\right).
+\]
+
+\end_inset
+
+ Снова воспользуемся ассоциативностью сложения: 
+\begin_inset Formula 
+\[
+b^{\prime}+a=b+\left(a+1\right)=\left(b+a\right)+1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом: 
+\begin_inset Formula 
+\[
+a+b^{\prime}=\left(b+a\right)+1=b^{\prime}+a.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+По индукции докажите ассоциативность и коммутативность умножения, дистрибутивнос
+ть умножения относительно сложения.
+\end_layout
+
+\begin_layout Solution
+Докажем дистрибутивность умножения, то есть равенства 
+\begin_inset Formula $a\left(b+c\right)=ab+ac$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(a+b\right)c=ac+bc$
+\end_inset
+
+.
+ Доказательство проведём индукцией по 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+База индукции: По определению сложения 
+\begin_inset Formula $a\left(b+0\right)=ab$
+\end_inset
+
+, с другой стороны: 
+\begin_inset Formula $ab+a0=ab+0=ab$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $a\left(b+0\right)=ab+a0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Шаг индукции: пусть 
+\begin_inset Formula $a\left(b+c\right)=ab+ac$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+a\left(b+c^{\prime}\right)=a\left(b+c\right)^{\prime}=a\left(b+c\right)+a=ab+ac+a.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Заметим, что по определению умножения: 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ac^{\prime}=ac+a,
+\]
+
+\end_inset
+
+поэтому
+\begin_inset Formula 
+\[
+a\left(b+c^{\prime}\right)=ab+ac+a=ab+ac^{\prime},
+\]
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Solution
+Докажем второе равенство — 
+\begin_inset Formula $\left(a+b\right)c=ac+bc$
+\end_inset
+
+ — индукцией по 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+База индукции: По определению умножения 
+\begin_inset Formula $\left(a+b\right)0=0$
+\end_inset
+
+ и 
+\begin_inset Formula $a0+b0=0+0=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left(a+b\right)0=a0+b0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Шаг индукции: Пусть 
+\begin_inset Formula $\left(a+b\right)c=ac+bc$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\left(a+b\right)c^{\prime}=\left(a+b\right)c+\left(a+b\right)=ac+bc+a+b$
+\end_inset
+
+.
+ Так как сложение ассоциативно и коммутативно, то 
+\begin_inset Formula 
+\[
+\left(a+b\right)c^{\prime}=\left(ac+a\right)+\left(bc+b\right),
+\]
+
+\end_inset
+
+выше мы видели, что 
+\begin_inset Formula $ac+a=ac^{\prime}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left(a+b\right)c^{\prime}=ac^{\prime}+bc^{\prime},
+\]
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Solution
+Докажем ассоциативность умножения 
+\begin_inset Formula $\left(ab\right)c=a\left(bc\right)$
+\end_inset
+
+ индукцией по 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+База индукции (при 
+\begin_inset Formula $c=0)$
+\end_inset
+
+: По определению умножения 
+\begin_inset Formula $\left(ab\right)0=0$
+\end_inset
+
+, с другой — 
+\begin_inset Formula $a\left(b0\right)=a0=0$
+\end_inset
+
+, таким образом: 
+\begin_inset Formula $\left(ab\right)0=a\left(b0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Шаг индукции: пусть 
+\begin_inset Formula $\left(ab\right)c=a\left(bc\right)$
+\end_inset
+
+, тогда по определению умножения 
+\begin_inset Formula $\left(ab\right)c^{\prime}=\left(ab\right)c+ab$
+\end_inset
+
+.
+ С другой стороны 
+\begin_inset Formula $a\left(bc^{\prime}\right)=a\left(\left(bc\right)+b\right)$
+\end_inset
+
+.
+ так как умножение дистрибутивно относительно сложения: 
+\begin_inset Formula 
+\[
+a\left(bc^{\prime}\right)=a\left(\left(bc\right)+b\right)=a\left(bc\right)+ab,
+\]
+
+\end_inset
+
+ по предположению 
+\begin_inset Formula $\left(ab\right)c=a\left(bc\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+a\left(bc^{\prime}\right)=a\left(bc\right)+ab=\left(ab\right)c+ab=\left(ab\right)c^{\prime},
+\]
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Наконец, докажем коммутативность умножения, то есть равенство 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пользуясь индукцией, определите полный порядок на множестве натуральных
+ чисел.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Пользуясь индукцией, определите полный частичную функцию 
+\begin_inset Quotes rld
+\end_inset
+
+предшественник
+\begin_inset Quotes rrd
+\end_inset
+
+ на множестве натуральных чисел.
+\end_layout
+
+\begin_layout Solution
+Определение должно опираться на понятие следующего элемента.
+ Предшественник и последующий элемент должны быть обратными операциями:
+ 
+\begin_inset Formula $\left[p\left(a\right)\right]^{\prime}=p\left(a^{\prime}\right)=a$
+\end_inset
+
+.
+ Для 
+\begin_inset Formula $0$
+\end_inset
+
+ предшественника определить нельзя, поэтому первым будет 
+\begin_inset Formula $p\left(1\right)=0$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
