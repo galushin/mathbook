@@ -11438,6 +11438,117 @@ ab^{\prime}=ba+a=\left(b+1\right)a=b^{\prime}a,
 .
 \end_layout
 
+\begin_layout Chapter
+Основные понятия программирования
+\end_layout
+
+\begin_layout Section
+Аристотель и абстракции
+\end_layout
+
+\begin_layout Standard
+Аристотель ввёл понятие абстракции.
+ Он описал различия между индивидуальным, видовым и родовым.
+ Вид включает все 
+\begin_inset Quotes rld
+\end_inset
+
+существенные
+\begin_inset Quotes rrd
+\end_inset
+
+ свойства типа вещей.
+ Род может содержать несколько видов, каждый из которых характеризуется
+ 
+\emph on
+отличительными свойствами
+\emph default
+ — признаками, которые отличают его от других видов в роде.
+\end_layout
+
+\begin_layout Standard
+Именно аристотелева идея рода и лежит в основе термина 
+\emph on
+обобщённое программирование
+\emph default
+ — это способ рассуждать о программировании на уровне родовых, а не видовых
+ свойств.
+\end_layout
+
+\begin_layout Section
+Значения и типы
+\end_layout
+
+\begin_layout Definition
+Элемент данных — это последовательность бит.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Значение — это элемент данных вместе с его интерпретацией.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Тип значений — это множество значений, имеющих общую интерпретацию.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Объект — это набор битов в памяти, содержащий значение определённого типа
+ значений.
+\end_layout
+
+\begin_layout Standard
+На самом деле нередко бывает, что части объекта находятся в разных областях
+ памяти, тогда они называются 
+\emph on
+отдалёнными частями
+\emph default
+.
+ Объект называется 
+\emph on
+неизменяемым
+\emph default
+, если его значение никогда не изменяется, и 
+\emph on
+изменяемым 
+\emph default
+в противном случае.
+\end_layout
+
+\begin_layout Standard
+Объект называется 
+\emph on
+неограниченным
+\emph default
+, если он может содержать любое значение своего типа.
+\end_layout
+
+\begin_layout Definition
+Объектный тип — это единообразный метод хранения значений заданного типа
+ значений в конкретном объекте и их извлечения из объекта при условии, что
+ известен его адрес.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
