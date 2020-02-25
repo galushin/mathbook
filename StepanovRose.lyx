@@ -11774,6 +11774,60 @@ Semiregular
 и.
 \end_layout
 
+\begin_layout Section
+Итераторы
+\end_layout
+
+\begin_layout Standard
+Чтобы быть итератором, тип должен поддерживать следующие операции:
+\end_layout
+
+\begin_layout Itemize
+операции регулярного типа;
+\end_layout
+
+\begin_layout Itemize
+переход к следующему;
+\end_layout
+
+\begin_layout Itemize
+разыменование.
+\end_layout
+
+\begin_layout Standard
+Итераторы удовлетворяют подмножеству требований, предъявляемых аксиомами
+ Пеано: для любого числа определено следующее, но в случае итераторов мы
+ можем достичь конца данных.
+ У Пеано если равны следующие, то равны и предыдущие, а также запрещены
+ циклы, тогда как для структур данных они могут быть полезны.
+\end_layout
+
+\begin_layout Standard
+Операции разыменования и перехода к следующему тесно связаны:
+\end_layout
+
+\begin_layout Itemize
+разыменование определено для итератора тогда и только тогда, когда определён
+ следующий;
+\end_layout
+
+\begin_layout Itemize
+если итератор не находится в конце диапазона, то разыменование разрешено.
+\end_layout
+
+\begin_layout Standard
+К итераторам предъявляются требования проверки на равенство, так как иногда
+ важно знать, что один итератор 
+\begin_inset Quotes rld
+\end_inset
+
+догнал
+\begin_inset Quotes rrd
+\end_inset
+
+ другой.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
