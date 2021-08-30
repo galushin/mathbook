@@ -1177,5 +1177,301 @@ status open
 
 \end_layout
 
+\begin_layout Section
+Наименьшее общее кратное и наибольший общий делитель
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+ — ненулевые целые числа.
+ Целое число 
+\begin_inset Formula $K$
+\end_inset
+
+ называется 
+\emph on
+общим кратным 
+\emph default
+чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+, если оно кратно каждому из этих чисел то есть 
+\begin_inset Formula $a_{1}\mid K,\dots a_{n}\mid K$
+\end_inset
+
+.
+ Например, 
+\begin_inset Formula $\left|a_{1}\cdot\dots\cdot a_{n}\right|$
+\end_inset
+
+ — одно из их общих кратных.
+\end_layout
+
+\begin_layout Definition
+Наименьшее из положительных общих кратных называется наименьшим общим кратным
+ числ 
+\begin_inset Formula $a_{1},\dots a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Множество общих кратных чисел 
+\begin_inset Formula $a_{1},\dots a_{n}$
+\end_inset
+
+ будет обозначаться символом 
+\begin_inset Formula $\mathcal{M}\left\{ a_{1},\dots,a_{n}\right\} $
+\end_inset
+
+, а их наименьшее общее кратное — символом 
+\begin_inset Formula $\mathrm{lcm}\left(a_{1},\dots,a_{n}\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $\left[a_{1},\dots,a_{n}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+1.
+ Любое общее кратное нескольких чисел делится на их наименьшее общее кратное.
+\end_layout
+
+\begin_layout Theorem
+2.
+ Для любых отличных от нуля целых чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $\left[a_{1},\dots,a_{n}\right]=\left[\left[a_{1},\dots,a_{n-1}\right],a_{n}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+1.
+ Пусть 
+\begin_inset Formula $m=\left[a_{1},\dots,a_{n}\right]$
+\end_inset
+
+ и 
+\begin_inset Formula $K$
+\end_inset
+
+ — некоторое общее кратное чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $m$
+\end_inset
+
+ — наименьшее общее кратное, то 
+\begin_inset Formula $0<m\le K$
+\end_inset
+
+.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:division-with-reminder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существуют целые числа 
+\begin_inset Formula $q$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $K=mq+r$
+\end_inset
+
+, 
+\begin_inset Formula $0\le r<m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По условию для любых целых 
+\begin_inset Formula $k=1,\dots,n$
+\end_inset
+
+ имеют место 
+\begin_inset Formula $a_{k}\mid K$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{k}\mid m$
+\end_inset
+
+.
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $a_{k}\mid mq$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{k}\mid\left(K-mq\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a_{k}\mid r$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+ — общее кратное чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $r\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $0<r<m$
+\end_inset
+
+, то есть имеется положительное общее кратное чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+, меньшее 
+\begin_inset Formula $m$
+\end_inset
+
+, но это противоречит тому, что 
+\begin_inset Formula $m$
+\end_inset
+
+ – наименьшее общее кратное чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+.
+ Полученное противоречие означает, что 
+\begin_inset Formula $m\mid K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+2.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство пункта 2
+\end_layout
+
+\end_inset
+
+Обозачим 
+\begin_inset Formula $m_{k}=\left[a_{1},\dots,a_{k}\right]$
+\end_inset
+
+.
+ Докажем индукцией по 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Базу индукции составляет утверждение при 
+\begin_inset Formula $n=2$
+\end_inset
+
+: 
+\begin_inset Formula $\left[a_{1},a_{2}\right]=\left[\left[a_{1}\right],a_{2}\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left[a_{1}\right]=a_{1}$
+\end_inset
+
+, так как по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $a_{1}\mid a_{1}$
+\end_inset
+
+ и любое положительное кратное числа 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ не меньше этого числа.
+ С учётом этого, утверждение 
+\begin_inset Formula $\left[a_{1},a_{2}\right]=\left[\left[a_{1}\right],a_{2}\right]$
+\end_inset
+
+ становится тривиальным.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать шаг индукции или попробовать доказать непосредственно
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Показать, почему наличие среди этих чисел нуля делат дальнейшее неинтересным
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
