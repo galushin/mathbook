@@ -85,6 +85,14 @@ theorems-ams-extended-bytype
 Теория чисел
 \end_layout
 
+\begin_layout Author
+Разбирая книгу Ю.В.
+\begin_inset space \thinspace{}
+\end_inset
+
+Нестеренко
+\end_layout
+
 \begin_layout Chapter
 О делимости чисел
 \end_layout
@@ -375,24 +383,28 @@ status open
 
 \begin_layout Definition
 Ноль делится на любое целое число 
-\begin_inset Formula $a\neq0$
+\begin_inset Formula $b\neq0$
 \end_inset
 
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Дописать
-\end_layout
-
+ (так как для любого 
+\begin_inset Formula $b$
 \end_inset
 
-.
+ имеет место равество 
+\begin_inset Formula $b\cdot0=0$
+\end_inset
+
+).
  Отметим также следующие свойства делимости.
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:divisibility"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $a$
 \end_inset
@@ -670,6 +682,12 @@ status open
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:division-with-reminder"
+
+\end_inset
+
 Для любых целого числа 
 \begin_inset Formula $a$
 \end_inset
@@ -735,15 +753,71 @@ status open
 \end_layout
 
 \begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $b\nmid a$
+\end_inset
+
+.
+ Рассмотрим множество натуральных чисел, представимых в виде 
+\begin_inset Formula $a-bk$
+\end_inset
+
+, где 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+ Это множество не пусто.
+ Действительно, если 
+\begin_inset Formula $a\ge0$
+\end_inset
+
+, то при 
+\begin_inset Formula $k=0$
+\end_inset
+
+, получаем 
+\begin_inset Formula $a-bk=a\ge0$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $a<0$
+\end_inset
+
+, то при 
+\begin_inset Formula $k<a+1$
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+a-bk>a-b\left(a+1\right)=a\left(1-b-1\right)=-ab\ge0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Доказать существование в случае, когда 
-\begin_inset Formula $b\nmid a$
+Можно ли найти 
+\begin_inset Formula $k$
 \end_inset
 
+, при котором 
+\begin_inset Formula $a-bk$
+\end_inset
 
+ положительно для любых 
+\begin_inset Formula $a$
+\end_inset
+
+?
 \end_layout
 
 \end_inset
@@ -752,7 +826,96 @@ status open
 \end_layout
 
 \begin_layout Proof
-Пусть теперь кроме числе 
+Таким образом
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку, теперь то утверждение тем более нужно доказать
+\end_layout
+
+\end_inset
+
+, в этом множестве есть наименьший элемент, обозначим его как 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Докажем, теперь что 
+\begin_inset Formula $r<b$
+\end_inset
+
+.
+ Предположим, что 
+\begin_inset Formula $r\ge b$
+\end_inset
+
+, рассмотрим число 
+\begin_inset Formula $r^{\prime}=a-b\left(k+1\right)=r-b$
+\end_inset
+
+, так как, по предоложению, 
+\begin_inset Formula $r\ge b$
+\end_inset
+
+, то 
+\begin_inset Formula $0\le r^{\prime}<r$
+\end_inset
+
+.
+ При этом 
+\begin_inset Formula $r^{\prime}\ne0$
+\end_inset
+
+, так как в противном случае 
+\begin_inset Formula $a=b\left(k+1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $b\mid a$
+\end_inset
+
+, а мы рассматриваем случай 
+\begin_inset Formula $b\nmid a$
+\end_inset
+
+.
+ Таким образом 
+\begin_inset Formula $0<r^{\prime}<r$
+\end_inset
+
+, то есть 
+\begin_inset Formula $r$
+\end_inset
+
+ не является наименьшим натуральным числом, представимым в виде 
+\begin_inset Formula $a-bk$
+\end_inset
+
+.
+ Полученное противоречие означает, что 
+\begin_inset Formula $r<b$
+\end_inset
+
+.
+ Соответствующее 
+\begin_inset Formula $r$
+\end_inset
+
+ значение 
+\begin_inset Formula $k$
+\end_inset
+
+ обозначим как 
+\begin_inset Formula $q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем теперь единственность указанного представления.
+ Пусть теперь кроме чисел 
 \begin_inset Formula $q$
 \end_inset
 
@@ -768,7 +931,7 @@ status open
 \begin_inset Formula $t$
 \end_inset
 
- такие, что 
+ таких, что 
 \begin_inset Formula $a=bs+t$
 \end_inset
 
@@ -805,15 +968,208 @@ r-t=b\left(s-q\right)
 \end_inset
 
 то есть, по определению делимости, 
-\begin_inset Formula $b\mid\left(s-q\right)$
+\begin_inset Formula $b\mid\left(r-t\right)$
 \end_inset
 
 .
+ Отсюда, в силу пункта 6 леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left|b\right|\le\left|r-t\right|$
+\end_inset
+
+.
+ Но 
+\begin_inset Formula $0\le r<b$
+\end_inset
+
+ и 
+\begin_inset Formula $0\le t<b$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $-b<-t\le0$
+\end_inset
+
+ и 
+\begin_inset Formula $-b<r-t<b$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|r-t\right|<b$
+\end_inset
+
+, полученное противоречие означает, что 
+\begin_inset Formula $q$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+ являются целыми единственными числами, удовлетворяющими условиям теоремы.
+\end_layout
+
+\begin_layout Standard
+Числа 
+\begin_inset Formula $r$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+, определённые в теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:division-with-reminder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, называются 
+\emph on
+остатком от деления 
+\emph default
+ч
+\emph on
+исла 
+\emph default
+
+\begin_inset Formula $a$
+\end_inset
+
+ на 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\emph on
+неполным частным 
+\emph default
+при делении 
+\begin_inset Formula $a$
+\end_inset
+
+ на 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ В случае 
+\begin_inset Formula $r=0$
+\end_inset
+
+ слово 
+\begin_inset Quotes rld
+\end_inset
+
+неполное
+\begin_inset Quotes rrd
+\end_inset
+
+ в названии 
+\begin_inset Formula $q$
+\end_inset
+
+ опускают.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Закончить доказательство единственности
+Привести пример деления с остатком
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из доказательства теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:division-with-reminder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что целое число 
+\begin_inset Formula $a$
+\end_inset
+
+ делится на натуральное 
+\begin_inset Formula $b$
+\end_inset
+
+ в том и только том случае, когда соответствующий остаток равен нулю
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Возможно, это стоит доказать
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Числа, делящиеся на 
+\begin_inset Formula $2$
+\end_inset
+
+, называют 
+\emph on
+чётными
+\emph default
+, а числа, не делящиеся на 
+\begin_inset Formula $2$
+\end_inset
+
+, то есть имеющие при делении на 
+\begin_inset Formula $2$
+\end_inset
+
+ остаток 
+\begin_inset Formula $1$
+\end_inset
+
+, называют 
+\emph on
+нечётными.
+\end_layout
+
+\begin_layout Standard
+Для реального нахождения остатк и неполного частного можно использовать
+ так называемый алгоритм 
+\emph on
+деления столбиком
+\emph default
+.
+ Известны и другие более эффективные алгоритмы.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Смотрите, например, книгу Ахо А., Хопкрофт Дж., Ульман Дж., Построение и анализ
+ вычислительных алгоритмов, Москва, Мир, 1979.
 \end_layout
 
 \end_inset
