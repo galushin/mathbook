@@ -98,6 +98,19 @@ theorems-ams-extended-bytype
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вместо замечаний должны быть следствия
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Натуральные числа образуют последовательность, ряд чисел, 
 \emph on
 натуральный ряд.
@@ -121,7 +134,7 @@ theorems-ams-extended-bytype
 \begin_layout Axiom*
 
 \series bold
-Аксимома индукции.
+Аксиома индукции.
  
 \series default
 Если некоторое подмножество натурального ряда содержит 1 и вместе с каждым
@@ -148,7 +161,7 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-Каждное непустое конечное подмножество натурального ряда содержит наибольший
+Каждое непустое конечное подмножество натурального ряда содержит наибольший
  элемент.
 \end_layout
 
@@ -175,8 +188,8 @@ status open
 \end_layout
 
 \begin_layout Standard
-Про доказательства, основанные на последнем свойсте, говорят, что они выполняютс
-я методом математической индукции.
+Про доказательства, основанные на последнем свойстве, говорят, что они выполняют
+ся методом математической индукции.
 \end_layout
 
 \begin_layout Standard
@@ -193,7 +206,7 @@ status open
  меньшим будет то, которое в натуральном ряду стоит раньше.
  В множестве натуральных чисел определены операции сложения и умножения.
  Операция вычитания определена не всегда.
- Вычитать можно лиь меньшее натуральное число из большего.
+ Вычитать можно лишь меньшее натуральное число из большего.
 \end_layout
 
 \begin_layout Standard
@@ -333,7 +346,7 @@ status open
 \end_layout
 
 \begin_layout Definition
-Если целое числое 
+Если целое число 
 \begin_inset Formula $a$
 \end_inset
 
@@ -390,8 +403,18 @@ status open
 \begin_inset Formula $b$
 \end_inset
 
- имеет место равество 
+ имеет место равенство 
 \begin_inset Formula $b\cdot0=0$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать или сослаться
+\end_layout
+
 \end_inset
 
 ).
@@ -854,7 +877,7 @@ status open
 \begin_inset Formula $r^{\prime}=a-b\left(k+1\right)=r-b$
 \end_inset
 
-, так как, по предоложению, 
+, так как, по предположению, 
 \begin_inset Formula $r\ge b$
 \end_inset
 
@@ -1157,7 +1180,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Для реального нахождения остатк и неполного частного можно использовать
+Для реального нахождения остаток и неполного частного можно использовать
  так называемый алгоритм 
 \emph on
 деления столбиком
@@ -1186,7 +1209,17 @@ status open
 \begin_inset Formula $a_{1},\dots,a_{n}$
 \end_inset
 
- — ненулевые целые числа.
+ — ненулевые целые числа 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Показать, почему наличие среди этих чисел нуля делает дальнейшее неинтересным
+\end_layout
+
+\end_inset
+
+.
  Целое число 
 \begin_inset Formula $K$
 \end_inset
@@ -1241,6 +1274,12 @@ status open
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:LCM-properties"
+
+\end_inset
+
 1.
  Любое общее кратное нескольких чисел делится на их наименьшее общее кратное.
 \end_layout
@@ -1390,40 +1429,36 @@ noprefix "false"
 
 \begin_layout Proof
 2.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать доказательство пункта 2
-\end_layout
-
-\end_inset
-
-Обозачим 
+ Обозначим 
 \begin_inset Formula $m_{k}=\left[a_{1},\dots,a_{k}\right]$
 \end_inset
 
 .
- Докажем индукцией по 
-\begin_inset Formula $n$
+\end_layout
+
+\begin_layout Proof
+По определению, любое общее кратное 
+\begin_inset Formula $m_{n-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $m_{n-1}$
+\end_inset
+
+, а 
+\begin_inset Formula $m_{n-1}$
+\end_inset
+
+ делится на все числа 
+\begin_inset Formula $a_{1},\dots,a_{n-1}$
 \end_inset
 
 .
- Базу индукции составляет утверждение при 
-\begin_inset Formula $n=2$
-\end_inset
-
-: 
-\begin_inset Formula $\left[a_{1},a_{2}\right]=\left[\left[a_{1}\right],a_{2}\right]$
-\end_inset
-
-.
- 
-\begin_inset Formula $\left[a_{1}\right]=a_{1}$
-\end_inset
-
-, так как по лемме 
+ Тогда, по лемме 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lem:divisibility"
@@ -1433,26 +1468,199 @@ noprefix "false"
 
 \end_inset
 
- 
-\begin_inset Formula $a_{1}\mid a_{1}$
+ (пункт 4), любое общее кратное 
+\begin_inset Formula $m_{n-1}$
 \end_inset
 
- и любое положительное кратное числа 
-\begin_inset Formula $a_{1}$
+ и 
+\begin_inset Formula $a_{n}$
 \end_inset
 
- не меньше этого числа.
- С учётом этого, утверждение 
-\begin_inset Formula $\left[a_{1},a_{2}\right]=\left[\left[a_{1}\right],a_{2}\right]$
+ делится на все числа 
+\begin_inset Formula $a_{1},\dots,a_{n-1}$
 \end_inset
 
- становится тривиальным.
- 
+.
+ А по определению, ещё и на 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+ Таким образом, любое общее кратное 
+\begin_inset Formula $m_{n-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ также является общим кратным 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+, то есть
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\mathcal{M}\left\{ m_{n-1},a_{n}\right\} \subset\mathcal{M}\left\{ a_{1},\dots,a_{n}\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С другой стороны, любое общее кратное чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+, делится на 
+\begin_inset Formula $a_{1},\dots,a_{n-1}$
+\end_inset
+
+ и, согласно первому пункту теоремы, делится на 
+\begin_inset Formula $\left[a_{1},\dots,a_{n-1}\right]$
+\end_inset
+
+.
+ Вместе с тем, оно делится и на 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, а значит, является общим кратным 
+\begin_inset Formula $\left[a_{1},\dots,a_{n-1}\right]$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\[
+\mathcal{M}\left\{ a_{1},\dots,a_{n}\right\} \subset\mathcal{M}\left\{ m_{n-1},a_{n}\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, множества 
+\begin_inset Formula $\mathcal{M}\left\{ a_{1},\dots,a_{n}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\mathcal{M}\left\{ m_{n-1},a_{n}\right\} $
+\end_inset
+
+ совпадают, а значит совпадает и их наименьший положительный элемент, то
+ есть 
+\begin_inset Formula 
+\[
+\left[a_{1},\dots,a_{n}\right]=\left[\left[a_{1},\dots,a_{n-1}\right],a_{n}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Теорема доказана.
+\end_layout
+
+\begin_layout Standard
+Множество всех делителей целого отличного от нуля числа 
+\begin_inset Formula $a$
+\end_inset
+
+ конечно.
+ Действительно, из 
+\begin_inset Formula $d\mid a$
+\end_inset
+
+ и 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+, согласно пункту 6 леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, следует, что 
+\begin_inset Formula $\left|d\right|\le\left|a\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{n}$
+\end_inset
+
+ — целые числа и 
+\begin_inset Formula $d\in\mathbb{Z}$
+\end_inset
+
+ — их общий делитель, то есть 
+\begin_inset Formula $d\mid a_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $d\mid a_{2}$
+\end_inset
+
+,..., 
+\begin_inset Formula $d\mid a_{n}$
+\end_inset
+
+.
+ Из сказанного выше следует, что если среди чисел 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{n}$
+\end_inset
+
+ есть не равно нулю, то множество общих делителей этих чисел конечно.
+ Оно всегда содержит 
+\begin_inset Formula $\pm1$
+\end_inset
+
+ и потому не пусто.
+ Говоря в дальнейшем об общих делителях мы, даже если это не оговаривается
+ особо, всегда будем подразумевать, что в соответствующем наборе 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{n}$
+\end_inset
+
+ содержится хотя бы одно не равно нулю число.
+\end_layout
+
+\begin_layout Definition
+Наибольшим общим делителем совокупности целых чисел называется наибольшее
+ положительное число, делящее каждое из этих чисел.
+\end_layout
+
+\begin_layout Definition
+Целые числа называются взаимно простыми, если их наибольший общий делитель
+ равен 1.
+\end_layout
+
+\begin_layout Definition
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Доказать шаг индукции или попробовать доказать непосредственно
+Пример на нахождение общего делителя, когда числа взаимно просты
 \end_layout
 
 \end_inset
@@ -1461,16 +1669,891 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+Множество всех общих делителей чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
 
-\begin_layout Plain Layout
-Показать, почему наличие среди этих чисел нуля делат дальнейшее неинтересным
+ будем обозначать символом 
+\begin_inset Formula $\mathcal{D}\left\{ a_{1},\dots,a_{n}\right\} $
+\end_inset
+
+.
+ Наибольший общий делитель чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+ обозначается символом 
+\begin_inset Formula $\gcd\left(a_{1},\dots,a_{n}\right)$
+\end_inset
+
+ или просто 
+\begin_inset Formula $\left(a_{1},\dots,a_{n}\right)$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Standard
+Выведем из теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:LCM-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ соотношение между наибольшим общим делителем двух чисел и их наименьшим
+ общим кратным.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:LCM-and-GCD"
+
+\end_inset
+
+Для любых двух натуральных чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, справедливо равенство 
+\begin_inset Formula 
+\[
+\left[a,b\right]\cdot\left(a,b\right)=a\cdot b.
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+Докажем, что 
+\begin_inset Formula $\left(a,b\right)=\frac{ab}{\left[a,b\right]}$
+\end_inset
+
+.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:LCM-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, любое кратное 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $a\cdot b=\left[a,b\right]\cdot q$
+\end_inset
+
+, где 
+\begin_inset Formula $q$
+\end_inset
+
+ — некоторое натуральное число (так как 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ натуральные, то 
+\begin_inset Formula $a\cdot b$
+\end_inset
+
+ также натуральное, а 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ — натуральное по определению).
+ Так как, кроме того, 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ — общее кратное чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, то мы можем записать следующие равенства:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+a=\frac{ab}{\left[a,b\right]}\cdot\frac{\left[a,b\right]}{b},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+b=\frac{ab}{\left[a,b\right]}\cdot\frac{\left[a,b\right]}{a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, 
+\begin_inset Formula $\frac{ab}{\left[a,b\right]}$
+\end_inset
+
+ — общий делитель 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Остаётся доказать, что он является наибольшим общим делителем.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $d$
+\end_inset
+
+ — некоторый положительный общий делитель 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, то есть существуют такие целые 
+\begin_inset Formula $s$
+\end_inset
+
+ и 
+\begin_inset Formula $t$
+\end_inset
+
+, что 
+\begin_inset Formula $a=d\cdot s$
+\end_inset
+
+ и 
+\begin_inset Formula $b=d\cdot t$
+\end_inset
+
+.
+ Рассмотрим число 
+\begin_inset Formula $a\cdot\frac{b}{d}=d\cdot s\cdot t$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $d\cdot s\cdot t=b\cdot s=a\cdot t$
+\end_inset
+
+, то 
+\begin_inset Formula $d\cdot s\cdot t$
+\end_inset
+
+ является общим кратным 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+А по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:LCM-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, любое общее кратное должно делиться на наименьшее общее кратное: 
+\begin_inset Formula $\left[a,b\right]\mid\frac{ab}{d}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\frac{ab}{d\left[a,b\right]}$
+\end_inset
+
+ — положительное целое число:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\frac{ab}{d\left[a,b\right]}\ge1,
+\]
+
+\end_inset
+
+а значит 
+\begin_inset Formula $\frac{ab}{\left[a,b\right]}\ge d$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\frac{ab}{\left[a,b\right]}$
+\end_inset
+
+ — не меньше любого из всех общих делителей чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\frac{ab}{\left[a,b\right]}$
+\end_inset
+
+ — общий делитель 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, то это число должно совпасть с наибольшим общим делителем 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ Следствие доказано.
+\end_layout
+
+\begin_layout Proof
+Остаётся доказать, что 
+\begin_inset Formula $q=\left(a,b\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ — делитель и 
+\begin_inset Formula $a$
+\end_inset
+
+, и 
+\begin_inset Formula $b$
+\end_inset
+
+, то по определению делимости, для которых целых 
+\begin_inset Formula $s$
+\end_inset
+
+ и 
+\begin_inset Formula $t$
+\end_inset
+
+ имеют место равенства:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+a=\left(a,b\right)\cdot s,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+b=\left(a,b\right)\cdot t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Перемножая эти равенства, получим
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+ab=\left(a,b\right)^{2}\cdot\left(s\cdot t\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Докажем, что 
+\begin_inset Formula $w=\left(a,b\right)\cdot\left(s\cdot t\right)=\left[a,b\right]$
+\end_inset
+
+.
+ Прежде всего, 
+\begin_inset Formula $\left(a,b\right)\cdot\left(s\cdot t\right)=\left(\left(a,b\right)\cdot s\right)\cdot t=a\cdot t=b\cdot s$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $a\mid w$
+\end_inset
+
+ и 
+\begin_inset Formula $b\mid w$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $w$
+\end_inset
+
+ — общее кратное 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Остаётся доказать, что это наименьшее общее кратное.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $d=(a,b)$
+\end_inset
+
+ — наибольший общий делитель 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $d\mid a$
+\end_inset
+
+ и 
+\begin_inset Formula $a\mid\left[a,b\right]$
+\end_inset
+
+, поэтому, согласно лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $d\mid\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Если 
+\begin_inset Formula $a\mid bc$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(a,b\right)=1$
+\end_inset
+
+, то 
+\begin_inset Formula $c$
+\end_inset
+
+ делится на 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $\left(a,b\right)=1$
+\end_inset
+
+, то по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:LCM-and-GCD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left[a,b\right]=ab$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По определению 
+\begin_inset Formula $bc$
+\end_inset
+
+ — кратное 
+\begin_inset Formula $b$
+\end_inset
+
+, а по условию 
+\begin_inset Formula $bc$
+\end_inset
+
+ — кратное 
+\begin_inset Formula $a$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $bc$
+\end_inset
+
+ — общее кратное 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, но тогда, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:LCM-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $bc$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left[a,b\right]=ab$
+\end_inset
+
+.
+ То есть 
+\begin_inset Formula $bc=ab\cdot u$
+\end_inset
+
+, откуда 
+\begin_inset Formula $c=au$
+\end_inset
+
+, что и требовалось доказать.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:GCD-properties"
+
+\end_inset
+
+1.
+ Наибольший общий делитель нескольких чисел делится на любой их общий делитель.
+\end_layout
+
+\begin_layout Theorem
+2.
+ Справедливо равенство 
+\begin_inset Formula 
+\[
+\left(\left(a_{1},\dots,a_{n-1}\right),a_{n}\right)=\left(a_{1},\dots,a_{n-1},a_{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $d_{0}=\left(a_{1},\dots,a_{n}\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $d$
+\end_inset
+
+ — некоторый произвольный общий делитель чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+.
+ Тогда каждое из чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $d_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+a_{k}=d\cdot b_{k}=d_{0}\cdot c_{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По определению каждое 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+ — общее кратное 
+\begin_inset Formula $d$
+\end_inset
+
+ и 
+\begin_inset Formula $d_{0}$
+\end_inset
+
+, поэтому, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:LCM-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left[d,d_{0}\right]$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\left[d,d_{0}\right]>d_{0}$
+\end_inset
+
+, то у чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+ есть общий делитель 
+\begin_inset Formula $\left[d,d_{0}\right]$
+\end_inset
+
+, больший 
+\begin_inset Formula $d_{0}$
+\end_inset
+
+.
+ Это противоречит тому, что 
+\begin_inset Formula $d_{0}$
+\end_inset
+
+ — наибольший общий делитель чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left[d_{0},d\right]\le d_{0}$
+\end_inset
+
+, так как 
+\begin_inset Formula $\left[d,d_{0}\right]\ge d_{0}$
+\end_inset
+
+ (по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), то 
+\begin_inset Formula $\left[d,d_{0}\right]=d_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left[d,d_{0}\right]$
+\end_inset
+
+ кратно 
+\begin_inset Formula $d$
+\end_inset
+
+, то 
+\begin_inset Formula $d_{0}=\left[d,d_{0}\right]$
+\end_inset
+
+ делится на 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Первое утверждение доказано.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+у Нестеренко доказательство строится без множеств, через неравенства делителей
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $d\in\mathcal{D}\left\{ a_{1},\dots,a_{n-1},a_{n}\right\} $
+\end_inset
+
+, тогда 
+\begin_inset Formula $d$
+\end_inset
+
+ является общим делителем чисел 
+\begin_inset Formula $a_{1},\dots,a_{n-1}$
+\end_inset
+
+.
+ Но тогда, по первому утверждению данной теоремы, 
+\begin_inset Formula $d$
+\end_inset
+
+ является делителем 
+\begin_inset Formula $\left(a_{1},\dots,a_{n-1}\right)$
+\end_inset
+
+.
+ При этом 
+\begin_inset Formula $d$
+\end_inset
+
+ является делителем числа 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+ Таким образом 
+\begin_inset Formula $d$
+\end_inset
+
+ — общий делитель 
+\begin_inset Formula $\left(a_{1},\dots,a_{n-1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $d\in\mathcal{D}\left\{ \left(a_{1},\dots,a_{n-1}\right),a_{n}\right\} $
+\end_inset
+
+.
+ Итак, мы доказали, что 
+\begin_inset Formula 
+\[
+\mathcal{D}\left\{ a_{1},\dots,a_{n-1},a_{n}\right\} \subset\mathcal{D}\left\{ \left(a_{1},\dots,a_{n-1}\right),a_{n}\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Остаётся доказать включение в противоположную сторону.
+ Пусть 
+\begin_inset Formula $d\in\mathcal{D}\left\{ \left(a_{1},\dots,a_{n-1}\right),a_{n}\right\} $
+\end_inset
+
+, тогда 
+\begin_inset Formula $d\mid\left(a_{1},\dots,a_{n-1}\right)$
+\end_inset
+
+.
+ Так как, по определению, числа 
+\begin_inset Formula $a_{1},\dots,a_{n-1}$
+\end_inset
+
+ делятся на 
+\begin_inset Formula $\left(a_{1},\dots,a_{n-1}\right)$
+\end_inset
+
+, то, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:LCM-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $d$
+\end_inset
+
+ является делителем каждого из чисел 
+\begin_inset Formula $a_{1},\dots,a_{n-1}$
+\end_inset
+
+.
+ Кроме того, по предположению, также 
+\begin_inset Formula $d\mid a_{n}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $d$
+\end_inset
+
+ — общий делитель чисел 
+\begin_inset Formula $a_{1},\dots,a_{n-1},a_{n}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $d\in\mathcal{D}\left\{ a_{1},\dots,a_{n-1},a_{n}\right\} $
+\end_inset
+
+ или 
+\begin_inset Formula 
+\[
+\mathcal{D}\left\{ \left(a_{1},\dots,a_{n-1}\right),a_{n}\right\} \subset\mathcal{D}\left\{ a_{1},\dots,a_{n-1},a_{n}\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, множества 
+\begin_inset Formula $\mathcal{D}\left\{ \left(a_{1},\dots,a_{n-1}\right),a_{n}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\mathcal{D}\left\{ a_{1},\dots,a_{n-1},a_{n}\right\} $
+\end_inset
+
+ совпадают, а значит совпадают и их наибольшие элементы: 
+\begin_inset Formula 
+\[
+\left(\left(a_{1},\dots,a_{n-1}\right),a_{n}\right)=\left(a_{1},\dots,a_{n-1},a_{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Применяя несколько раз равенства из теорем 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:LCM-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:GCD-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно свести вычисление наименьшего общего кратного и наибольшего общего
+ делителя нескольких чисел к такой же задаче для двух числе.
+ В свою очередь следствие 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:LCM-and-GCD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ позволяется свести вычисление наименьшего общего кратного двух чисел к
+ вычислению их наибольшего общего делителя.
+ Эта задача будет рассмотрена в следующем параграфе.
 \end_layout
 
 \end_body
