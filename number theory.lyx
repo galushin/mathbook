@@ -3079,6 +3079,12 @@ status open
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Euclid-algorithm-number-of-operations"
+
+\end_inset
+
 Количество делений, необходимое для вычисления с помощью алгоритма Евклида
  наибольшего общего делителя двух положительных целых чисел, не превышает
  пятикратного количества цифр в десятичной записи наименьшего их этих двух
@@ -3086,16 +3092,491 @@ status open
 \end_layout
 
 \begin_layout Proof
+Пусть даны два числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Без ограничения общности будем считать, что меньшим из них является 
+\begin_inset Formula $b$
+\end_inset
+
+, а количество цифр в десятичной записи этого числа равно 
+\begin_inset Formula $m$
+\end_inset
+
+, то есть 
+\begin_inset Formula $10^{m-1}\le\left|b\right|<10^{m}$
+\end_inset
+
+.
+ Требуется доказать, что алгоритм Евклида, применённый к 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, выполнит не более 
+\begin_inset Formula $5m$
+\end_inset
+
+ операций.
+\end_layout
+
+\begin_layout Proof
+Положим 
+\begin_inset Formula $r_{0}=a$
+\end_inset
+
+ и обозначим 
+\begin_inset Formula $r_{1}=b,r_{2},\dots,r_{n}$
+\end_inset
+
+ — последовательность делителей в алгоритме Евклида, тогда 
+\begin_inset Formula 
+\[
+r_{k-1}=r_{k}q_{k}+r_{k+1},0\le r_{k+1}<r_{k},k=1,2,\dots,n-1,r_{n}=\left(a,b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $a,b>0$
+\end_inset
+
+, то все 
+\begin_inset Formula $q_{k}$
+\end_inset
+
+ также неотрицательны.
+\end_layout
+
+\begin_layout Proof
+Докажем справедливость неравенств 
+\begin_inset Formula 
+\[
+r_{n-k}\ge\lambda^{k},k=0,1,\dots,n-1,
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $\lambda=\frac{1+\sqrt{5}}{2}$
+\end_inset
+
+, то есть корень квадратного уравнения 
+\begin_inset Formula $\lambda^{2}-\lambda-1=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Доказывать будем с помощью метода математической индукции.
+ При 
+\begin_inset Formula $k=0$
+\end_inset
+
+ имеет место 
+\begin_inset Formula 
+\[
+r_{n-k}=r_{n}\ge1=\lambda^{0}=\lambda^{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $5<9$
+\end_inset
+
+, то 
+\begin_inset Formula $\sqrt{5}<3$
+\end_inset
+
+, 
+\begin_inset Formula $1+\sqrt{5}<4$
+\end_inset
+
+ и 
+\begin_inset Formula $\lambda=\frac{1+\sqrt{5}}{2}<2$
+\end_inset
+
+, то при 
+\begin_inset Formula $k=1$
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+r_{n-k}\ge r_{n-1}+1=2\ge\lambda^{1}=\lambda^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть теперь неравенство 
+\begin_inset Formula $r_{n-k}\ge\lambda^{k}$
+\end_inset
+
+ доказано для всех 
+\begin_inset Formula $k=0,1,\dots,j$
+\end_inset
+
+, докажем его для 
+\begin_inset Formula $k=j+1$
+\end_inset
+
+.
+ Так как все делители, по условию теоремы, положительны, то имеет место
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+r_{n-j-1}=r_{n-j}q_{n-j}+r_{n-j+1}\ge\lambda^{j}q_{n-j}+\lambda^{j-1}\ge\lambda^{j}+\lambda^{j-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\lambda^{2}-\lambda-1=0$
+\end_inset
+
+, то 
+\begin_inset Formula $\lambda^{2}=\lambda+1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+r_{n-j-1}\ge\lambda^{j-1}\left(\lambda+1\right)=\lambda^{j+1},
+\]
+
+\end_inset
+
+таким образом, индуктивный переход также доказан.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $10^{m}>b=r_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $r_{1}\ge\lambda^{n-1}$
+\end_inset
+
+, то 
+\begin_inset Formula $10^{m}>\lambda^{n-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $m\ge\left(n-1\right)\log_{10}\lambda$
+\end_inset
+
+, откуда следует
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+n-1\le\frac{m}{\log_{10}\lambda}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\lambda=\frac{1+\sqrt{5}}{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\lambda>10^{1/5}$
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать
+Доказать
+\end_layout
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\log_{10}\lambda>\frac{1}{5}$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula 
+\[
+n\le5m+1,
+\]
+
+\end_inset
+
+что завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим последовательность целых чисел 
+\begin_inset Formula $F_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+, определённую рекуррентно 
+\begin_inset Formula 
+\[
+F_{0}=0,F_{1}=1,F_{n}=F_{n-1}+F_{n-2},n\ge2.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Согласно этому определению 
+\begin_inset Formula $F_{2}=F_{1}+F_{0}=1$
+\end_inset
+
+, 
+\begin_inset Formula $F_{3}=F_{2}+F_{1}=2$
+\end_inset
+
+ и так далее.
+ В результате получается ряд чисел: 0, 1, 1, 2, 3, 5, 8, 13, 21,
+\begin_inset Formula $...$
+\end_inset
+
+, носящий название последовательности Фибоначчи
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Итальянский математик Леонардо Пизанский, 1180-1240, носил прозвище Фибоначчи
+ (
+\begin_inset Quotes rld
+\end_inset
+
+сын Боначчо
+\begin_inset Quotes rrd
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+.
+ Из закона образования этой последовательности видно, что при 
+\begin_inset Formula $n\ge3$
+\end_inset
+
+ остаток от деления числа 
+\begin_inset Formula $F_{n+1}$
+\end_inset
+
+ на 
+\begin_inset Formula $F_{n}$
+\end_inset
+
+ всегда равен 
+\begin_inset Formula $F_{n-1}$
+\end_inset
+
+, неполное частное при этом равно 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Таким образом, для нахождения наибольшего общего делителя 
+\begin_inset Formula $\left(F_{n},F_{n+1}\right)$
+\end_inset
+
+ потребуется 
+\begin_inset Formula $n-1$
+\end_inset
+
+ деление с остатком.
+ Например, для вычисления наибольшего общего делителя чисел 
+\begin_inset Formula $F_{6}=8$
+\end_inset
+
+ и 
+\begin_inset Formula $F_{7}=13$
+\end_inset
+
+ требуется 
+\begin_inset Formula $5$
+\end_inset
+
+ делений с остатком, а для вычисления 
+\begin_inset Formula $\left(F_{11},F_{12}\right)=\left(89,144\right)$
+\end_inset
+
+ необходимо 
+\begin_inset Formula $10$
+\end_inset
+
+ делений с остатком.
+ Эти примеры показывают, что граница для числа делений, утверждаемая теоремой
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Euclid-algorithm-number-of-operations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ может достигаться.
+\end_layout
+
+\begin_layout Standard
+Для нахождения наибольшего общего делителя нескольких чисел можно использовать
+ так называемый 
+\emph on
+обобщённый алгоритм Евклида.
+ 
+\emph default
+Если 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{n}$
+\end_inset
+
+ — целые неотрицательные числа и 
+\begin_inset Formula $a_{2}=a_{1}q+r$
+\end_inset
+
+, 
+\begin_inset Formula $0\le r<a_{1}$
+\end_inset
+
+, то по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:GCD-and-division"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $\mathcal{D}\left\{ a_{1},a_{2}\right\} =\mathcal{D}\left\{ r,a_{1}\right\} $
+\end_inset
+
+.
+ Следовательно, 
+\begin_inset Formula 
+\[
+\mathcal{D}\left\{ a_{1},a_{2},a_{3},\dots,a_{n}\right\} =\mathcal{D}\left\{ r,a_{1},a_{3},\dots,a_{n}\right\} 
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\begin{equation}
+\left(a_{1},a_{2},a_{3},\dots,a_{n}\right)=\left(r,a_{1},a_{3},\dots,a_{n}\right).\label{eq:Euclid-generalized}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Наибольший общий делитель совокупности чисел не зависит от того, в каком
+ порядке эти числа записаны, поэтому каждое число в совокупности может быть
+ заменено его остатком от деления на любое другое число из этой же совокупности,
+ причём наибольший общий делитель при такой замене сохранится.
+ Ясно, что операция 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Euclid-generalized"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ уменьшит сумму чисел в списке, если 
+\begin_inset Formula $a_{2}>a_{1}$
+\end_inset
+
+.
+ И эта сумма не сможет быть уменьшена указанным способом лишь в случае,
+ если все числа списка, кроме одного, равны нулю.
+ Но в таком случае наибольший общий делитель вычисляется легко: 
+\begin_inset Formula $\left(a_{1},0,\dots,0\right)=a_{1}$
+\end_inset
+
+.
+ Эти рассуждения могут быть оформлены в виде алгоритма следующим образом.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Описание обобщённого алгоритма Евклида
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пример на вычисление НОД нескольких (четырёх) чисел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что числа, равные нулю, могут быть исключены из списка в ходе работы
+ обобщённого алгоритма Евклида.
+ При этом длина списка уменьшается, и на заключительном шаге весь список
+ будет состоять из одного числа — искомого наибольшего общего делителя.
 \end_layout
 
 \end_body
