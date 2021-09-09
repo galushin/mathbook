@@ -3579,5 +3579,807 @@ status open
  будет состоять из одного числа — искомого наибольшего общего делителя.
 \end_layout
 
+\begin_layout Chapter
+Простые и составные числа
+\end_layout
+
+\begin_layout Standard
+Натуральное число называется 
+\emph on
+составным
+\emph default
+, если его можно представить в виде произведения двух меньших натуральных
+ чисел.
+ Заметим, что оба множителя при этом отличны от 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Примеры составных чисел строить очень легко.
+ Для этого нужно взять какие-нибудь два натуральных числа, не равных 
+\begin_inset Formula $1$
+\end_inset
+
+, и перемножить их.
+ Так 
+\begin_inset Formula $2\cdot3=6,23\cdot47=1081,127\cdot9721=1234567$
+\end_inset
+
+ — составные числа.
+ Гораздо труднее разложить какое-нибудь заданное число на множители, иногда,
+ как в следующих двух примерах, для этого требуется применение вычислительных
+ средств:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1\thinspace111\thinspace111=239\cdot4649,11\thinspace111\thinspace111\thinspace111=21649\cdot513239.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Некоторые натуральные числа, отличные от 
+\begin_inset Formula $1$
+\end_inset
+
+, вообще нельзя представить в виде произведения меньших множителей.
+ Такие числа называют 
+\emph on
+простыми.
+
+\emph default
+ Все сомножители в приведённых выше примерах - простые числа.
+ Эта глава посвящена, в основном, обсуждению свойств простых чисел.
+\end_layout
+
+\begin_layout Section
+Простые числа.
+ Решето Эратосфена.
+ Бесконечность множества простых чисел
+\end_layout
+
+\begin_layout Standard
+Как было сказано выше, отличное от 
+\begin_inset Formula $1$
+\end_inset
+
+ натуральное число называется 
+\emph on
+простым
+\emph default
+, если его нельзя представить в виде произведения меньших натуральных сомножител
+ей.
+ Всякое простое число 
+\begin_inset Formula $p$
+\end_inset
+
+ имеет лишь два положительных делителя: 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Множители, в произведение которых раскладывается составное число, являются
+ его делителями.
+ Поэтому можно сказать, что натуральное число — составное, если оно делится
+ на некоторое меньшее число, отличное от 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Так все чётные числа, превосходящие 
+\begin_inset Formula $2$
+\end_inset
+
+, делятся на 
+\begin_inset Formula $2$
+\end_inset
+
+ и поэтому все они составные.
+ А 
+\begin_inset Formula $7$
+\end_inset
+
+ не делится ни на одно из чисел 
+\begin_inset Formula $2,3,4,5,6$
+\end_inset
+
+ и поэтому составным не является, то есть просто.
+ Чтобы проверить, пользуясь указанным правилом, будет составным число 
+\begin_inset Formula $1009$
+\end_inset
+
+ или нет, нужно разделить его на все числа из ряда 
+\begin_inset Formula $2,3,4,\dots,1007,1008$
+\end_inset
+
+.
+ Это утомительное занятие можно значительно сократить, если воспользоваться
+ следующим утверждением.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:minimal-divisor-is-prime-and-less-than-sqrt-N"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число и 
+\begin_inset Formula $p$
+\end_inset
+
+ — наименьший из его делителей, удовлетворяющих условию 
+\begin_inset Formula $p>1$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число и 
+\begin_inset Formula $p^{2}\le N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $p$
+\end_inset
+
+ удовлетворяет всем условиям леммы, кроме того, что является простым.
+ Тогда у него есть делитель 
+\begin_inset Formula $d$
+\end_inset
+
+, удовлетворяющий неравенствам 
+\begin_inset Formula $1<d<p$
+\end_inset
+
+.
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $d$
+\end_inset
+
+ является делителем 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Мы пришли к противоречию с тем, что 
+\begin_inset Formula $p$
+\end_inset
+
+ — наименьший делитель числа 
+\begin_inset Formula $N$
+\end_inset
+
+, больший 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое.
+\end_layout
+
+\begin_layout Proof
+Докажем теперь, что 
+\begin_inset Formula $p^{2}\le N$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $p$
+\end_inset
+
+ — делитель 
+\begin_inset Formula $N$
+\end_inset
+
+, то существует такое целое число 
+\begin_inset Formula $u>1$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $N=p\cdot u$
+\end_inset
+
+.
+ Из этого равенства следует, что 
+\begin_inset Formula $u$
+\end_inset
+
+ — тоже делитель числа 
+\begin_inset Formula $N$
+\end_inset
+
+, а так как 
+\begin_inset Formula $p$
+\end_inset
+
+ — наименьший делитель числа 
+\begin_inset Formula $N$
+\end_inset
+
+, больший 
+\begin_inset Formula $1$
+\end_inset
+
+, то 
+\begin_inset Formula $p\le u$
+\end_inset
+
+.
+ Умножая это неравенство на положительное число 
+\begin_inset Formula $p$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+p^{2}\le p\cdot u=N,
+\]
+
+\end_inset
+
+что и требовалось доказать.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:every-number-has-prime-divisor"
+
+\end_inset
+
+Каждое целое число 
+\begin_inset Formula $N>1$
+\end_inset
+
+ имеет простой делитель.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $N$
+\end_inset
+
+ — простое число, то его простым делителем является само число 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число, то у него есть меньшие делители, большие единицы.
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minimal-divisor-is-prime-and-less-than-sqrt-N"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ наименьший из этих делителей является простым числом.
+\end_layout
+
+\begin_layout Standard
+Лемма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minimal-divisor-is-prime-and-less-than-sqrt-N"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ позволяет утверждать, что если 
+\begin_inset Formula $1009$
+\end_inset
+
+ составное число, то у него есть простой делитель 
+\begin_inset Formula $p$
+\end_inset
+
+ удовлетворяющий неравенствам 
+\begin_inset Formula $2\le p\le31$
+\end_inset
+
+.
+ Поскольку все чётные числа, отличные от 
+\begin_inset Formula $2$
+\end_inset
+
+, не просты, и составные являются делящиеся на 
+\begin_inset Formula $3$
+\end_inset
+
+ числа 
+\begin_inset Formula $9,15,21,27$
+\end_inset
+
+, а также число 
+\begin_inset Formula $25=5\cdot5$
+\end_inset
+
+, заключаем, что возможные простые делители числа 
+\begin_inset Formula $1009$
+\end_inset
+
+ содержатся среди чисел 
+\begin_inset Formula 
+\begin{equation}
+2,3,5,7,11,13,17,19,23,29,31.\label{eq:primes-below-32}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь уже сравнительно легко обнаружить, что ни одно из них не является
+ делителем 
+\begin_inset Formula $1009$
+\end_inset
+
+, так что это число простое.
+\end_layout
+
+\begin_layout Standard
+Числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:primes-below-32"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ составляют список всех простых чисел 
+\begin_inset Formula $p$
+\end_inset
+
+ из промежутка 
+\begin_inset Formula $2\le p\le31$
+\end_inset
+
+.
+ Действительно, если среди чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:primes-below-32"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ есть составное число, оно должно иметь простой делитель, не превосходящий
+ 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ Но все числа, делящиеся на 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $3$
+\end_inset
+
+ или 
+\begin_inset Formula $5$
+\end_inset
+
+, уже исключены нами из отрезка 
+\begin_inset Formula $2\le x\le31$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Приведённым выше рассуждениям можно придать общую форму, и в результате
+ мы получаем позволяющий сравнительно легко определить список всех простых
+ чисел до заданной границы 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Этот метод носит название 
+\emph on
+решето Эратосфена
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Эратосфен (276-196 гг.
+ до нашей эры) — древнегреческий математик, географ и астроном
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Решето Эратосфена 
+\series default
+(Этот алгоритм находит список всех простых чисел 
+\begin_inset Formula $p_{1}<p_{2}<\dots$
+\end_inset
+
+ до границы 
+\begin_inset Formula $N$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+1.
+ Выпишем все целые числа 
+\begin_inset Formula $2,3,\dots,N-1,N$
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula $p_{1}=2$
+\end_inset
+
+ и начиная с 
+\begin_inset Formula $4=p_{1}^{2}$
+\end_inset
+
+ будем вычёркивать числа, двигаясь с шагом 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ (Заметим, что все числа, вычеркнутые на этом шаге алгоритма — чётные, то
+ есть делятся на 
+\begin_inset Formula $2$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+2.
+ Пусть 
+\begin_inset Formula $k\ge2$
+\end_inset
+
+ и уже определены числа 
+\begin_inset Formula $p_{1},\dots,p_{k-1}$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ первое не вычеркнутое число, следующее за 
+\begin_inset Formula $p_{k-1}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $p_{k}^{2}>N$
+\end_inset
+
+, обозначим 
+\begin_inset Formula $p_{k+1},p_{k+2},\dots$
+\end_inset
+
+ все оставшиеся не вычеркнутые числа, следующие за 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ в порядке возрастания.
+ На этом алгоритм завершает свою работу.
+\end_layout
+
+\begin_layout Standard
+3.
+ Если 
+\begin_inset Formula $p_{k}^{2}\le N$
+\end_inset
+
+, вычёркиваем числа, начиная с 
+\begin_inset Formula $p_{k}^{2}$
+\end_inset
+
+ и двигаясь до 
+\begin_inset Formula $N$
+\end_inset
+
+ с шагом 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+ Вычеркнутые ранее числа также принимаются на учёт, но не вычёркиваются
+ ещё раз.
+ По завершении это процедуры алгоритм увеличивает индекс 
+\begin_inset Formula $k$
+\end_inset
+
+ на единицу и переходит в шаг 2.
+\end_layout
+
+\begin_layout Standard
+Для обоснования корректность алгоритма заметим, что в процессе его работы
+ вычёркиваются только составные, а все простые числа остаются невычеркнутыми.
+ Предположим теперь, что среди невычеркнутых чисел осталось хотя бы одно
+ составное, обозначим его как 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $2\le a\le N$
+\end_inset
+
+.
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minimal-divisor-is-prime-and-less-than-sqrt-N"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ у этого числа есть простой делитель 
+\begin_inset Formula $p$
+\end_inset
+
+, удовлетворяющий неравенствам 
+\begin_inset Formula $p^{2}\le a\le N$
+\end_inset
+
+.
+ Как и всякое простое, число 
+\begin_inset Formula $p$
+\end_inset
+
+ осталось невычеркнутым по окончании работы алгоритма.
+ Вместе с тем неравенство 
+\begin_inset Formula $p^{2}\le N$
+\end_inset
+
+ означает, что в результате одного из проходов алгоритма по списку чисел
+ от 
+\begin_inset Formula $2$
+\end_inset
+
+ до 
+\begin_inset Formula $N$
+\end_inset
+
+ были вычеркнуты, начиная с 
+\begin_inset Formula $p^{2}$
+\end_inset
+
+, все числа, делящиеся на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Но тогда и 
+\begin_inset Formula $a$
+\end_inset
+
+ должно содержаться среди вычеркнутых чисел.
+ Получившееся противоречие доказывает, что алгоритм оставляет невычеркнутыми
+ только простые числа.
+ Это завершает обоснование алгоритма.
+\end_layout
+
+\begin_layout Standard
+Простые числа составляют довольно большую часть натурального ряда.
+ Так среди первых 100 натуральных чисел имеется 25 простых, среди первых
+ 
+\begin_inset Formula $10^{16}$
+\end_inset
+
+ натуральных — 279238341033925
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Было бы круто представить программу, которая это делает
+\end_layout
+
+\end_inset
+
+ простых.
+ Попадаются весьма неожиданные примеры простых чисел.
+ Так простыми будет число, состоящее из 44 единиц, за которыми следует 2007,
+ а затем — ещё 44 единицы.
+ А также число, начинающееся на 2007, за которым следует 275 единиц, а затем
+ — снова цифры 2007.
+\end_layout
+
+\begin_layout Standard
+Наибольшие из известных в настоящее время простых чисел имеют вид 
+\begin_inset Formula 
+\[
+2^{24036583}-1,2^{25964951}-1,2^{30402457}-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Они записываются соответственно 
+\begin_inset Formula $7\thinspace235\thinspace733$
+\end_inset
+
+, 
+\begin_inset Formula $7\thinspace816\thinspace230$
+\end_inset
+
+ и 
+\begin_inset Formula $9\thinspace152\thinspace052$
+\end_inset
+
+ десятичными цифрами.
+ Наибольшее из них было найдено в декабре 2005 г.
+ Впрочем, пока эта книга готовится к изданию, возможно, рекорд будет побит.
+ Следить за достижениями в этой области можно в Интернет по адресу http://primes.
+utm.edu/largest.html.
+\end_layout
+
+\begin_layout Standard
+Утверждение о существовании сколь угодно больших простых числе, или, что
+ то же самое, о бесконечности множества простых чисел, называется теоремой
+ Евклида
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Теорема о простых числах содержится в IX книге 
+\begin_inset Quotes rld
+\end_inset
+
+Начал
+\begin_inset Quotes rrd
+\end_inset
+
+ Евклида.
+ По некоторым косвенным данным предполагается, что он жил в Александрии
+ в III веке до нашей эры.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Множество простых чисел бесконечно.
+\end_layout
+
+\begin_layout Proof
+Доказывать будет от противного.
+ Пусть 
+\begin_inset Formula $p_{1},p_{2},\dots,p_{m}$
+\end_inset
+
+ — все простые числа, рассмотрим число 
+\begin_inset Formula 
+\[
+a=p_{1}\cdot p_{2}\cdot\dots\cdot p_{m}+1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как любое число больше единицы по определению, то 
+\begin_inset Formula $a>1$
+\end_inset
+
+.
+ По следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:every-number-has-prime-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у любого целого числа есть простой делитель 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Но при делении числа 
+\begin_inset Formula $a$
+\end_inset
+
+ на любое из простых чисел 
+\begin_inset Formula $p_{1},p_{2},\dots,p_{m}$
+\end_inset
+
+ будет получаться остаток 
+\begin_inset Formula $1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится ни на одно из чисел 
+\begin_inset Formula $p_{1},p_{2},\dots,p_{m}$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $p$
+\end_inset
+
+ ни совпадает ни с одним из чисел 
+\begin_inset Formula $p_{1},p_{2},\dots,p_{m}$
+\end_inset
+
+.
+ Полученное противоречие означает, что предположение о конечности множества
+ простых чисел неверно.
+ Теорема доказана.
+\end_layout
+
 \end_body
 \end_document
