@@ -4381,5 +4381,589 @@ noprefix "false"
  Теорема доказана.
 \end_layout
 
+\begin_layout Section
+Основная теорема арифметики
+\end_layout
+
+\begin_layout Standard
+Целое число 
+\begin_inset Formula $6025729$
+\end_inset
+
+ может быть разложено на множители следующим образом 
+\begin_inset Formula 
+\begin{equation}
+6025729=2419\cdot2491=2173\cdot2773.\label{eq:6025729-decomposition}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Попытки разложить далее каждый из четырёх сомножителей требуют некоторых
+ усилий.
+ Тем не менее, согласно теореме, носящей название 
+\begin_inset Quotes rld
+\end_inset
+
+основной теоремы арифметики
+\begin_inset Quotes rrd
+\end_inset
+
+, разложения на меньшие сомножители должны существовать.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:fundamental-arithmetic-theorem"
+
+\end_inset
+
+Каждое целое число, большее единицы, раскладывается в произведение простых
+ чисел и притом единственным способом, если не учитывать порядок сомножителей.
+\end_layout
+
+\begin_layout Standard
+Теорема утверждает, что два произведения простых чисел могут быть равны
+ друг другу лишь в случае, если они имеют одинаковые сомножители и, возможно,
+ отличаются порядком их следования.
+ Множители в разложениях 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:6025729-decomposition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ не могут быть простыми.
+ Более того, каждое простое число, входящее в разложение 
+\begin_inset Formula $2173$
+\end_inset
+
+, должно, согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, присутствовать в разложениях 
+\begin_inset Formula $2419$
+\end_inset
+
+ или 
+\begin_inset Formula $2491$
+\end_inset
+
+.
+ Но это легко проверить, вычислив наибольшие общие делители.
+ С помощью алгоритма Евклида находим 
+\begin_inset Formula 
+\[
+\left(2173,2419\right)=41,\left(2173,2491\right)=53.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь, выполняя деления, получаем 
+\begin_inset Formula 
+\[
+2173=41\cdot53,2419=41\cdot59,2491=47\cdot53,2773=47\cdot59,
+\]
+
+\end_inset
+
+ так что 
+\begin_inset Formula $6025729=41\cdot47\cdot53\cdot59$
+\end_inset
+
+, и все сомножители в последнем разложении, как легко проверить, просты.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Забыл доказать существование разложения
+\end_layout
+
+\end_inset
+
+Докажем, что для любого целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+, большего единицы, существует разложение на простые множители.
+ Доказывать будем по индукции.
+ Если 
+\begin_inset Formula $a$
+\end_inset
+
+ равно 
+\begin_inset Formula $2$
+\end_inset
+
+ или 
+\begin_inset Formula $3$
+\end_inset
+
+, то 
+\begin_inset Formula $a$
+\end_inset
+
+ — простое и искомое разложение найдено.
+ Это наблюдение составляет базу индукции.
+\end_layout
+
+\begin_layout Proof
+Предположим теперь, что мы доказали существование разложения на простые
+ числа для всех целых чисел от 
+\begin_inset Formula $1$
+\end_inset
+
+ до 
+\begin_inset Formula $a-1$
+\end_inset
+
+, докажем, что разложение на простые числа существует и для 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Для целого 
+\begin_inset Formula $a>3$
+\end_inset
+
+ возможны два варианта: 
+\begin_inset Formula $a$
+\end_inset
+
+ — число простое или составное.
+ Если 
+\begin_inset Formula $a=p$
+\end_inset
+
+, где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число, тогда искомое разложение найдено и имеет вид 
+\begin_inset Formula $a=p$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $a$
+\end_inset
+
+ не является простым числом, тогда, по утверждению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:every-number-has-prime-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у него есть простой делитель 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a=p_{1}b$
+\end_inset
+
+, где 
+\begin_inset Formula $1<b<a$
+\end_inset
+
+ (по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Так как 
+\begin_inset Formula $1<b<a$
+\end_inset
+
+, то для него существует разложение на простые числа, пусть оно записывается
+ как 
+\begin_inset Formula $b=p_{2}\cdot\dots\cdot p_{m}$
+\end_inset
+
+, тогда у числа 
+\begin_inset Formula $a$
+\end_inset
+
+ есть следующее разложение на простые числа: 
+\begin_inset Formula 
+\[
+a=p_{1}b=p_{1}\cdot p_{2}\cdot\dots\cdot p_{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Шаг индукции доказан, значит у любого целого числа, большего единицы существует
+ разложение на простые множители.
+\end_layout
+
+\begin_layout Proof
+Докажем теперь, что разложение на простые множители единственно с точностью
+ до порядка множителей.
+ Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — наименьшее целое число, большее единицы, которое раскладывается на произведен
+ие простых чисел хотя бы двумя различными способами: 
+\begin_inset Formula 
+\[
+a=p_{1}\cdot\dots\cdot p_{m}=q_{1}\cdot\dots\cdot q_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда множества 
+\begin_inset Formula $\left\{ p_{1},\dots,p_{m}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ q_{1},\dots,q_{n}\right\} $
+\end_inset
+
+ не пересекаются.
+ В противном случае, существовало бы число 
+\begin_inset Formula $1<d<a$
+\end_inset
+
+, входящее в оба эти множества, а значит число 
+\begin_inset Formula $1<\frac{a}{d}<a$
+\end_inset
+
+ также имело бы более одного разложения на простые множители, что противоречит
+ тому, что 
+\begin_inset Formula $a$
+\end_inset
+
+ — наименьшее из таких чисел.
+\end_layout
+
+\begin_layout Proof
+По определению, 
+\begin_inset Formula $a$
+\end_inset
+
+ делится на любое 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+ Значит произведение 
+\begin_inset Formula $q_{1}\cdot\dots\cdot q_{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+ Можно доказать, что тогда одно из 
+\begin_inset Formula $q_{1},\dots,q_{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Доказывать будем от противного.
+ Пусть 
+\begin_inset Formula $p_{k}\nmid u$
+\end_inset
+
+ и 
+\begin_inset Formula $p_{k}\nmid w$
+\end_inset
+
+, но 
+\begin_inset Formula $p_{k}\mid\left(uw\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $u=p_{k}q_{u}+r_{u}$
+\end_inset
+
+ и 
+\begin_inset Formula $w=p_{k}q_{w}+r_{w}$
+\end_inset
+
+, где 
+\begin_inset Formula $0<r_{u},r_{w}<p_{k}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+uw=\left(p_{k}q_{u}+r_{u}\right)\left(p_{k}q_{w}+r_{w}\right)=p_{k}\left(q_{u}q_{w}+q_{u}r_{w}+q_{w}r_{u}\right)+r_{u}r_{w}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как по предположению, 
+\begin_inset Formula $p_{k}\mid uw$
+\end_inset
+
+ и, по определению, 
+\begin_inset Formula $p_{k}\mid p_{k}\left(q_{u}q_{w}+q_{u}r_{w}+q_{w}r_{u}\right)$
+\end_inset
+
+, то, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Formula $p_{k}\mid\left(r_{u}r_{w}\right)$
+\end_inset
+
+.
+ Таким образом, нужно доказать это утверждение лишь для случая, когда 
+\begin_inset Formula $u,w<p_{k}$
+\end_inset
+
+.
+ Далее будем рассматривать именно этот случай.
+ Наибольший общий делитель чисел 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $w$
+\end_inset
+
+ равен единице, так как 
+\begin_inset Formula $w<p_{k}$
+\end_inset
+
+, значит любой его делитель меньше 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ (по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), а положительными делителями 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ являются, по определению простого числа, только числа 
+\begin_inset Formula $1$
+\end_inset
+
+ и
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+ Таким образом, наибольший общий делитель 
+\begin_inset Formula $w$
+\end_inset
+
+ и 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ равен единице.
+ Тогда, согласно 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нужна ссылка, вроде бы это утверждение было доказано в незаконченной ветке
+ 1.4
+\end_layout
+
+\end_inset
+
+, существуют такие числа 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+, что имеет место равенство
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+p_{k}x+wy=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Умножая это равенство на 
+\begin_inset Formula $u$
+\end_inset
+
+, получим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+up_{k}x+uwy=u.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $up_{k}x$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ по определению, а 
+\begin_inset Formula $uw$
+\end_inset
+
+ — по предположению, то 
+\begin_inset Formula $u$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Но это противоречит тому, что 
+\begin_inset Formula $p_{k}\nmid u$
+\end_inset
+
+.
+ Полученное противоречие означает, что если произведение делится на простое
+ число, то хотя бы один из сомножителей делится на это же простое число.
+\end_layout
+
+\begin_layout Proof
+Таким образом, мы получаем, что хотя бы одно из чисел 
+\begin_inset Formula $q_{1},\dots,q_{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+ Так как числа 
+\begin_inset Formula $q_{1},\dots,q_{n}$
+\end_inset
+
+ являются простыми, то каждое из них делится только на 
+\begin_inset Formula $1$
+\end_inset
+
+ и на само себя.
+ Но 
+\begin_inset Formula $p_{k}>1$
+\end_inset
+
+ больше единицы по определению простого числа, поэтому одно из 
+\begin_inset Formula $q_{1},\dots,q_{n}$
+\end_inset
+
+ совпадает с
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+ Мы пришли к противоречию с тем, что число 
+\begin_inset Formula $a$
+\end_inset
+
+ является наименьшим числом с двумя возможными разложениями на простые множители.
+ Полученное противоречие означает, что теорема доказана.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко приведено несколько доказательств единственности
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
