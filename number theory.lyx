@@ -94,6 +94,12 @@ theorems-ams-extended-bytype
 \end_layout
 
 \begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:On-divisibility"
+
+\end_inset
+
 О делимости чисел
 \end_layout
 
@@ -1650,7 +1656,20 @@ noprefix "false"
  положительное число, делящее каждое из этих чисел.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:coprime-numbers"
+
+\end_inset
+
 Целые числа называются взаимно простыми, если их наибольший общий делитель
  равен 1.
 \end_layout
@@ -3579,6 +3598,260 @@ status open
  будет состоять из одного числа — искомого наибольшего общего делителя.
 \end_layout
 
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:gcd-as-linear-combination"
+
+\end_inset
+
+(Соотношение Безу) Существуют такие целые числа 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+, что 
+\begin_inset Formula $ax+by=\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $c$
+\end_inset
+
+ — наименьшее положительное число, представимое в виде 
+\begin_inset Formula $ax+by$
+\end_inset
+
+, то есть 
+\begin_inset Formula $c=ax_{1}+by_{1}$
+\end_inset
+
+.
+ Докажем, что тогда любое число, представимое в виде 
+\begin_inset Formula $ax+by$
+\end_inset
+
+ делится на 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Пусть это не так, тогда, существует число 
+\begin_inset Formula $c^{\prime}=ax_{2}+by_{2}$
+\end_inset
+
+, представимое в виде такое, что 
+\begin_inset Formula $c\nmid c^{\prime}$
+\end_inset
+
+.
+ Тогда, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:division-with-reminder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует число 
+\begin_inset Formula $c^{\prime}=cq+r$
+\end_inset
+
+, где 
+\begin_inset Formula $0<r<c$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+r=c^{\prime}-cq=\left(ax_{2}+by_{2}\right)-\left(ax_{1}+by_{1}\right)q=a\left(x_{2}-x_{1}q\right)+b\left(y_{2}-qy_{1}\right),
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $r$
+\end_inset
+
+ также представимо в виде 
+\begin_inset Formula $ax+by$
+\end_inset
+
+.
+ Но так как 
+\begin_inset Formula $0<r<c$
+\end_inset
+
+, то это противоречит определению 
+\begin_inset Formula $c$
+\end_inset
+
+ (тому, что 
+\begin_inset Formula $c$
+\end_inset
+
+ наименьшее положительное число, представимое в таком виде).
+ Итак, мы доказали, что для любых целых чисел 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $c\mid\left(ax+by\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Далее заметим, что сами числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ представимы в виде 
+\begin_inset Formula $ax+by$
+\end_inset
+
+, достаточно положить 
+\begin_inset Formula $x=1,y=0$
+\end_inset
+
+ и 
+\begin_inset Formula $x=0,y=1$
+\end_inset
+
+ соответственно.
+ Поэтому 
+\begin_inset Formula $c\mid a$
+\end_inset
+
+ и 
+\begin_inset Formula $c\mid b$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $c$
+\end_inset
+
+ является общим делителем чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+С другой стороны, если 
+\begin_inset Formula $d\mid a$
+\end_inset
+
+ и 
+\begin_inset Formula $d\mid b$
+\end_inset
+
+, то, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $d\mid\left(ax\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $d\mid\left(by\right)$
+\end_inset
+
+, а следовательно, по той же лемме, 
+\begin_inset Formula $d\mid\left(ax+by\right)$
+\end_inset
+
+, таким образом, любой общий делитель 
+\begin_inset Formula $d$
+\end_inset
+
+ является делителем числа, представимого в виде 
+\begin_inset Formula $ax+by$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $c$
+\end_inset
+
+ представимо в виде 
+\begin_inset Formula $ax+by$
+\end_inset
+
+, то 
+\begin_inset Formula $c$
+\end_inset
+
+ делится на любой общий делитель чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Так как число 
+\begin_inset Formula $c$
+\end_inset
+
+ само является общим делителем 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, то 
+\begin_inset Formula $c=\left(a,b\right)$
+\end_inset
+
+.
+ Теорема доказана
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Фактически мы доказали, более сильный результат, но он нам пока не нужен
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Chapter
 Простые и составные числа
 \end_layout
@@ -4305,6 +4578,12 @@ status open
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:set-of-primes-is-infinite"
+
+\end_inset
+
 Множество простых чисел бесконечно.
 \end_layout
 
@@ -4379,6 +4658,3016 @@ noprefix "false"
  Полученное противоречие означает, что предположение о конечности множества
  простых чисел неверно.
  Теорема доказана.
+\end_layout
+
+\begin_layout Section
+Основная теорема арифметики
+\end_layout
+
+\begin_layout Standard
+Целое число 
+\begin_inset Formula $6025729$
+\end_inset
+
+ может быть разложено на множители следующим образом 
+\begin_inset Formula 
+\begin{equation}
+6025729=2419\cdot2491=2173\cdot2773.\label{eq:6025729-decomposition}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Попытки разложить далее каждый из четырёх сомножителей требуют некоторых
+ усилий.
+ Тем не менее, согласно теореме, носящей название 
+\begin_inset Quotes rld
+\end_inset
+
+основной теоремы арифметики
+\begin_inset Quotes rrd
+\end_inset
+
+, разложения на меньшие сомножители должны существовать.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:fundamental-arithmetic-theorem"
+
+\end_inset
+
+Каждое целое число, большее единицы, раскладывается в произведение простых
+ чисел и притом единственным способом, если не учитывать порядок сомножителей.
+\end_layout
+
+\begin_layout Standard
+Теорема утверждает, что два произведения простых чисел могут быть равны
+ друг другу лишь в случае, если они имеют одинаковые сомножители и, возможно,
+ отличаются порядком их следования.
+ Множители в разложениях 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:6025729-decomposition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ не могут быть простыми.
+ Более того, каждое простое число, входящее в разложение 
+\begin_inset Formula $2173$
+\end_inset
+
+, должно, согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, присутствовать в разложениях 
+\begin_inset Formula $2419$
+\end_inset
+
+ или 
+\begin_inset Formula $2491$
+\end_inset
+
+.
+ Но это легко проверить, вычислив наибольшие общие делители.
+ С помощью алгоритма Евклида находим 
+\begin_inset Formula 
+\[
+\left(2173,2419\right)=41,\left(2173,2491\right)=53.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь, выполняя деления, получаем 
+\begin_inset Formula 
+\[
+2173=41\cdot53,2419=41\cdot59,2491=47\cdot53,2773=47\cdot59,
+\]
+
+\end_inset
+
+ так что 
+\begin_inset Formula $6025729=41\cdot47\cdot53\cdot59$
+\end_inset
+
+, и все сомножители в последнем разложении, как легко проверить, просты.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Забыл доказать существование разложения
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Доказательство довольно длинное, было бы разумно разбить его на ряд более
+ простых
+\end_layout
+
+\end_inset
+
+Докажем, что для любого целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+, большего единицы, существует разложение на простые множители.
+ Доказывать будем по индукции.
+ Если 
+\begin_inset Formula $a$
+\end_inset
+
+ равно 
+\begin_inset Formula $2$
+\end_inset
+
+ или 
+\begin_inset Formula $3$
+\end_inset
+
+, то 
+\begin_inset Formula $a$
+\end_inset
+
+ — простое и искомое разложение найдено.
+ Это наблюдение составляет базу индукции.
+\end_layout
+
+\begin_layout Proof
+Предположим теперь, что мы доказали существование разложения на простые
+ числа для всех целых чисел от 
+\begin_inset Formula $1$
+\end_inset
+
+ до 
+\begin_inset Formula $a-1$
+\end_inset
+
+, докажем, что разложение на простые числа существует и для 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Для целого 
+\begin_inset Formula $a>3$
+\end_inset
+
+ возможны два варианта: 
+\begin_inset Formula $a$
+\end_inset
+
+ — число простое или составное.
+ Если 
+\begin_inset Formula $a=p$
+\end_inset
+
+, где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число, тогда искомое разложение найдено и имеет вид 
+\begin_inset Formula $a=p$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $a$
+\end_inset
+
+ не является простым числом, тогда, по утверждению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:every-number-has-prime-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у него есть простой делитель 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a=p_{1}b$
+\end_inset
+
+, где 
+\begin_inset Formula $1<b<a$
+\end_inset
+
+ (по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Так как 
+\begin_inset Formula $1<b<a$
+\end_inset
+
+, то для него существует разложение на простые числа, пусть оно записывается
+ как 
+\begin_inset Formula $b=p_{2}\cdot\dots\cdot p_{m}$
+\end_inset
+
+, тогда у числа 
+\begin_inset Formula $a$
+\end_inset
+
+ есть следующее разложение на простые числа: 
+\begin_inset Formula 
+\[
+a=p_{1}b=p_{1}\cdot p_{2}\cdot\dots\cdot p_{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Шаг индукции доказан, значит у любого целого числа, большего единицы существует
+ разложение на простые множители.
+\end_layout
+
+\begin_layout Proof
+Докажем теперь, что разложение на простые множители единственно с точностью
+ до порядка множителей.
+ Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — наименьшее целое число, большее единицы, которое раскладывается на произведен
+ие простых чисел хотя бы двумя различными способами: 
+\begin_inset Formula 
+\[
+a=p_{1}\cdot\dots\cdot p_{m}=q_{1}\cdot\dots\cdot q_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда множества 
+\begin_inset Formula $\left\{ p_{1},\dots,p_{m}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ q_{1},\dots,q_{n}\right\} $
+\end_inset
+
+ не пересекаются.
+ В противном случае, существовало бы число 
+\begin_inset Formula $1<d<a$
+\end_inset
+
+, входящее в оба эти множества, а значит число 
+\begin_inset Formula $1<\frac{a}{d}<a$
+\end_inset
+
+ также имело бы более одного разложения на простые множители, что противоречит
+ тому, что 
+\begin_inset Formula $a$
+\end_inset
+
+ — наименьшее из таких чисел.
+\end_layout
+
+\begin_layout Proof
+По определению, 
+\begin_inset Formula $a$
+\end_inset
+
+ делится на любое 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+ Значит произведение 
+\begin_inset Formula $q_{1}\cdot\dots\cdot q_{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+ Можно доказать, что тогда одно из 
+\begin_inset Formula $q_{1},\dots,q_{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Доказывать будем от противного.
+ Пусть 
+\begin_inset Formula $p_{k}\nmid u$
+\end_inset
+
+ и 
+\begin_inset Formula $p_{k}\nmid w$
+\end_inset
+
+, но 
+\begin_inset Formula $p_{k}\mid\left(uw\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $u=p_{k}q_{u}+r_{u}$
+\end_inset
+
+ и 
+\begin_inset Formula $w=p_{k}q_{w}+r_{w}$
+\end_inset
+
+, где 
+\begin_inset Formula $0<r_{u},r_{w}<p_{k}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+uw=\left(p_{k}q_{u}+r_{u}\right)\left(p_{k}q_{w}+r_{w}\right)=p_{k}\left(q_{u}q_{w}+q_{u}r_{w}+q_{w}r_{u}\right)+r_{u}r_{w}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как по предположению, 
+\begin_inset Formula $p_{k}\mid uw$
+\end_inset
+
+ и, по определению, 
+\begin_inset Formula $p_{k}\mid p_{k}\left(q_{u}q_{w}+q_{u}r_{w}+q_{w}r_{u}\right)$
+\end_inset
+
+, то, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Formula $p_{k}\mid\left(r_{u}r_{w}\right)$
+\end_inset
+
+.
+ Таким образом, нужно доказать это утверждение лишь для случая, когда 
+\begin_inset Formula $u,w<p_{k}$
+\end_inset
+
+.
+ Далее будем рассматривать именно этот случай.
+ Наибольший общий делитель чисел 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $w$
+\end_inset
+
+ равен единице, так как 
+\begin_inset Formula $w<p_{k}$
+\end_inset
+
+, значит любой его делитель меньше 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ (по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), а положительными делителями 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ являются, по определению простого числа, только числа 
+\begin_inset Formula $1$
+\end_inset
+
+ и
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+ Таким образом, наибольший общий делитель 
+\begin_inset Formula $w$
+\end_inset
+
+ и 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ равен единице.
+ Тогда, согласно соотношению Безу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:gcd-as-linear-combination"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существуют такие числа 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+, что имеет место равенство
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+p_{k}x+wy=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Умножая это равенство на 
+\begin_inset Formula $u$
+\end_inset
+
+, получим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+up_{k}x+uwy=u.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $up_{k}x$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ по определению, а 
+\begin_inset Formula $uw$
+\end_inset
+
+ — по предположению, то 
+\begin_inset Formula $u$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Но это противоречит тому, что 
+\begin_inset Formula $p_{k}\nmid u$
+\end_inset
+
+.
+ Полученное противоречие означает, что если произведение делится на простое
+ число, то хотя бы один из сомножителей делится на это же простое число.
+\end_layout
+
+\begin_layout Proof
+Таким образом, мы получаем, что хотя бы одно из чисел 
+\begin_inset Formula $q_{1},\dots,q_{n}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+ Так как числа 
+\begin_inset Formula $q_{1},\dots,q_{n}$
+\end_inset
+
+ являются простыми, то каждое из них делится только на 
+\begin_inset Formula $1$
+\end_inset
+
+ и на само себя.
+ Но 
+\begin_inset Formula $p_{k}>1$
+\end_inset
+
+ больше единицы по определению простого числа, поэтому одно из 
+\begin_inset Formula $q_{1},\dots,q_{n}$
+\end_inset
+
+ совпадает с
+\begin_inset Formula $p_{k}$
+\end_inset
+
+.
+ Мы пришли к противоречию с тем, что число 
+\begin_inset Formula $a$
+\end_inset
+
+ является наименьшим числом с двумя возможными разложениями на простые множители.
+ Полученное противоречие означает, что теорема доказана.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко приведено несколько доказательств единственности
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Среди простых сомножителей, присутствующих в разложении 
+\begin_inset Formula $n=p_{1}\cdot\dots\cdot p_{r}$
+\end_inset
+
+ могут быть одинаковые, например, 
+\begin_inset Formula $25=5\cdot5=5^{2}$
+\end_inset
+
+.
+ Их можно объединить вместе, воспользовавшись операцией возведения в степень.
+ Кроме того, простые сомножители можно упорядочить по величине.
+ В результате получается разложение 
+\begin_inset Formula 
+\[
+n=p_{1}^{\alpha_{1}}\cdot\dots\cdot p_{k}^{\alpha_{k}},p_{1}<p_{2}<\dots<p_{k}.
+\]
+
+\end_inset
+
+ Такое представление числа называется 
+\emph on
+каноническим разложением 
+\emph default
+на простые сомножители.
+ Например, каноническое представление числа 
+\begin_inset Formula $2520$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $2520=2^{3}\cdot3^{2}\cdot5\cdot7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Набор различных простых чисел, а также набор показателей степени 
+\begin_inset Formula $\alpha_{j}$
+\end_inset
+
+ определяется по числу 
+\begin_inset Formula $n$
+\end_inset
+
+ единственным способом.
+ Для 
+\emph on
+кратности вхождения 
+\emph default
+простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ в каноническое разложение числа 
+\begin_inset Formula $n$
+\end_inset
+
+ будет использоваться обозначение 
+\begin_inset Formula $v_{p}\left(n\right)$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $n$
+\end_inset
+
+ не делится на простое 
+\begin_inset Formula $p$
+\end_inset
+
+, будем считать 
+\begin_inset Formula $v_{p}\left(n\right)=0$
+\end_inset
+
+.
+ Например, 
+\begin_inset Formula 
+\[
+v_{2}\left(2520\right),v_{3}\left(2520\right),v_{11}\left(2520\right)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При таком определении справедливо представление 
+\begin_inset Formula 
+\begin{equation}
+n=\prod_{p\mid n}p^{v_{p}\left(n\right)}.\label{eq:prime-decomposition-finite}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В дальнейшем будут использоваться подобные выражения с указанием под знаком
+ тех или иных условий на входящие в него простые числа.
+ Кроме того, иногда удобно бывает формально записывать и бесконечные произведени
+я, если лишь конечное количество, входящих в них сомножителей отлично от
+ единицы.
+ Например, равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-decomposition-finite"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ может быть записано в виде 
+\begin_inset Formula 
+\[
+n=\prod_{p}p^{v_{p}\left(n\right)},
+\]
+
+\end_inset
+
+ где произведение берётся по бесконечному, согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:set-of-primes-is-infinite"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, множеству всех простых чисел.
+ В этом произведении лишь конечное количество сомножителей отлично от единицы,
+ ведь 
+\begin_inset Formula $v_{p}\left(n\right)\neq0$
+\end_inset
+
+ лишь для простых делителей 
+\begin_inset Formula $p$
+\end_inset
+
+ числа 
+\begin_inset Formula $n$
+\end_inset
+
+, а это множество конечно
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Может быть стоит это отдельно доказать
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+При умножении степеней с одинаковым основанием показатели степени складываются,
+ поэтому для любых двух целых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\begin{equation}
+v_{p}\left(ab\right)=v_{p}\left(a\right)+v_{p}\left(b\right).\label{eq:prime-multiplicity-of-product}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+\begin_inset CommandInset label
+LatexCommand label
+name "claim:prime-multiplicity-of-divisor"
+
+\end_inset
+
+Отсюда, в частности следует, что 
+\emph on
+целое число 
+\begin_inset Formula $n$
+\end_inset
+
+ делится на число 
+\begin_inset Formula $d$
+\end_inset
+
+ в том и только том случае, когда для любого простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula 
+\begin{equation}
+v_{p}\left(d\right)\le v_{p}\left(n\right).\label{eq:prime-multiplicity-of-divisor}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $n$
+\end_inset
+
+ делится на 
+\begin_inset Formula $d$
+\end_inset
+
+, то по определению 
+\begin_inset Formula $n=d\cdot u$
+\end_inset
+
+, тогда для любого простого 
+\begin_inset Formula $p$
+\end_inset
+
+ имеет место 
+\begin_inset Formula 
+\[
+v_{p}\left(n\right)=v_{p}\left(d\cdot u\right)=v_{p}\left(d\right)+v_{p}\left(u\right),
+\]
+
+\end_inset
+
+так как 
+\begin_inset Formula $v_{p}\left(u\right)\ge0$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+v_{p}\left(n\right)\ge v_{p}\left(d\right),
+\]
+
+\end_inset
+
+ что и требовалось доказать.
+ Если же наоборот, для любого простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то целое число 
+\begin_inset Formula 
+\[
+u=\prod_{p}p^{v_{p}\left(n\right)-v_{p}\left(d\right)}
+\]
+
+\end_inset
+
+удовлетворяет равенству 
+\begin_inset Formula $n=du$
+\end_inset
+
+ и, значит, 
+\begin_inset Formula $d\mid u$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim
+\begin_inset CommandInset label
+LatexCommand label
+name "claim:equality-of-prime-multiplicities-means-equality"
+
+\end_inset
+
+Ещё одно простое, но полезное свойство будет использовать в дальнейшем.
+ Если 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ натуральные числа, причём для каждого простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $v_{p}\left(a\right)=v_{p}\left(b\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $a=b$
+\end_inset
+
+.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Можно доказать, что 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ являются делителями друг друга
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Определим канонические разложения наименьшего общего кратного и наибольшего
+ общего делителя нескольких натуральных чисел.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:prime-multipliciy-of-LCM-and-GCD"
+
+\end_inset
+
+Для любых натуральных чисел 
+\begin_inset Formula $a_{1},\dots,a_{m}$
+\end_inset
+
+ и любого простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ справедливы равенства 
+\begin_inset Formula 
+\begin{equation}
+v_{p}\left(\left[a_{1},\dots,a_{m}\right]\right)=\max\left\{ v_{p}\left(a_{1}\right),\dots,v_{p}\left(a_{m}\right)\right\} ,\label{eq:prime-multiplicity-of-LCM}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula 
+\begin{equation}
+v_{p}\left(\left(a_{1},\dots,a_{m}\right)\right)=\min\left\{ v_{p}\left(a_{1}\right),\dots,v_{p}\left(a_{m}\right)\right\} .\label{eq:prime-multiplicity-of-GCD}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим число 
+\begin_inset Formula 
+\[
+M=\prod_{p}p^{\max\left\{ v_{p}\left(a_{1}\right),\dots,v_{p}\left(a_{m}\right)\right\} },
+\]
+
+\end_inset
+
+ тогда для любого простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ выполняется равенство
+\begin_inset Formula 
+\[
+v_{p}\left(M\right)=\max\left\{ v_{p}\left(a_{1}\right),\dots,v_{p}\left(a_{m}\right)\right\} ,1\le k\le m.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Откуда следует, что 
+\begin_inset Formula $v_{p}\left(M\right)\ge v_{p}\left(a_{k}\right)$
+\end_inset
+
+, что, по утверждению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:prime-multiplicity-of-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, влечёт 
+\begin_inset Formula $a_{k}\mid M$
+\end_inset
+
+, то есть 
+\begin_inset Formula $M$
+\end_inset
+
+ — общее кратное чисел 
+\begin_inset Formula $a_{1},\dots,a_{m}$
+\end_inset
+
+.
+ Остаётся доказать, что это наименьшее общее кратное.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $K$
+\end_inset
+
+ — ещё какое-либо общее кратное этих чисел, то для любого простого 
+\begin_inset Formula $p$
+\end_inset
+
+ должны выполняться неравенства 
+\begin_inset Formula 
+\[
+v_{p}\left(K\right)\ge v_{p}\left(a_{k}\right),1\le k\le m,
+\]
+
+\end_inset
+
+ и, значит, 
+\begin_inset Formula $v_{p}\left(K\right)$
+\end_inset
+
+ не меньше, наибольшего из правых частей этих неравенств
+\begin_inset Formula 
+\[
+v_{p}\left(K\right)\ge\max\left\{ v_{p}\left(a_{1}\right),\dots,v_{p}\left(a_{m}\right)\right\} =v_{p}\left(M\right),
+\]
+
+\end_inset
+
+ следовательно 
+\begin_inset Formula $M\mid K$
+\end_inset
+
+ и 
+\begin_inset Formula $M\le K$
+\end_inset
+
+ (по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Это доказывает, что 
+\begin_inset Formula $M$
+\end_inset
+
+ — наименьшее общее кратное чисел 
+\begin_inset Formula $a_{1},\dots,a_{m}$
+\end_inset
+
+ и формулу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-LCM"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Положим 
+\begin_inset Formula 
+\[
+D=\prod_{p}p^{\min\left\{ v_{p}\left(a_{1}\right),\dots,v_{p}\left(a_{m}\right)\right\} },
+\]
+
+\end_inset
+
+ тогда для любого простого 
+\begin_inset Formula $p$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+v_{p}\left(D\right)=\min\left\{ v_{p}\left(a_{1}\right),\dots,v_{p}\left(a_{m}\right)\right\} ,
+\]
+
+\end_inset
+
+ то есть для любого из чисел 
+\begin_inset Formula $a_{1},\dots,a_{m}$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula $v_{p}\left(D\right)\le v_{p}\left(a_{k}\right)$
+\end_inset
+
+, откуда, по утверждению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:prime-multiplicity-of-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, следует, что 
+\begin_inset Formula $D\mid a_{k}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $D$
+\end_inset
+
+ — общий делитель чисел 
+\begin_inset Formula $a_{1},\dots,a_{m}$
+\end_inset
+
+.
+ Остаётся доказать, что это наибольший общий делитель этих чисел.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $d$
+\end_inset
+
+ — некоторый общий делитель чисел 
+\begin_inset Formula $a_{1},\dots,a_{m}$
+\end_inset
+
+, тогда, для любого простого 
+\begin_inset Formula $p$
+\end_inset
+
+ выполняются неравенства 
+\begin_inset Formula 
+\[
+v_{p}\left(d\right)\le v_{p}\left(a_{k}\right),1\le k\le m,
+\]
+
+\end_inset
+
+и, значит, 
+\begin_inset Formula $v_{p}\left(d\right)$
+\end_inset
+
+ не больше наименьшей из правых частей этих неравенств: 
+\begin_inset Formula 
+\[
+v_{p}\left(d\right)\le\min\left\{ v_{p}\left(a_{1}\right),\dots,v_{p}\left(a_{m}\right)\right\} =v_{p}\left(D\right),
+\]
+
+\end_inset
+
+следовательно 
+\begin_inset Formula $d\mid D$
+\end_inset
+
+ и 
+\begin_inset Formula $d\le D$
+\end_inset
+
+ (по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Это доказывает, что 
+\begin_inset Formula $D$
+\end_inset
+
+ — наибольший из общих делителей и формулу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-GCD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-LCM"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-GCD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ могут использоваться также и для вычисления наименьшего общего кратного
+ и наибольшего общего делителя нескольких чисел.
+ Так имеем 
+\begin_inset Formula 
+\[
+2737=7\cdot17\cdot23,9163=7^{2}\cdot11\cdot17,9639=3^{4}\cdot7\cdot17
+\]
+
+\end_inset
+
+и, значит, 
+\begin_inset Formula 
+\[
+\left[2737,9163,9639\right]=3^{4}\cdot7^{2}\cdot11\cdot17\cdot23=17070669,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[2737,9163,9639\right]=7\cdot17=119.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Этот способ, однако, применим лишь, если числа сравнительно невелики.
+ Разложение на простые сомножители больших чисел — очень трудоёмкая задача,
+ и в таком случае удобнее использовать алгоритмы, приведённые в главе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:On-divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Приведём ещё несколько следствий основной теоремы арифметики 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Их можно было бы вывести и из теорем 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:LCM-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:GCD-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Но приводимые здесь доказательства короче и единообразнее.
+ В дальнейшем предполагается, что 
+\begin_inset Formula $b,a_{1},\dots,a_{n}$
+\end_inset
+
+ — произвольные натуральные числа.
+\end_layout
+
+\begin_layout Remark
+Если число 
+\begin_inset Formula $b$
+\end_inset
+
+ взаимно просто с каждым из чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+, то оно взаимно просто и с произведением этих чисел.
+\end_layout
+
+\begin_layout Proof
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:coprime-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $\left(b,a_{k}\right)=1$
+\end_inset
+
+ для 
+\begin_inset Formula $k=1,\dots,n$
+\end_inset
+
+.
+ Нужно доказать, что 
+\begin_inset Formula $\left(b,a_{1}\cdot a_{2}\cdot\dots\cdot a_{n}\right)=1$
+\end_inset
+
+.
+ Доказывать будем от противного.
+ Пусть 
+\begin_inset Formula $g=\left(b,a_{1}\cdot a_{2}\cdot\dots\cdot a_{n}\right)>1$
+\end_inset
+
+, тогда по замечанию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:every-number-has-prime-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у числа 
+\begin_inset Formula $g$
+\end_inset
+
+ есть некоторый простой делитель 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\[
+v_{p}\left(\left(b,a_{1}\cdot a_{2}\cdot\dots\cdot a_{n}\right)\right)>0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По замечанию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-multipliciy-of-LCM-and-GCD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, для любого простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ выполняются равенства
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+v_{p}\left(\left(b,a_{1}\cdot\dots\cdot a_{n}\right)\right)=\min\left\{ v_{p}\left(b\right),v_{p}\left(a_{1}\cdot\dots\cdot a_{n}\right)\right\} ,
+\]
+
+\end_inset
+
+значит 
+\begin_inset Formula 
+\[
+\min\left\{ v_{p}\left(b\right),v_{p}\left(a_{1}\cdot\dots\cdot a_{n}\right)\right\} >0,
+\]
+
+\end_inset
+
+это возможно, только если 
+\begin_inset Formula $v_{p}\left(b\right)>0$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{p}\left(a_{1}\cdot\dots\cdot a_{n}\right)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+В силу формулы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+v_{p}\left(a_{1}\cdot\dots\cdot a_{n}\right)=v_{p}\left(a_{1}\right)+\dots+v_{p}\left(a_{n}\right)>0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как величины 
+\begin_inset Formula $v_{p}\left(a_{1}\right),\dots,v_{p}\left(a_{n}\right)$
+\end_inset
+
+ не отрицательные, то последнее неравенство возможно только если хотя бы
+ одно из них больше нуля, пусть это 
+\begin_inset Formula $v_{p}\left(a_{j}\right).$
+\end_inset
+
+ Тогда 
+\begin_inset Formula $v_{p}\left(b\right)>0$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{p}\left(a_{j}\right)>0$
+\end_inset
+
+, но тогда 
+\begin_inset Formula $v_{p}\left(\left(b,a_{j}\right)\right)=\min\left\{ v_{p}\left(b\right),v_{p}\left(a_{j}\right)\right\} >0$
+\end_inset
+
+, а значит 
+\begin_inset Formula $\left(b,a_{j}\right)>1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $b$
+\end_inset
+
+ не взаимно просто по меньшей мере с одним из чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+.
+ Полученное противоречие означает, что 
+\begin_inset Formula 
+\[
+\left(b,a_{1}\cdot\dots\cdot a_{n}\right)=1
+\]
+
+\end_inset
+
+и завершает доказательство.
+\end_layout
+
+\begin_layout Remark
+При любом натуральном 
+\begin_inset Formula $b$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\[
+\left(ba_{1},\dots,ba_{n}\right)=b\cdot\left(a_{1},\dots,a_{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Для любого простого 
+\begin_inset Formula $p$
+\end_inset
+
+ по формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеем:
+\begin_inset Formula 
+\[
+v_{p}\left(b\cdot\left(a_{1},\dots,a_{n}\right)\right)=v_{p}\left(b\right)+v_{p}\left(\left(a_{1},\dots,a_{n}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Для второго слагаемого воспользуемся вторым утверждением следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-multipliciy-of-LCM-and-GCD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+v_{p}\left(b\cdot\left(a_{1},\dots,a_{n}\right)\right)=v_{p}\left(b\right)+\min\left\{ v_{p}\left(a_{1}\right),\dots,v_{p}\left(a_{n}\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С другой стороны, по тому же утверждению имеем:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+v_{p}\left(\left(ba_{1},\dots,ba_{n}\right)\right)=\min\left\{ v_{p}\left(ba_{1}\right),\dots,v_{p}\left(ba_{n}\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Для каждого из аргументов минимума воспользуемся формулой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+v_{p}\left(ba_{k}\right)=v_{p}\left(b\right)+v_{p}\left(a_{k}\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+v_{p}\left(\left(ba_{1},\dots,ba_{n}\right)\right)=\min\left\{ v_{p}\left(b\right)+v_{p}\left(a_{1}\right),\dots,v_{p}\left(b\right)+v_{p}\left(a_{n}\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как величина 
+\begin_inset Formula $v_{p}\left(b\right)$
+\end_inset
+
+ входит во все аргументы минимума как слагаемое, её можно вынести: 
+\begin_inset Formula 
+\[
+v_{p}\left(\left(ba_{1},\dots,ba_{n}\right)\right)=v_{p}\left(b\right)+\min\left\{ v_{p}\left(a_{1}\right),\dots,v_{p}\left(a_{n}\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, для любого простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+v_{p}\left(\left(ba_{1},\dots,ba_{n}\right)\right)=v_{p}\left(b\cdot\left(a_{1},\dots,a_{n}\right)\right),
+\]
+
+\end_inset
+
+ откуда, в силу утверждения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:equality-of-prime-multiplicities-means-equality"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left(ba_{1},\dots,ba_{n}\right)=b\cdot\left(a_{1},\dots,a_{n}\right),
+\]
+
+\end_inset
+
+ что и требовалось доказать.
+\end_layout
+
+\begin_layout Definition
+Целые числа 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+ называются попарном взаимно простыми, если для любых двух индексов 
+\begin_inset Formula $i<j$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $\left(a_{i},a_{j}\right)=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Числа 
+\begin_inset Formula $6$
+\end_inset
+
+, 
+\begin_inset Formula $10$
+\end_inset
+
+ и 
+\begin_inset Formula $15$
+\end_inset
+
+ взаимно просты, но не являются попарно взаимно простыми, так как 
+\begin_inset Formula $\left(6,10\right)=2$
+\end_inset
+
+.
+ Более того имеем 
+\begin_inset Formula $\left(6,15\right)=3$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(10,15\right)=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim
+\begin_inset CommandInset label
+LatexCommand label
+name "claim:prime-multiplicity-of-pairwise-coprimes"
+
+\end_inset
+
+Попарная взаимная простота означает, что для каждого простого 
+\begin_inset Formula $p$
+\end_inset
+
+ среди чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+ не более чем одно может делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Иначе это условие можно записать в виде 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Может быть доказать это?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\max_{1\le j\le n}v_{p}\left(a_{j}\right)=v_{p}\left(a_{1}\right)+\dots+v_{p}\left(a_{n}\right),
+\]
+
+\end_inset
+
+ для любого простого 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:LCM-of-pairwise-coprimes"
+
+\end_inset
+
+Наименьшее общее кратное попарно взаимно простых натуральных чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+ равно их произведению, то есть 
+\begin_inset Formula 
+\[
+\left[a_{1},\dots,a_{n}\right]=a_{1}\cdot\dots\cdot a_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $p$
+\end_inset
+
+ — произвольное простое число.
+ По первому утверждению следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-multipliciy-of-LCM-and-GCD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+v_{p}\left(\left[a_{1},\dots,a_{n}\right]\right)=\max_{1\le j\le n}v_{p}\left(a_{j}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С другой стороны, по формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+v_{p}\left(a_{1}\cdot\dots\cdot a_{n}\right)=v_{p}\left(a_{1}\right)+\dots+v_{p}\left(a_{n}\right),
+\]
+
+\end_inset
+
+ но так как числа 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+ попарно взаимно просты, то 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:prime-multiplicity-of-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+v_{p}\left(a_{1}\right)+\dots+v_{p}\left(a_{n}\right)=\max_{1\le j\le n}v_{p}\left(a_{j}\right),
+\]
+
+\end_inset
+
+ поэтому 
+\begin_inset Formula 
+\[
+v_{p}\left(a_{1}\cdot\dots\cdot a_{n}\right)=\max_{1\le j\le n}v_{p}\left(a_{j}\right)=v_{p}\left(\left[a_{1},\dots,a_{n}\right]\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Применение утверждения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:equality-of-prime-multiplicities-means-equality"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ завершает доказательство.
+\end_layout
+
+\begin_layout Remark
+Если число 
+\begin_inset Formula $b$
+\end_inset
+
+ делится на каждое из попарно взаимно простых чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+, то 
+\begin_inset Formula $b$
+\end_inset
+
+ делится и на их произведение 
+\begin_inset Formula $a_{1}\cdot\dots\cdot a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Сначала написал более длинное доказательство
+\end_layout
+
+\end_inset
+
+Так как 
+\begin_inset Formula $b$
+\end_inset
+
+ делится на каждое из 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+, то 
+\begin_inset Formula $b$
+\end_inset
+
+ — общее кратное чисел 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+.
+ Тогда, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:LCM-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $b$
+\end_inset
+
+ делится на наибольшее общее кратное этих чисел — 
+\begin_inset Formula $\left[a_{1},\dots,a_{n}\right]$
+\end_inset
+
+.
+ Так как эти число попарно взаимно просты, то по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:LCM-of-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left[a_{1},\dots,a_{n}\right]=a_{1}\cdot\dots\cdot a_{n},
+\]
+
+\end_inset
+
+ таким образом, 
+\begin_inset Formula $b$
+\end_inset
+
+ делится на 
+\begin_inset Formula $a_{1}\cdot\dots\cdot a_{n}$
+\end_inset
+
+, что и требовалось доказать.
+\end_layout
+
+\begin_layout Remark
+Для любых натуральных чисел 
+\begin_inset Formula $b,a_{1},\dots,a_{n}$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\left(a_{1}\cdot\dots\cdot a_{n},b\right)\mid\left(\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Если к тому же числа 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+ попарно взаимно просты, то выполняется равенство 
+\begin_inset Formula 
+\[
+\left(a_{1}\cdot\dots\cdot a_{n},b\right)=\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Теперь, для доказательства первого утверждения, в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:prime-multiplicity-of-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, нужно доказать, что для любого простого 
+\begin_inset Formula $p$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula 
+\[
+v_{p}\left(\left(a_{1}\cdot\dots\cdot a_{n},b\right)\right)\le v_{p}\left(\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-multipliciy-of-LCM-and-GCD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для любого простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ имеет место равенство
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+v_{p}\left(\left(a_{1}\cdot\dots\cdot a_{n},b\right)\right)=\min\left\{ v_{p}\left(a_{1}\cdot\dots\cdot a_{n}\right),v_{p}\left(b\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Учитывая, что 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+v_{p}\left(a_{1}\cdot\dots\cdot a_{n}\right)=\sum_{k=1}^{n}v_{p}\left(a_{k}\right),
+\]
+
+\end_inset
+
+получим 
+\begin_inset Formula 
+\[
+v_{p}\left(\left(a_{1}\cdot\dots\cdot a_{n},b\right)\right)=\min\left\{ \sum_{k=1}^{n}v_{p}\left(a_{k}\right),v_{p}\left(b\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С другой стороны, применяя формулу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и следствие 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-multipliciy-of-LCM-and-GCD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим равенство:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+v_{p}\left(\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right)\right)=\sum_{k=1}^{n}v_{p}\left(\left(a_{k},b\right)\right)=\sum_{k=1}^{n}\min\left\{ v_{p}\left(a_{k}\right),v_{p}\left(b\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно, эту часть стоит вынести в отдельное утверждение
+\end_layout
+
+\end_inset
+
+Рассмотрим частные случаи.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $v_{p}\left(b\right)$
+\end_inset
+
+ больше любого 
+\begin_inset Formula $v_{p}\left(a_{k}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\min\left\{ v_{p}\left(a_{k}\right),v_{p}\left(b\right)\right\} =v_{p}\left(a_{k}\right)
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+v_{p}\left(\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right)\right)=\sum_{k=1}^{n}v_{p}\left(a_{k}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Но тогда 
+\begin_inset Formula 
+\[
+v_{p}\left(\left(a_{1}\cdot\dots\cdot a_{n},b\right)\right)=\min\left\{ \sum_{k=1}^{n}v_{p}\left(a_{k}\right),v_{p}\left(b\right)\right\} \le\sum_{k=1}^{n}v_{p}\left(a_{k}\right)=v_{p}\left(\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, в этом случае первое утверждение доказано.
+\end_layout
+
+\begin_layout Proof
+Если же найдётся такой индекс 
+\begin_inset Formula $j$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+v_{p}\left(b\right)<v_{p}\left(a_{j}\right),
+\]
+
+\end_inset
+
+ то, в силу того, что все 
+\begin_inset Formula $v_{p}\left(a_{k}\right)$
+\end_inset
+
+ не отрицательны, то 
+\begin_inset Formula 
+\[
+v_{p}\left(b\right)<v_{p}\left(a_{j}\right)\le\sum_{k=1}^{n}v_{p}\left(a_{k}\right),
+\]
+
+\end_inset
+
+поэтому
+\begin_inset Formula 
+\[
+v_{p}\left(\left(a_{1}\cdot\dots\cdot a_{n},b\right)\right)=\min\left\{ \sum_{k=1}^{n}v_{p}\left(a_{k}\right),v_{p}\left(b\right)\right\} =v_{p}\left(b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+В свою очередь, можно написать 
+\begin_inset Formula 
+\[
+v_{p}\left(b\right)=\min\left\{ v_{p}\left(a_{j}\right),v_{p}\left(b\right)\right\} 
+\]
+
+\end_inset
+
+и, так как величины 
+\begin_inset Formula $v_{p}\left(a_{k}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{p}\left(b\right)$
+\end_inset
+
+ не отрицательны, то 
+\begin_inset Formula 
+\[
+v_{p}\left(b\right)=\min\left\{ v_{p}\left(a_{j}\right),v_{p}\left(b\right)\right\} \le\sum_{k=1}^{n}\min\left\{ v_{p}\left(a_{k}\right),v_{p}\left(b\right)\right\} =v_{p}\left(\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, 
+\begin_inset Formula 
+\[
+v_{p}\left(\left(a_{1}\cdot\dots\cdot a_{n},b\right)\right)=v_{p}\left(b\right)\le v_{p}\left(\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right)\right),
+\]
+
+\end_inset
+
+ то есть первое утверждение доказано и во втором случае, а значит и в целом.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь числа 
+\begin_inset Formula $a_{1},\dots,a_{n}$
+\end_inset
+
+ взаимно просты.
+ Тогда, в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:prime-multiplicity-of-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}v_{p}\left(a_{k}\right)=\max_{1\le k\le n}\left\{ v_{p}\left(a_{k}\right)\right\} ,
+\]
+
+\end_inset
+
+ то есть не более чем одно из чисел 
+\begin_inset Formula $v_{p}\left(a_{k}\right)$
+\end_inset
+
+ отлично от нуля, поэтому
+\begin_inset Formula 
+\[
+v_{p}\left(\left(a_{1}\cdot\dots\cdot a_{n},b\right)\right)=\min\left\{ \sum_{k=1}^{n}v_{p}\left(a_{k}\right),v_{p}\left(b\right)\right\} =\min\left\{ \max_{1\le k\le n}\left\{ v_{p}\left(a_{k}\right)\right\} ,v_{p}\left(b\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим теперь
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+v_{p}\left(\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right)\right)=\sum_{k=1}^{n}\min\left\{ v_{p}\left(a_{k}\right),v_{p}\left(b\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из всех слагаемых в правой части не более одного отлично от нуля, так как
+ если 
+\begin_inset Formula $v_{p}\left(a_{k}\right)=0$
+\end_inset
+
+, то и 
+\begin_inset Formula $\min\left\{ v_{p}\left(a_{k}\right),v_{p}\left(b\right)\right\} =0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+v_{p}\left(\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right)\right)=\min\left\{ \max_{1\le k\le n}\left\{ v_{p}\left(a_{k}\right)\right\} ,v_{p}\left(b\right)\right\} ,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula 
+\[
+v_{p}\left(\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right)\right)=v_{p}\left(\left(a_{1}\cdot\dots\cdot a_{n},b\right)\right),
+\]
+
+\end_inset
+
+ что и требовалось доказать.
+\end_layout
+
+\begin_layout Standard
+В дальнейшем нам понадобятся две функции: целая и дробная части числа.
+ Напомним их определения и свойства.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Целой
+\emph default
+ 
+\emph on
+частью 
+\emph default
+действительного числа 
+\begin_inset Formula $x$
+\end_inset
+
+ называется наибольшее целое число 
+\begin_inset Formula $k$
+\end_inset
+
+, удовлетворяющее неравенству 
+\begin_inset Formula $k\le x$
+\end_inset
+
+.
+ Обозначается эта функция 
+\begin_inset Formula $\left[x\right]$
+\end_inset
+
+.
+ Так, например, 
+\begin_inset Formula $\left[2,5\right]=2$
+\end_inset
+
+, 
+\begin_inset Formula $\left[\pi\right]=3$
+\end_inset
+
+ и 
+\begin_inset Formula $\left[-1,3\right]=-2$
+\end_inset
+
+.
+ Из определения следует, что при любом 
+\begin_inset Formula $x$
+\end_inset
+
+ справедливы неравенства 
+\begin_inset Formula $\left[x\right]\le x<\left[x\right]+1$
+\end_inset
+
+.
+ Складывая неравенства 
+\begin_inset Formula $\left[x\right]\le x$
+\end_inset
+
+ и 
+\begin_inset Formula $\left[y\right]\le y$
+\end_inset
+
+, получаем 
+\begin_inset Formula $\left[x\right]+\left[y\right]\le x+y$
+\end_inset
+
+, и согласно определению, так как 
+\begin_inset Formula $\left[x\right]+\left[y\right]$
+\end_inset
+
+ — целое число, получаем
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[x\right]+\left[y\right]\le\left[x+y\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это неравенство справедливо и при любом количестве слагаемых, что легко
+ доказать с помощью метода математической индукции
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Доказать?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из определения сразу же следует, что для любого целого числа 
+\begin_inset Formula $n$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $\left[x+n\right]=\left[x\right]+n$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Доказать?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+При любом действительном 
+\begin_inset Formula $x$
+\end_inset
+
+ и любом натуральном 
+\begin_inset Formula $a$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\begin{equation}
+\left[\frac{\left[x\right]}{a}\right]=\left[\frac{x}{a}\right].\label{eq:rounding-of-fraction}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Чтобы пояснить его, обозначим 
+\begin_inset Formula $q=\left[\frac{x}{a}\right]$
+\end_inset
+
+, тогда 
+\begin_inset Formula $aq\le x<a\left(q+1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+aq\le\left[x\right]\le x<a\left(q+1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Разделив эти неравенства на 
+\begin_inset Formula $a$
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+q\le\frac{\left[x\right]}{a}<q+1,
+\]
+
+\end_inset
+
+ что и доказывает 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rounding-of-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Функция 
+\begin_inset Formula $\left\{ x\right\} =x-\left[x\right]$
+\end_inset
+
+ называется 
+\emph on
+дробной частью 
+\emph default
+числа 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Она удовлетворяет неравенствам 
+\begin_inset Formula $0\le\left\{ x\right\} <1$
+\end_inset
+
+ и имеет период 1.
+ Действительно, 
+\begin_inset Formula 
+\[
+\left\{ x+1\right\} =x+1-\left[x+1\right]=x-\left[x\right]=\left\{ x\right\} .
+\]
+
+\end_inset
+
+ Например, 
+\begin_inset Formula $\left\{ -1.3\right\} =\left\{ 0.3\right\} =0.3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим два, имеющих теоретический интерес, примера, в которых вычисляются
+ кратности вхождения простых в канонические разложения некоторых чисел.
+ Обозначим для каждого действительного числа 
+\begin_inset Formula $x\ge1$
+\end_inset
+
+ символом 
+\begin_inset Formula $K\left(x\right)$
+\end_inset
+
+ наименьшее общее кратное всех натуральных чисел, не превосходящих 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+Для любого действительного 
+\begin_inset Formula $x\ge1$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+K\left(x\right)=\prod_{p\le x}p^{\left[\frac{\ln x}{\ln p}\right]}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По определению, 
+\begin_inset Formula 
+\[
+K\left(x\right)=\left[1,2,\dots,\left[x\right]\right]=\left[2,\dots,\left[x\right]\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Поэтому, по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-multipliciy-of-LCM-and-GCD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, для любого простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+v_{p}\left(K\left(x\right)\right)=\max\left\{ v_{p}\left(2\right),\dots,v_{p}\left(\left[x\right]\right)\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, для нахождения 
+\begin_inset Formula $v_{p}\left(K\left(x\right)\right)$
+\end_inset
+
+ нужно найти наибольшую целую степень числа 
+\begin_inset Formula $p$
+\end_inset
+
+, не превышающую 
+\begin_inset Formula $\left[x\right]$
+\end_inset
+
+, то есть такое целое число 
+\begin_inset Formula $m$
+\end_inset
+
+, что выполняются неравенства
+\begin_inset Formula 
+\[
+p^{m}\le x<p^{m+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как логарифм — монотонная функция, то при логарифмировании неравенства
+ сохраняются: 
+\begin_inset Formula 
+\[
+m\ln p\le\ln x<\left(m+1\right)\ln p.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Разделив эти неравенства на положительное число 
+\begin_inset Formula $\ln p,$
+\end_inset
+
+получим 
+\begin_inset Formula 
+\[
+m\le\frac{\ln x}{\ln p}<m+1,
+\]
+
+\end_inset
+
+тогда, по определению целой части вещественного числа, 
+\begin_inset Formula 
+\[
+v_{p}\left(K\left(x\right)\right)=m=\left[\frac{\ln x}{\ln p}\right]
+\]
+
+\end_inset
+
+и
+\begin_inset Formula 
+\[
+K\left(x\right)=\prod_{p\le x}p^{\left[\frac{\ln x}{\ln p}\right]},
+\]
+
+\end_inset
+
+что и требовалось доказать.
+\end_layout
+
+\begin_layout Standard
+Далее символом 
+\begin_inset Formula $n!$
+\end_inset
+
+ обозначается произведение всех целых чисел от 
+\begin_inset Formula $1$
+\end_inset
+
+ до 
+\begin_inset Formula $n$
+\end_inset
+
+, то 
+\begin_inset Formula $n!=1\cdot2\cdot\dots\cdot n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:prime-multiplicity-for-factorial"
+
+\end_inset
+
+Для каждого натурального числа 
+\begin_inset Formula $n$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\begin{equation}
+v_{p}\left(n!\right)=\left[\frac{n}{p}\right]+\left[\frac{n}{p^{2}}\right]+\dots=\sum_{k\ge1}\left[\frac{n}{p^{k}}\right].\label{eq:prime-multiplicity-for-factorial}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сумма в действительности конечна, так как при 
+\begin_inset Formula $p^{k}>n$
+\end_inset
+
+, то есть при 
+\begin_inset Formula $k>\frac{\ln n}{\ln p}$
+\end_inset
+
+, слагаемые равны нулю.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Пытался доказать по другому
+\end_layout
+
+\end_inset
+
+Среди чисел 
+\begin_inset Formula $1,2,\dots,n$
+\end_inset
+
+ на простое 
+\begin_inset Formula $p$
+\end_inset
+
+ делятся лишь числа 
+\begin_inset Formula $p,2p,\dots,mp$
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+ есть наибольшее целое число, удовлетворяющее неравенству 
+\begin_inset Formula $mp\le n$
+\end_inset
+
+, то есть 
+\begin_inset Formula $m=\left[\frac{n}{p}\right]$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula 
+\begin{equation}
+v_{p}\left(n!\right)=v_{p}\left(p\cdot2p\cdot\dots\cdot mp\right)=v_{p}\left(p^{m}\cdot m!\right)=m+v_{p}\left(m!\right).\label{eq:prime-multiplicity-factorial-descent}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Получившееся равенство позволяет доказать нужную формулу с помощью метода
+ математической индукции.
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $p<n$
+\end_inset
+
+ обе части равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-for-factorial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ равны нулю, и оно, конечно выполняется.
+ Предположим теперь, что 
+\begin_inset Formula $n\ge p$
+\end_inset
+
+ и это равенство справедливо для любого натурального числа, меньшего 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Тогда из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-factorial-descent"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rounding-of-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{multline*}
+v_{p}\left(n!\right)=\left[\frac{n}{p}\right]+v_{p}\left(m!\right)=\left[\frac{n}{p}\right]+\sum_{j\ge1}\left[\frac{m}{p^{j}}\right]=\\
+=\left[\frac{n}{p}\right]+\sum_{j\ge1}\left[\frac{\left[\frac{n}{p}\right]}{p^{j}}\right]=\left[\frac{n}{p}\right]+\sum_{j\ge1}\left[\frac{n}{p^{j+1}}\right]=\\
+=\left[\frac{n}{p}\right]+\sum_{j\ge2}\left[\frac{n}{p^{j}}\right]=\sum_{j\ge1}\left[\frac{n}{p^{j}}\right],
+\end{multline*}
+
+\end_inset
+
+что и завершает доказательство.
+\end_layout
+
+\begin_layout Standard
+Как ещё один пример рассмотрим дробь 
+\begin_inset Formula 
+\[
+N=\frac{n!}{a_{1}!\cdot\dots\cdot a_{r}!},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1},\dots,a_{r}$
+\end_inset
+
+ натуральные числа с условием 
+\begin_inset Formula $a_{1}+\dots+a_{r}=n$
+\end_inset
+
+.
+ Докажем, что эта дробь есть целое число.
+ Пользуясь леммой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:prime-multiplicity-for-factorial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно написать 
+\begin_inset Formula 
+\[
+v_{p}\left(n!\right)=\sum_{k\ge1}\left[\frac{n}{p^{k}}\right]
+\]
+
+\end_inset
+
+и, в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+v_{p}\left(a_{1}!\cdot\dots\cdot a_{r}!\right)=\sum_{k\ge1}\left(\left[\frac{a_{1}}{p^{k}}\right]+\dots+\left[\frac{a_{r}}{p^{k}}\right]\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\frac{a_{1}}{p^{k}}\right]+\dots+\left[\frac{a_{r}}{p^{k}}\right]\le\left[\frac{a_{1}+\dots+a_{r}}{p^{k}}\right]=\left[\frac{n}{p^{k}}\right],
+\]
+
+\end_inset
+
+то
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+v_{p}\left(a_{1}!\cdot\dots\cdot a_{r}!\right)=\sum_{k\ge1}\left(\left[\frac{a_{1}}{p^{k}}\right]+\dots+\left[\frac{a_{r}}{p^{k}}\right]\right)\le\\
+\le\sum_{k\ge1}\left[\frac{a_{1}+\dots+a_{r}}{p^{k}}\right]=\sum_{k\ge1}\left[\frac{n}{p^{k}}\right]=v_{p}\left(n!\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поэтому 
+\begin_inset Formula $v_{p}\left(n!\right)\ge v_{p}\left(a_{1}!\cdot\dots\cdot a_{r}!\right)$
+\end_inset
+
+, значит 
+\begin_inset Formula $n!$
+\end_inset
+
+ делится на 
+\begin_inset Formula $a_{1}!\cdot\dots\cdot a_{r}!$
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\[
+N=\frac{n!}{a_{1}!\cdot\dots\cdot a_{r}!}
+\]
+
+\end_inset
+
+ действительно является целым числом.
 \end_layout
 
 \end_body
