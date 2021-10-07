@@ -9877,5 +9877,1340 @@ noprefix "false"
 о леммой.
 \end_layout
 
+\begin_layout Section
+Дзета-функция Римана и свойства простых чисел
+\end_layout
+
+\begin_layout Standard
+Дзета-функция определяется рядом 
+\begin_inset Formula 
+\begin{equation}
+\zeta\left(s\right)=\sum_{n=1}^{\infty}\frac{1}{n^{s}}.\label{eq:zeta-definition}
+\end{equation}
+
+\end_inset
+
+По историческим причинам её аргумент принято обозначать буковой 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ Как известно из курсов математического анализа, ряд в правой части сходится
+ при каждом действительном 
+\begin_inset Formula $s>1$
+\end_inset
+
+ и расходится при 
+\begin_inset Formula $s\le1$
+\end_inset
+
+.
+ Такие ряды при различных значениях 
+\begin_inset Formula $s$
+\end_inset
+
+ изучал Л.
+\begin_inset space \thinspace{}
+\end_inset
+
+Эйлер.
+ Впоследствии дзета-функция стала рассматриваться как функция действительного
+ переменного 
+\begin_inset Formula $s>1$
+\end_inset
+
+.
+ Её свойства тесно связаны со свойствами множества простых чисел, что позволяет
+ использовать для исследования простых чисел методы теории функций.
+ Следующее утверждение называется 
+\emph on
+тождеством Эйлера
+\emph default
+.
+\end_layout
+
+\begin_layout Theorem
+При каждом 
+\begin_inset Formula $s>1$
+\end_inset
+
+ справедливо тождество 
+\begin_inset Formula 
+\[
+\zeta\left(s\right)=\prod_{p}\left(1-\frac{1}{p^{s}}\right)^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Правая часть тождества содержит бесконечное количество сомножителей.
+ Под таким бесконечным произведением понимается предел конечного произведения
+ 
+\begin_inset Formula 
+\[
+P\left(x\right)=\prod_{p\le x}\left(1-\frac{1}{p^{s}}\right)^{-1}
+\]
+
+\end_inset
+
+ при 
+\begin_inset Formula $x$
+\end_inset
+
+, стремящемся к бесконечности.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не доказал сам
+\end_layout
+
+\end_inset
+
+Пользуясь формулой для суммы членов бесконечно убывающей геометрической
+ прогрессии
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать отдельно и сослаться
+\end_layout
+
+\end_inset
+
+, находим 
+\begin_inset Formula 
+\begin{equation}
+\left(1-\frac{1}{p^{s}}\right)^{-1}=1+\frac{1}{p^{s}}+\frac{1}{p^{2s}}+\dots.\label{eq:t2.5-geometric-expansion}
+\end{equation}
+
+\end_inset
+
+ Это равенство справедливо при любом простом 
+\begin_inset Formula $p$
+\end_inset
+
+ и любом 
+\begin_inset Formula $s>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Выберем некоторое число 
+\begin_inset Formula $x>2$
+\end_inset
+
+ и пусть 
+\begin_inset Formula $2=p_{1}<p_{2}<\dots<p_{r}$
+\end_inset
+
+ все простые числа, не превосходящие 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Перемножим равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t2.5-geometric-expansion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для всех простых чисел 
+\begin_inset Formula $p\le x$
+\end_inset
+
+.
+ В результате получается 
+\begin_inset Formula 
+\begin{equation}
+P\left(x\right)=\prod_{j=1}^{r}\left(1-\frac{1}{p_{j}^{s}}\right)^{-1}=\sum_{k_{1},\dots,k_{r}}\frac{1}{p_{1}^{k_{1}s}\cdot\dots\cdot p_{r}^{k_{r}s}},\label{eq:t2.5-Px-product-and-sums}
+\end{equation}
+
+\end_inset
+
+ где справа стоит бесконечная сумма, в которой показатели 
+\begin_inset Formula $k_{1},\dots,k_{r}$
+\end_inset
+
+ независимо пробегают множество всех целых неотрицательных чисел.
+ Слагаемые в рядах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t2.5-geometric-expansion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ положительны, поэтому согласно теореме о перемножении рядов
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нужно доказать и сослаться
+\end_layout
+
+\end_inset
+
+, равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t2.5-Px-product-and-sums"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ будет выполняться как бы мы ни упорядочивали слагаемые в его правой части.
+ Упорядочим их по возрастанию знаменателей.
+\end_layout
+
+\begin_layout Proof
+Среди этих знаменателей нет одинаковых, ведь по основной теореме арифметики
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ равенство 
+\begin_inset Formula 
+\[
+p_{1}^{k_{1}}\cdot\dots\cdot p_{r}^{k_{r}}=p_{1}^{l_{1}}\cdot\dots\cdot p_{r}^{l_{r}}
+\]
+
+\end_inset
+
+ выполняется лишь в случае 
+\begin_inset Formula $k_{1}=l_{1},\dots,k_{r}=l_{r}$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:t2.5-Px-product-and-sums"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно переписать в виде 
+\begin_inset Formula 
+\begin{equation}
+P\left(x\right)=\sum_{k_{1},\dots,k_{r}}\frac{1}{\left(p_{1}^{k_{1}}\cdot\dots\cdot p_{r}^{k_{r}}\right)^{s}}=\sum_{n\ge1}^{\prime}\frac{1}{n^{s}},\label{eq:Px-single-sum}
+\end{equation}
+
+\end_inset
+
+где знак 
+\begin_inset Formula $^{\prime}$
+\end_inset
+
+ означает, что суммирование происходит по всем натуральным числа, раскладывающим
+ся в произведение простых 
+\begin_inset Formula $p\le x$
+\end_inset
+
+.
+ По основной теореме арифметики 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ каждое натуральное число раскладывается в произведение простых.
+ Ясно также, что в случае 
+\begin_inset Formula $n\le x$
+\end_inset
+
+ эти простые не превосходят 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Поэтому равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Px-single-sum"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно переписать в виде 
+\begin_inset Formula 
+\[
+P\left(x\right)=\sum_{n\le x}\frac{1}{n^{s}}+\sum_{n>x}^{\prime}\frac{1}{n^{s}}.
+\]
+
+\end_inset
+
+ Преобразуя его, находим 
+\begin_inset Formula 
+\begin{equation}
+0<P\left(x\right)-\sum_{n\le x}\frac{1}{n^{s}}=\sum_{n>x}^{\prime}\frac{1}{n^{s}}\le\sum_{n>x}\frac{1}{n^{s}}.\label{eq:Px-bounds}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Второе неравенство выполняется в силу того, что в его правой части суммирование
+ происходит по большему множеству натуральных чисел, а сами слагаемые положитель
+ны.
+ Правая часть 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Px-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ стремится к нулю с ростом 
+\begin_inset Formula $x$
+\end_inset
+
+, ведь эта сумма является остатком сходящегося ряда 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:zeta-definition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+уточнить почему
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\to\infty}P\left(x\right)=\lim_{x\to\infty}\sum_{n\le x}\frac{1}{n^{s}}=\zeta\left(s\right).
+\]
+
+\end_inset
+
+Тождество Эйлера доказано.
+\end_layout
+
+\begin_layout Proof
+Прежде, чем выводить следствия из этого тождества, мы докажем одно вспомогательн
+ое утверждение.
+ Оно будет использоваться и в дальнейшем.
+ Поэтому докажем его в несколько большей общности, чем это потребуется здесь.
+\end_layout
+
+\begin_layout Lemma
+1.
+ При любом натуральном 
+\begin_inset Formula $N$
+\end_inset
+
+ справедливы неравенства 
+\begin_inset Formula 
+\[
+\ln\left(N+1\right)<\sum_{n=1}^{N}\frac{1}{n}<\ln\left(2N+1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+2.
+ Существует предел 
+\begin_inset Formula 
+\[
+\lim_{x\to+\infty}\left(\sum_{n\le x}\frac{1}{n}-\ln x\right)=\gamma>0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Численное значение предела равно 
+\begin_inset Formula $\gamma=0.57721566649\dots$
+\end_inset
+
+.
+ Эта математическая константа, такая же как 
+\begin_inset Formula $\pi$
+\end_inset
+
+ или 
+\begin_inset Formula $e$
+\end_inset
+
+, носит название постоянной Эйлера.
+ В отличие от двух последних констант, арифметические свойства постоянной
+ Эйлера пока не поддаются исследованиям.
+ Предполагается, что 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ иррациональна, но это в настоящее время не доказано.
+\end_layout
+
+\begin_layout Proof
+Для любого 
+\begin_inset Formula $t>0$
+\end_inset
+
+ справедливо неравенство
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+подсмотрел это
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\ln\left(1+t\right)<t$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Используется уже не первый раз, было бы хорошо доказать и сослаться
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{equation}
+\ln\left(n+1\right)-\ln n=\ln\left(\frac{n+1}{n}\right)=\ln\left(1+\frac{1}{n}\right)<\frac{1}{n}.\label{eq:logarithm-difference-inequality}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Суммируя это неравенство по всем 
+\begin_inset Formula $n$
+\end_inset
+
+ от 
+\begin_inset Formula $1$
+\end_inset
+
+ до 
+\begin_inset Formula $N$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{N}\ln\left(n+1\right)-\sum_{n=1}^{N}\ln n<\sum_{n=1}^{N}\frac{1}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+В первой сумме слева сделаем замену переменной: 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{N}\ln\left(n+1\right)=\sum_{n=2}^{N+1}\ln n,
+\]
+
+\end_inset
+
+тогда неравенство примет вид 
+\begin_inset Formula 
+\[
+\sum_{n=2}^{N+1}\ln n-\sum_{n=1}^{N}\ln N<\sum_{n=1}^{N}\frac{1}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Первую сумму слева можно переписать следующим образом:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\sum_{n=2}^{N+1}\ln n=\ln\left(N+1\right)+\sum_{n=1}^{N}\ln n-\ln1=\ln\left(N+1\right)+\sum_{n=1}^{N}\ln n,
+\]
+
+\end_inset
+
+ поэтому 
+\begin_inset Formula 
+\[
+\ln\left(N+1\right)<\sum_{n=1}^{N}\frac{1}{n},
+\]
+
+\end_inset
+
+что доказывает левое неравенство первого утверждения леммы.
+\end_layout
+
+\begin_layout Proof
+Также при 
+\begin_inset Formula $0<t<1$
+\end_inset
+
+ справедливо неравенство 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\ln\left(1+t\right)-\ln\left(1-t\right)>2t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Подставив 
+\begin_inset Formula $t=\frac{1}{2n}$
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+\frac{1}{n}<\ln\left(1+\frac{1}{2n}\right)-\ln\left(1-\frac{1}{2n}\right)=\ln\left(2n+1\right)-\ln\left(2n-1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Просуммируем эти неравенства: 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{N}\frac{1}{n}<\sum_{n=1}^{N}\left(\ln\left(2n+1\right)-\ln\left(2n-1\right)\right)=\ln\left(2N+1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Это завершает доказательство первого утверждения леммы.
+\end_layout
+
+\begin_layout Proof
+Для доказательства второго утверждения леммы обозначим 
+\begin_inset Formula 
+\[
+s_{N}=\sum_{n=1}^{N}\frac{1}{n}-\ln\left(N+1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С учётом 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:logarithm-difference-inequality"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+s_{N}-s_{N-1}=\frac{1}{N}-\ln\left(N+1\right)+\ln\left(N\right)=\\
+=\frac{1}{N}-\ln\left(\frac{N+1}{N}\right)=\frac{1}{N}-\ln\left(1+\frac{1}{N}\right)>\frac{1}{N}-\frac{1}{N}=0,
+\end{multline*}
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $s_{N}$
+\end_inset
+
+ — возрастающая последовательность.
+ Из первого утверждения леммы следует 
+\begin_inset Formula 
+\[
+s_{N}<\ln\left(2N+1\right)-\ln\left(N+1\right)=\ln\frac{2N+1}{N+1}<\ln2,
+\]
+
+\end_inset
+
+ так что последовательность 
+\begin_inset Formula $s_{N}$
+\end_inset
+
+ — ограниченная.
+ Как известно 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+нужна ссылка на матан
+\end_layout
+
+\end_inset
+
+, доказанные свойства означают существованию предела 
+\begin_inset Formula 
+\[
+\gamma=\lim_{N\to\infty}s_{N}=\lim_{N\to\infty}\left(\sum_{n=1}^{N}\frac{1}{n}-\ln N\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При любом 
+\begin_inset Formula $N\ge1$
+\end_inset
+
+ имеем 
+\begin_inset Formula $s_{N}\ge s_{1}=1-\ln2$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\gamma\ge1-\ln2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $x>1$
+\end_inset
+
+ — действительное число.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+\sum_{n\le x}\frac{1}{n}-\ln x=\sum_{n\le\left[x\right]}\frac{1}{n}-\ln x=s_{\left[x\right]}+\ln\left(\left[x\right]+1\right)-\ln x=\\
+=s_{\left[x\right]}+\ln\left(\frac{x-\left\{ x\right\} +1}{x}\right)=s_{\left[x\right]}+\ln\left(1+\frac{1-\left\{ x\right\} }{x}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С ростом 
+\begin_inset Formula $x$
+\end_inset
+
+ первое слагаемое в последнем выражении стремится к 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, а второе — к нулю, поэтому 
+\begin_inset Formula 
+\[
+\lim_{x\to\infty}\left(\sum_{n\le x}\frac{1}{n}-\ln x\right)=\gamma.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Лемма доказана полностью.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:2.11"
+
+\end_inset
+
+При любом 
+\begin_inset Formula $x\ge2$
+\end_inset
+
+ справедливо неравенство 
+\begin_inset Formula 
+\[
+\prod_{p\le x}\left(1-\frac{1}{p}\right)^{-1}>\ln x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что из этого неравенства следует бесконечность множества простых
+ чисел.
+ Ведь, если множество простых конечно, то функция, стоящая в левой части
+ неравенства постоянна при всех достаточно больших 
+\begin_inset Formula $x$
+\end_inset
+
+, но правая часть этого неравенства стремится к бесконечности.
+\end_layout
+
+\begin_layout Proof
+Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Px-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует неравенство
+\begin_inset Formula 
+\[
+P\left(x\right)=\prod_{p\le x}\left(1-\frac{1}{p^{s}}\right)^{-1}>\sum_{n\le x}\frac{1}{n^{s}},
+\]
+
+\end_inset
+
+ справедливое при любом 
+\begin_inset Formula $s>1$
+\end_inset
+
+.
+ Переходя в нём к пределу 
+\begin_inset Formula $s\to\infty$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+\prod_{p\le x}\left(1-\frac{1}{p}\right)^{-1}>\sum_{n\le x}\frac{1}{n}>\ln\left(\left[x\right]+1\right)>\ln x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В предыдущем параграфе была доказана расходимость ряда из чисел виде 
+\begin_inset Formula $1/p$
+\end_inset
+
+, где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число.
+ Докажем несколько более точное утверждение.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не сделал сам большую часть
+\end_layout
+
+\end_inset
+
+При любом 
+\begin_inset Formula $x\ge2$
+\end_inset
+
+ справедливо неравенство 
+\begin_inset Formula 
+\[
+\sum_{p\le x}\frac{1}{p}>\ln\ln x-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из неравенства 
+\begin_inset Formula $\ln\left(t+1\right)\le t$
+\end_inset
+
+ при 
+\begin_inset Formula $t=\frac{1}{p-1}$
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+\ln\left(\frac{1}{p-1}+1\right)=\ln\left(1-\frac{1}{p}\right)^{-1}\le\frac{1}{p-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Суммируя эти неравенства при всех простых 
+\begin_inset Formula $p\le x$
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\begin{multline*}
+\sum_{p\le x}\ln\left(1-\frac{1}{p}\right)^{-1}=\ln\prod_{p\le x}\left(1-\frac{1}{p}\right)^{-1}\le\sum_{p\le x}\frac{1}{p-1}=\\
+=\sum_{p\le x}\frac{1}{p}+\sum_{p\le x}\left(\frac{1}{p-1}-\frac{1}{p}\right)\le\\
+\le\sum_{p\le x}\frac{1}{p}+\sum_{n=2}^{\infty}\left(\frac{1}{n-1}-\frac{1}{n}\right)=\sum_{p\le x}\frac{1}{p}+1.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Применяя к левой части оценку из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:2.11"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+\sum_{p\le x}\frac{1}{p}\ge\ln\prod_{p\le x}\left(1-\frac{1}{p}\right)^{-1}-1\ge\ln\ln x-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Эйлер также нашёл формулы, связывающие значения дзета-функции в чётных положител
+ьных точках с числом 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ Например, 
+\begin_inset Formula 
+\[
+\zeta\left(2\right)=\frac{\pi^{2}}{6},\zeta\left(4\right)=\frac{\pi^{4}}{90},\zeta\left(6\right)=\frac{\pi^{6}}{945}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для значений в нечётных точках подобные соотношения неизвестны.
+ Предполагается, что они не существуют.
+\end_layout
+
+\begin_layout Standard
+Несмотря на то, что ряд 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:zeta-definition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ расходится при 
+\begin_inset Formula $s<1$
+\end_inset
+
+, дзета-функцию можно определить и при таких значениях аргумента.
+ Например, при 
+\begin_inset Formula $s>1$
+\end_inset
+
+ справедливо тождество 
+\begin_inset Formula 
+\[
+\left(1-2^{1-2}\right)\zeta\left(s\right)=\sum_{n=1}^{\infty}\frac{1}{n^{s}}-2\sum_{n=1}^{\infty}\frac{1}{\left(2n\right)^{s}}=1-\frac{1}{2^{s}}+\frac{1}{3^{s}}-\frac{1}{4^{s}}+\dots.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Последний ряд, как известно
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+сослаться
+\end_layout
+
+\end_inset
+
+, сходится при 
+\begin_inset Formula $s>0$
+\end_inset
+
+.
+ Поскольку множитель 
+\begin_inset Formula $\left(1-2^{1-s}\right)$
+\end_inset
+
+ отличен от нуля при 
+\begin_inset Formula $0<s<1$
+\end_inset
+
+, это равенство можно рассматривать как определение дзета-функции в интервале
+ 
+\begin_inset Formula $0<s<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В 1859 году Б.
+\begin_inset space \thinspace{}
+\end_inset
+
+Риман
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Бернхард Риман, 1826-1866, — немецкий математик, оказавший существенное
+ влияние на развитии теории аналитических функций, геометрии и теории чисел.
+\end_layout
+
+\end_inset
+
+ определил дзета-функцию при любом комплексном значении 
+\begin_inset Formula $s$
+\end_inset
+
+ и установил ряд её глубоких свойств.
+ От также первым использовал обозначение 
+\begin_inset Formula $\zeta\left(s\right)$
+\end_inset
+
+ для функции 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:zeta-definition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получившей впоследствии название дзета-функции Римана.
+ Как функция комплексного переменного 
+\begin_inset Formula $s=\sigma+it$
+\end_inset
+
+ дзета-функция аналитичная во всех точках комплексной плоскости, за исключением
+ точки 
+\begin_inset Formula $s=1$
+\end_inset
+
+, где она имеет полюс первого порядка.
+ Дзета-функция 
+\begin_inset Formula $\zeta\left(s\right)$
+\end_inset
+
+ обладает симметрией относительно точки 
+\begin_inset Formula $s=1/2$
+\end_inset
+
+, а именно удовлетворяет некоторому функциональному уравнению.
+ Она обращается в нуль в точках 
+\begin_inset Formula $s=-2,-4,-6,\dots$
+\end_inset
+
+, а, кроме того, как предположил Риман, имеет бесконечное количество нулей
+ в полосе 
+\begin_inset Formula $0\le\sigma\le1$
+\end_inset
+
+, расположенных симметрично относительно прямой 
+\begin_inset Formula $\sigma=1/2$
+\end_inset
+
+ и вещественной оси (этот факт был доказан в 1893 году Ж.
+\begin_inset space \thinspace{}
+\end_inset
+
+Адамаром
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Жак Адамар, 1865-1963, — французский математик.
+\end_layout
+
+\end_inset
+
+).
+ Риман высказал без доказательства и приближённую формулу
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Её доказал в 1895 году немецкий математик Ханс фон Мангольдт, 1854-1925.
+\end_layout
+
+\end_inset
+
+ для количества таких нулей в прямоугольнике 
+\begin_inset Formula $0\le\sigma\le1$
+\end_inset
+
+, 
+\begin_inset Formula $0\le t\le T$
+\end_inset
+
+.
+ Он также предположил, что все нули 
+\begin_inset Formula $\zeta\left(s\right)$
+\end_inset
+
+ в полосе 
+\begin_inset Formula $0\le\sigma\le1$
+\end_inset
+
+ в действительности лежат на прямой 
+\begin_inset Formula $\sigma=1/2$
+\end_inset
+
+.
+ Эта гипотеза — знаменитая 
+\begin_inset Quotes rld
+\end_inset
+
+гипотеза Римана
+\begin_inset Quotes rrd
+\end_inset
+
+ не доказана до сих пор.
+ Риман показал, что поведение 
+\begin_inset Formula $\pi\left(x\right)$
+\end_inset
+
+ тесно связано с расположением нулей 
+\begin_inset Formula $\zeta\left(s\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассматривая дзета-функцию как функцию, как функцию комплексного переменного,
+ Ж.
+\begin_inset space ~
+\end_inset
+
+Адамар и Ш.
+\begin_inset space \thinspace{}
+\end_inset
+
+Ж.
+\begin_inset space \thinspace{}
+\end_inset
+
+Валле-Пуссен
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Шарль Жан де ла Валле-Пуссен, 1866-1962, французский математик.
+\end_layout
+
+\end_inset
+
+ установил точный порядок роста функции 
+\begin_inset Formula $\pi\left(x\right)$
+\end_inset
+
+, доказав в 1896 году, что 
+\begin_inset Formula $\pi\left(x\right)\sim\frac{x}{\ln x}$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\begin{equation}
+\lim_{x\to\infty}\frac{\pi\left(x\right)}{\frac{x}{\ln x}}=1.\label{eq:asymtottic-distribution-of-primes}
+\end{equation}
+
+\end_inset
+
+ Это утверждение называется 
+\emph on
+асимптотический закон распределения простых чисел
+\emph default
+.
+ Если 
+\begin_inset Formula $\psi\left(x\right)$
+\end_inset
+
+ — натуральный логарифм наименьшего общего кратного всех целых чисел 
+\begin_inset Formula $n$
+\end_inset
+
+, удовлетворяющих неравенствам 
+\begin_inset Formula $2\le n\le x$
+\end_inset
+
+ и 
+\begin_inset Formula $\theta\left(x\right)=\sum_{p\le x}\ln p$
+\end_inset
+
+, то каждая из асимптотических формул 
+\begin_inset Formula $\psi\left(x\right)\sim x$
+\end_inset
+
+ и 
+\begin_inset Formula $\theta\left(x\right)\sim x$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+ эквивалентная равенству 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:asymtottic-distribution-of-primes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Валле-Пуссен дал и оценку точности, с которой функция 
+\begin_inset Formula $x/\ln x$
+\end_inset
+
+ приближает 
+\begin_inset Formula $\pi\left(x\right)$
+\end_inset
+
+.
+ Важную роль в доказательстве сыграло утверждение об отсутствии нулей дзета-функ
+ции Римна в некоторой области полосы 
+\begin_inset Formula $0\le\sigma\le1$
+\end_inset
+
+ .
+ При этом выяснилось, что для всех достаточно больших 
+\begin_inset Formula $x$
+\end_inset
+
+ функция 
+\begin_inset Formula $\pi\left(x\right)$
+\end_inset
+
+ лучше приближается интегралом 
+\begin_inset Formula 
+\[
+\intop_{2}^{x}\frac{du}{\ln u},
+\]
+
+\end_inset
+
+чем отношением 
+\begin_inset Formula $x/\ln x$
+\end_inset
+
+.
+ Из справедливости недоказанной гипотезы Римана можно вывести оценку 
+\begin_inset Formula 
+\[
+\left|\pi\left(x\right)-\intop_{2}^{x}\frac{du}{\ln u}\right|\le c\sqrt{x}\ln x,
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $c$
+\end_inset
+
+ — некоторая положительная постоянная.
+\end_layout
+
+\begin_layout Standard
+Наконец, приведём одно элементарное утверждение, эквивалентное гипотезе
+ Римана.
+ Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — натуральное число.
+ Расположим все дроби 
+\begin_inset Formula $a/b$
+\end_inset
+
+ с условиями 
+\begin_inset Formula 
+\[
+0<a\le b,\left(a,b\right)=1,b\le N,
+\]
+
+\end_inset
+
+ в порядке возрастания, и обозначим их 
+\begin_inset Formula $r_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $1\le k\le M$
+\end_inset
+
+.
+ Такая последовательность называется 
+\emph on
+рядом Фарея порядка 
+\begin_inset Formula $N$
+\end_inset
+
+
+\emph default
+.
+ Ясно, что количество дробей 
+\begin_inset Formula $M$
+\end_inset
+
+ в ряде Фарея зависит от 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Для справедливости гипотезы Римана необходимо и достаточно, чтобы при каждом
+ 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ существовала зависящая только от 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ постоянная 
+\begin_inset Formula $C$
+\end_inset
+
+, при которой для всех 
+\begin_inset Formula $N\ge1$
+\end_inset
+
+ выполняется оценка 
+\begin_inset Formula 
+\[
+\sum_{k=1}^{M}\left|r_{k}-\frac{k}{M}\right|\le C\cdot N^{\frac{1}{2}+\varepsilon}.
+\]
+
+\end_inset
+
+ Это неравенство означает, что дроби ряда Фарея не должны слишком сильно
+ отклоняться от соответствующих дробей, полученных делением отрезка 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+ на 
+\begin_inset Formula $M$
+\end_inset
+
+ равных частей.
+\end_layout
+
 \end_body
 \end_document
