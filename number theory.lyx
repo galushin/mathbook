@@ -4661,6 +4661,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:fundamental-theorem-of-arithmetics"
+
+\end_inset
+
 Основная теорема арифметики
 \end_layout
 
@@ -5542,6 +5548,10 @@ u=\prod_{p}p^{v_{p}\left(n\right)-v_{p}\left(d\right)}
 .
 \end_layout
 
+\begin_layout Standard
+Ещё одно простое, но полезное свойство будет использовать в дальнейшем.
+\end_layout
+
 \begin_layout Claim
 \begin_inset CommandInset label
 LatexCommand label
@@ -5549,7 +5559,6 @@ name "claim:equality-of-prime-multiplicities-means-equality"
 
 \end_inset
 
-Ещё одно простое, но полезное свойство будет использовать в дальнейшем.
  Если 
 \begin_inset Formula $a$
 \end_inset
@@ -10056,7 +10065,7 @@ noprefix "false"
 \end_inset
 
  положительны, поэтому согласно теореме о перемножении рядов
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
@@ -10312,7 +10321,7 @@ status open
 \end_inset
 
 
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
@@ -10515,7 +10524,7 @@ s_{N}<\ln\left(2N+1\right)-\ln\left(N+1\right)=\ln\frac{2N+1}{N+1}<\ln2,
 
  — ограниченная.
  Как известно 
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
@@ -10821,11 +10830,11 @@ noprefix "false"
 
 \begin_layout Standard
 Последний ряд, как известно
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-сослаться
+Сослаться на матан?
 \end_layout
 
 \end_inset
@@ -11210,6 +11219,477 @@ noprefix "false"
 \end_inset
 
  равных частей.
+\end_layout
+
+\begin_layout Chapter
+Арифметические функции
+\end_layout
+
+\begin_layout Standard
+В теории чисел встречается множество функций.
+ Арифметическими принято называть вообще говоря комплексно значные функции,
+ определённые на множестве натуральных чисел.
+ Свойства некоторых, наиболее важных из них, мы обсудим в этой главе.
+\end_layout
+
+\begin_layout Section
+Мультипликативные функции и их свойства
+\end_layout
+
+\begin_layout Standard
+Функция 
+\begin_inset Formula $\theta\left(n\right)$
+\end_inset
+
+, определённая на множестве натуральных чисел, называется 
+\emph on
+мультипликативной
+\emph default
+, если для любых двух взаимно простых натуральных чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\[
+\theta\left(ab\right)=\theta\left(a\right)\theta\left(b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Например, для любого действительного числа 
+\begin_inset Formula $s$
+\end_inset
+
+ функция 
+\begin_inset Formula $\theta\left(n\right)=n^{s}$
+\end_inset
+
+ есть мультипликативная функция.
+ Далее мы встретим и другие примеры мультипликативных функций.
+\end_layout
+
+\begin_layout Claim
+\begin_inset CommandInset label
+LatexCommand label
+name "claim:multiplicative-function-of-one-is-one"
+
+\end_inset
+
+Если 
+\begin_inset Formula $\theta\left(n\right)$
+\end_inset
+
+ — не равная тождественно нулю мультипликативная функция, то 
+\begin_inset Formula $\theta\left(1\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Действительно, если существует натуральное число 
+\begin_inset Formula $a$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $\theta\left(a\right)\neq0$
+\end_inset
+
+, так как 
+\begin_inset Formula $\left(a,1\right)=1$
+\end_inset
+
+, то по определению мультипликативной функции: 
+\begin_inset Formula $\theta\left(a\right)=\theta\left(a\cdot1\right)=\theta\left(a\right)\cdot\theta\left(1\right).$
+\end_inset
+
+ Разделив левую и правую части этого равенства на 
+\begin_inset Formula $\theta\left(a\right)\neq0$
+\end_inset
+
+, получим 
+\begin_inset Formula $\theta\left(1\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Любое натуральное число 
+\begin_inset Formula $a>1$
+\end_inset
+
+ единственным образом представляется в виде произведения простых сомножителей,
+ то есть 
+\begin_inset Formula $a=p_{1}^{k_{1}}\cdot\dots\cdot p_{r}^{k_{r}}$
+\end_inset
+
+.
+ Поэтому для мультипликативной функции 
+\begin_inset Formula $\theta\left(n\right)$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\begin{equation}
+\theta\left(a\right)=\theta\left(p_{1}^{k_{1}}\right)\cdot\dots\cdot\theta\left(p_{r}^{k_{r}}\right)=\prod_{p\mid a}\theta\left(p^{v_{p}\left(a\right)}\right),\label{eq:multiplicative-function-prime-decomposition}
+\end{equation}
+
+\end_inset
+
+так что любая мультипликативная функция однозначно определяется заданием
+ её значений на степенях простых чисел.
+\end_layout
+
+\begin_layout Standard
+Более того, задав произвольным способом функцию на степенях простых чисел
+ и определив её значения на всех натуральных числах с помощью равенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:multiplicative-function-prime-decomposition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, мы получим мультипликативную функцию.
+\end_layout
+
+\begin_layout Standard
+Произведение мультипликативных функций есть мультипликативная функция
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Вынести это в отдельное утверждение?
+\end_layout
+
+\end_inset
+
+.
+ Действительно, если 
+\begin_inset Formula $\theta\left(n\right)=\theta_{1}\left(n\right)\cdot\theta_{2}\left(n\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\theta_{1}\left(n\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\theta_{2}\left(n\right)$
+\end_inset
+
+ — мультипликативные функции, то для любых двух взаимно простых натуральных
+ чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ имеет место 
+\begin_inset Formula 
+\begin{multline*}
+\theta\left(ab\right)=\theta_{1}\left(ab\right)\cdot\theta_{2}\left(ab\right)=\theta_{1}\left(a\right)\theta_{1}\left(b\right)\theta_{2}\left(a\right)\theta_{2}\left(b\right)=\\
+=\theta_{1}\left(a\right)\theta_{2}\left(a\right)\theta_{1}\left(b\right)\theta_{2}\left(b\right)=\theta\left(a\right)\theta\left(b\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Опишем ещё один способ строить мультипликативные функции.
+\end_layout
+
+\begin_layout Lemma
+Пусть 
+\begin_inset Formula $\theta\left(n\right)$
+\end_inset
+
+ — мультипликативная функция и функция 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ определена равенствами 
+\begin_inset Formula 
+\[
+f\left(n\right)=\sum_{d\mid n}\theta\left(d\right),n\ge1,
+\]
+
+\end_inset
+
+ где суммирование происходит по всем натуральным делителям числа 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ — мультипликативная функция и 
+\begin_inset Formula 
+\[
+f\left(n\right)=\prod_{p\mid n}\left(1+\theta\left(p\right)+\theta\left(p^{2}\right)+\dots+\theta\left(p^{v_{p}\left(n\right)}\right)\right).
+\]
+
+\end_inset
+
+Здесь произведение берётся по всем простым делителям числа 
+\begin_inset Formula $n$
+\end_inset
+
+, а 
+\begin_inset Formula $v_{p}\left(n\right)$
+\end_inset
+
+, как и в разделе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:fundamental-theorem-of-arithmetics"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+есть кратность, с которой 
+\begin_inset Formula $p$
+\end_inset
+
+ входит в разложение 
+\begin_inset Formula $n$
+\end_inset
+
+ на простые сомножители.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — взаимно простые числа, то есть 
+\begin_inset Formula $\left(a,b\right)=1$
+\end_inset
+
+ или у этих чисел нет общих делителей, кроме 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ По основной теореме арифметики 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и утверждению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:prime-multiplicity-of-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, делители числа 
+\begin_inset Formula $ab$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $d_{1}d_{2}$
+\end_inset
+
+, где 
+\begin_inset Formula $d_{1}$
+\end_inset
+
+ — делитель 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $d_{2}$
+\end_inset
+
+ — делитель числа 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ При этом 
+\begin_inset Formula $\left(d_{1},d_{2}\right)=1$
+\end_inset
+
+, так как в противном случае у 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ был бы общий делитель 
+\begin_inset Formula $\left(d_{1},d_{2}\right)>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+f\left(ab\right)=\sum_{d\mid\left(ab\right)}\theta\left(d\right)=\sum_{d_{1}\mid a}\sum_{d_{2}\mid b}\theta\left(d_{1}d_{2}\right)=\\
+=\sum_{d_{1}\mid a}\sum_{d_{2}\mid b}\theta\left(d_{1}\right)\theta\left(d_{2}\right)=\sum_{d_{1}\mid a}\theta\left(d_{1}\right)\sum_{d_{2}\mid b}\theta\left(d_{2}\right)=\\
+=\theta\left(a\right)\cdot\theta\left(b\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ действительно является мультипликативной функцией.
+\end_layout
+
+\begin_layout Proof
+Теперь мы можем воспользоваться формулой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:multiplicative-function-prime-decomposition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для функции 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+f\left(n\right)=\prod_{p\mid a}f\left(p^{v_{p}\left(n\right)}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По определению функции 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+f\left(p^{v_{p}\left(n\right)}\right)=\sum_{d\mid p^{v_{p}\left(n\right)}}\theta\left(d\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число, то делителями числа 
+\begin_inset Formula $p^{v_{p}\left(n\right)}$
+\end_inset
+
+, по утверждению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:prime-multiplicity-of-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, являются числа 
+\begin_inset Formula $p^{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $0\le m\le v_{p}\left(n\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+f\left(p^{v_{p}\left(n\right)}\right)=\sum_{m=0}^{v_{p}\left(n\right)}\theta\left(p^{m}\right)=\theta\left(1\right)+\theta\left(p\right)+\theta\left(p^{2}\right)+\dots+\theta\left(p^{v_{p}\left(n\right)}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Как было показано выше в утверждении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:multiplicative-function-of-one-is-one"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\theta\left(1\right)=1$
+\end_inset
+
+, поэтому окончательно получаем:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+f\left(n\right)=\prod_{p\mid a}\left(1+\theta\left(p\right)+\theta\left(p^{2}\right)+\dots+\theta\left(p^{v_{p}\left(n\right)}\right)\right),
+\]
+
+\end_inset
+
+ что и завершает доказательство леммы.
 \end_layout
 
 \end_body
