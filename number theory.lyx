@@ -12915,5 +12915,281 @@ T\left(x\right)=\frac{6}{\pi^{2}}\cdot x+O\left(\sqrt{x}\right).
 .
 \end_layout
 
+\begin_layout Section
+Функция Эйлера
+\end_layout
+
+\begin_layout Standard
+Для каждого целого числа 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ обозначим символом 
+\begin_inset Formula $\varphi\left(n\right)$
+\end_inset
+
+ количество натуральных чисел, не превосходящих 
+\begin_inset Formula $n$
+\end_inset
+
+ и взаимно простых 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Другими словами 
+\begin_inset Formula $\varphi\left(n\right)$
+\end_inset
+
+ есть количество целых чисел 
+\begin_inset Formula $k$
+\end_inset
+
+, удовлетворяющих условиям 
+\begin_inset Formula 
+\[
+1\le k\le n,\left(k,n\right)=1.
+\]
+
+\end_inset
+
+ Так определённую функцию натурального аргумента 
+\begin_inset Formula $n$
+\end_inset
+
+ называют функцией Эйлера.
+\end_layout
+
+\begin_layout Standard
+В частности, имеем 
+\begin_inset Formula $\varphi\left(1\right)$
+\end_inset
+
+.
+ Среди чисел 
+\begin_inset Formula $1,2,3,4,5,6$
+\end_inset
+
+ взаимно простыми с 
+\begin_inset Formula $6$
+\end_inset
+
+ являются лишь 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $\varphi\left(6\right)=2$
+\end_inset
+
+.
+ Для каждого простого числа лишь одно из чисел 
+\begin_inset Formula $1,2,\dots,p$
+\end_inset
+
+ не взаимно просто с 
+\begin_inset Formula $p$
+\end_inset
+
+, а именно — само число 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $\varphi\left(p\right)=p-1.$
+\end_inset
+
+ Если 
+\begin_inset Formula $n=p^{r}$
+\end_inset
+
+ — степень простого числа, то нетривиальный общий делитель с 
+\begin_inset Formula $n$
+\end_inset
+
+ могут иметь лишь числа, делящиеся на 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть числа вида 
+\begin_inset Formula $pk$
+\end_inset
+
+.
+ Неравенство 
+\begin_inset Formula $pk\le p^{r}$
+\end_inset
+
+ выполняется для целых чисел 
+\begin_inset Formula $k\le p^{r-1}$
+\end_inset
+
+ и только для них.
+ Поэтому 
+\begin_inset Formula 
+\[
+\varphi\left(p^{r}\right)=p^{r}-p^{r-1}=p^{r}\left(1-\frac{1}{p}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Свойства функции Эйлера описываются следующей теоремой.
+\end_layout
+
+\begin_layout Theorem
+1.
+ Для любого натурального 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula 
+\[
+\varphi\left(n\right)=n\cdot\prod_{p\mid n}\left(1-\frac{1}{p}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+2.
+ Функция Эйлера мультипликативна, то есть для любых двух натуральных взаимно
+ простых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\varphi\left(a\cdot b\right)=\varphi\left(a\right)\cdot\varphi\left(b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+Для 
+\begin_inset Formula $n=p^{r}$
+\end_inset
+
+, где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое, а 
+\begin_inset Formula $r$
+\end_inset
+
+ — положительное натуральное, первое утверждение теоремы уже доказано.
+ Если первое утверждение уже доказано, то второе можно доказать исходя из
+ основной теоремы арифметики.
+ Но может быть проще доказать второе утверждение, а затем применить его
+ к разложению 
+\begin_inset Formula $n$
+\end_inset
+
+ на простые числа?
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать первое утверждение
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $n=p_{1}^{k_{1}}\cdot\dots\cdot p_{r}^{k_{r}}$
+\end_inset
+
+, где 
+\begin_inset Formula $p_{1},\dots,p_{r}$
+\end_inset
+
+ (по основной теореме арифметики 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ такое разложение существует и единственно).
+ Число 
+\begin_inset Formula $d$
+\end_inset
+
+ не является взаимно простым с 
+\begin_inset Formula $n$
+\end_inset
+
+, если его разложение на простые множители содержит хотя бы одно из чисел
+ 
+\begin_inset Formula $p_{1},\dots,p_{r}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\varphi\left(n\right)=n-\sum_{d\mid n}\frac{n}{d},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать второе утверждение
+\end_layout
+
+\end_inset
+
+Какие числа являются взаимно простыми с 
+\begin_inset Formula $ab$
+\end_inset
+
+? 
+\end_layout
+
 \end_body
 \end_document
