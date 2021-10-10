@@ -9939,6 +9939,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Euler-identity-zeta"
+
+\end_inset
+
 При каждом 
 \begin_inset Formula $s>1$
 \end_inset
@@ -11442,9 +11448,9 @@ f\left(n\right)=\sum_{d\mid n}\theta\left(d\right),n\ge1,
 
  — мультипликативная функция и 
 \begin_inset Formula 
-\[
-f\left(n\right)=\prod_{p\mid n}\left(1+\theta\left(p\right)+\theta\left(p^{2}\right)+\dots+\theta\left(p^{v_{p}\left(n\right)}\right)\right).
-\]
+\begin{equation}
+f\left(n\right)=\prod_{p\mid n}\left(1+\theta\left(p\right)+\theta\left(p^{2}\right)+\dots+\theta\left(p^{v_{p}\left(n\right)}\right)\right).\label{eq:sum-of-multiplicative-over-divisors}
+\end{equation}
 
 \end_inset
 
@@ -11690,6 +11696,1223 @@ f\left(n\right)=\prod_{p\mid a}\left(1+\theta\left(p\right)+\theta\left(p^{2}\ri
 \end_inset
 
  что и завершает доказательство леммы.
+\end_layout
+
+\begin_layout Section
+Функция Мёбиуса и формулы обращения
+\end_layout
+
+\begin_layout Standard
+Функцией Мёбиуса
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+А.
+\begin_inset space \thinspace{}
+\end_inset
+
+Ф.
+\begin_inset space \thinspace{}
+\end_inset
+
+Мёбиус, 1790-1868, — немецкий математик и астроном
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\mu\left(n\right)$
+\end_inset
+
+ называется мультипликативная функция, определённая на степенях простых
+ чисел следующим образом 
+\begin_inset Formula 
+\[
+\mu\left(p\right)=-1,\mu\left(p^{k}\right)=0,k\ge2.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пользуясь мультипликативностью её можно доопределить на всех натуральных
+ числах следующим образом:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mu\left(1\right)=1$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mu\left(n\right)=0$
+\end_inset
+
+, если 
+\begin_inset Formula $n$
+\end_inset
+
+ делится на квадрат простого числа;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mu\left(p_{1}p_{2}\dots p_{r}\right)=\left(-1\right)^{r}$
+\end_inset
+
+, если все простые числа 
+\begin_inset Formula $p_{1},p_{2},\dots,p_{r}$
+\end_inset
+
+ различны.
+\end_layout
+
+\begin_layout Standard
+Например, 
+\begin_inset Formula 
+\[
+\mu\left(5\right)=\mu\left(7\right)=-1,\mu\left(6\right)=\mu\left(10\right)=1,\mu\left(8\right)=\mu\left(9\right)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Функция 
+\begin_inset Formula $\mu\left(n\right)$
+\end_inset
+
+ по определению является мультипликативной.
+ Поэтому будет мультипликативной и функция 
+\begin_inset Formula $\theta\left(n\right)=\frac{\mu\left(n\right)}{n^{s}}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее
+\end_layout
+
+\end_inset
+
+.
+ В дальнейшем мы считаем, что 
+\begin_inset Formula $s>1$
+\end_inset
+
+ — фиксированное действительное число.
+ Равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-multiplicative-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для выбранной функции 
+\begin_inset Formula $\theta\left(n\right)$
+\end_inset
+
+ принимает вид 
+\begin_inset Formula 
+\[
+\sum_{d\mid n}\frac{\mu\left(d\right)}{d^{s}}=\prod_{p\mid n}\left(1-\frac{1}{p^{s}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это равенство справедливо для любого натурального 
+\begin_inset Formula $n$
+\end_inset
+
+ и любого действительного числа 
+\begin_inset Formula $s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Выберем 
+\begin_inset Formula $n=\prod_{p\le x}p$
+\end_inset
+
+ при некотором достаточно большом 
+\begin_inset Formula $x$
+\end_inset
+
+ и рассмотрим две суммы 
+\begin_inset Formula $\sum_{d\mid n}\frac{\mu\left(d\right)}{d^{s}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\sum_{d\le x}\frac{\mu\left(d\right)}{d^{s}}$
+\end_inset
+
+.
+ Учитывая, что 
+\begin_inset Formula $\mu\left(d\right)=0$
+\end_inset
+
+, если 
+\begin_inset Formula $d$
+\end_inset
+
+ делится на квадрат простого числа, заключаем, что каждое ненулевое слагаемое
+ второй сумму содержится среди слагаемых первой суммы.
+ Поэтому
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Подробнее доказать, поучему
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\left|\sum_{d\mid n}\frac{\mu\left(d\right)}{d^{s}}-\sum_{d\le x}\frac{\mu\left(d\right)}{d^{s}}\right|\le\sum_{d>x}\frac{1}{d^{s}}
+\]
+
+\end_inset
+
+и, значит, 
+\begin_inset Formula 
+\[
+\left|\prod_{p\le x}\left(1-\frac{1}{p^{s}}\right)-\sum_{d\le x}\frac{\mu\left(d\right)}{d^{s}}\right|\le\sum_{d>x}\frac{1}{d^{s}}.
+\]
+
+\end_inset
+
+ Переходя в этом неравенстве к пределу при 
+\begin_inset Formula $x\to+\infty$
+\end_inset
+
+ и пользуясь тождеством Эйлера (теорема  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Euler-identity-zeta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), находим 
+\begin_inset Formula 
+\begin{equation}
+\sum_{d=1}^{\infty}\frac{\mu\left(d\right)}{d^{s}}=\prod_{p}\left(1-\frac{1}{p^{s}}\right)=\frac{1}{\zeta\left(s\right)}.\label{eq:sum-of-moebius-and-inverser-of-zeta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, функция Мёбиуса имеет самое непосредственное отношение к
+ дзета-функции Римана.
+ В частности, гипотеза Римана о нулях дзета-функции эквивалентна оценке
+ 
+\begin_inset Formula 
+\[
+\sum_{d\le x}\mu\left(d\right)=O\left(x^{1/2+\varepsilon}\right),
+\]
+
+\end_inset
+
+ при любом сколь угодно малом положительном 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Можно проверить с помощью тождества Эйлера, что равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-moebius-and-inverser-of-zeta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ эквивалентно следующему утверждению, которое будет доказано независимо
+ от 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-moebius-and-inverser-of-zeta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:sum-of-mu-over-divisors"
+
+\end_inset
+
+Справедливы равенства 
+\begin_inset Formula 
+\[
+\sum_{d\mid n}\mu\left(d\right)=\begin{cases}
+1, & n=1,\\
+0, & n>1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Для числа 
+\begin_inset Formula $n=1$
+\end_inset
+
+ делителем является только 
+\begin_inset Formula $1$
+\end_inset
+
+, поэтому получаем, по определению, 
+\begin_inset Formula $\sum_{d\mid n}\mu\left(d\right)=\mu\left(1\right)=1$
+\end_inset
+
+.
+ Таким образом, первый случай доказан.
+ 
+\end_layout
+
+\begin_layout Proof
+Рассмотрим теперь случай 
+\begin_inset Formula $n>1$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Я написал более пространное доказательство
+\end_layout
+
+\end_inset
+
+По определению функции Мёбиуса и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-multiplicative-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+\sum_{d\mid n}\mu\left(d\right)=\prod_{p\mid n}\left(1+\mu\left(p\right)\right)=\prod_{p\mid n}\left(1-1\right)=\prod_{p\mid n}0=0,
+\]
+
+\end_inset
+
+что завершает доказательство леммы.
+\end_layout
+
+\begin_layout Standard
+Следующее утверждение называется формулой обращения Мёбиуса.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:inverse-sum-over-divisors"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ — произвольная функция натурального аргумента и 
+\begin_inset Formula 
+\[
+g\left(n\right)=\sum_{d\mid n}f\left(d\right).
+\]
+
+\end_inset
+
+Тогда справедливы равенства 
+\begin_inset Formula 
+\begin{equation}
+f\left(n\right)=\sum_{d\mid n}\mu\left(d\right)g\left(\frac{n}{d}\right).\label{eq:inverse-sum-over-divisors}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $n=1$
+\end_inset
+
+ имеем 
+\begin_inset Formula $g\left(1\right)=f\left(1\right)$
+\end_inset
+
+ и требуемое равенство выполняется:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\sum_{d\mid1}\mu\left(d\right)g\left(\frac{1}{d}\right)=\mu\left(1\right)g\left(1\right)=1=f\left(1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+.
+ Тогда, по определению функции 
+\begin_inset Formula $g$
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+\sum_{d\mid n}\mu\left(d\right)g\left(\frac{n}{d}\right)=\sum_{d\mid n}\mu\left(d\right)\sum_{c\mid\frac{n}{d}}f\left(c\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Изменим порядок суммирования: 
+\begin_inset Formula 
+\[
+\sum_{d\mid n}\mu\left(d\right)g\left(\frac{n}{d}\right)=\sum_{d\mid n}\mu\left(d\right)\sum_{c\mid\frac{n}{d}}f\left(c\right)=\sum_{c\mid n}f\left(c\right)\sum_{d\mid\frac{n}{c}}\mu\left(d\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:sum-of-mu-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, внутренняя сумма в правой части отлична от нуля только при 
+\begin_inset Formula $\frac{n}{c}=1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\sum_{d\mid n}\mu\left(d\right)g\left(\frac{n}{d}\right)=\sum_{c\mid n}f\left(c\right)\sum_{d\mid\frac{n}{c}}\mu\left(d\right)=\sum_{c\mid n}f\left(c\right)\left[n=c\right]=f\left(n\right),
+\]
+
+\end_inset
+
+ что и требовалось доказать.
+\end_layout
+
+\begin_layout Standard
+Укажем теперь несколько более общее тождество, чем 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:inverse-sum-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, лежащее в основе так называемых 
+\begin_inset Quotes rld
+\end_inset
+
+методов решета
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Связь этого тождества с решетом Эратосфена, мотивирующая название, указывается
+ далее в примере 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:sample-eratosphen-moebius"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:general-moebius-inverse"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $a_{1},\dots,a_{r}$
+\end_inset
+
+ — действительные, а 
+\begin_inset Formula $b_{1},\dots,b_{r}$
+\end_inset
+
+ — натуральные числа.
+ Для любого натурального 
+\begin_inset Formula $d$
+\end_inset
+
+ положим 
+\begin_inset Formula 
+\[
+c_{d}=\sum_{j:d\mid b_{j}}a_{j},
+\]
+
+\end_inset
+
+ где суммирование ведётся по всем индексам 
+\begin_inset Formula $j$
+\end_inset
+
+, для которых 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Тогда справедливо равенство 
+\begin_inset Formula 
+\begin{equation}
+\sum_{d}\mu\left(d\right)c_{d}=\sum_{j:b_{j}=1}a_{j}.\label{eq:general-moebius-inverse}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Суммирование в левой сумме равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general-moebius-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ проводится по всем натуральным 
+\begin_inset Formula $d$
+\end_inset
+
+, а в правой сумме — по всем индексам 
+\begin_inset Formula $j$
+\end_inset
+
+ с условием 
+\begin_inset Formula $b_{j}=1$
+\end_inset
+
+.
+ Заметим также, что лишь конечное количество чисел 
+\begin_inset Formula $c_{d}$
+\end_inset
+
+ отлично от нуля, ведь множество делителей чисел 
+\begin_inset Formula $b_{1},\dots,b_{r}$
+\end_inset
+
+ конечно.
+\end_layout
+
+\begin_layout Proof
+По определению 
+\begin_inset Formula $c_{d}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\sum_{d}\mu\left(d\right)c_{d}=\sum_{d}\mu\left(d\right)\sum_{j:d\mid b_{j}}a_{j}=\sum_{d}\mu\left(d\right)\sum_{j=1}^{r}a_{j}\cdot\left[d\mid b_{j}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Изменим порядок суммирования: 
+\begin_inset Formula 
+\[
+\sum_{d}\mu\left(d\right)c_{d}=\sum_{j=1}^{r}a_{j}\sum_{d}\mu\left(d\right)\cdot\left[d\mid b_{j}\right]=\sum_{j=1}^{r}a_{j}\sum_{d\mid b_{j}}\mu\left(d\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:sum-of-mu-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, внутренняя сумма в правой части отлична от нуля только при 
+\begin_inset Formula $b_{j}=1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\sum_{d}\mu\left(d\right)c_{d}=\sum_{j=1}^{r}a_{j}\text{\ensuremath{\cdot}\left[b_{j}=1\right]=\ensuremath{\sum_{j:b_{j}=1}a_{j},}}
+\]
+
+\end_inset
+
+что и требовалось доказать.
+\end_layout
+
+\begin_layout Standard
+Теорема 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:inverse-sum-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ есть частный случай последнего утверждения.
+ Действительно, пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ — произвольное натуральное число и 
+\begin_inset Formula $1<b_{1}<b_{2}<\dots<b_{r}$
+\end_inset
+
+ — все его натуральные делители.
+ Для функции 
+\begin_inset Formula $f$
+\end_inset
+
+ из теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:inverse-sum-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ положим 
+\begin_inset Formula $a_{j}=f\left(n/b_{j}\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+c_{d}=\sum_{j:d\mid b_{j}}f\left(\frac{n}{b_{j}}\right)=\sum_{c\mid\frac{n}{d}}f\left(\frac{n}{cd}\right)=g\left(\frac{n}{d}\right),
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $g$
+\end_inset
+
+ — функция, определённая в теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:inverse-sum-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Учитывая, что 
+\begin_inset Formula $c_{d}=0$
+\end_inset
+
+ при 
+\begin_inset Formula $d\nmid n$
+\end_inset
+
+, находим равенства 
+\begin_inset Formula 
+\[
+\sum_{j:b_{j}=1}a_{j}=\sum_{j:b_{j}=1}f\left(\frac{n}{b_{j}}\right)=f\left(n\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{d}\mu\left(d\right)c_{d}=\sum_{d\mid n}\mu\left(d\right)g\left(\frac{n}{d}\right),
+\]
+
+\end_inset
+
+ из которых, в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general-moebius-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, следует равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:inverse-sum-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+С приложениями теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:inverse-sum-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ мы ещё встретимся в дальнейшем.
+ Сейчас же рассмотрим несколько примеров применения теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:general-moebius-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "exa:sample-eratosphen-moebius"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $x\ge2$
+\end_inset
+
+ — действительное, а 
+\begin_inset Formula $D$
+\end_inset
+
+ — натуральное число.
+ Положим в теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:general-moebius-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $r=\left[x\right]$
+\end_inset
+
+, 
+\begin_inset Formula $a_{j}=1$
+\end_inset
+
+, 
+\begin_inset Formula $b_{j}=\left(j,D\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $j=1,\dots,r$
+\end_inset
+
+.
+ Тогд 
+\begin_inset Formula 
+\[
+c_{d}=\sum_{j:d\mid\left(j,D\right)}1=\begin{cases}
+0, & d\nmid D,\\
+\left[\frac{x}{d}\right], & d\mid D.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general-moebius-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ приобретает следующий вид 
+\begin_inset Formula 
+\begin{equation}
+\sum_{d\mid D}\mu\left(d\right)\left[\frac{x}{d}\right]=N,\label{eq:sample-eratosphen-moebius}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $N$
+\end_inset
+
+ — количество натуральных чисел 
+\begin_inset Formula $n\le x$
+\end_inset
+
+, взаимно простых с 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Если выбрать 
+\begin_inset Formula $D=\prod_{p\le y}p$
+\end_inset
+
+, число 
+\begin_inset Formula $N$
+\end_inset
+
+ в формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-eratosphen-moebius"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ равняется количеству натуральных 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $1\le n\le x$
+\end_inset
+
+, не имеющих простых делителей 
+\begin_inset Formula $p\le y$
+\end_inset
+
+.
+ Таким образом, число 
+\begin_inset Formula $N-1$
+\end_inset
+
+ равняется в этом случае количеству натуральных чисел 
+\begin_inset Formula $n$
+\end_inset
+
+ на отрезке 
+\begin_inset Formula $y<n\le x$
+\end_inset
+
+, оставшихся невычеркнутыми после просеивания решетом Эратосфена с помощью
+ простых чисел 
+\begin_inset Formula $p\le y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Выберем 
+\begin_inset Formula $D=\prod_{p\le\sqrt{x}}p$
+\end_inset
+
+.
+ Так как каждое составное число 
+\begin_inset Formula $n\le x$
+\end_inset
+
+ имеет простой делитель 
+\begin_inset Formula $p\le\sqrt{x}$
+\end_inset
+
+, то условию 
+\begin_inset Formula $\left(j,D\right)=1$
+\end_inset
+
+ в рассматриваемом случае удовлетворяют лишь простые числа 
+\begin_inset Formula $p$
+\end_inset
+
+ из промежутка 
+\begin_inset Formula $\sqrt{x}<p\le x$
+\end_inset
+
+ и число 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $N=\pi\left(x\right)-\pi\left(\sqrt{x}\right)+1$
+\end_inset
+
+ и равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-eratosphen-moebius"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно переписать в виде 
+\begin_inset Formula 
+\[
+\pi\left(x\right)=\pi\left(\sqrt{x}\right)-1+\sum_{d\mid D}\mu\left(d\right)\left[\frac{x}{d}\right],
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $D=\prod_{p\le\sqrt{x}}p$
+\end_inset
+
+.
+ Получившуюся формулу можно использовать для вычисления значений функции
+ 
+\begin_inset Formula $\pi\left(x\right)$
+\end_inset
+
+.
+ Однако, сумма, стоящая в правой части содержит слишком много слагаемых,
+ и это затрудняет вычисления.
+\end_layout
+
+\begin_layout Example
+Выбрав 
+\begin_inset Formula $D=\prod_{p\le\sqrt[3]{x}}p$
+\end_inset
+
+, можно получить формулу, требующую значительно меньшего объёма вычислений.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Пусть 
+\begin_inset Formula $x\ge2$
+\end_inset
+
+ — действительное число и 
+\begin_inset Formula $r=\left[x\right]$
+\end_inset
+
+.
+ Для каждого 
+\begin_inset Formula $j\le x$
+\end_inset
+
+ определим 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ как наибольшее целое число 
+\begin_inset Formula $s$
+\end_inset
+
+ с условием 
+\begin_inset Formula $s^{2}\mid j$
+\end_inset
+
+.
+ Положим также 
+\begin_inset Formula $a_{j}=1$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+c_{d}=\sum_{j:d\mid b_{j}}1=\left[\frac{x}{d^{2}}\right]
+\]
+
+\end_inset
+
+и по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:general-moebius-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ находим 
+\begin_inset Formula 
+\begin{equation}
+\sum_{d}\mu\left(d\right)\left[\frac{x}{d^{2}}\right]=\sum_{j:b_{j}=1}1=T\left(x\right),\label{eq:sample-2}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $T\left(x\right)$
+\end_inset
+
+ — количество натуральных чисел 
+\begin_inset Formula $n\le x$
+\end_inset
+
+, не делящихся на квадрат целого, большего 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Суммирование в левой части производится по всем натуральным числам 
+\begin_inset Formula $d\le\sqrt{x},$
+\end_inset
+
+ведь при 
+\begin_inset Formula $d>\sqrt{x}$
+\end_inset
+
+ имеем 
+\begin_inset Formula $\left[\frac{x}{d^{2}}\right]=0$
+\end_inset
+
+.
+ Отбрасывая знаки целой части в этой сумме, мы совершим ошибку, не превосходящую
+ 
+\begin_inset Formula $\sqrt{x}$
+\end_inset
+
+.
+ Поэтому равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ может быть переписано в виде 
+\begin_inset Formula 
+\begin{equation}
+T\left(x\right)=x\sum_{d\le x}\frac{\mu\left(d\right)}{d^{2}}+O\left(\sqrt{x}\right).\label{eq:sample-2-2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Сумма в последнем равенстве есть частичная сумма ряда из формулы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-moebius-and-inverser-of-zeta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\sum_{d=1}^{\infty}\frac{\mu\left(d\right)}{d^{2}}=\frac{1}{\zeta\left(2\right)}=\frac{6}{\pi^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Заменяя частичную сумму в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-2-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ суммой ряда, мы совершим ошибку не превосходящую остаточного члена и, значит,
+ меньшую, чем 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать подробнее про среднее неравенство
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\sum_{d>\sqrt{x}}\frac{1}{d^{2}}<\sum_{d>\sqrt{x}}\left(\frac{1}{d-1}-\frac{1}{d}\right)=\frac{1}{\left[\sqrt{x}\right]}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Но тогда равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-2-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно переписать в виде 
+\begin_inset Formula 
+\[
+T\left(x\right)=\frac{6}{\pi^{2}}\cdot x+O\left(\sqrt{x}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Получившееся равенство можно интерпретировать, сказав, что при случайном
+ выборе натурального числа из множества 
+\begin_inset Formula $n\le x$
+\end_inset
+
+ с вероятностью близкой при больших 
+\begin_inset Formula $x$
+\end_inset
+
+ к 
+\begin_inset Formula $\frac{6}{\pi^{2}}$
+\end_inset
+
+ мы получим число, не делящееся на квадрат целого числа, отличный от 
+\begin_inset Formula $1$
+\end_inset
+
+.
 \end_layout
 
 \end_body
