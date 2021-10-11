@@ -6182,6 +6182,12 @@ v_{p}\left(a_{1}\cdot\dots\cdot a_{n}\right)=v_{p}\left(a_{1}\right)+\dots+v_{p}
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:GCD-factoring-out"
+
+\end_inset
+
 При любом натуральном 
 \begin_inset Formula $b$
 \end_inset
@@ -11825,9 +11831,9 @@ noprefix "false"
 
  принимает вид 
 \begin_inset Formula 
-\[
-\sum_{d\mid n}\frac{\mu\left(d\right)}{d^{s}}=\prod_{p\mid n}\left(1-\frac{1}{p^{s}}\right).
-\]
+\begin{equation}
+\sum_{d\mid n}\frac{\mu\left(d\right)}{d^{s}}=\prod_{p\mid n}\left(1-\frac{1}{p^{s}}\right).\label{eq:sum-over-divisors-moebius-times-power-of-divisor}
+\end{equation}
 
 \end_inset
 
@@ -11879,7 +11885,7 @@ noprefix "false"
 status open
 
 \begin_layout Plain Layout
-Подробнее доказать, поучему
+Подробнее доказать, почему?
 \end_layout
 
 \end_inset
@@ -12124,7 +12130,17 @@ f\left(n\right)=\sum_{d\mid n}\mu\left(d\right)g\left(\frac{n}{d}\right).\label{
 \end_layout
 
 \begin_layout Proof
-Изменим порядок суммирования: 
+Изменим порядок суммирования 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Разобраться, почему порядок суммирования меняется именно так
+\end_layout
+
+\end_inset
+
+: 
 \begin_inset Formula 
 \[
 \sum_{d\mid n}\mu\left(d\right)g\left(\frac{n}{d}\right)=\sum_{d\mid n}\mu\left(d\right)\sum_{c\mid\frac{n}{d}}f\left(c\right)=\sum_{c\mid n}f\left(c\right)\sum_{d\mid\frac{n}{c}}\mu\left(d\right).
@@ -12520,7 +12536,7 @@ noprefix "false"
 \end_inset
 
 .
- Тогд 
+ Тогда 
 \begin_inset Formula 
 \[
 c_{d}=\sum_{j:d\mid\left(j,D\right)}1=\begin{cases}
@@ -12913,6 +12929,694 @@ T\left(x\right)=\frac{6}{\pi^{2}}\cdot x+O\left(\sqrt{x}\right).
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Функция Эйлера
+\end_layout
+
+\begin_layout Standard
+Для каждого целого числа 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ обозначим символом 
+\begin_inset Formula $\varphi\left(n\right)$
+\end_inset
+
+ количество натуральных чисел, не превосходящих 
+\begin_inset Formula $n$
+\end_inset
+
+ и взаимно простых 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Другими словами 
+\begin_inset Formula $\varphi\left(n\right)$
+\end_inset
+
+ есть количество целых чисел 
+\begin_inset Formula $k$
+\end_inset
+
+, удовлетворяющих условиям 
+\begin_inset Formula 
+\[
+1\le k\le n,\left(k,n\right)=1.
+\]
+
+\end_inset
+
+ Так определённую функцию натурального аргумента 
+\begin_inset Formula $n$
+\end_inset
+
+ называют функцией Эйлера.
+\end_layout
+
+\begin_layout Standard
+В частности, имеем 
+\begin_inset Formula $\varphi\left(1\right)$
+\end_inset
+
+.
+ Среди чисел 
+\begin_inset Formula $1,2,3,4,5,6$
+\end_inset
+
+ взаимно простыми с 
+\begin_inset Formula $6$
+\end_inset
+
+ являются лишь 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $\varphi\left(6\right)=2$
+\end_inset
+
+.
+ Для каждого простого числа лишь одно из чисел 
+\begin_inset Formula $1,2,\dots,p$
+\end_inset
+
+ не взаимно просто с 
+\begin_inset Formula $p$
+\end_inset
+
+, а именно — само число 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $\varphi\left(p\right)=p-1.$
+\end_inset
+
+ Если 
+\begin_inset Formula $n=p^{r}$
+\end_inset
+
+ — степень простого числа, то нетривиальный общий делитель с 
+\begin_inset Formula $n$
+\end_inset
+
+ могут иметь лишь числа, делящиеся на 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть числа вида 
+\begin_inset Formula $pk$
+\end_inset
+
+.
+ Неравенство 
+\begin_inset Formula $pk\le p^{r}$
+\end_inset
+
+ выполняется для целых чисел 
+\begin_inset Formula $k\le p^{r-1}$
+\end_inset
+
+ и только для них.
+ Поэтому 
+\begin_inset Formula 
+\[
+\varphi\left(p^{r}\right)=p^{r}-p^{r-1}=p^{r}\left(1-\frac{1}{p}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Свойства функции Эйлера описываются следующей теоремой.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:euler-phi-properties"
+
+\end_inset
+
+1.
+ Для любого натурального 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula 
+\[
+\varphi\left(n\right)=n\cdot\prod_{p\mid n}\left(1-\frac{1}{p}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+2.
+ Функция Эйлера мультипликативна, то есть для любых двух натуральных взаимно
+ простых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\varphi\left(a\cdot b\right)=\varphi\left(a\right)\cdot\varphi\left(b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Для 
+\begin_inset Formula $n=p^{r}$
+\end_inset
+
+, где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое, а 
+\begin_inset Formula $r$
+\end_inset
+
+ — положительное натуральное, первое утверждение теоремы уже доказано.
+ Если первое утверждение уже доказано, то второе можно доказать исходя из
+ основной теоремы арифметики.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Но может быть проще доказать второе утверждение, а затем применить его к
+ разложению 
+\begin_inset Formula $n$
+\end_inset
+
+ на простые числа?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+По определению:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\varphi\left(n\right)=\sum_{k=1}^{n}\left[\left(k,n\right)=1\right]=\sum_{k=1}^{n}\sum_{d\mid\left(n,k\right)}\mu\left(d\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Изменим порядок суммирования в правой части.
+ Так как 
+\begin_inset Formula $\left(n,k\right)$
+\end_inset
+
+ — общий делитель 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $k$
+\end_inset
+
+, то во внутренней сумме 
+\begin_inset Formula $d$
+\end_inset
+
+ будет пробегать только те значения, которые являются делителями 
+\begin_inset Formula $d$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\varphi\left(n\right)=\sum_{d\mid n}\sum_{k=1}^{n}\left[d\mid k\right]\mu\left(d\right)=\sum_{d\mid n}\mu\left(d\right)\sum_{k=1}^{n}\left[d\mid k\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Количество чисел, кратных 
+\begin_inset Formula $d$
+\end_inset
+
+, но не превосходящих 
+\begin_inset Formula $n$
+\end_inset
+
+, равно 
+\begin_inset Formula $\frac{n}{d}$
+\end_inset
+
+, поэтому получаем 
+\begin_inset Formula 
+\[
+\varphi\left(n\right)=\sum_{d\mid n}\mu\left(d\right)\cdot\frac{n}{d}=n\cdot\sum_{d\mid n}\frac{\mu\left(d\right)}{d}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Применяя к последней сумме формулу
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-over-divisors-moebius-times-power-of-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $s=1$
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+\varphi\left(n\right)=n\cdot\prod_{p\mid n}\left(1-\frac{1}{p}\right),
+\]
+
+\end_inset
+
+ таким образом, первое утверждение теоремы доказано.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — взаимно простые натуральные числа.
+ По основной теореме арифметики 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для каждого из них существует единственное разложение на простые множители:
+ 
+\begin_inset Formula $a=p_{1}^{k_{1}}\cdot\dots\cdot p_{r}^{k_{r}}$
+\end_inset
+
+ и 
+\begin_inset Formula $b=q_{1}^{l_{1}}\cdot\dots\cdot q_{s}^{l_{s}}$
+\end_inset
+
+.
+ Так как числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ взаимно просты, в этих разложения нет одинаковых множителей.
+ Таким образом, простыми делителями числа 
+\begin_inset Formula $ab$
+\end_inset
+
+ являются числа 
+\begin_inset Formula $p_{1},\dots,p_{r}$
+\end_inset
+
+ и 
+\begin_inset Formula $q_{1},\dots,q_{s}$
+\end_inset
+
+, причём все они являются различными.
+\end_layout
+
+\begin_layout Proof
+По первому утверждению данной теоремы:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\varphi\left(ab\right)=\left(ab\right)\prod_{p\mid\left(ab\right)}\left(1-\frac{1}{p}\right)=ab\prod_{i=1}^{r}\left(1-\frac{1}{p_{i}}\right)\prod_{j=1}^{s}\left(1-\frac{1}{q_{s}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Разделяя множители, относящиеся к 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, получим: 
+\begin_inset Formula 
+\[
+\varphi\left(ab\right)=a\prod_{i=1}^{r}\left(1-\frac{1}{p_{i}}\right)\cdot b\prod_{j=1}^{s}\left(1-\frac{1}{q_{s}}\right)=\varphi\left(a\right)\varphi\left(b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, второе утверждение теоремы тоже доказано.
+\end_layout
+
+\begin_layout Standard
+Первое утверждение теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:euler-phi-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ сразу же следует из теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:general-moebius-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если положить в ней 
+\begin_inset Formula $a_{j}=1$
+\end_inset
+
+, 
+\begin_inset Formula $b_{j}=\left(j,n\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $1\le j\le n$
+\end_inset
+
+.
+ Приведённое выше доказательство по существу повторяет доказательство теоремы
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:general-moebius-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ в этом специальном случае.
+\end_layout
+
+\begin_layout Standard
+Иное доказательство теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:euler-phi-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ основано на следующей лемме.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:sum-over-divisors-of-euler-phi"
+
+\end_inset
+
+Для любого натурального 
+\begin_inset Formula $n$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\[
+\sum_{d\mid n}\varphi\left(d\right)=n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $r$
+\end_inset
+
+ — делитель числа 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $A_{r}$
+\end_inset
+
+ — множество чисел 
+\begin_inset Formula $k$
+\end_inset
+
+ из совокупности 
+\begin_inset Formula $1,2,\dots,n$
+\end_inset
+
+, удовлетворяющих условию 
+\begin_inset Formula $\left(k,n\right)=r$
+\end_inset
+
+.
+ Каждый элемент множества 
+\begin_inset Formula $A_{r}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $r$
+\end_inset
+
+ и, значит, имеет вид 
+\begin_inset Formula $k=rl$
+\end_inset
+
+ с некоторым 
+\begin_inset Formula $l$
+\end_inset
+
+, 
+\begin_inset Formula $1\le l\le\frac{n}{r}$
+\end_inset
+
+.
+ По следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:GCD-factoring-out"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, справедливо равенство 
+\begin_inset Formula $\left(k,n\right)=r\left(l,n/r\right)$
+\end_inset
+
+, из которого следует, что включение 
+\begin_inset Formula $k\in A_{r}$
+\end_inset
+
+ выполняется в том и только том случае, когда 
+\begin_inset Formula $\left(l,n/r\right)=1$
+\end_inset
+
+.
+ Поэтому количество элементов в множестве 
+\begin_inset Formula $A_{r}$
+\end_inset
+
+ равно количеству натуральных чисел, меньших 
+\begin_inset Formula $\frac{n}{r}$
+\end_inset
+
+ и взаимно простых с этим числом, то есть равно 
+\begin_inset Formula $\varphi\left(n/r\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Множества 
+\begin_inset Formula $A_{r}$
+\end_inset
+
+ для различных 
+\begin_inset Formula $r\mid n$
+\end_inset
+
+, очевидно, не пересекаются, а их объединение совпадает с совокупностью
+ 
+\begin_inset Formula $1,2,\dots,n$
+\end_inset
+
+, так как любое число 
+\begin_inset Formula $k$
+\end_inset
+
+ принадлежит хотя бы одному из этих множеств.
+ Поэтому 
+\begin_inset Formula 
+\[
+n=\sum_{r|n}\left|A_{r}\right|=\sum_{r\mid n}\varphi\left(\frac{n}{r}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $r$
+\end_inset
+
+ пробегает все делители числа 
+\begin_inset Formula $n$
+\end_inset
+
+, то 
+\begin_inset Formula $n/r$
+\end_inset
+
+ также пробегает все делители 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Обозначив 
+\begin_inset Formula $d=n/r$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+\sum_{d\mid n}\varphi\left(d\right)=\sum_{r\mid n}\varphi\left(\frac{n}{r}\right)=n,
+\]
+
+\end_inset
+
+ что завершает доказательство леммы.
+\end_layout
+
+\begin_layout Standard
+Первое утверждение теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:euler-phi-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получается из равенства леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:sum-over-divisors-of-euler-phi"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ с помощью формулы обращения Мёбиуса (формула 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:inverse-sum-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), применённой к функциям 
+\begin_inset Formula $f\left(n\right)=\varphi\left(n\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(n\right)=n$
+\end_inset
+
+.
+ Доказательство второго утверждения сохраняется.
 \end_layout
 
 \end_body
