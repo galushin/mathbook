@@ -3911,6 +3911,12 @@ status open
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:primes-eratosphen-sieve"
+
+\end_inset
+
 Простые числа.
  Решето Эратосфена.
  Бесконечность множества простых чисел
@@ -13715,9 +13721,9 @@ noprefix "false"
 
  и 
 \begin_inset Formula 
-\[
-\sigma\left(n\right)=\prod_{j=1}^{m}\left(1+p_{j}+\dots+p_{j}^{k_{j}}\right)=\prod_{j=1}^{m}\frac{p_{j}^{k_{j}+1}-1}{p_{j}-1}.
-\]
+\begin{equation}
+\sigma\left(n\right)=\prod_{j=1}^{m}\left(1+p_{j}+\dots+p_{j}^{k_{j}}\right)=\prod_{j=1}^{m}\frac{p_{j}^{k_{j}+1}-1}{p_{j}-1}.\label{eq:sum-of-divisors}
+\end{equation}
 
 \end_inset
 
@@ -13881,7 +13887,337 @@ a^{m}-1=\left(a-1\right)\left(1+a+\dots+a^{m-1}\right)
 \begin_inset Formula $2^{mk}-1$
 \end_inset
 
+, где 
+\begin_inset Formula $m,k$
+\end_inset
 
+ — натуральные числа, делится на 
+\begin_inset Formula $2^{k}-1$
+\end_inset
+
+.
+ Поэтому число 
+\begin_inset Formula $M_{p}=2^{p}-1$
+\end_inset
+
+ может быть простым лишь в случае, если 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число.
+ Так 
+\begin_inset Formula $M_{2}=3$
+\end_inset
+
+, 
+\begin_inset Formula $M_{3}=7$
+\end_inset
+
+, 
+\begin_inset Formula $M_{5}=31$
+\end_inset
+
+ и 
+\begin_inset Formula $M_{7}=127$
+\end_inset
+
+ — простые числа.
+ С каждым из них связано некоторое совершенное число.
+ Но вот 
+\begin_inset Formula $2^{11}-1=2047=23\cdot89$
+\end_inset
+
+ простым не является.
+ Следующие простые числа Мерсенна — 
+\begin_inset Formula $M_{13}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{19}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{31}$
+\end_inset
+
+ и 
+\begin_inset Formula $M_{61}$
+\end_inset
+
+.
+ В параграфе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:primes-eratosphen-sieve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ указаны самые большие известные в настоящее время простые числа вида 
+\begin_inset Formula $2^{p}-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Предполагается, что множество простых чисел Мерсенна, а, значит, и множество
+ чётных совершенных чисел бесконечны.
+ Однако этот факт не доказан и является ещё одной древней проблемой теории
+ чисел.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $2^{n+1}-1=p$
+\end_inset
+
+ — простое число и 
+\begin_inset Formula $N=2^{n}\left(2^{n+1}-1\right)=2^{n}\cdot p$
+\end_inset
+
+.
+ Найдём 
+\begin_inset Formula $\sigma\left(N\right)$
+\end_inset
+
+ по формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Простыми делителями числа 
+\begin_inset Formula $N$
+\end_inset
+
+ являются 
+\begin_inset Formula $2$
+\end_inset
+
+ и 
+\begin_inset Formula $p=2^{n+1}-1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\sigma\left(N\right)=\left(\frac{2^{n+1}-1}{2-1}\right)\left(\frac{p^{2}-1}{p-1}\right)=\left(2^{n+1}-1\right)\left(p+1\right)=p\cdot2^{n+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда сумма собственных делителей числа 
+\begin_inset Formula $N$
+\end_inset
+
+ равна 
+\begin_inset Formula 
+\[
+\sigma\left(N\right)-N=p\cdot2^{n+1}-N=2\cdot N-N=N,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $N$
+\end_inset
+
+ — совершенное число.
+ Достаточность доказана.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $N$
+\end_inset
+
+ — совершенное чётное число, то есть 
+\begin_inset Formula $\sigma\left(N\right)-N=N$
+\end_inset
+
+ или 
+\begin_inset Formula $\sigma\left(N\right)=2\cdot N$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $N=2^{n}\cdot a$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — нечётное число, тогда 
+\begin_inset Formula 
+\[
+\sigma\left(N\right)=\left(2^{n+1}-1\right)\cdot\sigma\left(a\right)=2N=2^{n+1}\cdot a.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Выражение 
+\begin_inset Formula $2^{n+1}-1$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $2$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\sigma\left(a\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2^{n+1}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\sigma\left(a\right)=2^{n+1}\cdot b$
+\end_inset
+
+, где 
+\begin_inset Formula $b$
+\end_inset
+
+ — нечётное число, тогда 
+\begin_inset Formula 
+\[
+N=\frac{\left(2^{n+1}-1\right)\cdot\sigma\left(a\right)}{2}=\left(2^{n+1}-1\right)\cdot2^{n}\cdot b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При этом 
+\begin_inset Formula 
+\[
+a=\frac{2N}{2^{n+1}}=\frac{\left(2^{n+1}-1\right)\cdot2^{n+1}\cdot b}{2^{n+1}}=\left(2^{n+1}-1\right)\cdot b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Остаётся доказать, что 
+\begin_inset Formula $b=1$
+\end_inset
+
+.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не доказал сам этот момент
+\end_layout
+
+\end_inset
+
+ Если 
+\begin_inset Formula $b>1$
+\end_inset
+
+, то три различных числа 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+ являются делителями числа 
+\begin_inset Formula $a$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+\sigma\left(a\right)\ge a+b+1=\left(2^{n+1}-1\right)\cdot b+b+1=\\
+=2^{n+1}\cdot b+1=\sigma\left(a\right)+1.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Полученное противоречие 
+\begin_inset Formula $\sigma\left(a\right)\ge\sigma\left(a\right)+1$
+\end_inset
+
+ означает, что 
+\begin_inset Formula $b=1$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+N=\left(2^{n+1}-1\right)\cdot2^{n}
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+\sigma\left(a\right)=2^{n+1}=\left(2^{n+1}-1\right)+1=a+1,
+\]
+
+\end_inset
+
+ то есть делителями 
+\begin_inset Formula $a=2^{n+1}-1$
+\end_inset
+
+ являются только 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a=2^{n+1}-1$
+\end_inset
+
+ — простое число.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Внимательно читай то, что нужно доказать!
+\end_layout
+
+\end_inset
+
+ Теорема доказана.
 \end_layout
 
 \end_body
