@@ -7060,20 +7060,20 @@ v_{p}\left(\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right)\right)=v_{p}\
 
 .
  Обозначается эта функция 
-\begin_inset Formula $\left[x\right]$
+\begin_inset Formula $\left\lfloor x\right\rfloor $
 \end_inset
 
 .
  Так, например, 
-\begin_inset Formula $\left[2,5\right]=2$
+\begin_inset Formula $\left\lfloor 2,5\right\rfloor =2$
 \end_inset
 
 , 
-\begin_inset Formula $\left[\pi\right]=3$
+\begin_inset Formula $\left\lfloor \pi\right\rfloor =3$
 \end_inset
 
  и 
-\begin_inset Formula $\left[-1,3\right]=-2$
+\begin_inset Formula $\left\lfloor -1,3\right\rfloor =-2$
 \end_inset
 
 .
@@ -7082,24 +7082,24 @@ v_{p}\left(\left(a_{1},b\right)\cdot\dots\cdot\left(a_{n},b\right)\right)=v_{p}\
 \end_inset
 
  справедливы неравенства 
-\begin_inset Formula $\left[x\right]\le x<\left[x\right]+1$
+\begin_inset Formula $\left\lfloor x\right\rfloor \le x<\left\lfloor x\right\rfloor +1$
 \end_inset
 
 .
  Складывая неравенства 
-\begin_inset Formula $\left[x\right]\le x$
+\begin_inset Formula $\left\lfloor x\right\rfloor \le x$
 \end_inset
 
  и 
-\begin_inset Formula $\left[y\right]\le y$
+\begin_inset Formula $\left\lfloor y\right\rfloor \le y$
 \end_inset
 
 , получаем 
-\begin_inset Formula $\left[x\right]+\left[y\right]\le x+y$
+\begin_inset Formula $\left\lfloor x\right\rfloor +\left\lfloor y\right\rfloor \le x+y$
 \end_inset
 
 , и согласно определению, так как 
-\begin_inset Formula $\left[x\right]+\left[y\right]$
+\begin_inset Formula $\left\lfloor x\right\rfloor +\left\lfloor y\right\rfloor $
 \end_inset
 
  — целое число, получаем
@@ -7115,7 +7115,7 @@ status open
 
 \begin_inset Formula 
 \[
-\left[x\right]+\left[y\right]\le\left[x+y\right].
+\left\lfloor x\right\rfloor +\left\lfloor y\right\rfloor \le\left[x+y\right].
 \]
 
 \end_inset
@@ -7144,7 +7144,7 @@ status open
 \end_inset
 
  выполняется 
-\begin_inset Formula $\left[x+n\right]=\left[x\right]+n$
+\begin_inset Formula $\left\lfloor x+n\right\rfloor =\left\lfloor x\right\rfloor +n$
 \end_inset
 
 
@@ -7172,7 +7172,7 @@ status open
  выполняется равенство 
 \begin_inset Formula 
 \begin{equation}
-\left[\frac{\left[x\right]}{a}\right]=\left[\frac{x}{a}\right].\label{eq:rounding-of-fraction}
+\left\lfloor \frac{\left\lfloor x\right\rfloor }{a}\right\rfloor =\left\lfloor \frac{x}{a}\right\rfloor .\label{eq:rounding-of-fraction}
 \end{equation}
 
 \end_inset
@@ -7182,7 +7182,7 @@ status open
 
 \begin_layout Standard
 Чтобы пояснить его, обозначим 
-\begin_inset Formula $q=\left[\frac{x}{a}\right]$
+\begin_inset Formula $q=\left\lfloor \frac{x}{a}\right\rfloor $
 \end_inset
 
 , тогда 
@@ -7192,7 +7192,7 @@ status open
  и 
 \begin_inset Formula 
 \[
-aq\le\left[x\right]\le x<a\left(q+1\right).
+aq\le\left\lfloor x\right\rfloor \le x<a\left(q+1\right).
 \]
 
 \end_inset
@@ -7208,7 +7208,7 @@ aq\le\left[x\right]\le x<a\left(q+1\right).
 , получаем 
 \begin_inset Formula 
 \[
-q\le\frac{\left[x\right]}{a}<q+1,
+q\le\frac{\left\lfloor x\right\rfloor }{a}<q+1,
 \]
 
 \end_inset
@@ -7228,7 +7228,7 @@ noprefix "false"
 
 \begin_layout Standard
 Функция 
-\begin_inset Formula $\left\{ x\right\} =x-\left[x\right]$
+\begin_inset Formula $\left\{ x\right\} =x-\left\lfloor x\right\rfloor $
 \end_inset
 
  называется 
@@ -7248,7 +7248,7 @@ noprefix "false"
  Действительно, 
 \begin_inset Formula 
 \[
-\left\{ x+1\right\} =x+1-\left[x+1\right]=x-\left[x\right]=\left\{ x\right\} .
+\left\{ x+1\right\} =x+1-\left\lfloor x+1\right\rfloor =x-\left\lfloor x\right\rfloor =\left\{ x\right\} .
 \]
 
 \end_inset
@@ -7292,7 +7292,7 @@ name "lem:LCM-of-iota-prime-decomposition"
  имеем 
 \begin_inset Formula 
 \[
-K\left(x\right)=\prod_{p\le x}p^{\left[\frac{\ln x}{\ln p}\right]}.
+K\left(x\right)=\prod_{p\le x}p^{\left\lfloor \frac{\ln x}{\ln p}\right\rfloor }.
 \]
 
 \end_inset
@@ -7395,7 +7395,7 @@ m\le\frac{\ln x}{\ln p}<m+1,
 тогда, по определению целой части вещественного числа, 
 \begin_inset Formula 
 \[
-v_{p}\left(K\left(x\right)\right)=m=\left[\frac{\ln x}{\ln p}\right]
+v_{p}\left(K\left(x\right)\right)=m=\left\lfloor \frac{\ln x}{\ln p}\right\rfloor 
 \]
 
 \end_inset
@@ -7403,7 +7403,7 @@ v_{p}\left(K\left(x\right)\right)=m=\left[\frac{\ln x}{\ln p}\right]
 и
 \begin_inset Formula 
 \[
-K\left(x\right)=\prod_{p\le x}p^{\left[\frac{\ln x}{\ln p}\right]},
+K\left(x\right)=\prod_{p\le x}p^{\left\lfloor \frac{\ln x}{\ln p}\right\rfloor },
 \]
 
 \end_inset
@@ -7445,7 +7445,7 @@ name "lem:prime-multiplicity-for-factorial"
  имеем 
 \begin_inset Formula 
 \begin{equation}
-v_{p}\left(n!\right)=\left[\frac{n}{p}\right]+\left[\frac{n}{p^{2}}\right]+\dots=\sum_{k\ge1}\left[\frac{n}{p^{k}}\right].\label{eq:prime-multiplicity-for-factorial}
+v_{p}\left(n!\right)=\left\lfloor \frac{n}{p}\right\rfloor +\left\lfloor \frac{n}{p^{2}}\right\rfloor +\dots=\sum_{k\ge1}\left\lfloor \frac{n}{p^{k}}\right\rfloor .\label{eq:prime-multiplicity-for-factorial}
 \end{equation}
 
 \end_inset
@@ -7496,7 +7496,7 @@ status open
 \end_inset
 
 , то есть 
-\begin_inset Formula $m=\left[\frac{n}{p}\right]$
+\begin_inset Formula $m=\left\lfloor \frac{n}{p}\right\rfloor $
 \end_inset
 
 .
@@ -7564,9 +7564,9 @@ noprefix "false"
  
 \begin_inset Formula 
 \begin{multline*}
-v_{p}\left(n!\right)=\left[\frac{n}{p}\right]+v_{p}\left(m!\right)=\left[\frac{n}{p}\right]+\sum_{j\ge1}\left[\frac{m}{p^{j}}\right]=\\
-=\left[\frac{n}{p}\right]+\sum_{j\ge1}\left[\frac{\left[\frac{n}{p}\right]}{p^{j}}\right]=\left[\frac{n}{p}\right]+\sum_{j\ge1}\left[\frac{n}{p^{j+1}}\right]=\\
-=\left[\frac{n}{p}\right]+\sum_{j\ge2}\left[\frac{n}{p^{j}}\right]=\sum_{j\ge1}\left[\frac{n}{p^{j}}\right],
+v_{p}\left(n!\right)=\left\lfloor \frac{n}{p}\right\rfloor +v_{p}\left(m!\right)=\left\lfloor \frac{n}{p}\right\rfloor +\sum_{j\ge1}\left\lfloor \frac{m}{p^{j}}\right\rfloor =\\
+=\left\lfloor \frac{n}{p}\right\rfloor +\sum_{j\ge1}\left\lfloor \frac{\left\lfloor \frac{n}{p}\right\rfloor }{p^{j}}\right\rfloor =\left\lfloor \frac{n}{p}\right\rfloor +\sum_{j\ge1}\left\lfloor \frac{n}{p^{j+1}}\right\rfloor =\\
+=\left\lfloor \frac{n}{p}\right\rfloor +\sum_{j\ge2}\left\lfloor \frac{n}{p^{j}}\right\rfloor =\sum_{j\ge1}\left\lfloor \frac{n}{p^{j}}\right\rfloor ,
 \end{multline*}
 
 \end_inset
@@ -7610,7 +7610,7 @@ noprefix "false"
  можно написать 
 \begin_inset Formula 
 \[
-v_{p}\left(n!\right)=\sum_{k\ge1}\left[\frac{n}{p^{k}}\right]
+v_{p}\left(n!\right)=\sum_{k\ge1}\left\lfloor \frac{n}{p^{k}}\right\rfloor 
 \]
 
 \end_inset
@@ -7628,7 +7628,7 @@ noprefix "false"
 ,
 \begin_inset Formula 
 \[
-v_{p}\left(a_{1}!\cdot\dots\cdot a_{r}!\right)=\sum_{k\ge1}\left(\left[\frac{a_{1}}{p^{k}}\right]+\dots+\left[\frac{a_{r}}{p^{k}}\right]\right).
+v_{p}\left(a_{1}!\cdot\dots\cdot a_{r}!\right)=\sum_{k\ge1}\left(\left\lfloor \frac{a_{1}}{p^{k}}\right\rfloor +\dots+\left\lfloor \frac{a_{r}}{p^{k}}\right\rfloor \right).
 \]
 
 \end_inset
@@ -7653,7 +7653,7 @@ status open
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\left[\frac{a_{1}}{p^{k}}\right]+\dots+\left[\frac{a_{r}}{p^{k}}\right]\le\left[\frac{a_{1}+\dots+a_{r}}{p^{k}}\right]=\left[\frac{n}{p^{k}}\right],
+\left\lfloor \frac{a_{1}}{p^{k}}\right\rfloor +\dots+\left\lfloor \frac{a_{r}}{p^{k}}\right\rfloor \le\left\lfloor \frac{a_{1}+\dots+a_{r}}{p^{k}}\right\rfloor =\left\lfloor \frac{n}{p^{k}}\right\rfloor ,
 \]
 
 \end_inset
@@ -7664,8 +7664,8 @@ status open
 \begin_layout Standard
 \begin_inset Formula 
 \begin{multline*}
-v_{p}\left(a_{1}!\cdot\dots\cdot a_{r}!\right)=\sum_{k\ge1}\left(\left[\frac{a_{1}}{p^{k}}\right]+\dots+\left[\frac{a_{r}}{p^{k}}\right]\right)\le\\
-\le\sum_{k\ge1}\left[\frac{a_{1}+\dots+a_{r}}{p^{k}}\right]=\sum_{k\ge1}\left[\frac{n}{p^{k}}\right]=v_{p}\left(n!\right).
+v_{p}\left(a_{1}!\cdot\dots\cdot a_{r}!\right)=\sum_{k\ge1}\left(\left\lfloor \frac{a_{1}}{p^{k}}\right\rfloor +\dots+\left\lfloor \frac{a_{r}}{p^{k}}\right\rfloor \right)\le\\
+\le\sum_{k\ge1}\left\lfloor \frac{a_{1}+\dots+a_{r}}{p^{k}}\right\rfloor =\sum_{k\ge1}\left\lfloor \frac{n}{p^{k}}\right\rfloor =v_{p}\left(n!\right).
 \end{multline*}
 
 \end_inset
@@ -7895,7 +7895,7 @@ noprefix "false"
  Поэтому 
 \begin_inset Formula 
 \begin{equation}
-\pi\left(N\right)\le N-1-\left[\frac{N}{2}\right]+1=N-\left[\frac{N}{2}\right]\le\frac{N+1}{2}\le\frac{2N}{3}.\label{eq:pi-bounds-2/3}
+\pi\left(N\right)\le N-1-\left\lfloor \frac{N}{2}\right\rfloor +1=N-\left\lfloor \frac{N}{2}\right\rfloor \le\frac{N+1}{2}\le\frac{2N}{3}.\label{eq:pi-bounds-2/3}
 \end{equation}
 
 \end_inset
@@ -7932,7 +7932,7 @@ noprefix "false"
  можно таким же способом получить неравенство 
 \begin_inset Formula 
 \[
-\pi\left(N\right)=N-\left[\frac{N}{2}\right]-\left[\frac{N}{3}\right]+\left[\frac{N}{6}\right]+1\le\frac{N+5}{3}.
+\pi\left(N\right)=N-\left\lfloor \frac{N}{2}\right\rfloor -\left\lfloor \frac{N}{3}\right\rfloor +\left\lfloor \frac{N}{6}\right\rfloor +1\le\frac{N+5}{3}.
 \]
 
 \end_inset
@@ -7945,10 +7945,10 @@ noprefix "false"
 \begin_inset Formula $x\ge1$
 \end_inset
 
- имеем 
+ имеем
 \begin_inset Formula 
 \[
-\pi\left(x\right)=\pi\left(\left[x\right]\right)\le\frac{\left[x\right]+5}{3}\le\frac{x+5}{3}.
+\pi\left(x\right)=\pi\left(\left\lfloor x\right\rfloor \right)\le\frac{\left\lfloor x\right\rfloor +5}{3}\le\frac{x+5}{3}.
 \]
 
 \end_inset
@@ -8828,13 +8828,13 @@ status open
 \end_inset
 
  эквивалентно 
-\begin_inset Formula $p\le\left[x\right]$
+\begin_inset Formula $p\le\left\lfloor x\right\rfloor $
 \end_inset
 
 , то есть 
 \begin_inset Formula 
 \[
-\prod_{p\le x}p=\prod_{p\le\left[x\right]}p.
+\prod_{p\le x}p=\prod_{p\le\left\lfloor x\right\rfloor }p.
 \]
 
 \end_inset
@@ -8843,18 +8843,26 @@ status open
 \end_layout
 
 \begin_layout Proof
-Для целых неравенство леммы уже доказано, поэтому
+Для целых неравенство леммы уже доказано, поэтому 
+\begin_inset Formula 
+\[
+\prod_{p\le\left\lfloor x\right\rfloor }p\le4^{\left\lfloor x\right\rfloor }.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
 А так как по определению целой части, 
-\begin_inset Formula $\left[x\right]\le x$
+\begin_inset Formula $\left\lfloor x\right\rfloor \le x$
 \end_inset
 
  и показательная функция является монотонной, то 
 \begin_inset Formula 
 \[
-\prod_{p\le x}p=\prod_{p\le\left[x\right]}p<4^{\left[x\right]}\le4^{x},
+\prod_{p\le x}p=\prod_{p\le\left\lfloor x\right\rfloor }p<4^{\left\lfloor x\right\rfloor }\le4^{x},
 \]
 
 \end_inset
@@ -8929,7 +8937,7 @@ noprefix "false"
  и находим 
 \begin_inset Formula 
 \[
-4^{n}<K\left(2n+1\right)=\prod_{p\le2n+1}p^{\left[\frac{\ln\left(2n+1\right)}{\ln p}\right]}\le\prod_{p\le2n+1}p^{\frac{\ln\left(2n+1\right)}{\ln p}}=\left(2n+1\right)^{\pi\left(2n+1\right)}.
+4^{n}<K\left(2n+1\right)=\prod_{p\le2n+1}p^{\left\lfloor \frac{\ln\left(2n+1\right)}{\ln p}\right\rfloor }\le\prod_{p\le2n+1}p^{\frac{\ln\left(2n+1\right)}{\ln p}}=\left(2n+1\right)^{\pi\left(2n+1\right)}.
 \]
 
 \end_inset
@@ -9011,7 +9019,7 @@ noprefix "false"
  Справедлива оценка 
 \begin_inset Formula 
 \[
-\pi\left(x\right)=\sum_{p\le x}1=\pi\left(x^{2/3}\right)+\sum_{x^{2/3}<p\le x}1\le\pi\left(\left[x^{2/3}\right]\right)+\sum_{x^{2/3}<p\le x}\frac{\log_{2}p}{\log_{2}x^{2/3}}.
+\pi\left(x\right)=\sum_{p\le x}1=\pi\left(x^{2/3}\right)+\sum_{x^{2/3}<p\le x}1\le\pi\left(\left\lfloor x^{2/3}\right\rfloor \right)+\sum_{x^{2/3}<p\le x}\frac{\log_{2}p}{\log_{2}x^{2/3}}.
 \]
 
 \end_inset
@@ -9693,7 +9701,7 @@ noprefix "false"
 \end_inset
 
  следует 
-\begin_inset Formula $v_{p}\left(N\right)\le v_{p}\left(K_{n}\right)=\left[\frac{\ln\left(2n+1\right)}{\ln p}\right]\le1$
+\begin_inset Formula $v_{p}\left(N\right)\le v_{p}\left(K_{n}\right)=\left\lfloor \frac{\ln\left(2n+1\right)}{\ln p}\right\rfloor \le1$
 \end_inset
 
 .
@@ -9737,7 +9745,7 @@ noprefix "false"
  имеем 
 \begin_inset Formula 
 \[
-v_{p}\left(N\right)\le v_{p}\left(K_{n}\right)=\left[\frac{\ln\left(2n+1\right)}{\ln p}\right]\le\frac{\ln\left(2n+1\right)}{\ln p}.
+v_{p}\left(N\right)\le v_{p}\left(K_{n}\right)=\left\lfloor \frac{\ln\left(2n+1\right)}{\ln p}\right\rfloor \le\frac{\ln\left(2n+1\right)}{\ln p}.
 \]
 
 \end_inset
@@ -10266,6 +10274,12 @@ status open
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:harmonic-partial-sum-bounds"
+
+\end_inset
+
 1.
  При любом натуральном 
 \begin_inset Formula $N$
@@ -10589,8 +10603,8 @@ status open
 \begin_layout Proof
 \begin_inset Formula 
 \begin{multline*}
-\sum_{n\le x}\frac{1}{n}-\ln x=\sum_{n\le\left[x\right]}\frac{1}{n}-\ln x=s_{\left[x\right]}+\ln\left(\left[x\right]+1\right)-\ln x=\\
-=s_{\left[x\right]}+\ln\left(\frac{x-\left\{ x\right\} +1}{x}\right)=s_{\left[x\right]}+\ln\left(1+\frac{1-\left\{ x\right\} }{x}\right).
+\sum_{n\le x}\frac{1}{n}-\ln x=\sum_{n\le\left\lfloor x\right\rfloor }\frac{1}{n}-\ln x=s_{\left\lfloor x\right\rfloor }+\ln\left(\left\lfloor x\right\rfloor +1\right)-\ln x=\\
+=s_{\left\lfloor x\right\rfloor }+\ln\left(\frac{x-\left\{ x\right\} +1}{x}\right)=s_{\left\lfloor x\right\rfloor }+\ln\left(1+\frac{1-\left\{ x\right\} }{x}\right).
 \end{multline*}
 
 \end_inset
@@ -10686,7 +10700,7 @@ P\left(x\right)=\prod_{p\le x}\left(1-\frac{1}{p^{s}}\right)^{-1}>\sum_{n\le x}\
 , получим 
 \begin_inset Formula 
 \[
-\prod_{p\le x}\left(1-\frac{1}{p}\right)^{-1}>\sum_{n\le x}\frac{1}{n}>\ln\left(\left[x\right]+1\right)>\ln x.
+\prod_{p\le x}\left(1-\frac{1}{p}\right)^{-1}>\sum_{n\le x}\frac{1}{n}>\ln\left(\left\lfloor x\right\rfloor +1\right)>\ln x.
 \]
 
 \end_inset
@@ -12147,7 +12161,7 @@ f\left(n\right)=\sum_{d\mid n}\mu\left(d\right)g\left(\frac{n}{d}\right).\label{
 status open
 
 \begin_layout Plain Layout
-Разобраться, почему порядок суммирования меняется именно так
+Расписать подробнее, почему порядок суммирования меняется именно так
 \end_layout
 
 \end_inset
@@ -12553,7 +12567,7 @@ noprefix "false"
 \[
 c_{d}=\sum_{j:d\mid\left(j,D\right)}1=\begin{cases}
 0, & d\nmid D,\\
-\left[\frac{x}{d}\right], & d\mid D.
+\left\lfloor \frac{x}{d}\right\rfloor , & d\mid D.
 \end{cases}
 \]
 
@@ -12576,7 +12590,7 @@ noprefix "false"
  приобретает следующий вид 
 \begin_inset Formula 
 \begin{equation}
-\sum_{d\mid D}\mu\left(d\right)\left[\frac{x}{d}\right]=N,\label{eq:sample-eratosphen-moebius}
+\sum_{d\mid D}\mu\left(d\right)\left\lfloor \frac{x}{d}\right\rfloor =N,\label{eq:sample-eratosphen-moebius}
 \end{equation}
 
 \end_inset
@@ -12696,7 +12710,7 @@ noprefix "false"
  можно переписать в виде 
 \begin_inset Formula 
 \[
-\pi\left(x\right)=\pi\left(\sqrt{x}\right)-1+\sum_{d\mid D}\mu\left(d\right)\left[\frac{x}{d}\right],
+\pi\left(x\right)=\pi\left(\sqrt{x}\right)-1+\sum_{d\mid D}\mu\left(d\right)\left\lfloor \frac{x}{d}\right\rfloor ,
 \]
 
 \end_inset
@@ -12737,7 +12751,7 @@ noprefix "false"
 \end_inset
 
  — действительное число и 
-\begin_inset Formula $r=\left[x\right]$
+\begin_inset Formula $r=\left\lfloor x\right\rfloor $
 \end_inset
 
 .
@@ -12766,7 +12780,7 @@ noprefix "false"
  Тогда 
 \begin_inset Formula 
 \[
-c_{d}=\sum_{j:d\mid b_{j}}1=\left[\frac{x}{d^{2}}\right]
+c_{d}=\sum_{j:d\mid b_{j}}1=\left\lfloor \frac{x}{d^{2}}\right\rfloor 
 \]
 
 \end_inset
@@ -12784,7 +12798,7 @@ noprefix "false"
  находим 
 \begin_inset Formula 
 \begin{equation}
-\sum_{d}\mu\left(d\right)\left[\frac{x}{d^{2}}\right]=\sum_{j:b_{j}=1}1=T\left(x\right),\label{eq:sample-2}
+\sum_{d}\mu\left(d\right)\left\lfloor \frac{x}{d^{2}}\right\rfloor =\sum_{j:b_{j}=1}1=T\left(x\right),\label{eq:sample-2}
 \end{equation}
 
 \end_inset
@@ -12814,7 +12828,7 @@ noprefix "false"
 \end_inset
 
  имеем 
-\begin_inset Formula $\left[\frac{x}{d^{2}}\right]=0$
+\begin_inset Formula $\left\lfloor \frac{x}{d^{2}}\right\rfloor =0$
 \end_inset
 
 .
@@ -12892,7 +12906,7 @@ status open
  
 \begin_inset Formula 
 \[
-\sum_{d>\sqrt{x}}\frac{1}{d^{2}}<\sum_{d>\sqrt{x}}\left(\frac{1}{d-1}-\frac{1}{d}\right)=\frac{1}{\left[\sqrt{x}\right]}.
+\sum_{d>\sqrt{x}}\frac{1}{d^{2}}<\sum_{d>\sqrt{x}}\left(\frac{1}{d-1}-\frac{1}{d}\right)=\frac{1}{\left\lfloor \sqrt{x}\right\rfloor }.
 \]
 
 \end_inset
@@ -13163,7 +13177,17 @@ status open
 
 \end_inset
 
-По определению:
+По определению и лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:sum-of-mu-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Proof
@@ -14218,6 +14242,316 @@ status open
 \end_inset
 
  Теорема доказана.
+\end_layout
+
+\begin_layout Section
+Оценки среднего значения арифметических функций
+\end_layout
+
+\begin_layout Standard
+Арифметические функции как правило ведут себя очень нерегулярно.
+ Поэтому представляет интерес усреднённые характеристики их поведения.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим сначала функцию 
+\begin_inset Formula $\tau\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:sum-of-tau-asymptotics"
+
+\end_inset
+
+При 
+\begin_inset Formula $N\to+\infty$
+\end_inset
+
+ справедлива следующая асимптотическая формула 
+\begin_inset Formula 
+\begin{equation}
+\sum_{n=1}^{N}\tau\left(n\right)=N\ln N+O\left(N\right).\label{eq:sum-of-tau-asymptotics}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поскольку 
+\begin_inset Formula $\tau\left(n\right)$
+\end_inset
+
+ есть количество решений в натуральных числах 
+\begin_inset Formula $x,y$
+\end_inset
+
+ уравнения 
+\begin_inset Formula $x\cdot y=n$
+\end_inset
+
+, то сумма из теоремы, которую для краткости мы обозначим 
+\begin_inset Formula $U\left(N\right)$
+\end_inset
+
+, равна количеству решений в натуральных числах 
+\begin_inset Formula $x,y$
+\end_inset
+
+ неравенства 
+\begin_inset Formula $x\cdot y\le N$
+\end_inset
+
+.
+ Геометрически эта величина может быть представлена как количество точек
+ первого квадранта с целыми положительными коэффициентами, лежащими на и
+ под гиперболой 
+\begin_inset Formula $x\cdot y=N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не доказал сам
+\end_layout
+
+\end_inset
+
+Из формулы 
+\begin_inset Formula $\tau\left(n\right)=\sum_{d\mid n}1$
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+U\left(N\right)=\sum_{n=1}^{N}\sum_{d\mid n}1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Изменим порядок суммирования в этой формуле, сделав суммирование по 
+\begin_inset Formula $d$
+\end_inset
+
+ внешним.
+ Начнём с того, что перенесём условие из индекса сумму в выражение под суммой
+\begin_inset Formula 
+\[
+U\left(N\right)=\sum_{n=1}^{N}\sum_{d\mid n}1=\sum_{n=1}^{N}\sum_{d=1}^{N}\left[d\mid n\right]=\sum_{d=1}^{N}\sum_{n=1}^{N}\left[d\mid n\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Внутренняя сумма есть количество чисел, не превосходящих 
+\begin_inset Formula $N$
+\end_inset
+
+ и кратных 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Таких чисел 
+\begin_inset Formula $\left\lfloor \frac{N}{d}\right\rfloor $
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать как отдельное утверждение
+\end_layout
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+U\left(N\right)=\sum_{d=1}^{N}\left\lfloor \frac{N}{d}\right\rfloor .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Отбросив в каждом слагаемом знак целой части, мы совершим ошибку, не превосходящ
+ую единицы, сумма же изменится не более, чем на 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula 
+\[
+U\left(N\right)=\sum_{d=1}^{N}\frac{N}{d}+O\left(N\right)=N\sum_{d=1}^{N}\frac{1}{d}+O\left(N\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:harmonic-partial-sum-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+\sum_{d=1}^{N}\frac{1}{d}=\ln N+O\left(1\right),
+\]
+
+\end_inset
+
+поэтому для 
+\begin_inset Formula $U\left(N\right)$
+\end_inset
+
+ получаем асимптотическое равенство 
+\begin_inset Formula 
+\[
+U\left(N\right)=N\ln N+O\left(N\right),
+\]
+
+\end_inset
+
+ что и требовалось.
+\end_layout
+
+\begin_layout Standard
+Среднее значение функции 
+\begin_inset Formula $\tau\left(n\right)$
+\end_inset
+
+, то есть величина
+\begin_inset Formula 
+\[
+\frac{\tau\left(1\right)+\tau\left(2\right)+\dots+\tau\left(N\right)}{N}
+\]
+
+\end_inset
+
+ согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:sum-of-tau-asymptotics"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ равна примерно 
+\begin_inset Formula $\ln N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В настоящее время известны результаты намного более точные, чем формула
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-tau-asymptotics"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В 1849 году Дирихле доказал, что 
+\begin_inset Formula 
+\begin{equation}
+\sum_{n=1}^{N}\tau\left(n\right)=N\ln N+\left(2\gamma-1\right)N+O\left(N^{\delta}\right)\label{eq:sum-of-tau-asymptotics-dirichlet}
+\end{equation}
+
+\end_inset
+
+с 
+\begin_inset Formula $\delta=\frac{1}{2}$
+\end_inset
+
+.
+ В 1903 году этот результат был усилен Г.
+\begin_inset space \thinspace{}
+\end_inset
+
+Ф.
+\begin_inset space \thinspace{}
+\end_inset
+
+Вороным
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Вороной Георгий Федосеевич (1868-1908) — русский математик.
+\end_layout
+
+\end_inset
+
+, доказавшим, что формула 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-tau-asymptotics-dirichlet"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ верна при любом 
+\begin_inset Formula $\delta>\frac{1}{3}$
+\end_inset
+
+.
+ Этот результат также уточнялся.
+ Но известно, что формула 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-tau-asymptotics-dirichlet"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $\delta<1/4$
+\end_inset
+
+ уже не верна.
 \end_layout
 
 \end_body
