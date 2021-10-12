@@ -3911,6 +3911,12 @@ status open
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:primes-eratosphen-sieve"
+
+\end_inset
+
 Простые числа.
  Решето Эратосфена.
  Бесконечность множества простых чисел
@@ -11427,6 +11433,12 @@ status open
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:sum-of-multiplicative-over-divisors"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\theta\left(n\right)$
 \end_inset
@@ -13617,6 +13629,595 @@ noprefix "false"
 
 .
  Доказательство второго утверждения сохраняется.
+\end_layout
+
+\begin_layout Section
+Сумма делителей и число делителей натурального числа
+\end_layout
+
+\begin_layout Standard
+При любом натуральном 
+\begin_inset Formula $s$
+\end_inset
+
+ функция 
+\begin_inset Formula $n^{s}$
+\end_inset
+
+ мультипликативна.
+ Согласно лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:sum-of-multiplicative-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ мультипликативной будет и функция 
+\begin_inset Formula 
+\[
+\sigma_{s}\left(n\right)=\sum_{d\mid n}d^{s}.
+\]
+
+\end_inset
+
+ При 
+\begin_inset Formula $s=0$
+\end_inset
+
+ так получается функция 
+\begin_inset Formula 
+\[
+\tau\left(n\right)=\sigma_{0}\left(n\right)=\sum_{d\mid n}1
+\]
+
+\end_inset
+
+— количество делителей 
+\begin_inset Formula $n$
+\end_inset
+
+, а при 
+\begin_inset Formula $s=1$
+\end_inset
+
+ — функция 
+\begin_inset Formula 
+\[
+\sigma\left(n\right)=\sigma_{1}\left(n\right)=\sum_{d\mid n}d
+\]
+
+\end_inset
+
+ — сумма делителей числа 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Обе эти функции мультипликативны.
+ Если 
+\begin_inset Formula $n=p_{1}^{k_{1}}\cdot\dots\cdot p_{m}^{k_{m}}$
+\end_inset
+
+, то по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:sum-of-multiplicative-over-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+\tau\left(n\right)=\left(k_{1}+1\right)\cdot\dots\cdot\left(k_{m}+1\right)
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\begin{equation}
+\sigma\left(n\right)=\prod_{j=1}^{m}\left(1+p_{j}+\dots+p_{j}^{k_{j}}\right)=\prod_{j=1}^{m}\frac{p_{j}^{k_{j}+1}-1}{p_{j}-1}.\label{eq:sum-of-divisors}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим также, что 
+\begin_inset Formula $\tau\left(n\right)$
+\end_inset
+
+ равно количеству решений в натуральных числах 
+\begin_inset Formula $x,y$
+\end_inset
+
+ уравнения 
+\begin_inset Formula $x\cdot y=n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Древнегреческие математики выделили класс чисел, обладающих с их точки зрения
+ некоторой внутренней гармонией, так называемых 
+\emph on
+совершенных чисел
+\emph default
+.
+ Целое число 
+\begin_inset Formula $N>1$
+\end_inset
+
+ называется совершенным, если оно равно сумме своих собственных делителей.
+ Под собственными подразумеваются делители, отличные от самого числа.
+ Так собственными делителями числа 
+\begin_inset Formula $6$
+\end_inset
+
+ являются числа 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $3$
+\end_inset
+
+ и, в силу равенства 
+\begin_inset Formula $1+2+3=6$
+\end_inset
+
+, число 
+\begin_inset Formula $6$
+\end_inset
+
+ совершенно.
+ Ещё одним совершенным числом является 28.
+ Число 
+\begin_inset Formula $5$
+\end_inset
+
+ 
+\begin_inset Quotes rld
+\end_inset
+
+недостаточно
+\begin_inset Quotes rrd
+\end_inset
+
+ — у него сумма собственных делителей равная 1 слишком мала.
+ А число 
+\begin_inset Formula $12$
+\end_inset
+
+ — 
+\begin_inset Quotes rld
+\end_inset
+
+избыточно
+\begin_inset Quotes rrd
+\end_inset
+
+, его сумма собственных делителей равно 16.
+\end_layout
+
+\begin_layout Standard
+До сих пор не известно, существуют ли нечётные совершенные числа.
+ Это одна из нерешённых древних проблем теории чисел.
+\end_layout
+
+\begin_layout Standard
+Структура чётных совершенных чисел описывается результатами Евклида и Эйлера.
+\end_layout
+
+\begin_layout Theorem
+Чётное число 
+\begin_inset Formula $N>0$
+\end_inset
+
+ совершенно тогда и только тогда, когда оно имеет вид 
+\begin_inset Formula $N=2^{n}\left(2^{n+1}-1\right)$
+\end_inset
+
+, причём 
+\begin_inset Formula $2^{n+1}-1$
+\end_inset
+
+ — простое число.
+\end_layout
+
+\begin_layout Standard
+Например, 
+\begin_inset Formula $6=2\cdot3$
+\end_inset
+
+, причём 
+\begin_inset Formula $3=2^{2}-1$
+\end_inset
+
+ — простое число, а 
+\begin_inset Formula $28=2^{2}\cdot7$
+\end_inset
+
+ и 
+\begin_inset Formula $7=2^{3}-1$
+\end_inset
+
+ — тоже простое число.
+ Простые числа вида 
+\begin_inset Formula $2^{k}-1$
+\end_inset
+
+ называются 
+\emph on
+простыми числами Мерсенна
+\emph default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Мерсенн (1588-1648) — французский математик.
+\end_layout
+
+\end_inset
+
+.
+ Из тождества 
+\begin_inset Formula 
+\[
+a^{m}-1=\left(a-1\right)\left(1+a+\dots+a^{m-1}\right)
+\]
+
+\end_inset
+
+ следует, что число 
+\begin_inset Formula $2^{mk}-1$
+\end_inset
+
+, где 
+\begin_inset Formula $m,k$
+\end_inset
+
+ — натуральные числа, делится на 
+\begin_inset Formula $2^{k}-1$
+\end_inset
+
+.
+ Поэтому число 
+\begin_inset Formula $M_{p}=2^{p}-1$
+\end_inset
+
+ может быть простым лишь в случае, если 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число.
+ Так 
+\begin_inset Formula $M_{2}=3$
+\end_inset
+
+, 
+\begin_inset Formula $M_{3}=7$
+\end_inset
+
+, 
+\begin_inset Formula $M_{5}=31$
+\end_inset
+
+ и 
+\begin_inset Formula $M_{7}=127$
+\end_inset
+
+ — простые числа.
+ С каждым из них связано некоторое совершенное число.
+ Но вот 
+\begin_inset Formula $2^{11}-1=2047=23\cdot89$
+\end_inset
+
+ простым не является.
+ Следующие простые числа Мерсенна — 
+\begin_inset Formula $M_{13}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{19}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{31}$
+\end_inset
+
+ и 
+\begin_inset Formula $M_{61}$
+\end_inset
+
+.
+ В параграфе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:primes-eratosphen-sieve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ указаны самые большие известные в настоящее время простые числа вида 
+\begin_inset Formula $2^{p}-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Предполагается, что множество простых чисел Мерсенна, а, значит, и множество
+ чётных совершенных чисел бесконечны.
+ Однако этот факт не доказан и является ещё одной древней проблемой теории
+ чисел.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $2^{n+1}-1=p$
+\end_inset
+
+ — простое число и 
+\begin_inset Formula $N=2^{n}\left(2^{n+1}-1\right)=2^{n}\cdot p$
+\end_inset
+
+.
+ Найдём 
+\begin_inset Formula $\sigma\left(N\right)$
+\end_inset
+
+ по формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Простыми делителями числа 
+\begin_inset Formula $N$
+\end_inset
+
+ являются 
+\begin_inset Formula $2$
+\end_inset
+
+ и 
+\begin_inset Formula $p=2^{n+1}-1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\sigma\left(N\right)=\left(\frac{2^{n+1}-1}{2-1}\right)\left(\frac{p^{2}-1}{p-1}\right)=\left(2^{n+1}-1\right)\left(p+1\right)=p\cdot2^{n+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тогда сумма собственных делителей числа 
+\begin_inset Formula $N$
+\end_inset
+
+ равна 
+\begin_inset Formula 
+\[
+\sigma\left(N\right)-N=p\cdot2^{n+1}-N=2\cdot N-N=N,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $N$
+\end_inset
+
+ — совершенное число.
+ Достаточность доказана.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $N$
+\end_inset
+
+ — совершенное чётное число, то есть 
+\begin_inset Formula $\sigma\left(N\right)-N=N$
+\end_inset
+
+ или 
+\begin_inset Formula $\sigma\left(N\right)=2\cdot N$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $N=2^{n}\cdot a$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — нечётное число, тогда 
+\begin_inset Formula 
+\[
+\sigma\left(N\right)=\left(2^{n+1}-1\right)\cdot\sigma\left(a\right)=2N=2^{n+1}\cdot a.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Выражение 
+\begin_inset Formula $2^{n+1}-1$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $2$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\sigma\left(a\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2^{n+1}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\sigma\left(a\right)=2^{n+1}\cdot b$
+\end_inset
+
+, где 
+\begin_inset Formula $b$
+\end_inset
+
+ — нечётное число, тогда 
+\begin_inset Formula 
+\[
+N=\frac{\left(2^{n+1}-1\right)\cdot\sigma\left(a\right)}{2}=\left(2^{n+1}-1\right)\cdot2^{n}\cdot b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При этом 
+\begin_inset Formula 
+\[
+a=\frac{2N}{2^{n+1}}=\frac{\left(2^{n+1}-1\right)\cdot2^{n+1}\cdot b}{2^{n+1}}=\left(2^{n+1}-1\right)\cdot b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Остаётся доказать, что 
+\begin_inset Formula $b=1$
+\end_inset
+
+.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не доказал сам этот момент
+\end_layout
+
+\end_inset
+
+ Если 
+\begin_inset Formula $b>1$
+\end_inset
+
+, то три различных числа 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+ являются делителями числа 
+\begin_inset Formula $a$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+\sigma\left(a\right)\ge a+b+1=\left(2^{n+1}-1\right)\cdot b+b+1=\\
+=2^{n+1}\cdot b+1=\sigma\left(a\right)+1.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Полученное противоречие 
+\begin_inset Formula $\sigma\left(a\right)\ge\sigma\left(a\right)+1$
+\end_inset
+
+ означает, что 
+\begin_inset Formula $b=1$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+N=\left(2^{n+1}-1\right)\cdot2^{n}
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+\sigma\left(a\right)=2^{n+1}=\left(2^{n+1}-1\right)+1=a+1,
+\]
+
+\end_inset
+
+ то есть делителями 
+\begin_inset Formula $a=2^{n+1}-1$
+\end_inset
+
+ являются только 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a=2^{n+1}-1$
+\end_inset
+
+ — простое число.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Внимательно читай то, что нужно доказать!
+\end_layout
+
+\end_inset
+
+ Теорема доказана.
 \end_layout
 
 \end_body
