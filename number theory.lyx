@@ -10815,9 +10815,9 @@ noprefix "false"
 .
  Например, 
 \begin_inset Formula 
-\[
-\zeta\left(2\right)=\frac{\pi^{2}}{6},\zeta\left(4\right)=\frac{\pi^{4}}{90},\zeta\left(6\right)=\frac{\pi^{6}}{945}.
-\]
+\begin{equation}
+\zeta\left(2\right)=\frac{\pi^{2}}{6},\zeta\left(4\right)=\frac{\pi^{4}}{90},\zeta\left(6\right)=\frac{\pi^{6}}{945}.\label{eq:zeta-of-2n-no-proof}
+\end{equation}
 
 \end_inset
 
@@ -12905,9 +12905,9 @@ status open
 
  
 \begin_inset Formula 
-\[
-\sum_{d>\sqrt{x}}\frac{1}{d^{2}}<\sum_{d>\sqrt{x}}\left(\frac{1}{d-1}-\frac{1}{d}\right)=\frac{1}{\left\lfloor \sqrt{x}\right\rfloor }.
-\]
+\begin{equation}
+\sum_{d>\sqrt{x}}\frac{1}{d^{2}}<\sum_{d>\sqrt{x}}\left(\frac{1}{d-1}-\frac{1}{d}\right)=\frac{1}{\left\lfloor \sqrt{x}\right\rfloor }.\label{eq:rest-of-sum-of-inverse-squares}
+\end{equation}
 
 \end_inset
 
@@ -14361,7 +14361,7 @@ U\left(N\right)=\sum_{n=1}^{N}\sum_{d\mid n}1=\sum_{n=1}^{N}\sum_{d=1}^{N}\left[
 \end_layout
 
 \begin_layout Proof
-Внутренняя сумма есть количество чисел, не превосходящих 
+Внутренняя сумма есть количество натуральных чисел, не превосходящих 
 \begin_inset Formula $N$
 \end_inset
 
@@ -14552,6 +14552,217 @@ noprefix "false"
 \end_inset
 
  уже не верна.
+\end_layout
+
+\begin_layout Theorem
+При 
+\begin_inset Formula $N\to+\infty$
+\end_inset
+
+ справедлива следующая асимптотическая формула 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{N}\sigma\left(n\right)=\frac{1}{12}\pi^{2}N^{2}+O\left(N\ln N\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не доказал сам
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Можно ли доказать заменой из предыдущей теоремы?
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $V\left(N\right)$
+\end_inset
+
+ — сумма из формулировки теоремы, то есть 
+\begin_inset Formula 
+\[
+V\left(N\right)=\sum_{n=1}^{N}\sigma\left(n\right).
+\]
+
+\end_inset
+
+Эту сумму можно переписать следующим образом: 
+\begin_inset Formula 
+\[
+V\left(N\right)=\sum_{n=1}^{N}\sigma\left(n\right)=\sum_{n=1}^{N}\sum_{d\mid n}d.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Изменим порядок суммирования, для этого введём новую переменную 
+\begin_inset Formula $k$
+\end_inset
+
+, положив 
+\begin_inset Formula $d=nk$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+V\left(N\right)=\sum_{k=1}^{N}\sum_{d=1}^{N}\left[dk\le N\right]\cdot d=\sum_{k=1}^{N}\sum_{1\le d\le\frac{N}{k}}d.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При любом 
+\begin_inset Formula $t$
+\end_inset
+
+ справедливо равенство
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать как отдельное утверждение
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\sum_{1\le d\le t}d=\frac{\left\lfloor t\right\rfloor \left(\left\lfloor t\right\rfloor +1\right)}{2}=\frac{1}{2}t^{2}+O\left(t\right),
+\]
+
+\end_inset
+
+ поэтому 
+\begin_inset Formula 
+\[
+V\left(N\right)=\sum_{k=1}^{N}\left(\frac{1}{2}\frac{N^{2}}{k^{2}}+O\left(\frac{N}{k}\right)\right)=\frac{N^{2}}{2}\sum_{k=1}^{N}\frac{1}{k^{2}}+O\left(\sum_{k=1}^{N}\frac{N}{k}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:harmonic-partial-sum-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula $\sum_{k=1}^{N}\frac{1}{k}<\ln\left(2N+1\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+V\left(N\right)=\frac{N^{2}}{2}\sum_{k=1}^{N}\frac{1}{k^{2}}+O\left(N\ln N\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Заменим теперь конечную сумму 
+\begin_inset Formula $\sum_{k=1}^{N}\frac{1}{k^{2}}$
+\end_inset
+
+ суммой ряда (по первой из формул 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:zeta-of-2n-no-proof"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Следующее равенство мы, вроде бы не доказывали!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{k=1}^{\infty}\frac{1}{k^{2}}=\zeta\left(2\right)=\frac{\pi^{2}}{6}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При этом будет совершена ошибка не более 
+\begin_inset Formula $\sum_{k>N}\frac{1}{k^{2}}\le\frac{1}{N}$
+\end_inset
+
+ (по формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rest-of-sum-of-inverse-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), поэтому 
+\begin_inset Formula 
+\begin{multline*}
+V\left(N\right)=\frac{N^{2}}{2}\left(\frac{\pi^{2}}{6}+O\left(\frac{1}{N}\right)\right)+O\left(N\ln N\right)=\\
+=\frac{\pi^{2}}{12}+O\left(N\right)+O\left(N\ln N\right)=\frac{\pi^{2}}{12}+O\left(N\ln N\right),
+\end{multline*}
+
+\end_inset
+
+ что и завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Standard
+Из этой теоремы следует, что среднее значение суммы делителей равно примерно
+ 
+\begin_inset Formula $\frac{1}{12}\pi^{2}N$
+\end_inset
+
+.
 \end_layout
 
 \end_body
