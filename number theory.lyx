@@ -13252,9 +13252,9 @@ noprefix "false"
 
 , поэтому получаем 
 \begin_inset Formula 
-\[
-\varphi\left(n\right)=\sum_{d\mid n}\mu\left(d\right)\cdot\frac{n}{d}=n\cdot\sum_{d\mid n}\frac{\mu\left(d\right)}{d}.
-\]
+\begin{equation}
+\varphi\left(n\right)=\sum_{d\mid n}\mu\left(d\right)\cdot\frac{n}{d}=n\cdot\sum_{d\mid n}\frac{\mu\left(d\right)}{d}.\label{eq:euler-phi-via-moebius}
+\end{equation}
 
 \end_inset
 
@@ -14555,6 +14555,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:sum-of-sigma-asymptotics"
+
+\end_inset
+
 При 
 \begin_inset Formula $N\to+\infty$
 \end_inset
@@ -14757,12 +14763,305 @@ V\left(N\right)=\frac{N^{2}}{2}\left(\frac{\pi^{2}}{6}+O\left(\frac{1}{N}\right)
 \end_layout
 
 \begin_layout Standard
-Из этой теоремы следует, что среднее значение суммы делителей равно примерно
- 
+Из теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:sum-of-sigma-asymptotics"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что среднее значение суммы делителей равно примерно 
 \begin_inset Formula $\frac{1}{12}\pi^{2}N$
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:sum-of-euler-phi-asymptotics"
+
+\end_inset
+
+При 
+\begin_inset Formula $N\to+\infty$
+\end_inset
+
+ справедлива следующая асимптотическая формула 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{N}\varphi\left(n\right)=\frac{3}{\pi^{2}}N^{2}+O\left(N\ln N\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из определения функции Эйлера следует, что значение 
+\begin_inset Formula $\varphi\left(n\right)$
+\end_inset
+
+ равно количеству несократимых дробей 
+\begin_inset Formula $\frac{m}{n}$
+\end_inset
+
+ из промежутка 
+\begin_inset Formula $0\le t\le1$
+\end_inset
+
+ со знаменателем 
+\begin_inset Formula $n$
+\end_inset
+
+, а сумма из формулировки теоремы равна количеству несократимых дробей со
+ знаменателем не больше 
+\begin_inset Formula $N$
+\end_inset
+
+ на промежутке 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+.
+ Общее же количество пар целых чисел 
+\begin_inset Formula $m,n$
+\end_inset
+
+ с условием 
+\begin_inset Formula $0\le m\le n\le N$
+\end_inset
+
+ равно 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{N}n=\frac{N\left(N+1\right)}{2}=\frac{1}{2}N^{2}+O\left(N\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поэтому результат теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:sum-of-euler-phi-asymptotics"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно выразить иначе, сказав, что выбирая случайным образом пару целых
+ чисел 
+\begin_inset Formula $m,m$
+\end_inset
+
+, удовлетворяющих равенству 
+\begin_inset Formula $0\le m\le n\le N$
+\end_inset
+
+, можно получить несократимую дробь с вероятностью 
+\begin_inset Formula $\frac{6}{\pi^{2}}=0.6079...$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Обозначим сумму из формулировки теоремы как 
+\begin_inset Formula $S\left(N\right)$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел этот момент
+\end_layout
+
+\end_inset
+
+Воспользуемся равенством 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:euler-phi-via-moebius"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+S\left(N\right)=\sum_{n=1}^{N}\varphi\left(n\right)=\sum_{n=1}^{N}n\cdot\sum_{d\mid n}\frac{\mu\left(d\right)}{d}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Изменим порядок суммирования: 
+\begin_inset Formula 
+\begin{multline*}
+S\left(N\right)=\sum_{n=1}^{N}n\cdot\sum_{d\mid n}\frac{\mu\left(d\right)}{d}=\sum_{n=1}^{N}\sum_{d=1}^{N}\frac{n\mu\left(d\right)}{d}\left[d\mid n\right]=\\
+=\sum_{d=1}^{N}\frac{\mu\left(d\right)}{d}\sum_{n=1}^{N}n\left[d\mid n\right].
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Внутренняя сумма теперь равна сумме натуральных чисел, не превосходящих
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ и кратных 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Это числа вида 
+\begin_inset Formula $kd$
+\end_inset
+
+, где 
+\begin_inset Formula $1\le k\le\frac{N}{d}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+S\left(N\right)=\sum_{d=1}^{N}\frac{\mu\left(d\right)}{d}\sum_{k=1}^{\left\lfloor \frac{N}{d}\right\rfloor }kd=\sum_{d=1}^{N}\mu\left(d\right)\sum_{k=1}^{\left\lfloor \frac{N}{d}\right\rfloor }k=\\
+=\sum_{d=1}^{N}\mu\left(d\right)\frac{\left\lfloor \frac{N}{d}\right\rfloor \left(\left\lfloor \frac{N}{d}\right\rfloor +1\right)}{2}=\sum_{d=1}^{N}\frac{\mu\left(d\right)}{2}\left(\left(\frac{N}{d}\right)^{2}+O\left(\frac{N}{d}\right)\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:harmonic-partial-sum-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет место оценка
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\sum_{k=1}^{N}\frac{N}{d}=N\cdot\sum_{k=1}^{N}\frac{1}{d}\le N\ln\left(2N+1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Упустил этот момент
+\end_layout
+
+\end_inset
+
+Заменим конечную сумму 
+\begin_inset Formula $\sum_{d=1}^{N}\frac{\mu\left(d\right)}{d^{2}}$
+\end_inset
+
+ рядом 
+\begin_inset Formula $\sum_{d=1}^{\infty}\frac{\mu\left(d\right)}{d^{2}}$
+\end_inset
+
+.
+ При этом будет совершена ошибка не более 
+\begin_inset Formula $\sum_{k>N}\frac{1}{k^{2}}\le\frac{1}{N}$
+\end_inset
+
+ (по формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rest-of-sum-of-inverse-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+По 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-moebius-and-inverser-of-zeta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:zeta-of-2n-no-proof"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\sum_{d=1}^{\infty}\frac{\mu\left(d\right)}{d^{2}}=\frac{1}{\zeta\left(2\right)}=\frac{6}{\pi^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Кроме того, поэтому 
+\begin_inset Formula 
+\[
+S\left(N\right)=\frac{N^{2}}{2}\frac{6}{\pi^{2}}+O\left(N\ln N\right)=\frac{3N^{2}}{\pi^{2}}+O\left(N\ln N\right),
+\]
+
+\end_inset
+
+что и требовалось доказать.
 \end_layout
 
 \end_body
