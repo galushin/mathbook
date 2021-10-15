@@ -15795,5 +15795,267 @@ noprefix "false"
  целых числах.
 \end_layout
 
+\begin_layout Section
+Классы вычетов.
+ Кольцо классов вычетов по данному модулю
+\end_layout
+
+\begin_layout Standard
+Свойства сравнений 1-3
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки
+\end_layout
+
+\end_inset
+
+, сформулированные в предыдущем параграфе означают, что всё множество целых
+ чисел разбивается в объединение попарно не пересекающихся подмножеств,
+ состоящих из чисел, попарно сравнимых между собой.
+ Эти подмножества называются 
+\emph on
+классами вычетов
+\emph default
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Элементы каждого из подмножеств называются вычетами этого класса.
+ Класс вычетов, содержащий целое число 
+\begin_inset Formula $a$
+\end_inset
+
+ будем обозначать 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+.
+ таким образом, 
+\begin_inset Formula $\bar{a}=\bar{b}$
+\end_inset
+
+, если и только если 
+\begin_inset Formula $a\equiv b\left(\mod m\right)$
+\end_inset
+
+.
+ Например, класс вычетов 
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+ состоит из всех чисел, делящихся на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Каждое целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:division-with-reminder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, представимо в виде 
+\begin_inset Formula 
+\[
+a=mq+r,0\le r<m
+\]
+
+\end_inset
+
+ с целыми 
+\begin_inset Formula $q$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Отсюда следует, что 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+ лежат в одном классе вычетов, и, значит, каждый класс вычетов содержит
+ целое число 
+\begin_inset Formula $r$
+\end_inset
+
+ из промежутка 
+\begin_inset Formula $0\le r<m$
+\end_inset
+
+.
+ Таким образом, количество классов вычетов не превосходит 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ С другой стороны, каждое из чисел 
+\begin_inset Formula $0,1,2,\dots,m-1$
+\end_inset
+
+ лежит в некотором классе вычетов и классы эти различны, ведь разность любых
+ двух чисел из указанного списка меньше 
+\begin_inset Formula $m$
+\end_inset
+
+, а значит не делится на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Эти рассуждения доказывают, что 
+\emph on
+существует ровно 
+\begin_inset Formula $m$
+\end_inset
+
+ классов вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+
+\emph default
+.
+ Каждый из них содержит единственное целое число 
+\begin_inset Formula $r$
+\end_inset
+
+ из промежутка 
+\begin_inset Formula $0\le r<m$
+\end_inset
+
+, называемое 
+\emph on
+наименьшим неотрицательным вычетом класса 
+\emph default
+и поэтому 
+\begin_inset Formula 
+\[
+\bar{0},\bar{1},\dots,\overline{m-1}
+\]
+
+\end_inset
+
+ — все классы вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+На множестве классов вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ можно ввести операции сложения, вычитания и умножения по правилам 
+\begin_inset Formula 
+\[
+\bar{a}+\bar{b}=\overline{a+b},\bar{a}-\bar{b}=\overline{a-b},\bar{a}\cdot\bar{b}=\overline{a\cdot b}.
+\]
+
+\end_inset
+
+Свойство 4
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ сравнений показывает, что так определённые операции не зависят от выбора
+ представителей классов 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ и действительно являются операциями между классами вычетов.
+ Множество классов вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ с так определёнными операциями является коммутативным кольцом — кольцом
+ классов вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Все аксиомы кольца
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Про них здесь речи не было, нужна ссылка
+\end_layout
+
+\end_inset
+
+, а также коммутативность, легко проверяются с помощью свойств делимости.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 4.2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить главу 4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить книгу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
