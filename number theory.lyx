@@ -15064,5 +15064,736 @@ S\left(N\right)=\frac{N^{2}}{2}\frac{6}{\pi^{2}}+O\left(N\ln N\right)=\frac{3N^{
 что и требовалось доказать.
 \end_layout
 
+\begin_layout Chapter
+Числовые сравнения
+\end_layout
+
+\begin_layout Section
+Сравнения и их основные свойства
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+ — целое число.
+\end_layout
+
+\begin_layout Definition
+Два целых числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ называются сравнимыми по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, если 
+\begin_inset Formula $m\mid\left(a-b\right)$
+\end_inset
+
+, то есть, если их разность делится на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Число 
+\begin_inset Formula $m$
+\end_inset
+
+ называется модулем сравнения.
+\end_layout
+
+\begin_layout Standard
+Отношение сравнимости обозначается символом 
+\begin_inset Formula $a\equiv b\left(\mod m\right)$
+\end_inset
+
+ и обладает следующими легко проверяемыми свойствами
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать эти свойства
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\emph on
+
+\begin_inset Formula $a\equiv a\left(\mod m\right)$
+\end_inset
+
+ для любого целого 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2.
+
+\emph on
+ Если 
+\begin_inset Formula $a\equiv b\left(\mod m\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $b\equiv a\left(\mod b\right)\left(\mod m\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+точно ли справа нужен 
+\begin_inset Formula $\mod b$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\emph on
+Если 
+\begin_inset Formula $a\equiv b\left(\mod m\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $b\equiv c\left(\mod m\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $a\equiv c\left(\mod m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Например, последнее свойство следует из равенства 
+\begin_inset Formula $a-c=\left(a-b\right)+\left(b-c\right)$
+\end_inset
+
+, поскольку оба слагаемых в правой части делятся на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если разность 
+\begin_inset Formula $a-b$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $m$
+\end_inset
+
+, будем писать 
+\begin_inset Formula $a\not\equiv b\left(\mod m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Продолжим список свойств сравнений.
+\end_layout
+
+\begin_layout Standard
+4.
+ 
+\emph on
+Если 
+\begin_inset Formula $a\equiv b\left(\mod m\right)$
+\end_inset
+
+, 
+\begin_inset Formula $c\equiv d\left(\mod m\right)$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+a+c\equiv b+d\left(\mod m\right),\\
+a-c\equiv b-d\left(\mod m\right),\\
+a\cdot c\equiv b\cdot d\left(\mod m\right),
+\end{array}
+\]
+
+\end_inset
+
+то есть сравнения по одному и тому же модулю можно почленно складывать,
+ вычитать и умножать.
+\end_layout
+
+\begin_layout Standard
+Доказательства трёх указанных сравнений следуют из равенств: 
+\begin_inset Formula 
+\[
+\left(a+c\right)-\left(b+d\right)=\left(a-b\right)+\left(c-d\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(a-c\right)-\left(b-d\right)=\left(a-b\right)-\left(c-d\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a\cdot c-b\cdot d=\left(a-b\right)\cdot c+b\cdot\left(c-d\right)
+\]
+
+\end_inset
+
+и свойств делимости
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать полное доказательство
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко, на мой взгляд, перепутан порядок
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из свойства 4 следует также, что к любой из частей сравнений можно прибавить
+ любое число кратное модулю, обе части сравнения можно умножить на одно
+ и то же целое число и возвести в одну и ту же натуральную степень.
+ В результате получатся верные сравнения.
+\end_layout
+
+\begin_layout Standard
+В частности, отсюда следует, что если 
+\begin_inset Formula $a\equiv b\left(\mod m\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ — произвольный многочлен с целыми коэффициентами, то 
+\begin_inset Formula 
+\[
+P\left(a\right)\equiv P\left(b\right)\left(\mod m\right).
+\]
+
+\end_inset
+
+ Подобное свойство выполняется и для многочленов от нескольких переменных.
+\end_layout
+
+\begin_layout Standard
+5.
+ 
+\emph on
+Если 
+\begin_inset Formula $ab\equiv ac\left(\mod m\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(a,m\right)=1$
+\end_inset
+
+, то 
+\begin_inset Formula $b\equiv c$
+\end_inset
+
+
+\begin_inset Formula $\left(\mod m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Действительно, если 
+\begin_inset Formula $ab\equiv ac\left(\mod m\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $ab-ac=a\left(b-c\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ По 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-and-divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, из 
+\begin_inset Formula $m\mid a\left(b-c\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(a,m\right)=1$
+\end_inset
+
+ следует 
+\begin_inset Formula $m\mid\left(b-c\right)$
+\end_inset
+
+, откуда, по определению, 
+\begin_inset Formula $b\equiv c\left(\mod m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Условие взаимной простоты 
+\begin_inset Formula $\left(a,m\right)=1$
+\end_inset
+
+ в последнем свойстве существенно: 
+\begin_inset Formula $4\equiv0\left(\mod4\right)$
+\end_inset
+
+, но из этого не следует, что 
+\begin_inset Formula $2\equiv0\left(\mod4\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+6.
+ 
+\emph on
+Обе части сравнения и модуль можно умножить на любое отличное от нуля число,
+ то есть из сравнения 
+\begin_inset Formula $a\equiv b\left(\mod m\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $d\neq0$
+\end_inset
+
+ следует 
+\begin_inset Formula $ad\equiv bd\left(\mod md\right)$
+\end_inset
+
+.
+\emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать, почему важно условие 
+\begin_inset Formula $d\neq0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Действительно, если 
+\begin_inset Formula $m\mid\left(a-b\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $md\mid d\left(a-b\right)$
+\end_inset
+
+, а 
+\begin_inset Formula $d\left(a-b\right)=da-db$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+7.
+ 
+\emph on
+Обе части сравнения и модуль можно разделить на их общий множитель, то есть
+ из сравнения 
+\begin_inset Formula $ad\equiv bd\left(\mod md\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $d\neq0$
+\end_inset
+
+ следует 
+\begin_inset Formula $a\equiv b\left(\mod m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из 
+\begin_inset Formula $md\mid\left(ad-bd\right)$
+\end_inset
+
+, очевидно
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать точнее
+\end_layout
+
+\end_inset
+
+, следует 
+\begin_inset Formula $m\mid\left(b-a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+8.
+ 
+\emph on
+Если 
+\begin_inset Formula $a\equiv b\left(\mod m\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(a,m\right)=\left(b,m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Действительно, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:division-with-reminder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ существует представление 
+\begin_inset Formula $a=mq+r$
+\end_inset
+
+, 
+\begin_inset Formula $0\le r<m$
+\end_inset
+
+.
+ Из этого представления, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:GCD-and-division"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, следует, что 
+\begin_inset Formula $\left(a,m\right)=\left(r,m\right)$
+\end_inset
+
+.
+ Кроме того, по условию 
+\begin_inset Formula $b=a+mc$
+\end_inset
+
+, где 
+\begin_inset Formula $c$
+\end_inset
+
+ — некоторое целое число.
+ Тогда 
+\begin_inset Formula $b=a+mc=mq+r+mc=r+m\left(q+c\right)$
+\end_inset
+
+.
+ Снова применяя лемму 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:GCD-and-division"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Возможно, эту лемме нужно обобщить на случай, когда 
+\begin_inset Formula $r$
+\end_inset
+
+ произвольно
+\end_layout
+
+\end_inset
+
+, получаем, что 
+\begin_inset Formula $\left(b,m\right)=\left(r,m\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\left(b,m\right)=\left(r,m\right)=\left(a,m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+9.
+ 
+\emph on
+Если 
+\begin_inset Formula $a\equiv b\left(\mod m\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $d\mid m$
+\end_inset
+
+, то 
+\begin_inset Formula $a\equiv b\left(\mod d\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Действительно, из условия следует, что 
+\begin_inset Formula $m\mid\left(a-b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $d\mid m$
+\end_inset
+
+.
+ Откуда, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, следует 
+\begin_inset Formula $d\mid\left(a-b\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a\equiv b\left(\mod d\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+10.
+ 
+\emph on
+Если сравнение 
+\begin_inset Formula $a\equiv b$
+\end_inset
+
+ имеет место по нескольким модулям, то оно имеет место и по модулю, равному
+ наименьшему общему кратному этих модулей.
+\end_layout
+
+\begin_layout Standard
+Действительно, если имеется 
+\begin_inset Formula $n$
+\end_inset
+
+ чисел 
+\begin_inset Formula $m_{1},\dots,m_{n}$
+\end_inset
+
+ таких, что 
+\begin_inset Formula $a\equiv b\left(\mod m_{j}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $j=1,\dots,n$
+\end_inset
+
+, то, по определению 
+\begin_inset Formula $m_{j}\mid\left(a-b\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $j=1,\dots,n$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\left(a-b\right)$
+\end_inset
+
+ — общее кратное чисел 
+\begin_inset Formula $m_{1},\dots,m_{n}$
+\end_inset
+
+.
+ А по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:LCM-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, любое общее кратное делится нескольких чисел делится на их наименьшее
+ общее кратное, то есть 
+\begin_inset Formula $\left[m_{1},\dots,m_{n}\right]\mid\left(a-b\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $a\equiv b\left(\mod\left[m_{1},\dots,m_{n}\right]\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Как простейший пример использования сравнений, докажем, что уравнение 
+\begin_inset Formula $x^{2}-5y^{2}=3$
+\end_inset
+
+ не имеет решений в целых числах.
+ Предположим, что целые числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ удовлетворяют этому уравнению.
+ Тогда 
+\begin_inset Formula $a^{2}=3+5y^{2}$
+\end_inset
+
+ или 
+\begin_inset Formula $a^{2}\equiv3\left(\mod5\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $a=5q+r$
+\end_inset
+
+, где 
+\begin_inset Formula $0\le r<5$
+\end_inset
+
+.
+ По свойству 4 
+\begin_inset Formula $a^{2}\equiv r^{2}\left(\mod5\right)$
+\end_inset
+
+.
+ Рассмотрим возможные значения 
+\begin_inset Formula $r^{2}$
+\end_inset
+
+: 
+\begin_inset Formula $0^{2}=0$
+\end_inset
+
+, 
+\begin_inset Formula $1^{2}=1$
+\end_inset
+
+, 
+\begin_inset Formula $2^{2}=4$
+\end_inset
+
+, 
+\begin_inset Formula $3^{3}=9\equiv4\left(\mod5\right)$
+\end_inset
+
+, 
+\begin_inset Formula $4^{2}=16\equiv1\left(\mod5\right)$
+\end_inset
+
+.
+ Таким образом, эквивалентность 
+\begin_inset Formula $a^{2}\equiv3\left(\mod5\right)$
+\end_inset
+
+ невозможна.
+ Полученное противоречие означает, что у данного уравнения нет решения в
+ целых числах.
+\end_layout
+
 \end_body
 \end_document
