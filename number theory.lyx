@@ -2121,6 +2121,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:coprime-and-divisibility"
+
+\end_inset
+
 Если 
 \begin_inset Formula $a\mid bc$
 \end_inset
@@ -15969,9 +15975,9 @@ a=mq+r,0\le r<m
 
  можно ввести операции сложения, вычитания и умножения по правилам 
 \begin_inset Formula 
-\[
-\bar{a}+\bar{b}=\overline{a+b},\bar{a}-\bar{b}=\overline{a-b},\bar{a}\cdot\bar{b}=\overline{a\cdot b}.
-\]
+\begin{equation}
+\bar{a}+\bar{b}=\overline{a+b},\bar{a}-\bar{b}=\overline{a-b},\bar{a}\cdot\bar{b}=\overline{a\cdot b}.\label{eq:residual-classes-operations}
+\end{equation}
 
 \end_inset
 
@@ -16016,19 +16022,829 @@ status open
 \end_inset
 
 , а также коммутативность, легко проверяются с помощью свойств делимости.
+ Роль нулевого элемента этого кольца играет класс 
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+.
+ Действительно, для любого элемента 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\bar{a}+\bar{0}=\overline{a+0}=\bar{a},\bar{0}+\bar{a}=\overline{0+a}=\bar{a}.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+Роль единичного элемента — класс вычетов 
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\bar{a}\cdot\bar{1}=\overline{a\cdot1}=\bar{a},\bar{1}\cdot\bar{a}=\overline{1\cdot a}=\bar{a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Проверка ассоциативности умножения выполняется так: 
+\begin_inset Formula 
+\[
+\bar{a}\cdot\left(\bar{b}\cdot\bar{c}\right)=\bar{a}\cdot\overline{bc}=\overline{a\cdot\left(bc\right)}=\overline{\left(ab\right)\cdot c}=\overline{ab}\cdot\bar{c}=\left(\bar{a}\cdot\bar{b}\right)\cdot\bar{c}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Доказательство дистрибутивности проводится следующим образом: 
+\begin_inset Formula 
+\[
+\left(\bar{a}+\bar{b}\right)\cdot\bar{c}=\overline{a+b}\cdot\bar{c}=\overline{\left(a+b\right)\cdot c}=\overline{ac+bc}=\overline{ac}+\overline{bc}=\bar{a}\cdot\bar{c}+\bar{b}\cdot\bar{c}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Остальные аксиомы кольца проверяются столь же несложными преобразованиями.
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Закончить раздел 4.2
+Написать эти проверки
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+В кольце 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Это первое упоминание этого обозначения без пояснения!!
+\end_layout
+
+\end_inset
+
+, вообще говоря, могут быть делители нуля.
+ Например, при 
+\begin_inset Formula $m=6$
+\end_inset
+
+ имеем 
+\begin_inset Formula $\bar{3}\cdot\bar{4}=\overline{12}=\bar{0}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — целое число, 
+\begin_inset Formula $d=\left(a,m\right)$
+\end_inset
+
+, причём 
+\begin_inset Formula $1<d<m$
+\end_inset
+
+.
+ Тогда с некоторыми целыми числами 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ выполняются равенства 
+\begin_inset Formula $a=du$
+\end_inset
+
+, 
+\begin_inset Formula $m=dv$
+\end_inset
+
+ и 
+\begin_inset Formula $av=adv=um\equiv0\left(\mod m\right).$
+\end_inset
+
+ Это значит, что 
+\begin_inset Formula $\bar{a}\cdot\bar{v}=\bar{0}$
+\end_inset
+
+, причём 
+\begin_inset Formula $\bar{v}\neq\bar{0}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ — делитель нуля в кольце 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Определим теперь группу обратимых элементов этого кольца.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:coprmime-to-module-has-inverse"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — целое число, взаимно простое с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Тогда найдётся целое число 
+\begin_inset Formula $b$
+\end_inset
+
+, удовлетворяющее сравнению 
+\begin_inset Formula 
+\begin{equation}
+ab\equiv1\left(\mod m\right).\label{eq:coprime-to-module-has-inverse}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ взаимно просты, то, по определению, 
+\begin_inset Formula $\left(a,m\right)=1$
+\end_inset
+
+.
+ Тогда, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:gcd-as-linear-combination"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существуют такие целые числа 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+, что 
+\begin_inset Formula $ab+mc=1$
+\end_inset
+
+ или 
+\begin_inset Formula $1-ab=mc$
+\end_inset
+
+.
+ Откуда и следует утверждение леммы.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко другое доказательство, а на моё он ссылается как на конструктивное
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если целое число 
+\begin_inset Formula $a$
+\end_inset
+
+ взаимно просто с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+, то по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:coprmime-to-module-has-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, найдётся целое число 
+\begin_inset Formula $b$
+\end_inset
+
+, удовлетворяющее 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:coprime-to-module-has-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\bar{a}\cdot\bar{b}=\bar{b}\cdot\bar{a}=\bar{1}$
+\end_inset
+
+ и класс вычетов 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ обратим.
+ Если же 
+\begin_inset Formula $\left(a,m\right)>1$
+\end_inset
+
+, то по доказанному выше класс вычетов 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ есть делитель нуля в кольце 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+ и поэтому обратимым быть не может.
+ Итак, класс вычетов 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ обратим, если и только если 
+\begin_inset Formula $\left(a,m\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+По свойству 8 сравнений
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, если некоторый класс вычетов содержит число 
+\begin_inset Formula $a$
+\end_inset
+
+ взаимно простое с модулем, то все вычеты этого класса будут взаимно простыми
+ с модулем.
+ Поэтому среди всех классов вычетов выделяются классы, состоящие из элементов,
+ взаимно простых с модулем.
+ Эти классы имеют виде 
+\begin_inset Formula $\bar{k}$
+\end_inset
+
+ для 
+\begin_inset Formula $0\le k<m$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(k,m\right)=1$
+\end_inset
+
+.
+ Количество таких чисел 
+\begin_inset Formula $k$
+\end_inset
+
+ равно 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+, то есть задаётся функцией Эйлера.
+ Итак, доказано следующее утверждение.
+\end_layout
+
+\begin_layout Theorem
+Множество классов вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ с операциями, определёнными равенствами 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:residual-classes-operations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, образует коммутативное кольцо с единицей.
+ Группа обратимых элементов этого кольца состоит из 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+ классов, наименьшие неотрицательные вычеты которых взаимно просты с модулем.
+\end_layout
+
+\begin_layout Standard
+В частности, если модуль 
+\begin_inset Formula $m$
+\end_inset
+
+ есть простое число, то есть 
+\begin_inset Formula $\varphi\left(m\right)=m-1$
+\end_inset
+
+, то каждый класс вычетов, отличный от 
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+имеет обратный в кольце 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+.
+ Это значит, что кольцо классов вычетов по простому модулю есть поле.
+\end_layout
+
+\begin_layout Standard
+На языке сравнений удобно описывать так называемые признаки делимости чисел.
+ При наличии калькулятора или компьютера, конечно, удобнее воспользоваться
+ техническими средствами, но иногда бывает польза и от вычислений на бумаге.
+ Предположим нам нужно узнать, делится ли данное натуральное число 
+\begin_inset Formula $N$
+\end_inset
+
+ на некоторое другое число 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Идея всех признаков делимости состоит в том, чтобы построить меньшее число
+ 
+\begin_inset Formula $M$
+\end_inset
+
+, делящееся на число 
+\begin_inset Formula $d$
+\end_inset
+
+ одновременно с 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Следующий общий способ основан на использовании леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:coprmime-to-module-has-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $d$
+\end_inset
+
+ — натуральное число, взаимно простое с основанием системы счисления 
+\begin_inset Formula $10$
+\end_inset
+
+.
+ Тогда согласно лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:coprmime-to-module-has-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ найдётся число 
+\begin_inset Formula $k$
+\end_inset
+
+, для которого 
+\begin_inset Formula $10k\equiv1\left(\mod d\right)$
+\end_inset
+
+.
+ Пусть теперь 
+\begin_inset Formula $N=10u+v$
+\end_inset
+
+, где 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ — целые числа.
+ Тогда справедливо сравнение по модулю 
+\begin_inset Formula $d$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+N=10u+v\equiv10u+10kv=10\left(u+kv\right)\left(\mod d\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Обозначим 
+\begin_inset Formula $M=u+kv$
+\end_inset
+
+.
+ Поскольку числа 
+\begin_inset Formula $10$
+\end_inset
+
+ и 
+\begin_inset Formula $d$
+\end_inset
+
+ взаимно просты, то из сравнения следует, что 
+\begin_inset Formula $N$
+\end_inset
+
+ и 
+\begin_inset Formula $M$
+\end_inset
+
+ одновременно делятся на 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Так что вопрос о делимости 
+\begin_inset Formula $N$
+\end_inset
+
+ на число 
+\begin_inset Formula $d$
+\end_inset
+
+ сводится к выяснению, делится ли на 
+\begin_inset Formula $d$
+\end_inset
+
+ число 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Если при этом окажется, что 
+\begin_inset Formula $M<N$
+\end_inset
+
+, то наша задача упростилась.
+ Рассмотрим некоторые примеры.
+ В них число 
+\begin_inset Formula $v$
+\end_inset
+
+ равно младшей цифре в десятичной записи числа 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $d=7$
+\end_inset
+
+.
+ В этом случае справедливо сравнение 
+\begin_inset Formula $10\cdot\left(-2\right)\equiv1\left(\mod7\right)$
+\end_inset
+
+ и можно взять 
+\begin_inset Formula $k=-2$
+\end_inset
+
+.
+ Из сказанного выше следует, что число 
+\begin_inset Formula $N=10u+v$
+\end_inset
+
+ делится на 
+\begin_inset Formula $7$
+\end_inset
+
+ одновременно с числом 
+\begin_inset Formula $u-2v$
+\end_inset
+
+.
+ Заменяя данное число 
+\begin_inset Formula $N$
+\end_inset
+
+ меньшими числами по этому правилу мы получаем последовательность убывающих
+ чисел 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+.
+ Пусть, например, 
+\begin_inset Formula $N=22624$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $N_{1}=2262-2\cdot4=2254$
+\end_inset
+
+, 
+\begin_inset Formula $N_{2}=225-2\cdot4=217$
+\end_inset
+
+, 
+\begin_inset Formula $N_{3}=21-2\cdot7=7$
+\end_inset
+
+.
+ Так как последнее число делится на 
+\begin_inset Formula $7$
+\end_inset
+
+, то 
+\begin_inset Formula $22624$
+\end_inset
+
+ также делится на 
+\begin_inset Formula $7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $d=13$
+\end_inset
+
+.
+ Имеем 
+\begin_inset Formula $10\cdot4\equiv1\left(\mod13\right)$
+\end_inset
+
+ и можно взять 
+\begin_inset Formula $k=4$
+\end_inset
+
+.
+ Число 
+\begin_inset Formula $N=10u+v$
+\end_inset
+
+ делится на 
+\begin_inset Formula $13$
+\end_inset
+
+ одновременно с числом 
+\begin_inset Formula $u+4v$
+\end_inset
+
+.
+ Пусть, например, 
+\begin_inset Formula $N=32721$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $N_{1}=3272+4\cdot1=3276$
+\end_inset
+
+, 
+\begin_inset Formula $N_{2}=327+4\cdot6=351$
+\end_inset
+
+, 
+\begin_inset Formula $N_{3}=35+4\cdot1=39$
+\end_inset
+
+.
+ Последнее число делится на 
+\begin_inset Formula $13$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $32721$
+\end_inset
+
+ также делится на 
+\begin_inset Formula $13$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula $d=17$
+\end_inset
+
+.
+ Имеем 
+\begin_inset Formula $10\cdot\left(-5\right)\equiv1\left(\mod17\right)$
+\end_inset
+
+ и можно взять 
+\begin_inset Formula $k=-5$
+\end_inset
+
+.
+ Число 
+\begin_inset Formula $N=10u+v$
+\end_inset
+
+ делится на 
+\begin_inset Formula $17$
+\end_inset
+
+ одновременно с числом 
+\begin_inset Formula $u-5v$
+\end_inset
+
+.
+ Пусть, например, 
+\begin_inset Formula $N=39321$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $N_{1}=3932-5\cdot1=3927$
+\end_inset
+
+, 
+\begin_inset Formula $N_{2}=392-5\cdot7=357$
+\end_inset
+
+, 
+\begin_inset Formula $N_{3}=35-5\cdot7=0$
+\end_inset
+
+.
+ Итак, число 
+\begin_inset Formula $39321$
+\end_inset
+
+ делится на 
+\begin_inset Formula $17$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+При 
+\begin_inset Formula $d=19$
+\end_inset
+
+ можно взять 
+\begin_inset Formula $k=2$
+\end_inset
+
+, при 
+\begin_inset Formula $d=23$
+\end_inset
+
+ имеем 
+\begin_inset Formula $k=7$
+\end_inset
+
+, при 
+\begin_inset Formula $d=29$
+\end_inset
+
+ — 
+\begin_inset Formula $k=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для 
+\begin_inset Formula $d=3$
+\end_inset
+
+ и 
+\begin_inset Formula $d=9$
+\end_inset
+
+ имеем 
+\begin_inset Formula $k=1$
+\end_inset
+
+ и, как легко проверить, получается известный признак: натуральное число
+ делится на 
+\begin_inset Formula $3$
+\end_inset
+
+ или 
+\begin_inset Formula $9$
+\end_inset
+
+, если сумма его цифр делится на 
+\begin_inset Formula $3$
+\end_inset
+
+ или 
+\begin_inset Formula $9$
+\end_inset
+
+ соответственно.
+ А в случае 
+\begin_inset Formula $d=11$
+\end_inset
+
+ натуральное число делится на 
+\begin_inset Formula $11$
+\end_inset
+
+ в том и только том случае, когда знакочередующаяся сумма его цифр делится
+ на 
+\begin_inset Formula $11$
+\end_inset
+
+.
+ Для доказательства этих утверждений нужно также использовать индукцию по
+ количеству цифр.
 \end_layout
 
 \begin_layout Standard
