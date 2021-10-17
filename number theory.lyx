@@ -6010,6 +6010,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:coprime-with-each-is-coprime-with-product"
+
+\end_inset
+
 Если число 
 \begin_inset Formula $b$
 \end_inset
@@ -16845,6 +16851,507 @@ N=10u+v\equiv10u+10kv=10\left(u+kv\right)\left(\mod d\right).
 .
  Для доказательства этих утверждений нужно также использовать индукцию по
  количеству цифр.
+\end_layout
+
+\begin_layout Section
+Полная и приведённая системы вычетов
+\end_layout
+
+\begin_layout Standard
+Совокупность представителей всех классов вычетов по заданному модулю 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+ называется 
+\emph on
+полной системой вычетов
+\emph default
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Например, числа 
+\begin_inset Formula $-2$
+\end_inset
+
+, 
+\begin_inset Formula $-1$
+\end_inset
+
+, 
+\begin_inset Formula $0$
+\end_inset
+
+, 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+ составляют полную систему вычетов по модулю 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ Ещё один пример полной системы вычетов по модулю 
+\begin_inset Formula $5$
+\end_inset
+
+ составляют числа 
+\begin_inset Formula $0$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $2^{2}=4$
+\end_inset
+
+, 
+\begin_inset Formula $2^{3}=8$
+\end_inset
+
+ и 
+\begin_inset Formula $2^{4}=16$
+\end_inset
+
+.
+ Совокупность наименьших неотрицательных вычетов всех классов, то есть чисел
+ 
+\begin_inset Formula $0,1,\dots,m-1$
+\end_inset
+
+, составляют полную систему вычетов.
+ 
+\emph on
+Любые 
+\begin_inset Formula $m$
+\end_inset
+
+ чисел попарно несравнимые друг с другом по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ образуют полную систему вычетов по этому модулю
+\emph default
+, ведь они принадлежат различным классом вычетов, а их количество равно
+ числу классов.
+ Набор чисел 
+\begin_inset Formula $a,2a,\dots,ma$
+\end_inset
+
+ при 
+\begin_inset Formula $a$
+\end_inset
+
+, взаимно простом с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+, составляет, как это установлено
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+В отличие от Нестеренко, мы это не доказывали! Доказать отдельно
+\end_layout
+
+\end_inset
+
+, полную систему вычетов.
+ Ещё один пример полной системы вычетов — совокупность целых чисел 
+\begin_inset Formula $x$
+\end_inset
+
+, удовлетворяющих неравенствам 
+\begin_inset Formula $-\frac{m}{2}<x<\frac{m}{2}$
+\end_inset
+
+.
+ Это так называемые 
+\emph on
+абсолютно наименьшие вычеты 
+\emph default
+классов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Так при 
+\begin_inset Formula $m=5$
+\end_inset
+
+ имеем уже указанную выше полную систему вычетов 
+\begin_inset Formula $-2,-1,0,1,2$
+\end_inset
+
+, а при 
+\begin_inset Formula $m=6$
+\end_inset
+
+ — систему вычетов 
+\begin_inset Formula $-2,-1,0,1,2,3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В предыдущем параграфе было доказано, что существует 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+ классов вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, состоящих из чисел, взаимно простых с модулем.
+ Любой набор представителей этих классов вычетов называется 
+\emph on
+приведённой системой вычетов
+\emph default
+.
+ 
+\emph on
+Любые 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+ чисел, попарно несравнимых друг с другом по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ и взаимно простых с модулем, образуют приведённую систему вычетов по модулю
+ 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ 
+\emph default
+Действительно, ведь они лежат в различных классах, состоящих из чисел взаимно
+ простых с 
+\begin_inset Formula $m$
+\end_inset
+
+, а количество их равно количеству таких классов
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать точнее
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+ — целые взаимно простые числа.
+ Тогда
+\end_layout
+
+\begin_layout Theorem
+1.
+ если 
+\begin_inset Formula $x$
+\end_inset
+
+ пробегает полную систему вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, то 
+\begin_inset Formula $ax+b$
+\end_inset
+
+, где 
+\begin_inset Formula $b$
+\end_inset
+
+ — любое целое число, также пробегает полную систему вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Theorem
+2.
+ если 
+\begin_inset Formula $x$
+\end_inset
+
+ пробегает приведённую систему вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, то 
+\begin_inset Formula $ax$
+\end_inset
+
+ также пробегает приведённую систему вычетов по этому модулю.
+\end_layout
+
+\begin_layout Proof
+Докажем, что при несравнимых 
+\begin_inset Formula $x$
+\end_inset
+
+ выражения 
+\begin_inset Formula $ax+b$
+\end_inset
+
+ также являются несравнимыми.
+ Пусть 
+\begin_inset Formula $x_{1}\not\equiv x_{2}\left(\mod m\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $x_{2}-x_{1}=mc+r$
+\end_inset
+
+, где 
+\begin_inset Formula $0<r<m$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\left(ax_{2}-b\right)-\left(ax_{1}-b\right)=a\left(x_{2}-x_{1}\right)=amc+ar.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\left(a,m\right)=1$
+\end_inset
+
+ по условию теоремы, а из 
+\begin_inset Formula $0<r<m$
+\end_inset
+
+ и леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует 
+\begin_inset Formula $m\nmid r$
+\end_inset
+
+, то, по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-and-divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula $m\nmid ar$
+\end_inset
+
+, то есть 
+\begin_inset Formula $ax_{2}+b$
+\end_inset
+
+ и 
+\begin_inset Formula $ax_{1}+b$
+\end_inset
+
+ несравнимы по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $x$
+\end_inset
+
+, по условию, пробегает 
+\begin_inset Formula $m$
+\end_inset
+
+ различных классов вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, то 
+\begin_inset Formula $ax+b$
+\end_inset
+
+ тоже пробегает 
+\begin_inset Formula $m$
+\end_inset
+
+ различных классов вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, то есть, по определению, образует полную систему вычетов.
+ Первое утверждение теоремы доказано.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $x$
+\end_inset
+
+ пробегает приведённую систему вычетов, то есть 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+ вычетов, взаимно простых с модулем.
+ Нужно доказать, что несравнимым 
+\begin_inset Formula $x$
+\end_inset
+
+ соответствуют несравнимые 
+\begin_inset Formula $ax$
+\end_inset
+
+, к тому же взаимно простые с 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ взаимно просты с 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{1}\not\equiv x_{2}\left(\mod m\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $m\nmid\left(x_{1}-x_{2}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ также взаимно просты по условию теоремы, то, по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-with-each-is-coprime-with-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $ax$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ также являются взаимно простыми
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Вот поэтому во втором утверждении нет 
+\begin_inset Formula $+b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Теперь докажем, что 
+\begin_inset Formula $ax_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $ax_{2}$
+\end_inset
+
+ несравнимы по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $ax_{1}-ax_{2}=a\left(x_{1}-x_{2}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,m\right)=1$
+\end_inset
+
+ и 
+\begin_inset Formula $m\nmid\left(x_{1}-x_{2}\right)$
+\end_inset
+
+, то по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-and-divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $m\nmid\left(ax_{1}-ax_{2}\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $ax_{1}\not\equiv ax_{2}\left(\mod m\right)$
+\end_inset
+
+.
+ Таким образом, второе утверждение теоремы также доказано.
 \end_layout
 
 \begin_layout Standard
