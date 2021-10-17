@@ -16186,7 +16186,7 @@ status open
 \begin_layout Lemma
 \begin_inset CommandInset label
 LatexCommand label
-name "lem:coprmime-to-module-has-inverse"
+name "lem:coprime-to-module-has-inverse"
 
 \end_inset
 
@@ -16283,7 +16283,7 @@ status open
 , то по лемме 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "lem:coprmime-to-module-has-inverse"
+reference "lem:coprime-to-module-has-inverse"
 plural "false"
 caps "false"
 noprefix "false"
@@ -16459,7 +16459,7 @@ noprefix "false"
 Следующий общий способ основан на использовании леммы 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "lem:coprmime-to-module-has-inverse"
+reference "lem:coprime-to-module-has-inverse"
 plural "false"
 caps "false"
 noprefix "false"
@@ -16479,7 +16479,7 @@ noprefix "false"
  Тогда согласно лемме 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "lem:coprmime-to-module-has-inverse"
+reference "lem:coprime-to-module-has-inverse"
 plural "false"
 caps "false"
 noprefix "false"
@@ -17352,6 +17352,138 @@ noprefix "false"
 
 .
  Таким образом, второе утверждение теоремы также доказано.
+\end_layout
+
+\begin_layout Section
+Теорема Вильсона
+\end_layout
+
+\begin_layout Standard
+Следующее утверждение, характеризующее простые числа, называется теоремой
+ Вильсона
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Эта теорема впервые была доказана в 1771 году французским математиком Лагранжем
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Для любого простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ выполняется сравнение 
+\begin_inset Formula 
+\[
+\left(p-1\right)!+1\equiv0\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По определению 
+\begin_inset Formula $\left(p-1\right)!=\prod_{k=1}^{p-1}k$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число, то оно является взаимно простым с любым целым числом 
+\begin_inset Formula $a$
+\end_inset
+
+ из из промежутка 
+\begin_inset Formula $1\le a<m$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+это где-то доказывалось?
+\end_layout
+
+\end_inset
+
+.
+ Тогда, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:coprime-to-module-has-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для любого целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+ из этого промежутка существует число 
+\begin_inset Formula $b$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $ab\equiv0\left(\mod m\right)$
+\end_inset
+
+.
+ Можно считать, что 
+\begin_inset Formula $1\le b<m$
+\end_inset
+
+, в противном случае можно взять остаток от деления 
+\begin_inset Formula $b$
+\end_inset
+
+ на 
+\begin_inset Formula $m$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $k^{2}\equiv1\left(\mod m\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить доказательство
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
