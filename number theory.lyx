@@ -17374,6 +17374,12 @@ status open
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Wilson"
+
+\end_inset
+
 Для любого простого числа 
 \begin_inset Formula $p$
 \end_inset
@@ -17695,6 +17701,626 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Теоремы Эйлера и Ферма
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко другой порядок следования теорем.
+ Я решил идти от частного к общему
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Если целое число 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на простое число 
+\begin_inset Formula $p$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+a^{p-1}\equiv1\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим числа вида 
+\begin_inset Formula $ak$
+\end_inset
+
+ при 
+\begin_inset Formula $k=1,\dots,p-1$
+\end_inset
+
+.
+ Все они несравнимы друг с другом по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Действительно
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+вынести в отдельную лемму?
+\end_layout
+
+\end_inset
+
+, если 
+\begin_inset Formula $ak_{1}\equiv ak_{2}\mod p$
+\end_inset
+
+ и 
+\begin_inset Formula $k_{1}\neq k_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $a\left(k_{1}-k_{2}\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $1\le k_{1},k_{2}<p$
+\end_inset
+
+, то 
+\begin_inset Formula $1\le k_{1}-k_{2}<p$
+\end_inset
+
+ и 
+\begin_inset Formula $k_{2}-k_{1}$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ А так как 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ по условию, то 
+\begin_inset Formula $a\left(k_{1}-k_{2}\right)$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, получаем противоречие, которое означает, что все 
+\begin_inset Formula $a\cdot1,a\cdot2\dots,a\cdot\left(p-1\right)$
+\end_inset
+
+ несравнимы друг с другом по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Ни одно из этих чисел не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Таким образом, каждое из этих чисел входит в один из классов вычетов по
+ модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, причём все эти классы различны.
+ Тогда по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ произведение этих чисел совпадает с 
+\begin_inset Formula $\left(p-1\right)!$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\prod_{k=1}^{p-1}\left(a\cdot k\right)\equiv\left(p-1\right)!\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С другой стороны, левую часть этого равенства, в силу коммутативности умножения,
+ можно переписать следующим образом: 
+\begin_inset Formula 
+\[
+\prod_{k=1}^{p-1}\left(a\cdot k\right)=\prod_{k=1}^{p-1}a\cdot\prod_{k=1}^{p-1}k=a^{p-1}\left(p-1\right)!,
+\]
+
+\end_inset
+
+таким образом 
+\begin_inset Formula 
+\[
+a^{p-1}\left(p-1\right)!\equiv\left(p-1\right)!\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По теореме Вильсона 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Wilson"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left(p-1\right)!\equiv-1\left(\mod p\right)$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+a^{p-1}\left(-1\right)=\left(-1\right)\left(\mod p\right),
+\]
+
+\end_inset
+
+умножая это равенство на 
+\begin_inset Formula $\left(-1\right)$
+\end_inset
+
+, получаем утверждение теоремы.
+\end_layout
+
+\begin_layout Standard
+Из этой теоремы следует, что при любом целом 
+\begin_inset Formula $a$
+\end_inset
+
+ число 
+\begin_inset Formula $a^{p}-a=a\left(a^{p-1}-1\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вынести в отдельное утверждение/следствие
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Более общий результат был доказан в 1760 году Л.
+\begin_inset space \thinspace{}
+\end_inset
+
+Эйлером и носит его имя.
+\end_layout
+
+\begin_layout Theorem
+Для каждого целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+ взаимно простого с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+ выполняется сравнение 
+\begin_inset Formula 
+\[
+a^{\varphi\left(m\right)}\equiv1\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать
+\end_layout
+
+\end_inset
+
+Доказательство в целом повторяет доказательство малой теоремы Ферма.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим целые числа, меньшие 
+\begin_inset Formula $m$
+\end_inset
+
+ и взаимно простые этим числом, таких чисел 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+, обозначим их 
+\begin_inset Formula $b_{1},\dots b_{\varphi\left(m\right)}$
+\end_inset
+
+.
+ Рассмотрим произведения 
+\begin_inset Formula $a\cdot b_{1},\dots,a\cdot b_{\varphi\left(m\right)}$
+\end_inset
+
+.
+ По следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-with-each-is-coprime-with-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, так как 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ взаимно просты с 
+\begin_inset Formula $m$
+\end_inset
+
+, то 
+\begin_inset Formula $a\cdot b_{j}$
+\end_inset
+
+ также взаимно просты с 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $b_{k}<b_{j}$
+\end_inset
+
+, если 
+\begin_inset Formula $a\cdot b_{j}\equiv a\cdot b_{k}\left(\mod m\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $a\left(b_{j}-b_{k}\right)$
+\end_inset
+
+ должно делиться на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left(a,m\right)=1$
+\end_inset
+
+, то в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-and-divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
+\begin_inset Formula $a\left(b_{j}-b_{k}\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $m$
+\end_inset
+
+, то 
+\begin_inset Formula $b_{j}-b_{k}$
+\end_inset
+
+ должно делиться на 
+\begin_inset Formula $m$
+\end_inset
+
+, но так как 
+\begin_inset Formula $1\le b_{j},b_{k}<m$
+\end_inset
+
+, то 
+\begin_inset Formula $1\le b_{j}-b_{k}<m$
+\end_inset
+
+, поэтому, по 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $m\nmid\left(b_{j}-b_{k}\right)$
+\end_inset
+
+.
+ Полученное противоречие означает, что все 
+\begin_inset Formula $a\cdot b_{j}$
+\end_inset
+
+ не сравнимы друг с другом по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Таким образом, классы вычетов, соответствующие классам 
+\begin_inset Formula $\overline{a\cdot b_{1}},\dots,\overline{a\cdot b_{\varphi\left(m\right)}}$
+\end_inset
+
+, являются перестановкой классов вычетов 
+\begin_inset Formula $\overline{b_{1}},\dots,\overline{b_{\varphi\left(m\right)}}$
+\end_inset
+
+.
+ Поэтому имеет место следующее сравнение: 
+\begin_inset Formula 
+\[
+\prod_{j=1}^{\varphi\left(m\right)}\left(a\cdot b_{j}\right)\equiv\prod_{j=1}^{\varphi\left(m\right)}b_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Например, для 
+\begin_inset Formula $m=10$
+\end_inset
+
+ имеет 
+\begin_inset Formula $\varphi\left(10\right)=4$
+\end_inset
+
+.
+ В соответствии с теоремой Эйлера можно утверждать, что каждое нечётное
+ число 
+\begin_inset Formula $a$
+\end_inset
+
+, не делящееся на 
+\begin_inset Formula $5$
+\end_inset
+
+, удовлетворяет сравнению 
+\begin_inset Formula $a^{4}\equiv1\left(\mod10\right)$
+\end_inset
+
+, то есть последняя цифра в десятичной записи числа 
+\begin_inset Formula $a^{4}$
+\end_inset
+
+ равна 1.
+ И действительно: 
+\begin_inset Formula 
+\[
+1^{4}=1,3^{4}=81,7^{4}=2401,9^{4}=6561.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ещё один пример.
+ Определим последние три цифры в десятичной записи числа 
+\begin_inset Formula $3^{2007}$
+\end_inset
+
+.
+ Для этого достаточно сосчитать 
+\begin_inset Formula $3^{2007}\mod1000$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi\left(1000\right)=\varphi\left(2^{3}\right)\cdot\varphi\left(5^{3}\right)=4\cdot100=400$
+\end_inset
+
+, и 
+\begin_inset Formula $\left(3,1000\right)=1$
+\end_inset
+
+, то по теореме Эйлера выполняется сравнение 
+\begin_inset Formula $3^{400}\equiv1\left(\mod1000\right)$
+\end_inset
+
+.
+ Отсюда следует 
+\begin_inset Formula 
+\[
+3^{2007}=\left(3^{400}\right)^{5}\cdot3^{7}\equiv3^{7}\left(\mod1000\right).
+\]
+
+\end_inset
+
+Эти сравнения означают, что 
+\begin_inset Formula $3^{2007}$
+\end_inset
+
+ и 
+\begin_inset Formula $3^{7}=2187$
+\end_inset
+
+ имеют одинаковые три последние цифры, и десятичная запись числа 
+\begin_inset Formula $3^{2007}$
+\end_inset
+
+ оканчивается цифрами 
+\begin_inset Formula $187$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для некоторых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ сравнение 
+\begin_inset Formula $a^{d}\equiv1\left(\mod m\right)$
+\end_inset
+
+ может выполняться и при натуральных 
+\begin_inset Formula $d<\varphi\left(m\right)$
+\end_inset
+
+.
+ Например, для 
+\begin_inset Formula $a=1$
+\end_inset
+
+ можно взять 
+\begin_inset Formula $d=1$
+\end_inset
+
+.
+ Имеем 
+\begin_inset Formula $3^{2}\equiv1\left(\mod8\right)$
+\end_inset
+
+, тогда как 
+\begin_inset Formula $\varphi\left(8\right)=4$
+\end_inset
+
+.
+ Можно проверить, что 
+\begin_inset Formula $3^{100}\equiv1\left(\mod1000\right)$
+\end_inset
+
+, но выше установлено равенство 
+\begin_inset Formula $\varphi\left(100\right)=400$
+\end_inset
+
+.
+ Наименьшее натуральное число 
+\begin_inset Formula $d$
+\end_inset
+
+ с условием 
+\begin_inset Formula $a^{d}\equiv1\left(\mod m\right)$
+\end_inset
+
+ называется 
+\emph on
+показателем числа 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\emph default
+по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+
+\emph on
+.
+\end_layout
+
+\begin_layout Lemma
+Пусть 
+\begin_inset Formula $d$
+\end_inset
+
+ — показатель числа 
+\begin_inset Formula $a$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Натуральное число 
+\begin_inset Formula $k$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset Formula $a^{k}\equiv1\left(\mod m\right)$
+\end_inset
+
+ в том и только том случае, когда 
+\begin_inset Formula $d\mid k$
+\end_inset
+
+.
+ В частности, 
+\begin_inset Formula $d\mid\varphi\left(m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
