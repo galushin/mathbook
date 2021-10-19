@@ -18409,6 +18409,12 @@ a^{\varphi\left(m\right)}\equiv1\left(\mod m\right),
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:multiplicative-order"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $d$
 \end_inset
@@ -18589,6 +18595,471 @@ noprefix "false"
 \end_inset
 
 , что завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Section
+Представление рациональных чисел бесконечными десятичными дробями
+\end_layout
+
+\begin_layout Standard
+Как пример использования теоремы Эйлера, рассмотрим представления рациональных
+ чисел 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ бесконечными десятичными дробями, то есть в виде рядов 
+\begin_inset Formula 
+\begin{equation}
+\alpha=a_{0}+\sum_{k=1}^{\infty}\frac{a_{k}}{10^{k}}=a_{0},a_{1}a_{2}\dots,\label{eq:decimal-representation}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+, при 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+, есть цифры 
+\begin_inset Formula $0\le a_{k}\le9$
+\end_inset
+
+, и покажем, что рациональным числам соответствуют периодические разложения.
+\end_layout
+
+\begin_layout Standard
+Прежде всего, существует не более одного представления числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в виде 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:decimal-representation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, содержащего бесконечное число цифр, отличных от 
+\begin_inset Formula $9$
+\end_inset
+
+.
+ Это следует из того, что при любом 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ справедливо равенство 
+\begin_inset Formula $a_{0}10^{k}+\dots+a_{k-1}10+a_{k}=\left\lfloor 10^{k}\alpha\right\rfloor $
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Как это следует?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Докажем, что сумма ряда, соответствующего бесконечной периодической десятичной
+ дроби есть рациональное число.
+ Достаточно доказать это для чисто периодической дроби 
+\begin_inset Formula $\alpha=0,\left(a_{1}a_{2}\dots a_{m}\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $10^{m}\alpha=a_{1}a_{2}\dots a_{m}+\alpha$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\alpha=\frac{a_{1}a_{2}\dots a_{m}}{10^{m}-1},
+\]
+
+\end_inset
+
+ так как числитель и знаменатель — целые числа, то 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — рациональное.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Показать, как расширить это на общий случай
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что если при этом 
+\begin_inset Formula $\alpha=\frac{a}{b}$
+\end_inset
+
+ — несократимое представление в виде отношения натуральных чисел, то 
+\begin_inset Formula $b\mid\left(10^{m}-1\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $10^{m}\equiv1\left(\mod b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть теперь 
+\begin_inset Formula $\alpha=\frac{a}{b}$
+\end_inset
+
+, где 
+\begin_inset Formula $0<a<b$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(b,10\right)=1$
+\end_inset
+
+.
+ Обозначим буквой 
+\begin_inset Formula $d$
+\end_inset
+
+ — показатель числа 
+\begin_inset Formula $10$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $10^{d}\equiv1\left(\mod b\right)$
+\end_inset
+
+ и с некоторым натуральным числом 
+\begin_inset Formula $c$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $10^{d}-1=bc$
+\end_inset
+
+.
+ Записав теперь 
+\begin_inset Formula $ac$
+\end_inset
+
+ в десятичной системе счисления 
+\begin_inset Formula $B=ac=b_{1}10^{d-1}+\dots b_{d-1}10+b_{d}$
+\end_inset
+
+, и пользуясь формулой для суммы бесконечной геометрической прогрессии,
+ получим представление 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в виде бесконечной периодической дроби: 
+\begin_inset Formula 
+\begin{multline*}
+\frac{a}{b}=\frac{B}{10^{d}-1}=\frac{B\cdot10^{-d}}{1-10^{-d}}=B\cdot10^{-d}\sum_{k=0}^{\infty}10^{-kd}=\\
+=\sum_{k=0}^{\infty}10^{-kd}\left(\frac{b_{1}}{10}+\dots+\frac{b_{d-1}}{10^{d-1}}+\frac{b_{d}}{10^{d}}\right)=0,\left(b_{1}\dots b_{d}\right).
+\end{multline*}
+
+\end_inset
+
+Период в бесконечном десятичном разложении числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ записывается теми же цифрами, что и числитель в представлении 
+\begin_inset Formula $\alpha=\frac{B}{10^{d}-1}$
+\end_inset
+
+.
+ При этом нужно иметь в виду, что период может начинаться с некоторого количеств
+а нулей, так 
+\begin_inset Formula $\frac{1}{99}=0,\left(01\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если рациональное число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ больше единицы, числитель дроби 
+\begin_inset Formula $\alpha=\frac{a}{b}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,b\right)=1$
+\end_inset
+
+, можно переписать в виде 
+\begin_inset Formula $a=bq+r$
+\end_inset
+
+, 
+\begin_inset Formula $0\le r<b$
+\end_inset
+
+ и разложив 
+\begin_inset Formula $\frac{r}{b}$
+\end_inset
+
+ в бесконечную периодическую дробь, получим 
+\begin_inset Formula $\frac{a}{b}=q,\left(b_{1}\dots b_{d}\right)$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $r=0$
+\end_inset
+
+ имеем 
+\begin_inset Formula $\alpha=q=q,\left(0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если знаменатель дроби 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ не взаимно прост с 10, то есть делится на 
+\begin_inset Formula $2$
+\end_inset
+
+ или на 
+\begin_inset Formula $5$
+\end_inset
+
+, то его можно умножить на такое натуральное число 
+\begin_inset Formula $u=2^{s}5^{t}$
+\end_inset
+
+, что получится равенство 
+\begin_inset Formula $ub=10^{k}v$
+\end_inset
+
+, где 
+\begin_inset Formula $\left(v,10\right)=1$
+\end_inset
+
+ и 
+\begin_inset Formula $k=\max\left\{ v_{2}\left(b\right),v_{2}\left(b\right)\right\} $
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+\frac{a}{b}=10^{-k}\frac{ua}{v}=10^{-k}\cdot c_{0},\left(c_{1}\dots c_{m}\right).
+\]
+
+\end_inset
+
+Получившееся представ даёт конечную десятичную дробь в случае 
+\begin_inset Formula $v=1$
+\end_inset
+
+ и бесконечную периодическую дробь, если 
+\begin_inset Formula $v>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим также, что в случае 
+\begin_inset Formula $\left(b,10\right)=1$
+\end_inset
+
+ длина минимального периода равна показателю 
+\begin_inset Formula $10$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ В силу леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:multiplicative-order"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ длина периода не превосходит при этом 
+\begin_inset Formula $\varphi\left(b\right)$
+\end_inset
+
+.
+ Минимальную длину периода 
+\begin_inset Formula $\varphi\left(b\right)$
+\end_inset
+
+ имеют, как можно проверить, рациональные числа со знаменателями 
+\begin_inset Formula $7,17,19,23,29,47,49,59,61,97$
+\end_inset
+
+.
+ Этот список исчерпывает все такие знаменатели 
+\begin_inset Formula $b\le100$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\alpha=\frac{a}{b}$
+\end_inset
+
+ — несократимое представление с 
+\begin_inset Formula $\left(b,10\right)=1$
+\end_inset
+
+.
+ Пусть также 
+\begin_inset Formula $\frac{a}{b}=0,\left(b_{1}\dots b_{d}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $c\equiv10a\left(\mod b\right)$
+\end_inset
+
+, 
+\begin_inset Formula $0<c<b$
+\end_inset
+
+.
+ Тогда с некоторым целым 
+\begin_inset Formula $q$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\frac{c}{b}=q+10\frac{a}{b}=q+b_{1}+0,\left(b_{2}\dots b_{d}b_{1}\right)=0,\left(b_{2}\dots b_{d}b_{1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Откуда следует последнее равенство?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Период дроби 
+\begin_inset Formula $\frac{c}{b}$
+\end_inset
+
+ получается из периода 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ циклическим сдвигом на одну позицию.
+ Если допустить в этом случае не чисто периодические разложения, то 
+\begin_inset Formula 
+\[
+\frac{c}{b}=0,b_{2}\dots b_{d}\left(b_{1}b_{2}\dots b_{d}\right)
+\]
+
+\end_inset
+
+ и можно сказать, что бесконечные разложения дробей 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{c}{b}$
+\end_inset
+
+ имеют одинаковые периоды.
+\end_layout
+
+\begin_layout Standard
+В частности, если показатель 
+\begin_inset Formula $10$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $b$
+\end_inset
+
+ равен 
+\begin_inset Formula $\varphi\left(b\right)$
+\end_inset
+
+, то бесконечные десятичные разложения всех дробей 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+, 
+\begin_inset Formula $1\le a<b$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,b\right)=1$
+\end_inset
+
+ имеют одинаковые периоды.
+ Например,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+\frac{1}{7}=0,\left(142857\right) &  & \frac{2}{7}=0,\left(285714\right)\\
+\frac{3}{7}=0,\left(428571\right) &  & \frac{4}{7}=0,\left(571428\right)\\
+\frac{5}{7}=0,\left(714285\right) &  & \frac{6}{7}=0,\left(857142\right)
+\end{array}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
