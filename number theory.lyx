@@ -17374,6 +17374,12 @@ status open
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Wilson"
+
+\end_inset
+
 Для любого простого числа 
 \begin_inset Formula $p$
 \end_inset
@@ -17695,6 +17701,1365 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Теоремы Эйлера и Ферма
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко другой порядок следования теорем.
+ Я решил идти от частного к общему
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Воспользоваться теоремой о системах вычетов!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Если целое число 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на простое число 
+\begin_inset Formula $p$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+a^{p-1}\equiv1\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим числа вида 
+\begin_inset Formula $ak$
+\end_inset
+
+ при 
+\begin_inset Formula $k=1,\dots,p-1$
+\end_inset
+
+.
+ Все они несравнимы друг с другом по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Действительно
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+вынести в отдельную лемму?
+\end_layout
+
+\end_inset
+
+, если 
+\begin_inset Formula $ak_{1}\equiv ak_{2}\mod p$
+\end_inset
+
+ и 
+\begin_inset Formula $k_{1}\neq k_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $a\left(k_{1}-k_{2}\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $1\le k_{1},k_{2}<p$
+\end_inset
+
+, то 
+\begin_inset Formula $1\le k_{1}-k_{2}<p$
+\end_inset
+
+ и 
+\begin_inset Formula $k_{2}-k_{1}$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ А так как 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ по условию, то 
+\begin_inset Formula $a\left(k_{1}-k_{2}\right)$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, получаем противоречие, которое означает, что все 
+\begin_inset Formula $a\cdot1,a\cdot2\dots,a\cdot\left(p-1\right)$
+\end_inset
+
+ несравнимы друг с другом по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Ни одно из этих чисел не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Таким образом, каждое из этих чисел входит в один из классов вычетов по
+ модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, причём все эти классы различны.
+ Тогда по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ произведение этих чисел совпадает с 
+\begin_inset Formula $\left(p-1\right)!$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\prod_{k=1}^{p-1}\left(a\cdot k\right)\equiv\left(p-1\right)!\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С другой стороны, левую часть этого равенства, в силу коммутативности умножения,
+ можно переписать следующим образом: 
+\begin_inset Formula 
+\[
+\prod_{k=1}^{p-1}\left(a\cdot k\right)=\prod_{k=1}^{p-1}a\cdot\prod_{k=1}^{p-1}k=a^{p-1}\left(p-1\right)!,
+\]
+
+\end_inset
+
+таким образом 
+\begin_inset Formula 
+\[
+a^{p-1}\left(p-1\right)!\equiv\left(p-1\right)!\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По теореме Вильсона 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Wilson"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left(p-1\right)!\equiv-1\left(\mod p\right)$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+a^{p-1}\left(-1\right)=\left(-1\right)\left(\mod p\right),
+\]
+
+\end_inset
+
+умножая это равенство на 
+\begin_inset Formula $\left(-1\right)$
+\end_inset
+
+, получаем утверждение теоремы.
+\end_layout
+
+\begin_layout Standard
+Из этой теоремы следует, что при любом целом 
+\begin_inset Formula $a$
+\end_inset
+
+ число 
+\begin_inset Formula $a^{p}-a=a\left(a^{p-1}-1\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вынести в отдельное утверждение/следствие
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Более общий результат был доказан в 1760 году Л.
+\begin_inset space \thinspace{}
+\end_inset
+
+Эйлером и носит его имя.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:euler-theorem"
+
+\end_inset
+
+Для каждого целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+ взаимно простого с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+ выполняется сравнение 
+\begin_inset Formula 
+\[
+a^{\varphi\left(m\right)}\equiv1\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать
+\end_layout
+
+\end_inset
+
+Доказательство в целом повторяет доказательство малой теоремы Ферма.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим целые числа, меньшие 
+\begin_inset Formula $m$
+\end_inset
+
+ и взаимно простые этим числом, таких чисел 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+, обозначим их 
+\begin_inset Formula $b_{1},\dots b_{\varphi\left(m\right)}$
+\end_inset
+
+.
+ Рассмотрим произведения 
+\begin_inset Formula $a\cdot b_{1},\dots,a\cdot b_{\varphi\left(m\right)}$
+\end_inset
+
+.
+ По следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-with-each-is-coprime-with-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, так как 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ взаимно просты с 
+\begin_inset Formula $m$
+\end_inset
+
+, то 
+\begin_inset Formula $a\cdot b_{j}$
+\end_inset
+
+ также взаимно просты с 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $b_{k}<b_{j}$
+\end_inset
+
+, если 
+\begin_inset Formula $a\cdot b_{j}\equiv a\cdot b_{k}\left(\mod m\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $a\left(b_{j}-b_{k}\right)$
+\end_inset
+
+ должно делиться на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left(a,m\right)=1$
+\end_inset
+
+, то в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-and-divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
+\begin_inset Formula $a\left(b_{j}-b_{k}\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $m$
+\end_inset
+
+, то 
+\begin_inset Formula $b_{j}-b_{k}$
+\end_inset
+
+ должно делиться на 
+\begin_inset Formula $m$
+\end_inset
+
+, но так как 
+\begin_inset Formula $1\le b_{j},b_{k}<m$
+\end_inset
+
+, то 
+\begin_inset Formula $1\le b_{j}-b_{k}<m$
+\end_inset
+
+, поэтому, по 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $m\nmid\left(b_{j}-b_{k}\right)$
+\end_inset
+
+.
+ Полученное противоречие означает, что все 
+\begin_inset Formula $a\cdot b_{j}$
+\end_inset
+
+ не сравнимы друг с другом по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Таким образом, классы вычетов, соответствующие классам 
+\begin_inset Formula $\overline{a\cdot b_{1}},\dots,\overline{a\cdot b_{\varphi\left(m\right)}}$
+\end_inset
+
+, являются перестановкой классов вычетов 
+\begin_inset Formula $\overline{b_{1}},\dots,\overline{b_{\varphi\left(m\right)}}$
+\end_inset
+
+.
+ Поэтому имеет место следующее сравнение: 
+\begin_inset Formula 
+\[
+\prod_{j=1}^{\varphi\left(m\right)}\left(a\cdot b_{j}\right)\equiv\prod_{j=1}^{\varphi\left(m\right)}b_{j}\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Левую часть это равенства в силу коммутативности умножения можно переписать
+ следующим образом: 
+\begin_inset Formula 
+\[
+\prod_{j=1}^{\varphi\left(m\right)}\left(a\cdot b_{j}\right)=\prod_{j=1}^{\varphi\left(m\right)}a\cdot\prod_{j=1}^{\varphi\left(m\right)}b_{j}=a^{\varphi\left(m\right)}\cdot\prod_{j=1}^{\varphi\left(m\right)}b_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Введём обозначение 
+\begin_inset Formula 
+\[
+B=\prod_{j=1}^{\varphi\left(m\right)}b_{j},
+\]
+
+\end_inset
+
+тогда сравнение приобретает вид
+\begin_inset Formula 
+\[
+a^{\varphi\left(m\right)}\cdot B\equiv B\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как все 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ взаимно просты с 
+\begin_inset Formula $m$
+\end_inset
+
+, то, по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-with-each-is-coprime-with-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, взаимно простым с 
+\begin_inset Formula $m$
+\end_inset
+
+ является и их произведение, то есть 
+\begin_inset Formula $B$
+\end_inset
+
+ взаимно просто с 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Тогда, по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-and-divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует такое 
+\begin_inset Formula $A$
+\end_inset
+
+, что 
+\begin_inset Formula $B\cdot A\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ По свойству сравнений 4
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+a^{\varphi\left(m\right)}\cdot B\cdot A\equiv B\cdot A\left(\mod m\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a^{\varphi\left(m\right)}\equiv1\left(\mod m\right),
+\]
+
+\end_inset
+
+что завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Standard
+Например, для 
+\begin_inset Formula $m=10$
+\end_inset
+
+ имеет 
+\begin_inset Formula $\varphi\left(10\right)=4$
+\end_inset
+
+.
+ В соответствии с теоремой Эйлера можно утверждать, что каждое нечётное
+ число 
+\begin_inset Formula $a$
+\end_inset
+
+, не делящееся на 
+\begin_inset Formula $5$
+\end_inset
+
+, удовлетворяет сравнению 
+\begin_inset Formula $a^{4}\equiv1\left(\mod10\right)$
+\end_inset
+
+, то есть последняя цифра в десятичной записи числа 
+\begin_inset Formula $a^{4}$
+\end_inset
+
+ равна 1.
+ И действительно: 
+\begin_inset Formula 
+\[
+1^{4}=1,3^{4}=81,7^{4}=2401,9^{4}=6561.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ещё один пример.
+ Определим последние три цифры в десятичной записи числа 
+\begin_inset Formula $3^{2007}$
+\end_inset
+
+.
+ Для этого достаточно сосчитать 
+\begin_inset Formula $3^{2007}\mod1000$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi\left(1000\right)=\varphi\left(2^{3}\right)\cdot\varphi\left(5^{3}\right)=4\cdot100=400$
+\end_inset
+
+, и 
+\begin_inset Formula $\left(3,1000\right)=1$
+\end_inset
+
+, то по теореме Эйлера выполняется сравнение 
+\begin_inset Formula $3^{400}\equiv1\left(\mod1000\right)$
+\end_inset
+
+.
+ Отсюда следует 
+\begin_inset Formula 
+\[
+3^{2007}=\left(3^{400}\right)^{5}\cdot3^{7}\equiv3^{7}\left(\mod1000\right).
+\]
+
+\end_inset
+
+Эти сравнения означают, что 
+\begin_inset Formula $3^{2007}$
+\end_inset
+
+ и 
+\begin_inset Formula $3^{7}=2187$
+\end_inset
+
+ имеют одинаковые три последние цифры, и десятичная запись числа 
+\begin_inset Formula $3^{2007}$
+\end_inset
+
+ оканчивается цифрами 
+\begin_inset Formula $187$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для некоторых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ сравнение 
+\begin_inset Formula $a^{d}\equiv1\left(\mod m\right)$
+\end_inset
+
+ может выполняться и при натуральных 
+\begin_inset Formula $d<\varphi\left(m\right)$
+\end_inset
+
+.
+ Например, для 
+\begin_inset Formula $a=1$
+\end_inset
+
+ можно взять 
+\begin_inset Formula $d=1$
+\end_inset
+
+.
+ Имеем 
+\begin_inset Formula $3^{2}\equiv1\left(\mod8\right)$
+\end_inset
+
+, тогда как 
+\begin_inset Formula $\varphi\left(8\right)=4$
+\end_inset
+
+.
+ Можно проверить, что 
+\begin_inset Formula $3^{100}\equiv1\left(\mod1000\right)$
+\end_inset
+
+, но выше установлено равенство 
+\begin_inset Formula $\varphi\left(100\right)=400$
+\end_inset
+
+.
+ Наименьшее натуральное число 
+\begin_inset Formula $d$
+\end_inset
+
+ с условием 
+\begin_inset Formula $a^{d}\equiv1\left(\mod m\right)$
+\end_inset
+
+ называется 
+\emph on
+показателем числа 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\emph default
+по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+
+\emph on
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:multiplicative-order"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $d$
+\end_inset
+
+ — показатель числа 
+\begin_inset Formula $a$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Натуральное число 
+\begin_inset Formula $k$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset Formula $a^{k}\equiv1\left(\mod m\right)$
+\end_inset
+
+ в том и только том случае, когда 
+\begin_inset Formula $d\mid k$
+\end_inset
+
+.
+ В частности, 
+\begin_inset Formula $d\mid\varphi\left(m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть сначала 
+\begin_inset Formula $d\mid k$
+\end_inset
+
+.
+ Тогда, по определению, существует такое целое число 
+\begin_inset Formula $u$
+\end_inset
+
+, что 
+\begin_inset Formula $k=du$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $a^{k}=a^{du}=\left(a^{d}\right)^{u}$
+\end_inset
+
+.
+ По определению показателя числа по модулю
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $\left(a^{d}\right)\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ Следовательно, по свойству 4
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $a^{du}=\left(a^{d}\right)^{u}\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ Необходимость условия доказана.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $k$
+\end_inset
+
+ — наименьшее натуральное число такое, что 
+\begin_inset Formula $d\nmid k$
+\end_inset
+
+, но 
+\begin_inset Formula $a^{k}\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ Тогда, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:division-with-reminder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует представление 
+\begin_inset Formula $k=dq+r$
+\end_inset
+
+, где 
+\begin_inset Formula $0\le r<d.$
+\end_inset
+
+ Так как 
+\begin_inset Formula $d\nmid k$
+\end_inset
+
+, то равенство 
+\begin_inset Formula $r$
+\end_inset
+
+ нулю исключается, поэтому 
+\begin_inset Formula $0<r<d$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula 
+\[
+a^{k}=a^{dq+r}=\left(a^{d}\right)^{q}\cdot a^{r}\equiv1^{q}\cdot a^{r}\equiv a^{r}\left(\mod m\right).
+\]
+
+\end_inset
+
+Таким образом, 
+\begin_inset Formula $r$
+\end_inset
+
+ — натуральное число, меньшее, чем 
+\begin_inset Formula $k$
+\end_inset
+
+, для которого выполняется сравнение леммы.
+ Полученное противоречие с тем, что 
+\begin_inset Formula $k$
+\end_inset
+
+ — наименьшее из таких чисел, означает, что 
+\begin_inset Formula $d\mid k$
+\end_inset
+
+.
+ Необходимость условия также доказана.
+\end_layout
+
+\begin_layout Proof
+По теореме Эйлера 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:euler-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $a^{\varphi\left(m\right)}\equiv1\left(\mod m\right)$
+\end_inset
+
+, поэтому, по доказанному выше 
+\begin_inset Formula $d\mid\varphi\left(m\right)$
+\end_inset
+
+, что завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Section
+Представление рациональных чисел бесконечными десятичными дробями
+\end_layout
+
+\begin_layout Standard
+Как пример использования теоремы Эйлера, рассмотрим представления рациональных
+ чисел 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ бесконечными десятичными дробями, то есть в виде рядов 
+\begin_inset Formula 
+\begin{equation}
+\alpha=a_{0}+\sum_{k=1}^{\infty}\frac{a_{k}}{10^{k}}=a_{0},a_{1}a_{2}\dots,\label{eq:decimal-representation}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+, при 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+, есть цифры 
+\begin_inset Formula $0\le a_{k}\le9$
+\end_inset
+
+, и покажем, что рациональным числам соответствуют периодические разложения.
+\end_layout
+
+\begin_layout Standard
+Прежде всего, существует не более одного представления числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в виде 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:decimal-representation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, содержащего бесконечное число цифр, отличных от 
+\begin_inset Formula $9$
+\end_inset
+
+.
+ Это следует из того, что при любом 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ справедливо равенство 
+\begin_inset Formula $a_{0}10^{k}+\dots+a_{k-1}10+a_{k}=\left\lfloor 10^{k}\alpha\right\rfloor $
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Как это следует?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Докажем, что сумма ряда, соответствующего бесконечной периодической десятичной
+ дроби есть рациональное число.
+ Достаточно доказать это для чисто периодической дроби 
+\begin_inset Formula $\alpha=0,\left(a_{1}a_{2}\dots a_{m}\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $10^{m}\alpha=a_{1}a_{2}\dots a_{m}+\alpha$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\alpha=\frac{a_{1}a_{2}\dots a_{m}}{10^{m}-1},
+\]
+
+\end_inset
+
+ так как числитель и знаменатель — целые числа, то 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — рациональное.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Показать, как расширить это на общий случай
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что если при этом 
+\begin_inset Formula $\alpha=\frac{a}{b}$
+\end_inset
+
+ — несократимое представление в виде отношения натуральных чисел, то 
+\begin_inset Formula $b\mid\left(10^{m}-1\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $10^{m}\equiv1\left(\mod b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть теперь 
+\begin_inset Formula $\alpha=\frac{a}{b}$
+\end_inset
+
+, где 
+\begin_inset Formula $0<a<b$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(b,10\right)=1$
+\end_inset
+
+.
+ Обозначим буквой 
+\begin_inset Formula $d$
+\end_inset
+
+ — показатель числа 
+\begin_inset Formula $10$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $10^{d}\equiv1\left(\mod b\right)$
+\end_inset
+
+ и с некоторым натуральным числом 
+\begin_inset Formula $c$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $10^{d}-1=bc$
+\end_inset
+
+.
+ Записав теперь 
+\begin_inset Formula $ac$
+\end_inset
+
+ в десятичной системе счисления 
+\begin_inset Formula $B=ac=b_{1}10^{d-1}+\dots b_{d-1}10+b_{d}$
+\end_inset
+
+, и пользуясь формулой для суммы бесконечной геометрической прогрессии,
+ получим представление 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в виде бесконечной периодической дроби: 
+\begin_inset Formula 
+\begin{multline*}
+\frac{a}{b}=\frac{B}{10^{d}-1}=\frac{B\cdot10^{-d}}{1-10^{-d}}=B\cdot10^{-d}\sum_{k=0}^{\infty}10^{-kd}=\\
+=\sum_{k=0}^{\infty}10^{-kd}\left(\frac{b_{1}}{10}+\dots+\frac{b_{d-1}}{10^{d-1}}+\frac{b_{d}}{10^{d}}\right)=0,\left(b_{1}\dots b_{d}\right).
+\end{multline*}
+
+\end_inset
+
+Период в бесконечном десятичном разложении числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ записывается теми же цифрами, что и числитель в представлении 
+\begin_inset Formula $\alpha=\frac{B}{10^{d}-1}$
+\end_inset
+
+.
+ При этом нужно иметь в виду, что период может начинаться с некоторого количеств
+а нулей, так 
+\begin_inset Formula $\frac{1}{99}=0,\left(01\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если рациональное число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ больше единицы, числитель дроби 
+\begin_inset Formula $\alpha=\frac{a}{b}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,b\right)=1$
+\end_inset
+
+, можно переписать в виде 
+\begin_inset Formula $a=bq+r$
+\end_inset
+
+, 
+\begin_inset Formula $0\le r<b$
+\end_inset
+
+ и разложив 
+\begin_inset Formula $\frac{r}{b}$
+\end_inset
+
+ в бесконечную периодическую дробь, получим 
+\begin_inset Formula $\frac{a}{b}=q,\left(b_{1}\dots b_{d}\right)$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $r=0$
+\end_inset
+
+ имеем 
+\begin_inset Formula $\alpha=q=q,\left(0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если знаменатель дроби 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ не взаимно прост с 10, то есть делится на 
+\begin_inset Formula $2$
+\end_inset
+
+ или на 
+\begin_inset Formula $5$
+\end_inset
+
+, то его можно умножить на такое натуральное число 
+\begin_inset Formula $u=2^{s}5^{t}$
+\end_inset
+
+, что получится равенство 
+\begin_inset Formula $ub=10^{k}v$
+\end_inset
+
+, где 
+\begin_inset Formula $\left(v,10\right)=1$
+\end_inset
+
+ и 
+\begin_inset Formula $k=\max\left\{ v_{2}\left(b\right),v_{2}\left(b\right)\right\} $
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+\frac{a}{b}=10^{-k}\frac{ua}{v}=10^{-k}\cdot c_{0},\left(c_{1}\dots c_{m}\right).
+\]
+
+\end_inset
+
+Получившееся представ даёт конечную десятичную дробь в случае 
+\begin_inset Formula $v=1$
+\end_inset
+
+ и бесконечную периодическую дробь, если 
+\begin_inset Formula $v>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим также, что в случае 
+\begin_inset Formula $\left(b,10\right)=1$
+\end_inset
+
+ длина минимального периода равна показателю 
+\begin_inset Formula $10$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ В силу леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:multiplicative-order"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ длина периода не превосходит при этом 
+\begin_inset Formula $\varphi\left(b\right)$
+\end_inset
+
+.
+ Минимальную длину периода 
+\begin_inset Formula $\varphi\left(b\right)$
+\end_inset
+
+ имеют, как можно проверить, рациональные числа со знаменателями 
+\begin_inset Formula $7,17,19,23,29,47,49,59,61,97$
+\end_inset
+
+.
+ Этот список исчерпывает все такие знаменатели 
+\begin_inset Formula $b\le100$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\alpha=\frac{a}{b}$
+\end_inset
+
+ — несократимое представление с 
+\begin_inset Formula $\left(b,10\right)=1$
+\end_inset
+
+.
+ Пусть также 
+\begin_inset Formula $\frac{a}{b}=0,\left(b_{1}\dots b_{d}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $c\equiv10a\left(\mod b\right)$
+\end_inset
+
+, 
+\begin_inset Formula $0<c<b$
+\end_inset
+
+.
+ Тогда с некоторым целым 
+\begin_inset Formula $q$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\frac{c}{b}=q+10\frac{a}{b}=q+b_{1}+0,\left(b_{2}\dots b_{d}b_{1}\right)=0,\left(b_{2}\dots b_{d}b_{1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Откуда следует последнее равенство?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Период дроби 
+\begin_inset Formula $\frac{c}{b}$
+\end_inset
+
+ получается из периода 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ циклическим сдвигом на одну позицию.
+ Если допустить в этом случае не чисто периодические разложения, то 
+\begin_inset Formula 
+\[
+\frac{c}{b}=0,b_{2}\dots b_{d}\left(b_{1}b_{2}\dots b_{d}\right)
+\]
+
+\end_inset
+
+ и можно сказать, что бесконечные разложения дробей 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{c}{b}$
+\end_inset
+
+ имеют одинаковые периоды.
+\end_layout
+
+\begin_layout Standard
+В частности, если показатель 
+\begin_inset Formula $10$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $b$
+\end_inset
+
+ равен 
+\begin_inset Formula $\varphi\left(b\right)$
+\end_inset
+
+, то бесконечные десятичные разложения всех дробей 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+, 
+\begin_inset Formula $1\le a<b$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,b\right)=1$
+\end_inset
+
+ имеют одинаковые периоды.
+ Например,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+\frac{1}{7}=0,\left(142857\right) &  & \frac{2}{7}=0,\left(285714\right)\\
+\frac{3}{7}=0,\left(428571\right) &  & \frac{4}{7}=0,\left(571428\right)\\
+\frac{5}{7}=0,\left(714285\right) &  & \frac{6}{7}=0,\left(857142\right)
+\end{array}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
