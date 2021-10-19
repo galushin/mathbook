@@ -17718,6 +17718,19 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Воспользоваться теоремой о системах вычетов!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Theorem
 Если целое число 
 \begin_inset Formula $a$
@@ -17938,6 +17951,12 @@ status open
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:euler-theorem"
+
+\end_inset
+
 Для каждого целого числа 
 \begin_inset Formula $a$
 \end_inset
@@ -18111,12 +18130,125 @@ noprefix "false"
  Поэтому имеет место следующее сравнение: 
 \begin_inset Formula 
 \[
-\prod_{j=1}^{\varphi\left(m\right)}\left(a\cdot b_{j}\right)\equiv\prod_{j=1}^{\varphi\left(m\right)}b_{j}.
+\prod_{j=1}^{\varphi\left(m\right)}\left(a\cdot b_{j}\right)\equiv\prod_{j=1}^{\varphi\left(m\right)}b_{j}\left(\mod m\right).
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+Левую часть это равенства в силу коммутативности умножения можно переписать
+ следующим образом: 
+\begin_inset Formula 
+\[
+\prod_{j=1}^{\varphi\left(m\right)}\left(a\cdot b_{j}\right)=\prod_{j=1}^{\varphi\left(m\right)}a\cdot\prod_{j=1}^{\varphi\left(m\right)}b_{j}=a^{\varphi\left(m\right)}\cdot\prod_{j=1}^{\varphi\left(m\right)}b_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Введём обозначение 
+\begin_inset Formula 
+\[
+B=\prod_{j=1}^{\varphi\left(m\right)}b_{j},
+\]
+
+\end_inset
+
+тогда сравнение приобретает вид
+\begin_inset Formula 
+\[
+a^{\varphi\left(m\right)}\cdot B\equiv B\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как все 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ взаимно просты с 
+\begin_inset Formula $m$
+\end_inset
+
+, то, по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-with-each-is-coprime-with-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, взаимно простым с 
+\begin_inset Formula $m$
+\end_inset
+
+ является и их произведение, то есть 
+\begin_inset Formula $B$
+\end_inset
+
+ взаимно просто с 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Тогда, по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-and-divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует такое 
+\begin_inset Formula $A$
+\end_inset
+
+, что 
+\begin_inset Formula $B\cdot A\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ По свойству сравнений 4
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+a^{\varphi\left(m\right)}\cdot B\cdot A\equiv B\cdot A\left(\mod m\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a^{\varphi\left(m\right)}\equiv1\left(\mod m\right),
+\]
+
+\end_inset
+
+что завершает доказательство теоремы.
 \end_layout
 
 \begin_layout Standard
@@ -18311,16 +18443,152 @@ noprefix "false"
 \end_layout
 
 \begin_layout Proof
+Пусть сначала 
+\begin_inset Formula $d\mid k$
+\end_inset
+
+.
+ Тогда, по определению, существует такое целое число 
+\begin_inset Formula $u$
+\end_inset
+
+, что 
+\begin_inset Formula $k=du$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $a^{k}=a^{du}=\left(a^{d}\right)^{u}$
+\end_inset
+
+.
+ По определению показателя числа по модулю
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать доказательство
+Добавить ссылку
 \end_layout
 
 \end_inset
 
+, 
+\begin_inset Formula $\left(a^{d}\right)\equiv1\left(\mod m\right)$
+\end_inset
 
+.
+ Следовательно, по свойству 4
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $a^{du}=\left(a^{d}\right)^{u}\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ Необходимость условия доказана.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $k$
+\end_inset
+
+ — наименьшее натуральное число такое, что 
+\begin_inset Formula $d\nmid k$
+\end_inset
+
+, но 
+\begin_inset Formula $a^{k}\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ Тогда, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:division-with-reminder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует представление 
+\begin_inset Formula $k=dq+r$
+\end_inset
+
+, где 
+\begin_inset Formula $0\le r<d.$
+\end_inset
+
+ Так как 
+\begin_inset Formula $d\nmid k$
+\end_inset
+
+, то равенство 
+\begin_inset Formula $r$
+\end_inset
+
+ нулю исключается, поэтому 
+\begin_inset Formula $0<r<d$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula 
+\[
+a^{k}=a^{dq+r}=\left(a^{d}\right)^{q}\cdot a^{r}\equiv1^{q}\cdot a^{r}\equiv a^{r}\left(\mod m\right).
+\]
+
+\end_inset
+
+Таким образом, 
+\begin_inset Formula $r$
+\end_inset
+
+ — натуральное число, меньшее, чем 
+\begin_inset Formula $k$
+\end_inset
+
+, для которого выполняется сравнение леммы.
+ Полученное противоречие с тем, что 
+\begin_inset Formula $k$
+\end_inset
+
+ — наименьшее из таких чисел, означает, что 
+\begin_inset Formula $d\mid k$
+\end_inset
+
+.
+ Необходимость условия также доказана.
+\end_layout
+
+\begin_layout Proof
+По теореме Эйлера 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:euler-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $a^{\varphi\left(m\right)}\equiv1\left(\mod m\right)$
+\end_inset
+
+, поэтому, по доказанному выше 
+\begin_inset Formula $d\mid\varphi\left(m\right)$
+\end_inset
+
+, что завершает доказательство теоремы.
 \end_layout
 
 \begin_layout Standard
