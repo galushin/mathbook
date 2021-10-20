@@ -93,6 +93,20 @@ theorems-ams-extended-bytype
 Нестеренко
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Максимально отказаться от многоточий? Использовать более строгую нотацию
+ через суммы?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 \begin_inset CommandInset label
 LatexCommand label
@@ -19056,6 +19070,638 @@ status open
 \frac{5}{7}=0,\left(714285\right) &  & \frac{6}{7}=0,\left(857142\right)
 \end{array}
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Проверка на простоту и построение больших простых чисел
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — натуральное число, вообще говоря большое.
+ Оно может быть либо составным, либо простым.
+ Как определить, к какому из этих двух классов относится данное число?
+\end_layout
+
+\begin_layout Standard
+Можно попробовать разделить 
+\begin_inset Formula $N$
+\end_inset
+
+ на простые числа, из таблицы, составленной с помощью решета Эратосфена
+ и содержащей все простые числа от до некоторой границы 
+\begin_inset Formula $B$
+\end_inset
+
+, определяемой нашими возможностями.
+ Если у 
+\begin_inset Formula $N$
+\end_inset
+
+ есть маленькие простые делители, мы сможем найти их таким способом и доказать,
+ что 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число.
+\end_layout
+
+\begin_layout Standard
+Если же маленькие простые делители не обнаружены и если 
+\begin_inset Formula $B$
+\end_inset
+
+ сравнительно велико, а именно 
+\begin_inset Formula $B^{2}>N$
+\end_inset
+
+, можно утверждать, что 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число.
+ Действительно, если бы 
+\begin_inset Formula $N$
+\end_inset
+
+ было составным, то по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minimal-divisor-is-prime-and-less-than-sqrt-N"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $p\le\sqrt{N}<B$
+\end_inset
+
+, содержащийся в нашей таблице.
+ Но таковой отсутствует.
+\end_layout
+
+\begin_layout Standard
+В случае же 
+\begin_inset Formula $N>B^{2}$
+\end_inset
+
+ никакого заключения о числе 
+\begin_inset Formula $N$
+\end_inset
+
+ сделать нельзя.
+\end_layout
+
+\begin_layout Standard
+Далее мы будем считать, что 
+\begin_inset Formula $N$
+\end_inset
+
+ достаточно велико и не имеет маленьких простых делителей.
+ Выберем целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $1<a<N$
+\end_inset
+
+, и вычислим с помощью алгоритма Евклида наибольший общий делитель 
+\begin_inset Formula $d=\left(a,N\right)$
+\end_inset
+
+.
+ Если оказалось, что 
+\begin_inset Formula $d>1$
+\end_inset
+
+, можно утверждать, что 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число, ведь оно делится на 
+\begin_inset Formula $d$
+\end_inset
+
+, причём 
+\begin_inset Formula $1<d<N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если же оказалось, что 
+\begin_inset Formula $\left(a,N\right)=1$
+\end_inset
+
+, то о числе 
+\begin_inset Formula $N$
+\end_inset
+
+ опять никакого заключения сделать нельзя.
+ Если у составного числа 
+\begin_inset Formula $N$
+\end_inset
+
+ нет маленьких простых делителей, то количество взаимно простых с ним чисел
+ на интервале 
+\begin_inset Formula $1<d<N$
+\end_inset
+
+ равное 
+\begin_inset Formula $\varphi\left(N\right)-1=N\prod_{p\mid N}\left(1-p^{-1}\right)-1$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ будет достаточно большим, и маловероятно, что выбранное наугад число 
+\begin_inset Formula $a$
+\end_inset
+
+, позволит разложить число 
+\begin_inset Formula $N$
+\end_inset
+
+ на множители.
+\end_layout
+
+\begin_layout Standard
+В этом случае может помочь малая теорема Ферма.
+ Если для числа 
+\begin_inset Formula $N$
+\end_inset
+
+ и выбранного 
+\begin_inset Formula $a$
+\end_inset
+
+ с условием 
+\begin_inset Formula $\left(a,N\right)=1$
+\end_inset
+
+ её утверждение нарушается, можно утверждать, что 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число.
+ Итак, 
+\emph on
+если 
+\begin_inset Formula $\left(a,N\right)=1$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{N-1}\not\equiv1\left(\mod N\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Простейший алгоритм для вычисления 
+\begin_inset Formula $a^{d}\mod N$
+\end_inset
+
+, состоящий в последовательном умножении на 
+\begin_inset Formula $a$
+\end_inset
+
+ результата предшествующего вычисления, требует 
+\begin_inset Formula $d-1$
+\end_inset
+
+ умножений.
+ В действительности это вычисление можно провести намного быстрее.
+\end_layout
+
+\begin_layout Standard
+Возьмём, например 
+\begin_inset Formula $N=437$
+\end_inset
+
+ и вычислим 
+\begin_inset Formula $2^{436}\mod437$
+\end_inset
+
+.
+ Используя свойства сравнений (для краткости мы нигде не указываем модуль
+ сравнения, равный 
+\begin_inset Formula $437$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+А может быть стоит указать?
+\end_layout
+
+\end_inset
+
+), получаем: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать как у Степанова, про египетское умножение?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Приведённые вычисления не раскладывают число 
+\begin_inset Formula $437$
+\end_inset
+
+ на множители, но доказывают, что оно составное.
+ Как легко проверить, 
+\begin_inset Formula $437=19\cdot23$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Может показаться, что указанный способ проверки требует слишком много вычислений.
+ Но эти вычисления однотипны.
+ Мы либо возводили в квадрат, либо удваивали число по модулю 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ И это обстоятельство оказывается очень удобным при реализации алгоритма
+ на компьютере.
+ А кроме того, как сейчас выяснится, и количество возведений в квадрат мало
+ по сравнению с величиной 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотренный выше пример есть частный случай общего алгоритма.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Алгоритм 4.1.
+ 
+\series default
+Данные: Целые числа 
+\begin_inset Formula $a,N>1,d>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Найти: 
+\begin_inset Formula $a^{d}\left(\mod N\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+1.
+ Представить 
+\begin_inset Formula $d$
+\end_inset
+
+ в двоичной системе счисления, то есть найти такие цифры 
+\begin_inset Formula $d_{j}\in\left\{ 0,1\right\} $
+\end_inset
+
+, что 
+\begin_inset Formula $d=d_{0}2^{r}+\dots+d_{r-1}2+d_{r}$
+\end_inset
+
+, 
+\begin_inset Formula $d_{0}=1$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Можно делать итеративно
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ Положить 
+\begin_inset Formula $a_{0}=a$
+\end_inset
+
+ и затем для 
+\begin_inset Formula $i=1,\dots,r$
+\end_inset
+
+ вычислить 
+\begin_inset Formula 
+\[
+a_{i}=\left(a_{i-1}^{2}\cdot a^{d_{i}}\right)\mod N.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ Положить 
+\begin_inset Formula $a^{d}=a_{r}\mod N$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Используем 
+\begin_inset Formula $\mod$
+\end_inset
+
+ как бинарную операцию.
+ Это уже описано?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, в случае 
+\begin_inset Formula $d_{i}=0$
+\end_inset
+
+ алгоритм вычисляет 
+\begin_inset Formula $a_{i}\equiv a_{i-1}^{2}\left(\mod N\right)$
+\end_inset
+
+, если же 
+\begin_inset Formula $d_{i}=1$
+\end_inset
+
+, то 
+\begin_inset Formula $a_{i}\equiv a_{i-1}^{2}\cdot a\left(\mod N\right)$
+\end_inset
+
+.
+ Реализованная выше последовательность вычислений для 
+\begin_inset Formula $d=436=2^{8}+2^{7}+2^{5}+2^{4}+2^{2}$
+\end_inset
+
+ в точности соответствует алгоритму.
+ Докажем теперь, что алгоритм работает правильно, и количество выполняемых
+ им арифметических операций не очень велико.
+\end_layout
+
+\begin_layout Theorem
+Алгоритм действительно вычисляет 
+\begin_inset Formula $a^{d}\left(\mod N\right)$
+\end_inset
+
+.
+ Он использует для этого не более 
+\begin_inset Formula $2\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+ умножений в кольце вычетов 
+\begin_inset Formula $\mathbb{Z}/N\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+При всех 
+\begin_inset Formula $i=0,1,\dots,r$
+\end_inset
+
+ справедливы сравнения 
+\begin_inset Formula 
+\[
+a_{i}\equiv a^{d_{0}2^{i}+\dots+d_{i}}\left(\mod N\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Доказывать будем по индукции.
+ При 
+\begin_inset Formula $i=0$
+\end_inset
+
+, имеем, по определению 
+\begin_inset Formula $a_{0}=a^{d_{0}}=a^{1}$
+\end_inset
+
+, так как 
+\begin_inset Formula $d_{0}=1$
+\end_inset
+
+ по условию.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+До сюда посмотрел
+\end_layout
+
+\end_inset
+
+.
+ Далее, пусть утверждение выполняется для 
+\begin_inset Formula $i$
+\end_inset
+
+, докажем, что оно выполняется при 
+\begin_inset Formula $i+1$
+\end_inset
+
+.
+ Из формулировки алгоритма 4.1
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula $a_{i+1}=\left(a_{i}^{2}\cdot a^{d_{i+1}}\right)\mod N$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+a_{i+1}\equiv\left(a^{d_{0}2^{i}+\dots+d_{i}}\right)^{2}\cdot a^{d_{i+1}}\left(\mod M\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По свойствам операции возведения в степень и сравнений, получаем 
+\begin_inset Formula 
+\[
+a_{i+1}\equiv a^{d_{0}2^{i+1}+\dots+d_{i}\cdot2+d_{i+1}}\left(\mod M\right),
+\]
+
+\end_inset
+
+ что и требовалось.
+ При 
+\begin_inset Formula $i=r$
+\end_inset
+
+ получаем 
+\begin_inset Formula $a_{r}\equiv a^{d_{0}2^{r}+\dots+d_{r-1}2+d_{r}}\left(\mod N\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{r}\mod N\equiv a^{d}\left(\mod N\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+На каждом шаге алгоритма используется не более двух умножений: одно для
+ возведения в квадрат, второе, возможно, для умножения на 
+\begin_inset Formula $a^{d_{i}}$
+\end_inset
+
+, которое может быть равно либо 
+\begin_inset Formula $a$
+\end_inset
+
+ (при 
+\begin_inset Formula $d_{i}=1$
+\end_inset
+
+), либо 
+\begin_inset Formula $1$
+\end_inset
+
+ (при 
+\begin_inset Formula $d_{i}=0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+Остаётся доказать, что 
+\begin_inset Formula $r\le\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $d_{i}\ge0$
+\end_inset
+
+ и 
+\begin_inset Formula $2^{i}>0$
+\end_inset
+
+, то 
+\begin_inset Formula $d=d_{0}2^{r}+\dots+d_{r-1}2+d_{r}\ge2^{r}$
+\end_inset
+
+.
+ Логарифмируя это равенство, получим 
+\begin_inset Formula $r\le\log_{2}d$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ссылка на возможность логарифмирования
+\end_layout
+
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $r$
+\end_inset
+
+ — целое, то если 
+\begin_inset Formula $r>\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+, то 
+\begin_inset Formula $r\ge\log_{2}d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 4.7
+\end_layout
 
 \end_inset
 
