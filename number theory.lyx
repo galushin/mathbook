@@ -19496,6 +19496,12 @@ status open
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:power-modulo-operations-count"
+
+\end_inset
+
 Алгоритм действительно вычисляет 
 \begin_inset Formula $a^{d}\left(\mod N\right)$
 \end_inset
@@ -19513,15 +19519,6 @@ status open
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать доказательство
-\end_layout
-
-\end_inset
-
 При всех 
 \begin_inset Formula $i=0,1,\dots,r$
 \end_inset
@@ -19652,31 +19649,25 @@ a_{i+1}\equiv a^{d_{0}2^{i+1}+\dots+d_{i}\cdot2+d_{i+1}}\left(\mod M\right),
 \end_inset
 
 .
- Так как 
-\begin_inset Formula $d_{i}\ge0$
+ Докажем это по индукции.
+ Для 
+\begin_inset Formula $d=1$
 \end_inset
 
  и 
-\begin_inset Formula $2^{i}>0$
+\begin_inset Formula $d=2$
 \end_inset
 
-, то 
-\begin_inset Formula $d=d_{0}2^{r}+\dots+d_{r-1}2+d_{r}\ge2^{r}$
+ получаем соответственно 
+\begin_inset Formula $\log_{2}1=0$
 \end_inset
 
-.
- Логарифмируя это равенство, получим 
-\begin_inset Formula $r\le\log_{2}d$
+ и 
+\begin_inset Formula $\log_{2}2=1$
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ссылка на возможность логарифмирования
-\end_layout
-
+, то есть 
+\begin_inset Formula $r=\log_{2}d$
 \end_inset
 
 .
@@ -19684,15 +19675,653 @@ status open
 \begin_inset Formula $r$
 \end_inset
 
- — целое, то если 
-\begin_inset Formula $r>\left\lfloor \log_{2}d\right\rfloor $
+ целое число, то 
+\begin_inset Formula $r=\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $d\ge3$
+\end_inset
+
+ и утверждение 
+\begin_inset Formula $r\le\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+ доказано для всех целых чисел от 
+\begin_inset Formula $1$
+\end_inset
+
+ до 
+\begin_inset Formula $d-1$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $d=2^{r}+d_{1}2^{r-1}+\dots+d_{r-1}2+d_{r}$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $n=d_{0}2^{r-1}+\dots+d_{r-2}2+d_{r-1}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $d=2n+d_{r}\ge2n$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $n<d$
+\end_inset
+
+, то по предположению индукции получаем 
+\begin_inset Formula $r-1\le\left\lfloor \log_{2}n\right\rfloor $
+\end_inset
+
+.
+ По свойству целой части числа
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ и логарифмов
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, получаем:
+\begin_inset Formula 
+\[
+r\le\left\lfloor \log_{2}n\right\rfloor +1\le\left\lfloor \log_{2}n+1\right\rfloor =\left\lfloor \log_{2}n+\log_{2}2\right\rfloor =\left\lfloor \log_{2}2n\right\rfloor .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $d>2n$
 \end_inset
 
 , то 
-\begin_inset Formula $r\ge\log_{2}d$
+\begin_inset Formula $\log_{2}2n<\log_{2}d$
+\end_inset
+
+ и 
+\begin_inset Formula $\left\lfloor \log_{2}2n\right\rfloor <\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+, таким образом, окончательно получаем 
+\begin_inset Formula 
+\[
+r\le\left\lfloor \log_{2}2n\right\rfloor <\left\lfloor \log_{2}d\right\rfloor .
+\]
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+Таким образом, неравенство 
+\begin_inset Formula $r\le\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+ доказано для всех 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как на каждом шаге алгоритма используется не более двух умножений, а
+ число шагов не больше 
+\begin_inset Formula $\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+, то общее число умножений, выполняемых алгоритмом не превосходит 
+\begin_inset Formula $2\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+, что и требовалось доказать.
+\end_layout
+
+\begin_layout Standard
+Одним из понятий, используемых для сравнения эффективности алгоритмов, является
+ их сложность.
+ Сложность алгоритмов в теории чисел обычно принято измерять количеством
+ арифметических операций (сложений, вычитаний, умножений и делений с остатком),
+ необходимых для выполнения всех действий, предписанных алгоритмом.
+ Впрочем, это определение не учитывает величины чисел, участвующих в вычислениях.
+ Ясно, что перемножить два стозначных числа значительное сложнее, чем два
+ однозначных, хотя и в том, и в другом случае выполняется лишь одна арифметическ
+ая операция.
+ Поэтому иногда учитывают ещё и величину чисел, сводя дело к так называемым
+ битовым операциям, то есть оценивая количество необходимых операций с цифрами
+ 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+, в двоичной записи чисел.
+ Это зависит от рассматриваемой задачи, от целей автора и так далее.
+ Говоря в дальнейшем о сложности, мы будем иметь в виду количество арифметически
+х операций, необходимых для выполнения алгоритмов.
+\end_layout
+
+\begin_layout Standard
+Алгоритмы, в которых количество арифметических операций может быть оценено
+ некоторой степенью числа цифр, необходимых для записи данных, называются
+ 
+\emph on
+полиномиальными
+\emph default
+.
+ Такие алгоритмы, как правило, работают достаточно быстро при их использовании
+ на практике.
+ Алгоритм Евклида требует выполнения 
+\begin_inset Formula $O\left(\log a\right)$
+\end_inset
+
+ арифметических операций, как было доказано в теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Euclid-algorithm-number-of-operations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Для приведённого выше алгоритма возведения в степень согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:power-modulo-operations-count"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ нужно 
+\begin_inset Formula $O\left(\log d\right)$
+\end_inset
+
+ арифметических операций.
+ Так как целое число 
+\begin_inset Formula $d$
+\end_inset
+
+ записывается в двоичной системе счисления не менее чем 
+\begin_inset Formula $\log_{2}d$
+\end_inset
+
+ цифрами, получаем, что как алгоритм Евклида, так и алгоритм возведения
+ в степень относятся к разряду полиномиальных, то есть быстрых алгоритмов.
+\end_layout
+
+\begin_layout Standard
+Теорема Вильсона
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ также может быть использована для определения, является ли данное натуральное
+ число простым или составным.
+ В отличие от теоремы Ферма
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, быстрые алгоритмы для вычисления факториалов не известны, а использованием
+ формулы 
+\begin_inset Formula $k!\equiv k\cdot\left(k-1\right)!\left(\mod N\right)$
+\end_inset
+
+ требует примерно 
+\begin_inset Formula $N$
+\end_inset
+
+ умножений для нахождения 
+\begin_inset Formula $\left(N-1\right)!\left(\mod N\right)$
+\end_inset
+
+.
+ Основанный на этой формуле алгоритм не является полиномиальным.
+ Его использование на практике требует очень много времени на вычисления,
+ и даже при сравнительно небольших 
+\begin_inset Formula $N$
+\end_inset
+
+ ответ с помощью этого алгоритма получить не удаётся.
+\end_layout
+
+\begin_layout Standard
+Сравнительно недавно, в 2000 году, был найден детерминированный алгоритм
+ полиномиальной сложности, позволяющий по заданному натуральному числу 
+\begin_inset Formula $N$
+\end_inset
+
+ сказать, будет оно простым или составным.
+ Он был предложен индийскими математиками М.
+\begin_inset space \thinspace{}
+\end_inset
+
+Агравалом, Н
+\begin_inset space \thinspace{}
+\end_inset
+
+Кайалом, Н.
+\begin_inset space \thinspace{}
+\end_inset
+
+Саксеной.
+ Но этот алгоритм не очень удобен на практике, так как требует слишком большого
+ объёма памяти при вычислениях на компьютере.
+ Объём необходимой памяти — ещё одна характеристика качества алгоритма.
+ Используемые в настоящее время алгоритмы для проверки простоты заданного
+ числа 
+\begin_inset Formula $N$
+\end_inset
+
+ имеют сложность 
+\begin_inset Formula $O\left(\left(\log N\right)^{c\log\log\log N}\right)$
+\end_inset
+
+ с некоторой постоянной 
+\begin_inset Formula $c>0$
+\end_inset
+
+.
+ Поскольку функция 
+\begin_inset Formula $\log\log\log x$
+\end_inset
+
+ растёт очень медленно, в пределах важных для практического использования
+ эти алгоритмы работают быстро.
+ Однако знания, необходимые для их описания выходят за рамки настоящей книги.
+\end_layout
+
+\begin_layout Standard
+К сожалению, с помощью малой теоремы Ферма не всегда можно проверить, что
+ испытываемое число 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное.
+ Существуют составные числа, для которых выполняется сравнение 
+\begin_inset Formula $a^{N-1}\equiv1\left(\mod N\right)$
+\end_inset
+
+ при любом целом 
+\begin_inset Formula $a$
+\end_inset
+
+ с условием 
+\begin_inset Formula $\left(a,N\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Возьмём например, 
+\begin_inset Formula $N=561=3\cdot11\cdot17$
+\end_inset
+
+.
+ Для каждого целого взаимно простого с 
+\begin_inset Formula $561$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\left(a,3\right)=\left(a,11\right)=\left(a,17\right)=1
+\]
+
+\end_inset
+
+ и по малой теореме Ферма выполняются сравнения 
+\begin_inset Formula 
+\[
+a^{2}\equiv1\left(\mod3\right),a^{10}\equiv1\left(\mod11\right),a^{16}\equiv1\left(\mod17\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $560$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $10$
+\end_inset
+
+ и 
+\begin_inset Formula $16$
+\end_inset
+
+, то число 
+\begin_inset Formula $a^{560}-1$
+\end_inset
+
+ делится на каждую из разностей 
+\begin_inset Formula $a^{2}-1$
+\end_inset
+
+, 
+\begin_inset Formula $a^{10}-1$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{16}-1$
+\end_inset
+
+.
+ Значит
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+почему?
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $a^{560}-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $3$
+\end_inset
+
+, 
+\begin_inset Formula $11$
+\end_inset
+
+ и 
+\begin_inset Formula $17$
+\end_inset
+
+, и поэтому делится на произведение этих чисел, то есть делится на 
+\begin_inset Formula $561$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Составное число 
+\begin_inset Formula $N$
+\end_inset
+
+ называется 
+\emph on
+числом Кармайкла
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Carmichael — английский математик, доказавший в 1912 году, что каждое составное
+ число со свойством 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:carmichael-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ есть произведение различных нечётных простых чисел, 
+\begin_inset Formula $N=p_{1}\cdot\dots\cdot p_{r}$
+\end_inset
+
+, причём 
+\begin_inset Formula $r\ge3$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(p_{j}-1\right)\mid\left(N-1\right)$
+\end_inset
+
+ при всех 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Число 
+\begin_inset Formula $561$
+\end_inset
+
+ обладает этим свойством.
+ Ещё один пример — 
+\begin_inset Formula $1729=7\cdot13\cdot19$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, если 
+\begin_inset Formula 
+\begin{equation}
+a^{N-1}\equiv1\left(\mod N\right)\forall a\in\mathbb{Z},\left(a,N\right)=1.\label{eq:carmichael-numbers}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Числа Кармайкла встречаются в натуральном ряду достаточно редко, но известно,
+ что их множество бесконечно.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим следующий алгоритм, доказывающий для составного числа, что оно
+ является составным, и несколько более точный, чем прямое использование
+ малой теоремы Ферма
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Алгоритм 4.2.
+ 
+\series default
+Данные: 
+\emph on
+Нечётное натуральное число 
+\begin_inset Formula $N>2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Определить, будет ли 
+\begin_inset Formula $N$
+\end_inset
+
+ составным числом.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+1.
+ Найти целые числа 
+\begin_inset Formula $s,t$
+\end_inset
+
+ для которых 
+\begin_inset Formula $N-1=2^{s}t$
+\end_inset
+
+, причём 
+\begin_inset Formula $t$
+\end_inset
+
+ нечётно.
+ Выбрать целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $1<a<N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+2.
+ Если 
+\begin_inset Formula $\left(a,N\right)>1$
+\end_inset
+
+, то 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+3.
+ Если 
+\begin_inset Formula $\left(a,N\right)=1$
+\end_inset
+
+ и выполнены условия 
+\begin_inset Formula 
+\begin{equation}
+a^{t}\not\equiv1\left(\mod N\right),a^{2^{k}t}\not\equiv-1\left(\mod N\right),k=0,1,\dots,s-1,\label{eq:algorithm-4.2-conditions}
+\end{equation}
+
+\end_inset
+
+то 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+4.
+ Если хотя бы одно из условий пункта 3 нарушается, алгоритм завершает свою
+ работу не дав ответа.
+\end_layout
+
+\begin_layout Standard
+Очевидно, ответ алгоритма в пункте 2 верен.
+ Справедливо разложение на множители 
+\begin_inset Formula 
+\begin{equation}
+a^{N-1}-1=\left(a^{t}-1\right)\left(a^{t}+1\right)\left(a^{2t}+1\right)\cdot\dots\cdot\left(a^{2^{s-1}t}+1\right).\label{eq:algorithm-4.2-decomposition}
+\end{equation}
+
+\end_inset
+
+Если 
+\begin_inset Formula $N$
+\end_inset
+
+ — простое число, то по малой теореме Ферма обе части последнего равенства
+ должны делиться на 
+\begin_inset Formula $N$
+\end_inset
+
+, и, следовательно, хотя бы один из сомножителей в правой части 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:algorithm-4.2-decomposition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ должен делиться на 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Значит, хотя бы одно из условий 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:algorithm-4.2-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ будет нарушено.
+ Это доказывает, что и в пункте 3 алгоритм даёт верный ответ.
 \end_layout
 
 \begin_layout Standard
