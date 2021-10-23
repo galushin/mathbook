@@ -21457,19 +21457,431 @@ noprefix "false"
 \end_inset
 
 .
+ Для этого можно случайным образом выбрать число 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $1<b<N$
+\end_inset
+
+, и проверять для него выполнимость условий 
+\begin_inset Formula 
+\begin{equation}
+b^{N-1}\equiv1\left(\mod N\right),\left(b^{2Q}-1,N\right)=1.\label{eq:prime-criterion-2}
+\end{equation}
+
+\end_inset
+
+Если при выбранном 
+\begin_inset Formula $b$
+\end_inset
+
+ эти соотношения выполняются, то, поскольку 
+\begin_inset Formula 
+\[
+2Q\le4F+2<2F+3,
+\]
+
+\end_inset
+
+согласно следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно утверждать, что число 
+\begin_inset Formula $N$
+\end_inset
+
+ простое.
 \end_layout
 
 \begin_layout Standard
+Если условия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ нарушаются, нужно выбрать другое значение 
+\begin_inset Formula $b$
+\end_inset
+
+ и повторять эти операции до тех пор, пока такое число не будет обнаружено.
+\end_layout
+
+\begin_layout Standard
+Предположим теперь, что построенное число 
+\begin_inset Formula $N$
+\end_inset
+
+ действительно является простым.
+ Зададимся вопросом, сколько долго придётся перебирать числа 
+\begin_inset Formula $b$
+\end_inset
+
+, пока не будет найдено такое, для которого выполнены условия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Заметим, что для простого числа 
+\begin_inset Formula $N$
+\end_inset
+
+ первое условие 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, согласно малой теореме Ферма, будет выполняться всегда.
+ Те же числа 
+\begin_inset Formula $b$
+\end_inset
+
+, для которых нарушается второе условие 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, удовлетворяют соотношению 
+\begin_inset Formula $b^{2Q}\equiv1\left(\mod N\right)$
+\end_inset
+
+.
+ В следующей главе (теорема 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Закончить раздел 4.7
+Добавить ссылку
 \end_layout
 
 \end_inset
 
+) будет доказано, что в промежутке 
+\begin_inset Formula $1<b<N$
+\end_inset
 
+ имеется не более 
+\begin_inset Formula $2Q-1$
+\end_inset
+
+ чисел, удовлетворяющих сравнению 
+\begin_inset Formula $b^{2Q}\equiv1\left(\mod N\right)$
+\end_inset
+
+.
+ Это означает, что выбирая случайным образом числа 
+\begin_inset Formula $b$
+\end_inset
+
+ на промежутке 
+\begin_inset Formula $1<b<N$
+\end_inset
+
+, при простом 
+\begin_inset Formula $N$
+\end_inset
+
+ можно с вероятностью большей, чем 
+\begin_inset Formula $1-F^{-1}$
+\end_inset
+
+ найти число 
+\begin_inset Formula $b$
+\end_inset
+
+, для которого будут выполнены условия следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, и тем доказать, что 
+\begin_inset Formula $N$
+\end_inset
+
+ действительно является простым числом.
+\end_layout
+
+\begin_layout Standard
+Заметим, что построенное таким способом простое число 
+\begin_inset Formula $N$
+\end_inset
+
+ будет удовлетворять неравенству 
+\begin_inset Formula $N>2F^{2}$
+\end_inset
+
+, то есть количество цифр в его записи более чем в двое будет превосходить
+ количество цифр в записи исходного простого числа 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Заменив теперь число 
+\begin_inset Formula $F$
+\end_inset
+
+ на найденное простое число 
+\begin_inset Formula $N$
+\end_inset
+
+ и повторив с этим новым 
+\begin_inset Formula $F$
+\end_inset
+
+ все указанные выше действия, можно построить ещё большее простое число.
+ Начав с какого-нибудь небольшого числа, простоту которого можно проверить,
+ например, делением на маленькие табличные простые числа, и повторив указанную
+ процедуру достаточное число раз, можно построить простые числа нужной величины.
+\end_layout
+
+\begin_layout Standard
+Покажем пример вычислений с помощью описанной схемы.
+ Начнём с простого числа 
+\begin_inset Formula $F_{1}=1223$
+\end_inset
+
+.
+ Пользуясь следствием 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, с 
+\begin_inset Formula $b=2$
+\end_inset
+
+, получим по формулам 
+\begin_inset Formula $N_{i}=2F_{i}Q_{i}+1$
+\end_inset
+
+, 
+\begin_inset Formula $F_{i+1}=N_{i}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+Q_{1}=1231 & F_{2}=N_{1}=3011027\\
+Q_{2}=3011067 & F_{3}=N_{3}=18132808071619\\
+Q_{3}=18132808071644 & F_{4}=N_{3}=657597457125248955270143273
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Q_{4}=657597457125248955270143281
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{4}=864868831235187275941586469515911058724056920216597427
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Каждое из чисел 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ просто.
+ При их построении мы выбирали числа 
+\begin_inset Formula $Q_{i}$
+\end_inset
+
+ наименьшими 
+\begin_inset Formula $Q_{i}\ge F_{i}$
+\end_inset
+
+, при которых соответствующие числа 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ оказывались простыми.
+ Во всех случаях это удалось доказать с помощью следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $b=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В настоящее время никаких теоретических гарантий для существования простого
+ числа 
+\begin_inset Formula $N=2FQ+1$
+\end_inset
+
+, 
+\begin_inset Formula $Q\le2F+1$
+\end_inset
+
+ не существует.
+ Тем не менее, опыт вычислений на ЭВМ показывает, что простые числа в арифметиче
+ской прогрессии встречаются достаточно близко к её началу.
+ Упомянем в этой связи гипотезу о существовании бесконечного количество
+ простых чисел 
+\begin_inset Formula $q$
+\end_inset
+
+ с условием, что число 
+\begin_inset Formula $2q+1$
+\end_inset
+
+ также простое, то есть простым является уже первый член прогрессии.
+\end_layout
+
+\begin_layout Standard
+Очень важен в связи с описываемым методом вопрос о расстоянии между соседними
+ простыми числами в арифметической прогрессии.
+ Ведь убедившись, что при некотором 
+\begin_inset Formula $Q$
+\end_inset
+
+ число 
+\begin_inset Formula $N=2FQ+1$
+\end_inset
+
+ составное, можно заменить 
+\begin_inset Formula $Q$
+\end_inset
+
+ на 
+\begin_inset Formula $Q+1$
+\end_inset
+
+ и продолжить действовать описанным способом до тех пор, пока не будет найдено
+ простое число 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ И если расстояние между соседними простыми числа в прогрессии велико, нет
+ надежды быстро построить нужное число 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Перебор чисел 
+\begin_inset Formula $Q$
+\end_inset
+
+ до того момента, как мы наткнёмся на простое число 
+\begin_inset Formula $N$
+\end_inset
+
+, окажется слишком долгим.
+ В более простом вопросе о расстоянии между соседними простыми числами 
+\begin_inset Formula $p_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $p_{n+1}$
+\end_inset
+
+ в натуральном ряде доказано лишь, что 
+\begin_inset Formula $p_{n+1}-p_{n}=O\left(p_{n}^{c}\right)$
+\end_inset
+
+ при любом 
+\begin_inset Formula $c>\frac{38}{61}$
+\end_inset
+
+.
+ Это очень трудная теорема, но она даёт слабую оценку для наших потребностей.
+ Вместе с тем существует так называемая гипотеза Крамера (1936 года), что
+ 
+\begin_inset Formula $p_{n+1}-p_{n}=O\left(\ln^{2}p_{n}\right)$
+\end_inset
+
+, дающая вполне приемлемую границу.
+ Вычисления на ЭВМ показывают, что простые числа в арифметических прогрессиях
+ расположены достаточно плотно.
+\end_layout
+
+\begin_layout Standard
+Если принять на верну, что наименьшее простое число, а также расстояние
+ между соседними простыми числами в прогрессии 
+\begin_inset Formula $2Fn+1$
+\end_inset
+
+ при 
+\begin_inset Formula $F\le n\le2F+1$
+\end_inset
+
+ оценивается величиной 
+\begin_inset Formula $O\left(\ln^{2}F\right)$
+\end_inset
+
+, то описанная схема построения больших простых чисел имеет полиномиальную
+ оценку сложности.
+ И, несмотря на отсутствие теоретических оценок времени работы алгоритмов,
+ отыскивающих простые числа в арифметических прогрессиях со сравнительно
+ большой разностью, на практике эти алгоритмы работают вполне удовлетворительно.
 \end_layout
 
 \begin_layout Standard
