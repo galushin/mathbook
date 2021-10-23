@@ -21884,17 +21884,453 @@ noprefix "false"
  большой разностью, на практике эти алгоритмы работают вполне удовлетворительно.
 \end_layout
 
+\begin_layout Section
+Разложение целых чисел на множители и криптографические применения
+\end_layout
+
 \begin_layout Standard
-\begin_inset Note Note
+Предположим, что задано некоторое составное натуральное число 
+\begin_inset Formula $N$
+\end_inset
+
+, и требуется разложить его на меньшие множители.
+ Эта задача относится к разряду трудных в вычислительном отношении.
+\end_layout
+
+\begin_layout Standard
+Первые алгоритмы её решения были предложены Ферма, Эйлером, Гауссом, Лежандром
+ и другими классиками математики.
+ Современные алгоритмы используются вычислениях в полях алгебраических чисел,
+ эллиптические кривые и разнообразные технические конструкции.
+ Наилучшая из известных оценок сложности разложения числа 
+\begin_inset Formula $N$
+\end_inset
+
+ на множители имеют вид 
+\begin_inset Formula $O\left(\exp\left(c\left(\ln N\right)^{1/3}\left(\ln\ln N\right)^{2/3}\right)\right)$
+\end_inset
+
+ с некоторой положительной постоянной 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ Впрочем эта оценка количества необходимых арифметических операций условна,
+ та как опирается на ряд недоказанных, но весьма правдоподобных гипотез
+ теории чисел.
+ Установленный в настоящее время рекорд — разложение на два простых множителя
+ числа 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
 status open
 
 \begin_layout Plain Layout
-Закончить главу 4
+
+27997833911221327870829467638722601621070446786955 42853756000992932612840010760
+934567105295536085606 18223519109513657886371059544820065767750985805576
+ 13579098734950144178863178946295187237869221823983
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+записываемого в десятичной записи 200 цифрами.
+ Ему было присвоено имя RSA-200.
+ Работы по разложению были начаты в конце 2003 года и завершились в мае
+ 2005 года.
+ Было найдено разложение на простые множители 
+\begin_inset Formula $N=p\cdot q$
+\end_inset
+
+, где
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+p=35324619344027701212726049781984643686711974001976\\
+25023649303468776121253679423200058547956528088349
+\end{multline*}
+
+\end_inset
+
+и
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+q=79258699544783330333470858414800596877379758573642\\
+19960734330341455767872818152135381409304740185467
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вычисления на предварительном этапе выполнялись на многих машинах, работающих
+ параллельно.
+ Оценка общего времени работы, условно приведённая к одному процессору с
+ рабочей частотой 2,2 Ггц, составляет 55 лет.
+ Заключительный этап проводился на кластере, состоящем из 80 процессоров
+ такой же производительности и занял три месяца.
+ БОлее подробных отчёт об этой работе можно найти на странице 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Найти: http://www.loria.fr/ zimmerma/records/factor.html
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Приведённая информация показывает, насколько больших вычислительных ресурсов
+ требует разложение целых чисел на множители.
+ Она характеризует только внешнюю сторону этой деятельности, оставляя в
+ тени большой труд математиков, разработавших соответствующие алгоритмы
+ и программистов, сумевших реализовать их оптимальным образом.
+\end_layout
+
+\begin_layout Standard
+Подводя некоторый итог, подчеркнём, что большие простые числа могут быть
+ построены сравнительно легко, например, с помощью алгоритмов предыдущего
+ параграфа.
+ Перемножив два из них, можно получить большое целое число, разложение которого
+ на множители представляет практически непреодолимые трудности для тех,
+ кто не знает исходные простые числа.
+ На этом обстоятельстве основана одна из используемых систем шифрования
+ информации.
+ Она носит название 
+\begin_inset Formula $RSA$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Сокращение, составленное из первых букв фамилий её авторов: Rivest R., Shamir
+ A., Adleman L.
+\end_layout
+
+\end_inset
+
+, была предложена в 1977 году, и в течении длительного срока её использования
+ никто не смог придумать лёгкий способ распознавать сообщений, зашифрованные
+ с её помощью.
+\end_layout
+
+\begin_layout Standard
+Любой текст можно записать последовательностью цифр, например, перенумеровав
+ буквы алфавита и знаки, используемые при написании текстов: пробелы, точки,
+ запятые, тире и так далее.
+ Заменив каждую букву или знак их номером, мы и получим последовательность
+ цифр, подлежащую шифрованию.
+ Длинные последовательности можно разбить на блоки, и шифровать каждый блок
+ отдельно.
+ Тот, кто хочет использовать систему RSA, обозначим его буквой A, поступает
+ следующим образом:
+\end_layout
+
+\begin_layout Standard
+1.
+ Выбирает два достаточно больших простых числа 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+, а также третье число 
+\begin_inset Formula $e$
+\end_inset
+
+, взаимно простое с 
+\begin_inset Formula $\left(p-1\right)\left(q-1\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+2.
+ Вычисляет 
+\begin_inset Formula $N=pq$
+\end_inset
+
+, а также целое число 
+\begin_inset Formula $d$
+\end_inset
+
+ с условием 
+\begin_inset Formula 
+\[
+ed\equiv1\left(\mod\left(p-1\right)\left(q-1\right)\right);
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ Публикует в открытой печати числа 
+\begin_inset Formula $e$
+\end_inset
+
+ и 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим, что простые числа 
+\begin_inset Formula $p$
+\end_inset
+
+, 
+\begin_inset Formula $q$
+\end_inset
+
+ и показатель степени 
+\begin_inset Formula $d$
+\end_inset
+
+ остаются при этом в секрете.
+ Согласно условию, числа 
+\begin_inset Formula $e$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(p-1\right)\left(q-1\right)$
+\end_inset
+
+ взаимно просты.
+ Лемма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:coprime-to-module-has-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ утверждает, что число 
+\begin_inset Formula $d$
+\end_inset
+
+, удовлетворяющее сравнению из пункта 2 существует.
+ Найти его можно, например, решив в целых числах 
+\begin_inset Formula $u,v$
+\end_inset
+
+ уравнение 
+\begin_inset Formula $eu-\left(p-1\right)\left(q-1\right)v=1$
+\end_inset
+
+ так, как это объяснено в параграфе 1.4
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить этот параграф и сослаться на него
+\end_layout
+
+\end_inset
+
+, и положив 
+\begin_inset Formula $d=u$
+\end_inset
+
+.
+ При этом можно считать, что 
+\begin_inset Formula $0<d<\left(p-1\right)\left(q-1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Блок информации можно представить себе целым числом 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $1<x<N$
+\end_inset
+
+.
+ Каждый, желающий сообщить пользователю A некоторую секретную информацию
+ 
+\begin_inset Formula $x$
+\end_inset
+
+, должен зашифровать её по правилу 
+\begin_inset Formula 
+\[
+y\equiv x^{e}\left(\mod N\right).
+\]
+
+\end_inset
+
+После этого он может переслать по открытому каналу связи сообщение 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В соответствии с конструкцией числа 
+\begin_inset Formula $N$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\[
+\varphi\left(N\right)=\varphi\left(p\right)\varphi\left(q\right)=\left(p-1\right)\left(q-1\right).
+\]
+
+\end_inset
+
+ Согласно теореме Эйлера
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:euler-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+y^{d}\equiv\left(x^{e}\right)^{d}\equiv x\left(\mod N\right).
+\]
+
+\end_inset
+
+Поэтому пользователю A для расшифровки сообщения достаточно вычислить 
+\begin_inset Formula $y^{d}\mod N$
+\end_inset
+
+.
+ Обе операции шифрования и расшифровывания выполняются достаточно быстро.
+\end_layout
+
+\begin_layout Standard
+Злоумышленник, чтобы расшифровать сообщение, должен найти целое число 
+\begin_inset Formula $x$
+\end_inset
+
+, удовлетворяющее сравнение 
+\begin_inset Formula $x^{e}\equiv y\left(\mod N\right)$
+\end_inset
+
+.
+ Известные быстрые алгоритмы для решения этой задачи при больших 
+\begin_inset Formula $N$
+\end_inset
+
+ и 
+\begin_inset Formula $e$
+\end_inset
+
+ связаны с вычислением секретного числа 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Это можно сделать, зная значение функции Эйлера 
+\begin_inset Formula $\varphi\left(N\right)$
+\end_inset
+
+.
+ Тот же, кто знает одновременно числа 
+\begin_inset Formula $N$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(N\right)$
+\end_inset
+
+, решая систему уравнений 
+\begin_inset Formula $pq=N$
+\end_inset
+
+, 
+\begin_inset Formula $\left(p-1\right)\left(q-1\right)=\varphi\left(N\right)$
+\end_inset
+
+ относительно чисел 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+, сможет найти простые делители 
+\begin_inset Formula $N$
+\end_inset
+
+, то есть разложить число 
+\begin_inset Formula $N$
+\end_inset
+
+ на множители.
+ Значит, вычисление значения функции Эйлера 
+\begin_inset Formula $\varphi\left(N\right)$
+\end_inset
+
+ — задача столь же сложная в вычислительном отношении, как и разложение
+ на множители.
+\end_layout
+
+\begin_layout Standard
+Возможно существуют и другие сравнительно быстрые способы найти 
+\begin_inset Formula $d$
+\end_inset
+
+ по известной информации (по числам 
+\begin_inset Formula $e$
+\end_inset
+
+ и 
+\begin_inset Formula $N$
+\end_inset
+
+) или другие способы вычисления целого 
+\begin_inset Formula $x$
+\end_inset
+
+, удовлетворяющего сравнению 
+\begin_inset Formula $x^{e}\equiv y\left(\mod N\right)$
+\end_inset
+
+, но за прошедшее время такие обнаружены не были.
 \end_layout
 
 \begin_layout Standard
