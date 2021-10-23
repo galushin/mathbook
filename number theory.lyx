@@ -93,6 +93,20 @@ theorems-ams-extended-bytype
 Нестеренко
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Максимально отказаться от многоточий? Использовать более строгую нотацию
+ через суммы?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 \begin_inset CommandInset label
 LatexCommand label
@@ -17732,6 +17746,12 @@ status open
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Fermat-theorem"
+
+\end_inset
+
 Если целое число 
 \begin_inset Formula $a$
 \end_inset
@@ -19060,6 +19080,2808 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Проверка на простоту и построение больших простых чисел
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — натуральное число, вообще говоря большое.
+ Оно может быть либо составным, либо простым.
+ Как определить, к какому из этих двух классов относится данное число?
+\end_layout
+
+\begin_layout Standard
+Можно попробовать разделить 
+\begin_inset Formula $N$
+\end_inset
+
+ на простые числа, из таблицы, составленной с помощью решета Эратосфена
+ и содержащей все простые числа от до некоторой границы 
+\begin_inset Formula $B$
+\end_inset
+
+, определяемой нашими возможностями.
+ Если у 
+\begin_inset Formula $N$
+\end_inset
+
+ есть маленькие простые делители, мы сможем найти их таким способом и доказать,
+ что 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число.
+\end_layout
+
+\begin_layout Standard
+Если же маленькие простые делители не обнаружены и если 
+\begin_inset Formula $B$
+\end_inset
+
+ сравнительно велико, а именно 
+\begin_inset Formula $B^{2}>N$
+\end_inset
+
+, можно утверждать, что 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число.
+ Действительно, если бы 
+\begin_inset Formula $N$
+\end_inset
+
+ было составным, то по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minimal-divisor-is-prime-and-less-than-sqrt-N"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $p\le\sqrt{N}<B$
+\end_inset
+
+, содержащийся в нашей таблице.
+ Но таковой отсутствует.
+\end_layout
+
+\begin_layout Standard
+В случае же 
+\begin_inset Formula $N>B^{2}$
+\end_inset
+
+ никакого заключения о числе 
+\begin_inset Formula $N$
+\end_inset
+
+ сделать нельзя.
+\end_layout
+
+\begin_layout Standard
+Далее мы будем считать, что 
+\begin_inset Formula $N$
+\end_inset
+
+ достаточно велико и не имеет маленьких простых делителей.
+ Выберем целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $1<a<N$
+\end_inset
+
+, и вычислим с помощью алгоритма Евклида наибольший общий делитель 
+\begin_inset Formula $d=\left(a,N\right)$
+\end_inset
+
+.
+ Если оказалось, что 
+\begin_inset Formula $d>1$
+\end_inset
+
+, можно утверждать, что 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число, ведь оно делится на 
+\begin_inset Formula $d$
+\end_inset
+
+, причём 
+\begin_inset Formula $1<d<N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если же оказалось, что 
+\begin_inset Formula $\left(a,N\right)=1$
+\end_inset
+
+, то о числе 
+\begin_inset Formula $N$
+\end_inset
+
+ опять никакого заключения сделать нельзя.
+ Если у составного числа 
+\begin_inset Formula $N$
+\end_inset
+
+ нет маленьких простых делителей, то количество взаимно простых с ним чисел
+ на интервале 
+\begin_inset Formula $1<d<N$
+\end_inset
+
+ равное 
+\begin_inset Formula $\varphi\left(N\right)-1=N\prod_{p\mid N}\left(1-p^{-1}\right)-1$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ будет достаточно большим, и маловероятно, что выбранное наугад число 
+\begin_inset Formula $a$
+\end_inset
+
+, позволит разложить число 
+\begin_inset Formula $N$
+\end_inset
+
+ на множители.
+\end_layout
+
+\begin_layout Standard
+В этом случае может помочь малая теорема Ферма.
+ Если для числа 
+\begin_inset Formula $N$
+\end_inset
+
+ и выбранного 
+\begin_inset Formula $a$
+\end_inset
+
+ с условием 
+\begin_inset Formula $\left(a,N\right)=1$
+\end_inset
+
+ её утверждение нарушается, можно утверждать, что 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число.
+ Итак, 
+\emph on
+если 
+\begin_inset Formula $\left(a,N\right)=1$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{N-1}\not\equiv1\left(\mod N\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Простейший алгоритм для вычисления 
+\begin_inset Formula $a^{d}\mod N$
+\end_inset
+
+, состоящий в последовательном умножении на 
+\begin_inset Formula $a$
+\end_inset
+
+ результата предшествующего вычисления, требует 
+\begin_inset Formula $d-1$
+\end_inset
+
+ умножений.
+ В действительности это вычисление можно провести намного быстрее.
+\end_layout
+
+\begin_layout Standard
+Возьмём, например 
+\begin_inset Formula $N=437$
+\end_inset
+
+ и вычислим 
+\begin_inset Formula $2^{436}\mod437$
+\end_inset
+
+.
+ Используя свойства сравнений (для краткости мы нигде не указываем модуль
+ сравнения, равный 
+\begin_inset Formula $437$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+А может быть стоит указать?
+\end_layout
+
+\end_inset
+
+), получаем: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать как у Степанова, про египетское умножение?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Приведённые вычисления не раскладывают число 
+\begin_inset Formula $437$
+\end_inset
+
+ на множители, но доказывают, что оно составное.
+ Как легко проверить, 
+\begin_inset Formula $437=19\cdot23$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Может показаться, что указанный способ проверки требует слишком много вычислений.
+ Но эти вычисления однотипны.
+ Мы либо возводили в квадрат, либо удваивали число по модулю 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ И это обстоятельство оказывается очень удобным при реализации алгоритма
+ на компьютере.
+ А кроме того, как сейчас выяснится, и количество возведений в квадрат мало
+ по сравнению с величиной 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотренный выше пример есть частный случай общего алгоритма.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Алгоритм 4.1.
+ 
+\series default
+Данные: Целые числа 
+\begin_inset Formula $a,N>1,d>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Найти: 
+\begin_inset Formula $a^{d}\left(\mod N\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+1.
+ Представить 
+\begin_inset Formula $d$
+\end_inset
+
+ в двоичной системе счисления, то есть найти такие цифры 
+\begin_inset Formula $d_{j}\in\left\{ 0,1\right\} $
+\end_inset
+
+, что 
+\begin_inset Formula $d=d_{0}2^{r}+\dots+d_{r-1}2+d_{r}$
+\end_inset
+
+, 
+\begin_inset Formula $d_{0}=1$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Можно делать итеративно
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ Положить 
+\begin_inset Formula $a_{0}=a$
+\end_inset
+
+ и затем для 
+\begin_inset Formula $i=1,\dots,r$
+\end_inset
+
+ вычислить 
+\begin_inset Formula 
+\[
+a_{i}=\left(a_{i-1}^{2}\cdot a^{d_{i}}\right)\mod N.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ Положить 
+\begin_inset Formula $a^{d}=a_{r}\mod N$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Используем 
+\begin_inset Formula $\mod$
+\end_inset
+
+ как бинарную операцию.
+ Это уже описано?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, в случае 
+\begin_inset Formula $d_{i}=0$
+\end_inset
+
+ алгоритм вычисляет 
+\begin_inset Formula $a_{i}\equiv a_{i-1}^{2}\left(\mod N\right)$
+\end_inset
+
+, если же 
+\begin_inset Formula $d_{i}=1$
+\end_inset
+
+, то 
+\begin_inset Formula $a_{i}\equiv a_{i-1}^{2}\cdot a\left(\mod N\right)$
+\end_inset
+
+.
+ Реализованная выше последовательность вычислений для 
+\begin_inset Formula $d=436=2^{8}+2^{7}+2^{5}+2^{4}+2^{2}$
+\end_inset
+
+ в точности соответствует алгоритму.
+ Докажем теперь, что алгоритм работает правильно, и количество выполняемых
+ им арифметических операций не очень велико.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:power-modulo-operations-count"
+
+\end_inset
+
+Алгоритм действительно вычисляет 
+\begin_inset Formula $a^{d}\left(\mod N\right)$
+\end_inset
+
+.
+ Он использует для этого не более 
+\begin_inset Formula $2\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+ умножений в кольце вычетов 
+\begin_inset Formula $\mathbb{Z}/N\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+При всех 
+\begin_inset Formula $i=0,1,\dots,r$
+\end_inset
+
+ справедливы сравнения 
+\begin_inset Formula 
+\[
+a_{i}\equiv a^{d_{0}2^{i}+\dots+d_{i}}\left(\mod N\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Доказывать будем по индукции.
+ При 
+\begin_inset Formula $i=0$
+\end_inset
+
+, имеем, по определению 
+\begin_inset Formula $a_{0}=a^{d_{0}}=a^{1}$
+\end_inset
+
+, так как 
+\begin_inset Formula $d_{0}=1$
+\end_inset
+
+ по условию.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+До сюда посмотрел
+\end_layout
+
+\end_inset
+
+.
+ Далее, пусть утверждение выполняется для 
+\begin_inset Formula $i$
+\end_inset
+
+, докажем, что оно выполняется при 
+\begin_inset Formula $i+1$
+\end_inset
+
+.
+ Из формулировки алгоритма 4.1
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula $a_{i+1}=\left(a_{i}^{2}\cdot a^{d_{i+1}}\right)\mod N$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+a_{i+1}\equiv\left(a^{d_{0}2^{i}+\dots+d_{i}}\right)^{2}\cdot a^{d_{i+1}}\left(\mod M\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По свойствам операции возведения в степень и сравнений, получаем 
+\begin_inset Formula 
+\[
+a_{i+1}\equiv a^{d_{0}2^{i+1}+\dots+d_{i}\cdot2+d_{i+1}}\left(\mod M\right),
+\]
+
+\end_inset
+
+ что и требовалось.
+ При 
+\begin_inset Formula $i=r$
+\end_inset
+
+ получаем 
+\begin_inset Formula $a_{r}\equiv a^{d_{0}2^{r}+\dots+d_{r-1}2+d_{r}}\left(\mod N\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{r}\mod N\equiv a^{d}\left(\mod N\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+На каждом шаге алгоритма используется не более двух умножений: одно для
+ возведения в квадрат, второе, возможно, для умножения на 
+\begin_inset Formula $a^{d_{i}}$
+\end_inset
+
+, которое может быть равно либо 
+\begin_inset Formula $a$
+\end_inset
+
+ (при 
+\begin_inset Formula $d_{i}=1$
+\end_inset
+
+), либо 
+\begin_inset Formula $1$
+\end_inset
+
+ (при 
+\begin_inset Formula $d_{i}=0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+Остаётся доказать, что 
+\begin_inset Formula $r\le\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+.
+ Докажем это по индукции.
+ Для 
+\begin_inset Formula $d=1$
+\end_inset
+
+ и 
+\begin_inset Formula $d=2$
+\end_inset
+
+ получаем соответственно 
+\begin_inset Formula $\log_{2}1=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\log_{2}2=1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $r=\log_{2}d$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $r$
+\end_inset
+
+ целое число, то 
+\begin_inset Formula $r=\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $d\ge3$
+\end_inset
+
+ и утверждение 
+\begin_inset Formula $r\le\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+ доказано для всех целых чисел от 
+\begin_inset Formula $1$
+\end_inset
+
+ до 
+\begin_inset Formula $d-1$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $d=2^{r}+d_{1}2^{r-1}+\dots+d_{r-1}2+d_{r}$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $n=d_{0}2^{r-1}+\dots+d_{r-2}2+d_{r-1}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $d=2n+d_{r}\ge2n$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $n<d$
+\end_inset
+
+, то по предположению индукции получаем 
+\begin_inset Formula $r-1\le\left\lfloor \log_{2}n\right\rfloor $
+\end_inset
+
+.
+ По свойству целой части числа
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ и логарифмов
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, получаем:
+\begin_inset Formula 
+\[
+r\le\left\lfloor \log_{2}n\right\rfloor +1\le\left\lfloor \log_{2}n+1\right\rfloor =\left\lfloor \log_{2}n+\log_{2}2\right\rfloor =\left\lfloor \log_{2}2n\right\rfloor .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $d>2n$
+\end_inset
+
+, то 
+\begin_inset Formula $\log_{2}2n<\log_{2}d$
+\end_inset
+
+ и 
+\begin_inset Formula $\left\lfloor \log_{2}2n\right\rfloor <\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+, таким образом, окончательно получаем 
+\begin_inset Formula 
+\[
+r\le\left\lfloor \log_{2}2n\right\rfloor <\left\lfloor \log_{2}d\right\rfloor .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, неравенство 
+\begin_inset Formula $r\le\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+ доказано для всех 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как на каждом шаге алгоритма используется не более двух умножений, а
+ число шагов не больше 
+\begin_inset Formula $\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+, то общее число умножений, выполняемых алгоритмом не превосходит 
+\begin_inset Formula $2\left\lfloor \log_{2}d\right\rfloor $
+\end_inset
+
+, что и требовалось доказать.
+\end_layout
+
+\begin_layout Standard
+Одним из понятий, используемых для сравнения эффективности алгоритмов, является
+ их сложность.
+ Сложность алгоритмов в теории чисел обычно принято измерять количеством
+ арифметических операций (сложений, вычитаний, умножений и делений с остатком),
+ необходимых для выполнения всех действий, предписанных алгоритмом.
+ Впрочем, это определение не учитывает величины чисел, участвующих в вычислениях.
+ Ясно, что перемножить два стозначных числа значительное сложнее, чем два
+ однозначных, хотя и в том, и в другом случае выполняется лишь одна арифметическ
+ая операция.
+ Поэтому иногда учитывают ещё и величину чисел, сводя дело к так называемым
+ битовым операциям, то есть оценивая количество необходимых операций с цифрами
+ 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+, в двоичной записи чисел.
+ Это зависит от рассматриваемой задачи, от целей автора и так далее.
+ Говоря в дальнейшем о сложности, мы будем иметь в виду количество арифметически
+х операций, необходимых для выполнения алгоритмов.
+\end_layout
+
+\begin_layout Standard
+Алгоритмы, в которых количество арифметических операций может быть оценено
+ некоторой степенью числа цифр, необходимых для записи данных, называются
+ 
+\emph on
+полиномиальными
+\emph default
+.
+ Такие алгоритмы, как правило, работают достаточно быстро при их использовании
+ на практике.
+ Алгоритм Евклида требует выполнения 
+\begin_inset Formula $O\left(\log a\right)$
+\end_inset
+
+ арифметических операций, как было доказано в теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Euclid-algorithm-number-of-operations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Для приведённого выше алгоритма возведения в степень согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:power-modulo-operations-count"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ нужно 
+\begin_inset Formula $O\left(\log d\right)$
+\end_inset
+
+ арифметических операций.
+ Так как целое число 
+\begin_inset Formula $d$
+\end_inset
+
+ записывается в двоичной системе счисления не менее чем 
+\begin_inset Formula $\log_{2}d$
+\end_inset
+
+ цифрами, получаем, что как алгоритм Евклида, так и алгоритм возведения
+ в степень относятся к разряду полиномиальных, то есть быстрых алгоритмов.
+\end_layout
+
+\begin_layout Standard
+Теорема Вильсона
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ также может быть использована для определения, является ли данное натуральное
+ число простым или составным.
+ В отличие от теоремы Ферма
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, быстрые алгоритмы для вычисления факториалов не известны, а использованием
+ формулы 
+\begin_inset Formula $k!\equiv k\cdot\left(k-1\right)!\left(\mod N\right)$
+\end_inset
+
+ требует примерно 
+\begin_inset Formula $N$
+\end_inset
+
+ умножений для нахождения 
+\begin_inset Formula $\left(N-1\right)!\left(\mod N\right)$
+\end_inset
+
+.
+ Основанный на этой формуле алгоритм не является полиномиальным.
+ Его использование на практике требует очень много времени на вычисления,
+ и даже при сравнительно небольших 
+\begin_inset Formula $N$
+\end_inset
+
+ ответ с помощью этого алгоритма получить не удаётся.
+\end_layout
+
+\begin_layout Standard
+Сравнительно недавно, в 2000 году, был найден детерминированный алгоритм
+ полиномиальной сложности, позволяющий по заданному натуральному числу 
+\begin_inset Formula $N$
+\end_inset
+
+ сказать, будет оно простым или составным.
+ Он был предложен индийскими математиками М.
+\begin_inset space \thinspace{}
+\end_inset
+
+Агравалом, Н
+\begin_inset space \thinspace{}
+\end_inset
+
+Кайалом, Н.
+\begin_inset space \thinspace{}
+\end_inset
+
+Саксеной.
+ Но этот алгоритм не очень удобен на практике, так как требует слишком большого
+ объёма памяти при вычислениях на компьютере.
+ Объём необходимой памяти — ещё одна характеристика качества алгоритма.
+ Используемые в настоящее время алгоритмы для проверки простоты заданного
+ числа 
+\begin_inset Formula $N$
+\end_inset
+
+ имеют сложность 
+\begin_inset Formula $O\left(\left(\log N\right)^{c\log\log\log N}\right)$
+\end_inset
+
+ с некоторой постоянной 
+\begin_inset Formula $c>0$
+\end_inset
+
+.
+ Поскольку функция 
+\begin_inset Formula $\log\log\log x$
+\end_inset
+
+ растёт очень медленно, в пределах важных для практического использования
+ эти алгоритмы работают быстро.
+ Однако знания, необходимые для их описания выходят за рамки настоящей книги.
+\end_layout
+
+\begin_layout Standard
+К сожалению, с помощью малой теоремы Ферма не всегда можно проверить, что
+ испытываемое число 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное.
+ Существуют составные числа, для которых выполняется сравнение 
+\begin_inset Formula $a^{N-1}\equiv1\left(\mod N\right)$
+\end_inset
+
+ при любом целом 
+\begin_inset Formula $a$
+\end_inset
+
+ с условием 
+\begin_inset Formula $\left(a,N\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Возьмём например, 
+\begin_inset Formula $N=561=3\cdot11\cdot17$
+\end_inset
+
+.
+ Для каждого целого взаимно простого с 
+\begin_inset Formula $561$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\left(a,3\right)=\left(a,11\right)=\left(a,17\right)=1
+\]
+
+\end_inset
+
+ и по малой теореме Ферма выполняются сравнения 
+\begin_inset Formula 
+\[
+a^{2}\equiv1\left(\mod3\right),a^{10}\equiv1\left(\mod11\right),a^{16}\equiv1\left(\mod17\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $560$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $10$
+\end_inset
+
+ и 
+\begin_inset Formula $16$
+\end_inset
+
+, то число 
+\begin_inset Formula $a^{560}-1$
+\end_inset
+
+ делится на каждую из разностей 
+\begin_inset Formula $a^{2}-1$
+\end_inset
+
+, 
+\begin_inset Formula $a^{10}-1$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{16}-1$
+\end_inset
+
+.
+ Значит
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+почему?
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $a^{560}-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $3$
+\end_inset
+
+, 
+\begin_inset Formula $11$
+\end_inset
+
+ и 
+\begin_inset Formula $17$
+\end_inset
+
+, и поэтому делится на произведение этих чисел, то есть делится на 
+\begin_inset Formula $561$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Составное число 
+\begin_inset Formula $N$
+\end_inset
+
+ называется 
+\emph on
+числом Кармайкла
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Carmichael — английский математик, доказавший в 1912 году, что каждое составное
+ число со свойством 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:carmichael-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ есть произведение различных нечётных простых чисел, 
+\begin_inset Formula $N=p_{1}\cdot\dots\cdot p_{r}$
+\end_inset
+
+, причём 
+\begin_inset Formula $r\ge3$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(p_{j}-1\right)\mid\left(N-1\right)$
+\end_inset
+
+ при всех 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Число 
+\begin_inset Formula $561$
+\end_inset
+
+ обладает этим свойством.
+ Ещё один пример — 
+\begin_inset Formula $1729=7\cdot13\cdot19$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, если 
+\begin_inset Formula 
+\begin{equation}
+a^{N-1}\equiv1\left(\mod N\right)\forall a\in\mathbb{Z},\left(a,N\right)=1.\label{eq:carmichael-numbers}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Числа Кармайкла встречаются в натуральном ряду достаточно редко, но известно,
+ что их множество бесконечно.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим следующий алгоритм, доказывающий для составного числа, что оно
+ является составным, и несколько более точный, чем прямое использование
+ малой теоремы Ферма
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Алгоритм 4.2.
+ 
+\series default
+Данные: 
+\emph on
+Нечётное натуральное число 
+\begin_inset Formula $N>2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Определить, будет ли 
+\begin_inset Formula $N$
+\end_inset
+
+ составным числом.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+1.
+ Найти целые числа 
+\begin_inset Formula $s,t$
+\end_inset
+
+ для которых 
+\begin_inset Formula $N-1=2^{s}t$
+\end_inset
+
+, причём 
+\begin_inset Formula $t$
+\end_inset
+
+ нечётно.
+ Выбрать целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $1<a<N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+2.
+ Если 
+\begin_inset Formula $\left(a,N\right)>1$
+\end_inset
+
+, то 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+3.
+ Если 
+\begin_inset Formula $\left(a,N\right)=1$
+\end_inset
+
+ и выполнены условия 
+\begin_inset Formula 
+\begin{equation}
+a^{t}\not\equiv1\left(\mod N\right),a^{2^{k}t}\not\equiv-1\left(\mod N\right),k=0,1,\dots,s-1,\label{eq:algorithm-4.2-conditions}
+\end{equation}
+
+\end_inset
+
+то 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+4.
+ Если хотя бы одно из условий пункта 3 нарушается, алгоритм завершает свою
+ работу не дав ответа.
+\end_layout
+
+\begin_layout Standard
+Очевидно, ответ алгоритма в пункте 2 верен.
+ Справедливо разложение на множители 
+\begin_inset Formula 
+\begin{equation}
+a^{N-1}-1=\left(a^{t}-1\right)\left(a^{t}+1\right)\left(a^{2t}+1\right)\cdot\dots\cdot\left(a^{2^{s-1}t}+1\right).\label{eq:algorithm-4.2-decomposition}
+\end{equation}
+
+\end_inset
+
+Если 
+\begin_inset Formula $N$
+\end_inset
+
+ — простое число, то по малой теореме Ферма обе части последнего равенства
+ должны делиться на 
+\begin_inset Formula $N$
+\end_inset
+
+, и, следовательно, хотя бы один из сомножителей в правой части 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:algorithm-4.2-decomposition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ должен делиться на 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Значит, хотя бы одно из условий 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:algorithm-4.2-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ будет нарушено.
+ Это доказывает, что и в пункте 3 алгоритм даёт верный ответ.
+\end_layout
+
+\begin_layout Standard
+Можно доказать, что для составного нечётного 
+\begin_inset Formula $N>9$
+\end_inset
+
+ количество взаимно простых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $1<a<N$
+\end_inset
+
+, для которых нарушается хотя бы одно из условий 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:algorithm-4.2-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ сравнительно не велико, а именно, оно не превосходит 
+\begin_inset Formula $\frac{1}{4}\varphi\left(N\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\varphi\left(N\right)$
+\end_inset
+
+ — функция Эйлера.
+ Это значит, что если алгоритму 4.2
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ задано составное число 
+\begin_inset Formula $N$
+\end_inset
+
+, и он выбирает в пункте 1 число 
+\begin_inset Formula $a$
+\end_inset
+
+ в интервале 
+\begin_inset Formula $1<a<N$
+\end_inset
+
+ случайным образом, то с вероятность не меньше 
+\begin_inset Formula $\frac{3}{4}$
+\end_inset
+
+ алгоритм докажет, что 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное число.
+ А применяя этот алгоритм 
+\begin_inset Formula $r$
+\end_inset
+
+ раз и выбирая каждый раз число 
+\begin_inset Formula $a$
+\end_inset
+
+ по новому, мы докажем, что 
+\begin_inset Formula $N$
+\end_inset
+
+ составное с вероятностью 
+\begin_inset Formula $\ge1-4^{-r}$
+\end_inset
+
+.
+ Подчеркнём ещё раз, что алгоритм всегда даёт правильный ответ, а оценивается
+ лишь вероятность того, что ответ будет получен.
+\end_layout
+
+\begin_layout Standard
+Алгоритм 4.2
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ даёт удобное на практике средство отсеивания составных чисел.
+ Если он сработал достаточно много раз и не дал ответа, можно надеяться,
+ что испытываемое число просто.
+ К сожалению, алгоритм не доказывает это.
+ Рассматриваемая далее теорема позволяет получить некоторую информацию о
+ возможных делителях 
+\begin_inset Formula $N$
+\end_inset
+
+ и приводит к некоторому достаточному условию простоты.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:prime-divisor-condition"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нечётное и 
+\begin_inset Formula $F$
+\end_inset
+
+ — натуральное число такие, что для любого простого делителя 
+\begin_inset Formula $q\mid F$
+\end_inset
+
+ существует целое 
+\begin_inset Formula $a$
+\end_inset
+
+ с условиями 
+\begin_inset Formula 
+\begin{equation}
+a^{F}\equiv1\left(\mod N\right),\left(a^{F/q}-1,N\right)=1.\label{eq:theorem-4.7-conditions}
+\end{equation}
+
+\end_inset
+
+Тогда любой простой делитель 
+\begin_inset Formula $p$
+\end_inset
+
+ числа 
+\begin_inset Formula $N$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset Formula 
+\[
+p\equiv1\left(\mod F\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $p$
+\end_inset
+
+ — простой делитель 
+\begin_inset Formula $N$
+\end_inset
+
+, 
+\begin_inset Formula $q$
+\end_inset
+
+ — простой делитель 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ — число, удовлетворяющее условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:theorem-4.7-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда, по определению сравнения по модулю
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $N\mid\left(a^{F}-1\right)$
+\end_inset
+
+, и, следовательно, по свойствам делимости 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $p\mid\left(a^{F}-1\right)$
+\end_inset
+
+, то есть
+\begin_inset Formula 
+\begin{equation}
+a^{F}\equiv1\left(\mod p\right).\label{eq:theorem-4.7-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Далее, так как 
+\begin_inset Formula $a^{F/q}-1$
+\end_inset
+
+ и 
+\begin_inset Formula $N$
+\end_inset
+
+ не имеют общих делителей, то 
+\begin_inset Formula $a^{F/q}-1$
+\end_inset
+
+ не может делиться и на 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a^{F/q}\not\equiv1\left(\mod p\right)$
+\end_inset
+
+.
+ В частности, 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Обозначим буквой 
+\begin_inset Formula $d$
+\end_inset
+
+ показатель 
+\begin_inset Formula $a$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть наименьшее натуральное число с условием 
+\begin_inset Formula $a^{d}\equiv1\left(\mod p\right)$
+\end_inset
+
+.
+ Так как по малой теореме Ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Fermat-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+a^{p-1}\equiv1\left(\mod p\right),\label{eq:theorem-4.7-2}
+\end{equation}
+
+\end_inset
+
+ то в силу леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:multiplicative-order"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеем 
+\begin_inset Formula $d\mid\left(p-1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+v_{q}\left(d\right)\le v_{q}\left(p-1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из условий 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:theorem-4.7-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:theorem-4.7-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:multiplicative-order"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula $d\mid F$
+\end_inset
+
+ и 
+\begin_inset Formula $d\nmid F/q$
+\end_inset
+
+.
+ Это возможно лишь в случае 
+\begin_inset Formula 
+\[
+v_{q}\left(F\right)=v_{q}\left(d\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, 
+\begin_inset Formula $v_{q}\left(F\right)=v_{q}\left(d\right)\le v_{q}\left(p-1\right)$
+\end_inset
+
+.
+ Последнее неравенство, согласно условию, справедливо для любого простого
+ делителя 
+\begin_inset Formula $q$
+\end_inset
+
+ числа 
+\begin_inset Formula $F$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $F\mid\left(p-1\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $p\equiv1\left(\mod F\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим пример использования теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-divisor-condition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, представляющий исторический интерес.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ — натуральные числа.
+ Если 
+\begin_inset Formula $m$
+\end_inset
+
+ имеет нечётный простой делитель 
+\begin_inset Formula $r$
+\end_inset
+
+, то есть 
+\begin_inset Formula $m=rs$
+\end_inset
+
+, то из равенства 
+\begin_inset Formula 
+\[
+a^{m}+1=\left(a^{s}\right)^{r}+1=\left(a^{s}+1\right)\left(a^{s\left(r-1\right)}-a^{s\left(r-2\right)}+\dots-a^{s}+1\right)
+\]
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula $a^{m}+1$
+\end_inset
+
+ — составное число.
+ Значит, число 
+\begin_inset Formula $a^{m}+1$
+\end_inset
+
+ может быть простым лишь в случае, если 
+\begin_inset Formula $m$
+\end_inset
+
+ не имеет нечётных простых делителей, то есть 
+\begin_inset Formula $m=2^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Числа 
+\begin_inset Formula 
+\[
+F_{n}=2^{2^{n}}+1,n=1,2,\dots
+\]
+
+\end_inset
+
+называются числами Ферма.
+ Первые четыре числа Ферма 
+\begin_inset Formula 
+\[
+F_{1}=5,F_{2}=17,F_{3}=257,F_{4}=65537
+\]
+
+\end_inset
+
+просты.
+\end_layout
+
+\begin_layout Standard
+В 1640 году П.
+\begin_inset space \thinspace{}
+\end_inset
+
+Ферма предположил, что при любом целом 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ число 
+\begin_inset Formula $F_{n}$
+\end_inset
+
+ будет простым, но не смог доказать это для 
+\begin_inset Formula $F_{5}=2^{32}+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Л.
+\begin_inset space \thinspace{}
+\end_inset
+
+Эйлер в 1729 году показал, что 
+\begin_inset Formula $F_{5}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $641$
+\end_inset
+
+ и тем опроверг гипотезу Ферма.
+ Короткое доказательство этого факта использует представления 
+\begin_inset Formula 
+\[
+641=5\cdot2^{7}+1=2^{4}+5^{4}.
+\]
+
+\end_inset
+
+Пользуясь ими, получаем 
+\begin_inset Formula 
+\[
+F_{5}=2^{32}+1\equiv-5^{4}\cdot2^{28}\equiv-\left(5\cdot2^{7}\right)^{4}+1\equiv-1+1=0\left(\mod641\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Позже было доказано, что 
+\begin_inset Formula $F_{6}$
+\end_inset
+
+ и 
+\begin_inset Formula $F_{7}$
+\end_inset
+
+ — составные.
+ Последнее число было разложено на простые множители в 1970 году.
+ Число 
+\begin_inset Formula $F_{8}$
+\end_inset
+
+ также составное, но его простые делители не известны.
+ В настоящее время неизвестно, будет число 
+\begin_inset Formula $F_{17}$
+\end_inset
+
+ простым или составным.
+ Не найдено ни одного простого числа Ферма, кроме первых четырёх.
+\end_layout
+
+\begin_layout Standard
+В связи с числами Ферма отметим знаменитую теорему Гаусса: правильный 
+\begin_inset Formula $n$
+\end_inset
+
+-угольник может быть построен с помощью циркуля и линейки лишь в случае
+ 
+\begin_inset Formula $n=2^{k}p_{1}\cdot\dots\cdot p_{r}$
+\end_inset
+
+, где 
+\begin_inset Formula $p_{j}$
+\end_inset
+
+ — различные простые числа Ферма.
+\end_layout
+
+\begin_layout Standard
+Как же можно было угадать возможный делитель 
+\begin_inset Formula $641$
+\end_inset
+
+ числа Ферма 
+\begin_inset Formula $F_{5}$
+\end_inset
+
+? Воспользуемся для этого теоремой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-divisor-condition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и выберем 
+\begin_inset Formula 
+\[
+N=F_{5}=2^{32}+1,F=128,a=2^{16}+1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula 
+\[
+a^{2}=2^{32}+2\cdot2^{16}+1\equiv2^{17}\left(\mod N\right),
+\]
+
+\end_inset
+
+то 
+\begin_inset Formula 
+\[
+a^{64}\equiv2^{17\cdot32}\equiv\left(-1\right)^{17}=-1\left(\mod N\right).
+\]
+
+\end_inset
+
+Следовательно 
+\begin_inset Formula 
+\[
+a^{128}\equiv1\left(\mod N\right),\left(a^{64}-1,N\right)=\left(2,N\right)=1.
+\]
+
+\end_inset
+
+Согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-divisor-condition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ каждый простой делитель 
+\begin_inset Formula $p$
+\end_inset
+
+ числа 
+\begin_inset Formula $F_{5}$
+\end_inset
+
+ должен удовлетворять сравнению 
+\begin_inset Formula $p\equiv1\mod128$
+\end_inset
+
+.
+ Первые простые числа в прогрессии 
+\begin_inset Formula $1+128\cdot k$
+\end_inset
+
+ есть 
+\begin_inset Formula $257$
+\end_inset
+
+ и 
+\begin_inset Formula $641$
+\end_inset
+
+.
+ Они получаются при 
+\begin_inset Formula $k=2$
+\end_inset
+
+ и 
+\begin_inset Formula $k=5$
+\end_inset
+
+ соответственно.
+ Второе из них есть делитель числа Ферма 
+\begin_inset Formula $F_{5}$
+\end_inset
+
+.
+ Предположим далее, что нам известна лишь часть 
+\begin_inset Formula $F$
+\end_inset
+
+ разложения числа 
+\begin_inset Formula $N-1$
+\end_inset
+
+ на простые сомножители.
+ Эта информация позволяет сделать некоторые заключения о свойствах делителей
+ числа 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ А если известная часть разложения 
+\begin_inset Formula $N-1$
+\end_inset
+
+ достаточно велика, то иногда можно сделать вывод об отсутствии нетривиальных
+ делителей, то есть о простоте 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим сначала случай, когда 
+\begin_inset Formula $F=N-1$
+\end_inset
+
+, то есть известно полное разложение числа 
+\begin_inset Formula $N-1$
+\end_inset
+
+ на простые множители.
+ Этот случай представляют, например, числа Ферма.
+\end_layout
+
+\begin_layout Remark
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ нечётно и для каждого простого делителя 
+\begin_inset Formula $q$
+\end_inset
+
+ числа 
+\begin_inset Formula $N-1$
+\end_inset
+
+ существует целое 
+\begin_inset Formula $a$
+\end_inset
+
+ с условиями 
+\begin_inset Formula 
+\[
+a^{N-1}\equiv1\left(\mod N\right),\left(a^{\left(N-1\right)/q}-1,N\right)=1.
+\]
+
+\end_inset
+
+Тогда 
+\begin_inset Formula $N$
+\end_inset
+
+ — простое число.
+\end_layout
+
+\begin_layout Proof
+Применим теорему 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-divisor-condition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $F=N-1$
+\end_inset
+
+.
+ Тогда любой простой делитель 
+\begin_inset Formula $p$
+\end_inset
+
+ числа 
+\begin_inset Formula $N$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset Formula 
+\[
+p\equiv1\left(\mod\left(N-1\right)\right),
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $\left(N-1\right)\mid\left(p-1\right)$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Далее подсмотрел
+\end_layout
+
+\end_inset
+
+По свойствам делимости 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $p-1\ge N-1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $p\ge N$
+\end_inset
+
+.
+ Но так как 
+\begin_inset Formula $p$
+\end_inset
+
+ делитель 
+\begin_inset Formula $N$
+\end_inset
+
+, то должно быть 
+\begin_inset Formula $p\le N$
+\end_inset
+
+.
+ Два последних неравенства совместны, только если 
+\begin_inset Formula $N=p$
+\end_inset
+
+, то есть когда 
+\begin_inset Formula $N$
+\end_inset
+
+ — простое число.
+\end_layout
+
+\begin_layout Standard
+К сожалению, чаще всего, если требуется доказать простоту какого-либо числа
+ 
+\begin_inset Formula $N$
+\end_inset
+
+, разложение 
+\begin_inset Formula $N-1$
+\end_inset
+
+ на простые множители удаётся определить лишь частично.
+ В таким случае может помочь другое следствие теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-divisor-condition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:prime-criterion-2"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ — нечётные целые числа и 
+\begin_inset Formula 
+\[
+N-1=F\cdot R,R\le4F+3,
+\]
+
+\end_inset
+
+причём для каждого простого делителя 
+\begin_inset Formula $q$
+\end_inset
+
+ числа 
+\begin_inset Formula $F$
+\end_inset
+
+ существует целое 
+\begin_inset Formula $b$
+\end_inset
+
+ условиями 
+\begin_inset Formula 
+\[
+b^{N-1}\equiv1\left(\mod N\right),\left(b^{\left(N-1\right)/q}-1,N\right)=1.
+\]
+
+\end_inset
+
+Тогда 
+\begin_inset Formula $N$
+\end_inset
+
+ — простое число.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Доказал неправильно
+\end_layout
+
+\end_inset
+
+Применим теорему 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-divisor-condition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $a=b^{R}$
+\end_inset
+
+.
+ Тогда любой простой делитель 
+\begin_inset Formula $p$
+\end_inset
+
+ числа 
+\begin_inset Formula $N$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset Formula $p\equiv1\left(\mod F\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $p-1$
+\end_inset
+
+ — чётное, а 
+\begin_inset Formula $F$
+\end_inset
+
+ — нечётное, то справедливо неравенство 
+\begin_inset Formula $p\ge2F+1$
+\end_inset
+
+.
+ Предположим, что 
+\begin_inset Formula $N$
+\end_inset
+
+ — составное.
+ Тогда по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minimal-divisor-is-prime-and-less-than-sqrt-N"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\left(2F+1\right)^{2}\le p^{2}\le N=FR+1\le4F^{2}+3F+1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\left(2F+1\right)^{2}=4F^{2}+4F+1\ge4F^{2}+3F+1$
+\end_inset
+
+, то получаем противоречие, которое завершает доказательство.
+\end_layout
+
+\begin_layout Standard
+Как правило, необходимость в больших простых числах возникает в связи с
+ различными криптографическими приложениями.
+ Мы коснёмся этого вопроса в следующем параграфе.
+ Естественно, к конструируемым числам предъявляются определённые требования.
+ Конструкция простых чисел должна быть массовой, а сами простые числа должны
+ быть в каком-то смысле хорошо распределёнными в заданном диапазоне.
+ Для нужд криптографии естественно требовать, чтобы конструируемые простые
+ числа, по крайней мере внешне, не имели каких-либо особенностей, выделяющих
+ эти числа среди множества всех простых.
+ С другой стороны, на практике иногда нужны простые числа 
+\begin_inset Formula $p$
+\end_inset
+
+, обладающие какими-либо дополнительными особенностями, например 
+\begin_inset Formula $p-1$
+\end_inset
+
+ не должно иметь маленьких нечётных простых делителей.
+\end_layout
+
+\begin_layout Standard
+Все применяемые алгоритмы строят возрастающую последовательность простых
+ чисел, используя на каждом шаге простые числа, построенные ранее.
+ Процесс продолжается до тех пор, пока не будет построено простое число
+ нужной величины.
+\end_layout
+
+\begin_layout Standard
+В качестве простейшего примера покажем, как с помощью следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, имея большое простое число 
+\begin_inset Formula $F$
+\end_inset
+
+, можно построить существенно большее простое число 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Выберем для этого случайным образом целое число 
+\begin_inset Formula $Q$
+\end_inset
+
+ на промежутке 
+\begin_inset Formula $F\le Q\le2F+1$
+\end_inset
+
+ и положим 
+\begin_inset Formula $N=2FQ+1$
+\end_inset
+
+.
+ Затем можно проверить число 
+\begin_inset Formula $N$
+\end_inset
+
+ на отсутствие малых простых делителей.
+ Испытать его некоторое количество раз с помощью алгоритма 4.2
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+ Если при этом выяснится, что 
+\begin_inset Formula $N$
+\end_inset
+
+ составное число, следует выбрать новое значение 
+\begin_inset Formula $Q$
+\end_inset
+
+ и опять повторить вычисления.
+ Так следует делать до тех пор, пока не будет найдено число 
+\begin_inset Formula $N$
+\end_inset
+
+, выдерживающее испытания алгоритмом 4.2 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ достаточно много раз.
+ В этом случае появляется надежда на то, что 
+\begin_inset Formula $N$
+\end_inset
+
+ — простое число, что и следует попытаться доказать с помощью следствия
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Для этого можно случайным образом выбрать число 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $1<b<N$
+\end_inset
+
+, и проверять для него выполнимость условий 
+\begin_inset Formula 
+\begin{equation}
+b^{N-1}\equiv1\left(\mod N\right),\left(b^{2Q}-1,N\right)=1.\label{eq:prime-criterion-2}
+\end{equation}
+
+\end_inset
+
+Если при выбранном 
+\begin_inset Formula $b$
+\end_inset
+
+ эти соотношения выполняются, то, поскольку 
+\begin_inset Formula 
+\[
+2Q\le4F+2<2F+3,
+\]
+
+\end_inset
+
+согласно следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно утверждать, что число 
+\begin_inset Formula $N$
+\end_inset
+
+ простое.
+\end_layout
+
+\begin_layout Standard
+Если условия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ нарушаются, нужно выбрать другое значение 
+\begin_inset Formula $b$
+\end_inset
+
+ и повторять эти операции до тех пор, пока такое число не будет обнаружено.
+\end_layout
+
+\begin_layout Standard
+Предположим теперь, что построенное число 
+\begin_inset Formula $N$
+\end_inset
+
+ действительно является простым.
+ Зададимся вопросом, сколько долго придётся перебирать числа 
+\begin_inset Formula $b$
+\end_inset
+
+, пока не будет найдено такое, для которого выполнены условия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Заметим, что для простого числа 
+\begin_inset Formula $N$
+\end_inset
+
+ первое условие 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, согласно малой теореме Ферма, будет выполняться всегда.
+ Те же числа 
+\begin_inset Formula $b$
+\end_inset
+
+, для которых нарушается второе условие 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, удовлетворяют соотношению 
+\begin_inset Formula $b^{2Q}\equiv1\left(\mod N\right)$
+\end_inset
+
+.
+ В следующей главе (теорема 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+) будет доказано, что в промежутке 
+\begin_inset Formula $1<b<N$
+\end_inset
+
+ имеется не более 
+\begin_inset Formula $2Q-1$
+\end_inset
+
+ чисел, удовлетворяющих сравнению 
+\begin_inset Formula $b^{2Q}\equiv1\left(\mod N\right)$
+\end_inset
+
+.
+ Это означает, что выбирая случайным образом числа 
+\begin_inset Formula $b$
+\end_inset
+
+ на промежутке 
+\begin_inset Formula $1<b<N$
+\end_inset
+
+, при простом 
+\begin_inset Formula $N$
+\end_inset
+
+ можно с вероятностью большей, чем 
+\begin_inset Formula $1-F^{-1}$
+\end_inset
+
+ найти число 
+\begin_inset Formula $b$
+\end_inset
+
+, для которого будут выполнены условия следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, и тем доказать, что 
+\begin_inset Formula $N$
+\end_inset
+
+ действительно является простым числом.
+\end_layout
+
+\begin_layout Standard
+Заметим, что построенное таким способом простое число 
+\begin_inset Formula $N$
+\end_inset
+
+ будет удовлетворять неравенству 
+\begin_inset Formula $N>2F^{2}$
+\end_inset
+
+, то есть количество цифр в его записи более чем в двое будет превосходить
+ количество цифр в записи исходного простого числа 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Заменив теперь число 
+\begin_inset Formula $F$
+\end_inset
+
+ на найденное простое число 
+\begin_inset Formula $N$
+\end_inset
+
+ и повторив с этим новым 
+\begin_inset Formula $F$
+\end_inset
+
+ все указанные выше действия, можно построить ещё большее простое число.
+ Начав с какого-нибудь небольшого числа, простоту которого можно проверить,
+ например, делением на маленькие табличные простые числа, и повторив указанную
+ процедуру достаточное число раз, можно построить простые числа нужной величины.
+\end_layout
+
+\begin_layout Standard
+Покажем пример вычислений с помощью описанной схемы.
+ Начнём с простого числа 
+\begin_inset Formula $F_{1}=1223$
+\end_inset
+
+.
+ Пользуясь следствием 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, с 
+\begin_inset Formula $b=2$
+\end_inset
+
+, получим по формулам 
+\begin_inset Formula $N_{i}=2F_{i}Q_{i}+1$
+\end_inset
+
+, 
+\begin_inset Formula $F_{i+1}=N_{i}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+Q_{1}=1231 & F_{2}=N_{1}=3011027\\
+Q_{2}=3011067 & F_{3}=N_{3}=18132808071619\\
+Q_{3}=18132808071644 & F_{4}=N_{3}=657597457125248955270143273
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Q_{4}=657597457125248955270143281
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{4}=864868831235187275941586469515911058724056920216597427
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Каждое из чисел 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ просто.
+ При их построении мы выбирали числа 
+\begin_inset Formula $Q_{i}$
+\end_inset
+
+ наименьшими 
+\begin_inset Formula $Q_{i}\ge F_{i}$
+\end_inset
+
+, при которых соответствующие числа 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ оказывались простыми.
+ Во всех случаях это удалось доказать с помощью следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:prime-criterion-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $b=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В настоящее время никаких теоретических гарантий для существования простого
+ числа 
+\begin_inset Formula $N=2FQ+1$
+\end_inset
+
+, 
+\begin_inset Formula $Q\le2F+1$
+\end_inset
+
+ не существует.
+ Тем не менее, опыт вычислений на ЭВМ показывает, что простые числа в арифметиче
+ской прогрессии встречаются достаточно близко к её началу.
+ Упомянем в этой связи гипотезу о существовании бесконечного количество
+ простых чисел 
+\begin_inset Formula $q$
+\end_inset
+
+ с условием, что число 
+\begin_inset Formula $2q+1$
+\end_inset
+
+ также простое, то есть простым является уже первый член прогрессии.
+\end_layout
+
+\begin_layout Standard
+Очень важен в связи с описываемым методом вопрос о расстоянии между соседними
+ простыми числами в арифметической прогрессии.
+ Ведь убедившись, что при некотором 
+\begin_inset Formula $Q$
+\end_inset
+
+ число 
+\begin_inset Formula $N=2FQ+1$
+\end_inset
+
+ составное, можно заменить 
+\begin_inset Formula $Q$
+\end_inset
+
+ на 
+\begin_inset Formula $Q+1$
+\end_inset
+
+ и продолжить действовать описанным способом до тех пор, пока не будет найдено
+ простое число 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ И если расстояние между соседними простыми числа в прогрессии велико, нет
+ надежды быстро построить нужное число 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Перебор чисел 
+\begin_inset Formula $Q$
+\end_inset
+
+ до того момента, как мы наткнёмся на простое число 
+\begin_inset Formula $N$
+\end_inset
+
+, окажется слишком долгим.
+ В более простом вопросе о расстоянии между соседними простыми числами 
+\begin_inset Formula $p_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $p_{n+1}$
+\end_inset
+
+ в натуральном ряде доказано лишь, что 
+\begin_inset Formula $p_{n+1}-p_{n}=O\left(p_{n}^{c}\right)$
+\end_inset
+
+ при любом 
+\begin_inset Formula $c>\frac{38}{61}$
+\end_inset
+
+.
+ Это очень трудная теорема, но она даёт слабую оценку для наших потребностей.
+ Вместе с тем существует так называемая гипотеза Крамера (1936 года), что
+ 
+\begin_inset Formula $p_{n+1}-p_{n}=O\left(\ln^{2}p_{n}\right)$
+\end_inset
+
+, дающая вполне приемлемую границу.
+ Вычисления на ЭВМ показывают, что простые числа в арифметических прогрессиях
+ расположены достаточно плотно.
+\end_layout
+
+\begin_layout Standard
+Если принять на верну, что наименьшее простое число, а также расстояние
+ между соседними простыми числами в прогрессии 
+\begin_inset Formula $2Fn+1$
+\end_inset
+
+ при 
+\begin_inset Formula $F\le n\le2F+1$
+\end_inset
+
+ оценивается величиной 
+\begin_inset Formula $O\left(\ln^{2}F\right)$
+\end_inset
+
+, то описанная схема построения больших простых чисел имеет полиномиальную
+ оценку сложности.
+ И, несмотря на отсутствие теоретических оценок времени работы алгоритмов,
+ отыскивающих простые числа в арифметических прогрессиях со сравнительно
+ большой разностью, на практике эти алгоритмы работают вполне удовлетворительно.
 \end_layout
 
 \begin_layout Standard
