@@ -15095,6 +15095,12 @@ S\left(N\right)=\frac{N^{2}}{2}\frac{6}{\pi^{2}}+O\left(N\ln N\right)=\frac{3N^{
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:congruences-and-its-properties"
+
+\end_inset
+
 Сравнения и их основные свойства
 \end_layout
 
@@ -22331,6 +22337,466 @@ y^{d}\equiv\left(x^{e}\right)^{d}\equiv x\left(\mod N\right).
 \end_inset
 
 , но за прошедшее время такие обнаружены не были.
+\end_layout
+
+\begin_layout Chapter
+Сравнения с одним неизвестным
+\end_layout
+
+\begin_layout Standard
+В предыдущей главе мы уже встречались с задачей нахождения целых чисел,
+ удовлетворяющих заданным сравнениями.
+ Так лемма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:coprime-to-module-has-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ есть утверждение об условиях разрешимости в целых числах 
+\begin_inset Formula $x$
+\end_inset
+
+ сравнения 
+\begin_inset Formula $ax\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ Уравнение 
+\begin_inset Formula $x^{2}-5y^{2}=3$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на (4.1)
+\end_layout
+
+\end_inset
+
+, не имеет решений в целых числах потому, что неразрешимо сравнение 
+\begin_inset Formula $x^{2}\equiv3\left(\mod5\right)$
+\end_inset
+
+.
+ Из малой теоремы Ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Fermat-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что для простого 
+\begin_inset Formula $p$
+\end_inset
+
+ каждое целое число удовлетворяет сравнению 
+\begin_inset Formula $x^{p}-x\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ А чтобы прочитать сообщение, зашифрованное с помощью схемы RSA, нужно уметь
+ решать сравнения вида 
+\begin_inset Formula $x^{e}\equiv a\left(\mod m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В этой главе мы обсудим некоторые общие вопросы, связанные с решением сравнений,
+ в которые входит одна неизвестная величина, будем обозначать её буквой
+ 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ В отличие от уравнений, каждое сравнение имеет ещё и модуль.
+ Разрешимость сравнений, а также способы нахождения решений, зависят, как
+ мы увидим в дальнейшем, от свойств модуля.
+ Можно также сказать другими словами, что решений сравнений по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ есть решений уравнений в кольце классов вычетов 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Основные определения
+\end_layout
+
+\begin_layout Standard
+Пусть даны целое число 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+ и многочлен 
+\begin_inset Formula $f\left(x\right)=a_{n}x^{n}+\dots+a_{1}x+a_{0}$
+\end_inset
+
+ с целыми коэффициентами.
+ Говорят, что целое число 
+\begin_inset Formula $u$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset Formula 
+\begin{equation}
+a_{n}x^{n}+\dots+a_{1}x+a_{0}\equiv0\left(\mod m\right),\label{eq:congruence-polynomial}
+\end{equation}
+
+\end_inset
+
+если 
+\begin_inset Formula $f\left(u\right)\equiv0\left(\mod m\right)$
+\end_inset
+
+.
+ Из результатов параграфа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:congruences-and-its-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что для любого целого числа 
+\begin_inset Formula $v$
+\end_inset
+
+, сравнимого с 
+\begin_inset Formula $u$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, выполняется 
+\begin_inset Formula $f\left(v\right)=f\left(u\right)\equiv0\left(\mod m\right)$
+\end_inset
+
+., другими словами, все числа класса вычетов 
+\begin_inset Formula $x\equiv u\left(\mod m\right)$
+\end_inset
+
+ удовлетворяют сравнению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, множество, состоящее из всех целых чисел, удовлетворяющих
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если оно не пусто, представляется в виде объединения нескольких не пересекающи
+хся классов вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Каждый класс вычетов, состоящий из чисел, удовлетворяющих 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, называется 
+\emph on
+решением сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\emph default
+, а количество таких классов вычетов, называется 
+\emph on
+числом решений
+\emph default
+ этого сравнения.
+ Число решений сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ есть число решений уравнения 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+ в кольце 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+.
+ При этом, если класс вычетов 
+\begin_inset Formula $\bar{k}$
+\end_inset
+
+ состоит из чисел, удовлетворяющих сравнению 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod m\right)$
+\end_inset
+
+, то, в соответствии с определением операций, в кольце классов вычетов 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $f\left(\bar{k}\right)=0$
+\end_inset
+
+.
+ Здесь мы допускаем некоторую вольность используя одно и то же обозначение
+ 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ как для многочлена с целыми коэффициентами, присутствующего в сравнении,
+ так и для многочлена в уравнении, коэффициенты которого являются соответствующи
+ми классами вычетов.
+ С формальной точки зрения сравнению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ должно соответствовать уравнение 
+\begin_inset Formula 
+\[
+\overline{a_{n}}x^{n}+\dots+\overline{a_{1}}x+\overline{a_{0}}=\bar{0}.
+\]
+
+\end_inset
+
+Мы и в дальнейшем для краткости записи будем опускать чёрточки, если из
+ контекста ясно, что речь идёт о решении уравнения в кольце классов вычетов.
+\end_layout
+
+\begin_layout Standard
+Согласно малой теореме Ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Fermat-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ каждое целое число удовлетворяет сравнению
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+проверить, что это доказано
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $x^{p}-x\equiv0\left(\mod p\right)$
+\end_inset
+
+ при простом 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Поэтому каждый класс вычетов кольца 
+\begin_inset Formula $\mathbb{Z}/p\mathbb{Z}$
+\end_inset
+
+ есть решение этого сравнения, а число решений равно 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если коэффициент при старшей степени 
+\begin_inset Formula $x$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $m$
+\end_inset
+
+, то есть 
+\begin_inset Formula $m\nmid a_{n}$
+\end_inset
+
+, то говорят, что 
+\emph on
+степень сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\emph default
+ равна 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Например, сравнение второй степени 
+\begin_inset Formula $x^{2}-1\equiv0\left(\mod8\right)$
+\end_inset
+
+ имеет решения 
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+x\equiv1\left(\mod8\right), &  & x\equiv3\left(\mod8\right),\\
+x\equiv5\left(\mod8\right), &  & x\equiv7\left(\mod8\right),
+\end{array}
+\]
+
+\end_inset
+
+в иных обозначениях эти классы вычетов по модулю 
+\begin_inset Formula $8$
+\end_inset
+
+ могут быть записаны как 
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{5}$
+\end_inset
+
+ и 
+\begin_inset Formula $\bar{7}$
+\end_inset
+
+.
+ Сравнению удовлетворяет каждое нечётное число.
+\end_layout
+
+\begin_layout Standard
+Можно рассматривать и сравнения более общего вида 
+\begin_inset Formula 
+\begin{equation}
+f\left(x\right)\equiv g\left(x\right)\left(\mod m\right),\label{eq:congruence-polynomial-2}
+\end{equation}
+
+\end_inset
+
+ где 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ — многочлены с целыми коэффициентами.
+ Из свойств сравнений следует, что множества чисел, удовлетворяющих 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-polynomial-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и сравнению 
+\begin_inset Formula $f\left(x\right)-g\left(x\right)\equiv0\left(\mod m\right)$
+\end_inset
+
+ совпадают.
+ Так что все вопросы, возникающие в связи со сравнениями 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-polynomial-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ сразу же сводятся к соответствующим вопросам для сравнений, содержащих
+ 
+\begin_inset Formula $0$
+\end_inset
+
+ в правой части.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить главу 5
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
