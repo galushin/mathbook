@@ -23582,6 +23582,101 @@ noprefix "false"
  в правой части.
 \end_layout
 
+\begin_layout Section
+Сравнение первой степени
+\end_layout
+
+\begin_layout Standard
+Каждое сравнение первой степени может быть переписано в виде 
+\begin_inset Formula 
+\[
+ax\equiv b\left(\mod m\right),m\nmid a.
+\]
+
+\end_inset
+
+Основной результат о таких сравнениях есть следующая теорема.
+\end_layout
+
+\begin_layout Theorem
+Сравнение 
+\begin_inset Formula $ax\equiv b\left(\mod m\right),m\nmid a$
+\end_inset
+
+ разрешимо если и только если, 
+\begin_inset Formula $b$
+\end_inset
+
+ делится на наибольший общий делитель 
+\begin_inset Formula $\left(a,m\right)$
+\end_inset
+
+.
+ Количество решений в этом случае равно 
+\begin_inset Formula $\left(a,m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $ax\equiv b\left(\mod m\right)$
+\end_inset
+
+, то, по определению
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $m\mid\left(ax-b\right)$
+\end_inset
+
+.
+ Иными словами, существует целое число 
+\begin_inset Formula $y$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $ax-b=my$
+\end_inset
+
+ или 
+\begin_inset Formula $ax-my=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 5.2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
