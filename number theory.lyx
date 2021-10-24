@@ -2962,64 +2962,16 @@ noprefix "false"
  — последующие делители в алгоритме Евклида.
  Получим следующие равенства 
 \begin_inset Formula 
-\[
-a=r_{0}=r_{1}q_{1}+r_{2},0\le r_{2}<b=r_{1},
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-b=r_{1}=r_{2}q_{2}+r_{3},0\le r_{3}<r_{2},
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-r_{2}=r_{3}q_{3}+r_{4},0\le r_{4}<r_{3},
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\vdots
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-r_{n-2}=r_{n-1}q_{n-1}+r_{n},0\le r_{n}<r_{n-1},
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
+\begin{equation}
+\begin{array}{c}
+a=r_{0}=r_{1}q_{1}+r_{2},0\le r_{2}<b=r_{1},\\
+b=r_{1}=r_{2}q_{2}+r_{3},0\le r_{3}<r_{2},\\
+r_{2}=r_{3}q_{3}+r_{4},0\le r_{4}<r_{3},\\
+\vdots\\
+r_{n-2}=r_{n-1}q_{n-1}+r_{n},0\le r_{n}<r_{n-1},\\
 r_{n-1}=r_{n}q_{n}.
-\]
+\end{array}\label{eq:Euclid-algorithm}
+\end{equation}
 
 \end_inset
 
@@ -3859,7 +3811,7 @@ noprefix "false"
 \end_inset
 
 .
- Теорема доказана
+ Лемма доказана
 \begin_inset Note Comment
 status open
 
@@ -3870,6 +3822,850 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Решение в целых числах линейных уравнений
+\end_layout
+
+\begin_layout Standard
+Уравнения, в которых неизвестные величины выражаются целыми числа, называются
+ диофантовыми по имени древнегреческого учёного Диофанта
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Диофант жил в III веке нашей эры.
+ До нас дошли шесть книг его фундаментального труда 
+\begin_inset Quotes rld
+\end_inset
+
+Арифметика
+\begin_inset Quotes rrd
+\end_inset
+
+, где рассматриваются разнообразные уравнения с целыми и рациональными неизвестн
+ыми и обсуждаются способы решения таких уравнений.
+\end_layout
+
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ — целые числа.
+ Рассмотрим простейшее диофантово уравнение 
+\begin_inset Formula 
+\begin{equation}
+ax+by=c.\label{eq:simple-diofantine-equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Легко проверить, что уравнение 
+\begin_inset Formula $19x+12y=1$
+\end_inset
+
+ имеет бесконечно много решений 
+\begin_inset Formula $x=-5+12t$
+\end_inset
+
+, 
+\begin_inset Formula $y=8-19t$
+\end_inset
+
+, 
+\begin_inset Formula $t\in\mathbb{Z}$
+\end_inset
+
+.
+ Уравнение же 
+\begin_inset Formula $2x-6y=3$
+\end_inset
+
+ решений в целых числах не имеет, ведь при любых целых 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ левая часть этого уравнения делится на 
+\begin_inset Formula $2$
+\end_inset
+
+, то есть чётна, а правая часть 
+\begin_inset Formula $3$
+\end_inset
+
+ — нечётное число.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:simplest-diofantine-solution"
+
+\end_inset
+
+1.
+ Уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:simple-diofantine-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрешимо в целых числа 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $\left(a,b\right)\mid c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+2.
+ В случае разрешимости множество решений бесконечно.
+ Все они имеют вид 
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+x=x_{0}+\frac{b}{\left(a,b\right)}t,\\
+y=y_{0}-\frac{a}{\left(a,b\right)}t,
+\end{array}\label{eq:diofantine-general-solution}
+\end{equation}
+
+\end_inset
+
+ где пара чисел 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ есть какое-либо фиксированное решение, а 
+\begin_inset Formula $t$
+\end_inset
+
+ — произвольное целое число.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+В оригинале доказывается по методу математической индукции.
+ В других источниках представление НОД через линейную комбинацию встречается
+ часто, поэтому представляется более удачным доказать его отдельно, а потом
+ использовать здесь.
+\end_layout
+
+\end_inset
+
+ Пусть 
+\begin_inset Formula $\left(a,b\right)|c$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\frac{c}{\left(a,b\right)}$
+\end_inset
+
+ — целое число.
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:gcd-as-linear-combination"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существуют такие целые числа 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $w$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+au+bw=\left(a,b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Умножая левую и правую часть этого равенства на 
+\begin_inset Formula $\frac{c}{\left(a,b\right)}$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+au\frac{c}{\left(a,b\right)}+bw\frac{c}{\left(a,b\right)}=\left(a,b\right)\frac{c}{\left(a,b\right)},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+a\cdot\frac{cu}{\left(a,b\right)}+b\cdot\frac{cw}{\left(a,b\right)}=c.
+\]
+
+\end_inset
+
+ то есть пара чисел 
+\begin_inset Formula $\frac{cu}{\left(a,b\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{cw}{\left(a,b\right)}$
+\end_inset
+
+ есть некоторое решение уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:simple-diofantine-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Достаточность условия 
+\begin_inset Formula $\left(a,b\right)\mid c$
+\end_inset
+
+ доказана.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $\left(a,b\right)\nmid c$
+\end_inset
+
+, тогда, при любых 
+\begin_inset Formula $x,y$
+\end_inset
+
+ левая часть, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, делится на 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, а правая часть — нет, значит равенство невозможно.
+ Необходимость условия 
+\begin_inset Formula $\left(a,b\right)\mid c$
+\end_inset
+
+ также доказана, а вместе с ним и первое утверждение теоремы.
+\end_layout
+
+\begin_layout Proof
+Проверим теперь, что 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+, определённые формулами 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-general-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, являются решениями уравнения, подставив указанные выражения в это уравнение:
+ 
+\begin_inset Formula 
+\[
+ax+by=ax_{0}+\frac{ab}{\left(a,b\right)}t+by_{0}-\frac{ba}{\left(a,b\right)}t=ax_{0}+by_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $x_{0},y_{0}$
+\end_inset
+
+ — некоторое решение уравнения, то 
+\begin_inset Formula $ax_{0}+by_{0}=c$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+ax+by=ax_{0}+by_{0}=c.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Забыл это сделать при первой попытке доказательства
+\end_layout
+
+\end_inset
+
+Докажем теперь, что любое решение исходного уравнения имеет такой вид.
+ Пусть 
+\begin_inset Formula $x_{1},y_{1}$
+\end_inset
+
+ — некоторое решение уравнения 
+\begin_inset Formula $ax+by=c$
+\end_inset
+
+, тогда 
+\begin_inset Formula $ax_{1}+by_{1}=c$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $x_{0},y_{0}$
+\end_inset
+
+ — тоже решение этого уравнения, то 
+\begin_inset Formula $ax_{0}+by_{0}=c$
+\end_inset
+
+.
+ Вычтем одно из этих равенств из другого: 
+\begin_inset Formula 
+\[
+a\left(x_{1}-x_{0}\right)+b\left(y_{1}-y_{0}\right)=0,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+a\left(x_{1}-x_{0}\right)=b\left(y_{0}-y_{1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из последнего равенства следует, в соответствии с леммой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что 
+\begin_inset Formula $a\left(x_{1}-x_{0}\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $a$
+\end_inset
+
+ и на 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ То есть 
+\begin_inset Formula $a\left(x_{1}-x_{0}\right)$
+\end_inset
+
+ — общее кратное 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, тоже справедливо, конечно и для 
+\begin_inset Formula $b\left(y_{0}-y_{1}\right)$
+\end_inset
+
+.
+ По 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:LCM-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, любое общее кратное делится на наименьшее общее кратное.
+ Так как, по следствию
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:LCM-and-GCD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left[a,b\right]=\frac{ab}{\left(a,b\right)},
+\]
+
+\end_inset
+
+ то существует целое число 
+\begin_inset Formula $t$
+\end_inset
+
+ такое, что 
+\begin_inset Formula 
+\[
+a\left(x_{1}-x_{0}\right)=\left[a,b\right]t=\frac{ab}{\left(a,b\right)}t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Выражая из этого равенства 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, получим
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+x_{1}-x_{0}=\frac{b}{\left(a,b\right)}t,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+x_{1}=x_{0}+\frac{b}{\left(a,b\right)}t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из равенства 
+\begin_inset Formula $ax_{1}+by_{1}=c$
+\end_inset
+
+ следует, что
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+y_{1}=\frac{c-ax_{1}}{b}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Подставляя в это равенство выражение для 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+y_{1}=\frac{c-ax_{0}-\frac{ab}{\left(a,b\right)}t}{b}=\frac{by_{0}-\frac{ab}{\left(a,b\right)}t}{b}=y_{0}-\frac{a}{\left(a,b\right)}t,
+\]
+
+\end_inset
+
+ таким образом, любое решение действительно представимо в виде 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-general-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Теорема доказана.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко доказательство основано на использовании следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-and-divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Далее он предлагает доказательство этого следствия на основании последней
+ теоремы.
+ Мне кажется это странным и два соответствующих абзаца я пропускаю.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Доказательство теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:simplest-diofantine-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ не позволяет находить решения уравнения
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:simple-diofantine-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ в целых числах.
+ В силу теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-general-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для этого достаточно найти хотя бы одно его решение.
+ Способ вычисления такого решения основа на алгоритме Евклида.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ещё раз равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Euclid-algorithm"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Первое из них даёт 
+\begin_inset Formula $r_{2}=a-bq_{1}$
+\end_inset
+
+.
+ Подставляя этого выражение во второе равенство, находим 
+\begin_inset Formula 
+\[
+r_{3}=b-r_{2}q_{2}=b\left(1+q_{1}q_{2}\right)-aq_{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Далее из третьего — 
+\begin_inset Formula 
+\[
+r_{4}=r_{2}-r_{3}q_{3}=a\left(1+q_{2}q_{3}\right)-b\left(q_{1}+q_{3}+q_{1}q_{2}q_{3}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Продолжая эти вычисления можно найти представление 
+\begin_inset Formula $r_{n}=au+bv$
+\end_inset
+
+ с некоторыми целыми 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ Но это равенство означает, что уравнение 
+\begin_inset Formula $ax+by=\left(a,b\right)$
+\end_inset
+
+ имеет решение 
+\begin_inset Formula $x=u$
+\end_inset
+
+ и 
+\begin_inset Formula $y=v$
+\end_inset
+
+.
+ А поскольку 
+\begin_inset Formula $\left(a,b\right)\mid c$
+\end_inset
+
+, решениями уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:simple-diofantine-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ будут целые числа 
+\begin_inset Formula $x_{0}=\frac{cu}{\left(a,b\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}=\frac{cv}{\left(a,b\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Все вычисления удобно оформить в матричном виде.
+ Рассмотрим матрицы 
+\begin_inset Formula 
+\[
+A_{i}=\left(\begin{array}{cc}
+q_{i} & 1\\
+1 & 0
+\end{array}\right),i=1,2,\dots,n-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+С их помощью равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Euclid-algorithm"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ могут быть представлены в виде 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+r_{i-1}\\
+r_{i}
+\end{array}\right)=A_{i}\cdot\left(\begin{array}{c}
+r_{i}\\
+r_{i-1}
+\end{array}\right),i=1,2,\dots,n-1,
+\]
+
+\end_inset
+
+и, значит, 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+a\\
+b
+\end{array}\right)=\left(\begin{array}{c}
+r_{0}\\
+r_{1}
+\end{array}\right)=A_{1}A_{2}\dots A_{n-1}\left(\begin{array}{c}
+r_{n-1}\\
+r_{n}
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Матрица, обратная к 
+\begin_inset Formula $\left(\begin{array}{cc}
+q & 1\\
+1 & 0
+\end{array}\right)$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $\left(\begin{array}{cc}
+0 & 1\\
+1 & -q
+\end{array}\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать
+\end_layout
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+r_{n-1}\\
+r_{n}
+\end{array}\right)=B_{n-1}\dots B_{2}B_{1}\cdot\left(\begin{array}{c}
+a\\
+b
+\end{array}\right),
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $B_{i}=\left(\begin{array}{cc}
+0 & 1\\
+1 & -q_{i}
+\end{array}\right)$
+\end_inset
+
+.
+ Обозначив для краткости 
+\begin_inset Formula $B=B_{n-1}\dots B_{1}=\left(\begin{array}{cc}
+w & t\\
+u & v
+\end{array}\right)$
+\end_inset
+
+, из равенства 
+\begin_inset Formula $\left(\begin{array}{c}
+r_{n-1}\\
+r_{n}
+\end{array}\right)=B\left(\begin{array}{c}
+a\\
+b
+\end{array}\right)$
+\end_inset
+
+ найдём 
+\begin_inset Formula $r_{n}=au+bv$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Перевод на матричный язык примера на странице 19
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
