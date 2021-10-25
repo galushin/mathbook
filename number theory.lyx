@@ -23582,6 +23582,515 @@ noprefix "false"
  в правой части.
 \end_layout
 
+\begin_layout Section
+Сравнение первой степени
+\end_layout
+
+\begin_layout Standard
+Каждое сравнение первой степени может быть переписано в виде 
+\begin_inset Formula 
+\begin{equation}
+ax\equiv b\left(\mod m\right),m\nmid a.\label{eq:congruence-one-variable}
+\end{equation}
+
+\end_inset
+
+Основной результат о таких сравнениях есть следующая теорема.
+\end_layout
+
+\begin_layout Theorem
+Сравнение 
+\begin_inset Formula $ax\equiv b\left(\mod m\right),m\nmid a$
+\end_inset
+
+ разрешимо если и только если, 
+\begin_inset Formula $b$
+\end_inset
+
+ делится на наибольший общий делитель 
+\begin_inset Formula $\left(a,m\right)$
+\end_inset
+
+.
+ Количество решений в этом случае равно 
+\begin_inset Formula $\left(a,m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $ax\equiv b\left(\mod m\right)$
+\end_inset
+
+, то, по определению
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $m\mid\left(ax-b\right)$
+\end_inset
+
+.
+ Иными словами, существует целое число 
+\begin_inset Formula $y$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $ax-b=my$
+\end_inset
+
+ или 
+\begin_inset Formula 
+\begin{equation}
+ax-my=b.\label{eq:equality-equivalent-to-congruence}
+\end{equation}
+
+\end_inset
+
+Таким образом, сравнение 
+\begin_inset Formula $ax\equiv b\left(\mod m\right)$
+\end_inset
+
+ эквивалентно уравнению 
+\begin_inset Formula $ax-my=b$
+\end_inset
+
+.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:simple-diofantine-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ последнее уравнение разрешимо тогда и только, когда 
+\begin_inset Formula $\left(a,m\right)\mid b$
+\end_inset
+
+.
+ Таким образом, необходимое и достаточное условие разрешимости, сформулированное
+ в условии теоремы, доказано.
+\end_layout
+
+\begin_layout Proof
+Остаётся доказать, что количество решений равно 
+\begin_inset Formula $\left(a,m\right)$
+\end_inset
+
+.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:simple-diofantine-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, решения уравнения 
+\begin_inset Formula $ax-my=b$
+\end_inset
+
+ могут быть записаны в виде 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+x=x_{0}-\frac{m}{\left(a,m\right)}t,\\
+y=y_{0}-\frac{a}{\left(a,m\right)}t,
+\end{array}
+\]
+
+\end_inset
+
+где пара чисел 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ есть какое-либо фиксированное решение, а 
+\begin_inset Formula $t$
+\end_inset
+
+ — произвольное целое число.
+ Таким образом, количество решений этого уравнения бесконечно.
+ Рассмотрим, когда два решения попадают в один класс вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Рассмотрим два целых числа 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+, а также соответствующие им значения 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+x_{1}=x_{0}-\frac{m}{\left(a,m\right)}t_{1},\\
+y_{1}=y_{0}-\frac{a}{\left(a,m\right)}t_{1},
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\begin{array}{c}
+x_{2}=x_{0}-\frac{m}{\left(a,m\right)}t_{2},\\
+y_{2}=y_{0}-\frac{a}{\left(a,m\right)}t_{2},
+\end{array}
+\]
+
+\end_inset
+
+и выясним, при каких условиях 
+\begin_inset Formula $x_{1}\equiv x_{2}\left(\mod m\right)$
+\end_inset
+
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не догадался сам, что условие 
+\begin_inset Formula $y_{1}\equiv y_{2}\left(\mod m\right)$
+\end_inset
+
+ не требуется!
+\end_layout
+
+\end_inset
+
+.
+ Выполняя подстановку и сокращение, получим 
+\begin_inset Formula $\frac{m}{\left(a,m\right)}\left(t_{1}-t_{2}\right)\equiv0\left(\mod m\right)$
+\end_inset
+
+.
+ По определению сравнений
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, это эквивалентно 
+\begin_inset Formula 
+\[
+m\mid\frac{m}{\left(a,m\right)}\left(t_{1}-t_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Первое условие выполняется, по определению 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, если 
+\begin_inset Formula $\frac{t_{1}-t_{2}}{\left(a,m\right)}$
+\end_inset
+
+ — целое число, то есть, если 
+\begin_inset Formula $\left(a,m\right)\mid\left(t_{1}-t_{2}\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $t_{1}\equiv t_{2}\left(\mod\left(a,m\right)\right)$
+\end_inset
+
+.
+ То есть, всё множество решений разбивается на классы, соответствующие классам
+ вычетов параметра 
+\begin_inset Formula $t$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $\left(a,m\right)$
+\end_inset
+
+, причём разным классам 
+\begin_inset Formula $t$
+\end_inset
+
+ соответствуют разные классы 
+\begin_inset Formula $x$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Таких классов 
+\begin_inset Formula $\left(a,m\right)$
+\end_inset
+
+, что и завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Standard
+Отметим, что лемма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:coprime-to-module-has-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует из доказанной теоремы
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Опять ссылка назад!
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для решения сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-one-variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно решить в целых числах уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:equality-equivalent-to-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, чтобы найти 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ и воспользоваться формулой 
+\begin_inset Formula 
+\[
+x_{k}=x_{0}+\frac{m}{\left(a,m\right)}k
+\]
+
+\end_inset
+
+ для нахождения представителей всех нужных классов вычетов.
+\end_layout
+
+\begin_layout Standard
+Для упрощения решения сравнения все коэффициенты можно заменить их наименьшими
+ неотрицательными вычетами по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим также, что в случае разрешимости, то есть делимости 
+\begin_inset Formula $b$
+\end_inset
+
+ на 
+\begin_inset Formula $\left(a,m\right)$
+\end_inset
+
+, обе части сравнения и модуль можно разделить на 
+\begin_inset Formula $\left(a,m\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать
+\end_layout
+
+\end_inset
+
+, что упростит задачу, сведя её к сравнению с меньшим модулем.
+ Множества чисел, удовлетворяющих новому сравнению и данному совпадают.
+\end_layout
+
+\begin_layout Standard
+Решим, например, сравнение 
+\begin_inset Formula 
+\[
+38x\equiv4\left(\mod26\right).
+\]
+
+\end_inset
+
+Так как 
+\begin_inset Formula $38\equiv12\left(\mod26\right)$
+\end_inset
+
+, то у данного сравнения те же решения, что и у сравнения 
+\begin_inset Formula $12x\equiv4\left(\mod26\right)$
+\end_inset
+
+.
+ Имеем 
+\begin_inset Formula $\left(12,26\right)=2$
+\end_inset
+
+ и 
+\begin_inset Formula $4$
+\end_inset
+
+ делит на 
+\begin_inset Formula $2$
+\end_inset
+
+, поэтому данное сравнение разрешимо и имеет два решения.
+ Кроме того, множество удовлетворяющих ему чисел таково же, как и сравнение
+ 
+\begin_inset Formula $6x\equiv2\left(\mod13\right)$
+\end_inset
+
+.
+ Заменим получившееся сравнение уравнением 
+\begin_inset Formula $6x+13y=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для решения этого уравнения применим алгоритм Евклида.
+ Уже первый его шаг приводит к равенству 
+\begin_inset Formula $13=6\cdot2+1$
+\end_inset
+
+, из которого следует, что 
+\begin_inset Formula $1=13\cdot1-6\cdot2$
+\end_inset
+
+ и 
+\begin_inset Formula $2=13\cdot2-4\cdot6$
+\end_inset
+
+.
+ Таким образом, уравнение имеет решение 
+\begin_inset Formula $x=-4$
+\end_inset
+
+, 
+\begin_inset Formula $y=2$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{0}=-4$
+\end_inset
+
+.
+ Множество чисел, удовлетворяющих сравнению 
+\begin_inset Formula $6x\equiv2\left(\mod13\right)$
+\end_inset
+
+ состоит из одного класса вычетов по модулю 
+\begin_inset Formula $13$
+\end_inset
+
+, а именно 
+\begin_inset Formula $x\equiv-4\left(\mod13\right)$
+\end_inset
+
+.
+ Относительно же модуля 
+\begin_inset Formula $26$
+\end_inset
+
+ имеем два решения.
+ Эти классы вычетов по модулю 
+\begin_inset Formula $26$
+\end_inset
+
+ содержат числа 
+\begin_inset Formula $-4+\frac{26}{2}k$
+\end_inset
+
+, где 
+\begin_inset Formula $k=1,2$
+\end_inset
+
+, то есть числа 
+\begin_inset Formula $9$
+\end_inset
+
+, 
+\begin_inset Formula $22$
+\end_inset
+
+.
+ Итак, решения данного сравнения имеют вид 
+\begin_inset Formula 
+\[
+x\equiv9\left(\mod26\right),x\equiv22\left(\mod26\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
