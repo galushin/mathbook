@@ -7484,6 +7484,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:GCD-with-product-divides-product-of-GCDs"
+
+\end_inset
+
 Для любых натуральных чисел 
 \begin_inset Formula $b,a_{1},\dots,a_{n}$
 \end_inset
@@ -24384,10 +24390,14 @@ status open
 
 \begin_layout Proof
 Поэтому 
-\begin_inset Formula $x_{0}=\sum_{j=1}^{k}M_{j}b_{j}\equiv a_{i}\left(\mod m_{i}\right)$
+\begin_inset Formula 
+\begin{equation}
+x_{0}=\sum_{j=1}^{k}M_{j}b_{j}\equiv a_{i}\left(\mod m_{i}\right),\label{eq:chinese-reminder-equivalent-congruences}
+\end{equation}
+
 \end_inset
 
-, то есть 
+то есть 
 \begin_inset Formula $x_{0}$
 \end_inset
 
@@ -24624,6 +24634,12 @@ x_{0}=143\cdot1+91\cdot\left(-3\right)+77\cdot\left(-1\right)=-207.
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:chinese-reminder-complete-system"
+
+\end_inset
+
 Если числа 
 \begin_inset Formula $a_{1},\dots,a_{k}$
 \end_inset
@@ -24787,19 +24803,240 @@ status open
 \end_inset
 
 .
+ Так как 
+\begin_inset Formula $m_{i}\mid M_{j}$
+\end_inset
+
+ при 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+, то 
+\begin_inset Formula $x_{0}\equiv x_{0}^{\prime}\left(\mod m_{i}\right)$
+\end_inset
+
+ возможно только при 
+\begin_inset Formula $M_{i}b_{i}\equiv M_{i}b_{i}^{\prime}\left(\mod m_{i}\right)$
+\end_inset
+
+, откуда, в свою очередь, следует 
+\begin_inset Formula $a_{i}\equiv a_{i}^{\prime}\left(\mod m_{i}\right)$
+\end_inset
+
+.
+ Полученное противоречие доказывает, что 
+\begin_inset Formula $x_{0}\not\equiv x_{0}^{\prime}\left(\mod m_{i}\right)$
+\end_inset
+
+, что и завершает доказательство.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:chinese-reminder-reduced-system"
+
+\end_inset
+
+Если числа 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ независимо друг от друга пробегают приведённые системы вычетов по модулям
+ 
+\begin_inset Formula $m_{1},\dots,m_{k}$
+\end_inset
+
+ соответственно, то числа 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, определённые для каждого набора 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ с помощью равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, пробегают приведённую систему вычетов по модулю 
+\begin_inset Formula $M=m_{1}\cdot\dots\cdot m_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Нужно доказать, что числа 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, получающиеся для разных наборов 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ попарно несравнимы и взаимно просты с 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Несравнимость следует из следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:chinese-reminder-complete-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Из следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:GCD-with-product-divides-product-of-GCDs"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-equivalent-congruences"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и свойства сравнений 8
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Закончить раздел 5.3
+Добавить ссылку
 \end_layout
 
 \end_inset
 
+ получаем 
+\begin_inset Formula 
+\begin{multline*}
+\left(M,x_{0}\right)=\left(m_{1}\cdot\dots\cdot m_{k},x_{0}\right)=\left(m_{1},x_{0}\right)\cdot\dots\cdot\left(m_{k},x_{k}\right)=\\
+=\left(m_{1},a_{1}\right)\cdot\dots\cdot\left(m_{k},a_{k}\right).
+\end{multline*}
 
+\end_inset
+
+Так как 
+\begin_inset Formula $\left(m_{i},a_{i}\right)$
+\end_inset
+
+ — целые числа, то 
+\begin_inset Formula $\left(M,x_{0}\right)=1$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $\left(m_{i},a_{i}\right)=1$
+\end_inset
+
+ при 
+\begin_inset Formula $1\le i\le k$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вынести в отдельное утверждение?
+\end_layout
+
+\end_inset
+
+.
+ Это завершает доказательство следствия.
+\end_layout
+
+\begin_layout Proof
+Следствие 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:chinese-reminder-reduced-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ даёт иное доказательство утверждения теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:euler-phi-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ о мультипликативности функции Эйлера.
+ Действительно, если числа 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ независимо друг от друга пробегают приведённые системы вычетов по модулям
+ 
+\begin_inset Formula $m_{1},\dots,m_{k}$
+\end_inset
+
+, то количество получившихся наборов равно 
+\begin_inset Formula $\varphi\left(m_{1}\right)\cdot\dots\cdot\varphi\left(m_{k}\right)$
+\end_inset
+
+.
+ Согласно следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:chinese-reminder-reduced-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, это число равно количеству классов вычетов по модулю 
+\begin_inset Formula $M$
+\end_inset
+
+, состоящих из чисел, взаимно простых с 
+\begin_inset Formula $M$
+\end_inset
+
+, то есть равно 
+\begin_inset Formula $\varphi\left(M\right)$
+\end_inset
+
+.
+ В результате получается равенство 
+\begin_inset Formula $\varphi\left(M\right)=\varphi\left(m_{1}\right)\cdot\dots\cdot\varphi\left(m_{k}\right)$
+\end_inset
+
+ при условии, что числа 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ попарно взаимно просты.
 \end_layout
 
 \begin_layout Standard
