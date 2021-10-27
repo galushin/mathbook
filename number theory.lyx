@@ -25039,6 +25039,213 @@ noprefix "false"
  попарно взаимно просты.
 \end_layout
 
+\begin_layout Section
+Полиномиальные сравнения по простому модулю
+\end_layout
+
+\begin_layout Standard
+В этом параграфе мы рассмотрим сравнения вида 
+\begin_inset Formula 
+\begin{equation}
+f\left(x\right)=a_{n}x^{n}+\dots+a_{1}x+a_{0}\equiv0\left(\mod p\right),p\nmid a_{n},\label{eq:polynomial-congruence-modulo-prime}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число.
+ Следующее утверждение, доказанное Лагранжем в 1768 году, носит его имя.
+\end_layout
+
+\begin_layout Theorem
+Сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:polynomial-congruence-modulo-prime"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет не более 
+\begin_inset Formula $n$
+\end_inset
+
+ решений.
+\end_layout
+
+\begin_layout Standard
+Заметим, что для составного модуля, даже при 
+\begin_inset Formula $n=1$
+\end_inset
+
+, утверждение теоремы может нарушаться
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Привести пример?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Метод доказательства подсмотрел
+\end_layout
+
+\end_inset
+
+Докажем теорему индукцией по степени сравнения.
+ 
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $n=1$
+\end_inset
+
+ получаем сравнение 
+\begin_inset Formula $a_{1}x+a_{0}\equiv0\mod p$
+\end_inset
+
+ или 
+\begin_inset Formula $a_{1}x\equiv-a_{0}\left(\mod p\right)$
+\end_inset
+
+.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:congruence-one-variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, такое сравнение разрешимо тогда и только тогда, когда 
+\begin_inset Formula $\left(a_{1},p\right)$
+\end_inset
+
+ делит 
+\begin_inset Formula $-a_{0}$
+\end_inset
+
+, а количество решений равно 
+\begin_inset Formula $\left(a_{1},p\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое и 
+\begin_inset Formula $p\nmid a_{1}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(a_{1},p\right)=1$
+\end_inset
+
+ и, следовательно, всегда делит 
+\begin_inset Formula $-a_{0}$
+\end_inset
+
+, то есть в случае 
+\begin_inset Formula $n=1$
+\end_inset
+
+ решение существует и оно единственное.
+ База индукции доказана.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь утверждение теоремы доказано для всех целых числе 
+\begin_inset Formula $n$
+\end_inset
+
+ из промежутка 
+\begin_inset Formula $1\le n<m$
+\end_inset
+
+, докажем его для 
+\begin_inset Formula $n=m$
+\end_inset
+
+.
+ Рассмотрим сравнение 
+\begin_inset Formula 
+\[
+a_{m}x^{m}+\dots+a_{1}x+a_{0}\equiv0\left(\mod p\right),p\nmid a_{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть у этого сравнения имеется 
+\begin_inset Formula $m+1$
+\end_inset
+
+ решение.
+ Обозначим одно из решений 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $-a_{0}\equiv a_{m}x_{0}^{m}+\dots+a_{1}x_{0}\left(\mod p\right).$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить индукционный переход
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 5.4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
