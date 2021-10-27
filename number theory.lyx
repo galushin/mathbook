@@ -7484,6 +7484,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:GCD-with-product-divides-product-of-GCDs"
+
+\end_inset
+
 Для любых натуральных чисел 
 \begin_inset Formula $b,a_{1},\dots,a_{n}$
 \end_inset
@@ -23599,6 +23605,12 @@ ax\equiv b\left(\mod m\right),m\nmid a.\label{eq:congruence-one-variable}
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:congruence-one-variable"
+
+\end_inset
+
 Сравнение 
 \begin_inset Formula $ax\equiv b\left(\mod m\right),m\nmid a$
 \end_inset
@@ -24089,6 +24101,942 @@ x\equiv9\left(\mod26\right),x\equiv22\left(\mod26\right).
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Китайская теорема об остатках
+\end_layout
+
+\begin_layout Standard
+При решении некоторых задач возникает потребность найти целые числа 
+\begin_inset Formula $x$
+\end_inset
+
+, удовлетворяющие одновременно нескольким сравнениям.
+ Как и в случае уравнений при этом говорят, что требуется решить системы
+ сравнений.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вводный материал про линейные сравнения со многими переменными
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Далее мы рассмотрим системы сравнений специального вида 
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+x\equiv a_{1}\left(\mod m_{1}\right),\\
+x\equiv a_{2}\left(\mod m_{2}\right)\\
+\vdots\\
+x\equiv x_{k}\left(\mod m_{k}\right),
+\end{array}\label{eq:chinese-reminder-system}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $m_{i}>0$
+\end_inset
+
+, 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ — заданные целые числа.
+ Их решение также может быть сведено к решению систем уравнений.
+ Но в одном важном частном случае решение системы может быть получено относитель
+но легко.
+ Следующее утверждение было известно в Китае примерно 2 тысячелетия назад.
+ В настоящее время оно носит название 
+\begin_inset Quotes rld
+\end_inset
+
+Китайская теорема об остатках
+\begin_inset Quotes rrd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:chinese-reminder-theorem"
+
+\end_inset
+
+Если 
+\begin_inset Formula $m_{1},\dots,m_{k}$
+\end_inset
+
+ попарно взаимно просты, то система сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрешима.
+ Если для целых чисел 
+\begin_inset Formula $M$
+\end_inset
+
+, 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ выполнены соотношения 
+\begin_inset Formula 
+\[
+M=m_{1}\cdot\dots\cdot m_{k},M_{i}=\frac{M}{m_{i}},M_{i}b_{i}\equiv a_{i}\left(\mod m_{i}\right),1\le i\le k,
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\begin{equation}
+x_{0}=M_{1}b_{1}+\dots+M_{k}b_{k},\label{eq:chinese-reminder-solution}
+\end{equation}
+
+\end_inset
+
+то множество целых чисел, удовлетворяющих системе сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, составляет класс вычетов 
+\begin_inset Formula $x\equiv x_{0}\left(\mod M\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Поскольку в условиях теоремы 
+\begin_inset Formula $\left(M_{i},m_{i}\right)=1$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+, то существование чисел 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ следует из теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:congruence-one-variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Заметим также, что числа 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ определяются не единственным образом.
+ При использовании теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:chinese-reminder-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для решения сравнений, следует выбирать те из них, которые дают по возможности
+ меньшие значения 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Покажем, что 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ из условий теоремы удовлетворяет системе сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Нужно доказать, что 
+\begin_inset Formula $x_{0}\equiv a_{i}\left(\mod m_{i}\right)$
+\end_inset
+
+ или, по определению 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, что 
+\begin_inset Formula $m_{i}\mid\left(x_{0}-a_{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Сначала заметим, что если 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+, то 
+\begin_inset Formula $M_{j}\equiv0\left(\mod m_{i}\right)$
+\end_inset
+
+.
+ Действительно, 
+\begin_inset Formula $M_{j}=\frac{M}{m_{j}}=\prod_{s\neq j}m_{s}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $m_{i}\mid M_{j}$
+\end_inset
+
+, откуда, по определению 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, следует 
+\begin_inset Formula $M_{j}\equiv0\left(\mod m_{i}\right)$
+\end_inset
+
+.
+ В силу свойств сравнений 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, при 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+ также имеет место 
+\begin_inset Formula $M_{j}b_{j}\equiv0\left(\mod m_{i}\right)$
+\end_inset
+
+.
+ Так как по условию теоремы 
+\begin_inset Formula $M_{i}b_{i}\equiv a_{i}\left(\mod m_{i}\right)$
+\end_inset
+
+, окончательно можно написать 
+\begin_inset Formula $M_{j}b_{j}\equiv a_{j}\cdot\left[j=i\right]\left(\mod m_{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Поэтому 
+\begin_inset Formula 
+\begin{equation}
+x_{0}=\sum_{j=1}^{k}M_{j}b_{j}\equiv a_{i}\left(\mod m_{i}\right),\label{eq:chinese-reminder-equivalent-congruences}
+\end{equation}
+
+\end_inset
+
+то есть 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ действительно удовлетворяет системе сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Любое число класса вычетов 
+\begin_inset Formula $x=x_{0}\left(\mod M\right)$
+\end_inset
+
+, по определению 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, можно записать в виде 
+\begin_inset Formula $x=x_{0}+Mu$
+\end_inset
+
+, где 
+\begin_inset Formula $u$
+\end_inset
+
+ — некоторое целое число.
+ Так как 
+\begin_inset Formula $M=m_{1}\cdot\dots\cdot m_{k}$
+\end_inset
+
+, то для любого 
+\begin_inset Formula $i$
+\end_inset
+
+ справедливо 
+\begin_inset Formula $m_{i}\mid M$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $x=x_{0}+Mu\equiv a_{i}+0=a_{i}\left(\mod m_{i}\right)$
+\end_inset
+
+, то есть любое число из класса вычетов 
+\begin_inset Formula $x\equiv x_{0}\left(\mod M\right)$
+\end_inset
+
+ также удовлетворяет системе сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не доказал сам разрешимость
+\end_layout
+
+\end_inset
+
+.
+ Это значит, что множества целых чисел, удовлетворяющих системе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и системе 
+\begin_inset Formula 
+\[
+x\equiv x_{0}\left(\mod m_{i}\right),1\le i\le k,
+\]
+
+\end_inset
+
+ совпадают.
+ Последние сравнения выполняются, по определению
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, в том и только том случае, когда 
+\begin_inset Formula $m_{i}\mid\left(x-x_{0}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $1\le i\le k$
+\end_inset
+
+.
+ Учитывая попарную простоту модулей 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+, с помощью следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:coprime-with-each-is-coprime-with-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ заключаем, что последнее свойство выполняется для тех и только тех чисел
+ 
+\begin_inset Formula $x$
+\end_inset
+
+, для которых 
+\begin_inset Formula $M\mid\left(x-x_{0}\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $x\equiv x_{0}\left(\mod M\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Решим систему сравнений 
+\begin_inset Formula 
+\[
+x\equiv3\left(\mod7\right),x\equiv2\left(\mod11\right),x\equiv1\left(\mod13\right).
+\]
+
+\end_inset
+
+В данном случае модули 
+\begin_inset Formula $7$
+\end_inset
+
+, 
+\begin_inset Formula $11$
+\end_inset
+
+ и 
+\begin_inset Formula $13$
+\end_inset
+
+ попарно взаимно просты.
+ Пользуясь соотношениями теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:chinese-reminder-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, находим 
+\begin_inset Formula $M=7\cdot11\cdot13=1001$
+\end_inset
+
+, 
+\begin_inset Formula $M_{1}=11\cdot13=143$
+\end_inset
+
+, 
+\begin_inset Formula $M_{2}=7\cdot13=91$
+\end_inset
+
+, 
+\begin_inset Formula $M_{3}=7\cdot11=77$
+\end_inset
+
+.
+ Решая вспомогательные сравнения 
+\begin_inset Formula 
+\[
+143x\equiv3\left(\mod7\right),91x\equiv2\left(\mod11\right),77x\equiv1\left(\mod13\right),
+\]
+
+\end_inset
+
+и выбирая по одному числу, удовлетворяющему каждому из них, находим 
+\begin_inset Formula $b_{1}=1$
+\end_inset
+
+, 
+\begin_inset Formula $b_{2}=-3$
+\end_inset
+
+, 
+\begin_inset Formula $b_{3}=-1$
+\end_inset
+
+.
+ Далее вычисляем 
+\begin_inset Formula 
+\[
+x_{0}=143\cdot1+91\cdot\left(-3\right)+77\cdot\left(-1\right)=-207.
+\]
+
+\end_inset
+
+Ответ: 
+\begin_inset Formula $x\equiv-207\left(\mod1001\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:chinese-reminder-complete-system"
+
+\end_inset
+
+Если числа 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ независимо друг от друга пробегают полные системы вычетов по модулям 
+\begin_inset Formula $m_{1},\dots,m_{k}$
+\end_inset
+
+ соответственно, то числа 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, определённые для каждого набора 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ с помощью равенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, пробегают полную систему вычетов по модулю 
+\begin_inset Formula $M=m_{1}\cdot\dots\cdot m_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+.
+ Нужно доказать, что разным наборам 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ соответствуют 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, принадлежащие разным классам вычетов по модулю 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Так как количество наборов чисел 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ равно 
+\begin_inset Formula $m_{1}\cdot\dots\cdot m_{k}=M$
+\end_inset
+
+, то 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ пробежит все классы вычетов по модулю 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Итак, пусть есть два набора 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{1}^{\prime},\dots,a_{k}^{\prime}$
+\end_inset
+
+, причём такие, что существует по меньшей мере один индекс 
+\begin_inset Formula $i$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $1\le i\le k$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{i}\not\equiv a_{i}^{\prime}\left(\mod m_{i}\right)$
+\end_inset
+
+, то есть, по определению 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $m_{i}\nmid\left(a_{i}-a_{i}^{\prime}\right)$
+\end_inset
+
+.
+ Пусть также числа 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{i}^{\prime}$
+\end_inset
+
+ удовлетворяют, соответственно, сравнениям 
+\begin_inset Formula $M_{i}b_{i}\equiv a_{i}\left(\mod m_{i}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $M_{i}b_{i}^{\prime}\equiv a_{i}^{\prime}\left(\mod m_{i}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+x_{0}=M_{1}b_{1}+\dots+M_{k}b_{k},x_{0}^{\prime}=M_{1}b_{1}^{\prime}+\dots+M_{k}b_{k}^{\prime}.
+\]
+
+\end_inset
+
+ Если 
+\begin_inset Formula $x_{0}\equiv x_{0}^{\prime}\left(\mod M\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $M=m_{1}\cdot\dots\cdot m_{k}$
+\end_inset
+
+, то, по свойству 9 сравнений
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $x_{0}\equiv x_{0}^{\prime}\left(\mod m_{i}\right)$
+\end_inset
+
+ для любого 
+\begin_inset Formula $1\le i\le k$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $m_{i}\mid M_{j}$
+\end_inset
+
+ при 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+, то 
+\begin_inset Formula $x_{0}\equiv x_{0}^{\prime}\left(\mod m_{i}\right)$
+\end_inset
+
+ возможно только при 
+\begin_inset Formula $M_{i}b_{i}\equiv M_{i}b_{i}^{\prime}\left(\mod m_{i}\right)$
+\end_inset
+
+, откуда, в свою очередь, следует 
+\begin_inset Formula $a_{i}\equiv a_{i}^{\prime}\left(\mod m_{i}\right)$
+\end_inset
+
+.
+ Полученное противоречие доказывает, что 
+\begin_inset Formula $x_{0}\not\equiv x_{0}^{\prime}\left(\mod m_{i}\right)$
+\end_inset
+
+, что и завершает доказательство.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:chinese-reminder-reduced-system"
+
+\end_inset
+
+Если числа 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ независимо друг от друга пробегают приведённые системы вычетов по модулям
+ 
+\begin_inset Formula $m_{1},\dots,m_{k}$
+\end_inset
+
+ соответственно, то числа 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, определённые для каждого набора 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ с помощью равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, пробегают приведённую систему вычетов по модулю 
+\begin_inset Formula $M=m_{1}\cdot\dots\cdot m_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Нужно доказать, что числа 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, получающиеся для разных наборов 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ попарно несравнимы и взаимно просты с 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Несравнимость следует из следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:chinese-reminder-complete-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Из следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:GCD-with-product-divides-product-of-GCDs"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-equivalent-congruences"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и свойства сравнений 8
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\begin{multline*}
+\left(M,x_{0}\right)=\left(m_{1}\cdot\dots\cdot m_{k},x_{0}\right)=\left(m_{1},x_{0}\right)\cdot\dots\cdot\left(m_{k},x_{k}\right)=\\
+=\left(m_{1},a_{1}\right)\cdot\dots\cdot\left(m_{k},a_{k}\right).
+\end{multline*}
+
+\end_inset
+
+Так как 
+\begin_inset Formula $\left(m_{i},a_{i}\right)$
+\end_inset
+
+ — целые числа, то 
+\begin_inset Formula $\left(M,x_{0}\right)=1$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $\left(m_{i},a_{i}\right)=1$
+\end_inset
+
+ при 
+\begin_inset Formula $1\le i\le k$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вынести в отдельное утверждение?
+\end_layout
+
+\end_inset
+
+.
+ Это завершает доказательство следствия.
+\end_layout
+
+\begin_layout Proof
+Следствие 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:chinese-reminder-reduced-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ даёт иное доказательство утверждения теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:euler-phi-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ о мультипликативности функции Эйлера.
+ Действительно, если числа 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ независимо друг от друга пробегают приведённые системы вычетов по модулям
+ 
+\begin_inset Formula $m_{1},\dots,m_{k}$
+\end_inset
+
+, то количество получившихся наборов равно 
+\begin_inset Formula $\varphi\left(m_{1}\right)\cdot\dots\cdot\varphi\left(m_{k}\right)$
+\end_inset
+
+.
+ Согласно следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:chinese-reminder-reduced-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, это число равно количеству классов вычетов по модулю 
+\begin_inset Formula $M$
+\end_inset
+
+, состоящих из чисел, взаимно простых с 
+\begin_inset Formula $M$
+\end_inset
+
+, то есть равно 
+\begin_inset Formula $\varphi\left(M\right)$
+\end_inset
+
+.
+ В результате получается равенство 
+\begin_inset Formula $\varphi\left(M\right)=\varphi\left(m_{1}\right)\cdot\dots\cdot\varphi\left(m_{k}\right)$
+\end_inset
+
+ при условии, что числа 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ попарно взаимно просты.
 \end_layout
 
 \begin_layout Standard
