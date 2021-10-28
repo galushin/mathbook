@@ -18744,8 +18744,14 @@ a^{p-1}\left(-1\right)=\left(-1\right)\left(\mod p\right),
 , получаем утверждение теоремы.
 \end_layout
 
-\begin_layout Standard
-Из этой теоремы следует, что при любом целом 
+\begin_layout Claim
+\begin_inset CommandInset label
+LatexCommand label
+name "claim:Fermat-lesser-theorem-alternative"
+
+\end_inset
+
+Из малой теоремы Ферма следует, что при любом целом 
 \begin_inset Formula $a$
 \end_inset
 
@@ -18757,17 +18763,93 @@ a^{p-1}\left(-1\right)=\left(-1\right)\left(\mod p\right),
 \begin_inset Formula $p$
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Вынести в отдельное утверждение/следствие
-\end_layout
+, иными словами, справедливо сравнение 
+\begin_inset Formula 
+\[
+a^{p}-a\equiv0\left(\mod p\right).
+\]
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Proof
+По малой теореме Ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Fermat-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
+\begin_inset Formula $p\nmid a$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{p-1}\equiv1\left(\mod p\right)$
+\end_inset
+
 .
+ Так как 
+\begin_inset Formula $a^{p}-a=a\left(a^{p-1}-1\right)$
+\end_inset
+
+, то при 
+\begin_inset Formula $p\mid a$
+\end_inset
+
+, по определению, выполняется 
+\begin_inset Formula $a\equiv0\left(\mod p\right)$
+\end_inset
+
+, а при 
+\begin_inset Formula $p\nmid a$
+\end_inset
+
+, в силу малой теоремы Ферма, выполняется 
+\begin_inset Formula $a^{p-1}\equiv1\left(\mod p\right)$
+\end_inset
+
+.
+ То есть один из сомножителей делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, значит, по свойствам делимости 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ и произведение 
+\begin_inset Formula $a\left(a^{p-1}-1\right)=a^{p}-a$
+\end_inset
+
+, а значит, по определению, 
+\begin_inset Formula $a^{p}\equiv a\left(\mod p\right)$
+\end_inset
+
+, откуда и следует требуемое сравнение 
+\begin_inset Formula 
+\[
+a^{p}-a\equiv0\left(\mod p\right).
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -25061,6 +25143,12 @@ f\left(x\right)=a_{n}x^{n}+\dots+a_{1}x+a_{0}\equiv0\left(\mod p\right),p\nmid a
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:polynomial-congruence-number-of-solutions"
+
+\end_inset
+
 Сравнение 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -25097,16 +25185,6 @@ status open
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать доказательство
-\end_layout
-
-\end_inset
-
-
 \begin_inset Note Comment
 status open
 
@@ -25198,7 +25276,7 @@ noprefix "false"
  Рассмотрим сравнение 
 \begin_inset Formula 
 \[
-a_{m}x^{m}+\dots+a_{1}x+a_{0}\equiv0\left(\mod p\right),p\nmid a_{m}.
+f\left(x\right)=a_{m}x^{m}+\dots+a_{1}x+a_{0}\equiv0\left(\mod p\right),p\nmid a_{m}.
 \]
 
 \end_inset
@@ -25207,17 +25285,56 @@ a_{m}x^{m}+\dots+a_{1}x+a_{0}\equiv0\left(\mod p\right),p\nmid a_{m}.
 \end_layout
 
 \begin_layout Proof
-Пусть у этого сравнения имеется 
-\begin_inset Formula $m+1$
-\end_inset
-
- решение.
- Обозначим одно из решений 
+Обозначим одно из решений 
 \begin_inset Formula $x_{0}$
 \end_inset
 
-, тогда 
-\begin_inset Formula $-a_{0}\equiv a_{m}x_{0}^{m}+\dots+a_{1}x_{0}\left(\mod p\right).$
+ (если решений нет, то утверждение теоремы для 
+\begin_inset Formula $n=m$
+\end_inset
+
+ доказано, так как 
+\begin_inset Formula $m\ge n>1>0$
+\end_inset
+
+), тогда для любого решения 
+\begin_inset Formula $x$
+\end_inset
+
+ исходного справедливо сравнение 
+\begin_inset Formula 
+\[
+f\left(x\right)-f\left(x_{0}\right)\equiv0\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По определению 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ получаем, с учётом сокращения 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+f\left(x\right)-f\left(x_{0}\right)=\sum_{k=1}^{m}a_{k}\left(x^{k}-x_{0}^{k}\right)=\left(x-x_{0}\right)g\left(x-x_{0}\right),
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ многочлен степени не выше 
+\begin_inset Formula $m-1$
 \end_inset
 
 
@@ -25225,7 +25342,389 @@ a_{m}x^{m}+\dots+a_{1}x+a_{0}\equiv0\left(\mod p\right),p\nmid a_{m}.
 status open
 
 \begin_layout Plain Layout
-Закончить индукционный переход
+Доказать подробнее
+\end_layout
+
+\end_inset
+
+.
+ Сравнение 
+\begin_inset Formula 
+\[
+f\left(x\right)-f\left(x_{0}\right)=\left(x-x_{0}\right)g\left(x-x_{0}\right)\equiv0\left(\mod p\right)
+\]
+
+\end_inset
+
+ выполняется, в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
+\begin_inset Formula $\left(x-x_{0}\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $g\left(x-x_{0}\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ Первый случай тривиален, так как приводит к решению из того же класса вычетов,
+ что и 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $x\not\equiv x_{0}\left(\mod p\right)$
+\end_inset
+
+, то для каждого решения исходного сравнения должно выполняться 
+\begin_inset Formula $g\left(x-x_{0}\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+, так как 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ — многочлен степени не выше 
+\begin_inset Formula $m-1$
+\end_inset
+
+, то, по предположению индукции, последнее сравнение имеет не более 
+\begin_inset Formula $m-1$
+\end_inset
+
+ решение.
+ Таким образом, у сравнения 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+ может быть не более 
+\begin_inset Formula $m$
+\end_inset
+
+ решений, а теорема справедлива для произвольного натурального 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Для каждого простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ справедливо сравнение 
+\begin_inset Formula 
+\begin{equation}
+x^{p}-x\equiv x\left(x-1\right)\left(x-2\right)\dots\left(x-p+1\right)\left(\mod p\right),\label{eq:x^p-x-expansion-modulo-p}
+\end{equation}
+
+\end_inset
+
+ то есть коэффициенты при одинаковых степенях переменной 
+\begin_inset Formula $x$
+\end_inset
+
+ в левой и правой частях сравнимы между собой по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По следствию из малой теоремы Ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:Fermat-lesser-theorem-alternative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, решениями сравнения 
+\begin_inset Formula 
+\[
+x^{p}-x\equiv0\left(\mod p\right)
+\]
+
+\end_inset
+
+являются все 
+\begin_inset Formula $p$
+\end_inset
+
+ классов вычетов по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $x^{p}-x$
+\end_inset
+
+ — многочлен степени 
+\begin_inset Formula $p$
+\end_inset
+
+, то у него, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:polynomial-congruence-number-of-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, не может быть более 
+\begin_inset Formula $p$
+\end_inset
+
+ решений, таким образом, классы вычетов 
+\begin_inset Formula $0,1,\dots,p-1$
+\end_inset
+
+ исчерпывают всё множество решений сравнения 
+\begin_inset Formula $x^{p}-x\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим теперь правую часть исходного сравнения.
+ Для любого целого 
+\begin_inset Formula $a$
+\end_inset
+
+ из промежутка 
+\begin_inset Formula $0\le a<p$
+\end_inset
+
+ один из множителей равен нулю, поэтому множество решений сравнения 
+\begin_inset Formula 
+\[
+x\left(x-1\right)\left(x-2\right)\dots\left(x-p+1\right)\equiv0\left(\mod p\right)
+\]
+
+\end_inset
+
+также совпадает с множеством всех классов вычетов по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Раскрыв скобки, мы получим многочлен степени 
+\begin_inset Formula $p$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать
+\end_layout
+
+\end_inset
+
+, старший коэффициент которого равен единице
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать
+\end_layout
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left(x^{p}-x\right)-x\left(x-1\right)\left(x-2\right)\dots\left(x-p+1\right)
+\]
+
+\end_inset
+
+ — многочлен степени не выше 
+\begin_inset Formula $p-1$
+\end_inset
+
+, а значит, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:polynomial-congruence-number-of-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у сравнения 
+\begin_inset Formula 
+\[
+\left(x^{p}-x\right)-x\left(x-1\right)\left(x-2\right)\dots\left(x-p+1\right)\equiv0\left(\mod p\right)
+\]
+
+\end_inset
+
+ не может быть более 
+\begin_inset Formula $p-1$
+\end_inset
+
+ решения.
+ Однако, из приведённых выше соображений следует, что решениями этого сравнения
+ являются классы вычетов 
+\begin_inset Formula $0,1,\dots,p-1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $p$
+\end_inset
+
+ различных классов вычетов.
+ Это возможно только если левая часть последнего сравнения тождественно
+ равна 
+\begin_inset Formula $0$
+\end_inset
+
+, иными словами, коэффициенты при всех степенях 
+\begin_inset Formula $x$
+\end_inset
+
+ сравнимы с нулём по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, откуда и следует доказываемое утверждение
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Сравнивая коэффициенты при 
+\begin_inset Formula $x$
+\end_inset
+
+ в первой степени слева и справа в сравнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:x^p-x-expansion-modulo-p"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем теорему Вильсона 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Wilson"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+-1\equiv\left(p-1\right)!\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Очень много новой, нигде не пояснённой нотации
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=\left(x^{p}-x\right)g\left(x\right)+r\left(x\right),r\left(x\right)\in\mathbb{Z}\left[x\right],\deg r\left(x\right)<p.
+\]
+
+\end_inset
+
+ Тогда множество целых чисел, удовлетворяющих сравнениям 
+\begin_inset Formula 
+\[
+f\left(x\right)\equiv0\left(\mod p\right)
+\]
+
+\end_inset
+
+и
+\begin_inset Formula 
+\[
+r\left(x\right)\equiv0\left(\mod p\right),
+\]
+
+\end_inset
+
+ совпадают.
+ Другими словами, каждое сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:polynomial-congruence-modulo-prime"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно заменить равносильным ему сравнением степени не превосходящей 
+\begin_inset Formula $p-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
 \end_layout
 
 \end_inset
