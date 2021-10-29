@@ -2596,6 +2596,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Euclid-algorithm"
+
+\end_inset
+
 Алгоритм Евклида
 \end_layout
 
@@ -25428,6 +25434,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:x^p-x-expansion-modulo-p"
+
+\end_inset
+
 Для каждого простого числа 
 \begin_inset Formula $p$
 \end_inset
@@ -25667,6 +25679,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:polinomial-congruence-reminder-fermat"
+
+\end_inset
+
 Пусть 
 \begin_inset Note Note
 status open
@@ -25720,16 +25738,547 @@ noprefix "false"
 \end_layout
 
 \begin_layout Proof
+Так как по следствию из малой теоремы Ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:Fermat-lesser-theorem-alternative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для любого целого 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ справедливо сравнение 
+\begin_inset Formula $x_{0}^{p}-x_{0}\equiv0\left(\mod p\right)$
+\end_inset
+
+, то, по свойствам сравнений 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать доказательство
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x_{0}\right)\equiv0\cdot g\left(x_{0}\right)+r\left(x_{0}\right)\equiv r\left(x_{0}\right)\left(\mod p\right)$
+\end_inset
+
+.
+ Таким образом, для любого целого 
+\begin_inset Formula $x$
+\end_inset
+
+ сравнения из формулировки теоремы выполняются или не выполняются одновременно,
+ что и требовалось доказать.
+\end_layout
+
+\begin_layout Standard
+Иногда степень сравнения можно ещё уменьшить, не изменяя при этом множества
+ решений.
+ Для описания этого способа удобно воспользоваться тем, что кольцо классов
+ вычетов 
+\begin_inset Formula $\mathbb{Z}/p\mathbb{Z}$
+\end_inset
+
+ по простому модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ является полем.
+ Для краткости мы будем обозначать его символом 
+\begin_inset Formula $\mathbb{F}_{p}$
+\end_inset
+
+.
+ Из следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:x^p-x-expansion-modulo-p"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем, что в кольце 
+\begin_inset Formula $\mathbb{F}_{p}\left[x\right]$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $x^{p}-x=x\left(x-1\right)\dots\left(x-p+1\right)$
+\end_inset
+
+.
+ С формальной точки зрения в этом равенство вместо чисел 
+\begin_inset Formula $1,2,\dots,p-1$
+\end_inset
+
+ должны были бы стоять классы вычетов 
+\begin_inset Formula $\bar{1},\bar{2},\dots,\overline{p-1}$
+\end_inset
+
+, но для краткости записи, как об этом говорилось выше, мы чёрточки не ставим.
+\end_layout
+
+\begin_layout Example
+Разделить с остатком многочлен 
+\begin_inset Formula $3x^{3}+2$
+\end_inset
+
+ на многочлен 
+\begin_inset Formula $2x+1$
+\end_inset
+
+ в кольце 
+\begin_inset Formula $\mathbb{F}_{5}\left[x\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $4\cdot2\equiv3\left(\mod5\right)$
+\end_inset
+
+, то в кольце многочленов 
+\begin_inset Formula $\mathbb{F}_{5}\left[x\right]$
+\end_inset
+
+ справедливо равенство 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+нетривиально
 \end_layout
 
 \end_inset
 
 
+\begin_inset Formula 
+\[
+3x^{3}+2-4x^{2}\left(2x+1\right)=x^{2}+2.
+\]
+
+\end_inset
+
+Поскольку 
+\begin_inset Formula $3\cdot2\equiv1\left(\mod p\right)$
+\end_inset
+
+, имеем 
+\begin_inset Formula 
+\[
+x^{2}+2-3x\left(2x+1\right)=2x+2
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+2x+2-\left(2x+1\right)=1.
+\]
+
+\end_inset
+
+Итак, в кольце 
+\begin_inset Formula $\mathbb{F}_{5}\left[x\right]$
+\end_inset
+
+ справедливо равенство 
+\begin_inset Formula 
+\[
+3x^{3}+2=\left(4x^{2}+3x+1\right)\left(2x+1\right)+1.
+\]
+
+\end_inset
+
+ Остаток от деления равен 1.
+ Последнее равенство может быть переписано как сравнение в кольце многочленов
+ 
+\begin_inset Formula $\mathbb{Z}\left[x\right]$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+3x^{3}+2\equiv\left(4x^{2}+3x+1\right)\left(2x+1\right)+1\left(\mod5\right).
+\]
+
+\end_inset
+
+Здесь, как и ранее, имеется в виду, что коэффициенты при одинаковых степенях
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ у многочленов, стоящих слева и справа от знака 
+\begin_inset Formula $\equiv$
+\end_inset
+
+, сравнимы по модулю 
+\begin_inset Formula $5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+При любом простом 
+\begin_inset Formula $p$
+\end_inset
+
+ в кольце многочленов 
+\begin_inset Formula $\mathbb{F}_{p}\left[x\right]$
+\end_inset
+
+, выполняя деление с остатком, можно вычислить наибольший общий делитель
+ двух многочленов.
+ Этот алгоритм подобен алгоритму из параграфа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Euclid-algorithm"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и также носит название алгоритм Евклида.
+ Наибольший общий делитель многочленов 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ будет, как и для целых чисел, обозначаться символом 
+\begin_inset Formula $\left(f\left(x\right),g\left(x\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Следующее утверждение позволяет, не нарушая равносильности, понизить степень
+ сравнения больше, чем теорема 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:polinomial-congruence-reminder-fermat"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:polynomial-congruence-simplification-GCD"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $d\left(x\right)$
+\end_inset
+
+ — многочлены с целыми коэффициентами, причём, если рассматривать их как
+ многочлены из кольца 
+\begin_inset Formula $\mathbb{F}_{p}\left[x\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $d\left(x\right)$
+\end_inset
+
+ — наибольший общий делитель 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{p}-x$
+\end_inset
+
+.
+ Тогда множества решений сравнений 
+\begin_inset Formula 
+\[
+f\left(x\right)\equiv0\left(\mod p\right)
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+d\left(x\right)\equiv0\left(\mod p\right)
+\]
+
+\end_inset
+
+одинаковы.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $d\left(x\right)$
+\end_inset
+
+ — наибольший общий делитель 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{p}-x$
+\end_inset
+
+ в кольце 
+\begin_inset Formula $\mathbb{F}_{p}\left[x\right]$
+\end_inset
+
+, то в этом поле существует такой многочлен 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+, что 
+\begin_inset Formula $f\left(x\right)=d\left(x\right)g\left(x\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ — некоторое решение сравнения 
+\begin_inset Formula $d\left(x\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+f\left(x_{0}\right)\equiv d\left(x_{0}\right)g\left(x_{0}\right)\equiv0\cdot g\left(x_{0}\right)\equiv0\left(\mod p\right),
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ является также решением сравнения 
+\begin_inset Formula $f\left(x_{0}\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог доказать, начиная с этого момента
+\end_layout
+
+\end_inset
+
+Подобно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:simplest-diofantine-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, можно утверждать 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+надо бы это доказать!
+\end_layout
+
+\end_inset
+
+, что в кольце многочленов 
+\begin_inset Formula $\mathbb{F}_{p}\left[x\right]$
+\end_inset
+
+ найдутся многочлены 
+\begin_inset Formula $u\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $v\left(x\right)$
+\end_inset
+
+, удовлетворяющие равенству 
+\begin_inset Formula 
+\[
+f\left(x\right)u\left(x\right)+\left(x^{p}-x\right)v\left(x\right)=d\left(x\right).
+\]
+
+\end_inset
+
+ Заменяя этим многочлены соответствующими многочленами из кольца 
+\begin_inset Formula $\mathbb{Z}\left[x\right]$
+\end_inset
+
+, получаем сравнение 
+\begin_inset Formula 
+\[
+d\left(x\right)\equiv f\left(x\right)u\left(x\right)+\left(x^{p}-x\right)v\left(x\right)\left(\mod p\right).
+\]
+
+\end_inset
+
+Если для 
+\begin_inset Formula $a\in\mathbb{Z}$
+\end_inset
+
+ выполняется сравнение 
+\begin_inset Formula $f\left(a\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+, то согласно следствию из малой теоремы Ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:Fermat-lesser-theorem-alternative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+d\left(a\right)\equiv f\left(a\right)u\left(a\right)+\left(a^{p}-a\right)v\left(a\right)\equiv0\left(\mod p\right).
+\]
+
+\end_inset
+
+ Значит 
+\begin_inset Formula $a$
+\end_inset
+
+ — есть решение сравнения 
+\begin_inset Formula $d\left(x\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ Теорема доказана.
+\end_layout
+
+\begin_layout Standard
+Кольцо 
+\begin_inset Formula $\mathbb{F}_{p}\left[x\right]$
+\end_inset
+
+ имеет много общего с кольцом целых чисел 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+ В нём не только выполняется алгоритм Евклида для нахождения наибольшего
+ общего делителя двух многочленов.
+ Например, можно ввести понятие сравнимости многочленов по модулю 
+\begin_inset Formula $m\left(x\right)\in\mathbb{F}_{p}\left[x\right]$
+\end_inset
+
+, два многочлена 
+\begin_inset Formula $f\left(x\right),g\left(x\right)\in\mathbb{F}_{p}\left[x\right]$
+\end_inset
+
+ сравнимыми, если разность 
+\begin_inset Formula $f\left(x\right)-g\left(x\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $m\left(x\right)$
+\end_inset
+
+.
+ Это свойство можно обозначить 
+\begin_inset Formula $f\left(x\right)\equiv g\left(x\right)\left(\mod m\left(x\right)\right)$
+\end_inset
+
+.
+ Для таких сравнений выполняются свойства, подобные свойствам сравнений
+ из параграфа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:congruences-and-its-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Упростим сравнение 
+\begin_inset Formula 
+\[
+x^{3}-2x-3\equiv0\left(\mod17\right)
+\]
+
+\end_inset
+
+с помощью теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:polynomial-congruence-simplification-GCD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Вычислим для этого наибольший общий делитель многочленов 
+\begin_inset Formula $x^{3}-2x-3$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{17}-x$
+\end_inset
+
+ в кольце 
+\begin_inset Formula $\mathbb{F}_{17}\left[x\right]$
+\end_inset
+
+.
+ Имеем в кольце 
+\begin_inset Formula $\mathbb{F}_{17}\left[x\right]$
+\end_inset
+
+ сравнения по модулю многочлена 
+\begin_inset Formula $x^{3}-2x-3$
+\end_inset
+
+ (для краткости мы опускаем модуль в обозначениях):
 \end_layout
 
 \begin_layout Standard
