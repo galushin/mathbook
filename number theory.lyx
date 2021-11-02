@@ -25129,6 +25129,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:polynomial-congruence-modulo-prime"
+
+\end_inset
+
 Полиномиальные сравнения по простому модулю
 \end_layout
 
@@ -27089,6 +27095,617 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Полиномиальные сравнения по составному модулю
+\end_layout
+
+\begin_layout Standard
+Рассмотрим сначала случай, когда модуль сравнения есть степень простого
+ числа 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть 
+\begin_inset Formula $m=p^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $k\ge2$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — многочлен с целыми коэффициентами и целое число 
+\begin_inset Formula $a$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p^{k}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $p^{k}\mid f\left(a\right)$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $p\mid f\left(a\right)$
+\end_inset
+
+, так что 
+\begin_inset Formula $a$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ Отсюда можно сделать два заключения.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+1.
+ Если сравнение 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+ не имеет решений, то ни при каком 
+\begin_inset Formula $k\ge2$
+\end_inset
+
+ сравнение 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p^{k}\right)$
+\end_inset
+
+ также не имеет решений.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+2.
+ Для каждого числа 
+\begin_inset Formula $a$
+\end_inset
+
+, удовлетворяющего сравнению 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p^{k}\right)$
+\end_inset
+
+ найдётся решение сравнения 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p^{k}\right)$
+\end_inset
+
+ найдётся решение сравнения 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+, которому принадлежит 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом, решение сравнений по модулю равному степени простого числа
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ сводится во-первых к выяснению разрешимости сравнению по простому модулю
+ 
+\begin_inset Formula $p$
+\end_inset
+
+, и, в случае, разрешимости, поиска решений по простому модулю.
+ А во-вторых к поиску решений сравнения по модулю 
+\begin_inset Formula $p^{k}$
+\end_inset
+
+, принадлежащих фиксированному решению по простому модулю.
+\end_layout
+
+\begin_layout Standard
+Первый шаг обсуждался в предыдущем параграфе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:polynomial-congruence-modulo-prime"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Второй шаг основан на следующем утверждении.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:polynomial-congruence-modulo-power-prime"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — многочлен с целыми коэффициентами и 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ — целое число, удовлетворяющее условиям 
+\begin_inset Formula 
+\[
+f\left(x_{1}\right)\equiv0\left(\mod p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{\prime}\left(x_{1}\right)\not\equiv0\left(\mod p\right).
+\]
+
+\end_inset
+
+Тогда при любом 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+ существует единственное решение сравнения 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p^{k}\right)$
+\end_inset
+
+, принадлежащее классу вычетов 
+\begin_inset Formula $x\equiv x_{1}\left(\mod p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Моё доказательство в деталях отличалось от доказательства Нестеренко
+\end_layout
+
+\end_inset
+
+Докажем это утверждение математической индукцией по 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $k=1$
+\end_inset
+
+ утверждение тривиально.
+ Действительно, при 
+\begin_inset Formula $k=1$
+\end_inset
+
+ получаем 
+\begin_inset Formula $p^{k}=p$
+\end_inset
+
+, а по условию теоремы 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ — решение сравнения 
+\begin_inset Formula $f\left(x_{1}\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ Решением будет весь класс вычетов 
+\begin_inset Formula $x\equiv x_{1}\left(\mod p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь утверждение теоремы доказано для всех целых 
+\begin_inset Formula $k$
+\end_inset
+
+ из промежутка 
+\begin_inset Formula $1\le k<n$
+\end_inset
+
+.
+ Докажем это утверждение для 
+\begin_inset Formula $k=n$
+\end_inset
+
+.
+ По предположению индукции существует единственное целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, удовлетворяющее условиям 
+\begin_inset Formula 
+\[
+f\left(a\right)\equiv0\left(\mod p^{n-1}\right),0\le a<p^{n-1},a\equiv x_{1}\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Найдём всё такие целые числа 
+\begin_inset Formula $b$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+f\left(b\right)\equiv0\left(\mod p^{n}\right),0\le b<p^{n},b\equiv x_{1}\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $f\left(b\right)\equiv0\left(\mod p^{n}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $p^{n}\mid f\left(b\right)$
+\end_inset
+
+ и, по свойствам делимости 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $p^{n-1}\mid f\left(b\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $f\left(b\right)\equiv0\left(\mod p^{n-1}\right)$
+\end_inset
+
+.
+ Таким образом, наименьший неотрицательный вычет класса 
+\begin_inset Formula $b\left(\mod p^{n-1}\right)$
+\end_inset
+
+ равен 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $b=a+p^{n-1}t$
+\end_inset
+
+, где 
+\begin_inset Formula $t$
+\end_inset
+
+ — некоторое целое число, причём 
+\begin_inset Formula $0\le t<p$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — многочлен с целыми коэффициентами, то 
+\begin_inset Formula $f\left(a+x\right)$
+\end_inset
+
+ — то же многочлен с целыми коэффициентами: 
+\begin_inset Formula 
+\[
+f\left(a+x\right)=c_{0}+c_{1}x+c_{2}x^{2}+\dots+c_{N}x^{N},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $N$
+\end_inset
+
+ — степень многочлена 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Провести параллель с рядом Тейлора для многочленов
+\end_layout
+
+\end_inset
+
+ Подставляя в это равенство 
+\begin_inset Formula $x=0$
+\end_inset
+
+, получим 
+\begin_inset Formula $c_{0}=f\left(a\right)$
+\end_inset
+
+.
+ Дифференцируя и подставляя 
+\begin_inset Formula $x=0$
+\end_inset
+
+, получим 
+\begin_inset Formula $c_{1}=f^{\prime}\left(a\right)$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $j\ge2$
+\end_inset
+
+ и 
+\begin_inset Formula $n>1$
+\end_inset
+
+ имеем 
+\begin_inset Formula $\left(n-1\right)j\ge2\left(n-1\right)\ge n$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left(p^{n-1}\right)^{j}$
+\end_inset
+
+ при 
+\begin_inset Formula $j\ge2$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p^{n}$
+\end_inset
+
+, поэтому мы получаем сравнение 
+\begin_inset Formula 
+\[
+f\left(b\right)=f\left(a+p^{n-1}t\right)\equiv f\left(a\right)+f^{\prime}\left(a\right)p^{n-1}t\left(\mod p^{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $p^{n-1}\mid f\left(a\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $p^{n}\mid f\left(b\right)$
+\end_inset
+
+, то это сравнение можно разделить на 
+\begin_inset Formula $p^{n-1}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\frac{f\left(a\right)}{p^{n-1}}+f^{\prime}\left(a\right)t\equiv\frac{f\left(b\right)}{p^{n-1}}\equiv0\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $a\equiv x_{1}\left(\mod a\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $f^{\prime}\left(a\right)\equiv f\left(x_{1}\right)\left(\mod p\right)$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+f^{\prime}\left(x_{1}\right)t+\frac{f\left(a\right)}{p^{n-1}}\equiv0\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Данное сравнения является сравнением первой степени относительно 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ По условию теоремы 
+\begin_inset Formula $p\nmid f\left(x_{1}\right)$
+\end_inset
+
+, поэтому применима теорема 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:congruence-one-variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а так как 
+\begin_inset Formula $p$
+\end_inset
+
+ простое, то 
+\begin_inset Formula $\left(f^{\prime}\left(x_{1}\right),p\right)=1$
+\end_inset
+
+, то последнее сравнение имеет единственное решение.
+\end_layout
+
+\begin_layout Proof
+Решим это сравнение, мы найдём единственное число 
+\begin_inset Formula $b=a+p^{n-1}t$
+\end_inset
+
+, удовлетворяющее требуемым условиям.
+ Это завершает шаг индукции и доказательство теоремы в целом.
+\end_layout
+
+\begin_layout Standard
+Приведённое доказательство позволяет находить решения сравнений по модулю,
+ равном степени простого числа.
+\end_layout
+
+\begin_layout Example
+Решить сравнение 
+\begin_inset Formula $x^{3}-3x^{2}-1\equiv0\left(\mod125\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Решая сравнение 
+\begin_inset Formula $x^{3}-3x^{2}-1\equiv0\left(\mod5\right)$
+\end_inset
+
+, находим его решения 
+\begin_inset Formula $x\equiv2\left(\mod5\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x\equiv4\left(\mod5\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Найдём теперь числа, удовлетворяющие систем сравнений 
+\begin_inset Formula 
+\[
+x^{3}-3x^{2}-1\equiv0\left(\mod25\right),x\equiv2\left(\mod5\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Представив 
+\begin_inset Formula $x$
+\end_inset
+
+ в виде 
+\begin_inset Formula $x=2+5t$
+\end_inset
+
+ и подставив это выражение в многочлен 
+\begin_inset Formula $f\left(x\right)=x^{3}-3x^{2}-1$
+\end_inset
+
+, как и в доказательстве теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:polynomial-congruence-modulo-power-prime"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, находим 
+\begin_inset Formula 
+\[
+f\left(2\right)+f^{\prime}\left(2\right)5t\equiv0\left(\mod25\right)
+\]
+
+\end_inset
+
+ или 
+\begin_inset Formula $-5\equiv0\left(\mod25\right).$
+\end_inset
+
+ Получившееся сравнение решений относительно 
+\begin_inset Formula $t$
+\end_inset
+
+ не имеет, поэтому данное сравнение не имеет решений, принадлежащих классу
+ вычетов 
+\begin_inset Formula $x\equiv2\left(\mod5\right)$
+\end_inset
+
+.
+ Заметим, что в рассматриваемом случае 
+\begin_inset Formula $f^{\prime}\left(2\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Теперь найдём числа, удовлетворяющие системе сравнений 
+\begin_inset Formula 
+\[
+x^{3}-3x^{2}-1\equiv0\left(\mod25\right),x\equiv4\left(\mod5\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 5.5
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
