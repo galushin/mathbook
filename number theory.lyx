@@ -28476,6 +28476,48 @@ x\equiv2\left(\mod3\right),x\equiv3\left(\mod25\right).
 \end_layout
 
 \begin_layout Standard
+Каждое сравнение второй степени 
+\begin_inset Formula 
+\begin{equation}
+ax^{2}+bx+c\equiv0\left(\mod p\right),p\nmid a,\label{eq:quadratic-congruence}
+\end{equation}
+
+\end_inset
+
+ можно упростить, изменив его коэффициенты и сделав замену переменной.
+\end_layout
+
+\begin_layout Standard
+Умножив обе части сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadratic-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ на число 
+\begin_inset Formula $4a$
+\end_inset
+
+, не делящееся на 
+\begin_inset Formula $p$
+\end_inset
+
+, получим равносильное сравнение 
+\begin_inset Formula 
+\[
+4a^{2}x^{2}+4abx+4ac\equiv0\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
