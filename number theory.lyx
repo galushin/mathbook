@@ -28454,6 +28454,53 @@ x\equiv2\left(\mod3\right),x\equiv3\left(\mod25\right).
  Два найденных классов вычетов и составляют ответ к задаче.
 \end_layout
 
+\begin_layout Chapter
+Сравнения второй степени
+\end_layout
+
+\begin_layout Standard
+В предыдущей глав решение полиномиальных сравнений по произвольному модулю
+ было сведено к такой же задаче для сравнений по простому модулю.
+ В настоящей главе обсуждаются вопросы, связанные с разрешимостью сравнений
+ второй степени по простому модулю, и приложения доказанных результатов
+ к исследованию некоторых диофантовых уравнений.
+ В дальнейшем считается, что простое число 
+\begin_inset Formula $p$
+\end_inset
+
+ нечётно.
+\end_layout
+
+\begin_layout Section
+Сравнение второй степени по простому модулю
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 6.1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить главу 6
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
