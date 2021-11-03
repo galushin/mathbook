@@ -7395,6 +7395,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:divisibility-on-pairwise-coprimes-implies-divisibility-on-their-product"
+
+\end_inset
+
 Если число 
 \begin_inset Formula $b$
 \end_inset
@@ -7460,7 +7466,7 @@ noprefix "false"
 \end_inset
 
 .
- Так как эти число попарно взаимно просты, то по следствию 
+ Так как эти числа попарно взаимно просты, то по следствию 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "rem:LCM-of-pairwise-coprimes"
@@ -24763,17 +24769,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать доказательство
-\end_layout
-
-\end_inset
-
-.
- Нужно доказать, что разным наборам 
+Нужно доказать, что разным наборам 
 \begin_inset Formula $a_{1},\dots,a_{k}$
 \end_inset
 
@@ -25129,6 +25125,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:polynomial-congruence-modulo-prime"
+
+\end_inset
+
 Полиномиальные сравнения по простому модулю
 \end_layout
 
@@ -27091,17 +27093,1365 @@ status open
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Закончить главу 5
+\begin_layout Section
+Полиномиальные сравнения по составному модулю
 \end_layout
+
+\begin_layout Standard
+Рассмотрим сначала случай, когда модуль сравнения есть степень простого
+ числа 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть 
+\begin_inset Formula $m=p^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $k\ge2$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — многочлен с целыми коэффициентами и целое число 
+\begin_inset Formula $a$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p^{k}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $p^{k}\mid f\left(a\right)$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $p\mid f\left(a\right)$
+\end_inset
+
+, так что 
+\begin_inset Formula $a$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ Отсюда можно сделать два заключения.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+1.
+ Если сравнение 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+ не имеет решений, то ни при каком 
+\begin_inset Formula $k\ge2$
+\end_inset
+
+ сравнение 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p^{k}\right)$
+\end_inset
+
+ также не имеет решений.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+2.
+ Для каждого числа 
+\begin_inset Formula $a$
+\end_inset
+
+, удовлетворяющего сравнению 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p^{k}\right)$
+\end_inset
+
+ найдётся решение сравнения 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p^{k}\right)$
+\end_inset
+
+ найдётся решение сравнения 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+, которому принадлежит 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом, решение сравнений по модулю равному степени простого числа
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ сводится во-первых к выяснению разрешимости сравнению по простому модулю
+ 
+\begin_inset Formula $p$
+\end_inset
+
+, и, в случае, разрешимости, поиска решений по простому модулю.
+ А во-вторых к поиску решений сравнения по модулю 
+\begin_inset Formula $p^{k}$
+\end_inset
+
+, принадлежащих фиксированному решению по простому модулю.
+\end_layout
+
+\begin_layout Standard
+Первый шаг обсуждался в предыдущем параграфе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:polynomial-congruence-modulo-prime"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Второй шаг основан на следующем утверждении.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:polynomial-congruence-modulo-power-prime"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — многочлен с целыми коэффициентами и 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ — целое число, удовлетворяющее условиям 
+\begin_inset Formula 
+\[
+f\left(x_{1}\right)\equiv0\left(\mod p\right),
+\]
 
 \end_inset
 
 
+\begin_inset Formula 
+\[
+f^{\prime}\left(x_{1}\right)\not\equiv0\left(\mod p\right).
+\]
+
+\end_inset
+
+Тогда при любом 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+ существует единственное решение сравнения 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p^{k}\right)$
+\end_inset
+
+, принадлежащее классу вычетов 
+\begin_inset Formula $x\equiv x_{1}\left(\mod p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Моё доказательство в деталях отличалось от доказательства Нестеренко
+\end_layout
+
+\end_inset
+
+Докажем это утверждение математической индукцией по 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $k=1$
+\end_inset
+
+ утверждение тривиально.
+ Действительно, при 
+\begin_inset Formula $k=1$
+\end_inset
+
+ получаем 
+\begin_inset Formula $p^{k}=p$
+\end_inset
+
+, а по условию теоремы 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ — решение сравнения 
+\begin_inset Formula $f\left(x_{1}\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ Решением будет весь класс вычетов 
+\begin_inset Formula $x\equiv x_{1}\left(\mod p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь утверждение теоремы доказано для всех целых 
+\begin_inset Formula $k$
+\end_inset
+
+ из промежутка 
+\begin_inset Formula $1\le k<n$
+\end_inset
+
+.
+ Докажем это утверждение для 
+\begin_inset Formula $k=n$
+\end_inset
+
+.
+ По предположению индукции существует единственное целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, удовлетворяющее условиям 
+\begin_inset Formula 
+\[
+f\left(a\right)\equiv0\left(\mod p^{n-1}\right),0\le a<p^{n-1},a\equiv x_{1}\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Найдём всё такие целые числа 
+\begin_inset Formula $b$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+f\left(b\right)\equiv0\left(\mod p^{n}\right),0\le b<p^{n},b\equiv x_{1}\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $f\left(b\right)\equiv0\left(\mod p^{n}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $p^{n}\mid f\left(b\right)$
+\end_inset
+
+ и, по свойствам делимости 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $p^{n-1}\mid f\left(b\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $f\left(b\right)\equiv0\left(\mod p^{n-1}\right)$
+\end_inset
+
+.
+ Таким образом, наименьший неотрицательный вычет класса 
+\begin_inset Formula $b\left(\mod p^{n-1}\right)$
+\end_inset
+
+ равен 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $b=a+p^{n-1}t$
+\end_inset
+
+, где 
+\begin_inset Formula $t$
+\end_inset
+
+ — некоторое целое число, причём 
+\begin_inset Formula $0\le t<p$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — многочлен с целыми коэффициентами, то 
+\begin_inset Formula $f\left(a+x\right)$
+\end_inset
+
+ — то же многочлен с целыми коэффициентами: 
+\begin_inset Formula 
+\[
+f\left(a+x\right)=c_{0}+c_{1}x+c_{2}x^{2}+\dots+c_{N}x^{N},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $N$
+\end_inset
+
+ — степень многочлена 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Провести параллель с рядом Тейлора для многочленов
+\end_layout
+
+\end_inset
+
+ Подставляя в это равенство 
+\begin_inset Formula $x=0$
+\end_inset
+
+, получим 
+\begin_inset Formula $c_{0}=f\left(a\right)$
+\end_inset
+
+.
+ Дифференцируя и подставляя 
+\begin_inset Formula $x=0$
+\end_inset
+
+, получим 
+\begin_inset Formula $c_{1}=f^{\prime}\left(a\right)$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $j\ge2$
+\end_inset
+
+ и 
+\begin_inset Formula $n>1$
+\end_inset
+
+ имеем 
+\begin_inset Formula $\left(n-1\right)j\ge2\left(n-1\right)\ge n$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left(p^{n-1}\right)^{j}$
+\end_inset
+
+ при 
+\begin_inset Formula $j\ge2$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p^{n}$
+\end_inset
+
+, поэтому мы получаем сравнение 
+\begin_inset Formula 
+\[
+f\left(b\right)=f\left(a+p^{n-1}t\right)\equiv f\left(a\right)+f^{\prime}\left(a\right)p^{n-1}t\left(\mod p^{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $p^{n-1}\mid f\left(a\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $p^{n}\mid f\left(b\right)$
+\end_inset
+
+, то это сравнение можно разделить на 
+\begin_inset Formula $p^{n-1}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\frac{f\left(a\right)}{p^{n-1}}+f^{\prime}\left(a\right)t\equiv\frac{f\left(b\right)}{p^{n-1}}\equiv0\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $a\equiv x_{1}\left(\mod a\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $f^{\prime}\left(a\right)\equiv f\left(x_{1}\right)\left(\mod p\right)$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+f^{\prime}\left(x_{1}\right)t+\frac{f\left(a\right)}{p^{n-1}}\equiv0\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Данное сравнения является сравнением первой степени относительно 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ По условию теоремы 
+\begin_inset Formula $p\nmid f\left(x_{1}\right)$
+\end_inset
+
+, поэтому применима теорема 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:congruence-one-variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а так как 
+\begin_inset Formula $p$
+\end_inset
+
+ простое, то 
+\begin_inset Formula $\left(f^{\prime}\left(x_{1}\right),p\right)=1$
+\end_inset
+
+, то последнее сравнение имеет единственное решение.
+\end_layout
+
+\begin_layout Proof
+Решим это сравнение, мы найдём единственное число 
+\begin_inset Formula $b=a+p^{n-1}t$
+\end_inset
+
+, удовлетворяющее требуемым условиям.
+ Это завершает шаг индукции и доказательство теоремы в целом.
+\end_layout
+
+\begin_layout Standard
+Приведённое доказательство позволяет находить решения сравнений по модулю,
+ равном степени простого числа.
+\end_layout
+
+\begin_layout Example
+Решить сравнение 
+\begin_inset Formula $x^{3}-3x^{2}-1\equiv0\left(\mod125\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Решая сравнение 
+\begin_inset Formula $x^{3}-3x^{2}-1\equiv0\left(\mod5\right)$
+\end_inset
+
+, находим его решения 
+\begin_inset Formula $x\equiv2\left(\mod5\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x\equiv4\left(\mod5\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Найдём теперь числа, удовлетворяющие систем сравнений 
+\begin_inset Formula 
+\[
+x^{3}-3x^{2}-1\equiv0\left(\mod25\right),x\equiv2\left(\mod5\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Представив 
+\begin_inset Formula $x$
+\end_inset
+
+ в виде 
+\begin_inset Formula $x=2+5t$
+\end_inset
+
+ и подставив это выражение в многочлен 
+\begin_inset Formula $f\left(x\right)=x^{3}-3x^{2}-1$
+\end_inset
+
+, как и в доказательстве теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:polynomial-congruence-modulo-power-prime"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, находим 
+\begin_inset Formula 
+\[
+f\left(2\right)+f^{\prime}\left(2\right)5t\equiv0\left(\mod25\right)
+\]
+
+\end_inset
+
+ или 
+\begin_inset Formula $-5\equiv0\left(\mod25\right).$
+\end_inset
+
+ Получившееся сравнение решений относительно 
+\begin_inset Formula $t$
+\end_inset
+
+ не имеет, поэтому данное сравнение не имеет решений, принадлежащих классу
+ вычетов 
+\begin_inset Formula $x\equiv2\left(\mod5\right)$
+\end_inset
+
+.
+ Заметим, что в рассматриваемом случае 
+\begin_inset Formula $f^{\prime}\left(2\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Теперь найдём числа, удовлетворяющие системе сравнений 
+\begin_inset Formula 
+\begin{equation}
+x^{3}-3x^{2}-1\equiv0\left(\mod25\right),x\equiv4\left(\mod5\right).\label{eq:sample-congruence-modulo-prime-power-4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Представив 
+\begin_inset Formula $x$
+\end_inset
+
+ в виде 
+\begin_inset Formula $x=4+5t$
+\end_inset
+
+ и подставив это выражение в многочлен 
+\begin_inset Formula $f\left(x\right)=x^{3}-3x^{2}-1$
+\end_inset
+
+ находим 
+\begin_inset Formula 
+\[
+15+24\cdot5t\equiv0\left(\mod25\right).
+\]
+
+\end_inset
+
+Сократив обе части этого сравнения на 
+\begin_inset Formula $5$
+\end_inset
+
+, получим сравнение 
+\begin_inset Formula $3+24t\equiv0\left(\mod25\right)$
+\end_inset
+
+, равносильное сравнению 
+\begin_inset Formula $3-t\equiv0\left(\mod25\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $t=3$
+\end_inset
+
+ и система сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-congruence-modulo-prime-power-4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет единственное решение 
+\begin_inset Formula 
+\[
+x\equiv19\left(\mod25\right)\equiv-6\left(\mod25\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Продолжая действовать так же, как и в доказательстве теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:polynomial-congruence-modulo-power-prime"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, представим искомые 
+\begin_inset Formula $x$
+\end_inset
+
+ в виде 
+\begin_inset Formula $x=-6+25t$
+\end_inset
+
+.
+ Учитывая, что 
+\begin_inset Formula $f\left(-6\right)=-325$
+\end_inset
+
+ и 
+\begin_inset Formula $f^{\prime}\left(-6\right)=144\neq0$
+\end_inset
+
+, приходим к сравнению 
+\begin_inset Formula 
+\[
+-325+144\cdot25t\equiv0\left(\mod125\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Сократив это сравнение на 
+\begin_inset Formula $25$
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+-13+144t\equiv0\left(\mod5\right)
+\]
+
+\end_inset
+
+или равносильное сравнение 
+\begin_inset Formula $2-t\equiv0\left(\mod5\right)$
+\end_inset
+
+.
+ Ему удовлетворяет 
+\begin_inset Formula $t=2$
+\end_inset
+
+, так что решением исходного сравнения является класс вычетов по модулю
+ 
+\begin_inset Formula $125$
+\end_inset
+
+, содержащий 
+\begin_inset Formula $-6+25\cdot2=44.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\series bold
+Ответ: 
+\series default
+
+\begin_inset Formula $x\equiv44\left(\mod125\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Перейдём теперь к решению сравнений по произвольному составному модулю.
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — многочлен с целыми коэффициентами и 
+\begin_inset Formula $m_{1}>1,\dots,m_{k}>1$
+\end_inset
+
+ — попарно взаимно простые числа.
+ Множества целых чисел, удовлетворяющих сравнению 
+\begin_inset Formula 
+\begin{equation}
+f\left(x\right)\equiv0\left(\mod m_{1}\cdot\dots\cdot m_{k}\right)\label{eq:congruence-modulo-product-of-pairwise-coprimes}
+\end{equation}
+
+\end_inset
+
+ и системе сравнений 
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+f\left(x\right)\equiv0\left(\mod m_{1}\right),\\
+\vdots\\
+f\left(x\right)\equiv0\left(\mod m_{k}\right)
+\end{array}\label{eq:system-of-congruences-modulo-pairwise-coprimes}
+\end{equation}
+
+\end_inset
+
+совпадают.
+ Если при любом натуральном 
+\begin_inset Formula $m$
+\end_inset
+
+ символ 
+\begin_inset Formula $N\left(m\right)$
+\end_inset
+
+ обозначает количество решений сравнения 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod m\right)$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+N\left(m_{1}\cdot\dots\cdot m_{k}\right)=N\left(m_{1}\right)\cdot\dots\cdot N\left(m_{k}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — некоторое решение решение сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-modulo-product-of-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, тогда 
+\begin_inset Formula $f\left(a\right)\equiv0\left(\mod m_{1}\cdot\dots\cdot m_{k}\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+ делится на произведение 
+\begin_inset Formula $m_{1}\cdot\dots\cdot m_{k}$
+\end_inset
+
+.
+ Это произведение, в свою очередь, по определению, делится на каждое из
+ чисел 
+\begin_inset Formula $m_{j}$
+\end_inset
+
+, где 
+\begin_inset Formula $1\le j\le k$
+\end_inset
+
+.
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, отсюда следует, что 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+ делится на каждое из чисел 
+\begin_inset Formula $m_{j}$
+\end_inset
+
+ или, иными словами 
+\begin_inset Formula $f\left(a\right)\equiv0\left(\mod m_{j}\right)$
+\end_inset
+
+ для 
+\begin_inset Formula $1\le j\le k$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $a$
+\end_inset
+
+ также является решением системы сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:system-of-congruences-modulo-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $b$
+\end_inset
+
+ — некоторое решение системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:system-of-congruences-modulo-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, тогда 
+\begin_inset Formula $f\left(b\right)\equiv0\left(\mod m_{j}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $1\le j\le k$
+\end_inset
+
+, то есть 
+\begin_inset Formula $f\left(b\right)$
+\end_inset
+
+ делится на каждое из попарно взаимно простых чисел 
+\begin_inset Formula $m_{1},\dots,m_{k}$
+\end_inset
+
+.
+ Это означает, по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:divisibility-on-pairwise-coprimes-implies-divisibility-on-their-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что 
+\begin_inset Formula $f\left(b\right)$
+\end_inset
+
+ делится на произведение этих чисел, то есть на 
+\begin_inset Formula $m_{1}\cdot\dots\cdot m_{k}$
+\end_inset
+
+, или, по определению, что 
+\begin_inset Formula $f\left(b\right)\equiv0\left(\mod m_{1}\cdot\dots\cdot m_{k}\right)$
+\end_inset
+
+.
+ Таким образом, любое решение системы сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:system-of-congruences-modulo-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ является решением сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-modulo-product-of-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Часть про количество решений не смог доказать сам
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $b_{1},\dots,b_{k}$
+\end_inset
+
+ — целые числа, удовлетворяющие сравнениям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:system-of-congruences-modulo-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ соответственно.
+ Согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:chinese-reminder-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, система сравнений 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+x\equiv b_{1}\left(\mod m_{1}\right),\\
+\vdots\\
+x\equiv b_{k}\left(\mod m_{k}\right)
+\end{array}
+\]
+
+\end_inset
+
+разрешима и целое число 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, определяемое равенством 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, удовлетворяет этой системе.
+ Тогда, при любом 
+\begin_inset Formula $j$
+\end_inset
+
+ имеем 
+\begin_inset Formula $f\left(x_{0}\right)\equiv f\left(a_{j}\right)\equiv0\left(\mod m_{j}\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ удовлетворяет системе сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:system-of-congruences-modulo-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а значит, по доказанному выше, и сравнению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-modulo-product-of-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $b_{1},\dots,b_{k}$
+\end_inset
+
+ независимо пробегают классы вычетов, состоящие из решений соответствующих
+ сравнений системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:system-of-congruences-modulo-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то, по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:chinese-reminder-complete-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, числа 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, определённые из равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, пробегают различные классы вычетов по модулю 
+\begin_inset Formula $m_{1}\cdot\dots\cdot m_{k}$
+\end_inset
+
+.
+ Эти классы вычетов, по доказанному, состоят из чисел, удовлетворяющих сравнению
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-modulo-product-of-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Значит, число решений этого сравнений не меньше, чем 
+\begin_inset Formula $N\left(m_{1}\right)\cdot\dots\cdot N\left(m_{k}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По доказанному выше, каждое целое число 
+\begin_inset Formula $b$
+\end_inset
+
+, удовлетворяющее сравнению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-modulo-product-of-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, удовлетворяет системе сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:system-of-congruences-modulo-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и, поэтому, при каждом 
+\begin_inset Formula $j$
+\end_inset
+
+ класс вычетов 
+\begin_inset Formula $b\left(\mod m_{j}\right)$
+\end_inset
+
+ есть решение сравнения 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod m_{j}\right)$
+\end_inset
+
+.
+ Это доказывает, что никаких решений, отличных от построенных 
+\begin_inset Formula $N\left(m_{1}\right)\cdot\dots\cdot N\left(m_{k}\right)$
+\end_inset
+
+ решений, сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-modulo-product-of-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ не имеет.
+\end_layout
+
+\begin_layout Standard
+Приведённое выше доказательство позволяет находить решения сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-modulo-product-of-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при составном модуле 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ А именно, если 
+\begin_inset Formula $m=p_{1}^{r_{1}}\cdot\dots\cdot p_{k}^{r_{k}}$
+\end_inset
+
+ — разложение в произведение различных простых чисел, то найдя числа 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ удовлетворяющие сравнениям 
+\begin_inset Formula $f\left(x\right)\equiv0\left(\mod p_{j}^{r_{j}}\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $1\le j\le k$
+\end_inset
+
+ и выбрав 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ с помощью 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chinese-reminder-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, мы найдём некоторое решение 
+\begin_inset Formula $x_{0}\left(\mod m\right)$
+\end_inset
+
+ сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:congruence-modulo-product-of-pairwise-coprimes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Более того, так будут найдены все решения, если каждое из чисел 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ независимо будет пробегать все решения своего сравнения.
+\end_layout
+
+\begin_layout Example
+Решить сравнение 
+\begin_inset Formula $x^{3}-x^{2}+2x+1\equiv0\left(\mod75\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Справедливо разложение 
+\begin_inset Formula $75=3\cdot5^{2}$
+\end_inset
+
+.
+ Сравнение 
+\begin_inset Formula $x^{3}-x^{2}+2x+1\equiv0\left(\mod3\right)$
+\end_inset
+
+ имеет два решения: 
+\begin_inset Formula $x\equiv1\left(\mod3\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x\equiv2\left(\mod3\right)$
+\end_inset
+
+.
+ Сравнение 
+\begin_inset Formula $x^{3}-x^{2}+2x+1\equiv0\left(\mod5\right)$
+\end_inset
+
+ имеет единственное решение 
+\begin_inset Formula $x\equiv3\left(\mod5\right)$
+\end_inset
+
+.
+ Для того, чтобы решить сравнение 
+\begin_inset Formula 
+\begin{equation}
+x^{3}-x^{2}+2x+1\equiv0\left(\mod25\right)\label{eq:sample-polynomial-congruence-modulo-composite}
+\end{equation}
+
+\end_inset
+
+ представим 
+\begin_inset Formula $x$
+\end_inset
+
+ в виде 
+\begin_inset Formula $x=3+5t$
+\end_inset
+
+.
+ Для вычисления 
+\begin_inset Formula $t$
+\end_inset
+
+ получаем, как это было указано выше, сравнение 
+\begin_inset Formula $25+23\cdot5t\equiv0\left(\mod25\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $t=0$
+\end_inset
+
+ и сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample-polynomial-congruence-modulo-composite"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет единственное решение 
+\begin_inset Formula $x\equiv3\left(\mod25\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+В соответствии с теорией, для решения исходного сравнения нужно найти решения
+ двух систем сравнений 
+\begin_inset Formula 
+\[
+x\equiv1\left(\mod3\right),x\equiv3\left(\mod25\right)
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+x\equiv2\left(\mod3\right),x\equiv3\left(\mod25\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Первая из них имеет решение 
+\begin_inset Formula $x\equiv28\left(\mod75\right)$
+\end_inset
+
+, а вторая — 
+\begin_inset Formula $x\equiv52\left(\mod75\right)$
+\end_inset
+
+.
+ Два найденных классов вычетов и составляют ответ к задаче.
 \end_layout
 
 \begin_layout Standard
