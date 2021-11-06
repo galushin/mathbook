@@ -16642,6 +16642,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ring-of-residual-classes"
+
+\end_inset
+
 Классы вычетов.
  Кольцо классов вычетов по данному модулю
 \end_layout
@@ -18359,7 +18365,7 @@ status open
 \end_inset
 
 , его можно переписать следующим образом: 
-\begin_inset Formula $a^{2}-1\equiv0\left(\mod m\right)$
+\begin_inset Formula $a^{2}-1\equiv0\left(\mod p\right)$
 \end_inset
 
  или 
@@ -18568,7 +18574,7 @@ status open
 \begin_layout Theorem
 \begin_inset CommandInset label
 LatexCommand label
-name "thm:Fermat-theorem"
+name "thm:Fermat-lesser-theorem"
 
 \end_inset
 
@@ -18790,7 +18796,7 @@ a^{p}-a\equiv0\left(\mod p\right).
 По малой теореме Ферма 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "thm:Fermat-theorem"
+reference "thm:Fermat-lesser-theorem"
 plural "false"
 caps "false"
 noprefix "false"
@@ -18899,15 +18905,6 @@ a^{\varphi\left(m\right)}\equiv1\left(\mod m\right).
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать
-\end_layout
-
-\end_inset
-
 Доказательство в целом повторяет доказательство малой теоремы Ферма.
 \end_layout
 
@@ -20791,25 +20788,25 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Теорема Вильсона
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+Теорема Вильсона 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Wilson"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
  также может быть использована для определения, является ли данное натуральное
  число простым или составным.
- В отличие от теоремы Ферма
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Добавить ссылку
-\end_layout
+ В отличие от малой теоремы Ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Fermat-lesser-theorem"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -21521,7 +21518,7 @@ a^{F}\equiv1\left(\mod p\right).\label{eq:theorem-4.7-1}
  Так как по малой теореме Ферма 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "thm:Fermat-theorem"
+reference "thm:Fermat-lesser-theorem"
 plural "false"
 caps "false"
 noprefix "false"
@@ -23284,7 +23281,7 @@ status open
  Из малой теоремы Ферма 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "thm:Fermat-theorem"
+reference "thm:Fermat-lesser-theorem"
 plural "false"
 caps "false"
 noprefix "false"
@@ -23521,7 +23518,7 @@ noprefix "false"
 Согласно малой теореме Ферма 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "thm:Fermat-theorem"
+reference "thm:Fermat-lesser-theorem"
 plural "false"
 caps "false"
 noprefix "false"
@@ -25365,7 +25362,7 @@ f\left(x\right)-f\left(x_{0}\right)=\left(x-x_{0}\right)g\left(x-x_{0}\right)\eq
 
 \end_inset
 
- выполняется, в силу 
+выполняется, в силу 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:prime-multiplicity-of-product"
@@ -26980,7 +26977,7 @@ status open
  согласно малой теореме Ферма 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "thm:Fermat-theorem"
+reference "thm:Fermat-lesser-theorem"
 plural "false"
 caps "false"
 noprefix "false"
@@ -28518,16 +28515,911 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+Его можно переписать в виде 
+\begin_inset Formula 
+\[
+\left(2ax+b\right)^{2}\equiv b^{2}-4ac\left(\mod p\right)
+\]
+
+\end_inset
+
+или в виде 
+\begin_inset Formula 
+\begin{equation}
+y^{2}\equiv D\left(\mod p\right),\label{eq:square-congruence-y}
+\end{equation}
+
+\end_inset
+
+ где использованы обозначения 
+\begin_inset Formula $y=2ax+b$
+\end_inset
+
+ и 
+\begin_inset Formula $D=b^{2}-4ac$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $p\nmid2a$
+\end_inset
+
+, то сравнение 
+\begin_inset Formula 
+\[
+2ax+b\equiv y\left(\mod p\right)
+\]
+
+\end_inset
+
+ при любом целом 
+\begin_inset Formula $y$
+\end_inset
+
+ имеет единственное решение относительно 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Это устанавливает взаимно однозначное соответствие между решениями сравнения
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadratic-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ относительно 
+\begin_inset Formula $x$
+\end_inset
+
+ и сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:square-congruence-y"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ относительно 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из сказанного следует, что в дальнейшем можно рассматривать лишь сравнения
+ вида 
+\begin_inset Formula 
+\begin{equation}
+x^{2}\equiv a\left(\mod p\right).\label{eq:square-congruence}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:polynomial-congruence-number-of-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:square-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет не более двух решений.
+ Если это сравнение разрешимо и 
+\begin_inset Formula $a\not\equiv0\left(\mod p\right)$
+\end_inset
+
+, то число решений равно двум.
+ Действительно, вместе с решением 
+\begin_inset Formula $x_{0}\left(\mod p\right)$
+\end_inset
+
+ сравнение будет иметь решением и класс вычетов 
+\begin_inset Formula $-x_{0}\left(\mod p\right)$
+\end_inset
+
+, причём это классы вычетов различны.
+ В противном случае мы имели бы 
+\begin_inset Formula $x_{0}\equiv-x_{0}\left(\mod p\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $p\mid x_{0}$
+\end_inset
+
+, но тогда 
+\begin_inset Formula $p\mid a$
+\end_inset
+
+, что противоречит условию.
+ Таким образом, при 
+\begin_inset Formula $a\not\equiv0\left(\mod p\right)$
+\end_inset
+
+ сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:square-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ либо не имеет решений, либо имеет два решение.
+ В случае 
+\begin_inset Formula $a\equiv0\left(\mod p\right)$
+\end_inset
+
+ сравнение имеет единственное решение 
+\begin_inset Formula $x\equiv0\left(\mod p\right)$
+\end_inset
+
+.
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Закончить раздел 6.1
+Разбить на отдельные утверждения и доказать подробнее?
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Установленное выше взаимно однозначное соответствие между множествами решений
+ сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadratic-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:square-congruence-y"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ позволяет утверждать, что и в общем случае при 
+\begin_inset Formula $p\mid\left(b^{2}-4ac\right)$
+\end_inset
+
+ сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadratic-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет единственное решение.
+ Если же 
+\begin_inset Formula $p\nmid\left(b^{2}-4ac\right)$
+\end_inset
+
+, то сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadratic-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ либо имеет два решение, либо не имеет их вовсе.
+\end_layout
+
+\begin_layout Standard
+Легко проверить, что сравнение 
+\begin_inset Formula $x^{2}\equiv-1\left(\mod3\right)$
+\end_inset
+
+ не имеет решений, а сравнение 
+\begin_inset Formula $x^{2}\equiv-1\left(\mod5\right)$
+\end_inset
+
+ имеет два решения 
+\begin_inset Formula $x\equiv2\left(\mod5\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x\equiv3\left(\mod5\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Целое число 
+\begin_inset Formula $a$
+\end_inset
+
+ называется 
+\emph on
+квадратичным вычетом
+\emph default
+ по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, если сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:square-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет решение.
+ Если же это сравнение не имеет решений, число 
+\begin_inset Formula $a$
+\end_inset
+
+ называется 
+\emph on
+квадратичным невычетом 
+\emph default
+по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Числа, сравнимые между собой, одновременно являются квадратичными вычетами
+ или квадратичными невычетами
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Число 
+\begin_inset Formula $-1$
+\end_inset
+
+ есть квадратичный невычет по модулю 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Оно же является квадратичными вычетом по модулю 
+\begin_inset Formula $5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+Любая приведённая система вычетов по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ содержит 
+\begin_inset Formula $\frac{p-1}{2}$
+\end_inset
+
+ квадратичный вычетов и столько же квадратичных невычетов.
+ Целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, не делящееся на 
+\begin_inset Formula $p$
+\end_inset
+
+, будет квадратичным вычетом в том и только том случае, когда 
+\begin_inset Formula 
+\[
+a^{\frac{p-1}{2}}\equiv1\left(\mod p\right),
+\]
+
+\end_inset
+
+и квадратичным невычетом в том и только том случае, когда 
+\begin_inset Formula 
+\[
+a^{\frac{p-1}{2}}\equiv-1\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Сначала заметим, что так как 
+\begin_inset Formula $p$
+\end_inset
+
+ предполагается нечётным, то число 
+\begin_inset Formula $\frac{p-1}{2}$
+\end_inset
+
+ будет целым.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим произвольную приведённую систему вычетов по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число, то эта система будет включать 
+\begin_inset Formula $p-1$
+\end_inset
+
+ элемент, обозначим их 
+\begin_inset Formula $b_{1},\dots,b_{p-1}$
+\end_inset
+
+.
+ Рассмотрим квадраты элементов этой системы 
+\begin_inset Formula $b_{1}^{2},\dots,b_{p-1}^{2}$
+\end_inset
+
+.
+ Выясним, при каком условии квадраты двух элементов окажутся сравнимыми
+ по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $1\le i<j\le p-1$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{j}^{2}\equiv b_{i}^{2}\left(\mod p\right)$
+\end_inset
+
+.
+ Последнее сравнение можно переписать как 
+\begin_inset Formula $b_{j}^{2}-b_{i}^{2}\equiv0\left(\mod p\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $\left(b_{j}-b_{i}\right)\left(b_{j}+b_{i}\right)\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ Если рассматривать это сравнение как полиномиальное относительно 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ (а 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ считать фиксированным), то его степень будет равна 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ А значит, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:polynomial-congruence-number-of-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, количество решений этого сравнения не может превосходить двух.
+ Легко непосредственно указать эти два решения: 
+\begin_inset Formula $b_{j}\equiv b_{i}\left(\mod p\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{j}\equiv-b_{i}\left(\mod p\right)$
+\end_inset
+
+.
+ Первое из этих сравнений невозможно, так как элементы приведённой системы
+ вычетов, по определению
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, несравнимым между собой.
+ Сравнение 
+\begin_inset Formula $b_{j}\equiv-b_{i}\left(\mod p\right)$
+\end_inset
+
+, напротив, имеет решение, причём решение 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ будет среди вычетов 
+\begin_inset Formula $b_{1},\dots,b_{p-1}$
+\end_inset
+
+ и не будет совпадать с 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+.
+ Действительно, как было показано в параграфе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:ring-of-residual-classes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, число 
+\begin_inset Formula $p-b_{j}$
+\end_inset
+
+ будет обязательно принадлежать какому-то классу вычетов по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ В систему 
+\begin_inset Formula $b_{1},\dots,b_{p-1}$
+\end_inset
+
+ входят все классы вычетов, кроме 
+\begin_inset Formula $\bar{0}$
+\end_inset
+
+.
+ Но так как 
+\begin_inset Formula $b_{i}\not\equiv0\left(\mod p\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $-b_{i}\not\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{j}\equiv-b_{i}\left(\mod p\right)$
+\end_inset
+
+ не могут принадлежать одному классу вычетов, иначе 
+\begin_inset Formula $b_{i}-\left(-b_{i}\right)=2b_{i}$
+\end_inset
+
+ должно делиться на 
+\begin_inset Formula $p$
+\end_inset
+
+, а это невозможно, так как 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число, 
+\begin_inset Formula $p>2$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ — элемент приведённой системы вычетов по 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Таким образом, все вычеты 
+\begin_inset Formula $b_{1},\dots,b_{p-1}$
+\end_inset
+
+ разбиваются на 
+\begin_inset Formula $\frac{p-1}{2}$
+\end_inset
+
+ пару, причём квадраты элементов одной пары сравнимы, а квадраты элементов
+ разных пар не сравнимы.
+ Так как для простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ из 
+\begin_inset Formula $p\nmid b_{j}$
+\end_inset
+
+ следует 
+\begin_inset Formula $p\nmid b_{j}^{2}$
+\end_inset
+
+ (по формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и утверждению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:prime-multiplicity-of-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), то 
+\begin_inset Formula $b_{j}^{2}\not\equiv0\left(\mod p\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $b_{j}^{2}$
+\end_inset
+
+ будет сравним с каким-либо вычетом 
+\begin_inset Formula $b_{1},\dots,b_{p-1}$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\frac{p-1}{2}$
+\end_inset
+
+ вычетов из приведённой системы 
+\begin_inset Formula $b_{1},\dots,b_{p-1}$
+\end_inset
+
+ будут квадратичными вычетами.
+ Остальные 
+\begin_inset Formula $p-1-\frac{p-1}{2}=\frac{p-1}{2}$
+\end_inset
+
+ будут квадратичными невычетами.
+ Первое утверждение леммы доказано.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — квадратичный вычет, причём 
+\begin_inset Formula $p\nmid a$
+\end_inset
+
+.
+ Тогда, по определению, существует такое целое число 
+\begin_inset Formula $b$
+\end_inset
+
+ из промежутка 
+\begin_inset Formula $0<b<p$
+\end_inset
+
+, что 
+\begin_inset Formula $b^{2}\equiv a\left(\mod p\right)$
+\end_inset
+
+.
+ Возведя обе части этого сравнения в степень 
+\begin_inset Formula $\frac{p-1}{2}$
+\end_inset
+
+, получим: 
+\begin_inset Formula 
+\[
+b^{p-1}\equiv a^{\frac{p-1}{2}}\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как по малой теореме Ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Fermat-lesser-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для любого 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+ имеет место сравнение 
+\begin_inset Formula $b^{p-1}\equiv1\left(\mod p\right)$
+\end_inset
+
+, то получаем, что для любого квадратичного вычета 
+\begin_inset Formula $a$
+\end_inset
+
+ действительно справедливо сравнение 
+\begin_inset Formula 
+\[
+a^{\frac{p-1}{2}}\equiv1\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не додумался, что нужно использовать степень сравнения, хотя похожие идеи
+ были
+\end_layout
+
+\end_inset
+
+Мы доказали, что любой квадратичный вычет по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset Formula 
+\[
+x^{\frac{p-1}{2}}-1\equiv0\left(\mod p\right),
+\]
+
+\end_inset
+
+ то есть сравнению степени 
+\begin_inset Formula $\frac{p-1}{2}$
+\end_inset
+
+.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:polynomial-congruence-number-of-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ у такого сравнения не может быть более 
+\begin_inset Formula $\frac{p-1}{2}$
+\end_inset
+
+ решений.
+ Но выше было доказано, что решениями этого сравнения являются все квадратичные
+ вычеты, а выше было доказано, что их 
+\begin_inset Formula $\frac{p-1}{2}$
+\end_inset
+
+, значит для квадратичных невычетов это сравнение выполняться не может.
+ Таким образом, если 
+\begin_inset Formula $a$
+\end_inset
+
+ — квадратичный невычет, то 
+\begin_inset Formula $a^{\frac{p-1}{2}}\not\equiv1\left(\mod p\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ по условию, то оно удовлетворяет условию малой теоремы Ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Fermat-lesser-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то есть 
+\begin_inset Formula $a^{p-1}\equiv1\left(\mod p\right)$
+\end_inset
+
+.
+ Таким образом, число 
+\begin_inset Formula $a^{\frac{p-1}{2}}$
+\end_inset
+
+ всегда является решением сравнения 
+\begin_inset Formula $x^{2}\equiv1\left(\mod p\right)$
+\end_inset
+
+.
+ Подстановкой можно проверить, что решениями этого сравнения являются 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ По доказанному выше 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $-1$
+\end_inset
+
+ принадлежат разным классам по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, поэтому других решений у этого сравнения, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:polynomial-congruence-number-of-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, быть не может.
+ Сказанное означает, что 
+\begin_inset Formula $a^{\frac{p-1}{2}}\not\equiv1\left(\mod p\right)$
+\end_inset
+
+ эквивалентно 
+\begin_inset Formula $a^{\frac{p-1}{2}}\equiv-1\left(\mod p\right)$
+\end_inset
+
+.
+ Итак, мы доказали, что если 
+\begin_inset Formula $a$
+\end_inset
+
+ — квадратичный невычет, то 
+\begin_inset Formula $a^{\frac{p-1}{2}}\equiv-1\left(\mod p\right)$
+\end_inset
+
+.
+ Это утверждение эквивалентно тому, что если 
+\begin_inset Formula $a^{\frac{p-1}{2}}\not\equiv-1\left(\mod p\right)$
+\end_inset
+
+ (что равносильно 
+\begin_inset Formula $a^{\frac{p-1}{2}}\equiv1\left(\mod p\right)$
+\end_inset
+
+), то 
+\begin_inset Formula $a$
+\end_inset
+
+ — квадратичный вычет.
+ Таким образом, доказано, что 
+\begin_inset Formula $a$
+\end_inset
+
+ будет квадратичным вычетом в том и только том случае, когда 
+\begin_inset Formula $a^{\frac{p-1}{2}}\equiv1\left(\mod p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Выше было доказано, что из того, что 
+\begin_inset Formula $a$
+\end_inset
+
+ — квадратичный вычет, следует 
+\begin_inset Formula $a^{\frac{p-1}{2}}\equiv1\left(\mod p\right)$
+\end_inset
+
+.
+ Это утверждение эквивалентно тому, что из 
+\begin_inset Formula $a^{\frac{p-1}{2}}\not\equiv1\left(\mod p\right)$
+\end_inset
+
+ следует, что 
+\begin_inset Formula $a$
+\end_inset
+
+ — квадратичный невычет.
+ Выше было показано.
+ что сравнение 
+\begin_inset Formula $a^{\frac{p-1}{2}}\not\equiv1\left(\mod p\right)$
+\end_inset
+
+ эквивалентно 
+\begin_inset Formula $a^{\frac{p-1}{2}}\equiv-1\left(\mod p\right)$
+\end_inset
+
+.
+ Итак, доказано, что 
+\begin_inset Formula $a$
+\end_inset
+
+ — квадратичный невычет тогда и только тогда.
+ когда 
+\begin_inset Formula $a^{\frac{p-1}{2}}\equiv-1\left(\mod p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Доказанные в лемме условия, при которых число является квадратичным вычетом
+ или не вычетом, называют критерием Эйлера.
 \end_layout
 
 \begin_layout Standard
