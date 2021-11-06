@@ -18881,7 +18881,7 @@ a^{p}-a\equiv0\left(\mod p\right).
 \begin_layout Theorem
 \begin_inset CommandInset label
 LatexCommand label
-name "thm:euler-theorem"
+name "thm:Euler-theorem"
 
 \end_inset
 
@@ -19498,7 +19498,7 @@ a^{k}=a^{dq+r}=\left(a^{d}\right)^{q}\cdot a^{r}\equiv1^{q}\cdot a^{r}\equiv a^{
 По теореме Эйлера 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "thm:euler-theorem"
+reference "thm:Euler-theorem"
 plural "false"
 caps "false"
 noprefix "false"
@@ -23117,7 +23117,7 @@ y\equiv x^{e}\left(\mod N\right).
  Согласно теореме Эйлера
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "thm:euler-theorem"
+reference "thm:Euler-theorem"
 plural "false"
 caps "false"
 noprefix "false"
@@ -28837,6 +28837,12 @@ status open
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:Euler-criterion"
+
+\end_inset
+
 Любая приведённая система вычетов по модулю 
 \begin_inset Formula $p$
 \end_inset
@@ -29420,6 +29426,314 @@ noprefix "false"
 \begin_layout Standard
 Доказанные в лемме условия, при которых число является квадратичным вычетом
  или не вычетом, называют критерием Эйлера.
+\end_layout
+
+\begin_layout Section
+Символ Лежандра и его свойства
+\end_layout
+
+\begin_layout Standard
+Символ Лежандра 
+\begin_inset Formula $\left(\frac{a}{p}\right)$
+\end_inset
+
+ есть функция, принимающая три значения: 
+\begin_inset Formula $-1$
+\end_inset
+
+, 
+\begin_inset Formula $0$
+\end_inset
+
+ или 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Её аргументами являются простое нечётное число 
+\begin_inset Formula $p$
+\end_inset
+
+ и целое число 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Если 
+\begin_inset Formula $a$
+\end_inset
+
+ — квадратичный невычет по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(\frac{a}{p}\right)=-1$
+\end_inset
+
+; если 
+\begin_inset Formula $p\mid a$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(\frac{a}{p}\right)=0$
+\end_inset
+
+; если 
+\begin_inset Formula $a$
+\end_inset
+
+ — квадратичный вычет по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(\frac{a}{p}\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Свойства символа Лежандра описывает следующая теорема.
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — произвольные целые числа..
+ Тогда
+\end_layout
+
+\begin_layout Theorem
+1.
+ 
+\begin_inset Formula $\left(\frac{a}{p}\right)\equiv a^{\frac{p-1}{2}}\left(\mod p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+2.
+ Если 
+\begin_inset Formula $a\equiv b\left(\mod p\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(\frac{a}{p}\right)=\left(\frac{b}{p}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+3.
+ 
+\begin_inset Formula $\left(\frac{ab}{p}\right)=\left(\frac{a}{p}\right)\left(\frac{b}{p}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+4.
+ 
+\begin_inset Formula $\left(\frac{1}{p}\right)=1$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\frac{-1}{p}\right)=\left(-1\right)^{\frac{p-1}{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $p\nmid a$
+\end_inset
+
+ первое утверждение теоремы следует из леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Euler-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ При 
+\begin_inset Formula $p\mid a$
+\end_inset
+
+ получаем 
+\begin_inset Formula $a\equiv0\left(\mod p\right)$
+\end_inset
+
+ и, следовательно, 
+\begin_inset Formula $a^{\frac{p-1}{2}}\equiv0^{\frac{p-1}{2}}\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ Таким образом, первое утверждение теоремы доказано полностью.
+\end_layout
+
+\begin_layout Proof
+Как было доказано выше, 
+\begin_inset Formula $\left(\frac{a}{p}\right)\equiv a^{\frac{p-1}{2}}\left(\mod p\right)$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $a\equiv b\left(\mod p\right)$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\left(\frac{a}{p}\right)\equiv a^{\frac{p-1}{2}}\equiv b^{\frac{p-1}{2}}\equiv\left(\frac{b}{p}\right)\left(\mod p\right)
+\]
+
+\end_inset
+
+или 
+\begin_inset Formula 
+\[
+\left(\frac{a}{p}\right)\equiv\left(\frac{b}{p}\right)\left(\mod p\right).
+\]
+
+\end_inset
+
+Так как символ Лежандра может принимать лишь значения 
+\begin_inset Formula $-1$
+\end_inset
+
+, 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+, а 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое нечётное число, то эти значения несравнимы по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, поэтому последнее сравнение может быть заменено равенством.
+ Второе утверждение теоремы доказано.
+\end_layout
+
+\begin_layout Proof
+Снова воспользуемся тем, что выше было доказано, что 
+\begin_inset Formula $\left(\frac{a}{p}\right)\equiv a^{\frac{p-1}{2}}\left(\mod p\right)$
+\end_inset
+
+.
+ Тогда получим 
+\begin_inset Formula 
+\[
+\left(\frac{ab}{p}\right)\equiv\left(ab\right)^{\frac{p-1}{2}}\equiv a^{\frac{p-1}{2}}b^{\frac{p-1}{2}}\equiv\left(\frac{a}{p}\right)\left(\frac{b}{p}\right)\left(\mod p\right).
+\]
+
+\end_inset
+
+Как и при доказательстве второго утверждения, сравнение 
+\begin_inset Formula 
+\[
+\left(\frac{ab}{p}\right)\equiv\left(\frac{a}{p}\right)\left(\frac{b}{p}\right)\left(\mod p\right)
+\]
+
+\end_inset
+
+можно заменить равенством.
+ Третье утверждение теоремы доказано.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $1^{2}=1$
+\end_inset
+
+, то 
+\begin_inset Formula $1$
+\end_inset
+
+ является квадратичным вычетом по любому простому модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, поэтому всегда 
+\begin_inset Formula $\left(\frac{1}{p}\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Для 
+\begin_inset Formula $a=-1$
+\end_inset
+
+, по доказанному в первом утверждении получаем, что 
+\begin_inset Formula $\left(\frac{-1}{p}\right)\equiv\left(-1\right)^{\frac{p-1}{2}}\left(\mod p\right)$
+\end_inset
+
+.
+ Но 
+\begin_inset Formula $-1$
+\end_inset
+
+ в чётной степени равна 
+\begin_inset Formula $1$
+\end_inset
+
+, а в не чётной — 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ Поэтому сравнение 
+\begin_inset Formula $\left(\frac{-1}{p}\right)\equiv\left(-1\right)^{\frac{p-1}{2}}\left(\mod p\right)$
+\end_inset
+
+ может быть заменено равенством 
+\begin_inset Formula $\left(\frac{-1}{p}\right)=\left(-1\right)^{\frac{p-1}{2}}$
+\end_inset
+
+, что и завершает доказательство последнего утверждения теоремы.
+\end_layout
+
+\begin_layout Standard
+Из последнего утверждения теоремы следует, что сравнение 
+\begin_inset Formula $x^{2}+1\equiv0\left(\mod p\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое нечётное число, разрешимо в том и только том случае, когда 
+\begin_inset Formula $p\equiv1\left(\mod4\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
