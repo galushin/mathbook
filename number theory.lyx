@@ -17893,6 +17893,12 @@ status open
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:residuals-systems-linear-transformations"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $a$
 \end_inset
@@ -29502,6 +29508,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Legendre-symbol-properties"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $a$
 \end_inset
@@ -29734,6 +29746,700 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Квадратичный закон взаимности
+\end_layout
+
+\begin_layout Standard
+Утверждение, называемое 
+\emph on
+квадратичный закон взаимности
+\emph default
+ впервые сформулировал Эйлер в 1783 году, а в 1796 году Гаусс дал первое
+ его доказательство.
+\end_layout
+
+\begin_layout Theorem
+(Квадратичный закон взаимности).
+ Если 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+ — различные простые нечётные числа, то 
+\begin_inset Formula 
+\[
+\left(\frac{p}{q}\right)\cdot\left(\frac{q}{p}\right)=\left(-1\right)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Другими словами, если 
+\begin_inset Formula $p\equiv1\left(\mod4\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $q\equiv1\left(\mod4\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(\frac{p}{q}\right)=\left(\frac{q}{p}\right)$
+\end_inset
+
+, а если 
+\begin_inset Formula $p\equiv3\left(\mod4\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $q\equiv3\left(\mod4\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(\frac{p}{q}\right)=-\left(\frac{q}{p}\right)$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Можно также сказать, что в первом случае сравнения 
+\begin_inset Formula $x^{2}\equiv a\left(\mod p\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x^{2}\equiv b\left(\mod p\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Выглядит так, как будто во втором сравнении должен быть модуль 
+\begin_inset Formula $q$
+\end_inset
+
+, иначе он нигде не используется
+\end_layout
+
+\end_inset
+
+ разрешимы или не разрешимы одновременно, а во втором случае из разрешимости
+ одного из этих сравнений следует неразрешимость другого.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Квадратичный закон взаимности вместе со свойствами из теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Legendre-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ позволяет вычислять символ Лежандра и тем устанавливать разрешимость или
+ неразрешимость квадратичных сравнений.
+ Некоторые примеры будут рассмотрены в конце параграфа.
+\end_layout
+
+\begin_layout Standard
+Перед тем, как доказывать теорему, установим одно вспомогательное утверждение
+ и выведем следствие из него.
+ В этом утверждении используется тот факт, что совокупность чисел 
+\begin_inset Formula 
+\[
+-\frac{p-1}{2},\dots,-2,-1,1,2,\dots,\frac{p-1}{2}
+\]
+
+\end_inset
+
+ составляет приведённую систему вычетов по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:Gauss-lemma"
+
+\end_inset
+
+(Лемма Гаусса).
+ Пусть 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое нечётное число и 
+\begin_inset Formula $a$
+\end_inset
+
+ — целое число, не делящееся на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Для каждого 
+\begin_inset Formula $k=1,2,\dots,\frac{p-1}{2}$
+\end_inset
+
+ определим 
+\begin_inset Formula $\varepsilon_{k}=\pm1$
+\end_inset
+
+ условиями 
+\begin_inset Formula 
+\[
+k\cdot a\equiv\varepsilon_{k}\cdot r_{k}\left(\mod p\right),0<r_{k}\le\frac{p-1}{2}.
+\]
+
+\end_inset
+
+Тогда 
+\begin_inset Formula 
+\[
+\left(\frac{a}{p}\right)=\varepsilon_{1}\cdot\varepsilon_{2}\cdot\dots\cdot\varepsilon_{\frac{p-1}{2}}=\left(-1\right)^{t},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $t$
+\end_inset
+
+ — количество отрицательных среди чисел 
+\begin_inset Formula $\varepsilon_{1},\varepsilon_{2},\dots,\varepsilon_{\frac{p-1}{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По теореме о свойствах символа Лежандра, 
+\begin_inset Formula $\left(\frac{a}{p}\right)\equiv a^{\frac{p-1}{2}}\left(\mod p\right)$
+\end_inset
+
+.
+ Перемножим сравнения из условий данной леммы при 
+\begin_inset Formula $k=1,2,\dots,\frac{p-1}{2}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\prod_{k=1}^{\frac{p-1}{2}}\left(k\cdot a\right)=\left(\frac{p-1}{2}\right)!\cdot a^{\frac{p-1}{2}}\equiv\prod_{k=1}^{\frac{p-1}{2}}\left(\varepsilon_{k}\cdot r_{k}\right)\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Сначала думал, что достаточно сослаться на теорему 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:residuals-systems-linear-transformations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, но может получиться, что два 
+\begin_inset Formula $k\cdot a$
+\end_inset
+
+ отличаются знаком
+\end_layout
+
+\end_inset
+
+По аналогии с теоремой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:residuals-systems-linear-transformations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, числа 
+\begin_inset Formula $r_{k}$
+\end_inset
+
+ при 
+\begin_inset Formula $1\le k\le\frac{p-1}{2}$
+\end_inset
+
+ будут перестановкой чисел 
+\begin_inset Formula $1,2,\dots,\frac{p-1}{2}$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать этот момент
+\end_layout
+
+\end_inset
+
+Действительно, пусть 
+\begin_inset Formula $r_{k}\equiv r_{l}\left(\mod p\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula $ka\equiv\pm la\left(\mod p\right)$
+\end_inset
+
+.
+ Последнее сравнение означает, что 
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Поэтому получаем 
+\begin_inset Formula 
+\[
+\left(\frac{p-1}{2}\right)!\cdot a^{\frac{p-1}{2}}\equiv\prod_{k=1}^{\frac{p-1}{2}}\varepsilon_{k}\cdot\left(\frac{p-1}{2}\right)!\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\frac{p-1}{2}<p$
+\end_inset
+
+, то 
+\begin_inset Formula $p\nmid\left(\frac{p-1}{2}\right)!$
+\end_inset
+
+, поэтому, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:coprime-to-module-has-inverse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует такое число 
+\begin_inset Formula $b$
+\end_inset
+
+, что 
+\begin_inset Formula $b\cdot\left(\frac{p-1}{2}\right)!\equiv1\left(\mod p\right)$
+\end_inset
+
+.
+ Умножая на это 
+\begin_inset Formula $b$
+\end_inset
+
+ предыдущее сравнение, получим 
+\begin_inset Formula 
+\[
+\left(\frac{a}{p}\right)\equiv a^{\frac{p-1}{2}}\equiv\prod_{k=1}^{\frac{p-1}{2}}\varepsilon_{k}\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как левая и правая часть это равенства могут принимать только значения
+ 
+\begin_inset Formula $-1$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+ (так как 
+\begin_inset Formula $p\nmid a$
+\end_inset
+
+), а 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число, большее 
+\begin_inset Formula $2$
+\end_inset
+
+, то эквивалентность можно заменить равенством
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Это определённо нужно вынести в отдельное утверждение!
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left(\frac{a}{p}\right)=\prod_{k=1}^{\frac{p-1}{2}}\varepsilon_{k},
+\]
+
+\end_inset
+
+что и требовалось доказать.
+\end_layout
+
+\begin_layout Remark
+1) 
+\begin_inset Formula $\left(\frac{2}{p}\right)=\left(-1\right)^{\frac{p^{2}-1}{8}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+2) Если 
+\begin_inset Formula $a$
+\end_inset
+
+ нечётно, то 
+\begin_inset Formula $\left(\frac{a}{p}\right)=\left(-1\right)^{S}$
+\end_inset
+
+, где 
+\begin_inset Formula $S=\sum_{x=1}^{\frac{p-1}{2}}\left[\frac{ax}{p}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог доказать сам
+\end_layout
+
+\end_inset
+
+.
+ Неполное частное от деления 
+\begin_inset Formula $ak$
+\end_inset
+
+ на 
+\begin_inset Formula $p$
+\end_inset
+
+ равно 
+\begin_inset Formula $\left[\frac{ak}{p}\right]$
+\end_inset
+
+.
+ Учитывая это, получим 
+\begin_inset Formula 
+\[
+ak-p\left[\frac{ak}{p}\right]=\begin{cases}
+r_{k}, & \varepsilon_{k}=1,\\
+p-r_{k}, & \varepsilon_{k}=-1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Суммируя эти равенства при 
+\begin_inset Formula $k=1,2,\dots,\frac{p-1}{2}$
+\end_inset
+
+, учитывая, что 
+\begin_inset Formula $\sum_{k=1}^{\frac{p-1}{2}}k=\frac{1}{2}\left(\frac{p-1}{2}\right)\left(\frac{p+1}{2}\right)=\frac{p^{2}-1}{8}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нужно доказать это формулу отдельно в общем случае
+\end_layout
+
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+a\cdot\frac{p^{2}-1}{8}-p\sum_{k=1}^{\frac{p-1}{2}}\left[\frac{ak}{p}\right]=\sum_{k=1}^{\frac{p-1}{2}}\left(r_{k}\left[\varepsilon_{k}=1\right]+\left(p-r_{k}\right)\left[\varepsilon_{k}=-1\right]\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+В левой части воспользуемся обозначением 
+\begin_inset Formula $S=\sum_{x=1}^{\frac{p-1}{2}}\left[\frac{ax}{p}\right]$
+\end_inset
+
+, а в правой разделим слагаемые содержащие и не содержащие 
+\begin_inset Formula $p$
+\end_inset
+
+, получим: 
+\begin_inset Formula 
+\[
+a\cdot\frac{p^{2}-1}{8}-pS=p\sum_{k=1}^{\frac{p-1}{2}}\left[\varepsilon_{k}=-1\right]+\sum_{k=1}^{\frac{p-1}{2}}r_{k}\varepsilon_{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Первая сумма в правой части — количество отрицательных 
+\begin_inset Formula $\varepsilon_{k}$
+\end_inset
+
+, в обозначениях леммы Гаусса 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Gauss-lemma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ оно равно 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Окончательно получаем 
+\begin_inset Formula 
+\[
+a\cdot\frac{p^{2}-1}{8}-pS=pt+\sum_{k=1}^{\frac{p-1}{2}}r_{k}\varepsilon_{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Перейдём в этом равенстве к сравнению по модулю 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Заметим сначала, что 
+\begin_inset Formula $-1\equiv1\left(\mod2\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\sum_{k=1}^{\frac{p-1}{2}}r_{k}\varepsilon_{k}\equiv\sum_{k=1}^{\frac{p-1}{2}}r_{k}=\sum_{k=1}^{\frac{p-1}{2}}k=\frac{p^{2}-1}{8}\left(\mod2\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Кроме того, так как 
+\begin_inset Formula $p$
+\end_inset
+
+ — нечётное простое число, то 
+\begin_inset Formula $p\equiv-1\equiv1\left(\mod2\right)$
+\end_inset
+
+.
+ Окончательно получаем 
+\begin_inset Formula 
+\[
+a\cdot\frac{p^{2}-1}{8}+S\equiv t+\frac{p^{2}-1}{8}\left(\mod2\right)
+\]
+
+\end_inset
+
+или 
+\begin_inset Formula 
+\[
+t\equiv S+\left(a-1\right)\frac{p^{2}-1}{8}\left(\mod2\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $a=2$
+\end_inset
+
+ все слагаемые в сумме, определяющей 
+\begin_inset Formula $S$
+\end_inset
+
+, равны нулю, так как при 
+\begin_inset Formula $k\le\frac{p-1}{2}$
+\end_inset
+
+ имеем 
+\begin_inset Formula $2k\le p-1<p$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left[\frac{2k}{p}\right]=0$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $S=0$
+\end_inset
+
+ и 
+\begin_inset Formula $t\equiv\frac{p^{2}-1}{8}\left(\mod2\right)$
+\end_inset
+
+.
+ Знак выражения 
+\begin_inset Formula $\left(-1\right)^{b}$
+\end_inset
+
+ не изменится, если прибавить к 
+\begin_inset Formula $b$
+\end_inset
+
+ произвольное чётное число, поэтому 
+\begin_inset Formula $\left(-1\right)^{t}=\left(-1\right)^{\frac{p^{2}-1}{8}}$
+\end_inset
+
+ и по лемме Гаусса 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Gauss-lemma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+\left(\frac{2}{p}\right)=\left(-1\right)^{t}=\left(-1\right)^{\frac{p^{2}-1}{8}},
+\]
+
+\end_inset
+
+что и завершает доказательство первого утверждения данного следствия.
+\end_layout
+
+\begin_layout Proof
+При нечётном 
+\begin_inset Formula $a$
+\end_inset
+
+ имеем 
+\begin_inset Formula $a-1\equiv0\left(\mod2\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $t\equiv S\left(\mod2\right)$
+\end_inset
+
+ и мы получаем второе утверждение данного следствия.
+\end_layout
+
+\begin_layout Standard
+Перейдём теперь к доказательству квадратичного закона взаимности.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать квадратичный закон взаимности
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 6.3
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
