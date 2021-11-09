@@ -29762,6 +29762,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Quadratic reciprocity"
+
+\end_inset
+
 (Квадратичный закон взаимности).
  Если 
 \begin_inset Formula $p$
@@ -30015,30 +30021,104 @@ noprefix "false"
 \end_inset
 
 .
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Доказать этот момент
-\end_layout
-
+ Действительно, пусть 
+\begin_inset Formula $r_{k}\equiv r_{j}\left(\mod p\right)$
 \end_inset
 
-Действительно, пусть 
-\begin_inset Formula $r_{k}\equiv r_{l}\left(\mod p\right)$
+, где 
+\begin_inset Formula $1\le j<k\le\frac{p-1}{2}$
 \end_inset
 
 , тогда 
-\begin_inset Formula $ka\equiv\pm la\left(\mod p\right)$
+\begin_inset Formula $ka\equiv\pm ja\left(\mod p\right)$
 \end_inset
 
 .
  Последнее сравнение означает, что 
-\begin_inset Formula $ $
+\begin_inset Formula $a\left(k\pm j\right)$
 \end_inset
 
+ делится на 
+\begin_inset Formula $p$
+\end_inset
 
+.
+ Так как 
+\begin_inset Formula $a$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+ по условию, то на 
+\begin_inset Formula $p$
+\end_inset
+
+ должно делиться 
+\begin_inset Formula $k\pm j$
+\end_inset
+
+.
+ Но 
+\begin_inset Formula $2\le k+j\le p-1<p$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|k+j\right|<p$
+\end_inset
+
+, поэтому, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $k+j$
+\end_inset
+
+ не может делиться на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ С другой стороны, 
+\begin_inset Formula $1\le k-j\le\frac{p-1}{2}-1=\frac{p-3}{2}<p$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|k-j\right|<p$
+\end_inset
+
+ и 
+\begin_inset Formula $k-j$
+\end_inset
+
+ не может делиться на 
+\begin_inset Formula $p$
+\end_inset
+
+ также по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Итак, все числа 
+\begin_inset Formula $r_{k}$
+\end_inset
+
+ различны.
 \end_layout
 
 \begin_layout Proof
@@ -30140,6 +30220,12 @@ status open
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:Gauss-lemma-consequence"
+
+\end_inset
+
 1) 
 \begin_inset Formula $\left(\frac{2}{p}\right)=\left(-1\right)^{\frac{p^{2}-1}{8}}$
 \end_inset
@@ -30417,12 +30503,537 @@ noprefix "false"
 \end_layout
 
 \begin_layout Proof
+Так как по условию 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+ — различные простые нечётные числа, то по следствию из леммы Гаусса получаем
+ 
+\begin_inset Formula 
+\[
+\left(\frac{p}{q}\right)=\left(-1\right)^{S},\left(\frac{q}{p}\right)=\left(-1\right)^{T}
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula 
+\[
+S=\sum_{x=1}^{\frac{p-1}{2}}\left[\frac{qx}{p}\right],
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T=\sum_{y=1}^{\frac{q-1}{2}}\left[\frac{py}{q}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, 
+\begin_inset Formula $\left(\frac{p}{q}\right)\cdot\left(\frac{q}{p}\right)=\left(-1\right)^{S+T}$
+\end_inset
+
+ и для доказательства квадратичного закона взаимности остаётся доказать,
+ что 
+\begin_inset Formula $S+T\equiv\frac{p-1}{2}\cdot\frac{q-1}{2}\left(\mod2\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог доказать дальнейшее сам.
+ Очень похоже на трюк Гаусса для вычисления суммы первых 100 целых чисел
+\end_layout
+
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Доказать квадратичный закон взаимности
+Возможно, нужно было воспользоваться 
+\begin_inset Formula $\left[a\right]=\sum_{k=1}^{\left[a\right]}1$
+\end_inset
+
+ и поменять порядок суммирования
 \end_layout
+
+\end_inset
+
+При фиксированном целом 
+\begin_inset Formula $x$
+\end_inset
+
+ из интервала 
+\begin_inset Formula $0<x\le\frac{p-1}{2}$
+\end_inset
+
+ величина 
+\begin_inset Formula $\left[\frac{qx}{p}\right]$
+\end_inset
+
+ есть количество целых точек 
+\begin_inset Formula $y$
+\end_inset
+
+ на промежутке 
+\begin_inset Formula $0<y\le\frac{qx}{p}$
+\end_inset
+
+ или, учитывая, что 
+\begin_inset Formula $\frac{qx}{p}$
+\end_inset
+
+ — не есть целое число, на промежутке 
+\begin_inset Formula $0<y<\frac{qx}{p}$
+\end_inset
+
+.
+ Отсюда следует, что 
+\begin_inset Formula $S$
+\end_inset
+
+ равно количеству пар целых чисел 
+\begin_inset Formula $x,y$
+\end_inset
+
+, удовлетворяющих неравенствам 
+\begin_inset Formula 
+\[
+0<x\le\frac{p-1}{2},0<y<\frac{qx}{p}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Поскольку 
+\begin_inset Formula $\frac{p}{2}$
+\end_inset
+
+ не целое число, и 
+\begin_inset Formula $\frac{qx}{p}<\frac{q}{2}$
+\end_inset
+
+, заключаем, что 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ есть количество точек 
+\begin_inset Formula $\left(x,y\right)\in\mathbb{Z}^{2}$
+\end_inset
+
+ с условиями 
+\begin_inset Formula 
+\[
+0<x<\frac{p}{2},0<y<\frac{q}{2},py-qx<0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Точно также, число 
+\begin_inset Formula $T$
+\end_inset
+
+ равно количеству точек 
+\begin_inset Formula $\left(x,y\right)\in\mathbb{Z}^{2}$
+\end_inset
+
+ с условиями 
+\begin_inset Formula 
+\[
+0<y<\frac{q}{2},0<x<\frac{p}{2},qx-py<0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Последнее неравенство можно переписать как 
+\begin_inset Formula $py-qx>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Ни одна из точек прямоугольника 
+\begin_inset Formula $0<x<\frac{p}{2},0<y<\frac{q}{2}$
+\end_inset
+
+ не лежит на прямой линии 
+\begin_inset Formula $py-qx=0$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula $S+T$
+\end_inset
+
+ равно количеству точек с целыми координатами, лежащими в этом прямоугольнике,
+ то есть 
+\begin_inset Formula $\frac{p-1}{2}\cdot\frac{q-1}{2}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Объяснить, почему именно это количество
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим несколько примеров.
+\end_layout
+
+\begin_layout Example
+Разрешимо ли сравнение 
+\begin_inset Formula $x^{2}\equiv53\left(\mod233\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $53=1+4\cdot13$
+\end_inset
+
+ и 
+\begin_inset Formula $233=4\cdot53+21$
+\end_inset
+
+,то применяя квадратичный закон взаимности и второе свойство из теоремы
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Legendre-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, находим 
+\begin_inset Formula 
+\[
+\left(\frac{53}{233}\right)=\left(\frac{233}{53}\right)=\left(\frac{21}{53}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Пользуясь третьим свойством из теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Legendre-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и опять примеяя квадратичный закон взаимности, получаем 
+\begin_inset Formula 
+\[
+\left(\frac{21}{53}\right)=\left(\frac{7}{53}\right)\left(\frac{3}{53}\right)=\left(\frac{53}{7}\right)\left(\frac{53}{3}\right).
+\]
+
+\end_inset
+
+Далее, учитывая, что 
+\begin_inset Formula $53=7\cdot7+4$
+\end_inset
+
+ и 
+\begin_inset Formula $53=3\cdot18-1$
+\end_inset
+
+, имеем 
+\begin_inset Formula 
+\[
+\left(\frac{53}{7}\right)=\left(\frac{4}{7}\right)=\left(\frac{2}{7}\right)^{2}=1,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\frac{53}{3}\right)=\left(\frac{-1}{3}\right)=\left(-1\right)^{\frac{3-1}{2}}=-1
+\]
+
+\end_inset
+
+и, наконец, 
+\begin_inset Formula 
+\[
+\left(\frac{53}{233}\right)=1\cdot\left(-1\right)=-1.
+\]
+
+\end_inset
+
+Таким образом, данное сравнение не имеет решений.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Для каких простых чисел 
+\begin_inset Formula $p$
+\end_inset
+
+ разрешимо сравнение 
+\begin_inset Formula 
+\[
+x^{2}+3\equiv0\left(\mod p\right)?
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+При 
+\begin_inset Formula $p=2$
+\end_inset
+
+ решение существует: 
+\begin_inset Formula $x\equiv1\left(\mod p\right)$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $p=3$
+\end_inset
+
+ решением является класс вычетов 
+\begin_inset Formula $x=0\left(\mod p\right)$
+\end_inset
+
+.
+ Рассмотрим случай 
+\begin_inset Formula $p>3$
+\end_inset
+
+.
+ Согласно теоремам 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Legendre-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Quadratic reciprocity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ справедливы равенства 
+\begin_inset Formula 
+\[
+\left(\frac{-3}{p}\right)=\left(\frac{-1}{p}\right)\cdot\left(\frac{3}{p}\right)=\left(\frac{-1}{p}\right)\cdot\left(\frac{p}{3}\right)\cdot\left(-1\right)^{\frac{p-1}{2}\cdot\frac{3-1}{2}}=\left(\frac{p}{3}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Поскольку 
+\begin_inset Formula 
+\[
+\left(\frac{p}{3}\right)=\begin{cases}
+1, & p\equiv1\left(\mod3\right),\\
+-1, & p\equiv2\left(\mod3\right),
+\end{cases}
+\]
+
+\end_inset
+
+заключаем, что равенство 
+\begin_inset Formula $\left(\frac{-3}{p}\right)=1$
+\end_inset
+
+ для простых чисел 
+\begin_inset Formula $p>3$
+\end_inset
+
+ выполняется лишь при 
+\begin_inset Formula $p\equiv1\left(\mod3\right)$
+\end_inset
+
+.
+ Учитывая, что 
+\begin_inset Formula $p$
+\end_inset
+
+ нечётно, последнее сравнение можно переписать в виде 
+\begin_inset Formula $p=6n+1$
+\end_inset
+
+, где 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+.
+ Итак, данное сравнение разрешимо лишь при 
+\begin_inset Formula $p=2$
+\end_inset
+
+, 
+\begin_inset Formula $p=3$
+\end_inset
+
+ и всех простых числах вида 
+\begin_inset Formula $p=6n+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Последний пример может быть обобщён.
+\end_layout
+
+\begin_layout Theorem
+Множество всех простых чисел 
+\begin_inset Formula $p$
+\end_inset
+
+ для которых разрешимо сравнение 
+\begin_inset Formula 
+\[
+ax^{2}+bx+c\equiv0\left(\mod p\right),p\nmid a,
+\]
+
+\end_inset
+
+состоит из некоторых делителей числа 
+\begin_inset Formula $2D$
+\end_inset
+
+, где 
+\begin_inset Formula $D=b^{2}-4ac$
+\end_inset
+
+, а также из простых, лежащих в нескольких классах вычетов по модулю 
+\begin_inset Formula $4\left|D\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+Выделим полный квадрат из рассматриваемого сравнения.
+ Для этого умножим его на 
+\begin_inset Formula $4a$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+4a^{2}x^{2}+4abx+4ac\equiv0\left(\mod p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(2ax+b\right)^{2}+4ac-b^{2}\equiv0\left(\mod p\right)
+\]
+
+\end_inset
+
+ или 
+\begin_inset Formula 
+\[
+\left(2ax+b\right)^{2}\equiv D\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $y=2ax+b$
+\end_inset
+
+ и рассмотрим сравнение 
+\begin_inset Formula 
+\[
+y^{2}\equiv D\left(\mod p\right).
+\]
 
 \end_inset
 
