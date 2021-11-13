@@ -23705,7 +23705,7 @@ ax\equiv b\left(\mod m\right),m\nmid a.\label{eq:congruence-one-variable}
 \begin_layout Theorem
 \begin_inset CommandInset label
 LatexCommand label
-name "thm:congruence-one-variable"
+name "thm:linear-congruence-one-variable"
 
 \end_inset
 
@@ -24355,7 +24355,7 @@ status open
  следует из теоремы 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "thm:congruence-one-variable"
+reference "thm:linear-congruence-one-variable"
 plural "false"
 caps "false"
 noprefix "false"
@@ -25227,7 +25227,7 @@ status open
  По теореме 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "thm:congruence-one-variable"
+reference "thm:linear-congruence-one-variable"
 plural "false"
 caps "false"
 noprefix "false"
@@ -27562,7 +27562,7 @@ f^{\prime}\left(x_{1}\right)t+\frac{f\left(a\right)}{p^{n-1}}\equiv0\left(\mod p
 , поэтому применима теорема 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "thm:congruence-one-variable"
+reference "thm:linear-congruence-one-variable"
 plural "false"
 caps "false"
 noprefix "false"
@@ -30976,28 +30976,27 @@ ax^{2}+bx+c\equiv0\left(\mod p\right),p\nmid a,
 \end_inset
 
 , а также из простых, лежащих в нескольких классах вычетов по модулю 
-\begin_inset Formula $4\left|D\right|$
+\begin_inset Formula $4\cdot\left|D\right|$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать доказательство
-\end_layout
-
-\end_inset
-
 Выделим полный квадрат из рассматриваемого сравнения.
  Для этого умножим его на 
 \begin_inset Formula $4a$
 \end_inset
 
-: 
+ (так как 
+\begin_inset Formula $p\nmid a$
+\end_inset
+
+, то и 
+\begin_inset Formula $p\nmid4a^{2}$
+\end_inset
+
+): 
 \begin_inset Formula 
 \[
 4a^{2}x^{2}+4abx+4ac\equiv0\left(\mod p\right),
@@ -31038,6 +31037,383 @@ y^{2}\equiv D\left(\mod p\right).
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+Для получения решения исходного сравнения по известному 
+\begin_inset Formula $y$
+\end_inset
+
+ необходимо решить сравнение 
+\begin_inset Formula $2ax\equiv y-b\left(\mod p\right)$
+\end_inset
+
+, которое всегда имеет решение по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:linear-congruence-one-variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, так как 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число и 
+\begin_inset Formula $p\nmid a$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left(2a,p\right)=1$
+\end_inset
+
+, а 
+\begin_inset Formula $1\mid\left(y-b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог закончить доказательство сам
+\end_layout
+
+\end_inset
+
+Далее, достаточно рассматривать только простые числа 
+\begin_inset Formula $p$
+\end_inset
+
+, не делящие 
+\begin_inset Formula $2D$
+\end_inset
+
+.
+ Сравнение 
+\begin_inset Formula $y^{2}\equiv D\left(\mod p\right)$
+\end_inset
+
+ разрешимо только для тех простых чисел 
+\begin_inset Formula $p$
+\end_inset
+
+, для которых выполняется 
+\begin_inset Formula $\left(\frac{D}{p}\right)=1$
+\end_inset
+
+.
+ Таким образом, для завершения доказательства теоремы достаточно показать,
+ что множество нечётных простых чисел 
+\begin_inset Formula $p$
+\end_inset
+
+, для которых 
+\begin_inset Formula $\left(\frac{D}{p}\right)=1$
+\end_inset
+
+, состоит из нескольких классов вычетов по модулю 
+\begin_inset Formula $4\cdot\left|D\right|$
+\end_inset
+
+.
+ Это равносильно утверждению, что для простых чисел из одного классов вычетов
+ по модулю 
+\begin_inset Formula $4\left|D\right|$
+\end_inset
+
+ сравнение 
+\begin_inset Formula $y^{2}\equiv D\left(\mod p\right)$
+\end_inset
+
+ разрешимо или не разрешимо одновременно, то есть сравнение 
+\begin_inset Formula $p_{1}\equiv p_{2}\left(\mod4\left|D\right|\right)$
+\end_inset
+
+ влечёт за собой 
+\begin_inset Formula $\left(\frac{D}{p_{1}}\right)=\left(\frac{D}{p_{2}}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим разложение 
+\begin_inset Formula $D$
+\end_inset
+
+ в произведение простых чисел, которое всегда существует и единственно в
+ силу основной теоремы арифметики 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $D=\left(-1\right)^{\alpha_{1}}2^{\alpha_{2}}\prod_{q}q^{\alpha_{q}}$
+\end_inset
+
+, где 
+\begin_inset Formula $q$
+\end_inset
+
+ — нечётные простые числа, 
+\begin_inset Formula $\alpha_{q}$
+\end_inset
+
+ — неотрицательные целые числа.
+ Так как мы рассматриваем 
+\begin_inset Formula $p\nmid2\left|D\right|$
+\end_inset
+
+, то 
+\begin_inset Formula $q<p$
+\end_inset
+
+.
+ По теореме о свойствах символа Лежандра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Legendre-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left(\frac{D}{p}\right)=\left(\frac{-1}{p}\right)^{\alpha_{1}}\cdot\left(\frac{2}{p}\right)^{\alpha_{2}}\cdot\prod_{q}\left(\frac{q}{p}\right)^{\alpha_{q}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим несколько случаев.
+\end_layout
+
+\begin_layout Proof
+1) Так как 
+\begin_inset Formula $p_{1}\equiv p_{2}\left(\mod4\left|D\right|\right)$
+\end_inset
+
+, а значит и 
+\begin_inset Formula $p_{1}\equiv p_{2}\left(\mod4\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать?
+\end_layout
+
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $\frac{p_{1}-1}{2}\equiv\frac{p_{2}-1}{2}\left(\mod2\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+ По теореме о свойствах символа Лежандра 
+\begin_inset Formula 
+\[
+\left(\frac{-1}{p}\right)=\left(-1\right)^{\frac{p-1}{2}},
+\]
+
+\end_inset
+
+ поэтому справедливо равенство 
+\begin_inset Formula $\left(\frac{-1}{p_{1}}\right)=\left(\frac{-1}{p_{2}}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+2) Допустим, что 
+\begin_inset Formula $\alpha_{2}\ge1$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $D$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+ и, следовательно, 
+\begin_inset Formula $p_{1}\equiv p_{2}\left(\mod8\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\[
+\frac{p_{1}^{2}-1}{8}-\frac{p_{2}^{2}-1}{8}=\frac{p_{1}-p_{2}}{8}\cdot\left(p_{1}+p_{2}\right)\equiv0\left(\mod2\right).
+\]
+
+\end_inset
+
+По следствию из леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:Gauss-lemma-consequence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left(\frac{2}{p}\right)=\left(-1\right)^{\frac{p^{2}-1}{8}}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left(\frac{2}{p_{1}}\right)=\left(\frac{2}{p_{2}}\right)$
+\end_inset
+
+.
+ Таким образом, при любом 
+\begin_inset Formula $\alpha_{2}\ge0$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $\left(\frac{2}{p_{1}}\right)^{\alpha_{2}}=\left(\frac{2}{p_{2}}\right)^{\alpha_{2}}$
+\end_inset
+
+ (при 
+\begin_inset Formula $\alpha_{2}=0$
+\end_inset
+
+ это равенство сводится к 
+\begin_inset Formula $1=1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+3) Пусть теперь 
+\begin_inset Formula $q\mid D$
+\end_inset
+
+.
+ Из сравнения 
+\begin_inset Formula $p_{1}\equiv p_{2}\left(\mod4\left|D\right|\right)$
+\end_inset
+
+ следует 
+\begin_inset Formula $p_{1}\equiv p_{2}\left(\mod q\right)$
+\end_inset
+
+, так что, по теореме о свойствах символа Лежандра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Legendre-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula $\left(\frac{p_{1}}{q}\right)=\left(\frac{p_{2}}{q}\right)$
+\end_inset
+
+.
+ По квадратичному закону взаимности 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Quadratic reciprocity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\left(\frac{q}{p}\right)=\left(\frac{p}{q}\right)\left(-1\right)^{\frac{p-1}{2}\cdot\frac{q-1}{2}},
+\]
+
+\end_inset
+
+в пункте 1) было показано, что 
+\begin_inset Formula $\frac{p_{1}-1}{2}\equiv\frac{p_{2}-1}{2}\left(\mod2\right)$
+\end_inset
+
+, а значит 
+\begin_inset Formula $\left(-1\right)^{\frac{p_{1}-1}{2}}=\left(-1\right)^{\frac{p_{2}-1}{2}}$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula 
+\[
+\left(\frac{q}{p_{1}}\right)=\left(\frac{p_{1}}{q}\right)\left(-1\right)^{\frac{p_{1}-1}{2}\cdot\frac{q-1}{2}}=\left(\frac{p_{2}}{q}\right)\left(-1\right)^{\frac{p_{2}-1}{2}\cdot\frac{q-1}{2}}=\left(\frac{q}{p_{2}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Используя эти результаты, получаем: 
+\begin_inset Formula 
+\[
+\left(\frac{D}{p_{1}}\right)=\left(\frac{D}{p_{2}}\right),
+\]
+
+\end_inset
+
+что и завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Standard
+Заметим, что во многих случаях модуль 
+\begin_inset Formula $4\left|D\right|$
+\end_inset
+
+ может быть уменьшен.
+ Например, его можно заменить любым число 
+\begin_inset Formula $4K$
+\end_inset
+
+ с условием, что 
+\begin_inset Formula $\frac{\left|D\right|}{K}$
+\end_inset
+
+ есть квадрат целого числа.
 \end_layout
 
 \begin_layout Standard
