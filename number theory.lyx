@@ -32393,6 +32393,124 @@ status open
  быть оформлен в виде общего алгоритма полиномиальной сложности.
 \end_layout
 
+\begin_layout Section
+Суммы двух и четырёх квадратов
+\end_layout
+
+\begin_layout Standard
+Этот параграф посвящён применению сравнений для исследования диофантовых
+ уравнений специального вида.
+ Сначала мы рассмотрим уравнение вида 
+\begin_inset Formula 
+\begin{equation}
+x^{2}+y^{2}=n,\label{eq:diofantine-sum-of-two-squares}
+\end{equation}
+
+\end_inset
+
+где предполагается, что 
+\begin_inset Formula $n$
+\end_inset
+
+ — заданное целое положительное число.
+ Решения 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ этого уравнения также будут предполагаться целыми числами.
+\end_layout
+
+\begin_layout Standard
+Не при всяком натуральном 
+\begin_inset Formula $n$
+\end_inset
+
+ это уравнение имеет решения.
+ Например, любое решение в целых числах уравнения 
+\begin_inset Formula $x^{2}+y^{2}=7$
+\end_inset
+
+ должно удовлетворять неравенствам 
+\begin_inset Formula $\left|x\right|\le2$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|y\right|\le2$
+\end_inset
+
+.
+ Перебирая последовательно все пары чисел, удовлетворяющие этим неравенствам,
+ можно убедиться, что ни одна из них не есть решение уравнения.
+\end_layout
+
+\begin_layout Standard
+Сначала мы рассмотрим уравнение вида 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ в предположении, что его правая часть есть простое число 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+Если 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число вида 
+\begin_inset Formula $4k+1$
+\end_inset
+
+, то уравнение 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=p
+\]
+
+\end_inset
+
+ разрешимо в целых числах 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 6.5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
