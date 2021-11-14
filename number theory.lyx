@@ -31416,17 +31416,981 @@ noprefix "false"
  есть квадрат целого числа.
 \end_layout
 
+\begin_layout Section
+Символ Якоби и его свойства
+\end_layout
+
 \begin_layout Standard
+Символ Лежандра определён только для пар целых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $p$
+\end_inset
+
+, у которых 
+\begin_inset Formula $p$
+\end_inset
+
+ есть простое нечётное число.
+ Определение можно распространить на большее множество пар целых чисел и
+ построить таким образом функцию, называемую символом Якоби.
+ Одним из важных свойств символа Якоби является возможность вычислить его
+ значения, не используя весьма трудоёмкую процедуру разложения чисел на
+ множители.
+ В частности это даёт быстрый способ вычисления значений символа Лежандра.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $P$
+\end_inset
+
+ — положительное нечётное число и 
+\begin_inset Formula $P=p_{1}\cdot\dots\cdot p_{r}$
+\end_inset
+
+ его разложение в произведение простых чисел, не обязательно различных.
+ Определим для каждого целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\emph on
+символ Якоби 
+\emph default
+
+\begin_inset Formula $\left(\frac{a}{P}\right)$
+\end_inset
+
+ равенством 
+\begin_inset Formula 
+\[
+\left(\frac{a}{P}\right)=\left(\frac{a}{p_{1}}\right)\cdot\dots\cdot\left(\frac{a}{p_{r}}\right),
+\]
+
+\end_inset
+
+ где справа стоит произведение символов Лежандра.
+\end_layout
+
+\begin_layout Standard
+Следует отметить, что символ Якоби не имеет отношения к разрешимости квадратичны
+х сравнений.
+ Например, 
+\begin_inset Formula 
+\[
+\left(\frac{2}{15}\right)=\left(\frac{2}{3}\right)\left(\frac{2}{5}\right)=\left(-1\right)\left(-1\right)=1,
+\]
+
+\end_inset
+
+но сравнение 
+\begin_inset Formula $x^{2}\equiv2\left(\mod15\right)$
+\end_inset
+
+ не имеет решений, ведь 
+\begin_inset Formula $\left(\frac{2}{3}\right)=-1$
+\end_inset
+
+ и, значит, ни при каком целом 
+\begin_inset Formula $x$
+\end_inset
+
+ число 
+\begin_inset Formula $x^{2}-2$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Тем более, оно не делится на 
+\begin_inset Formula $15$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+В дальнейшем буквой 
+\begin_inset Formula $P$
+\end_inset
+
+ будет обозначаться некоторое положительное нечётное число.
+ Основные свойства символа Якоби
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко написано: Лежандра!
+\end_layout
+
+\end_inset
+
+ описывает следующая теорема.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Jacobi-symbol-properties"
+
+\end_inset
+
+1) Если целые числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ взаимно просты с 
+\begin_inset Formula $P$
+\end_inset
+
+ и удовлетворяют сравнению 
+\begin_inset Formula $a\equiv b\left(\mod P\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(\frac{a}{P}\right)=\left(\frac{b}{P}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+2) Для любых целых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, взаимно простых с 
+\begin_inset Formula $P$
+\end_inset
+
+, выполняется равенство 
+\begin_inset Formula $\left(\frac{ab}{P}\right)=\left(\frac{a}{P}\right)\cdot\left(\frac{b}{P}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+3) Справедливы равенства 
+\begin_inset Formula 
+\[
+\left(\frac{1}{P}\right)=1,\left(\frac{-1}{P}\right)=\left(-1\right)^{\frac{P-1}{2}},\left(\frac{2}{P}\right)=\left(-1\right)^{\frac{p^{2}-1}{8}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+4) Для любых двух положительных нечётных взаимно простых чисел 
+\begin_inset Formula $P$
+\end_inset
+
+ и 
+\begin_inset Formula $Q$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula 
+\[
+\left(\frac{Q}{P}\right)\left(\frac{P}{Q}\right)=\left(-1\right)^{\frac{P-1}{2}\cdot\frac{Q-1}{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что для каждого нечётного числа 
+\begin_inset Formula $u$
+\end_inset
+
+ выражение 
+\begin_inset Formula $\frac{u^{2}-1}{8}$
+\end_inset
+
+ есть целое число.
+ Действительно, 
+\begin_inset Formula $u^{2}-1=\left(u-1\right)\left(u+1\right)$
+\end_inset
+
+ есть произведение двух последовательных чётных
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко 
+\begin_inset Quotes rld
+\end_inset
+
+чётных
+\begin_inset Quotes rrd
+\end_inset
+
+ пропущено
+\end_layout
+
+\end_inset
+
+ целых чисел.
+ Одно из них должно делиться на 
+\begin_inset Formula $4$
+\end_inset
+
+, таким образом, их произведение делится на 
+\begin_inset Formula $8$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:Jacobi-symbol-lemma"
+
+\end_inset
+
+Для любых нечётных целых чисел 
+\begin_inset Formula $u_{1},\dots,u_{m}$
+\end_inset
+
+ справедливы сравнения
+\begin_inset Formula 
+\[
+\frac{u_{1}\cdot\dots\cdot u_{m}-1}{2}\equiv\sum_{i=1}^{m}\frac{u_{i}-1}{2}\left(\mod2\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula 
+\[
+\frac{u_{1}^{2}\cdot\dots\cdot u_{m}^{2}-1}{8}\equiv\sum_{i=1}^{m}\frac{u_{i}^{2}-1}{8}\left(\mod8\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Во-первых, заметим, что при 
+\begin_inset Formula $m=1$
+\end_inset
+
+ эти сравнения тривиальны.
+\end_layout
+
+\begin_layout Proof
+Докажем первое сравнение для случая 
+\begin_inset Formula $m=2$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+ — нечётные, то существуют целые числа 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $w_{2}$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $u_{1}=2w_{1}+1$
+\end_inset
+
+ и 
+\begin_inset Formula $u_{2}=2w_{2}+1$
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Закончить раздел 6.3
+Доказать
+\end_layout
+
+\end_inset
+
+, тогда
+\begin_inset Formula 
+\begin{multline*}
+\frac{u_{1}u_{2}-1}{2}=\frac{\left(2w_{1}+1\right)\left(2w_{2}+1\right)-1}{2}=\\
+=\frac{4w_{1}w_{2}+2w_{1}+2w_{2}+1-1}{2}=\\
+=2w_{1}w_{2}+w_{1}+w_{2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С другой стороны, 
+\begin_inset Formula 
+\[
+\frac{u_{1}-1}{2}+\frac{u_{2}-1}{2}=\frac{2w_{1}+1-1}{2}+\frac{2w_{2}+1-1}{2}=w_{1}+w_{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $2w_{1}w_{2}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+, то 
+\begin_inset Formula $2w_{1}w_{2}+w_{1}+w_{2}\equiv w_{1}+w_{2}\left(\mod2\right)$
+\end_inset
+
+ и, следовательно, 
+\begin_inset Formula 
+\[
+\frac{u_{1}u_{2}-1}{2}\equiv\sum_{i=1}^{2}\frac{u_{i}-1}{2}\left(\mod2\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Я доказал, когда в знаменателе 2, а не 8!
+\end_layout
+
+\end_inset
+
+Докажем теперь второе сравнение для 
+\begin_inset Formula $m=2$
+\end_inset
+
+.
+ Для этого рассмотрим разность 
+\begin_inset Formula 
+\begin{multline*}
+\left(u_{1}^{2}u_{2}^{2}-1\right)-\left(u_{1}^{2}-1+u_{2}^{2}-1\right)=u_{1}^{2}u_{2}^{2}-u_{1}^{2}-\left(u_{2}^{2}-1\right)\\
+=u_{1}^{2}\left(u_{2}^{2}-1\right)-\left(u_{2}^{2}-1\right)=\left(u_{1}^{2}-1\right)\left(u_{2}^{2}-1\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как для любого нечётного числа 
+\begin_inset Formula $u$
+\end_inset
+
+ выражение 
+\begin_inset Formula $\frac{u^{2}-1}{8}$
+\end_inset
+
+ есть целое число, то 
+\begin_inset Formula $u^{2}-1\equiv0\left(\mod8\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula 
+\[
+\left(u_{1}^{2}u_{2}^{2}-1\right)-\left(u_{1}^{2}-1+u_{2}^{2}-1\right)=\left(u_{1}^{2}-1\right)\left(u_{2}^{2}-1\right)\equiv0\left(\mod64\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Воспользуемся свойством 6
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ сравнений и разделим обе части сравнения и модуль на 
+\begin_inset Formula $8$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\frac{u_{1}^{2}u_{2}^{2}-1}{8}-\left(\frac{u_{1}^{2}-1}{8}+\frac{u_{2}^{2}-1}{8}\right)\equiv0\left(\mod8\right),
+\]
+
+\end_inset
+
+ что эквивалентно второму утверждению леммы для 
+\begin_inset Formula $m=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Для произвольного 
+\begin_inset Formula $m$
+\end_inset
+
+ сравнения теперь можно доказать по индукции.
+ Так как произведение нечётных чисел есть нечётное число
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+, то случай с 
+\begin_inset Formula $m$
+\end_inset
+
+ числами можно свести к случаям с 
+\begin_inset Formula $m-1$
+\end_inset
+
+ числами и двумя числами
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробно?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+(Теоремы о свойствах символа Якоби)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку?
+\end_layout
+
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $P=p_{1}\cdot\dots\cdot p_{r}$
+\end_inset
+
+ — разложение в произведение простых чисел, которое всегда существует по
+ основной теореме арифметики
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Разобраться, зачем нужна взаимная простота c 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ В формулировках википедии это не требуется.
+ А в доказательстве Нестеренко не используется.
+ Возможно, равенства становятся тривиальными
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+По определению символа Якоби 
+\begin_inset Formula $\left(\frac{a}{P}\right)=\left(\frac{a}{p_{1}}\right)\cdot\dots\cdot\left(\frac{a}{p_{r}}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\frac{b}{P}\right)=\left(\frac{b}{p_{1}}\right)\cdot\dots\cdot\left(\frac{b}{p_{r}}\right)$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $a\equiv b\left(\mod P\right)$
+\end_inset
+
+, то аналогичное сравнение справедливо для любого делителя 
+\begin_inset Formula $P$
+\end_inset
+
+, в частности, для простых чисел 
+\begin_inset Formula $p_{1},\dots,p_{r}$
+\end_inset
+
+, поэтому для любого 
+\begin_inset Formula $k$
+\end_inset
+
+ из промежутка 
+\begin_inset Formula $1\le k\le r$
+\end_inset
+
+ справедливы сравнения 
+\begin_inset Formula $a\equiv b\quad\left(\mod p_{k}\right)$
+\end_inset
+
+.
+ Откуда, по второму пункту теоремы о свойствах символа Лежандра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Legendre-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+\left(\frac{a}{p_{k}}\right)=\left(\frac{b}{p_{k}}\right),\quad1\le k\le r.
+\]
+
+\end_inset
+
+Перемножая эти равенства, получим свойство 1 символа Якоби.
+\end_layout
+
+\begin_layout Proof
+Для доказательства свойства 2) заметим, что по определению символа Якоби
+ и пункту 3 теоремы о свойствах символа Лежандра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Legendre-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+\left(\frac{ab}{P}\right)=\prod_{k=1}^{r}\left(\frac{ab}{p_{k}}\right)=\prod_{k=1}^{r}\left\{ \left(\frac{a}{p_{k}}\right)\left(\frac{b}{p_{k}}\right)\right\} =\\
+=\left\{ \prod_{k=1}^{r}\left(\frac{a}{p_{k}}\right)\right\} \cdot\left\{ \prod_{k=1}^{r}\left(\frac{b}{p_{k}}\right)\right\} =\left(\frac{a}{P}\right)\left(\frac{b}{P}\right),
+\end{multline*}
+
+\end_inset
+
+что и означает справедливость второго свойства, сформулированного в теореме.
+\end_layout
+
+\begin_layout Proof
+По определению символа Якоби 
+\begin_inset Formula 
+\[
+\left(\frac{1}{P}\right)=\prod_{k=1}^{r}\left(\frac{1}{p_{k}}\right),
+\]
+
+\end_inset
+
+а по пункту 4) теоремы о свойствах символа Лежандра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Legendre-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для любого нечётного простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $\left(\frac{1}{p}\right)=1$
+\end_inset
+
+, произведение единиц есть единица, поэтому 
+\begin_inset Formula $\left(\frac{1}{P}\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Аналогично, по определению символа Якоби и пункту 4) теоремы о свойствах
+ символа Лежандра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Legendre-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, имеем
+\begin_inset Formula 
+\[
+\left(\frac{-1}{P}\right)=\prod_{k=1}^{r}\left(\frac{-1}{p_{k}}\right)=\prod_{k=1}^{r}\left(-1\right)^{\frac{p_{k}-1}{2}}=\left(-1\right)^{\sum_{k=1}^{r}\frac{p_{k}-1}{2}}.
+\]
+
+\end_inset
+
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Jacobi-symbol-lemma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, так как 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ — нечётные числа, получаем
+\begin_inset Formula 
+\[
+\sum_{k=1}^{r}\frac{p_{k}-1}{2}\equiv\frac{\prod_{k=1}^{r}p_{k}-1}{2}\left(\mod2\right),
+\]
+
+\end_inset
+
+а произведение в правой части этого сравнения равно, по условию, 
+\begin_inset Formula $P$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left(\frac{-1}{P}\right)=\left(-1\right)^{\frac{P-1}{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Наконец, определим значение 
+\begin_inset Formula 
+\[
+\left(\frac{2}{P}\right)=\prod_{k=1}^{r}\left(\frac{2}{p_{k}}\right).
+\]
+
+\end_inset
+
+ По следствию из леммы Гаусса 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:Gauss-lemma-consequence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, для любого нечётного простого числа 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula 
+\[
+\left(\frac{2}{p_{k}}\right)=\left(-1\right)^{\frac{p_{k}^{2}-1}{8}},
+\]
+
+\end_inset
+
+перемножая эти равенства, получим 
+\begin_inset Formula 
+\[
+\left(\frac{2}{P}\right)=\prod_{k=1}^{r}\left(-1\right)^{\frac{p_{k}^{2}-1}{8}}=\left(-1\right)^{\sum_{k=1}^{r}\frac{p_{k}^{2}-1}{8}}.
+\]
+
+\end_inset
+
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Jacobi-symbol-lemma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, так как 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ — нечётные числа, получаем 
+\begin_inset Formula 
+\[
+\sum_{k=1}^{r}\frac{p_{k}^{2}-1}{8}\equiv\frac{\prod_{k=1}^{r}p_{k}^{2}-1}{8}\left(\mod8\right),
+\]
+
+\end_inset
+
+а так как 
+\begin_inset Formula 
+\[
+\prod_{k=1}^{r}p_{k}^{2}=\left(\prod_{k=1}^{r}p_{k}\right)^{2}=P^{2},
+\]
+
+\end_inset
+
+то 
+\begin_inset Formula 
+\[
+\sum_{k=1}^{r}\frac{p_{k}^{2}-1}{8}\equiv\frac{P^{2}-1}{8}\quad\left(\mod8\right),
+\]
+
+\end_inset
+
+поэтому, так как 
+\begin_inset Formula $-1$
+\end_inset
+
+ в чётной степени равно 
+\begin_inset Formula $1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(\frac{2}{P}\right)=\left(-1\right)^{\frac{P^{2}-1}{8}},
+\]
+
+\end_inset
+
+что завершает доказательство свойства 3.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $Q=\prod_{j=1}^{m}q_{j}$
+\end_inset
+
+ — разложение 
+\begin_inset Formula $Q$
+\end_inset
+
+ на простые числа, которое всегда существует по основной теореме арифметики
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ По доказанному выше имеет место равенство
+\begin_inset Formula 
+\[
+\left(\frac{Q}{P}\right)=\prod_{k=1}^{r}\left(\frac{Q}{p_{k}}\right)=\prod_{k=1}^{r}\prod_{j=1}^{m}\left(\frac{q_{j}}{p_{k}}\right)
+\]
+
+\end_inset
+
+и, аналогично, 
+\begin_inset Formula 
+\[
+\left(\frac{P}{Q}\right)=\prod_{k=1}^{r}\left(\frac{p_{k}}{Q}\right)=\prod_{k=1}^{r}\prod_{j=1}^{m}\left(\frac{p_{k}}{q_{j}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Перемножая эти равенства, получим 
+\begin_inset Formula 
+\[
+\left(\frac{Q}{P}\right)\left(\frac{P}{Q}\right)=\prod_{k=1}^{r}\prod_{j=1}^{m}\left\{ \left(\frac{q_{j}}{p_{k}}\right)\left(\frac{p_{k}}{q_{j}}\right)\right\} .
+\]
+
+\end_inset
+
+ Воспользуемся квадратичным законом взаимности (теорема 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Quadratic reciprocity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), 
+\begin_inset Formula 
+\[
+\left(\frac{Q}{P}\right)\left(\frac{P}{Q}\right)=\prod_{k=1}^{r}\prod_{j=1}^{m}\left(-1\right)^{\frac{p_{k}-1}{2}\cdot\frac{q_{j}-1}{2}}=\left(-1\right)^{R},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula 
+\[
+R=\sum_{k=1}^{r}\sum_{j=1}^{m}\frac{p_{k}-1}{2}\cdot\frac{q_{j}-1}{2}.
+\]
+
+\end_inset
+
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Jacobi-symbol-lemma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+R=\sum_{k=1}^{r}\frac{p_{k}-1}{2}\cdot\sum_{j=1}^{m}\frac{q_{j}-1}{2}\equiv\frac{\prod_{k=1}^{r}p_{k}-1}{2}\cdot\frac{\prod_{j=1}^{m}q_{j}-1}{2}\quad\left(\mod2\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Произведения в правой части сравнения, по определению, равны 
+\begin_inset Formula $P$
+\end_inset
+
+ и 
+\begin_inset Formula $Q$
+\end_inset
+
+ соответственно.
+ Поэтому окончательно получаем 
+\begin_inset Formula 
+\[
+\left(\frac{Q}{P}\right)\left(\frac{P}{Q}\right)=\left(-1\right)^{\frac{P-1}{2}\cdot\frac{Q-1}{2}},
+\]
+
+\end_inset
+
+что и завершает доказательство четвёртого утверждения теоремы.
+\end_layout
+
+\begin_layout Standard
+Вычислим с помощью теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Jacobi-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ символ Якоби 
+\begin_inset Formula $\left(\frac{53}{233}\right)$
+\end_inset
+
+, совпадающий, поскольку 
+\begin_inset Formula $233$
+\end_inset
+
+ — простое число, с соответствующим символом Лежандра.
+ Имеем, пользуясь утверждениями 1), 3) и 4) теоремы: 
+\begin_inset Formula 
+\begin{multline*}
+\left(\frac{53}{233}\right)=\left(\frac{233}{53}\right)=\left(\frac{21}{53}\right)=\left(\frac{53}{21}\right)=\left(\frac{11}{21}\right)=\\
+=\left(\frac{21}{11}\right)=\left(\frac{-1}{11}\right)=-1,
+\end{multline*}
+
+\end_inset
+
+ что, конечно, совпадает с результатом предыдущих вычислений 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Способ вычисления символа Якоби, применённый в рассмотренном примере, может
+ быть оформлен в виде общего алгоритма полиномиальной сложности.
 \end_layout
 
 \begin_layout Standard
