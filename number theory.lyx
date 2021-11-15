@@ -31413,7 +31413,17 @@ noprefix "false"
 \begin_inset Formula $\frac{\left|D\right|}{K}$
 \end_inset
 
- есть квадрат целого числа.
+ есть квадрат целого числа
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать?
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -32486,11 +32496,454 @@ x^{2}+y^{2}=p
 \end_layout
 
 \begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Нельзя ли использовать теорему о том, при каких 
+\begin_inset Formula $p$
+\end_inset
+
+ разрешимо квадратичное сравнение?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не додумался сам
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $p=4k+1$
+\end_inset
+
+ простое число, то по теореме о свойствах символа Лежандра:
+\begin_inset Formula 
+\[
+\left(\frac{-1}{p}\right)=\left(-1\right)^{\frac{p-1}{2}}=\left(-1\right)^{2k}=1,
+\]
+
+\end_inset
+
+то есть существует такое целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, что 
+\begin_inset Formula $a^{2}\equiv-1\quad\left(\mod p\right)$
+\end_inset
+
+.
+ Тогда имеет место сравнение 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}\equiv x^{2}-a^{2}y^{2}=\left(x-ay\right)\left(x+ay\right)\quad\left(\mod p\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим всевозможные пары целых чисел 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ удовлетворяющие условиям 
+\begin_inset Formula 
+\begin{equation}
+0\le x\le\left\lfloor \sqrt{p}\right\rfloor ,\quad0\le y\le\left\lfloor \sqrt{p}\right\rfloor ,\label{eq:prime-4k+1-is-sum-of-two-squares-bounds}
+\end{equation}
+
+\end_inset
+
+ и для каждой такой пары найдём класс вычетов выражения 
+\begin_inset Formula $\left(x+ay\right)$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Количество получившихся при этом классов вычетов не превосходит 
+\begin_inset Formula $p$
+\end_inset
+
+, в то время как количество пар равно 
+\begin_inset Formula 
+\[
+\left(1+\left\lfloor \sqrt{p}\right\rfloor \right)\cdot\left(1+\left\lfloor \sqrt{p}\right\rfloor \right)>\sqrt{p}\cdot\sqrt{p}=p.
+\]
+
+\end_inset
+
+Это значит, что найдутся по крайней мере две пары 
+\begin_inset Formula $\left(x_{1},y_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(x_{2},y_{2}\right)$
+\end_inset
+
+, удовлетворяющие условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-4k+1-is-sum-of-two-squares-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, для которых классы вычетов 
+\begin_inset Formula $\left(x_{i}+ay_{i}\right)\quad\left(\mod p\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+ совпадают.
+ Таким образом, 
+\begin_inset Formula 
+\[
+x_{1}+ay_{1}\equiv x_{2}+ay_{2}\quad\left(\mod p\right)
+\]
+
+\end_inset
+
+или 
+\begin_inset Formula 
+\[
+\left(x_{1}-x_{2}\right)+a\left(y_{1}-y_{2}\right)\equiv0\quad\left(\mod p\right).
+\]
+
+\end_inset
+
+ Обозначив для краткости 
+\begin_inset Formula $x_{0}=x_{1}-x_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}=y_{1}-y_{2}$
+\end_inset
+
+, получим
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+x_{0}+ay_{0}\equiv0\quad\left(\mod p\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+и
+\begin_inset Formula 
+\[
+x_{0}^{2}+y_{0}^{2}\equiv\left(x_{0}+ay_{0}\right)\left(x_{0}-ay_{0}\right)\equiv0\left(\mod p\right),
+\]
+
+\end_inset
+
+ то есть число 
+\begin_inset Formula $x_{0}^{2}+y_{0}^{2}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Условия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-4k+1-is-sum-of-two-squares-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ означают, что числа 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ не очень велики, а именно: 
+\begin_inset Formula 
+\[
+\left|x_{0}\right|=\left|x_{1}-x_{2}\right|\le\left\lfloor \sqrt{p}\right\rfloor <\sqrt{p},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|y_{0}\right|=\left|y_{1}-y_{2}\right|\le\left\lfloor \sqrt{p}\right\rfloor <\sqrt{p}.
+\]
+
+\end_inset
+
+ Но тогда 
+\begin_inset Formula $x_{0}^{2}+y_{0}^{2}<p+p=2p$
+\end_inset
+
+.
+ Учитывая, что пары чисел 
+\begin_inset Formula $\left(x_{1},y_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(x_{2},y_{2}\right)$
+\end_inset
+
+ различны, находим, что 
+\begin_inset Formula $x_{0}^{2}+y_{0}^{2}>0$
+\end_inset
+
+.
+ Интервал 
+\begin_inset Formula $\left(0,2p\right)$
+\end_inset
+
+ содержит лишь одно число, делящееся на 
+\begin_inset Formula $p$
+\end_inset
+
+, а именно само 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Следовательно 
+\begin_inset Formula $x_{0}^{2}+y_{0}^{2}=p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+Если два уравнения 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=u,\quad x^{2}+y^{2}=v,\quad u,v\in\mathbb{Z},
+\]
+
+\end_inset
+
+ разрешимы в целых числах, то и уравнение 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=uv
+\]
+
+\end_inset
+
+ имеет целые решения.
+\end_layout
+
+\begin_layout Proof
+Пусть пары целых чисел 
+\begin_inset Formula $\left(x_{1},y_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(x_{2},y_{2}\right)$
+\end_inset
+
+ — решения первого и второго уравнений соответственно, то есть имеют место
+ равенство 
+\begin_inset Formula 
+\[
+x_{1}^{2}+y_{1}^{2}=u,\quad x_{2}^{2}+y_{2}^{2}=v.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Перемножим эти уравнения: 
+\begin_inset Formula 
+\[
+\left(x_{1}^{2}+y_{1}^{2}\right)\left(x_{2}^{2}+y_{2}^{2}\right)=uv.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Для доказательства теоремы левую часть этого равенства нужно представить
+ в виде суммы двух квадратов.
+ Раскрыв скобки в последнем равенстве, получим: 
+\begin_inset Formula 
+\[
+x_{1}^{2}x_{2}^{2}+x_{1}^{2}y_{2}^{2}+y_{1}^{2}x_{2}^{2}+y_{1}^{2}y_{2}^{2}=uv.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим выражение 
+\begin_inset Formula 
+\begin{multline}
+\left(x_{1}x_{2}+y_{1}y_{2}\right)^{2}+\left(x_{1}y_{2}-y_{1}x_{2}\right)^{2}=\\
+=x_{1}^{2}x_{2}^{2}+2x_{1}x_{2}y_{1}y_{2}+y_{1}^{2}y_{2}^{2}+x_{1}^{2}y_{2}^{2}-2x_{1}x_{2}y_{1}y_{2}+y_{1}^{2}x_{2}^{2}=\\
+=x_{1}^{2}x_{2}^{2}+y_{1}^{2}y_{2}^{2}+x_{1}^{2}y_{2}^{2}+y_{1}^{2}x_{2}^{2},\label{eq:product-of-two-sum-of-two-squares}
+\end{multline}
+
+\end_inset
+
+ что отличается от выражения для 
+\begin_inset Formula $uv$
+\end_inset
+
+ только порядком слагаемых.
+ Таким образом, пара целых чисел
+\begin_inset Formula 
+\[
+\left(x_{1}x_{2}+y_{1}y_{2},x_{1}y_{2}-y_{1}x_{2}\right)
+\]
+
+\end_inset
+
+ является решением уравнения 
+\begin_inset Formula $x^{2}+y^{2}=uv$
+\end_inset
+
+.
+ Лемма доказана.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим комплексные числа 
+\begin_inset Formula 
+\[
+\alpha=x_{1}+iy_{1},\quad\beta=x_{2}+iy_{2}
+\]
+
+\end_inset
+
+ и их произведение 
+\begin_inset Formula 
+\[
+\gamma=\alpha\cdot\beta=\left(x_{1}x_{2}-y_{1}y_{2}\right)+i\left(x_{1}y_{2}+y_{1}x_{2}\right).
+\]
+
+\end_inset
+
+ Равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:product-of-two-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ может быть переписано в виде 
+\begin_inset Formula $\left|\gamma\right|^{2}=\left|\alpha\right|^{2}\left|\beta\right|^{2}$
+\end_inset
+
+.
+ Таким образом, оно, по существу, равносильно равенству 
+\begin_inset Formula $\left|\alpha\beta\right|=\left|\alpha\right|\cdot\left|\beta\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрешимо в целых числах тогда и только тогда, когда разложение 
+\begin_inset Formula $n$
+\end_inset
+
+ на простые сомножители содержит каждое простое число вида 
+\begin_inset Formula $4k+3$
+\end_inset
+
+ в чётной степени.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $n=\prod_{k=1}^{r}p_{k}^{\alpha_{k}}$
+\end_inset
+
+ — разложение числа 
+\begin_inset Formula $n$
+\end_inset
+
+ на простые множители (которые всегда существует по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать доказательство
+Доказать достаточность
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать необходимость
 \end_layout
 
 \end_inset
