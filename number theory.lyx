@@ -32472,6 +32472,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:prime-4k+1-is-sum-of-two-squares"
+
+\end_inset
+
 Если 
 \begin_inset Formula $p$
 \end_inset
@@ -32744,6 +32750,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:product-of-two-sums-of-two-squares"
+
+\end_inset
+
 Если два уравнения 
 \begin_inset Formula 
 \[
@@ -32905,33 +32917,264 @@ noprefix "false"
 
 \begin_layout Proof
 Пусть 
-\begin_inset Formula $n=\prod_{k=1}^{r}p_{k}^{\alpha_{k}}$
+\begin_inset Formula $q_{j}$
 \end_inset
 
- — разложение числа 
+ при 
+\begin_inset Formula $j=1,\dots,m$
+\end_inset
+
+ — простые числа, входящие в разложение 
 \begin_inset Formula $n$
 \end_inset
 
- на простые множители (которые всегда существует по теореме 
+ на простые сомножители в нечётных степенях (все они различны), тогда можно
+ написать 
+\begin_inset Formula 
+\[
+n=\prod_{j=1}^{m}q_{j}\cdot S^{2},
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $n$
+\end_inset
+
+ представляется в виде произведения квадрата целого числа и различных простых
+ чисел.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Упустил, что 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ может быть равно 2!
+\end_layout
+
+\end_inset
+
+В условиях теоремы все 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $4k+1$
+\end_inset
+
+ или 
+\begin_inset Formula $q_{j}=2$
+\end_inset
+
+.
+ Уравнение 
+\begin_inset Formula $x^{2}+y^{2}=2$
+\end_inset
+
+ разрешимо в целых числах, достаточно взять 
+\begin_inset Formula $x=1$
+\end_inset
+
+ и 
+\begin_inset Formula $y=1$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $4k+1$
+\end_inset
+
+, то по лемме 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "thm:fundamental-arithmetic-theorem"
+reference "lem:prime-4k+1-is-sum-of-two-squares"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-).
+ уравнение 
+\begin_inset Formula $x^{2}+y^{2}=q_{j}$
+\end_inset
+
+ разрешимо в целых числах, то есть существует пара целых чисел 
+\begin_inset Formula $\left(x_{j},y_{j}\right)$
+\end_inset
+
+ для 
+\begin_inset Formula $j=1,\dots,m$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $x_{j}^{2}+y_{j}^{2}=q_{j}$
+\end_inset
+
+.
+ Уравнение 
+\begin_inset Formula $x^{2}+y^{2}=S^{2}$
+\end_inset
+
+ так же разрешимо в целых числах: достаточно взять 
+\begin_inset Formula $x=S$
+\end_inset
+
+, 
+\begin_inset Formula $y=0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $n$
+\end_inset
+
+ представляется в виде сомножителей, каждый из которых представим в виде
+ суммы двух квадратов, то по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:product-of-two-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для числа 
+\begin_inset Formula $n$
+\end_inset
+
+ уравнение 
+\begin_inset Formula $x^{2}+y^{2}=n$
+\end_inset
+
+ разрешимо в целых числах.
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
+Пусть теперь среди чисел 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ имеется хотя бы одно число вида 
+\begin_inset Formula $4k+3$
+\end_inset
+
+.
+ Пусть, для определённости, это 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+.
+ Рассмотрим суммы двух квадратов по модулю 
+\begin_inset Formula $4$
+\end_inset
+
+.
+ Во-первых, так как 
+\begin_inset Formula $0^{2}=0$
+\end_inset
+
+, 
+\begin_inset Formula $1^{2}=1$
+\end_inset
+
+, 
+\begin_inset Formula $2^{2}=4\equiv0\qquad\left(\mod4\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $3^{2}=9\equiv1\qquad\left(\mod4\right)$
+\end_inset
+
+, то квадрат целого числа может дать по модулю 
+\begin_inset Formula $4$
+\end_inset
+
+ только остатки 
+\begin_inset Formula $0$
+\end_inset
+
+ или 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Следовательно, сумма двух квадратов целых чисел может дать по модулю 
+\begin_inset Formula $4$
+\end_inset
+
+ остатки 
+\begin_inset Formula $0$
+\end_inset
+
+, 
+\begin_inset Formula $1$
+\end_inset
+
+ или 
+\begin_inset Formula $2$
+\end_inset
+
+, но не 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Это означает, что уравнение 
+\begin_inset Formula $x^{2}+y^{2}=q_{1}$
+\end_inset
+
+ не имеет решений в целых числах.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Доказать достаточность
+Не смог сам полностью доказать необходимость
 \end_layout
+
+\end_inset
+
+Предположим теперь, что существуют натуральные числа, представимые в виде
+ двух квадратов целых чисел, но имеющие в своём разложении на простые сомножител
+и хотя бы одно простое число вида 
+\begin_inset Formula $4k+3$
+\end_inset
+
+ в нечётной степени.
+ Пусть 
+\begin_inset Formula $n=x_{0}^{2}+y_{0}^{2}$
+\end_inset
+
+ — наименьшее из таких чисел и для 
+\begin_inset Formula $p=4k+3$
+\end_inset
+
+ кратность 
+\begin_inset Formula $v_{p}\left(n\right)$
+\end_inset
+
+ нечётна.
+ Справедливы сравнения 
+\begin_inset Formula $x_{0}^{2}+y_{0}^{2}\equiv0\qquad\left(\mod p\right)$
+\end_inset
+
+ или 
+\begin_inset Formula 
+\begin{equation}
+x_{0}^{2}\equiv-y_{0}^{2}\qquad\left(\mod p\right).\label{eq:sum-of-squares-diofantine-criterion-congruence}
+\end{equation}
 
 \end_inset
 
@@ -32939,16 +33182,174 @@ status open
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
+Предположим, что 
+\begin_inset Formula $p\mid x_{0}$
+\end_inset
 
-\begin_layout Plain Layout
-Доказать необходимость
+, тогда, в силу последнего сравнения, 
+\begin_inset Formula $p\mid-y_{0}^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $p\mid y_{0}$
+\end_inset
+
+, то есть существуют целые числа 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $x_{0}=pu$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}=pv$
+\end_inset
+
+, тогда 
+\begin_inset Formula $n=p^{2}\left(u^{2}+v^{2}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $m=u^{2}+v^{2}<n$
+\end_inset
+
+, то, согласно условию минимальности 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ входит в разложение этого числа на простые множители в чётной степени,
+ но тогда 
+\begin_inset Formula $v_{p}\left(n\right)=v_{p}\left(m\right)+2$
+\end_inset
+
+ также чётна.
+ Полученное противоречие означает, что 
+\begin_inset Formula $p\nmid x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $p\nmid y_{0}$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Proof
+Возведя обе части сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-squares-diofantine-criterion-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ в степень 
+\begin_inset Formula $\frac{p-1}{2}=\frac{4k+3-1}{2}=2k+1$
+\end_inset
+
+ (то есть в нечётную степень), находим 
+\begin_inset Formula 
+\[
+x_{0}^{p-1}\equiv-y_{0}^{p-1}\qquad\left(\mod p\right).
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+По малой теореме ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Fermat-lesser-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $x_{0}^{p-1}\equiv y_{0}^{p-1}\equiv1\qquad\left(\mod p\right)$
+\end_inset
+
+, вместе с предыдущим сравнением получаем 
+\begin_inset Formula $1\equiv-1\left(\mod p\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $2\equiv0\left(\mod p\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $p\mid2$
+\end_inset
+
+, но это невозможно по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, так как 
+\begin_inset Formula $p=4k+3\ge3>2$
+\end_inset
+
+.
+ Полученное противоречие завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Standard
+Докажем также теорему о представимости натуральных чисел в виде суммы четырёх
+ квадратов.
+ Первое доказательство этой теоремы было опубликовано в 1770 году Лагранжем.
+\end_layout
+
+\begin_layout Theorem
+Каждое целое положительное число представимо в виде суммы четырёх квадратов
+ целых чисел.
+\end_layout
+
+\begin_layout Standard
+Иными словами, для каждого натурального 
+\begin_inset Formula $n$
+\end_inset
+
+ уравнение 
+\begin_inset Formula $x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{4}=n$
+\end_inset
+
+ разрешимо в целых числах.
+ Сначала докажем вспомогательное утверждение.
+\end_layout
+
+\begin_layout Lemma
+Если натуральные числа 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ представимы в виде суммы четырёх квадратов, то их произведение также можно
+ представить в виде суммы четырёх квадратов.
 \end_layout
 
 \begin_layout Standard
