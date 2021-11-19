@@ -33352,6 +33352,499 @@ noprefix "false"
  представить в виде суммы четырёх квадратов.
 \end_layout
 
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Идею доказательства подсмотрел
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Получается, нужно сначала рассмотреть комплексные числа и определители,
+ хотя бы 
+\begin_inset Formula $2\times2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Идея состоит в том, чтобы составить комплексную матрицу 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ так, чтобы её определитель был равен 
+\begin_inset Formula $x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}$
+\end_inset
+
+.
+ Заметим, что 
+\begin_inset Formula $\left|x_{1}+ix_{2}\right|^{2}=x_{1}^{2}+x_{2}^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|x_{3}+ix_{4}\right|^{2}=x_{3}^{2}+x_{4}^{2}$
+\end_inset
+
+, кроме того: 
+\begin_inset Formula 
+\[
+\left|\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right|=ad-bc,
+\]
+
+\end_inset
+
+ поэтому нужно взять 
+\begin_inset Formula 
+\[
+U=\left(\begin{array}{cc}
+x_{1}+ix_{2} & x_{3}+ix_{4}\\
+-\left(x_{3}-ix_{4}\right) & x_{1}-ix_{2}
+\end{array}\right)=\left(\begin{array}{cc}
+z_{1} & z_{2}\\
+-\bar{z}_{2} & \bar{z}_{1}
+\end{array}\right),
+\]
+
+\end_inset
+
+тогда если 
+\begin_inset Formula $u=x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\det U=u$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Аналогично, если 
+\begin_inset Formula $v=y_{1}^{2}+y_{2}^{2}+y_{3}^{2}+y_{4}^{2}$
+\end_inset
+
+, то взяв матрицу 
+\begin_inset Formula 
+\[
+V=\left(\begin{array}{cc}
+y_{1}+iy_{2} & y_{3}+iy_{4}\\
+-\left(y_{3}-iy_{4}\right) & y_{1}-iy_{2}
+\end{array}\right)=\left(\begin{array}{cc}
+w_{1} & w_{2}\\
+-\bar{w}_{2} & \bar{w}_{1}
+\end{array}\right),
+\]
+
+\end_inset
+
+ получим 
+\begin_inset Formula $\det V=v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По правилу умножения определителей, 
+\begin_inset Formula $\det\left(UV\right)=\det U\cdot\det V=uv$
+\end_inset
+
+.
+ С другой, стороны, по правилу умножения матриц: 
+\begin_inset Formula 
+\[
+UV=\left(\begin{array}{cc}
+z_{1} & z_{2}\\
+-\bar{z}_{2} & \bar{z}_{1}
+\end{array}\right)\left(\begin{array}{cc}
+w_{1} & w_{2}\\
+-\bar{w}_{2} & \bar{w}_{1}
+\end{array}\right)=\left(\begin{array}{cc}
+z_{1}w_{1}-z_{2}\bar{w}_{2} & z_{1}w_{2}+z_{2}\bar{w}_{1}\\
+-\bar{z}_{2}w_{1}-\bar{z}_{1}\bar{w}_{2} & -\bar{z}_{2}w_{2}+\bar{z}_{1}\bar{w_{1}}
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $-\bar{z}_{2}w_{2}+\bar{z}_{1}\bar{w_{1}}=\overline{z_{1}w_{1}-z_{2}\bar{w}_{2}}$
+\end_inset
+
+ и 
+\begin_inset Formula $-\bar{z}_{2}w_{1}-\bar{z}_{1}\bar{w}_{2}=-\overline{\left(z_{1}w_{2}+z_{2}\bar{w}_{1}\right)}$
+\end_inset
+
+, то матрица 
+\begin_inset Formula $UV$
+\end_inset
+
+ имеет тот же вид, что и матрицы 
+\begin_inset Formula $U$
+\end_inset
+
+ и 
+\begin_inset Formula $V$
+\end_inset
+
+, поэтому её определитель равен сумме четырёх квадратов, что и требовалось
+ доказать.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Можно было бы ещё расписать, какие конкретно числа получаются, но я не вижу
+ смысла
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Данная лемма означает, что для доказательства теоремы 6.6
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ достаточно установить представимость простых чисел в виде суммы четырёх
+ квадратов.
+ Поскольку 
+\begin_inset Formula $2=1^{2}+1^{2}+0^{2}+0^{2}$
+\end_inset
+
+, далее будем считать, что 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое нечётное число.
+\end_layout
+
+\begin_layout Standard
+Докажем вспомогательную лемму о сравнениях.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:-1-as-sum-of-two-squares"
+
+\end_inset
+
+Для каждого простого нечётного числа 
+\begin_inset Formula $p$
+\end_inset
+
+ существуют целые числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, удовлетворяющие сравнению 
+\begin_inset Formula 
+\[
+1+a^{2}+b^{2}\equiv0\qquad\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Списал
+\end_layout
+
+\end_inset
+
+Рассмотрим множества чисел 
+\begin_inset Formula $A=\left\{ k^{2},0\le k\le\frac{p-1}{2}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $B=\left\{ -1-k^{2},0\le k\le\frac{p-1}{2}\right\} $
+\end_inset
+
+.
+ В каждом из них 
+\begin_inset Formula $\frac{p+1}{2}$
+\end_inset
+
+ чисел
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Не может быть, что несколько квадратов совпало
+\end_layout
+
+\end_inset
+
+.
+ Поскольку 
+\begin_inset Formula $\frac{p+1}{2}+\frac{p+1}{2}=p+1>p$
+\end_inset
+
+, заключаем, что объединение этих множеств 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ должно содержать два числа, принадлежащих одному классу вычетов по модулю
+ 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Но числа множества 
+\begin_inset Formula $A$
+\end_inset
+
+, очевидно
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+было бы неплохо доказать, или мы уже доказывали?
+\end_layout
+
+\end_inset
+
+, не сравнимы между собой.
+ Точно так же не сравнимы и числа второго множества.
+ Поэтому найдутся целые числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $a^{2}\in A$
+\end_inset
+
+ и 
+\begin_inset Formula $-1-b^{2}\in B$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{2}\equiv-1-b^{2}$
+\end_inset
+
+
+\begin_inset Formula $\left(\mod p\right)$
+\end_inset
+
+.
+ Это завершает доказательство леммы.
+\end_layout
+
+\begin_layout Standard
+Доказательство следующей леммы напоминает доказательство леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:prime-4k+1-is-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+Каждое простое число есть сумма четырёх квадратов.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+Для 
+\begin_inset Formula $p=2$
+\end_inset
+
+ мы уже указали пример представления в виде суммы четырёх квадратов, поэтому
+ далее считаем 
+\begin_inset Formula $p\ge3$
+\end_inset
+
+.
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:-1-as-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ существуют такие целые числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, что 
+\begin_inset Formula $1+a^{2}+b^{2}\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ Рассмотрим всевозможные наборы целых чисел 
+\begin_inset Formula $\left(x_{1},x_{2},x_{3},x_{4}\right)$
+\end_inset
+
+ таких, что 
+\begin_inset Formula 
+\begin{equation}
+0\le x_{i}\le\left\lfloor \sqrt{p}\right\rfloor ,i=1,2,3,4,\label{eq:prime-is-a-sum-of-4-squares-bounds}
+\end{equation}
+
+\end_inset
+
+ и для каждого набора найдём пары классов вычетов 
+\begin_inset Formula 
+\begin{equation}
+\left(x_{3}+ax_{1}+bx_{2}\left(\mod p\right),x_{4}-bx_{1}+ax_{2}\left(\mod p\right)\right).\label{eq:prime-is-a-sum-of-4-squares-classes}
+\end{equation}
+
+\end_inset
+
+ Количество получившихся при этом пар вычетов не превосходит 
+\begin_inset Formula $p^{2}$
+\end_inset
+
+, в то время как количество наборов 
+\begin_inset Formula $\left(x_{1},x_{2},x_{3},x_{4}\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula 
+\[
+\left(1+\left\lfloor \sqrt{p}\right\rfloor \right)^{4}>\left(\sqrt{p}\right)^{4}=p^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Значит найдутся два набора 
+\begin_inset Formula $\left(x_{1},x_{2},x_{3},x_{4}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(y_{1},y_{2},y_{3},y_{4}\right)$
+\end_inset
+
+, удовлетворяющие условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-is-a-sum-of-4-squares-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, для которых классы вычетов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-is-a-sum-of-4-squares-classes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ совпадают, то есть 
+\begin_inset Formula 
+\[
+x_{3}+ax_{1}+bx_{2}\equiv y_{3}+ay_{1}+by_{2}\left(\mod p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{4}-bx_{1}+ax_{2}\equiv y_{4}-by_{1}+ay_{2}\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Положим 
+\begin_inset Formula $k_{i}=x_{i}-y_{i}$
+\end_inset
+
+, тогда выполняются условия 
+\begin_inset Formula 
+\[
+k_{3}\equiv-ak_{1}-bk_{2}\quad\left(\mod p\right),k_{4}\equiv bk_{1}-ak_{2}\left(\mod p\right),\left|k_{i}\right|<\sqrt{p}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Отсюда находим сравнение 
+\begin_inset Formula 
+\begin{multline*}
+k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{4}\equiv k_{1}^{2}+k_{2}^{2}+\left(ak_{1}+bk_{2}\right)^{2}+\left(bk_{1}-ak_{2}\right)^{2}\equiv\\
+\equiv\left(k_{1}^{2}+k_{2}^{2}\right)\left(1+a^{2}+b^{2}\right)\equiv0\qquad\left(\mod p\right)
+\end{multline*}
+
+\end_inset
+
+ и неравенства
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
