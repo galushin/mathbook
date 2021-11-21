@@ -31413,7 +31413,17 @@ noprefix "false"
 \begin_inset Formula $\frac{\left|D\right|}{K}$
 \end_inset
 
- есть квадрат целого числа.
+ есть квадрат целого числа
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать?
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -32391,6 +32401,1843 @@ status open
 \begin_layout Standard
 Способ вычисления символа Якоби, применённый в рассмотренном примере, может
  быть оформлен в виде общего алгоритма полиномиальной сложности.
+\end_layout
+
+\begin_layout Section
+Суммы двух и четырёх квадратов
+\end_layout
+
+\begin_layout Standard
+Этот параграф посвящён применению сравнений для исследования диофантовых
+ уравнений специального вида.
+ Сначала мы рассмотрим уравнение вида 
+\begin_inset Formula 
+\begin{equation}
+x^{2}+y^{2}=n,\label{eq:diofantine-sum-of-two-squares}
+\end{equation}
+
+\end_inset
+
+где предполагается, что 
+\begin_inset Formula $n$
+\end_inset
+
+ — заданное целое положительное число.
+ Решения 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ этого уравнения также будут предполагаться целыми числами.
+\end_layout
+
+\begin_layout Standard
+Не при всяком натуральном 
+\begin_inset Formula $n$
+\end_inset
+
+ это уравнение имеет решения.
+ Например, любое решение в целых числах уравнения 
+\begin_inset Formula $x^{2}+y^{2}=7$
+\end_inset
+
+ должно удовлетворять неравенствам 
+\begin_inset Formula $\left|x\right|\le2$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|y\right|\le2$
+\end_inset
+
+.
+ Перебирая последовательно все пары чисел, удовлетворяющие этим неравенствам,
+ можно убедиться, что ни одна из них не есть решение уравнения.
+\end_layout
+
+\begin_layout Standard
+Сначала мы рассмотрим уравнение вида 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ в предположении, что его правая часть есть простое число 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:prime-4k+1-is-sum-of-two-squares"
+
+\end_inset
+
+Если 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число вида 
+\begin_inset Formula $4k+1$
+\end_inset
+
+, то уравнение 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=p
+\]
+
+\end_inset
+
+ разрешимо в целых числах 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Нельзя ли использовать теорему о том, при каких 
+\begin_inset Formula $p$
+\end_inset
+
+ разрешимо квадратичное сравнение?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не додумался сам
+\end_layout
+
+\end_inset
+
+Если 
+\begin_inset Formula $p=4k+1$
+\end_inset
+
+ простое число, то по теореме о свойствах символа Лежандра:
+\begin_inset Formula 
+\[
+\left(\frac{-1}{p}\right)=\left(-1\right)^{\frac{p-1}{2}}=\left(-1\right)^{2k}=1,
+\]
+
+\end_inset
+
+то есть существует такое целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, что 
+\begin_inset Formula $a^{2}\equiv-1\quad\left(\mod p\right)$
+\end_inset
+
+.
+ Тогда имеет место сравнение 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}\equiv x^{2}-a^{2}y^{2}=\left(x-ay\right)\left(x+ay\right)\quad\left(\mod p\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим всевозможные пары целых чисел 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ удовлетворяющие условиям 
+\begin_inset Formula 
+\begin{equation}
+0\le x\le\left\lfloor \sqrt{p}\right\rfloor ,\quad0\le y\le\left\lfloor \sqrt{p}\right\rfloor ,\label{eq:prime-4k+1-is-sum-of-two-squares-bounds}
+\end{equation}
+
+\end_inset
+
+ и для каждой такой пары найдём класс вычетов выражения 
+\begin_inset Formula $\left(x+ay\right)$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Количество получившихся при этом классов вычетов не превосходит 
+\begin_inset Formula $p$
+\end_inset
+
+, в то время как количество пар равно 
+\begin_inset Formula 
+\[
+\left(1+\left\lfloor \sqrt{p}\right\rfloor \right)\cdot\left(1+\left\lfloor \sqrt{p}\right\rfloor \right)>\sqrt{p}\cdot\sqrt{p}=p.
+\]
+
+\end_inset
+
+Это значит, что найдутся по крайней мере две пары 
+\begin_inset Formula $\left(x_{1},y_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(x_{2},y_{2}\right)$
+\end_inset
+
+, удовлетворяющие условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-4k+1-is-sum-of-two-squares-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, для которых классы вычетов 
+\begin_inset Formula $\left(x_{i}+ay_{i}\right)\quad\left(\mod p\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+ совпадают.
+ Таким образом, 
+\begin_inset Formula 
+\[
+x_{1}+ay_{1}\equiv x_{2}+ay_{2}\quad\left(\mod p\right)
+\]
+
+\end_inset
+
+или 
+\begin_inset Formula 
+\[
+\left(x_{1}-x_{2}\right)+a\left(y_{1}-y_{2}\right)\equiv0\quad\left(\mod p\right).
+\]
+
+\end_inset
+
+ Обозначив для краткости 
+\begin_inset Formula $x_{0}=x_{1}-x_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}=y_{1}-y_{2}$
+\end_inset
+
+, получим
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+x_{0}+ay_{0}\equiv0\quad\left(\mod p\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+и
+\begin_inset Formula 
+\[
+x_{0}^{2}+y_{0}^{2}\equiv\left(x_{0}+ay_{0}\right)\left(x_{0}-ay_{0}\right)\equiv0\left(\mod p\right),
+\]
+
+\end_inset
+
+ то есть число 
+\begin_inset Formula $x_{0}^{2}+y_{0}^{2}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Условия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-4k+1-is-sum-of-two-squares-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ означают, что числа 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ не очень велики, а именно: 
+\begin_inset Formula 
+\[
+\left|x_{0}\right|=\left|x_{1}-x_{2}\right|\le\left\lfloor \sqrt{p}\right\rfloor <\sqrt{p},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|y_{0}\right|=\left|y_{1}-y_{2}\right|\le\left\lfloor \sqrt{p}\right\rfloor <\sqrt{p}.
+\]
+
+\end_inset
+
+ Но тогда 
+\begin_inset Formula $x_{0}^{2}+y_{0}^{2}<p+p=2p$
+\end_inset
+
+.
+ Учитывая, что пары чисел 
+\begin_inset Formula $\left(x_{1},y_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(x_{2},y_{2}\right)$
+\end_inset
+
+ различны, находим, что 
+\begin_inset Formula $x_{0}^{2}+y_{0}^{2}>0$
+\end_inset
+
+.
+ Интервал 
+\begin_inset Formula $\left(0,2p\right)$
+\end_inset
+
+ содержит лишь одно число, делящееся на 
+\begin_inset Formula $p$
+\end_inset
+
+, а именно само 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Следовательно 
+\begin_inset Formula $x_{0}^{2}+y_{0}^{2}=p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:product-of-two-sums-of-two-squares"
+
+\end_inset
+
+Если два уравнения 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=u,\quad x^{2}+y^{2}=v,\quad u,v\in\mathbb{Z},
+\]
+
+\end_inset
+
+ разрешимы в целых числах, то и уравнение 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=uv
+\]
+
+\end_inset
+
+ имеет целые решения.
+\end_layout
+
+\begin_layout Proof
+Пусть пары целых чисел 
+\begin_inset Formula $\left(x_{1},y_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(x_{2},y_{2}\right)$
+\end_inset
+
+ — решения первого и второго уравнений соответственно, то есть имеют место
+ равенство 
+\begin_inset Formula 
+\[
+x_{1}^{2}+y_{1}^{2}=u,\quad x_{2}^{2}+y_{2}^{2}=v.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Перемножим эти уравнения: 
+\begin_inset Formula 
+\[
+\left(x_{1}^{2}+y_{1}^{2}\right)\left(x_{2}^{2}+y_{2}^{2}\right)=uv.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Для доказательства теоремы левую часть этого равенства нужно представить
+ в виде суммы двух квадратов.
+ Раскрыв скобки в последнем равенстве, получим: 
+\begin_inset Formula 
+\[
+x_{1}^{2}x_{2}^{2}+x_{1}^{2}y_{2}^{2}+y_{1}^{2}x_{2}^{2}+y_{1}^{2}y_{2}^{2}=uv.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим выражение 
+\begin_inset Formula 
+\begin{multline}
+\left(x_{1}x_{2}+y_{1}y_{2}\right)^{2}+\left(x_{1}y_{2}-y_{1}x_{2}\right)^{2}=\\
+=x_{1}^{2}x_{2}^{2}+2x_{1}x_{2}y_{1}y_{2}+y_{1}^{2}y_{2}^{2}+x_{1}^{2}y_{2}^{2}-2x_{1}x_{2}y_{1}y_{2}+y_{1}^{2}x_{2}^{2}=\\
+=x_{1}^{2}x_{2}^{2}+y_{1}^{2}y_{2}^{2}+x_{1}^{2}y_{2}^{2}+y_{1}^{2}x_{2}^{2},\label{eq:product-of-two-sum-of-two-squares}
+\end{multline}
+
+\end_inset
+
+ что отличается от выражения для 
+\begin_inset Formula $uv$
+\end_inset
+
+ только порядком слагаемых.
+ Таким образом, пара целых чисел
+\begin_inset Formula 
+\[
+\left(x_{1}x_{2}+y_{1}y_{2},x_{1}y_{2}-y_{1}x_{2}\right)
+\]
+
+\end_inset
+
+ является решением уравнения 
+\begin_inset Formula $x^{2}+y^{2}=uv$
+\end_inset
+
+.
+ Лемма доказана.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим комплексные числа 
+\begin_inset Formula 
+\[
+\alpha=x_{1}+iy_{1},\quad\beta=x_{2}+iy_{2}
+\]
+
+\end_inset
+
+ и их произведение 
+\begin_inset Formula 
+\[
+\gamma=\alpha\cdot\beta=\left(x_{1}x_{2}-y_{1}y_{2}\right)+i\left(x_{1}y_{2}+y_{1}x_{2}\right).
+\]
+
+\end_inset
+
+ Равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:product-of-two-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ может быть переписано в виде 
+\begin_inset Formula $\left|\gamma\right|^{2}=\left|\alpha\right|^{2}\left|\beta\right|^{2}$
+\end_inset
+
+.
+ Таким образом, оно, по существу, равносильно равенству 
+\begin_inset Formula $\left|\alpha\beta\right|=\left|\alpha\right|\cdot\left|\beta\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрешимо в целых числах тогда и только тогда, когда разложение 
+\begin_inset Formula $n$
+\end_inset
+
+ на простые сомножители содержит каждое простое число вида 
+\begin_inset Formula $4k+3$
+\end_inset
+
+ в чётной степени.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ при 
+\begin_inset Formula $j=1,\dots,m$
+\end_inset
+
+ — простые числа, входящие в разложение 
+\begin_inset Formula $n$
+\end_inset
+
+ на простые сомножители в нечётных степенях (все они различны), тогда можно
+ написать 
+\begin_inset Formula 
+\[
+n=\prod_{j=1}^{m}q_{j}\cdot S^{2},
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $n$
+\end_inset
+
+ представляется в виде произведения квадрата целого числа и различных простых
+ чисел.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Упустил, что 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ может быть равно 2!
+\end_layout
+
+\end_inset
+
+В условиях теоремы все 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $4k+1$
+\end_inset
+
+ или 
+\begin_inset Formula $q_{j}=2$
+\end_inset
+
+.
+ Уравнение 
+\begin_inset Formula $x^{2}+y^{2}=2$
+\end_inset
+
+ разрешимо в целых числах, достаточно взять 
+\begin_inset Formula $x=1$
+\end_inset
+
+ и 
+\begin_inset Formula $y=1$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $4k+1$
+\end_inset
+
+, то по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:prime-4k+1-is-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ уравнение 
+\begin_inset Formula $x^{2}+y^{2}=q_{j}$
+\end_inset
+
+ разрешимо в целых числах, то есть существует пара целых чисел 
+\begin_inset Formula $\left(x_{j},y_{j}\right)$
+\end_inset
+
+ для 
+\begin_inset Formula $j=1,\dots,m$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $x_{j}^{2}+y_{j}^{2}=q_{j}$
+\end_inset
+
+.
+ Уравнение 
+\begin_inset Formula $x^{2}+y^{2}=S^{2}$
+\end_inset
+
+ так же разрешимо в целых числах: достаточно взять 
+\begin_inset Formula $x=S$
+\end_inset
+
+, 
+\begin_inset Formula $y=0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $n$
+\end_inset
+
+ представляется в виде сомножителей, каждый из которых представим в виде
+ суммы двух квадратов, то по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:product-of-two-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для числа 
+\begin_inset Formula $n$
+\end_inset
+
+ уравнение 
+\begin_inset Formula $x^{2}+y^{2}=n$
+\end_inset
+
+ разрешимо в целых числах.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь среди чисел 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ имеется хотя бы одно число вида 
+\begin_inset Formula $4k+3$
+\end_inset
+
+.
+ Пусть, для определённости, это 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+.
+ Рассмотрим суммы двух квадратов по модулю 
+\begin_inset Formula $4$
+\end_inset
+
+.
+ Во-первых, так как 
+\begin_inset Formula $0^{2}=0$
+\end_inset
+
+, 
+\begin_inset Formula $1^{2}=1$
+\end_inset
+
+, 
+\begin_inset Formula $2^{2}=4\equiv0\qquad\left(\mod4\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $3^{2}=9\equiv1\qquad\left(\mod4\right)$
+\end_inset
+
+, то квадрат целого числа может дать по модулю 
+\begin_inset Formula $4$
+\end_inset
+
+ только остатки 
+\begin_inset Formula $0$
+\end_inset
+
+ или 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Следовательно, сумма двух квадратов целых чисел может дать по модулю 
+\begin_inset Formula $4$
+\end_inset
+
+ остатки 
+\begin_inset Formula $0$
+\end_inset
+
+, 
+\begin_inset Formula $1$
+\end_inset
+
+ или 
+\begin_inset Formula $2$
+\end_inset
+
+, но не 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Это означает, что уравнение 
+\begin_inset Formula $x^{2}+y^{2}=q_{1}$
+\end_inset
+
+ не имеет решений в целых числах.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог сам полностью доказать необходимость
+\end_layout
+
+\end_inset
+
+Предположим теперь, что существуют натуральные числа, представимые в виде
+ двух квадратов целых чисел, но имеющие в своём разложении на простые сомножител
+и хотя бы одно простое число вида 
+\begin_inset Formula $4k+3$
+\end_inset
+
+ в нечётной степени.
+ Пусть 
+\begin_inset Formula $n=x_{0}^{2}+y_{0}^{2}$
+\end_inset
+
+ — наименьшее из таких чисел и для 
+\begin_inset Formula $p=4k+3$
+\end_inset
+
+ кратность 
+\begin_inset Formula $v_{p}\left(n\right)$
+\end_inset
+
+ нечётна.
+ Справедливы сравнения 
+\begin_inset Formula $x_{0}^{2}+y_{0}^{2}\equiv0\qquad\left(\mod p\right)$
+\end_inset
+
+ или 
+\begin_inset Formula 
+\begin{equation}
+x_{0}^{2}\equiv-y_{0}^{2}\qquad\left(\mod p\right).\label{eq:sum-of-squares-diofantine-criterion-congruence}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Предположим, что 
+\begin_inset Formula $p\mid x_{0}$
+\end_inset
+
+, тогда, в силу последнего сравнения, 
+\begin_inset Formula $p\mid-y_{0}^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $p\mid y_{0}$
+\end_inset
+
+, то есть существуют целые числа 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $x_{0}=pu$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}=pv$
+\end_inset
+
+, тогда 
+\begin_inset Formula $n=p^{2}\left(u^{2}+v^{2}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $m=u^{2}+v^{2}<n$
+\end_inset
+
+, то, согласно условию минимальности 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ входит в разложение этого числа на простые множители в чётной степени,
+ но тогда 
+\begin_inset Formula $v_{p}\left(n\right)=v_{p}\left(m\right)+2$
+\end_inset
+
+ также чётна.
+ Полученное противоречие означает, что 
+\begin_inset Formula $p\nmid x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $p\nmid y_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Возведя обе части сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-squares-diofantine-criterion-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ в степень 
+\begin_inset Formula $\frac{p-1}{2}=\frac{4k+3-1}{2}=2k+1$
+\end_inset
+
+ (то есть в нечётную степень), находим 
+\begin_inset Formula 
+\[
+x_{0}^{p-1}\equiv-y_{0}^{p-1}\qquad\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По малой теореме ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Fermat-lesser-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $x_{0}^{p-1}\equiv y_{0}^{p-1}\equiv1\qquad\left(\mod p\right)$
+\end_inset
+
+, вместе с предыдущим сравнением получаем 
+\begin_inset Formula $1\equiv-1\left(\mod p\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $2\equiv0\left(\mod p\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $p\mid2$
+\end_inset
+
+, но это невозможно по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, так как 
+\begin_inset Formula $p=4k+3\ge3>2$
+\end_inset
+
+.
+ Полученное противоречие завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Standard
+Докажем также теорему о представимости натуральных чисел в виде суммы четырёх
+ квадратов.
+ Первое доказательство этой теоремы было опубликовано в 1770 году Лагранжем.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:every-number-is-sum-of-four-squares"
+
+\end_inset
+
+Каждое целое положительное число представимо в виде суммы четырёх квадратов
+ целых чисел.
+\end_layout
+
+\begin_layout Standard
+Иными словами, для каждого натурального 
+\begin_inset Formula $n$
+\end_inset
+
+ уравнение 
+\begin_inset Formula $x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{4}=n$
+\end_inset
+
+ разрешимо в целых числах.
+ Сначала докажем вспомогательное утверждение.
+\end_layout
+
+\begin_layout Lemma
+Если натуральные числа 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ представимы в виде суммы четырёх квадратов, то их произведение также можно
+ представить в виде суммы четырёх квадратов.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Идею доказательства подсмотрел
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Получается, нужно сначала рассмотреть комплексные числа и определители,
+ хотя бы 
+\begin_inset Formula $2\times2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Идея состоит в том, чтобы составить комплексную матрицу 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ так, чтобы её определитель был равен 
+\begin_inset Formula $x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}$
+\end_inset
+
+.
+ Заметим, что 
+\begin_inset Formula $\left|x_{1}+ix_{2}\right|^{2}=x_{1}^{2}+x_{2}^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|x_{3}+ix_{4}\right|^{2}=x_{3}^{2}+x_{4}^{2}$
+\end_inset
+
+, кроме того: 
+\begin_inset Formula 
+\[
+\left|\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right|=ad-bc,
+\]
+
+\end_inset
+
+ поэтому нужно взять 
+\begin_inset Formula 
+\[
+U=\left(\begin{array}{cc}
+x_{1}+ix_{2} & x_{3}+ix_{4}\\
+-\left(x_{3}-ix_{4}\right) & x_{1}-ix_{2}
+\end{array}\right)=\left(\begin{array}{cc}
+z_{1} & z_{2}\\
+-\bar{z}_{2} & \bar{z}_{1}
+\end{array}\right),
+\]
+
+\end_inset
+
+тогда если 
+\begin_inset Formula $u=x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\det U=u$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Аналогично, если 
+\begin_inset Formula $v=y_{1}^{2}+y_{2}^{2}+y_{3}^{2}+y_{4}^{2}$
+\end_inset
+
+, то взяв матрицу 
+\begin_inset Formula 
+\[
+V=\left(\begin{array}{cc}
+y_{1}+iy_{2} & y_{3}+iy_{4}\\
+-\left(y_{3}-iy_{4}\right) & y_{1}-iy_{2}
+\end{array}\right)=\left(\begin{array}{cc}
+w_{1} & w_{2}\\
+-\bar{w}_{2} & \bar{w}_{1}
+\end{array}\right),
+\]
+
+\end_inset
+
+ получим 
+\begin_inset Formula $\det V=v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По правилу умножения определителей, 
+\begin_inset Formula $\det\left(UV\right)=\det U\cdot\det V=uv$
+\end_inset
+
+.
+ С другой, стороны, по правилу умножения матриц: 
+\begin_inset Formula 
+\[
+UV=\left(\begin{array}{cc}
+z_{1} & z_{2}\\
+-\bar{z}_{2} & \bar{z}_{1}
+\end{array}\right)\left(\begin{array}{cc}
+w_{1} & w_{2}\\
+-\bar{w}_{2} & \bar{w}_{1}
+\end{array}\right)=\left(\begin{array}{cc}
+z_{1}w_{1}-z_{2}\bar{w}_{2} & z_{1}w_{2}+z_{2}\bar{w}_{1}\\
+-\bar{z}_{2}w_{1}-\bar{z}_{1}\bar{w}_{2} & -\bar{z}_{2}w_{2}+\bar{z}_{1}\bar{w_{1}}
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $-\bar{z}_{2}w_{2}+\bar{z}_{1}\bar{w_{1}}=\overline{z_{1}w_{1}-z_{2}\bar{w}_{2}}$
+\end_inset
+
+ и 
+\begin_inset Formula $-\bar{z}_{2}w_{1}-\bar{z}_{1}\bar{w}_{2}=-\overline{\left(z_{1}w_{2}+z_{2}\bar{w}_{1}\right)}$
+\end_inset
+
+, то матрица 
+\begin_inset Formula $UV$
+\end_inset
+
+ имеет тот же вид, что и матрицы 
+\begin_inset Formula $U$
+\end_inset
+
+ и 
+\begin_inset Formula $V$
+\end_inset
+
+, поэтому её определитель равен сумме четырёх квадратов.
+\end_layout
+
+\begin_layout Proof
+Найдём конкретные выражения для элементов матрицы 
+\begin_inset Formula $UV$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+z_{1}w_{1}-z_{2}\bar{w}_{2}=\left(x_{1}+ix_{2}\right)\left(y_{1}+iy_{2}\right)-\left(x_{3}+ix_{4}\right)\left(y_{3}-iy_{4}\right)=\\
+=\left(x_{1}y_{1}-x_{2}y_{2}-x_{3}y_{3}-x_{4}y_{4}\right)+i\left(x_{1}y_{2}+x_{2}y_{1}+x_{3}y_{4}-x_{4}y_{3}\right),
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+z_{1}w_{2}+z_{2}\bar{w}_{1}=\left(x_{1}+ix_{2}\right)\left(y_{3}+iy_{4}\right)+\left(x_{3}+ix_{4}\right)\left(y_{1}-iy_{2}\right)=\\
+=\left(x_{1}y_{3}-x_{2}y_{4}+x_{3}y_{1}+x_{4}y_{2}\right)+i\left(x_{1}y_{4}+x_{2}y_{3}-x_{3}y_{2}+x_{4}y_{1}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, чтобы разложить в сумму четырёх квадратов произведение чисел
+ 
+\begin_inset Formula $x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{1}^{2}+y_{2}^{2}+y_{3}^{2}+y_{4}^{2}$
+\end_inset
+
+ нужно взять числа 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+a_{1}=x_{1}y_{1}-x_{2}y_{2}-x_{3}y_{3}-x_{4}y_{4},\\
+a_{2}=x_{1}y_{2}+x_{2}y_{1}+x_{3}y_{4}-x_{4}y_{3},\\
+a_{3}=x_{1}y_{3}-x_{2}y_{4}+x_{3}y_{1}+x_{4}y_{2},\\
+a_{4}=x_{1}y_{4}+x_{2}y_{3}-x_{3}y_{2}+x_{4}y_{1}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Тождество 
+\begin_inset Formula 
+\begin{equation}
+\left(x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}\right)\left(y_{1}^{2}+y_{2}^{2}+y_{3}^{2}+y_{4}^{2}\right)=a_{1}^{2}+a_{2}^{2}+a_{3}^{2}+a_{4}^{2}\label{eq:product-of-two-sum-of-four-squares-as-sum-of-four-squares}
+\end{equation}
+
+\end_inset
+
+ может также быть проверено непосредственно.
+\end_layout
+
+\begin_layout Standard
+Данная лемма означает, что для доказательства теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:every-number-is-sum-of-four-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ достаточно установить представимость простых чисел в виде суммы четырёх
+ квадратов.
+ Поскольку 
+\begin_inset Formula $2=1^{2}+1^{2}+0^{2}+0^{2}$
+\end_inset
+
+, далее будем считать, что 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое нечётное число.
+\end_layout
+
+\begin_layout Standard
+Докажем вспомогательную лемму о сравнениях.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:-1-as-sum-of-two-squares"
+
+\end_inset
+
+Для каждого простого нечётного числа 
+\begin_inset Formula $p$
+\end_inset
+
+ существуют целые числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, удовлетворяющие сравнению 
+\begin_inset Formula 
+\[
+1+a^{2}+b^{2}\equiv0\qquad\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Списал
+\end_layout
+
+\end_inset
+
+Рассмотрим множества чисел 
+\begin_inset Formula $A=\left\{ k^{2},0\le k\le\frac{p-1}{2}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $B=\left\{ -1-k^{2},0\le k\le\frac{p-1}{2}\right\} $
+\end_inset
+
+.
+ В каждом из них 
+\begin_inset Formula $\frac{p+1}{2}$
+\end_inset
+
+ чисел
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Не может быть, что несколько квадратов совпало?
+\end_layout
+
+\end_inset
+
+.
+ Поскольку 
+\begin_inset Formula $\frac{p+1}{2}+\frac{p+1}{2}=p+1>p$
+\end_inset
+
+, заключаем, что объединение этих множеств 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ должно содержать два числа, принадлежащих одному классу вычетов по модулю
+ 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Но числа множества 
+\begin_inset Formula $A$
+\end_inset
+
+, очевидно
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+было бы неплохо доказать, или мы уже доказывали?
+\end_layout
+
+\end_inset
+
+, не сравнимы между собой.
+ Точно так же не сравнимы и числа второго множества.
+ Поэтому найдутся целые числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $a^{2}\in A$
+\end_inset
+
+ и 
+\begin_inset Formula $-1-b^{2}\in B$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{2}\equiv-1-b^{2}$
+\end_inset
+
+
+\begin_inset Formula $\left(\mod p\right)$
+\end_inset
+
+.
+ Это завершает доказательство леммы.
+\end_layout
+
+\begin_layout Standard
+Доказательство следующей леммы напоминает доказательство леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:prime-4k+1-is-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+Каждое простое число есть сумма четырёх квадратов.
+\end_layout
+
+\begin_layout Proof
+Для 
+\begin_inset Formula $p=2$
+\end_inset
+
+ мы уже указали пример представления в виде суммы четырёх квадратов, поэтому
+ далее считаем 
+\begin_inset Formula $p\ge3$
+\end_inset
+
+.
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:-1-as-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ существуют такие целые числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, что 
+\begin_inset Formula $1+a^{2}+b^{2}\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ Рассмотрим всевозможные наборы целых чисел 
+\begin_inset Formula $\left(x_{1},x_{2},x_{3},x_{4}\right)$
+\end_inset
+
+ таких, что 
+\begin_inset Formula 
+\begin{equation}
+0\le x_{i}\le\left\lfloor \sqrt{p}\right\rfloor ,i=1,2,3,4,\label{eq:prime-is-a-sum-of-4-squares-bounds}
+\end{equation}
+
+\end_inset
+
+ и для каждого набора найдём пары классов вычетов 
+\begin_inset Formula 
+\begin{equation}
+\left(x_{3}+ax_{1}+bx_{2}\left(\mod p\right),x_{4}-bx_{1}+ax_{2}\left(\mod p\right)\right).\label{eq:prime-is-a-sum-of-4-squares-classes}
+\end{equation}
+
+\end_inset
+
+ Количество получившихся при этом пар вычетов не превосходит 
+\begin_inset Formula $p^{2}$
+\end_inset
+
+, в то время как количество наборов 
+\begin_inset Formula $\left(x_{1},x_{2},x_{3},x_{4}\right)$
+\end_inset
+
+ равно 
+\begin_inset Formula 
+\[
+\left(1+\left\lfloor \sqrt{p}\right\rfloor \right)^{4}>\left(\sqrt{p}\right)^{4}=p^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Значит найдутся два набора 
+\begin_inset Formula $\left(x_{1},x_{2},x_{3},x_{4}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(y_{1},y_{2},y_{3},y_{4}\right)$
+\end_inset
+
+, удовлетворяющие условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-is-a-sum-of-4-squares-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, для которых классы вычетов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-is-a-sum-of-4-squares-classes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ совпадают, то есть 
+\begin_inset Formula 
+\[
+x_{3}+ax_{1}+bx_{2}\equiv y_{3}+ay_{1}+by_{2}\left(\mod p\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{4}-bx_{1}+ax_{2}\equiv y_{4}-by_{1}+ay_{2}\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Положим 
+\begin_inset Formula $k_{i}=x_{i}-y_{i}$
+\end_inset
+
+, тогда выполняются условия 
+\begin_inset Formula 
+\[
+k_{3}\equiv-ak_{1}-bk_{2}\quad\left(\mod p\right),k_{4}\equiv bk_{1}-ak_{2}\left(\mod p\right),\left|k_{i}\right|<\sqrt{p}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Отсюда находим сравнение 
+\begin_inset Formula 
+\begin{multline*}
+k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{4}\equiv k_{1}^{2}+k_{2}^{2}+\left(ak_{1}+bk_{2}\right)^{2}+\left(bk_{1}-ak_{2}\right)^{2}\equiv\\
+\equiv\left(k_{1}^{2}+k_{2}^{2}\right)\left(1+a^{2}+b^{2}\right)\equiv0\qquad\left(\mod p\right)
+\end{multline*}
+
+\end_inset
+
+ и неравенства 
+\begin_inset Formula 
+\[
+0<k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{2}<4p.
+\]
+
+\end_inset
+
+ Следовательно, 
+\begin_inset Formula 
+\[
+k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{2}=mp,
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $m$
+\end_inset
+
+ есть одно из чисел 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+ или 
+\begin_inset Formula $3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+В случае 
+\begin_inset Formula $m=1$
+\end_inset
+
+ утверждение леммы выполняется.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим случай 
+\begin_inset Formula $m=2$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{2}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+ и, значит, числа 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $k_{4}$
+\end_inset
+
+ разбиваются на пары одинаковой чётности
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нужна ссылка
+\end_layout
+
+\end_inset
+
+.
+ Не уменьшая общности, можно сказать, что 
+\begin_inset Formula $k_{1},k_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $k_{3},k_{4}$
+\end_inset
+
+ имеют одинаковую чётность.
+ Тогда все четыре числа 
+\begin_inset Formula $k_{1}-k_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{1}+k_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{3}-k_{4}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{3}+k_{4}$
+\end_inset
+
+ являются чётными и из равенств 
+\begin_inset Formula 
+\begin{multline*}
+\left(\frac{k_{1}+k_{2}}{2}\right)^{2}+\left(\frac{k_{1}-k_{2}}{2}\right)^{2}+\left(\frac{k_{3}+k_{4}}{2}\right)^{2}+\left(\frac{k_{3}-k_{4}}{2}\right)^{2}=\\
+=\frac{1}{2}\left(k_{2}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{2}\right)=p,
+\end{multline*}
+
+\end_inset
+
+ следует утверждение леммы.
+\end_layout
+
+\begin_layout Proof
+В случае 
+\begin_inset Formula $m=3$
+\end_inset
+
+ сумма 
+\begin_inset Formula $k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{2}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Квадраты целых чисел при делении на 
+\begin_inset Formula $3$
+\end_inset
+
+ дают в остатке 
+\begin_inset Formula $0$
+\end_inset
+
+ или 
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать, упражнение на перебор
+\end_layout
+
+\end_inset
+
+.
+ Поэтому одному из чисел 
+\begin_inset Formula $k_{i}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $3$
+\end_inset
+
+, а остальные не делятся
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+почему не могут делится все 4? получим, что 
+\begin_inset Formula $p$
+\end_inset
+
+ делится на 
+\begin_inset Formula $3$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+.
+ Изменив, если необходимо, нумерацию этих чисел, можно, не уменьшая общности,
+ считать, что на 
+\begin_inset Formula $3$
+\end_inset
+
+ делится 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+.
+ Сменив также в случае необходимости знаки у чисел 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $k_{4}$
+\end_inset
+
+ можно считать, 
+\begin_inset Formula $k_{2}\equiv k_{3}\equiv k_{4}\equiv1\left(\mod3\right)$
+\end_inset
+
+.
+ Действительно, если 
+\begin_inset Formula $k\equiv2\left(\mod3\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $-k\equiv1\left(\mod3\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Воспользуемся тождеством 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:product-of-two-sum-of-four-squares-as-sum-of-four-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в котором положим 
+\begin_inset Formula $x_{i}=k_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{1}=0$
+\end_inset
+
+, 
+\begin_inset Formula $y_{2}=y_{3}=y_{4}=1$
+\end_inset
+
+.
+ В результате получим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+\left(\frac{k_{2}+k_{3}+k_{4}}{3}\right)^{2}+\left(\frac{k_{1}+k_{3}-k_{4}}{3}\right)^{2}+\left(\frac{k_{1}-k_{2}+k_{4}}{3}\right)^{2}+\\
++\left(\frac{k_{1}+k_{2}-k_{3}}{3}\right)^{2}=\frac{1}{3}\left(k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{2}\right)=p.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из предположений об остатках чисел 
+\begin_inset Formula $k_{i}$
+\end_inset
+
+ при делении на 
+\begin_inset Formula $3$
+\end_inset
+
+ следует, что все дроби в последнем равенстве есть целые числа.
+ Это завершает доказательство данной леммы и теоремы в целом.
+\end_layout
+
+\begin_layout Standard
+В виде суммы трёх квадратов представимы не все натуральные числа 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Исключительное множество составляют числа вида 
+\begin_inset Formula $4^{a}\left(8b+7\right)$
+\end_inset
+
+ при целых положительных числах и только они.
+ Так, например, число 
+\begin_inset Formula $7$
+\end_inset
+
+ нельзя представить в виде суммы трёх квадратов целых чисел.
+\end_layout
+
+\begin_layout Standard
+Теорему Лагранжа можно обобщить, рассматривая вместо квадратов кубы, четвёртые
+ и более высокие степени.
+ Д.
+\begin_inset space \thinspace{}
+\end_inset
+
+Гильберт в 1909 году доказал, что 
+\emph on
+для каждого целого 
+\begin_inset Formula $k>2$
+\end_inset
+
+ можно найти целое 
+\begin_inset Formula $n>0$
+\end_inset
+
+ с условием, что любое натуральное число представимо в виде суммы не более
+ чем 
+\begin_inset Formula $n$
+\end_inset
+
+ слагаемых вида 
+\begin_inset Formula $x^{k}$
+\end_inset
+
+ с целыми 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+При 
+\begin_inset Formula $k=2$
+\end_inset
+
+ это утверждение выполняется согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:every-number-is-sum-of-four-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ с 
+\begin_inset Formula $n=4$
+\end_inset
+
+.
+ Сформулированное утверждение было высказано как гипотеза в 1770 году Варингом.
 \end_layout
 
 \begin_layout Standard
