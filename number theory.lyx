@@ -34240,6 +34240,394 @@ noprefix "false"
  Сформулированное утверждение было высказано как гипотеза в 1770 году Варингом.
 \end_layout
 
+\begin_layout Section
+Представление нуля квадратичными формами от трёх неизвестных
+\end_layout
+
+\begin_layout Standard
+В этом параграфе речь пойдёт о решении в целых числах 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ уравнения 
+\begin_inset Formula 
+\begin{equation}
+ax^{2}+by^{2}+cz^{2}=0,\label{eq:quadric-of-3-equals-zero}
+\end{equation}
+
+\end_inset
+
+ в котором коэффициенты 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ предполагаются отличными от нулями целыми числами.
+ Ясно, что при любых коэффициентах это уравнение имеет решение 
+\begin_inset Formula $x=y=z=0$
+\end_inset
+
+.
+ Это решение мы будем называть тривиальным и далее найдём условия, при которых
+ у уравнения имеется хотя бы одно нетривиальное решение.
+\end_layout
+
+\begin_layout Standard
+Уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет нетривиальное решение в целых числах тогда и только тогда, когда
+ оно разрешимо в рациональных числах, среди которых есть отличное от нуля.
+ Действительно, если рациональные числа 
+\begin_inset Formula $\alpha,\beta,\gamma$
+\end_inset
+
+ удовлетворяют уравнению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то умножим их на общий знаменатель, можно найти набор целых чисел, также
+ удовлетворяющих этому уравнению.
+\end_layout
+
+\begin_layout Standard
+Сначала мы сделаем ещё несколько упрощающих, но не уменьшающих общности
+ предположений.
+ Коэффициенты 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ должны иметь разные знаки.
+ В противном случае уравнении имеет лишь тривиальное решение.
+ Умножив, в случае необходимости, уравнение на 
+\begin_inset Formula $-1$
+\end_inset
+
+ и сменив, если нужно, обозначения переменных, можно считать, что 
+\begin_inset Formula 
+\begin{equation}
+a>0,\qquad b>0,\qquad c<0.\label{eq:equation-6.6-signs}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если какие-либо два коэффициента, скажем 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, имеют общий простой делитель 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a=pu$
+\end_inset
+
+ и 
+\begin_inset Formula $b=pv$
+\end_inset
+
+ при некоторых целых числах 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+, то, умножив уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ на 
+\begin_inset Formula $p$
+\end_inset
+
+, получаем равенство 
+\begin_inset Formula 
+\[
+u\left(px\right)^{2}+v\left(py\right)^{2}+pcz^{2}=0,
+\]
+
+\end_inset
+
+ из которого следует, что уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет нетривиальное решение в целых числах одновременно с уравнением 
+\begin_inset Formula 
+\[
+ux^{2}+vy^{2}+pcz^{2}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что 
+\begin_inset Formula $\left|uvpc\right|<\left|abc\right|$
+\end_inset
+
+, то есть абсолютная величина произведения коэффициентов нового уравнения
+ меньше, чем у предшествующего.
+ Если в новом уравнении найдутся два коэффициента, имеющие нетривиальный
+ общий делитель, такое преобразование можно повторить.
+ Ясно, что этот процесс рано или поздно должен завершиться, ведь целые числа
+ 
+\begin_inset Formula $\left|abc\right|$
+\end_inset
+
+ образуют убывающую последовательность, а она не может быть бесконечной.
+ Итак, выясняя разрешимость уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ в целых числах, можно считать, что коэффициенты 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ попарно взаимно просты, то есть 
+\begin_inset Formula 
+\begin{equation}
+\left(a,b\right)=\left(b,c\right)=\left(a,c\right)=1.\label{eq:equation-6.6-coprime}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Наконец, если какой-либо из коэффициентов, скажем 
+\begin_inset Formula $a$
+\end_inset
+
+, делится на квадрат простого числа, то есть 
+\begin_inset Formula $a=p^{2}w$
+\end_inset
+
+, где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое, 
+\begin_inset Formula $w$
+\end_inset
+
+ — целое число, то уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ может быть переписано в виде 
+\begin_inset Formula 
+\[
+w\left(px\right)^{2}+by^{2}+cz^{2}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Проделав эту операцию несколько раз, можно добиться, чтобы ни один из коэффициен
+тов уравнения не делился бы на квадрат никакого простого числа.
+\end_layout
+
+\begin_layout Standard
+Следующая теорема была впервые доказана Лежандром в 1785 году.
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ — целые числа, удовлетворяющие условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:equation-6.6-signs"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:equation-6.6-coprime"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а кроме того не делящиеся на квадрат никакого простого.
+ Уравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет нетривиальное решение в целых числах в том и только том случае, когда
+ каждое из сравнений 
+\begin_inset Formula 
+\[
+b\lambda^{2}+c\equiv0\left(\mod a\right),\quad c\mu^{2}+a\equiv0\left(\mod b\right),\quad a\nu^{2}+b\equiv0\left(\mod c\right)
+\]
+
+\end_inset
+
+ разрешимо в целых числах 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, 
+\begin_inset Formula $\mu$
+\end_inset
+
+ и 
+\begin_inset Formula $\nu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог доказать сам
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать необходимость
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать достаточность
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 6.6
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
