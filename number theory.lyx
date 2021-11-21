@@ -34558,9 +34558,9 @@ noprefix "false"
  имеет нетривиальное решение в целых числах в том и только том случае, когда
  каждое из сравнений 
 \begin_inset Formula 
-\[
-b\lambda^{2}+c\equiv0\left(\mod a\right),\quad c\mu^{2}+a\equiv0\left(\mod b\right),\quad a\nu^{2}+b\equiv0\left(\mod c\right)
-\]
+\begin{equation}
+b\lambda^{2}+c\equiv0\left(\mod a\right),\quad c\mu^{2}+a\equiv0\left(\mod b\right),\quad a\nu^{2}+b\equiv0\left(\mod c\right)\label{eq:quadric-of-3-congruence}
+\end{equation}
 
 \end_inset
 
@@ -34594,12 +34594,108 @@ status open
 status open
 
 \begin_layout Plain Layout
-Доказать необходимость
+Доказать достаточность
 \end_layout
 
 \end_inset
 
+Докажем сначала, что из существования нетривиального решения уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+ следует разрешимость каждого из сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Покажем это, например, для последнего из сравнений.
+ В остальных случаях доказательства аналогичные.
+\end_layout
+
+\begin_layout Proof
+Пусть у уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеются нетривиальные решения.
+ Выберем среди них решение 
+\begin_inset Formula $\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ с неотрицательными компонентами и наименьшей величиной 
+\begin_inset Formula $\left|x_{0}\right|+\left|y_{0}\right|+\left|z_{0}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Проверим, что числа 
+\begin_inset Formula $c$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ взаимно просты.
+ Если это не так, то существует простое число 
+\begin_inset Formula $p$
+\end_inset
+
+, на которое делится и 
+\begin_inset Formula $c$
+\end_inset
+
+, и 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $ax_{0}^{2}=-by_{0}^{2}-cz_{0}^{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $p\mid ax_{0}^{2}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ взаимно просты, то 
+\begin_inset Formula $p\nmid a$
+\end_inset
+
+ и, следовательно, 
+\begin_inset Formula $p\mid x_{0}^{2}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Proof
@@ -34607,7 +34703,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Доказать достаточность
+Доказать необходимость
 \end_layout
 
 \end_inset
