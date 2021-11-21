@@ -33322,6 +33322,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:every-number-is-sum-of-four-squares"
+
+\end_inset
+
 Каждое целое положительное число представимо в виде суммы четырёх квадратов
  целых чисел.
 \end_layout
@@ -33503,29 +33509,81 @@ z_{1}w_{1}-z_{2}\bar{w}_{2} & z_{1}w_{2}+z_{2}\bar{w}_{1}\\
 \begin_inset Formula $V$
 \end_inset
 
-, поэтому её определитель равен сумме четырёх квадратов, что и требовалось
- доказать.
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-Можно было бы ещё расписать, какие конкретно числа получаются, но я не вижу
- смысла
+, поэтому её определитель равен сумме четырёх квадратов.
 \end_layout
+
+\begin_layout Proof
+Найдём конкретные выражения для элементов матрицы 
+\begin_inset Formula $UV$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{multline*}
+z_{1}w_{1}-z_{2}\bar{w}_{2}=\left(x_{1}+ix_{2}\right)\left(y_{1}+iy_{2}\right)-\left(x_{3}+ix_{4}\right)\left(y_{3}-iy_{4}\right)=\\
+=\left(x_{1}y_{1}-x_{2}y_{2}-x_{3}y_{3}-x_{4}y_{4}\right)+i\left(x_{1}y_{2}+x_{2}y_{1}+x_{3}y_{4}-x_{4}y_{3}\right),
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+z_{1}w_{2}+z_{2}\bar{w}_{1}=\left(x_{1}+ix_{2}\right)\left(y_{3}+iy_{4}\right)+\left(x_{3}+ix_{4}\right)\left(y_{1}-iy_{2}\right)=\\
+=\left(x_{1}y_{3}-x_{2}y_{4}+x_{3}y_{1}+x_{4}y_{2}\right)+i\left(x_{1}y_{4}+x_{2}y_{3}-x_{3}y_{2}+x_{4}y_{1}\right).
+\end{multline*}
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Данная лемма означает, что для доказательства теоремы 6.6
-\begin_inset Note Note
-status open
+\begin_layout Proof
+Таким образом, чтобы разложить в сумму четырёх квадратов произведение чисел
+ 
+\begin_inset Formula $x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}$
+\end_inset
 
-\begin_layout Plain Layout
-Добавить ссылку
+ и 
+\begin_inset Formula $y_{1}^{2}+y_{2}^{2}+y_{3}^{2}+y_{4}^{2}$
+\end_inset
+
+ нужно взять числа 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+a_{1}=x_{1}y_{1}-x_{2}y_{2}-x_{3}y_{3}-x_{4}y_{4},\\
+a_{2}=x_{1}y_{2}+x_{2}y_{1}+x_{3}y_{4}-x_{4}y_{3},\\
+a_{3}=x_{1}y_{3}-x_{2}y_{4}+x_{3}y_{1}+x_{4}y_{2},\\
+a_{4}=x_{1}y_{4}+x_{2}y_{3}-x_{3}y_{2}+x_{4}y_{1}.
+\end{array}
+\]
+
+\end_inset
+
+
 \end_layout
+
+\begin_layout Proof
+Тождество 
+\begin_inset Formula 
+\begin{equation}
+\left(x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}\right)\left(y_{1}^{2}+y_{2}^{2}+y_{3}^{2}+y_{4}^{2}\right)=a_{1}^{2}+a_{2}^{2}+a_{3}^{2}+a_{4}^{2}\label{eq:product-of-two-sum-of-four-squares-as-sum-of-four-squares}
+\end{equation}
+
+\end_inset
+
+ может также быть проверено непосредственно.
+\end_layout
+
+\begin_layout Standard
+Данная лемма означает, что для доказательства теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:every-number-is-sum-of-four-squares"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -33604,7 +33662,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Не может быть, что несколько квадратов совпало
+Не может быть, что несколько квадратов совпало?
 \end_layout
 
 \end_inset
@@ -33687,15 +33745,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать доказательство
-\end_layout
-
-\end_inset
-
 Для 
 \begin_inset Formula $p=2$
 \end_inset
@@ -33842,20 +33891,353 @@ k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{4}\equiv k_{1}^{2}+k_{2}^{2}+\left(ak_{1}+b
 
 \end_inset
 
- и неравенства
+ и неравенства 
+\begin_inset Formula 
+\[
+0<k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{2}<4p.
+\]
+
+\end_inset
+
+ Следовательно, 
+\begin_inset Formula 
+\[
+k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{2}=mp,
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $m$
+\end_inset
+
+ есть одно из чисел 
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+ или 
+\begin_inset Formula $3$
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
+В случае 
+\begin_inset Formula $m=1$
+\end_inset
+
+ утверждение леммы выполняется.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим случай 
+\begin_inset Formula $m=2$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{2}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+ и, значит, числа 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $k_{4}$
+\end_inset
+
+ разбиваются на пары одинаковой чётности
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Закончить раздел 6.5
+Нужна ссылка
 \end_layout
 
 \end_inset
 
+.
+ Не уменьшая общности, можно сказать, что 
+\begin_inset Formula $k_{1},k_{2}$
+\end_inset
 
+ и 
+\begin_inset Formula $k_{3},k_{4}$
+\end_inset
+
+ имеют одинаковую чётность.
+ Тогда все четыре числа 
+\begin_inset Formula $k_{1}-k_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{1}+k_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{3}-k_{4}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{3}+k_{4}$
+\end_inset
+
+ являются чётными и из равенств 
+\begin_inset Formula 
+\begin{multline*}
+\left(\frac{k_{1}+k_{2}}{2}\right)^{2}+\left(\frac{k_{1}-k_{2}}{2}\right)^{2}+\left(\frac{k_{3}+k_{4}}{2}\right)^{2}+\left(\frac{k_{3}-k_{4}}{2}\right)^{2}=\\
+=\frac{1}{2}\left(k_{2}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{2}\right)=p,
+\end{multline*}
+
+\end_inset
+
+ следует утверждение леммы.
+\end_layout
+
+\begin_layout Proof
+В случае 
+\begin_inset Formula $m=3$
+\end_inset
+
+ сумма 
+\begin_inset Formula $k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{2}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Квадраты целых чисел при делении на 
+\begin_inset Formula $3$
+\end_inset
+
+ дают в остатке 
+\begin_inset Formula $0$
+\end_inset
+
+ или 
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать, упражнение на перебор
+\end_layout
+
+\end_inset
+
+.
+ Поэтому одному из чисел 
+\begin_inset Formula $k_{i}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $3$
+\end_inset
+
+, а остальные не делятся
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+почему не могут делится все 4? получим, что 
+\begin_inset Formula $p$
+\end_inset
+
+ делится на 
+\begin_inset Formula $3$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+.
+ Изменив, если необходимо, нумерацию этих чисел, можно, не уменьшая общности,
+ считать, что на 
+\begin_inset Formula $3$
+\end_inset
+
+ делится 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+.
+ Сменив также в случае необходимости знаки у чисел 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $k_{4}$
+\end_inset
+
+ можно считать, 
+\begin_inset Formula $k_{2}\equiv k_{3}\equiv k_{4}\equiv1\left(\mod3\right)$
+\end_inset
+
+.
+ Действительно, если 
+\begin_inset Formula $k\equiv2\left(\mod3\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $-k\equiv1\left(\mod3\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Воспользуемся тождеством 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:product-of-two-sum-of-four-squares-as-sum-of-four-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в котором положим 
+\begin_inset Formula $x_{i}=k_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{1}=0$
+\end_inset
+
+, 
+\begin_inset Formula $y_{2}=y_{3}=y_{4}=1$
+\end_inset
+
+.
+ В результате получим:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+\left(\frac{k_{2}+k_{3}+k_{4}}{3}\right)^{2}+\left(\frac{k_{1}+k_{3}-k_{4}}{3}\right)^{2}+\left(\frac{k_{1}-k_{2}+k_{4}}{3}\right)^{2}+\\
++\left(\frac{k_{1}+k_{2}-k_{3}}{3}\right)^{2}=\frac{1}{3}\left(k_{1}^{2}+k_{2}^{2}+k_{3}^{2}+k_{4}^{2}\right)=p.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из предположений об остатках чисел 
+\begin_inset Formula $k_{i}$
+\end_inset
+
+ при делении на 
+\begin_inset Formula $3$
+\end_inset
+
+ следует, что все дроби в последнем равенстве есть целые числа.
+ Это завершает доказательство данной леммы и теоремы в целом.
+\end_layout
+
+\begin_layout Standard
+В виде суммы трёх квадратов представимы не все натуральные числа 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Исключительное множество составляют числа вида 
+\begin_inset Formula $4^{a}\left(8b+7\right)$
+\end_inset
+
+ при целых положительных числах и только они.
+ Так, например, число 
+\begin_inset Formula $7$
+\end_inset
+
+ нельзя представить в виде суммы трёх квадратов целых чисел.
+\end_layout
+
+\begin_layout Standard
+Теорему Лагранжа можно обобщить, рассматривая вместо квадратов кубы, четвёртые
+ и более высокие степени.
+ Д.
+\begin_inset space \thinspace{}
+\end_inset
+
+Гильберт в 1909 году доказал, что 
+\emph on
+для каждого целого 
+\begin_inset Formula $k>2$
+\end_inset
+
+ можно найти целое 
+\begin_inset Formula $n>0$
+\end_inset
+
+ с условием, что любое натуральное число представимо в виде суммы не более
+ чем 
+\begin_inset Formula $n$
+\end_inset
+
+ слагаемых вида 
+\begin_inset Formula $x^{k}$
+\end_inset
+
+ с целыми 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+При 
+\begin_inset Formula $k=2$
+\end_inset
+
+ это утверждение выполняется согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:every-number-is-sum-of-four-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ с 
+\begin_inset Formula $n=4$
+\end_inset
+
+.
+ Сформулированное утверждение было высказано как гипотеза в 1770 году Варингом.
 \end_layout
 
 \begin_layout Standard
