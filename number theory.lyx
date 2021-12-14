@@ -34512,6 +34512,12 @@ w\left(px\right)^{2}+by^{2}+cz^{2}=0.
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:quadric-of-3"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $a$
 \end_inset
@@ -34589,16 +34595,6 @@ status open
 
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Доказать достаточность
-\end_layout
-
-\end_inset
-
 Докажем сначала, что из существования нетривиального решения уравнения 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -34622,6 +34618,16 @@ noprefix "false"
 .
  Покажем это, например, для последнего из сравнений.
  В остальных случаях доказательства аналогичные.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Доказать остальные сравнения самостоятельно?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proof
@@ -34696,45 +34702,854 @@ noprefix "false"
 \end_inset
 
 .
+ Последнее возможно, только если на 
+\begin_inset Formula $p$
+\end_inset
+
+ делится и само 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $cz_{0}^{2}=-(ax_{0}^{2}+by_{0}^{2})$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p^{2}$
+\end_inset
+
+.
+ По условию, 
+\begin_inset Formula $c$
+\end_inset
+
+ не делится на квадрат никакого простого числа, поэтому 
+\begin_inset Formula $p\mid z_{0}^{2}$
+\end_inset
+
+ и, следовательно, 
+\begin_inset Formula $p\mid z_{0}$
+\end_inset
+
+.
+ Таким образом, мы нашли простое число 
+\begin_inset Formula $p$
+\end_inset
+
+ такое, что на него делятся числа 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ Но тогда, 
+\begin_inset Formula $\left(\frac{x_{0}}{p},\frac{y_{0}}{p},\frac{z_{0}}{p}\right)$
+\end_inset
+
+ являтеся решением уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, причём 
+\begin_inset Formula $\left|\frac{x_{0}}{p}+\frac{y_{0}}{p}+\frac{z_{0}}{p}\right|<\left|x_{0}+y_{0}+z_{0}\right|$
+\end_inset
+
+, что противоречит выбору 
+\begin_inset Formula $\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+.
+ Таким образом, действительно, числа 
+\begin_inset Formula $c$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ взаимно просты.
 \end_layout
 
 \begin_layout Proof
+Так как, по доказанному, 
+\begin_inset Formula $\left(c,y_{0}\right)=1$
+\end_inset
+
+, то по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:linear-congruence-one-variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует число 
+\begin_inset Formula $v$
+\end_inset
+
+, удовлетворяющее сравнению 
+\begin_inset Formula 
+\[
+y_{0}v\equiv x_{0}\quad\left(\mod c\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С учётом этого сравнения получаем 
+\begin_inset Formula 
+\[
+ax_{0}^{2}+by_{0}^{2}\equiv y_{0}^{2}\left(av^{2}+b\right)=-cz_{0}^{2}\equiv0\left(\mod c\right),
+\]
+
+\end_inset
+
+а так как 
+\begin_inset Formula $\left(c,y_{0}\right)=1$
+\end_inset
+
+, то 
+\begin_inset Formula $av^{2}+b\equiv0\quad\left(\mod c\right)$
+\end_inset
+
+, то есть последнее сравнение из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ действительно выполняется.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $\lambda,\mu,\nu$
+\end_inset
+
+ — некоторые решения сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ По модулю 
+\begin_inset Formula $c$
+\end_inset
+
+ справедливо сравнение 
+\begin_inset Formula 
+\[
+ax^{2}+by^{2}+cz^{2}\equiv ax^{2}+by^{2}\equiv ax^{2}-a\nu^{2}y^{2}\quad\left(\mod c\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+ax^{2}+by^{2}+cz^{2}\equiv ax^{2}-av^{2}y^{2}\equiv a\left(x-vy\right)\left(x+vy\right)\quad\left(\mod c\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Обозначив 
+\begin_inset Formula $f\left(x,y,z\right)=ax^{2}+by^{2}+cz^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{1}\left(x,y,z\right)=ax-avy$
+\end_inset
+
+ и 
+\begin_inset Formula $M_{1}\left(x,y,z\right)=x+vy$
+\end_inset
+
+, последнее сравнение можно переписать в виде 
+\begin_inset Formula 
+\begin{equation}
+f\left(x,y,z\right)\equiv L_{1}\left(x,y,z\right)\cdot M_{1}\left(x,y,z\right)\quad\left(\mod c\right).\label{eq:quadric-decomposition-c}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Используя остальные сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ из формулировки теоремы можно также получить сравнения 
+\begin_inset Formula 
+\begin{equation}
+f\left(x,y,z\right)\equiv L_{2}\left(x,y,z\right)\cdot M_{2}\left(x,y,z\right)\quad\left(\mod a\right),\label{eq:quadric-decomposition-a}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+f\left(x,y,z\right)\equiv L_{3}\left(x,y,z\right)\cdot M_{3}\left(x,y,z\right)\quad\left(\mod b\right).\label{eq:quadric-decomposition-b}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Рассмотрим теперь всевозможные тройки целых чисел 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+, удовлетворяющие условиям 
+\begin_inset Formula 
+\begin{equation}
+0\le x\le\left\lfloor \sqrt{\left|bc\right|}\right\rfloor ,\quad0\le y\le\left\lfloor \sqrt{\left|ac\right|}\right\rfloor ,\quad0\le z\le\left\lfloor \sqrt{ab}\right\rfloor .\label{eq:quadric-bounds}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Количество этих троек 
+\begin_inset Formula $S$
+\end_inset
+
+ удовлетворяет неравенству
+\begin_inset Formula 
+\begin{multline*}
+S=\left(1+\left\lfloor \sqrt{\left|bc\right|}\right\rfloor \right)\left(1+\left\lfloor \sqrt{\left|ac\right|}\right\rfloor \right)\left(1+\left\lfloor \sqrt{ab}\right\rfloor \right)\ge\\
+\ge\sqrt{\left|bc\right|}\cdot\sqrt{\left|ac\right|}\cdot\sqrt{ab}=\sqrt{\left|a^{2}b^{2}c^{2}\right|}=\left|abc\right|.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Каждой тройке поставим в соответствии набор классов вычетов по модулям 
+\begin_inset Formula $\left|c\right|$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, а именно 
+\begin_inset Formula 
+\[
+L_{1}\left(x,y,z\right)\left(\mod\left|c\right|\right),\quad L_{2}\left(x,y,z\right)\left(\mod a\right),\quad L_{3}\left(x,y,z\right)\left(\mod b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Количество троек этих классов равно 
+\begin_inset Formula $\left|abc\right|$
+\end_inset
+
+, то есть больше, чем количество возможных троек 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+.
+ Поэтому существуют две такие тройки 
+\begin_inset Formula $\left(x_{1},y_{1},z_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(x_{2},y_{2},z_{2}\right)$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+L_{1}\left(x_{1},y_{1},z_{1}\right)\equiv L_{1}\left(x_{2},y_{2},z_{2}\right)\quad\left(\mod\left|c\right|\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{2}\left(x_{1},y_{1},z_{1}\right)\equiv L_{2}\left(x_{2},y_{2},z_{2}\right)\quad\left(\mod a\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{3}\left(x_{1},y_{1},z_{1}\right)\equiv L_{3}\left(x_{2},y_{2},z_{2}\right)\quad\left(\mod b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Функции 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+ являются линейными, поэтому, обозначив 
+\begin_inset Formula $x_{0}=x_{1}-x_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{0}=y_{1}-y_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{0}=z_{1}-z_{2}$
+\end_inset
+
+, эти сравнения можно переписать в виде 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+L_{1}\left(x_{1}-x_{2},y_{1}-y_{2},z_{1}-z_{2}\right)\equiv L_{1}\left(x_{0},y_{0},z_{0}\right)\equiv0\quad\left(\mod\left|c\right|\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{2}\left(x_{1}-x_{2},y_{1}-y_{2},z_{1}-z_{2}\right)\equiv L_{2}\left(x_{0},y_{0},z_{0}\right)\equiv0\quad\left(\mod a\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{3}\left(x_{1}-x_{2},y_{1}-y_{2},z_{1}-z_{2}\right)\equiv L_{1}\left(x_{0},y_{0},z_{0}\right)\equiv0\quad\left(\mod b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С учётом последних сравнений, из сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-decomposition-c"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-decomposition-a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-decomposition-b"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует 
+\begin_inset Formula $c\mid f\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a\mid f\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $a\mid f\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ взаимно простые, то эти делимости означают, что 
+\begin_inset Formula $abc\mid f\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+В силу неравенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\left|x_{0}\right|=\left|x_{1}-x_{2}\right|\le\left\lfloor \sqrt{\left|bc\right|}\right\rfloor ,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|y_{0}\right|=\left|y_{1}-y_{2}\right|\le\left\lfloor \sqrt{\left|ac\right|}\right\rfloor ,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|z_{0}\right|=\left|z_{1}-z_{2}\right|\le\left\lfloor \sqrt{ab}\right\rfloor ,
+\]
+
+\end_inset
+
+поэтому 
+\begin_inset Formula 
+\[
+f\left(x_{0},y_{0},z_{0}\right)\ge cz_{0}^{2}>abc
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+f\left(x_{0},y_{0},z_{0}\right)\le ax_{0}^{2}+by_{0}^{2}<2\left|abc\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Здесь использовался тот факт, что числа 
+\begin_inset Formula $\left|ac\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\left|bc\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $ab$
+\end_inset
+
+ не являются квадратами.
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Доказать необходимость
+Пояснить почему это так и как именно это использовалось
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $f\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left|abc\right|$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(x_{0},y_{0},z_{0}\right)=mabc$
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+ — целое число, которое может принимать значения 
+\begin_inset Formula $0$
+\end_inset
+
+ или 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ Случай 
+\begin_inset Formula $m=0$
+\end_inset
+
+ доказывает требуемое утверждение, так как по крайней мере одно из чисел
+ 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ или 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ отлично от нуля
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Это можно было бы обосновать подробнее
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если же 
+\begin_inset Formula $m=-1$
+\end_inset
+
+, то 
+\begin_inset Formula $ax_{0}^{2}+by_{0}^{2}+cz_{0}^{2}=-abc$
+\end_inset
+
+ или 
+\begin_inset Formula 
+\[
+-a\left(x_{0}^{2}+bc\right)=\left(by_{0}^{2}+cz_{0}^{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Умножив последнее равенство на 
+\begin_inset Formula $x_{0}^{2}+bc$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\begin{multline*}
+-a\left(x_{0}^{2}+bc\right)^{2}=\left(by_{0}^{2}+cz_{0}^{2}\right)\left(x_{0}^{2}+bc\right)=\\
+=\left(by_{0}^{2}x_{0}^{2}+cz_{0}^{2}x_{0}^{2}+b^{2}cy_{0}^{2}+bc^{2}z_{0}^{2}\right)=\\
+=b\left(x_{0}^{2}y_{0}^{2}+c^{2}z_{0}^{2}\right)+c\left(x_{0}^{2}z_{0}^{2}+b^{2}y_{0}^{2}\right)=\\
+=b\left(x_{0}y_{0}-cz_{0}\right)^{2}+c\left(x_{0}z_{0}+by_{0}\right)^{2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Но это равенство означает, что числа 
+\begin_inset Formula 
+\[
+x_{0}^{2}+bc,\quad,x_{0}y_{0}-cz_{0},\quad x_{0}z_{0}+by_{0}
+\]
+
+\end_inset
+
+составляют решение уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Это решение не тривиально, так как 
+\begin_inset Formula $x_{0}^{2}+bc\neq0$
+\end_inset
+
+.
+ В противном случае, 
+\begin_inset Formula $\left|bc\right|$
+\end_inset
+
+ было бы квадратом целого числа, что противоречит условию теоремы.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+Существует алгоритм, позволяющий в случае разрешимости уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-of-3-equals-zero"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-Закончить раздел 6.6
+\end_inset
+
+ находит все решения в целых числах.
+ Мы не будем останавливаться здесь на его описании.
+ Рассмотрим некоторые примеры.
 \end_layout
+
+\begin_layout Example
+Решить в целых числах уравнение 
+\begin_inset Formula 
+\[
+3x^{2}+2y^{2}-z^{2}=0.
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Example
+Согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:quadric-of-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, данное уравнение имеет нетривиальное решение лишь в случае разрешимости
+ трёх следующих уравнений:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+2\lambda^{2}-1\equiv0\left(\mod3\right),-\mu^{2}+3\equiv0\left(\mod2\right),3\nu^{2}+2\equiv0\left(\mod1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Первое из этих сравнений равносильно 
+\begin_inset Formula $\lambda^{2}\equiv-1\left(\mod3\right)$
+\end_inset
+
+ и, так как 
+\begin_inset Formula $\left(\frac{-1}{3}\right)=-1$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, оно не имеет решений.
+ Значит данное уравнение имеет лишь триваильное решение 
+\begin_inset Formula $x=y=z=0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Найти все простые числа 
+\begin_inset Formula $p$
+\end_inset
+
+, при которых уравнение 
+\begin_inset Formula $x^{2}+y^{2}=pz^{2}$
+\end_inset
+
+ имеет нетривиальное решение в целых числах.
+\end_layout
+
+\begin_layout Example
+При 
+\begin_inset Formula $p=2$
+\end_inset
+
+ уравнение имеет решение 
+\begin_inset Formula $x=y=z=1$
+\end_inset
+
+.
+ Поэтому далее будем считать, что простое число 
+\begin_inset Formula $p$
+\end_inset
+
+ нечётно.
+\end_layout
+
+\begin_layout Example
+Согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:quadric-of-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, данное уравнение имеет нетривиальное решение в том и только том случае,
+ когда выполняетя сравнение 
+\begin_inset Formula $\nu^{2}+1\equiv0\left(\mod p\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $\nu^{2}\equiv-1\left(\mod p\right)$
+\end_inset
+
+.
+ Это условие равносильно равенству 
+\begin_inset Formula $\left(\frac{-1}{p}\right)=1$
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Закончить главу 6
+Добавить ссылку
 \end_layout
 
 \end_inset
 
+.
+ Учитывая, что 
+\begin_inset Formula $\left(\frac{-1}{p}\right)=\left(-1\right)^{\frac{p-1}{2}}$
+\end_inset
 
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, заключаем, что нетриальное решение существует только для 
+\begin_inset Formula $p=2$
+\end_inset
+
+ и простых чисел 
+\begin_inset Formula $p$
+\end_inset
+
+ вида 
+\begin_inset Formula $p=4n+1$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
