@@ -35552,6 +35552,368 @@ status open
 .
 \end_layout
 
+\begin_layout Chapter
+Первообразные корни и индексы
+\end_layout
+
+\begin_layout Standard
+Теорема 4.1
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ из главы 4
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ утверждает, что при любом натуральном 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+ группа обратимых элементов кольца 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+ состоит из 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+ классов, наименьшие неотрицательные вычеты которых взаимно просты с модулем
+ 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Мы будем обозначать эту группу символом 
+\begin_inset Formula $\left(\mathbb{Z}/m\mathbb{Z}\right)^{*}$
+\end_inset
+
+.
+ Настоящая глава посвящена изучению её структуры.
+\end_layout
+
+\begin_layout Section
+Показатель числа по заданному модулю
+\end_layout
+
+\begin_layout Standard
+Согласно теореме Эйлера
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко идёт ссылка на малую теорему Ферма
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, для каждого целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+ взаимно простого с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+ выполняется сравнение 
+\begin_inset Formula $a^{\varphi\left(m\right)}\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ Для некоторых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ сравнение 
+\begin_inset Formula $a^{d}\equiv1\left(\mod m\right)$
+\end_inset
+
+ может выполняться и при 
+\begin_inset Formula $d<\varphi\left(m\right)$
+\end_inset
+
+.
+ Например, 
+\begin_inset Formula $\left(-1\right)^{2}\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — целое число, взаимно простое с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Напомним, что наименьшее натруальное число 
+\begin_inset Formula $d$
+\end_inset
+
+ с условием 
+\begin_inset Formula $a^{d}\equiv1\left(\mod m\right)$
+\end_inset
+
+ называется показателем числа 
+\begin_inset Formula $a$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+ Например, при 
+\begin_inset Formula $m>2$
+\end_inset
+
+ показатель 
+\begin_inset Formula $-1$
+\end_inset
+
+ равен 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Если два числа сравнимы по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, то их показатели по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ одинаковы.
+\end_layout
+
+\begin_layout Standard
+На языке теории групп можно сказать, что показатель числа 
+\begin_inset Formula $a$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ равен порядку элемента 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ в мультипликативной группе 
+\begin_inset Formula $\left(\mathbb{Z}/m\mathbb{Z}\right)^{*}$
+\end_inset
+
+.
+ Заметим, что порядок этой группы равен 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Целое число 
+\begin_inset Formula $a$
+\end_inset
+
+ взаимно простое с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+ называется первообразным корнем по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, если его показатель равен 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $a$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, то числа 
+\begin_inset Formula 
+\begin{equation}
+1,a,a^{2},\dots,a^{\varphi\left(m\right)-1}\label{eq:primitive-root-powers}
+\end{equation}
+
+\end_inset
+
+ принадлежат различным классам вычетов.
+ Действительно, если бы нашлись целые числа 
+\begin_inset Formula $0\le u<v\le\varphi\left(m\right)-1$
+\end_inset
+
+, для которых 
+\begin_inset Formula $a^{u}\equiv a^{v}\left(\mod m\right)$
+\end_inset
+
+, то в силу взаимной простоты чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ мы получили бы 
+\begin_inset Formula 
+\[
+a^{v-u}\equiv1\left(\mod m\right),
+\]
+
+\end_inset
+
+но это невозможно, так как 
+\begin_inset Formula $0<v-u<\varphi\left(m\right)$
+\end_inset
+
+, а показатель 
+\begin_inset Formula $a$
+\end_inset
+
+ равен 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Множество 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:primitive-root-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ состоит из 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+ чисел.
+ Поэтому среди этих чисел есть представители всех классов вычетов, состоящих
+ из чисел взаимно прсотых с 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Другими словами, для кжадого целого числа 
+\begin_inset Formula $b$
+\end_inset
+
+, взаимно простого с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+, найдётся единственное целое 
+\begin_inset Formula $k$
+\end_inset
+
+, удовлетворяющее условиям 
+\begin_inset Formula 
+\[
+b\equiv a^{k}\left(\mod m\right),\qquad0\le k<\varphi\left(m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это свойство можно выразить иначе, сказав, что первообразный корень по модулю
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ существует лишь в случае, когда 
+\begin_inset Formula $\left(\mathbb{Z}/m\mathbb{Z}\right)^{*}$
+\end_inset
+
+ — циклическая группа.
+ Оно выполняется не для всех модулей 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 7.1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить главу 7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
