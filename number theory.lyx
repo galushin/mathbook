@@ -36075,7 +36075,7 @@ name "lem:multiplicative-order-properties"
 \end_inset
 
 , 
-\begin_inset Formula $0<r<d $
+\begin_inset Formula $0<r<d$
 \end_inset
 
 .
@@ -36393,6 +36393,56 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Существование первообразнызных корней по простому модулю
+\end_layout
+
+\begin_layout Standard
+В 1801 году К.Ф.
+\begin_inset space \thinspace{}
+\end_inset
+
+Гаусс опубликовал два доказательства следующей теоремы.
+\end_layout
+
+\begin_layout Theorem
+Для каждого простого нечётного числа 
+\begin_inset Formula $p$
+\end_inset
+
+ существует первообразные корни по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 7.2
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
