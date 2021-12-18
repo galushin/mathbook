@@ -35552,6 +35552,862 @@ status open
 .
 \end_layout
 
+\begin_layout Chapter
+Первообразные корни и индексы
+\end_layout
+
+\begin_layout Standard
+Теорема 4.1
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ из главы 4
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ утверждает, что при любом натуральном 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+ группа обратимых элементов кольца 
+\begin_inset Formula $\mathbb{Z}/m\mathbb{Z}$
+\end_inset
+
+ состоит из 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+ классов, наименьшие неотрицательные вычеты которых взаимно просты с модулем
+ 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Мы будем обозначать эту группу символом 
+\begin_inset Formula $\left(\mathbb{Z}/m\mathbb{Z}\right)^{*}$
+\end_inset
+
+.
+ Настоящая глава посвящена изучению её структуры.
+\end_layout
+
+\begin_layout Section
+Показатель числа по заданному модулю
+\end_layout
+
+\begin_layout Standard
+Согласно теореме Эйлера
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко идёт ссылка на малую теорему Ферма
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, для каждого целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+ взаимно простого с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+ выполняется сравнение 
+\begin_inset Formula $a^{\varphi\left(m\right)}\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ Для некоторых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ сравнение 
+\begin_inset Formula $a^{d}\equiv1\left(\mod m\right)$
+\end_inset
+
+ может выполняться и при 
+\begin_inset Formula $d<\varphi\left(m\right)$
+\end_inset
+
+.
+ Например, 
+\begin_inset Formula $\left(-1\right)^{2}\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — целое число, взаимно простое с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Напомним, что наименьшее натруальное число 
+\begin_inset Formula $d$
+\end_inset
+
+ с условием 
+\begin_inset Formula $a^{d}\equiv1\left(\mod m\right)$
+\end_inset
+
+ называется показателем числа 
+\begin_inset Formula $a$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+ Например, при 
+\begin_inset Formula $m>2$
+\end_inset
+
+ показатель 
+\begin_inset Formula $-1$
+\end_inset
+
+ равен 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Если два числа сравнимы по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, то их показатели по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ одинаковы.
+\end_layout
+
+\begin_layout Standard
+На языке теории групп можно сказать, что показатель числа 
+\begin_inset Formula $a$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ равен порядку элемента 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ в мультипликативной группе 
+\begin_inset Formula $\left(\mathbb{Z}/m\mathbb{Z}\right)^{*}$
+\end_inset
+
+.
+ Заметим, что порядок этой группы равен 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Целое число 
+\begin_inset Formula $a$
+\end_inset
+
+ взаимно простое с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+ называется первообразным корнем по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, если его показатель равен 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $a$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, то числа 
+\begin_inset Formula 
+\begin{equation}
+1,a,a^{2},\dots,a^{\varphi\left(m\right)-1}\label{eq:primitive-root-powers}
+\end{equation}
+
+\end_inset
+
+ принадлежат различным классам вычетов.
+ Действительно, если бы нашлись целые числа 
+\begin_inset Formula $0\le u<v\le\varphi\left(m\right)-1$
+\end_inset
+
+, для которых 
+\begin_inset Formula $a^{u}\equiv a^{v}\left(\mod m\right)$
+\end_inset
+
+, то в силу взаимной простоты чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ мы получили бы 
+\begin_inset Formula 
+\[
+a^{v-u}\equiv1\left(\mod m\right),
+\]
+
+\end_inset
+
+но это невозможно, так как 
+\begin_inset Formula $0<v-u<\varphi\left(m\right)$
+\end_inset
+
+, а показатель 
+\begin_inset Formula $a$
+\end_inset
+
+ равен 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Множество 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:primitive-root-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ состоит из 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+ чисел.
+ Поэтому среди этих чисел есть представители всех классов вычетов, состоящих
+ из чисел взаимно прсотых с 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Другими словами, для кжадого целого числа 
+\begin_inset Formula $b$
+\end_inset
+
+, взаимно простого с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+, найдётся единственное целое 
+\begin_inset Formula $k$
+\end_inset
+
+, удовлетворяющее условиям 
+\begin_inset Formula 
+\[
+b\equiv a^{k}\left(\mod m\right),\qquad0\le k<\varphi\left(m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Это свойство можно выразить иначе, сказав, что первообразный корень по модулю
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ существует лишь в случае, когда 
+\begin_inset Formula $\left(\mathbb{Z}/m\mathbb{Z}\right)^{*}$
+\end_inset
+
+ — циклическая группа.
+ Оно выполняется не для всех модулей 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Например, квадрат каждого нечётного числа при делении на 
+\begin_inset Formula $8$
+\end_inset
+
+ даёт в остатке 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Значит показатель каждого нечётного числа по модулю 
+\begin_inset Formula $8$
+\end_inset
+
+ может равняться лишь 
+\begin_inset Formula $1$
+\end_inset
+
+ или 
+\begin_inset Formula $2$
+\end_inset
+
+, и всегда отличен от 
+\begin_inset Formula $\varphi\left(8\right)=4$
+\end_inset
+
+.
+ Первообразных корней по модулю 
+\begin_inset Formula $8$
+\end_inset
+
+ не существует.
+\end_layout
+
+\begin_layout Standard
+Свойства показателей описывает следующая лемма.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:multiplicative-order-properties"
+
+\end_inset
+
+1.
+ Пусть 
+\begin_inset Formula $d$
+\end_inset
+
+ — показатель числа 
+\begin_inset Formula $a$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Натуральное число 
+\begin_inset Formula $n$
+\end_inset
+
+ удовлетворяет условию 
+\begin_inset Formula $a^{n}\equiv1\left(\mod m\right)$
+\end_inset
+
+ в том и только том случае, когда 
+\begin_inset Formula $d\mid n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+2.
+ Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — целые числа, взаимно простые с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+, показатели их равны соотвествтенно 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\left(u,v\right)=1$
+\end_inset
+
+, то показатель числа 
+\begin_inset Formula $ab$
+\end_inset
+
+ равен 
+\begin_inset Formula $uv$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+3.
+ Если показатель числа 
+\begin_inset Formula $c$
+\end_inset
+
+ равен 
+\begin_inset Formula $uv$
+\end_inset
+
+, то показатель 
+\begin_inset Formula $c^{u}$
+\end_inset
+
+ равен 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $d\mid n$
+\end_inset
+
+, тогда, по определению, существует целое число 
+\begin_inset Formula $u$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $n=du$
+\end_inset
+
+.
+ Значит 
+\begin_inset Formula $a^{n}=\left(a^{d}\right)^{u}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a^{d}\equiv1\left(\mod m\right)$
+\end_inset
+
+ по определению показателя числа, то 
+\begin_inset Formula $a^{n}=\left(a^{d}\right)^{u}\equiv1^{u}\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $a^{n}\equiv1\left(\mod m\right)$
+\end_inset
+
+, но 
+\begin_inset Formula $d\nmid n$
+\end_inset
+
+.
+ Разделим 
+\begin_inset Formula $n$
+\end_inset
+
+ на 
+\begin_inset Formula $d$
+\end_inset
+
+ с остатком, то есть представим 
+\begin_inset Formula $n$
+\end_inset
+
+ в виде 
+\begin_inset Formula $n=qd+r$
+\end_inset
+
+, 
+\begin_inset Formula $0<r<d $
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+a^{n}=a^{qd+r}=\left(a^{d}\right)^{q}a^{r}\equiv1^{q}a^{r}\equiv a^{r}\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, 
+\begin_inset Formula $a^{r}\equiv1\left(\mod m\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $0<r<d$
+\end_inset
+
+, что противоречит определению 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Первое утверждение леммы доказано.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел этот пункт
+\end_layout
+
+\end_inset
+
+Для доказательства второго утверждения обозначим показатель числа 
+\begin_inset Formula $ab$
+\end_inset
+
+ как 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ По свойствам степени и произведения 
+\begin_inset Formula $\left(ab\right)^{uv}=a^{uv}\cdot b^{uv}=\left(a^{u}\right)^{v}\cdot\left(b^{v}\right)^{u}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $u$
+\end_inset
+
+ — показатель 
+\begin_inset Formula $a$
+\end_inset
+
+, а 
+\begin_inset Formula $v$
+\end_inset
+
+ — показатель 
+\begin_inset Formula $b$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\left(ab\right)^{uv}\equiv1^{v}\cdot1^{u}\equiv1\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По первому утверждению леммы отсюда следует, что 
+\begin_inset Formula $s\mid uv$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\left(ab\right)^{us}=\left(a^{u}\right)^{s}\cdot b^{us}\equiv1\cdot b^{us}\equiv1\left(\mod m\right),
+\]
+
+\end_inset
+
+таким образом, 
+\begin_inset Formula $b^{us}\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ Тогда, по первому утверждению леммы, 
+\begin_inset Formula $v\mid us$
+\end_inset
+
+, так как 
+\begin_inset Formula $\left(u,v\right)=1$
+\end_inset
+
+, то 
+\begin_inset Formula $v\mid s$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Сослаться
+\end_layout
+
+\end_inset
+
+.
+ Аналогично можно доказать, что 
+\begin_inset Formula $u\mid s$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left(u,v\right)=1$
+\end_inset
+
+, то 
+\begin_inset Formula $uv\mid s$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Сослаться
+\end_layout
+
+\end_inset
+
+.
+ Из 
+\begin_inset Formula $s\mid uv$
+\end_inset
+
+ и 
+\begin_inset Formula $uv\mid s$
+\end_inset
+
+ следует, что 
+\begin_inset Formula $s=uv$
+\end_inset
+
+.
+ Второе утверждение леммы доказано.
+\end_layout
+
+\begin_layout Proof
+По определению показателя 
+\begin_inset Formula $c^{uv}\equiv1\left(\mod m\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left(c^{u}\right)^{v}\equiv1\left(\mod m\right)$
+\end_inset
+
+, остаётся доказать, что при целых 
+\begin_inset Formula $0<n<v$
+\end_inset
+
+ сравнение 
+\begin_inset Formula $\left(c^{u}\right)^{n}\equiv1\left(\mod m\right)$
+\end_inset
+
+ не выполняется.
+ Действительно, если 
+\begin_inset Formula $0<n<v$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(c^{u}\right)^{n}\equiv1\left(\mod m\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $0<un<uv$
+\end_inset
+
+ и 
+\begin_inset Formula $c^{un}\equiv1\left(\mod m\right)$
+\end_inset
+
+, что противоречит тому, что 
+\begin_inset Formula $uv$
+\end_inset
+
+ — показатель числа 
+\begin_inset Formula $c$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Таким образом, третье утверждение леммы доказано.
+\end_layout
+
+\begin_layout Remark
+Если 
+\begin_inset Formula $\left(a,m\right)=1$
+\end_inset
+
+ и целые числа 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ удовлетворяют сравнению 
+\begin_inset Formula $a^{u}\equiv a^{v}\left(\mod m\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $u\equiv v\left(\mod d\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $d$
+\end_inset
+
+ — показатель 
+\begin_inset Formula $a$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+Не уменьшая общности можно сказать, что 
+\begin_inset Formula $v>u$
+\end_inset
+
+ (в противном случае можно поменять 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ местами).
+ Поскольку 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ взаимно просты, то из данного сравнения следует 
+\begin_inset Formula $a^{v-u}\equiv1\left(\mod m\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее
+\end_layout
+
+\end_inset
+
+.
+ Согласно первому утверждению леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:multiplicative-order-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем, что 
+\begin_inset Formula $d\mid\left(v-u\right)$
+\end_inset
+
+, что равносильно 
+\begin_inset Formula $u\equiv v\left(\mod m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить главу 7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
