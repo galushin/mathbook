@@ -19519,7 +19519,7 @@ noprefix "false"
 \begin_inset Formula $d\mid\varphi\left(m\right)$
 \end_inset
 
-, что завершает доказательство теоремы.
+, что завершает доказательство леммы.
 \end_layout
 
 \begin_layout Section
@@ -19988,6 +19988,12 @@ status open
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:prime-tests-and-big-prime-construction"
+
+\end_inset
+
 Проверка на простоту и построение больших простых чисел
 \end_layout
 
@@ -35672,7 +35678,7 @@ status open
 \end_inset
 
 .
- Напомним, что наименьшее натруальное число 
+ Напомним, что наименьшее натуральное число 
 \begin_inset Formula $d$
 \end_inset
 
@@ -35842,12 +35848,12 @@ noprefix "false"
 
  чисел.
  Поэтому среди этих чисел есть представители всех классов вычетов, состоящих
- из чисел взаимно прсотых с 
+ из чисел взаимно простых с 
 \begin_inset Formula $m$
 \end_inset
 
 .
- Другими словами, для кжадого целого числа 
+ Другими словами, для каждого целого числа 
 \begin_inset Formula $b$
 \end_inset
 
@@ -35973,7 +35979,7 @@ name "lem:multiplicative-order-properties"
 \begin_inset Formula $m$
 \end_inset
 
-, показатели их равны соотвествтенно 
+, показатели их равны соответственно 
 \begin_inset Formula $u$
 \end_inset
 
@@ -36019,92 +36025,30 @@ name "lem:multiplicative-order-properties"
 \end_layout
 
 \begin_layout Proof
-Пусть 
-\begin_inset Formula $d\mid n$
-\end_inset
-
-, тогда, по определению, существует целое число 
-\begin_inset Formula $u$
-\end_inset
-
- такое, что 
-\begin_inset Formula $n=du$
-\end_inset
-
-.
- Значит 
-\begin_inset Formula $a^{n}=\left(a^{d}\right)^{u}$
-\end_inset
-
-.
- Так как 
-\begin_inset Formula $a^{d}\equiv1\left(\mod m\right)$
-\end_inset
-
- по определению показателя числа, то 
-\begin_inset Formula $a^{n}=\left(a^{d}\right)^{u}\equiv1^{u}\equiv1\left(\mod m\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-Пусть теперь 
-\begin_inset Formula $a^{n}\equiv1\left(\mod m\right)$
-\end_inset
-
-, но 
-\begin_inset Formula $d\nmid n$
-\end_inset
-
-.
- Разделим 
-\begin_inset Formula $n$
-\end_inset
-
- на 
-\begin_inset Formula $d$
-\end_inset
-
- с остатком, то есть представим 
-\begin_inset Formula $n$
-\end_inset
-
- в виде 
-\begin_inset Formula $n=qd+r$
-\end_inset
-
-, 
-\begin_inset Formula $0<r<d $
-\end_inset
-
-.
- Тогда 
-\begin_inset Formula 
-\[
-a^{n}=a^{qd+r}=\left(a^{d}\right)^{q}a^{r}\equiv1^{q}a^{r}\equiv a^{r}\left(\mod m\right).
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Таким образом, 
-\begin_inset Formula $a^{r}\equiv1\left(\mod m\right)$
+Заметим, что числа 
+\begin_inset Formula $ab$
 \end_inset
 
  и 
-\begin_inset Formula $0<r<d$
+\begin_inset Formula $c^{u}$
 \end_inset
 
-, что противоречит определению 
-\begin_inset Formula $d$
+, о которых идёт речь в формулировке теоремы, взаимно просты с модулем,
+ поэтому каждое из них имеет некоторый показатель.
+\end_layout
+
+\begin_layout Proof
+Первое утверждение леммы было доказано ранее — как лемма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:multiplicative-order"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
 .
- Первое утверждение леммы доказано.
 \end_layout
 
 \begin_layout Proof
@@ -36293,6 +36237,12 @@ status open
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:powers-congruence-mod-prime-criterion"
+
+\end_inset
+
 Если 
 \begin_inset Formula $\left(a,m\right)=1$
 \end_inset
@@ -36329,15 +36279,6 @@ status open
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать доказательство
-\end_layout
-
-\end_inset
-
 Не уменьшая общности можно сказать, что 
 \begin_inset Formula $v>u$
 \end_inset
@@ -36390,6 +36331,1007 @@ noprefix "false"
 
 , что равносильно 
 \begin_inset Formula $u\equiv v\left(\mod m\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Существование первообразных корней по простому модулю
+\end_layout
+
+\begin_layout Standard
+В 1801 году К.Ф.
+\begin_inset space \thinspace{}
+\end_inset
+
+Гаусс опубликовал два доказательства следующей теоремы.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:odd-prime-has-primitive-root"
+
+\end_inset
+
+Для каждого простого нечётного числа 
+\begin_inset Formula $p$
+\end_inset
+
+ существуют первообразные корни по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел, хотя одну из идей доказательства почти угадал
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко приведено два доказательства, но второе сразу же используется
+ в дальнейших рассуждениях.
+ Зато первое доказательство использует предыдущую лемму, является более
+ локальным.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Показатель любого числа 
+\begin_inset Formula $a$
+\end_inset
+
+, не делящегося на 
+\begin_inset Formula $p$
+\end_inset
+
+, по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ делит 
+\begin_inset Formula $p-1$
+\end_inset
+
+.
+ Для каждого натурального 
+\begin_inset Formula $d$
+\end_inset
+
+, делящего 
+\begin_inset Formula $p-1$
+\end_inset
+
+ обозначим символом 
+\begin_inset Formula $\psi\left(d\right)$
+\end_inset
+
+ количество чисел среди 
+\begin_inset Formula $1,2,\dots,p-1$
+\end_inset
+
+, показатель которых равен 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Так как у каждого из чисел 
+\begin_inset Formula $1,2,\dots,p-1$
+\end_inset
+
+ есть показатель, то 
+\begin_inset Formula 
+\begin{equation}
+\sum_{d\mid p-1}\psi\left(d\right)=p-1.\label{eq:thm-primitive-root-counting}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть для некоторого 
+\begin_inset Formula $d$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $\psi\left(d\right)>0$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — натуральное число из отрезка 
+\begin_inset Formula $\left[1,p-1\right]$
+\end_inset
+
+ такое, что порядок 
+\begin_inset Formula $b$
+\end_inset
+
+ равен 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Тогда, по определению показателя числа, все числа 
+\begin_inset Formula 
+\begin{equation}
+b^{k},k=0,1,\dots,d-1\label{eq:thm-primitive-root-numbers}
+\end{equation}
+
+\end_inset
+
+ лежат в различных классах вычетов по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ и удовлетворяют сравнениям 
+\begin_inset Formula 
+\[
+\left(b^{k}\right)^{d}\equiv\left(b^{d}\right)^{k}\equiv1\left(\mod p\right).
+\]
+
+\end_inset
+
+ Значит они являются решениями сравнения 
+\begin_inset Formula $x^{d}-1\equiv0\left(\mod p\right)$
+\end_inset
+
+.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:polynomial-congruence-number-of-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у данного сравнения не может быть более 
+\begin_inset Formula $d$
+\end_inset
+
+ решений, поэтому все его решения исчерпываются классами вычетов по модулю
+ 
+\begin_inset Formula $p$
+\end_inset
+
+, содержащих числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:thm-primitive-root-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В частности, каждое число, имеющее показатель 
+\begin_inset Formula $d$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, сравнимо с одним из чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:thm-primitive-root-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $r=\left(k,d\right)>1$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\[
+\left(b^{k}\right)^{\frac{d}{r}}\equiv\left(b^{d}\right)^{\frac{k}{r}}\equiv1\left(\mod p\right),
+\]
+
+\end_inset
+
+то есть показатель 
+\begin_inset Formula $b^{k}$
+\end_inset
+
+ не превосходит 
+\begin_inset Formula $\frac{d}{r}$
+\end_inset
+
+.
+ Значит, показатель числа 
+\begin_inset Formula $b^{k}$
+\end_inset
+
+ из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:thm-primitive-root-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ может равен 
+\begin_inset Formula $d$
+\end_inset
+
+ только в случае 
+\begin_inset Formula $\left(k,d\right)=1$
+\end_inset
+
+.
+ Значит при любом 
+\begin_inset Formula $d\mid p-1$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $\psi\left(d\right)\le\varphi\left(d\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Согласно лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:sum-over-divisors-of-euler-phi"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\sum_{d\mid p-1}\varphi\left(d\right)=p-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+С учётом 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:thm-primitive-root-counting"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем
+\begin_inset Formula 
+\[
+\sum_{d\mid p-1}\left(\varphi\left(d\right)-\psi\left(d\right)\right)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как каждое слагаемое в этой сумме является положительным, то для любого
+ 
+\begin_inset Formula $d\mid p$
+\end_inset
+
+ справедливо 
+\begin_inset Formula $\psi\left(d\right)=\varphi\left(d\right)$
+\end_inset
+
+.
+ В частности, 
+\begin_inset Formula $\psi\left(p-1\right)=\varphi\left(p-1\right)>0$
+\end_inset
+
+.
+ Таким образом, первообразные корни по любому простому модулю существуют,
+ теорема доказана.
+\end_layout
+
+\begin_layout Remark
+Для каждого простого нечётного 
+\begin_inset Formula $p$
+\end_inset
+
+ существует в точности 
+\begin_inset Formula $\varphi\left(p-1\right)$
+\end_inset
+
+ первообразных корней по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Почему здесь исключён случай 
+\begin_inset Formula $p=2$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Было доказано при доказательстве теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:odd-prime-has-primitive-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Для практического нахождения первообразных корней удобно пользоваться следующим
+ утверждением.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:primitive-root-criterion"
+
+\end_inset
+
+Целое число 
+\begin_inset Formula $c$
+\end_inset
+
+, не делящееся на простое нечётное 
+\begin_inset Formula $p$
+\end_inset
+
+, будет первообразным корнем по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ в том и только том сулчае, если для любого простого числа 
+\begin_inset Formula $q$
+\end_inset
+
+, делящего 
+\begin_inset Formula $p-1$
+\end_inset
+
+ выполняется 
+\begin_inset Formula 
+\[
+c^{\frac{p-1}{q}}\not\equiv1\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+Так как 
+\begin_inset Formula $\frac{p-1}{q}\le p-1<p$
+\end_inset
+
+, то если 
+\begin_inset Formula $c^{\frac{p-1}{q}}\equiv1\left(\mod p\right)$
+\end_inset
+
+, то показатель 
+\begin_inset Formula $c$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ не может превосходить 
+\begin_inset Formula $\frac{p-1}{q}<p$
+\end_inset
+
+, а значит это число не является первообразным корнем по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Сам доказал только в одну сторону!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Обозначим показатель числа 
+\begin_inset Formula $c$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ символом 
+\begin_inset Formula $d$
+\end_inset
+
+, тогда 
+\begin_inset Formula $d\mid\left(p-1\right)$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $d<p-1$
+\end_inset
+
+, то найдётся такое простое число 
+\begin_inset Formula $q$
+\end_inset
+
+, что 
+\begin_inset Formula $dq\mid\left(p-1\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $d\mid\frac{p-1}{q}$
+\end_inset
+
+.
+ Но в этом случае 
+\begin_inset Formula $c^{\frac{p-1}{q}}\equiv1\left(\mod p\right)$
+\end_inset
+
+, что противоречит условию.
+ Значит, 
+\begin_inset Formula $d=p-1$
+\end_inset
+
+, что и завершает доказательство леммы.
+\end_layout
+
+\begin_layout Example
+Найти наименьший первообразный корень по модулю 
+\begin_inset Formula $23$
+\end_inset
+
+.
+ Число 
+\begin_inset Formula $23$
+\end_inset
+
+ является простым, а 
+\begin_inset Formula $23-1=22=2\cdot11$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Справедливы следующие сравнения по модулю 
+\begin_inset Formula $23$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+2^{11}=2\cdot\left(32\right)^{2}\equiv2\cdot9^{2}\equiv1\left(\mod23\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+3^{11}=9\cdot\left(27\right)^{3}\equiv9\cdot4^{3}\equiv1\left(\mod23\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Из них следует, что числа 
+\begin_inset Formula $2$
+\end_inset
+
+ и 
+\begin_inset Formula $3$
+\end_inset
+
+ не являются первообразными корнями по модулю 
+\begin_inset Formula $23$
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula $4^{11}=\left(2^{11}\right)^{2}\equiv1\left(\mod23\right)$
+\end_inset
+
+, так что и 
+\begin_inset Formula $4$
+\end_inset
+
+ не является первообразным корнем по модулю 
+\begin_inset Formula $23$
+\end_inset
+
+.
+ Далее, 
+\begin_inset Formula 
+\[
+5^{11}=5\cdot25^{5}\equiv5\cdot2^{5}\equiv-1\left(\mod23\right)
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula $5^{2}\equiv2\left(\mod23\right)$
+\end_inset
+
+.
+ Применяя лемму 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:primitive-root-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ к простому числа 
+\begin_inset Formula $p=23$
+\end_inset
+
+ и 
+\begin_inset Formula $c=5$
+\end_inset
+
+, заключаем, что 
+\begin_inset Formula $5$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $23$
+\end_inset
+
+, то есть для каждого натурального числа, не деляющегося на 
+\begin_inset Formula $23$
+\end_inset
+
+, найдётся целое 
+\begin_inset Formula $k$
+\end_inset
+
+ с условием 
+\begin_inset Formula $b\equiv5^{k}\left(\mod23\right)$
+\end_inset
+
+.
+ Другими словами, класс вычетов 
+\begin_inset Formula $\bar{5}$
+\end_inset
+
+ есть образующая в группе 
+\begin_inset Formula $\left(\mathbb{Z}/23\mathbb{Z}\right)^{*}$
+\end_inset
+
+.
+ Количество первообразных корней по модулю 
+\begin_inset Formula $23$
+\end_inset
+
+ равно 
+\begin_inset Formula $\varphi\left(22\right)=\varphi\left(2\right)\varphi\left(11\right)=10$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Пусть 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+ — простые нечётные числа, связанные соотношением 
+\begin_inset Formula $p=2q+1$
+\end_inset
+
+.
+ Докажем, что в случае 
+\begin_inset Formula $q=4n+1$
+\end_inset
+
+ число 
+\begin_inset Formula $2$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, если же 
+\begin_inset Formula $q=4n+3$
+\end_inset
+
+, то 
+\begin_inset Formula $-2$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+В соответствии с леммой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:primitive-root-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, нужно проверить условия 
+\begin_inset Formula 
+\[
+c^{2}\not\equiv1\left(\mod p\right),\qquad c^{q}\not\equiv1\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $p-1=2q$
+\end_inset
+
+, а 
+\begin_inset Formula $q$
+\end_inset
+
+ — простое число, то простыми делителями 
+\begin_inset Formula $p-1$
+\end_inset
+
+ являются только 
+\begin_inset Formula $2$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ В качестве степеней числа 
+\begin_inset Formula $c$
+\end_inset
+
+ нужно рассмотреть 
+\begin_inset Formula $\frac{p-1}{2}=q$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{p-1}{q}=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Для проверки второго условия рассмотрим сначала случай 
+\begin_inset Formula $q=4n+1$
+\end_inset
+
+ и 
+\begin_inset Formula $c=2$
+\end_inset
+
+.
+ В этом случае, по свойствам символа Лежандра 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Legendre-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и следствию из леммы Гаусса 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:Gauss-lemma-consequence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+2^{q}=2^{\frac{p-1}{2}}\equiv\left(\frac{2}{p}\right)=\left(-1\right)^{\frac{p^{2}-1}{8}}\left(\mod p\right).
+\]
+
+\end_inset
+
+В рассматриваемом случае 
+\begin_inset Formula $p=2q+1=8n+3$
+\end_inset
+
+, поэтому
+\begin_inset Formula 
+\[
+\frac{p^{2}-1}{8}=\frac{\left(8n+4\right)\left(8n+2\right)}{8}=\left(2n+1\right)\left(4n+1\right),
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $\frac{p^{2}-1}{8}$
+\end_inset
+
+ есть число нечётное, поэтому 
+\begin_inset Formula $2^{q}\equiv-1\not\equiv1\left(\mod p\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $2$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Пусть теперь 
+\begin_inset Formula $q=4n+3$
+\end_inset
+
+ и 
+\begin_inset Formula $c=-2$
+\end_inset
+
+.
+ В этом случае, так как 
+\begin_inset Formula $q$
+\end_inset
+
+ нечётное: 
+\begin_inset Formula 
+\[
+\left(-2\right)^{q}=-2^{\frac{p-1}{2}}\equiv-\left(\frac{2}{p}\right)=-1\left(-1\right)^{\frac{p^{2}-1}{8}}\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $p=2q+1$
+\end_inset
+
+, то 
+\begin_inset Formula $p=2\left(4n+3\right)+1=8n+7$
+\end_inset
+
+ и
+\begin_inset Formula 
+\[
+\frac{p^{2}-1}{8}=\frac{\left(8n+8\right)\left(8n+6\right)}{8}=2\left(n+1\right)\left(4n+3\right),
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $\frac{p^{2}-1}{8}$
+\end_inset
+
+ есть число чётное, поэтому 
+\begin_inset Formula $\left(-2\right)^{q}\equiv-1\not\equiv1\left(\mod p\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left(-2\right)$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если известны все простые делители числа 
+\begin_inset Formula $p-1$
+\end_inset
+
+, то проверка условий леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:primitive-root-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ выполняется достаточно быстро с помощью алгоритма, изложенного в параграфе
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:prime-tests-and-big-prime-construction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Множество первооразных кореней при заданном 
+\begin_inset Formula $p$
+\end_inset
+
+ достаточно велико, поэтому выбирая числа 
+\begin_inset Formula $c$
+\end_inset
+
+ случайным образом на промежутке 
+\begin_inset Formula $0<c<p$
+\end_inset
+
+, можно с большой вероятностью попасть на певообразный корень и доказать
+ это с помощью леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:primitive-root-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Существует гипотеза
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Высказанная немецким математиком Э.
+\begin_inset space \thinspace{}
+\end_inset
+
+Артином, 1898-1962.
+\end_layout
+
+\end_inset
+
+, что для каждого целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+, отличного от 
+\begin_inset Formula $-1$
+\end_inset
+
+ и квадратов целых чисел, существует бесконечно много простых чисел 
+\begin_inset Formula $p$
+\end_inset
+
+, для которых 
+\begin_inset Formula $a$
+\end_inset
+
+ является первообразным корнем по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Например, существуют сколь угодно большие простые числа, для которых 
+\begin_inset Formula $2$
+\end_inset
+
+ будет первообразным корнем
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не понятно, для 2 это частный случай и пояснение гипотезы или доказанный
+ факт
+\end_layout
+
 \end_inset
 
 .
