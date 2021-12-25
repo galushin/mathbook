@@ -36739,7 +36739,7 @@ name "lem:primitive-root-criterion"
 \begin_inset Formula $p$
 \end_inset
 
- в том и только том сулчае, если для любого простого числа 
+ в том и только том случае, если для любого простого числа 
 \begin_inset Formula $q$
 \end_inset
 
@@ -36960,7 +36960,7 @@ noprefix "false"
 \begin_inset Formula $23$
 \end_inset
 
-, то есть для каждого натурального числа, не деляющегося на 
+, то есть для каждого натурального числа, не делящегося на 
 \begin_inset Formula $23$
 \end_inset
 
@@ -37257,7 +37257,7 @@ noprefix "false"
 \end_inset
 
 .
- Множество первооразных кореней при заданном 
+ Множество первообразных корней при заданном 
 \begin_inset Formula $p$
 \end_inset
 
@@ -37269,7 +37269,7 @@ noprefix "false"
 \begin_inset Formula $0<c<p$
 \end_inset
 
-, можно с большой вероятностью попасть на певообразный корень и доказать
+, можно с большой вероятностью попасть на первообразный корень и доказать
  это с помощью леммы 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -37332,6 +37332,1034 @@ status open
  факт
 \end_layout
 
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Построение первообразных корней по модулям 
+\begin_inset Formula $p^{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $2p^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Далее мы докажем существование первообразных корней по модулям вида 
+\begin_inset Formula $p^{\alpha}$
+\end_inset
+
+ и 
+\begin_inset Formula $2p^{\alpha}$
+\end_inset
+
+, где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое нечётно число.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:prime-root-modulo-prime-power"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое нечётное число и 
+\begin_inset Formula $\alpha\ge1$
+\end_inset
+
+ — целое.
+ Тогда 
+\end_layout
+
+\begin_layout Theorem
+1.
+ По модулям 
+\begin_inset Formula $p^{\alpha}$
+\end_inset
+
+ и 
+\begin_inset Formula $2p^{\alpha}$
+\end_inset
+
+ существуют первообразные корни.
+\end_layout
+
+\begin_layout Theorem
+2.
+ Пусть 
+\begin_inset Formula $g$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Если целое число 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ удовлетворяет условиям 
+\begin_inset Formula 
+\begin{equation}
+g_{1}\equiv g\left(\mod p\right),p^{2}\nmid g_{1}^{p-1}-1,\label{eq:prime-root-mod-prime-power-conditions}
+\end{equation}
+
+\end_inset
+
+то 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ первообразный корень по любому модулю вида 
+\begin_inset Formula $p^{\alpha}$
+\end_inset
+
+, где 
+\begin_inset Formula $\alpha\ge1$
+\end_inset
+
+.
+ По крайней мере одно из чисел 
+\begin_inset Formula $g$
+\end_inset
+
+ или 
+\begin_inset Formula $g+p$
+\end_inset
+
+ удовлетворяет условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-root-mod-prime-power-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+3.
+ Если 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ нечётно и 
+\begin_inset Formula $g_{2}\equiv g_{1}\left(\mod p^{\alpha}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ первообразный корень по любому модулю вида 
+\begin_inset Formula $2p^{\alpha}$
+\end_inset
+
+, где 
+\begin_inset Formula $\alpha\ge1$
+\end_inset
+
+.
+ По крайней мере одно из двух чисел 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}+p^{\alpha}$
+\end_inset
+
+ удовлетворяют указанным условиям.
+\end_layout
+
+\begin_layout Example
+Доказать, что 
+\begin_inset Formula $2$
+\end_inset
+
+ есть первообразный корень по модулям 
+\begin_inset Formula $37^{\alpha}$
+\end_inset
+
+ при любом целом 
+\begin_inset Formula $\alpha\ge1$
+\end_inset
+
+.
+ Найти первообразные корни по модулям 
+\begin_inset Formula $2\cdot37^{\alpha}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Докажем сначала, что 
+\begin_inset Formula $2$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $37$
+\end_inset
+
+.
+ Поскольку для 
+\begin_inset Formula $p=37$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $p-1=36=2^{2}\cdot3^{2}$
+\end_inset
+
+, то в силу леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:primitive-root-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ достаточно проверить, что 
+\begin_inset Formula $2^{18}\not\equiv1\left(\mod37\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $2^{12}\not\equiv1\left(\mod37\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $2^{6}=64\equiv-10\left(\mod37\right)$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+2^{12}\equiv\left(-10\right)^{2}\equiv26\left(\mod37\right),\quad2^{18}\equiv\left(-10\right)^{3}\equiv-1\left(\mod37\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Итак, 
+\begin_inset Formula $2$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $37$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Предположим теперь, что 
+\begin_inset Formula $37^{2}\mid2^{36}-1=\left(2^{18}-1\right)\left(2^{18}+1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $2^{18}\equiv-1\left(\mod37\right)$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+37^{2}\mid\left(2^{18}+1\right)=\left(2^{6}+1\right)\left(2^{12}-2^{6}+1\right).
+\]
+
+\end_inset
+
+ Учитывая, что 
+\begin_inset Formula $2^{6}+1=65$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $37$
+\end_inset
+
+, заключаем, что 
+\begin_inset Formula 
+\[
+37^{2}\mid\left(2^{12}-2^{6}+1\right)=4033=37\cdot109.
+\]
+
+\end_inset
+
+ Получившееся противоречие (
+\begin_inset Formula $37\mid109$
+\end_inset
+
+) означает, что 
+\begin_inset Formula $37^{2}\nmid2^{36}-1$
+\end_inset
+
+.
+ Согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-root-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно утверждать, что 
+\begin_inset Formula $2$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $37^{\alpha}$
+\end_inset
+
+ при любо целом 
+\begin_inset Formula $\alpha\ge2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $2+37=39$
+\end_inset
+
+ нечётно, то согласно последнему утверждению теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-root-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ число 
+\begin_inset Formula $39$
+\end_inset
+
+ есть первообразный корень по любому модулю вида 
+\begin_inset Formula $2\cdot37^{\alpha}$
+\end_inset
+
+ при целом 
+\begin_inset Formula $\alpha\ge1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Перейдём теперь к доказательству теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-root-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не доказывал сам
+\end_layout
+
+\end_inset
+
+Первое утверждение теоремы следует из второго и третьего.
+ Перейдём непосредственно к их доказательству.
+\end_layout
+
+\begin_layout Proof
+Если оба числа 
+\begin_inset Formula $\left(g+p\right)^{p-1}-1$
+\end_inset
+
+ и 
+\begin_inset Formula $g^{p-1}-1$
+\end_inset
+
+ делятся на 
+\begin_inset Formula $p^{2}$
+\end_inset
+
+, то на это же число делится и их разность: 
+\begin_inset Formula 
+\[
+p^{2}\mid\left(g+p\right)^{p-1}-g^{p-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Раскроем скобки в 
+\begin_inset Formula $\left(g+p\right)^{p-1}$
+\end_inset
+
+ с помощью формулы бинома Ньютона: 
+\begin_inset Formula 
+\[
+0\equiv\left(g+p\right)^{p-1}-g^{p-1}\equiv\sum_{k=0}^{p-1}\binom{p-1}{k}p^{k}g^{p-1-k}-g^{p-1}\quad\left(\mod p^{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Все слагаемые, в которых 
+\begin_inset Formula $k\ge2$
+\end_inset
+
+, делятся на 
+\begin_inset Formula $p^{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+0\equiv g^{p-1}+\left(p-1\right)pg^{p-2}-g^{p-1}\equiv\left(p-1\right)pg^{p-2}\left(\mod p^{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Но тогда 
+\begin_inset Formula $p\mid\left(p-1\right)g^{p-2}$
+\end_inset
+
+, что невозможно, так как 
+\begin_inset Formula $p$
+\end_inset
+
+ простое, 
+\begin_inset Formula $p-1$
+\end_inset
+
+ меньше 
+\begin_inset Formula $p$
+\end_inset
+
+, а 
+\begin_inset Formula $g$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Таким образом, по крайней мере одно из чисел 
+\begin_inset Formula $g$
+\end_inset
+
+ или 
+\begin_inset Formula $g+p$
+\end_inset
+
+ удовлетворяет условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-root-mod-prime-power-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ — произвольное число, удовлетворяющее условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-root-mod-prime-power-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Докажем, что при любом 
+\begin_inset Formula $\beta\ge0$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\begin{equation}
+v_{p}\left(g_{1}^{p^{\beta}\left(p-1\right)}-1\right)=\beta+1.\label{eq:prime-multiplicity-thm-prime-roots-mod-prime-power}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Воспользуемся для этого математической индукцией по 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $\beta=0$
+\end_inset
+
+ из условий 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-root-mod-prime-power-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ теоремы следует, что 
+\begin_inset Formula 
+\[
+v_{p}\left(g_{1}^{p^{\beta}\left(p-1\right)}-1\right)=v_{p}\left(g_{1}^{p-1}-1\right)<2
+\]
+
+\end_inset
+
+, а из малой теоремы Ферма следует, что 
+\begin_inset Formula $p\mid g_{1}^{p-1}-1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $v_{p}\left(g_{1}^{p-1}-1\right)\ge1$
+\end_inset
+
+.
+ Из двух полученных неравенств следует, что при 
+\begin_inset Formula $\beta=0$
+\end_inset
+
+ выполняется
+\begin_inset Formula 
+\[
+v_{p}\left(g_{1}^{p^{\beta}\left(p-1\right)}-1\right)=1=\beta+1,
+\]
+
+\end_inset
+
+таким образом, база индукции доказана.
+\end_layout
+
+\begin_layout Standard
+Пусть теперь 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-thm-prime-roots-mod-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ доказана для некоторого 
+\begin_inset Formula $\beta$
+\end_inset
+
+, докажем его для 
+\begin_inset Formula $\beta+1$
+\end_inset
+
+.
+ Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-thm-prime-roots-mod-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует представление 
+\begin_inset Formula 
+\[
+g_{1}^{p^{\beta}\left(p-1\right)}=1+cp^{\beta+1},\quad p\nmid c.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Возведя это равенство в степень 
+\begin_inset Formula $p$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+g_{1}^{p^{\beta+1}\left(p-1\right)}=\left(1+cp^{\beta+1}\right)^{p}=1+cp^{\beta+2}+\sum_{k=2}^{p-1}\binom{p}{k}\left(cp^{\beta+1}\right)^{k}+\left(cp^{\beta+1}\right)^{p}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+При 
+\begin_inset Formula $2\le k\le p-1$
+\end_inset
+
+ биномиальный коэффициент 
+\begin_inset Formula $\binom{p}{k}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+, а 
+\begin_inset Formula $k\left(\beta+1\right)\ge\beta+2$
+\end_inset
+
+ и 
+\begin_inset Formula $p\left(\beta+1\right)\ge\beta+3$
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+g_{1}^{p^{\beta+1}\left(p-1\right)}\equiv1+cp^{\beta+2}\quad\left(\mod p^{\beta+3}\right).
+\]
+
+\end_inset
+
+Так как 
+\begin_inset Formula $p\nmid c$
+\end_inset
+
+, то из последнего сравнения следует 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-thm-prime-roots-mod-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для 
+\begin_inset Formula $\beta+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть теперь 
+\begin_inset Formula $\alpha\ge2$
+\end_inset
+
+ — некоторое целое число.
+ Докажем, что 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $p^{\alpha}$
+\end_inset
+
+.
+ Обозначим буквой 
+\begin_inset Formula $d$
+\end_inset
+
+ показатель 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p^{\alpha}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $g_{1}^{d}\equiv1\left(\mod p^{\alpha}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}\equiv g\left(\mod p\right)$
+\end_inset
+
+, то справедливо сравнение 
+\begin_inset Formula $g^{d}\equiv1\left(\mod p\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $g$
+\end_inset
+
+ первообразный корень по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, то есть показатель 
+\begin_inset Formula $g$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ равен 
+\begin_inset Formula $p-1$
+\end_inset
+
+, то, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:multiplicative-order-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем 
+\begin_inset Formula $p-1\mid d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+По теореме Эйлера 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Euler-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ выполняется сравнение 
+\begin_inset Formula $g_{1}^{\varphi\left(p^{\alpha}\right)}\equiv1\left(\mod p^{\alpha}\right)$
+\end_inset
+
+.
+ Снова применяя лемму 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:multiplicative-order-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula $d\mid\varphi\left(p^{\alpha}\right)=p^{\alpha-1}\left(p-1\right)$
+\end_inset
+
+.
+ Учитывая установленную ранее делимость 
+\begin_inset Formula $p-1\mid d$
+\end_inset
+
+, находим, что 
+\begin_inset Formula $d=p^{\beta}\left(p-1\right)$
+\end_inset
+
+ с некоторым целым 
+\begin_inset Formula $\beta$
+\end_inset
+
+, удовлетворяющим неравенству 
+\begin_inset Formula $0\le\beta\le\alpha-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Согласно определению 
+\begin_inset Formula $d$
+\end_inset
+
+ должно выполняться 
+\begin_inset Formula $p^{\alpha}\mid g_{1}^{d}-1=g_{1}^{p^{\beta}\left(p-1\right)}$
+\end_inset
+
+.
+ Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-thm-prime-roots-mod-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем, что 
+\begin_inset Formula $\alpha\le\beta+1$
+\end_inset
+
+ или 
+\begin_inset Formula $\beta\ge\alpha-1$
+\end_inset
+
+.
+ Полученные неравенства означают, что 
+\begin_inset Formula $\beta=\alpha-1$
+\end_inset
+
+ и 
+\begin_inset Formula $d=p^{\alpha-1}\left(p-1\right)=\varphi\left(p^{\alpha}\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $p^{\alpha}$
+\end_inset
+
+.
+ Второе утверждение теоремы доказано.
+\end_layout
+
+\begin_layout Standard
+Для доказательства третьего утверждения заметим, что 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}+p^{\alpha}$
+\end_inset
+
+ сравнимы с 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p^{\alpha}$
+\end_inset
+
+.
+ А так как 
+\begin_inset Formula $p^{\alpha}$
+\end_inset
+
+ нечётно, то одно из этих чисел будет нечётным, то есть будет удовлетворять
+ условиям, определяющим 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из сравнений 
+\begin_inset Formula $g_{2}\equiv g_{1}\left(\mod p^{\alpha}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\equiv1\left(\mod2\right)$
+\end_inset
+
+ следует взаимная простота чисел 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $2p^{\alpha}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Раскрыть подробнее? Этот абзац написан очень скомкано
+\end_layout
+
+\end_inset
+
+.
+ Обозначим буквой 
+\begin_inset Formula $s$
+\end_inset
+
+ показатель 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $2p^{\alpha}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $g_{1}^{d}\equiv g_{2}^{d}\equiv1\left(\mod p^{\alpha}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $p^{\alpha}$
+\end_inset
+
+, то 
+\begin_inset Formula $s\ge\varphi\left(p^{\alpha}\right)=\varphi\left(2p^{\alpha}\right)$
+\end_inset
+
+.
+ Согласно теореме Эйлера 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Euler-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно утверждать, что 
+\begin_inset Formula $s=\varphi\left(2p^{\alpha}\right)$
+\end_inset
+
+.
+ Следовательно, 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $2p^{\alpha}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим, что любой первообразный корень по модулю 
+\begin_inset Formula $p^{n}$
+\end_inset
+
+, где 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+ будет также и первообразным корнем по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Действительно, пусть 
+\begin_inset Formula $b$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $p^{n}$
+\end_inset
+
+.
+ Тогда для любого целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+, не делящегося на 
+\begin_inset Formula $p$
+\end_inset
+
+, найдётся целое число 
+\begin_inset Formula $k$
+\end_inset
+
+, удовлетворяющее сравнению 
+\begin_inset Formula $a\equiv b^{k}\left(\mod p^{n}\right)$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $a\equiv b^{k}\left(\mod p\right)$
+\end_inset
+
+.
+ Так как это справедливо для 
+\begin_inset Formula $a=1,2,\dots,p-1$
+\end_inset
+
+, показатель числа 
+\begin_inset Formula $b$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+ не может быть меньше 
+\begin_inset Formula $p-1$
 \end_inset
 
 .
