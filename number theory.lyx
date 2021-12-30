@@ -38365,6 +38365,1017 @@ noprefix "false"
 .
 \end_layout
 
+\begin_layout Section
+Теорема об отсутствии первообразных корней по модулям, отличным от 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $4$
+\end_inset
+
+, 
+\begin_inset Formula $p^{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $2p^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В двух предыдущих параграфах были рассмотрены примеры модулей 
+\begin_inset Formula $m=p^{\alpha}$
+\end_inset
+
+ и 
+\begin_inset Formula $m=2p^{\alpha}$
+\end_inset
+
+, для которых существуют первообразные корни и описан алгоритм их вычисления.
+ При 
+\begin_inset Formula $m=4$
+\end_inset
+
+ первообразным корнем будет число 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $m=2$
+\end_inset
+
+ существует единственный класс вычетов, состоящий из чисел взаимно простых
+ с 
+\begin_inset Formula $2$
+\end_inset
+
+, а именно, класс 
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+, состоящий из нечётных чисел.
+ В этом случае первообразным корнем будет 1.
+ В этом параграфе будет доказано, что указанными примерами исчерпываются
+ все случаи существования первообразных корней.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:some-properties-of-mod-2^a"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\alpha\ge3$
+\end_inset
+
+ — нечётное целое число.
+\end_layout
+
+\begin_layout Theorem
+1.
+ Каждое нечётное число 
+\begin_inset Formula $a$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset Formula 
+\[
+a^{2^{\alpha-2}}\equiv1\quad\left(\mod2^{\alpha}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+2.
+ Показатель числа 
+\begin_inset Formula $5$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $2^{\alpha}$
+\end_inset
+
+ равен 
+\begin_inset Formula $2^{\alpha-2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+3.
+ Каждое нечётное число сравнимо по модулю 
+\begin_inset Formula $2^{\alpha}$
+\end_inset
+
+ с одним из чисел 
+\begin_inset Formula 
+\begin{equation}
+\pm5,\pm5^{2},\pm5^{3},\dots,\pm5^{2^{\alpha-2}}.\label{eq:plus-minus-powers-of-5}
+\end{equation}
+
+\end_inset
+
+ Эта теорема на языке теории групп может быть переформулирована как утверждение
+ о том, что мультипликативная группа 
+\begin_inset Formula $\left(\mathbb{Z}/2^{\alpha}\mathbb{Z}\right)^{*}$
+\end_inset
+
+ равна прямому произведению своих циклических подгрупп, порождённых классами
+ вычетов 
+\begin_inset Formula $\overline{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\bar{5}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Для доказательства первого утверждения запишем нечётное число 
+\begin_inset Formula $a$
+\end_inset
+
+ в виде 
+\begin_inset Formula $a=2n+1$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $\alpha=3$
+\end_inset
+
+ получаем 
+\begin_inset Formula $2^{\alpha-2}=2$
+\end_inset
+
+, 
+\begin_inset Formula $2^{\alpha}=8$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+a^{2^{\alpha-2}}=\left(2n+1\right)^{2}=4n^{2}+4n+1=4n\left(n+1\right)+1.
+\]
+
+\end_inset
+
+ Одно из чисел 
+\begin_inset Formula $n$
+\end_inset
+
+ или 
+\begin_inset Formula $n+1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $4n\left(n+1\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $8$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+a^{2^{\alpha-2}}\equiv1\left(\mod8=2^{\alpha}\right).
+\]
+
+\end_inset
+
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не смог доказать сам
+\end_layout
+
+\end_inset
+
+Так как 
+\begin_inset Formula $a$
+\end_inset
+
+ нечётное, то при любом целом 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ число 
+\begin_inset Formula $a^{2^{k}}+1$
+\end_inset
+
+ чётно.
+ Из равенства 
+\begin_inset Formula 
+\begin{equation}
+a^{2^{k+1}}-1=\left(a^{2^{k}}-1\right)\left(a^{2^{k}}+1\right),\label{eq:a^2^(k+1)-1-decomposition}
+\end{equation}
+
+\end_inset
+
+следует 
+\begin_inset Formula 
+\[
+v_{2}\left(a^{2^{k+1}}-1\right)\ge v_{2}\left(a^{2^{k}}-1\right)+1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как по доказанному 
+\begin_inset Formula $v_{2}\left(a^{2}-1\right)\ge3$
+\end_inset
+
+, заключаем по индукции, что 
+\begin_inset Formula $v_{2}\left(a^{2^{k}}-1\right)\ge k+2,\qquad k\ge1$
+\end_inset
+
+.
+ Если положить 
+\begin_inset Formula $k=\alpha-2$
+\end_inset
+
+, то получаем первое утверждение теоремы.
+\end_layout
+
+\begin_layout Proof
+Для доказательства второго утверждения обозначим показатель числа 
+\begin_inset Formula $5$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $2^{\alpha}$
+\end_inset
+
+ буквой 
+\begin_inset Formula $d$
+\end_inset
+
+ и заметим, что 
+\begin_inset Formula $5$
+\end_inset
+
+ нечётное число, а значит по первому утверждению теоремы 
+\begin_inset Formula $5^{2^{\alpha-2}}\equiv1\left(\mod2^{\alpha}\right)$
+\end_inset
+
+ и, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:multiplicative-order-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula $d\mid2^{\alpha-2}$
+\end_inset
+
+.
+ Откуда, в частности, следует, что 
+\begin_inset Formula $d\le2^{\alpha-2}$
+\end_inset
+
+ и что 
+\begin_inset Formula $d=2^{\beta}$
+\end_inset
+
+, где 
+\begin_inset Formula $0<\beta\le\alpha-2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $5\equiv1\left(\mod4\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $5^{2^{k}}+1\equiv2\quad\left(\mod4\right)$
+\end_inset
+
+ и, значит 
+\begin_inset Formula $v_{2}\left(5^{2^{k}}+1\right)=1$
+\end_inset
+
+ (иначе 
+\begin_inset Formula $5^{2^{k}}+1$
+\end_inset
+
+ делилось бы на 
+\begin_inset Formula $4$
+\end_inset
+
+).
+ Из равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:a^2^(k+1)-1-decomposition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем, что 
+\begin_inset Formula 
+\[
+v_{2}\left(5^{2^{k+1}}-1\right)=v_{2}\left(5^{2^{k}}-1\right)+1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Поскольку 
+\begin_inset Formula $v_{2}\left(5-1\right)=v_{2}\left(5^{2^{0}}-1\right)=2$
+\end_inset
+
+, по методу математической индукции получаем 
+\begin_inset Formula 
+\[
+v_{2}\left(5^{2^{k}}-1\right)=k+2,\quad k\ge0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По определению 
+\begin_inset Formula $d=2^{\beta}$
+\end_inset
+
+ получаем, что 
+\begin_inset Formula $5^{d}\equiv1\left(\mod2^{\alpha}\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $2^{\alpha}\mid5^{2^{\beta}}-1$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula 
+\[
+v_{2}\left(5^{2^{\beta}}-1\right)=\beta+2,
+\]
+
+\end_inset
+
+ то, по утверждению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:prime-multiplicity-of-divisor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\alpha\le\beta+2$
+\end_inset
+
+.
+ Полученные неравенства для 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ совместимы только при 
+\begin_inset Formula $\beta=\alpha-2$
+\end_inset
+
+.
+ Второе утверждение теоремы доказано.
+ 
+\end_layout
+
+\begin_layout Proof
+Для доказательства третьего утверждения достаточно показать, что числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:plus-minus-powers-of-5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ составляют приведённую систему вычетов по модулю 
+\begin_inset Formula $2^{\alpha}$
+\end_inset
+
+.
+ Во-первых, заметим, что 
+\begin_inset Formula $\varphi\left(2^{\alpha}\right)=2^{\alpha-1}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, поэтому приведённая система вычетов должна содержать 
+\begin_inset Formula $2^{\alpha-1}$
+\end_inset
+
+ вычетов, не сравнимых друг с другом по модулю 
+\begin_inset Formula $2^{\alpha}$
+\end_inset
+
+.
+ Количество чисел в системе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:plus-minus-powers-of-5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ равно 
+\begin_inset Formula $2\cdot\left(2^{\alpha-2}\right)=2^{\alpha-1}$
+\end_inset
+
+.
+ Остаётся доказать, что никакие из этих чисел не сравнимы по модулю 
+\begin_inset Formula $2^{\alpha}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $k$
+\end_inset
+
+ и 
+\begin_inset Formula $j$
+\end_inset
+
+ целые числа 
+\begin_inset Formula $1\le j,k\le2^{\alpha-2}$
+\end_inset
+
+ и 
+\begin_inset Formula $5^{k}\equiv-5^{j}\left(\mod2^{\alpha}\right)$
+\end_inset
+
+, тогда, так как 
+\begin_inset Formula $\alpha\ge3$
+\end_inset
+
+, то 
+\begin_inset Formula $5^{k}\equiv-5^{j}\left(\mod4\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $1^{k}\equiv-1^{j}\left(\mod4\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $1\equiv-1\left(\mod4\right)$
+\end_inset
+
+, что неверно.
+ Таким образом, числа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:plus-minus-powers-of-5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ с разными знаками не могут быть сравнимы друг с другом по модулю 
+\begin_inset Formula $2^{\alpha}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если же при 
+\begin_inset Formula $1\le j<k\le2^{\alpha}$
+\end_inset
+
+ справедливо 
+\begin_inset Formula $5^{k}\equiv5^{j}\left(\mod2^{\alpha}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $5^{k-j}\equiv1\left(\mod2^{\alpha}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $0<k-j<2^{\alpha-2}$
+\end_inset
+
+, но тогда показатель 
+\begin_inset Formula $5$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $2^{\alpha}$
+\end_inset
+
+ должен быть меньше 
+\begin_inset Formula $2^{\alpha-2}$
+\end_inset
+
+, что противоречит второму утверждению теоремы, доказанному выше.
+\end_layout
+
+\begin_layout Theorem
+Первообразные корни существуют лишь для модулей 
+\begin_inset Formula 
+\begin{equation}
+2,\quad4,\quad p^{\alpha},\quad2p^{\alpha},\label{eq:modulus-with-prime-root}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое нечётное и 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — целое положительное число.
+\end_layout
+
+\begin_layout Proof
+Существование первообразных корней в случаях 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:modulus-with-prime-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ доказано для 
+\begin_inset Formula $2$
+\end_inset
+
+ и 
+\begin_inset Formula $4$
+\end_inset
+
+ непосредственной демонстрацией первообразного корня 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дать ссылку
+\end_layout
+
+\end_inset
+
+, а в остальных случаях — в теоремах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:odd-prime-has-primitive-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-root-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Ниже будет показано, что если 
+\begin_inset Formula $m$
+\end_inset
+
+ отлично от чисел вида 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:modulus-with-prime-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то для любого целого 
+\begin_inset Formula $a$
+\end_inset
+
+, взаимно простого с 
+\begin_inset Formula $m$
+\end_inset
+
+, выполняется сравнение 
+\begin_inset Formula 
+\begin{equation}
+a^{\frac{\varphi\left(m\right)}{2}}\equiv1\quad\left(\mod m\right).\label{eq:thm-7.4-main-congruence}
+\end{equation}
+
+\end_inset
+
+ Это сравнение означает, что показатель каждого числа 
+\begin_inset Formula $a$
+\end_inset
+
+ с условием 
+\begin_inset Formula $\left(a,m\right)=1$
+\end_inset
+
+ меньше 
+\begin_inset Formula $\varphi\left(m\right),$
+\end_inset
+
+так что первообразных корней в этом случае не существует.
+\end_layout
+
+\begin_layout Proof
+Итак, представим 
+\begin_inset Formula $m$
+\end_inset
+
+ в виде разложения на простые множители, которое всегда существует в силу
+ теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то есть пусть 
+\begin_inset Formula $m=2^{\alpha}\cdot p_{1}^{\alpha_{1}}\cdot\dots\cdot p_{r}^{\alpha_{r}}$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ отлично от чисел вида 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:modulus-with-prime-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Возможны три случая:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha\ge3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r=1$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha\ge2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r\ge2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:euler-phi-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula 
+\[
+\varphi\left(m\right)=\varphi\left(2^{\alpha}\right)\cdot\varphi\left(p_{1}^{\alpha_{1}}\right)\cdot\dots\cdot\varphi\left(p_{r}^{\alpha_{r}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В первом случае 
+\begin_inset Formula $m=2^{\alpha}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(m\right)=\varphi\left(2^{\alpha}\right)=2^{\alpha-1}$
+\end_inset
+
+.
+ Взаимно-простыми с 
+\begin_inset Formula $m$
+\end_inset
+
+ являются все нечётные числа.
+ Но по первому утверждению теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:some-properties-of-mod-2^a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, для любого нечётного числа 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет место сравнение 
+\begin_inset Formula 
+\[
+a^{2^{\alpha-2}}\equiv1\quad\left(\mod2^{\alpha}\right),
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $a^{\frac{\varphi\left(m\right)}{2}}\equiv1\left(\mod m\right)$
+\end_inset
+
+.
+ Для первого случая теорема доказана.
+\end_layout
+
+\begin_layout Standard
+Во втором и третьем случаях среди чисел 
+\begin_inset Formula 
+\begin{equation}
+\varphi\left(2^{\alpha}\right),\quad\varphi\left(p_{1}^{\alpha_{1}}\right),\quad\dots,\quad\varphi\left(p_{r}^{\alpha_{r}}\right)\label{eq:thm-7.4-euler-function-of-primes}
+\end{equation}
+
+\end_inset
+
+ найдётся по крайней мере два чётных.
+ Действительно, в третьем случае 
+\begin_inset Formula $r\ge2$
+\end_inset
+
+ и чётными будут все числа 
+\begin_inset Formula $\varphi\left(p_{j}^{\alpha_{j}}\right)=p_{j}^{\alpha_{j}-1}\cdot\left(p_{j}-1\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $j=1,\dots,r$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее
+\end_layout
+
+\end_inset
+
+.
+ А во втором случае, то есть при 
+\begin_inset Formula $r=1$
+\end_inset
+
+, выполняется неравенство 
+\begin_inset Formula $\alpha\ge2$
+\end_inset
+
+, поэтому помимо 
+\begin_inset Formula $\varphi\left(p_{1}^{\alpha_{1}}\right)$
+\end_inset
+
+ чётным будет и 
+\begin_inset Formula $\varphi\left(2^{\alpha}\right)=2^{\alpha-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Поскольку среди чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:thm-7.4-euler-function-of-primes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеется не менее двух чётных, то 
+\begin_inset Formula 
+\[
+2\varphi\left(2^{\alpha}\right)\mid\varphi\left(m\right),\quad2\varphi\left(p_{1}^{\alpha_{1}}\right)\mid\varphi\left(m\right),\quad\dots,\quad\varphi\left(p_{r}^{\alpha_{r}}\right)\mid\varphi\left(m\right).
+\]
+
+\end_inset
+
+Но тогда 
+\begin_inset Formula $\frac{\varphi\left(m\right)}{2}$
+\end_inset
+
+ делится на каждое из чисел 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:thm-7.4-euler-function-of-primes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и, следовательно, делится на показатель числа 
+\begin_inset Formula $a$
+\end_inset
+
+ по каждому из модулей 
+\begin_inset Formula $2^{\alpha}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{j}^{\alpha_{j}}$
+\end_inset
+
+ 
+\begin_inset Formula $1\le j\le r$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее или сослаться
+\end_layout
+
+\end_inset
+
+.
+ Согласно первому утверждению леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:multiplicative-order-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+a^{\frac{\varphi\left(m\right)}{2}}\equiv1\left(\mod2^{\alpha}\right),\quad a^{\frac{\varphi\left(m\right)}{2}}\equiv1\left(\mod p_{j}^{\alpha_{j}}\right),j=1,\dots r.
+\]
+
+\end_inset
+
+ Так как числа 
+\begin_inset Formula $2^{\alpha}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{j}^{\alpha_{j}}$
+\end_inset
+
+, где 
+\begin_inset Formula $1\le j\le r$
+\end_inset
+
+, попарно взаимно просты, следует, что разность 
+\begin_inset Formula $a^{\frac{\varphi\left(m\right)}{2}}-1$
+\end_inset
+
+ делится на их произведение, то есть делится на число 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Таким образом, сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:thm-7.4-main-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ доказано во все случаях.
+\end_layout
+
+\begin_layout Standard
+Это сравнение, как указывалось выше, означает, что показатель по модулю
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ каждого числа 
+\begin_inset Formula $a$
+\end_inset
+
+, взаимно простого с 
+\begin_inset Formula $m$
+\end_inset
+
+ не превосходит 
+\begin_inset Formula $\frac{\varphi\left(m\right)}{2}$
+\end_inset
+
+ и, значит, меньше 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+.
+ Таким образом, первообразных корней по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ не существует.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
@@ -38375,7 +39386,7 @@ status open
 
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Standard
