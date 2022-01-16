@@ -36759,15 +36759,6 @@ c^{\frac{p-1}{q}}\not\equiv1\left(\mod p\right).
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать доказательство
-\end_layout
-
-\end_inset
-
 Так как 
 \begin_inset Formula $\frac{p-1}{q}\le p-1<p$
 \end_inset
@@ -39374,6 +39365,1100 @@ noprefix "false"
 \end_inset
 
  не существует.
+\end_layout
+
+\begin_layout Section
+Индексы и их свойства
+\end_layout
+
+\begin_layout Standard
+Рассмотрим сначала случай 
+\begin_inset Formula $m=p^{k}$
+\end_inset
+
+ или 
+\begin_inset Formula $m=2p^{k}$
+\end_inset
+
+, где 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое нечётное число и 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+, в которых, по доказанному 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-root-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует первообразный корень.
+ Пусть 
+\begin_inset Formula $g$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Тогда для любого целого взаимно простого с 
+\begin_inset Formula $m$
+\end_inset
+
+ числа 
+\begin_inset Formula $a$
+\end_inset
+
+ существует единственное целое число 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, удовлетворяющее условиям 
+\begin_inset Formula 
+\[
+a\equiv g^{\gamma}\quad\left(\mod m\right),\qquad0\le\gamma<\varphi\left(m\right).
+\]
+
+\end_inset
+
+Это число называется 
+\emph on
+индексом числа 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\emph default
+по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ при основании 
+\begin_inset Formula $g$
+\end_inset
+
+ и обозначается символом 
+\begin_inset Formula $\mathrm{ind}_{g}a$
+\end_inset
+
+ или 
+\begin_inset Formula $\mathrm{ind}a$
+\end_inset
+
+, если указание на первообразный корень, относительно которого определяется
+ индекс, не существенно.
+ Итак, имеем 
+\begin_inset Formula 
+\[
+a\equiv g^{\mathrm{ind}_{g}a}\quad\left(\mod m\right),\qquad0\le\gamma<\varphi\left(m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Свойства индексов описывается следующая лемма.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:indicies-modulo-prime-power"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $m=p^{k}$
+\end_inset
+
+ или 
+\begin_inset Formula $m=2p^{k}$
+\end_inset
+
+.
+ Тогда
+\end_layout
+
+\begin_layout Lemma
+1) 
+\begin_inset Formula $\mathrm{ind}_{g}ab\equiv\mathrm{ind}_{g}a+\mathrm{ind}_{g}b\quad\left(\mod\varphi\left(m\right)\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Lemma
+2) если 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — первообразные корни по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, то для любого числа 
+\begin_inset Formula $c$
+\end_inset
+
+, взаимно простого с 
+\begin_inset Formula $m$
+\end_inset
+
+ выполняется сравнение 
+\begin_inset Formula 
+\[
+\mathrm{ind}_{b}c\equiv\mathrm{ind}_{a}c\cdot\mathrm{ind}_{b}a\quad\left(\mod\varphi\left(m\right)\right),
+\]
+
+\end_inset
+
+ причём 
+\begin_inset Formula $\left(\mathrm{ind}_{b}a,\varphi\left(m\right)\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Для доказательства первого утверждения заметим, что по свойствам степени
+ и определению индекса
+\begin_inset Formula 
+\[
+g^{\mathrm{ind}_{g}a+\mathrm{ind}_{g}b}=g^{\mathrm{ind}_{g}a}\cdot g^{\mathrm{ind}_{g}b}\equiv ab\equiv g^{\mathrm{ind}_{ab}g}\quad\left(\mod m\right).
+\]
+
+\end_inset
+
+По следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:powers-congruence-mod-prime-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ отсюда следует 
+\begin_inset Formula 
+\[
+\mathrm{ind}_{g}ab\equiv\mathrm{ind}_{g}a+\mathrm{ind}_{g}b\quad\left(\mod\varphi\left(m\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Первое утверждение леммы доказано.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Не додумался сам
+\end_layout
+
+\end_inset
+
+Для доказательства второго утверждения заметим, что по свойствам степени
+ и определению индекса
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+g^{\mathrm{ind}_{a}c\cdot\mathrm{ind}_{b}a}\equiv\left(g^{\mathrm{ind}_{b}a}\right)^{\mathrm{ind}_{a}c}\equiv a^{\mathrm{ind}_{a}c}\equiv c\equiv g^{\mathrm{ind}_{b}c}\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:powers-congruence-mod-prime-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ отсюда следует 
+\begin_inset Formula 
+\[
+\mathrm{ind}_{b}c\equiv\mathrm{ind}_{a}c\cdot\mathrm{ind}_{b}a\quad\left(\mod\varphi\left(m\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Остаётся доказать, что 
+\begin_inset Formula $\left(\mathrm{ind}_{b}a,\varphi\left(m\right)\right)=1$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $d=\left(\mathrm{ind}_{b}a,\varphi\left(m\right)\right)$
+\end_inset
+
+.
+ Справедливы следующие сравнения: 
+\begin_inset Formula 
+\[
+a^{\frac{\varphi\left(m\right)}{d}}\equiv b^{\frac{\varphi\left(m\right)}{d}\cdot\mathrm{ind}_{b}a}=\left(b^{\varphi\left(m\right)}\right)^{\frac{\mathrm{ind}_{b}a}{d}}\equiv1\quad\left(\mod m\right).
+\]
+
+\end_inset
+
+Так как 
+\begin_inset Formula $a$
+\end_inset
+
+ первообразный корень по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, это сравнение возможно только при 
+\begin_inset Formula $d=1$
+\end_inset
+
+, иначе показатель 
+\begin_inset Formula $a$
+\end_inset
+
+ будет меньше 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+, что противоречит определению показателя.
+\end_layout
+
+\begin_layout Standard
+Перейдём теперь к общему случаю.
+ Пусть 
+\begin_inset Formula $m>1$
+\end_inset
+
+ — целое число и 
+\begin_inset Formula 
+\[
+m=2^{\alpha}\cdot p_{1}^{\alpha_{1}}\cdot\dots\cdot p_{r}^{\alpha_{r}}
+\]
+
+\end_inset
+
+ — разложение в произведение степеней различных простых чисел, которое всегда
+ существует в силу теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:fundamental-arithmetic-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula 
+\[
+d=\begin{cases}
+1, & \alpha\le1,\\
+2, & \alpha\ge2,
+\end{cases}\qquad d_{0}=\begin{cases}
+1, & \alpha\le1,\\
+2^{\alpha-2}, & \alpha\ge2,
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d_{j}=\varphi\left(p_{j}^{\alpha_{j}}\right),\quad j=1,\dots,r.
+\]
+
+\end_inset
+
+м Заметим, что 
+\begin_inset Formula 
+\begin{equation}
+d\cdot d_{0}\cdot d_{1}\cdot\dots\cdot d_{r}=2^{\alpha-1}\varphi\left(p_{1}^{\alpha_{1}}\right)\cdot\dots\cdot\varphi\left(p_{r}^{\alpha_{r}}\right)=\varphi\left(m\right)\label{eq:euler-phunction-of-m-decomposition}
+\end{equation}
+
+\end_inset
+
+ при любом 
+\begin_inset Formula $\alpha\ge0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для каждого 
+\begin_inset Formula $j$
+\end_inset
+
+, 
+\begin_inset Formula $1\le j\le r$
+\end_inset
+
+, зафиксируем некоторый первообразный корень 
+\begin_inset Formula $g_{j}$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p_{j}^{\alpha_{j}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $a$
+\end_inset
+
+ — целое число взаимно простое с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\left(a,2^{\alpha}\right)=\left(a,p_{1}^{\alpha_{1}}\right)=\dots=\left(a,p_{r}^{\alpha_{r}}\right)=1
+\]
+
+\end_inset
+
+ и, согласно теоремам 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-root-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:some-properties-of-mod-2^a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ существуют целые числа 
+\begin_inset Formula $\gamma,\gamma_{0},\gamma_{1},\dots,\gamma_{r}$
+\end_inset
+
+ удовлетворяющие сравнениям 
+\begin_inset Formula 
+\begin{equation}
+a\equiv\begin{cases}
+\left(-1\right)^{\gamma}5^{\gamma_{0}} & \left(\mod2^{\alpha}\right),\\
+g_{1}^{\gamma_{1}} & \left(\mod p_{1}^{\alpha_{1}}\right),\\
+\vdots & \vdots\\
+g_{r}^{\gamma_{r}} & \left(\mod p_{r}^{\alpha_{r}}\right).
+\end{cases}\label{eq:indices-system-congruences}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:some-properties-of-mod-2^a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и определения первообразного корня следует так же, что набор чисел 
+\begin_inset Formula $\gamma,\gamma_{0},\gamma_{1},\dots,\gamma_{r}$
+\end_inset
+
+ будет определён единственным способом, если наложить дополнительные условия
+ 
+\begin_inset Formula 
+\begin{equation}
+0\le\gamma<d,\quad0\le\gamma_{0}<d_{0},\quad\dots,\quad0\le\gamma_{r}<d_{r}.\label{eq:indices-system-bounds}
+\end{equation}
+
+\end_inset
+
+Определённая единственным образом совокупность чисел 
+\begin_inset Formula $\gamma,\gamma_{0},\gamma_{1},\dots,\gamma_{r}$
+\end_inset
+
+ удовлетворяющая условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:indices-system-congruences"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:indices-system-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ называется 
+\emph on
+системой индексов 
+\emph default
+числа 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Каждый элемент системы индексов будет индексом числа 
+\begin_inset Formula $a$
+\end_inset
+
+ по соответствующему модулю.
+ Систему индексов числа 
+\begin_inset Formula $a$
+\end_inset
+
+ будем обозначать 
+\begin_inset Formula 
+\[
+\gamma\left(a\right),\gamma_{0}\left(a\right),\gamma_{1}\left(a\right),\dots,\gamma_{r}\left(a\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Числа, лежащие в одном классе вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ и взаимно простые 
+\begin_inset Formula $m$
+\end_inset
+
+, очевидно, имеют одинаковые системы индексов.
+ И наоборот, для каждой системы индексов система сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:indices-system-congruences"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ относительно неизвестного 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет согласно китайской теореме об остатках 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:chinese-reminder-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, единственное решение по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Это решение есть класс вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, состоящий из чисел взаимно простых с 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Заметим также, что равенства 
+\begin_inset Formula 
+\[
+\gamma\left(a\right)=\gamma_{0}\left(a\right)=\gamma_{1}\left(a\right)=\dots=\gamma_{r}\left(a\right)=0
+\]
+
+\end_inset
+
+ выполняются лишь для чисел, сравнимых с 
+\begin_inset Formula $1$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Установленное взаимно однозначное соответствие между элементами группы
+ 
+\begin_inset Formula $\left(\mathbb{Z}/m\mathbb{Z}\right)^{*}$
+\end_inset
+
+ и системами индексов согласуется с равенством 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:euler-phunction-of-m-decomposition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+Индексы произведения двух чисел сравнимы по модулям 
+\begin_inset Formula $d,d_{0},\dots,d_{r}$
+\end_inset
+
+ с суммами соответствующих индексов сомножителей, то есть для любых двух
+ чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ взаимно простых с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+, выполняются сравнения 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\gamma\left(ab\right)\equiv\gamma\left(a\right)+\gamma\left(b\right)\quad\left(\mod d\right),\\
+\gamma_{0}\left(ab\right)\equiv\gamma_{0}\left(a\right)+\gamma_{0}\left(b\right)\quad\left(\mod d_{0}\right),\\
+\vdots\\
+\gamma_{r}\left(ab\right)\equiv\gamma_{r}\left(a\right)+\gamma_{r}\left(b\right)\quad\left(\mod d_{r}\right).
+\end{array}
+\]
+
+\end_inset
+
+ Другими словами сопоставление 
+\begin_inset Formula 
+\[
+a\left(\mod m\right)\mapsto\left(\gamma\left(\mod d\right),\gamma_{0}\left(\mod d_{0}\right),\dots,\gamma_{r}\left(\mod d_{r}\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Здесь обозначение кортежа смешивается с НОД
+\end_layout
+
+\end_inset
+
+является изоморфным отображением мультипликативной группы 
+\begin_inset Formula $\left(\mathbb{Z}/m\mathbb{Z}\right)^{*}$
+\end_inset
+
+ на прямое произведение аддитивных групп 
+\begin_inset Formula $\mathbb{Z}/d\mathbb{Z},\mathbb{Z}/d_{0}\mathbb{Z},\dots,\mathbb{Z}/d_{r}\mathbb{Z}$
+\end_inset
+
+.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко здесь прямая сумма! А в конце параграфа он приходит к прямому
+ произведению.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $j=1,\dots,r$
+\end_inset
+
+ по определению системы индексов и по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:indicies-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеют место сравнения 
+\begin_inset Formula 
+\[
+\gamma_{j}\left(ab\right)\equiv\gamma_{j}\left(a\right)+\gamma_{j}\left(b\right)\quad\left(\mod d_{j}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, остаётся доказать только первые два сравнения.
+ По определению, имеют место сравнения 
+\begin_inset Formula $a\equiv\left(-1\right)^{\gamma\left(a\right)}5^{\gamma_{0}\left(a\right)}\quad\left(\mod2^{\alpha}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $b\equiv\left(-1\right)^{\gamma\left(b\right)}5^{\gamma_{0}\left(b\right)}\quad\left(\mod2^{\alpha}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $ab\equiv\left(-1\right)^{\gamma\left(ab\right)}5^{\gamma_{0}\left(ab\right)}\quad\left(\mod2^{\alpha}\right)$
+\end_inset
+
+.
+ Из первых двух сравнений следует
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ сравнение 
+\begin_inset Formula $ab\equiv\left(-1\right)^{\gamma\left(a\right)+\gamma\left(b\right)}5^{\gamma_{0}\left(a\right)+\gamma_{0}\left(b\right)}\quad\left(\mod2^{\alpha}\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\begin{equation}
+\left(-1\right)^{\gamma\left(ab\right)}5^{\gamma_{0}\left(ab\right)}\equiv\left(-1\right)^{\gamma\left(a\right)+\gamma\left(b\right)}5^{\gamma_{0}\left(a\right)+\gamma_{0}\left(b\right)}\quad\left(\mod2^{\alpha}\right).\label{eq:indices-modulo--powers-of-2-congruence}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $\alpha\le2$
+\end_inset
+
+, то 
+\begin_inset Formula $d=d_{0}=1$
+\end_inset
+
+ и нужные сравнения выполняются (так как любые два числа сравнимы по модулю
+ 
+\begin_inset Formula $1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $\alpha=2$
+\end_inset
+
+ получаем 
+\begin_inset Formula $d=2$
+\end_inset
+
+ и 
+\begin_inset Formula $d_{0}=2^{2-2}=1$
+\end_inset
+
+ и сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:indices-modulo--powers-of-2-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ принимает вид (так как 
+\begin_inset Formula $5\equiv1\left(\mod4\right)$
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+\left(-1\right)^{\gamma\left(ab\right)}\equiv\left(-1\right)^{\gamma\left(a\right)+\gamma\left(b\right)}\qquad\left(\mod4\right),
+\]
+
+\end_inset
+
+откуда следует, что числа 
+\begin_inset Formula $\gamma\left(ab\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\gamma\left(a\right)+\gamma\left(b\right)$
+\end_inset
+
+ имеют одинаковую чётность, то есть 
+\begin_inset Formula $\gamma\left(ab\right)\equiv\gamma\left(a\right)+\gamma\left(b\right)\quad\left(\mod d\right)$
+\end_inset
+
+.
+ По 
+\begin_inset Formula $d_{0}=1$
+\end_inset
+
+ выполняется любое сравнение.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $\alpha\ge3$
+\end_inset
+
+, то есть 
+\begin_inset Formula $d=2$
+\end_inset
+
+ и 
+\begin_inset Formula $d_{0}=2^{\alpha-2}>1$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $4\mid2^{\alpha}$
+\end_inset
+
+, то из сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:indices-modulo--powers-of-2-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+\left(-1\right)^{\gamma\left(ab\right)}5^{\gamma_{0}\left(ab\right)}\equiv\left(-1\right)^{\gamma\left(a\right)+\gamma\left(b\right)}5^{\gamma_{0}\left(a\right)+\gamma_{0}\left(b\right)}\quad\left(\mod4\right).
+\]
+
+\end_inset
+
+Как уже отмечалось, 
+\begin_inset Formula $5\equiv1\left(\mod4\right)$
+\end_inset
+
+, поэтому снова получаем сравнение 
+\begin_inset Formula 
+\[
+\left(-1\right)^{\gamma\left(ab\right)}\equiv\left(-1\right)^{\gamma\left(a\right)+\gamma\left(b\right)}\qquad\left(\mod4\right),
+\]
+
+\end_inset
+
+из которого следует 
+\begin_inset Formula $\gamma\left(ab\right)\equiv\gamma\left(a\right)+\gamma\left(b\right)\quad\left(\mod d\right)$
+\end_inset
+
+.
+ Но тогда из сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:indices-modulo--powers-of-2-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+5^{\gamma_{0}\left(ab\right)}=5^{\gamma_{0}\left(a\right)+\gamma_{0}\left(b\right)}\quad\left(\mod2^{\alpha}\right).
+\]
+
+\end_inset
+
+ Откуда, согласно второму утверждению теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:some-properties-of-mod-2^a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и замечанию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:powers-congruence-mod-prime-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula $\gamma_{0}\left(ab\right)=\gamma_{0}\left(a\right)+\gamma_{0}\left(b\right)\quad\left(\mod2^{\alpha-2}\right)$
+\end_inset
+
+.
+ Это завершает доказательство леммы.
+\end_layout
+
+\begin_layout Proof
+Определим с помощью китайской теоремы об остатках 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:chinese-reminder-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ целые числа 
+\begin_inset Formula $c_{1},c_{0}$
+\end_inset
+
+ сравнениями 
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+c_{1}\equiv-1\left(\mod2^{\alpha}\right), & c_{-1}\equiv1\left(\mod p_{k}^{\alpha_{k}}\right), & 1\le k\le r,\\
+c_{0}\equiv5\left(\mod2^{\alpha}\right), & c_{0}\equiv1\left(\mod p_{k}^{\alpha_{k}}\right), & 1\le k\le r,
+\end{array}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ для каждого 
+\begin_inset Formula $j=1,\dots,r$
+\end_inset
+
+ сравнениями 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+c_{j}\equiv g_{j}\left(\mod p_{j}^{\alpha_{j}}\right),\quad c_{j}\equiv1\left(\mod2^{\alpha}\right),\quad c_{j}\equiv1\left(\mod p_{k}^{\alpha_{k}}\right),\\
+1\le k\le r,\qquad k\neq j.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из этого определения следует, что для 
+\begin_inset Formula $b=c_{-1}^{\gamma\left(a\right)}c_{0}^{\gamma_{0}\left(a\right)}c_{1}^{\gamma_{1}\left(a\right)}\cdot\dots\cdot c_{r}^{\gamma_{r}\left(a\right)}$
+\end_inset
+
+ выполняются сравнения 
+\begin_inset Formula 
+\[
+b\equiv\begin{cases}
+\left(-1\right)^{\gamma\left(a\right)}5^{\gamma_{0}\left(a\right)} & \left(\mod2^{\alpha}\right),\\
+g_{1}^{\gamma_{1}\left(a\right)} & \left(\mod p_{1}^{\alpha_{1}}\right),\\
+\vdots & \vdots\\
+g_{r}^{\gamma_{r}\left(a\right)} & \left(\mod p_{r}^{\alpha_{r}}\right).
+\end{cases}
+\]
+
+\end_inset
+
+ Из этого сравнения и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:indices-system-congruences"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что разность 
+\begin_inset Formula $b-a$
+\end_inset
+
+ делится на каждый из модулей 
+\begin_inset Formula $2^{\alpha}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{1}^{\alpha_{1}},\dots,p_{r}^{\alpha_{r}}$
+\end_inset
+
+.
+ Таким образом, для каждого целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+, взаимно простого с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+ выполняется сравнение 
+\begin_inset Formula 
+\[
+a\equiv c_{-1}^{\gamma\left(a\right)}c_{0}^{\gamma_{0}\left(a\right)}c_{1}^{\gamma_{1}\left(a\right)}\cdot\dots\cdot c_{r}^{\gamma_{r}\left(a\right)}\qquad\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из определения чисел 
+\begin_inset Formula $c_{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $c_{0},\dots,c_{r}$
+\end_inset
+
+ следует, что их показатели равны соответственно 
+\begin_inset Formula $d$
+\end_inset
+
+, 
+\begin_inset Formula $d_{0},\dots d_{r}$
+\end_inset
+
+.
+ Отсюда, поскольку системы индексов для чисел, на сравнимых по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ различны, следует, что 
+\emph on
+для каждого взаимно простого с 
+\begin_inset Formula $m$
+\end_inset
+
+ целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+ существует единственный набор чисел 
+\begin_inset Formula $k_{-1},k_{0},\dots,k_{r}$
+\end_inset
+
+, удовлетворяющих условиям 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+a\equiv c_{-1}^{k}c_{0}^{k_{0}}c_{1}^{k_{1}}\cdot\dots\cdot c_{r}^{k_{r}}\qquad\left(\mod m\right).\label{eq:decomposition-by-coprime-multiplies}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+0\le k_{-1}<d,\quad0\le k_{0}<d_{0},\dots,0\le k_{r}<d_{r}.
+\]
+
+\end_inset
+
+Другими словами мультипликативная группа 
+\begin_inset Formula $\left(\mathbb{Z}/m\mathbb{Z}\right)^{*}$
+\end_inset
+
+ есть прямое произведение своих циклических подгрупп, порождённых классами
+ вычетов, содержащих числа 
+\begin_inset Formula $c_{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $c_{0},\dots,c_{r}$
+\end_inset
+
+ При этом набор показателей степеней в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:decomposition-by-coprime-multiplies"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ совпадает с системой индексов числа 
+\begin_inset Formula $a$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
