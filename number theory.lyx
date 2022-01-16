@@ -39456,9 +39456,9 @@ a\equiv g^{\gamma}\quad\left(\mod m\right),\qquad0\le\gamma<\varphi\left(m\right
  индекс, не существенно.
  Итак, имеем 
 \begin_inset Formula 
-\[
-a\equiv g^{\mathrm{ind}_{g}a}\quad\left(\mod m\right),\qquad0\le\gamma<\varphi\left(m\right).
-\]
+\begin{equation}
+a\equiv g^{\mathrm{ind}_{g}a}\quad\left(\mod m\right),\qquad0\le\gamma<\varphi\left(m\right).\label{eq:index-of-number-difinition}
+\end{equation}
 
 \end_inset
 
@@ -40459,6 +40459,239 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Дискретное логарифмирование
+\end_layout
+
+\begin_layout Standard
+Согласно 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:index-of-number-difinition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:indicies-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ свойства индексов напоминают свойства обычных логарифмов от действительных
+ чисел.
+ Поэтому иногда в современной литературе индексы называют дискретными логарифмам
+и, а процесс их нахождения — дискретным логарифмированием.
+\end_layout
+
+\begin_layout Standard
+Далее мы покажем, каким образом задача вычисления 
+\begin_inset Formula $\mathrm{ind}_{b}\left(a\right)$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+, при 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+, то есть вычисление единственного целого числа 
+\begin_inset Formula $x$
+\end_inset
+
+, удовлетворяющего условиям 
+\begin_inset Formula 
+\[
+b^{x}\equiv a\quad\left(\mod p^{n+1}\right),\qquad0\le x<p^{n}\left(p-1\right),
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $p$
+\end_inset
+
+ — нечётное простое число, 
+\begin_inset Formula $b$
+\end_inset
+
+ — фиксированный первообразный корень по модулю 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,p\right)=1$
+\end_inset
+
+, может быть достаточно быстро сведена к аналогичной задаче в случае 
+\begin_inset Formula $n=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое нечётное число и 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ — целое число.
+ По теореме Эйлера 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Euler-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для каждого целого 
+\begin_inset Formula $a$
+\end_inset
+
+, не делящегося на 
+\begin_inset Formula $p$
+\end_inset
+
+, число 
+\begin_inset Formula $a^{\varphi\left(p^{n}\right)}-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p^{n}$
+\end_inset
+
+, и, поэтому, существует единственное целого число 
+\begin_inset Formula $Q\left(a\right)$
+\end_inset
+
+ такое, что 
+\begin_inset Formula 
+\[
+Q\left(a\right)\equiv\frac{a^{\varphi\left(p^{n}\right)}-1}{p^{n}}\quad\left(\mod p^{n}\right),\qquad0\le Q\left(a\right)<p^{a}.
+\]
+
+\end_inset
+
+ Определенная этими условиями функция 
+\begin_inset Formula $Q\left(a\right)$
+\end_inset
+
+ называется 
+\emph on
+частным Ферма.
+ 
+\emph default
+Она обладает следующими свойствами.
+\end_layout
+
+\begin_layout Lemma
+1) Для любых двух целых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, не делящихся на 
+\begin_inset Formula $p$
+\end_inset
+
+, выполняется сравнение 
+\begin_inset Formula 
+\[
+Q\left(ab\right)\equiv Q\left(a\right)+Q\left(b\right)\quad\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+2) Функция 
+\begin_inset Formula $Q\left(a\right)$
+\end_inset
+
+ имеет период 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+, то есть для любого целого 
+\begin_inset Formula $a$
+\end_inset
+
+, не делящегося на 
+\begin_inset Formula $p$
+\end_inset
+
+, выполняется равенство 
+\begin_inset Formula $Q\left(a+p^{n+1}\right)=Q\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+3) Если 
+\begin_inset Formula $b$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+, то 
+\begin_inset Formula $Q\left(b\right)$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 7.6
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
