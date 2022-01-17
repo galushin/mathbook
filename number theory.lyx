@@ -38292,7 +38292,13 @@ noprefix "false"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Claim
+\begin_inset CommandInset label
+LatexCommand label
+name "claim:prime-root-modulo-p^n-is-prime-root-modulo-p"
+
+\end_inset
+
 Заметим, что любой первообразный корень по модулю 
 \begin_inset Formula $p^{n}$
 \end_inset
@@ -38306,7 +38312,10 @@ noprefix "false"
 \end_inset
 
 .
- Действительно, пусть 
+\end_layout
+
+\begin_layout Proof
+Действительно, пусть 
 \begin_inset Formula $b$
 \end_inset
 
@@ -40511,9 +40520,9 @@ noprefix "false"
 
 , удовлетворяющего условиям 
 \begin_inset Formula 
-\[
-b^{x}\equiv a\quad\left(\mod p^{n+1}\right),\qquad0\le x<p^{n}\left(p-1\right),
-\]
+\begin{equation}
+b^{x}\equiv a\quad\left(\mod p^{n+1}\right),\qquad0\le x<p^{n}\left(p-1\right),\label{eq:discrete-log-modulo-p^(n+1)}
+\end{equation}
 
 \end_inset
 
@@ -40583,7 +40592,7 @@ noprefix "false"
  такое, что 
 \begin_inset Formula 
 \[
-Q\left(a\right)\equiv\frac{a^{\varphi\left(p^{n}\right)}-1}{p^{n}}\quad\left(\mod p^{n}\right),\qquad0\le Q\left(a\right)<p^{a}.
+Q\left(a\right)\equiv\frac{a^{\varphi\left(p^{n}\right)}-1}{p^{n}}\quad\left(\mod p^{n}\right),\qquad0\le Q\left(a\right)<p^{n}.
 \]
 
 \end_inset
@@ -40669,16 +40678,423 @@ Q\left(ab\right)\equiv Q\left(a\right)+Q\left(b\right)\quad\left(\mod p\right).
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать доказательство
+Подсмотрел
 \end_layout
 
 \end_inset
 
+Из определения частного Ферма следует сравнение 
+\begin_inset Formula 
+\begin{equation}
+a^{\varphi\left(p^{n}\right)}\equiv Q\left(a\right)p^{n}+1\quad\left(\mod p^{2n}\right).\label{eq:Fermat-quotient-congruence}
+\end{equation}
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Аналогичное сравнение можно записать и для 
+\begin_inset Formula $b$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+b^{\varphi\left(p^{n}\right)}\equiv Q\left(b\right)p^{n}+1\quad\left(\mod p^{2n}\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Перемножая эти два сравнения, получим 
+\begin_inset Formula 
+\begin{multline*}
+\left(ab\right)^{\varphi\left(p^{n}\right)}=a^{\varphi\left(p^{n}\right)}b^{\varphi\left(p^{n}\right)}\equiv\\
+\equiv Q\left(a\right)Q\left(b\right)p^{2n}+\left(Q\left(a\right)+Q\left(b\right)\right)p^{n}+1\equiv\\
+\equiv\left(Q\left(a\right)+Q\left(b\right)\right)p^{n}+1\quad\left(\mod p^{2n}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+С другой стороны, снова из определения частного Ферма, но уже для 
+\begin_inset Formula $ab$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\left(ab\right)^{\varphi\left(p^{n}\right)}\equiv Q\left(ab\right)p^{n}+1\quad\left(\mod p^{2n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как левые части последних двух сравнений равны, то их правые части сравнимы,
+ то есть
+\begin_inset Formula 
+\[
+Q\left(ab\right)p^{n}\equiv\left(Q\left(a\right)+Q\left(b\right)\right)p^{n}\qquad\left(\mod p^{2n}\right),
+\]
+
+\end_inset
+
+ откуда, по свойству сравнений 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, следует первое утверждение леммы.
+\end_layout
+
+\begin_layout Standard
+Для доказательства второго утверждения заметим, воспользуемся формулой бинома
+ Ньютона: 
+\begin_inset Formula 
+\[
+\left(a+p^{n+1}\right)^{\varphi\left(p^{n}\right)}=a^{\varphi\left(p^{n}\right)}+\sum_{k=1}^{\varphi\left(p^{n}\right)}\binom{\varphi\left(p^{n}\right)}{k}a^{\varphi\left(p^{n}\right)-k}p^{\left(n+1\right)k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+По модулю 
+\begin_inset Formula $p^{2n}$
+\end_inset
+
+ получаем сравнение 
+\begin_inset Formula 
+\[
+\left(a+p^{n+1}\right)^{\varphi\left(p^{n}\right)}\equiv a^{\varphi\left(p^{n}\right)}+\varphi\left(p^{n}\right)a^{\varphi\left(p^{n}\right)-1}p^{n+1}\quad\left(\mod p^{2n}\right),
+\]
+
+\end_inset
+
+ но так как 
+\begin_inset Formula $\varphi\left(p^{n}\right)=p^{n-1}\left(p-1\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\varphi\left(p^{n}\right)p^{n+1}=p^{2n}\left(p-1\right)\equiv0\quad\left(\mod p^{2n}\right)
+\]
+
+\end_inset
+
+и окончательно получаем 
+\begin_inset Formula 
+\[
+\left(a+p^{n+1}\right)^{\varphi\left(p^{n}\right)}\equiv a^{\varphi\left(p^{n}\right)}\quad\left(\mod p^{2n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Fermat-quotient-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+Q\left(a+p^{n+1}\right)p^{n}+1\equiv\left(a+p^{n+1}\right)^{\varphi\left(p^{n}\right)}\equiv a^{\varphi\left(p^{n}\right)}\equiv Q\left(a\right)p^{n}+1\quad\left(\mod p^{2n}\right)
+\]
+
+\end_inset
+
+ или 
+\begin_inset Formula 
+\[
+Q\left(a+p^{n+1}\right)p^{n}\equiv Q\left(a\right)p^{n}\quad\left(\mod p^{2n}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q\left(a+p^{n+1}\right)\equiv Q\left(a\right)\quad\left(\mod p^{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как оба числа 
+\begin_inset Formula $Q\left(a\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(a+p^{n+1}\right)$
+\end_inset
+
+ лежат на промежутке 
+\begin_inset Formula $\left[0;p^{n}\right)$
+\end_inset
+
+, то последнее сравнение переходит в равенство 
+\begin_inset Formula 
+\[
+Q\left(a+p^{n+1}\right)=Q\left(a\right),
+\]
+
+\end_inset
+
+второе утверждение леммы доказано
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Не нужно ли доказать, что у 
+\begin_inset Formula $Q\left(a\right)$
+\end_inset
+
+ нет меньшего периода?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+, построенный в теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-root-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+g_{1}^{\varphi\left(p^{n}\right)}\equiv Q\left(g_{1}\right)p^{n}+1\quad\left(\mod p^{2n}\right)
+\]
+
+\end_inset
+
+ и из равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-thm-prime-roots-mod-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $\beta=n-1$
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+v_{p}\left(g_{1}^{\varphi\left(p\right)}-1\right)=n,
+\]
+
+\end_inset
+
+значит 
+\begin_inset Formula $v_{p}\left(Q\left(g_{1}\right)\right)=0$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее?
+\end_layout
+
+\end_inset
+
+ и 
+\begin_inset Formula $p\nmid Q\left(g_{1}\right)$
+\end_inset
+
+.
+ По определению индекса, справедливо сравнение 
+\begin_inset Formula 
+\[
+b\equiv g_{1}^{\mathrm{ind}_{g_{1}}b}\quad\left(\mod p^{n+1}\right).
+\]
+
+\end_inset
+
+ С помощью уже доказанных утверждений данной леммы находим: 
+\begin_inset Formula 
+\[
+Q\left(b\right)=Q\left(g_{1}^{\mathrm{ind}_{g_{1}}b}\right)\equiv\mathrm{ind}_{g_{1}}b\cdot Q\left(g_{1}\right)\quad\left(\mod p^{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из второго утверждения леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:indicies-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula $\mathrm{ind}_{g_{1}}b$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Таким образом 
+\begin_inset Formula $p\nmid Q\left(b\right)$
+\end_inset
+
+ и лемма полностью доказана.
+\end_layout
+
+\begin_layout Standard
+Поскольку 
+\begin_inset Formula $b$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+, то, как указывалось ранее в утверждении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:prime-root-modulo-p^n-is-prime-root-modulo-p"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ будет первообразным корнем и по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Значит найдётся единственное целое число 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, удовлетворяющее условиям 
+\begin_inset Formula 
+\[
+a\equiv b^{x_{0}}\quad\left(\mod p\right),\qquad0\le x_{0}<\varphi\left(p-1\right)=p-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Для каждого целого 
+\begin_inset Formula $a$
+\end_inset
+
+, не делящегося на 
+\begin_inset Formula $p$
+\end_inset
+
+, системе сравнений 
+\begin_inset Formula 
+\[
+\begin{cases}
+Q\left(b\right)x & \equiv Q\left(a\right)\quad\left(\mod p^{n}\right)\\
+x & \equiv x_{0}\quad\left(\mod\left(p-1\right)\right)
+\end{cases}
+\]
+
+\end_inset
+
+удовлетворяет единственное число, принадлежащее промежутку 
+\begin_inset Formula $\left[0,p^{n}\left(p-1\right)\right)$
+\end_inset
+
+, оно удовлетворяет также сравнению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-modulo-p^(n+1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
