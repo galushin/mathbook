@@ -40610,6 +40610,12 @@ Q\left(a\right)\equiv\frac{a^{\varphi\left(p^{n}\right)}-1}{p^{n}}\quad\left(\mo
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:Fermat-quotient-properties"
+
+\end_inset
+
 1) Для любых двух целых чисел 
 \begin_inset Formula $a$
 \end_inset
@@ -40625,7 +40631,7 @@ Q\left(a\right)\equiv\frac{a^{\varphi\left(p^{n}\right)}-1}{p^{n}}\quad\left(\mo
 , выполняется сравнение 
 \begin_inset Formula 
 \[
-Q\left(ab\right)\equiv Q\left(a\right)+Q\left(b\right)\quad\left(\mod p\right).
+Q\left(ab\right)\equiv Q\left(a\right)+Q\left(b\right)\quad\left(\mod p^{n}\right).
 \]
 
 \end_inset
@@ -41009,6 +41015,16 @@ noprefix "false"
 \begin_inset Formula $p$
 \end_inset
 
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее?
+\end_layout
+
+\end_inset
+
 .
  Таким образом 
 \begin_inset Formula $p\nmid Q\left(b\right)$
@@ -41071,12 +41087,12 @@ a\equiv b^{x_{0}}\quad\left(\mod p\right),\qquad0\le x_{0}<\varphi\left(p-1\righ
 
 , системе сравнений 
 \begin_inset Formula 
-\[
+\begin{equation}
 \begin{cases}
 Q\left(b\right)x & \equiv Q\left(a\right)\quad\left(\mod p^{n}\right)\\
 x & \equiv x_{0}\quad\left(\mod\left(p-1\right)\right)
-\end{cases}
-\]
+\end{cases}\label{eq:discrete-log-thm-congruence}
+\end{equation}
 
 \end_inset
 
@@ -41095,6 +41111,226 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Fermat-quotient-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $Q\left(b\right)$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left(Q\left(b\right),p^{n}\right)=1$
+\end_inset
+
+ и, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:linear-congruence-one-variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у первого сравнения имеется единственное решение 
+\begin_inset Formula $x=x_{1}\quad\left(\mod p^{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим новую систему сравнений 
+\begin_inset Formula 
+\[
+\begin{cases}
+x & \equiv x_{1}\quad\left(\mod p^{n}\right)\\
+x & \equiv x_{0}\quad\left(\mod\left(p-1\right)\right)
+\end{cases},
+\]
+
+\end_inset
+
+так как 
+\begin_inset Formula $p^{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $p-1$
+\end_inset
+
+ взаимно просты, по китайской теореме об остатках 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:chinese-reminder-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у этой системы существует единственное решение по модулю 
+\begin_inset Formula $M=p^{n}\left(p-1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Итак, каждой из систем 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-modulo-p^(n+1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-thm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ удовлетворяет единственное целое число, докажем, что эти числа совпадают.
+\end_layout
+
+\begin_layout Proof
+Пусть целое 
+\begin_inset Formula $k$
+\end_inset
+
+ удовлетворяет 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-thm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, тогда 
+\begin_inset Formula $b^{k}\equiv a\quad\left(\mod p^{n+1}\right)$
+\end_inset
+
+ и, согласно лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Fermat-quotient-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+Q\left(a\right)=Q\left(a+p^{n+1}\cdot c\right)=Q\left(b^{k}\right)\equiv k\cdot Q\left(b\right)\quad\left(\mod p^{n}\right),
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $k$
+\end_inset
+
+ удовлетворяет первому сравнению из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-thm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-thm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula $b^{k}\equiv a\equiv b^{x_{0}}\quad\left(\mod p\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $b$
+\end_inset
+
+ первообразный корень по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, то по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:powers-congruence-mod-prime-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $k\equiv x_{0}\quad\left(\mod\left(p-1\right)\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $k$
+\end_inset
+
+ удовлетворяет и второму из сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-thm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Теорема доказана.
 \end_layout
 
 \begin_layout Standard
