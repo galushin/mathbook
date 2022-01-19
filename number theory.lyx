@@ -23693,6 +23693,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:linear-congruences"
+
+\end_inset
+
 Сравнение первой степени
 \end_layout
 
@@ -24208,6 +24214,12 @@ x\equiv9\left(\mod26\right),x\equiv22\left(\mod26\right).
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:chinese-reminder-theorem"
+
+\end_inset
+
 Китайская теорема об остатках
 \end_layout
 
@@ -38292,7 +38304,13 @@ noprefix "false"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Claim
+\begin_inset CommandInset label
+LatexCommand label
+name "claim:prime-root-modulo-p^n-is-prime-root-modulo-p"
+
+\end_inset
+
 Заметим, что любой первообразный корень по модулю 
 \begin_inset Formula $p^{n}$
 \end_inset
@@ -38306,7 +38324,10 @@ noprefix "false"
 \end_inset
 
 .
- Действительно, пусть 
+\end_layout
+
+\begin_layout Proof
+Действительно, пусть 
 \begin_inset Formula $b$
 \end_inset
 
@@ -39456,9 +39477,9 @@ a\equiv g^{\gamma}\quad\left(\mod m\right),\qquad0\le\gamma<\varphi\left(m\right
  индекс, не существенно.
  Итак, имеем 
 \begin_inset Formula 
-\[
-a\equiv g^{\mathrm{ind}_{g}a}\quad\left(\mod m\right),\qquad0\le\gamma<\varphi\left(m\right).
-\]
+\begin{equation}
+a\equiv g^{\mathrm{ind}_{g}a}\quad\left(\mod m\right),\qquad0\le\gamma<\varphi\left(m\right).\label{eq:index-of-number-difinition}
+\end{equation}
 
 \end_inset
 
@@ -40459,6 +40480,1807 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Дискретное логарифмирование
+\end_layout
+
+\begin_layout Standard
+Согласно 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:index-of-number-difinition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:indicies-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ свойства индексов напоминают свойства обычных логарифмов от действительных
+ чисел.
+ Поэтому иногда в современной литературе индексы называют дискретными логарифмам
+и, а процесс их нахождения — дискретным логарифмированием.
+\end_layout
+
+\begin_layout Standard
+Далее мы покажем, каким образом задача вычисления 
+\begin_inset Formula $\mathrm{ind}_{b}\left(a\right)$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+, при 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+, то есть вычисление единственного целого числа 
+\begin_inset Formula $x$
+\end_inset
+
+, удовлетворяющего условиям 
+\begin_inset Formula 
+\begin{equation}
+b^{x}\equiv a\quad\left(\mod p^{n+1}\right),\qquad0\le x<p^{n}\left(p-1\right),\label{eq:discrete-log-modulo-p^(n+1)}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $p$
+\end_inset
+
+ — нечётное простое число, 
+\begin_inset Formula $b$
+\end_inset
+
+ — фиксированный первообразный корень по модулю 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,p\right)=1$
+\end_inset
+
+, может быть достаточно быстро сведена к аналогичной задаче в случае 
+\begin_inset Formula $n=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое нечётное число и 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ — целое число.
+ По теореме Эйлера 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Euler-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для каждого целого 
+\begin_inset Formula $a$
+\end_inset
+
+, не делящегося на 
+\begin_inset Formula $p$
+\end_inset
+
+, число 
+\begin_inset Formula $a^{\varphi\left(p^{n}\right)}-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $p^{n}$
+\end_inset
+
+, и, поэтому, существует единственное целого число 
+\begin_inset Formula $Q\left(a\right)$
+\end_inset
+
+ такое, что 
+\begin_inset Formula 
+\[
+Q\left(a\right)\equiv\frac{a^{\varphi\left(p^{n}\right)}-1}{p^{n}}\quad\left(\mod p^{n}\right),\qquad0\le Q\left(a\right)<p^{n}.
+\]
+
+\end_inset
+
+ Определенная этими условиями функция 
+\begin_inset Formula $Q\left(a\right)$
+\end_inset
+
+ называется 
+\emph on
+частным Ферма.
+ 
+\emph default
+Она обладает следующими свойствами.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:Fermat-quotient-properties"
+
+\end_inset
+
+1) Для любых двух целых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, не делящихся на 
+\begin_inset Formula $p$
+\end_inset
+
+, выполняется сравнение 
+\begin_inset Formula 
+\[
+Q\left(ab\right)\equiv Q\left(a\right)+Q\left(b\right)\quad\left(\mod p^{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+2) Функция 
+\begin_inset Formula $Q\left(a\right)$
+\end_inset
+
+ имеет период 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+, то есть для любого целого 
+\begin_inset Formula $a$
+\end_inset
+
+, не делящегося на 
+\begin_inset Formula $p$
+\end_inset
+
+, выполняется равенство 
+\begin_inset Formula $Q\left(a+p^{n+1}\right)=Q\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+3) Если 
+\begin_inset Formula $b$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+, то 
+\begin_inset Formula $Q\left(b\right)$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Из определения частного Ферма следует сравнение 
+\begin_inset Formula 
+\begin{equation}
+a^{\varphi\left(p^{n}\right)}\equiv Q\left(a\right)p^{n}+1\quad\left(\mod p^{2n}\right).\label{eq:Fermat-quotient-congruence}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Аналогичное сравнение можно записать и для 
+\begin_inset Formula $b$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+b^{\varphi\left(p^{n}\right)}\equiv Q\left(b\right)p^{n}+1\quad\left(\mod p^{2n}\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Перемножая эти два сравнения, получим 
+\begin_inset Formula 
+\begin{multline*}
+\left(ab\right)^{\varphi\left(p^{n}\right)}=a^{\varphi\left(p^{n}\right)}b^{\varphi\left(p^{n}\right)}\equiv\\
+\equiv Q\left(a\right)Q\left(b\right)p^{2n}+\left(Q\left(a\right)+Q\left(b\right)\right)p^{n}+1\equiv\\
+\equiv\left(Q\left(a\right)+Q\left(b\right)\right)p^{n}+1\quad\left(\mod p^{2n}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+С другой стороны, снова из определения частного Ферма, но уже для 
+\begin_inset Formula $ab$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\left(ab\right)^{\varphi\left(p^{n}\right)}\equiv Q\left(ab\right)p^{n}+1\quad\left(\mod p^{2n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как левые части последних двух сравнений равны, то их правые части сравнимы,
+ то есть
+\begin_inset Formula 
+\[
+Q\left(ab\right)p^{n}\equiv\left(Q\left(a\right)+Q\left(b\right)\right)p^{n}\qquad\left(\mod p^{2n}\right),
+\]
+
+\end_inset
+
+ откуда, по свойству сравнений 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, следует первое утверждение леммы.
+\end_layout
+
+\begin_layout Standard
+Для доказательства второго утверждения заметим, воспользуемся формулой бинома
+ Ньютона: 
+\begin_inset Formula 
+\[
+\left(a+p^{n+1}\right)^{\varphi\left(p^{n}\right)}=a^{\varphi\left(p^{n}\right)}+\sum_{k=1}^{\varphi\left(p^{n}\right)}\binom{\varphi\left(p^{n}\right)}{k}a^{\varphi\left(p^{n}\right)-k}p^{\left(n+1\right)k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+По модулю 
+\begin_inset Formula $p^{2n}$
+\end_inset
+
+ получаем сравнение 
+\begin_inset Formula 
+\[
+\left(a+p^{n+1}\right)^{\varphi\left(p^{n}\right)}\equiv a^{\varphi\left(p^{n}\right)}+\varphi\left(p^{n}\right)a^{\varphi\left(p^{n}\right)-1}p^{n+1}\quad\left(\mod p^{2n}\right),
+\]
+
+\end_inset
+
+ но так как 
+\begin_inset Formula $\varphi\left(p^{n}\right)=p^{n-1}\left(p-1\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\varphi\left(p^{n}\right)p^{n+1}=p^{2n}\left(p-1\right)\equiv0\quad\left(\mod p^{2n}\right)
+\]
+
+\end_inset
+
+и окончательно получаем 
+\begin_inset Formula 
+\[
+\left(a+p^{n+1}\right)^{\varphi\left(p^{n}\right)}\equiv a^{\varphi\left(p^{n}\right)}\quad\left(\mod p^{2n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Fermat-quotient-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+Q\left(a+p^{n+1}\right)p^{n}+1\equiv\left(a+p^{n+1}\right)^{\varphi\left(p^{n}\right)}\equiv a^{\varphi\left(p^{n}\right)}\equiv Q\left(a\right)p^{n}+1\quad\left(\mod p^{2n}\right)
+\]
+
+\end_inset
+
+ или 
+\begin_inset Formula 
+\[
+Q\left(a+p^{n+1}\right)p^{n}\equiv Q\left(a\right)p^{n}\quad\left(\mod p^{2n}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q\left(a+p^{n+1}\right)\equiv Q\left(a\right)\quad\left(\mod p^{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как оба числа 
+\begin_inset Formula $Q\left(a\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(a+p^{n+1}\right)$
+\end_inset
+
+ лежат на промежутке 
+\begin_inset Formula $\left[0;p^{n}\right)$
+\end_inset
+
+, то последнее сравнение переходит в равенство 
+\begin_inset Formula 
+\[
+Q\left(a+p^{n+1}\right)=Q\left(a\right),
+\]
+
+\end_inset
+
+второе утверждение леммы доказано
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Не нужно ли доказать, что у 
+\begin_inset Formula $Q\left(a\right)$
+\end_inset
+
+ нет меньшего периода?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+, построенный в теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:prime-root-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+g_{1}^{\varphi\left(p^{n}\right)}\equiv Q\left(g_{1}\right)p^{n}+1\quad\left(\mod p^{2n}\right)
+\]
+
+\end_inset
+
+ и из равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prime-multiplicity-thm-prime-roots-mod-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $\beta=n-1$
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+v_{p}\left(g_{1}^{\varphi\left(p\right)}-1\right)=n,
+\]
+
+\end_inset
+
+значит 
+\begin_inset Formula $v_{p}\left(Q\left(g_{1}\right)\right)=0$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее?
+\end_layout
+
+\end_inset
+
+ и 
+\begin_inset Formula $p\nmid Q\left(g_{1}\right)$
+\end_inset
+
+.
+ По определению индекса, справедливо сравнение 
+\begin_inset Formula 
+\[
+b\equiv g_{1}^{\mathrm{ind}_{g_{1}}b}\quad\left(\mod p^{n+1}\right).
+\]
+
+\end_inset
+
+ С помощью уже доказанных утверждений данной леммы находим: 
+\begin_inset Formula 
+\[
+Q\left(b\right)=Q\left(g_{1}^{\mathrm{ind}_{g_{1}}b}\right)\equiv\mathrm{ind}_{g_{1}}b\cdot Q\left(g_{1}\right)\quad\left(\mod p^{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из второго утверждения леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:indicies-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula $\mathrm{ind}_{g_{1}}b$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее?
+\end_layout
+
+\end_inset
+
+.
+ Таким образом 
+\begin_inset Formula $p\nmid Q\left(b\right)$
+\end_inset
+
+ и лемма полностью доказана.
+\end_layout
+
+\begin_layout Standard
+Поскольку 
+\begin_inset Formula $b$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $p^{n+1}$
+\end_inset
+
+, то, как указывалось ранее в утверждении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:prime-root-modulo-p^n-is-prime-root-modulo-p"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ будет первообразным корнем и по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Значит найдётся единственное целое число 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, удовлетворяющее условиям 
+\begin_inset Formula 
+\[
+a\equiv b^{x_{0}}\quad\left(\mod p\right),\qquad0\le x_{0}<\varphi\left(p-1\right)=p-1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Для каждого целого 
+\begin_inset Formula $a$
+\end_inset
+
+, не делящегося на 
+\begin_inset Formula $p$
+\end_inset
+
+, системе сравнений 
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+Q\left(b\right)x & \equiv Q\left(a\right)\quad\left(\mod p^{n}\right)\\
+x & \equiv x_{0}\quad\left(\mod\left(p-1\right)\right)
+\end{cases}\label{eq:discrete-log-thm-congruence}
+\end{equation}
+
+\end_inset
+
+удовлетворяет единственное число, принадлежащее промежутку 
+\begin_inset Formula $\left[0,p^{n}\left(p-1\right)\right)$
+\end_inset
+
+, оно удовлетворяет также сравнению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-modulo-p^(n+1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Fermat-quotient-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $Q\left(b\right)$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $p$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left(Q\left(b\right),p^{n}\right)=1$
+\end_inset
+
+ и, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:linear-congruence-one-variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у первого сравнения имеется единственное решение 
+\begin_inset Formula $x=x_{1}\quad\left(\mod p^{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим новую систему сравнений 
+\begin_inset Formula 
+\[
+\begin{cases}
+x & \equiv x_{1}\quad\left(\mod p^{n}\right)\\
+x & \equiv x_{0}\quad\left(\mod\left(p-1\right)\right)
+\end{cases},
+\]
+
+\end_inset
+
+так как 
+\begin_inset Formula $p^{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $p-1$
+\end_inset
+
+ взаимно просты, по китайской теореме об остатках 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:chinese-reminder-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, у этой системы существует единственное решение по модулю 
+\begin_inset Formula $M=p^{n}\left(p-1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Итак, каждой из систем 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-modulo-p^(n+1)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-thm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ удовлетворяет единственное целое число, докажем, что эти числа совпадают.
+\end_layout
+
+\begin_layout Proof
+Пусть целое 
+\begin_inset Formula $k$
+\end_inset
+
+ удовлетворяет 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-thm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, тогда 
+\begin_inset Formula $b^{k}\equiv a\quad\left(\mod p^{n+1}\right)$
+\end_inset
+
+ и, согласно лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Fermat-quotient-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+Q\left(a\right)=Q\left(a+p^{n+1}\cdot c\right)=Q\left(b^{k}\right)\equiv k\cdot Q\left(b\right)\quad\left(\mod p^{n}\right),
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $k$
+\end_inset
+
+ удовлетворяет первому сравнению из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-thm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-thm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula $b^{k}\equiv a\equiv b^{x_{0}}\quad\left(\mod p\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $b$
+\end_inset
+
+ первообразный корень по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, то по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:powers-congruence-mod-prime-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $k\equiv x_{0}\quad\left(\mod\left(p-1\right)\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $k$
+\end_inset
+
+ удовлетворяет и второму из сравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-log-thm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Теорема доказана.
+\end_layout
+
+\begin_layout Standard
+Если известно число 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, то решение системы сравнений может быть найдено достаточно быстро с помощью
+ алгоритмов, изложенных в параграфах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:linear-congruences"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:chinese-reminder-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Числа 
+\begin_inset Formula $Q\left(a\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(b\right)$
+\end_inset
+
+ легко вычисляются, как решения сравнений вида 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Fermat-quotient-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ с помощью тех же алгоритмов.
+ Вычисление чисел вида 
+\begin_inset Formula $a^{\varphi\left(p^{n}\right)}\;\left(\mod p^{2n}\right)$
+\end_inset
+
+ выполняется с помощью алгоритма, описанного в параграфе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:prime-tests-and-big-prime-construction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Обсудим теперь задачу дискретного логарифмирования по простому нечётному
+ модулю.
+ Приведём её формулировку в этом случае.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Дано простое число 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Для заданных чисел 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+ требуется решить сравнение 
+\begin_inset Formula 
+\begin{equation}
+b^{x}\equiv a\quad\left(\mod p\right).\label{eq:discrete-logarithm-congruence}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Решение это задачи очень трудоёмко в вычислительном отношении.
+ Не случайно в конце практически всех учебников по элементарной теории чисел
+ приводятся таблицы индексов (дискретных логарифмов).
+ Лучшие из известных алгоритмов дискретного логарифмирования, использующие
+ вычисления в полях алгебраических чисел, требуют 
+\begin_inset Formula $O\left(\exp\left(c\left(\ln p\right)^{1/3}\right)\left(\ln\ln p\right)^{2/3}\right)$
+\end_inset
+
+ арифметических операций.
+ Впрочем, эта оценка условна, ибо опирается на ряд недоказанных, но весь
+ правдоподобных гипотез теории чисел.
+\end_layout
+
+\begin_layout Standard
+В конце 2006 года А.Я.
+\begin_inset space \thinspace{}
+\end_inset
+
+Дорофеев, Д.М.
+\begin_inset space \thinspace{}
+\end_inset
+
+Дугин и Д.В.
+\begin_inset space \thinspace{}
+\end_inset
+
+Матюхин опубликовали в Интернет
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+См.
+ http://www.nabble.com/Discrete-logarithm-in-GF(p)135-digits-t2870677.html
+\end_layout
+
+\end_inset
+
+ очередной рекорд дискретного логарифмирования.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Решил не включать сам пример.
+ К тому же ссылка, похоже, неправильная
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В случае обычных логарифмов в поле действительных чисел имеется специальное
+ основание 
+\begin_inset Formula $e=2,71828\dots$
+\end_inset
+
+ позволяющее достаточно быстро вычислять логарифмы с произвольной точностью.
+ Например, это можно сделать с помощью быстро сходящегося при 
+\begin_inset Formula $\left|x\right|<1$
+\end_inset
+
+ ряда 
+\begin_inset Formula 
+\[
+\ln\frac{1+x}{1-x}=2\left(x+\frac{x^{3}}{3}+\frac{x^{5}}{5}+\dots\right).
+\]
+
+\end_inset
+
+ Логарифмы по произвольному основанию 
+\begin_inset Formula $b$
+\end_inset
+
+ могут быть вычислены с помощью тождества 
+\begin_inset Formula 
+\[
+\log_{b}a=\frac{\ln a}{\ln b}.
+\]
+
+\end_inset
+
+ Подобное ему в дискретном случае доказано в лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:indicies-modulo-prime-power"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Но в случае дискретных логарифмов нет основания, по которому логарифмы
+ вычислялись бы столь же быстро, как натуральные логарифмы в поле действительных
+ чисел.
+\end_layout
+
+\begin_layout Standard
+Для решения задачи дискретного логарифмирования 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-logarithm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно вычислять последовательно степени 
+\begin_inset Formula $b^{k}\left(\mod p\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $k=1,2,\dots,p-1$
+\end_inset
+
+ пока не будет получено значение, сравнимое с 
+\begin_inset Formula $a$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Число 
+\begin_inset Formula $k$
+\end_inset
+
+, соответствующее это значению, и будет искомым индексом 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Такой способ вычисления индексов требует слишком большого количества арифметиче
+ских операций.
+ Следующий простой метод, предложенный в 1962 году А.О.
+\begin_inset space \thinspace{}
+\end_inset
+
+Гельфондом, так называемый метод уравнивания, позволяет находить индексы
+ существенно быстрее
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+В зарубежной литературе этот метод называется методом больших и малых шагов
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Алгоритм.
+ 
+\series default
+\emph on
+Пусть 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число, 
+\begin_inset Formula $p\ge3$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+, 
+\begin_inset Formula $b\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $p\nmid b$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Может быть 
+\begin_inset Formula $p\nmid a$
+\end_inset
+
+? Ниже используется именно оно
+\end_layout
+
+\end_inset
+
+.
+ Требуется решить сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-logarithm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+1.
+ Вычислить 
+\begin_inset Formula $H=\left\lfloor \sqrt{p}\right\rfloor +1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+2.
+ Положить 
+\begin_inset Formula $c=a^{H}\;\left(\mod p\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+3.
+ Составить два набора чисел 
+\begin_inset Formula 
+\[
+S=\left\{ c^{k}\quad\left(\mod p\right)\right\} ,1\le k\le H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset Formula 
+\[
+T=\left\{ b\cdot a^{l}\quad\left(\mod p\right)\right\} ,1\le l\le H.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Имеется в виду, что множества 
+\begin_inset Formula $S$
+\end_inset
+
+ и 
+\begin_inset Formula $T$
+\end_inset
+
+ содержат наименьшие неотрицательные вычеты соответствующих классов.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+4.
+ Упорядочить оба набора 
+\begin_inset Formula $S$
+\end_inset
+
+ и 
+\begin_inset Formula $T$
+\end_inset
+
+ по возрастанию и найти совпадающие элементы.
+ Это даст числа 
+\begin_inset Formula $k$
+\end_inset
+
+ и 
+\begin_inset Formula $l$
+\end_inset
+
+, для которых выполнено 
+\begin_inset Formula 
+\[
+c^{k}\equiv b\cdot a^{l}\quad\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+5.
+ Положить 
+\begin_inset Formula $x\equiv Hk-l\left(\mod p-1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $0\le x<p-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Найденное алгоритмом число 
+\begin_inset Formula $x$
+\end_inset
+
+ удовлетворяет сравнению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-logarithm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Действительно, по малой теореме Ферма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Fermat-lesser-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, выполняется 
+\begin_inset Formula 
+\[
+a^{l}a^{x}\equiv a^{Hk}\equiv c^{k}\equiv ba^{l}\quad\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Разделив обе части этого сравнения на 
+\begin_inset Formula $a^{l}$
+\end_inset
+
+, поскольку 
+\begin_inset Formula $p\nmid a$
+\end_inset
+
+, находим 
+\begin_inset Formula $a^{x}\equiv b\;\left(\mod p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Осталось доказать, что при любых числах 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, удовлетворяющих условиям алгоритма, множества 
+\begin_inset Formula $S$
+\end_inset
+
+ и 
+\begin_inset Formula $T$
+\end_inset
+
+ имеют общий элемент.
+ Пусть 
+\begin_inset Formula $x$
+\end_inset
+
+ — целое число, удовлетворяющее сравнению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:discrete-logarithm-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и неравенствам 
+\begin_inset Formula $0\le x<p-1$
+\end_inset
+
+.
+ Разделив 
+\begin_inset Formula $x$
+\end_inset
+
+ с остатком на 
+\begin_inset Formula $H$
+\end_inset
+
+, получим такие целые числа 
+\begin_inset Formula $y$
+\end_inset
+
+ и 
+\begin_inset Formula $z$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+x=Hy+z,\quad0\le z<H.
+\]
+
+\end_inset
+
+Тогда 
+\begin_inset Formula $0\le y\le\frac{x}{H}<\frac{p}{H}<H$
+\end_inset
+
+, ведь 
+\begin_inset Formula $H=\left\lfloor \sqrt{p}\right\rfloor +1>\sqrt{p}$
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula $k=y+1$
+\end_inset
+
+, 
+\begin_inset Formula $l=H-z$
+\end_inset
+
+.
+ Справедливы неравенства 
+\begin_inset Formula $1\le k\le H$
+\end_inset
+
+, 
+\begin_inset Formula $1\le l\le H$
+\end_inset
+
+.
+ Поэтому числа 
+\begin_inset Formula $s=c^{k}\;\left(\mod p\right)$
+\end_inset
+
+, 
+\begin_inset Formula $0\le s<p$
+\end_inset
+
+ и 
+\begin_inset Formula $t\equiv b\cdot a^{l}\;\left(\mod p\right)$
+\end_inset
+
+, 
+\begin_inset Formula $0\le t<p$
+\end_inset
+
+ лежат в множествах 
+\begin_inset Formula $S$
+\end_inset
+
+ и 
+\begin_inset Formula $T$
+\end_inset
+
+ соответственно.
+ Кроме того, 
+\begin_inset Formula 
+\[
+t\equiv ba^{l}\equiv a^{Hy+z+l}=a^{H\left(y+1\right)}\equiv c^{k}\equiv s\quad\left(\mod p\right),
+\]
+
+\end_inset
+
+ так что 
+\begin_inset Formula $s=t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Нетрудно проверить, что выполнение алгоритма уравнивания требует 
+\begin_inset Formula $O\left(\sqrt{p}\ln p\right)$
+\end_inset
+
+ арифметических операций и операций перестановки элементов при упорядочении
+ множеств 
+\begin_inset Formula $S$
+\end_inset
+
+ и 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Он существенно быстрее перебора множества всех возможных решений.
+ Однако и этот алгоритм не позволяет находить индексы при больших 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Ещё одним его недостатком является очень большая память, необходимая для
+ хранения в компьютере множеств 
+\begin_inset Formula $S$
+\end_inset
+
+ и 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Высокая сложность задачи дискретного логарифмирования лежит в основе некоторых
+ её криптографических применений.
+ Приведём здесь только один пример, связанный с построением так называемого
+ общего ключа для шифрования информации.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим ситуацию, когда два корреспондента, скажем 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ хотели бы обмениваться информацией через Интернет, причём так, чтобы эта
+ информация оставалась недоступной для остальных лиц.
+ Известны методы шифрования, зависящие от называемого ключа.
+ Тот, кто знает ключ, может раскрыть зашифрованное сообщение, а тот, кому
+ этот ключ неизвестен, если и сможет расшифровать сообщение, то за столь
+ большое время, что раскрытая информация уже потеряет своё значение.
+ Наши корреспонденты, не имея иного сообщения, кроме как через Интернет,
+ хотят выработать общий ключ для шифрования информации.
+ Мы будем представлять себе ключ как некоторую последовательность цифр,
+ то есть целое число.
+\end_layout
+
+\begin_layout Standard
+Для решения подобных задач на практике иногда используется такой метод.
+ Корреспонденты 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ обмениваясь информацией через Интернет вырабатывают некоторое большое простое
+ число 
+\begin_inset Formula $p$
+\end_inset
+
+ и находят первообразный корень 
+\begin_inset Formula $g$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ После чего каждый из них:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+1.
+ Выбирает на промежутке от 
+\begin_inset Formula $1$
+\end_inset
+
+ до 
+\begin_inset Formula $p-1$
+\end_inset
+
+ случайное число 
+\begin_inset Formula $x\left(A\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $x\left(B\right)$
+\end_inset
+
+ соответственно и вычисляет 
+\begin_inset Formula 
+\[
+y\left(A\right)\equiv g^{x\left(A\right)}\quad\left(\mod p\right)
+\]
+
+\end_inset
+
+или 
+\begin_inset Formula 
+\[
+y\left(B\right)\equiv g^{x\left(B\right)}\quad\left(\mod p\right)
+\]
+
+\end_inset
+
+ соответственно.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+2.
+ Посылает через Интернет своему корреспонденту найденное число 
+\begin_inset Formula $y\left(A\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $y\left(B\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+3.
+ Вычисляет 
+\begin_inset Formula $\left(y\left(B\right)\right)^{x\left(A\right)}\;\left(\mod p\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $\left(y\left(A\right)\right)^{x\left(B\right)}\;\left(\mod p\right)$
+\end_inset
+
+.
+ Ясно, что при этом оба получают одно и то же число 
+\begin_inset Formula 
+\[
+k\equiv\left(y\left(B\right)\right)^{x\left(A\right)}\equiv g^{x\left(B\right)x\left(A\right)}\equiv\left(y\left(A\right)\right)^{x\left(B\right)}\quad\left(\mod p\right),\quad0<k<p,
+\]
+
+\end_inset
+
+ которое и будет использоваться в качестве секретного общего ключа.
+\end_layout
+
+\begin_layout Standard
+Через Интернет будут переданы числа 
+\begin_inset Formula $p$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+, 
+\begin_inset Formula $g^{x\left(A\right)}\left(\mod p\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g^{x\left(B\right)}\left(\mod p\right)$
+\end_inset
+
+.
+ Попытка определить по ним ключ 
+\begin_inset Formula $k$
+\end_inset
+
+ связана с необходимостью вычисления 
+\begin_inset Formula $x\left(A\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $x\left(B\right)$
+\end_inset
+
+, то есть решением задачи дискретного логарифмирования.
+ Даже при сравнительно небольшом 
+\begin_inset Formula $p$
+\end_inset
+
+ это требует неприемлемо больших вычислительных затрат времени.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим, например, простое число 
+\begin_inset Formula $p=1000003$
+\end_inset
+
+.
+ Справедливо разложение на простые множители 
+\begin_inset Formula $p-1=2\cdot3\cdot166667$
+\end_inset
+
+.
+ С помощью леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:primitive-root-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ легко проверить, что 
+\begin_inset Formula $2$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Действительно 
+\begin_inset Formula 
+\[
+2^{6}\equiv64\left(\mod p\right),2^{500001}\equiv-1\left(\mod p\right),2^{333334}\equiv499501\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выберем, скажем 
+\begin_inset Formula $x\left(A\right)=394792$
+\end_inset
+
+, 
+\begin_inset Formula $x\left(B\right)=851982$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Далее идёт пример, смысла его переписывать нет
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим при том же простом 
+\begin_inset Formula $p$
+\end_inset
+
+ иной набор чисел 
+\begin_inset Formula $x\left(A\right)=829267$
+\end_inset
+
+ и 
+\begin_inset Formula $x\left(B\right)=723759$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Далее идёт пример, смысла его переписывать нет
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Значит, в этом случае 
+\begin_inset Formula $k=3$
+\end_inset
+
+.
+ Такой 
+\begin_inset Quotes rld
+\end_inset
+
+секретный
+\begin_inset Quotes rrd
+\end_inset
+
+ ключ, наверное, неприемлем и наши корреспонденты 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ должны выбирать иные случайные числа.
+\end_layout
+
+\begin_layout Standard
+В последнем примере 
+\begin_inset Formula $x\left(A\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x\left(B\right)$
+\end_inset
+
+ подбирались специально.
+ Подобная ситуация встречается крайне редко.
 \end_layout
 
 \begin_layout Standard
