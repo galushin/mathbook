@@ -42115,16 +42115,172 @@ k\equiv\left(y\left(B\right)\right)^{x\left(A\right)}\equiv g^{x\left(B\right)x\
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+Через Интернет будут переданы числа 
+\begin_inset Formula $p$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+, 
+\begin_inset Formula $g^{x\left(A\right)}\left(\mod p\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g^{x\left(B\right)}\left(\mod p\right)$
+\end_inset
+
+.
+ Попытка определить по ним ключ 
+\begin_inset Formula $k$
+\end_inset
+
+ связана с необходимостью вычисления 
+\begin_inset Formula $x\left(A\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $x\left(B\right)$
+\end_inset
+
+, то есть решением задачи дискретного логарифмирования.
+ Даже при сравнительно небольшом 
+\begin_inset Formula $p$
+\end_inset
+
+ это требует неприемлемо больших вычислительных затрат времени.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим, например, простое число 
+\begin_inset Formula $p=1000003$
+\end_inset
+
+.
+ Справедливо разложение на простые множители 
+\begin_inset Formula $p-1=2\cdot3\cdot166667$
+\end_inset
+
+.
+ С помощью леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:primitive-root-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ легко проверить, что 
+\begin_inset Formula $2$
+\end_inset
+
+ есть первообразный корень по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Действительно 
+\begin_inset Formula 
+\[
+2^{6}\equiv64\left(\mod p\right),2^{500001}\equiv-1\left(\mod p\right),2^{333334}\equiv499501\left(\mod p\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выберем, скажем 
+\begin_inset Formula $x\left(A\right)=394792$
+\end_inset
+
+, 
+\begin_inset Formula $x\left(B\right)=851982$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Закончить раздел 7.6
+Далее идёт пример, смысла его переписывать нет
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Рассмотрим при том же простом 
+\begin_inset Formula $p$
+\end_inset
+
+ иной набор чисел 
+\begin_inset Formula $x\left(A\right)=829267$
+\end_inset
+
+ и 
+\begin_inset Formula $x\left(B\right)=723759$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Далее идёт пример, смысла его переписывать нет
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Значит, в этом случае 
+\begin_inset Formula $k=3$
+\end_inset
+
+.
+ Такой 
+\begin_inset Quotes rld
+\end_inset
+
+секретный
+\begin_inset Quotes rrd
+\end_inset
+
+ ключ, наверное, неприемлем и наши корреспонденты 
+\begin_inset Formula $A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ должны выбирать иные случайные числа.
+\end_layout
+
+\begin_layout Standard
+В последнем примере 
+\begin_inset Formula $x\left(A\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x\left(B\right)$
+\end_inset
+
+ подбирались специально.
+ Подобная ситуация встречается крайне редко.
 \end_layout
 
 \begin_layout Standard
