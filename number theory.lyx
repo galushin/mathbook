@@ -42363,6 +42363,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:two-term-congruence-solvable"
+
+\end_inset
+
 В указанных выше условиях выше условиях равносильны следующие три утверждения:
 \end_layout
 
@@ -42882,29 +42888,158 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Закончить раздел 7.7
-\end_layout
+С помощью введённого понятия первое утверждение теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:two-term-congruence-solvable"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+ может быть переформулировано в виде критерия для отыскания степенных вычетов.
+\end_layout
 
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:residual-of-power-n-criterion"
+
+\end_inset
+
+Целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, взаимно простое с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+, будет вычетом степени 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+, если и только если выполняется сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:two-term-congruence-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_inset Separator plain
+\end_inset
 
-\begin_layout Plain Layout
-Закончить главу 7
+
 \end_layout
+
+\begin_layout Remark
+Если 
+\begin_inset Formula $d=\left(n,\varphi\left(m\right)\right)$
+\end_inset
+
+, то вычеты степени 
+\begin_inset Formula $n$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ совпадают с вычетами степени 
+\begin_inset Formula $d$
+\end_inset
+
+ по тому же модулю.
+\end_layout
+
+\begin_layout Proof
+Это утверждение выполняется в силу равенства 
+\begin_inset Formula $\left(n,\varphi\left(m\right)\right)=d=\left(d,\varphi\left(m\right)\right)$
+\end_inset
+
+ и следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:residual-of-power-n-criterion"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
- 
+.
+\end_layout
+
+\begin_layout Remark
+Число классов 
+\begin_inset Formula $n$
+\end_inset
+
+-степенных вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{\varphi\left(m\right)}{d}$
+\end_inset
+
+, где 
+\begin_inset Formula $d=\left(n,\varphi\left(m\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+В силу теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:two-term-congruence-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ число 
+\begin_inset Formula $a$
+\end_inset
+
+, взаимно простое с 
+\begin_inset Formula $m$
+\end_inset
+
+, будет 
+\begin_inset Formula $n$
+\end_inset
+
+-степенным вычетом в том и только том случае, когда 
+\begin_inset Formula $d\mid\mathrm{ind}a$
+\end_inset
+
+.
+ Но среди чисел 
+\begin_inset Formula $0,\dots,\varphi\left(m\right)-1$
+\end_inset
+
+ — возможных значений индексов, имеется в точности 
+\begin_inset Formula $\frac{\varphi\left(m\right)}{d}$
+\end_inset
+
+, делящихся на 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Следствие доказано.
 \end_layout
 
 \begin_layout Standard
