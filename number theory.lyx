@@ -43042,6 +43042,439 @@ noprefix "false"
  Следствие доказано.
 \end_layout
 
+\begin_layout Chapter
+Цепные дроби
+\end_layout
+
+\begin_layout Standard
+В связи с различными причинами иногда приходится заменять действительные
+ числа их приближёнными значениями.
+ Часто при этом хочется обеспечить необходимую точность выбирая рациональное
+ приближение с по возможности меньшим знаменателем.
+\end_layout
+
+\begin_layout Standard
+Вероятно, наиболее известный исторический пример такой замены связан с устройств
+ом календарей.
+ В настоящее время считается, что Земля совершает полный оборот вокруг Солнца
+ за 365,24219 суток.
+ Конечно, это число условно.
+ Ведь с течением времени вращение Земли вокруг Солнца замедляется, кроме
+ того, Земля вокруг своей оси вращается неравномерно, а это сказывается
+ на продолжительности суток.
+ Так что приведённое выше число, конечно, является усреднённым.
+\end_layout
+
+\begin_layout Standard
+Простейшее приближение к продолжительности года 
+\begin_inset Formula $365,25=365\frac{1}{4}$
+\end_inset
+
+ было положено в основу юлианского календаря, созданного александрийскими
+ астрономами во главе с Созигеном.
+ Указном Юлия Цезаря в 46 г.
+ до н.э.
+ этот календарь был введён во всей Римской империи
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+номинально, это была Римская республика
+\end_layout
+
+\end_inset
+
+.
+ Поскольку год должен содержать целое число суток, то в юлианском календаре
+ на каждые три года продолжительностью в 365 дней, приходился один високосный
+ год, продолжительностью 366 дней.
+ Так обеспечивается средняя продолжительность года в 
+\begin_inset Formula $365\frac{1}{4}$
+\end_inset
+
+ суток.
+ Юлианский год чуть длиннее истинной продолжительности обращения Земли вокруг
+ Солнца.
+ Небольшая ошибка (11 минут и 14 секунд за год) по прошествии 128 лет привела
+ к ошибке в одни сутки и продолжала накапливаться.
+ В 1582 году в католических странах специальным распоряжением папы Григория
+ XIII был введён новый календарь.
+ В качестве приближения к истинной продолжительности года было выбрано число
+ 
+\begin_inset Formula 
+\[
+365\frac{97}{400}=365+\frac{1}{4}-\frac{3}{4000}=365,242,
+\]
+
+\end_inset
+
+ дающее ошибку в одни сутки примерно за 3300 лет.
+ Ценой лучшего приближения стало усложнение календаря.
+ Високосными стали считаться года, номера которых делятся на 
+\begin_inset Formula $4$
+\end_inset
+
+, но не делятся на 
+\begin_inset Formula $100$
+\end_inset
+
+, а кроме того — годы, номера которых делятся на 
+\begin_inset Formula $400$
+\end_inset
+
+.
+ По григорианскому календарю годы с номерами 
+\begin_inset Formula $1700$
+\end_inset
+
+, 
+\begin_inset Formula $1800$
+\end_inset
+
+, 
+\begin_inset Formula $1900$
+\end_inset
+
+ високосными не являлись, в то время, как 
+\begin_inset Formula $2000$
+\end_inset
+
+ год был високосным.
+ В России григорианский календарь был введён в 1918 году.
+\end_layout
+
+\begin_layout Standard
+Наконец, отметим, что персидский астроном, математик и поэт Омар Хайям предложил
+ календарь, основанный на приближении 
+\begin_inset Formula $365\frac{8}{33}=365,242424\dots$
+\end_inset
+
+.
+ Этот календарь, введённый в 1079 году и действовавший в Иране до середины
+ XIX века, содержал 
+\begin_inset Formula $8$
+\end_inset
+
+ високосных лет, повторявшихся с циклом в 
+\begin_inset Formula $33$
+\end_inset
+
+ года.
+ На протяжении цикла между 
+\begin_inset Formula $8$
+\end_inset
+
+ последовательно идущими високосными годами располагались 
+\begin_inset Formula $7$
+\end_inset
+
+ отрезков по 
+\begin_inset Formula $3$
+\end_inset
+
+ обыкновенных года в 
+\begin_inset Formula $365$
+\end_inset
+
+ дней и один отрезок в 
+\begin_inset Formula $4$
+\end_inset
+
+ обыкновенных года.
+ Ошибка в одни сутки накапливалась в этом календаре примерно за 4500 лет.
+\end_layout
+
+\begin_layout Standard
+Заметим, что календарные системы играют важную роль в организации религиозной
+ жизни.
+ Существенной компонентой лунно-солнечных календарей, какими в действительности
+ являются и юлианский, и григорианский календари, является правильная организаци
+я не только последовательности солнечных лет в 
+\begin_inset Formula $365$
+\end_inset
+
+ и 
+\begin_inset Formula $366$
+\end_inset
+
+ дней, но и лунных месяцев.
+ Так христианская Пасха по постановлению Никейского Собора 325 года должна
+ праздноваться в первое воскресенье после первого полнолуния, следующего
+ за днём весеннего равноденствия.
+ При этом имеются в виду не астрономические полнолуния и равноденствие,
+ а даты, вычисляемые по определённым канонизированным математическим правилам.
+ Если учесть, что средняя продолжительность отрезка времени, за который
+ Луна проходит все фазы от новолуния до новолуния, равна 
+\begin_inset Formula $29,530588$
+\end_inset
+
+ суток, а лунные месяцы поэтому должны содержать по 
+\begin_inset Formula $29$
+\end_inset
+
+ и 
+\begin_inset Formula $30$
+\end_inset
+
+ дней, получается весьма сложная проблема согласования последовательности
+ годов с последовательностью месяцев, так чтобы обе последовательности достаточн
+о точно следовали за движениями Солнца и Луны.
+ В обыкновенной жизни лунная составляющая юлианского и григорианского календарей
+ не принимается во внимание.
+\end_layout
+
+\begin_layout Standard
+Цепные дроби дают алгоритм, позволяющий находить в некотором смысле наилучшие
+ приближения действительных чисел рациональными.
+\end_layout
+
+\begin_layout Section
+Теорема Дирихле о приближении действительных чисел рациональными
+\end_layout
+
+\begin_layout Standard
+Рациональные числа расположены на действительной оси всюду плотно, то есть
+ для любого действительного числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в любой его 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-окрестности найдётся бесконечно много рациональных чисел.
+ Другими словами, при любом 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ неравенство 
+\begin_inset Formula 
+\begin{equation}
+\left|\alpha-\frac{p}{q}\right|<\varepsilon\label{eq:rational-approximation-to-real}
+\end{equation}
+
+\end_inset
+
+ имеет бесконечное количество решений в различных рациональных числах 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+.
+ Задача усложняется, если интересоваться существованием решения с не очень
+ большим знаменателем, ограничив его зависимости от 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+ Например, ответ на вопрос, существует ли решение с условием 
+\begin_inset Formula $q\le\varepsilon^{-1/2}$
+\end_inset
+
+ не очевиден.
+\end_layout
+
+\begin_layout Standard
+В 1842 году Дирихле доказал теорему, позволяющую устанавливать существование
+ решения неравенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rational-approximation-to-real"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ с ограничением величины знаменателя.
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $T$
+\end_inset
+
+ — действительные числа, причём 
+\begin_inset Formula $T\ge1$
+\end_inset
+
+.
+ Тогда существуют целые числа 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+, удовлетворяющие неравенствам 
+\begin_inset Formula 
+\[
+\left|\alpha-\frac{p}{q}\right|<\frac{1}{qT},\qquad1\le q\le T.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+Как и ранее будем обозначать через 
+\begin_inset Formula $\left[x\right]$
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ x\right\} $
+\end_inset
+
+ целую и дробную части числа 
+\begin_inset Formula $x$
+\end_inset
+
+ соответственно.
+ Положим 
+\begin_inset Formula $N=\left[T\right]$
+\end_inset
+
+ и разобьём отрезок 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+ на 
+\begin_inset Formula $N+1$
+\end_inset
+
+ равных отрезков 
+\begin_inset Formula 
+\begin{equation}
+\frac{u}{N+1}\le x\le\frac{u+1}{N+1},\qquad u=0,1,\dots,N,\label{eq:dirichlet-theorem-intervals}
+\end{equation}
+
+\end_inset
+
+ длины 
+\begin_inset Formula $\frac{1}{N+1}$
+\end_inset
+
+.
+ Также рассмотрим 
+\begin_inset Formula $N+1$
+\end_inset
+
+ чисел
+\begin_inset Formula 
+\begin{equation}
+\left\{ k\alpha\right\} ,\quad k=0,1,\dots,N.\label{eq:dirichlet-theorem-points}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть одно из этих чисел попадает в крайний правый из отрезков, то есть
+ удовлетворяет неравенствам 
+\begin_inset Formula 
+\[
+\frac{N}{N+1}\le\left\{ k\alpha\right\} \le1,
+\]
+
+\end_inset
+
+тогда получим 
+\begin_inset Formula 
+\[
+\left|k\alpha-\left[k\alpha\right]-1\right|=1-\left\{ ka\right\} \le\frac{1}{N+1}<\frac{1}{T}.
+\]
+
+\end_inset
+
+ Очевидно, выполняется 
+\begin_inset Formula $k\neq0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $0\le k\le N\le T$
+\end_inset
+
+.
+ Положив 
+\begin_inset Formula $q=k$
+\end_inset
+
+ и 
+\begin_inset Formula $p=\left[k\alpha\right]+1$
+\end_inset
+
+, получим нужное утверждение.
+\end_layout
+
+\begin_layout Proof
+Если же крайний правый отрезок не содержит ни одной из точек 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:dirichlet-theorem-points"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то как минимум один из оставшихся отрезков содержит две точки 
+\begin_inset Formula $\left\{ k_{1}\alpha\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ k_{2}\alpha\right\} $
+\end_inset
+
+.
+ Без ограничения общности можно считать 
+\begin_inset Formula $k_{1}<k_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 8.1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить главу 8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
