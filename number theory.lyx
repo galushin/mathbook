@@ -23742,15 +23742,6 @@ name "thm:linear-congruence-one-variable"
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать доказательство
-\end_layout
-
-\end_inset
-
 Если 
 \begin_inset Formula $ax\equiv b\left(\mod m\right)$
 \end_inset
@@ -42283,17 +42274,772 @@ status open
  Подобная ситуация встречается крайне редко.
 \end_layout
 
+\begin_layout Section
+Двучленные сравнения
+\end_layout
+
 \begin_layout Standard
-\begin_inset Note Note
+В этом параграфе мы рассмотрим сравнения вида 
+\begin_inset Formula 
+\begin{equation}
+x^{n}\equiv a\quad\left(\mod m\right),\label{eq:x^n-congruence}
+\end{equation}
+
+\end_inset
+
+ где 
+\begin_inset Formula $m=p^{\alpha}$
+\end_inset
+
+ или 
+\begin_inset Formula $m=2p^{\alpha}$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое нечётное число, а 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — целое положительное число.
+ Будем также предполагать, что 
+\begin_inset Formula $a$
+\end_inset
+
+ — целое, взаимно простое с 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Обозначим буквой 
+\begin_inset Formula $g$
+\end_inset
+
+ первообразный корень по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, и для каждого целого числа 
+\begin_inset Formula $b$
+\end_inset
+
+, взаимно простого с 
+\begin_inset Formula $m$
+\end_inset
+
+, символом 
+\begin_inset Formula $\mathrm{ind}b$
+\end_inset
+
+ будем обозначать индекс числа 
+\begin_inset Formula $b$
+\end_inset
+
+, вычисленные по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ при основании 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Следующая теорема даёт два критерия разрешимости сравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:x^n-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:two-term-congruence-solvable"
+
+\end_inset
+
+В указанных выше условиях выше условиях равносильны следующие три утверждения:
+\end_layout
+
+\begin_layout Theorem
+1) сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:x^n-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрешимо,
+\end_layout
+
+\begin_layout Theorem
+2) при 
+\begin_inset Formula $d=\left(n,\varphi\left(m\right)\right)$
+\end_inset
+
+ выполняется сравнение 
+\begin_inset Formula 
+\begin{equation}
+a^{\frac{\varphi\left(m\right)}{d}}\equiv1\quad\left(\mod m\right),\label{eq:two-term-congruence-criterion}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+3) 
+\begin_inset Formula $d\mid\mathrm{ind}a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+В случае разрешимости сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:x^n-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет в точности 
+\begin_inset Formula $d$
+\end_inset
+
+ решений.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Закончить главу 7
+Подсмотрел
 \end_layout
 
 \end_inset
 
- 
+Докажем 
+\begin_inset Formula $1)\Rightarrow2)$
+\end_inset
+
+.
+ Пусть сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:x^n-congruence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрешимо и 
+\begin_inset Formula $c$
+\end_inset
+
+ — одно из его решений, то есть 
+\begin_inset Formula $c^{n}\equiv a\quad\left(\mod m\right)$
+\end_inset
+
+.
+ Число 
+\begin_inset Formula $c$
+\end_inset
+
+ должно быть взаимно простым с 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ В противном случае 
+\begin_inset Formula $a=c^{n}-km$
+\end_inset
+
+ не будет взаимно простым с 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Тогда по теореме Эйлера 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Euler-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+a^{\frac{\varphi\left(m\right)}{d}}\equiv c^{n\cdot\frac{\varphi\left(m\right)}{d}}=\left(c^{\varphi\left(m\right)}\right)^{\frac{n}{d}}\equiv1^{n/d}=1\quad\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $2)\Rightarrow3)$
+\end_inset
+
+.
+ Пусть выполняется сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:two-term-congruence-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ По определению индекса 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:index-of-number-difinition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет место сравнение
+\begin_inset Formula 
+\[
+a\equiv g^{\mathrm{ind}a}\quad\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Но тогда выполняется сравнение
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+g^{\mathrm{ind}a\cdot\frac{\varphi\left(m\right)}{d}}\equiv a^{\frac{\varphi\left(m\right)}{d}}\equiv1\quad\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как по условию 
+\begin_inset Formula $g$
+\end_inset
+
+ — первообразный корень по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+, то по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:multiplicative-order"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ из последнего сравнения следует, что целое число 
+\begin_inset Formula $\mathrm{ind}a\cdot\frac{\varphi\left(m\right)}{d}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+, а значит 
+\begin_inset Formula $\frac{\mathrm{ind}a}{d}$
+\end_inset
+
+ является целым числом, то есть действительно 
+\begin_inset Formula $d\mid\mathrm{ind}a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $3)\Rightarrow1)$
+\end_inset
+
+.
+ Допустим, что 
+\begin_inset Formula $a$
+\end_inset
+
+ удовлетворяет условию 
+\begin_inset Formula $d\mid\mathrm{ind}a$
+\end_inset
+
+.
+ Рассмотрим сравнение 
+\begin_inset Formula 
+\[
+ny\equiv\mathrm{ind}a\quad\left(\mod\varphi\left(m\right)\right)
+\]
+
+\end_inset
+
+относительно неизвестной 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:linear-congruence-one-variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, данное сравнение разрешимо 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+почему выполняется при 
+\begin_inset Formula $\mathrm{\varphi\left(m\right)\nmid n}$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+, так как по предположению 
+\begin_inset Formula $\mathrm{ind}a$
+\end_inset
+
+ делится на наибольший общий делитель 
+\begin_inset Formula $\left(n,\varphi\left(m\right)\right)=d$
+\end_inset
+
+, и имеет ровно 
+\begin_inset Formula $d$
+\end_inset
+
+ решений.
+ Обозначим наименьшие неотрицательные вычеты этих классов как 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $j=1,\dots,d$
+\end_inset
+
+.
+ И определим также 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ как наименьшие неотрицательные вычеты в классах 
+\begin_inset Formula $g^{y_{j}}\quad\left(\mod m\right)$
+\end_inset
+
+, 
+\begin_inset Formula $j=1,\dots,d$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $y_{j}=\mathrm{ind}x_{j}$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+x_{j}^{n}\equiv g^{n\cdot\mathrm{ind}x_{j}}\equiv g^{ny_{j}}\equiv g^{\mathrm{ind}a}\equiv a\quad\left(\mod m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Итак, сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:two-term-congruence-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрешимо и имеет не менее 
+\begin_inset Formula $d$
+\end_inset
+
+ решений.
+ Это, в частности, завершает доказательство эквивалентности трёх утверждений
+ теоремы.
+\end_layout
+
+\begin_layout Proof
+Выше было доказано, что в случае разрешимости 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:two-term-congruence-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет не менее 
+\begin_inset Formula $d$
+\end_inset
+
+ решений.
+ Остаётся доказать, что никаких других решений, кроме построенных у данного
+ сравнения нет.
+ Если 
+\begin_inset Formula $c$
+\end_inset
+
+ — целое число, удовлетворяющее сравнению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:two-term-congruence-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $g^{n\mathrm{ind}c}\equiv g^{\mathrm{ind}a}\quad\left(\mod m\right)$
+\end_inset
+
+.
+ С помощью замечания 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:powers-congruence-mod-prime-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ к лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:multiplicative-order-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получаем, что 
+\begin_inset Formula $n\mathrm{ind}c\equiv\mathrm{ind}a\quad\left(\mod\varphi\left(m\right)\right)$
+\end_inset
+
+.
+ Но тогда индекс 
+\begin_inset Formula $\mathrm{ind}c$
+\end_inset
+
+ сравним по модулю 
+\begin_inset Formula $\varphi\left(m\right)$
+\end_inset
+
+ с одним из чисел 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+, а число 
+\begin_inset Formula $c$
+\end_inset
+
+ сравнимо по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ с одним из чисел 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+.
+ Теорема доказана.
+\end_layout
+
+\begin_layout Remark
+Если 
+\begin_inset Formula $\left(n,\varphi\left(m\right)\right)=1$
+\end_inset
+
+, то сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:two-term-congruence-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при любом 
+\begin_inset Formula $a$
+\end_inset
+
+, взаимно простом с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+, имеет единственное решение.
+\end_layout
+
+\begin_layout Standard
+Целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, взаимно простое с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+, называется 
+\begin_inset Formula $n$
+\end_inset
+
+-
+\emph on
+степенным вычетом 
+\emph default
+или вычетом степени 
+\begin_inset Formula $n$
+\end_inset
+
+, если сравнение 
+\begin_inset Formula $x^{n}\equiv a\;\left(\mod p^{\alpha}\right)$
+\end_inset
+
+ разрешимо.
+ В противном случае число 
+\begin_inset Formula $a$
+\end_inset
+
+ называется 
+\emph on
+
+\begin_inset Formula $n$
+\end_inset
+
+-степенным невычетом
+\emph default
+.
+ При 
+\begin_inset Formula $n=2,3,4$
+\end_inset
+
+ применяется также терминология квадратичный, кубический, биквадратичный
+ вычет или невычет.
+\end_layout
+
+\begin_layout Standard
+Из этого определения следует, что числа, сравнимые по модулю с 
+\begin_inset Formula $m$
+\end_inset
+
+, одновременно являются 
+\begin_inset Formula $n$
+\end_inset
+
+-степенным вычетами или невычетами.
+\end_layout
+
+\begin_layout Standard
+С помощью введённого понятия первое утверждение теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:two-term-congruence-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ может быть переформулировано в виде критерия для отыскания степенных вычетов.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:residual-of-power-n-criterion"
+
+\end_inset
+
+Целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, взаимно простое с модулем 
+\begin_inset Formula $m$
+\end_inset
+
+, будет вычетом степени 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+, если и только если выполняется сравнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:two-term-congruence-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Если 
+\begin_inset Formula $d=\left(n,\varphi\left(m\right)\right)$
+\end_inset
+
+, то вычеты степени 
+\begin_inset Formula $n$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ совпадают с вычетами степени 
+\begin_inset Formula $d$
+\end_inset
+
+ по тому же модулю.
+\end_layout
+
+\begin_layout Proof
+Это утверждение выполняется в силу равенства 
+\begin_inset Formula $\left(n,\varphi\left(m\right)\right)=d=\left(d,\varphi\left(m\right)\right)$
+\end_inset
+
+ и следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:residual-of-power-n-criterion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Число классов 
+\begin_inset Formula $n$
+\end_inset
+
+-степенных вычетов по модулю 
+\begin_inset Formula $m$
+\end_inset
+
+ равно 
+\begin_inset Formula $\frac{\varphi\left(m\right)}{d}$
+\end_inset
+
+, где 
+\begin_inset Formula $d=\left(n,\varphi\left(m\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+В силу теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:two-term-congruence-solvable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ число 
+\begin_inset Formula $a$
+\end_inset
+
+, взаимно простое с 
+\begin_inset Formula $m$
+\end_inset
+
+, будет 
+\begin_inset Formula $n$
+\end_inset
+
+-степенным вычетом в том и только том случае, когда 
+\begin_inset Formula $d\mid\mathrm{ind}a$
+\end_inset
+
+.
+ Но среди чисел 
+\begin_inset Formula $0,\dots,\varphi\left(m\right)-1$
+\end_inset
+
+ — возможных значений индексов, имеется в точности 
+\begin_inset Formula $\frac{\varphi\left(m\right)}{d}$
+\end_inset
+
+, делящихся на 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Следствие доказано.
 \end_layout
 
 \begin_layout Standard
