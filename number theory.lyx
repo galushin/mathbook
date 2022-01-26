@@ -43705,6 +43705,500 @@ noprefix "false"
  значение.
 \end_layout
 
+\begin_layout Section
+Конечные цепные дроби
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a_{0},a_{1},a_{2},\dots$
+\end_inset
+
+ — конечная или бесконечная последовательность целых чисел, причём 
+\begin_inset Formula $a_{i}\ge1$
+\end_inset
+
+ при 
+\begin_inset Formula $i\ge1$
+\end_inset
+
+.
+ Выражение вида 
+\begin_inset Formula 
+\begin{equation}
+a_{0}+\frac{1}{a_{1}+\frac{1}{a_{2}+\frac{1}{a_{3}+\ddots}}}\label{eq:continued-fraction}
+\end{equation}
+
+\end_inset
+
+называется 
+\emph on
+цепной 
+\emph default
+или 
+\emph on
+непрерывной 
+\emph default
+дробью.
+ Если последовательность 
+\begin_inset Formula $\left\{ a_{i}\right\} $
+\end_inset
+
+ конечна, цепная дробь равна некоторому рациональному числу.
+ Если же последовательность бесконечна, выражению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ также можно придать вполне определённое числовое значение, которое в этом
+ случае будет иррациональным.
+ Для краткости записи вместо выражения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ будет использоваться 
+\begin_inset Formula $\left[a_{0};a_{1},a_{2},\dots\right]$
+\end_inset
+
+ или 
+\begin_inset Formula $\left[a_{0};a_{1},a_{2},\dots,a_{m}\right]$
+\end_inset
+
+ при конечной последовательности 
+\begin_inset Formula $a_{0},a_{1},\dots,a_{m}$
+\end_inset
+
+.
+ В этом параграфе мы изучим некоторые свойства конечных цепных дробей.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — целые числа, 
+\begin_inset Formula $b>0$
+\end_inset
+
+.
+ Рассмотрим последовательность вычислений в алгоритме Евклида
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ при нахождении наибольшего общего делителя 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, см.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Euclid-algorithm"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+a=bq_{1}+r_{2}, & \qquad & 0\le r_{2}<b,\\
+b=r_{2}q_{2}+r_{3}, &  & 0\le r_{3}<r_{2},\\
+r_{2}=r_{3}q_{3}+r_{4}, &  & 0\le r_{4}<r_{3},\\
+\vdots &  & \vdots\\
+r_{n-2}=r_{n-1}q_{n-1}+r_{n}, &  & 0\le r_{n}<r_{n-1},\\
+r_{n-1}=r_{n}q_{n}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Разделив каждое из выписанных равенств на соответствующий делитель, получим
+ 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\frac{a}{b}=q_{1}+\frac{1}{b/r_{2}},\\
+\frac{b}{r_{2}}=q_{2}+\frac{1}{r_{2}/r_{3}},\\
+\frac{r_{2}}{r_{3}}=q_{3}+\frac{1}{r_{3}/r_{4}},\\
+\vdots\\
+\frac{r_{n-2}}{r_{n-1}}=q_{n-1}+\frac{1}{q_{n}}.
+\end{array}
+\]
+
+\end_inset
+
+Подставляя левые части получившихся равенств в правые части предшествующих,
+ найдём представление рационального числа 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ в виде конечной непрерывной дроби 
+\begin_inset Formula $\frac{a}{b}=\left[q_{1};q_{2},q_{3},\dots,q_{n}\right]$
+\end_inset
+
+.
+ Таким образом, алгоритм Евклида позволяет находить представление рациональных
+ чисел непрерывными дробями.
+ Заметим, что это представление не единственно
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Надо бы это доказать
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left[q_{1};q_{2},q_{3},\dots,q_{n}\right]=\begin{cases}
+\left[q_{1};q_{2},q_{3},\dots,q_{n}-1,1\right], & q_{n}>1,\\
+\left[q_{1};q_{2},q_{3},\dots,q_{n-1}+1\right], & q_{n}=1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для любого рационального числа существует представление конечной цепной
+ дробью, при этом можно выбирать длину дроби по своему усмотрению так, чтобы
+ она была чётной или нечётной.
+\end_layout
+
+\begin_layout Standard
+В дальнейшем используется обозначение 
+\begin_inset Formula $\left[x_{0};x_{1},\dots,x_{n}\right]$
+\end_inset
+
+ для конечной цепной дроби вида 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, где вместо целых чисел 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ стоят переменные 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+ Конечные цепные дроби такого вида являются рациональными функциями от 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+ Следующее утверждение позволяет легко вычислять их.
+\end_layout
+
+\begin_layout Lemma
+Пусть 
+\begin_inset Formula $x_{0},x_{1},\dots$
+\end_inset
+
+ — переменные и последовательности многочленов 
+\begin_inset Formula $P_{k}\left(x_{0},\dots,x_{k}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q_{k}\left(x_{0},\dots,x_{k}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $k\ge-1$
+\end_inset
+
+, определена формулами 
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+P_{k}=x_{k}P_{k-1}+P_{k-2}, & P_{-1}=1,\quad P_{0}=x_{0},\\
+Q_{k}=x_{k}Q_{k-1}+Q_{k-2}, & Q_{-1}=0,\quad Q_{0}=1.
+\end{cases}\label{eq:continued-fraction-recurrense}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Тогда при любом 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\[
+\left[x_{0};x_{1},\dots x_{n}\right]=\frac{P_{n}}{Q_{n}}=\frac{x_{n}P_{n-1}+P_{n-2}}{x_{n}Q_{n-1}+Q_{n-2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Доказывать будем индукцией по 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $n=0$
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+\left[x_{0}\right]=\frac{x_{0}}{1}=x_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $n=1$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\left[x_{0};x_{1}\right]=x_{0}+\frac{1}{x_{1}}=\frac{x_{1}x_{0}+1}{x_{1}}=\frac{x_{1}P_{0}+P_{-1}}{x_{1}Q_{0}+Q_{-1}}.
+\]
+
+\end_inset
+
+ Предположим, что 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ и утверждение леммы выполняется для дробей длины 
+\begin_inset Formula $n$
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\[
+\left[x_{0};x_{1},\dots,x_{n}\right]=\frac{x_{n}P_{n-1}\left(x_{0},\dots x_{n-1}\right)+P_{n-2}\left(x_{0},\dots,x_{n-2}\right)}{x_{n}Q_{n-1}\left(x_{0},\dots,x_{n-1}\right)+Q_{n-2}\left(x_{0},\dots,x_{n-2}\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Подставляя в это тождество 
+\begin_inset Formula $x_{n}+\frac{1}{x_{n+1}}$
+\end_inset
+
+ вместо 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\begin{multline*}
+\left[x_{0};x_{1},\dots,x_{n},x_{n+1}\right]=\left[x_{0};x_{1},\dots,x_{n}+\frac{1}{x_{n+1}}\right]=\\
+=\frac{\left(x_{n}+\frac{1}{x_{n+1}}\right)P_{n-1}+P_{n-2}}{\left(x_{n}+\frac{1}{x_{n+1}}\right)Q_{n-1}+Q_{n-2}}=\frac{P_{n}+\frac{1}{x_{n+1}}P_{n-1}}{Q_{n}+\frac{1}{x_{n+1}}Q_{n-1}}=\\
+=\frac{x_{n+1}P_{n}+P_{n-1}}{x_{n+1}Q_{n}+Q_{n-1}},
+\end{multline*}
+
+\end_inset
+
+что и завершает доказательство леммы.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:continued-fraction-alternation"
+
+\end_inset
+
+При все 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ справедливы тождества 
+\begin_inset Formula 
+\[
+Q_{n}P_{n-1}-P_{n}Q_{n-1}=\left(-1\right)^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Воспользуемся индукцией по 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $n=0$
+\end_inset
+
+ имеем: 
+\begin_inset Formula 
+\[
+Q_{0}P_{-1}-P_{0}Q_{-1}=1\cdot1-x_{0}\cdot0=1=\left(-1\right)^{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть утверждение доказано для некоторого 
+\begin_inset Formula $n>0$
+\end_inset
+
+, докажем его для 
+\begin_inset Formula $n+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+Q_{n+1}P_{n}-P_{n+1}Q_{n}=\left(x_{n+1}Q_{n}+Q_{n-1}\right)P_{n}-\left(x_{n+1}P_{n}+P_{n-1}\right)Q_{n}=\\
+=x_{n+1}\left(Q_{n}P_{n}-P_{n}Q_{n}\right)+P_{n}Q_{n-1}-Q_{n}P_{n-1}=\\
+=-\left(Q_{n}P_{n-1}-P_{n}Q_{n-1}\right)=-\left(-1\right)^{n}=\left(-1\right)^{n+1}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Следствие доказано.
+\end_layout
+
+\begin_layout Remark
+При любом 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ справедливы тождества 
+\begin_inset Formula 
+\[
+Q_{n}P_{n-2}-P_{n}Q_{n-2}=\left(-1\right)^{n-1}x_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-recurrense"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:continued-fraction-alternation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+Q_{n}P_{n-2}-P_{n}Q_{n-2}=\left(x_{n}Q_{n-1}+Q_{n-2}\right)P_{n-2}-\left(x_{n}P_{n-1}+P_{n-2}\right)Q_{n-2}=\\
+=x_{n}\left(Q_{n-1}P_{n-2}+Q_{n-2}P_{n-2}-P_{n-1}Q_{n-2}-P_{n-2}Q_{n-2}\right)=\\
+=x_{n}\left(Q_{n-1}P_{n-2}-P_{n-1}Q_{n-2}\right)=\left(-1\right)^{n-1}x_{n},
+\end{multline*}
+
+\end_inset
+
+следствие доказано.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 8.2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
