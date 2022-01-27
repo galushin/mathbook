@@ -44150,6 +44150,12 @@ Q_{n+1}P_{n}-P_{n+1}Q_{n}=\left(x_{n+1}Q_{n}+Q_{n-1}\right)P_{n}-\left(x_{n+1}P_
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:continued-fraction-(n-2)-alteration"
+
+\end_inset
+
 При любом 
 \begin_inset Formula $n\ge1$
 \end_inset
@@ -44341,11 +44347,21 @@ status open
 \end_inset
 
  несократима.
- Точно так же доказываются равенства 
+ Точно так же по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:continued-fraction-(n-2)-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ доказываются равенства 
 \begin_inset Formula 
-\[
-q_{n}p_{n-2}-p_{n}q_{n-2}=\left(-1\right)^{n-1}a_{n},\quad n\ge1.
-\]
+\begin{equation}
+q_{n}p_{n-2}-p_{n}q_{n-2}=\left(-1\right)^{n-1}a_{n},\quad n\ge1.\label{eq:continued-fraction-(n-2)-alternation}
+\end{equation}
 
 \end_inset
 
@@ -44550,6 +44566,193 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Цепная дробь действительного числа
+\end_layout
+
+\begin_layout Standard
+В этом параграфе мы рассмотрим бесконечные цепные дроби.
+ Каждой из них будет придано некоторое иррациональное значение и будет доказано,
+ что так устанавливается взаимно-однозначное соответствие между бесконечными
+ цепными дробя и иррациональными числами.
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $\left[a_{0};a_{1},a_{2},\dots\right]$
+\end_inset
+
+ — конечная или бесконечная цепная дробь с целыми неполными частными, причём
+ 
+\begin_inset Formula $a_{n}\ge1$
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+ Тогда
+\end_layout
+
+\begin_layout Theorem
+1.
+ Последовательность подходящих дробей с чётными номерами возрастает, последовате
+льность подходящих дробей с нечётными номерами убывает.
+ При этом любая подходящая дробь нечётного порядка больше любой подходящей
+ дроби чётного порядка.
+\end_layout
+
+\begin_layout Theorem
+2.
+ Если цепная дробь бесконечна, то существует предел 
+\begin_inset Formula 
+\[
+\alpha=\lim_{n\to\infty}\frac{p_{n}}{q_{n}},
+\]
+
+\end_inset
+
+ причём 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — иррациональное число.
+\end_layout
+
+\begin_layout Theorem
+3.
+ Справедливы неравенства 
+\begin_inset Formula 
+\[
+\left|\alpha-\frac{p_{n}}{q_{n}}\right|<\frac{1}{q_{n}q_{n+1}},\qquad n\ge0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-(n-2)-alternation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+\frac{p_{n-2}}{q_{n-2}}-\frac{p_{n}}{q_{n}}=\frac{\left(-1\right)^{n-1}a_{n}}{q_{n}q_{n-2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как все 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ и 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ при 
+\begin_inset Formula $j>0$
+\end_inset
+
+ положительные, то при 
+\begin_inset Formula $n$
+\end_inset
+
+ чётном 
+\begin_inset Formula 
+\[
+\frac{p_{n-2}}{q_{n-2}}-\frac{p_{n}}{q_{n}}=-\frac{a_{n}}{q_{n}q_{n-2}}<0,
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $\frac{p_{n}}{q_{n}}>\frac{p_{n-2}}{q_{n-2}}$
+\end_inset
+
+.
+ Аналогично, при 
+\begin_inset Formula $n$
+\end_inset
+
+ нечётном имеем 
+\begin_inset Formula $\frac{p_{n}}{q_{n}}<\frac{p_{n-2}}{q_{n-2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $n$
+\end_inset
+
+ — нечётная, то из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fractions-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ следует 
+\begin_inset Formula $\frac{p_{n-1}}{q_{n-1}}-\frac{p_{n}}{q_{n}}=\frac{-1}{q_{n}q_{n-1}}<0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\frac{p_{n}}{q_{n}}>\frac{p_{n-1}}{q_{n-1}}$
+\end_inset
+
+, то есть подходящая дробь нечётного порядка больше предыдущей подходящей
+ дроби чётного порядка.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доделать раздел 8.3
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
