@@ -43042,6 +43042,1529 @@ noprefix "false"
  Следствие доказано.
 \end_layout
 
+\begin_layout Chapter
+Цепные дроби
+\end_layout
+
+\begin_layout Standard
+В связи с различными причинами иногда приходится заменять действительные
+ числа их приближёнными значениями.
+ Часто при этом хочется обеспечить необходимую точность выбирая рациональное
+ приближение с по возможности меньшим знаменателем.
+\end_layout
+
+\begin_layout Standard
+Вероятно, наиболее известный исторический пример такой замены связан с устройств
+ом календарей.
+ В настоящее время считается, что Земля совершает полный оборот вокруг Солнца
+ за 365,24219 суток.
+ Конечно, это число условно.
+ Ведь с течением времени вращение Земли вокруг Солнца замедляется, кроме
+ того, Земля вокруг своей оси вращается неравномерно, а это сказывается
+ на продолжительности суток.
+ Так что приведённое выше число, конечно, является усреднённым.
+\end_layout
+
+\begin_layout Standard
+Простейшее приближение к продолжительности года 
+\begin_inset Formula $365,25=365\frac{1}{4}$
+\end_inset
+
+ было положено в основу юлианского календаря, созданного александрийскими
+ астрономами во главе с Созигеном.
+ Указном Юлия Цезаря в 46 г.
+ до н.э.
+ этот календарь был введён во всей Римской империи
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+номинально, это была Римская республика
+\end_layout
+
+\end_inset
+
+.
+ Поскольку год должен содержать целое число суток, то в юлианском календаре
+ на каждые три года продолжительностью в 365 дней, приходился один високосный
+ год, продолжительностью 366 дней.
+ Так обеспечивается средняя продолжительность года в 
+\begin_inset Formula $365\frac{1}{4}$
+\end_inset
+
+ суток.
+ Юлианский год чуть длиннее истинной продолжительности обращения Земли вокруг
+ Солнца.
+ Небольшая ошибка (11 минут и 14 секунд за год) по прошествии 128 лет привела
+ к ошибке в одни сутки и продолжала накапливаться.
+ В 1582 году в католических странах специальным распоряжением папы Григория
+ XIII был введён новый календарь.
+ В качестве приближения к истинной продолжительности года было выбрано число
+ 
+\begin_inset Formula 
+\[
+365\frac{97}{400}=365+\frac{1}{4}-\frac{3}{4000}=365,242,
+\]
+
+\end_inset
+
+ дающее ошибку в одни сутки примерно за 3300 лет.
+ Ценой лучшего приближения стало усложнение календаря.
+ Високосными стали считаться года, номера которых делятся на 
+\begin_inset Formula $4$
+\end_inset
+
+, но не делятся на 
+\begin_inset Formula $100$
+\end_inset
+
+, а кроме того — годы, номера которых делятся на 
+\begin_inset Formula $400$
+\end_inset
+
+.
+ По григорианскому календарю годы с номерами 
+\begin_inset Formula $1700$
+\end_inset
+
+, 
+\begin_inset Formula $1800$
+\end_inset
+
+, 
+\begin_inset Formula $1900$
+\end_inset
+
+ високосными не являлись, в то время, как 
+\begin_inset Formula $2000$
+\end_inset
+
+ год был високосным.
+ В России григорианский календарь был введён в 1918 году.
+\end_layout
+
+\begin_layout Standard
+Наконец, отметим, что персидский астроном, математик и поэт Омар Хайям предложил
+ календарь, основанный на приближении 
+\begin_inset Formula $365\frac{8}{33}=365,242424\dots$
+\end_inset
+
+.
+ Этот календарь, введённый в 1079 году и действовавший в Иране до середины
+ XIX века, содержал 
+\begin_inset Formula $8$
+\end_inset
+
+ високосных лет, повторявшихся с циклом в 
+\begin_inset Formula $33$
+\end_inset
+
+ года.
+ На протяжении цикла между 
+\begin_inset Formula $8$
+\end_inset
+
+ последовательно идущими високосными годами располагались 
+\begin_inset Formula $7$
+\end_inset
+
+ отрезков по 
+\begin_inset Formula $3$
+\end_inset
+
+ обыкновенных года в 
+\begin_inset Formula $365$
+\end_inset
+
+ дней и один отрезок в 
+\begin_inset Formula $4$
+\end_inset
+
+ обыкновенных года.
+ Ошибка в одни сутки накапливалась в этом календаре примерно за 4500 лет.
+\end_layout
+
+\begin_layout Standard
+Заметим, что календарные системы играют важную роль в организации религиозной
+ жизни.
+ Существенной компонентой лунно-солнечных календарей, какими в действительности
+ являются и юлианский, и григорианский календари, является правильная организаци
+я не только последовательности солнечных лет в 
+\begin_inset Formula $365$
+\end_inset
+
+ и 
+\begin_inset Formula $366$
+\end_inset
+
+ дней, но и лунных месяцев.
+ Так христианская Пасха по постановлению Никейского Собора 325 года должна
+ праздноваться в первое воскресенье после первого полнолуния, следующего
+ за днём весеннего равноденствия.
+ При этом имеются в виду не астрономические полнолуния и равноденствие,
+ а даты, вычисляемые по определённым канонизированным математическим правилам.
+ Если учесть, что средняя продолжительность отрезка времени, за который
+ Луна проходит все фазы от новолуния до новолуния, равна 
+\begin_inset Formula $29,530588$
+\end_inset
+
+ суток, а лунные месяцы поэтому должны содержать по 
+\begin_inset Formula $29$
+\end_inset
+
+ и 
+\begin_inset Formula $30$
+\end_inset
+
+ дней, получается весьма сложная проблема согласования последовательности
+ годов с последовательностью месяцев, так чтобы обе последовательности достаточн
+о точно следовали за движениями Солнца и Луны.
+ В обыкновенной жизни лунная составляющая юлианского и григорианского календарей
+ не принимается во внимание.
+\end_layout
+
+\begin_layout Standard
+Цепные дроби дают алгоритм, позволяющий находить в некотором смысле наилучшие
+ приближения действительных чисел рациональными.
+\end_layout
+
+\begin_layout Section
+Теорема Дирихле о приближении действительных чисел рациональными
+\end_layout
+
+\begin_layout Standard
+Рациональные числа расположены на действительной оси всюду плотно, то есть
+ для любого действительного числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в любой его 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-окрестности найдётся бесконечно много рациональных чисел.
+ Другими словами, при любом 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ неравенство 
+\begin_inset Formula 
+\begin{equation}
+\left|\alpha-\frac{p}{q}\right|<\varepsilon\label{eq:rational-approximation-to-real}
+\end{equation}
+
+\end_inset
+
+ имеет бесконечное количество решений в различных рациональных числах 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+.
+ Задача усложняется, если интересоваться существованием решения с не очень
+ большим знаменателем, ограничив его зависимости от 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+ Например, ответ на вопрос, существует ли решение с условием 
+\begin_inset Formula $q\le\varepsilon^{-1/2}$
+\end_inset
+
+ не очевиден.
+\end_layout
+
+\begin_layout Standard
+В 1842 году Дирихле доказал теорему, позволяющую устанавливать существование
+ решения неравенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:rational-approximation-to-real"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ с ограничением величины знаменателя.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Dirichlet-theorem"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $T$
+\end_inset
+
+ — действительные числа, причём 
+\begin_inset Formula $T\ge1$
+\end_inset
+
+.
+ Тогда существуют целые числа 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+, удовлетворяющие неравенствам 
+\begin_inset Formula 
+\[
+\left|\alpha-\frac{p}{q}\right|<\frac{1}{qT},\qquad1\le q\le T.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Как и ранее будем обозначать через 
+\begin_inset Formula $\left[x\right]$
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ x\right\} $
+\end_inset
+
+ целую и дробную части числа 
+\begin_inset Formula $x$
+\end_inset
+
+ соответственно.
+ Положим 
+\begin_inset Formula $N=\left[T\right]$
+\end_inset
+
+ и разобьём отрезок 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+ на 
+\begin_inset Formula $N+1$
+\end_inset
+
+ равных отрезков 
+\begin_inset Formula 
+\begin{equation}
+\frac{u}{N+1}\le x\le\frac{u+1}{N+1},\qquad u=0,1,\dots,N,\label{eq:dirichlet-theorem-intervals}
+\end{equation}
+
+\end_inset
+
+ длины 
+\begin_inset Formula $\frac{1}{N+1}$
+\end_inset
+
+.
+ Также рассмотрим 
+\begin_inset Formula $N+1$
+\end_inset
+
+ чисел
+\begin_inset Formula 
+\begin{equation}
+\left\{ k\alpha\right\} ,\quad k=0,1,\dots,N.\label{eq:dirichlet-theorem-points}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть одно из этих чисел попадает в крайний правый из отрезков, то есть
+ удовлетворяет неравенствам 
+\begin_inset Formula 
+\[
+\frac{N}{N+1}\le\left\{ k\alpha\right\} \le1,
+\]
+
+\end_inset
+
+тогда получим 
+\begin_inset Formula 
+\[
+\left|k\alpha-\left[k\alpha\right]-1\right|=1-\left\{ ka\right\} \le\frac{1}{N+1}<\frac{1}{T}.
+\]
+
+\end_inset
+
+ Очевидно, выполняется 
+\begin_inset Formula $k\neq0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $0\le k\le N\le T$
+\end_inset
+
+.
+ Положив 
+\begin_inset Formula $q=k$
+\end_inset
+
+ и 
+\begin_inset Formula $p=\left[k\alpha\right]+1$
+\end_inset
+
+, получим нужное утверждение.
+\end_layout
+
+\begin_layout Proof
+Если же крайний правый отрезок не содержит ни одной из точек 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:dirichlet-theorem-points"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то как минимум один из оставшихся 
+\begin_inset Formula $N$
+\end_inset
+
+ отрезков содержит две точки 
+\begin_inset Formula $\left\{ k_{1}\alpha\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $\left\{ k_{2}\alpha\right\} $
+\end_inset
+
+.
+ Без ограничения общности можно считать 
+\begin_inset Formula $k_{1}<k_{2}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left|k_{1}\alpha-\left[k_{1}\alpha\right]-k_{2}\alpha+\left[k_{2}\alpha\right]\right|\le\frac{1}{N+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Полагая 
+\begin_inset Formula $q=k_{2}-k_{1}>0$
+\end_inset
+
+ и 
+\begin_inset Formula $p=\left[k_{2}\alpha\right]-\left[k_{1}\alpha\right]$
+\end_inset
+
+, получаем требуемые неравенства 
+\begin_inset Formula 
+\[
+1\le q=k_{2}-k_{1}\le N<T,\qquad\left|q\alpha-p\right|\le\frac{1}{N+1}<\frac{1}{T}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — иррациональное число.
+ Тогда существует бесконечное множество несократимых дробей 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+, удовлетворяющих неравенству 
+\begin_inset Formula 
+\begin{equation}
+\left|\alpha-\frac{p}{q}\right|<\frac{1}{q^{2}}.\label{eq:diriclet-consequence-inequality}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Пусть существует только конечное множество несократимых дробей, удовлетворяющих
+ неравенству 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diriclet-consequence-inequality"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+\frac{p_{1}}{q_{1}},\frac{p_{2}}{q_{2}},\dots,\frac{p_{m}}{q_{m}}.\label{eq:Dirichlet-consequence-pairs}
+\end{equation}
+
+\end_inset
+
+Так как 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — иррациональное число, то 
+\begin_inset Formula 
+\[
+\delta=\min_{j}\left\{ \left|q_{j}\alpha-p_{j}\right|\right\} >0.
+\]
+
+\end_inset
+
+ Положим 
+\begin_inset Formula $T=\delta^{-1}$
+\end_inset
+
+.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Dirichlet-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует целые числа 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+ такие, что 
+\begin_inset Formula 
+\begin{equation}
+\left|q\alpha-p\right|<\frac{1}{T}=\delta,\qquad1\le q\le\delta^{-1}.\label{eq:Diriclet-theorem-new-pair}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Разделив 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+ на их наибольший общий делитель, получим ещё одну пару целых чисел, удовлетворя
+ющих неравенствам 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Diriclet-theorem-new-pair"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, можно считать, что 
+\begin_inset Formula $\left(p,q\right)=1$
+\end_inset
+
+, то есть дробь 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ несократимая.
+\end_layout
+
+\begin_layout Proof
+Первое из неравенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Diriclet-theorem-new-pair"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ означает, что дробь 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ отлична от всех дробей 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Dirichlet-consequence-pairs"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Кроме того, из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Diriclet-theorem-new-pair"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ находим 
+\begin_inset Formula 
+\[
+\left|q\alpha-p\right|<\delta\le\frac{1}{q},
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ — есть ещё одно, отличное от 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Dirichlet-consequence-pairs"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, решение неравенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diriclet-consequence-inequality"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Получившееся противоречие завершает доказательство следствия.
+\end_layout
+
+\begin_layout Proof
+Теорема Дирихле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Dirichlet-theorem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ неэффективна, то есть не даёт способ строить хорошие рациональные приближения
+ к числам.
+ В следующем параграфе будет рассмотрен алгоритм, позволяющий сравнительно
+ легко находить такие приближение и имеющий вместе с тем важное теоретическое
+ значение.
+\end_layout
+
+\begin_layout Section
+Конечные цепные дроби
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a_{0},a_{1},a_{2},\dots$
+\end_inset
+
+ — конечная или бесконечная последовательность целых чисел, причём 
+\begin_inset Formula $a_{i}\ge1$
+\end_inset
+
+ при 
+\begin_inset Formula $i\ge1$
+\end_inset
+
+.
+ Выражение вида 
+\begin_inset Formula 
+\begin{equation}
+a_{0}+\frac{1}{a_{1}+\frac{1}{a_{2}+\frac{1}{a_{3}+\ddots}}}\label{eq:continued-fraction}
+\end{equation}
+
+\end_inset
+
+называется 
+\emph on
+цепной 
+\emph default
+или 
+\emph on
+непрерывной 
+\emph default
+дробью.
+ Если последовательность 
+\begin_inset Formula $\left\{ a_{i}\right\} $
+\end_inset
+
+ конечна, цепная дробь равна некоторому рациональному числу.
+ Если же последовательность бесконечна, выражению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ также можно придать вполне определённое числовое значение, которое в этом
+ случае будет иррациональным.
+ Для краткости записи вместо выражения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ будет использоваться 
+\begin_inset Formula $\left[a_{0};a_{1},a_{2},\dots\right]$
+\end_inset
+
+ или 
+\begin_inset Formula $\left[a_{0};a_{1},a_{2},\dots,a_{m}\right]$
+\end_inset
+
+ при конечной последовательности 
+\begin_inset Formula $a_{0},a_{1},\dots,a_{m}$
+\end_inset
+
+.
+ В этом параграфе мы изучим некоторые свойства конечных цепных дробей.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — целые числа, 
+\begin_inset Formula $b>0$
+\end_inset
+
+.
+ Рассмотрим последовательность вычислений в алгоритме Евклида
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ при нахождении наибольшего общего делителя 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, см.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Euclid-algorithm"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+a=bq_{1}+r_{2}, & \qquad & 0\le r_{2}<b,\\
+b=r_{2}q_{2}+r_{3}, &  & 0\le r_{3}<r_{2},\\
+r_{2}=r_{3}q_{3}+r_{4}, &  & 0\le r_{4}<r_{3},\\
+\vdots &  & \vdots\\
+r_{n-2}=r_{n-1}q_{n-1}+r_{n}, &  & 0\le r_{n}<r_{n-1},\\
+r_{n-1}=r_{n}q_{n}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Разделив каждое из выписанных равенств на соответствующий делитель, получим
+ 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\frac{a}{b}=q_{1}+\frac{1}{b/r_{2}},\\
+\frac{b}{r_{2}}=q_{2}+\frac{1}{r_{2}/r_{3}},\\
+\frac{r_{2}}{r_{3}}=q_{3}+\frac{1}{r_{3}/r_{4}},\\
+\vdots\\
+\frac{r_{n-2}}{r_{n-1}}=q_{n-1}+\frac{1}{q_{n}}.
+\end{array}
+\]
+
+\end_inset
+
+Подставляя левые части получившихся равенств в правые части предшествующих,
+ найдём представление рационального числа 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ в виде конечной непрерывной дроби 
+\begin_inset Formula $\frac{a}{b}=\left[q_{1};q_{2},q_{3},\dots,q_{n}\right]$
+\end_inset
+
+.
+ Таким образом, алгоритм Евклида позволяет находить представление рациональных
+ чисел непрерывными дробями.
+ Заметим, что это представление не единственно
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Надо бы это доказать
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left[q_{1};q_{2},q_{3},\dots,q_{n}\right]=\begin{cases}
+\left[q_{1};q_{2},q_{3},\dots,q_{n}-1,1\right], & q_{n}>1,\\
+\left[q_{1};q_{2},q_{3},\dots,q_{n-1}+1\right], & q_{n}=1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для любого рационального числа существует представление конечной цепной
+ дробью, при этом можно выбирать длину дроби по своему усмотрению так, чтобы
+ она была чётной или нечётной.
+\end_layout
+
+\begin_layout Standard
+В дальнейшем используется обозначение 
+\begin_inset Formula $\left[x_{0};x_{1},\dots,x_{n}\right]$
+\end_inset
+
+ для конечной цепной дроби вида 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, где вместо целых чисел 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ стоят переменные 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+ Конечные цепные дроби такого вида являются рациональными функциями от 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+ Следующее утверждение позволяет легко вычислять их.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:continued-fraction-recurrence"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $x_{0},x_{1},\dots$
+\end_inset
+
+ — переменные и последовательности многочленов 
+\begin_inset Formula $P_{k}\left(x_{0},\dots,x_{k}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q_{k}\left(x_{0},\dots,x_{k}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $k\ge-1$
+\end_inset
+
+, определена формулами 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Было круто написать, как выводить такие формулы
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+P_{k}=x_{k}P_{k-1}+P_{k-2}, & P_{-1}=1,\quad P_{0}=x_{0},\\
+Q_{k}=x_{k}Q_{k-1}+Q_{k-2}, & Q_{-1}=0,\quad Q_{0}=1.
+\end{cases}\label{eq:continued-fraction-recurrence}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Тогда при любом 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\[
+\left[x_{0};x_{1},\dots x_{n}\right]=\frac{P_{n}}{Q_{n}}=\frac{x_{n}P_{n-1}+P_{n-2}}{x_{n}Q_{n-1}+Q_{n-2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Доказывать будем индукцией по 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $n=0$
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+\left[x_{0}\right]=\frac{x_{0}}{1}=x_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $n=1$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\left[x_{0};x_{1}\right]=x_{0}+\frac{1}{x_{1}}=\frac{x_{1}x_{0}+1}{x_{1}}=\frac{x_{1}P_{0}+P_{-1}}{x_{1}Q_{0}+Q_{-1}}.
+\]
+
+\end_inset
+
+ Предположим, что 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ и утверждение леммы выполняется для дробей длины 
+\begin_inset Formula $n$
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\[
+\left[x_{0};x_{1},\dots,x_{n}\right]=\frac{x_{n}P_{n-1}\left(x_{0},\dots x_{n-1}\right)+P_{n-2}\left(x_{0},\dots,x_{n-2}\right)}{x_{n}Q_{n-1}\left(x_{0},\dots,x_{n-1}\right)+Q_{n-2}\left(x_{0},\dots,x_{n-2}\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Подставляя в это тождество 
+\begin_inset Formula $x_{n}+\frac{1}{x_{n+1}}$
+\end_inset
+
+ вместо 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\begin{multline*}
+\left[x_{0};x_{1},\dots,x_{n},x_{n+1}\right]=\left[x_{0};x_{1},\dots,x_{n}+\frac{1}{x_{n+1}}\right]=\\
+=\frac{\left(x_{n}+\frac{1}{x_{n+1}}\right)P_{n-1}+P_{n-2}}{\left(x_{n}+\frac{1}{x_{n+1}}\right)Q_{n-1}+Q_{n-2}}=\frac{P_{n}+\frac{1}{x_{n+1}}P_{n-1}}{Q_{n}+\frac{1}{x_{n+1}}Q_{n-1}}=\\
+=\frac{x_{n+1}P_{n}+P_{n-1}}{x_{n+1}Q_{n}+Q_{n-1}},
+\end{multline*}
+
+\end_inset
+
+что и завершает доказательство леммы.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:continued-fraction-alternation"
+
+\end_inset
+
+При все 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ справедливы тождества 
+\begin_inset Formula 
+\[
+Q_{n}P_{n-1}-P_{n}Q_{n-1}=\left(-1\right)^{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Воспользуемся индукцией по 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $n=0$
+\end_inset
+
+ имеем: 
+\begin_inset Formula 
+\[
+Q_{0}P_{-1}-P_{0}Q_{-1}=1\cdot1-x_{0}\cdot0=1=\left(-1\right)^{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть утверждение доказано для некоторого 
+\begin_inset Formula $n>0$
+\end_inset
+
+, докажем его для 
+\begin_inset Formula $n+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+Q_{n+1}P_{n}-P_{n+1}Q_{n}=\left(x_{n+1}Q_{n}+Q_{n-1}\right)P_{n}-\left(x_{n+1}P_{n}+P_{n-1}\right)Q_{n}=\\
+=x_{n+1}\left(Q_{n}P_{n}-P_{n}Q_{n}\right)+P_{n}Q_{n-1}-Q_{n}P_{n-1}=\\
+=-\left(Q_{n}P_{n-1}-P_{n}Q_{n-1}\right)=-\left(-1\right)^{n}=\left(-1\right)^{n+1}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Следствие доказано.
+\end_layout
+
+\begin_layout Remark
+При любом 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ справедливы тождества 
+\begin_inset Formula 
+\[
+Q_{n}P_{n-2}-P_{n}Q_{n-2}=\left(-1\right)^{n-1}x_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-recurrence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:continued-fraction-alternation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+Q_{n}P_{n-2}-P_{n}Q_{n-2}=\left(x_{n}Q_{n-1}+Q_{n-2}\right)P_{n-2}-\left(x_{n}P_{n-1}+P_{n-2}\right)Q_{n-2}=\\
+=x_{n}\left(Q_{n-1}P_{n-2}+Q_{n-2}P_{n-2}-P_{n-1}Q_{n-2}-P_{n-2}Q_{n-2}\right)=\\
+=x_{n}\left(Q_{n-1}P_{n-2}-P_{n-1}Q_{n-2}\right)=\left(-1\right)^{n-1}x_{n},
+\end{multline*}
+
+\end_inset
+
+следствие доказано.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a_{0},a_{1},a_{2},\dots$
+\end_inset
+
+ — последовательность целых чисел, причём 
+\begin_inset Formula $a_{i}\ge1$
+\end_inset
+
+ при 
+\begin_inset Formula $i\ge1$
+\end_inset
+
+.
+ Тогда определены целые числа 
+\begin_inset Formula 
+\[
+p_{n}=P_{n}\left(a_{0},\dots,a_{n}\right),\qquad q_{n}=Q_{n}\left(a_{0},\dots,a_{n}\right),\quad n\ge0,
+\]
+
+\end_inset
+
+ причём 
+\begin_inset Formula $q_{n}>0$
+\end_inset
+
+.
+ Будем также считать 
+\begin_inset Formula $p_{-1}=1$
+\end_inset
+
+ и 
+\begin_inset Formula $q_{-1}=0$
+\end_inset
+
+.
+ Согласно 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-recurrence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\begin{cases}
+p_{k}=a_{k}p_{k-1}+p_{k-2}, & p_{-1}=1,p_{0}=a_{0},\\
+q_{k}=a_{k}q_{k-1}+q_{k-2}, & q_{-1}=0,q_{0}=1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В частности, отсюда находим 
+\begin_inset Formula $q_{1}=a_{1}\ge1$
+\end_inset
+
+ и при 
+\begin_inset Formula $k\ge2$
+\end_inset
+
+ последовательно 
+\begin_inset Formula 
+\[
+q_{k}>a_{k}q_{k-1}\ge q_{k-1}.
+\]
+
+\end_inset
+
+ Таким образом, 
+\begin_inset Formula $q_{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ есть строго возрастающая последовательность натуральных чисел.
+ Она стремится к бесконечности, если последовательность 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ бесконечна.
+\end_layout
+
+\begin_layout Standard
+По следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:continued-fraction-alternation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ выполняются равенства 
+\begin_inset Formula 
+\begin{equation}
+q_{n}p_{n-1}-p_{n}q_{n-1}=\left(-1\right)^{n},\quad n\ge0.\label{eq:continued-fractions-alteration}
+\end{equation}
+
+\end_inset
+
+Из них, в частности, следует что 
+\begin_inset Formula $p_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $q_{n}$
+\end_inset
+
+ взаимно просты (так как 
+\begin_inset Formula $1$
+\end_inset
+
+ представима в виде их линейной комбинации
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+), а дробь 
+\begin_inset Formula $\frac{p_{n}}{q_{n}}$
+\end_inset
+
+ несократима.
+ Точно так же доказываются равенства 
+\begin_inset Formula 
+\[
+q_{n}p_{n-2}-p_{n}q_{n-2}=\left(-1\right)^{n-1}a_{n},\quad n\ge1.
+\]
+
+\end_inset
+
+ Согласно лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:continued-fraction-recurrence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\left[a_{0};a_{1},\dots,a_{n}\right]=\frac{p_{n}}{q_{n}}.
+\]
+
+\end_inset
+
+ Так определённые дроби 
+\begin_inset Formula $\frac{p_{n}}{q_{n}}$
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ называются 
+\emph on
+подходящими дробями
+\emph default
+ цепной дроби 
+\begin_inset Formula $\left[a_{0};a_{1},a_{2},\dots\right]$
+\end_inset
+
+.
+ Числа 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ называются 
+\emph on
+неполными частными 
+\emph default
+этой цепной дроби.
+ Множество подходящих дробей конечной цепной дроби конечно.
+\end_layout
+
+\begin_layout Standard
+Для рационального числа 
+\begin_inset Formula $\frac{a}{b}=\left[a_{0};a_{1},\dots,a_{m}\right]$
+\end_inset
+
+ имеем 
+\begin_inset Formula $\frac{a}{b}=\frac{p_{m}}{q_{m}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fractions-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ позволяет решать диофантовы уравнения вида 
+\begin_inset Formula $ax-by=1$
+\end_inset
+
+ при взаимно простых 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b>0$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\frac{a}{b}=\frac{p_{m}}{q_{m}}$
+\end_inset
+
+, причём 
+\begin_inset Formula $m$
+\end_inset
+
+ нечётно, то 
+\begin_inset Formula $b=q_{m}$
+\end_inset
+
+, 
+\begin_inset Formula $a=p_{m}$
+\end_inset
+
+ и при 
+\begin_inset Formula $x=q_{m-1}$
+\end_inset
+
+, 
+\begin_inset Formula $y=p_{m-1}$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+ax-by=p_{m}q_{m-1}-q_{m}p_{m-1}=\left(-1\right)^{m-1}=1.
+\]
+
+\end_inset
+
+Зная одно частное решение 
+\begin_inset Formula $x=q_{m-1}$
+\end_inset
+
+, 
+\begin_inset Formula $y=p_{m-1}$
+\end_inset
+
+ можно найти все решения так, как это объясняется в теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:simplest-diofantine-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Решить диофантово уравнение 
+\begin_inset Formula 
+\[
+19x+15y=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Разложим число 
+\begin_inset Formula $\frac{19}{15}$
+\end_inset
+
+ в цепную дробь: 
+\begin_inset Formula 
+\begin{multline*}
+\frac{19}{15}=1+\frac{4}{15}=1+\frac{1}{\frac{15}{4}}=1+\frac{1}{3+\frac{1}{\frac{4}{3}}}=\\
+=1+\frac{1}{3+\frac{1}{1+\frac{1}{3}}}=\left[1;3,1,3\right].
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+В данном случае длина цепной дроби 
+\begin_inset Formula $m=3$
+\end_inset
+
+ нечётна.
+ В соответствии с указанным правилом находим 
+\begin_inset Formula $\left[1;3,1\right]=\frac{5}{4}$
+\end_inset
+
+ и 
+\begin_inset Formula $19\cdot4-15\cdot5=1$
+\end_inset
+
+.
+ Значит, данное уравнение имеет решение 
+\begin_inset Formula $x=4$
+\end_inset
+
+, 
+\begin_inset Formula $y=-5$
+\end_inset
+
+, а общее решение имеет вид 
+\begin_inset Formula $x=4+15k$
+\end_inset
+
+, 
+\begin_inset Formula $y=-5-19k$
+\end_inset
+
+, где 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить главу 8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
