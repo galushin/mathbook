@@ -43488,6 +43488,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:diriclet-consequence-inequality"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -43844,15 +43850,15 @@ r_{n-1}=r_{n}q_{n}.
 Разделив каждое из выписанных равенств на соответствующий делитель, получим
  
 \begin_inset Formula 
-\[
+\begin{equation}
 \begin{array}{c}
 \frac{a}{b}=q_{1}+\frac{1}{b/r_{2}},\\
 \frac{b}{r_{2}}=q_{2}+\frac{1}{r_{2}/r_{3}},\\
 \frac{r_{2}}{r_{3}}=q_{3}+\frac{1}{r_{3}/r_{4}},\\
 \vdots\\
 \frac{r_{n-2}}{r_{n-1}}=q_{n-1}+\frac{1}{q_{n}}.
-\end{array}
-\]
+\end{array}\label{eq:continued-fraction-euclid}
+\end{equation}
 
 \end_inset
 
@@ -43868,17 +43874,7 @@ r_{n-1}=r_{n}q_{n}.
 .
  Таким образом, алгоритм Евклида позволяет находить представление рациональных
  чисел непрерывными дробями.
- Заметим, что это представление не единственно
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Надо бы это доказать
-\end_layout
-
-\end_inset
-
-: 
+ Заметим, что это представление не единственно: 
 \begin_inset Formula 
 \[
 \left[q_{1};q_{2},q_{3},\dots,q_{n}\right]=\begin{cases}
@@ -43984,9 +43980,9 @@ Q_{k}=x_{k}Q_{k-1}+Q_{k-2}, & Q_{-1}=0,\quad Q_{0}=1.
 
  выполняется равенство 
 \begin_inset Formula 
-\[
-\left[x_{0};x_{1},\dots x_{n}\right]=\frac{P_{n}}{Q_{n}}=\frac{x_{n}P_{n-1}+P_{n-2}}{x_{n}Q_{n-1}+Q_{n-2}}.
-\]
+\begin{equation}
+\left[x_{0};x_{1},\dots x_{n}\right]=\frac{P_{n}}{Q_{n}}=\frac{x_{n}P_{n-1}+P_{n-2}}{x_{n}Q_{n-1}+Q_{n-2}}.\label{eq:continued-fraction-value}
+\end{equation}
 
 \end_inset
 
@@ -44090,9 +44086,9 @@ name "rem:continued-fraction-alternation"
 
  справедливы тождества 
 \begin_inset Formula 
-\[
-Q_{n}P_{n-1}-P_{n}Q_{n-1}=\left(-1\right)^{n}.
-\]
+\begin{equation}
+Q_{n}P_{n-1}-P_{n}Q_{n-1}=\left(-1\right)^{n}.\label{eq:continued-fraction-alteration}
+\end{equation}
 
 \end_inset
 
@@ -44256,12 +44252,12 @@ noprefix "false"
 
  имеем 
 \begin_inset Formula 
-\[
+\begin{equation}
 \begin{cases}
 p_{k}=a_{k}p_{k-1}+p_{k-2}, & p_{-1}=1,p_{0}=a_{0},\\
 q_{k}=a_{k}q_{k-1}+q_{k-2}, & q_{-1}=0,q_{0}=1.
-\end{cases}
-\]
+\end{cases}\label{eq:number-continued-fraction-recurrence}
+\end{equation}
 
 \end_inset
 
@@ -44580,6 +44576,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:infinite-continued-fraction-is-irrational"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\left[a_{0};a_{1},a_{2},\dots\right]$
 \end_inset
@@ -44626,9 +44628,9 @@ noprefix "false"
 3.
  Справедливы неравенства 
 \begin_inset Formula 
-\[
-\left|\alpha-\frac{p_{n}}{q_{n}}\right|<\frac{1}{q_{n}q_{n+1}},\qquad n\ge0.
-\]
+\begin{equation}
+\left|\alpha-\frac{p_{n}}{q_{n}}\right|<\frac{1}{q_{n}q_{n+1}},\qquad n\ge0.\label{eq:containued-fraction-approximation}
+\end{equation}
 
 \end_inset
 
@@ -44636,11 +44638,11 @@ noprefix "false"
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать доказательство
+Подсмотрел
 \end_layout
 
 \end_inset
@@ -44740,15 +44742,1431 @@ noprefix "false"
 
 , то есть подходящая дробь нечётного порядка больше предыдущей подходящей
  дроби чётного порядка.
+ Так как, по доказанному, подходящие дроби чётных порядков образуют возрастающую
+ последовательность, то 
+\begin_inset Formula $\frac{p_{n}}{q_{n}}>\frac{p_{s}}{q_{s}}$
+\end_inset
+
+ при чётных 
+\begin_inset Formula $s\le n-1$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $s>n$
+\end_inset
+
+, то заметим, что 
+\begin_inset Formula $\frac{p_{s+1}}{q_{s+1}}\ge\frac{p_{s}}{q_{s}}$
+\end_inset
+
+, а подходящие дроби нечётного порядка, по доказанному, образуют убывающую
+ последовательность, поэтому 
+\begin_inset Formula 
+\[
+\frac{p_{n}}{q_{n}}\ge\frac{p_{s+1}}{q_{s+1}}\ge\frac{p_{s}}{q_{s}},
+\]
+
+\end_inset
+
+таким образом, первое утверждение теоремы доказано.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
+Пусть рассматриваемая цепная дробь бесконечна.
+ Для доказательства второго утверждения заметим, что по первому утверждению
+ теоремы отрезки 
+\begin_inset Formula $\left[\frac{p_{2k}}{q_{2k}};\frac{p_{2k+1}}{q_{2k+1}}\right]$
+\end_inset
+
+ образуют вложенную последовательность отрезков убывающей длины.
+ Значит
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Доделать раздел 8.3
+добавить ссылку (на матан!)
 \end_layout
+
+\end_inset
+
+ существует единственное действительное число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, принадлежащее всем этим отрезкам, причём выполняются неравенства: 
+\begin_inset Formula 
+\begin{equation}
+\frac{p_{2k}}{q_{2k}}<\alpha<\frac{p_{2l+1}}{q_{2l+1}},\qquad k\ge0,l\ge0.\label{eq:continued-fraction-bounds}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, при любом 
+\begin_inset Formula $n$
+\end_inset
+
+ числа 
+\begin_inset Formula $\frac{p_{n}}{q_{n}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{p_{n+1}}{q_{n+1}}$
+\end_inset
+
+ лежат по разные стороны от 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+0<\left|\alpha-\frac{p_{n}}{q_{n}}\right|<\left|\frac{p_{n+1}}{q_{n+1}}-\frac{p_{n}}{q_{n}}\right|=\left|\frac{p_{n+1}q_{n}-p_{n}q_{n+1}}{q_{n+1}q_{n}}\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fractions-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ числитель правой части равен 
+\begin_inset Formula $1$
+\end_inset
+
+, а знаменатель положителен, то получаем 
+\begin_inset Formula 
+\begin{equation}
+0<\left|\alpha-\frac{p_{n}}{q_{n}}\right|<\frac{1}{q_{n+1}q_{n}},\label{eq:continued-fraction-error-bounds}
+\end{equation}
+
+\end_inset
+
+что доказывает третье утверждения теоремы.
+\end_layout
+
+\begin_layout Proof
+Остаётся доказать, что число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ является иррациональным.
+ Доказывать будем от противного, предположим, что 
+\begin_inset Formula $\alpha=\frac{a}{b}$
+\end_inset
+
+ — рациональное число, тогда 
+\begin_inset Formula 
+\[
+\left|\alpha-\frac{p_{n}}{q_{n}}\right|=\left|\frac{a}{b}-\frac{p_{n}}{q_{n}}\right|=\left|\frac{aq_{n}-bp_{n}}{bq_{n}}\right|\ge\frac{1}{bq_{n}}.
+\]
+
+\end_inset
+
+ Сравнив это неравенство с 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-error-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+\frac{1}{bq_{n}}<\frac{1}{q_{n+1}q_{n}}
+\]
+
+\end_inset
+
+ или, так как 
+\begin_inset Formula $q_{n}>0$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+b>q_{n+1},
+\]
+
+\end_inset
+
+что невозможно при всех 
+\begin_inset Formula $n$
+\end_inset
+
+, так как 
+\begin_inset Formula $q_{n}$
+\end_inset
+
+ бесконечно возрастает.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Выделить утверждение и добавить ссылку
+\end_layout
+
+\end_inset
+
+ Полученное противоречие означает, что 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ не равно никакому рациональному числу, то есть является иррациональным,
+ что и завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Standard
+Число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, определённое в теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:infinite-continued-fraction-is-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ будем называть значением бесконечной цепной дроби 
+\begin_inset Formula $\left[a_{0};a_{1},a_{2},\dots\right]$
+\end_inset
+
+ и записывать в виде 
+\begin_inset Formula 
+\[
+\alpha=\left[a_{0};a_{1},a_{2},\dots\right].
+\]
+
+\end_inset
+
+ Соответствующие подходящие дроби будем называть также подходящими дробями
+ числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ Эта терминология будет использоваться и для конечных дробей.
+ В частности, если 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — рациональное число, то любая его подходящая дробь, отличная от 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, удовлетворяет одному из неравенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:continued-fraction-monotonic"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\left[a_{0};a_{1},a_{2},\dots\right]$
+\end_inset
+
+ — конечная или бесконечная цепная дробь с целыми элементами, причём для
+ 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula $a_{n}\ge1$
+\end_inset
+
+, а для конечной дроби её последнее неполное частное больше 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Тогда для любых двух соседних подходящих дробей к 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\left|q_{n-1}\alpha-p_{n-1}\right|>\left|q_{n}\alpha-p_{n}\right|,\qquad n\ge0.
+\]
+
+\end_inset
+
+Кроме того 
+\begin_inset Formula 
+\[
+a_{n+1}=\left\lfloor \frac{\left|q_{n-1}\alpha-p_{n-1}\right|}{\left|q_{n}\alpha-p_{n}\right|}\right\rfloor ,\qquad n\ge0,\qquad a_{0}=\left\lfloor \alpha\right\rfloor .
+\]
+
+\end_inset
+
+Различные цепные дроби указанного вида имеют различные значения.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел первое утверждение
+\end_layout
+
+\end_inset
+
+Из соотношений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:number-continued-fraction-recurrence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\begin{multline*}
+q_{n+1}\alpha-p_{n+1}=\left(a_{n+1}q_{n}+q_{n-1}\right)\alpha-\left(a_{n+1}p_{n}+p_{n-1}\right)=\\
+=a_{n+1}\left(q_{n}\alpha-p_{n}\right)+\left(q_{n-1}\alpha-p_{n-1}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Поскольку при любом 
+\begin_inset Formula $k\ge-1$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $q_{k}\alpha-p_{k}=\left(-1\right)^{k}\left|q_{k}\alpha-p_{k}\right|$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать подробнее
+\end_layout
+
+\end_inset
+
+, то находим: 
+\begin_inset Formula 
+\[
+\left|q_{n+1}\alpha-p_{n+1}\right|=-a_{n+1}\left|q_{n}\alpha-p_{n}\right|+\left|q_{n-1}\alpha-p_{n-1}\right|,\quad n\ge0,
+\]
+
+\end_inset
+
+или 
+\begin_inset Formula 
+\begin{equation}
+\left|q_{n-1}\alpha-p_{n-1}\right|=a_{n+1}\left|q_{n}\alpha-p_{n}\right|+\left|q_{n+1}\alpha-p_{n+1}\right|.\label{eq:continued-fraction-abs-recurrence}
+\end{equation}
+
+\end_inset
+
+Если 
+\begin_inset Formula $\left|q_{n+1}\alpha-p_{n+1}\right|>0$
+\end_inset
+
+, то получаем 
+\begin_inset Formula $\left|q_{n-1}\alpha-p_{n-1}\right|>a_{n+1}\left|q_{n}\alpha-p_{n}\right|$
+\end_inset
+
+, так как 
+\begin_inset Formula $a_{n+1}\ge1$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left|q_{n-1}\alpha-p_{n-1}\right|>a_{n+1}\left|q_{n}\alpha-p_{n}\right|\ge\left|q_{n}\alpha-p_{n}\right|.
+\]
+
+\end_inset
+
+Если же 
+\begin_inset Formula $\left|q_{n+1}\alpha-p_{n+1}\right|$
+\end_inset
+
+, то цепная дробь является конечной, а значит, по условию, 
+\begin_inset Formula $\left|a_{n+1}\right|>1$
+\end_inset
+
+, поэтому и в этом случае получаем 
+\begin_inset Formula 
+\[
+\left|q_{n-1}\alpha-p_{n-1}\right|=a_{n+1}\left|q_{n}\alpha-p_{n}\right|>\left|q_{n}\alpha-p_{n}\right|,
+\]
+
+\end_inset
+
+таким образом, первое утверждение теоремы доказано.
+\end_layout
+
+\begin_layout Proof
+Будем использовать обозначение 
+\begin_inset Formula 
+\[
+\alpha_{j}=\frac{\left|q_{j-2}\alpha-p_{j-2}\right|}{\left|q_{j-1}\alpha-p_{j-1}\right|}
+\]
+
+\end_inset
+
+ в случаях, когда эта величина определена.
+ 
+\end_layout
+
+\begin_layout Proof
+Разделив 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-abs-recurrence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ на отличное от нуля
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+подробнее
+\end_layout
+
+\end_inset
+
+ число 
+\begin_inset Formula $\left|q_{n}\alpha-p_{n}\right|$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+\alpha_{n+1}=a_{n+1}+\frac{1}{\alpha_{n+2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+В случае 
+\begin_inset Formula $q_{n+1}\alpha-p_{n+1}=0$
+\end_inset
+
+ дробь в последнем выражении будет отсутствовать, так что в любом случае
+ имеем 
+\begin_inset Formula $a_{n+1}\le\alpha_{n+1}<a_{n+1}+1$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{n+1}=\left\lfloor \alpha_{n+1}\right\rfloor $
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+.
+ Подставляя в это выражение определение 
+\begin_inset Formula $\alpha_{n+1}$
+\end_inset
+
+, получим второе утверждение теоремы для 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-error-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $k=0$
+\end_inset
+
+ и первого утверждения теоремы для 
+\begin_inset Formula $n=0$
+\end_inset
+
+, получаем 
+\begin_inset Formula $\frac{p_{0}}{q_{0}}=a_{0}<\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|p_{0}\alpha-q_{0}\right|=\left|\alpha-a_{0}\right|<1$
+\end_inset
+
+.
+ Используя первое неравенство, раскроем модуль во втором: 
+\begin_inset Formula $0\le\alpha-a_{0}<1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a_{0}=\left\lfloor \alpha\right\rfloor $
+\end_inset
+
+.
+ Второе утверждение теоремы доказано.
+\end_layout
+
+\begin_layout Proof
+Допустим теперь, что существуют две различные цепные дроби, имеющие одно
+ и то же значение 
+\begin_inset Formula 
+\[
+\alpha=\left[a_{0};a_{1},a_{2},\dots\right]=\left[b_{0};b_{1},b_{2},\dots\right].
+\]
+
+\end_inset
+
+Обозначим через 
+\begin_inset Formula $\frac{p_{n}}{q_{n}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{p_{n}^{\prime}}{q_{n}^{\prime}}$
+\end_inset
+
+ подходящие дроби этих цепных дробей соответственно и 
+\begin_inset Formula 
+\[
+\alpha_{n}=\frac{\left|q_{n-2}\alpha-p_{n-2}\right|}{\left|q_{n-1}\alpha-p_{n-1}\right|},\qquad\beta_{n}=\frac{\left|q_{n-2}^{\prime}\alpha-p_{n-2}^{\prime}\right|}{\left|q_{n-1}^{\prime}\alpha-p_{n-1}^{\prime}\right|},\qquad n\ge1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По доказанному выше справедливы равенства 
+\begin_inset Formula $a_{0}=\left[\alpha\right]$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{0}=\left[\alpha\right]$
+\end_inset
+
+, так что 
+\begin_inset Formula $a_{0}=b_{0}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $r$
+\end_inset
+
+ — наименьшее целое число, для которого 
+\begin_inset Formula $a_{r}\neq b_{r}.$
+\end_inset
+
+ Из рекуррентных соотношений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:number-continued-fraction-recurrence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula $q_{n}=q_{n}^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $p_{n}=p_{n}^{\prime}$
+\end_inset
+
+ при 
+\begin_inset Formula $-1\le n<r$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $r=n$
+\end_inset
+
+ получаем 
+\begin_inset Formula $\alpha_{r}=\beta_{r}$
+\end_inset
+
+, а из второго утверждения теоремы следует 
+\begin_inset Formula 
+\[
+a_{r}=\left\lfloor \alpha_{r}\right\rfloor =\left\lfloor \beta{}_{r}\right\rfloor =b_{r}.
+\]
+
+\end_inset
+
+ Полученное противоречие завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Standard
+Выше мы доказали, что каждое рациональное число может быть представлено
+ в виде конечной цепной дроби.
+ Покажем, что и для каждого иррационального числа существует равная ему
+ бесконечная цепная дробь.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:continued-fraction-irrational"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — действительное иррациональное число.
+ Положим 
+\begin_inset Formula $\alpha_{0}=\alpha$
+\end_inset
+
+ и определим бесконечные последовательности целых чисел 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ и действительных чисел 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
+
+ равенствами 
+\begin_inset Formula 
+\begin{equation}
+a_{n}=\left\lfloor \alpha_{n}\right\rfloor ,\qquad\alpha_{n+1}=\frac{1}{\alpha_{n}-a_{n}},\qquad n\ge0.\label{eq:continued-fraction-for-irrational}
+\end{equation}
+
+\end_inset
+
+Тогда 
+\begin_inset Formula $a_{n}\ge1$
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\left\{ \frac{p_{n}}{q_{n}}\right\} _{n\ge0}$
+\end_inset
+
+ — последовательность подходящих дробей бесконечной цепной дроби 
+\begin_inset Formula $\left[a_{0};a_{1},a_{2},\dots\right]$
+\end_inset
+
+, то при всех 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ справедливы равенства 
+\begin_inset Formula 
+\begin{equation}
+\alpha=\left[a_{0},a_{1},\dots,a_{k},\alpha_{k+1}\right]=\frac{\alpha_{k+1}p_{k}+p_{k-1}}{\alpha_{k+1}q_{k}+q_{k-1}},\label{eq:continued-fraction-for-irrational-down}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+q_{k}\alpha-p_{k}=\frac{\left(-1\right)^{k}}{\alpha_{k+1}q_{k}+q_{k-1}}.\label{eq:continued-fraction-for-irrational-alteration}
+\end{equation}
+
+\end_inset
+
+ Цепная дробь 
+\begin_inset Formula $\left[a_{0};a_{1},a_{2},\dots\right]$
+\end_inset
+
+ равна 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Числа 
+\begin_inset Formula $\alpha_{k}$
+\end_inset
+
+, последовательно вычисляемые по формулам 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, называются 
+\emph on
+остатками непрерывной дроби 
+\emph default
+числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Так как 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — иррациональное число, то иррациональными будут и все числа 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+можно доказать от противного
+\end_layout
+
+\end_inset
+
+, так как иррациональное число не может быть равно целому и, по определению,
+ 
+\begin_inset Formula $a_{n}=\left\lfloor \alpha_{n}\right\rfloor $
+\end_inset
+
+, то 
+\begin_inset Formula $0<\alpha_{n}-a_{n}<1$
+\end_inset
+
+ или 
+\begin_inset Formula $\alpha_{n+1}=\frac{1}{\alpha_{n}-a_{n}}>1$
+\end_inset
+
+.
+ Поскольку 
+\begin_inset Formula $a_{n+1}=\left\lfloor \alpha_{n+1}\right\rfloor $
+\end_inset
+
+, то 
+\begin_inset Formula $a_{n+1}\ge1$
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ или, что эквивалентно, 
+\begin_inset Formula $a_{n}\ge1$
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки на свойства целой части
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Первое равенство в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational-down"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует из определения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если переписать его в виде 
+\begin_inset Formula 
+\[
+\alpha_{n}=a_{n}+\frac{1}{\alpha_{n+1}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Для доказательства второго равенства достаточно подставить в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-value"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $n=k+1$
+\end_inset
+
+ значения 
+\begin_inset Formula $x_{j}=a_{j}$
+\end_inset
+
+ при 
+\begin_inset Formula $1\le j\le k$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{k+1}=\alpha_{k+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Теперь равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получается из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational-down"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ прямым вычислением:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+q_{k}\alpha-p_{k}=q_{k}\frac{\alpha_{k+1}p_{k}+p_{k-1}}{\alpha_{k+1}q_{k}+q_{k-1}}-p_{k}=\\
+=\frac{q_{k}\left(\alpha_{k+1}p_{k}+p_{k-1}\right)-p_{k}\left(\alpha_{k+1}q_{k}+q_{k-1}\right)}{\alpha_{k+1}q_{k}+q_{k-1}}=\\
+=\frac{q_{k}p_{k-1}-p_{k}q_{k-1}}{\alpha_{k+1}q_{k}+q_{k-1}}=\frac{\left(-1\right)^{k}}{\alpha_{k+1}q_{k}+q_{k-1}}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ находим 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Не дублируется ли это с уже доказанным?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left|\alpha-\frac{p_{k}}{q_{k}}\right|\le\frac{1}{q_{k}\left(\alpha_{k+1}q_{k}+q_{k-1}\right)}=\frac{1}{q_{k}q_{k+1}},\label{eq:continued-fraction-approximation-upper}
+\end{equation}
+
+\end_inset
+
+поэтому последовательность подходящих дробей 
+\begin_inset Formula $\frac{p_{k}}{q_{k}}$
+\end_inset
+
+ сходится к 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее
+\end_layout
+
+\end_inset
+
+, и, значит, 
+\begin_inset Formula $\alpha=\left[a_{0};a_{1},a_{2},\dots\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим, что равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational-down"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ справедливы и для конечных цепных дробей в пределах тех индексов, для которых
+ существуют частные и подходящие дроби.
+ При этом 
+\begin_inset Formula $\alpha_{n}=\frac{r_{n}}{r_{n+1}}$
+\end_inset
+
+ в формулах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-euclid"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Помимо 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-approximation-upper"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, из равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно вывести и оценку снизу для приближения 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ подходящими дробями.
+ 
+\end_layout
+
+\begin_layout Remark
+При любом 
+\begin_inset Formula $k$
+\end_inset
+
+ справедливо неравенство 
+\begin_inset Formula 
+\[
+\left|\alpha-\frac{p_{k}}{q_{k}}\right|\ge\frac{1}{q_{k}\left(q_{k+1}+q_{k}\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Действительно: 
+\begin_inset Formula 
+\[
+\left|q_{k}\alpha-p_{k}\right|=\frac{1}{\alpha_{k+1}q_{k}+q_{k-1}}>\frac{1}{\left(\alpha_{k+1}+1\right)q_{k}+q_{k-1}}=\frac{1}{q_{k+1}+q_{k}},
+\]
+
+\end_inset
+
+ откуда и получаем требуемое утверждение.
+\end_layout
+
+\begin_layout Proof
+Из теорем 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:infinite-continued-fraction-is-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:continued-fraction-monotonic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:continued-fraction-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует критерий иррациональности числа.
+\end_layout
+
+\begin_layout Remark
+Действительное число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ иррационально в том и только том случае, когда его цепная дробь бесконечна.
+\end_layout
+
+\begin_layout Standard
+Каждая подходящая цепная дробь несократима, и, в силу неравенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:containued-fraction-approximation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ удовлетворяет 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diriclet-consequence-inequality"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что даёт ещё одно доказательство следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:diriclet-consequence-inequality"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ дают удобный алгоритм для вычисления непрерывной дроби числа.
+ Значение непрерывной дроби позволяет с помощью равенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:number-continued-fraction-recurrence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ легко вычислять соответствующие подходящие дроби, то есть находить хорошие
+ приближение к 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ В дальнейшем будет показано, что эти приближения являются в некотором смысле
+ наилучшими.
+\end_layout
+
+\begin_layout Example
+Найти разложение в непрерывную дробь числа 
+\begin_inset Formula $\frac{1+\sqrt{17}}{2}$
+\end_inset
+
+ и первые пять соответствующих подходящих дробей.
+\end_layout
+
+\begin_layout Example
+Так как 
+\begin_inset Formula $16<17<25$
+\end_inset
+
+, то 
+\begin_inset Formula $4<\sqrt{17}<5$
+\end_inset
+
+ и 
+\begin_inset Formula $2<\frac{1+\sqrt{17}}{2}<3$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left\lfloor \frac{1+\sqrt{17}}{2}\right\rfloor =2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+В соответствии с формулами 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ находим 
+\begin_inset Formula 
+\[
+\alpha_{0}=\alpha=\frac{1+\sqrt{17}}{2},\qquad a_{0}=\left\lfloor \alpha_{0}\right\rfloor =2,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{1}=\frac{1}{\alpha_{0}-a_{0}}=\frac{1}{\frac{1+\sqrt{17}}{2}-2}=\frac{2}{\sqrt{17}-3}=\frac{\sqrt{17}+3}{4},\qquad a_{1}=\left\lfloor \alpha_{1}\right\rfloor =1,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{2}=\frac{1}{\alpha_{1}-a_{1}}=\frac{1}{\frac{\sqrt{17}+3}{4}-1}=\frac{4}{\sqrt{17}-1}=\frac{\sqrt{17}+1}{4},\qquad a_{2}=\left\lfloor \alpha_{2}\right\rfloor =1,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{3}=\frac{1}{\alpha_{2}-a_{2}}=\frac{1}{\frac{\sqrt{17}+1}{4}-1}=\frac{4}{\sqrt{17}-3}=\frac{\sqrt{17}+3}{2},\qquad a_{3}=\left\lfloor \alpha_{3}\right\rfloor =3,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{4}=\frac{1}{\alpha_{3}-a_{3}}=\frac{1}{\frac{\sqrt{17}+3}{2}-3}=\frac{2}{\sqrt{17}-3}=\frac{\sqrt{17}+3}{4},\qquad a_{4}=\left\lfloor \alpha_{4}\right\rfloor =1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+В формулах 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ каждое число 
+\begin_inset Formula $\alpha_{n+1}$
+\end_inset
+
+ однозначно определяется по числу 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
+
+.
+ Поэтому совпадение 
+\begin_inset Formula $\alpha_{4}=\alpha_{1}$
+\end_inset
+
+ означает, что будут выполняться равенства 
+\begin_inset Formula $\alpha_{5}=\alpha_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha_{6}=\alpha_{3}$
+\end_inset
+
+ и так далее, то есть последовательность 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ в данном случае будет периодической.
+ Имеем 
+\begin_inset Formula 
+\[
+\frac{1+\sqrt{17}}{2}=\left[2;1,1,3,1,1,3,1,1,3,\dots\right]=\left[2;\overline{1,1,3}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:number-continued-fraction-recurrence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ могут быть переписаны в матричном виде 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cc}
+p_{n-1} & p_{n-2}\\
+q_{n-1} & q_{n-2}
+\end{array}\right)\cdot\left(\begin{array}{c}
+a_{n}\\
+1
+\end{array}\right)=\left(\begin{array}{c}
+p_{n}\\
+q_{n}
+\end{array}\right).
+\]
+
+\end_inset
+
+ Это позволяет организовать вычисление подходящих дробей, начиная с 
+\begin_inset Formula $n=1$
+\end_inset
+
+, начиная с 
+\begin_inset Formula $n=1$
+\end_inset
+
+ следующим образом: 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cc}
+2 & 1\\
+1 & 0
+\end{array}\right)\cdot\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)=\left(\begin{array}{c}
+3\\
+1
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\begin{array}{cc}
+3 & 2\\
+1 & 1
+\end{array}\right)\cdot\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)=\left(\begin{array}{c}
+5\\
+2
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\begin{array}{cc}
+5 & 3\\
+2 & 1
+\end{array}\right)\cdot\left(\begin{array}{c}
+3\\
+1
+\end{array}\right)=\left(\begin{array}{c}
+18\\
+7
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\begin{array}{cc}
+18 & 5\\
+7 & 2
+\end{array}\right)\cdot\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)=\left(\begin{array}{c}
+23\\
+9
+\end{array}\right),\dots
+\]
+
+\end_inset
+
+В результате находим следующие приближения 
+\begin_inset Formula 
+\[
+\frac{2}{1},\frac{3}{1},\frac{5}{2},\frac{18}{7},\frac{23}{9},\frac{41}{16},\frac{146}{57},\dots.
+\]
+
+\end_inset
+
+ Заметим, что 
+\begin_inset Formula 
+\[
+\frac{1+\sqrt{17}}{2}-\frac{41}{16}=-0.000947187.
+\]
 
 \end_inset
 
