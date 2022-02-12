@@ -46173,6 +46173,829 @@ q_{n}
 
 \end_layout
 
+\begin_layout Section
+Наилучшие приближения
+\end_layout
+
+\begin_layout Standard
+Наилучшие приближения к заданному числу 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ определяется как наилучшие среди приближений с заданным ограничением величины
+ знаменателей.
+\end_layout
+
+\begin_layout Standard
+Рациональная дробь 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ называется наилучшим приближением к действительному числу 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, если для любой другой дроби 
+\begin_inset Formula $\frac{a}{b}\neq\frac{p}{q}$
+\end_inset
+
+ с условием 
+\begin_inset Formula $1\le b\le q$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula 
+\[
+\left|b\alpha-a\right|>\left|q\alpha-p\right|,
+\]
+
+\end_inset
+
+другими словами, если система неравенств 
+\begin_inset Formula 
+\begin{equation}
+\left\{ \begin{array}{c}
+\left|x-\alpha y\right|\le\left|p-\alpha q\right|,\\
+0<y\le q
+\end{array}\right.\label{eq:best-approximation}
+\end{equation}
+
+\end_inset
+
+имеет единственное решение в целых числах, а именно 
+\begin_inset Formula 
+\[
+x=p,\qquad y=q.
+\]
+
+\end_inset
+
+ Заметим, что наилучшее приближение всегда есть несократимая дробь.
+ Ведь если 
+\begin_inset Formula $p=ua$
+\end_inset
+
+, 
+\begin_inset Formula $q=ub$
+\end_inset
+
+, где 
+\begin_inset Formula $u>1$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|p-\alpha q\right|=u\left|a-\alpha b\right|>\left|a-\alpha b\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $0<b<q$
+\end_inset
+
+, то есть система неравенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:best-approximation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет решением и пару числе 
+\begin_inset Formula $x=a$
+\end_inset
+
+, 
+\begin_inset Formula $y=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Следующая теорема описывает связь между наилучшими приближениями к иррациональны
+ми числами и подходящими дробями.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:best-approximation"
+
+\end_inset
+
+Всякое наилучшее приближение к числу 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ есть подходящая дробь к нему.
+ Всякая подходящая дробь 
+\begin_inset Formula $\frac{p_{n}}{q_{n}}$
+\end_inset
+
+ к 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ есть наилучшее приближение к этому числу.
+\end_layout
+
+\begin_layout Standard
+Заметим, что подходящая дробь 
+\begin_inset Formula $\frac{p_{0}}{q_{0}}=\frac{0}{1}$
+\end_inset
+
+ к числу 
+\begin_inset Formula $\alpha=\frac{2}{3}$
+\end_inset
+
+ не является наилучшим приближением к нему, так как система 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:best-approximation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет в этом случае лишнее решение 
+\begin_inset Formula $x=1$
+\end_inset
+
+, 
+\begin_inset Formula $y=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:best-approximation-continued-fractions"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\frac{p_{k}}{q_{k}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{p_{k+1}}{q_{k+1}}$
+\end_inset
+
+ — соседние подходящие дроби к числу 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, причём 
+\begin_inset Formula $\frac{p_{k+1}}{q_{k+1}}\neq\alpha$
+\end_inset
+
+.
+ Тогда система неравенств 
+\begin_inset Formula 
+\begin{equation}
+\left\{ \begin{array}{c}
+\left|x-\alpha y\right|\le\left|p_{k}-\alpha q_{k}\right|,\\
+0<y\le q_{k+1}
+\end{array}\right.\label{eq:best-approximation-continued-fraction}
+\end{equation}
+
+\end_inset
+
+имеет лишь два решение в целых числах, а именно 
+\begin_inset Formula 
+\[
+x=p_{k},\qquad y=q_{k}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+x=p_{k+1},\qquad y=q_{k+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\left|p_{k}-\alpha q_{k}\right|\le\left|p_{k}-\alpha q_{k}\right|$
+\end_inset
+
+ и 
+\begin_inset Formula $0<q_{k}\le q_{k}$
+\end_inset
+
+, то 
+\begin_inset Formula $x=p_{k},y=q_{k}$
+\end_inset
+
+ действительно является решением системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:best-approximation-continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:continued-fraction-monotonic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $\left|q_{k+1}\alpha-p_{k+1}\right|<\left|q_{k}\alpha-p_{k}\right|$
+\end_inset
+
+, кроме того, так как 
+\begin_inset Formula $q_{k+1}=a_{k+1}q_{k}+q_{k-1}$
+\end_inset
+
+, то 
+\begin_inset Formula $q_{k}<q_{k+1}$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $x=p_{k+1},y=q_{k+1}$
+\end_inset
+
+ также является решением системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:best-approximation-continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Остаётся доказать, что у этой системы не существует других решений в целых
+ числах.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ — решение системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:best-approximation-continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Рассмотрим систему линейных уравнений
+\begin_inset Formula 
+\[
+\begin{array}{c}
+x=p_{k}u+p_{k+1}v,\\
+y=q_{k}u+q_{k+1}v
+\end{array}
+\]
+
+\end_inset
+
+ относительно неизвестных 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ Так как определитель этой системы, в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fractions-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, равен 
+\begin_inset Formula $p_{k}q_{k+1}-p_{k+1}q_{k}=\left(-1\right)^{k+1}=\pm1$
+\end_inset
+
+, то эта система имеет решение в целых числах.
+ Поскольку 
+\begin_inset Formula $y>0$
+\end_inset
+
+, то по крайней мере одно из чисел 
+\begin_inset Formula $u$
+\end_inset
+
+ или 
+\begin_inset Formula $v$
+\end_inset
+
+ является положительным.
+ Рассмотрим несколько вариантов.
+\end_layout
+
+\begin_layout Proof
+1) Предположим, что 
+\begin_inset Formula $u=0$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $y=q_{k+1}v$
+\end_inset
+
+ и 
+\begin_inset Formula $0<y=q_{k+1}v\le q_{k+1}$
+\end_inset
+
+.
+ Значит 
+\begin_inset Formula $v=1$
+\end_inset
+
+, 
+\begin_inset Formula $y=q_{k+1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x=p_{k+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+2) Предположим, что 
+\begin_inset Formula $v=0$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $x=p_{k}u$
+\end_inset
+
+ и 
+\begin_inset Formula $y=q_{k}u$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left|x-\alpha y\right|=\left|p_{k}u-\alpha q_{k}u\right|=u\cdot\left|p_{k}-\alpha q_{k}\right|\le\left|p_{k}-\alpha q_{k}\right|,
+\]
+
+\end_inset
+
+ что возможно только при 
+\begin_inset Formula $u=1$
+\end_inset
+
+, тогда 
+\begin_inset Formula $x=p_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $y=q_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+3) Предположим, что 
+\begin_inset Formula $uv\neq0$
+\end_inset
+
+.
+ Если числа 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ имеют одинаковые знаки, то условие 
+\begin_inset Formula $y>0$
+\end_inset
+
+ означает, что 
+\begin_inset Formula $u>0$
+\end_inset
+
+ и 
+\begin_inset Formula $v>0$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $y\ge q_{k}+q_{k+1}>q_{k+1}$
+\end_inset
+
+, что не совместимо с системой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:best-approximation-continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $u$
+\end_inset
+
+ и 
+\begin_inset Formula $v$
+\end_inset
+
+ имеют разные знаки, то есть 
+\begin_inset Formula $uv<0$
+\end_inset
+
+.
+ В этом случае 
+\begin_inset Formula 
+\[
+x-\alpha y=\left(p_{k}-\alpha q_{k}\right)u+\left(p_{k+1}-\alpha q_{k+1}\right)v.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как числа 
+\begin_inset Formula $p_{k}-\alpha q_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $p_{k+1}-\alpha q_{k+1}$
+\end_inset
+
+ также имеют разные знаки
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дать ссылку или доказать подробнее
+\end_layout
+
+\end_inset
+
+, то слагаемые в правой части последнего равенства имеют одинаковый знак,
+ поэтому
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left|x-\alpha y\right|=\left|p_{k}-\alpha q_{k}\right|\cdot\left|u\right|+\left|p_{k+1}-\alpha q_{k+1}\right|\cdot\left|v\right|>\left|p_{k}-\alpha q_{k}\right|,
+\]
+
+\end_inset
+
+что противоречит системе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:best-approximation-continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Лемма доказана.
+\end_layout
+
+\begin_layout Standard
+Докажем теперь теорему 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:best-approximation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ — наилучшее приближение к числу 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, а 
+\begin_inset Formula $k$
+\end_inset
+
+ — наибольший индекс, для которого выполняется 
+\begin_inset Formula $q_{k}\le q$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+доказать, что последовательность 
+\begin_inset Formula $q_{k}$
+\end_inset
+
+ неограничено возрастает
+\end_layout
+
+\end_inset
+
+.
+ Предположим, что 
+\begin_inset Formula 
+\[
+\left|p-\alpha q\right|<\left|p_{k}-\alpha q_{k}\right|.
+\]
+
+\end_inset
+
+ Тогда 
+\begin_inset Formula $p_{k}-\alpha q_{k}\neq0$
+\end_inset
+
+ и, поэтому, определена дробь 
+\begin_inset Formula $\frac{p_{k+1}}{q_{k+1}}$
+\end_inset
+
+, причём 
+\begin_inset Formula $q<q_{k+1}$
+\end_inset
+
+.
+ Но это невозможно в силу леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:best-approximation-continued-fractions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Значит выполняется равенство 
+\begin_inset Formula 
+\[
+\left|p_{k}-\alpha q_{k}\right|\le\left|p-\alpha q\right|.
+\]
+
+\end_inset
+
+ Учитывая, что 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ — есть наилучшее приближение к 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, находим, что 
+\begin_inset Formula $p=p_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $q=q_{k}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ есть одна из подходящих дробей к 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем теперь, что при 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ каждая подходящая дробь 
+\begin_inset Formula $\frac{p_{k+1}}{q_{k+1}}$
+\end_inset
+
+ к числу 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ является наилучшим приближением к нему.
+\end_layout
+
+\begin_layout Proof
+Пусть целые числа 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ удовлетворяют неравенствам 
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\left|x-\alpha y\right|\le\left|p_{k+1}-\alpha q_{k+1}\right|,\\
+0<y\le q_{k+1}.
+\end{array}\right.
+\]
+
+\end_inset
+
+Согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:continued-fraction-monotonic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ выполняются неравенства 
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\left|x-\alpha y\right|\le\left|p_{k}-\alpha q_{k}\right|,\\
+0<y\le q_{k+1},
+\end{array}\right.
+\]
+
+\end_inset
+
+что по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:best-approximation-continued-fractions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ возможно лишь в случаях 
+\begin_inset Formula $x=p_{k+1}$
+\end_inset
+
+, 
+\begin_inset Formula $y=q_{k+1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x=p_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $y=q_{k}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\left|p_{k}-\alpha q_{k}\right|>\left|p_{k+1}-\alpha q_{k+1}\right|$
+\end_inset
+
+, то остаётся только решение 
+\begin_inset Formula $x=p_{k+1},y=q_{k+1}$
+\end_inset
+
+.
+ Значит, дробь 
+\begin_inset Formula $\frac{p_{k+1}}{q_{k+1}}$
+\end_inset
+
+ действительно является наилучшим приближением к 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ Это завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Theorem
+Если несократимая дробь 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+, 
+\begin_inset Formula $q>0$
+\end_inset
+
+, удовлетворяет неравенству 
+\begin_inset Formula 
+\[
+\left|\alpha-\frac{p}{q}\right|<\frac{1}{2q^{2}},
+\]
+
+\end_inset
+
+то она есть наилучшее приближение к 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и является одной из подходящих дробей к нему.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать раздел 8.4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
