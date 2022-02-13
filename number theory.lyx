@@ -47302,6 +47302,579 @@ noprefix "false"
 
 \end_layout
 
+\begin_layout Section
+Эквивалентные числа
+\end_layout
+
+\begin_layout Standard
+На множестве действительных чисел можно ввести отношение эквивалентности.
+ Два действительных числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ называются эквивалентными, если найдутся целые числа 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+ и 
+\begin_inset Formula $d$
+\end_inset
+
+, удовлетворяющие равенствам 
+\begin_inset Formula 
+\begin{equation}
+\alpha=\frac{a\beta+b}{c\beta+d},\qquad ad-bc=\pm1.\label{eq:real-equivalence}
+\end{equation}
+
+\end_inset
+
+ Это отношение будет обозначаться 
+\begin_inset Formula $a\sim b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим, что каждое число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ эквивалентно самому себе.
+ В этом случае равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:real-equivalence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ выполняется при 
+\begin_inset Formula $a=d=1$
+\end_inset
+
+ и 
+\begin_inset Formula $b=c=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $\alpha\sim\beta$
+\end_inset
+
+, то отношение выполняется и в противоположную сторону, то есть 
+\begin_inset Formula $\beta\sim\alpha$
+\end_inset
+
+.
+ Действительно, если из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:real-equivalence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ выразить 
+\begin_inset Formula $\beta$
+\end_inset
+
+, то получим 
+\begin_inset Formula 
+\[
+\left(c\beta+d\right)\alpha=a\beta+b,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta\left(c\alpha-a\right)=-d\alpha+b,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta=\frac{-d\alpha+b}{c\alpha-a}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+\left(-d\right)\left(-a\right)-bc=ad-b=\pm1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Наконец, если 
+\begin_inset Formula $\alpha\sim\beta$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta\sim\gamma$
+\end_inset
+
+, то 
+\begin_inset Formula $\alpha\sim\gamma$
+\end_inset
+
+.
+ Чтобы проверить это, возьмём два представления 
+\begin_inset Formula 
+\[
+\alpha=\frac{a\beta+b}{c\beta+d},\quad\beta=\frac{p\gamma+q}{r\gamma+s},\quad ad-bc=\pm1,\quad ps-qr=\pm1
+\]
+
+\end_inset
+
+ и подставим выражение для 
+\begin_inset Formula $\beta$
+\end_inset
+
+ в первую дробь.
+ В результате получим 
+\begin_inset Formula 
+\begin{multline*}
+\alpha=\frac{a\frac{p\gamma+q}{r\gamma+s}+b}{c\frac{p\gamma+q}{r\gamma+s}+d}=\frac{a\left(p\gamma+q\right)+b\left(r\gamma+s\right)}{c\left(p\gamma+q\right)+d\left(r\gamma+s\right)}=\\
+=\frac{\left(ap+br\right)\gamma+\left(aq+bs\right)}{\left(cp+dr\right)\gamma+\left(cq+ds\right)}=\frac{u\gamma+v}{w\gamma+t},
+\end{multline*}
+
+\end_inset
+
+в котором коэффициенты 
+\begin_inset Formula $u$
+\end_inset
+
+, 
+\begin_inset Formula $v$
+\end_inset
+
+, 
+\begin_inset Formula $w$
+\end_inset
+
+ и 
+\begin_inset Formula $t$
+\end_inset
+
+ определяются, как легко понять, матричным равенством 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cc}
+u & v\\
+w & t
+\end{array}\right)=\left(\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right)\cdot\left(\begin{array}{cc}
+p & q\\
+r & s
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как определить произведения матриц равен произведению определителей
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку на линейную алгебру
+\end_layout
+
+\end_inset
+
+, отсюда следует, что 
+\begin_inset Formula $ut-vw=\pm1\cdot\pm1=\pm1$
+\end_inset
+
+.
+ Итак, 
+\begin_inset Formula $\alpha\sim\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Из этих трёх свойств следует, что множество всех действительных чисел распадаетс
+я на классы чисел, эквивалентных между собой.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вынести в утверждение для удобства ссылок
+\end_layout
+
+\end_inset
+
+Если при разложении действительного числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в непрерывную дробь получается равенство 
+\begin_inset Formula $\alpha=\left[a_{0};a_{1},\dots,a_{k},\alpha_{k+1}\right]$
+\end_inset
+
+, то по 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational-down"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\alpha=\left[a_{0};a_{1},\dots,a_{k},\alpha_{k+1}\right]=\frac{\alpha_{k+1}p_{k}+p_{k-1}}{\alpha_{k+1}q_{k}+q_{k-1}},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $q_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{k-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $q_{k-1}$
+\end_inset
+
+ — числители и знаменатели подходящих дробей, удовлетворяющие согласно 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ равенству 
+\begin_inset Formula 
+\[
+q_{k}p_{k-1}-p_{k}q_{k-1}=\left(-1\right)^{k},\qquad k\ge0.
+\]
+
+\end_inset
+
+Но это значит, что 
+\begin_inset Formula $\alpha\sim\alpha_{k+1}$
+\end_inset
+
+ при любом 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если, например, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — рациональное число, раскладывающееся в непрерывную цепную дробь длины
+ 
+\begin_inset Formula $k+1$
+\end_inset
+
+, то 
+\begin_inset Formula $\alpha_{k+1}$
+\end_inset
+
+ — целое число.
+ Но, любые два целых числа, очевидно, эквивалентны.
+ Это доказывает, что любые два рациональных числа эквивалентны
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Выделить в утверждение и убрать 
+\begin_inset Quotes rld
+\end_inset
+
+очевидно
+\begin_inset Quotes rrd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Справедливо более общее утверждение.
+\end_layout
+
+\begin_layout Theorem
+Действительные числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ эквивалентны тогда и только тогда, когда их разложения в непрерывные дроби
+ начиная с некоторого места совпадают.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательство
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Предположим сначала, что разложения чисел 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ в цепные дроби совпадают с некоторого места, тогда существуют такие индексы
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ и 
+\begin_inset Formula $l$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+\alpha=\left[a_{0};a_{1},\dots a_{k},\alpha_{k+1}\right],\quad\beta=\left[b_{0};b_{1},\dots,b_{l},\alpha_{k+1}\right].
+\]
+
+\end_inset
+
+ Из сказанного выше следует, что 
+\begin_inset Formula $\alpha\sim\alpha_{k+1}\sim b$
+\end_inset
+
+ и, значит, 
+\begin_inset Formula $\alpha\sim\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем теперь, что утверждение справедливо в противоположную сторону.
+ Предположим, что 
+\begin_inset Formula $\alpha\sim\beta$
+\end_inset
+
+.
+ Рассмотрим далее несколько частных случаев.
+ При этом будет использовать запись 
+\begin_inset Formula $\alpha\asymp\beta$
+\end_inset
+
+ для обозначения того, что разложения в непрерывные цепные дроби чисел 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ совпадают, начиная с некоторого места.
+\end_layout
+
+\begin_layout Proof
+1) Если 
+\begin_inset Formula $\beta=\alpha+n$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — некоторое целое число, то непрерывные дроби чисел 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ совпадают уже начиная с первого места, то есть 
+\begin_inset Formula $\alpha\asymp\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+2) Если 
+\begin_inset Formula $\beta=-\alpha$
+\end_inset
+
+, причём можно предполагать, что 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — не целое число, так как такой вариант уже был разобран в пункте 1).
+ Имеем 
+\begin_inset Formula 
+\[
+\alpha=a_{0}+\frac{1}{\gamma},\qquad a_{0}\in\mathbb{Z},\quad a_{0}<\alpha<a_{0}+1,\qquad\gamma>1,
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $\alpha=\left[a_{0};\gamma\right]$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $-a_{0}-1<-\alpha<-a_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+-\alpha=-a_{0}-1+\frac{\gamma-1}{\gamma}=-a_{0}-1+\frac{1}{1+\frac{1}{\gamma-1}}.
+\]
+
+\end_inset
+
+ При 
+\begin_inset Formula $\gamma>2$
+\end_inset
+
+ имеем 
+\begin_inset Formula $-\alpha=\left[-a_{0}-1;1;\gamma-1\right]$
+\end_inset
+
+ и, учитывая, что, как доказано в пункте 1), разложения 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ и 
+\begin_inset Formula $\gamma-1$
+\end_inset
+
+ начиная с некоторого места совпадают, получаем 
+\begin_inset Formula $\alpha\asymp\beta$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $1<\gamma<2$
+\end_inset
+
+ имеем 
+\begin_inset Formula $\gamma=1+\frac{1}{\rho}$
+\end_inset
+
+, 
+\begin_inset Formula $\rho>1$
+\end_inset
+
+, так что 
+\begin_inset Formula 
+\[
+\alpha=\left[a_{0};1,\rho\right],\qquad-\alpha=\left[-a_{0}-1;1+\rho\right].
+\]
+
+\end_inset
+
+ Так как 
+\begin_inset Formula $\rho\asymp1+\rho$
+\end_inset
+
+, то получаем 
+\begin_inset Formula $\alpha\asymp-\alpha=\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать раздел 8.5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
