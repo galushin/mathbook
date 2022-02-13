@@ -45847,6 +45847,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:irrational-and-infinite-continued-fraction"
+
+\end_inset
+
 Действительное число 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -46280,7 +46286,7 @@ noprefix "false"
 \begin_layout Theorem
 \begin_inset CommandInset label
 LatexCommand label
-name "thm:best-approximation"
+name "thm:best-approximation-is-continued-fraction"
 
 \end_inset
 
@@ -46723,7 +46729,7 @@ noprefix "false"
 Докажем теперь теорему 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "thm:best-approximation"
+reference "thm:best-approximation-is-continued-fraction"
 plural "false"
 caps "false"
 noprefix "false"
@@ -46957,9 +46963,9 @@ noprefix "false"
 
 , удовлетворяет неравенству 
 \begin_inset Formula 
-\[
-\left|\alpha-\frac{p}{q}\right|<\frac{1}{2q^{2}},
-\]
+\begin{equation}
+\left|\alpha-\frac{p}{q}\right|<\frac{1}{2q^{2}},\label{eq:condition-of-best-approximation}
+\end{equation}
 
 \end_inset
 
@@ -46971,25 +46977,325 @@ noprefix "false"
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Написать доказательство
+Подсмотрел
 \end_layout
+
+\end_inset
+
+Предположим, что целые числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ удовлетворяют неравенствам 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:best-approximation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\left|a-\alpha b\right|\le\left|p-\alpha q\right|,\\
+0<b\le q
+\end{array}\right..
+\]
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Proof
+Тогда, с помощью неравенства треугольника, находим: 
+\begin_inset Formula 
+\begin{multline*}
+\left|aq-bp\right|=\left|aq-\alpha qb+\alpha qb-bp\right|=\\
+=\left|q\left(a-\alpha b\right)-b\left(p-\alpha q\right)\right|\le q\left|a-\alpha b\right|+b\left|p-\alpha q\right|\le\\
+\le q\left|a-\alpha b\right|+b\left|p-\alpha q\right|\le2q\left|p-\alpha q\right|=\\
+=2q^{2}\left|\alpha-\frac{p}{q}\right|<1.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, целое число 
+\begin_inset Formula $aq-bp$
+\end_inset
+
+ меньше единицы по модулю, то есть равно нулю.
+ Согласно условию, числа 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+ взаимно просты, поэтому из доказанного равенства 
+\begin_inset Formula $aq=bp$
+\end_inset
+
+ следует, что 
+\begin_inset Formula $q\mid b$
+\end_inset
+
+, что возможно, по свойствам делимости 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, только при 
+\begin_inset Formula $q\le b$
+\end_inset
+
+, а по условию, 
+\begin_inset Formula $b\le q$
+\end_inset
+
+, так что 
+\begin_inset Formula $b=q$
+\end_inset
+
+ и 
+\begin_inset Formula $a=p$
+\end_inset
+
+.
+ Таким образом, система неравенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:best-approximation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет единственное решение, то есть 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ действительно является наилучшим приближением.
+ Второе утверждение теоремы следует из теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:best-approximation-is-continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Standard
+Покажем теперь, что множество рациональных решений неравенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:condition-of-best-approximation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ бесконечно.
+\end_layout
+
+\begin_layout Theorem
+При 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+ по крайней мере одна из двух соседних подходящих дробей 
+\begin_inset Formula $\frac{p_{k}}{q_{k}}$
+\end_inset
+
+ или 
+\begin_inset Formula $\frac{p_{k+1}}{q_{k+1}}$
+\end_inset
+
+ удовлетворяет неравенству 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:condition-of-best-approximation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Предположим, что это не так, то есть выполняются неравенства 
+\begin_inset Formula 
+\[
+\left|\alpha-\frac{p_{k}}{q_{k}}\right|\ge\frac{1}{2q_{k}^{2}},\qquad\left|\alpha-\frac{p_{k+1}}{q_{k+1}}\right|\ge\frac{1}{2q_{k+1}^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Складывая эти неравенства и учитывая, что 
+\begin_inset Formula $\frac{p_{k}}{q_{k}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{p_{k+1}}{q_{k+1}}$
+\end_inset
+
+ находятся по разные стороны от 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Дописать раздел 8.4
+Добавить ссылки на используемые факты
 \end_layout
+
+\end_inset
+
+, находим 
+\begin_inset Formula 
+\[
+\frac{1}{2q_{k}^{2}}+\frac{1}{2q_{k+1}^{2}}\le\left|\alpha-\frac{p_{k}}{q_{k}}\right|+\left|\alpha-\frac{p_{k+1}}{q_{k+1}}\right|=\left|\frac{p_{k}}{q_{k}}-\frac{p_{k+1}}{q_{k+1}}\right|=\frac{1}{q_{k}q_{k+1}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Умножая левую и правую части этой цепочки на 
+\begin_inset Formula $q_{k}^{2}q_{k+1}^{2}$
+\end_inset
+
+, получим
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+q_{k+1}^{2}+q_{k}^{2}\le2q_{k+1}q_{k},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q_{k+1}^{2}-2q_{k+1}q_{k}+q_{k}^{2}\le0,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(q_{k+1}-q_{k}\right)^{2}\le0,
+\]
+
+\end_inset
+
+что невозможно, так как 
+\begin_inset Formula $q_{k+1}>q_{k}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+ Это противоречие означает, что утверждение теоремы выполняется.
+\end_layout
+
+\begin_layout Standard
+Последовательность подходящих дробей для иррационального числа бесконечна
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:irrational-and-infinite-continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Это позволяет усилить следствие 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:diriclet-consequence-inequality"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — иррациональное число.
+ Тогда существует бесконечное множество несократимых дробей 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+, удовлетворяющих неравенству 
+\begin_inset Formula 
+\[
+\left|\alpha-\frac{p}{q}\right|<\frac{1}{2q^{2}}.
+\]
 
 \end_inset
 
