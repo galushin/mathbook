@@ -47669,16 +47669,6 @@ status open
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать доказательство
-\end_layout
-
-\end_inset
-
-
 \begin_inset Note Comment
 status open
 
@@ -47862,17 +47852,243 @@ status open
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_layout Proof
+3) Пусть 
+\begin_inset Formula $\beta=\frac{1}{\alpha}$
+\end_inset
 
-\begin_layout Plain Layout
-Дописать раздел 8.5
+.
 \end_layout
+
+\begin_layout Proof
+а) Рассмотрим сначала случай 
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\beta=\left[0;\alpha\right]$
+\end_inset
+
+ и утверждение 
+\begin_inset Formula $\alpha\asymp\beta$
+\end_inset
+
+ выполняется.
+\end_layout
+
+\begin_layout Proof
+б) Пусть 
+\begin_inset Formula $0<\alpha<1$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\alpha=\beta^{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $\beta>1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\alpha=\left[0;\beta\right]$
+\end_inset
+
+ и утверждение 
+\begin_inset Formula $\beta\asymp\alpha$
+\end_inset
+
+ также выполняется.
+\end_layout
+
+\begin_layout Proof
+в) Если 
+\begin_inset Formula $\alpha<0$
+\end_inset
+
+, то по доказанному ранее имеем 
+\begin_inset Formula 
+\[
+\alpha\asymp-\alpha\asymp\frac{1}{-\alpha}=-\frac{1}{\alpha}\asymp\frac{1}{\alpha}=\beta.
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+После рассмотрения трёх этих частных случаев перейдём к общему 
+\begin_inset Formula 
+\begin{equation}
+\beta=\frac{a\alpha+b}{c\alpha+d},\qquad ad-bc=\pm1,\label{eq:equivalent-reals-representation}
+\end{equation}
+
+\end_inset
+
+и будем вести доказательство утверждения 
+\begin_inset Formula $\beta\asymp\alpha$
+\end_inset
+
+ индукцией по 
+\begin_inset Formula $\left|c\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+В случае 
+\begin_inset Formula $\left|c\right|=0$
+\end_inset
+
+ имеем 
+\begin_inset Formula $\beta=\pm\alpha+b$
+\end_inset
+
+ и утверждение следует из доказанных выше пунктов 1) и 2).
+\end_layout
+
+\begin_layout Proof
+Предположим, что 
+\begin_inset Formula $\left|c\right|=n\ge1$
+\end_inset
+
+ и для всех чисел, у которых коэффициент при 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в знаменателе представления 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:equivalent-reals-representation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ по абсолютной величине меньше 
+\begin_inset Formula $n$
+\end_inset
+
+, утверждение выполняется.
+ В случае 
+\begin_inset Formula $\left|a\right|<n$
+\end_inset
+
+ находим 
+\begin_inset Formula 
+\[
+\frac{1}{\beta}=\frac{c\alpha+d}{a\alpha+b},\qquad cb-ad=\pm1,
+\]
+
+\end_inset
+
+ и согласно индуктивному предположению 
+\begin_inset Formula $\beta^{-1}\asymp\alpha$
+\end_inset
+
+, откуда, по доказанному выше 
+\begin_inset Formula $\beta\asymp\beta^{-1}\asymp\alpha$
+\end_inset
+
+.
+ Утверждение выполняется.
+\end_layout
+
+\begin_layout Proof
+В случае 
+\begin_inset Formula $\left|a\right|\ge\left|c\right|$
+\end_inset
+
+ можно, не уменьшая общности считать 
+\begin_inset Formula $c>0$
+\end_inset
+
+ (в противном случае можно поменять знак всех коэффициентов).
+ Разделив коэффициент 
+\begin_inset Formula $a$
+\end_inset
+
+ на 
+\begin_inset Formula $c$
+\end_inset
+
+ с остатком, что всегда возможно в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:division-with-reminder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, найдём 
+\begin_inset Formula $a=cq+r$
+\end_inset
+
+, где 
+\begin_inset Formula $0\le r<c$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+\beta=\frac{\left(cq+r\right)\alpha+b}{c\alpha+d},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta-q=\frac{r\alpha+\left(b-qd\right)}{c\alpha+d}
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+\gamma=\frac{1}{\beta-q}=\frac{c\alpha+d}{r\alpha+\left(b-qd\right)}.
+\]
+
+\end_inset
+
+Учитывая, что 
+\begin_inset Formula 
+\[
+c\left(b-qd\right)-dr=bc-\left(cq+r\right)d=bc-ad=\pm1
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+0\le r<c<n,
+\]
+
+\end_inset
+
+заключаем по индуктивному предположению и доказанному ранее для 
+\begin_inset Formula $\left|a\right|<n$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+\alpha\asymp\gamma\asymp\beta-q\asymp\beta.
+\]
+
+\end_inset
+
+Теорема доказана.
+ 
 \end_layout
 
 \begin_layout Standard
