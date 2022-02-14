@@ -48088,7 +48088,643 @@ c\left(b-qd\right)-dr=bc-\left(cq+r\right)d=bc-ad=\pm1
 \end_inset
 
 Теорема доказана.
+\end_layout
+
+\begin_layout Section
+Квадратичные иррациональности цепные дроби
+\end_layout
+
+\begin_layout Standard
+Рациональные числа являются простейшими из действительных чисел.
+ Следующий по сложности подкласс действительных чисел составляют квадратичные
+ иррациональности
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+В каком смысле?
+\end_layout
+
+\end_inset
+
+.
+ Действительное число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ называются 
+\emph on
+квадратичной иррациональностью
+\emph default
+, если оно не рационально и есть корень квадратного трёхчлена 
+\begin_inset Formula $f\left(x\right)=ax^{2}+bx+c$
+\end_inset
+
+ с целыми коэффициентами 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+.
+ Разделим коэффициенты на общий делитель и, если 
+\begin_inset Formula $a<0$
+\end_inset
+
+, умножим трёхчлен на 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ Так получится многочлен 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ с целыми коэффициентами, удовлетворяющими условиям 
+\begin_inset Formula 
+\begin{equation}
+f\left(\alpha\right)=0,\qquad\left(a,b,c\right)=1,\qquad a>0.\label{eq:quadric-irrational-conditions}
+\end{equation}
+
+\end_inset
+
+ Существует только один такой многочлен
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Почему?
+\end_layout
+
+\end_inset
+
+.
+ Число 
+\begin_inset Formula $D\left(\alpha\right)=b^{2}-4ac$
+\end_inset
+
+ называется 
+\emph on
+дискриминантом 
+\emph default
+
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ Ясно, что 
+\begin_inset Formula $D\left(\alpha\right)>0$
+\end_inset
+
+ и отлично от квадрата целого числа.
+\end_layout
+
+\begin_layout Standard
+В этом параграфе мы обсудим свойства цепных дробей, в которые раскладываются
+ квадратичные иррациональности.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $D$
+\end_inset
+
+ — целое положительное число, отлично от квадратов.
+ Множество чисел вида 
+\begin_inset Formula $x+y\sqrt{D}$
+\end_inset
+
+ с рациональными 
+\begin_inset Formula $x,y$
+\end_inset
+
+ обозначается символом 
+\begin_inset Formula $\mathbb{Q}\left(\sqrt{D}\right)$
+\end_inset
+
+.
+ Это множество замкнуто относительно операций сложения и вычитания, умножения
+ и деления
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать всё
+\end_layout
+
+\end_inset
+
+.
+ Например, для умножения и деления имеем 
+\begin_inset Formula 
+\begin{equation}
+\left(x+y\sqrt{D}\right)\left(u+v\sqrt{D}\right)=\left(xu+yvD\right)+\left(yu+xv\right)\sqrt{D},\label{eq:quadric-irrational-multiplication}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{x+y\sqrt{D}}=\frac{x-y\sqrt{D}}{x^{2}-y^{2}D}=\frac{x}{x^{2}-y^{2}D}+\frac{-y}{x^{2}-y^{2}D}\sqrt{D.}\label{eq:quadric-irrational-division}
+\end{equation}
+
+\end_inset
+
+Значит, множество 
+\begin_inset Formula $\mathbb{Q}\left(\sqrt{D}\right)$
+\end_inset
+
+ является полем.
+ Оно содержит множество рациональных чисел
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать!
+\end_layout
+
+\end_inset
+
+.
+ Каждое иррациональное число из 
+\begin_inset Formula $\mathbb{Q}\left(\sqrt{D}\right)$
+\end_inset
+
+ есть квадратичная иррациональность.
+\end_layout
+
+\begin_layout Standard
+Для каждого числа 
+\begin_inset Formula $\alpha=x+y\sqrt{D}\in\mathbb{Q}\left(\sqrt{D}\right)$
+\end_inset
+
+ с рациональными 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ будем использовать обозначение
+\begin_inset Formula 
+\[
+\alpha^{\prime}=x-y\sqrt{D}.
+\]
+
+\end_inset
+
+Ясно, что для иррационального числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ число 
+\begin_inset Formula $\alpha^{\prime}$
+\end_inset
+
+ есть второй корень квадратного трёхчлена 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, удовлетворяющего 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-irrational-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Для рациональных чисел 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ имеем 
+\begin_inset Formula $\alpha^{\prime}=\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha^{\prime}$
+\end_inset
+
+ называются 
+\emph on
+сопряжёнными.
  
+\emph default
+Для любых двух чисел 
+\begin_inset Formula $\alpha,\beta\in\mathbb{Q}\left(\sqrt{D}\right)$
+\end_inset
+
+ выполняются равенства 
+\begin_inset Formula 
+\[
+\left(\alpha+\beta\right)^{\prime}=\alpha^{\prime}+\beta^{\prime},\quad,\left(\alpha-\beta\right)^{\prime}=\alpha^{\prime}-\beta^{\prime},\quad\left(\alpha\beta\right)^{\prime}=\alpha^{\prime}\beta^{\prime},\quad\left(\frac{\alpha}{\beta}\right)^{\prime}=\frac{\alpha^{\prime}}{\beta^{\prime}}.
+\]
+
+\end_inset
+
+В последнем случае предполагается, что 
+\begin_inset Formula $\beta\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Проверим эти равенства для умножения и деления.
+ Для сложения и вычитания они проверяются аналогично.
+ Если 
+\begin_inset Formula $\alpha=x+y\sqrt{D}$
+\end_inset
+
+, 
+\begin_inset Formula $\beta=u+v\sqrt{D}$
+\end_inset
+
+, где 
+\begin_inset Formula $x,y,u,v\in\mathbb{Q}$
+\end_inset
+
+, то согласно формулам 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-irrational-multiplication"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-irrational-division"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ находим 
+\begin_inset Formula 
+\[
+\alpha^{\prime}\beta^{\prime}=\left(xy+yvD\right)-\left(xv+yu\right)\sqrt{D}=\left(\alpha\beta\right)^{\prime},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{1}{\beta^{\prime}}=\frac{u}{u^{2}-v^{2}D}+\frac{v}{u^{2}-v^{2}D}\sqrt{D}=\left(\frac{1}{\beta}\right)^{\prime}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+\left(\frac{\alpha}{\beta}\right)^{\prime}=\left(\alpha\cdot\frac{1}{\beta}\right)^{\prime}=\alpha^{\prime}\left(\frac{1}{\beta}\right)^{\prime}=\alpha^{\prime}\cdot\frac{1}{\beta^{\prime}}=\frac{\alpha^{\prime}}{\beta^{\prime}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Цепная дробь 
+\begin_inset Formula $\left[a_{0};a_{1},a_{2},\dots\right]$
+\end_inset
+
+ называется 
+\emph on
+периодической
+\emph default
+, если последовательность 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, начиная с некоторого места периодична, то есть для некоторого целого 
+\begin_inset Formula $k$
+\end_inset
+
+ при всех достаточно больших 
+\begin_inset Formula $n$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $a_{n+k}=a_{n}$
+\end_inset
+
+.
+ Дробь называется 
+\emph on
+чисто периодической
+\emph default
+, если равенство 
+\begin_inset Formula $a_{n+k}=a_{n}$
+\end_inset
+
+ выполняется при всех 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+.
+ Периодические дроби будут обозначаться
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+А разве такое не использовалось ранее?
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\left[a_{0};a_{1},\dots a_{h},\overline{a_{h+1},\dots,a_{h+k}}\right],
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $a_{h+1},\dots,a_{h+k}$
+\end_inset
+
+ — период.
+ Соответственно, чисто периодические дроби обозначаются 
+\begin_inset Formula 
+\[
+\left[\overline{a_{0},a_{1},\dots,a_{k-1}}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Euler-Lagrange-quadratic-irrational"
+
+\end_inset
+
+(Теорема Эйлера-Лагранжа).
+ Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — действительное иррациональное число.
+ Цепная дробь 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ периодична тогда и только тогда, когда 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — квадратичная иррациональность.
+\end_layout
+
+\begin_layout Standard
+Тот факт, что периодические цепные дроби есть разложения квадратичных иррационал
+ьностей был доказан в 1737 году Эйлером.
+ Обратное утверждение о периодичности цепной дроби для любой квадратичной
+ иррациональности было установлено в 1770 году Лагранжем.
+ Мы начнём доказательство с первого утверждения.
+\end_layout
+
+\begin_layout Proof
+В следующем ниже доказательстве буквы 
+\begin_inset Formula $p_{j}$
+\end_inset
+
+ и 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ будут обозначать числители и знаменатели подходящих дробей цепной дроби
+ числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Предположим сначала, что цепная дробь 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ чисто периодическая, то есть 
+\begin_inset Formula $\alpha=\left[\overline{a_{0},a_{1},\dots,a_{k-1}}\right].$
+\end_inset
+
+ Тогда 
+\begin_inset Formula $\alpha=\left[a_{0},a_{1},\dots,a_{k-1},\alpha_{k}\right].$
+\end_inset
+
+ Поскольку 
+\begin_inset Formula $\alpha_{k}=\left[\overline{a_{0},a_{1},\dots,a_{k-1}}\right]=\alpha$
+\end_inset
+
+, то имеем 
+\begin_inset Formula 
+\[
+\alpha=\left[a_{0},a_{1},\dots,a_{k-1},\alpha\right]
+\]
+
+\end_inset
+
+ или 
+\begin_inset Formula 
+\[
+\alpha=\frac{\alpha p_{k-1}+p_{k-2}}{\alpha q_{k-1}+q_{k-2}}.
+\]
+
+\end_inset
+
+ Значит, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — корень многочлена 
+\begin_inset Formula $q_{k-1}x^{2}+\left(q_{k-2}-p_{k-1}\right)x-p_{k-2}$
+\end_inset
+
+.
+ Цепная дробь числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ бесконечна, поэтому 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ иррационально.
+ Итак, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — квадратичная иррациональность.
+\end_layout
+
+\begin_layout Proof
+В общем случае имеем 
+\begin_inset Formula 
+\[
+\alpha=\left[a_{0};a_{1},\dots a_{h},\overline{a_{h+1},\dots,a_{h+k}}\right]=\left[a_{0};a_{1},\dots a_{h},\gamma\right],
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $\gamma=\left[\overline{a_{h+1},\dots,a_{h+k}}\right]$
+\end_inset
+
+, как установлено выше, — квадратичная иррациональность.
+ Тогда 
+\begin_inset Formula 
+\[
+\alpha=\frac{\gamma p_{h}+p_{h-1}}{\gamma q_{h}+q_{h-1}},\qquad\gamma=\frac{-\alpha q_{h-1}+p_{h-1}}{\alpha q_{h}-p_{h}}.
+\]
+
+\end_inset
+
+ Значит, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ есть корень многочлена второй степени и иррациональное число.
+ Теорема в одну сторону доказана.
+\end_layout
+
+\begin_layout Standard
+Докажем теперь, что квадратичные иррациональности раскладываются в периодические
+ цепные дроби.
+ Введём для этого ещё одно понятие.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — квадратичная иррациональность, 
+\begin_inset Formula $f\left(x\right)=ax^{2}+bx+c$
+\end_inset
+
+ — многочлен с целыми коэффициентами, удовлетворяющий условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-irrational-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Второй корень этого многочлена, отличный от 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, был обозначен ранее символом 
+\begin_inset Formula $\alpha^{\prime}$
+\end_inset
+
+.
+ Число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ будем называть 
+\emph on
+приведённым
+\emph default
+, если 
+\begin_inset Formula 
+\begin{equation}
+\alpha>1,\qquad-1<\alpha^{\prime}<0.\label{eq:reduced-real-condition}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Пусть 
+\begin_inset Formula $D$
+\end_inset
+
+ — целое положительное число, не равное квадрату целого числа.
+ Положим 
+\begin_inset Formula $a_{0}=\left\lfloor \sqrt{D}\right\rfloor $
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha=a_{0}+\sqrt{D}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — приведённая квадратичная иррациональность.
+ Действительно, 
+\begin_inset Formula $\alpha^{\prime}=a_{0}-\sqrt{D}$
+\end_inset
+
+ и неравенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:reduced-real-condition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Для завершения доказательства теоремы Эйлера-Лагранжа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Euler-Lagrange-quadratic-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ понадобятся три вспомогательных утверждения.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дописать раздел 8.6
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
