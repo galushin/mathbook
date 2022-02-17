@@ -48249,7 +48249,17 @@ status open
 \begin_inset Formula $\mathbb{Q}\left(\sqrt{D}\right)$
 \end_inset
 
- есть квадратичная иррациональность.
+ есть квадратичная иррациональность
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вынести в утверждение и доказать, чтобы можно было сослаться лемме
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -48327,9 +48337,9 @@ noprefix "false"
 
  выполняются равенства 
 \begin_inset Formula 
-\[
-\left(\alpha+\beta\right)^{\prime}=\alpha^{\prime}+\beta^{\prime},\quad,\left(\alpha-\beta\right)^{\prime}=\alpha^{\prime}-\beta^{\prime},\quad\left(\alpha\beta\right)^{\prime}=\alpha^{\prime}\beta^{\prime},\quad\left(\frac{\alpha}{\beta}\right)^{\prime}=\frac{\alpha^{\prime}}{\beta^{\prime}}.
-\]
+\begin{equation}
+\left(\alpha+\beta\right)^{\prime}=\alpha^{\prime}+\beta^{\prime},\quad,\left(\alpha-\beta\right)^{\prime}=\alpha^{\prime}-\beta^{\prime},\quad\left(\alpha\beta\right)^{\prime}=\alpha^{\prime}\beta^{\prime},\quad\left(\frac{\alpha}{\beta}\right)^{\prime}=\frac{\alpha^{\prime}}{\beta^{\prime}}.\label{eq:irrational-conjugate-arithmetic}
+\end{equation}
 
 \end_inset
 
@@ -48714,17 +48724,1039 @@ noprefix "false"
  понадобятся три вспомогательных утверждения.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:quadratic-irrationality-as-integer-plus-inverse-of-real"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\beta$
+\end_inset
+
+ — действительные числа, связанные соотношением 
+\begin_inset Formula $\beta=v+\frac{1}{\alpha}$
+\end_inset
+
+, где 
+\begin_inset Formula $v$
+\end_inset
+
+ — целое число.
+ Если 
+\begin_inset Formula $\beta$
+\end_inset
+
+ — квадратичная иррациональность, то таким будет и число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, причём 
+\begin_inset Formula $D\left(\alpha\right)=D\left(\beta\right)$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\beta$
+\end_inset
+
+ — приведённая квадратичная иррациональность и 
+\begin_inset Formula $v=\left\lfloor \beta\right\rfloor $
+\end_inset
+
+, то 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — приведённая квадратичная иррациональность.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\beta$
+\end_inset
+
+ — квадратичная иррациональность, то есть не является рациональным числом
+ и является корнем многочлена 
+\begin_inset Formula $f\left(x\right)=ax^{2}+bx+c$
+\end_inset
+
+, коэффициенты которого удовлетворяют условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-irrational-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ По условию леммы имеем 
+\begin_inset Formula $\beta=v+\frac{1}{\alpha}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+f\left(\beta\right)=f\left(v+\frac{1}{\alpha}\right)=a\left(v+\frac{1}{\alpha}\right)^{2}+b\left(v+\frac{1}{\alpha}\right)+c=\\
+=a\left(v^{2}+\frac{2v}{\alpha}+\frac{1}{\alpha^{2}}\right)+b\left(v+\frac{1}{\alpha}\right)+c=\\
+=\frac{a}{\alpha^{2}}+\frac{b+2va}{\alpha}+av^{2}+c=\\
+=\frac{a+\left(b+2va\right)\alpha+\left(av^{2}+c\right)\alpha^{2}}{\alpha^{2}}=0.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\alpha\neq0$
+\end_inset
+
+, то числитель последней дроби должен быть равен нулю: 
+\begin_inset Formula 
+\[
+\left(av^{2}+c\right)\alpha^{2}+\left(b+2va\right)\alpha+a=0,
+\]
+
+\end_inset
+
+таким образом, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ является корнем многочлена 
+\begin_inset Formula 
+\[
+\left(av^{2}+c\right)x^{2}+\left(b+2va\right)x+a.
+\]
+
+\end_inset
+
+Если 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — рационально, то рациональным будет и 
+\begin_inset Formula $\beta=v+\frac{1}{\alpha}$
+\end_inset
+
+ (как сумма двух рациональных чисел).
+ Докажем, что коэффициенты этого многочлена взаимно просты.
+ Действительно, пусть 
+\begin_inset Formula $g>1$
+\end_inset
+
+ — общий делитель чисел 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b+2va$
+\end_inset
+
+ и 
+\begin_inset Formula $av^{2}+c$
+\end_inset
+
+, тогда 
+\begin_inset Formula $b=\left(b+2va\right)-2va$
+\end_inset
+
+ и 
+\begin_inset Formula $c=\left(av^{2}+c\right)-av^{2}$
+\end_inset
+
+ также делится на 
+\begin_inset Formula $g$
+\end_inset
+
+, но тогда 
+\begin_inset Formula $\left(a,b,c\right)\ge g>1$
+\end_inset
+
+, но это противоречит тому 
+\begin_inset Formula $\left(a,b,c\right)=1$
+\end_inset
+
+.
+ Полученное противоречие означает, что 
+\begin_inset Formula $\left(a,b+2va,av^{2}+c\right)=1$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $av^{2}+c<0$
+\end_inset
+
+, то умножим все коэффициенты на 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ Получим многочлен для 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+, удовлетворяющий требованиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-irrational-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — квадратичная иррациональность.
+ При этом
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+D\left(\alpha\right)=\left(b+2va\right)^{2}-4\left(av^{2}+c\right)a=\\
+=b^{2}+4vba+4v^{2}a^{2}-4a^{2}v^{2}-4ac=\\
+=b^{2}-4ac=D\left(\beta\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $\beta$
+\end_inset
+
+ — приведённая квадратичная иррациональность и 
+\begin_inset Formula $v=\left\lfloor \beta\right\rfloor $
+\end_inset
+
+.
+ По определению приведённой квадратичной иррациональности
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Дописать раздел 8.6
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\beta>1,\qquad-1<\beta^{\prime}<0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $v=\left\lfloor \beta\right\rfloor $
+\end_inset
+
+, то 
+\begin_inset Formula $v\le\beta<v+1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $0\le\beta-v<1$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha=\frac{1}{\beta-v}>1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+В силу равенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:irrational-conjugate-arithmetic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и того, что 
+\begin_inset Formula $v$
+\end_inset
+
+ — целое число, получаем
+\begin_inset Formula 
+\[
+\beta^{\prime}=v^{\prime}+\left(\frac{1}{\alpha}\right)^{\prime}=v+\frac{1}{\alpha^{\prime}}
+\]
+
+\end_inset
+
+или 
+\begin_inset Formula 
+\[
+-\frac{1}{\alpha^{\prime}}=v-\beta^{\prime}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $v=\left\lfloor \beta\right\rfloor $
+\end_inset
+
+ и 
+\begin_inset Formula $\beta>1$
+\end_inset
+
+ (так как является приведённой квадратичной иррациональностью), то 
+\begin_inset Formula $v=\left\lfloor \beta\right\rfloor \ge1$
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula $\beta^{\prime}<0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+-\frac{1}{\alpha^{\prime}}=v-\beta^{\prime}<1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, мы получаем 
+\begin_inset Formula 
+\[
+0<-\alpha^{\prime}<1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+или 
+\begin_inset Formula 
+\[
+-1<\alpha^{\prime}<0.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Полученное неравенство означает что 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — квадратичная иррациональность, удовлетворяющая условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:reduced-real-condition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то есть является приведённой квадратичной иррациональностью, лемма доказана.
+\end_layout
+
+\begin_layout Standard
+Из этой леммы, в частности, следует, что остатки 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
+
+, получающиеся при разложении квадратичной иррациональности 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ в цепную дробь, являются квадратичными иррациональностями, а их дискриминанты
+ равны дискриминанту 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, то есть 
+\begin_inset Formula $D\left(\alpha_{n}\right)=D\left(\alpha\right)$
+\end_inset
+
+, 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:quadratic-irrational-risudes-is-reduced-eventually"
+
+\end_inset
+
+Если 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — квадратичная иррациональность, то числа 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
+
+ — остатки непрерывной дроби 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, при всех достаточно больших 
+\begin_inset Formula $n$
+\end_inset
+
+ будут приведёнными.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Так как 
+\begin_inset Formula $0\le\alpha_{n}-\left\lfloor \alpha_{n}\right\rfloor <1$
+\end_inset
+
+, то при 
+\begin_inset Formula $n>0$
+\end_inset
+
+ имеет место неравенство 
+\begin_inset Formula $\alpha_{n}>1$
+\end_inset
+
+.
+ Из равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и равенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:irrational-conjugate-arithmetic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+q_{n}\alpha^{\prime}-p_{n}=\frac{\left(-1\right)^{n}}{\alpha_{n+1}^{\prime}q_{n}+q_{n-1}}
+\]
+
+\end_inset
+
+и 
+\begin_inset Formula 
+\begin{equation}
+\alpha_{n+1}^{\prime}q_{n}=-q_{n-1}+\frac{1}{q_{n}}\cdot\frac{\left(-1\right)^{n}}{\alpha^{\prime}-\frac{p_{n}}{q_{n}}}.\label{eq:conjugate-irrational-continued-fraction-residue}
+\end{equation}
+
+\end_inset
+
+Так как по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:continued-fraction-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $\frac{p_{n}}{q_{n}}\to\alpha$
+\end_inset
+
+, и, значит, второе слагаемое в правой части последнего равенства стремится
+ к нулю
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее
+\end_layout
+
+\end_inset
+
+, получаем, что при всех достаточно больших 
+\begin_inset Formula $n$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula 
+\[
+\alpha_{n+1}^{\prime}<0.
+\]
+
+\end_inset
+
+ Из тождества 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:conjugate-irrational-continued-fraction-residue"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+\left(\alpha_{n+1}^{\prime}+1\right)q_{n}=q_{n}-q_{n-1}+\frac{1}{q_{n}}\cdot\frac{\left(-1\right)^{n}}{\alpha^{\prime}-\frac{p_{n}}{q_{n}}}.
+\]
+
+\end_inset
+
+Поскольку 
+\begin_inset Formula $q_{n}-q_{n-1}\ge1$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее
+\end_layout
+
+\end_inset
+
+, то можем заключить, что при всех достаточно больших 
+\begin_inset Formula $n$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $\alpha_{n+1}^{\prime}+1>0$
+\end_inset
+
+ или 
+\begin_inset Formula $-1\le\alpha_{n+1}^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Доказанные неравенства означают, что для всех 
+\begin_inset Formula $n$
+\end_inset
+
+, превосходящих некоторую границу, все числа 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
+
+ будут приведёнными.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:set-of-reduced-quadratic-irrationals-with-given-D-is-finite"
+
+\end_inset
+
+Для каждого целого числа 
+\begin_inset Formula $D>0$
+\end_inset
+
+ существует лишь конечное число приведённых квадратичных иррациональностей
+ с дискриминантом 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Предположим, что 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ приведённая квадратичная иррациональность дискриминанта 
+\begin_inset Formula $D$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x\right)=ax^{2}+bx+c$
+\end_inset
+
+ — многочлен, удовлетворяющий условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:quadric-irrational-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $b^{2}-4ac=D$
+\end_inset
+
+ и 
+\begin_inset Formula $c\neq0$
+\end_inset
+
+ (в противном случае одним из корней 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ является 
+\begin_inset Formula $0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+Условие приведённости означает, что 
+\begin_inset Formula $c=a\alpha\alpha^{\prime}<0$
+\end_inset
+
+.
+ Значит, 
+\begin_inset Formula $b^{2}+4a\left|c\right|=D$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|b\right|\le\sqrt{D}$
+\end_inset
+
+, 
+\begin_inset Formula $0<a<\frac{D}{4}$
+\end_inset
+
+, 
+\begin_inset Formula $-\frac{D}{4}<c<0$
+\end_inset
+
+, то есть при фиксированном 
+\begin_inset Formula $D$
+\end_inset
+
+ каждый из целых коэффициентов 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $c$
+\end_inset
+
+ может иметь лишь конечное число значений.
+ Значит конечно и число многочленов 
+\begin_inset Formula $f\left(x\right)=ax^{2}+bx+c$
+\end_inset
+
+, таким образом лемма доказана.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+(Завершение доказательства теоремы).
+ Докажем, что каждая квадратичная иррациональность раскладывается в периодическу
+ю цепную дробь.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — квадратичная иррациональность.
+ Обозначим 
+\begin_inset Formula $D=D\left(\alpha\right)$
+\end_inset
+
+.
+ Из лемм 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:quadratic-irrationality-as-integer-plus-inverse-of-real"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:quadratic-irrational-risudes-is-reduced-eventually"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что найдётся цело число 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ такое, что при всех 
+\begin_inset Formula $n\ge n_{0}$
+\end_inset
+
+ числа 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
+
+ будут приведёнными квадратичными иррациональностями дискриминанта 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ Из леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:set-of-reduced-quadratic-irrationals-with-given-D-is-finite"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что среди них может быть лишь конечное число различных.
+ Поэтому найдутся два индекса 
+\begin_inset Formula $m>l>n_{0}$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $\alpha_{m}=\alpha_{l}$
+\end_inset
+
+.
+ Каждый остаток непрерывной дроби однозначно определяется по предшествующему
+ остатку, поэтому 
+\begin_inset Formula $\alpha_{m+1}=\alpha_{l+1}$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha_{m+2}=\alpha_{l+2}$
+\end_inset
+
+ и так далее.
+ Обозначив 
+\begin_inset Formula $k=m-k>0$
+\end_inset
+
+, получившиеся равенства можно записать в виде 
+\begin_inset Formula $\alpha_{n+k}=\alpha_{n}$
+\end_inset
+
+ при любом 
+\begin_inset Formula $n\ge l$
+\end_inset
+
+.
+ Требуемая периодичность непрерывной дроби доказана.
+\end_layout
+
+\begin_layout Standard
+Определим теперь, разложение каких квадратичных иррациональностей в цепную
+ дробь будет чисто периодическим.
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — квадратичная иррациональность.
+ Цепная дробь будет чисто периодической в том и только том случае, когда
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — приведённая иррациональность.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать доказательства
 \end_layout
 
 \end_inset
 
 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Если цепная дробь 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — чисто периодическая, то с некоторым натуральным 
+\begin_inset Formula $k$
+\end_inset
+
+ при любом 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ выполняются равенства 
+\begin_inset Formula $\alpha_{n+k}=\alpha_{n}$
+\end_inset
+
+.
+ В частности, 
+\begin_inset Formula $\alpha=\alpha_{0}=\alpha_{rk}$
+\end_inset
+
+ при любом целом 
+\begin_inset Formula $r\ge0$
+\end_inset
+
+.
+ Выбрав 
+\begin_inset Formula $r$
+\end_inset
+
+ достаточно большим, в соответствии с леммой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:quadratic-irrational-risudes-is-reduced-eventually"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ заключаем, что 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — приведённая квадратичная иррациональность.
+\end_layout
+
+\begin_layout Proof
+Предположим теперь, что 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — приведённая квадратичная иррациональность.
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:quadratic-irrationality-as-integer-plus-inverse-of-real"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно утверждать, что все числа 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ являются приведёнными.
+ Согласно теореме Эйлера-Лагранжа (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Euler-Lagrange-quadratic-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) найдутся целые индексы 
+\begin_inset Formula $k$
+\end_inset
+
+ и 
+\begin_inset Formula $l$
+\end_inset
+
+ такие, что при любом 
+\begin_inset Formula $n\ge l$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula $\alpha_{n+k}=\alpha_{k}$
+\end_inset
+
+.
+ Будем считать, что 
+\begin_inset Formula $l$
+\end_inset
+
+ — наименьшее число с таким свойством.
+ Допустим, что 
+\begin_inset Formula $l\ge1$
+\end_inset
+
+.
+ Из равенств 
+\begin_inset Formula 
+\begin{equation}
+\alpha_{l-1}=a_{l-1}+\frac{1}{\alpha_{l}},\qquad\alpha_{l+k-1}=a_{l+k-1}+\frac{1}{\alpha_{l+k}}\label{eq:thm-8.10-recurrence}
+\end{equation}
+
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+-\frac{1}{\alpha_{l}^{\prime}}=a_{l-1}-\alpha_{l-1}^{\prime},\qquad-\frac{1}{\alpha_{l+k}^{\prime}}=a_{l+k-1}-\alpha_{l+k-1}^{\prime}.
+\]
+
+\end_inset
+
+Учитывая, что 
+\begin_inset Formula $\alpha_{l-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha_{l+k-1}$
+\end_inset
+
+ — приведённые иррациональности, получаем 
+\begin_inset Formula $0<-\alpha_{l-1}^{\prime}<1$
+\end_inset
+
+ и 
+\begin_inset Formula $0<-\alpha_{l+k-1}^{\prime}<1$
+\end_inset
+
+, так что 
+\begin_inset Formula 
+\[
+a_{l-1}=\left\lfloor -\frac{1}{\alpha_{l}^{\prime}}\right\rfloor ,\qquad a_{l+k-1}=\left\lfloor -\frac{1}{\alpha_{l+k}^{\prime}}\right\rfloor .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из равенства 
+\begin_inset Formula $\alpha_{l}=\alpha_{l+k}$
+\end_inset
+
+ следует 
+\begin_inset Formula $\alpha_{l}^{\prime}=\alpha_{l+k}^{\prime}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{l-1}=a_{l+k-1}$
+\end_inset
+
+.
+ Возвращаясь к равенствам 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:thm-8.10-recurrence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+\alpha_{l-1}=a_{l+k-1},
+\]
+
+\end_inset
+
+ что противоречит минимальности 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ Следовательно, 
+\begin_inset Formula $l=0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
