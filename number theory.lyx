@@ -46953,6 +46953,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:condition-of-best-approximation"
+
+\end_inset
+
 Если несократимая дробь 
 \begin_inset Formula $\frac{p}{q}$
 \end_inset
@@ -48442,6 +48448,16 @@ noprefix "false"
 \emph on
 чисто периодической
 \emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Этот термин использовался до определения!
+\end_layout
+
+\end_inset
+
 , если равенство 
 \begin_inset Formula $a_{n+k}=a_{n}$
 \end_inset
@@ -49530,6 +49546,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:reduced-quadratic-irrationality"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -49544,16 +49566,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать доказательства
-\end_layout
-
-\end_inset
-
-
 \begin_inset Note Comment
 status open
 
@@ -49757,6 +49769,2677 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Использование цепных дробей для решения некоторых диофантовых уравнений
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $d$
+\end_inset
+
+ — натуральное число, не являющееся квадратом какого-либо целого числа.
+ Диофантово уравнение 
+\begin_inset Formula 
+\begin{equation}
+x^{2}-dy^{2}=1\label{eq:Pell-equation}
+\end{equation}
+
+\end_inset
+
+ называется уравнением Пелля.
+ Ясно, что если пара целых чисел 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ есть решение этого уравнения, то числа 
+\begin_inset Formula $\pm x$
+\end_inset
+
+, 
+\begin_inset Formula $\pm y$
+\end_inset
+
+ при любом выборе знаков также будут составлять решение уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Pell-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Поэтому, оставив в стороне тривиальное решение 
+\begin_inset Formula $x=\pm1$
+\end_inset
+
+, 
+\begin_inset Formula $y=0$
+\end_inset
+
+, далее будем рассматривать решения с условием 
+\begin_inset Formula $x>0,y>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если числа 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ образуют решение уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Pell-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $x^{2}>dy^{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $x>\sqrt{d}\cdot y$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula 
+\[
+\left|x-\sqrt{d}y\right|=\frac{1}{x+\sqrt{d}y}<\frac{1}{2\sqrt{d}y}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+\left|\sqrt{d}-\frac{x}{y}\right|<\frac{1}{2\sqrt{d}y^{2}}<\frac{1}{2y^{2}}.
+\]
+
+\end_inset
+
+ С помощью теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:condition-of-best-approximation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ заключаем теперь, что дробь 
+\begin_inset Formula $\frac{x}{y}$
+\end_inset
+
+ есть подходящая дробь к числу 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+.
+ Таким образом, задача нахождения решения уравнения Пелля в натуральных
+ числа сводится к поиску тех из подходящих дробей для 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+, которые удовлетворяют этому уравнению.
+\end_layout
+
+\begin_layout Standard
+Разложение в цепные дроби чисел вида 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+ обладают рядом особенностей.
+ К их описанию мы сейчас и перейдём.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:minus-inverse-conjugate-of-reduced-is-reduced"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — приведённая квадратичная иррациональность.
+ Тогда 
+\begin_inset Formula $\beta=-\frac{1}{\alpha^{\prime}}$
+\end_inset
+
+ — также приведённая квадратичная иррациональность.
+ Период цепной дроби 
+\begin_inset Formula $\beta$
+\end_inset
+
+ состоит из чисел периода 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, записанных в обратном порядке.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — квадратичная иррациональность, то 
+\begin_inset Formula $\alpha^{\prime}$
+\end_inset
+
+ — то же квадратичная иррациональность, так как 
+\begin_inset Formula $\alpha^{\prime}$
+\end_inset
+
+ является вторым корнем многочлена, корнем которого является 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\beta\in\mathbb{Q}\left(\sqrt{D\left(\alpha\right)}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ не является иррациональным числом (иначе 
+\begin_inset Formula $\alpha^{\prime}$
+\end_inset
+
+, а значит и 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ не является иррациональным), то 
+\begin_inset Formula $\beta$
+\end_inset
+
+ — квадратичная иррациональность.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — приведённая иррациональность, то по определению имеют место неравенства
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:reduced-real-condition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+ и 
+\begin_inset Formula $-1<\alpha^{\prime}<0$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $0<-\alpha^{\prime}<1$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta=-\frac{1}{\alpha^{\prime}}>1$
+\end_inset
+
+.
+ По свойствам арифметических операций над сопряжёнными числами 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:irrational-conjugate-arithmetic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеем 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказано ли, что 
+\begin_inset Formula $\left(\alpha^{\prime}\right)^{\prime}=\alpha$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta^{\prime}=-\left(\frac{1}{\alpha^{\prime}}\right)^{\prime}=-\frac{1}{\left(\alpha^{\prime}\right)^{\prime}}=-\frac{1}{\alpha}.
+\]
+
+\end_inset
+
+Так как 
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+, то 
+\begin_inset Formula $0<\frac{1}{\alpha}<1$
+\end_inset
+
+ и 
+\begin_inset Formula $-1<\beta^{\prime}=-\frac{1}{\alpha}<0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\beta$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta^{\prime}$
+\end_inset
+
+ также удовлетворяют условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:reduced-real-condition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то есть 
+\begin_inset Formula $\beta$
+\end_inset
+
+ является приведённой квадратичной иррациональностью.
+ Первое утверждение леммы доказано.
+\end_layout
+
+\begin_layout Proof
+По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:reduced-quadratic-irrationality"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ цепная дробь числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ является чисто периодической: 
+\begin_inset Formula 
+\[
+\alpha=\left[\overline{a_{0},a_{1},\dots a_{m}}\right]=\left[a_{0};a_{1},\dots,a_{m},\alpha\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Тогда при 
+\begin_inset Formula $k=0,\dots,m-1$
+\end_inset
+
+ имеем
+\begin_inset Formula 
+\begin{equation}
+\alpha_{k}=a_{k}+\frac{1}{\alpha_{k+1}}\label{eq:alpha-recurrence}
+\end{equation}
+
+\end_inset
+
+и 
+\begin_inset Formula $\alpha_{m}=\alpha_{0}$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula 
+\[
+\beta_{k}=-\frac{1}{\alpha_{m+1-k}^{\prime}},\qquad k=0,1,\dots m+1.
+\]
+
+\end_inset
+
+Тогда из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:alpha-recurrence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+\alpha_{k}^{\prime}=a_{k}+\frac{1}{\alpha_{k+1}^{\prime}}
+\]
+
+\end_inset
+
+ или, в новых обозначениях, 
+\begin_inset Formula 
+\[
+-\frac{1}{\beta_{m+1-k}}=a_{k}-\beta_{m-k},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta_{m-k}=a_{k}+\frac{1}{\beta_{m-k+1}},\qquad0\le k\le m.
+\]
+
+\end_inset
+
+ Введя новую переменную 
+\begin_inset Formula $j=m-k$
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\begin{equation}
+\beta_{j}=a_{m-j}+\frac{1}{\beta_{j+1}},0\le j\le m.\label{eq:beta-recurrence}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Согласно лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:quadratic-irrationality-as-integer-plus-inverse-of-real"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ все числа 
+\begin_inset Formula $\alpha_{m+1-k}$
+\end_inset
+
+ приведены.
+ Значит, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minus-inverse-conjugate-of-reduced-is-reduced"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, числа 
+\begin_inset Formula $\beta_{k}$
+\end_inset
+
+ также являются приведёнными и, следовательно, 
+\begin_inset Formula $\beta_{k}>1$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula 
+\[
+0<\frac{1}{\beta_{k}}<1
+\]
+
+\end_inset
+
+и из равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:beta-recurrence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+\left\lfloor \beta_{k}\right\rfloor =a_{m-k},\qquad0\le k\le m.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Из определения чисел 
+\begin_inset Formula $\beta_{k}$
+\end_inset
+
+ следует, что 
+\begin_inset Formula 
+\[
+\beta_{m+1}=-\frac{1}{\alpha_{0}^{\prime}}=-\frac{1}{\alpha_{m+1}^{\prime}}=\beta_{0}=\beta.
+\]
+
+\end_inset
+
+ Поскольку 
+\begin_inset Formula $\alpha=\alpha_{0}$
+\end_inset
+
+, то 
+\begin_inset Formula $\beta=\beta_{0}=-\frac{1}{\alpha_{0}^{\prime}}=-\frac{1}{\alpha^{\prime}}$
+\end_inset
+
+, таким образом
+\begin_inset Formula 
+\[
+\beta=\left[\overline{a_{m},a_{m-1},\dots a_{1},a_{0}}\right]
+\]
+
+\end_inset
+
+и это завершает доказательство леммы.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:continued-fraction-of-square-root-of-integer"
+
+\end_inset
+
+Если 
+\begin_inset Formula $d$
+\end_inset
+
+ — натуральное число, не являющееся квадратом никакого целого числа, то
+ 
+\begin_inset Formula 
+\[
+\sqrt{d}=\left[a_{0};\overline{a_{1},\dots,a_{k},2a_{0}}\right],
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $a_{0}=\left\lfloor \sqrt{d}\right\rfloor $
+\end_inset
+
+, причём упорядоченный набор чисел 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ симметричен, то есть 
+\begin_inset Formula $a_{j}=a_{k+1-j}$
+\end_inset
+
+ при 
+\begin_inset Formula $j=1,2\dots,k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+ — квадратичная иррациональность, так как 
+\begin_inset Formula $d$
+\end_inset
+
+ не рациональное
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее?
+\end_layout
+
+\end_inset
+
+ и является корнем многочлена 
+\begin_inset Formula $x^{2}-d=0$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $\alpha=\sqrt{d}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\alpha^{\prime}=-\sqrt{d}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $d$
+\end_inset
+
+ — натуральное число, не являющееся квадратом, то 
+\begin_inset Formula $d>1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+.
+ Но не исключёна возможность, что 
+\begin_inset Formula $\alpha^{\prime}<-1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ может не быть приведённой квадратичной иррациональностью.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим число 
+\begin_inset Formula $\gamma=a_{0}+\sqrt{d}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\gamma\in\mathbb{Q}\left(\sqrt{d}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ иррационально (в противном случае рациональным было и бы число 
+\begin_inset Formula $\sqrt{d}=\gamma-a_{0}$
+\end_inset
+
+), то 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ — квадратичная иррациональность.
+ По свойствам арифметических операций с сопряжёнными числами 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:irrational-conjugate-arithmetic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеем:
+\begin_inset Formula 
+\[
+\gamma^{\prime}=\left(a_{0}+\sqrt{d}\right)^{\prime}=a_{0}^{\prime}+\left(\sqrt{d}\right)^{\prime}=a_{0}-\sqrt{d}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $a_{0}=\left\lfloor \sqrt{d}\right\rfloor $
+\end_inset
+
+, то 
+\begin_inset Formula $\sqrt{d}-1<a_{0}<\sqrt{d}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $-1<a_{0}-\sqrt{d}=\gamma^{\prime}<0$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ удовлетворяет условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:reduced-real-condition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то есть 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ — приведённая квадратичная иррациональность.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:reduced-quadratic-irrationality"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, цепная дробь 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ будет чисто периодической.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ — целое число, то имеем
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылки
+\end_layout
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\lfloor \gamma\right\rfloor =\left\lfloor a_{0}+\sqrt{d}\right\rfloor =a_{0}+\left\lfloor \sqrt{d}\right\rfloor =a_{0}+a_{0}=2a_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом: 
+\begin_inset Formula 
+\begin{equation}
+\gamma=\left[\overline{2a_{0},a_{1},\dots,a_{k}}\right],\label{eq:gamma-continued-fraction}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $a_{1},\dots,a_{k}$
+\end_inset
+
+ — некоторые целые числа.
+ Так как 
+\begin_inset Formula $\gamma+\gamma^{\prime}=a_{0}+\sqrt{d}+a_{0}-\sqrt{d}=2a_{0}$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\gamma=2a_{0}-\gamma^{\prime}=2a_{0}+\frac{1}{\left(-\frac{1}{\gamma^{\prime}}\right)},
+\]
+
+\end_inset
+
+и получаем разложение 
+\begin_inset Formula 
+\[
+-\frac{1}{\gamma^{\prime}}=\frac{1}{\gamma-2a_{0}}=\left[\overline{a_{1},\dots,a_{k},2a_{0}}\right].
+\]
+
+\end_inset
+
+Согласно лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minus-inverse-conjugate-of-reduced-is-reduced"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ отсюда следует 
+\begin_inset Formula $\gamma=\left[\overline{2a_{0},a_{k},\dots,a_{1}}\right]$
+\end_inset
+
+.
+ Сравнивая эту цепную дробь с 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:gamma-continued-fraction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получаем утверждение о симметрии.
+\end_layout
+
+\begin_layout Lemma
+Пусть 
+\begin_inset Formula $d$
+\end_inset
+
+ — натуральное число, не являющееся квадратом никакого целого числа и 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
+
+ — последовательность остатков цепной дроби 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+, определённая равенствами 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестереко ссылка на другую формулу, которая не имеет отношения к цепным
+ дробям
+\end_layout
+
+\end_inset
+
+.
+ Для каждого 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\begin{equation}
+\alpha_{n}=\frac{A_{n}+\sqrt{d}}{B_{n}},\qquad A_{n}\ge0,\quad B_{n}>0,\label{eq:residues-of-continued-fraction-of-square-root}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $B_{n}$
+\end_inset
+
+ — целые числа.
+ При 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ справедливы равенства 
+\begin_inset Formula 
+\[
+A_{n+1}=a_{n}B_{n}-A_{n},\quad B_{n+1}=\frac{d-A_{n+1}^{2}}{B_{n}},\quad A_{0}=0,\quad B_{0}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Докажем равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:residues-of-continued-fraction-of-square-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ методом математической индукции.
+ При 
+\begin_inset Formula $n=0$
+\end_inset
+
+ это равенство выполняется, если положить 
+\begin_inset Formula $A_{0}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $B_{0}=1$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Сначала написал доказательство более длинное, чем у Нестеренко
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть теперь равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:residues-of-continued-fraction-of-square-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ выполняется для всех целых чисел 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ вплоть до некоторого 
+\begin_inset Formula $m$
+\end_inset
+
+, докажем его для 
+\begin_inset Formula $n=m+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula 
+\[
+\alpha_{1}=\frac{1}{\sqrt{d}-a_{0}}=\frac{\sqrt{d}+a_{0}}{d-a_{0}^{2}},
+\]
+
+\end_inset
+
+то по определению сопряжённого числа имеем 
+\begin_inset Formula 
+\[
+\alpha_{1}^{\prime}=\frac{-\sqrt{d}+a_{0}}{d-a_{0}^{2}}=-\frac{1}{\sqrt{d}+a_{0}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $a_{0}=\left\lfloor \sqrt{d}\right\rfloor $
+\end_inset
+
+ и 
+\begin_inset Formula $d$
+\end_inset
+
+ не является квадратом целого числа по условию леммы, то 
+\begin_inset Formula $0<\sqrt{d}-a_{0}<1$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+По-моему, доказываем два раза, нужно вынести в отдельное утверждение
+\end_layout
+
+\end_inset
+
+, а значит 
+\begin_inset Formula $\alpha_{1}>1$
+\end_inset
+
+ и 
+\begin_inset Formula $-1<\alpha_{1}^{\prime}<0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ — приведённая квадратичная иррациональность.
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:quadratic-irrationality-as-integer-plus-inverse-of-real"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ приведёнными иррациональностями будут все 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula 
+\[
+ax^{2}+bx+c,\qquad a,b,c\in\mathbb{Z},\qquad\left(a,b,c\right)=1,\qquad a>0
+\]
+
+\end_inset
+
+ — многочлен, корнем которого является 
+\begin_inset Formula $\alpha_{m+1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\alpha_{m+1}$
+\end_inset
+
+ — приведённая квадратичная иррациональность, то 
+\begin_inset Formula $\alpha_{m+1}>\alpha_{m+1}^{\prime}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\alpha_{m+1}=\frac{-b+\sqrt{D\left(\alpha_{m+1}\right)}}{2a},\qquad\alpha_{m+1}^{\prime}=\frac{-b-\sqrt{D\left(\alpha_{m+1}\right)}}{2a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:quadratic-irrationality-as-integer-plus-inverse-of-real"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеем 
+\begin_inset Formula $D\left(\alpha_{m}\right)=D\left(\alpha_{0}\right)=D\left(\alpha\right)$
+\end_inset
+
+.
+ Так как, по определению 
+\begin_inset Formula $\alpha=\sqrt{d}$
+\end_inset
+
+, то 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ является корнем многочлена 
+\begin_inset Formula $x^{2}-d=0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $D\left(\alpha_{n}\right)=D\left(\alpha\right)=4d$
+\end_inset
+
+.
+ С другой стороны, 
+\begin_inset Formula $D\left(\alpha_{m}\right)=b^{2}-4ac$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $b^{2}-4ac=4d$
+\end_inset
+
+.
+ Отсюда следует, что 
+\begin_inset Formula $b^{2}=4d+4ac$
+\end_inset
+
+, то есть 
+\begin_inset Formula $b$
+\end_inset
+
+ является чётным числом.
+ Поэтому 
+\begin_inset Formula 
+\[
+\alpha_{m+1}=\frac{-b+\sqrt{4d}}{2a}=\frac{-b+2\sqrt{d}}{2a}=\frac{-\frac{b}{2}+\sqrt{d}}{a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, можно положить 
+\begin_inset Formula $B_{m+1}=a>0$
+\end_inset
+
+ и 
+\begin_inset Formula $A_{m+1}=-\frac{b}{2}$
+\end_inset
+
+, причём 
+\begin_inset Formula $A_{m+1}$
+\end_inset
+
+ и 
+\begin_inset Formula $B_{m+1}$
+\end_inset
+
+ — целые числа.
+ Так как 
+\begin_inset Formula 
+\[
+\alpha_{m+1}=\frac{A_{m+1}+\sqrt{d}}{B_{m+1}},
+\]
+
+\end_inset
+
+то получаем 
+\begin_inset Formula 
+\[
+\alpha_{m+1}^{\prime}=\frac{A_{m+1}-\sqrt{d}}{B_{m+1}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\alpha_{m+1}$
+\end_inset
+
+ — приведённая квадратичная иррациональность, то 
+\begin_inset Formula $\alpha_{m+1}>1$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha_{m+1}^{\prime}>-1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\alpha_{m+1}+\alpha_{m+1}^{\prime}=\frac{2A_{m+1}}{B_{m+1}}>0.
+\]
+
+\end_inset
+
+Так как уже доказано, что 
+\begin_inset Formula $B_{m+1}>0$
+\end_inset
+
+, то получаем, что 
+\begin_inset Formula $A_{m+1}>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\alpha_{m}=a_{m}+\frac{1}{\alpha_{m+1}}$
+\end_inset
+
+, то можно написать 
+\begin_inset Formula $\alpha_{m+1}\left(\alpha_{m}-a_{m}\right)=1$
+\end_inset
+
+.
+ Подставляя выражения для 
+\begin_inset Formula $\alpha_{m}$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha_{m+1}$
+\end_inset
+
+ получим 
+\begin_inset Formula 
+\[
+\frac{A_{m+1}+\sqrt{d}}{B_{m+1}}\cdot\left(\frac{A_{m}+\sqrt{d}}{B_{m}}-a_{m}\right)=1.
+\]
+
+\end_inset
+
+Умножив это выражение на 
+\begin_inset Formula $B_{m}B_{m+1}$
+\end_inset
+
+ получим выражение 
+\begin_inset Formula 
+\[
+\left(A_{m+1}+\sqrt{d}\right)\left(A_{m}-a_{m}B_{m}+\sqrt{d}\right)=B_{m}B_{m+1},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A_{m+1}\left(A_{m}-a_{m}B_{m}\right)+\sqrt{d}\cdot\left(A_{m}-a_{m}B_{m}+A_{m+1}\right)+d=B_{m}B_{m+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как правая часть последнего равенства является рациональным числом,
+ то множитель при 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+ должен быть равен нулю, то есть 
+\begin_inset Formula 
+\[
+A_{m+1}=a_{m}B_{m}+A_{m},
+\]
+
+\end_inset
+
+но тогда 
+\begin_inset Formula 
+\[
+B_{m}B_{m+1}=-A_{m+1}^{2}+d
+\]
+
+\end_inset
+
+ или 
+\begin_inset Formula 
+\[
+B_{m+1}=\frac{d-A_{m+1}^{2}}{B_{m}}.
+\]
+
+\end_inset
+
+Все утверждения леммы доказаны.
+\end_layout
+
+\begin_layout Lemma
+Если в условиях предыдущей леммы 
+\begin_inset Formula $\frac{p_{n}}{q_{n}}$
+\end_inset
+
+ — подходящая дробь к 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\begin{equation}
+p_{n}^{2}-dq_{n}^{2}=\left(-1\right)^{n+1}B_{n+1},\qquad n\ge-1.\label{eq:Pell-like-alteration}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Из равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-for-irrational-down"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $\alpha=\sqrt{d}$
+\end_inset
+
+ и 
+\begin_inset Formula $k=n$
+\end_inset
+
+ находим 
+\begin_inset Formula 
+\[
+\sqrt{d}=\frac{\alpha_{n+1}p_{n}+p_{n-1}}{\alpha_{n+1}q_{n}+q_{n-1}}
+\]
+
+\end_inset
+
+ или 
+\begin_inset Formula 
+\[
+\left(\alpha_{n+1}q_{n}+q_{n-1}\right)\sqrt{d}=\alpha_{n+1}p_{n}+p_{n-1},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\alpha_{n+1}\left(q_{n}\sqrt{d}-p_{n}\right)=p_{n-1}-q_{n-1}\sqrt{d}.\label{eq:Pell-like-alteration-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Умножив это равенство на 
+\begin_inset Formula $q_{n}\sqrt{d}+p_{n}$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+\alpha_{n+1}\left(q_{n}^{2}d-p_{n}^{2}\right)=\left(p_{n-1}-q_{n-1}\sqrt{d}\right)\left(q_{n}\sqrt{d}+p_{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Подставим в это равенство выражение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:residues-of-continued-fraction-of-square-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для 
+\begin_inset Formula $\alpha_{n+1}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\frac{A_{n+1}+\sqrt{d}}{B_{n+1}}\left(q_{n}^{2}d-p_{n}^{2}\right)=\left(p_{n-1}-q_{n-1}\sqrt{d}\right)\left(q_{n}\sqrt{d}+p_{n}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(A_{n+1}+\sqrt{d}\right)\left(q_{n}^{2}d-p_{n}^{2}\right)=B_{n+1}\left(p_{n-1}p_{n}-q_{n-1}q_{n}d+\sqrt{d}\left(p_{n-1}q_{n}-q_{n-1}p_{n}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+ — иррациональное число, поэтому можно приравнять множители, содержащие
+ и не содержащие 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+ , по-отдельности: 
+\begin_inset Formula 
+\[
+A_{n+1}\left(q_{n}^{2}d-p_{n}^{2}\right)=B_{n+1}\left(p_{n-1}p_{n}-q_{n-1}q_{n}d\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(q_{n}^{2}d-p_{n}^{2}\right)=B_{n+1}\left(p_{n-1}q_{n}-q_{n-1}p_{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Воспользовавшись тождеством 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fractions-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+p_{n}^{2}-dq_{n}^{2}=-B_{n+1}\left(-1\right)^{n}=B_{n+1}\left(-1\right)^{n+1},
+\]
+
+\end_inset
+
+что и завершает доказательство леммы.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Pell-equation-solutions"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $d$
+\end_inset
+
+ — натуральное число, не равное квадрату целого, и 
+\begin_inset Formula 
+\[
+\sqrt{d}=\left[a_{0};\overline{a_{1},\dots,a_{k},2a_{0}}\right]
+\]
+
+\end_inset
+
+— разложение в цепную дробь с наименьшим периодом.
+ Множество решений уравнения Пелля в натуральных числах состоит из пар 
+\begin_inset Formula $\left(p_{n},q_{n}\right)$
+\end_inset
+
+ числителей и знаменателей подходящих дробей к 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+ с условием, что 
+\begin_inset Formula $n+1$
+\end_inset
+
+ чётно и делится на 
+\begin_inset Formula $k+1$
+\end_inset
+
+.
+ Определим целые положительные числа 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ равенствами 
+\begin_inset Formula 
+\[
+x_{1}+y_{1}\sqrt{d}=\begin{cases}
+p_{k}+q_{k}\sqrt{d}, & 2\nmid k,\\
+\left(p_{k}+q_{k}\sqrt{d}\right)^{2}, & 2\mid k.
+\end{cases}
+\]
+
+\end_inset
+
+ Все решения уравнения Пелля 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Pell-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ в натуральных числах образуют последовательность 
+\begin_inset Formula $\left(x_{m},y_{m}\right)$
+\end_inset
+
+ и получаются по формуле 
+\begin_inset Formula 
+\begin{equation}
+x_{m}+y_{m}\sqrt{d}=\left(x_{1}+y_{1}\sqrt{d}\right)^{m},\qquad m=1,2,\dots.\label{eq:Pells-equation-general-solution}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что тривиальные решения 
+\begin_inset Formula $x=1$
+\end_inset
+
+, 
+\begin_inset Formula $y=0$
+\end_inset
+
+ уравнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Pell-equation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ получается по формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Pells-equation-general-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $m=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Как уже говорилось в начале параграфа
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Выделить там утверждение и сослаться
+\end_layout
+
+\end_inset
+
+, все решения 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ уравнения Пелля в натуральных числах содержатся среди числителей и знаменателей
+ подходящих дробей к 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+.
+ Согласно формуле 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Pell-like-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ пара чисел 
+\begin_inset Formula $\left(p_{n},q_{n}\right)$
+\end_inset
+
+ будет решением уравнения Пелля лишь в случае, когда выполняются два условия:
+\end_layout
+
+\begin_layout Proof
+1) 
+\begin_inset Formula $n$
+\end_inset
+
+ — нечётно,
+\end_layout
+
+\begin_layout Proof
+2) 
+\begin_inset Formula $B_{n+1}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Равенство 
+\begin_inset Formula $B_{n+1}=1$
+\end_inset
+
+ выполняется, в соответствии с формулой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:residues-of-continued-fraction-of-square-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, в том и только том случае, когда 
+\begin_inset Formula $\alpha_{n+1}=A_{n+1}+\sqrt{d}$
+\end_inset
+
+.
+ Так как при этом 
+\begin_inset Formula $\alpha_{n+1}$
+\end_inset
+
+ приведено
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Сослаться
+\end_layout
+
+\end_inset
+
+, то 
+\begin_inset Formula $-1<A_{n+1}-\sqrt{d}<0$
+\end_inset
+
+, и, значит, 
+\begin_inset Formula $A_{n+1}=\left\lfloor \sqrt{d}\right\rfloor =a_{0}$
+\end_inset
+
+.
+ Следовательно, равенство 
+\begin_inset Formula $B_{n+1}=1$
+\end_inset
+
+ имеет место в том и только том случае, когда 
+\begin_inset Formula 
+\[
+\alpha_{n+1}=a_{0}+\sqrt{d}=\left[\overline{2a_{0},a_{1},\dots,a_{k}}\right],
+\]
+
+\end_inset
+
+то есть с некоторым целым 
+\begin_inset Formula $m\ge1$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $n+1=m\left(k+1\right)$
+\end_inset
+
+.
+ Итак, все решения уравнения Пелля в натуральных числах совпадают с парами
+ чисел 
+\begin_inset Formula $\left(p_{n},q_{n}\right)$
+\end_inset
+
+, номера которых нечётны и удовлетворяют условию 
+\begin_inset Formula $n+1=m\left(k+1\right)$
+\end_inset
+
+.
+ Это доказывает первое утверждение теоремы.
+\end_layout
+
+\begin_layout Proof
+Чтобы найти формулы для решений докажем сначала с помощью индукции по 
+\begin_inset Formula $n$
+\end_inset
+
+ справедливость равенств 
+\begin_inset Formula 
+\begin{equation}
+\alpha_{1}\alpha_{2}\cdot\dots\cdot\alpha_{n+1}=\frac{\left(-1\right)^{n+1}}{p_{n}-q_{n}\sqrt{d}},\qquad n\ge0.\label{eq:Pell-alphas-products}
+\end{equation}
+
+\end_inset
+
+ При 
+\begin_inset Formula $n=0$
+\end_inset
+
+ следует из равенств 
+\begin_inset Formula $\sqrt{d}=a_{0}+\frac{1}{\alpha_{1}}$
+\end_inset
+
+.
+ Предположим, что 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+\alpha_{1}\alpha_{2}\cdot\dots\cdot\alpha_{n}=\frac{\left(-1\right)^{n}}{p_{n-1}-q_{n-1}\sqrt{d}}.
+\]
+
+\end_inset
+
+Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Pell-like-alteration-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+\alpha_{n+1}=-\frac{q_{n-1}\sqrt{d}-p_{n-1}}{q_{n}\sqrt{d}-p_{n}},\qquad\ge0.
+\]
+
+\end_inset
+
+ Теперь для доказательства требуемого равенств достаточно перемножить два
+ последние равенства.
+\end_layout
+
+\begin_layout Proof
+В случае 
+\begin_inset Formula $n+1=m\left(k+1\right)$
+\end_inset
+
+, пользуясь тем, что цепная дробь 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+ имеет период длинной 
+\begin_inset Formula $k+1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\alpha_{i+k+1}=\alpha_{i}$
+\end_inset
+
+, находим 
+\begin_inset Formula 
+\[
+\alpha_{1}\alpha_{2}\cdot\dots\cdot\alpha_{n+1}=\left(\alpha_{1}\cdot\dots\cdot\alpha_{k+1}\right)^{m}=\frac{\left(-1\right)^{m\left(k+1\right)}}{\left(p_{k}-q_{k}\sqrt{d}\right)^{m}}.
+\]
+
+\end_inset
+
+ Сравнивая это равенство с 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Pell-alphas-products"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $n+1=m\left(k+1\right)$
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+p_{n}-q_{n}\sqrt{d}=\left(p_{k}-q_{k}\sqrt{d}\right)^{m}
+\]
+
+\end_inset
+
+или, переходя к сопряжённым числам, 
+\begin_inset Formula 
+\begin{equation}
+p_{n}+q_{n}\sqrt{d}=\left(p_{k}+q_{k}\sqrt{d}\right)^{m}.\label{eq:Pell-generic-solution-1}
+\end{equation}
+
+\end_inset
+
+Если 
+\begin_inset Formula $k$
+\end_inset
+
+ нечётно, то при любом натуральном 
+\begin_inset Formula $m$
+\end_inset
+
+ число 
+\begin_inset Formula $n+1=m\left(k+1\right)$
+\end_inset
+
+ будет чётным.
+ Следовательно, при любом натуральном 
+\begin_inset Formula $m$
+\end_inset
+
+ пара целых чисел 
+\begin_inset Formula $\left(p_{n},q_{n}\right)$
+\end_inset
+
+, определённая равенством 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Pell-generic-solution-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ будет решением уравнения Пелля.
+ Это доказывает второе утверждение теоремы при нечётном 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если же 
+\begin_inset Formula $k$
+\end_inset
+
+ чётно, то 
+\begin_inset Formula $n+1=m\left(k+1\right)$
+\end_inset
+
+ будет нечётным лишь в случае, когда 
+\begin_inset Formula $m=2r$
+\end_inset
+
+ — чётно.
+ Тогда из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Pell-generic-solution-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ находим 
+\begin_inset Formula 
+\[
+p_{n}+q_{n}\sqrt{d}=\left(p_{k}+q_{k}\sqrt{d}\right)^{2r}=\left(x_{1}+y_{1}\sqrt{d}\right)^{r}.
+\]
+
+\end_inset
+
+ Это завершает доказательство теоремы.
+\end_layout
+
+\begin_layout Remark
+Решения уравнения Пелля могут быть найдены с помощью рекуррентных соотношений
+ 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+x_{m+1}=x_{1}x_{m}+dy_{1}y_{m},\\
+y_{m+1}=y_{1}x_{m}+x_{1}y_{m},
+\end{array}
+\]
+
+\end_inset
+
+ справедливых при 
+\begin_inset Formula $m\ge0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Для доказательства достаточно заметить, что 
+\begin_inset Formula 
+\begin{multline*}
+x_{m+1}+y_{m+1}\sqrt{d}=\left(x_{1}+y_{1}\sqrt{d}\right)^{m+1}=\\
+=\left(x_{1}+y_{1}\sqrt{d}\right)\left(x_{1}+y_{1}\sqrt{d}\right)^{m}=\\
+=\left(x_{1}+y_{1}\sqrt{d}\right)\left(x_{m}+y_{m}\sqrt{d}\right),
+\end{multline*}
+
+\end_inset
+
+ раскрыть скобки и, воспользовавшись иррациональностью 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+, приравнять коэффициенты в правой и левой частях.
+\end_layout
+
+\begin_layout Example
+Найти все решения в натуральных числах уравнения 
+\begin_inset Formula 
+\[
+x^{2}-29y^{2}=1.
+\]
+
+\end_inset
+
+Следующие вычисления раскладывают 
+\begin_inset Formula $\alpha=\sqrt{29}$
+\end_inset
+
+ в непрерывную дробь: 
+\begin_inset Formula 
+\[
+\alpha_{0}=\sqrt{29},\qquad a_{0}=\left\lfloor \alpha_{0}\right\rfloor =5,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{1}=\frac{1}{\sqrt{29}-5}=\frac{\sqrt{29}+5}{4},\qquad a_{1}=\left\lfloor \alpha_{1}\right\rfloor =2,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{2}=\frac{1}{\alpha_{1}-2}=\frac{1}{\frac{\sqrt{29}+5}{4}-2}=\frac{4}{\sqrt{29}-3}=\frac{\sqrt{29}+3}{5},\qquad a_{2}=\left\lfloor \alpha_{2}\right\rfloor =1,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{3}=\frac{1}{\alpha_{2}-1}=\frac{1}{\frac{\sqrt{29}+3}{5}-1}=\frac{5}{\sqrt{29}-2}=\frac{\sqrt{29}+2}{5},\qquad a_{3}=\left\lfloor \alpha_{3}\right\rfloor =1,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{4}=\frac{1}{\alpha_{3}-1}=\frac{1}{\frac{\sqrt{29}+2}{5}-1}=\frac{5}{\sqrt{29}-3}=\frac{\sqrt{29}+3}{4},\qquad a_{4}=\left\lfloor \alpha_{4}\right\rfloor =2,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{5}=\frac{1}{\alpha_{4}-1}=\frac{1}{\frac{\sqrt{29}+3}{4}-2}=\frac{4}{\sqrt{29}-5}=\sqrt{29}+5,\qquad a_{5}=\left\lfloor \alpha_{5}\right\rfloor =10,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{6}=\frac{1}{\alpha_{5}-10}=\frac{1}{\sqrt{29}-5}=\alpha_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Таким образом, 
+\begin_inset Formula 
+\[
+\sqrt{29}=\left[5;\overline{2,1,1,2,10}\right].
+\]
+
+\end_inset
+
+ В данном случае 
+\begin_inset Formula $k=4$
+\end_inset
+
+.
+ Последовательность подходящих дробей в рассматриваемом случае такова: 
+\begin_inset Formula 
+\[
+\frac{p_{0}}{q_{0}}=\frac{5}{1},\frac{11}{2},\frac{16}{3},\frac{27}{5},\frac{p_{4}}{q_{4}}=\frac{70}{13},\dots
+\]
+
+\end_inset
+
+ Так как в данном случае 
+\begin_inset Formula $k$
+\end_inset
+
+ чётно, находим в соответствии с теоремой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Pell-equation-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+x_{1}+y_{1}\sqrt{29}=\left(70+13\sqrt{29}\right)^{2}=9801+1820\sqrt{29}.
+\]
+
+\end_inset
+
+Значит наименьшее решение данного уравнения в натуральных числах имеет вид
+ 
+\begin_inset Formula $x_{1}=9801$
+\end_inset
+
+, 
+\begin_inset Formula $y_{1}=1820$
+\end_inset
+
+.
+ Последовательность всех решений может быть вычислена по формуле 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+x_{m+1}=9801x_{m}+52780y_{m},\\
+y_{m+1}=1820x_{m}+9801y_{m}.
+\end{array}
+\]
+
+\end_inset
+
+Например, второе и третье решения имеют вид 
+\begin_inset Formula 
+\[
+\left(192119201,35675640\right),\qquad\left(376592056820,699313893460\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из доказательства теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Pell-equation-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что уравнение 
+\begin_inset Formula $x^{2}-dy^{2}=-1$
+\end_inset
+
+ разрешимо в целых числах лишь в случае, если длина наименьшего периода
+ в цепной дроби 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+ нечётна.
+ Известны лишь немногие случаи, когда можно утверждать, что это уравнение
+ разрешимо, не раскладывая 
+\begin_inset Formula $\sqrt{d}$
+\end_inset
+
+ в цепную дробь.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:anti-Pells-equation-with-prime-of-odd-period"
+
+\end_inset
+
+Если 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число вида 
+\begin_inset Formula $4n+1$
+\end_inset
+
+, то уравнение 
+\begin_inset Formula 
+\[
+x^{2}-py^{2}=-1
+\]
+
+\end_inset
+
+ разрешимо в целых числах, и, значит, наименьший период разложения 
+\begin_inset Formula $\sqrt{p}$
+\end_inset
+
+ в цепную дробь имеет нечётную длину.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+ — наименьшее решения уравнения 
+\begin_inset Formula $x^{2}-py^{2}=1$
+\end_inset
+
+ в натуральных числах.
+ Оно существует согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Pell-equation-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+u^{2}-\left(4n+1\right)v^{2}=1
+\]
+
+\end_inset
+
+ или 
+\begin_inset Formula 
+\[
+u^{2}-v^{2}\equiv1\qquad\left(\mod4\right),
+\]
+
+\end_inset
+
+ и, значит, 
+\begin_inset Formula $u$
+\end_inset
+
+ — нечётно, а 
+\begin_inset Formula $v$
+\end_inset
+
+ — чётно
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее
+\end_layout
+
+\end_inset
+
+.
+ Поскольку 
+\begin_inset Formula 
+\[
+\frac{u-1}{2}-\frac{u-1}{2}=1,
+\]
+
+\end_inset
+
+числа 
+\begin_inset Formula $\frac{u-1}{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{u+1}{2}$
+\end_inset
+
+ взаимно просты
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее
+\end_layout
+
+\end_inset
+
+.
+ Теперь из равенства 
+\begin_inset Formula 
+\[
+\frac{u-1}{2}\cdot\frac{u+1}{2}=p\left(\frac{v}{2}\right)^{2}
+\]
+
+\end_inset
+
+ заключаем, что с некоторыми натуральными числами 
+\begin_inset Formula $s$
+\end_inset
+
+, 
+\begin_inset Formula $t$
+\end_inset
+
+ и 
+\begin_inset Formula $\varepsilon=\pm1$
+\end_inset
+
+ выполняются равенства 
+\begin_inset Formula 
+\[
+\frac{u+\varepsilon}{2}=t^{2},\qquad\frac{u-\varepsilon}{2}=ps^{2}.
+\]
+
+\end_inset
+
+ Из этих равенств следует 
+\begin_inset Formula 
+\[
+t^{2}-ps^{2}=\varepsilon.
+\]
+
+\end_inset
+
+Учитывая условие минимальности при выборе решения и неравенство 
+\begin_inset Formula $1\le s<v$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее, откуда оно взялось
+\end_layout
+
+\end_inset
+
+, заключаем, что 
+\begin_inset Formula $\varepsilon=-1$
+\end_inset
+
+ и, значит, 
+\begin_inset Formula $t^{2}-ps^{2}=-1$
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко 
+\begin_inset Formula $u^{2}-pv^{2}=-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Из разрешимости уравнения 
+\begin_inset Formula $x^{2}-py^{2}=-1$
+\end_inset
+
+ в целых числах следует, что наименьший период разложения 
+\begin_inset Formula $\sqrt{p}$
+\end_inset
+
+ в цепную дробь имеет нечётную длину.
+\end_layout
+
+\begin_layout Standard
+Следующее утверждение было доказано ранее (лемма 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:prime-4k+1-is-sum-of-two-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Здесь же мы покажем, как с помощью непрерывных дробей можно находить решения
+ соответствующего диофантова уравнения.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:x^2+y^2=p=4n+1"
+
+\end_inset
+
+Если 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число вида 
+\begin_inset Formula $4n+1$
+\end_inset
+
+, то уравнение 
+\begin_inset Formula 
+\[
+x^{2}+y^{2}=p
+\]
+
+\end_inset
+
+ разрешимо в целых числах.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Из леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:anti-Pells-equation-with-prime-of-odd-period"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что длина наименьшего периода цепной дроби 
+\begin_inset Formula $\sqrt{p}$
+\end_inset
+
+ нечётна.
+ Вместе с утверждением леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:continued-fraction-of-square-root-of-integer"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ это позволяет написать 
+\begin_inset Formula 
+\[
+\sqrt{p}=\left[a_{0};\overline{a_{1},\dots,a_{r},a_{r},\dots,a_{1},2a_{0}}\right].
+\]
+
+\end_inset
+
+ Тогда 
+\begin_inset Formula 
+\[
+\alpha_{r+1}=\left[\overline{a_{r},\dots,a_{1},2a_{0},a_{1},\dots,a_{r}}\right]
+\]
+
+\end_inset
+
+ и по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minus-inverse-conjugate-of-reduced-is-reduced"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ заключаем 
+\begin_inset Formula $\alpha_{r+1}=-\frac{1}{\alpha_{r+1}^{\prime}}$
+\end_inset
+
+.
+ Значит 
+\begin_inset Formula $\alpha_{r+1}\cdot\alpha_{r+1}^{\prime}=-1$
+\end_inset
+
+.
+ Пользуясь теперь представлением 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:residues-of-continued-fraction-of-square-root"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ находим 
+\begin_inset Formula 
+\[
+\frac{A_{r+1}-\sqrt{p}}{B_{r+1}}\cdot\frac{A_{r+1}+\sqrt{p}}{B_{r+1}}=-1
+\]
+
+\end_inset
+
+ или 
+\begin_inset Formula 
+\[
+\frac{A_{r+1}^{2}-p}{B_{r+1}^{2}}=-1
+\]
+
+\end_inset
+
+и, следовательно, 
+\begin_inset Formula $A_{r+1}^{2}+B_{r+1}^{2}=p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Заметим, что приведённое доказательство даёт и способ вычисления решения.
+ Так при 
+\begin_inset Formula $p=29$
+\end_inset
+
+ имеем 
+\begin_inset Formula $r=2$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha_{3}=\frac{2+\sqrt{29}}{5}$
+\end_inset
+
+.
+ Пара чисел 
+\begin_inset Formula $\left(2,5\right)$
+\end_inset
+
+ составляет решение уравнения 
+\begin_inset Formula $x^{2}+y^{2}=29$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+(Второе доказательство теоремы)
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+ Так как 
+\begin_inset Formula $p$
+\end_inset
+
+ при делении на 
+\begin_inset Formula $4$
+\end_inset
+
+ даёт в остатке 
+\begin_inset Formula $1$
+\end_inset
+
+, то по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Legendre-symbol-properties"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Почему?
+\end_layout
+
+\end_inset
+
+ найдётся целое число 
+\begin_inset Formula $a$
+\end_inset
+
+, удовлетворяющее условиям 
+\begin_inset Formula 
+\[
+a^{2}+1\equiv0\quad\left(\mod p\right),\qquad0<a<p.
+\]
+
+\end_inset
+
+ Разложим рациональное число 
+\begin_inset Formula $\frac{a}{p}$
+\end_inset
+
+ в цепную дробь, и пусть 
+\begin_inset Formula $\frac{p_{k}}{q_{k}}$
+\end_inset
+
+ подходящая дробь к 
+\begin_inset Formula $\frac{a}{p}$
+\end_inset
+
+ с наибольшим номером, удовлетворяющим неравенству 
+\begin_inset Formula $q_{k}<\sqrt{p}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\sqrt{p}<q_{k+1}$
+\end_inset
+
+.
+ Из неравенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:continued-fraction-approximation-upper"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula 
+\[
+\left|\frac{a}{p}-\frac{p_{k}}{q_{k}}\right|\le\frac{1}{q_{k}q_{k+1}}<\frac{1}{q_{k}\sqrt{p}}.
+\]
+
+\end_inset
+
+ Умножим обе части последнего неравенства на произведение знаменателей левой
+ части.
+ В результате получится 
+\begin_inset Formula 
+\[
+\left|aq_{k}-pp_{k}\right|<\sqrt{p}.
+\]
+
+\end_inset
+
+ Тогда 
+\begin_inset Formula 
+\[
+\left(aq_{k}-pp_{k}\right)^{2}+q_{k}^{2}<2p.
+\]
+
+\end_inset
+
+ Кроме того имеем 
+\begin_inset Formula $aq_{k}-pp_{k}\equiv aq_{k}\quad\left(\mod p\right)$
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+\left(aq_{k}-pp_{k}\right)^{2}+q_{k}^{2}\equiv q_{k}^{2}\left(a^{2}+1\right)\equiv0\qquad\left(\mod p\right).
+\]
+
+\end_inset
+
+На интервале 
+\begin_inset Formula $0<x<2p$
+\end_inset
+
+ есть только одно целое число, делящееся на 
+\begin_inset Formula $p$
+\end_inset
+
+, а именно само 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $\left(aq_{k}-pp_{k}\right)^{2}+q_{k}^{2}=p$
+\end_inset
+
+, то есть рассматриваемому уравнению удовлетворяют числа 
+\begin_inset Formula $x=aq_{k}-pp_{k}$
+\end_inset
+
+ и 
+\begin_inset Formula $y=q_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Например, для решения уравнения 
+\begin_inset Formula $x^{2}+y^{2}=29$
+\end_inset
+
+ заметим, что сравнению 
+\begin_inset Formula $x^{2}+1\equiv0\quad\left(\mod29\right)$
+\end_inset
+
+ удовлетворяет число 
+\begin_inset Formula $x=12$
+\end_inset
+
+.
+ Справедливо разложение в цепную дробь 
+\begin_inset Formula $\frac{12}{29}=\left[0;2,2,2,2\right]$
+\end_inset
+
+.
+ Числитель и знаменатель подходящей дроби 
+\begin_inset Formula $\frac{p_{2}}{q_{2}}=\left[0;2,2\right]=\frac{2}{5}$
+\end_inset
+
+ удовлетворяют данном уравнению.
+\end_layout
+
+\begin_layout Standard
+Не трудно доказать, что уравнение из теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:x^2+y^2=p=4n+1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ с точностью до перестановки переменных имеет единственное решение.
 \end_layout
 
 \begin_layout Standard
