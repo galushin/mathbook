@@ -52442,13 +52442,552 @@ noprefix "false"
  с точностью до перестановки переменных имеет единственное решение.
 \end_layout
 
+\begin_layout Section
+Разложение числа 
+\begin_inset Formula $e$
+\end_inset
+
+ в цепную дробь
+\end_layout
+
 \begin_layout Standard
+Классическая постоянная 
+\begin_inset Formula $e$
+\end_inset
+
+ определяется в курсах математического анализа пределом 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left(1+\frac{1}{n}\right)^{n}=2,718281828459045235360287471352662497757\dots.
+\]
+
+\end_inset
+
+Как мы докажем ниже, эта десятичная дробь бесконечна и не имеет периода.
+\end_layout
+
+\begin_layout Standard
+Букву 
+\begin_inset Formula $e$
+\end_inset
+
+ для обозначения указанного предела впервые стал использовать Л.
+\begin_inset space \thinspace{}
+\end_inset
+
+Эйлер, который доказал также в 1737 году следующее утверждение.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:continued-fraction-of-e"
+
+\end_inset
+
+Разложение числа в 
+\begin_inset Formula $e$
+\end_inset
+
+ в цепную дробь имеем вид 
+\begin_inset Formula 
+\[
+e=\left[2;1,2,1,1,4,1,1,6,1,1,8,1,1,10,1,\dots\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В отличие от десятичного разложения цепная дробь 
+\begin_inset Formula $e$
+\end_inset
+
+ устроена регулярно: пары единиц перемежаются последовательно идущими чётными
+ числами.
+ Можно представить себе её неполные частные 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ при 
+\begin_inset Formula $i\ge1$
+\end_inset
+
+ иначе, заметив, что их последовательность распадается на отрезки, состоящие
+ из трёх чисел и имеющие вид 
+\begin_inset Formula $1,2m,1$
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+ принимает значение 
+\begin_inset Formula $1,2,3,\dots$
+\end_inset
+
+.
+ Поэтому цепную дробь для 
+\begin_inset Formula $e$
+\end_inset
+
+ часто записывают в виде 
+\begin_inset Formula $\left[2;\overline{1,2m,1}\right]_{m\ge1}$
+\end_inset
+
+.
+ Так как цепная дробь числа 
+\begin_inset Formula $e$
+\end_inset
+
+ бесконечна, имеем, согласно второму утверждению теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:infinite-continued-fraction-is-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Remark
+Число 
+\begin_inset Formula $e$
+\end_inset
+
+ иррационально.
+\end_layout
+
+\begin_layout Standard
+Для доказательства теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:continued-fraction-of-e"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ рассмотрим бесконечную последовательность действительных чисел 
+\begin_inset Formula $I_{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\dots$
+\end_inset
+
+, определённую с помощью интегралов 
+\begin_inset Formula 
+\[
+I_{3n-2}=\frac{1}{n!}\intop_{0}^{1}e^{x}x^{n}\left(1-x\right)^{n}dx,\qquad n\ge1,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{3n-1}=\frac{1}{n!}\intop_{0}^{1}e^{x}x^{n+1}\left(1-x\right)^{n}dx,\qquad n\ge0,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{3n}=\frac{1}{n!}\intop_{0}^{1}e^{x}x^{n}\left(1-x\right)^{n+1}dx,\qquad n\ge0.
+\]
+
+\end_inset
+
+ Эти числа связаны между собой рекуррентными соотношениями.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:e-continued-fraction-integrals"
+
+\end_inset
+
+Все числа 
+\begin_inset Formula $I_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $k\ge-1$
+\end_inset
+
+, неотрицательны и образуют убывающую последовательность.
+ Справедливы равенства 
+\begin_inset Formula 
+\[
+I_{3n-2}=I_{3n-1}+I_{3n},\qquad n\ge1,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{3n-1}=I_{3n}+I_{3n+1},\qquad n\ge0,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{3n}=\left(2n+2\right)I_{3n+1}+I_{3n+2},\qquad n\ge0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Для доказательства первого равенства заметим, что 
+\begin_inset Formula 
+\[
+x^{n+1}\left(1-x\right)^{n}+x^{n}\left(1-x\right)^{n+1}=x^{n}\left(1-x\right)^{n}\left(x+1-x\right)=x^{n}\left(1-x\right)^{n},
+\]
+
+\end_inset
+
+поэтому 
+\begin_inset Formula 
+\[
+I_{3n-1}+I_{3n}=\frac{1}{n!}\intop_{0}^{1}e^{x}x^{n}\left(1-x\right)^{n}dx=I_{3n-2},
+\]
+
+\end_inset
+
+первое равенство доказано.
+\end_layout
+
+\begin_layout Proof
+Для доказательства второго равенства нужно воспользоваться тем, что 
+\begin_inset Formula $3n+1=3\left(n+1\right)-2$
+\end_inset
+
+ и, поэтому, 
+\begin_inset Formula 
+\[
+I_{3n+1}=I_{3\left(n+1\right)-2}=\frac{1}{\left(n+1\right)!}\intop_{0}^{1}e^{x}x^{n+1}\left(1-x\right)^{n+1}dx
+\]
+
+\end_inset
+
+.
+ Воспользуемся интегрированием по частям:
+\begin_inset Formula 
+\begin{multline*}
+I_{3n+1}=\frac{1}{\left(n+1\right)!}\intop_{0}^{1}\left(x-x^{2}\right)^{n+1}d\left(e^{x}\right)=\\
+=-\frac{1}{\left(n+1\right)!}\intop_{0}^{1}e^{x}\left(n+1\right)\left(x-x^{2}\right)^{n}\left(1-2x\right)dx=\\
+=-\frac{1}{n!}\intop_{0}^{1}e^{x}x^{n}\left(1-x\right)^{n}\left(1-x-x\right)dx=\\
+=\frac{1}{n!}\intop_{0}^{1}e^{x}x^{n+1}\left(1-x\right)^{n}dx-\frac{1}{n!}\intop_{0}^{1}e^{x}x^{n}\left(1-x\right)^{n+1}dx=\\
+=I_{3n-1}-I_{3n}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, действительно имеет место равенство 
+\begin_inset Formula 
+\[
+I_{3n-1}=I_{3n}+I_{3n+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Воспользуемся тем же приёмом для доказательства третьего равенства.
+ Так как 
+\begin_inset Formula $3n+2=3\left(n+1\right)-1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+I_{3n+2}=I_{3\left(n+1\right)-1}=\frac{1}{\left(n+1\right)!}\intop_{0}^{1}e^{x}x^{n+2}\left(1-x\right)^{n+1}dx.
+\end{multline*}
+
+\end_inset
+
+Воспользуемся интегрированием по частям.
+ Во-первых, заметим 
+\begin_inset Formula 
+\[
+xe^{x}dx=xde^{x}=d\left(e^{x}x\right)-e^{x}dx=d\left(e^{x}x\right)-d\left(e^{x}\right)=-d\left(e^{x}\left(1-x\right)\right),
+\]
+
+\end_inset
+
+поэтому
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{multline*}
+I_{3n+2}=\frac{1}{\left(n+1\right)!}\intop_{0}^{1}\left(x-x^{2}\right)^{n+1}xd\left(e^{x}\right)=\\
+=\frac{1}{\left(n+1\right)!}\intop_{0}^{1}\left(x-x^{2}\right)^{n+1}d\left(e^{x}\left(1-x\right)\right)=\\
+=\frac{n+1}{\left(n+1\right)!}\intop_{0}^{1}\left(x-x^{2}\right)^{n}\left(1-2x\right)e^{x}\left(1-x\right)dx=\\
+=\frac{n+1}{\left(n+1\right)!}\intop_{0}^{1}e^{x}x^{n}\left(1-x\right)^{n+1}\left(1-2x\right)dx=\\
+=\frac{1}{n!}\intop_{0}^{1}e^{x}x^{n}\left(1-x\right)^{n+1}dx-\frac{2\left(n+1\right)}{\left(n+1\right)!}\intop_{0}^{1}e^{x}x^{n+1}\left(1-x\right)^{n+1}dx=\\
+=I_{3n}-2\left(n+1\right)I_{3n+1}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, действительно имеет место равенство 
+\begin_inset Formula 
+\[
+I_{3n}=2\left(n+1\right)I_{3n+1}+I_{3n+2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Все три доказанных равенства можно записать единообразно в виде 
+\begin_inset Formula 
+\begin{equation}
+I_{k-1}=b_{k}I_{k}+I_{k+1},\qquad k\ge0,\label{eq:e-continued-fraction-general-recurrences}
+\end{equation}
+
+\end_inset
+
+ где 
+\begin_inset Formula 
+\[
+b_{k}=\begin{cases}
+1, & k=3n-1,\\
+1, & k=3n,\\
+2\left(n+1\right), & k=3n+1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При любом вещественном 
+\begin_inset Formula $x$
+\end_inset
+
+ имеет место неравенство 
+\begin_inset Formula $e^{x}>0$
+\end_inset
+
+.
+ Подынтегральные выражения в интегралах 
+\begin_inset Formula $I_{k}$
+\end_inset
+
+ непрерывны на 
+\begin_inset Formula $\left[0;1\right]$
+\end_inset
+
+ и положительные на 
+\begin_inset Formula $\left(0;1\right)$
+\end_inset
+
+, так как при 
+\begin_inset Formula $0<x<1$
+\end_inset
+
+ справедливы неравенства 
+\begin_inset Formula $x^{k}>0$
+\end_inset
+
+, 
+\begin_inset Formula $1-x>0$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(1-x\right)^{k}>0$
+\end_inset
+
+.
+ Поэтому неотрицательными являются и сами интегралы
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Закончить главу 8
+Сослаться на матан
 \end_layout
+
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula $k!>0$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $I_{k}\ge0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $b_{k}\ge1$
+\end_inset
+
+ и 
+\begin_inset Formula $I_{k+1}>0$
+\end_inset
+
+, то при 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ получаем 
+\begin_inset Formula $I_{k-1}>b_{k}I_{k}\ge I_{k}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $I_{k}$
+\end_inset
+
+ образуют убывающую последовательность.
+ Все утверждения леммы доказаны.
+\end_layout
+
+\begin_layout Standard
+Введём обозначения 
+\begin_inset Formula 
+\[
+\alpha_{k}=\frac{I_{k-1}}{I_{k}},\qquad k\ge0.
+\]
+
+\end_inset
+
+ Из леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:e-continued-fraction-integrals"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что 
+\begin_inset Formula $\alpha_{k}>1$
+\end_inset
+
+, а из равенств 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e-continued-fraction-general-recurrences"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ находим 
+\begin_inset Formula 
+\[
+\alpha_{k}=b_{k}+\frac{1}{\alpha_{k+1}},\qquad k\ge0.
+\]
+
+\end_inset
+
+ Но тогда 
+\begin_inset Formula $b_{k}=\left\lfloor \alpha_{k}\right\rfloor $
+\end_inset
+
+, и согласно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:continued-fraction-irrational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ мы получаем разложение в цепную дробь 
+\begin_inset Formula $\alpha_{0}=\left[b_{0};b_{1},b_{2},\dots\right]=\left[1;2,1,1,4,1,1,6,1,\dots\right]$
+\end_inset
+
+.
+ Поскольку 
+\begin_inset Formula 
+\[
+I_{-1}=\intop_{0}^{1}e^{x}xdx=1,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{0}=\intop_{0}^{1}e^{x}\left(1-x\right)dx=e-2,
+\]
+
+\end_inset
+
+находим 
+\begin_inset Formula $\alpha_{0}=\frac{1}{e-2}$
+\end_inset
+
+.
+ Отсюда также следует, что 
+\begin_inset Formula $e=2+\frac{1}{a_{0}}$
+\end_inset
+
+ и, значит, 
+\begin_inset Formula 
+\[
+e=\left[2;b_{0},b_{1},\dots\right]=\left[2;1,2,1,1,4,1,1,6,1,\dots\right].
+\]
 
 \end_inset
 
