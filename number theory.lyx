@@ -52994,6 +52994,3167 @@ e=\left[2;b_{0},b_{1},\dots\right]=\left[2;1,2,1,1,4,1,1,6,1,\dots\right].
 
 \end_layout
 
+\begin_layout Chapter
+Алгебраические и трансцендентные числа
+\end_layout
+
+\begin_layout Section
+Поле алгебраических чисел
+\end_layout
+
+\begin_layout Standard
+В множестве комплексных чисел можно выделить подмножества, удобные в том
+ или ином отношении.
+ Например, для решения диофантовых уравнений иногда привлекают числа, лежащие
+ в более широких множествах , чем множество рациональных чисел.
+ Так в главе 8 оказалось удобным описывать множество всех решений уравнения
+ Пелля, используя квадратичные иррациональности, то есть корни квадратных
+ уравнений с рациональными коэффициентами.
+ Попытки доказательство теоремы Ферма о решениях в натуральных числах уравнения
+ 
+\begin_inset Formula $x^{n}+y^{n}=z^{n}$
+\end_inset
+
+ при 
+\begin_inset Formula $n>2$
+\end_inset
+
+, привели к созданию теории описывающей свойства чисел, зависящих от корней
+ степени 
+\begin_inset Formula $n$
+\end_inset
+
+ из единицы, а в конечном счёте к теории алгебраических чисел.
+ В этом параграфе будут установлены простейшие свойства алгебраических чисел.
+\end_layout
+
+\begin_layout Definition
+1.
+ Комплексное число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ называется 
+\emph on
+алгебраическим
+\emph default
+, если найдётся отличный от нуля многочлен 
+\begin_inset Formula $f\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+, для которого 
+\begin_inset Formula $f\left(\alpha\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+2.
+ Среди таких многочленов выберем многочлен наименьшей степени и со старшим
+ коэффициентом 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Этот многочлен называется 
+\emph on
+минимальным многочленом
+\emph default
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ Его степень называется 
+\emph on
+степенью
+\emph default
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и будет обозначаться 
+\begin_inset Formula $\mathrm{deg}\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+1.
+ Любое рациональное число 
+\begin_inset Formula $a$
+\end_inset
+
+ является алгебраическим, как корень многочлена 
+\begin_inset Formula $f\left(x\right)=x-a\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+.
+ Указанный многочлен, очевидно, является минимальным многочленом числа 
+\begin_inset Formula $a$
+\end_inset
+
+, и поэтому 
+\begin_inset Formula $\mathrm{deg}a=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+2.
+ Любая квадратичная иррациональность 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ есть корень некоторого многочлена с целыми коэффициентами 
+\begin_inset Formula $ax^{2}+bx+c$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ иррационально, то этот многочлен имеет минимальную степень среди всех,
+ лежащих в 
+\begin_inset Formula $\mathbb{Q}\left[x\right]$
+\end_inset
+
+ и обращающихся в нуль при подстановке 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ вместо 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $f\left(x\right)=x^{2}+\frac{b}{a}x+\frac{c}{a}\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+ — минимальный многочлен 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{deg}a=2$
+\end_inset
+
+.
+ Так 
+\begin_inset Formula $i$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt{7}$
+\end_inset
+
+ — алгебраические числа степени 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Укажем некоторые свойства минимального многочлена.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:minimal-polinomial-of-algebraic-number"
+
+\end_inset
+
+1.
+ Минимальный многочлен любого алгебраического числа неприводим.
+\end_layout
+
+\begin_layout Lemma
+2.
+ Если 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — минимальный многочлен числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, которые также является корнем многочлена 
+\begin_inset Formula $g\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+, то многочлен 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+3.
+ Неприводимый многочлен
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+очевидно, имеется в виду, многочлен из 
+\begin_inset Formula $\mathbb{Q}\left[x\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ со старшим коэффициентом 
+\begin_inset Formula $1$
+\end_inset
+
+ служит минимальным многочленом для каждого из своих корней.
+\end_layout
+
+\begin_layout Lemma
+4.
+ Все корни минимального многочлена различны.
+\end_layout
+
+\begin_layout Proof
+Неприводимый многочлен — многочлен, неразложимый на нетривиальные (то есть
+ не константы) многочлены.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Выделить в определение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+1.
+ Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — минимальный многочлен алгебраического числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x\right)=g\left(x\right)h\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+ не являются константами.
+ Так как 
+\begin_inset Formula $f\left(\alpha\right)=g\left(\alpha\right)h\left(\alpha\right)=0$
+\end_inset
+
+, то 
+\begin_inset Formula $g\left(\alpha\right)=0$
+\end_inset
+
+ или 
+\begin_inset Formula $h\left(\alpha\right)=0$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку — теория полей!
+\end_layout
+
+\end_inset
+
+.
+ Пусть для определённости 
+\begin_inset Formula $g\left(\alpha\right)=0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+ не являются константами, то 
+\begin_inset Formula $\deg f=\deg g+\deg h$
+\end_inset
+
+ или 
+\begin_inset Formula $\deg g=\deg f-\deg h<\deg f$
+\end_inset
+
+.
+ Кроме того, старшие степени 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+ равны 
+\begin_inset Formula $1$
+\end_inset
+
+, иначе у их произведения, то есть у 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ старший коэффициент не был бы равен единице
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать эти свойства подробнее — матан
+\end_layout
+
+\end_inset
+
+.
+ Таким образом, свойство минимальности многочлена 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ нарушается.
+ Полученное противоречие доказывает, что минимальный многочлен любого алгебраиче
+ского числа неприводим.
+ Первое утверждение леммы доказано.
+\end_layout
+
+\begin_layout Proof
+2.
+ Существует представление 
+\begin_inset Formula $g\left(x\right)=q\left(x\right)f\left(x\right)+r\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\deg r<\deg f$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ссылка на деление многочленов с остатком
+\end_layout
+
+\end_inset
+
+.
+ При этом 
+\begin_inset Formula $r\left(\alpha\right)=g\left(\alpha\right)-q\left(\alpha\right)f\left(\alpha\right)=0$
+\end_inset
+
+.
+ Таким образом, если 
+\begin_inset Formula $r\left(x\right)\neq0$
+\end_inset
+
+, то разделив, при необходимости, его на старший коэффициент, получим многочлен
+ со старшим коэффициентом равным единице, корнем которого является 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, степень которого меньше степени многочлена 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, что противоречит тому, что 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ является минимальным многочленом.
+ Таким образом 
+\begin_inset Formula $r\left(x\right)=0$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)=q\left(x\right)f\left(x\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ Второе утверждение леммы доказано.
+\end_layout
+
+\begin_layout Proof
+3.
+ Пусть 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ — неприводимый многочлен со старшим коэффициентом 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — его произвольный корень.
+ Это значит, что 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ является алгебраическим числом.
+ Пусть его минимальный многочлен есть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ Этот многочлен не может быть константной (по определению минимальный многочлен
+ не равен тождественно нулю, а у многочлена, не равного тождественно ненулевой
+ константе не может быть корня).
+ Но тогда по второму утверждению леммы 
+\begin_inset Formula $g\left(x\right)=cf\left(x\right)$
+\end_inset
+
+.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Упустил возможность 
+\begin_inset Formula $c\neq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Так как старший коэффициент равен 
+\begin_inset Formula $1$
+\end_inset
+
+, то 
+\begin_inset Formula $c=1$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)=f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ — минимальный многочлен числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ Третье утверждение леммы доказано.
+\end_layout
+
+\begin_layout Proof
+4.
+ Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — минимальный многочлен некоторого числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ — кратный корень 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ По первому утверждению леммы этот многочлен не приводим.
+ По третьему утверждению данной леммы, 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ является минимальным многочленом для 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\beta$
+\end_inset
+
+ — кратный корень, то 
+\begin_inset Formula $\beta$
+\end_inset
+
+ является корнем производной многочлена 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+ Согласно второму утверждению леммы получаем 
+\begin_inset Formula $f\left(x\right)\mid f^{\prime}\left(x\right)$
+\end_inset
+
+, что невозможно, так как 
+\begin_inset Formula $\deg f^{\prime}<\deg f$
+\end_inset
+
+.
+ Итак, многочлен 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ не имеет кратных корней.
+ Лемма полностью доказана.
+\end_layout
+
+\begin_layout Definition
+Если 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — алгебраическое число степени 
+\begin_inset Formula $n$
+\end_inset
+
+, то корни 
+\begin_inset Formula $\alpha_{1},\dots,\alpha_{n}$
+\end_inset
+
+ его минимального многочлена называются числами, сопряжёнными с 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Докажем, что множество всех алгебраических чисел замкнуто относительно арифметич
+еских операций.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:aithmetics-of-algrbraic-numbers"
+
+\end_inset
+
+Если 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ — алгебраические числа, то числа 
+\begin_inset Formula $\alpha+\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\beta-\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha\beta$
+\end_inset
+
+, а в случае, если 
+\begin_inset Formula $\alpha\neq0$
+\end_inset
+
+, то и 
+\begin_inset Formula $\beta/\alpha$
+\end_inset
+
+ являются алгебраическими числами.
+\end_layout
+
+\begin_layout Standard
+Из этой теоремы следует, что множество всех алгебраических чисел является
+ полем
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ссылка на то, что это такое
+\end_layout
+
+\end_inset
+
+.
+ Коммутативность и ассоциативность операций сложения и умножения, а также
+ дистрибутивность умножения выполняются, поскольку они имеют место в поле
+ комплексных чисел.
+ Числа 
+\begin_inset Formula $0$
+\end_inset
+
+ и 
+\begin_inset Formula $1$
+\end_inset
+
+ являются алгебраическими.
+\end_layout
+
+\begin_layout Standard
+Напомним некоторые факты, обычно доказываемые в университетских курсах алгебры
+ и необходимые для доказательства теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:aithmetics-of-algrbraic-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ — некоторое кольцо и 
+\begin_inset Formula $t_{1},\dots,t_{n}$
+\end_inset
+
+ — переменные.
+ Многочлен 
+\begin_inset Formula $F\left(t_{1},\dots,t_{n}\right)\in\mathbf{A}\left[t_{1},\dots,t_{n}\right]$
+\end_inset
+
+ называется 
+\emph on
+симметрическим
+\emph default
+, если он не меняется при любой перестановке переменных.
+ Чтобы привести примеры симметрических многочленов введём ещё одну переменную
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ и рассмотрим многочлен 
+\begin_inset Formula 
+\[
+\left(x-t_{1}\right)\cdot\dots\cdot\left(x-t_{n}\right)=x^{n}-\sigma_{1}x^{n-1}+\sigma_{2}x^{n-2}-\dots+\left(-1\right)^{n}\sigma_{n}.
+\]
+
+\end_inset
+
+ Здесь буквами 
+\begin_inset Formula $\sigma_{1},\dots,\sigma_{n}$
+\end_inset
+
+ обозначены многочлены 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\sigma_{1}=t_{1}+t_{2}+\dots+t_{n},\\
+\sigma_{2}=t_{1}t_{2}+t_{1}t_{3}+\dots+t_{n-1}t_{n},\\
+\vdots\\
+\sigma_{n}=t_{1}t_{2}\dots t_{n}.
+\end{array}
+\]
+
+\end_inset
+
+ Эти многочлены, равные сумме всех переменных, сумме всевозможных произведений
+ по две переменные и так далее, очевидно, обладают свойством симметрии и
+ называются 
+\emph on
+элементарными симметрическими многочленами.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:symmetric-polynomials"
+
+\end_inset
+
+(О симметрических многочленах)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать (высшая алгебра)
+\end_layout
+
+\end_inset
+
+: Пусть 
+\begin_inset Formula 
+\[
+F\left[t_{1},\dots,t_{n}\right]\in\mathbf{A}\left[t_{1},\dots,t_{n}\right]
+\]
+
+\end_inset
+
+ — симметрический многочлен степени 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Тогда существует такой многочлен 
+\begin_inset Formula $G\left[z_{1},\dots,z_{n}\right]\in\mathbf{A}\left[z_{1},\dots,z_{n}\right]$
+\end_inset
+
+ степени не выше 
+\begin_inset Formula $d$
+\end_inset
+
+, такой, что 
+\begin_inset Formula 
+\[
+F\left[t_{1},\dots,t_{n}\right]=G\left[\sigma_{1},\dots,\sigma_{n}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Например, имеет место тождество 
+\begin_inset Formula 
+\[
+t_{1}^{2}+t_{2}^{2}+\dots+t_{n}^{2}=\sigma_{1}^{2}-2\sigma_{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Как простое следствие этой теоремы получаем
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:symmetric-product-of-polinomial-of-two-variables"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $P\left(x,y\right)\in\mathbb{Q}\left[x,y\right]$
+\end_inset
+
+ — многочлен от двух переменных с рациональными коэффициентами.
+ Пусть также 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — алгебраическое число степени 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha_{1},\dots,\alpha_{n}$
+\end_inset
+
+ — все его сопряжённые.
+ Тогда 
+\begin_inset Formula 
+\begin{equation}
+P\left(x,\alpha_{1}\right)\cdot P\left(x,\alpha_{2}\right)\cdot\dots\cdot P\left(x,\alpha_{n}\right)=R\left(x\right)\label{eq:product-of-P(x,alpha)}
+\end{equation}
+
+\end_inset
+
+ — есть многочлен от переменной 
+\begin_inset Formula $x$
+\end_inset
+
+ с коэффициентами из поля рациональных чисел 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\mathbf{A}=\mathbb{Q}\left[x\right]$
+\end_inset
+
+ — кольцо многочленов от переменной 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Рассмотрим произведение 
+\begin_inset Formula $P\left(x,t_{1}\right)\cdot P\left(x,t_{2}\right)\cdot\dots\cdot P\left(x,t_{n}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $t_{1},\dots,t_{n}$
+\end_inset
+
+ — переменные.
+ Этот многочлен не меняется при любой перестановке переменных 
+\begin_inset Formula $t_{1},\dots,t_{n}$
+\end_inset
+
+, так как произведении лишь меняется порядок множителей.
+ Так что это произведение есть симметрический многочлен от переменных 
+\begin_inset Formula $t_{1},\dots,t_{n}$
+\end_inset
+
+ с коэффициентами из кольца 
+\begin_inset Formula $\mathbf{A}=\mathbb{Q}\left[x\right]$
+\end_inset
+
+.
+ Из теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:symmetric-polynomials"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует теперь, что для некоторого многочлена 
+\begin_inset Formula $Q\left(x,z_{1},\dots,z_{n}\right)$
+\end_inset
+
+ с рациональными коэффициентами выполняется равенство 
+\begin_inset Formula 
+\begin{equation}
+P\left(x,t_{1}\right)\cdot P\left(x,t_{2}\right)\cdot\dots\cdot P\left(x,t_{n}\right)=Q\left(x,\sigma_{1},\sigma_{2},\dots,\sigma_{n}\right),\label{eq:product-of-P-as-polynomial-of-elementary-symmetric-polynomial}
+\end{equation}
+
+\end_inset
+
+ где 
+\begin_inset Formula $\sigma_{1},\sigma_{2},\dots,\sigma_{n}$
+\end_inset
+
+ — элементарные симметрические многочлены от 
+\begin_inset Formula $t_{1},t_{2},\dots,t_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Заменим в последнем равенстве переменные 
+\begin_inset Formula $t_{1},\dots,t_{n}$
+\end_inset
+
+ числами 
+\begin_inset Formula $\alpha_{1},\dots,\alpha_{n}$
+\end_inset
+
+.
+ Тогда левая часть 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:product-of-P-as-polynomial-of-elementary-symmetric-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ примет такой же вид, как и левая часть 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:product-of-P(x,alpha)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Если 
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{n}+a_{1}x^{n-1}+\dots+a_{n-1}x+a_{n}\in\mathbb{Q}\left[x\right]
+\]
+
+\end_inset
+
+ — минимальный многочлен числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, то согласно теореме Виета
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать, имеется в виду более общая теорема, чем для квадратного уравнения
+\end_layout
+
+\end_inset
+
+ выполняются равенства 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\sigma_{1}\left(\alpha_{1},\dots,\alpha_{n}\right)=-a_{1}\\
+\sigma_{2}\left(\alpha_{1},\dots,\alpha_{n}\right)=a_{2}\\
+\vdots\\
+\sigma_{n}\left(\alpha_{1},\dots,\alpha_{n}\right)=\left(-1\right)^{n}a_{n}.
+\end{array}
+\]
+
+\end_inset
+
+ Поэтому правая часть равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:product-of-P-as-polynomial-of-elementary-symmetric-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ после указанной выше подстановки приобретает вид 
+\begin_inset Formula $Q\left(x,-a_{1},a_{2},\dots,\left(-1\right)^{n}a_{n}\right)$
+\end_inset
+
+.
+ Учитывая, что все числа 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ рациональны, получаем нужно утверждение.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+(Теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:aithmetics-of-algrbraic-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Утверждение тривиально, если 
+\begin_inset Formula $\alpha=0$
+\end_inset
+
+.
+ Поэтому далее будем считать, что 
+\begin_inset Formula $\alpha\neq0$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $\alpha=\alpha_{1},\alpha_{2},\dots,\alpha_{n}$
+\end_inset
+
+ — числа, сопряжённые с 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, а 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ — минимальный многочлен числа 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ Определим многочлены 
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+P_{1}\left(x,y\right)=g\left(x+y\right),\qquad & P\left(x,y\right)=g\left(x-y\right),\\
+P_{3}\left(x,y\right)=g\left(xy\right), & P_{4}\left(x,y\right)=y^{m}g\left(y^{-1}x\right).
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:symmetric-product-of-polinomial-of-two-variables"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ многочлены 
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+R_{1}\left(x\right)=\prod_{j=1}^{n}g\left(x+\alpha_{j}\right),\qquad & R_{2}\left(x\right)=\prod_{j=1}^{n}g\left(x+\alpha_{j}\right),\\
+R_{1}\left(x\right)=\prod_{j=1}^{n}g\left(x\alpha_{j}\right), & R_{1}\left(x\right)=\prod_{j=1}^{n}\alpha_{j}^{m}g\left(x\alpha_{j}^{-1}\right)
+\end{array}
+\]
+
+\end_inset
+
+принадлежат кольцу 
+\begin_inset Formula $\mathbb{Q}\left[x\right]$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\alpha=\alpha_{1}$
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+g\left(\beta-\alpha+\alpha_{1}\right)=g\left(\alpha+\beta-\alpha_{1}\right)=g\left(\beta\alpha^{-1}\alpha_{1}\right)=g\left(\alpha\beta\alpha_{1}^{-1}\right)=g\left(\beta\right)=0,
+\]
+
+\end_inset
+
+и, значит, 
+\begin_inset Formula 
+\[
+R_{1}\left(\beta-\alpha\right)=R_{2}\left(\alpha+\beta\right)=R_{3}\left(\beta/\alpha\right)=R_{4}\left(\alpha\beta\right)=0.
+\]
+
+\end_inset
+
+Таким образом, каждое из чисел 
+\begin_inset Formula $\beta-\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha+\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\beta/\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha\beta$
+\end_inset
+
+ есть корень многочлена с рациональными коэффициентами.
+ Поэтому все они — алгебраические числа.
+ Теорема доказана.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\xi_{1},\dots,\xi_{m}$
+\end_inset
+
+ — алгебраические числа.
+ Обозначим символом 
+\begin_inset Formula $\mathbb{Q}\left[\xi_{1},\dots,\xi_{m}\right]$
+\end_inset
+
+ наименьшее поле, содержащее все числа 
+\begin_inset Formula $\xi_{i}$
+\end_inset
+
+, а также поле рациональных чисел 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+.
+ Это поле, как легко видеть, состоит из возможных дробей вида 
+\begin_inset Formula 
+\[
+\frac{A\left(\xi_{1},\dots,\xi_{m}\right)}{B\left(\xi_{1},\dots,\xi_{m}\right)},\qquad B\left(\xi_{1},\dots,\xi_{m}\right)\neq0,
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $A,B$
+\end_inset
+
+ — многочлены от переменных 
+\begin_inset Formula $x_{1},\dots,x_{m}$
+\end_inset
+
+ с рациональными коэффициентами.
+ Говорят, что числа 
+\begin_inset Formula $\xi_{1},\dots,\xi_{m}$
+\end_inset
+
+ порождают поле 
+\begin_inset Formula $\mathbb{Q}\left[\xi_{1},\dots,\xi_{m}\right]$
+\end_inset
+
+.
+ Из теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:aithmetics-of-algrbraic-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что все его элементы являются алгебраическими числами.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим сначала структуру таких полей в случае 
+\begin_inset Formula $m=1$
+\end_inset
+
+, то есть когда они порождаются одним числом.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:generated-by-algebraic-number-unique"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\xi$
+\end_inset
+
+ алгебраическое число степени 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Тогда каждый элемент 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ поля 
+\begin_inset Formula $\mathbb{Q}\left(\xi\right)$
+\end_inset
+
+ единственным образом представляется в виде 
+\begin_inset Formula 
+\begin{equation}
+\alpha=r_{0}+r_{1}\xi+\dots+r_{n-1}\xi^{n-1},\qquad r_{j}\in\mathbb{Q}.\label{eq:generated-by-algebraic-number-unique}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — минимальный многочлен числа 
+\begin_inset Formula $\xi$
+\end_inset
+
+.
+ Согласно определению каждый элемент 
+\begin_inset Formula $\alpha\in\mathbb{Q}\left(\xi\right)$
+\end_inset
+
+ может быть представлен в виде 
+\begin_inset Formula $\alpha=\frac{A\left(\xi\right)}{B\left(\xi\right)}$
+\end_inset
+
+, где 
+\begin_inset Formula $A\left(x\right),B\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+, причём 
+\begin_inset Formula $B\left(\xi\right)\neq0$
+\end_inset
+
+.
+ Многочлен 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ неприводим, согласно лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minimal-polinomial-of-algebraic-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поэтому возможны два случая: либо 
+\begin_inset Formula $B\left(x\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, либо эти многочлены взаимно просты.
+ Если 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — делитель 
+\begin_inset Formula $B\left(x\right)$
+\end_inset
+
+, то каждый корень 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, и, в частности, 
+\begin_inset Formula $\xi$
+\end_inset
+
+, должен быть корнем многочлена 
+\begin_inset Formula $B\left(x\right)$
+\end_inset
+
+.
+ Но, как мы видели, это не верно.
+ Значит многочлены 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $B\left(x\right)$
+\end_inset
+
+ взаимно просты.
+ В этом случае можно утверждать, подобно теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:simplest-diofantine-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать или сослаться на такую подобную теорему
+\end_layout
+
+\end_inset
+
+, что существуют многочлены 
+\begin_inset Formula $u\left(x\right),v\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+, для которых выполняется равенство 
+\begin_inset Formula $u\left(x\right)f\left(x\right)+v\left(x\right)B\left(x\right)=1$
+\end_inset
+
+.
+ Подставляя в него 
+\begin_inset Formula $x=\xi$
+\end_inset
+
+ и пользуюсь тем, что 
+\begin_inset Formula $f\left(\xi\right)=0$
+\end_inset
+
+, находим, что 
+\begin_inset Formula $v\left(\xi\right)B\left(\xi\right)=1$
+\end_inset
+
+ и, следовательно, 
+\begin_inset Formula $\alpha=A\left(\xi\right)v\left(\xi\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Разделим теперь многочлен 
+\begin_inset Formula $A\left(x\right)v\left(x\right)$
+\end_inset
+
+ на 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ с остатком, то есть определим многочлены 
+\begin_inset Formula $q\left(x\right),r\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+ условиями 
+\begin_inset Formula 
+\[
+A\left(x\right)v\left(x\right)=q\left(x\right)f\left(x\right)+r\left(x\right),\qquad\deg r\left(x\right)<\deg f\left(x\right)=n.
+\]
+
+\end_inset
+
+Подставляя 
+\begin_inset Formula $x=\xi$
+\end_inset
+
+ в последнее равенство, находим 
+\begin_inset Formula $\alpha=A\left(\xi\right)v\left(\xi\right)=r\left(\xi\right)$
+\end_inset
+
+, что доказывает 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:generated-by-algebraic-number-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поскольку многочлен 
+\begin_inset Formula $r\left(x\right)$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $r_{0}+r_{1}x+\dots+r_{n-1}x^{n-1}$
+\end_inset
+
+ с рациональными коэффициентами 
+\begin_inset Formula $r_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Существование двух многочленов 
+\begin_inset Formula $r\left(x\right),s\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+ с условиями 
+\begin_inset Formula 
+\[
+\alpha=r\left(\xi\right),\qquad\alpha=s\left(\xi\right),\qquad\deg r\left(x\right)<n,\qquad\deg s\left(x\right)<n,
+\]
+
+\end_inset
+
+ означало бы, что 
+\begin_inset Formula $r\left(\xi\right)=s\left(\xi\right)$
+\end_inset
+
+ и, согласно второму утверждению леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minimal-polinomial-of-algebraic-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что 
+\begin_inset Formula $f\left(x\right)\mid\left(r\left(x\right)-s\left(x\right)\right)$
+\end_inset
+
+.
+ Степень делимого меньше 
+\begin_inset Formula $n=\deg f\left(x\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $r\left(x\right)=s\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:field-generated-by-algebraic-numbers-may-be-generated-by-one"
+
+\end_inset
+
+Всякое поле 
+\begin_inset Formula $E=\mathbb{Q}\left(\xi_{1},\dots,\xi_{m}\right)$
+\end_inset
+
+, порождённое алгебраическими числами 
+\begin_inset Formula $\xi_{1},\dots,\xi_{m}$
+\end_inset
+
+, может быть порождено одним числом.
+ Другими словами, существует такое число 
+\begin_inset Formula $\theta\in E$
+\end_inset
+
+, что 
+\begin_inset Formula $E=\mathbb{Q}\left(\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Число 
+\begin_inset Formula $\theta$
+\end_inset
+
+, порождающее поле 
+\begin_inset Formula $E$
+\end_inset
+
+, называется его 
+\emph on
+примитивным 
+\emph default
+элементом.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим, например, поле 
+\begin_inset Formula $\mathbb{Q}\left(\sqrt{2},\sqrt{3}\right)$
+\end_inset
+
+ и число 
+\begin_inset Formula $\theta=\sqrt{2}+\sqrt{3}\in\mathbb{Q}\left(\sqrt{2},\sqrt{3}\right)$
+\end_inset
+
+.
+ Справедливы равенства 
+\begin_inset Formula 
+\[
+\left(\theta-\sqrt{2}\right)^{2}=3,\qquad\left(\theta-\sqrt{3}\right)^{2}=2,
+\]
+
+\end_inset
+
+ из которых следует, что 
+\begin_inset Formula 
+\[
+\sqrt{2}=\frac{\theta^{2}-1}{2\theta},\qquad\sqrt{3}=\frac{\theta^{2}+1}{2\theta}.
+\]
+
+\end_inset
+
+Поэтому 
+\begin_inset Formula $\sqrt{2},\sqrt{3}\in\mathbb{Q}\left(\theta\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathbb{Q}\left(\sqrt{2},\sqrt{3}\right)=\mathbb{Q}\left(\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Докажем сначала утверждение теоремы для случая 
+\begin_inset Formula $m=2$
+\end_inset
+
+ (для 
+\begin_inset Formula $m=1$
+\end_inset
+
+ утверждение теоремы тривиально).
+ То есть рассмотрим поле 
+\begin_inset Formula $E=\mathbb{Q}\left(\alpha,\beta\right)$
+\end_inset
+
+.
+ Пусть степени чисел 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+ соответственно равны 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $s$
+\end_inset
+
+, а 
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{n}+a_{n-1}x^{n-1}+\dots+a_{0},\qquad g\left(x\right)=x^{s}+b_{s-1}x^{s-1}+\dots+b_{0}
+\]
+
+\end_inset
+
+— их минимальные многочлены.
+ Корни этих многочленов, то есть числа сопряжённые с 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta$
+\end_inset
+
+, обозначим 
+\begin_inset Formula $\alpha_{1},\dots,\alpha_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta_{1},\dots,\beta_{s}$
+\end_inset
+
+ соответственно.
+ При этом будем считать 
+\begin_inset Formula $\alpha=\alpha_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\beta=\beta_{1}$
+\end_inset
+
+.
+ Все числа 
+\begin_inset Formula $\alpha_{j}$
+\end_inset
+
+, равно как и числа 
+\begin_inset Formula $\beta_{k}$
+\end_inset
+
+, различны между собой.
+\end_layout
+
+\begin_layout Proof
+Выберем 
+\begin_inset Formula $c\in\mathbb{Q}$
+\end_inset
+
+ так, чтобы при 
+\begin_inset Formula $\left(j,k\right)\neq\left(1,1\right)$
+\end_inset
+
+ выполнялось 
+\begin_inset Formula 
+\begin{equation}
+\alpha_{j}+c\beta_{k}\neq\alpha_{1}+c\beta_{1}.\label{eq:thm-generated-by-algebraic-numbers-conditions}
+\end{equation}
+
+\end_inset
+
+ Это, очевидно, можно сделать, ведь каждое уравнение 
+\begin_inset Formula $\alpha_{j}+x\beta_{k}=\alpha_{1}+x\beta_{1}$
+\end_inset
+
+ при 
+\begin_inset Formula $\left(j,k\right)\neq\left(1,1\right)$
+\end_inset
+
+ имеет не более одного решения, а поле 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ бесконечно.
+\end_layout
+
+\begin_layout Proof
+Положим 
+\begin_inset Formula $\theta=\alpha+c\beta$
+\end_inset
+
+ и обозначим 
+\begin_inset Formula $L=\mathbb{Q}\left(\theta\right)$
+\end_inset
+
+.
+ Справедливо включение 
+\begin_inset Formula $L\subset\mathbb{Q}\left(\alpha,\beta\right)$
+\end_inset
+
+.
+ В дальнейших рассуждениях будет использоваться многочлен 
+\begin_inset Formula 
+\[
+h\left(x\right)=f\left(\theta-cx\right)\in L\left[x\right].
+\]
+
+\end_inset
+
+ Принадлежащие кольцу 
+\begin_inset Formula $L\left[x\right]$
+\end_inset
+
+ многочлены 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+ имеют общий корень 
+\begin_inset Formula $\beta$
+\end_inset
+
+, ведь 
+\begin_inset Formula $h\left(\beta\right)=f\left(\theta-c\beta\right)=f\left(\alpha\right)=0$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $d\left(x\right)$
+\end_inset
+
+ — их наибольший общий делитель, то как и в случае теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:simplest-diofantine-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно утверждать, что с некоторыми многочленами 
+\begin_inset Formula $u\left(x\right),v\left(x\right)\in L\left[x\right]$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Опять возникает необходимость сослаться на теорию делимости для многочленов
+\end_layout
+
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $g\left(x\right)u\left(x\right)+h\left(x\right)v\left(x\right)=d\left(x\right)$
+\end_inset
+
+.
+ Из этого равенства следует, что число 
+\begin_inset Formula $\beta$
+\end_inset
+
+ является корнем многочлена 
+\begin_inset Formula $d\left(x\right)\in L\left[x\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $d\left(x\right)$
+\end_inset
+
+ — делитель неприводимого над полем 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ многочлена 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $d\left(x\right)$
+\end_inset
+
+ не имеет кратных корней
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Сослаться
+\end_layout
+
+\end_inset
+
+.
+ Предположим, что 
+\begin_inset Formula $\deg d\left(x\right)>1$
+\end_inset
+
+.
+ Тогда у многочлена 
+\begin_inset Formula $d\left(x\right)$
+\end_inset
+
+ есть корень 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, отличный от 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ Все корни 
+\begin_inset Formula $d\left(x\right)$
+\end_inset
+
+ содержатся среди корней многочлена 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $\gamma=\beta_{k}$
+\end_inset
+
+ с некоторым номером 
+\begin_inset Formula $k>1$
+\end_inset
+
+.
+ Учитывая, что 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ является также корнем многочлена 
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Подробнее
+\end_layout
+
+\end_inset
+
+, то есть 
+\begin_inset Formula $0=h\left(\gamma\right)=f\left(\theta-c\gamma\right)$
+\end_inset
+
+, заключаем, что 
+\begin_inset Formula $\theta-c\gamma=\alpha_{i}$
+\end_inset
+
+ с некоторым номером 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $\theta=\alpha_{j}+c\beta_{k}$
+\end_inset
+
+ вопреки 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:thm-generated-by-algebraic-numbers-conditions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Получившееся противоречие доказывает, что 
+\begin_inset Formula $\deg d\left(x\right)=1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $d\left(x\right)=ax+b\in L\left[x\right]$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $\beta=-\frac{b}{a}\in L$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha=\theta-c\beta\in L$
+\end_inset
+
+.
+ Следовательно, 
+\begin_inset Formula $\mathbb{Q}\left(\alpha,\beta\right)=L=\mathbb{Q}\left(\theta\right)$
+\end_inset
+
+, чем и завершается доказательство теоремы для полей, порождённых двумя
+ числами, то есть для случая 
+\begin_inset Formula $m=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $E=\mathbb{Q}\left(\xi_{1},\dots,\xi_{m}\right)$
+\end_inset
+
+.
+ Если считать теорему доказанной для полей, порождённых 
+\begin_inset Formula $m-1$
+\end_inset
+
+ числом, то 
+\begin_inset Formula $\mathbb{Q}\left(\xi_{1},\dots,\xi_{m-1}\right)=\mathbb{Q}\left(\eta\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Очевидно, но можно доказать подробнее
+\end_layout
+
+\end_inset
+
+ для некоторого алгебраического числа 
+\begin_inset Formula $\eta$
+\end_inset
+
+.
+ Так что 
+\begin_inset Formula $E=\mathbb{Q}\left(\eta,\xi_{m}\right)$
+\end_inset
+
+.
+ Пользуясь уже доказанным утверждением для полей, порождённых двумя числами,
+ заключаем, что с некоторыми 
+\begin_inset Formula $\theta=E$
+\end_inset
+
+ будет выполняться равенство 
+\begin_inset Formula $E=\mathbb{Q}\left(\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Если число 
+\begin_inset Formula $\xi$
+\end_inset
+
+ — корень многочлена 
+\begin_inset Formula 
+\[
+\varphi\left(x\right)=\alpha_{m}x^{m}+\dots+\alpha_{1}x+\alpha_{0}
+\]
+
+\end_inset
+
+ с алгебраическими коэффициентами 
+\begin_inset Formula $\alpha_{j}$
+\end_inset
+
+, то 
+\begin_inset Formula $\xi$
+\end_inset
+
+ — алгебраического число.
+\end_layout
+
+\begin_layout Standard
+Иными словами, эта теорема утверждает, что поле всех алгебраических чисел
+ нельзя расширить, присоединив к нему корень какого-либо многочлена с алгебраиче
+скими коэффициентами.
+ Это свойство является 
+\emph on
+алгебраической замкнутостью
+\emph default
+.
+ Поле комплексных чисел также обладает этим свойством.
+\end_layout
+
+\begin_layout Proof
+Без ограничения общности можно считать, что 
+\begin_inset Formula $\alpha_{m}=1$
+\end_inset
+
+ (можно разделить все коэффициенты многочлена на 
+\begin_inset Formula $\alpha_{m}\neq0$
+\end_inset
+
+, а частное двух алгебраических чисел является алгебраическим числом по
+ теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:aithmetics-of-algrbraic-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proof
+По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:field-generated-by-algebraic-numbers-may-be-generated-by-one"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поле 
+\begin_inset Formula $E=\mathbb{Q}\left(\alpha_{0},\dots,\alpha_{m-1}\right)$
+\end_inset
+
+ может быть порождено одним числом 
+\begin_inset Formula $\theta\in E$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $n=\deg\theta$
+\end_inset
+
+.
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:generated-by-algebraic-number-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ существуют такие многочлены 
+\begin_inset Formula $a_{j}\left(x\right)=\mathbb{Q}\left[x\right]$
+\end_inset
+
+ (при 
+\begin_inset Formula $j=0,1,\dots,m-1$
+\end_inset
+
+), что 
+\begin_inset Formula $\deg a_{j}\left(x\right)<n$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha_{j}=a_{j}\left(\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $\theta=\theta_{1},\theta_{2},\dots,\theta_{n}$
+\end_inset
+
+ — числа, сопряжённые с 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula 
+\[
+P\left(x,y\right)=x^{m}+a_{m-1}\left(y\right)x^{m-1}+\dots+a_{1}\left(y\right)x+a_{0}\left(y\right)\in\mathbb{Q}\left[x,y\right]
+\]
+
+\end_inset
+
+ и 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+С этого момента подсмотрел
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R\left(x\right)=\prod_{j=1}^{n}P\left(x,\theta_{j}\right).
+\]
+
+\end_inset
+
+ Так как 
+\begin_inset Formula $P\left(\xi,\theta_{1}\right)=0$
+\end_inset
+
+, то 
+\begin_inset Formula $R\left(\xi\right)=0$
+\end_inset
+
+ и, согласно лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:symmetric-product-of-polinomial-of-two-variables"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Formula $R\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+.
+ Следовательно, 
+\begin_inset Formula $\xi$
+\end_inset
+
+ — алгебраическое число.
+\end_layout
+
+\begin_layout Section
+Приближение алгебраических чисел рациональными.
+ Существование трансцендентных чисел
+\end_layout
+
+\begin_layout Standard
+Множество действительных чисел не исчерпывается только алгебраическими числами.
+ Не алгебраические числа Лейбниц назвал 
+\emph on
+трансцендентными
+\emph default
+.
+ Итак, трансцендентным называется всякое число, которое неспособно удовлетворить
+ никакому алгебраическому уравнению с целыми коэффициентами, то есть не
+ является корнем никакого многочлена с целыми коэффициентами.
+\end_layout
+
+\begin_layout Standard
+Строгое доказательство существования трансцендентных чисел впервые было
+ дано в 1844 году Лиувиллем.
+ Он установил, что алгебраические числа не допускают слишком хороших приближений
+ рациональными, и это свойство позволило ему построить первые примеры трансценде
+нтных чисел.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — комплексное алгебраическое число, то для любого рационального числа 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula $\left|\alpha-\frac{p}{q}\right|\ge\left|\mathrm{Im}\alpha\right|$
+\end_inset
+
+ и ясно, что к числу 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ из 
+\begin_inset Formula $\mathbb{C}\backslash\mathbb{R}$
+\end_inset
+
+ нельзя приблизиться на расстояние меньшее 
+\begin_inset Formula $\left|\mathrm{Im}\alpha\right|$
+\end_inset
+
+.
+ Поэтому далее речь пойдёт о рациональных приближениях действительных алгебраиче
+ских чисел.
+ Следующая теорема о том, что действительные алгебраические числа 
+\begin_inset Quotes rld
+\end_inset
+
+плохо
+\begin_inset Quotes rrd
+\end_inset
+
+ приближаются рациональными числами была доказана в 1840 году Лиувиллем.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:algebraic-numbers-are-bad-approximated-by-rationals"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — действительное алгебраическое число степени 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+.
+ Тогда найдётся константа 
+\begin_inset Formula $c>0$
+\end_inset
+
+, зависящая только от 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, такая, что для любого рационального числа 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+, 
+\begin_inset Formula $q>0$
+\end_inset
+
+, выполняется неравенство 
+\begin_inset Formula 
+\begin{equation}
+\left|\alpha-\frac{p}{q}\right|\ge\frac{c}{q^{n}}.\label{eq:bound-on-approximations-of-algabraic-by-rational}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $f\left(x\right)\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+ — минимальный многочлен числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $d$
+\end_inset
+
+ — общий знаменатель его коэффициентов.
+ Пусть также 
+\begin_inset Formula $\alpha=\alpha_{1},\alpha_{2},\dots,\alpha_{n}$
+\end_inset
+
+ — числа, сопряжённые с 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minimal-polinomial-of-algebraic-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ многочлен 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ неприводим.
+ Поскольку его степень 
+\begin_inset Formula $n$
+\end_inset
+
+ не меньше 
+\begin_inset Formula $2$
+\end_inset
+
+, то 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ не имеет рациональных корней и, значит, 
+\begin_inset Formula $dq^{n}f\left(p/q\right)$
+\end_inset
+
+ целое отличное от нуля число.
+ Но тогда 
+\begin_inset Formula $dq^{n}\left|f\left(p/q\right)\right|\ge1$
+\end_inset
+
+.
+ Рассмотрим теперь два случая:
+\end_layout
+
+\begin_layout Proof
+1) Пусть 
+\begin_inset Formula $\left|\alpha-\frac{p}{q}\right|\le1$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+\left|\alpha_{j}-\frac{p}{q}\right|\le\left|\alpha_{j}-\alpha\right|+\left|\alpha-\frac{p}{q}\right|\le\left|\alpha-\alpha_{j}\right|+1,\qquad j=2,\dots,n.
+\]
+
+\end_inset
+
+Из этих неравенств следует 
+\begin_inset Formula 
+\begin{multline*}
+1\le dq^{n}\left|f\left(p/q\right)\right|=dq^{n}\left|\alpha-\frac{p}{q}\right|\cdot\prod_{j=2}^{n}\left|\alpha_{j}-\frac{p}{q}\right|\le\\
+\le dq^{n}\left|\alpha-\frac{p}{q}\right|\cdot\prod_{j=2}^{n}\left(\left|\alpha-\alpha_{j}\right|+1\right).
+\end{multline*}
+
+\end_inset
+
+ Обозначив 
+\begin_inset Formula $c=d^{-1}\prod_{j=2}^{n}\left(\left|\alpha-\alpha_{j}\right|+1\right)^{-1}$
+\end_inset
+
+, получаем требуемое неравенство.
+\end_layout
+
+\begin_layout Proof
+2) В случае 
+\begin_inset Formula $\left|\alpha-\frac{p}{q}\right|>1$
+\end_inset
+
+ можно взять ту же константу 
+\begin_inset Formula $c$
+\end_inset
+
+, что и в первом случае.
+ Она, очевидно, удовлетворяет неравенству 
+\begin_inset Formula $c<1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left|\alpha-\frac{p}{q}\right|>1\ge\frac{1}{q^{n}}>\frac{c}{q^{n}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:infinitely-many-good-rational-approximation-leads-to-transcendent"
+
+\end_inset
+
+Если 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+ и для любого 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+ неравенство 
+\begin_inset Formula $0<\left|\alpha-\frac{p}{q}\right|<\frac{1}{q^{m}}$
+\end_inset
+
+ имеет бесконечно много решений 
+\begin_inset Formula $\frac{p}{q}\in\mathbb{Q}$
+\end_inset
+
+, то 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ трансцендентное число.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+1) Докажем сначала, что 
+\begin_inset Formula $\alpha\notin\mathbb{Q}$
+\end_inset
+
+.
+ Предположим, что это не так и 
+\begin_inset Formula $\alpha=\frac{a}{b}$
+\end_inset
+
+, где 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $b>0$
+\end_inset
+
+.
+ Возьмём 
+\begin_inset Formula $m=2$
+\end_inset
+
+.
+ По условию существует бесконечно много рациональных чисел 
+\begin_inset Formula $p/q$
+\end_inset
+
+, удовлетворяющих неравенствам 
+\begin_inset Formula $0<\left|\alpha-\frac{p}{q}\right|<\frac{1}{q^{2}}$
+\end_inset
+
+.
+ Среди них есть, конечно, решения со сколь угодно большими знаменателями
+ 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ С другой стороны, 
+\begin_inset Formula 
+\[
+\left|\frac{a}{b}-\frac{p}{q}\right|=\left|\frac{aq-bp}{bq}\right|\ge\frac{1}{bq}.
+\]
+
+\end_inset
+
+Сопоставляя полученные неравенства, заключаем, что 
+\begin_inset Formula $\frac{1}{q^{2}}>\frac{1}{bq}$
+\end_inset
+
+ и, значит, 
+\begin_inset Formula $q<b$
+\end_inset
+
+.
+ Получившееся противоречие доказывает иррациональность 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+2) Докажем теперь, что 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ не есть алгебраическое число степени большей, чем 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Предложение противное, и пусть 
+\begin_inset Formula $\deg\alpha=n\ge2$
+\end_inset
+
+.
+ Положим 
+\begin_inset Formula $m=n+1$
+\end_inset
+
+.
+ По условию следствия существует бесконечно много рациональных чисел 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+, удовлетворяющих неравенствам 
+\begin_inset Formula $0<\left|\alpha-\frac{p}{q}\right|<\frac{1}{q^{m}}.$
+\end_inset
+
+ А с другой стороны по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:algebraic-numbers-are-bad-approximated-by-rationals"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ с некоторой константной 
+\begin_inset Formula $c>0$
+\end_inset
+
+, не зависящей от 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+, должно выполняться неравенство 
+\begin_inset Formula $\left|\alpha-\frac{p}{q}\right|\ge\frac{c}{q^{n}}$
+\end_inset
+
+.
+ Сопоставляя эти неравенства, получаем 
+\begin_inset Formula $\frac{c}{q^{n}}<\frac{1}{q^{n+1}}$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $q<\frac{1}{c}$
+\end_inset
+
+ вопреки бесконечно множества рациональных решений неравенства из условия
+ следствия.
+\end_layout
+
+\begin_layout Standard
+Укажем теперь конкретное трансцендентное число.
+\end_layout
+
+\begin_layout Remark
+Число 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, определяемое рядом 
+\begin_inset Formula 
+\[
+\alpha=\sum_{k=0}^{\infty}2^{-k!},
+\]
+
+\end_inset
+
+трансцендентное.
+\end_layout
+
+\begin_layout Standard
+Члены этого ряда 
+\begin_inset Quotes rld
+\end_inset
+
+быстро
+\begin_inset Quotes rrd
+\end_inset
+
+ стремятся к нулю, а общий знаменатель первых 
+\begin_inset Formula $n$
+\end_inset
+
+ членов этого ряда растёт 
+\begin_inset Quotes rld
+\end_inset
+
+не очень быстро
+\begin_inset Quotes rrd
+\end_inset
+
+.
+ Эти свойства позволяют построить последовательность хороших рациональных
+ приближений к числу 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, что обеспечивает с помощью следствия 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:infinitely-many-good-rational-approximation-leads-to-transcendent"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ трансцендентность 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Для каждого натурального 
+\begin_inset Formula $n$
+\end_inset
+
+ определим целые числа 
+\begin_inset Formula 
+\[
+q_{n}=2^{n!},\qquad p_{n}=\sum_{k=0}^{n}2^{n!-k!}.
+\]
+
+\end_inset
+
+ Рациональное число 
+\begin_inset Formula 
+\[
+\frac{p_{n}}{q_{n}}=\sum_{k=0}^{n}2^{-k!}
+\]
+
+\end_inset
+
+равно частичной сумме ряда, определяющего 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ Поскольку члены ряда положительны, то 
+\begin_inset Formula 
+\[
+\alpha-\frac{p_{n}}{q_{n}}=\sum_{k=n+1}^{\infty}2^{-k!}>0.
+\]
+
+\end_inset
+
+Учитывая, что 
+\begin_inset Formula $\left(k+1\right)!>k!$
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+\frac{2^{-\left(k+1\right)!}}{2^{-k!}}<\frac{1}{2}
+\]
+
+\end_inset
+
+и 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать последнее неравенство подробнее
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+\alpha-\frac{p_{n}}{q_{n}}=\sum_{k=n+1}^{\infty}2^{-k!}<2^{-\left(n+1\right)!}\left(1+\frac{1}{2}+\frac{1}{4}+\dots\right)=\\
+=\frac{2}{2^{\left(n+1\right)!}}<\frac{1}{2^{n!n}}=\frac{1}{q_{n}^{n}}.
+\end{multline*}
+
+\end_inset
+
+Из этих неравенств следует, что для любого 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+ неравенствам 
+\begin_inset Formula 
+\[
+0<\left|\alpha-\frac{p}{q}\right|<\frac{1}{q^{m}}
+\]
+
+\end_inset
+
+удовлетворяет бесконечное количество различных рациональных чисел 
+\begin_inset Formula $\frac{p_{n}}{q_{n}}$
+\end_inset
+
+ при 
+\begin_inset Formula $n>m$
+\end_inset
+
+.
+ В согласии со следствием 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:infinitely-many-good-rational-approximation-leads-to-transcendent"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно утверждать теперь, что 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — трансцендентное число.
+\end_layout
+
+\begin_layout Standard
+Ясно, что таким способом, выбирая вместо 
+\begin_inset Formula $2$
+\end_inset
+
+ другие натуральные основания, можно построить множество примеров трансцендентны
+х чисел.
+ Например, выбрав ряд с членами 
+\begin_inset Formula $10^{-k!}$
+\end_inset
+
+, получим число, записываемое в десятичной системе нулями и единицами.
+ Причём расстояние между соседними единицами будут возрастать очень быстро.
+ Это число также трансцендентное.
+\end_layout
+
+\begin_layout Standard
+Иное доказательство существования трансцендентных чисел было предложено
+ Г.
+\begin_inset space \thinspace{}
+\end_inset
+
+Кантором, установившим счётность множества алгебраических чисел и несчётность
+ множества действительных чисел.
+ Таким образом, множество действительных чисел не может исчерпываться алгебраиче
+скими числами.
+ Более того, трансцендентные числа составляют множество большей мощности,
+ чем алгебраические.
+ Впрочем, это рассуждение не позволяет строить примеры трансцендентных чисел.
+\end_layout
+
+\begin_layout Standard
+Утверждение теоремы Лиувилля 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:bound-on-approximations-of-algabraic-by-rational"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ может быть представлено как оценка снизу значения в алгебраической точке
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ многочлена первой степени 
+\begin_inset Formula 
+\[
+\left|q\alpha-p\right|>\frac{c}{q^{n-1}}.
+\]
+
+\end_inset
+
+ В таком виде теорема Лиувилля допускает обобщение.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Liouville-generalization"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ — алгебраическое число степени 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+ Тогда существует постоянная 
+\begin_inset Formula $c>0$
+\end_inset
+
+, зависящая только от числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, такая, что для любого многочлена 
+\begin_inset Formula $P\left(x\right)\in\mathbb{Z}\left[x\right]$
+\end_inset
+
+ с условием 
+\begin_inset Formula $P\left(\alpha\right)\neq0$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula 
+\[
+\left|P\left(\alpha\right)\right|\ge\frac{c^{d}}{H^{n-1}},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $d=\deg P$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ — максимум абсолютных величин коэффициентов многочлена 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Это утверждение понадобится ниже для доказательство трансцендентности числа
+ 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{n}+a_{n-1}x^{n-1}+\dots a_{1}x+a_{0}\in\mathbb{Q}\left[x\right]
+\]
+
+\end_inset
+
+ — минимальный многочлен числа 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ и 
+\begin_inset Formula $\alpha=\alpha_{1},\alpha_{2},\dots,\alpha_{n}$
+\end_inset
+
+ — корни этого многочлена, то есть числа, сопряжённые с 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ Пусть также 
+\begin_inset Formula $a\in\mathbb{Z},a>0$
+\end_inset
+
+ — наименьший общий знаменатель коэффициентов 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $aa_{j}\in\mathbb{Z}$
+\end_inset
+
+ при 
+\begin_inset Formula $0\le j<n$
+\end_inset
+
+.
+ Согласно теореме о симметрических многочленах, применённой для симметрического
+ многочлена 
+\begin_inset Formula $P\left(x_{1}\right)\cdot\dots\cdot P\left(x_{n}\right)$
+\end_inset
+
+ и кольца 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+, найдётся многочлена 
+\begin_inset Formula $Q\left(z_{1},\dots,z_{n}\right)$
+\end_inset
+
+ с целыми коэффициентами, такой, что 
+\begin_inset Formula 
+\begin{equation}
+P\left(x_{1}\right)\cdot\dots\cdot P\left(x_{n}\right)=Q\left(\sigma_{1},\dots,\sigma_{n}\right),\label{eq:Liouville-generalization-decomposition}
+\end{equation}
+
+\end_inset
+
+ причём 
+\begin_inset Formula $\deg Q\le n\deg P=nd$
+\end_inset
+
+.
+ Подставляя в тождество 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Liouville-generalization-decomposition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ числа 
+\begin_inset Formula $\alpha_{1},\dots,\alpha_{n}$
+\end_inset
+
+ вместо переменных 
+\begin_inset Formula $x_{1},\dots,x_{n}$
+\end_inset
+
+ соответственно и, пользуясь теоремой Виета
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Сослаться
+\end_layout
+
+\end_inset
+
+, найдём 
+\begin_inset Formula 
+\begin{equation}
+P\left(\alpha_{1}\right)\cdot\dots\cdot P\left(\alpha_{n}\right)=Q\left(-a_{n-1},\dots,\left(-1\right)^{n}a_{0}\right).\label{eq:Liouville-generalization-decomposition-Viete}
+\end{equation}
+
+\end_inset
+
+ Учитывая, что степень многочлена 
+\begin_inset Formula $Q\left(z_{1},\dots,z_{n}\right)$
+\end_inset
+
+ по совокупности переменных не превосходит 
+\begin_inset Formula $nd$
+\end_inset
+
+, а коэффициенты его — целые числа, заключаем, что 
+\begin_inset Formula $A=a^{nd}Q\left(-a_{n-1},\dots,\left(-1\right)^{n}a_{0}\right)$
+\end_inset
+
+ есть целое число.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $A=0$
+\end_inset
+
+, то в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Liouville-generalization-decomposition-Viete"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для некоторого индекса 
+\begin_inset Formula $j$
+\end_inset
+
+ должно выполняться равенство 
+\begin_inset Formula $P\left(\alpha_{j}\right)=0$
+\end_inset
+
+.
+ С помощью леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:minimal-polinomial-of-algebraic-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ заключаем, что 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ есть минимальный многочлен числа 
+\begin_inset Formula $\alpha_{j}$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x\right)\mid P\left(x\right)$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $P\left(\alpha\right)=0$
+\end_inset
+
+ вопреки условию теоремы.
+ Таким образом, 
+\begin_inset Formula $A\neq0$
+\end_inset
+
+.
+ Целое отличное от нуля число не может быть по абсолютной величине меньше
+ единицы, поэтому выполняется неравенство 
+\begin_inset Formula $\left|A\right|\ge1$
+\end_inset
+
+ или 
+\begin_inset Formula 
+\begin{equation}
+a^{nd}\prod_{j=1}^{n}\left|P\left(\alpha_{j}\right)\right|\ge1.\label{eq:eq:Liouville-generalization-bound}
+\end{equation}
+
+\end_inset
+
+Так как коэффициенты многочлена 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ не превосходят 
+\begin_inset Formula $H$
+\end_inset
+
+, а степень его равна 
+\begin_inset Formula $d$
+\end_inset
+
+, имеем неравенства 
+\begin_inset Formula 
+\[
+\left|P\left(\alpha_{j}\right)\right|\le H\left(1+\left|\alpha_{j}\right|+\left|\alpha_{j}\right|^{2}+\dots+\left|\alpha_{j}\right|^{d}\right)\le H\left(1+\left|\alpha_{j}\right|\right)^{d}.
+\]
+
+\end_inset
+
+ Теперь из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:eq:Liouville-generalization-bound"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует 
+\begin_inset Formula 
+\[
+1\le a^{nd}\left|P\left(\alpha\right)\right|H^{n-1}\prod_{j=2}^{n}\left(1+\left|\alpha_{j}\right|\right)^{d}.
+\]
+
+\end_inset
+
+ Выбрав 
+\begin_inset Formula $c=a^{-n}\prod_{j=2}^{n}\left(1+\left|\alpha_{j}\right|\right)^{-1}$
+\end_inset
+
+, получаем отсюда неравенство теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Liouville-generalization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Иррациональность чисел 
+\begin_inset Formula $e^{r}$
+\end_inset
+
+ и 
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Иррациональность числа 
+\begin_inset Formula $e$
+\end_inset
+
+ следует из бесконечности цепной дроби этого числа.
+ Иное доказательство, найденное значительно позже, используя представление
+ 
+\begin_inset Formula 
+\[
+e=\sum_{n=0}^{\infty}\frac{1}{n!}.
+\]
+
+\end_inset
+
+Допустим, что 
+\begin_inset Formula $e$
+\end_inset
+
+ рационально и с целыми положительными числами 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $e=\frac{a}{b}$
+\end_inset
+
+.
+ Тогда, определив целые числа 
+\begin_inset Formula 
+\[
+q=b!,\qquad p=\sum_{n=0}^{b}\frac{b!}{n!},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Закончить раздел 9.3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доделать главу 9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
