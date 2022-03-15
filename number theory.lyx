@@ -56126,7 +56126,466 @@ q=b!,\qquad p=\sum_{n=0}^{b}\frac{b!}{n!},
 
 \end_inset
 
+находим 
+\begin_inset Formula 
+\[
+qe-p=q\cdot\frac{a}{b}-p=a\left(b-1\right)!-p\in\mathbb{Z}
+\]
 
+\end_inset
+
+и 
+\begin_inset Formula 
+\[
+qe-p=b!\sum_{n=b+1}^{\infty}\frac{1}{n!}>0.
+\]
+
+\end_inset
+
+ При 
+\begin_inset Formula $n>b+1$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula 
+\[
+\frac{n!}{\left(b+1\right)!}=n\cdot\dots\cdot\left(b+2\right)>2^{n-b-1},
+\]
+
+\end_inset
+
+ поэтому 
+\begin_inset Formula 
+\[
+\frac{1}{n!}<\frac{2^{-n+b+1}}{\left(b+1\right)!}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+qe-p=b!\sum_{n=b+1}^{\infty}\frac{1}{n!}<\frac{b!}{\left(b+1\right)!}\left(1+\frac{1}{2}+\frac{1}{4}+\dots\right)=\frac{2}{b+1}\le1.
+\]
+
+\end_inset
+
+ Но целое число 
+\begin_inset Formula $qe-p$
+\end_inset
+
+ не может принадлежать интервалу 
+\begin_inset Formula $0<x<1$
+\end_inset
+
+.
+ Получившееся противоречие доказывает иррациональность 
+\begin_inset Formula $e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Легко видеть, что подобные рассуждения не позволяют доказать, например,
+ иррациональность 
+\begin_inset Formula $e^{2}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать подробнее
+\end_layout
+
+\end_inset
+
+.
+ Они должны быть несколько уточнены.
+ Для дальнейшего понадобится одна конструкция, основанная на классическом
+ разложении 
+\begin_inset Formula 
+\begin{equation}
+e^{x}=\sum_{k=0}^{\infty}\frac{x^{k}}{k!}.\label{eq:exponent-Taylor-series}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Для каждого целого 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ существуют такие многочлены с целыми коэффициентами 
+\begin_inset Formula 
+\[
+Q\left(x\right)=x^{n}+\dots
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+P\left(x\right)=\left(-1\right)^{n}x^{n}+\dots,
+\]
+
+\end_inset
+
+ что 
+\begin_inset Formula 
+\[
+R\left(x\right)=Q\left(x\right)e^{x}-P\left(x\right)=\sum_{k=2n+1}^{\infty}\frac{\left(k-n-1\right)!}{\left(k-2n-1\right)k!}x^{k}.
+\]
+
+\end_inset
+
+При этом для каждого комплексного числа 
+\begin_inset Formula $z$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula 
+\begin{equation}
+\left|R\left(z\right)\right|\le\frac{\left|z\right|^{2n+1}}{n!}e^{\left|z\right|}.\label{eq:e^x-residual-bounds}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Правая часть неравенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e^x-residual-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ с ростом 
+\begin_inset Formula $n$
+\end_inset
+
+ достаточно быстро стремится к нулю.
+ Поэтому, например, при 
+\begin_inset Formula $z=a\in\mathbb{Z}$
+\end_inset
+
+ целые числа 
+\begin_inset Formula $P\left(a\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $Q\left(a\right)$
+\end_inset
+
+ могут служить числителями и знаменателями хорошего рационального приближения
+ к 
+\begin_inset Formula $e^{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Определим дифференциальный оператор 
+\begin_inset Formula $\delta=x\frac{d}{dx}$
+\end_inset
+
+ и для каждого многочлена 
+\begin_inset Formula $T\left(x\right)=a_{n}x^{n}+\dots+a_{1}x+a_{0}$
+\end_inset
+
+ будем обозначать символом 
+\begin_inset Formula 
+\[
+T\left(\delta\right)=a_{n}\delta^{n}+\dots+a_{1}\delta+a_{0},
+\]
+
+\end_inset
+
+ действующий на функцию 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ по правилу 
+\begin_inset Formula 
+\[
+T\left(\delta\right)f\left(x\right)=a_{n}\delta^{n}f\left(x\right)+\dots+a_{1}\delta f\left(x\right)+a_{0}f\left(x\right).
+\]
+
+\end_inset
+
+ Здесь 
+\begin_inset Formula $\delta^{k}f\left(x\right)=\delta\left(\delta^{k-1}f\left(x\right)\right)$
+\end_inset
+
+ при 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Выясним, как оператор 
+\begin_inset Formula $\delta$
+\end_inset
+
+ действует на степени переменной 
+\begin_inset Formula $x$
+\end_inset
+
+ и функцию 
+\begin_inset Formula $e^{x}$
+\end_inset
+
+.
+ Для любого натурального 
+\begin_inset Formula $r$
+\end_inset
+
+ имеем 
+\begin_inset Formula $\delta^{k}x^{r}=r^{k}x^{r}$
+\end_inset
+
+ и, значит, для любого многочлена 
+\begin_inset Formula $T\left(x\right)$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $T\left(\delta\right)x^{r}=T\left(r\right)x^{r}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем, что для каждого целого 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\begin{equation}
+\delta^{k}e^{x}=A_{k}\left(x\right)e^{x},\qquad A_{k}\left(x\right)\in\mathbb{Z}\left[x\right],\qquad\deg A_{k}\left(x\right)=k,\label{eq:action-x-d/dx-on-e^x}
+\end{equation}
+
+\end_inset
+
+причём коэффициент при 
+\begin_inset Formula $x^{k}$
+\end_inset
+
+ в многочлене 
+\begin_inset Formula $A_{k}\left(x\right)$
+\end_inset
+
+ равен 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Утверждение легко доказывается с помощью индукции по 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $k=0$
+\end_inset
+
+ оно, очевидно выполняется.
+ Предположим, что 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+ и выполняется равенство 
+\begin_inset Formula $\delta^{k-1}e^{x}=A_{k-1}\left(x\right)e^{x}$
+\end_inset
+
+ с многочленом 
+\begin_inset Formula $A_{k-1}\left(x\right)$
+\end_inset
+
+, удовлетворяющим сформулированным выше условиям.
+ Тогда 
+\begin_inset Formula 
+\[
+\delta^{k}e^{x}=\delta\left(\delta^{k-1}e^{x}\right)=\delta\left(A_{k-1}\left(x\right)e^{x}\right)=A_{k}\left(x\right)e^{x},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $A_{k}\left(x\right)=xA_{k-1}\left(x\right)+xA_{k-1}^{\prime}\left(x\right)$
+\end_inset
+
+.
+ Из этого равенства следует справедливость 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:action-x-d/dx-on-e^x"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а также утверждение о старшем члене 
+\begin_inset Formula $A_{k}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Выберем теперь какое-нибудь целое число 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ и определим многочлен 
+\begin_inset Formula $T\left(x\right)$
+\end_inset
+
+ равенством 
+\begin_inset Formula $T\left(x\right)=\prod_{j=n+1}^{2n}\left(x-j\right)\in\mathbb{Z}\left[x\right]$
+\end_inset
+
+.
+ Если применить дифференциальный оператор 
+\begin_inset Formula $T\left(\delta\right)$
+\end_inset
+
+ к обеим сторонам равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:exponent-Taylor-series"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то по доказанному 
+\begin_inset Formula $T\left(\delta\right)e^{x}=Q\left(x\right)e^{x}$
+\end_inset
+
+, где 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+ — многочлен степени 
+\begin_inset Formula $n$
+\end_inset
+
+ целыми коэффициентами, его старший коэффициент равен 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Кроме того 
+\begin_inset Formula 
+\[
+T\left(\delta\right)e^{x}=\sum_{k=0}^{\infty}T\left(k\right)\frac{x^{k}}{k!}=P\left(x\right)+R\left(x\right),
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula 
+\begin{equation}
+P\left(x\right)=\sum_{k=0}^{n}T\left(k\right)\frac{x^{k}}{k!}=\left(-1\right)^{n}\sum_{k=0}^{n}\frac{\left(2n-k\right)!}{n!}\cdot\binom{n}{k}\cdot x^{k}\in\mathbb{Z}\left[x\right],\label{eq:e^x-residual-P(x)}
+\end{equation}
+
+\end_inset
+
+и 
+\begin_inset Formula $R\left(x\right)=\sum_{k=n+1}^{\infty}T\left(k\right)\frac{x^{k}}{k!}$
+\end_inset
+
+.
+ Учитывая равенства 
+\begin_inset Formula $T\left(k\right)=0$
+\end_inset
+
+ при 
+\begin_inset Formula $k=n+1,\dots,2n$
+\end_inset
+
+, находим 
+\begin_inset Formula 
+\[
+R\left(x\right)=\sum_{k=2n+1}^{\infty}T\left(k\right)\frac{x^{k}}{k!}=\sum_{k=2n+1}^{\infty}\frac{\left(k-n-1\right)!}{\left(k-2n-1\right)!k!}x^{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+При 
+\begin_inset Formula $k\ge2n+1$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula 
+\[
+\frac{k!}{\left(k-n-1\right)!}=\left(k-n\right)\left(k-n+1\right)\cdot\dots\cdot k\ge n!,
+\]
+
+\end_inset
+
+поэтому при любом 
+\begin_inset Formula $z\in\mathbb{C}$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\left|R\left(z\right)\right|\le\frac{1}{n!}\sum_{k=2n+1}^{\infty}\frac{\left|z\right|^{k}}{\left(k-2n-1\right)!}=\frac{1}{n!}\sum_{j=0}^{\infty}\frac{\left|z\right|^{2n+1+j}}{j!}=\frac{\left|z\right|^{2n+1}}{n!}e^{\left|z\right|}.
+\]
+
+\end_inset
+
+ Заметим также, что в силу равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e^x-residual-P(x)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ старший член многочлена 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula $\left(-1\right)^{n}x^{n}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
