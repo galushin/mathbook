@@ -56223,25 +56223,17 @@ e^{x}=\sum_{k=0}^{\infty}\frac{x^{k}}{k!}.\label{eq:exponent-Taylor-series}
 
  существуют такие многочлены с целыми коэффициентами 
 \begin_inset Formula 
-\[
-Q\left(x\right)=x^{n}+\dots
-\]
-
-\end_inset
-
- и 
-\begin_inset Formula 
-\[
-P\left(x\right)=\left(-1\right)^{n}x^{n}+\dots,
-\]
+\begin{equation}
+Q\left(x\right)=x^{n}+\dots,\qquad P\left(x\right)=\left(-1\right)^{n}x^{n}+\dots,\label{eq:e^x-polynomials}
+\end{equation}
 
 \end_inset
 
  что 
 \begin_inset Formula 
-\[
-R\left(x\right)=Q\left(x\right)e^{x}-P\left(x\right)=\sum_{k=2n+1}^{\infty}\frac{\left(k-n-1\right)!}{\left(k-2n-1\right)k!}x^{k}.
-\]
+\begin{equation}
+R\left(x\right)=Q\left(x\right)e^{x}-P\left(x\right)=\sum_{k=2n+1}^{\infty}\frac{\left(k-n-1\right)!}{\left(k-2n-1\right)k!}x^{k}.\label{eq:e^x-residual-as-sum}
+\end{equation}
 
 \end_inset
 
@@ -56583,6 +56575,312 @@ noprefix "false"
 
  имеет вид 
 \begin_inset Formula $\left(-1\right)^{n}x^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Для каждого рационального 
+\begin_inset Formula $r\neq0$
+\end_inset
+
+ число 
+\begin_inset Formula $e^{r}$
+\end_inset
+
+ иррационально.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Предположим, что 
+\begin_inset Formula $e^{r}\in\mathbb{Q}$
+\end_inset
+
+ для некоторого 
+\begin_inset Formula $r=\frac{a}{b}$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ целые, причём 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ Тогда число 
+\begin_inset Formula $e^{a}=\left(e^{r}\right)^{b}$
+\end_inset
+
+ рационально.
+ Выберем целое 
+\begin_inset Formula $q>0$
+\end_inset
+
+, такое, что 
+\begin_inset Formula $q\cdot e^{a}=p\in\mathbb{Z}$
+\end_inset
+
+.
+ Согласно 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e^x-residual-as-sum"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e^x-residual-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ находим теперь 
+\begin_inset Formula $0<qR\left(a\right)<1$
+\end_inset
+
+ для любого достаточно большого 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ С другой стороны равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e^x-residual-as-sum"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ влечёт 
+\begin_inset Formula 
+\[
+qR\left(a\right)=q\left(Q\left(a\right)e^{a}-P\left(a\right)\right)=Q\left(a\right)p-P\left(a\right)q\in\mathbb{Z}.
+\]
+
+\end_inset
+
+Так как это противоречит неравенствам 
+\begin_inset Formula $0<qR\left(a\right)<1$
+\end_inset
+
+, заключаем, что 
+\begin_inset Formula $e^{r}\in\mathbb{Q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+Число 
+\begin_inset Formula $\pi$
+\end_inset
+
+ иррационально.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Предположим, что 
+\begin_inset Formula $\pi=\frac{a}{b}$
+\end_inset
+
+, где 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+ и обозначим 
+\begin_inset Formula $z=\pi bi=ai$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+R\left(z\right)=Q\left(ai\right)e^{pbi}-P\left(ai\right)=Q\left(ai\right)\left(-1\right)^{b}-P\left(ai\right)\in\mathbb{Z}\left[i\right].
+\]
+
+\end_inset
+
+Из неравенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e^x-residual-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, поскольку 
+\begin_inset Formula $R\left(z\right)=u+iv$
+\end_inset
+
+ с целыми 
+\begin_inset Formula $u,v$
+\end_inset
+
+, находим 
+\begin_inset Formula $R\left(z\right)=0$
+\end_inset
+
+ для всех достаточно больших 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Далее используются обозначения 
+\begin_inset Formula $P_{n}\left(x\right)=P\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $Q_{n}\left(x\right)=Q\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $R_{n}\left(x\right)=R\left(x\right)$
+\end_inset
+
+, указывающие на величину параметра 
+\begin_inset Formula $n$
+\end_inset
+
+, при котором построена тройка 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $Q\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $R\left(x\right)$
+\end_inset
+
+.
+ Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e^x-residual-as-sum"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует тождество 
+\begin_inset Formula 
+\begin{equation}
+Q_{n}\left(x\right)R_{n+1}\left(x\right)-Q_{n+1}\left(x\right)R_{n}\left(x\right)=Q_{n+1}P_{n}-Q_{n}P_{n+1}=\Delta\left(x\right),\label{eq:pi-is-rational-alteration}
+\end{equation}
+
+\end_inset
+
+а также неравенство 
+\begin_inset Formula $\mathrm{ord}_{x=0}\Delta\left(x\right)\ge2n+1$
+\end_inset
+
+, означающее, что разложение многочлена 
+\begin_inset Formula $\Delta\left(x\right)$
+\end_inset
+
+ в ряд Тейлора в окрестности точки 
+\begin_inset Formula $x=0$
+\end_inset
+
+ начинается по крайней мере со степени 
+\begin_inset Formula $x^{2n+1}$
+\end_inset
+
+, и оценка 
+\begin_inset Formula $\deg\Delta\left(x\right)\le2n+1$
+\end_inset
+
+.
+ Но это возможно лишь в случае 
+\begin_inset Formula $\Delta\left(x\right)=\gamma x^{2n+1}$
+\end_inset
+
+ с некоторой постоянной 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ Сравнивая при помощи 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e^x-polynomials"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ старшие коэффициенты в равенстве 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pi-is-rational-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, находим 
+\begin_inset Formula $\Delta\left(x\right)=2\left(-1\right)^{n}x^{2n+1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\Delta\left(z\right)\neq0$
+\end_inset
+
+, вопреки равенству 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pi-is-rational-alteration"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset Formula $R_{n}\left(z\right)=R_{n+1}\left(z\right)=0$
 \end_inset
 
 .
