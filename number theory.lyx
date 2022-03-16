@@ -56886,17 +56886,536 @@ noprefix "false"
 .
 \end_layout
 
+\begin_layout Section
+Трансцендентность числа 
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-\begin_inset Note Note
+Важной частью доказательства иррациональности чисел вида 
+\begin_inset Formula $e^{r}$
+\end_inset
+
+ при 
+\begin_inset Formula $r\in\mathbb{Q}$
+\end_inset
+
+, 
+\begin_inset Formula $r\neq0$
+\end_inset
+
+, является конструкция рациональных приближений к этим числам.
+\end_layout
+
+\begin_layout Standard
+В 1873 году Ш.
+\begin_inset space \thinspace{}
+\end_inset
+
+Эрмит предложил при любом 
+\begin_inset Formula $m\in\mathbb{Z}$
+\end_inset
+
+, 
+\begin_inset Formula $m>0$
+\end_inset
+
+ аналитическую конструкцию целых чисел 
+\begin_inset Formula $b_{0},b_{1},\dots,b_{m}$
+\end_inset
+
+ таких, что все разности 
+\begin_inset Formula $b_{0}e^{k}-b_{k},\quad1\le k\le m$
+\end_inset
+
+, близки к нулю, так называемых совместных приближений.
+ На этой основе он доказал следующую теорему.
+\end_layout
+
+\begin_layout Theorem
+Число 
+\begin_inset Formula $e$
+\end_inset
+
+ трансцендентно.
+\end_layout
+
+\begin_layout Standard
+В основе конструкции Эрмита лежит тождество 
+\begin_inset Formula 
+\begin{equation}
+\intop_{0}^{x}e^{-t}f\left(t\right)dt=F\left(0\right)-F\left(x\right)e^{-x},\label{eq:integral-e^-tf(t)dt}
+\end{equation}
+
+\end_inset
+
+справедливое для многочлена 
+\begin_inset Formula $f\left(x\right)\in\mathbb{C}\left[x\right]$
+\end_inset
+
+, при 
+\begin_inset Formula 
+\begin{equation}
+F\left(x\right)=\sum_{k=0}^{M}f^{\left(k\right)}\left(x\right),\qquad M=\deg f\left(x\right),\label{eq:e-is-transcendent-sum-of-derivatives}
+\end{equation}
+
+\end_inset
+
+и легко доказываемое, например, с помощью дифференцирования 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:integral-e^-tf(t)dt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Действительно, производная левой части равна 
+\begin_inset Formula $e^{-x}f\left(x\right)$
+\end_inset
+
+.
+ А для производной правой части находим 
+\begin_inset Formula 
+\[
+\left(F\left(0\right)-e^{-x}F\left(x\right)\right)^{\prime}=e^{-x}\left(F\left(x\right)-F^{\prime}\left(x\right)\right)=e^{-x}f\left(x\right).
+\]
+
+\end_inset
+
+ Совпадение производных означает, что разность левой и правой частей 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:integral-e^-tf(t)dt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ есть константа.
+ Учитывая, что обе эти функции обращаются в нуль при 
+\begin_inset Formula $x=0$
+\end_inset
+
+, заключаем, что они равны.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-Закончить раздел 9.3
+Подсмотрел
 \end_layout
 
 \end_inset
 
+Предположим, что 
+\begin_inset Formula $e$
+\end_inset
 
+ — алгебраическое число.
+ Тогда при некотором натуральном 
+\begin_inset Formula $m$
+\end_inset
+
+ и с некоторыми целыми коэффициентами 
+\begin_inset Formula $a_{0},\dots,a_{m}$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\begin{equation}
+a_{m}e^{m}+\dots+a_{1}e+a_{0}=0,\qquad a_{m}>0.\label{eq:e-is-transcendent-polynomial}
+\end{equation}
+
+\end_inset
+
+ Выберем многочлен 
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{n+r_{0}}\left(x-1\right)^{n+r_{1}}\cdot\dots\cdot\left(x-m\right)^{n+r_{m}},
+\]
+
+\end_inset
+
+где каждый из параметров 
+\begin_inset Formula $r_{0},\dots,r_{m}$
+\end_inset
+
+ в дальнейшем будет выбран равным 
+\begin_inset Formula $0$
+\end_inset
+
+ или 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Для любых двух натуральных чисел 
+\begin_inset Formula $k$
+\end_inset
+
+ и 
+\begin_inset Formula $l$
+\end_inset
+
+ справедливо равенство 
+\begin_inset Formula 
+\begin{equation}
+\left(x^{k}\right)^{\left(l\right)}=\begin{cases}
+0,\qquad & l<k,\\
+l!\binom{k}{l}x^{k-l}, & l\le k.
+\end{cases}\label{eq:x^k-derivatives}
+\end{equation}
+
+\end_inset
+
+Многочлен 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ имеет целые коэффициенты.
+ Поэтому из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:x^k-derivatives"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что коэффициенты многочлена 
+\begin_inset Formula $f^{\left(l\right)}\left(x\right)$
+\end_inset
+
+ делятся на 
+\begin_inset Formula $l!$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+В силу выбора 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ обладает также свойством 
+\begin_inset Formula 
+\[
+f^{\left(l\right)}\left(0\right)=f^{\left(l\right)}\left(1\right)=\dots=f^{\left(l\right)}\left(k\right)=0,\qquad0\le l<n,
+\]
+
+\end_inset
+
+поэтому при любом 
+\begin_inset Formula $k=0,1,2,\dots,m$
+\end_inset
+
+ для многочлена 
+\begin_inset Formula $F\left(x\right)$
+\end_inset
+
+, определённого равенством 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e-is-transcendent-sum-of-derivatives"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, находим 
+\begin_inset Formula 
+\[
+F\left(k\right)=\sum_{l=0}^{M}f^{\left(l\right)}\left(k\right)=\sum_{l=n}^{M}f^{\left(l\right)}\left(k\right)=n!b_{k},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $b_{k}$
+\end_inset
+
+ — целые числа.
+ Из тождества 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:integral-e^-tf(t)dt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при 
+\begin_inset Formula $x=k$
+\end_inset
+
+ находим 
+\begin_inset Formula 
+\begin{equation}
+b_{0}e^{k}-b_{k}=\frac{e^{k}}{n!}\intop_{0}^{k}e^{-t}f\left(t\right)dt.\label{eq:e-is-transcendent-b_0e^k-b_k}
+\end{equation}
+
+\end_inset
+
+Многочлен 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ есть произведение 
+\begin_inset Formula $\sum_{i=0}^{m}\left(n+r_{i}\right)\le\left(m+1\right)\left(n+1\right)$
+\end_inset
+
+ скобок вида 
+\begin_inset Formula $x-k$
+\end_inset
+
+, каждая из которых на отрезке 
+\begin_inset Formula $\left[0,m\right]$
+\end_inset
+
+ не превосходит 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula 
+\begin{equation}
+\max_{0\le x\le m}\left|f\left(x\right)\right|\le c^{n+1},\qquad c=m^{m+1}.\label{eq:e-is-transcendent-max-of-f-bounds}
+\end{equation}
+
+\end_inset
+
+Теперь из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e-is-transcendent-b_0e^k-b_k"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e-is-transcendent-max-of-f-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следуют равенства 
+\begin_inset Formula 
+\begin{equation}
+b_{0}e^{k}-b_{k}=O\left(\frac{c^{n}}{n!}\right),\qquad k=0,1,\dots,m.\label{eq:e-is-transcendent-b_0e^k-b_k-bounds}
+\end{equation}
+
+\end_inset
+
+ Умножим равенство на 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e-is-transcendent-b_0e^k-b_k"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ на 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+ и просуммируем получившиеся произведения при всех 
+\begin_inset Formula $k=0,1,\dots,m$
+\end_inset
+
+.
+ В силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e-is-transcendent-polynomial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ находим 
+\begin_inset Formula 
+\begin{equation}
+I=a_{0}b_{0}+\dots+a_{m}b_{m}=-\sum_{k=0}^{m}a_{k}\frac{e^{k}}{n!}\intop_{0}^{k}e^{-t}f\left(t\right)dt.\label{eq:e-is-transcendent-ab-sum}
+\end{equation}
+
+\end_inset
+
+Равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e-is-transcendent-b_0e^k-b_k-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ означают, что 
+\begin_inset Formula 
+\begin{equation}
+I=O\left(\frac{c^{n}}{n!}\right).\label{eq:e-is-transcendent-I-bounds}
+\end{equation}
+
+\end_inset
+
+Определим функции 
+\begin_inset Formula 
+\[
+u_{k}\left(x\right)=\begin{cases}
+1,\qquad & x\le k,\\
+0, & x>k.
+\end{cases}
+\]
+
+\end_inset
+
+ Тогда равенство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e-is-transcendent-ab-sum"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно переписать в виде 
+\begin_inset Formula 
+\begin{equation}
+I=-\sum_{k=0}^{m}a_{k}\frac{e^{k}}{n!}\intop_{0}^{m}e^{-t}f\left(t\right)u_{k}\left(t\right)dt=-\intop_{0}^{m}e^{-t}f\left(t\right)G\left(t\right)dt,\label{eq:e-is-transcendent-I-as-integral}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula 
+\[
+G\left(t\right)=\frac{1}{n!}\sum_{k=0}^{m}a_{k}e^{k}u_{k}\left(t\right).
+\]
+
+\end_inset
+
+ На промежутке 
+\begin_inset Formula $0<x<m$
+\end_inset
+
+ имеем 
+\begin_inset Formula $G\left(x\right)=\frac{1}{n!}a_{m}e^{m}>0$
+\end_inset
+
+, так что функция 
+\begin_inset Formula $G\left(x\right)$
+\end_inset
+
+ отличная от тождественного нуля.
+ Функция 
+\begin_inset Formula $G\left(x\right)$
+\end_inset
+
+ постоянна на интервалах между целыми точками.
+ Поэтому она может менять знак лишь переходе переменной 
+\begin_inset Formula $x$
+\end_inset
+
+ через целые точки.
+ Выберем теперь показатели 
+\begin_inset Formula $r_{1},\dots,r_{m-1}$
+\end_inset
+
+, равными 
+\begin_inset Formula $0$
+\end_inset
+
+ или 1 так, чтобы функции 
+\begin_inset Formula $G\left(t\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+ при переходе через каждую целую точку 
+\begin_inset Formula $1,\dots,m-1$
+\end_inset
+
+ одновременно меняли бы знак или сохраняли его.
+ Параметры 
+\begin_inset Formula $r_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $r_{m}$
+\end_inset
+
+ можно взять, например, равными нулю.
+ Тогда под интегралом в правой части равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e-is-transcendent-I-as-integral"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ стоит знакопостоянная функция, что обеспечивает условие 
+\begin_inset Formula $I\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Итак, 
+\begin_inset Formula $I=a_{0}b_{0}+\dots+a_{m}b_{m}$
+\end_inset
+
+ есть целое отличное от нуля число, которое в силу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e-is-transcendent-I-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ меньше 
+\begin_inset Formula $1$
+\end_inset
+
+ при достаточно большом 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Получившееся противоречие завершает доказательство теоремы.
 \end_layout
 
 \begin_layout Standard
