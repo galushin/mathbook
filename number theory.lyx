@@ -57418,6 +57418,1395 @@ noprefix "false"
  Получившееся противоречие завершает доказательство теоремы.
 \end_layout
 
+\begin_layout Section
+Трансцендентность числа 
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В этом параграфе будет доказана следующая теорема.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:pi-is-transcendental"
+
+\end_inset
+
+Число 
+\begin_inset Formula $\pi$
+\end_inset
+
+ трансцендентное.
+\end_layout
+
+\begin_layout Standard
+Начнём с некоторой задачи, относящейся к теории приближения функций.
+ Предположим, что на интервале 
+\begin_inset Formula $\left(a;b\right)$
+\end_inset
+
+ определена функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и нам известны её значения в некоторых точках 
+\begin_inset Formula $\alpha_{0},\dots,\alpha_{m}$
+\end_inset
+
+ этого интервала.
+ Требуется найти многочлен 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ по возможности меньшей степени, принимающий в заданных точках 
+\begin_inset Formula $\alpha_{j}$
+\end_inset
+
+ те же значения, что и функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ Если количество точке 
+\begin_inset Formula $m$
+\end_inset
+
+ достаточно велико, а функция достаточно гладкая, значения этого многочлена,
+ называемого интерполяционным, будут близки к значениям функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и в других точках интервала 
+\begin_inset Formula $\left(a;b\right)$
+\end_inset
+
+.
+ Для решения этой задачи определим многочлены 
+\begin_inset Formula 
+\[
+Q\left(x\right)=\left(x-\alpha_{0}\right)\cdot\dots\cdot\left(x-\alpha_{m}\right),\quad Q_{k}\left(x\right)=\frac{Q\left(x\right)}{x-\alpha_{k}},\quad k=0,\dots,m,
+\]
+
+\end_inset
+
+и будем искать многочлен 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ в виде 
+\begin_inset Formula 
+\[
+P\left(x\right)=\sum_{k=0}^{m}b_{k}Q_{k}\left(x\right)
+\]
+
+\end_inset
+
+ с некоторыми постоянными 
+\begin_inset Formula $b_{k}$
+\end_inset
+
+, подобрав их так, чтобы выполнялись нужны равенства значений.
+ Учитывая, что при 
+\begin_inset Formula $k\neq j$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $Q_{k}\left(\alpha_{j}\right)=0$
+\end_inset
+
+, получаем 
+\begin_inset Formula $b_{j}Q_{j}\left(\alpha_{j}\right)=P\left(\alpha_{j}\right)=f\left(\alpha_{j}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $j=0,1,\dots,m$
+\end_inset
+
+ и, следовательно, 
+\begin_inset Formula 
+\[
+P\left(x\right)=\sum_{k=0}^{m}\frac{f\left(\alpha_{k}\right)}{Q_{k}\left(\alpha_{k}\right)}\cdot Q_{k}\left(x\right).
+\]
+
+\end_inset
+
+ Построенный многочлен удовлетворяет условиям 
+\begin_inset Formula 
+\[
+P\left(\alpha_{j}\right)=f\left(\alpha_{j}\right),\qquad j=0,\dots,m,
+\]
+
+\end_inset
+
+и, значит, является интерполяционным многочленом.
+\end_layout
+
+\begin_layout Standard
+Для доказательства трансцендентности 
+\begin_inset Formula $\pi$
+\end_inset
+
+ нам понадобится решить сначала более сложную интерполяционную задачу, в
+ которой требуется совпадение не только значений искомого многочлена со
+ значениями заданной функции, но и совпадение их производных до некоторых
+ порядков.
+ Конструкция этого интерполяционного многочлена задаётся следующей леммой.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:interpolation-multiple-roots"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\alpha_{0},\alpha_{1},\dots,\alpha_{m}$
+\end_inset
+
+ — различные числа из интервала 
+\begin_inset Formula $\left(a;b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $r_{0},r_{1},\dots r_{m}$
+\end_inset
+
+ — неотрицательные целые числа.
+ Положим 
+\begin_inset Formula $N=-1+\sum_{j=0}^{m}\left(r_{j}+1\right)$
+\end_inset
+
+ и определим многочлены 
+\begin_inset Formula 
+\[
+Q\left(x\right)=\prod_{j=0}^{m}\left(x-\alpha_{j}\right)^{r_{j}+1},\qquad Q_{k}\left(x\right)=\frac{Q\left(x\right)}{\left(x-\alpha_{k}\right)^{r_{k}+1}},\quad k=0,1,\dots,m.
+\]
+
+\end_inset
+
+Пусть также 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — функция 
+\begin_inset Formula $N$
+\end_inset
+
+ раз дифференцируемая в 
+\begin_inset Formula $\left(a;b\right)$
+\end_inset
+
+.
+ Тогда многочлен 
+\begin_inset Formula 
+\begin{equation}
+P\left(x\right)=\sum_{j=0}^{m}Q_{j}\left(x\right)R_{j}\left(x\right),\label{eq:interpolation-polinomial-multiple-as-sum}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula 
+\[
+R_{j}\left(x\right)=\sum_{s=0}^{r_{j}}\frac{1}{s!}\left(\left(\frac{d}{dt}\right)^{s}\left(\frac{f\left(t\right)}{Q_{j}\left(t\right)}\right)\right)_{t=\alpha_{j}}\left(x-\alpha_{j}\right)^{s},
+\]
+
+\end_inset
+
+имеет степень не выше 
+\begin_inset Formula $N$
+\end_inset
+
+ и удовлетворяет равенствам 
+\begin_inset Formula 
+\begin{equation}
+P^{\left(i\right)}\left(\alpha_{k}\right)=f^{\left(i\right)}\left(\alpha_{k}\right),\qquad0\le i\le r_{k},\quad0\le k\le m.\label{eq:interpolation-multiple-roots}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Так как 
+\begin_inset Formula $\deg Q_{k}\left(x\right)=N-r_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $\deg R_{k}\left(x\right)\le r_{k}$
+\end_inset
+
+, и эти неравенства справедливы при любом 
+\begin_inset Formula $k=0,1,\dots,m$
+\end_inset
+
+ заключаем, что 
+\begin_inset Formula $\deg P\left(x\right)\le N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Фиксируем некоторое число 
+\begin_inset Formula $k$
+\end_inset
+
+ (
+\begin_inset Formula $0\le k\le m$
+\end_inset
+
+).
+ Учитывая, что при 
+\begin_inset Formula $j\neq k$
+\end_inset
+
+ многочлен 
+\begin_inset Formula $Q_{j}\left(x\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\left(x-\alpha_{k}\right)^{r_{k}+1}$
+\end_inset
+
+, получаем 
+\begin_inset Formula 
+\[
+P\left(x\right)=Q_{k}\left(x\right)R_{k}\left(x\right)+O\left(\left(x-\alpha_{k}\right)^{r_{k}+1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Многочлен 
+\begin_inset Formula $R_{k}\left(x\right)$
+\end_inset
+
+ определён как многочлен Тейлора в точке 
+\begin_inset Formula $x=\alpha_{k}$
+\end_inset
+
+ для функции 
+\begin_inset Formula $\frac{f\left(x\right)}{Q_{k}\left(x\right)}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\frac{f\left(x\right)}{Q_{k}\left(x\right)}=R_{k}\left(x\right)+O\left(\left(x-\alpha_{k}\right)^{r_{k}+1}\right),
+\]
+
+\end_inset
+
+и, следовательно, 
+\begin_inset Formula 
+\[
+f\left(x\right)=Q_{k}\left(x\right)R_{k}\left(x\right)+O\left(\left(x-\alpha_{k}\right)^{r_{k}+1}\right).
+\]
+
+\end_inset
+
+Из полученных формул для 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ теперь следует, что 
+\begin_inset Formula 
+\[
+f\left(x\right)-P\left(x\right)=O\left(\left(x-\alpha_{k}\right)^{r_{k}+1}\right)
+\]
+
+\end_inset
+
+ и, следовательно 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ имеют одинаковые производные в точке 
+\begin_inset Formula $x=\alpha_{k}$
+\end_inset
+
+ до порядка 
+\begin_inset Formula $r_{k}$
+\end_inset
+
+ включительно.
+ Поскольку это заключение справедливо для любого целого 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $0\le k\le m$
+\end_inset
+
+, лемма доказана.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:interpolation-polynomial-is-unique"
+
+\end_inset
+
+Существует единственный многочлен, удовлетворяющий условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:interpolation-multiple-roots"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и имеющий степень не выше 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Существование многочлена доказано в лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:interpolation-multiple-roots"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $A\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $B\left(x\right)$
+\end_inset
+
+ — два многочлена степени не выше 
+\begin_inset Formula $N$
+\end_inset
+
+, удовлетворяющие условиям 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:interpolation-multiple-roots"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, то 
+\begin_inset Formula $Q\left(x\right)\mid\left(A\left(x\right)-B\left(x\right)\right)$
+\end_inset
+
+.
+ Учитывая, что 
+\begin_inset Formula $\deg Q\left(x\right)=N+1$
+\end_inset
+
+ и 
+\begin_inset Formula $\deg\left(A\left(x\right)-B\left(x\right)\right)\le N$
+\end_inset
+
+, заключаем, что 
+\begin_inset Formula $A\left(x\right)-B\left(x\right)=0$
+\end_inset
+
+ или 
+\begin_inset Formula $A\left(x\right)=B\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:interpolation-polynomial-leading-coefficient"
+
+\end_inset
+
+В условиях леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:interpolation-multiple-roots"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ на интервале 
+\begin_inset Formula $\left(a;b\right)$
+\end_inset
+
+ существует такая точка 
+\begin_inset Formula $\xi$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\begin{equation}
+\sum_{k=0}^{m}\sum_{j=0}^{r_{k}}\frac{f^{\left(r_{k}-j\right)}\left(\alpha_{k}\right)}{j!\left(r_{k}-j\right)!}\left(Q_{k}\left(t\right)^{-1}\right)_{t=\alpha_{k}}^{\left(j\right)}=\frac{f^{\left(N\right)}\left(\xi\right)}{N!}.\label{eq:interpolation-polynomial-leading-coefficient}
+\end{equation}
+
+\end_inset
+
+Левая часть этого равенства есть коэффициент при 
+\begin_inset Formula $x^{N}$
+\end_inset
+
+ в многочлене 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ из леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:interpolation-multiple-roots"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Коэффициент при 
+\begin_inset Formula $x^{N}$
+\end_inset
+
+ в многочлене 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+, как это следует из равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:interpolation-polinomial-multiple-as-sum"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, равен сумме старших коэффициентов многочленов 
+\begin_inset Formula $R_{j}\left(x\right)$
+\end_inset
+
+, то есть равен 
+\begin_inset Formula 
+\[
+\sum_{k=0}^{m}\frac{1}{r_{k}!}\left(\left(\frac{d}{dt}\right)^{r_{k}}\left(\frac{f\left(t\right)}{Q_{k}\left(t\right)}\right)\right)_{t=\alpha_{k}}=\sum_{k=0}^{m}\sum_{j=0}^{r_{k}}\frac{f^{\left(r_{k}-j\right)}\left(\alpha_{k}\right)}{j!\left(r_{k}-j\right)!}\left(Q_{k}\left(t\right)^{-1}\right)_{t=\alpha_{k}}^{\left(j\right)}.
+\]
+
+\end_inset
+
+ Это доказывает второе утверждение следствия.
+ Для доказательства первого утверждения заметим, что функция 
+\begin_inset Formula $F\left(x\right)=f\left(x\right)-P\left(x\right)$
+\end_inset
+
+, в силу леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:interpolation-multiple-roots"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, имеем в каждой из точке 
+\begin_inset Formula $\alpha_{k}\in\left(a;b\right)$
+\end_inset
+
+ нули кратности 
+\begin_inset Formula $r_{k}+1$
+\end_inset
+
+.
+ По теореме Ролля, применённой несколько раз, на этом интервале есть точка
+ 
+\begin_inset Formula $\xi$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $F^{\left(N\right)}\left(\xi\right)=0$
+\end_inset
+
+.
+ Из равенства 
+\begin_inset Formula $F^{\left(N\right)}\left(\xi\right)=f^{\left(N\right)}\left(\xi\right)-N!a_{N}$
+\end_inset
+
+, где 
+\begin_inset Formula $a_{N}$
+\end_inset
+
+ — старший коэффициент многочлена 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+, получаем первое утверждение следствия.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+(Теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:pi-is-transcendental"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+ Допустим, что 
+\begin_inset Formula $\pi$
+\end_inset
+
+ — алгебраическое число.
+ Степень его обозначим буквой 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $m\ge1$
+\end_inset
+
+.
+ Утверждение леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:interpolation-multiple-roots"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и следствия из неё будут применены нами к функции 
+\begin_inset Formula $f\left(x\right)=\sin\pi x$
+\end_inset
+
+ и точкам 
+\begin_inset Formula 
+\[
+\alpha_{0}=0,\quad\alpha_{1}=1,\dots,\alpha_{m}=m.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — произвольное натуральное число, в дальнейшем оно будет выбрано достаточно
+ большим.
+ Положим 
+\begin_inset Formula 
+\[
+r_{j}=\left\lfloor \frac{N-j}{m+1}\right\rfloor ,\qquad j=0,1,\dots,m.
+\]
+
+\end_inset
+
+Если 
+\begin_inset Formula $n$
+\end_inset
+
+ — частное и 
+\begin_inset Formula $s$
+\end_inset
+
+ — остаток от деления 
+\begin_inset Formula $N+1$
+\end_inset
+
+ на 
+\begin_inset Formula $m+1$
+\end_inset
+
+, то есть 
+\begin_inset Formula $N+1=\left(m+1\right)n+s$
+\end_inset
+
+, 
+\begin_inset Formula $0\le s\le m$
+\end_inset
+
+, то, как легко видеть, 
+\begin_inset Formula 
+\[
+r_{j}=\begin{cases}
+n, & j<s,\\
+n-1, & j\ge s.
+\end{cases},\qquad j=0,1,\dots,m.
+\]
+
+\end_inset
+
+ Тогда 
+\begin_inset Formula 
+\begin{multline*}
+\sum_{j=0}^{m}\left(r_{j}+1\right)=s\left(n+1\right)+\left(m+1-s\right)n=\\
+=\left(m+1\right)n+s=N+1.
+\end{multline*}
+
+\end_inset
+
+Каждому натуральному числу 
+\begin_inset Formula $N$
+\end_inset
+
+ поставим в соответствие многочлен 
+\begin_inset Formula $P_{N}\left(x\right)$
+\end_inset
+
+, определённый леммой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:interpolation-multiple-roots"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при указанном выборе функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и чисел 
+\begin_inset Formula $\alpha_{1},\dots,\alpha_{m}$
+\end_inset
+
+, 
+\begin_inset Formula $r_{1},\dots,r_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если для некоторого 
+\begin_inset Formula $N$
+\end_inset
+
+ выполняется неравенство 
+\begin_inset Formula $\deg P_{N+1}<N+1$
+\end_inset
+
+, то по следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:interpolation-polynomial-is-unique"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ можно утверждать, что 
+\begin_inset Formula $P_{N+1}\left(x\right)=P_{N}\left(x\right)$
+\end_inset
+
+.
+ Если бы неравенства 
+\begin_inset Formula $\deg P_{N}<N$
+\end_inset
+
+ выполнялись для всех 
+\begin_inset Formula $N$
+\end_inset
+
+ больших некоторого числа 
+\begin_inset Formula $M$
+\end_inset
+
+, то по доказанному при любом 
+\begin_inset Formula $N>M$
+\end_inset
+
+ имело бы место равенство 
+\begin_inset Formula $P_{N}\left(x\right)=P_{M}\left(x\right)$
+\end_inset
+
+ и тогда, в частности, 
+\begin_inset Formula 
+\[
+\left(\sin\pi x\right)_{x=0}^{\left(l\right)}=P_{M}\left(0\right),\qquad l=0,1,2,\dots.
+\]
+
+\end_inset
+
+Так как 
+\begin_inset Formula $P_{M}\left(x\right)$
+\end_inset
+
+ — многочлен, то правая часть последнего равенства равна нулю при всех достаточн
+о больших 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ С другой стороны все нечётные производные функции 
+\begin_inset Formula $\sin\pi x$
+\end_inset
+
+ в точке 
+\begin_inset Formula $0$
+\end_inset
+
+ отличны от нуля.
+ Получившееся противоречие означает, что существуют сколь угодно большие
+ числа 
+\begin_inset Formula $N$
+\end_inset
+
+, для которых 
+\begin_inset Formula $\deg P_{N}=N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Выберем какое-нибудь достаточно большое целое число 
+\begin_inset Formula $N$
+\end_inset
+
+ условием 
+\begin_inset Formula $\deg P_{N}=N$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $B$
+\end_inset
+
+ — коэффициент при 
+\begin_inset Formula $x^{N}$
+\end_inset
+
+ в многочлене 
+\begin_inset Formula $P_{N}\left(x\right)$
+\end_inset
+
+, то согласно выбору 
+\begin_inset Formula $N$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $B\neq0$
+\end_inset
+
+.
+ По следствию 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:interpolation-polynomial-leading-coefficient"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\begin{equation}
+B=\sum_{k=0}^{m}\sum_{j=0}^{r_{k}}\frac{f^{\left(r_{k}-j\right)}\left(k\right)}{\left(r_{k}-j\right)!}\cdot a_{k,j},\label{eq:pi-is-transcendental-leading-coefficient}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula 
+\[
+a_{k,j}=\frac{1}{j!}\left(Q_{k}\left(t\right)^{-1}\right)_{t=k}^{\left(j\right)},\qquad j\ge0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Справедливы равенства 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать подробнее
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\left(\sin\pi x\right)_{x=k}^{\left(l\right)}=\left(-1\right)^{k}\pi^{l}\sin\frac{\pi l}{2},\label{eq:pi-is-transcendent-sin-derivatives-values}
+\end{equation}
+
+\end_inset
+
+из которых следует, что числа 
+\begin_inset Formula $f^{\left(r_{k}-j\right)}\left(k\right)$
+\end_inset
+
+ в равенстве 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pi-is-transcendental-leading-coefficient"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ либо равны 
+\begin_inset Formula $0$
+\end_inset
+
+, либо с точностью до знака совпадают с некоторой степенью 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ Причём показатель степени не превосходит числа 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Ниже будет показано, что 
+\begin_inset Formula $a_{k,j}\in\mathbb{Q}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $B$
+\end_inset
+
+ есть многочлен от 
+\begin_inset Formula $\pi$
+\end_inset
+
+ с рациональными коэффициентами.
+\end_layout
+
+\begin_layout Proof
+Из определения числе 
+\begin_inset Formula $a_{k,j}$
+\end_inset
+
+ следует, что 
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{Q_{k}\left(t\right)}=\sum_{j=0}^{\infty}a_{k,j}\cdot\left(t-k\right)^{j}.\label{eq:pi-is-transcendental-inverse-of-Q}
+\end{equation}
+
+\end_inset
+
+ Подставим в это тождество 
+\begin_inset Formula $t=k+dx$
+\end_inset
+
+, где 
+\begin_inset Formula $d$
+\end_inset
+
+ — некоторое натуральное число, делящееся на все числа 
+\begin_inset Formula $1,2,\dots,m$
+\end_inset
+
+.
+ Например, можно взять 
+\begin_inset Formula $d=m!$
+\end_inset
+
+.
+ Тогда 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pi-is-transcendental-inverse-of-Q"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ может быть переписано в виде
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{{\displaystyle \prod_{\begin{array}{c}
+l=0\\
+l\neq k
+\end{array}}^{m}}\left(k-l+dx\right)^{r_{l}+1}}=\sum_{j=0}^{\infty}a_{k,j}\cdot d^{j}\cdot x^{j}.\label{eq:pi-is-transcendental-inverse-of-Q-substitute}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Учитывая, что 
+\begin_inset Formula 
+\[
+\frac{d}{k-l+dx}=\frac{d}{k-l}\cdot\frac{1}{1-\frac{d}{l-k}x}=-\sum_{i=0}^{\infty}\left(\frac{d}{l-k}\right)^{i+1}x^{i},
+\]
+
+\end_inset
+
+ то есть функция 
+\begin_inset Formula $\frac{d}{k-l+dx}$
+\end_inset
+
+ раскладывается в точке 
+\begin_inset Formula $0$
+\end_inset
+
+ в ряд Тейлора с целыми коэффициентами, заключаем с помощью 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pi-is-transcendental-inverse-of-Q-substitute"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что ряд 
+\begin_inset Formula $d^{N-r_{k}}\sum_{j=0}^{\infty}a_{k,j}d^{j}x^{j}$
+\end_inset
+
+ имеет целые коэффициенты.
+ Поэтому 
+\begin_inset Formula $d^{N-r_{k}+j}a_{k,j}\in\mathbb{Z}$
+\end_inset
+
+ и, значит, 
+\begin_inset Formula 
+\begin{equation}
+d^{N}\cdot a_{k,j}\in\mathbb{Z},\qquad0\le j\le r_{k}.\label{eq:pi-is-transcendent-d^N*a}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $u\left(x\right)=\sum_{j=0}^{\infty}u_{j}x^{j}$
+\end_inset
+
+ и 
+\begin_inset Formula $v\left(x\right)=\sum_{j=0}^{\infty}v_{j}x^{j}$
+\end_inset
+
+ два степенных ряда, будем обозначать символом 
+\begin_inset Formula $u\left(x\right)<<v\left(x\right)$
+\end_inset
+
+ тот факт, что каждый коэффициент ряда 
+\begin_inset Formula $u\left(x\right)$
+\end_inset
+
+ по абсолютной величине не превосходит соответствующего коэффициента ряда
+ 
+\begin_inset Formula $v\left(x\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|u_{j}\right|\le\left|v_{j}\right|$
+\end_inset
+
+, 
+\begin_inset Formula $j=0,1,\dots$
+\end_inset
+
+.
+ Так, например, при 
+\begin_inset Formula $k\neq l$
+\end_inset
+
+ имеем 
+\begin_inset Formula 
+\[
+\frac{1}{k-l+x}=\frac{1}{k-l}\cdot\frac{1}{1-\frac{x}{l-k}}=-\sum_{i=0}^{\infty}\left(\frac{1}{l-k}\right)^{i+1}x^{i}<<\frac{1}{1-x}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Легко проверить, что если степенны ряды связаны соотношениями 
+\begin_inset Formula $u_{1}\left(x\right)<<v_{1}\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $u_{2}\left(x\right)<<v_{2}\left(x\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $u_{1}\left(x\right)u_{2}\left(x\right)<<v_{1}\left(x\right)v_{2}\left(x\right)$
+\end_inset
+
+.
+ Для этого достаточно лишь сравнить соответствующие коэффициенты степенных
+ рядов.
+ С помощью индукции указанное свойство легко распространяется на любое число
+ сомножителей.
+\end_layout
+
+\begin_layout Proof
+Пользуясь этим свойством, находим 
+\begin_inset Formula 
+\begin{multline*}
+\sum_{j=0}^{\infty}a_{k,j}\cdot x^{j}=\frac{1}{{\displaystyle \prod_{\begin{array}{c}
+l=0\\
+l\neq k
+\end{array}}^{m}}\left(k-l+dx\right)^{r_{l}+1}}<<\frac{1}{\left(1-x\right)^{N-r_{k}}}=\\
+=\sum_{j=0}^{\infty}\binom{N-r_{k}-1+j}{j}x^{j}<<\sum_{j=0}^{\infty}2^{N-r_{k}-1+j}x^{j}.
+\end{multline*}
+
+\end_inset
+
+Таким образом, 
+\begin_inset Formula 
+\begin{equation}
+\left|a_{k,j}\right|\le2^{N},\qquad k=0,1,\dots,m,\quad j=0,1,\dots,r_{k}.\label{eq:pi-is-transcendent-a-bounds}
+\end{equation}
+
+\end_inset
+
+Из 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pi-is-transcendental-leading-coefficient"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pi-is-transcendent-sin-derivatives-values"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pi-is-transcendent-d^N*a"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ следует, что существует такой многочлен с целыми коэффициентами 
+\begin_inset Formula $A\left(x\right)$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+A\left(\pi\right)=d^{N}n!B\neq0,\qquad\deg A\left(x\right)\le n.
+\]
+
+\end_inset
+
+ При этом, согласно 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pi-is-transcendent-a-bounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Что такое 
+\begin_inset Formula $L\left(A\right)$
+\end_inset
+
+???
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left(A\right)\le d^{N}n!\sum_{k=0}^{m}\left(r_{k}+1\right)2^{N}\le n!c_{1}^{n+1},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ — положительное число, зависящее только от 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $A\left(\pi\right)\neq0$
+\end_inset
+
+, а 
+\begin_inset Formula $\pi$
+\end_inset
+
+ по предположению есть алгебраическое число степени 
+\begin_inset Formula $m$
+\end_inset
+
+, находим с помощью теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Liouville-generalization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ оценку снизу 
+\begin_inset Formula 
+\begin{equation}
+\left|A\left(\pi\right)\right|\ge\left(n!c_{1}^{n+1}\right)^{1-m}c_{2}^{-n}\ge\frac{1}{c_{3}^{n+1}\left(n!\right)^{m-1}},\label{eq:pi-is-transcendental-A(pi)-lower-bound}
+\end{equation}
+
+\end_inset
+
+где 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+ — положительные числа, зависящие только от 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Оценим теперь 
+\begin_inset Formula $\left|A\left(\pi\right)\right|$
+\end_inset
+
+ сверху.
+ Для этого воспользуемся правой частью равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:interpolation-polynomial-leading-coefficient"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Имеем
+\begin_inset Formula 
+\[
+\left|A\left(\pi\right)\right|=d^{N}n!\frac{\left|\left(\sin\pi x\right)_{x=\xi}^{\left(N\right)}\right|}{N!}\le d^{N}n!\frac{\pi^{N}}{N!}.
+\]
+
+\end_inset
+
+Из определения чисел 
+\begin_inset Formula $r_{j}$
+\end_inset
+
+ следует неравенство 
+\begin_inset Formula $N+1\le\left(m+1\right)\left(n+1\right)$
+\end_inset
+
+.
+ Произведение 
+\begin_inset Formula $\left(n!\right)^{m+1}$
+\end_inset
+
+ состоит из 
+\begin_inset Formula $\left(m+1\right)\left(n-1\right)\le N-1$
+\end_inset
+
+ сомножителей, превосходящих 
+\begin_inset Formula $1$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\left(n!\right)^{m+1}\le N!$
+\end_inset
+
+.
+ В результате имеем 
+\begin_inset Formula 
+\[
+\left|A\left(\pi\right)\right|\le\frac{c_{4}^{n+1}}{\left(n!\right)^{m}},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $c_{4}=\left(\pi d\right)^{m+1}$
+\end_inset
+
+ зависит только от 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Сравнивая полученную оценку с 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pi-is-transcendental-A(pi)-lower-bound"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, приходим к неравенству 
+\begin_inset Formula 
+\[
+\frac{1}{c_{3}^{n+1}\left(n!\right)^{m-1}}\le\frac{c_{4}^{n+1}}{\left(n!\right)^{m}}
+\]
+
+\end_inset
+
+или 
+\begin_inset Formula 
+\[
+1\le\frac{\left(c_{3}c_{4}\right)^{n+1}}{n!}.
+\]
+
+\end_inset
+
+При больших 
+\begin_inset Formula $n$
+\end_inset
+
+ это неравенство невозможно.
+ С другой стороны имеем 
+\begin_inset Formula $\left(n+1\right)\left(m+1\right)\ge N+1$
+\end_inset
+
+, что противоречит выбору числа 
+\begin_inset Formula $N$
+\end_inset
+
+ достаточно большим.
+\end_layout
+
+\begin_layout Proof
+Получившееся противоречие завершает доказательство трансцендентности числа
+ 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
