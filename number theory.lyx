@@ -4674,6 +4674,619 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+Обратимся теперь к более общей задаче.
+ Рассмотрим систему диофантовых уравнений 
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+a_{1,1}x_{1}+\dots+a_{1,n}x_{n}=b_{1},\\
+\vdots\\
+a_{m,1}x_{1}+\dots+a_{m,n}x_{n}=b_{m},
+\end{array}\label{eq:diofantine-system}
+\end{equation}
+
+\end_inset
+
+ где коэффициенты 
+\begin_inset Formula $a_{i,j}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ — целые числа.
+ Неизвестные 
+\begin_inset Formula $x_{1},\dots,x_{n}$
+\end_inset
+
+ также предполагаются целыми.
+ С этой системой связываются две матрицы 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cccc}
+a_{1,1} & a_{1,2} & \dots & a_{1,n}\\
+a_{2,1} & a_{2,2} & \dots & a_{2,n}\\
+\vdots & \vdots & \vdots & \vdots\\
+a_{m,1} & a_{m,2} & \dots & a_{m,n}
+\end{array}\right),B=\left(\begin{array}{ccccc}
+a_{1,1} & a_{1,2} & \dots & a_{1,n} & -b_{1}\\
+a_{2,1} & a_{2,2} & \dots & a_{2,n} & -b_{2}\\
+\vdots & \vdots & \dots & \vdots & \vdots\\
+a_{m,1} & a_{m,2} & \dots & a_{m,n} & -b_{m}
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Первая будет называться матрицей системы, а вторая — расширенной матрицей
+ системы.
+ В матричном виде эта система уравнений может быть переписана так 
+\begin_inset Formula $A\bar{x}=\bar{b}$
+\end_inset
+
+, где 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ — вектор-столбец размера 
+\begin_inset Formula $m$
+\end_inset
+
+, состоящий из правых частей системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ В случае, если все правые части системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ равны нулю, система называется однородной.
+\end_layout
+
+\begin_layout Standard
+Ниже мы опишем процесс, позволяющий находить все решения системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ в целых числах.
+\end_layout
+
+\begin_layout Standard
+Составим матрицу 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+, содержащую 
+\begin_inset Formula $m+n$
+\end_inset
+
+ строк и 
+\begin_inset Formula $n+1$
+\end_inset
+
+ столбцов.
+ Первые 
+\begin_inset Formula $m$
+\end_inset
+
+ строк этой матрицы совпадают со строками матрицы 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Продолжения первых столбцов матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ совпадают со столбцами матрицы единичной 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ матрицы 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+, а продолжение последнего столбца матрицы 
+\begin_inset Formula $B$
+\end_inset
+
+ состоит из нулей.
+ Таким образом, матрица 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ имеет вид 
+\begin_inset Formula 
+\[
+\mathcal{A}=\left(\begin{array}{cc}
+A & -\bar{b}\\
+E_{n} & 0
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Столбцы матрицы 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ в порядке следования слева направо обозначим 
+\begin_inset Formula $\left[\mathcal{A}\right]_{1},\dots,\left[\mathcal{A}\right]_{n+1}$
+\end_inset
+
+.
+ Часть матрицы 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+, образованную столбцами 
+\begin_inset Formula $\left[\mathcal{A}\right]_{1},\dots,\left[\mathcal{A}\right]_{n}$
+\end_inset
+
+, будем называть главной частью матрицы 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+.
+ Процесс решения системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ распадается на два этапа.
+ На первом из них выполняются некоторые преобразования, имеющие целью привести
+ матрицу 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ к специальному виду 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{A}^{\prime}=\left(\begin{array}{cc}
+C & -\bar{b}\\
+K & 0
+\end{array}\right).\label{eq:diofantine-matrix-result-form}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Здесь 
+\begin_inset Formula $C$
+\end_inset
+
+ и 
+\begin_inset Formula $K$
+\end_inset
+
+ — целочисленные матрицы размера 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ и 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ соответственно, и матрица 
+\begin_inset Formula $C$
+\end_inset
+
+ имеет трапециевидную форму 
+\begin_inset Formula 
+\[
+C=\left(\begin{array}{cccccccc}
+c_{1,1} & 0 & 0 & \dots & 0 & 0 & \dots & 0\\
+c_{2,1} & c_{2,2} & 0 & \dots & 0 & 0 & \dots & 0\\
+\vdots & \vdots & \vdots & \dots & \vdots & \vdots & \dots & \vdots\\
+c_{r,1} & c_{r,2} & c_{r,3} & \dots & c_{r,r} & 0 & \dots & 0\\
+\vdots & \vdots & \vdots & \dots & \vdots & \vdots & \dots & \vdots\\
+c_{m,1} & c_{m,2} & c_{m,3} & \dots & c_{m,r} & 0 & \dots & 0
+\end{array}\right),
+\]
+
+\end_inset
+
+причём 
+\begin_inset Formula $c_{1,1}>0,\dots,c_{r,r}>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для приведения матрицы 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ к виду 
+\begin_inset Formula $\mathcal{A}^{\prime}$
+\end_inset
+
+ разрешается выполнять преобразования трёх видов (допустимые преобразования):
+\end_layout
+
+\begin_layout Standard
+а) Переставить столбцы главной части 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+б) изменить знаки у всех элементов какого-либо столбца главной части;
+\end_layout
+
+\begin_layout Standard
+в) умножить первый столбец главной части на некоторое целое число и вычесть
+ результат из другого столбца главной части.
+\end_layout
+
+\begin_layout Standard
+Опишем последовательность выполняемых преобразований подробнее.
+ По ходу работы алгоритма матрица 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ будет меняться, однако для краткости мы будем обозначать замещающие её
+ матрицы той же буквой 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+, а для элементов этих матриц по-прежнему будем использовать обозначения
+ 
+\begin_inset Formula $a_{i,j}$
+\end_inset
+
+.
+ Таким образом, знак 
+\begin_inset Formula $a_{i,j}$
+\end_inset
+
+ используется для числа, стоящего на пересечении строки с номером 
+\begin_inset Formula $i$
+\end_inset
+
+ и столбца с номером 
+\begin_inset Formula $j$
+\end_inset
+
+, меняющегося в процессе вычислений.
+ Сама последовательность вычислений будет похожа на обобщённый алгоритм
+ Евклида:
+\end_layout
+
+\begin_layout Enumerate
+Изменить главную часть матрицы 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ с помощью допустимых преобразований вида а) и б) так, чтобы в левом верхнем
+ углу 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ стояло положительное число, наименьшее среди абсолютных величин всех ненулевых
+ элементов первой строки главной части.
+\end_layout
+
+\begin_layout Enumerate
+Разделить каждое из чисел 
+\begin_inset Formula $a_{1,j}$
+\end_inset
+
+ с остатком на 
+\begin_inset Formula $a_{1,1}$
+\end_inset
+
+, то есть найти представления 
+\begin_inset Formula 
+\[
+a_{1,j}=a_{1,1}d_{j}+s_{j},0\le s_{j}<a_{1,1},j=2,\dots,n.
+\]
+
+\end_inset
+
+Заменить в матрице 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ столбцы 
+\begin_inset Formula $\left[\mathcal{A}\right]_{2},\dots\left[\mathcal{A}\right]_{n}$
+\end_inset
+
+ столбцами 
+\begin_inset Formula 
+\[
+\left[\mathcal{A}\right]_{2}-d_{2}\left[\mathcal{A}\right]_{1},\dots,\left[\mathcal{A}\right]_{n}-d_{n}\left[\mathcal{A}\right]_{1}
+\]
+
+\end_inset
+
+соответственно.
+ Вернуться к пункту 1 и снова повторить все операции.
+\end_layout
+
+\begin_layout Standard
+В результате выполнения пунктов 1 и 2, как и в обобщённом алгоритме Евклида,
+ будет уменьшаться сумма абсолютных величин элементов первой строки главной
+ части матрицы 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+.
+ Процесс этот завершится лишь тогда, когда все элементы 
+\begin_inset Formula $a_{1,2},\dots,a_{1,n}$
+\end_inset
+
+ станут равными нулю.
+ На этом этапе вычислений определиться первый столбец матрицы 
+\begin_inset Formula $\mathcal{A}^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Дальнейшая работа происходит со столбцами 
+\begin_inset Formula $\left[\mathcal{A}\right]_{2},\dots\left[\mathcal{A}\right]_{n}$
+\end_inset
+
+.
+ Заметим, что первые элементы этих столбцов равны нулю, и поэтому выполнение
+ допустимых преобразований с этими столбцами не будет менять первую строку
+ 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+.
+ В дальнейшем необходимо выполнить операции указанных выше пунктов 1 и 2
+ с матрицей, образованной столбцами 
+\begin_inset Formula $\left[\mathcal{A}\right]_{2},\dots\left[\mathcal{A}\right]_{n}$
+\end_inset
+
+, работая с элементами второй строки этой матрицы (все элементы первой строки
+ равны нулю).
+ В результате матрица 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ преобразуется к виду 
+\begin_inset Formula $a_{2,2}=c_{2,2}>0,a_{2,3}=\dots=a_{2,n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ясно, что продолжение подобных действий со столбцами 
+\begin_inset Formula $\left[\mathcal{A}\right]_{3},\dots,\left[\mathcal{A}\right]_{n}$
+\end_inset
+
+ в конечном счёте приведёт матрицу 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ к виду 
+\begin_inset Formula $\mathcal{A}^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Во второй части алгоритма происходит работа со всеми столбцами матрицы 
+\begin_inset Formula $\mathcal{A}^{\prime}$
+\end_inset
+
+.
+ По прежнему будем обозначать их 
+\begin_inset Formula $\left[\mathcal{A}\right]_{1},\dots,\left[\mathcal{A}\right]_{n+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+3.
+ Обозначим 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ неполное частное и остаток от деления первого элемента столбца 
+\begin_inset Formula $\left[\mathcal{A}\right]_{n+1}$
+\end_inset
+
+ на 
+\begin_inset Formula $c_{1,1}$
+\end_inset
+
+ и заменим столбец 
+\begin_inset Formula $\left[\mathcal{A}\right]_{n+1}$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[\mathcal{A}\right]_{n+1}-k_{1}\left[\mathcal{A}\right]_{1}$
+\end_inset
+
+.
+ Обозначим далее 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ неполное частное и остаток от деления второго элемента нового столбца 
+\begin_inset Formula $\left[\mathcal{A}\right]_{n+1}$
+\end_inset
+
+ на 
+\begin_inset Formula $c_{2,2}$
+\end_inset
+
+ и заменим столбец 
+\begin_inset Formula $\left[\mathcal{A}\right]_{n+1}$
+\end_inset
+
+ на 
+\begin_inset Formula $\left[\mathcal{A}\right]_{n+1}-k_{2}\left[\mathcal{A}\right]_{2}$
+\end_inset
+
+.
+ Продолжим действовать таким же образом, пока столбец 
+\begin_inset Formula $\mathcal{A}_{n+1}$
+\end_inset
+
+ не будет заменён на 
+\begin_inset Formula $\left[\mathcal{A}\right]_{n+1}-k_{r}\left[\mathcal{A}\right]_{r}$
+\end_inset
+
+.
+ На этом вычисления заканчиваются.
+ Первые 
+\begin_inset Formula $r$
+\end_inset
+
+ элементов столбца 
+\begin_inset Formula $\left[\mathcal{A}\right]_{n+1}$
+\end_inset
+
+ равны 
+\begin_inset Formula $l_{1},\dots,l_{r}$
+\end_inset
+
+, а остальные обозначим последовательно 
+\begin_inset Formula $l_{r+1},\dots,l_{m+n}$
+\end_inset
+
+.
+ Заметим, что 
+\begin_inset Formula $0\le l_{j}<c_{j,j},j=1,\dots,r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+1.
+ Система уравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрешима в целых числах тогда и только тогда, когда 
+\begin_inset Formula $l_{1}=\dots=l_{m}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+2.
+ В случае разрешимости обозначим 
+\begin_inset Formula $s=n-r$
+\end_inset
+
+ и 
+\begin_inset Formula $\bar{x}_{0}\in\mathbb{Z}^{n}$
+\end_inset
+
+ — вектор с координатами 
+\begin_inset Formula $l_{m+1},\dots,l_{m+n}$
+\end_inset
+
+ в порядке следования.
+ Тогда общее решение системы уравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет вид 
+\begin_inset Formula 
+\[
+\bar{x}_{0}+t_{1}\left[K\right]_{r+1}+\dots+t_{s}\left[K\right]_{n},
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $t_{1},\dots,t_{s}$
+\end_inset
+
+ пробегают всевозможные наборы целых чисел, а 
+\begin_inset Formula $\left[K\right]_{j}$
+\end_inset
+
+ — соответствующие столбцы матрицы 
+\begin_inset Formula $K$
+\end_inset
+
+ (определённую в соответствии с формулой
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-matrix-result-form"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
 \begin_layout Chapter
 Простые и составные числа
 \end_layout
