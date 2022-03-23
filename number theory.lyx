@@ -4910,7 +4910,7 @@ K & 0
 
  имеет трапециевидную форму 
 \begin_inset Formula 
-\[
+\begin{equation}
 C=\left(\begin{array}{cccccccc}
 c_{1,1} & 0 & 0 & \dots & 0 & 0 & \dots & 0\\
 c_{2,1} & c_{2,2} & 0 & \dots & 0 & 0 & \dots & 0\\
@@ -4918,8 +4918,8 @@ c_{2,1} & c_{2,2} & 0 & \dots & 0 & 0 & \dots & 0\\
 c_{r,1} & c_{r,2} & c_{r,3} & \dots & c_{r,r} & 0 & \dots & 0\\
 \vdots & \vdots & \vdots & \dots & \vdots & \vdots & \dots & \vdots\\
 c_{m,1} & c_{m,2} & c_{m,3} & \dots & c_{m,r} & 0 & \dots & 0
-\end{array}\right),
-\]
+\end{array}\right),\label{eq:diofantine-system-matrix-C}
+\end{equation}
 
 \end_inset
 
@@ -5211,6 +5211,12 @@ a_{1,j}=a_{1,1}d_{j}+s_{j},0\le s_{j}<a_{1,1},j=2,\dots,n.
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:diofantine-system-solution"
+
+\end_inset
+
 1.
  Система уравнений 
 \begin_inset CommandInset ref
@@ -5256,9 +5262,9 @@ noprefix "false"
 
  имеет вид 
 \begin_inset Formula 
-\[
-\bar{x}_{0}+t_{1}\left[K\right]_{r+1}+\dots+t_{s}\left[K\right]_{n},
-\]
+\begin{equation}
+\bar{x}_{0}+t_{1}\left[K\right]_{r+1}+\dots+t_{s}\left[K\right]_{n},\label{eq:diofantine-systen-solution}
+\end{equation}
 
 \end_inset
 
@@ -5285,6 +5291,1047 @@ noprefix "false"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Proof
+Заметим, что каждый столбец главной части матрицы 
+\begin_inset Formula $\mathcal{A^{\prime}}$
+\end_inset
+
+ есть линейная комбинация столбцов главной части исходной матрицы 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+, отвечающей системе уравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Поэтому равенства 
+\begin_inset Formula $l_{1}=\dots=l_{m}=0$
+\end_inset
+
+ означают, что столбец 
+\begin_inset Formula $\overline{b}$
+\end_inset
+
+ есть линейная комбинация столбцов матрицы 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ с целыми коэффициентами.
+ Это, конечно, означает разрешимость системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Заметим, что преобразование, обратное к допустимому преобразованию также
+ допустимо.
+ Это означает, что каждый столбец главной части исходной матрицы 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ есть линейная комбинация столбцов главной части матрицы 
+\begin_inset Formula $\mathcal{A^{\prime}}$
+\end_inset
+
+.
+ Если система уравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрешима в целых числах, то вектор 
+\begin_inset Formula $\overline{b}$
+\end_inset
+
+ есть линейная комбинация с целыми коэффициентами столбцов матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Но тогда, в силу сказанного выше, он есть линейная комбинация столбцов
+ матрицы 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Будем использовать обозначение 
+\begin_inset Formula $\left[C\right]_{1},\dots,\left[C\right]_{n}$
+\end_inset
+
+ для столбцов матрицы 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Заметим, что все столбцы 
+\begin_inset Formula $\left[C\right]_{j}$
+\end_inset
+
+ при 
+\begin_inset Formula $j>r$
+\end_inset
+
+ нулевые.
+ Поэтому для некоторых целых чисел 
+\begin_inset Formula $u_{1},\dots,u_{r}$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\[
+u_{1}\left[C\right]_{1}+\dots+u_{r}\left[C\right]_{r}=\overline{b}.
+\]
+
+\end_inset
+
+Сравнивая в этом равенстве первые координаты, заключаем, что 
+\begin_inset Formula $u_{1}c_{1,1}=b_{1}$
+\end_inset
+
+.
+ Отсюда следует, что 
+\begin_inset Formula $k_{1}=u_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{1}=0$
+\end_inset
+
+.
+ Сравнение вторых координат даёт 
+\begin_inset Formula $u_{2}c_{2,2}=b_{2}-k_{1}c_{2,1}$
+\end_inset
+
+ и, следовательно, 
+\begin_inset Formula $k_{2}=u_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $l_{2}=0$
+\end_inset
+
+.
+ Продолжая эти рассуждения, находим 
+\begin_inset Formula $l_{1}=\dots=l_{r}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $u_{j}=k_{j}$
+\end_inset
+
+ при 
+\begin_inset Formula $j=1,\dots,r$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $\overline{b}-k_{1}\left[C\right]_{1}-\dots-k_{r}\left[C\right]_{r}$
+\end_inset
+
+ есть нулевой вектор и, значит, 
+\begin_inset Formula $l_{r+1}=\dots=l_{n}=0$
+\end_inset
+
+.
+ Это завершает доказательство первого утверждения теоремы.
+\end_layout
+
+\begin_layout Proof
+Любая допустимая операция со столбцами матрицы равносильна умножению справа
+ этой матрицы на некоторую целочисленную матрицу с определителем 
+\begin_inset Formula $\pm1$
+\end_inset
+
+.
+ Так как изменение знака у всех элементов столбца с номером 
+\begin_inset Formula $k$
+\end_inset
+
+ равносильно умножению на диагональную матрицу, у которой все элементы главной
+ диагонали равны 
+\begin_inset Formula $1$
+\end_inset
+
+, за исключением элемента, стоящего в 
+\begin_inset Formula $k$
+\end_inset
+
+-й строке, который равен 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ Перестановка столбцов с номерами 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $k$
+\end_inset
+
+ равносильна умножению на матрицу, у которой все столбцы, кроме имеющих
+ номера 
+\begin_inset Formula $l$
+\end_inset
+
+ и 
+\begin_inset Formula $k$
+\end_inset
+
+ совпадают со столбцами единичной матрицы, на пересечении 
+\begin_inset Formula $k$
+\end_inset
+
+-го столбца с 
+\begin_inset Formula $l$
+\end_inset
+
+-й строкой и 
+\begin_inset Formula $l$
+\end_inset
+
+-го столбца с 
+\begin_inset Formula $k$
+\end_inset
+
+-строкой строят единицы, а все остальные элементы этих столбцов равны 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Вычитание первого столбца, умноженного на целое 
+\begin_inset Formula $q$
+\end_inset
+
+ из столбца с номером 
+\begin_inset Formula $k$
+\end_inset
+
+ равносильно умножению на матрицу, совпадающую с единичной, за исключением
+ элемента, стоящего на пересечении первой строки и 
+\begin_inset Formula $k$
+\end_inset
+
+-го столбца, где вместо 
+\begin_inset Formula $0$
+\end_inset
+
+ стоит 
+\begin_inset Formula $-q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Из сказанного выше следует равенство 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cc}
+C\\
+K
+\end{array}\right)=\left(\begin{array}{cc}
+A\\
+E_{n}
+\end{array}\right)\cdot S,
+\]
+
+\end_inset
+
+ где 
+\begin_inset Formula $S$
+\end_inset
+
+ — целочисленная матрица размера 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ с определителем 
+\begin_inset Formula $\pm1$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $C=A\cdot S$
+\end_inset
+
+ и 
+\begin_inset Formula $K=E_{n}\cdot S$
+\end_inset
+
+, так что 
+\begin_inset Formula $C=A\cdot K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Предположим теперь, что система 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрешима.
+ Тогда из сказанного выше следует равенство 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+0\\
+\overline{x}_{0}
+\end{array}\right)=\left(\begin{array}{c}
+-\overline{b}\\
+0
+\end{array}\right)+\left(\begin{array}{cc}
+A\\
+E_{n}
+\end{array}\right)\cdot\overline{v},
+\]
+
+\end_inset
+
+ с некоторым вектором 
+\begin_inset Formula $\overline{v}\in\mathbb{Z}^{n}$
+\end_inset
+
+.
+ Отсюда находим 
+\begin_inset Formula $\overline{x}_{0}=\overline{v}$
+\end_inset
+
+ и 
+\begin_inset Formula $0=-\overline{b}+A\cdot\overline{v}$
+\end_inset
+
+.
+ Но тогда 
+\begin_inset Formula $0=-\overline{b}+A\cdot\overline{x}_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $\overline{x}_{0}$
+\end_inset
+
+ есть решение системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Разобъём матрицу 
+\begin_inset Formula $K$
+\end_inset
+
+ на две части 
+\begin_inset Formula $K_{1}=\left(\left[K\right]_{1},\cdots,\left[K\right]_{r}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{2}=\left(\left[K\right]_{r+1},\cdots,\left[K\right]_{n}\right)$
+\end_inset
+
+.
+ Последние 
+\begin_inset Formula $s=n-r$
+\end_inset
+
+ столбцов матрицы 
+\begin_inset Formula $C$
+\end_inset
+
+ нулевые, поэтому из установленного выше равенства 
+\begin_inset Formula $C=A\cdot K$
+\end_inset
+
+ следует 
+\begin_inset Formula $AK_{2}=0$
+\end_inset
+
+.
+ Но это значит, что все столбцы матрицы 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+, то есть векторы 
+\begin_inset Formula $\left[K\right]_{r+1},\cdots,\left[K\right]_{n}$
+\end_inset
+
+ есть решения однородной системы уравнений, соответствующей 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда с любыми числами 
+\begin_inset Formula $t_{1},\dots,t_{s}$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula 
+\[
+A\cdot\left(\overline{x}_{0}+t_{1}\left[K\right]_{r+1}+\cdots+t_{s}\left[K\right]_{n}\right)=\overline{b}
+\]
+
+\end_inset
+
+ и вектор 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-systen-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ есть решение системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Для любого решения 
+\begin_inset Formula $\overline{x}\in\mathbb{Z}^{n}$
+\end_inset
+
+ системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ должно выполняться равенство 
+\begin_inset Formula $A\left(\overline{x}-\overline{x}_{0}\right)=0$
+\end_inset
+
+.
+ По доказанному ранее 
+\begin_inset Formula $K$
+\end_inset
+
+ есть целочисленная матрица с определителем 
+\begin_inset Formula $\pm1$
+\end_inset
+
+.
+ Поэтому обратная к ней матрица имеет целочисленные элементы.
+ Обозначив 
+\begin_inset Formula $\overline{y}=K^{-1}\left(\overline{x}-\overline{x}_{0}\right)\in\mathbb{Z}^{n}$
+\end_inset
+
+ будем иметь 
+\begin_inset Formula 
+\[
+C\overline{y}=A\cdot K\overline{y}=A\left(\overline{x}-\overline{x}_{0}\right)=0.
+\]
+
+\end_inset
+
+Учитывая теперь вид 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system-matrix-C"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ матрицы 
+\begin_inset Formula $C$
+\end_inset
+
+, находим, что первые 
+\begin_inset Formula $r$
+\end_inset
+
+ координат вектора 
+\begin_inset Formula $\overline{y}$
+\end_inset
+
+ равны 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Значит 
+\begin_inset Formula $\overline{x}-\overline{x}_{0}=K\overline{y}=K_{2}\overline{t}$
+\end_inset
+
+, где 
+\begin_inset Formula $\overline{t}\in\mathbb{Z}^{s}$
+\end_inset
+
+ есть вектор состоящий из последних 
+\begin_inset Formula $s$
+\end_inset
+
+ координат вектора 
+\begin_inset Formula $\overline{y}$
+\end_inset
+
+.
+ Если эти координаты есть 
+\begin_inset Formula $t_{1},\dots,t_{s}$
+\end_inset
+
+, получаем представление 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-systen-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для вектора 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Теорема полностью доказана.
+\end_layout
+
+\begin_layout Standard
+Покажем, как работает изложенный выше алгоритм.
+\end_layout
+
+\begin_layout Example
+Решить уравнение 
+\begin_inset Formula $87x_{1}+13x_{2}+6x_{3}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Выполняя допустимые преобразования, находим 
+\begin_inset Formula 
+\begin{multline*}
+\mathcal{A}=\left(\begin{array}{cccc}
+87 & 13 & 6 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0
+\end{array}\right)\sim\left(\begin{array}{cccc}
+6 & 13 & 87 & -1\\
+0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{array}\right)\sim\left(\begin{array}{cccc}
+6 & 1 & 3 & -1\\
+0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0\\
+1 & -2 & -14 & 0
+\end{array}\right)\sim\\
+\sim\left(\begin{array}{cccc}
+1 & 6 & 3 & -1\\
+0 & 0 & 1 & 0\\
+1 & 0 & 0 & 0\\
+-2 & 1 & -14 & 0
+\end{array}\right)\sim\left(\begin{array}{cccc}
+1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0\\
+1 & -6 & -3 & 1\\
+-2 & 13 & -8 & -2
+\end{array}\right).
+\end{multline*}
+
+\end_inset
+
+ Данное уравнение разрешимо и его общее решение имеет вид 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+x_{1}\\
+x_{2}\\
+x_{3}
+\end{array}\right)=\left(\begin{array}{c}
+0\\
+1\\
+-2
+\end{array}\right)+t_{1}\left(\begin{array}{c}
+0\\
+6\\
+13
+\end{array}\right)+t_{2}\left(\begin{array}{c}
+1\\
+-3\\
+-8
+\end{array}\right),\qquad t_{1},t_{2}\in\mathbb{Z}.
+\]
+
+\end_inset
+
+ В заключение установим необходимое и достаточное условие разрешимости системы
+ линейных диофантовых уравнений, аналогичное первому утверждению теоремы
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:simplest-diofantine-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ При этом будем предполагать, что уравнения системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ независимы, то есть ранг матрицы 
+\begin_inset Formula $A$
+\end_inset
+
+ равен 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ В противном случае некоторые уравнения можно исключить из системы, не изменив
+ множества решений.
+ Чтобы сделать формулировку и доказательство по возможности более короткими,
+ для каждой целочисленной матрицы 
+\begin_inset Formula $M$
+\end_inset
+
+ ранга 
+\begin_inset Formula $m$
+\end_inset
+
+ будем обозначать символом 
+\begin_inset Formula $D\left\{ M\right\} $
+\end_inset
+
+ наибольший общий делитель миноров этой матрицы порядка 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:diofantine-system-solvability"
+
+\end_inset
+
+Если уравнения системы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ независимы, то равенство 
+\begin_inset Formula $D\left\{ A\right\} =D\left\{ B\right\} $
+\end_inset
+
+ необходимо и достаточно для её разрешимости в целых числах.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Подсмотрел
+\end_layout
+
+\end_inset
+
+Мы будем использовать в доказательстве обозначения, введённые в алгоритме
+ решения систем в доказательстве теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:diofantine-system-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+При выполнении допустимых преобразований ранги матриц не меняются.
+ Точно так же по второму утверждению леммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:GCD-and-division"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ при выполнении допустимых преобразований не будет меняться наибольшие общие
+ делители миноров максимального ранга.
+ Поэтому 
+\begin_inset Formula $\mathrm{rg}A=\mathrm{rg}C$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Удачно ли такое обозначение для ранга?
+\end_layout
+
+\end_inset
+
+, то есть 
+\begin_inset Formula $r=m$
+\end_inset
+
+, и 
+\begin_inset Formula $D\left\{ A\right\} =D\left\{ C\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $D\left\{ B\right\} =D\left\{ \left(C,\bar{l}\right)\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $\overline{l}$
+\end_inset
+
+ — вектор-столбец с координатами 
+\begin_inset Formula $l_{1},\dots,l_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если система уравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрешима в целых числах, то по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:diofantine-system-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеем 
+\begin_inset Formula $l_{1}=\dots=l_{m}=0$
+\end_inset
+
+.
+ Но тогда матрица 
+\begin_inset Formula $\left(C,\overline{l}\right)$
+\end_inset
+
+ имеет единственный отличный от нуля минор порядка 
+\begin_inset Formula $m$
+\end_inset
+
+ и он равен определителю матрицы 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $D\left\{ C\right\} =D\left\{ \left(C,\overline{l}\right)\right\} $
+\end_inset
+
+, и это доказывает необходимость условия теоремы.
+\end_layout
+
+\begin_layout Proof
+Предположим теперь, что выполнено равенство 
+\begin_inset Formula $D\left\{ A\right\} =D\left\{ B\right\} $
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\mathrm{rg}C=m$
+\end_inset
+
+, то система уравнений 
+\begin_inset Formula $C\overline{x}=\overline{l}$
+\end_inset
+
+ разрешима в рациональных числах.
+ Поэтому существуют целые взаимно простые числа 
+\begin_inset Formula $u_{0},\dots,u_{m}$
+\end_inset
+
+, 
+\begin_inset Formula $u_{0}>0$
+\end_inset
+
+, такие, что 
+\begin_inset Formula 
+\begin{equation}
+u_{0}\overline{l}=u_{1}\left[C\right]_{1}+\dots+u_{m}\left[C\right]_{m}.\label{eq:diofantine-system-solvability-linear-combination}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Обозначим 
+\begin_inset Formula $\Delta_{j}$
+\end_inset
+
+ определитель матрицы, построенной на столбцах 
+\begin_inset Formula 
+\[
+\overline{l},\left[C\right]_{1},\dots,\left[C\right]_{j-1},\left[C\right]_{j},\dots,\left[C\right]_{m}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula $\Delta_{0}=c_{1,1}\cdot\dots\cdot c_{r,r}$
+\end_inset
+
+ — единственный отличный от нуля минор порядка 
+\begin_inset Formula $m$
+\end_inset
+
+ матрицы 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Выразим вектор 
+\begin_inset Formula $\overline{l}$
+\end_inset
+
+ с помощью равенства 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system-solvability-linear-combination"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ через вектор 
+\begin_inset Formula $\left[C\right]_{k}$
+\end_inset
+
+ и подставим это выражение в определитель 
+\begin_inset Formula $\Delta_{j}$
+\end_inset
+
+.
+ Поскольку определитель линейно зависит от элементов первого столбца, а
+ кроме того, определитель с двумя совпадающими столбцами равен нулю, находим
+ 
+\begin_inset Formula $u_{0}\Delta_{j}=\pm u_{j}\Delta_{0}$
+\end_inset
+
+.
+ Справедливы равенства 
+\begin_inset Formula 
+\[
+D\left\{ B\right\} =D\left\{ \left(C,\overline{l}\right)\right\} =\left(\Delta_{0},\Delta_{1},\dots,\Delta_{m}\right).
+\]
+
+\end_inset
+
+Умножая их на 
+\begin_inset Formula $u_{0}$
+\end_inset
+
+ и, пользуясь следствием 2.4
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Понять, что это за следствие и добавить ссылку
+\end_layout
+
+\end_inset
+
+, будем иметь 
+\begin_inset Formula 
+\begin{multline*}
+u_{0}D\left\{ B\right\} =\left(u_{0}\Delta_{0},u_{0}\Delta_{0},\dots,u_{0}\Delta_{m}\right)=\left(u_{0}\Delta_{0},u_{1}\Delta_{0}\dots,u_{m}\Delta_{0}\right)=\\
+=\Delta_{0}\left(u_{0},u_{1},\dots,u_{m}\right)=\Delta_{0}=D\left\{ A\right\} .
+\end{multline*}
+
+\end_inset
+
+Согласно условию выполняется равенство 
+\begin_inset Formula $D\left\{ A\right\} =D\left\{ B\right\} $
+\end_inset
+
+, поэтому 
+\begin_inset Formula $u_{0}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Теперь сравним первые координаты векторов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system-solvability-linear-combination"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Получившееся при этом равенство 
+\begin_inset Formula $l_{1}=u_{1}c_{1,1}$
+\end_inset
+
+ и неравенства 
+\begin_inset Formula $0\le l_{1}<c_{1,1}$
+\end_inset
+
+ обозначают, что 
+\begin_inset Formula $l_{1}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $u_{1}=0$
+\end_inset
+
+.
+ Сравнение вторых координат 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system-solvability-linear-combination"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ даёт 
+\begin_inset Formula $l_{2}=u_{2}c_{2,2}$
+\end_inset
+
+, откуда в силу 
+\begin_inset Formula $0\le l_{2}<c_{2,2}$
+\end_inset
+
+, получаем 
+\begin_inset Formula $l_{2}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $u_{2}=0$
+\end_inset
+
+.
+ Продолжая действовать точно так же, найдём 
+\begin_inset Formula $l_{1}=\dots=l_{m}=0$
+\end_inset
+
+.
+ По теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:simplest-diofantine-solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ теперь можно утверждать, что система диофантовых уравнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-system"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ разрешима в целых числах.
 \end_layout
 
 \begin_layout Chapter
