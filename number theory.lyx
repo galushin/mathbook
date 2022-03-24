@@ -3831,6 +3831,12 @@ status open
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:linear-equations-integer-solutions"
+
+\end_inset
+
 Решение в целых числах линейных уравнений
 \end_layout
 
@@ -4822,12 +4828,12 @@ noprefix "false"
 
  имеет вид 
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{A}=\left(\begin{array}{cc}
 A & -\bar{b}\\
 E_{n} & 0
-\end{array}\right).
-\]
+\end{array}\right).\label{eq:diofantine-matrix}
+\end{equation}
 
 \end_inset
 
@@ -20211,17 +20217,6 @@ status open
 
 \begin_layout Section
 Теоремы Эйлера и Ферма
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-У Нестеренко другой порядок следования теорем.
- Я решил идти от частного к общему
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -20230,6 +20225,20 @@ status open
 
 \begin_layout Plain Layout
 Воспользоваться теоремой о системах вычетов!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+У Нестеренко другой порядок следования теорем.
+ Я решил идти от частного к общему
 \end_layout
 
 \end_inset
@@ -25885,16 +25894,193 @@ name "sec:chinese-reminder-theorem"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Вводный материал про линейные сравнения со многими переменными
-\end_layout
+Решим, например, следующую систему сравнений 
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+3x\equiv5\quad\left(\mod4\right),\\
+5x\equiv2\quad\left(\mod7\right).
+\end{array}\right.
+\]
 
 \end_inset
 
+Один из возможных общих способов решения этой задачи состоит в том.
+ чтобы заменить систему сравнений системой уравнений, вводя при этом новые
+ переменные.
+ Так первому сравнению заданной системы удовлетворяют в точности те целые
+ числа 
+\begin_inset Formula $x$
+\end_inset
 
+, для которых найдётся целое число 
+\begin_inset Formula $y$
+\end_inset
+
+, удовлетворяющее равенству 
+\begin_inset Formula $3x-4y=5$
+\end_inset
+
+.
+ Аналогично, второе сравнение может быть заменено уравнением 
+\begin_inset Formula $5x-7z=2$
+\end_inset
+
+, а вся система сравнений может быть заменена системой уравнений 
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+3x-4y=5,\\
+5x-7z=2.
+\end{array}\right.
+\]
+
+\end_inset
+
+Эту систему можно решить так, как это объяснялось в параграфе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:linear-equations-integer-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Соответствующая матрица 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diofantine-matrix"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ имеет вид 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cccc}
+3 & -4 & 0 & -5\\
+5 & 0 & -7 & -2\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0
+\end{array}\right).
+\]
+
+\end_inset
+
+ Поскольку нас в действительности не интересуют переменные 
+\begin_inset Formula $y$
+\end_inset
+
+ и 
+\begin_inset Formula $z$
+\end_inset
+
+, две последние строки этой матрицы можно отбросить и все вычисления, указанные
+ в параграфе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:linear-equations-integer-solutions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ выполнять для более простой матрицы.
+ С помощью допустимых преобразований находим 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cccc}
+3 & -4 & 0 & -5\\
+5 & 0 & -7 & -2\\
+1 & 0 & 0 & 0
+\end{array}\right)\sim\left(\begin{array}{cccc}
+1 & 0 & 0 & 0\\
+-5 & 1 & 0 & 0\\
+-1 & -4 & -28 & -113
+\end{array}\right).
+\]
+
+\end_inset
+
+ Таким образом, все числа, удовлетворяющие заданной системе сравнений имеют
+ вид 
+\begin_inset Formula $x=-113+28t$
+\end_inset
+
+, где 
+\begin_inset Formula $t\in\mathbb{Z}$
+\end_inset
+
+.
+ Это множество можно записать в виде 
+\begin_inset Formula $x\equiv-113\left(\mod28\right)=-1\left(\mod28\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Конечно, в данном конкретном случае систему сравнений можно было бы решить
+ проще.
+ Умножим каждое из сравнений системы на 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ В результате получим систему сравнений 
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+9x\equiv15\quad\left(\mod4\right),\\
+15x\equiv6\quad\left(\mod7\right),
+\end{array}\right.
+\]
+
+\end_inset
+
+или 
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+x\equiv-1\quad\left(\mod4\right),\\
+x\equiv-1\quad\left(\mod7\right).
+\end{array}\right.
+\]
+
+\end_inset
+
+Переписанная в таком виде, система означает, что все искомые числа 
+\begin_inset Formula $x$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $x+1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $4$
+\end_inset
+
+ и на 
+\begin_inset Formula $7$
+\end_inset
+
+, то есть делится на 
+\begin_inset Formula $28$
+\end_inset
+
+.
+ В результате находим 
+\begin_inset Formula $x\equiv-1\left(\mod28\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
