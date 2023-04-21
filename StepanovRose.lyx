@@ -8209,6 +8209,16 @@ xx^{-1}=x^{-1}x=1.
 \end_layout
 
 \begin_layout Definition
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Какой смысл этого определения? Может быть избавиться от него и избежать
+ путаницы?
+\end_layout
+
+\end_inset
+
 Обратимый элемент кольца называется единицей этого кольца.
 \end_layout
 
@@ -9589,7 +9599,7 @@ b\neq0\Rightarrow a=quotient(a,b)\cdot b+remainder(a,b);
 \begin{array}{c}
 \left\Vert a\right\Vert =0\Rightarrow a=0,\\
 b\neq0\rightarrow\left\Vert ab\right\Vert \ge\left\Vert a\right\Vert ,\\
-\left\Vert remainder\left(a,b\right)\right\Vert \le\left\Vert b\right\Vert .
+\left\Vert remainder\left(a,b\right)\right\Vert <\left\Vert b\right\Vert .
 \end{array}
 \]
 
@@ -11826,6 +11836,1664 @@ Semiregular
 \end_inset
 
  другой.
+\end_layout
+
+\begin_layout Section
+Категории, операции и характеристики итераторов
+\end_layout
+
+\begin_layout Section
+Диапазоны
+\end_layout
+
+\begin_layout Section
+Линейный поиск
+\end_layout
+
+\begin_layout Section
+Двоичный поиск
+\end_layout
+
+\begin_layout Lemma
+(О двоичном поиске) Для любого отсортированного диапазона 
+\begin_inset Formula $\left[i;j\right)$
+\end_inset
+
+ и значения 
+\begin_inset Formula $a$
+\end_inset
+
+ (искомого элемента) существуют два итератора, нижняя граница 
+\begin_inset Formula $b_{l}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{u}$
+\end_inset
+
+ такие, что:
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula $\forall k\in\left[i;b_{l}\right):v_{k}<a;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula $\forall k\in\left[b_{l};b_{u}\right):v_{k}=a;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula $\forall k\in\left[b_{u};j\right):v_{k}>a,$
+\end_inset
+
+ где 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+ — значение в позиции 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если для всех 
+\begin_inset Formula $k\in\left[i;j\right)$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $v_{k}<a$
+\end_inset
+
+, то можно положить 
+\begin_inset Formula $b_{l}=b_{u}=j$
+\end_inset
+
+.
+ Если для всех 
+\begin_inset Formula $k\in\left[i;j\right)$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $v_{k}>a$
+\end_inset
+
+, то можно положить 
+\begin_inset Formula $b_{l}=b_{u}=i$
+\end_inset
+
+.
+ Исключим эти два случая из дальнейшего рассмотрения.
+ Возьмём в качестве 
+\begin_inset Formula $b_{l}$
+\end_inset
+
+ первый по порядку итератор 
+\begin_inset Formula $k$
+\end_inset
+
+ такой, что не выполняется 
+\begin_inset Formula $v_{k}<a$
+\end_inset
+
+.
+ Так как диапазон отсортирован, то при 
+\begin_inset Formula $k\in\left[b_{l};j\right)$
+\end_inset
+
+ неравенство 
+\begin_inset Formula $v_{k}<a$
+\end_inset
+
+ также не будет выполняться.
+ Возьмём в качестве 
+\begin_inset Formula $b_{u}$
+\end_inset
+
+ первый итератор 
+\begin_inset Formula $k\in\left[b_{l};j\right)$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $v_{k}>a$
+\end_inset
+
+.
+ Снова в силу того, что диапазон отсортирован будет выполняться третье свойство.
+ Остаётся доказать второе свойство.
+\end_layout
+
+\begin_layout Proof
+Исходя из выбора 
+\begin_inset Formula $b_{l}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{k}$
+\end_inset
+
+, для любого 
+\begin_inset Formula $k\in\left[b_{l};b_{u}\right)$
+\end_inset
+
+ не выполняются неравенства 
+\begin_inset Formula $v_{k}<a$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{k}>a$
+\end_inset
+
+, таким образом, если в этом диапазоне вообще есть элементы, то 
+\begin_inset Formula $v_{k}=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Алгоритмы перестановки
+\end_layout
+
+\begin_layout Section
+Перестановки и транспозиции
+\end_layout
+
+\begin_layout Definition
+
+\series bold
+Перестановкой
+\series default
+ называется отображение последовательности 
+\begin_inset Formula $n$
+\end_inset
+
+ объектов в себя.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Множество всех перестановок 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов составляют группу, называют 
+\series bold
+симметричной группой
+\series default
+ 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Докажите следующую теорему.
+ (Теорема Кэли) Любая конечная группа является подгруппой симметричной группы.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим группу 
+\begin_inset Formula $G$
+\end_inset
+
+ порядка 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Для каждого элемента 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ рассмотрим отображение 
+\begin_inset Formula $\varphi_{g}\left(x\right)=g\circ x$
+\end_inset
+
+.
+ В силу аксиом группы, каждое такое отображение переводит группу 
+\begin_inset Formula $G$
+\end_inset
+
+ в себя, причём разные элементы переводятся в различные.
+ Действительно, если 
+\begin_inset Formula $\varphi_{g}\left(a\right)=\varphi_{g}\left(b\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $g\circ a=g\circ b$
+\end_inset
+
+ и, умножая это равенство слева на 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula $a=b$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ является перестановкой элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $G$
+\end_inset
+
+ соответствует подмножеству множества всех перестановок элементов этой группы.
+ Обозначим этот подмножество 
+\begin_inset Formula $\Phi$
+\end_inset
+
+.
+ Остаётся доказать, что данное подмножество является подгруппой.
+\end_layout
+
+\begin_layout Solution
+Во-первых, множество замкнуто относительно групповой операции: 
+\begin_inset Formula 
+\[
+\left(\varphi_{a}\varphi_{b}\right)\left(x\right)=\varphi_{a}\left(\varphi_{b}\left(x\right)\right)=a\circ\left(b\circ x\right)=\left(a\circ b\right)\circ x=\varphi_{a\circ b}\left(x\right),
+\]
+
+\end_inset
+
+но так как по аксиомам группы 
+\begin_inset Formula $a\circ b\in G$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi_{a}\varphi_{b}=\varphi_{a\circ b}$
+\end_inset
+
+ принадлежит 
+\begin_inset Formula $\Phi$
+\end_inset
+
+.
+ Ассоциативность выполняется для композиции 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ как и для композиции любых отображений.
+ Так как 
+\begin_inset Formula $e\circ x=x$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi_{e}\left(x\right)=x=Id\left(x\right)$
+\end_inset
+
+ тождественная перестановка входит в 
+\begin_inset Formula $\Phi$
+\end_inset
+
+.
+ Наконец, для любого 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ в 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ существует обратный элемент: 
+\begin_inset Formula $\varphi_{g^{-1}}$
+\end_inset
+
+.
+ Действительно, 
+\begin_inset Formula $\varphi_{g}\varphi_{g^{-1}}=\varphi_{g\circ g^{-1}}=\varphi_{e}=Id$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ является подгруппой 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+, изоморфной 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+Чему равен порядок 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для первого элемента при перестановке можно выбрать любую из 
+\begin_inset Formula $n$
+\end_inset
+
+ позиций, для второго — 
+\begin_inset Formula $n-1$
+\end_inset
+
+, для третьего — 
+\begin_inset Formula $n-2$
+\end_inset
+
+ и так далее.
+ Таким образом, порядок группы 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ равен 
+\begin_inset Formula $n!$
+\end_inset
+
+.
+\backslash
+
+\end_layout
+
+\begin_layout Definition
+
+\series bold
+Транспозицией 
+\series default
+
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ называется перестановка, которая меняет местами 
+\begin_inset Formula $i$
+\end_inset
+
+-ый и 
+\begin_inset Formula $j$
+\end_inset
+
+-ый элементы (
+\begin_inset Formula $i\neq j$
+\end_inset
+
+), оставляя все остальные элементы на месте.
+\end_layout
+
+\begin_layout Lemma
+(лемма о транспозиции).
+ Любая перестановка является произведением транспозиций.
+\end_layout
+
+\begin_layout Proof
+Для выполнения любой перестановки 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов требуется не более 
+\begin_inset Formula $n-1$
+\end_inset
+
+ транспозиций.
+ Транспозиции можно выбрать так, что каждая из них будет устанавливать на
+ место как минимум один элемент.
+ После того как 
+\begin_inset Formula $n-1$
+\end_inset
+
+ элемент окажется на своём месте, последний элемент также окажется на нужном
+ месте, так как остальные места уже будут заняты.
+\end_layout
+
+\begin_layout Exercise
+Докажите, что при 
+\begin_inset Formula $n>2$
+\end_inset
+
+ группа 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ не является абелевой.
+\end_layout
+
+\begin_layout Solution
+Достаточно предъявить две перестановки, произведение которых зависит от
+ порядка умножения.
+ Для 
+\begin_inset Formula $n=3$
+\end_inset
+
+ можно взять 
+\begin_inset Formula $\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 3 & 1
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\begin{array}{ccc}
+1 & 2 & 3\\
+3 & 2 & 1
+\end{array}\right)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 3 & 1
+\end{array}\right)\left(\begin{array}{ccc}
+1 & 2 & 3\\
+3 & 2 & 1
+\end{array}\right)=\left(\begin{array}{ccc}
+1 & 2 & 3\\
+1 & 3 & 2
+\end{array}\right),
+\]
+
+\end_inset
+
+ но
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccc}
+1 & 2 & 3\\
+3 & 2 & 1
+\end{array}\right)\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 3 & 1
+\end{array}\right)=\left(\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 1 & 3
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В случае 
+\begin_inset Formula $n>3$
+\end_inset
+
+ можно взять перестановки, аналогичные указанным: 
+\begin_inset Formula $\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & \dots & n\\
+2 & 3 & 1 & 4 & \dots & n
+\end{array}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & \dots & n\\
+3 & 2 & 1 & 4 & \dots & n
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если выполнить любую перестановку достаточное число раз, то любой заданный
+ элемент вернётся в исходную позицию.
+ В процессе таких последовательных перестановок мы получим 
+\emph on
+цикл
+\emph default
+.
+ Циклы не пересекаются.
+ Находясь в любой позиции, принадлежащей циклу, можно перейти в любую другую
+ позицию того же цикла.
+ Поэтому, если у двух циклов есть общий элемент, то они совпадают.
+ Таким образом, любая перестановка распадается на произведение не пересекающихся
+ циклов.
+\end_layout
+
+\begin_layout Definition
+Цикл из одного элемента называется 
+\emph on
+тривиальным
+\emph default
+.
+\end_layout
+
+\begin_layout Exercise
+Сколько нетривиальных циклов может содержать перестановка 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов?
+\end_layout
+
+\begin_layout Solution
+Так как нетривиальный цикл включает не менее двух элементов, то количество
+ нетривиальных циклов не может превышать 
+\begin_inset Formula $\left\lfloor \frac{n}{2}\right\rfloor $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Такая перестановка называется 
+\emph on
+обращением
+\emph default
+.
+\end_layout
+
+\begin_layout Theorem
+(о числе присваиваний).
+ Для выполнения произвольной перестановки на месте необходимо 
+\begin_inset Formula $n-u+v$
+\end_inset
+
+ операций присваивания, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — число элементов, 
+\begin_inset Formula $u$
+\end_inset
+
+ — число тривиальных циклов, а 
+\begin_inset Formula $v$
+\end_inset
+
+ — число нетривиальных циклов.
+\end_layout
+
+\begin_layout Proof
+Так как циклы не пересекаются, то количество операций присваивания, необходимых
+ выполнения произвольной перестановки, равно суммарному количеству операций
+ присваивания, необходимых для выполнения всех циклов.
+\end_layout
+
+\begin_layout Proof
+Тривиальные циклы вообще не требуют выполнения никаких действий: они состоят
+ из одного элемента, который находится на своём месте.
+ Нетривиальный цикл из 
+\begin_inset Formula $m$
+\end_inset
+
+ элементов требует для своего выполнения 
+\begin_inset Formula $m+1$
+\end_inset
+
+ присваивание, одно для сохранения последнего элемента и 
+\begin_inset Formula $m$
+\end_inset
+
+ для последовательной установки элементов в целевое место.
+\end_layout
+
+\begin_layout Proof
+Пусть перестановка состоит из 
+\begin_inset Formula $v$
+\end_inset
+
+ нетривиальных циклов из 
+\begin_inset Formula $m_{1},\dots,m_{v}$
+\end_inset
+
+ элементов.
+ Тогда для выполнения перестановки требуется 
+\begin_inset Formula 
+\[
+\sum_{j=1}^{v}\left(m_{j}+1\right)=\sum_{j=1}^{v}m_{j}+v,
+\]
+
+\end_inset
+
+ сумма в правой части, то есть суммарная число элементов в нетривиальных
+ циклах, равна 
+\begin_inset Formula $n-u$
+\end_inset
+
+, так как каждый нетривиальный цикл включает один элемент.
+\end_layout
+
+\begin_layout Exercise
+Спроектируйте алгоритм обращения на месте для однонаправленных итераторов.
+ Это означает что алгоритм должен работать для односвязных списков без изменения
+ связей.
+\end_layout
+
+\begin_layout Solution
+Нужно воспользоваться методом 
+\begin_inset Quotes rld
+\end_inset
+
+разделяй и властвуй
+\begin_inset Quotes rrd
+\end_inset
+
+: рекурсивно обратить половины диапазона, а затем обменять их местами.
+ Диапазоны длины один обращать не нужно.
+\end_layout
+
+\begin_layout Section
+Обмен диапазонов
+\end_layout
+
+\begin_layout Exercise
+Почему мы не предоставляем интерфейс pair<I0, I1> swap_ranges(I0 first0,
+ I1 first1, N0 n0, N1 n1).
+\end_layout
+
+\begin_layout Solution
+Такой алгоритм будет вынужден взять наименьшее из 
+\begin_inset Formula $n0$
+\end_inset
+
+ и 
+\begin_inset Formula $n1$
+\end_inset
+
+ и вызвать версию с одним размером.
+\end_layout
+
+\begin_layout Section
+Циклическая перестановка
+\end_layout
+
+\begin_layout Definition
+Перестановка 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов 
+\begin_inset Formula $k$
+\end_inset
+
+ позиций, где 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\left(k\mod n,k+1\mod n,\dots,k+n-1\mod n\right)
+\]
+
+\end_inset
+
+ называется 
+\series bold
+циклической перестановкой 
+\series default
+
+\begin_inset Formula $n$
+\end_inset
+
+
+\series bold
+ на
+\series default
+ 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Докажите, что вызов rotate(f, m, l) — то есть обмен (возможно) не равных
+ по длине диапазонов 
+\begin_inset Formula $\left[f;m\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left[m;l\right)$
+\end_inset
+
+ — выполняет циклическую перестановку distance(f, l) на distance(m, l).
+\end_layout
+
+\begin_layout Proof
+При выполнении указанного вызова элементы с номерами 
+\begin_inset Formula $\left[m-f,\dots,l-f\right)$
+\end_inset
+
+ перемещаются в позиции 
+\begin_inset Formula $\left[0,\dots,m-l\right)$
+\end_inset
+
+ с сохранением порядка.
+ Элементы с номерами 
+\begin_inset Formula $\left[0,\dots,m-f\right)$
+\end_inset
+
+ переходят в позиции 
+\begin_inset Formula $\left[m-f,\dots,l-f\right)$
+\end_inset
+
+.
+ Каждое из этих преобразований можно так: в позицию 
+\begin_inset Formula $j$
+\end_inset
+
+ устанавливается элемент из позиции 
+\begin_inset Formula $j+k\mod n$
+\end_inset
+
+, что совпадает с определением циклической перестановки.
+\end_layout
+
+\begin_layout Exercise
+Внимательно изучив код swap_ranges, вы заметите, что производятся ненужные
+ сравнения итераторов.
+ Перепишите алгоритм так, чтобы никаких лишних сравнений не было.
+\end_layout
+
+\begin_layout Solution
+Похоже, речь идёт о применении swap_ranges в rotate.
+ Так как m достигнет l раньше, чем f, то сравнение f с m можно опустить.
+\end_layout
+
+\begin_layout Section
+Использование циклов
+\end_layout
+
+\begin_layout Exercise
+Докажите, что если циклическая перестановка 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов имеет тривиальный цикл, то она содержит 
+\begin_inset Formula $n$
+\end_inset
+
+ тривиальных циклов (иначе говоря, циклическая перестановка либо перемещает
+ все элементы, либо ни один).
+\end_layout
+
+\begin_layout Solution
+Пусть у циклической перестановки 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов 
+\begin_inset Formula $k$
+\end_inset
+
+ есть тривиальный цикл, состоящий из элемента 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Тогда, по определению циклической перестановки, 
+\begin_inset Formula $j+k=j\mod n$
+\end_inset
+
+ или 
+\begin_inset Formula $k=0\mod n$
+\end_inset
+
+.
+ Но в этом случае для любого 
+\begin_inset Formula $i$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $i+k=i+0=i\mod n$
+\end_inset
+
+, что и требовалось доказать.
+\end_layout
+
+\begin_layout Exercise
+Продолжите трассировку примера вплоть до завершения функции rotate.
+ Это не математическое упражнение.
+\end_layout
+
+\begin_layout Section
+Обращение
+\end_layout
+
+\begin_layout Standard
+Ещё один фундаментальный алгоритм — 
+\emph on
+обращение 
+\emph default
+— изменяет порядок последовательности элементов на противоположный.
+\end_layout
+
+\begin_layout Exercise
+Сколько присваиваний выполняет алгоритм циклической перестановки тремя вращениям
+и.
+\end_layout
+
+\begin_layout Solution
+Обращение 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов требует 
+\begin_inset Formula $3\left\lfloor \frac{n}{2}\right\rfloor $
+\end_inset
+
+, так как выше было показано
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, что обращение представляет собой произведение 
+\begin_inset Formula $\left\lfloor \frac{n}{2}\right\rfloor $
+\end_inset
+
+ транспозиций, то есть циклов длины 
+\begin_inset Formula $2$
+\end_inset
+
+, а для осуществления цикла длины 
+\begin_inset Formula $2$
+\end_inset
+
+ нужно выполнить 
+\begin_inset Formula $3$
+\end_inset
+
+ операции.
+\end_layout
+
+\begin_layout Solution
+rotate(f,m,l) потребует выполнения 
+\begin_inset Formula 
+\[
+3\left(\left\lfloor \frac{m-f}{2}\right\rfloor +\left\lfloor \frac{l-m}{2}\right\rfloor +\left\lfloor \frac{l-f}{2}\right\rfloor \right)\le3\left(l-f\right)=3n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Меньше операций может потребоваться, если некоторые из диапазонов имеют
+ нечётную длину.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Проверить это
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Не математическое упражнение.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Не математическое упражнение.
+\end_layout
+
+\begin_layout Section
+Пространственная сложность
+\end_layout
+
+\begin_layout Section
+Алгоритмы, адаптирующиеся к объёму памяти
+\end_layout
+
+\begin_layout Chapter
+Обобщения НОД
+\end_layout
+
+\begin_layout Section
+Аппаратные ограничения и более эффективный алгоритм
+\end_layout
+
+\begin_layout Section
+Обобщение алгоритма Штайна
+\end_layout
+
+\begin_layout Exercise
+Не математическое упражнение.
+\end_layout
+
+\begin_layout Section
+Теорема Безу
+\end_layout
+
+\begin_layout Theorem
+(Теорема Безу).
+ 
+\begin_inset Formula $\forall a,b\thinspace\exists x,y:xa+yb=\gcd\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+
+\series bold
+Идеалом 
+\series default
+
+\begin_inset Formula $I$
+\end_inset
+
+ называется непустое подмножество кольца 
+\begin_inset Formula $R$
+\end_inset
+
+ такое, что 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+\forall x,y\in I:x+y\in I,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall x\in I,\forall a\in R:ax\in I.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+1) Докажите, что идеал 
+\begin_inset Formula $I$
+\end_inset
+
+ замкнут относительно вычитания.
+\end_layout
+
+\begin_layout Exercise
+2).
+ Докажите, что идеал 
+\begin_inset Formula $I$
+\end_inset
+
+ содержит 0.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $I$
+\end_inset
+
+ — идеал кольца 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $x,y\in I$
+\end_inset
+
+.
+ Нужно доказать, что 
+\begin_inset Formula $x-y=x+\left(-y\right)\in I$
+\end_inset
+
+.
+ Докажем, что 
+\begin_inset Formula $\left(-y\right)=\left(-1\right)y$
+\end_inset
+
+.
+ Действительно, 
+\begin_inset Formula $\left(-1\right)y+y=\left(-1\right)\cdot y+1\cdot y=\left(\left(-1\right)+1\right)y=0\cdot y=0$
+\end_inset
+
+.
+ Аналогично доказывается, что 
+\begin_inset Formula $y+\left(-1\right)y=0$
+\end_inset
+
+.
+ Так как обратный элемент является единственным, то 
+\begin_inset Formula $\left(-1\right)y=\left(-y\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $-1\in R$
+\end_inset
+
+, а 
+\begin_inset Formula $y\in I$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(-1\right)y=\left(-y\right)\in I$
+\end_inset
+
+ по второму свойству идеала, а значит 
+\begin_inset Formula $x+\left(-y\right)=x-y\in I$
+\end_inset
+
+ по первому свойству идеала.
+\end_layout
+
+\begin_layout Solution
+2) По определению, идеал 
+\begin_inset Formula $I$
+\end_inset
+
+ не пуст, значит существует его некоторый элемент 
+\begin_inset Formula $x\in I$
+\end_inset
+
+.
+ Тогда, по определению кольца 
+\begin_inset Formula $0\in R$
+\end_inset
+
+, тогда, по второму свойству идеалов 
+\begin_inset Formula $0\cdot x=0\in I$
+\end_inset
+
+.
+ Также можно опереться на первый пункт упражнения и сказать, что 
+\begin_inset Formula $-x\in I$
+\end_inset
+
+, а значит 
+\begin_inset Formula $x+\left(-x\right)=0\in I$
+\end_inset
+
+ по первому свойству идеала.
+\end_layout
+
+\begin_layout Lemma
+(Об идеале линейных комбинаций).
+ Для любого кольца и любых двух его элементов 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ множество элементов вида 
+\begin_inset Formula $\left\{ xa+yb\right\} $
+\end_inset
+
+ образуют идеал.
+\end_layout
+
+\begin_layout Proof
+Во-первых, 
+\begin_inset Formula $I=\left\{ xa+yb\right\} \subset R$
+\end_inset
+
+, так как кольцо замкнуто относительно сложения и умножения.
+ Рассмотрим теперь два элемента этого множества: 
+\begin_inset Formula $x_{1}a+y_{1}b$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}a+y_{2}b$
+\end_inset
+
+.
+ Тогда по свойствам кольца: 
+\begin_inset Formula 
+\[
+\left(x_{1}a+y_{1}b\right)+\left(x_{2}a+y_{2}b\right)=\left(x_{1}+x_{2}\right)a+\left(y_{1}+y_{2}\right)b\in I,
+\]
+
+\end_inset
+
+первое свойство идеала доказано.
+\end_layout
+
+\begin_layout Proof
+Пусть теперь 
+\begin_inset Formula $z\in R$
+\end_inset
+
+, рассмотрим произведение 
+\begin_inset Formula $z\left(xa+yb\right)$
+\end_inset
+
+, по свойствам кольца: 
+\begin_inset Formula 
+\[
+z\left(xa+yb\right)=\left(zx\right)a+\left(zy\right)b\in I,
+\]
+
+\end_inset
+
+ таким образом, множество вида 
+\begin_inset Formula $\left\{ xa+yb\right\} $
+\end_inset
+
+ действительно удовлетворяет определению идеала.
+\end_layout
+
+\begin_layout Exercise
+Докажите, что все элементы идеала линейных комбинаций делятся на любой общий
+ делитель 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $g$
+\end_inset
+
+ — общий делитель 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, тогда существуют такие 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+, что 
+\begin_inset Formula $a=mg$
+\end_inset
+
+ и 
+\begin_inset Formula $b=ng$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+xa+yb=xmg+yng=\left(xm+yn\right)g,
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $xa+yb$
+\end_inset
+
+ делится на 
+\begin_inset Formula $g$
+\end_inset
+
+, что и требовалось доказать.
+\end_layout
+
+\begin_layout Lemma
+(Об иделалах в евклидовых кольцах).
+ Любой идеал евклидова кольца замкнут относительно операций взятия остатка
+ и евклидова НОД.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $R$
+\end_inset
+
+ — евклидово кольцо, а 
+\begin_inset Formula $I$
+\end_inset
+
+ — его идеал.
+ Пусть также 
+\begin_inset Formula $x,y\in I$
+\end_inset
+
+.
+ Сначала покажем, что 
+\begin_inset Formula $r=reminder(x,y)\in I$
+\end_inset
+
+.
+ По определению евклидова кольца, 
+\begin_inset Formula $x=qy+r,$
+\end_inset
+
+ где 
+\begin_inset Formula $q=quotient(x,y)\in R$
+\end_inset
+
+.
+ Из этого представления следует 
+\begin_inset Formula $r=x-qy$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $q\in R$
+\end_inset
+
+ и 
+\begin_inset Formula $y\in I$
+\end_inset
+
+, а 
+\begin_inset Formula $I$
+\end_inset
+
+ — идеал, то 
+\begin_inset Formula $qy\in I$
+\end_inset
+
+.
+ Выше было показано, что идеал замкнут относительно операции вычитания,
+ поэтому 
+\begin_inset Formula $r=x-qy\in I$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Остаётся доказать, что идеал евклидова кольца замкнут относительно НОД.
+ Это следует из того, что НОД определяется как последовательное применение
+ взятия остатка.
+\end_layout
+
+\begin_layout Definition
+Идеал 
+\begin_inset Formula $I$
+\end_inset
+
+ кольца 
+\begin_inset Formula $R$
+\end_inset
+
+ называется 
+\series bold
+главным идеалом
+\series default
+, если существует такой элемент 
+\begin_inset Formula $a\in R$
+\end_inset
+
+, называемый 
+\series bold
+порождающим элементом 
+\series default
+
+\begin_inset Formula $I$
+\end_inset
+
+, что 
+\begin_inset Formula 
+\[
+x\in I\Leftrightarrow\exists y\in R:x=ay.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Иначе говоря, главный идеал порождён одним элементом.
+\end_layout
+
+\begin_layout Exercise
+Докажите, что любой элемент главного идеала делится на порождающий элемент.
+\end_layout
+
+\begin_layout Solution
+Следует непосредственно из определения главного идеала и делимости.
+\end_layout
+
+\begin_layout Definition
+Область целостности называется 
+\series bold
+областью главных идеалов (ОГИ)
+\series default
+, если любой идеал в ней — главный.
+\end_layout
+
+\begin_layout Theorem
+Любое евклидово кольцо является областью главных идеалов.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Подмножество, состоящее только из нуля, является идеалом? Если да, то для
+ этого случая утверждение тоже выполняется.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $I$
+\end_inset
+
+ — некоторый идеал евклидова кольца 
+\begin_inset Formula $R$
+\end_inset
+
+, который не является главным идеалом.
+ В этом идеале существует элемент с наименьшей положительной нормой, обозначим
+ его 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Докажем, что он является порождающим элементом.
+ Так как 
+\begin_inset Formula $I$
+\end_inset
+
+ не является главным идеалом, то существует такой элемент 
+\begin_inset Formula $x$
+\end_inset
+
+, не кратный 
+\begin_inset Formula $m$
+\end_inset
+
+, то есть для 
+\begin_inset Formula $r=reminder\left(x,m\right)$
+\end_inset
+
+ справедливы неравенства 
+\begin_inset Formula $0<\left\Vert r\right\Vert <\left\Vert m\right\Vert $
+\end_inset
+
+.
+ Так как идеал замкнут относительно операции взятия остатка, то 
+\begin_inset Formula $r\in I$
+\end_inset
+
+, таким образом, в идеале 
+\begin_inset Formula $I$
+\end_inset
+
+ существует элемент, меньший по норме, чем 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Полученное противоречие означает, что любой элемент 
+\begin_inset Formula $I$
+\end_inset
+
+ кратен 
+\begin_inset Formula $m$
+\end_inset
+
+, то есть 
+\begin_inset Formula $m$
+\end_inset
+
+ — порождающий элемент, а 
+\begin_inset Formula $I$
+\end_inset
+
+ — главный идеал.
+\end_layout
+
+\begin_layout Standard
+Теперь мы можем доказать теорему Безу, но сначала сформулируем её в терминах
+ идеалов.
+\end_layout
+
+\begin_layout Theorem*
+(теорема Безу в другой формулировке).
+ Идеал линейных комбинаций 
+\begin_inset Formula $I=\left\{ xa+yb\right\} $
+\end_inset
+
+ евклидового кольца 
+\begin_inset Formula $R$
+\end_inset
+
+ содержит 
+\begin_inset Formula $\gcd\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $a=1\cdot a+0\cdot b$
+\end_inset
+
+ и 
+\begin_inset Formula $b=0\cdot a+1\cdot b$
+\end_inset
+
+, то 
+\begin_inset Formula $a,b\in I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Так как идеал замкнут относительно операции взятия наибольшего общего делителя,
+ то 
+\begin_inset Formula $\gcd\left(a,b\right)\in I$
+\end_inset
+
+, а значит существуют такие 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+, что 
+\begin_inset Formula $xa+yb=\gcd\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+(Лемма об обратимости).
+ 
+\begin_inset Formula 
+\[
+\forall a,b\in\mathbb{Z}:\gcd\left(a,n\right)=1\Rightarrow\exists x\in\mathbb{Z}_{n}:ax=1\mod n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+По теореме Безу существуют такие 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+, что 
+\begin_inset Formula $za+yn=\gcd\left(a,b\right)=1$
+\end_inset
+
+.
+ Положив 
+\begin_inset Formula $x=z\mod n$
+\end_inset
+
+ получим, что 
+\begin_inset Formula $z=x+qn$
+\end_inset
+
+ и 
+\begin_inset Formula $xa+qn-yn=1$
+\end_inset
+
+ или 
+\begin_inset Formula $xa=1+(y-q)n$
+\end_inset
+
+, то есть 
+\begin_inset Formula $xa=1\mod n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+С помощью теоремы Безу докажите, что если 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое число, то для любого 
+\begin_inset Formula $0<a<p$
+\end_inset
+
+ существует число, обратное 
+\begin_inset Formula $a$
+\end_inset
+
+ относительно умножения по модулю 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $p$
+\end_inset
+
+ простое, а 
+\begin_inset Formula $0<a<p$
+\end_inset
+
+, то 
+\begin_inset Formula $\gcd\left(a,p\right)=1$
+\end_inset
+
+, откуда по лемме об обратимости следует, что существует такое 
+\begin_inset Formula $x$
+\end_inset
+
+, что 
+\begin_inset Formula $ax=1\mod p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Расширенный алгоритм Евклида
+\end_layout
+
+\begin_layout Exercise
+Чему равны 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+, если 
+\begin_inset Formula $b=0$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $\gcd\left(a,0\right)=a$
+\end_inset
+
+, то 
+\begin_inset Formula $xa+yb=xa$
+\end_inset
+
+ и равенство 
+\begin_inset Formula $xa+yb=a$
+\end_inset
+
+ выполняется при 
+\begin_inset Formula $x=1$
+\end_inset
+
+ и любом 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Разработайте вариант расширенного алгоритма НОД на основе алгоритма Штайна.
 \end_layout
 
 \begin_layout Standard
