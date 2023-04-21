@@ -268,5 +268,338 @@ S_{n}=b_{1}\frac{1-q^{n}}{1-q}.
 
 \end_layout
 
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:triangle-numbers"
+
+\end_inset
+
+Сумма первых 
+\begin_inset Formula $n$
+\end_inset
+
+ натуральных чисел
+\end_layout
+
+\begin_layout Standard
+Найдём явную формулу для суммы первых 
+\begin_inset Formula $n$
+\end_inset
+
+ натуральных чисел 
+\begin_inset Formula 
+\[
+T_{n}=\sum_{k=1}^{n}k.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Произведём суммирование в обратном порядке (это можно сделать в силу коммутативн
+ости сложения): 
+\begin_inset Formula 
+\[
+T_{n}=\sum_{k=1}^{n}\left(n-k+1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сложим левые и правые части последних двух равенств: 
+\begin_inset Formula 
+\[
+2T_{n}=\sum_{k=1}^{n}k+\sum_{k=1}^{n}\left(n-k+1\right)
+\]
+
+\end_inset
+
+ и перегруппируем слагаемые (что также допустимо в силу коммутативности
+ сложения): 
+\begin_inset Formula 
+\[
+2T_{n}=\sum_{k=1}^{n}\left(k+n-k+1\right)=\sum_{k=1}^{n}\left(n+1\right),
+\]
+
+\end_inset
+
+таким образом, справа мы получили сумму 
+\begin_inset Formula $n$
+\end_inset
+
+ одинаковых слагаемых, каждое из которых равно 
+\begin_inset Formula $n+1$
+\end_inset
+
+, значит вся сумма равна 
+\begin_inset Formula $n\left(n+1\right)$
+\end_inset
+
+.
+ Окончательно получаем, что 
+\begin_inset Formula 
+\begin{equation}
+T_{n}=\frac{n\left(n+1\right)}{2}.\label{eq:triangle-number}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что справа, как и должно было быть, стоит целое число, так как
+ из двух последовательных целых чисел 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $n+1$
+\end_inset
+
+ одно обязательно делится на 
+\begin_inset Formula $2$
+\end_inset
+
+ без остатка.
+\end_layout
+
+\begin_layout Standard
+Числа 
+\begin_inset Formula $T_{n}$
+\end_inset
+
+ называют треугольными числами, так как такое количество точек получится,
+ если расположить их в виде правильного треугольника: в первый ряд поместить
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ точку, во второй — 
+\begin_inset Formula $2$
+\end_inset
+
+ и так далее до 
+\begin_inset Formula $n$
+\end_inset
+
+-го ряда.
+\end_layout
+
+\begin_layout Section
+Арифметическая прогрессия
+\end_layout
+
+\begin_layout Standard
+Рассмотрим теперь арифметическую прогрессию, то есть последовательность
+ чисел, в которых каждое следующее больше предыдущего на одну и ту же величину
+\begin_inset Formula 
+\[
+a_{n}=a_{n-1}+d.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Применяя данное рекуррентное соотношение последовательно, можно получить
+ явную формулу для членов арифметической прогрессии:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a_{n}=a_{1}+\left(n-1\right)d.\label{eq:arithmetic-progression-general-term}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вычислим сумму первых 
+\begin_inset Formula $n$
+\end_inset
+
+ членов арифметической прогрессии: 
+\begin_inset Formula 
+\[
+S_{n}=\sum_{k=1}^{n}a_{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Подставляя вместо 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+ выражение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:arithmetic-progression-general-term"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+S_{n}=\sum_{k=1}^{n}\left(a_{1}+\left(k-1\right)d\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выделим под суммой слагаемое, не зависящее от индекса суммирования 
+\begin_inset Formula $k$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+S_{n}=\sum_{k=1}^{n}\left(a_{1}-d+kd\right)=\sum_{k=1}^{n}a_{1}+d\sum_{k=1}^{n}\left(k-1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Все слагаемые первой суммы равны 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+, поэтому её вычисление не представляет сложностей, а во второй сумме первое
+ слагаемое равно нулю, поэтому его можно опустить:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{n}=a_{1}n+d\sum_{k=2}^{n}\left(k-1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теперь выполним во второй сумме замену 
+\begin_inset Formula $k-1=j$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+S_{n}=a_{1}n+d\sum_{j=1}^{n-1}j=a_{1}n+d\cdot T_{n-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Остаётся воспользоваться формулой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:triangle-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+S_{n}=a_{1}n+d\cdot\frac{\left(n-1\right)n}{2}=\left(a_{1}+\frac{d\left(n-1\right)}{2}\right)n.\label{eq:arithmetic-progression-sum-first-and-step}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Данную формулу можно преобразовать к более симметричному виду, если воспользоват
+ься явной формулой для общего члена арифметической прогрессии 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:arithmetic-progression-general-term"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, из которой следует 
+\begin_inset Formula 
+\[
+d\left(n-1\right)=a_{n}-a_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Подставив это выражение в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:arithmetic-progression-sum-first-and-step"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+S_{n}=\left(a_{1}+\frac{a_{n}-a_{1}}{2}\right)n=\frac{a_{1}+a_{n}}{2}\cdot n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что последнюю формулу можно было получить, применив идею вывода
+ формулу треугольных чисел, представленную в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:triangle-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document
