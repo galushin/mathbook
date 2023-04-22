@@ -4,8 +4,13 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass article
+\textclass amsbook
 \use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
 \maintain_unincluded_children false
 \language russian
 \language_package default
@@ -77,7 +82,17 @@
 
 \begin_body
 
+\begin_layout Chapter
+Приёмы вычисления сумм
+\end_layout
+
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:geometric-progression"
+
+\end_inset
+
 Геометрическая прогрессия
 \end_layout
 
@@ -99,7 +114,17 @@ b_{n}=b_{n-1}\cdot q.\label{eq:geometric-progression-recurrence}
 
 \begin_layout Standard
 Применяя данное рекуррентное соотношение последовательно, можно получить
- явную формулу для членов геометрической прогрессии:
+ явную формулу для членов геометрической прогрессии
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать по индукции?
+\end_layout
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -411,7 +436,17 @@ a_{n}=a_{n-1}+d.
 
 \begin_layout Standard
 Применяя данное рекуррентное соотношение последовательно, можно получить
- явную формулу для членов арифметической прогрессии:
+ явную формулу для членов арифметической прогрессии
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать по индукции?
+\end_layout
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -599,6 +634,598 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Сумма квадратов первых 
+\begin_inset Formula $n$
+\end_inset
+
+ натуральных чисел
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Раздел получился слишком большим, может быть разбить его на более мелкие?
+\end_layout
+
+\end_inset
+
+Займёмся вычислением суммы 
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}k^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Попробуем применить идею вывода формулы суммы геометрической прогрессии,
+ представленной в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:geometric-progression"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Обозначим искомую сумму как 
+\begin_inset Formula $S_{n,2}$
+\end_inset
+
+ и рассмотрим сумму 
+\begin_inset Formula $S_{n+1,2}$
+\end_inset
+
+.
+ Если выделить в этой сумме последнее слагаемое, то мы получим 
+\begin_inset Formula 
+\begin{equation}
+S_{n+1,2}=S_{n,2}+\left(n+1\right)^{2}.\label{eq:sum-of-squares-last}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+С другой стороны, если выделить первое слагаемое, то мы получим 
+\begin_inset Formula 
+\[
+S_{n+1,2}=1+\sum_{k=2}^{n+1}k^{2}=1+\sum_{k=1}^{n}\left(k+1\right)^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Воспользуемся формулой квадрата суммы
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать и сослаться
+\end_layout
+
+\end_inset
+
+ под знаком суммы:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{n+1,2}=1+\sum_{k=1}^{n}\left(k^{2}+2k+1\right)
+\]
+
+\end_inset
+
+и преобразуем сумму трёх слагаемых в три суммы:
+\begin_inset Formula 
+\[
+S_{n+1,2}=1+\sum_{k=1}^{n}k^{2}+2\sum_{k=1}^{n}k+\sum_{k=1}^{n}1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Используя введённые нами обозначения, окончательно получим
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{n+1,2}=1+S_{n,2}+2T_{n}+n.\label{eq:sum-of-squares-first}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Приравнивая два выражения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-squares-last"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-squares-first"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ для 
+\begin_inset Formula $S_{n+1,2}$
+\end_inset
+
+, получим
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{n,2}+\left(n+1\right)^{2}=1+S_{n,2}+2T_{n}+n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+К сожалению, 
+\begin_inset Formula $S_{n,2}$
+\end_inset
+
+ в левой и правой части просто сокращаются и мы можем лишь снова получить
+ формулу для треугольных чисел.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{n}=\frac{\left(n+1\right)^{2}-\left(n+1\right)}{2}=\frac{n\left(n+1\right)}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Возможно, искомую формулу удастся получить если рассмотреть сумму кубов.
+ Для удобства, в дальнейшем будем использовать следующие обозначение: 
+\begin_inset Formula 
+\[
+S_{n,t}=\sum_{k=1}^{n}k^{t}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Легко понять, что
+\begin_inset Formula 
+\[
+S_{n,0}=\sum_{k=1}^{n}k^{0}=\sum_{k=1}^{n}1=n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Кроме того, мы доказали, что 
+\begin_inset Formula 
+\[
+S_{n,1}=\sum_{k=1}^{n}k=T_{n}=\frac{n\left(n+1\right)}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Представим 
+\begin_inset Formula $S_{n+1,3}$
+\end_inset
+
+ двумя способами, выделяя сначала последнее слагаемое:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{n+1,3}=S_{n,3}+\left(n+1\right)^{3},\label{eq:sum-of-cubes-last}
+\end{equation}
+
+\end_inset
+
+а затем — первое, воспользовавшись формулой куба суммы
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать и сослаться
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline}
+S_{n+1,3}=1+\sum_{k=2}^{n+1}k^{3}=1+\sum_{k=1}^{n}\left(k+1\right)^{3}=\\
+=1+\sum_{k=1}^{n}\left(k^{3}+3k^{2}+3k+1\right)=\\
+=1+S_{n,3}+3S_{n,2}+3S_{n,1}+S_{n,0}.\label{eq:sum-of-cubes-first}
+\end{multline}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Приравнивая выражения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-cubes-last"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-cubes-first"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+1+S_{n,3}+3S_{n,2}+3S_{n,1}+S_{n,0}=S_{n,3}+\left(n+1\right)^{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Перенесём 
+\begin_inset Formula $S_{n,2}$
+\end_inset
+
+ в одну сторону, а все остальные слагаемые — в другую:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3S_{n,2}=\left(n+1\right)^{3}-\left(n+1\right)-3S_{n,1}=\left(n+1\right)^{3}-\left(n+1\right)-\frac{3n\left(n+1\right)}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Выполним в правой части алгебраические преобразования:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+3S_{n,2}=\left(n+1\right)\left(\left(n+1\right)^{2}-1-\frac{3n}{2}\right)=\\
+=\left(n+1\right)\left(n^{2}+2n+1-1-\frac{3n}{2}\right)=\\
+=\left(n+1\right)\left(n^{2}+\frac{n}{2}\right)=\frac{n\left(n+1\right)\left(2n+1\right)}{2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Окончательно получаем: 
+\begin_inset Formula 
+\[
+S_{n,2}=\frac{n\left(n+1\right)\left(2n+1\right)}{6}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Докажем, что в правой части этой формулы действительно стоит целое число.
+ Как уже упоминалось в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:triangle-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, среди последовательных целых чисел 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $n+1$
+\end_inset
+
+ одно обязательно делится на 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $6=2\cdot3$
+\end_inset
+
+, а числа 
+\begin_inset Formula $2$
+\end_inset
+
+ и 
+\begin_inset Formula $3$
+\end_inset
+
+ взаимно просты
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ввести понятие
+\end_layout
+
+\end_inset
+
+, то 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать и сослаться
+\end_layout
+
+\end_inset
+
+ остаётся доказать, что среди чисел 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $n+1$
+\end_inset
+
+ и 
+\begin_inset Formula $2n+1$
+\end_inset
+
+ по крайней мере одно делится на 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Рассмотрим все возможные случаи:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n\mod3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n+1\mod3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2n+1\mod3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, действительно, всегда один из множителей делится на 
+\begin_inset Formula $3$
+\end_inset
+
+ без остатка.
 \end_layout
 
 \end_body
