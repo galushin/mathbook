@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass amsbook
+\textclass extbook
 \use_default_options true
 \begin_modules
 theorems-ams
@@ -821,9 +821,9 @@ T_{n}=\frac{\left(n+1\right)^{2}-\left(n+1\right)}{2}=\frac{n\left(n+1\right)}{2
 Возможно, искомую формулу удастся получить если рассмотреть сумму кубов.
  Для удобства, в дальнейшем будем использовать следующие обозначение: 
 \begin_inset Formula 
-\[
-S_{n,t}=\sum_{k=1}^{n}k^{t}.
-\]
+\begin{equation}
+S_{n,t}=\sum_{k=1}^{n}k^{t}.\label{eq:sum-of-power-of-first-natural-numbers}
+\end{equation}
 
 \end_inset
 
@@ -833,9 +833,9 @@ S_{n,t}=\sum_{k=1}^{n}k^{t}.
 \begin_layout Standard
 Легко понять, что
 \begin_inset Formula 
-\[
-S_{n,0}=\sum_{k=1}^{n}k^{0}=\sum_{k=1}^{n}1=n.
-\]
+\begin{equation}
+S_{n,0}=\sum_{k=1}^{n}k^{0}=\sum_{k=1}^{n}1=n.\label{eq:sum-of-0th-powers}
+\end{equation}
 
 \end_inset
 
@@ -845,9 +845,9 @@ S_{n,0}=\sum_{k=1}^{n}k^{0}=\sum_{k=1}^{n}1=n.
 \begin_layout Standard
 Кроме того, мы доказали, что 
 \begin_inset Formula 
-\[
-S_{n,1}=\sum_{k=1}^{n}k=T_{n}=\frac{n\left(n+1\right)}{2}.
-\]
+\begin{equation}
+S_{n,1}=\sum_{k=1}^{n}k=T_{n}=\frac{n\left(n+1\right)}{2}.\label{eq:sum-of-first-n-naturals}
+\end{equation}
 
 \end_inset
 
@@ -967,9 +967,9 @@ noprefix "false"
 \begin_layout Standard
 Окончательно получаем: 
 \begin_inset Formula 
-\[
-S_{n,2}=\frac{n\left(n+1\right)\left(2n+1\right)}{6}.
-\]
+\begin{equation}
+S_{n,2}=\frac{n\left(n+1\right)\left(2n+1\right)}{6}.\label{eq:sum-of-first-n-squares}
+\end{equation}
 
 \end_inset
 
@@ -1226,6 +1226,257 @@ status open
 \end_inset
 
  без остатка.
+\end_layout
+
+\begin_layout Section
+Сумма кубов первых 
+\begin_inset Formula $n$
+\end_inset
+
+ натуральных чисел и теорема Никомаха
+\end_layout
+
+\begin_layout Standard
+По аналогии с предыдущим разделом для получения формулы суммы кубов первых
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ натуральных чисел рассмотрим сумму их четвёртых степеней:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{n,4}=\sum_{k=1}^{n}k^{4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Запишем 
+\begin_inset Formula $S_{n+1,4}$
+\end_inset
+
+ двумя способами, во-первых, если выделить последнее слагаемое, получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{n+1,4}=S_{n,4}+\left(n+1\right)^{4}.\label{eq:sum-of-4th-powers-last}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если же выделить первое слагаемое, то можно написать:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{n+1,4}=1+\sum_{k=2}^{n+1}k^{4}=1+\sum_{k=1}^{n}\left(k+1\right)^{4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Воспользуемся формулой для четвёртой степени суммы
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать и сослаться
+\end_layout
+
+\end_inset
+
+ и используем обозначениями 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-power-of-first-natural-numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline}
+S_{n+1,4}=1+\sum_{k=1}^{n}\left(k^{4}+4k^{3}+6k^{2}+4k+1\right)=\\
+=1+S_{n,4}+4S_{n,3}+6S_{n,2}+4S_{n,1}+n.\label{eq:sum-of-4th-powers-first}
+\end{multline}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Приравняв правые части 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-4th-powers-last"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-4th-powers-first"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{n,4}+\left(n+1\right)^{4}=1+S_{n,4}+4S_{n,3}+6S_{n,2}+4S_{n,1}+S_{n,0},
+\]
+
+\end_inset
+
+откуда можно выразить 
+\begin_inset Formula $S_{n,3}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+4S_{n,3}=\left(n+1\right)^{4}-1-6S_{n,2}-4S_{n,1}-S_{n,0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Подставив уже известные нам выражения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-0th-powers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-first-n-naturals"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-first-n-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, получим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+4S_{n,3}=\left(n+1\right)^{4}-\left(n+1\right)-n\left(n+1\right)\left(2n+1\right)-2n\left(n+1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вынесем в правой части множитель 
+\begin_inset Formula $\left(n+1\right)$
+\end_inset
+
+ за скобки и раскроем оставшиеся скобки:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+4S_{n,3}=\left(n+1\right)\left(\left(n+1\right)^{3}-1-n\left(2n+1\right)-2n\right)=\\
+=\left(n+1\right)\left(n^{3}+3n^{2}+3n+1-1-2n^{2}-3n\right)=\\
+=\left(n+1\right)\left(n^{3}+n^{2}\right)=\left(n+1\right)n^{2}\left(n+1\right)=\\
+=n^{2}\left(n+1\right)^{2}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Окончательное получаем
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{n,3}=\frac{n^{2}\left(n+1\right)^{2}}{4}=\left(\frac{n\left(n+1\right)}{2}\right)^{2}.\label{eq:sum-of-first-n-cubes}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+В скобках в последнем выражении стоит 
+\begin_inset Formula $T_{n}$
+\end_inset
+
+, таким образом 
+\begin_inset Formula $S_{n,3}=T_{n}^{2}$
+\end_inset
+
+, то есть сумма кубов первых 
+\begin_inset Formula $n$
+\end_inset
+
+ натуральных чисел равна квадрату суммы первых 
+\begin_inset Formula $n$
+\end_inset
+
+ натуральных чисел.
+ Данное утверждение называют теоремой Никомаха.
 \end_layout
 
 \end_body
