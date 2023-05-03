@@ -7,9 +7,8 @@
 \textclass extbook
 \use_default_options true
 \begin_modules
-theorems-ams
-eqs-within-sections
-figs-within-sections
+theorems-ams-bytype
+theorems-ams-extended-bytype
 \end_modules
 \maintain_unincluded_children false
 \language russian
@@ -81,6 +80,2219 @@ figs-within-sections
 \end_header
 
 \begin_body
+
+\begin_layout Chapter
+Элементарные сведения
+\end_layout
+
+\begin_layout Section
+Формулы сокращённого умножения
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить графические доказательства?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+(Формула разности квадратов):
+\begin_inset Formula 
+\begin{equation}
+a^{2}-b^{2}=\left(a-b\right)\left(a+b\right)\label{eq:difference-of-squares}
+\end{equation}
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Раскроем скобки в правой части: 
+\begin_inset Formula 
+\[
+\left(a-b\right)\left(a+b\right)=a^{2}-ba+ab-b^{2}=a^{2}-b^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+(Формула квадрата суммы):
+\begin_inset Formula 
+\begin{equation}
+\left(a+b\right)^{2}=a^{2}+2ab+b^{2}.\label{eq:square-of-sum}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Запишем квадрат как произведение двух одинаковых слагаемых, раскроем скобки
+ и приведём подобные слагаемые: 
+\begin_inset Formula 
+\[
+\left(a+b\right)^{2}=\left(a+b\right)\left(a+b\right)=a^{2}+ba+ab+b^{2}=a^{2}+2ab+b^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+(Формула куба суммы): 
+\begin_inset Formula 
+\begin{equation}
+\left(a+b\right)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}.\label{eq:cube-of-sum}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Представим куб числа как произведение этого числа на его квадрат, воспользуемся
+ формулой квадрата суммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:square-of-sum"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, раскроем скобки и приведём подобные слагаемые: 
+\begin_inset Formula 
+\begin{multline*}
+\left(a+b\right)^{3}=\left(a+b\right)\left(a+b\right)^{2}=\\
+=\left(a+b\right)\left(a^{2}+2ab+b^{2}\right)=\\
+=a^{3}+2a^{2}b+ab^{2}+a^{2}b+2ab^{2}+b^{3}=\\
+=a^{3}+3a^{2}b+3ab^{2}+b^{3}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Модуль
+\end_layout
+
+\begin_layout Definition
+Модулем числа 
+\begin_inset Formula $a$
+\end_inset
+
+ называется число 
+\begin_inset Formula $\left|a\right|$
+\end_inset
+
+, которое определяется следующим образом 
+\begin_inset Formula 
+\[
+\left|a\right|=\begin{cases}
+a, & a\ge0\\
+-a, & a<0
+\end{cases}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:abs-of-product"
+
+\end_inset
+
+Для любых двух чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ справедливо равенство 
+\begin_inset Formula $\left|a\cdot b\right|=\left|a\right|\cdot\left|b\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Рассмотрим все возможные случаи.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нужно ли ввести свойства умножения
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $a\ge0$
+\end_inset
+
+ и 
+\begin_inset Formula $b\ge0$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|a\right|=a$
+\end_inset
+
+, 
+\begin_inset Formula $\left|b\right|=b$
+\end_inset
+
+ и 
+\begin_inset Formula $ab\ge0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|ab\right|=ab$
+\end_inset
+
+, таким образом 
+\begin_inset Formula $\left|a\cdot b\right|=a\cdot b=\left|a\right|\cdot\left|b\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $a<0$
+\end_inset
+
+ и 
+\begin_inset Formula $b<0$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|a\right|=-a$
+\end_inset
+
+, 
+\begin_inset Formula $\left|b\right|=-b$
+\end_inset
+
+ и 
+\begin_inset Formula $ab>0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|ab\right|=ab$
+\end_inset
+
+, таким образом 
+\begin_inset Formula $\left|a\right|\cdot\left|b\right|=\left(-a\right)\left(-b\right)=ab=\left|ab\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $a<0$
+\end_inset
+
+ и 
+\begin_inset Formula $b\ge0$
+\end_inset
+
+, то
+\begin_inset Formula $\left|a\right|=-a$
+\end_inset
+
+, 
+\begin_inset Formula $\left|b\right|=b$
+\end_inset
+
+ и 
+\begin_inset Formula $ab<0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|ab\right|=-ab$
+\end_inset
+
+, таким образом 
+\begin_inset Formula $\left|a\right|\cdot\left|b\right|=\left(-a\right)b=-ab=\left|ab\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $a\ge0$
+\end_inset
+
+ и 
+\begin_inset Formula $b<0$
+\end_inset
+
+, то
+\begin_inset Formula $\left|a\right|=a$
+\end_inset
+
+, 
+\begin_inset Formula $\left|b\right|=-b$
+\end_inset
+
+ и 
+\begin_inset Formula $ab<0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|ab\right|=-ab$
+\end_inset
+
+, таким образом 
+\begin_inset Formula $\left|a\right|\cdot\left|b\right|=a\left(-b\right)=-ab=\left|ab\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Основы теории чисел
+\end_layout
+
+\begin_layout Section
+Делимость
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:divisibility"
+
+\end_inset
+
+Говорят, что целое число 
+\begin_inset Formula $n$
+\end_inset
+
+ делится на целое число 
+\begin_inset Formula $m\neq0$
+\end_inset
+
+ (или 
+\begin_inset Formula $m$
+\end_inset
+
+ делит 
+\begin_inset Formula $n$
+\end_inset
+
+), если существует такое целое число 
+\begin_inset Formula $k$
+\end_inset
+
+, что 
+\begin_inset Formula $n=m\cdot k$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $n$
+\end_inset
+
+ делится на 
+\begin_inset Formula $m$
+\end_inset
+
+, то пишут 
+\begin_inset Formula $m\mid n$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $n$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $m$
+\end_inset
+
+ (
+\begin_inset Formula $m$
+\end_inset
+
+ не делит 
+\begin_inset Formula $n$
+\end_inset
+
+), пишут 
+\begin_inset Formula $m\nmid n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def-even-number"
+
+\end_inset
+
+Целое число 
+\begin_inset Formula $n$
+\end_inset
+
+ называется чётным, если оно делится на 
+\begin_inset Formula $2$
+\end_inset
+
+, то есть, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует такое целое число 
+\begin_inset Formula $k$
+\end_inset
+
+, что 
+\begin_inset Formula $n=2k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:divisibility-sum-and-difference"
+
+\end_inset
+
+Если 
+\begin_inset Formula $a\mid b$
+\end_inset
+
+ и 
+\begin_inset Formula $a\mid c$
+\end_inset
+
+, то 
+\begin_inset Formula $a\mid\left(b+c\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $a\mid\left(b-c\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ существуют такие целые числа 
+\begin_inset Formula $k$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+, что 
+\begin_inset Formula $b=ak$
+\end_inset
+
+ и 
+\begin_inset Formula $c=am$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula 
+\[
+b+c=ak+am=a\left(k+m\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b-c=ak-am=a\left(k-m\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, по определению, 
+\begin_inset Formula $b+c$
+\end_inset
+
+ и 
+\begin_inset Formula $b-c$
+\end_inset
+
+ действительно делятся на 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:divisor-cant-be-greater-by-abs"
+
+\end_inset
+
+Если 
+\begin_inset Formula $a\mid b$
+\end_inset
+
+ и 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|a\right|\le\left|b\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $a\mid b$
+\end_inset
+
+, то, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует такое целое число 
+\begin_inset Formula $n$
+\end_inset
+
+, что 
+\begin_inset Formula $b=an$
+\end_inset
+
+.
+ При этом 
+\begin_inset Formula $n\neq0$
+\end_inset
+
+, так как при 
+\begin_inset Formula $n=0$
+\end_inset
+
+ было 
+\begin_inset Formula $b=an=a\cdot0=0$
+\end_inset
+
+, а по условию теоремы 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+По свойству модуля 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:abs-of-product"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ из 
+\begin_inset Formula $b=an$
+\end_inset
+
+ следует 
+\begin_inset Formula $\left|b\right|=\left|a\right|\cdot\left|n\right|$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $n$
+\end_inset
+
+ — целое число и 
+\begin_inset Formula $n\neq0$
+\end_inset
+
+, то 
+\begin_inset Formula $\left|n\right|\ge1$
+\end_inset
+
+ и 
+\begin_inset Formula $\left|b\right|\ge\left|a\right|\cdot1=\left|a\right|$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать и сослаться
+\end_layout
+
+\end_inset
+
+, откуда и следует утверждение леммы.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:quotient-and-reminder"
+
+\end_inset
+
+Для любых целых чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b>0$
+\end_inset
+
+ существует единственным образом определённые целые числа 
+\begin_inset Formula $q$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+, удовлетворяющие условиям 
+\begin_inset Formula $a=bq+r$
+\end_inset
+
+ и 
+\begin_inset Formula $0\le r<b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Разбить на несколько утверждений
+\end_layout
+
+\end_inset
+
+Докажем сначала существование чисел с требуемыми свойствами.
+\end_layout
+
+\begin_layout Proof
+Если 
+\begin_inset Formula $a=0$
+\end_inset
+
+, то можно взять 
+\begin_inset Formula $q=r=0$
+\end_inset
+
+.
+ Действительно, для любого 
+\begin_inset Formula $b$
+\end_inset
+
+ справедливо равенство 
+\begin_inset Formula $b\cdot0+0=0=a$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $b\mid a$
+\end_inset
+
+, то, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует такое целое число 
+\begin_inset Formula $k$
+\end_inset
+
+, что 
+\begin_inset Formula $a=bk$
+\end_inset
+
+, положив 
+\begin_inset Formula $q=k$
+\end_inset
+
+ и 
+\begin_inset Formula $r=0$
+\end_inset
+
+, получим числа, удовлетворяющие условиям теоремы.
+\end_layout
+
+\begin_layout Proof
+Далее будем предполагать, что 
+\begin_inset Formula $b\nmid a$
+\end_inset
+
+.
+ Рассмотрим множество 
+\begin_inset Formula $A$
+\end_inset
+
+ положительных целых чисел вида 
+\begin_inset Formula $a-bk$
+\end_inset
+
+.
+ Это множество не пусто.
+ Действительно, если 
+\begin_inset Formula $a>0$
+\end_inset
+
+, то при 
+\begin_inset Formula $k=0$
+\end_inset
+
+ получим 
+\begin_inset Formula $a-bk=a>0$
+\end_inset
+
+.
+ При 
+\begin_inset Formula $a<0$
+\end_inset
+
+ неравенство 
+\begin_inset Formula $a-bk>0$
+\end_inset
+
+ равносильно 
+\begin_inset Formula $-bk>-a$
+\end_inset
+
+ или 
+\begin_inset Formula $k<\frac{a}{b}$
+\end_inset
+
+, в частности, можно взять 
+\begin_inset Formula $k=a-1$
+\end_inset
+
+: 
+\begin_inset Formula $a-b\left(a-1\right)=b+a-ba=b-a\left(b-1\right)$
+\end_inset
+
+, так как 
+\begin_inset Formula $b>0$
+\end_inset
+
+ (то есть 
+\begin_inset Formula $b-1\ge0$
+\end_inset
+
+) и 
+\begin_inset Formula $-a>0$
+\end_inset
+
+, то 
+\begin_inset Formula $b-a\left(b-1\right)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем, что наименьший элемент 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ множества 
+\begin_inset Formula $A$
+\end_inset
+
+ меньше, чем 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Доказывать будем от противного.
+ Пусть 
+\begin_inset Formula $a_{0}\ge b$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a_{0}\in A$
+\end_inset
+
+, то существует такое целое число 
+\begin_inset Formula $k_{0}$
+\end_inset
+
+, что 
+\begin_inset Formula $a_{0}=a-bk_{0}$
+\end_inset
+
+.
+ Во-первых, заметим, что 
+\begin_inset Formula $a_{0}\neq b$
+\end_inset
+
+, так как иначе 
+\begin_inset Formula $a-bk_{0}=b$
+\end_inset
+
+ или 
+\begin_inset Formula $a=b+bk_{0}=b\left(k_{0}+1\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $b\mid a$
+\end_inset
+
+.
+ Таким образом, можно считать, что 
+\begin_inset Formula $a_{0}=a-bk_{0}>b$
+\end_inset
+
+ или 
+\begin_inset Formula $a-bk_{0}-b>0$
+\end_inset
+
+.
+ Но правую часть последнего неравенства можно переписать как 
+\begin_inset Formula $a-b\left(k_{0}+1\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a_{0}-b\in A$
+\end_inset
+
+.
+ Но 
+\begin_inset Formula $a_{0}-b<a_{0}$
+\end_inset
+
+, так как 
+\begin_inset Formula $b>0$
+\end_inset
+
+.
+ Таким образом, мы нашли элемент 
+\begin_inset Formula $A$
+\end_inset
+
+, меньший наименьшего элемента 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Полученное утверждение означает, что 
+\begin_inset Formula $a_{0}<b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Докажем теперь единственность чисел 
+\begin_inset Formula $q$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Пусть существует два набора целых чисел, удовлетворяющих условиям теоремы:
+ 
+\begin_inset Formula $a=bq_{1}+r_{1}=bq_{2}+r_{2}$
+\end_inset
+
+, тогда 
+\begin_inset Formula 
+\begin{equation}
+b\left(q_{1}-q_{2}\right)=r_{2}-r_{1},\label{eq:two-quotients-and-divisors}
+\end{equation}
+
+\end_inset
+
+то есть 
+\begin_inset Formula $b\mid r_{2}-r_{1}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $r_{2}\neq r_{1}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $r_{2}-r_{1}\neq0$
+\end_inset
+
+ и, по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisor-cant-be-greater-by-abs"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $b<\left|r_{2}-r_{1}\right|$
+\end_inset
+
+.
+ С другой стороны, так как 
+\begin_inset Formula $0\le r_{1},r_{2}<b$
+\end_inset
+
+, то 
+\begin_inset Formula $-b<r_{2}-r_{1}<b$
+\end_inset
+
+ или 
+\begin_inset Formula $\left|r_{2}-r_{1}\right|<b$
+\end_inset
+
+.
+ Полученное противоречие означает, что 
+\begin_inset Formula $r_{2}=r_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Вернёмся к равенству 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:two-quotients-and-divisors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ С учётом того, что 
+\begin_inset Formula $r_{2}=r_{1}$
+\end_inset
+
+, получаем 
+\begin_inset Formula $b\left(q_{1}-q_{2}\right)=0$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, то
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать и сослаться
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $q_{1}-q_{2}=0$
+\end_inset
+
+ или 
+\begin_inset Formula $q_{1}=q_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Definition
+Число 
+\begin_inset Formula $q$
+\end_inset
+
+ из утверждения теоремы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:quotient-and-reminder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ называется неполным частным, а число 
+\begin_inset Formula $r$
+\end_inset
+
+ — остатком.
+\end_layout
+
+\begin_layout Section
+Наименьшее общее кратное
+\end_layout
+
+\begin_layout Definition
+Число 
+\begin_inset Formula $b$
+\end_inset
+
+ называется общим кратным чисел 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{m}$
+\end_inset
+
+, если 
+\begin_inset Formula $b$
+\end_inset
+
+ делится на каждое из чисел 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Наименьшее из всех положительных общих кратных чисел 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{m}$
+\end_inset
+
+ называется наименьшим общим кратным этих чисел и обозначается 
+\begin_inset Formula $\mathrm{lcm}\left(a_{1},a_{2},\dots,a_{m}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:LCM-divides-any-common-multiple"
+
+\end_inset
+
+Любое общее кратное нескольких чисел 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{m}$
+\end_inset
+
+ делится на их наименьшее общее кратное.
+\end_layout
+
+\begin_layout Proof
+Доказывать будем от противного.
+\end_layout
+
+\begin_layout Proof
+Обозначим рассматриваемое общее кратное чисел 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{m}$
+\end_inset
+
+ как 
+\begin_inset Formula $K$
+\end_inset
+
+ и 
+\begin_inset Formula $b=\mathrm{lcm}\left(a_{1},a_{2},\dots,a_{m}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Пусть 
+\begin_inset Formula $K$
+\end_inset
+
+ не делится на 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Тогда, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:quotient-and-reminder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, существует представление 
+\begin_inset Formula $K=bq+r$
+\end_inset
+
+, где 
+\begin_inset Formula $q$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+ целые числа, причём 
+\begin_inset Formula $0<r<b$
+\end_inset
+
+.
+ 
+\begin_inset Formula $K$
+\end_inset
+
+ делится на каждое из чисел 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{m}$
+\end_inset
+
+ по условию теоремы, а 
+\begin_inset Formula $bq$
+\end_inset
+
+ — по определению делимости 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Тогда, по свойству делимости 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility-sum-and-difference"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $r=K-bq$
+\end_inset
+
+ делится на каждое из чисел 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{m}$
+\end_inset
+
+, то есть является их общим кратным.
+ Причём 
+\begin_inset Formula $r$
+\end_inset
+
+ положительно и меньше, чем 
+\begin_inset Formula $b$
+\end_inset
+
+, то есть это положительное общее кратное, меньшее наименьшего общего кратного.
+ Полученное противоречие означает, что исходное предположение было ложным
+ и 
+\begin_inset Formula $K$
+\end_inset
+
+ делится на 
+\begin_inset Formula $\mathrm{lcm}\left(a_{1},a_{2},\dots,a_{m}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Наибольший общий делитель
+\end_layout
+
+\begin_layout Section
+Малая теорема Ферма
+\end_layout
+
+\begin_layout Subsection
+Частные случаи
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "ex:a(a+1)-is-even"
+
+\end_inset
+
+Докажите, что 
+\begin_inset Formula $a\left(a+1\right)$
+\end_inset
+
+ чётно при любом целом 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $a$
+\end_inset
+
+ чётно, то 
+\begin_inset Formula $a=2b$
+\end_inset
+
+, где 
+\begin_inset Formula $b$
+\end_inset
+
+ — некоторое целое число, а значит 
+\begin_inset Formula $a\left(a+1\right)=2b\left(a+1\right)$
+\end_inset
+
+, то есть, по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def-even-number"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $a\left(a+1\right)$
+\end_inset
+
+ чётно.
+ 
+\end_layout
+
+\begin_layout Solution
+Если же 
+\begin_inset Formula $a$
+\end_inset
+
+ нечётно, то 
+\begin_inset Formula $a=2b+1$
+\end_inset
+
+ и 
+\begin_inset Formula $a\left(a+1\right)=a\left(2b+2\right)=2a\left(b+1\right)$
+\end_inset
+
+ тоже чётно.
+\end_layout
+
+\begin_layout Solution
+Более кратко идею доказательства можно выразить следующим образом: из двух
+ последовательных целых чисел одно чётно, а произведение чётного числа на
+ целое всегда чётно.
+\end_layout
+
+\begin_layout Exercise
+Докажите, что 
+\begin_inset Formula $a^{2}-a$
+\end_inset
+
+ чётно при любом целом 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Разложим рассматриваемое выражение на множители: 
+\begin_inset Formula $a^{2}-a=a\left(a-1\right)$
+\end_inset
+
+.
+ Если положить 
+\begin_inset Formula $b=a-1$
+\end_inset
+
+, то получим 
+\begin_inset Formula $a\left(a-1\right)=b\left(b+1\right)$
+\end_inset
+
+.
+ По доказанному в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ex:a(a+1)-is-even"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, это выражение чётно при любом целом 
+\begin_inset Formula $b$
+\end_inset
+
+, значит при любом целом 
+\begin_inset Formula $a$
+\end_inset
+
+ чётно выражение 
+\begin_inset Formula $a^{2}-a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "ex:a^3-a-divides-by-2,3-and-6"
+
+\end_inset
+
+Докажите, что при любом целом 
+\begin_inset Formula $a$
+\end_inset
+
+ выражение 
+\begin_inset Formula $a^{3}-a$
+\end_inset
+
+ кратно 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $3$
+\end_inset
+
+ и 
+\begin_inset Formula $6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Разложим выражение 
+\begin_inset Formula $a^{3}-a$
+\end_inset
+
+ на множители.
+ Во-первых, можно вынести 
+\begin_inset Formula $a$
+\end_inset
+
+ за скобки: 
+\begin_inset Formula 
+\[
+a^{3}-a=a\left(a^{2}-1\right),
+\]
+
+\end_inset
+
+во-вторых, можно воспользоваться формулой разности квадратов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:difference-of-squares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+a^{3}-a=a\left(a^{2}-1\right)=a\left(a-1\right)\left(a+1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Как мы уже видели в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ex:a(a+1)-is-even"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $a\left(a+1\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+, значит и всё произведение 
+\begin_inset Formula $a^{3}-a=a\left(a+1\right)\left(a-1\right)$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Кроме того, из трёх последовательных целых чисел 
+\begin_inset Formula $a-1$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $a+1$
+\end_inset
+
+ по крайней мере одно делится на 
+\begin_inset Formula $3$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нужно ли доказать более подробно?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $a^{3}-a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+ и на 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Так как эти числа взаимно простые
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дать это определение
+\end_layout
+
+\end_inset
+
+, то 
+\begin_inset Formula $a^{3}-a$
+\end_inset
+
+ делится и на их произведение — на 
+\begin_inset Formula $6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+При любом целом 
+\begin_inset Formula $a$
+\end_inset
+
+ сумма 
+\begin_inset Formula $a^{3}+5a$
+\end_inset
+
+ кратна 
+\begin_inset Formula $6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Выполним элементарное преобразование: 
+\begin_inset Formula $a^{3}+5a=a^{3}-a+6a$
+\end_inset
+
+.
+ Слагаемое 
+\begin_inset Formula $6a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $6$
+\end_inset
+
+ по определению, а 
+\begin_inset Formula $a^{3}-a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $6$
+\end_inset
+
+ по доказанному в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ex:a^3-a-divides-by-2,3-and-6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Отсюда следует, что и 
+\begin_inset Formula $a^{3}+5a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $6$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать отдельно, что сумма кратных данному числу также кратна этому числу
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Докажите, что при любом целом 
+\begin_inset Formula $a$
+\end_inset
+
+ выражение 
+\begin_inset Formula $a^{5}-a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $30$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $30=2\cdot3\cdot5$
+\end_inset
+
+, а числа 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $3$
+\end_inset
+
+ и 
+\begin_inset Formula $5$
+\end_inset
+
+ взаимно просты, то достаточно доказать, что 
+\begin_inset Formula $a^{5}-a$
+\end_inset
+
+ делится на каждое из этих чисел.
+ Разложим выражение 
+\begin_inset Formula $a^{5}-a$
+\end_inset
+
+ на множители, вынеся 
+\begin_inset Formula $a$
+\end_inset
+
+ за скобки и дважды применив формулы разности квадратов: 
+\begin_inset Formula 
+\[
+a^{5}-a=a\left(a^{4}-1\right)=a\left(a^{2}-1\right)\left(a^{2}+1\right)=a\left(a-1\right)\left(a+1\right)\left(a^{2}+1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Как было показано в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ex:a^3-a-divides-by-2,3-and-6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, выражение 
+\begin_inset Formula $a\left(a^{2}-1\right)=a^{3}-a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+ и 
+\begin_inset Formula $3$
+\end_inset
+
+, а значит и 
+\begin_inset Formula $a^{5}-a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+ и на 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Остаётся доказать, что 
+\begin_inset Formula $a^{5}-a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Во-первых, можно рассмотреть все возможные остатки от деления 
+\begin_inset Formula $a$
+\end_inset
+
+ на 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $5$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{5}-a$
+\end_inset
+
+ также делится на 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $a\mod5=1$
+\end_inset
+
+, то 
+\begin_inset Formula $a-1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ Аналогично, если 
+\begin_inset Formula $a\mod5=4$
+\end_inset
+
+, то 
+\begin_inset Formula $a+1$
+\end_inset
+
+ делится на 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ Если же 
+\begin_inset Formula $a\mod5=2$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{2}+1\mod5=5\mod5=0$
+\end_inset
+
+, аналогично, если 
+\begin_inset Formula $a\mod5=3$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{2}+1\mod5=10\mod5=0$
+\end_inset
+
+.
+ Таким образом, при любом целом 
+\begin_inset Formula $a$
+\end_inset
+
+ один из множителей делится на 
+\begin_inset Formula $5$
+\end_inset
+
+, а значит и 
+\begin_inset Formula $a^{5}-a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Другой способ решения позволяет избежать перебора всех возможных остатков.
+ Так как 
+\begin_inset Formula $a^{2}+1=a^{2}-4+5$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{2}+1\mod5=a^{2}-4\mod5$
+\end_inset
+
+, но выражение 
+\begin_inset Formula $a^{2}-4$
+\end_inset
+
+ можно разложить на множители по формуле разности квадратов: 
+\begin_inset Formula $a^{2}-4=\left(a-2\right)\left(a+2\right)$
+\end_inset
+
+, поэтому если рассматривать только остатки от деления на 
+\begin_inset Formula $5$
+\end_inset
+
+, то можно записать 
+\begin_inset Formula 
+\[
+a^{5}-a\equiv a\left(a-1\right)\left(a+1\right)\left(a-2\right)\left(a+2\right)\quad\mod5.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $a$
+\end_inset
+
+ сравнимо с 
+\begin_inset Formula $b$
+\end_inset
+
+ по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ (пишут 
+\begin_inset Formula $a\equiv b\quad\mod n$
+\end_inset
+
+), если 
+\begin_inset Formula $b-a$
+\end_inset
+
+ кратно 
+\begin_inset Formula $n$
+\end_inset
+
+, то есть существует такое целое число 
+\begin_inset Formula $k$
+\end_inset
+
+, что 
+\begin_inset Formula $a=b+kn$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Разделить на несколько упражнений
+\end_layout
+
+\end_inset
+
+Сравнения можно складывать, вычитать и умножать: если 
+\begin_inset Formula $a\equiv b\quad\mod n$
+\end_inset
+
+ и 
+\begin_inset Formula $c\equiv d\quad\mod n$
+\end_inset
+
+, то 
+\begin_inset Formula $a+c\equiv b+d\quad\mod n$
+\end_inset
+
+, 
+\begin_inset Formula $a-c\equiv b-d\quad\mod n$
+\end_inset
+
+ и 
+\begin_inset Formula $ac\equiv bd\quad\mod n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению, 
+\begin_inset Formula $a=b+kn$
+\end_inset
+
+ и 
+\begin_inset Formula $c=d+sn$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+a+c=b+d+kn+sn=\left(b+d\right)+\left(k+s\right)n,
+\]
+
+\end_inset
+
+поэтому снова по определению получаем 
+\begin_inset Formula $a+c\equiv b+d\quad\mod n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Аналогично: 
+\begin_inset Formula 
+\[
+a-c=b+kn-d-sn=\left(b-d\right)+\left(k-s\right)n,
+\]
+
+\end_inset
+
+ поэтому справедливо сравнение 
+\begin_inset Formula $a-c\equiv b-d\quad\mod n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Наконец, 
+\begin_inset Formula 
+\begin{multline*}
+ac=\left(b+kn\right)\left(d+sn\right)=\\
+=bd+bsn+dkn+ksn^{2}=\\
+=bd+\left(bs+dk+ksn\right)n,
+\end{multline*}
+
+\end_inset
+
+ поэтому справедливо сравнение 
+\begin_inset Formula 
+\[
+ac\equiv bd\quad\mod n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Сравнения можно возводить в натуральную степень: если 
+\begin_inset Formula $a\equiv b\quad\mod n$
+\end_inset
+
+, то при любом натуральном 
+\begin_inset Formula $m$
+\end_inset
+
+ справедливо 
+\begin_inset Formula $a^{m}\equiv b^{m}\quad\mod n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Сравнение, можно умножать, а натуральная степень, по определению, представляет
+ собой последовательное умножение на одно и то же число.
+\end_layout
+
+\begin_layout Exercise
+Решите сравнение 
+\begin_inset Formula $3x\equiv11\quad\left(\mod101\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Решить, разместить отдельно
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Какие целые числа удовлетворяют сравнению 
+\begin_inset Formula $14x\equiv0\quad\mod12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Решить, разместить отдельно
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $k\neq0$
+\end_inset
+
+.
+ Докажите, что если 
+\begin_inset Formula $ka\equiv kb\quad\mod kn$
+\end_inset
+
+, то 
+\begin_inset Formula $a\equiv b\quad\mod n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению, если 
+\begin_inset Formula $ka\equiv kb\quad\mod kn$
+\end_inset
+
+, то выполняется равенство 
+\begin_inset Formula $ka=kb+kn\cdot t$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $k\neq0$
+\end_inset
+
+, то обе части этого равенства можно разделить на 
+\begin_inset Formula $k$
+\end_inset
+
+ и мы получим 
+\begin_inset Formula $a=b+nt$
+\end_inset
+
+.
+ Это равенство, по определению означает, что справедливо требуемое сравнение
+ 
+\begin_inset Formula $a\equiv b\quad\mod n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $k\neq0$
+\end_inset
+
+.
+ Докажите, что если 
+\begin_inset Formula $ka\equiv kb\quad\mod n$
+\end_inset
+
+ и числа 
+\begin_inset Formula $k$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ взаимно просты, то 
+\begin_inset Formula $a\equiv b\quad\mod n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению, если 
+\begin_inset Formula $ka\equiv kb\quad\mod n$
+\end_inset
+
+, то существует такое целое число 
+\begin_inset Formula $t$
+\end_inset
+
+, что выполняется равенство 
+\begin_inset Formula $ka=kb+n\cdot t$
+\end_inset
+
+, которое также можно переписать как 
+\begin_inset Formula $k\left(a-b\right)=n\cdot t$
+\end_inset
+
+.
+ Левая часть равенства делится на 
+\begin_inset Formula $k$
+\end_inset
+
+, поэтому на 
+\begin_inset Formula $k$
+\end_inset
+
+ должна делится и правая часть — 
+\begin_inset Formula $nt$
+\end_inset
+
+.
+ Кроме того, 
+\begin_inset Formula $nt$
+\end_inset
+
+ делится на 
+\begin_inset Formula $n$
+\end_inset
+
+ по определению.
+ Таким образом, 
+\begin_inset Formula $nt$
+\end_inset
+
+ — это общее кратное 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $k$
+\end_inset
+
+, а значит, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:LCM-divides-any-common-multiple"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $nt$
+\end_inset
+
+ делится на их наименьшее общее кратное.
+ Так как 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $k$
+\end_inset
+
+ взаимно просты, то 
+\begin_inset Formula $\mathrm{lcm}\left(n,k\right)=nk$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать и сослаться
+\end_layout
+
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $nt$
+\end_inset
+
+ делится на 
+\begin_inset Formula $nk$
+\end_inset
+
+, то есть существует целое число 
+\begin_inset Formula $j$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $nt=nkj$
+\end_inset
+
+ и 
+\begin_inset Formula $k\left(a-b\right)=nt=nkj$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $k\neq0$
+\end_inset
+
+, то обе части равенства можно разделить на 
+\begin_inset Formula $k$
+\end_inset
+
+, получив 
+\begin_inset Formula $a-b=nj$
+\end_inset
+
+.
+ Это равенство равносильно требуемому сравнению 
+\begin_inset Formula $a\equiv b\quad\mod n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Приведём контрпример, показывающий, что взаимная простота действительно
+ необходима для выполнения этого свойства: 
+\begin_inset Formula $6\equiv36\quad\mod10$
+\end_inset
+
+, но 
+\begin_inset Formula $1\not\equiv6\quad\mod10$
+\end_inset
+
+.
+ Здесь сравнение оказалось нарушенным из-за того, что 
+\begin_inset Formula $\gcd\left(6,10\right)=2\neq1$
+\end_inset
+
+.
+\end_layout
 
 \begin_layout Chapter
 Приёмы вычисления сумм
@@ -392,7 +2604,17 @@ T_{n}=\frac{n\left(n+1\right)}{2}.\label{eq:triangle-number}
 \begin_inset Formula $2$
 \end_inset
 
- без остатка.
+ без остатка
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказано выше, можно сослаться туда
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -711,13 +2933,13 @@ S_{n+1,2}=1+\sum_{k=2}^{n+1}k^{2}=1+\sum_{k=1}^{n}\left(k+1\right)^{2}.
 \end_layout
 
 \begin_layout Standard
-Воспользуемся формулой квадрата суммы
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Доказать и сослаться
-\end_layout
+Воспользуемся формулой квадрата суммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:square-of-sum"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -870,13 +3092,13 @@ S_{n+1,3}=S_{n,3}+\left(n+1\right)^{3},\label{eq:sum-of-cubes-last}
 
 \end_inset
 
-а затем — первое, воспользовавшись формулой куба суммы
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Доказать и сослаться
-\end_layout
+а затем — первое, воспользовавшись формулой куба суммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:cube-of-sum"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -1043,6 +3265,16 @@ status open
 
  и 
 \begin_inset Formula $2n+1$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать через три последовательных целых числа
+\end_layout
+
 \end_inset
 
  по крайней мере одно делится на 
