@@ -81,6 +81,20 @@ theorems-ams-extended-bytype
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Слишком большие доказательства и упражнения разбить на леммы и более мелкие
+ упражнения
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Элементарные сведения
 \end_layout
@@ -735,15 +749,6 @@ name "thm:quotient-and-reminder"
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Разбить на несколько утверждений
-\end_layout
-
-\end_inset
-
 Докажем сначала существование чисел с требуемыми свойствами.
 \end_layout
 
@@ -1126,6 +1131,20 @@ noprefix "false"
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Что делать, если все 
+\begin_inset Formula $a_{k}=0$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1141,10 +1160,14 @@ noprefix "false"
 \end_inset
 
  называется наименьшим общим кратным этих чисел и обозначается 
-\begin_inset Formula $\mathrm{lcm}\left(a_{1},a_{2},\dots,a_{m}\right)$
+\begin_inset Formula 
+\[
+\mathrm{lcm}\left(a_{1},a_{2},\dots,a_{m}\right).
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Theorem
@@ -1283,6 +1306,325 @@ noprefix "false"
 
 \begin_layout Section
 Наибольший общий делитель
+\end_layout
+
+\begin_layout Definition
+Число 
+\begin_inset Formula $d$
+\end_inset
+
+ называется общим кратным чисел 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{m}$
+\end_inset
+
+, если каждое из чисел 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{m}$
+\end_inset
+
+ делится на 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Не возникают ли здесь проблемы, если 
+\begin_inset Formula $a_{1}=\dots=a_{m}=0$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Наибольший из всех общих делителей чисел 
+\begin_inset Formula $a_{1},a_{2},\dots,a_{m}$
+\end_inset
+
+ называется наибольшим общим делителем этих чисел и обозначается 
+\begin_inset Formula 
+\[
+\gcd\left(a_{1},a_{2},\dots,a_{m}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:coprime-integers"
+
+\end_inset
+
+Целые числа 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ называются взаимно простыми, если 
+\begin_inset Formula $\gcd\left(a,b\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:lcm-and-gcd"
+
+\end_inset
+
+Если 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — положительные целые числа, то 
+\begin_inset Formula $\mathrm{lcm}\left(a,b\right)=\frac{ab}{\gcd\left(a,b\right)}$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Обобщить на любые целые?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Сначала докажем, что 
+\begin_inset Formula $K=\frac{ab}{\gcd\left(a,b\right)}$
+\end_inset
+
+ действительно является общим кратным чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ А затем докажем, что это наименьшее общее кратное.
+\end_layout
+
+\begin_layout Proof
+Так как 
+\begin_inset Formula $\gcd\left(a,b\right)|a$
+\end_inset
+
+ и 
+\begin_inset Formula $\gcd\left(a,b\right)\mid b$
+\end_inset
+
+, то 
+\begin_inset Formula $\frac{a}{\gcd\left(a,b\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{b}{\gcd\left(a,b\right)}$
+\end_inset
+
+ — целые числа, поэтому число 
+\begin_inset Formula 
+\[
+K=\frac{ab}{\gcd\left(a,b\right)}=a\cdot\frac{b}{\gcd\left(a,b\right)}=b\cdot\frac{a}{\gcd\left(a,b\right)}
+\]
+
+\end_inset
+
+делится и на 
+\begin_inset Formula $a$
+\end_inset
+
+, и на 
+\begin_inset Formula $b$
+\end_inset
+
+, то есть является их общим кратным.
+ Так как 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ являются положительными по условию леммы, а 
+\begin_inset Formula $\gcd\left(a,b\right)>0$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+, то 
+\begin_inset Formula $K=\frac{ab}{\gcd\left(a,b\right)}>0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Пусть существует положительное общее кратное чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, меньшее 
+\begin_inset Formula $K$
+\end_inset
+
+, обозначим его 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\frac{ab}{K_{1}}$
+\end_inset
+
+ — общий делитель чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Действительно, 
+\begin_inset Formula 
+\[
+\frac{a}{\frac{ab}{K_{1}}}=\frac{K_{1}}{b}
+\]
+
+\end_inset
+
+ и 
+\begin_inset Formula 
+\[
+\frac{b}{\frac{ab}{K_{1}}}=\frac{K_{1}}{a},
+\]
+
+\end_inset
+
+так как 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+ общее кратное чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, то в правой части действительно стоят целые числа.
+ Так как 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+ положительны, то и 
+\begin_inset Formula $\frac{ab}{K_{1}}$
+\end_inset
+
+ положительное целое число.
+ Наконец, так как 
+\begin_inset Formula $0<K_{1}<K$
+\end_inset
+
+, то 
+\begin_inset Formula $\frac{ab}{K_{1}}>\frac{ab}{K}=\gcd\left(a,b\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\frac{ab}{K_{1}}$
+\end_inset
+
+ — общий делитель
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+ чисел 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+, больший 
+\begin_inset Formula $\gcd\left(a,b\right)$
+\end_inset
+
+ — наибольшего общего делителя.
+ Полученное противоречие означает, что действительно 
+\begin_inset Formula $K=\mathrm{lcm}\left(a,b\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -1568,7 +1910,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Дать это определение
+Сослаться на это определение?
 \end_layout
 
 \end_inset
@@ -1614,7 +1956,17 @@ status open
 \begin_inset Formula $6$
 \end_inset
 
- по определению, а 
+ по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, а 
 \begin_inset Formula $a^{3}-a$
 \end_inset
 
@@ -1633,22 +1985,22 @@ noprefix "false"
 \end_inset
 
 .
- Отсюда следует, что и 
-\begin_inset Formula $a^{3}+5a$
+ По лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:divisibility-sum-and-difference"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ отсюда следует, что и 
+\begin_inset Formula $a^{3}+5a=\left(a^{3}-a\right)+6a$
 \end_inset
 
  делится на 
 \begin_inset Formula $6$
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Доказать отдельно, что сумма кратных данному числу также кратна этому числу
-\end_layout
-
 \end_inset
 
 .
@@ -1881,6 +2233,13 @@ a^{5}-a\equiv a\left(a-1\right)\left(a+1\right)\left(a-2\right)\left(a+2\right)\
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:congruency-modulo"
+
+\end_inset
+
+
 \begin_inset Formula $a$
 \end_inset
 
@@ -2147,7 +2506,17 @@ status open
 \end_layout
 
 \begin_layout Solution
-По определению, если 
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:congruency-modulo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, если 
 \begin_inset Formula $ka\equiv kb\quad\mod n$
 \end_inset
 
@@ -2168,6 +2537,16 @@ status open
 \begin_inset Formula $k$
 \end_inset
 
+ по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
 , поэтому на 
 \begin_inset Formula $k$
 \end_inset
@@ -2181,11 +2560,21 @@ status open
 \begin_inset Formula $nt$
 \end_inset
 
- делится на 
+ также делится на 
 \begin_inset Formula $n$
 \end_inset
 
- по определению.
+ по определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:divisibility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
  Таким образом, 
 \begin_inset Formula $nt$
 \end_inset
@@ -2221,21 +2610,25 @@ noprefix "false"
 \begin_inset Formula $k$
 \end_inset
 
- взаимно просты, то 
-\begin_inset Formula $\mathrm{lcm}\left(n,k\right)=nk$
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Доказать и сослаться
-\end_layout
+ взаимно просты, то по лемме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:lcm-and-gcd"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-, таким образом, 
+,
+\begin_inset Formula 
+\[
+\mathrm{lcm}\left(n,k\right)=\frac{nk}{\gcd\left(n,k\right)}=\frac{nk}{1}=nk,
+\]
+
+\end_inset
+
+таким образом, 
 \begin_inset Formula $nt$
 \end_inset
 
