@@ -159,7 +159,7 @@ a^{2}-b^{2}=\left(a-b\right)\left(a+b\right)\label{eq:difference-of-squares}
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Квадрат суммы и разности
 \end_layout
 
@@ -257,15 +257,15 @@ noprefix "false"
 \end_layout
 
 \begin_layout Subsection
-Разность кубов
+Сумма и разность кубов
 \end_layout
 
 \begin_layout Claim
-(Формула разности кубов):
+(Формула суммы кубов): 
 \begin_inset Formula 
-\[
-a^{3}-b^{3}=\left(a-b\right)\left(a^{2}+ab+b^{2}\right).
-\]
+\begin{equation}
+a^{3}+b^{3}=\left(a+b\right)\left(a^{2}-ab+b^{2}\right).\label{eq:sum-of-cubes}
+\end{equation}
 
 \end_inset
 
@@ -273,20 +273,225 @@ a^{3}-b^{3}=\left(a-b\right)\left(a^{2}+ab+b^{2}\right).
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать доказательство
-\end_layout
+Раскроем скобки в правой части и приведём подобные слагаемые: 
+\begin_inset Formula 
+\[
+\left(a+b\right)\left(a^{2}-ab+b^{2}\right)=a^{3}+ba^{2}-a^{2}b-ab^{2}+ab^{2}+b^{3}=a^{3}+b^{3}.
+\]
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Claim
+(Формула разности кубов):
+\begin_inset Formula 
+\begin{equation}
+a^{3}-b^{3}=\left(a-b\right)\left(a^{2}+ab+b^{2}\right).\label{eq:difference-of-cubes}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
 Раскроем скобки в правой части и приведём подобные слагаемые: 
 \begin_inset Formula 
 \[
 \left(a-b\right)\left(a^{2}+ab+b^{2}\right)=a^{3}+a^{2}b+ab^{2}-a^{2}b-ab^{2}-b^{3}=a^{3}-b^{3}.
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Формула корней квадратного уравнения
+\end_layout
+
+\begin_layout Standard
+Рассмотрим уравнение 
+\begin_inset Formula $ax^{2}+bx+c=0$
+\end_inset
+
+.
+ Так как при 
+\begin_inset Formula $a=0$
+\end_inset
+
+ мы получаем линейное уравнение, то будем считать, что 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Разбить на несколько упражненний?
+\end_layout
+
+\end_inset
+
+ В этом случае все члены можно разделить на 
+\begin_inset Formula $a$
+\end_inset
+
+ и рассматривать уравнение 
+\begin_inset Formula 
+\[
+x^{2}+px+q=0,
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $p=\frac{b}{a}$
+\end_inset
+
+ и 
+\begin_inset Formula $q=\frac{c}{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Мы видели в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:square-of-sum"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, что некоторые подобные выражения могут быть представлены как квадрат.
+ Развивая эту идею, можно выделить, как говорят, полны квадрат.
+ 
+\begin_inset Formula 
+\begin{multline*}
+x^{2}+px+q=x^{2}+2x\cdot\frac{p}{2}+q=\\
+=x^{2}+2x\cdot\frac{p}{2}+\frac{p^{2}}{4}-\frac{p^{2}}{4}+q=\\
+=\left(x+\frac{p}{2}\right)^{2}+q-\frac{p^{2}}{4}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Таким образом, исходное уравнение можно переписать в виде 
+\begin_inset Formula 
+\[
+\left(x+\frac{p}{2}\right)^{2}=\frac{p^{2}}{4}-q.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как квадрат вещественного числа всегда положителен
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать и сослаться
+\end_layout
+
+\end_inset
+
+, то у данного уравнения (а значит и у исходного) есть решение только при
+ 
+\begin_inset Formula $\frac{p^{2}}{4}-q\ge0$
+\end_inset
+
+, а именно
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x+\frac{p}{2}=\pm\sqrt{\frac{p^{2}}{4}-q}
+\]
+
+\end_inset
+
+или 
+\begin_inset Formula 
+\[
+x=-\frac{p}{2}\pm\sqrt{\frac{p^{2}}{4}-q}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Приведём разность под корнем к общему знаменателю:
+\begin_inset Formula 
+\[
+x=-\frac{p}{2}\pm\sqrt{\frac{p^{2}-4q}{4}},
+\]
+
+\end_inset
+
+а затем вынесем знаменатель (число 4) из под корня
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Описать этот приём подробнее
+\end_layout
+
+\end_inset
+
+ и снова приведём (уже всё выражение) к общему знаменателю: 
+\begin_inset Formula 
+\[
+x=\frac{-p\pm\sqrt{p^{2}-4q}}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Наконец, осуществим обратную замену констант 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $q$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+x=\frac{-\frac{b}{a}\pm\sqrt{\left(-\frac{b}{a}\right)^{2}-4\frac{c}{a}}}{2},
+\]
+
+\end_inset
+
+умножая числитель и знаменатель на 
+\begin_inset Formula $a$
+\end_inset
+
+, окончательно получим 
+\begin_inset Formula 
+\begin{equation}
+x=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}.\label{eq:roots-of-quadratic-equation}
+\end{equation}
 
 \end_inset
 
@@ -2307,7 +2512,7 @@ noprefix "false"
 \begin_inset Formula $a^{2}-4=\left(a-2\right)\left(a+2\right)$
 \end_inset
 
-, поэтому если рассматривать только остатки от деления на 
+, поэтому, если рассматривать только остатки от деления на 
 \begin_inset Formula $5$
 \end_inset
 
@@ -2803,6 +3008,12 @@ status open
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:LFT-7"
+
+\end_inset
+
 Доказать, что при любом целом 
 \begin_inset Formula $a$
 \end_inset
@@ -2819,15 +3030,6 @@ status open
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Доказать
-\end_layout
-
-\end_inset
-
 Вынесем 
 \begin_inset Formula $a$
 \end_inset
@@ -2868,9 +3070,33 @@ a^{7}-a=a\left(a^{6}-1\right)=a\left(a^{3}-1\right)\left(a^{3}+1\right).
 \end_layout
 
 \begin_layout Proof
+Воспользуемся формулами разности 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:difference-of-cubes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ и суммы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sum-of-cubes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ кубов:
+\end_layout
+
+\begin_layout Proof
 \begin_inset Formula 
 \[
-a^{3}-1=\left(a-1\right)\left(a^{2}+a+1\right)
+a^{3}-1=\left(a-1\right)\left(a^{2}+a+1\right),
 \]
 
 \end_inset
@@ -2878,7 +3104,7 @@ a^{3}-1=\left(a-1\right)\left(a^{2}+a+1\right)
  
 \begin_inset Formula 
 \[
-a^{3}+1=\left(a+1\right)\left(a^{2}-a+1\right)
+a^{3}+1=\left(a+1\right)\left(a^{2}-a+1\right).
 \]
 
 \end_inset
@@ -2887,10 +3113,279 @@ a^{3}+1=\left(a+1\right)\left(a^{2}-a+1\right)
 \end_layout
 
 \begin_layout Proof
+Используя эти выражения, можно написать
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+: 
 \begin_inset Formula 
 \[
-\left(a+3\right)\left(a-2\right)=a^{2}+3a-2a-6=a^{2}+a+1-7\equiv a^{2}+a+1\quad\mod7.
+a^{7}-a=\left(a-1\right)a\left(a+1\right)\left(a^{2}+a+1\right)\left(a^{2}-a+1\right).
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Квадратные трёхчлены в правой части нельзя разложить на множители (в вещественны
+х числах), так как их дискриминанты отрицательны
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Сослаться на вывод формулы квадратного уравнения
+\end_layout
+
+\end_inset
+
+.
+ Однако, так как нас интересует не равенство, а эквивалентность по модулю
+ 
+\begin_inset Formula $7$
+\end_inset
+
+, то заметим
+\begin_inset Formula 
+\[
+a^{2}+a+1=a^{2}+a-6+7\equiv a^{2}+a-6\quad\mod7.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Этот трёхчлен уже может быть разложен на множители, причём даже в целых
+ числах:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+a^{2}+a-6=\left(a-2\right)\left(a+3\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Аналогично, для второго трёхчлена имеем 
+\begin_inset Formula 
+\[
+a^{2}-a+1\equiv a^{2}-a-6=\left(a+2\right)\left(a-3\right)\quad\mod7.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Таким образом, окончательно получаем 
+\begin_inset Formula 
+\[
+a^{7}-a\equiv a\left(a-1\right)\left(a-2\right)\left(a+3\right)\left(a+1\right)\left(a+2\right)\left(a-3\right)\quad\mod7,
+\]
+
+\end_inset
+
+ а произведение семи последовательных целых чисел делится на 
+\begin_inset Formula $7$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Обобщить и доказать
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Докажите, что наибольший общий делитель чисел вида 
+\begin_inset Formula $a^{7}-a$
+\end_inset
+
+ равен 
+\begin_inset Formula $42$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать
+\end_layout
+
+\end_inset
+
+По доказанному в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:LFT-7"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $a^{7}-a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $7$
+\end_inset
+
+.
+ Кроме того, при доказательстве этого факта мы видели
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+сослаться
+\end_layout
+
+\end_inset
+
+, что
+\begin_inset Formula 
+\[
+a^{7}-a=a\left(a-1\right)\left(a+1\right)\left(a^{2}+a+1\right)\left(a^{2}-a+1\right),
+\]
+
+\end_inset
+
+а так как 
+\begin_inset Formula $a-1$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $a+1$
+\end_inset
+
+ — это три последовательных целых числа, то 
+\begin_inset Formula $a^{7}-a$
+\end_inset
+
+ делится на 
+\begin_inset Formula $2$
+\end_inset
+
+ и на 3
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Сослаться
+\end_layout
+
+\end_inset
+
+.
+ Так как числа 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $3$
+\end_inset
+
+ и 
+\begin_inset Formula $7$
+\end_inset
+
+ взаимно просты, то 
+\begin_inset Formula $a^{7}-a$
+\end_inset
+
+ делится на их произведение — на 
+\begin_inset Formula $42$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+сослаться
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Таким образом, 
+\begin_inset Formula $42$
+\end_inset
+
+ общий делитель чисел вида 
+\begin_inset Formula $a^{7}-a$
+\end_inset
+
+.
+ Остаётся доказать, что у этих чисел нет большего общего делителя.
+\end_layout
+
+\begin_layout Exercise
+Докажите, что наибольший общий делитель чисел вида 
+\begin_inset Formula $a^{9}-a$
+\end_inset
+
+ равен 
+\begin_inset Formula $30$
+\end_inset
+
+ (заметьте, что 
+\begin_inset Formula $30$
+\end_inset
+
+ не кратно 
+\begin_inset Formula $9$
+\end_inset
+
+.
+ Это находится в согласии с тем, что число 
+\begin_inset Formula $9$
+\end_inset
+
+ не простое, а составное).
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать
+\end_layout
 
 \end_inset
 
